@@ -1,0 +1,45 @@
+# Trade Log — บลจ. CFA (Simulated)
+*All trades recorded by Max*
+
+---
+
+## Log
+
+| Date | Action | Ticker | Shares | Price $ | Trade Value $ | Conviction | Portfolio Rule | Note |
+|------|--------|--------|--------|---------|--------------|-----------|---------------|------|
+| 2026-05-09 | **BUY** | **ADBE** | **2** | **$253.04** | **$506.08** | **7.3/10** | All 4 rules PASS | T1 — Wide Moat SaaS ราคาลง 35% FCF yield 10% Firefly AI upside |
+| 2026-05-11 | **BUY** | **NOW** | **2** | **$89.47** | **$178.94** | **6.7/10** | All 4 rules PASS | T1 — Agentic AI platform MOS +148% Wide Moat SaaS ราคาอยู่ใน zone $85–95 |
+| 2026-05-15 | **BUY** | **ADBE** | **2** | **$241.01** | **$482.02** | **7.3/10** | IPS ใหม่ PASS — ราคาเกิน T2 zone 2.6% ≤ 5% | T2 — IPS ใหม่ deployment | Regime: TRANSITIONAL-CAUTIOUS | Multiplier: 0.75x |
+| **2026-05-16** | **BUY** | **INTU** | **0.67 (fractional)** | **$445.00** | **$299.39** | **7.2/10** | **IPS PASS: Conv 7.2 ≥ 7.0 → Deploy T1** | **T1 (3%) — Pre-Earnings Staged. MOS +25.6%. Stop $348.** |
+| **2026-05-21** | **BUY** | **GOOGL** | **1** | **$388.91** | **$388.91** | **7.2/10** | **All gates PASS: Conv 7.2 ≥ 6.5 Growth | Rev +22% | Growth MOS pass | RISK-ON 1.0×** | **T1 — Conservative 3.88%. Blended FV $414, Stop $310. Regime: RISK-ON 1.0×** |
+| **2026-05-21** | **SELL (AUTO)** | **INTU** | **0.67** | **$321.50** | **$215.41** | **7.2/10** | **AUTO-SELL: ราคา $321.50 < Stop $348.00 = EXIT RULE** | **Stop breach + Thesis Invalidation (17% workforce cut). Realized P&L: -$83.98 (-27.84%).** |
+| **2026-05-29** | **BUY** | **CRM** | **3** | **$181.00** | **$543.00** | **7.0/10** | **Value: Conv 7.0 ≥ 7.0 + MOS +54.1% ≥ 15% | RISK-ON 1.0×** | **T1 — FCF 9.77% Agentforce +205% RPO $72.4B. Stop $144.80.** |
+| **2026-05-30** | **BUY** | **RDDT** | **3** | **$175.94** | **$527.82** | **6.67/10** | **Growth: Conv 6.67 ≥ 6.5 + Rev +69% + Growth MOS pass | RISK-ON 1.0×** | **T1 — AI data licensing moat. Morgan QA PASS. Stop $140.75.** |
+| **2026-06-03** | **BUY** | **REGN** | **0.6** | **$602.00** | **$361.20** | **7.2/10** | **Value: Conv 7.2 ≥ 7.0 + MOS +31.6% ≥ 15% | Force Deploy RISK-ON** | **T1 — Dupixent+oncology. First Healthcare. Stop $482.** |
+| **2026-06-05** | **BUY** | **ACN** | **2.8** | **$178.16** | **$498.85** | **7.17/10** | **Value: Conv 7.17 ≥ 7.0 + MOS +41.6% ≥ 15% | Force Deploy RISK-ON** | **T1 — IT Services AI Consulting. Bookings $22.1B record. Stop $148.** |
+| **2026-06-14** | **BUY** | **ADSK** | **2.4** | **$198.43** | **$476.23** | **7.0/10** | **Value: Conv 7.0 ≥ 7.0 + MOS +31.6% ≥ 15% | Growth: Rev +18.4% > 15% + Reverse DCF 0.71× | RISK-ON 3/4 1.0× | Force Deploy ACTIVE (cash drag fix)** | **T1 (5%) — Design Software Wide Moat (DWG/Revit standard). ราคา drop 13% ($229→$198.43) เพราะ MaintainX M&A concern ไม่ใช่ thesis invalid — Q1 FY27 BEAT (Rev +18.4%, EPS $2.99 vs $2.84, FCF $876M +25% beat) = FCF inflection แข็งขึ้น. Verified ≥2 sources: stockanalysis.com $198.43 + Robinhood/CNN $198.43-198.91 + Investing.com $198.19. Blended FV $290. Stop $158.74 (-20.0%). Deploy แบบมีวินัย — T1 เดี่ยว ไม่ทุ่มก่อน FOMC June 16-17. Regime: RISK-ON 3/4 | Multiplier: 1.0×** |
+
+---
+
+## Summary Stats
+
+| Metric | ค่า |
+|--------|-----|
+| Total Trades | 11 |
+| BUY trades | 10 |
+| SELL trades | 1 (AUTO-SELL) |
+| Realized P&L | **-$83.98** |
+| Win Rate | 0/1 closed (INTU -27.84%) |
+| Total Deployed (open positions cost) | $3,963.05 |
+| Current Invested (market) | $3,667.43 |
+| Remaining Cash | $5,953.17 |
+
+---
+
+## Realized P&L Log
+
+| Ticker | Entry Date | Exit Date | Entry $ | Exit $ | Shares | Realized P&L | Return % | Hold Days |
+|--------|-----------|----------|---------|--------|--------|-------------|---------|----------|
+| INTU | 2026-05-16 | 2026-05-21 | $445.00 | $321.50 | 0.67 | **-$83.98** | **-27.84%** | 5 |
+
+---

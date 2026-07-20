@@ -1,0 +1,8 @@
+Set-Location "C:\Users\user\Desktop\บลจ\บลจ CFA"
+Write-Host "=== Running agent notes append ==="
+python "_append_googl_update.py"
+Write-Host ""
+Write-Host "=== Running dashboard update ==="
+python "_update_googl_dashboard.py"
+Write-Host ""
+Write-Host "=== Done ==="

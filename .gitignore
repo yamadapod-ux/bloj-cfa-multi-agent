@@ -1,0 +1,17 @@
+# Obsidian vault config (local-only, not part of the project)
+.obsidian/
+Welcome.md
+
+# Unrelated pasted screenshots left in the vault root
+Pasted image*.png
+
+# Claude Code local machine-specific settings (absolute local paths)
+.claude/settings.local.json
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# scratch files
+_t.cjs
+*.tmp
