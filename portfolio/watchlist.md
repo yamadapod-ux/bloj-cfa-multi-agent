@@ -1,5 +1,6 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
+*ล่าสุด: Scout Round 14 (2026-07-21) — ดู Scout History ด้านล่าง*
 
 ---
 
@@ -41,6 +42,7 @@
 | SHOP | Shopify Inc. | E-commerce Platform / Merchant Commerce SaaS | 2026-07-05 | $119.46 | FCF margin ~15% (Q1 FCF $476M) | +34% Q1 2026 YoY | ROIC 23.02% | GMV/merchant platform ที่ profitability inflection ชัด (10 ไตรมาสติด double-digit FCF margin); ราคาลง -34.4% จาก 52w high $182.19 -> $119.46 บนความกังวล margin/opex ไม่ใช่ growth slowdown (Rev ยัง +34%); ROIC 23% ผ่าน quality gate สบายๆ; sector ใหม่ (e-commerce merchant platform ต่างจาก enterprise SaaS ที่ถืออยู่ ADBE/NOW/CRM); EV/FCF 64.8x ยังไม่ถูกมาก — ต้องหา MOS ผ่าน reverse DCF | **NEW — รอ Analysis** |
 | NKE | Nike, Inc. | Apparel / Footwear Consumer Brand | 2026-07-05 | $44.09 | 3.22% | ~0% (FY2026 rev flat +0.19%, guide no growth next 2Q) | 16-18% (ROIC 12-14% borderline, mixed sources) | ⚠️ Value bucket เชิง turnaround: ราคาลง -75% จาก 5-yr peak, P/E <20, Morningstar จัดเป็น undervalued wide-moat #1 (Jun16); แต่ revenue growth แบนราบ 3 ปีติด + China -12% + guide ไม่มี growth 2 ไตรมาสข้างหน้า = deep value ไม่ใช่ quality compounder ตอนนี้ — เสี่ยง value trap ถ้า turnaround ไม่มา; sector ใหม่ทั้งหมด (Consumer Brand ไม่มีใน portfolio เลย) | **NEW — CAUTION, turnaround risk — รอ Analysis** |
 | CRDO | Credo Technology Group Holding Ltd. | Semiconductor / AI Networking Optics (AEC + Optical DSP) | 2026-07-06 | $241.91 (Blended FV $185.86, MOS -23.2%) | FCF margin 34.32% (FCF Yield 0.90%) | +205.68% FY2026 YoY | Conviction 6.3/10 (Emma 6/Quinn 6/Bear 7) — ROE 22.9% | Analyzed 2026-07-06 (Charlie/Emma/Quinn/Bear, Morgan QA PASS). Growth Gate FAIL: Conviction 6.3 < 6.5 required (Rev Growth +205.68% ผ่านสบาย แต่ Reverse DCF 1.65x > 1.2x threshold + Multiple Percentile inconclusive-leans-fail). Max: SKIP/WAIT — NO DEPLOY ที่ราคานี้ ($241.91). Entry zone T1 $175-190 (1.5%) / T2 $150-165 (1.0%). Stop $130. **Re-analysis trigger:** (1) ราคาย่อสู่ $150-175 zone, หรือ (2) Q1 FY2027 earnings (~Aug 2026) ยืนยัน growth durability (growth ชะลอไม่เกิน 90-100% YoY + op margin ≥32%) + customer concentration ชัดเจนขึ้น (top customer <35% revenue) — ถ้า conviction upgrade ≥6.5 → re-visit deploy. | **HOLD/WAIT FOR PULLBACK — Analyzed, conv 6.3 < 6.5 gate** |
+| PGR | The Progressive Corporation | Insurance / Personal Auto & Property P&C (Digital/Telematics) | 2026-06-13 (scout) | $205.90 (2026-07-21, -19.2% จาก 52W high $254.93) | n/a (insurer, FCF FY2025 $17.2B) | +10.49% TTM Revenue | ROE 34.94% / ROIC 28.70% | Analyzed 2026-07-22 (Charlie/Emma/Quinn/Bear, Morgan QA CONDITIONAL PASS). Value bucket — both gates FAIL: MOS +1.0% (< 15% required, Blended FV $208 vs price $205.90) + Conviction 6.67/10 (Emma 7/Quinn 6/Bear 7) < 7.0 gate. Growth สูงสุดในกลุ่ม peer (ALL/TRV/CB/ACGL) แต่ operating margin 16.56% ต่ำสุดในกลุ่ม — underwriting discipline gap. หุ้นร่วง 2 รอบใน 1 สัปดาห์ (-9% June premium deceleration + -2.98% Q2 margin concern) ที่ Bear ยืนยันเป็น confirmed signal ไม่ใช่ noise. Max: WAITED — NO DEPLOY. Entry zone $175-185. Stop $144 (-20%). **Re-analysis trigger:** (1) ราคาย่อสู่ entry zone, หรือ (2) Q3 2026 earnings (~Oct 2026) ยืนยัน combined ratio กลับ ≤86% + premium growth reaccelerate ≥6-7% YoY → re-visit deploy. | **HOLD/WAIT FOR PULLBACK — Analyzed 2026-07-22, conv 6.67 < 7.0 gate** |
 
 ---
 
@@ -1582,7 +1584,7 @@ ADBE, NOW, GOOGL, CRM, RDDT, REGN, ACN, ADSK, BAH, MCO, EOG, PGR, DVN, NEM, GD, 
 | Precious Metals Streaming/Royalty | ไม่มีเลย (NEM เคยตกรอบ, เป็น miner ไม่ใช่ streamer) | **WPM + FNV** — sector ใหม่ทั้งหมด, asset-light hard-asset hedge |
 | Gold/Copper Mining (operating) | GOLD/FCX สแกนรอบนี้ | ตกรอบทั้งคู่ (ROE/valuation) — ไม่เพิ่ม |
 | Managed Care / Health Insurance | ไม่มีเลย (UNH/ELV ตกรอบ) | **CI** — conditional pass เท่านั้น sector มีปัญหา systemic |
-| P&C Insurance | ACGL, PGR (watchlist, pending) | TRV คุณภาพดีกว่าทั้งคู่แต่ไม่มี MOS ตอนนี้ — เฝ้าดู ไม่เพิ่ม |
+| P&C Insurance | ACGL (HOLD/WAIT), PGR (HOLD/WAIT FOR PULLBACK — analyzed 2026-07-22) | TRV คุณภาพดีกว่าทั้งคู่แต่ไม่มี MOS ตอนนี้ — เฝ้าดู ไม่เพิ่ม |
 | Oilfield Services | ไม่มีเลย | SLB ตกรอบ (growth/ROIC) — ไม่เพิ่ม |
 | Utilities (Power/Water) | ไม่มีเลย | NEE/AWK ตกรอบ (growth/FCF) — ไม่เพิ่ม |
 | Industrial Gas | ไม่มีเลย | LIN ตกรอบ (growth/valuation) — ไม่เพิ่ม |
@@ -1607,3 +1609,62 @@ ADBE, NOW, GOOGL, CRM, RDDT, REGN, ACN, ADSK, BAH, MCO, EOG, PGR, DVN, NEM, GD, 
 - WPM -> target **2026-07-17** (top pick, รอ Atlas regime re-call ก่อนถ้าเป็นไปได้)
 - FNV -> WATCH (backup เท่านั้น ไม่ต้องวิเคราะห์คู่กับ WPM พร้อมกัน)
 - CI -> WATCH (ส่งเฉพาะถ้า CIO ต้องการ contrarian managed-care bet, ต้อง Bear case หนัก)
+
+> **Update 2026-07-21 (จาก Max Portfolio Review):** WPM ผ่าน pipeline ไปแล้ว (Charlie/Emma/Quinn/Bear + Morgan QA) — ผลลัพธ์: **HOLD/WAIT FOR PULLBACK, ไม่ deploy** (Conviction 6.3 < 7.0 gate + MOS -9.9% < 15% gate ทั้งคู่ FAIL). ดู row WPM ใน Pending Analysis table ด้านบน. FNV/CI ยังไม่ได้ส่งวิเคราะห์ (WATCH เท่านั้นตามแผนเดิม).
+
+---
+
+## Scout Report — 2026-07-21 (Max Scout Mode — Round 14: Consumer Growth + Enterprise Infra Cross-Sector Scan)
+
+**Trigger:** CIO "Max หาหุ้น" (Scout). Portfolio state: Cash 62.42% ($6,132.34), 8 positions (6/8 = Software/Tech-heavy: ADBE/NOW/GOOGL/CRM/RDDT/ADSK + REGN Healthcare + ACN IT Services). Regime: RISK-ON 3/4 confirmed 2026-07-12 (Atlas re-call, 9 วันแล้ว — ดู correction note ใน portfolio.js/positions.md วันนี้), Force Deploy ทางทฤษฎี active แต่ไม่มี candidate ผ่าน gate ใหม่มาหลายรอบ (WPM ล่าสุด FAIL ทั้ง 2 gates).
+
+**Market Context:** S&P 500 close 2026-07-20: 7,443.28 (-0.19% วัน, Iran conflict escalation 10 คืนโจมตีติด + tariff Section122 หมดอายุ 24 ก.ค. เป็น overhang). Big Tech earnings week เริ่มพรุ่งนี้ (GOOGL/TSLA/NOW/MCO/GEV 22 ก.ค.).
+
+**Focus:** สแกน sector ที่ยังไม่มีในพอร์ตเลย — Gig Economy/Logistics (DASH), UGC Gaming Platform (RBLX), Identity Security (OKTA), Insurance Brokerage (AON), Data Center REIT (EQIX), AAA Gaming Studio (TTWO)
+
+**Tickers ที่วิเคราะห์/watchlist ไปแล้ว (ห้ามซ้ำ):** อ้างอิง excluded universe เดิม (~105+ tickers, ดู Round 13 ด้านบน) + WPM, FNV, CI (Round 13)
+
+### Screen Methodology
+1. อ่าน dashboard/portfolio.js (8 positions, cash 62.42%) + agent_notes/atlas/2026-07-12_regime.md (regime ล่าสุด)
+2. WebSearch หา candidates ใน sector ใหม่ทั้งหมดสำหรับพอร์ต — เน้น Consumer/Gig Economy + Enterprise Security + Insurance Brokerage + Data Center REIT + Gaming (ที่ยังไม่เคยสแกน)
+3. WebSearch verify revenue growth + ROE/ROIC + ราคา/pullback ทุกตัว
+4. Filter Growth bucket: Rev >20% YoY + ROIC/ROE >=12% | Value bucket: FCF-positive + wide moat + ROE/ROIC >=12%
+5. คัดออก universe ~105+ tickers เดิม
+
+### Screening Results — 2026-07-21
+
+| # | Ticker | Company | Sector | ราคา (source) | ROE/ROIC | Rev Growth | Moat | ผ่าน Filter? |
+|---|--------|---------|--------|:---:|:---:|:---:|:---:|:---:|
+| 1 | **DASH** | DoorDash, Inc. | Consumer / Gig Economy Logistics | **$189.78** (Robinhood/CNBC, ย่อ -33.5% จาก 52w high $285.50) | **ROE 9.96%** (TTM) | **+33% Q1 2026** (LTM +31%) | Wide-ish (marketplace network effects, GOV $31.6B +37%) | **FAIL (ผิดหวังหวุดหวิด)** — Growth ผ่านชัด (+33% >> 20%) แต่ ROE 9.96% < 12% quality gate; P/E 75.8x ยังไม่ถูก (net margin 6.27% บาง) |
+| 2 | **RBLX** | Roblox Corporation | Consumer / UGC Gaming Platform | **$53.45** (ย่อ -64.5% จาก 52w high $150.59) | **ROIC -11.96% ถึง -35.29%** (หลาย source ติดลบหมด) | +39% Q1 2026 (FY guide หั่นเหลือ 20-25%) | Narrow (network effects แต่ยังขาดทุน) | **FAIL ชัดเจน** — ROIC ติดลบลึก, P/E ติดลบ (ไม่ profitable บน GAAP), guidance เพิ่งถูกหั่นจาก safety/age-verification headwind |
+| 3 | **OKTA** | Okta, Inc. | Software / Identity Security | ไม่ได้ verify ราคา (ตกรอบจาก growth ก่อน) | ไม่ได้ verify | **+11.6% FY26** (ARR +11.8%) | Wide (identity platform lock-in) | **FAIL** — Rev growth 11.6% << 20% Growth threshold ตั้งแต่ต้น ไม่ต้องเช็คต่อ |
+| 4 | **AON** | Aon plc | Insurance Brokerage | ไม่ได้ verify ราคา | ไม่มีข้อมูล ROE จาก search | **+6% total / +5% organic Q1 2026** | Wide (brokerage relationship moat) | **FAIL** — Rev growth 5-6% ต่ำกว่า Growth threshold มาก, ไม่มีข้อมูล ROE พอตัดสิน Value bucket — ไม่ worth ตามต่อ |
+| 5 | **EQIX** | Equinix, Inc. | Data Center REIT | ไม่ได้ verify ราคา | ไม่มีข้อมูล ROE/ROIC | +10% Q1 2026 (AFFO +12%) | Wide (colocation switching cost + AI interconnect demand) | **FAIL (growth ไม่พอ)** — Rev growth 10% << 20% Growth threshold; REIT metrics (AFFO) ไม่ fit cleanly กับ FCF-based Value filter ของเรา — ต้องการ specialist REIT analysis ถ้าจะตามต่อ |
+| 6 | **TTWO** | Take-Two Interactive | Gaming / AAA Studio | ไม่ได้ verify ราคา | ไม่มีข้อมูล ROE | **+18% FY26** (FY27 guide ~20%, GTA VI launch Nov 2026) | Wide (IP franchise, GTA/NBA2K/Red Dead) | **FAIL (ยังไม่ชัด)** — Growth เฉียด threshold พอดี (18-20%) แต่ GTA VI hype ถูก price-in ไปมากแล้ว (BofA PT $368 already ยกแล้ว) + ไม่มีข้อมูล ROE ยืนยัน — ไม่ clean pass |
+
+**Source:** DASH $189.78 + ROE 9.96%/P/E 75.82x/52w range $143.30-285.50 (Robinhood + CNBC + stockanalysis.com WebSearch 2026-07-21) | Rev +33% Q1 2026 $4.0B + net income $935M FY2025 (SEC 8-K/CNBC) | RBLX $53.45 + 52w range $40.15-150.59 (WallStreetZen/stockanalysis WebSearch) | ROIC -11.96%/-22.7%/-35.29% (GuruFocus + AlphaSpread + stockanalysis, หลาย period ไม่ตรงกันแต่ทุกตัวติดลบ) | Rev +39% Q1 2026 $1.442B, FY guide หั่นเหลือ 20-25% (Seeking Alpha/StockTitan) | OKTA rev $761M Q4 FY26 +11.6% YoY, ARR $3.00B +11.8% (IndexBox/company IR) | AON Q1 2026 rev +6%/+5% organic, adj EPS $6.48 (Aon Q1 2026 earnings release) | EQIX Q1 2026 rev $2.444B +10%, AFFO $1.065B +12% (Equinix investor relations) | TTWO FY2026 rev $6.66B +18%, FY2027 guide $8.0-8.2B ~20%, GTA VI Nov 19 2026 (TIKR/StockTitan)
+
+### Sector Coverage Update (2026-07-21)
+
+| Sector | มีในพอร์ต/Watchlist แล้ว | Scout ใหม่ 2026-07-21 |
+|--------|------------------------|----------------------|
+| Gig Economy / Logistics | ไม่มีเลย | DASH ตกรอบ (ROE 9.96% < 12%, หวุดหวิดที่สุดรอบนี้) |
+| UGC Gaming Platform | ไม่มีเลย | RBLX ตกรอบชัดเจน (ROIC ติดลบลึก) |
+| Identity Security | ไม่มีเลย | OKTA ตกรอบ (growth ต่ำเกิน) |
+| Insurance Brokerage | ไม่มีเลย | AON ตกรอบ (growth ต่ำ + ข้อมูลไม่พอ) |
+| Data Center REIT | ไม่มีเลย | EQIX ตกรอบ (growth ต่ำสำหรับ Growth bucket, REIT metrics ไม่ fit filter) |
+| AAA Gaming Studio | ไม่มีเลย | TTWO ไม่ชัด (growth เฉียด threshold + valuation อาจ price-in แล้ว) |
+
+### Max's Overall Assessment — Round 14
+
+**รอบนี้ไม่มี candidate ผ่านเกณฑ์ชัดเจนแม้แต่ตัวเดียว** — เป็นรอบที่แย่ที่สุดในแง่ hit rate เทียบกับ 13 รอบก่อนหน้า (ปกติเจอ 1-3 ตัวผ่าน) เหตุผลหลัก: สแกนรอบนี้เน้น sector ที่ portfolio ยังไม่มีเลย (diversification-first) แทนที่จะตาม theme ที่กำลัง strong (AI infra/semis) ทำให้เจอชื่อที่ valuation หรือ quality metric ไม่ตรงเกณฑ์เรา
+
+**ที่ใกล้ผ่านที่สุด: DASH** — Growth ผ่านชัดเจน (+33%) แต่ ROE 9.96% หวุดหวิดต่ำกว่าเกต 12% แค่นิดเดียว (ต่างจาก RBLX ที่ ROIC ติดลบลึกแบบไม่มีทางผ่าน) — ถ้า CIO อยากให้ตามต่อ แนะนำรอ Q2 earnings (คาด ~ต้นพ.ย.) ดูว่า margin ขยายพอดัน ROE ทะลุ 12% หรือไม่ ก่อน re-scout ไม่ใช่ตอนนี้
+
+**RBLX เตือน bear case ชัดเจน:** revenue โต 39% ฟังดูดีมาก แต่ ROIC ติดลบลึกทุก source ที่เช็ค — ตัวอย่างของ "growth story ที่ยังไม่ profitable จริง" ต่างจาก DASH/CRM ที่ profitable แล้วแต่ ROE/ROIC ยังไม่ถึงเกต
+
+**สรุป:** ไม่มี ticker ใหม่ส่ง Charlie รอบนี้ — universe อิ่มตัวมากขึ้นเรื่อยๆ (14 รอบ, ~110+ tickers สแกนแล้ว) ยืนยันข้อสรุปเดิมจาก Round 13: **priority จริงคือ deploy backlog ที่มีอยู่ (PGR/ACGL/TOST/ADSK T2/MCO รอ pullback) และรอ Atlas regime re-call ต่อเนื่อง** มากกว่าการหา candidate ใหม่ไปเรื่อยๆ ที่ hit rate เริ่มลดลง
+
+**Target Analysis Dates:** ไม่มี (ไม่มี candidate ผ่านเกณฑ์ส่ง Charlie รอบนี้)
+
+**Excluded universe เพิ่มเติมจาก Round 14 (ห้ามซ้ำรอบถัดไป):** DASH, RBLX, OKTA, AON, EQIX, TTWO (รวมกับ Round 13 excluded ~105+ tickers + WPM, FNV, CI)

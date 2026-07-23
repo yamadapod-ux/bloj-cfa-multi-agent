@@ -3,9 +3,123 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-07-19 10:00";
+const NEWS_LAST_UPDATED = "2026-07-21 12:00";
 
 const NEWS = [
+  // ── 2026-07-21 ──────────────────────────────────────────
+  {
+    date: "2026-07-21", category: "MACRO",
+    headline: "🇮🇷 ความขัดแย้งอิหร่านทวีความรุนแรง — สหรัฐโจมตีต่อเนื่อง 10 คืนติด ตลาดจับตาผู้ไกล่เกลี่ยเสนอ ceasefire 10 วัน ราคาน้ำมันเริ่มอ่อนตัวรับข่าว",
+    summary: "สหรัฐฯ ดำเนินการโจมตีทางทหารต่ออิหร่านต่อเนื่องเป็นคืนที่ 10 ติดต่อกัน ท่ามกลางความตึงเครียดที่ยืดเยื้อในตะวันออกกลาง มีรายงานว่าผู้ไกล่เกลี่ยนานาชาติกำลังผลักดันข้อตกลงหยุดยิงชั่วคราว 10 วัน ซึ่งช่วยให้ราคาน้ำมันเริ่มอ่อนตัวลงในการซื้อขายเช้าวันอังคาร (21 ก.ค.) ตลาดหุ้นสหรัฐตอบรับเชิงบวกเล็กน้อยจากความหวัง de-escalation แต่ความเสี่ยง geopolitical ยังคงกดดัน sentiment โดยรวม โดยเฉพาะกลุ่มพลังงาน/เงินเฟ้อที่อาจกระทบ Fed policy path (hike odds เดือนกันยายนสูงถึง ~70% จากความขัดแย้งนี้). นัยพอร์ต: ความไม่แน่นอน geopolitical ยังเป็น overhang กว้างต่อทุก position โดยเฉพาะ growth/tech ที่ sensitive ต่อ risk premium.",
+    impact: "MIXED", tickers: [],
+    url: "https://www.benzinga.com/markets/prediction-markets/26/07/60569710/sp500-july-21-open-up-or-down-polymarket-iran-ceasefire-oil-earnings-ai",
+  },
+  {
+    date: "2026-07-21", category: "MACRO",
+    headline: "📈 ฟิวเจอร์สสหรัฐบวกรับ chip stocks ฟื้น | Nasdaq-100 futures +1.3% | S&P futures +0.4% | เข้าสู่สัปดาห์ earnings ใหญ่ (GOOGL, TSLA, IBM, GM, 3M)",
+    summary: "ฟิวเจอร์สตลาดหุ้นสหรัฐปรับขึ้นเช้าวันอังคารที่ 21 กรกฎาคม โดย Dow futures +0.2%, S&P 500 futures +0.4%, และ Nasdaq-100 futures พุ่ง +1.3% นำโดยหุ้นกลุ่ม semiconductor ที่ฟื้นตัวต่อเนื่องจากการอ่อนตัวช่วงต้นสัปดาห์ที่ผ่านมา ตลาดกำลังเข้าสู่สัปดาห์รายงานผลประกอบการที่สำคัญที่สุดของไตรมาส โดย General Motors และ 3M รายงานก่อนตลาดเปิดวันนี้ ขณะที่ Alphabet, Tesla และ IBM มีกำหนดรายงานหลังตลาดปิด. อัตราผลตอบแทนพันธบัตร 10 ปีสหรัฐอ่อนตัวลงมาที่ราว 4.52% หลังตัวเลขเงินเฟ้อออกมาต่ำกว่าคาด ช่วยลดแรงกดดันต้นทุนกู้ยืม. นัยพอร์ต: GOOGL (ตำแหน่งพอร์ต) รายงานคืนนี้ = catalyst สำคัญที่สุดของสัปดาห์ ควรจับตาใกล้ชิด.",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-21-dow-sp-500-nasdaq-084631499.html",
+  },
+  {
+    date: "2026-07-21", category: "SECTOR",
+    headline: "🔻 Morgan Stanley (Adam Wood) หั่นเรตติ้ง ADBE เป็น Underweight (จาก Equal-weight) ตัด PT $365→$240 กังวล 'concurrent transitions' ทับซ้อน + GenAI disruption debate",
+    summary: "Morgan Stanley โดยนักวิเคราะห์ Adam Wood ปรับลดเรตติ้ง Adobe (ADBE) เป็น Underweight จาก Equal-weight พร้อมตัดราคาเป้าหมายลงอย่างหนักจาก $365 เหลือ $240 (-34%) เมื่อวันที่ 21 กรกฎาคม โดยระบุว่า Adobe กำลังเผชิญความเสี่ยงด้าน execution ที่เพิ่มขึ้นจากการเปลี่ยนผ่านหลายด้านพร้อมกัน (freemium pivot, ผู้นำองค์กร, การลงทุนใหม่) ซึ่งทับซ้อนกับดีเบต GenAI disruption ที่บดบังเส้นทางสู่ ARR reacceleration นอกจากนี้ margin ระดับ best-in-class ของบริษัทอาจใกล้จุดสูงสุดแล้ว เนื่องจาก AI และ low-ARPU engagement ต้องการการลงทุนเพิ่มขึ้น หุ้น ADBE ร่วง premarket ~4% ในวันเดียวกัน. นัยพอร์ต: เป็น downgrade ที่มีน้ำหนักมากที่สุดของ ADBE ในรอบหลายเดือน ตัด PT ลึกกว่าทุกสำนักที่ผ่านมา ต้อง monitor ว่า Bear Flip Trigger (new CEO drops Firefly AI หรือ cuts buyback) ยังไม่ firing แต่ thesis ต้อง re-stress test.",
+    impact: "NEGATIVE", tickers: ["ADBE"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/adobe-downgraded-roblox-upgraded-wall-134400216.html",
+  },
+  {
+    date: "2026-07-21", category: "SECTOR",
+    headline: "🔻 Morgan Stanley หั่นเรตติ้ง CRM เป็น Equal-weight (จาก Overweight) ตัด PT $287→$185 (-36%) วันเดียวกับ ADBE",
+    summary: "Morgan Stanley ปรับลดเรตติ้ง Salesforce (CRM) เป็น Equal-weight จาก Overweight พร้อมตัดราคาเป้าหมายจาก $287 เหลือ $185 (ลดลง -36%) เมื่อวันที่ 21 กรกฎาคม เผยแพร่พร้อมกับการหั่นเรตติ้ง ADBE ในวันเดียวกัน โดยนักวิเคราะห์ยังมั่นใจในโอกาสระยะยาวของ Salesforce ในการเจาะกลุ่มลูกค้าองค์กรขนาดใหญ่เพิ่มเติม แต่ระบุว่า catalyst ระยะสั้น (margin expansion, การขึ้นราคา) ได้ผ่านไปแล้ว และเส้นทางสู่การรับรู้ประโยชน์จาก GenAI (Agentforce) ยังอีกยาวไกล หุ้น CRM ร่วง premarket ~4% ในวันเดียวกัน. นัยพอร์ต: เป็น double-downgrade software พร้อมกัน (ADBE+CRM) จากสำนักเดียวกันวันเดียวกัน — สะท้อน sentiment เชิงลบวงกว้างต่อ SaaS/AI monetization narrative ทั้งกลุ่ม ต้องจับตาว่ากระทบ conviction score รอบหน้าหรือไม่.",
+    impact: "NEGATIVE", tickers: ["CRM"],
+    url: "https://finance.yahoo.com/news/adobe-upgraded-salesforce-downgraded-wall-135121640.html",
+  },
+  {
+    date: "2026-07-21", category: "TECH",
+    headline: "ADBE เปิดตัวฟีเจอร์ AI ใหม่ใน Project Indigo (iPhone camera app) — LLM-driven photo critique + editing recommendations",
+    summary: "Adobe เปิดตัวอัปเดตใหม่สำหรับ Project Indigo แอปกล้อง iPhone เชิงทดลอง เพิ่มความสามารถ LLM-driven photo critique และคำแนะนำการแก้ไขภาพ ต่อยอดจากฟีเจอร์เดิมอย่าง pro controls, multi-frame super-resolution และโหมดถ่ายภาพหลายแบบ ทั้งนี้ CLSA ยังคงมองว่ากลุ่ม enterprise software มี 'moat ที่แข็งแกร่ง' โดยเลือก Microsoft และ Adobe เป็นชื่อที่ชื่นชอบที่สุดในบรรดา 6 ชื่อที่ครอบคลุม นักวิเคราะห์คาด EPS ไตรมาสหน้าที่ $6.08 และรายได้ $6.67 พันล้านดอลลาร์ ราคาเป้าหมายเฉลี่ย 12 เดือนอยู่ที่ $273.28 (upside ~16%). นัยพอร์ต: ฟีเจอร์ AI ใหม่เป็นสัญญาณบวกต่อ Firefly/consumer AI strategy แต่ไม่ได้หยุดแรงกดดันจาก MS downgrade วันเดียวกัน.",
+    impact: "MIXED", tickers: ["ADBE"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/adbe-stock-falling-again-why-080924282.html",
+  },
+  {
+    date: "2026-07-21", category: "EARNINGS",
+    headline: "GOOGL ขยับขึ้นสู่ $351.99 ก่อนรายงาน Q2 คืนนี้หลังตลาดปิด (22 ก.ค.) — คาด revenue +21.5% YoY, EPS $2.90 | Analyst 57 ราย Buy, 0 Sell",
+    summary: "หุ้น Alphabet (GOOGL) ปรับขึ้นมาที่ $351.99 จากปิดก่อนหน้า $346.77 รับ sentiment กลุ่ม chip stocks ที่ฟื้นตัว ก่อนรายงานผลประกอบการไตรมาส 2 ปี 2026 ในวันพุธที่ 22 กรกฎาคม หลังตลาดปิด ตลาดคาดการณ์รายได้เติบโต 21.5% YoY และ EPS ที่ $2.90 ต่อเนื่องจากไตรมาสก่อนที่ทำรายได้ $109.9 พันล้านดอลลาร์ เติบโต 21.8% YoY เกินคาด นักวิเคราะห์ 57 รายแนะนำซื้อ ไม่มีรายใดแนะนำขาย ทำให้เรตติ้งโดยรวมเป็น Strong Buy. นัยพอร์ต: earnings คืนนี้เป็น catalyst ชี้ขาดสำคัญที่สุดของ GOOGL — ต้องพิสูจน์ ROI ของ capex ($180-190B FY26 guide) ท่ามกลางความกังวลเรื่อง Gemini 3.5 Pro delay ที่กดดันหุ้นมาก่อนหน้านี้ (stopDist ปัจจุบัน 10.52%).",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://stockstory.org/us/stocks/nasdaq/googl/news/earnings/alphabet-googl-to-report-earnings-tomorrow-here-is-what-to-expect-3",
+  },
+  // ── 2026-07-20 ──────────────────────────────────────────
+  {
+    date: "2026-07-20", category: "REGULATION",
+    headline: "ภาษีนำเข้า Section 122 (10%) หมดอายุ 24 ก.ค. — ทำเนียบขาวเตรียมแทนที่ด้วย Section 301 เพื่อรักษา 'tariff wall' ต่อเนื่อง",
+    summary: "ภาษีนำเข้า Section 122 อัตรา 10% ของประธานาธิบดี Trump จะหมดอายุลงในวันที่ 24 กรกฎาคม 2026 โดยฝ่ายบริหารส่งสัญญาณว่าจะใช้ Section 301 ของกฎหมายเดียวกันเพื่อแทนที่ด้วยภาษีที่มีความคงทนกว่าและอัตราใกล้เคียงเดิม โดยอ้างอิงข้อกล่าวหาเรื่อง forced labor เป็นเหตุผลทางกฎหมาย นอกจากนี้ยังมีการประกาศภาษีใหม่ต่อเนื่อง เช่น 35% ต่อแคนาดา (มีผล 1 ส.ค.) และ 25% ต่อบราซิล รวมถึงแผนเก็บภาษียาเวชภัณฑ์บางประเภทสูงถึง 100% ตั้งแต่ 31 ก.ค. นัยพอร์ต: นโยบายการค้าที่ไม่แน่นอนต่อเนื่องเป็นความเสี่ยง macro overhang กว้าง อาจกระทบ supply chain และต้นทุนของบริษัทข้ามชาติในพอร์ต (ADSK, CRM enterprise clients, ACN consulting).",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.bloomberg.com/news/articles/2026-07-20/how-trump-plans-to-maintain-his-tariff-wall",
+  },
+  {
+    date: "2026-07-20", category: "EARNINGS",
+    headline: "TSLA ร่วง -7.49% แม้ Q2 deliveries แข็งแกร่ง (480,126 คัน +25% YoY beat) หลังปรับเพิ่ม capex ปี 2026 เป็น $25B เตือน FCF อาจติดลบ — earnings คืนพรุ่งนี้ (22 ก.ค.)",
+    summary: "Tesla (TSLA) ส่งมอบรถยนต์ 480,126 คันในไตรมาส 2 เพิ่มขึ้น 34% จากไตรมาสก่อนและ 25% จากปีก่อน เกินคาดการณ์ส่วนใหญ่ของนักวิเคราะห์ อย่างไรก็ตามหุ้นร่วงลง 7.49% ในวันจันทร์ที่ 20 กรกฎาคม ซึ่งเป็นวันที่แย่ที่สุดในรอบเกือบปี หลังบริษัทปรับเพิ่มประมาณการ capital expenditure ปี 2026 จาก $20 พันล้านดอลลาร์เป็น $25 พันล้านดอลลาร์ และผู้บริหารเตือนว่ากระแสเงินสดอิสระ (FCF) อาจติดลบจากการลงทุนด้าน AI และ self-driving ที่เร่งตัวขึ้น ตลาดคาดรายได้ $26.36 พันล้านดอลลาร์ EPS ปรับปรุง $0.54 สำหรับการรายงานคืนวันพุธที่ 22 กรกฎาคม โดย options market คาดการณ์การเคลื่อนไหว ~7.6% หลังประกาศผล และมี bearish position มูลค่า $550 ล้านดอลลาร์รอไว้. นัยพอร์ต: TSLA ไม่ได้อยู่ในพอร์ต (Big10 watch) แต่เป็น sentiment bellwether สำคัญของกลุ่ม EV/AI-capex ที่อาจกระทบ sentiment growth stocks โดยรวม.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://247wallst.com/investing/2026/07/20/tesla-is-still-down-17-in-2026-can-wednesdays-earnings-event-get-tsla-stock-back-on-track/",
+  },
+  {
+    date: "2026-07-20", category: "MACRO",
+    headline: "AAPL ร่วง >2% กังวลขึ้นราคาสินค้าเพิ่มหลังข้อมูลเงินเฟ้อ แม้เพิ่งแซง NVDA กลับมาเป็นบริษัท market cap สูงสุดโลก ($4.81T) ก่อนรายงาน Q3 30 ก.ค.",
+    summary: "หุ้น Apple (AAPL) ร่วงลงมากกว่า 2% ในวันจันทร์ที่ 20 กรกฎาคม จากความกังวลว่าบริษัทจะปรับขึ้นราคาสินค้าเพิ่มเติมท่ามกลางแรงกดดันเงินเฟ้อ หลังจากที่ Apple ปรับขึ้นราคา Mac และ iPad ไปแล้ว นักลงทุนคาดว่าจะมีการปรับราคา iPhone รุ่นใหม่ตามมา ทั้งนี้ Apple เพิ่งกลับมาเป็นบริษัทที่มี market cap สูงสุดในโลกแซง Nvidia ด้วยมูลค่า $4.81 ล้านล้านดอลลาร์ หุ้นปรับขึ้นแล้วราว 20% ตั้งแต่ต้นปี เหนือกว่ากลุ่ม AI heavyweight อื่นๆ อย่าง Nvidia, Microsoft และ Amazon นอกจากนี้จีนได้อนุมัติให้ Apple Intelligence เปิดให้บริการในตลาดสมาร์ทโฟนใหญ่ที่สุดของโลกแล้ว Apple จะรายงานผล Q3 ในวันที่ 30 กรกฎาคม ตลาดคาด EPS $1.88 (+20% YoY). นัยพอร์ต: AAPL อยู่ใน Big10 watch ไม่ใช่ position — สัญญาณบวกจาก AI Intelligence approval ในจีนช่วย offset ความกังวลเรื่องราคา.",
+    impact: "MIXED", tickers: [],
+    url: "https://finance.yahoo.com/markets/stocks/articles/apple-20-2026-aapl-stock-191629157.html",
+  },
+  {
+    date: "2026-07-20", category: "EARNINGS",
+    headline: "AMZN บวก >2% หลัง Wall Street ยกกำไรคาดการณ์ระยะยาว ชี้ AWS backlog พุ่งแตะ $485B ก่อนรายงาน Q2 30 ก.ค.",
+    summary: "หุ้น Amazon (AMZN) ปรับขึ้นมากกว่า 2% ในวันจันทร์ที่ 20 กรกฎาคม หลังนักวิเคราะห์ Wall Street หลายสำนักปรับเพิ่มประมาณการเติบโตระยะยาวอย่างมีนัยสำคัญ โดยเน้นย้ำ AWS backlog ที่พุ่งขึ้นแตะระดับ $485 พันล้านดอลลาร์ Wells Fargo คาดผลประกอบการแข็งแกร่งจากการเร่งตัวของ AWS ซึ่งอาจหนุนราคาหุ้นเคลื่อนไหว 5%+ หลังประกาศผล Q2 ในวันที่ 30 กรกฎาคม ราคาเป้าหมายเฉลี่ยอยู่ที่ $319.80 ด้วยเรตติ้ง Buy. นัยพอร์ต: AMZN อยู่ใน Big10 watch ไม่ใช่ position — เป็นสัญญาณบวกต่อ cloud/AI infrastructure spending theme ที่เกี่ยวโยงกับ GOOGL (GCP).",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://www.benzinga.com/markets/tech/26/07/60559930/what-is-going-on-with-amazon-stock-on-monday",
+  },
+  {
+    date: "2026-07-20", category: "EARNINGS",
+    headline: "NOW เผชิญมุมมองสองขั้วก่อนรายงาน Q2 พรุ่งนี้ (22 ก.ค.) — Motley Fool ตั้งคำถาม 'ร่วงมา 51% จากจุดสูงสุด บน bet ว่า AI จะ gut ธุรกิจ — July22 จะพิสูจน์ว่าใครถูก'",
+    summary: "ServiceNow (NOW) เข้าสู่การรายงานผลประกอบการไตรมาส 2 ในวันที่ 22 กรกฎาคม ท่ามกลางมุมมองนักลงทุนที่แตกต่างกันอย่างสุดขั้ว บทความจาก The Motley Fool ตั้งชื่อว่า 'ServiceNow Is Down 51% as Wall Street Bets AI Will Gut Its Business. July 22 Will Show Who's Right' สะท้อนความกังวลว่า AI agent อาจ disrupt โมเดลธุรกิจ subscription ของบริษัท ขณะที่ CLSA เพิ่งเริ่ม coverage ด้วยเรตติ้ง Underperform ราคาเป้าหมาย $72 ซึ่งสวนทางกับมุมมองขาขึ้นของ Goldman Sachs (Buy, PT $145) และ Truist (Buy, PT $130) ตลาดคาดรายได้ $3.92 พันล้านดอลลาร์ (+22% YoY) และ EPS $0.86. นัยพอร์ต: NOW เป็น position ที่ conviction 6.7 ผลประกอบการพรุ่งนี้เป็น catalyst ชี้ขาดว่าจะยืนยัน thesis (agentic AI platform) หรือเปิดทาง STRONG SELL — ต้องจับตาใกล้ชิดที่สุดในพอร์ตสัปดาห์นี้.",
+    impact: "NEGATIVE", tickers: ["NOW"],
+    url: "https://www.fool.com/investing/2026/07/20/servicenow-is-down-51-as-wall-street-bets-ai-will/",
+  },
+  {
+    date: "2026-07-20", category: "EARNINGS",
+    headline: "MCO ซื้อขายที่ P/E 37 เท่า ก่อนรายงาน Q2 เช้าพรุ่งนี้ (22 ก.ค., คาด EPS $4.23 +18.8%) แพงกว่า S&P 500 เฉลี่ย (32x) แม้ผลตอบแทน YTD แทบเรียบ",
+    summary: "Moody's Corporation (MCO) มีกำหนดรายงานผลประกอบการไตรมาส 2 ปี 2026 ก่อนตลาดเปิดในวันพุธที่ 22 กรกฎาคม ตลาดคาด EPS ที่ $4.23 เพิ่มขึ้น 18.8% YoY หุ้นซื้อขายที่ระดับ P/E 37 เท่าของกำไรย้อนหลัง ซึ่งแพงกว่าค่าเฉลี่ย S&P 500 ที่ 32 เท่า ทั้งที่ผลตอบแทนหุ้นตั้งแต่ต้นปีแทบไม่ขยับ underperform ดัชนีที่ +9% นักวิเคราะห์หลายสำนัก (Morgan Stanley, BMO, Rothschild&Co Redburn) ปรับเพิ่มราคาเป้าหมายเล็กน้อยในช่วงที่ผ่านมา โดยบริษัทกำลังผนวก risk data เข้ากับ AI workflow ผ่านพันธมิตรกับ Intapp. นัยพอร์ต: MCO อยู่ใน watchlist (HOLD/WAIT, MOS -4.4%) — ราคาที่ premium valuation ต่อเนื่องทำให้ยังไม่เข้า entry zone $390-415.",
+    impact: "NEUTRAL", tickers: ["MCO"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/moodys-trades-37-times-earnings-115000952.html",
+  },
+  {
+    date: "2026-07-20", category: "EARNINGS",
+    headline: "GEV เตรียมรายงาน Q2 ก่อนตลาดเปิด 22 ก.ค. — คาด revenue $10.7B (+18.5% YoY) หลังหุ้นวิ่ง +62% YTD จาก demand gas turbine ล้นมือ (จองคิวถึงปี 2030)",
+    summary: "GE Vernova (GEV) มีกำหนดรายงานผลประกอบการไตรมาส 2 ก่อนตลาดเปิดในวันพุธที่ 22 กรกฎาคม นักวิเคราะห์คาดรายได้ราว $10.7 พันล้านดอลลาร์ เติบโต 18.5% YoY (เร่งตัวจาก 11.1% ไตรมาสเดียวกันปีก่อน) และ EPS ที่ $3.23 หุ้น GEV ปรับขึ้นแล้ว 62% ตั้งแต่ต้นปี 2026 จากดีมานด์ gas turbine ที่ล้นมือ เนื่องจาก hyperscaler ต้องการโครงข่ายไฟฟ้าเร่งด่วนสำหรับ AI data center แต่โครงข่ายเดิมขยายไม่ทัน ทำให้หันมาใช้ natural gas turbine แทนการรอ grid interconnect ที่ใช้เวลาหลายปี ปัจจุบันคิวจองโรงงานเต็มถึงปี 2030 แล้ว. นัยพอร์ต: GEV อยู่ใน watchlist (RE-ANALYSIS, conviction 6.0) — ราคาปัจจุบันสูงกว่า blendedFV มาก (mosPct -307.9%) ต้อง re-analyze หลัง earnings นี้.",
+    impact: "POSITIVE", tickers: ["GEV"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/ge-vernovas-next-earnings-report-131225168.html",
+  },
+  {
+    date: "2026-07-20", category: "TECH",
+    headline: "AVGO เซ็นสัญญา $30B+ กับ AAPL ผลิตชิป wireless connectivity แบบ custom 15,000 ล้านชิ้น 'Made in USA' + พันธมิตรใหม่กับ Standard Chartered",
+    summary: "Broadcom (AVGO) และ Apple ประกาศข้อตกลงมูลค่ากว่า $30 พันล้านดอลลาร์ระยะเวลาหลายปี เพื่อออกแบบและผลิตชิป wireless connectivity แบบ custom มากกว่า 15,000 ล้านชิ้นสำหรับผลิตภัณฑ์ Apple โดยผลิตในสหรัฐฯ นอกจากนี้ Broadcom ยังประกาศความร่วมมือเชิงกลยุทธ์ระยะยาวกับ Standard Chartered เพื่อเร่ง modernize โครงสร้างพื้นฐานทั่วโลกของธนาคาร ท่ามกลางที่บริษัทยังเผชิญการสอบสวนด้าน patent ขณะที่ธุรกิจ AI semiconductor ยังเติบโตแข็งแกร่ง (AI chip revenue $10.8 พันล้านดอลลาร์ +143% Q2, Q3 guide $29.4 พันล้านดอลลาร์). นัยพอร์ต: AVGO อยู่ใน watchlist (NO ADD, MOS -50.6%) — ข่าวดีเชิง business development แต่ valuation ยังแพงเกินเข้าซื้อ.",
+    impact: "POSITIVE", tickers: ["AVGO"],
+    url: "https://stockanalysis.com/stocks/avgo/",
+  },
+  {
+    date: "2026-07-20", category: "TECH",
+    headline: "V เปิดตัวแพลตฟอร์ม stablecoin ใหม่ + บัตรร่วมกับ Samsung — stablecoin-linked card volume พุ่ง +200% YoY ก่อนรายงาน Q3 28 ก.ค.",
+    summary: "Visa (V) ขยายบริการต่อเนื่องด้วยการเปิดตัวแพลตฟอร์ม stablecoin ใหม่ และบัตรเครดิตร่วมแบรนด์กับ Samsung โดยปริมาณธุรกรรมที่เชื่อมโยงกับ stablecoin เพิ่มขึ้นเกือบ 200% YoY ในไตรมาส 2 ปีงบประมาณ 2026 นักวิเคราะห์หลายสำนัก (Robert W. Baird PT $412, UBS $410, Morgan Stanley $415, Oppenheimer $403) ปรับเพิ่มหรือคงราคาเป้าหมายเชิงบวก และ Clear Street เริ่ม coverage ด้วยเรตติ้ง Buy PT $403 บริษัทมีกำหนดรายงานผล Q3 ปีงบประมาณ 2026 หลังตลาดปิดวันอังคารที่ 28 กรกฎาคม. นัยพอร์ต: V อยู่ใน watchlist (HOLD/WAIT, MOS -13.3%) — ธุรกิจใหม่ stablecoin เป็นบวกต่อ long-term moat แต่ราคายังเกิน entry zone $285-300 มาก.",
+    impact: "POSITIVE", tickers: ["V"],
+    url: "https://www.marketbeat.com/instant-alerts/visa-v-to-announce-earnings-on-tuesday-2026-07-21/",
+  },
+  {
+    date: "2026-07-20", category: "TECH",
+    headline: "LLY ประกาศซื้อกิจการ AtaiBeckley (psychedelic mental-health therapy) มูลค่า $2.8B ขยายนอกกลุ่ม GLP-1 หลัก — หุ้นร่วง -2.73%",
+    summary: "Eli Lilly (LLY) ประกาศเข้าซื้อกิจการ AtaiBeckley บริษัท clinical-stage ที่พัฒนายารักษาสุขภาพจิตด้วยสาร psychedelic มูลค่า $2.8 พันล้านดอลลาร์ เป็นการขยายธุรกิจออกนอกกลุ่มผลิตภัณฑ์ GLP-1 หลักที่เติบโต 55.5% YoY หุ้น LLY ร่วงลง 2.73% ในวันจันทร์ที่ 20 กรกฎาคม ซึ่งอาจสะท้อนความกังวลของนักลงทุนต่อการจัดสรรเงินทุนไปยังธุรกิจใหม่ที่มีความเสี่ยงสูงกว่า (การรักษาโรคจิตเวชด้วย psychedelic ยังอยู่ในขั้น clinical-stage) นักวิเคราะห์คาด EPS ไตรมาสปัจจุบันที่ $7.47 เติบโต 18.4% YoY. นัยพอร์ต: LLY อยู่ใน Big10 watch ไม่ใช่ position — เป็น sector read-through เชิงบวกต่อ pharma M&A appetite ที่อาจเกี่ยวโยงกับ REGN (position พอร์ต, เดียวกันกลุ่ม Healthcare).",
+    impact: "MIXED", tickers: ["REGN"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/eli-lilly-company-lly-trending-130005029.html",
+  },
   // ── 2026-07-17 ──────────────────────────────────────────
   {
     date: "2026-07-17", category: "MACRO",
