@@ -3,9 +3,104 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-07-21 12:00";
+const NEWS_LAST_UPDATED = "2026-07-26 09:30";
 
 const NEWS = [
+  // ── 2026-07-25 ──────────────────────────────────────────
+  {
+    date: "2026-07-25", category: "EARNINGS",
+    headline: "TSLA Q2 2026 earnings: EPS พลาดคาด, margin หดตัว, FCF ติดลบ — หุ้นร่วง -14.5% แม้ revenue beat",
+    summary: "Tesla รายงานผล Q2 2026: revenue beat cadence คาดการณ์ แต่ EPS พลาดเป้า operating margin หดตัวชัดเจนและ free cash flow พลิกติดลบ — หุ้นร่วงหนัก -14.5% วันเดียว สวนทางกับ deliveries Q2 ที่แข็งแกร่ง (480,126 คัน +25% YoY เกินคาด Wall Street ที่ ~406K) ที่ประกาศไปก่อนหน้า. นักวิเคราะห์ชี้ margin ที่แย่ลงมาจาก price-cutting strategy ที่ดัน shipment ให้ทำสถิติ แต่แลกด้วยกำไรต่อคันที่ลดลง ผสมกับ capex สูงต่อเนื่องเพื่อรองรับแผนขยายที่ยังไม่ชัดเจนผลตอบแทน. หุ้น TSLA -17% YTD สวนทาง Nasdaq ที่บวก. นัยพอร์ต: ไม่ใช่ position/watchlist โดยตรง แต่เป็น sentiment read สำคัญสำหรับกลุ่ม high-multiple growth/EV โดยรวม — 'ยอดขายดีแต่ margin แย่' อาจเป็น pattern เตือนสำหรับหุ้น growth อื่นในพอร์ตที่ trade บน premium multiple เช่นกัน.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html",
+  },
+  {
+    date: "2026-07-25", category: "SECTOR",
+    headline: "JPM ใกล้แตะ market cap $1 ล้านล้าน — Deutsche Bank ขึ้นเรตติ้งเป็น Buy PT $375 (จาก Hold)",
+    summary: "JPMorgan Chase เข้าใกล้การเป็นบริษัทมูลค่าตลาด $1 ล้านล้านดอลลาร์ หลังหุ้นทำสถิติสูงสุดใหม่ต่อเนื่อง (ราคาซื้อขายช่วง $347.50-353.49 เมื่อ 25 ก.ค.) ต่อยอดจากผล Q2 ที่ทุบสถิติกำไรสูงสุดในประวัติศาสตร์บริษัทที่รายงานไปก่อนหน้า (EPS $7.70 vs $5.85 คาด, equities trading +86% YoY). Deutsche Bank (Matt O'Connor) ปรับเรตติ้งขึ้นเป็น Buy จาก Hold พร้อมตัวราคาเป้าหมายขึ้นเป็น $375 จาก $345. ด้าน governance: บริษัทแก้ไข By-laws ให้ non-management directors เป็นผู้แต่งตั้ง Lead Independent Director + ออก medium-term notes ครอบคลุมหลาย maturity ถึงปี 2056. นัยต่อ Big10 watchlist JPM: ยืนยัน financials sector แข็งแกร่งต่อเนื่อง เป็น bullish signal กว้างสำหรับ banking/capital markets exposure.",
+    impact: "POSITIVE", tickers: ["JPM"],
+    url: "https://simplywall.st/stocks/us/banks/nyse-jpm/jpmorgan-chase/news/the-bull-case-for-jpmorgan-chase-jpm-could-change-following-1",
+  },
+  // ── 2026-07-24 ──────────────────────────────────────────
+  {
+    date: "2026-07-24", category: "REGULATION",
+    headline: "🌐 Trump ประกาศภาษีนำเข้าใหม่ 10-12.5% ครอบคลุม 60 ประเทศคู่ค้า (99.4% ของ import สหรัฐ) แทนที่ Section 122 ที่หมดอายุเที่ยงคืน 24 ก.ค.",
+    summary: "รัฐบาล Trump ประกาศภาษีนำเข้าชุดใหม่ 10-12.5% ครอบคลุม 60 ประเทศคู่ค้าหลักของสหรัฐ (คิดเป็น 99.4% ของมูลค่านำเข้าทั้งหมด) มีผลทันทีหลัง Section 122 tariff เดิม (10% blanket) หมดอายุเที่ยงคืนวันที่ 24 กรกฎาคม — เป็นการ pivot ครั้งใหม่หลัง Supreme Court ตัดสินว่าภาษี blanket เดิมไม่ชอบด้วยกฎหมาย โดยครั้งนี้ใช้อำนาจอ้างอิงการสอบสวนเรื่อง forced labor แทน สินค้าน้ำมัน/ก๊าซ/ปุ๋ย และสินค้าที่เข้าเกณฑ์ USMCA ได้รับการยกเว้น. USTR ยังเปิดการสอบสวนเพิ่มเติมกับอีก 16 ประเทศ (คิดเป็น 70% ของ import) เรื่อง overproduction ซึ่งอาจนำไปสู่ภาษีรอบใหม่. นัยพอร์ต: ความไม่แน่นอนนโยบายการค้ายังเป็น macro overhang ต่อเนื่อง กระทบ supply chain ต้นทุนของบริษัทข้ามชาติ (ADSK, ACN consulting global clients) และอาจกดดัน inflation/Fed policy path เพิ่มเติม.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.npr.org/2026/07/24/nx-s1-5905783/trump-tariff-trade-global-canada",
+  },
+  {
+    date: "2026-07-24", category: "REGULATION",
+    headline: "REGN เผชิญ securities class action lawsuit หลังเปิดเผยปัญหา protocol + ความล้มเหลวของ Phase 3 trial (melanoma therapy)",
+    summary: "Regeneron ถูกฟ้องเป็นคดี securities class action หลังจากเปิดเผยรายละเอียดเกี่ยวกับปัญหา protocol และความล้มเหลวในท้ายที่สุดของการทดลองทางคลินิก Phase 3 สำหรับยารักษามะเร็งผิวหนัง (melanoma) — ต่อยอดจากที่มีการ flag 'Phase 3 trial setback' ไปก่อนหน้านี้ (BofA หั่น fair value ~$42 เหลือ ~$833) ซึ่งตอนนั้นยังไม่ระบุรายละเอียดชัดเจน ตอนนี้ทราบแล้วว่าเกี่ยวกับ pipeline มะเร็งผิวหนัง ไม่ใช่ core Dupixent franchise. เกิดขึ้นก่อนรายงานผล Q2 2026 ในวันที่ 30 กรกฎาคม ที่นักวิเคราะห์คาด EPS ลดลง -22.4% YoY เหลือ $10.00 (GAAP $8.79) ท่ามกลาง one-time IPR&D charge ~$127M ที่ทราบอยู่แล้ว. นัยต่อ position REGN: legal risk เพิ่มเติมนอกเหนือจาก pipeline setback เดิม — ต้องติดตาม Q2 earnings call July30 อย่างใกล้ชิดเพื่อประเมิน scope ความเสียหายที่แท้จริง.",
+    impact: "NEGATIVE", tickers: ["REGN"],
+    url: "https://www.globenewswire.com/news-release/2026/07/24/3333061/32716/en/Regeneron-Pharmaceuticals-Inc-REGN-Faces-Securities-Class-Action-Amid-Disclosures-About-Key-Trial-s-Protocol-and-Ultimate-Failure-HBSS.html",
+  },
+  {
+    date: "2026-07-24", category: "SECTOR",
+    headline: "PGR ฟื้นตัว — Morgan Stanley ขึ้นเรตติ้งเป็น Equal-weight (จาก Underweight) PT $190→$210 ชี้ premium growth ดีกว่ากลุ่ม",
+    summary: "Progressive ฟื้นตัวต่อเนื่องหลัง Q2 earnings ที่ทำให้หุ้นร่วงหนัก -9.4% เมื่อ 16 ก.ค. — Morgan Stanley ปรับเรตติ้งขึ้นเป็น Equal-weight จาก Underweight พร้อมขึ้นราคาเป้าหมายเป็น $210 จาก $190 เมื่อ 24 กรกฎาคม ระบุว่า premium growth ของ Progressive 'ดีกว่ากลุ่มธุรกิจประกันภัยอย่างชัดเจน' ท่ามกลาง valuation ที่ reset ลงมาแล้ว หุ้นปิดที่ $213.84 เมื่อ 24 ก.ค. (+3.3% จากปิดก่อนหน้า) ฟื้นจากจุดต่ำสุด $205.22. Q2 combined ratio อยู่ที่ 87.3% แม้เดือนมิถุนายนเริ่มเห็นสัญญาณ pricing pressure ที่ 90%. นัยต่อ scout candidate PGR (รอ Charlie pipeline): sentiment เริ่มกลับมาเป็นบวกหลัง valuation reset — อาจเป็นจังหวะที่น่าสนใจมากขึ้นสำหรับการวิเคราะห์เต็มรูปแบบ.",
+    impact: "POSITIVE", tickers: ["PGR"],
+    url: "https://www.gurufocus.com/news/8978187/progressive-pgr-stock-rises-3-following-upgrade-from-morgan-stanley",
+  },
+  {
+    date: "2026-07-24", category: "MACRO",
+    headline: "🛢️ น้ำมันพุ่งแตะ $94.07/บาร์เรล (สูงสุดในรอบเดือน+) จากความขัดแย้งตะวันออกกลาง | ตลาดปิดใกล้เฟลตหลังสัปดาห์ผันผวน — Nasdaq -2% สัปดาห์",
+    summary: "ราคาน้ำมันดิบ Brent พุ่งขึ้นราว +3.4% แตะ $94.07 ต่อบาร์เรล สูงสุดในรอบกว่าหนึ่งเดือน จากความกังวลสถานการณ์ความขัดแย้งในตะวันออกกลางที่ทวีความรุนแรง กดดันตลาดหุ้นสหรัฐให้ปิดใกล้เฟลตในวันศุกร์ที่ 24 กรกฎาคม (S&P 500 +0.05% ปิด 7,411.98, Nasdaq -0.64% ปิด 24,975.82) ทำให้ทั้งสามดัชนีหลักปิดสัปดาห์ติดลบ นำโดย Nasdaq ที่ร่วง -2% ในรอบ 5 วันทำการ จากแรงกดดันหุ้นกลุ่ม semiconductor ที่อ่อนตัวหลัง TSM ให้ guidance capex สูงเกินคาดบดบังผลประกอบการที่แข็งแกร่ง. นัยพอร์ต: geopolitical + oil overhang ยังกดดัน risk sentiment วงกว้าง โดยเฉพาะ growth/tech ที่ sensitive ต่อ risk premium — สอดคล้องกับสัปดาห์ earnings ใหญ่ที่มีทั้งข่าวดี (NOW, JPM) และข่าวร้าย (TSLA, GEV) ปะปนกัน.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html",
+  },
+  // ── 2026-07-23 ──────────────────────────────────────────
+  {
+    date: "2026-07-23", category: "EARNINGS",
+    headline: "NOW Q2 FY26 ทุบคาดการณ์ — subscription rev +24.5% YoY, non-GAAP op margin ~30%, AI ACV ทะลุ $1B | หุ้น +7.44%",
+    summary: "ServiceNow รายงานผล Q2 2026 เหนือกว่า high-end ของ guidance ทั้ง revenue และ margin — subscription revenue เติบโต +24.5% YoY, non-GAAP operating margin เข้าใกล้ 30% ซึ่งเป็นระดับสูงสุดในรอบหลายไตรมาส. AI products (Now Assist และ agentic AI) มี annual contract value ทะลุ $1 พันล้านดอลลาร์เป็นครั้งแรก และ management ระบุว่าดีมานด์ยังเกินความคาดหมายต่อเนื่อง — เป็นการ 'shrug off' ความกังวลเรื่อง AI disruption ที่เคยกดดันหุ้นก่อนหน้านี้ได้อย่างชัดเจน. หุ้นพุ่งขึ้น +3% ช่วงเช้า วันที่ 23 กรกฎาคม และปิดวันด้วยการบวก +7.44%. Analyst consensus 49 ราย ให้เรตติ้ง Strong Buy เฉลี่ย PT $140.25 (upside ~42%). นัยต่อ position NOW: เป็น catalyst ยืนยัน thesis ที่แข็งแกร่งที่สุดของพอร์ตในรอบเดือนนี้ — MOS ควรดีขึ้นมากจากราคาที่พุ่งขึ้น, ลด sentiment risk ที่เคยมีก่อนหน้า earnings.",
+    impact: "POSITIVE", tickers: ["NOW"],
+    url: "https://finance.yahoo.com/markets/article/servicenow-stock-jumps-on-strong-revenue-as-company-shrugs-off-ai-disruption-fears-133019432.html",
+  },
+  {
+    date: "2026-07-23", category: "EARNINGS",
+    headline: "TSM ร่วงต่อเนื่องเกือบ -15% ในเดือนนี้ แม้ Q2 กำไรทุบสถิติ +77% — ตลาดกังวล capex guide $60-64B (สูงกว่าคาดเดิม 14%)",
+    summary: "แม้ TSMC จะรายงานหนึ่งในไตรมาสที่แข็งแกร่งที่สุดในประวัติศาสตร์บริษัท (กำไรสุทธิ Q2 พุ่ง +77% YoY แตะสถิติใหม่ ทำกำไรเกินไตรมาสสองหลักติดต่อกันเป็นไตรมาสที่ 9, ยกเป้ารายได้ปี 2026 เป็นโตกว่า 40% จากเดิม >30%) แต่หุ้นกลับร่วงลงเกือบ -15% นับตั้งแต่ต้นเดือนกรกฎาคม สาเหตุหลักคือ capex guidance ปี 2026 ที่ประกาศออกมาสูงถึง $60-64 พันล้านดอลลาร์ ซึ่งสูงกว่า range เดิมถึง 14% และเกินกว่าที่นักวิเคราะห์คาดไว้แม้จะปรับเพิ่มไปแล้ว บวกกับ margin guidance ไตรมาสหน้าที่เบาลงเหลือ 65-67% จากต้นทุนช่วงเริ่มต้นของ 2nm node. DA Davidson และ TD Cowen ยังคงขึ้น price target (เป็น $500 และ $440 ตามลำดับ) ยืนยันมุมมองระยะยาวยังบวก. นัยต่อ Big10 watchlist TSM และ position ADSK/AVGO (ห่วงโซ่ AI semis): pattern 'beat แต่หุ้นร่วง' ซ้ำรอยเดิมจาก capex-fear ที่เคยกดดัน AVGO มาก่อน — เป็นสัญญาณว่าตลาดเริ่มระมัดระวังเรื่อง ROI ของ AI capex cycle มากขึ้น.",
+    impact: "MIXED", tickers: ["TSM"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-tsm-stock-down-061104350.html",
+  },
+  // ── 2026-07-22 ──────────────────────────────────────────
+  {
+    date: "2026-07-22", category: "EARNINGS",
+    headline: "GOOGL Q2 2026: EPS $9.11 ทุบคาด, Cloud โต +82%, revenue $119.8B สถิติใหม่ | แต่ capex guide ขึ้นเป็น $195-205B + EU antitrust fine $4.67B",
+    summary: "Alphabet รายงานผล Q2 2026 แข็งแกร่งเป็นสถิติใหม่รอบด้าน: EPS $9.11, revenue $119.8 พันล้านดอลลาร์ (สถิติสูงสุด), Google Cloud เติบโต +82% YoY เร่งขึ้นจาก +63% ไตรมาสก่อน — ยืนยัน AI monetization กำลังเกิดขึ้นจริงในธุรกิจ Cloud. อย่างไรก็ตาม บริษัทปรับเพิ่ม capex guidance ปี 2026 ขึ้นเป็น $195-205 พันล้านดอลลาร์ (จาก $180-190B เดิม) สร้างความกังวลเรื่อง free cash flow ที่จะถูกกดดันต่อเนื่อง นอกจากนี้ยังเผชิญค่าปรับ EU antitrust $4.67 พันล้านดอลลาร์ และคำสั่งปฏิบัติตาม Digital Markets Act เรื่อง data sharing รวมถึงความล่าช้าของ Gemini 3.5 Pro ที่ยังเป็น overhang ต่อเนื่อง. นัยต่อ position GOOGL (catalyst สำคัญที่สุดของสัปดาห์): ธุรกิจหลัก (Cloud, Search) แข็งแกร่งเกินคาดชัดเจน แต่ capex เพิ่มขึ้นอีกและความเสี่ยง regulatory ใหม่อาจทำให้ MOS/stopDist ต้อง re-assess ในรอบ portfolio review ถัดไป.",
+    impact: "MIXED", tickers: ["GOOGL"],
+    url: "https://www.fool.com/investing/2026/07/25/whats-going-on-with-alphabet-stock/",
+  },
+  {
+    date: "2026-07-22", category: "TECH",
+    headline: "🔴 RDDT ร่วง -9% เสีย mkt cap $3.2B หลัง WSJ รายงาน Reddit อาจไม่ต่อสัญญา AI licensing deal กับ Google ($60M/ปี)",
+    summary: "Reddit ร่วงลงหนัก -9% เมื่อวันที่ 22 กรกฎาคม เสียมูลค่าตลาดไปราว $3.2 พันล้านดอลลาร์ หลัง Wall Street Journal รายงานว่าผู้บริหาร Reddit หารือภายในเรื่องการต่อสัญญา AI content licensing กับ Google (มูลค่าเดิม ~$60 ล้านดอลลาร์/ปี เซ็นตั้งแต่ก.พ. 2024 ก่อน IPO) ว่ายังคุ้มค่าต่อผลประโยชน์ระยะยาวหรือไม่ — มีการพิจารณาจำกัดการเข้าถึงข้อมูลของ Google สำหรับเทรน AI หรือเรียกร้องค่าธรรมเนียมสูงขึ้นมากสำหรับการต่อสัญญารอบใหม่ สะท้อนความตึงเครียดระหว่างมูลค่าที่แท้จริงของการขาย license เนื้อหาให้ AI กับผลกระทบที่ AI มีต่อ traffic ของแหล่งข้อมูลต้นทาง. นัยต่อ position RDDT: **นี่คือความเสี่ยงที่ตรงจุดที่สุดต่อ thesis หลักของ RDDT** ซึ่งสร้างบนฐาน AI data licensing moat กับ Google โดยเฉพาะ — ถ้า Reddit เลือกเรียกค่าธรรมเนียมสูงขึ้นมากจนดีลล่ม หรือ Google ปฏิเสธเงื่อนไขใหม่ อาจกระทบ revenue stream สำคัญที่วางไว้เป็น driver การเติบโตปี 2027 ต้องติดตามใกล้ชิดที่สุดก่อน Q2 earnings July30.",
+    impact: "NEGATIVE", tickers: ["RDDT"],
+    url: "https://www.cnbc.com/2026/07/22/reddit-stock-google-ai-content-deal.html",
+  },
+  {
+    date: "2026-07-22", category: "EARNINGS",
+    headline: "MCO Q2 2026 beat: revenue $2.185B (+15.1% YoY), EPS $4.68 (+10% เหนือคาด) | ขึ้น buyback guide เป็น $3B + reiterate high-single-digit growth",
+    summary: "Moody's รายงานผล Q2 2026 เหนือความคาดหมายชัดเจน: revenue $2.185 พันล้านดอลลาร์ (+15.1% YoY), non-GAAP EPS $4.68 (สูงกว่า consensus ~10%) เมื่อวันที่ 22 กรกฎาคม บริษัทยืนยันคาดการณ์การเติบโตรายได้ระดับ high-single-digit percentage ต่อเนื่อง พร้อมปรับเพิ่ม share repurchase guidance เป็น $3 พันล้านดอลลาร์สำหรับปีงบประมาณ 2026 และปรับแคบ FY26 adjusted EPS guide เหลือ $16.50-17.00. Morgan Stanley/BMO/Rothschild/JPMorgan ต่างขึ้น price target ต่อเนื่อง (สูงสุด JPMorgan $600). หุ้นร่วง -3.1% เมื่อ July21 ก่อนประกาศผล (profit-taking ก่อน earnings มากกว่าสัญญาณลบ). นัยต่อ watchlist MCO (WAITED, entry zone $390-415): ผลประกอบการยืนยัน quality/moat แข็งแกร่งต่อเนื่อง แต่ราคายังคงเกิน entry zone มาก — ยังไม่มีเหตุผลเปลี่ยนสถานะ WAIT.",
+    impact: "POSITIVE", tickers: ["MCO"],
+    url: "https://www.chartmill.com/news/MCO/Chartmill-51354-Moodys-Corp-NYSEMCO-Beats-Q2-Estimates-as-Quality-Stock-Momentum-Continues",
+  },
+  {
+    date: "2026-07-22", category: "EARNINGS",
+    headline: "GEV Q2 2026: EPS พลาดคาด -20.6% แต่ revenue beat +2.9% + record orders — หุ้นร่วง -6.4% แม้ยกเป้าทั้งปี (Morgan Stanley มองเป็น knee-jerk reaction)",
+    summary: "GE Vernova รายงานผล Q2 2026 แบบผสม: EPS $2.41 ต่ำกว่าคาด $3.04 (-20.6%) แต่ revenue $11.10 พันล้านดอลลาร์ เหนือคาด $10.79B (+2.9%) พร้อม record orders และปรับเพิ่ม guidance รายได้และกระแสเงินสดทั้งปีขึ้น — แต่หุ้นกลับร่วงลง -6.4% ในวันประกาศผล (22 ก.ค.) ส่วนหนึ่งเป็นเพราะบริษัทประกาศแผนขยายกำลังผลิต gas turbine เป็น 30GW ต่อปีภายในปี 2030 (จากเป้าเดิม 24GW ปี 2028) ซึ่งตลาดตีความเป็นสัญญาณ capex เพิ่มขึ้น. Morgan Stanley ปรับ price target ขึ้นเป็น $1,350 พร้อมระบุว่าการร่วงของหุ้นเป็น 'knee-jerk reaction' มากกว่าปัญหาเชิงพื้นฐาน — หุ้น GEV บวกแล้ว +62% ตั้งแต่ต้นปีก่อนหน้าการประกาศผล. นัยต่อ watchlist GEV (HOLD/WAIT — ต้อง RE-ANALYSIS ด่วน): FV เดิม $263 ล้าสมัยมาก เทียบราคาปัจจุบันที่สูงกว่าหลายเท่า — ควรส่ง Charlie วิเคราะห์ใหม่ทั้งหมดหากสนใจ.",
+    impact: "MIXED", tickers: ["GEV"],
+    url: "https://www.thestreet.com/investing/stocks/gev-ge-vernova-stock-morgan-stanley-price-target",
+  },
+  {
+    date: "2026-07-22", category: "TECH",
+    headline: "AAPL ทำ ATH ใหม่ $327 ใกล้แตะ market cap $5 ล้านล้าน — intraday record ครั้งที่ 15 ของปี 2026",
+    summary: "Apple ทำจุดสูงสุดใหม่ตลอดกาลที่ $327 ในช่วงบ่ายวันพุธ (22 ก.ค.) มูลค่าตลาดใกล้แตะ $5 ล้านล้านดอลลาร์ นับเป็น intraday record ครั้งที่ 15 ของปี 2026 หุ้นบวกแล้ว 20% YTD หนุนโดยรายได้ Services ที่ทำสถิติใหม่ $30.98 พันล้านดอลลาร์ใน Q2 FY2026 และ iPhone revenue $56.99B (+17% YoY). ด้านธุรกิจ: ขยายดีล custom chip กับ Broadcom ต่อถึงปี 2031, มีรายงานว่ากำลังพิจารณาขึ้นราคา iPhone รุ่นใหม่ และเตรียมเปิดตัวโปรแกรม device-leasing ร่วมกับ Klarna ในวันที่ 28 ก.ค. ด้าน bear case ยังคงเป็นเรื่อง valuation พรีเมียม 39.67x, ต้นทุน memory ที่อาจกดดัน margin, และคดีฟ้อง OpenAI เรื่อง trade secret ที่ยังไม่มีข้อสรุป. นัยต่อ Big10 watchlist AAPL: momentum ยังแข็งแกร่งต่อเนื่อง แต่ valuation เริ่มตึงตัวมากขึ้นเรื่อยๆ.",
+    impact: "POSITIVE", tickers: ["AAPL"],
+    url: "https://www.fool.com/investing/2026/07/23/huge-news-for-apple-stock-investors/",
+  },
   // ── 2026-07-21 ──────────────────────────────────────────
   {
     date: "2026-07-21", category: "MACRO",
