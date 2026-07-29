@@ -3,9 +3,68 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-07-26 09:30";
+const NEWS_LAST_UPDATED = "2026-07-29 09:00";
 
 const NEWS = [
+  // ── 2026-07-29 ──────────────────────────────────────────
+  {
+    date: "2026-07-29", category: "MACRO",
+    headline: "🛢️ อิหร่านโจมตีทหารสหรัฐฯ แบบไม่ทันตั้งตัว สหรัฐฯ สกัดได้ — น้ำมันพุ่ง +5% แตะ $83+/บาร์เรล ก่อนวัน Fed ประกาศดอกเบี้ย",
+    summary: "กองทัพสหรัฐฯ สกัดการโจมตีของอิหร่านต่อทหารสหรัฐฯ ในตะวันออกกลางได้สำเร็จเมื่อคืนวันที่ 28-29 กรกฎาคม ทำให้ความขัดแย้งที่เพิ่งเริ่มคลี่คลายกลับมาตึงเครียดอีกครั้ง ราคาน้ำมันดิบ WTI พุ่งขึ้นราว +5% ทะลุ $83 ต่อบาร์เรล ตัดขาลง 3 วันติดต่อกัน — เกิดขึ้นในวันเดียวกับที่ Fed ประกาศผลการประชุมดอกเบี้ยเดือนกรกฎาคม (คาดคงอัตราดอกเบี้ยไว้ที่ 3.50-3.75% แต่ตลาดยังคง price-in โอกาส hike ในเดือนตุลาคม). Futures ดัชนีหุ้นสหรัฐฯ ผันผวนหลังข่าว. นัยพอร์ต: oil spike ซ้ำเติม inflation overhang ที่กดดัน Fed ให้ hawkish ต่อเนื่อง เพิ่มความเสี่ยงต่อ risk-on regime ที่ Atlas ประกาศไว้ (ค้าง re-call 17 วัน) — ต้อง watch reaction ของตลาดต่อทั้ง Fed decision และ geopolitical escalation พร้อมกันวันนี้.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.bloomberg.com/news/articles/2026-07-28/stock-market-today-dow-s-p-live-updates",
+  },
+  {
+    date: "2026-07-29", category: "EARNINGS",
+    headline: "📅 วันประชุมผลประกอบการหนาแน่นที่สุดของสัปดาห์ — MSFT + META รายงานคืนนี้ | AMZN, RDDT, REGN, FICO ตามมา 29-30 ก.ค.",
+    summary: "วันที่ 29 กรกฎาคมเป็นจุดสูงสุดของ earnings season สำหรับ Big10 + portfolio positions: Microsoft รายงานผล FY26 Q4 หลังตลาดปิด (จับตา capex AI $190B guidance ต่อเนื่อง), Meta รายงาน Q2 หลังตลาดปิดเช่นกัน (consensus revenue ~$60.2B +26.6% YoY, EPS ~$7.13-7.23 — นักลงทุนกังวล capex AI $125-145B guidance ว่าจะแปลงเป็น cash-generative growth ได้จริงหรือไม่). ตามมาด้วย Amazon (30 ก.ค., คาด EPS $1.82 +8.3% YoY, revenue +17.3%), Reddit (30 ก.ค., guidance $715-725M +44% YoY) และ Regeneron (30 ก.ค. ก่อนตลาดเปิด, คาด EPS $10.00 -22.4% YoY จาก one-time charge) ซึ่งทั้งคู่เป็น position ที่ถืออยู่ในพอร์ต. FICO (watchlist) รายงานผลวันนี้เช่นกัน (คาด revenue +26.6% YoY, EPS +40.3%). นัยพอร์ต: สัปดาห์นี้เป็น binary risk สูงสุดสำหรับ RDDT (ต้องยืนยัน/ปฏิเสธประเด็น Google AI licensing) และ REGN (ต้องพิสูจน์ scope ความเสียหายจาก securities lawsuit) — ควร monitor ใกล้ชิดที่สุด.",
+    impact: "MIXED", tickers: ["MSFT", "META", "AMZN", "RDDT", "REGN", "FICO"],
+    url: "https://www.fool.com/investing/2026/07/26/microsofts-next-earnings-report-on-july-29-could-send-the-stock-soaring-heres-why/",
+  },
+  // ── 2026-07-28 ──────────────────────────────────────────
+  {
+    date: "2026-07-28", category: "SECTOR",
+    headline: "💾 Semiconductor selloff ลามต่อ (Micron -4%, Nvidia -1.2%, Intel/AMD -3%+) ขณะ Dow หมุนเงินเข้าหุ้น value (Sherwin-Williams +8%, Coca-Cola +5%)",
+    summary: "หุ้นกลุ่ม semiconductor ร่วงต่อเนื่องเมื่อ 28 กรกฎาคม นำโดย Micron -4%+ ใน premarket, Nvidia -1.2%, Intel และ AMD ร่วงมากกว่า -3% ท่ามกลาง global chip selloff ที่ลามมาจากเอเชีย (KOSPI ร่วงหนักช่วงปลายเดือน) ขณะที่ Dow Jones กลับรีบาวด์แรง +1.03% (537 จุด) จากการหมุนเงินออกจากกลุ่มเทคโนโลยี/เซมิคอนดักเตอร์เข้าสู่หุ้น value แบบดั้งเดิม — Sherwin-Williams +8% จากผล Q2 ดีเกินคาด และ Coca-Cola +5% จาก top-and-bottom-line beat พร้อมปรับเพิ่ม full-year outlook. นัยพอร์ต: pattern การหมุนเงินออกจาก AI-capex-heavy tech เข้าหุ้น value/defensive สอดคล้องกับที่เห็นใน ADBE/ACN ที่เด้งแรงจาก 'deep-value narrative' ช่วงปลายเดือน — ต้องติดตามว่า AVGO (watchlist, ยัง NO ADD เพราะ valuation rich) จะปรับฐานลงมาเข้า entry zone หรือไม่จากแรงกดดันกลุ่มนี้.",
+    impact: "MIXED", tickers: ["AVGO"],
+    url: "https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html",
+  },
+  {
+    date: "2026-07-28", category: "TECH",
+    headline: "🚀 Alphabet เตรียมระดมทุน $80B ผ่าน equity offering — Berkshire Hathaway ทุ่ม $10B ซื้อหุ้นราคา $348-352 (สูงกว่าราคาตลาดปัจจุบัน)",
+    summary: "Reuters รายงานว่า Alphabet กำลังเตรียมระดมทุนมากกว่า $80 พันล้านดอลลาร์ผ่าน equity offerings เพื่อสนับสนุนการลงทุน AI infrastructure ที่มีค่าใช้จ่ายสูงขึ้นต่อเนื่อง (capex guide ล่าสุด $195-205B) — ส่วนหนึ่งของดีลนี้รวมถึง Berkshire Hathaway ที่จะซื้อหุ้นมูลค่า $10 พันล้านดอลลาร์ผ่าน private placement แบ่งเป็น $5B Class A ที่ราคา $351.81/หุ้น และ $5B Class C ที่ราคา $348.20/หุ้น — ทั้งคู่สูงกว่าราคาตลาดปัจจุบันของ GOOGL ที่ $319.74 อย่างมีนัยสำคัญ (+10-12%). นัยต่อ position GOOGL: เป็นสัญญาณ high-conviction จาก Warren Buffett/Berkshire ที่ยินดีจ่ายพรีเมียมเหนือราคาตลาดปัจจุบัน ท่ามกลางที่หุ้นกำลังอยู่ในจุดวิกฤตที่สุดของพอร์ต (stopDist 3.05%) — เป็นเหตุผลสนับสนุน thesis ว่า capex-fear sell-off เป็นเรื่องชั่วคราวไม่ใช่ fundamental deterioration แต่ยังต้องรอดู equity offering ตัวจริงว่าจะ dilutive กับผู้ถือหุ้นเดิมแค่ไหน.",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/alphabet-googl-aims-raise-80-145607346.html",
+  },
+  {
+    date: "2026-07-28", category: "EARNINGS",
+    headline: "V Visa Q3 FY26 beat (EPS $3.32 vs $3.29) แต่ประกาศตัดพนักงาน 2,600 ตำแหน่ง (7% ของพนักงาน) จาก AI reshaping งาน",
+    summary: "Visa รายงานผล Q3 FY2026 เมื่อ 28 กรกฎาคม เหนือความคาดหมายเล็กน้อย — EPS $3.32 vs คาด $3.29, revenue $11.63B vs คาด $11.61B แต่ตลาดตอบรับลบใน after-hours หลังบริษัทประกาศแผนตัดพนักงาน 2,600 ตำแหน่ง คิดเป็นราว 7% ของพนักงานทั้งหมด โดยระบุเหตุผลว่าเป็นการปรับโครงสร้างองค์กรให้ efficient ขึ้นท่ามกลาง AI ที่กำลัง reshape การทำงาน. Visa ยังคงเดินหน้าขยายธุรกิจนอกเหนือจาก core payment เช่น Visa Destinations (travel platform, เปิดตัว 25 มิ.ย.) นัยต่อ watchlist V (HOLD/WAIT, MOS -13.3%): ผลประกอบการ beat แต่ job cuts อาจสะท้อนความกังวลเรื่อง margin/growth ระยะกลางที่ผู้บริหารเห็นแต่ยังไม่พูดตรงๆ — ราคายังคงเกิน entry zone $285-300 อยู่มาก ไม่กระทบ deployment decision.",
+    impact: "MIXED", tickers: ["V"],
+    url: "https://markets.financialcontent.com/stocks/article/stockstory-2026-7-28-visa-nysev-posts-better-than-expected-sales-in-q2-cy2026",
+  },
+  // ── 2026-07-27 ──────────────────────────────────────────
+  {
+    date: "2026-07-27", category: "TECH",
+    headline: "🍎 Apple ทวงบัลลังก์บริษัทมูลค่าสูงสุดในโลกคืนจาก Nvidia — Market Cap แตะใกล้ $5 ล้านล้านดอลลาร์",
+    summary: "Apple กลับมาเป็นบริษัทมูลค่าตลาดสูงที่สุดในโลกอีกครั้งเมื่อวันจันทร์ที่ 27 กรกฎาคม แซงหน้า Nvidia หลังหุ้นพุ่งขึ้น +22% ตั้งแต่ต้นปี 2026 และมูลค่าตลาดแตะใกล้ระดับ $5 ล้านล้านดอลลาร์ชั่วคราว. บริษัทเตรียมเปิดตัวโปรแกรม Apple Upgrade (leasing iPhone รูปแบบใหม่) แทนที่ iPhone Upgrade Program เดิมเมื่อ 28 กรกฎาคม พร้อมมีกระแสข่าวปรับราคา iPhone ขึ้น และ John Ternus (hardware chief) เตรียมขึ้นเป็น CEO คนใหม่ในเดือนกันยายน. รายงานผล Q3 FY26 กำหนด 30 กรกฎาคม (คาด EPS $1.89 +20.4% YoY). นัยพอร์ต: เป็น Big10 benchmark ที่สำคัญ — โมเมนตัมบวกของ AAPL สวนทางกับ MSFT/META/GOOGL ที่ถูกกดดันจาก capex fears สะท้อนว่าตลาดยังแยกแยะระหว่างบริษัทที่ capex หนักกับเบา แม้ AAPL เองก็เผชิญคำถามเรื่อง AI strategy ที่ล่าช้ากว่าคู่แข่ง.",
+    impact: "POSITIVE", tickers: ["AAPL"],
+    url: "https://www.fool.com/investing/2026/07/23/huge-news-for-apple-stock-investors/",
+  },
+  {
+    date: "2026-07-27", category: "SECTOR",
+    headline: "💻 หุ้น Enterprise Software เด้งแรงพร้อมกัน — ADBE +5.6%, ADSK +6.2%, NOW ทะลุ $112 หลังแรงกดดัน IBM-driven jitters คลายตัว",
+    summary: "หุ้นกลุ่ม enterprise software ฟื้นตัวพร้อมกันช่วง 27-28 กรกฎาคม — Adobe (ADBE) พุ่ง +5.6% สู่ $237.75 ท่ามกลาง narrative 'deep-value' (GF Score 82/100, ยังถูกมองว่า undervalued แม้โดน BofA/Morgan Stanley downgrade รุนแรงต้นเดือน), Autodesk (ADSK) พุ่ง +6.2% แล้วต่อด้วย +5.12% อีกวัน จากแรงหนุน Guggenheim Buy initiation และ MaintainX acquisition narrative, ServiceNow (NOW) ยังคงแนวโน้มบวกต่อเนื่องจาก Q2 beat แตะช่วง $106.50-112.28. สาเหตุหลักคือความกังวลจาก IBM ที่เคยกดดัน sentiment กลุ่ม software เริ่มคลายตัว บวกกับการหมุนเงินออกจาก semiconductor ที่ selloff ต่อเนื่อง. นัยพอร์ต: บวกโดยตรงต่อ 3 positions หลัก (ADBE weight 9.34%, ADSK 5.22%, NOW 2.03%) — ควรติดตามว่า momentum นี้ยั่งยืนหรือเป็นเพียง short-covering bounce ก่อนที่ ADBE/CRM จะรายงานผลจริงในเดือนกันยายน.",
+    impact: "POSITIVE", tickers: ["ADBE", "ADSK", "NOW"],
+    url: "https://www.benzinga.com/trading-ideas/movers/26/07/60736010/adobe-stock-rises-as-enterprise-software-sentiment-rebounds",
+  },
+  {
+    date: "2026-07-27", category: "SECTOR",
+    headline: "VEEV ได้รับ Buy rating เพิ่มจาก RBC Capital ต่อจาก Wells Fargo/Guggenheim ต้นเดือน — สนับสนุน conviction upgrade watch",
+    summary: "Veeva Systems ได้รับ Buy rating เพิ่มเติมจาก RBC Capital เมื่อ 27 กรกฎาคม ต่อเนื่องจาก Wells Fargo (คงเรตติ้ง Buy) และ Guggenheim (initiate Buy) เมื่อ 22 กรกฎาคม — median price target จาก 20 นักวิเคราะห์ในช่วง 6 เดือนที่ผ่านมาอยู่ที่ $235 (upside ~29% จากราคาปัจจุบัน ~$183). หุ้นบวก +14.38% ในรอบเดือนที่ผ่านมา เหนือกว่า Medical sector (+3.97%) และ S&P 500 (+0.42%) อย่างชัดเจน หลัง FY27 guidance ที่ยกระดับขึ้นเป็น revenue $3.65B และ EPS $9.05 เมื่อไตรมาสก่อน. นัยต่อ watchlist VEEV (conviction 6.7, สถานะ 'conviction upgrade watch'): analyst sentiment ที่แข็งแกร่งขึ้นต่อเนื่องเป็นปัจจัยสนับสนุนการพิจารณาปรับ conviction ขึ้นเป็น 7.0+ ตามที่เคย flag ไว้ตั้งแต่ต้นเดือนมิถุนายน — ราคายังคงอยู่เหนือ entry zone $148-158 ค่อนข้างมาก รอ pullback หรือ conviction upgrade อย่างเป็นทางการก่อน deploy.",
+    impact: "POSITIVE", tickers: ["VEEV"],
+    url: "https://simplywall.st/stocks/us/healthcare/nyse-veev/veeva-systems/news/should-veevas-upgraded-2027-outlook-and-q2-earnings-setup-re",
+  },
   // ── 2026-07-25 ──────────────────────────────────────────
   {
     date: "2026-07-25", category: "EARNINGS",
