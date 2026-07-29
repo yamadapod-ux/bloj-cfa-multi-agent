@@ -1,6 +1,6 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด: Scout Round 14 (2026-07-21) — ดู Scout History ด้านล่าง*
+*ล่าสุด: Scout Round 15 (2026-07-29) — ดู Scout History ด้านล่าง*
 
 ---
 
@@ -43,6 +43,10 @@
 | NKE | Nike, Inc. | Apparel / Footwear Consumer Brand | 2026-07-05 | $44.09 | 3.22% | ~0% (FY2026 rev flat +0.19%, guide no growth next 2Q) | 16-18% (ROIC 12-14% borderline, mixed sources) | ⚠️ Value bucket เชิง turnaround: ราคาลง -75% จาก 5-yr peak, P/E <20, Morningstar จัดเป็น undervalued wide-moat #1 (Jun16); แต่ revenue growth แบนราบ 3 ปีติด + China -12% + guide ไม่มี growth 2 ไตรมาสข้างหน้า = deep value ไม่ใช่ quality compounder ตอนนี้ — เสี่ยง value trap ถ้า turnaround ไม่มา; sector ใหม่ทั้งหมด (Consumer Brand ไม่มีใน portfolio เลย) | **NEW — CAUTION, turnaround risk — รอ Analysis** |
 | CRDO | Credo Technology Group Holding Ltd. | Semiconductor / AI Networking Optics (AEC + Optical DSP) | 2026-07-06 | $241.91 (Blended FV $185.86, MOS -23.2%) | FCF margin 34.32% (FCF Yield 0.90%) | +205.68% FY2026 YoY | Conviction 6.3/10 (Emma 6/Quinn 6/Bear 7) — ROE 22.9% | Analyzed 2026-07-06 (Charlie/Emma/Quinn/Bear, Morgan QA PASS). Growth Gate FAIL: Conviction 6.3 < 6.5 required (Rev Growth +205.68% ผ่านสบาย แต่ Reverse DCF 1.65x > 1.2x threshold + Multiple Percentile inconclusive-leans-fail). Max: SKIP/WAIT — NO DEPLOY ที่ราคานี้ ($241.91). Entry zone T1 $175-190 (1.5%) / T2 $150-165 (1.0%). Stop $130. **Re-analysis trigger:** (1) ราคาย่อสู่ $150-175 zone, หรือ (2) Q1 FY2027 earnings (~Aug 2026) ยืนยัน growth durability (growth ชะลอไม่เกิน 90-100% YoY + op margin ≥32%) + customer concentration ชัดเจนขึ้น (top customer <35% revenue) — ถ้า conviction upgrade ≥6.5 → re-visit deploy. | **HOLD/WAIT FOR PULLBACK — Analyzed, conv 6.3 < 6.5 gate** |
 | PGR | The Progressive Corporation | Insurance / Personal Auto & Property P&C (Digital/Telematics) | 2026-06-13 (scout) | $205.90 (2026-07-21, -19.2% จาก 52W high $254.93) | n/a (insurer, FCF FY2025 $17.2B) | +10.49% TTM Revenue | ROE 34.94% / ROIC 28.70% | Analyzed 2026-07-22 (Charlie/Emma/Quinn/Bear, Morgan QA CONDITIONAL PASS). Value bucket — both gates FAIL: MOS +1.0% (< 15% required, Blended FV $208 vs price $205.90) + Conviction 6.67/10 (Emma 7/Quinn 6/Bear 7) < 7.0 gate. Growth สูงสุดในกลุ่ม peer (ALL/TRV/CB/ACGL) แต่ operating margin 16.56% ต่ำสุดในกลุ่ม — underwriting discipline gap. หุ้นร่วง 2 รอบใน 1 สัปดาห์ (-9% June premium deceleration + -2.98% Q2 margin concern) ที่ Bear ยืนยันเป็น confirmed signal ไม่ใช่ noise. Max: WAITED — NO DEPLOY. Entry zone $175-185. Stop $144 (-20%). **Re-analysis trigger:** (1) ราคาย่อสู่ entry zone, หรือ (2) Q3 2026 earnings (~Oct 2026) ยืนยัน combined ratio กลับ ≤86% + premium growth reaccelerate ≥6-7% YoY → re-visit deploy. | **HOLD/WAIT FOR PULLBACK — Analyzed 2026-07-22, conv 6.67 < 7.0 gate** |
+| ZTS | Zoetis Inc. | Animal Health / Pharma | 2026-07-29 | $75.35-76.60 (2026-07-24/27, -53% to -56% จาก 52w high $161.77-172.23) | 4.8% (unlevered FCF yield) | +3% Q1 2026 (guide FY2026 organic +2-5%, decelerating) | ROE 58-67.75% / ROIC 18.03% | Value bucket candidate — FCF-positive + wide moat (animal health duopoly กับ Elanco, patent-protected pet Rx เช่น Simparica/Librela) + ROE/ROIC ผ่าน gate สบายๆ; P/E ~12x ถูกมากเทียบ historical; แต่ growth ชะลอหนัก (organic guide เหลือ 2-5%) + analyst PT ถูกหั่นต่อเนื่อง (Barclays $136→$85 Jul1, MS $115→$99 Jul22) = momentum negative ชัดเจน ไม่ใช่แค่ sentiment overreaction — ต้องแยกว่าเป็น cyclical pet-care destocking หรือ moat erosion จริงก่อนตั้ง conviction | **NEW — รอ Analysis (CAUTION: decelerating growth + PT cuts)** |
+| DXCM | DexCom, Inc. | Medical Devices / Continuous Glucose Monitoring | 2026-07-29 | $75.12 (2026-07-28, -16.5% จาก 52w high $89.98) | 4.8% (unlevered FCF yield, 82nd percentile sector) | +15.6% FY2025 (Rev $4.66B) | ROE 34.50% / ROIC 31.73-33.98% | Value bucket clean pass — CGM duopoly กับ Abbott FreeStyle Libre = switching cost สูง (insurance/formulary lock-in); ROE/ROIC extraordinary; FCF $1B 2 ปีติด; revenue growth ใกล้ 20% threshold (เฉียด Growth bucket ด้วย); sector ใหม่ทั้งหมดในพอร์ต (ไม่ overlap ISRG/REGN/VRTX ที่เคย scout) | **NEW — รอ Analysis** |
+| ICE | Intercontinental Exchange, Inc. | Financial Exchange / Market Data & Clearing | 2026-07-29 | $152.72 (2026-07-28, -19.3% จาก 52w high $189.35) | ~4.4% (FCF $4.29B TTM / EV proxy, EV/FCF 22.58x) | +7% FY2025 (Rev $9.9B) | ROE 13.85-19.36% | Wide moat exchange/data network (NYSE ownership + mortgage tech data + clearing house) — FCF-positive + ROE ผ่าน gate; sector ใหม่ทั้งหมด (ต่างจาก CME ที่เคย scout ตกไปแล้ว, ต่างจาก MA/V/PYPL payment network); ย่อ -19% จาก ATH; ⚠️ earnings July 30 (พรุ่งนี้) = event risk ก่อนส่งวิเคราะห์เต็ม ควรรอผลก่อนหรือ flag ให้ Charlie ระวัง | **NEW — รอ Analysis (earnings July 30 ก่อน full analysis)** |
+| CPRT | Copart, Inc. | Salvage Auto Auction / Vehicle Remarketing | 2026-07-29 | $29.79 (2026-07-27, -42% ใน 52 สัปดาห์) | FCF growth กำลังชะลอ (ไม่ใช่ yield แข็งเหมือน ZTS/DXCM) | ~1-2% (near-flat, ชะลอหนักจาก historical double-digit) | ROE 17.13% / ROIC 30.48-30.50% | ⚠️ CAUTION — auction duopoly moat (กับ IAA/RB Global) + ROIC สูงมาก + P/E 17.65x ถูกกว่า historical avg 40% แต่ revenue growth ใกล้แบนราบ (salvage/total-loss volume headwind จาก insurance loss ratio trends) + FCF growth momentum อ่อนลง + CEO Jeff Liaw ลาออกมีผล Jul31 2026 (leadership transition risk) — โปรไฟล์คล้าย NKE/ACN (deep value แต่ growth ไม่ชัดว่ากลับมาเมื่อไหร่) ไม่ใช่ default recommend | **NEW — CAUTION, growth stall + CEO transition — รอ Analysis เฉพาะถ้า CIO สนใจ contrarian value** |
 
 ---
 
@@ -1668,3 +1672,79 @@ ADBE, NOW, GOOGL, CRM, RDDT, REGN, ACN, ADSK, BAH, MCO, EOG, PGR, DVN, NEM, GD, 
 **Target Analysis Dates:** ไม่มี (ไม่มี candidate ผ่านเกณฑ์ส่ง Charlie รอบนี้)
 
 **Excluded universe เพิ่มเติมจาก Round 14 (ห้ามซ้ำรอบถัดไป):** DASH, RBLX, OKTA, AON, EQIX, TTWO (รวมกับ Round 13 excluded ~105+ tickers + WPM, FNV, CI)
+
+
+---
+
+## Scout Report — 2026-07-29 (Max Scout Mode — Round 15: Quality Value Scan under Stale-Regime Caution)
+
+**Trigger:** CIO "หาหุ้นไหม" (Scout Pipeline). Portfolio state (2026-07-29 review เดียวกันวันนี้): Total $9,980.90, Cash $6,132.34 (61.44%), 8 positions (ADBE/NOW/GOOGL/CRM/RDDT/REGN/ACN[1.4sh]/ADSK) — sector heavy Software/Tech (6/8). Regime: RISK-ON 3/4 (Atlas last formal call **2026-07-12, ค้างมา 17 วันแล้ว** — ดู flag ด้านล่าง).
+
+**Market Context:** Iran attack ทหารสหรัฐฯ ใหม่ (July29, oil +5%), Fed rate decision วันนี้, semiconductor selloff ต่อเนื่อง, tariff Section 301 ใหม่ 60+ ประเทศ — macro overhang สะสมเพิ่มเติมตั้งแต่ regime call ล่าสุด
+
+**Excluded universe (~115+ tickers ที่ analyzed/held/watchlist แล้ว — ห้ามซ้ำ):** อ้างอิง excluded universe เดิมทั้งหมด (Round 1-14, ~110+ tickers รวม ADBE/NOW/GOOGL/CRM/RDDT/REGN/ACN/ADSK/BAH/MCO/EOG/PGR/DVN/NEM/GD/BKNG/NFLX/ISRG/MA/WDAY/SNOW/V/FICO/VEEV/GEV/MSFT/META/AVGO/NVDA/AMD/MRVL/INTU/PWR/LDOS/QCOM/PG/APP/ANET/SPOT/APH/RKLB/CCJ/HIMS/TMDX/UBER/DUOL/STRL/NOK/ALAB/FPS/CLFD/PYPL/VRTX/XOM/CVX/WMT/COST/BAC/SPGI/RTX/HWM/LMT/NOC/FIX/CLS/LNG/CME/CB/LHX/STE/ACGL/BSX/TOST/TW/VRT/LRCX/FOUR/NET/HOOD/PEN/AMAT/CDNS/KLAC/IDXX/SYK/DHR/MDT/ETN/TTD/COIN/S/CRWV/ZS/DDOG/AXON/LLY/NVO/CRWD/LULU/PLTR/FTAI/SHOP/NKE/CRDO/MPWR/ORCL/WPM/FNV/CI/DASH/RBLX/OKTA/AON/EQIX/TTWO) + จาก CIO context เพิ่ม: TSM, AAPL, AMZN, TSLA, BRK.B, JPM
+
+### Screen Methodology
+1. อ่าน agent_notes/atlas/2026-07-12_regime.md (regime stale 17 วัน) + dashboard/portfolio.js + positions.md (8 positions, cash 61.44%)
+2. WebSearch หา sector ใหม่ที่ portfolio ยังไม่มี — เน้น Animal Health, Medical Devices/CGM, Financial Exchange/Data, Alt Asset Managers, Homebuilders, Vehicle Remarketing, Life Insurance
+3. WebSearch verify ราคา ≥2 sources ทุกตัว + ROE/ROIC/FCF yield/Revenue growth
+4. Filter Growth bucket: Rev >20% YoY + ROIC ≥12% | Value bucket: FCF-positive + wide moat + ROE/ROIC ≥12%
+5. คัดออก universe ~115+ tickers ข้างต้น
+
+### Screening Results — 2026-07-29
+
+| # | Ticker | Company | Sector | ราคา (source, 2 cross-check) | 52w High | ย่อจาก High | ROE/ROIC | Rev Growth | FCF Yield | Moat | ผ่าน Filter? |
+|---|--------|---------|--------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | **DXCM** | DexCom, Inc. | Medical Devices / CGM | **$75.12** (stockanalysis.com + aggregator, Jul28 close) | $89.98 | **-16.5%** | ROE 34.50% / ROIC 31.73-33.98% | +15.6% FY2025 | 4.8% (unlevered, 82nd pctile sector) | Wide (CGM duopoly กับ Abbott Libre, formulary lock-in) | **PASS — clean, top pick** |
+| 2 | **ICE** | Intercontinental Exchange | Financial Exchange / Data | **$152.72** (CNN + macrotrends aggregator, Jul28 close, 2 sources exact match) | $189.35 | **-19.3%** | ROE 13.85-19.36% | +7% FY2025 | ~4.4% (FCF $4.29B TTM / EV/FCF 22.58x) | Wide (NYSE ownership + mortgage data + clearing network effects) | **PASS — sector ใหม่, แต่ ⚠️ earnings Jul30 พรุ่งนี้ = event risk** |
+| 3 | **ZTS** | Zoetis Inc. | Animal Health / Pharma | **$75.35-76.60** (CNBC Jul24 + stockanalysis Jul27, 2 sources consistent) | $161.77-172.23 (source conflict, ใช้ต่ำสุด conservative) | **-53% to -56%** | ROE 58-67.75% / ROIC 18.03% | +3% Q1 2026 (guide 2-5%, decelerating) | 4.8% unlevered | Wide (animal health duopoly กับ Elanco) | **CONDITIONAL PASS — quality/valuation ผ่านสุดขั้ว แต่ growth ชะลอ + analyst PT ถูกหั่นต่อเนื่อง (momentum negative)** |
+| 4 | **CPRT** | Copart, Inc. | Salvage Auto Auction | **$29.79** (Yahoo Finance Jul27 close) | ~$51 (down 42% 52w) | **-42%** | ROE 17.13% / ROIC 30.48-30.50% | ~1-2% (near-flat, ชะลอหนักจาก historical) | FCF growth ชะลอ (ไม่แข็งเท่า ROIC บ่งบอก) | Wide (auction duopoly กับ IAA/RB Global) | **CAUTION — ROIC สุดยอดแต่ growth stall + CEO transition Jul31 = deep-value/turnaround risk profile คล้าย NKE** |
+
+**Source:** DXCM $75.12 (stockanalysis.com WebSearch Jul28 close) + $75.37 (2nd aggregator WebSearch, consistent) | ROE 34.50%/ROIC 31.73-33.98% จาก macrotrends.net + gurufocus.com | FCF yield 4.8% unlevered จาก finbox.com (finbox.com/NASDAQGS:DXCM/explorer/fcf_unlev_yield_ltm) | Rev +15.6% FY2025 ($4.66B) จาก stockanalysis.com | ICE $152.72 (CNN markets + macrotrends cross-reference WebSearch, both Jul28 close, exact match) | 52w range $121.80-$189.35 จาก upstox.com | ROE 13.85-19.36% (gurufocus.com/term/roe/ICE + eulerpool.com) | FCF $4.29B TTM + Rev +7% FY2025 $9.9B จาก company earnings coverage (Yahoo Finance) | ZTS $75.35 (CNBC WebSearch Jul24 close) + $75.56/$76.60 (stockanalysis.com + intraday Jul27, consistent range) | ROE 58-67.75% (stockanalysis.com + gurufocus.com, range reflects different trailing periods) | ROIC 18.03% + FCF yield 4.8% จาก stockanalysis.com/statistics | Analyst PT cuts: Barclays $136→$85 (Jul1) + Morgan Stanley $115→$99 (Jul22) จาก WebSearch coverage | CPRT $29.79 (Yahoo Finance WebSearch Jul27 close) + $28.59 (Jul8, financecharts.com P/E calc cross-check) | ROE 17.13% / ROIC 30.48-30.50% จาก gurufocus.com (gurufocus.com/term/roic/CPRT) | Revenue growth Q3 FY2026 +2.1%, Q2 FY2026 -3.6% จาก SEC 8-K filings | CEO Jeff Liaw stepping down effective Jul31 2026 จาก WebSearch news coverage
+
+### Candidates ที่สำรวจแต่ตกรอบ — 2026-07-29
+
+| Ticker | Sector | เหตุผลที่ตกรอบ | ปัญหาหลัก |
+|--------|--------|---------------|-----------|
+| **SNPS** (Synopsys) | EDA Software / Semiconductor Design | Rev +31.88% ผ่าน Growth gate ชัด แต่ **ROIC 2.33%** ต่ำมาก, P/E 82-120x extreme | ROIC ตก quality gate หนัก แม้ growth ดี |
+| **APO** (Apollo Global Management) | Alternative Asset Management | ROE 18.10% ผ่าน + Rev growth 28.18% ผ่าน แต่ **P/E 81.11x** extreme (earnings quality ผันผวนจาก GAAP mark-to-market, ไม่ใช่ FRE) — net margin ร่วงจาก 16.85%→9.67% Q1 2026 | Valuation extreme + earnings quality ไม่ชัด ต้องการ specialist alt-asset-manager analysis (FRE vs GAAP) ก่อนตัดสิน |
+| **KKR** | Alternative Asset Management | ROE 7.1-9.2% < 12% gate ชัดเจน แม้ revenue growth คาด 32.8% | ROE ตก quality gate |
+| **DHI** (D.R. Horton) | Homebuilder | ROE 12.75% ผ่านหวุดหวิด แต่ **revenue -3% to -9% YoY** (housing downcycle จริง ไม่ใช่ pullback ชั่วคราว) | Revenue หดตัวจริงจาก affordability crisis — cyclical downturn ไม่ใช่ value opportunity |
+| **CSCO** (Cisco Systems) | Networking Hardware / AI Infra | ROE 25.23% ผ่านดี + Rev +9.21% แต่ **ราคาใกล้ 52w high** (up 46-50% YTD) = ไม่มี pullback/MOS เลย | ไม่มี MOS — ราคาวิ่งไปมากแล้วจาก AI networking demand |
+| **ETSY** | E-commerce Marketplace | Rev growth เพียง +4.61% (< 20% Growth threshold), GF Value ประเมิน overvalued +37.6% เหนือ intrinsic value | ไม่มี MOS + growth ต่ำเกิน |
+| **MET** (MetLife) | Life Insurance | ROE 16-17% ผ่าน แต่ **ราคาใกล้ 52w high** ($81.84 vs high $85.29) + revenue growth อ่อน (+1.3% Q1) | ไม่มี MOS — ราคาอยู่ยอด range |
+| **ALGN** (Align Technology) | Medical Devices / Orthodontics | ROE 10.39% < 12% gate + revenue growth เพียง 3-4% | ตกทั้ง quality gate และ growth gate |
+
+### Sector Coverage Update (2026-07-29)
+
+| Sector | มีในพอร์ต/Watchlist แล้ว | Scout ใหม่ 2026-07-29 |
+|--------|------------------------|----------------------|
+| Medical Devices / CGM | ไม่มีเลย (ISRG=robotic surgery, REGN/VRTX=biotech ต่างกัน) | **DXCM** — sector ใหม่ทั้งหมด |
+| Financial Exchange / Market Data | CME (ตกรอบไปแล้ว), FICO (analytics ต่างกัน) | **ICE** — sector ใหม่ (ต่างจาก CME ที่เคยตกรอบ) |
+| Animal Health / Pharma | ไม่มีเลย | **ZTS** — sector ใหม่ (conditional — growth ชะลอ) |
+| Salvage Auto Auction | ไม่มีเลย | **CPRT** — sector ใหม่ (caution — growth stall + CEO transition) |
+| Alt Asset Management | ไม่มีเลย | APO/KKR ตกรอบ (valuation extreme / ROE ต่ำ) |
+| Homebuilder | ไม่มีเลย | DHI ตกรอบ (revenue หดตัวจริง) |
+| EDA Software | ANET/CDNS(ตกรอบ)/AVGO ในลิสต์เดิม | SNPS ตกรอบ (ROIC ต่ำมาก) |
+
+### Max's Overall Assessment — Round 15
+
+1. **DXCM = top pick รอบนี้** — clean pass ทุกเกณฑ์ (ROE 34.5%, ROIC ~32%, FCF yield 4.8%, moat duopoly ชัดเจน) โดยไม่มี red flag ที่ต้อง caveat เหมือนตัวอื่น — ย่อ -16.5% จาก ATH ให้ entry ที่สมเหตุสมผล sector ใหม่ 100% ไม่ overlap อะไรในพอร์ตเลย
+
+2. **ICE = priority #2 ที่สะอาด** — wide moat exchange ชั้นดี (NYSE + data + clearing), ROE/FCF ผ่านเกณฑ์, ย่อ -19% จาก ATH แต่ earnings รายงานพรุ่งนี้ (Jul30) — ถ้าส่ง Charlie ควรรอผล earnings ก่อน หรือ flag ให้ Bear ระวัง binary event risk ในรายงาน
+
+3. **ZTS และ CPRT เป็น "deep value with a catch"** — ทั้งคู่มี quality metrics (ROE/ROIC) ที่ยอดเยี่ยมมาก แต่ทั้งคู่มี growth deceleration ที่ชัดเจนและ leadership/analyst-sentiment headwind (ZTS: PT cuts ต่อเนื่อง 2 รอบ, CPRT: CEO ลาออก + revenue เกือบแบนราบ) — โปรไฟล์คล้าย NKE ที่เคย flag ไว้ก่อนหน้า: เข้าเกณฑ์ตัวเลขแต่ต้องมี Bear case หนักก่อนตั้ง conviction ไม่ใช่ default BUY
+
+4. **Universe อิ่มตัวต่อเนื่อง (Round 15, ~115+ tickers)** — รอบนี้เจอ clean pass 2 ตัว (DXCM/ICE) + conditional 2 ตัว (ZTS/CPRT) จากที่ตกรอบ 6 ตัว (SNPS/APO/KKR/DHI/CSCO/ETSY/MET/ALGN) — hit rate ปกติเทียบกับ 14 รอบก่อนหน้า
+
+5. **⚠️⚠️⚠️ Regime staleness flag สำคัญที่สุดของรอบนี้:** Atlas regime call ล่าสุด (RISK-ON 3/4) ค้างมา **17 วันแล้ว** (2026-07-12) ท่ามกลาง macro overhang ใหม่จำนวนมาก (Iran attack ใหม่ July29, Fed decision วันนี้, semiconductor selloff ต่อเนื่อง, tariff Section 301 ใหม่ 60+ ประเทศ) — **scouting วันนี้ทำได้ปกติ (ไม่กระทบขั้นตอนสแกน) แต่ deployment ใดๆ เข้า candidate เหล่านี้ต้องรอ Atlas re-call regime ก่อนเสมอ** ตาม CLAUDE.md Macro Regime Gate (TRANSITIONAL-CAUTIOUS/RISK-OFF จะ suspend Force Deploy + ห้าม open new position ทั้งหมดทันที) — ยิ่งค้างนานยิ่งเสี่ยงตัดสินใจ deploy บน regime ที่อาจไม่ตรงสภาพตลาดจริงแล้ว
+
+**คำแนะนำ Max:** ส่ง **DXCM** ให้ Charlie วิเคราะห์เต็มก่อน (top pick, clean, sector ใหม่ 100%) ตามด้วย **ICE** (รอผล earnings Jul30 ก่อน) — **ZTS/CPRT ส่งได้เฉพาะถ้า CIO สนใจ deep-value/turnaround bet โดยเฉพาะ** (ต้อง Bear case หนักเหมือน NKE precedent) — **แต่ priority อันดับ 1 ที่แท้จริงของสัปดาห์นี้คือ Atlas ต้อง re-call regime ด่วนที่สุด** (ค้าง 17 วัน) ก่อนตัดสินใจ deploy อะไรทั้งสิ้น ไม่ว่าจะเป็น candidate ใหม่เหล่านี้หรือ backlog เดิม (PGR/ACGL/MCO/ADSK T2)
+
+**Target Analysis Dates (Charlie SLA ≤5 วัน):**
+- DXCM → target **2026-08-03** (top pick, clean pass)
+- ICE → target **2026-08-03** (รอดูผล earnings Jul30 ก่อน ถ้าไม่มี surprise ใหญ่)
+- ZTS → WATCH (ส่งเฉพาะถ้า CIO ต้องการ deep-value bet, ต้อง Bear case หนัก เรื่อง growth deceleration)
+- CPRT → WATCH (ส่งเฉพาะถ้า CIO ต้องการ contrarian bet, ต้อง Bear case หนัก เรื่อง CEO transition + growth stall)
+
+**Excluded universe เพิ่มเติมจาก Round 15 (ห้ามซ้ำรอบถัดไป):** SNPS, APO, KKR, DHI, CSCO, ETSY, MET, ALGN (รวมกับ Round 1-14 excluded ~110+ tickers + DASH, RBLX, OKTA, AON, EQIX, TTWO) — PASS candidates (DXCM, ICE, ZTS, CPRT) อยู่ใน Pending Analysis table ด้านบนแล้ว ไม่ต้องเพิ่มในนี้
