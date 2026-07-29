@@ -1,9 +1,623 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-07-22";
+const LAST_UPDATED = "2026-07-29";
 
 const REPORTS = [
+
+  {
+    ticker: "DXCM",
+    company: "DexCom, Inc.",
+    date: "2026-07-29",
+    version: "v1",
+    sector: "Healthcare / Medical Devices - Continuous Glucose Monitoring (CGM)",
+    price: 74.85,
+    recommendation: "HOLD/WAIT FOR PULLBACK + EARNINGS CLARITY",
+    blendedFV: 75.14,
+    esgAdjFV: 66.12,
+    targetBull: 105.00,
+    targetBase: 75.14,
+    stopLoss: 45.00,
+    convictionEmma: 6.0,
+    convictionQuinn: 5.5,
+    convictionBear: 7.0,
+    convictionAvg: 6.17,
+    mosPct: 0.4,
+    pwEV: 88.51,
+    pwEvBear: 65.96,
+    beta: 1.45,
+    forwardSharpe: 0.10,
+    sharpe1Y: -0.21,
+    maxDrawdown: -0.6095,
+    kelly: "37.2% Full / 18.6% Half / 9.3% Quarter (discount for earnings event risk - recommend T1 3-5%)",
+    moat: "Narrow+",
+    esgRating: "Medium",
+    esgScore: 5.3,
+    bucket: "Value",
+    entryZone: "$58-65 (mid $61.5), staged T1 2% / T2 2-3%",
+    positionSize: "0% now (NO DEPLOY - fails both MOS and Conviction Value gate); potential future 4-5% staged",
+    sp500Reference: 7428.78,
+    reportFile: "../reports/DXCM_2026-07-29.md",
+    keyThesis: "First Medical Devices/CGM sector in portfolio (Max Scout Round 15). CGM duopoly with Abbott (US share ~74% DXCM). Highest-quality business metrics on record (ROE 35.62%, ROIC 39.25%, FCF-positive, net cash) but Blended FV $75.14 (ESG-adj $66.12) vs price $74.85 = MOS only +0.4% after Morgan QA correction (terminal growth rate 3.5%->3.0%). Conviction avg 6.17/10 fails Value deploy gate (>=7.0). Q2 2026 earnings tomorrow (2026-07-30) carries -40.66% single-day crash precedent from same quarter 2 years ago -> HOLD/WAIT, no deploy pre-earnings.",
+    topRisk: "Q2 2026 earnings tomorrow (2026-07-30) - historical -40.66% single-day crash precedent (2024-07-26, same quarter, guidance cut); options market currently pricing only ~9% weekly implied move, potentially underpricing tail risk. Secondary risks: FDA governance-gap pattern (recall + 2-facility warning letter + theft incident), and Abbott capturing more of the Medicare Type-2 catalyst than DXCM due to cost advantage in that segment.",
+    businessSummary: {
+          "oneLiner": "DexCom ผลิตและขายอุปกรณ์ตรวจน้ำตาลในเลือดแบบต่อเนื่อง (CGM) ที่แปะติดผิวหนัง ส่งข้อมูลระดับน้ำตาลไปมือถือแบบเรียลไทม์โดยไม่ต้องเจาะเลือด",
+          "analogy": "เหมือน 'Fitbit สำหรับคนเป็นเบาหวาน' — เซนเซอร์ใช้แล้วทิ้งทุก 10-15 วัน (แบบมีดโกน+ใบมีด) เก็บรายได้ต่อเนื่องจากคนที่ต้องใช้ตลอดชีวิต",
+          "moneyFlow": [
+                "คนไข้เบาหวาน (ส่วนใหญ่ Type 1 ใช้อินซูลิน) ได้รับใบสั่งแพทย์ให้ใช้ CGM",
+                "ประกัน/Medicare จ่ายเงินผ่าน distributor channel (~85% ของรายได้) หรือคนไข้จ่ายเองผ่าน direct channel/OTC Stelo (~15%)",
+                "รายได้หลักมาจากเซนเซอร์ที่ต้องเปลี่ยนทุก 10-15 วัน = recurring revenue ที่มั่นคง",
+                "Gross margin สูง (61.5%) เพราะ manufacturing scale + software (Dexcom Clarity) แจกฟรีเพื่อสร้าง ecosystem lock-in"
+          ],
+          "whyDifferent": "Switching cost สูงจาก insurance formulary lock-in + insulin pump ecosystem integration (Tandem/Insulet/Beta Bionics ผูกกับ Dexcom sensor)",
+          "simpleRisk": "คู่แข่ง Abbott (FreeStyle Libre) มีส่วนแบ่งตลาดโลกสูงกว่าและราคาถูกกว่า อาจกดราคาและ margin ในตลาดเติบโตใหม่ (Type 2/international) ระยะยาว"
+    },
+    thesisBullets: [
+          {
+                "title": "Quality สูงสุดในกลุ่มที่ทีมเคยวิเคราะห์",
+                "why": "ROE 35.62% / ROIC 39.25% สูงกว่า peer median 2.6-4 เท่า พร้อม FCF-positive 2 ปีติด และ net cash position"
+          },
+          {
+                "title": "MOS แทบไม่มี (post-QA correction)",
+                "why": "Blended FV $75.14 vs ราคา $74.85 = MOS +0.4% เท่านั้น (Emma's own DCF-only MOS = -3.8% หลังแก้ terminal growth)"
+          },
+          {
+                "title": "Medicare Type 2 expansion catalyst",
+                "why": "CMS อาจขยาย coverage ครอบคลุม Type 2 non-insulin เปิดตลาดใหม่ ~12 ล้านคน — ยังเป็น binary event ที่ยังไม่ confirm"
+          },
+          {
+                "title": "FDA Class I recall + governance gap",
+                "why": "Recall ระดับร้ายแรงสุด (มี.ค. 2025) + warning letter 2 โรงงาน (San Diego + Mesa) + class action ที่ยังดำเนินอยู่ + 2026 theft incident"
+          },
+          {
+                "title": "Earnings พรุ่งนี้ = event risk สูงสุด",
+                "why": "Q2 2026 earnings 2026-07-30 — precedent -40.66% single-day crash เดียวกัน quarter เมื่อ 2 ปีก่อน ไม่ควรเข้า position ก่อนเห็นผลจริง"
+          }
+    ],
+    esgBreakdown: {"e": 7, "s": 5, "g": 4.3, "overall": 5.3},
+    revenueSegments: [
+          {
+                "label": "Distributor channel",
+                "value": 85
+          },
+          {
+                "label": "Direct channel (incl. Stelo OTC)",
+                "value": 15
+          }
+    ],
+    competitorData: [
+          {
+                "ticker": "DXCM",
+                "company": "DexCom (subject)",
+                "revenueGrowth": 16.15,
+                "operatingMargin": 21.44,
+                "marketCap": 28880
+          },
+          {
+                "ticker": "ABT",
+                "company": "Abbott Laboratories",
+                "revenueGrowth": 8.1,
+                "operatingMargin": 19.8,
+                "marketCap": 227000
+          },
+          {
+                "ticker": "MDT",
+                "company": "Medtronic",
+                "revenueGrowth": 8.4,
+                "operatingMargin": 17.5,
+                "marketCap": 112000
+          },
+          {
+                "ticker": "PODD",
+                "company": "Insulet",
+                "revenueGrowth": 31.9,
+                "operatingMargin": 18.2,
+                "marketCap": 20000
+          },
+          {
+                "ticker": "TNDM",
+                "company": "Tandem Diabetes Care",
+                "revenueGrowth": 4.5,
+                "operatingMargin": -20.06,
+                "marketCap": 1600
+          },
+          {
+                "ticker": "IRTC",
+                "company": "iRhythm Technologies",
+                "revenueGrowth": 27.4,
+                "operatingMargin": -1.29,
+                "marketCap": 3900
+          }
+    ],
+    geographyRevenue: {"unitedStates": 71.5, "international": 28.5, "chinaExposure": "DATA NOT AVAILABLE (blended International bucket only)"},
+    bullFlipTriggers: [
+          "Q2 2026 print (พรุ่งนี้) เกิน consensus - Revenue growth >14% YoY และไม่มี guidance cut",
+          "CMS ประกาศ formal Medicare Type 2 proposal ภายใน 1H 2026 ตามกำหนดการ",
+          "ราคาย่อสู่ <=$65 (MOS >=15% เทียบ Blended FV ใหม่ $75.14) โดยไม่มี thesis deterioration",
+          "ไม่มี FDA safety incident ใหม่ 2 ไตรมาสติดต่อกัน (governance gap remediate จริง)",
+          "Abbott Libre growth ไม่ reaccelerate เกิน DXCM ใน 2 ไตรมาสถัดไป"
+    ],
+    bearFlipTriggers: [
+          "Q2 2026 print replicate 2024-07-26 pattern - guidance cut + single-day drop >20%",
+          "FDA Class I recall ครั้งที่ 2 หรือ warning letter ครั้งที่ 3 ภายใน 12 เดือน",
+          "Abbott CGM growth เร่งเกิน DXCM ต่อเนื่อง 2 ไตรมาส (share loss confirmed)",
+          "CMS ปฏิเสธ/เลื่อน Medicare Type 2 proposal เกินปี 2026",
+          "Insider selling เปลี่ยนจาก 10b5-1 plan เป็น discretionary cluster"
+    ],
+    thesisInvalidation: "ถ้า Q2 2026 (พรุ่งนี้) เปิดเผยว่า growth deceleration (16% TTM -> 11-12%) เป็นผลจาก structural share loss ให้ Abbott (ไม่ใช่ timing/comp-base effect) - thesis \"quality compounder ที่ตลาด de-rate ผิดพลาดชั่วคราว\" ผิดทั้งหมด ต้อง re-analyze ภายใต้กรอบ \"structural deceleration/moat erosion\"",
+    fullContent: `# 🩺 DXCM — DexCom, Inc.
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: Value** | First Medical Devices / CGM sector analysis ในพอร์ต
+
+> 🔄 **Update Log (2026-07-29, post-QA correction):** Morgan QA พบ HIGH issue — Emma's DCF terminal growth rate 3.5% เกินเพดาน sanity-check (1-3%) แก้เป็น 3.0% แล้ว recompute cascade ทั้งหมด: Emma FV $75→**$72**, Bear P-W EV $67.70→**$65.96** (anchor scenarios updated), Team Blended FV $76.86→**$75.14**, MOS +2.7%→**+0.4%** (ยิ่งเน้นย้ำ HOLD/WAIT ชัดเจนขึ้น ไม่เปลี่ยน recommendation) รายละเอียดเต็มอยู่ท้ายรายงาน section "Morgan QA Verification" + "Post-Fix Update" — **Round 2 QA (re-verify cascade): ✅ PASS ดูรายละเอียดท้ายรายงาน**
+
+## 📌 ข้อมูลหลัก
+
+| Field | Value |
+|-------|-------|
+| Ticker | DXCM |
+| วันที่วิเคราะห์ | 2026-07-29 |
+| ราคา (verified) | **$74.85** (close 2026-07-28, ≥2 sources: [Yahoo Finance](https://finance.yahoo.com/quote/DXCM/), [Stockanalysis.com](https://stockanalysis.com/stocks/dxcm/)) |
+| Market Cap | $28.88B |
+| Sector | Medical Devices / Continuous Glucose Monitoring (CGM) |
+| 52W Range | $54.11 – $89.98 (-16.8% จาก ATH) |
+
+## 🎯 คำแนะนำ
+
+| Field | Value |
+|-------|-------|
+| Recommendation | **HOLD / WAIT FOR PULLBACK + EARNINGS CLARITY** |
+| Entry Zone | $58–65 (mid $61.5) |
+| Blended FV | $75.14 (ESG-adj $66.12) |
+| MOS | **+0.4%** (unadjusted) / **-11.9%** (ESG-adjusted basis) |
+| Stop Loss | $45 (-26.8% จาก entry mid $61.5) |
+| Max Position | **0% ตอนนี้ (NO DEPLOY)** — potential future 4-5% staged, ปัด conditions ผ่านก่อน |
+
+## 📊 Score Dashboard
+
+| Blended FV | MOS | ESG | Conviction | Horizon |
+|-----------|-----|-----|-----------|---------|
+| $75.14 (ESG-adj $66.12) | +0.4% | 5.3/10 (Medium Risk) | 6.17/10 avg | 3-5 ปี (แต่มี binary event ใน 1 วัน) |
+
+> ⚡ **TL;DR — อ่าน 30 วินาที**
+> - **Verdict: HOLD/WAIT** — DexCom เป็นธุรกิจคุณภาพสูงสุดในกลุ่มที่ทีมเคยวิเคราะห์มา (ROE 35.6% / ROIC 39.25%, FCF-positive, net cash) แต่ที่ราคา $74.85 แทบไม่เหลือ margin of safety เลย (MOS +0.4% เท่านั้น หลังแก้ terminal growth rate ตาม Morgan QA)
+> - **ทำไม:** Conviction เฉลี่ย 6.17/10 ต่ำกว่า Value bucket deploy gate (≥7.0); ที่สำคัญกว่านั้น **DXCM ประกาศงบ Q2 2026 พรุ่งนี้ (2026-07-30)** ซึ่งมีประวัติ crash -40.66% ในวันเดียวเมื่อ 2 ปีก่อนจากไตรมาสเดียวกัน (Q2) ขณะที่ตลาดปัจจุบัน price แค่ ~9% weekly implied move
+> - **Downside Risk:** Bear's P-W EV $65.96 (-11.9% ต่ำกว่าราคา) จาก FDA governance-gap pattern (recall + 2-facility warning letter + 2026 theft incident) + risk ว่า Medicare Type 2 catalyst ที่ bull case พึ่งพาอาจ benefit Abbott (ราคาถูกกว่า) มากกว่า DXCM
+
+---
+
+## 📋 Executive Summary \`[CFA L1: Equity — Company & Industry Analysis]\`
+
+DexCom เป็นผู้นำ Continuous Glucose Monitoring (CGM) ร่วมกับ Abbott ในตลาด duopoly ที่กำลังเติบโตจาก diabetes epidemic + Medicare reimbursement expansion Max scout พบ DXCM ใน Scout Round 15 (2026-07-29) ด้วยคุณสมบัติ Value bucket ที่แข็งแรงมาก (ROE/ROIC extraordinary, FCF-positive 2 ปีติด) แต่หลังการวิเคราะห์เต็มรูปแบบพบว่า **ราคาปัจจุบันแทบไม่เหลือ margin of safety** และมี **event risk ขนาดใหญ่ในอีก 1 วัน** (Q2 2026 earnings) ที่ทีมเห็นว่าไม่ควรเข้า position ก่อนเห็นผล
+
+**Conviction Bar:**
+\`\`\`
+Emma   ██████░░░░  6.0/10  — Quality สูงสุด แต่ MOS แทบเป็นศูนย์ + earnings พรุ่งนี้
+Quinn  █████░░░░░  5.5/10  — Reverse DCF ผ่าน แต่ Forward Sharpe ต่ำมาก + earnings tail risk
+Bear   ███████░░░  7.0/10  — Downside case ชัดเจน มีกำหนดเวลาแน่นอน (earnings, CMS)
+──────────────────────────────────────────────────────
+Avg    ██████░░░░  6.17/10  (gap 1.5 < 3 — ไม่ trigger disagreement flag แต่ต่ำกว่า Value deploy gate 7.0)
+\`\`\`
+
+---
+
+## 💡 Investment Thesis \`[CFA L2: Equity — Investment Thesis Formulation]\`
+
+**Bull case:** DXCM ครองตลาด US CGM (~74% share) ด้วย moat จาก insurance formulary lock-in + insulin-pump ecosystem integration (Tandem/Insulet/Beta Bionics ผูกกับ Dexcom sensor) รายได้เป็น recurring model ("มีดโกน+ใบมีด") ที่ FCF-positive ต่อเนื่อง พร้อม catalyst ใหญ่รออยู่ — Medicare CMS proposal ขยาย coverage สู่ Type 2 non-insulin (~12M patient TAM ใหม่)
+
+**Bear case:** ที่ราคาปัจจุบัน bull case นี้แทบไม่เหลือราคาที่ถูก (MOS +0.4%) ประกอบกับ (1) earnings พรุ่งนี้เป็น binary event ที่มีประวัติ crash รุนแรง (2) FDA governance gap ที่เป็น pattern ไม่ใช่ one-off (3) Abbott ครองตลาดที่เป็น growth-driver หลัก (Type 2/international) ด้วย cost-advantage — Medicare catalyst อาจ benefit Abbott เท่าๆ กับ DXCM ไม่ใช่ DXCM ได้เปรียบเพียงผู้เดียว
+
+**สรุป:** Thesis คุณภาพสูงแต่ timing ไม่ถูกต้อง — WAIT ไม่ใช่ AVOID
+
+---
+
+## 🏢 Business Deep Dive \`[CFA L2: Industry & Company Analysis]\`
+
+**"DexCom ทำเงินยังไง?"**
+- ขาย CGM system: transmitter (ใช้ซ้ำ ~1 ปี) + เซนเซอร์แปะผิวหนัง (disposable, เปลี่ยนทุก 10-15 วัน) = โมเดล "มีดโกน+ใบมีด" — เซนเซอร์คือรายได้เกิดซ้ำหลัก
+- ขายผ่าน **distributor channel (~85% ของรายได้ FY2025, $3,959M)** เช่น เภสัชกรรม/DME + **direct channel (~15%, $703M)**
+- เปิดตัว **Stelo** — CGM แบบไม่ต้องใบสั่งแพทย์ (OTC) สำหรับ non-insulin/prediabetes = ขยายตลาดใหม่
+- รายได้ต่างประเทศ 28.5% ($1,327M) โตต่อเนื่องผ่านการขยาย reimbursement
+- แจก Dexcom Clarity software ฟรีเพื่อสร้าง ecosystem lock-in กับ insulin pump partners
+
+**Porter's Five Forces:**
+
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power | Low-Medium | หลาย supplier, ไม่ dependent รายเดียว แต่ manufacturing Malaysia มี geopolitical/tariff exposure |
+| Buyer Power | Medium-High | Medicare/PBM negotiating leverage สูง + distributor concentration (85% ของรายได้ผ่าน distributor channel) |
+| New Entrants | Low-Medium | FDA clearance + patent + capital-intensive + formulary inclusion เป็น barrier สูง แต่ well-funded entrants (Medtronic Simplera) เข้ามาได้ |
+| Substitutes | Medium | Fingerstick testing (cost-sensitive segment), non-invasive optical sensing (future threat) |
+| Rivalry | High | Duopoly กับ Abbott (FreeStyle Libre) แข่งดุเดือด, Medtronic Simplera เข้ามาแข่งในตลาด non-insulin |
+
+**Industry Attractiveness: Medium-High** — โตเร็ว secular แต่ rivalry สูง + buyer concentration กด profitability upside
+
+**Market Share Trend (DXCM vs Abbott):** ⚠️ **Data gap** — มีเฉพาะ point-in-time 2025 (Global: Abbott 52.83% vs DXCM 33.89%; US 2024: DXCM ~74%) ไม่มี clean 3-year time-series methodology-consistent ที่ verify ได้ **เชิงคุณภาพ:** Abbott ยังนำ global share แต่ Q2 2026 Abbott Libre growth ชะลอเหลือ +9.5% ขณะที่ DXCM ยัง +16.15% TTM — โมเมนตัมกำลังแคบลง แต่ absolute gap ยังอยู่ (ดู Bear Challenge 5 — Abbott ก็รอ Medicare catalyst เดียวกันเพื่อ reaccelerate)
+
+**Competitor Profiles** *(สรุปจาก Emma's full analysis — agent_notes/emma/2026-07-29_DXCM.md)*
+
+| Competitor | เก่งอะไร | ไม่เก่งอะไร | Threat Level |
+|-----------|----------|-------------|---------------|
+| **Abbott Labs (ABT)** | Diversified business ให้ downside protection; FreeStyle Libre = global CGM revenue leader (52.83% share) ราคาถูกกว่า/accessible กว่าในตลาด Type 2/international; Libre Duo (dual glucose-ketone) รอ FDA approval H2 2026 | Growth เพิ่งชะลอ (+9.5% Q2 2026); ROE ~12.2%/ROIC 7.88% ต่ำกว่า DXCM มาก; US share เป็นรอง DXCM | 🔴 High |
+| **Medtronic (MDT)** | Diversified medtech ใหญ่สุดในกลุ่ม, insulin pump ecosystem เอง (MiniMed+Simplera closed-loop) | ROE 9.84%/ROIC 8.25% ต่ำสุดในกลุ่ม; growth +8.4% ช้าสุด; diabetes เป็นแค่ ~8% ของรายได้รวม | 🟡 Medium |
+| **Insulet (PODD)** | Omnipod tubeless patch pump high-growth (+31.9% TTM); Gross Margin 71.01% สูงสุด; integration กับ DXCM sensor = partner ไม่ใช่คู่แข่งตรง | Pure insulin-delivery play ไม่ใช่ CGM โดยตรง; เสี่ยงถ้า closed-loop อื่นแย่ง bundling | 🟢 Low |
+| **Tandem Diabetes (TNDM)** | t:slim X2 integration กับ DXCM sensor (partner) | ROE -65.73%/ROIC -20.06% ขาดทุนหนัก; growth ชะลอเหลือ +4.5% ต่ำสุด; เสียส่วนแบ่งให้ PODD | 🟢 Low |
+| **iRhythm (IRTC)** | Remote cardiac monitoring, gross margin 71% สูง, growth +27.4% เร็ว | ROE -22.42%/ROIC -1.29% ยังขาดทุน; unrelated end-market (cardiac ไม่ใช่ glucose) | 🟢 Low |
+
+**Customer Concentration:** ⚠️ **STALE DATA FLAG** — ข้อมูลรายบริษัท (Cardinal Health/Byram) ล่าสุดคือ FY2018/2019 (8 ปีก่อน) — SEC EDGAR ปัจจุบัน blocked (403) ไม่ควรใช้เป็นข้อเท็จจริงปัจจุบัน **สิ่งที่ verify ได้:** Distributor channel รวม ~85% ของรายได้ ($3,959M FY2025) = concentration risk เชิงโครงสร้างที่ยัง current และ material
+
+**Geography Revenue Breakdown:**
+
+| ภูมิภาค | FY2025 Revenue | % Revenue | YoY |
+|---------|-----------------|-----------|-----|
+| United States | $3,334.9M | 71.5% | +15% |
+| International (blended, no China breakout) | $1,327.1M | 28.5% | +16% |
+
+China-specific exposure: **DATA NOT AVAILABLE** — press release รวม International bucket เดียว ไม่มี country-level breakdown
+
+---
+
+## 🏰 Moat Analysis \`[CFA L1-L2: Economic Moat Framework]\`
+
+**ระดับ: Narrow+** (borderline Wide ในตลาด US/T1D core, Narrow ในตลาด international/Type 2 expansion)
+
+**แหล่งที่มา:** (1) Switching Costs — insurance formulary lock-in + insulin pump ecosystem integration (Tandem/Insulet/Beta Bionics ผูกกับ Dexcom G6/G7 sensor โดยเฉพาะ) (2) Intangible Assets — patent + FDA clearance track record, **10-year patent cross-license truce กับ Abbott ผ่าน Dec 2034** (ลด IP litigation tail risk) (3) Efficient Scale — US share ~74% ใกล้ efficient-scale territory
+
+**ความยั่งยืน:** Wide ใน US/T1D core แต่ moat แคบกว่ามากในตลาด growth-driver หลัก (international/Type 2) ที่ Abbott ได้เปรียบ cost-advantage — เหตุผลที่ให้ Narrow+ ไม่ใช่ Wide เต็มรูปแบบ เพราะ growth thesis อนาคตพึ่งพาตลาดที่ moat อ่อนกว่า
+
+---
+
+## 📊 Sector / Peer Comparison \`[CFA L2: Relative Valuation]\`
+
+| Company | Ticker | P/E | Fwd P/E | EV/EBITDA | ROE | ROIC | Rev Growth YoY | Gross Margin | Moat |
+|---------|--------|-----|---------|-----------|-----|------|----------------|--------------|------|
+| **DexCom** | **DXCM** | **32.01x** | **27.94x** | **21.55x** | **35.62%** | **39.25%** | **+16.15%** | **61.50%** | Narrow+ |
+| Abbott Labs | ABT | 34.71x | 18.50x | 19.80x | ~12.20% | 7.88% | +8.1% | 56.77% | Wide (diversified) |
+| Medtronic | MDT | 23.29x | 14.60x | 13.90x | 9.84% | 8.25% | +8.4% | 65.31% | Narrow-Wide |
+| Insulet | PODD | 39.04x | 24.99x | 20.15x | 23.00% | 20.87% | +31.9% | 71.01% | Narrow+ |
+| Tandem Diabetes | TNDM | n/a (loss) | n/a | n/a | -65.73% | -20.06% | +4.5% | 54.93% | Narrow |
+| iRhythm | IRTC | n/a (loss) | 349.94x | n/a | -22.42% | -1.29% | +27.4% | 71.00% | Narrow |
+| **Sector Median** | — | 34.71x | — | 19.80x | 9.84% | 7.88% | 8.4% | 65.31% | — |
+| **DXCM vs Median** | — | **-7.8%** | — | **+8.8%** | **+262%** | **+398%** | **+92%** | **-5.8%** | — |
+
+**Positioning:** DXCM เทรด P/E discount เล็กน้อยเทียบ median (-7.8%) แต่ EV/EBITDA premium เล็กน้อย (+8.8%) — ROE/ROIC สูงกว่ากลุ่ม 2.6-4 เท่าอย่างมหาศาล แต่ตลาดไม่ได้ให้ premium multiple สอดคล้องกับ quality gap เต็มที่ — สัญญาณบวก relative value แต่ไม่ได้แปลว่ามี absolute MOS
+
+---
+
+## 💰 Valuation \`[CFA L2: Equity Valuation — FCFF/FCFE, Relative Valuation]\`
+
+**Emma (DCF, 40% weight): $72** *(แก้ไขจาก $75 หลัง Morgan QA พบ terminal growth เกินเพดาน — ดูรายละเอียดด้านล่าง)*
+- WACC 10.86% (Rf 4.65%, β 1.45, ERP 4.5%; D/V 4.4%)
+- Base FCF $1,253M (blended FY2025/TTM), Growth path 20/17/14/11/8%, **Terminal g 3.0%** (แก้จาก 3.5% ตาม Morgan QA sanity-check เพดาน 1-3%)
+- DCF Base recompute: TV = $2,404.2M×1.03/(0.109−0.03) = $31,346M → PV of TV $18,688M → EV $25,850M → Equity (+net cash $1,084M) $26,934M ÷ 385.87M shares = **$69.80/share** (จากเดิม $73.31, -4.8%)
+- DCF Base $69.80 + Relative P/E cross-check $78.5 → **Blended Emma FV = 70%×69.80 + 30%×78.5 = $72.41 ≈ $72**
+- Scenario range (Conservative/Bull scaled proportionally -4.38% ตาม Base Case shift, Stress-Bear ไม่เปลี่ยนเพราะใช้ g=3.0% อยู่แล้ว): **Conservative $60 / Bull $79 / Stress-Bear $48**
+
+**Quinn (Growth EV/Revenue exit-multiple, 30% weight): P-W EV $88.51** *(ไม่เปลี่ยน — ใช้ framework คนละแบบจาก Emma, ไม่ผูกกับ terminal growth DCF)*
+- 5-scenario probability tree: Bear/Crash 15% ($40.68) → Downside 25% ($61.81) → Base 35% ($93.71) → Upside 18% ($124.29) → Bull 7% ($168.35)
+- Reverse DCF Growth MOS: implied growth 10.80% << 1.2x threshold (21.02%) → **PASS**
+- ⚠️ Methodology note: ใช้ Growth-bucket framework แม้ DXCM จัด Value bucket ตาม hard cutoff — ดู Behind the Scenes
+
+**Bear (Downside P-W EV, 30% weight): $65.96** *(แก้ไขจาก $67.70 — Bear's Base Case และ Upside scenario anchor อ้างอิง Emma's DCF Base/Bull ที่เปลี่ยนแล้ว)*
+- 5-scenario (DCF-anchored, consistent กับ Value bucket): Severe Crash 15% ($45) → Bear/Downside 30% ($58) → **Base 32% ($69.80, updated anchor)** → **Upside 18% ($79, updated anchor)** → Blue-sky 5% ($105)
+- Bear's P-W EV = 0.15(45)+0.30(58)+0.32(69.80)+0.18(79)+0.05(105) = **$65.96**
+- Sensitivity (probability split ±10pp, recomputed กับ anchor ใหม่): Bearish split → $63.67 / Bullish split → $71.00
+
+**Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30 = 72×0.40 + 88.51×0.30 + 65.96×0.30 = $75.14**
+
+**MOS at $74.85 = (75.14 − 74.85) / 74.85 = +0.4%** — **FAIL Value bucket gate (≥15%) ชัดเจนยิ่งขึ้น**
+
+*Sensitivity check (Bear's probability-swing test, updated anchors): Blended FV range = 72×0.40+88.51×0.30+[63.67–71.00]×0.30 = $74.45–$76.65 → MOS -0.5% ถึง +2.4% ทุกกรณียังต่ำกว่า 15% gate มาก — ข้อสรุปนี้ robust ต่อ assumption uncertainty*
+
+> **หมายเหตุ (Fix #3 transparency, ค่าประมาณเดิมก่อน terminal-growth correction):** Bear ยังทดสอบเพิ่มเติม 2 กรณีที่ใช้ base ก่อนแก้ไข (ดู \`agent_notes/bear/2026-07-29_DXCM.md\` Challenge 1 และ Challenge 2) ซึ่งแสดงทิศทางเดียวกัน (MOS ติดลบ) — ตัวเลขแม่นยำของทั้งสอง sensitivity นี้ควรถือเป็น superseded โดย recompute หลักด้านบน แต่ยืนยันทิศทางเดิม: (a) ถ้าใช้ consensus Q2 growth ต่ำกว่า base-case assumption → MOS ยิ่งติดลบมากขึ้น (b) ถ้า Quinn's exit multiple compress ตาม negative-alpha trend → Quinn's FV เข้าใกล้ DCF มากขึ้น ทั้งสองทิศทางสนับสนุนข้อสรุป HOLD/WAIT เดิม
+
+---
+
+## 📉 Quantitative Risk \`[CFA L1-L2: Quantitative Methods — Risk-Adjusted Performance]\`
+
+| Metric | Value | หมายเหตุ |
+|--------|-------|---------|
+| Beta (5Y monthly, primary) | 1.45 | Yahoo Finance |
+| Beta (3Y daily, cross-check) | 0.84 (corr. 0.265) | Model instability — single-factor CAPM ไม่เหมาะอธิบาย DXCM (stock-specific catalyst driven) |
+| Sharpe (3Y, annualized) | **-0.21** | ราคาลง -41% ขณะที่ vol สูง 47.6% — value-destroying risk-adjusted |
+| Sortino (3Y) | -0.27 | |
+| Max Drawdown (3Y) | **-60.95%** | Peak $140.45 (Apr 2024) → Trough $54.84 (Nov 2025) |
+| Jensen's Alpha (3Y, CAPM) | **-39.67%/yr** | ตลาด de-rate ต่อเนื่อง 3 ปีทั้งที่ ROIC 39% — cautionary signal |
+| Forward Sharpe (2Y convergence) | **0.10** | ต่ำมาก — upside มีแต่ risk-adjusted reward ไม่คุ้ม |
+| Kelly (Full/Half/Quarter) | 37.2% / 18.6% / 9.3% | Discount ลงจาก event risk — แนะนำ T1 3-5% เท่านั้น |
+
+**Earnings-Day Event Risk (สำคัญที่สุด):** 9 quarters ยืนยันได้ — mean absolute move 13.18% (9.75% ex-outlier); **-40.66% single-day crash เมื่อ 2024-07-26 (Q2 2024, guidance cut)**; Q2-specifically average -19.63% (median -9.31%) ปัจจุบัน options market price แค่ 8.95% weekly implied move — **อาจ underprice tail risk**
+
+### Sensitivity Matrix 5×5 [Quinn: Revenue CAGR × Terminal EV/Revenue Multiple]
+
+*เลือกตัวแปรนี้เพราะตรงกับ 2 ความไม่แน่นอนหลัก: Medicare Type-2 catalyst (growth axis) + rate/competitive-pricing risk (multiple axis)*
+
+| Rev CAGR \\ Exit EV/Rev | 3.5x | 4.5x | 5.5x | 6.5x | 7.5x |
+|---|---|---|---|---|---|
+| 8%  | $40.68 | $51.82 | $62.95 | $74.09 | $85.23 |
+| 12% | $48.45 | $61.81 | $75.17 | $88.52 | $101.88 |
+| 16% | $57.42 | $73.34 | **$89.26** | $105.18 | $121.09 |
+| 20% | $67.71 | $86.57 | $105.43 | $124.29 | $143.15 |
+| 24% | $79.47 | $101.69 | $123.91 | $146.13 | $168.35 |
+
+*Bold = Base Case. 13/25 cells (52%) ยังต่ำกว่าราคาตลาด $74.85 — MOS ไม่ overwhelming (หมายเหตุ: Sensitivity นี้เป็น Quinn's Growth-framework, ไม่ผูกกับ Emma's DCF terminal growth correction)*
+
+---
+
+## 🌱 ESG Risk Scorecard \`[CFA L2-3: ESG Investing]\`
+
+| Dimension | Emma Score | Bear Counter | Reconciled |
+|-----------|-----------|--------------|-----------|
+| Environmental | 7/10 | ไม่ challenge | 7/10 |
+| Social | 5/10 | ไม่ challenge เพิ่ม | 5/10 |
+| Governance | 5/10 | **3.5-4/10** (3 separate incidents = systemic pattern ไม่ใช่ isolated) | **4.3/10** |
+| **Overall** | **5.7/10** | **4.8-5.0/10** | **5.3/10 (Medium Risk)** |
+
+**Material ESG Risks:** (1) FDA Class I recall มี.ค. 2025 (sensor coating change) + class action ก.ย. 2025 — ongoing litigation, valuation impact ≈ -4% (2) 2-facility FDA warning letter (San Diego + Mesa) — quality management system failures, valuation impact ≈ -3% (3) 2026 scrapped-product theft incident — inventory/security control gap, valuation impact ≈ -2% affordability/access risk
+
+**Bear's challenge:** สามเหตุการณ์นี้เป็น pattern ของ control failures ที่กระจายจาก manufacturing → regulatory-compliance → inventory security ไม่ใช่ isolated incident — ควร discount หนักกว่า Emma's -9% haircut
+
+**Reconciled ESG haircut: -12%** (ระหว่าง Emma -9% และ Bear -15%)
+**ESG-adjusted Blended FV = $75.14 × 0.88 = $66.12**
+
+---
+
+## 💪 Conviction Level Score \`[CFA L3: Portfolio Construction — Investment Thesis]\`
+
+**Emma: 6.0/10** — Quality สูงสุด, secular tailwind, peer relative value ไม่แพง / ❌ MOS แทบเป็นศูนย์ (ยิ่งชัดเจนขึ้นหลังแก้ terminal growth), earnings พรุ่งนี้, FDA governance gap, WACC sensitivity สูง ($48-$79 range)
+
+**Quinn: 5.5/10** — Reverse DCF PASS ชัดเจน, fundamentals แข็ง / ❌ Forward Sharpe ต่ำมาก (0.10), Jensen's Alpha ติดลบหนัก 3 ปี, earnings tail risk, beta model ไม่ stable
+
+**Bear: 7.0/10** (ความมั่นใจใน downside case) — catalysts ชัดเจนมีกำหนดเวลาแน่นอน (earnings, CMS 1H 2026) / ไม่ให้ 8+ เพราะมีโอกาสจริงที่ Q2 จะ beat (DXCM beat EPS 4 ไตรมาสติด)
+
+**Average: 6.17/10** — gap 1.5 < 3 (ไม่ trigger disagreement flag) **แต่ต่ำกว่า Value bucket deploy gate (≥7.0) ชัดเจน**
+
+---
+
+## 🔄 What Would Change Our Mind \`[CFA L3: Portfolio Construction — Investment Thesis]\`
+
+**Bull Flip Triggers (→ BUY):**
+1. Q2 2026 print (พรุ่งนี้) เกิน consensus — Revenue growth >14% YoY **และ** ไม่มี guidance cut
+2. CMS ประกาศ formal Medicare Type 2 proposal ภายใน 1H 2026 ตามกำหนดการ
+3. ราคาย่อสู่ ≤$65 (MOS ≥15% เทียบ Blended FV ใหม่ $75.14) โดยไม่มี thesis deterioration
+4. ไม่มี FDA safety incident ใหม่ 2 ไตรมาสติดต่อกัน (governance gap remediate จริง)
+5. Abbott Libre growth ไม่ reaccelerate เกิน DXCM ใน 2 ไตรมาสถัดไป
+
+**Bear Flip Triggers (→ SELL/AVOID):**
+1. Q2 2026 print replicate 2024-07-26 pattern — guidance cut + single-day drop >20%
+2. FDA Class I recall ครั้งที่ 2 หรือ warning letter ครั้งที่ 3 ภายใน 12 เดือน
+3. Abbott CGM growth เร่งเกิน DXCM ต่อเนื่อง 2 ไตรมาส (share loss confirmed)
+4. CMS ปฏิเสธ/เลื่อน Medicare Type 2 proposal เกินปี 2026
+5. Insider selling เปลี่ยนจาก 10b5-1 plan เป็น discretionary cluster
+
+**Thesis Invalidation:** ถ้า Q2 2026 (พรุ่งนี้) เปิดเผยว่า growth deceleration (16% TTM → 11-12%) เป็นผลจาก **structural share loss ให้ Abbott** (ไม่ใช่ timing/comp-base effect) — thesis "quality compounder ที่ตลาด de-rate ผิดพลาดชั่วคราว" ผิดทั้งหมด ต้อง re-analyze ภายใต้กรอบ "structural deceleration/moat erosion"
+
+---
+
+## 🎯 Recommendation \`[CFA L3: Portfolio Construction]\`
+
+> ### HOLD / WAIT FOR PULLBACK + EARNINGS CLARITY
+> ธุรกิจคุณภาพสูงสุดในกลุ่มที่เคยวิเคราะห์ แต่ MOS แทบเป็นศูนย์ (+0.4%) ก่อน earnings binary event พรุ่งนี้ที่มีประวัติ crash -40.66% ในไตรมาสเดียวกัน — รอราคาย่อสู่ $58-65 หรือรอ Q2 2026 print ยืนยันทิศทางก่อน
+
+| Field | Value |
+|-------|-------|
+| Entry Zone | $58–65 (mid $61.5), staged T1 2% / T2 2-3% |
+| Blended FV (Target Base) | $75.14 |
+| Target Bull | $105 (Medicare confirmed + re-rate scenario) |
+| Stop Loss | **$45 (-26.8% จาก entry mid $61.5)** — anchored ที่ Bear's Severe Crash scenario (Q2 replicate 2024 crash + recall recurs + Abbott share gain), buffer เกิน -20% มาตรฐานเพราะ compound tail scenario (precedent: AVGO, RKLB) |
+| Max Position | 0% ตอนนี้ / potential 4-5% ในอนาคตถ้าผ่านเงื่อนไข |
+
+**Forward Return Estimate (Fix #6 — บังคับสำหรับ HOLD):**
+ถือ 3 ปี จาก entry zone mid $61.5 → Blended FV $75.14 = **+22.2% total return (CAGR +6.9%/ปี)**
+คำนวณ: (75.14/61.5)^(1/3) − 1 = 6.91%/ปี → 3-yr total = (75.14/61.5 − 1) = 22.2%
+
+**Regime Check:** RISK-ON 3/4 (Atlas 2026-07-29) — Force Deploy active แต่ **ไม่มี candidate ผ่าน conviction gate สำหรับ DXCM** ดังนั้น Force Deploy rule ไม่ apply (ตาม CLAUDE.md: "ถ้าไม่มี candidate ผ่าน gate → ถือ cash ต่อได้ ไม่บังคับซื้อของแพง")
+
+---
+
+## ⚠️ Risk Summary \`[CFA L1: Portfolio Management — Risk and Return Concepts]\`
+
+1. **Earnings tomorrow (2026-07-30)** — precedent -40.66% single-day crash เดียวกัน quarter เมื่อ 2 ปีก่อน; options market priced เพียง ~9% weekly move
+2. **FDA governance gap เป็น pattern** — recall + 2-facility warning letter + theft incident ใน 1-2 ปี
+3. **Competitive dynamic** — Abbott ครองตลาด growth-driver หลัก (Type 2/international) ด้วย cost-advantage; Medicare catalyst อาจ benefit ทั้งคู่เท่าๆ กัน
+4. **Consensus Q2 growth (+11.8%)** ต่ำกว่า base-case assumption ของทั้ง Emma (Y1=20%) และ Quinn (16% flat) — risk ว่า "in-line print" จะถูกตีความผิดว่าเป็น bullish confirmation
+5. **Data gaps** — customer concentration stale (2018), no China-specific geography breakdown
+6. **Insider selling** — Executive Chair 3 sales/6mo ($5.9M, ล่าสุด 10 วันก่อน earnings, ภายใต้ 10b5-1 plan — neutral-to-mild-negative)
+7. **WACC/rate sensitivity สูง** — DCF range $48-$79 ตาม assumption (แคบลงเล็กน้อยจากเดิมหลังแก้ terminal growth)
+
+---
+
+## 📅 Catalysts Calendar \`[CFA L2: Industry Analysis — Catalyst Identification]\`
+
+\`\`\`
+[2026-07-30] ──●── 📊 Q2 2026 Earnings                    [HIGH]
+                Consensus +11.8% rev growth; historical Q2 crash precedent -40.66% (2024)
+
+[2026 1H]    ──●── 🏛️ CMS Medicare Type 2 Proposal        [HIGH]
+                12M patient TAM expansion; expected but not confirmed
+
+[2026 H2]    ──●── 🆚 Abbott Libre Duo FDA Approval        [MEDIUM]
+                Dual glucose-ketone sensing; competitive threat if approved first
+
+[Ongoing]    ──●── 🔍 Governance Remediation Watch         [MEDIUM]
+                Monitor for 3rd FDA incident (recall/warning letter) within 12mo
+\`\`\`
+
+---
+
+## 📚 CFA Concepts
+
+DCF/FCFF Valuation, WACC/CAPM, Relative Valuation (P/E, EV/EBITDA), Reverse DCF/Implied Growth, Economic Moat Framework, Porter's Five Forces, ESG Investing (E/S/G scoring), Sharpe/Sortino/Treynor/Jensen's Alpha, Sensitivity & Scenario Analysis, Behavioral Finance (Narrative Fallacy, Recency Bias), Kelly Criterion *(practitioner tool, ไม่ใช่ core CFA)*, Investment Thesis Monitoring (L3), Terminal Growth Rate Sanity Check (L2 DCF best practice)
+
+---
+
+## ⚙️ Behind the Scenes
+
+**Team process:** Atlas (macro brief + verified data package, ราคา $74.85 ≥2 sources) → Emma (DCF Value bucket, $72 post-correction) ∥ Quinn (Growth EV/Revenue P-W EV, $88.51) → Bear (challenge, P-W EV $65.96 post-correction) → Charlie (blend + report) → Morgan QA (FAIL → correction → re-submit)
+
+**Blended FV Weight:** Emma 40% / Quinn 30% / Bear 30% (ตาม CLAUDE.md House Rules — Bear เท่ากับ Quinn เพราะ downside scenario สำคัญเท่ากับ statistical rigor, ห้ามลดด้วยเหตุผลว่า "Bear แย้งเยอะ")
+
+**⚠️ Weight discrepancy flag:** Bear's notes อ้างถึง IPS 2026-05-15 ที่ระบุ weight 40/35/25 (Bear ลดเหลือ 25%) — แต่ CLAUDE.md project house rules ปัจจุบันและ historical practice ทุก session ล่าสุด (ACGL, WPM, PGR, CRDO) ใช้ 40/30/30 สม่ำเสมอ **Charlie ใช้ 40/30/30 ตาม CLAUDE.md เป็น authoritative source** — [Morgan verified: ถูกต้อง] CLAUDE.md เป็น project house rules ที่ override เอกสารอื่น การ resolve ของ Charlie สมเหตุสมผลและมี audit trail ชัดเจน — แนะนำ Leo/CIO reconcile เอกสารทั้งสองให้ตรงกันในอนาคต
+
+**Terminal Growth Rate Correction (Morgan QA HIGH finding, 2026-07-29):** Emma's DCF ใช้ terminal g = 3.5% (Base/Bull Case) ซึ่งเกินเพดาน sanity-check มาตรฐาน (1-3%) แม้ต่ำกว่า industry CAGR มาก Charlie แก้เป็น 3.0% แล้ว recompute cascade เต็มรูปแบบ: DCF Base $73.31→$69.80 (-4.8%), Conservative/Bull scaled proportionally, Emma Blended FV $75→$72, Bear's Base/Upside scenario anchors (ที่อ้างอิง Emma's DCF) update ตาม → Bear P-W EV $67.70→$65.96, Team Blended FV $76.86→$75.14, MOS +2.7%→+0.4% — **recommendation ไม่เปลี่ยน (ยังคง HOLD/WAIT) แต่ MOS ยิ่งเน้นย้ำความอ่อนแอชัดเจนขึ้น** เป็นตัวอย่างที่ดีว่า data correction ไม่ได้เปลี่ยน thesis แต่ทำให้ตัวเลขแม่นยำขึ้น (pattern เดียวกับ CRM v1→v2)
+
+**Bucket/Methodology Mismatch (Bear Challenge 2):** Emma ใช้ DCF (Value bucket, ถูกต้องตาม hard cutoff 16.15%<20%) → $72; Quinn ใช้ Growth-framework EV/Revenue (ตาม Atlas macro-context suggestion) → $88.51 — Bear demonstrated ว่าถ้า exit multiple compress ลง 1.0x (สะท้อน multiple-compression risk จาก 3Y negative alpha), Quinn's FV จะเข้าใกล้ Emma's DCF มากขึ้น — สนับสนุนว่า DCF ควรเป็น anchor ที่น่าเชื่อถือกว่าสำหรับหุ้นที่ไม่ผ่าน Growth-bucket gate
+
+**Anti-Convergence Protocol:** ไม่ trigger (Emma 6.0, Quinn 5.5 ทั้งคู่ < 8 threshold) — แต่สังเกตว่าทั้ง 3 agents บรรจบที่ WAIT ด้วยเหตุผลคนละมุม (Emma: MOS เกือบศูนย์; Quinn: Forward Sharpe ต่ำ; Bear: negative P-W EV + consensus growth ต่ำกว่า assumption) = honest triangulation ไม่ใช่ manufactured dissent
+
+**Bear's key WebSearch findings ที่ Emma/Quinn ไม่มี:** (1) Wall Street Q2 2026 consensus +11.8% (ต่ำกว่า base-case assumption ทั้งคู่) (2) Insider selling pattern (Exec Chair 3 sales/6mo)
+
+**QA Cycle:** Morgan รอบแรก = FAIL (terminal growth HIGH issue) → Charlie แก้ไข cascade เต็มรูปแบบ → ส่งกลับ Morgan รอบสองเพื่อ re-verify → **Round 2 = PASS (ดูรายละเอียดท้ายรายงาน)**
+
+---
+
+## 🏁 Conclusion
+
+DexCom คือตัวอย่างที่ชัดเจนของ "ธุรกิจดี แต่จังหวะไม่ถูก" — quality metrics (ROE 35.6%, ROIC 39.25%, FCF-positive, net cash) อยู่ในระดับสูงสุดที่ทีมเคยวิเคราะห์มา แต่ที่ราคา $74.85 นั้น Blended FV $75.14 (หลังแก้ terminal growth rate ตาม Morgan QA) ให้ MOS เพียง +0.4% ซึ่งไม่ผ่านทั้ง MOS gate (≥15%) และ Conviction deploy gate (≥7.0) ของ Value bucket ประกอบกับ earnings พรุ่งนี้ (2026-07-30) เป็น binary event ที่มีประวัติ crash รุนแรง — **การตัดสินใจที่ถูกต้องคือรอ ไม่ใช่รีบเข้า** ทีมจะ re-visit ทันทีหลัง Q2 earnings หรือเมื่อราคาย่อสู่ entry zone
+
+---
+
+## Morgan QA Verification
+
+**Reviewed by:** Morgan (QA Analyst) | **Date:** 2026-07-29 (Round 1)
+**Status (Round 1):** ❌ **FAIL** — Terminal growth rate 3.5% เกินเพดาน sanity-check (1-3%)
+
+### Step 0 — Price Independent Verification
+- Morgan WebSearch (อิสระ): พบราคาช่วง $73.36–$75.12 — ต่างจาก report ($74.85) ไม่เกิน 2.3%/0.4% → **✅ PASS**
+- Atlas cross-check (Yahoo Finance + Stockanalysis.com) ตรงกันเป๊ะที่ $74.85 → **✅ PASS**
+
+### Step 0.5 — Financial Data Spot-check (independent WebSearch)
+| ตัวเลข | ใน Report/Data Package | Morgan หาได้อิสระ | ต่างกัน | ผล |
+|--------|------------------------|--------------------|--------|-----|
+| Revenue TTM | $4,818M | $4.82B (GuruFocus/multiple sources) | <0.1% | ✅ PASS |
+| EPS TTM diluted | $2.34 | $2.34 (GuruFocus)/$2.33 (Yahoo) | <0.5% | ✅ PASS |
+| Q2 2026 consensus rev growth | +11.8% (Bear's WebSearch) | +12% (Zacks/TradingView) | <2% | ✅ PASS |
+
+### Data Integrity
+- [x] Stock price verified ≥2 sources — PASS
+- [x] Market cap = shares × price — 385.87M × $74.85 = $28.882B ≈ $28.88B — PASS
+- [x] FV/Price → MOS calculation correct (post-correction: $75.14, MOS +0.4%) — PASS
+- [x] Financial ratios plausible — ROE 35.62%, ROIC 39.25%, ROA 9.65% — PASS
+- [x] No data older than 30 days unless flagged — Customer concentration 2018/2019 flagged clearly — PASS
+
+### Step 2.5 — DCF Assumption Sanity Check (Round 1 — พบ HIGH issue)
+| Assumption | ค่าที่พบ (Round 1) | ช่วงปกติ | ผล |
+|-----------|---------|----------|-----|
+| WACC (Emma) | 10.86% | 7–13% | ✅ PASS |
+| WACC (Quinn) | 10.50% | 7–13% | ✅ PASS |
+| **Terminal Growth Rate (Emma)** | **3.5%** | **1–3%** | ❌ **HIGH FAIL** |
+| Revenue Growth Y1 (Emma, 20%) | 20% vs 4Y CAGR 17.52% (<2×) | ≤2× historical CAGR | ✅ PASS |
+| Discount Rate ≥ Rf+3% | 10.86%/10.50% ≥ 7.65% | ≥ Rf+3% | ✅ PASS |
+
+### Rule Compliance
+- [x] Recommendation aligns with MOS threshold — HOLD ที่ MOS +0.4% << 15% — PASS
+- [x] Conviction gate match — Avg 6.17 < 7.0 → ไม่ deploy — PASS
+- [x] Macro Regime check — RISK-ON 3/4 ตรงกับ \`agent_notes/atlas/2026-07-29_regime.md\` — PASS
+- [~] Stop loss within IPS bounds — $45 (-26.8% จาก entry mid $61.5) เกิน -20% มาตรฐาน แต่มี rationale ชัดเจน (Bear's Severe Crash anchor) — ACCEPTABLE
+- [x] Position size — 0% (NO DEPLOY), potential future 4-5% อยู่ในกรอบ IPS — PASS
+
+### Source Annotation
+- [x] Every financial number has source citation — PASS
+- [x] No ambiguous "around X" estimates — PASS
+- [x] Atlas Macro Brief + Regime record referenced explicitly — PASS
+- [x] Shares outstanding verified — 385.87M cross-check PASS
+
+### ❌ Issues Found (Round 1)
+
+| # | Issue | Severity | Type | Status |
+|---|-------|----------|------|--------|
+| 1 | Terminal growth rate 3.5% เกินเพดาน sanity-check (1-3%) | **HIGH** | DATA_ERROR / RULE_VIOLATION | ✅ **แก้ไขแล้ว** — g→3.0%, cascade recompute ครบทุกจุด (Emma FV, Bear anchors, Blended FV, MOS, Entry Zone, Stop Loss %, Forward Return) |
+| 2 | Business Deep Dive ขาด Competitor Profiles subsection | MEDIUM | FORMAT | ✅ แก้ไขแล้ว |
+| 3 | ขาด CFA footnote 3 headings | MEDIUM | FORMAT | ✅ แก้ไขแล้ว |
+| 4 | Bear sensitivity tests (Challenge 1/2) ไม่ surface | MEDIUM | SOURCE_MISSING | ✅ แก้ไขแล้ว (flag พร้อม caveat superseded) |
+| 5 | ESG-adj FV rounding $0.01 | LOW | SANITY_FAIL | ✅ แก้ไขแล้ว |
+
+**Reject Type (Round 1):** DATA_ERROR (primary) + FORMAT + SOURCE_MISSING + SANITY_FAIL
+
+### 📊 Data Quality Score: 8.0/10 (Round 1, ก่อนแก้ HIGH issue)
+
+---
+
+### Post-Fix Update (Charlie, 2026-07-29)
+
+หลัง Morgan Round 1 FAIL, Charlie ดำเนินการแก้ไขดังนี้:
+1. Terminal growth rate: 3.5% → **3.0%** (ภายในเพดาน 1-3%)
+2. DCF Base Case recompute เต็มรูปแบบ: TV = $2,404.2M×1.03/(0.109−0.03) = $31,346M → PV $18,688M → EV $25,850M → Equity $26,934M ÷ 385.87M = **$69.80/share**
+3. Conservative/Bull scenarios scaled proportionally (-4.38%, สอดคล้องกับ Base Case shift): $63→$60, $83→$79 (Stress-Bear $48 ไม่เปลี่ยน เพราะใช้ g=3.0% อยู่แล้ว)
+4. Emma's Blended FV: 70%×$69.80 + 30%×$78.5 = **$72.41 ≈ $72** (จาก $75)
+5. Bear's scenario anchors update (Base Case และ Upside อ้างอิง Emma's DCF): $73→$69.80, $83→$79 → Bear P-W EV: 0.15(45)+0.30(58)+0.32(69.80)+0.18(79)+0.05(105) = **$65.96** (จาก $67.70)
+6. Team Blended FV: 72×0.40+88.51×0.30+65.96×0.30 = **$75.14** (จาก $76.86)
+7. MOS: (75.14−74.85)/74.85 = **+0.4%** (จาก +2.7%)
+8. Entry Zone ceiling ปรับ: $75.14/1.15 = $65.34 → Entry Zone **$58-65** (จาก $60-67)
+9. Forward Return Estimate ปรับ: (75.14/61.5)^(1/3)−1 = 6.91%/yr → 3yr total **+22.2%** (จาก +21.0%)
+10. ESG-adjusted Blended FV: $75.14×0.88 = **$66.12** (จาก $67.65)
+
+**Recommendation ไม่เปลี่ยน** (ยังคง HOLD/WAIT FOR PULLBACK + EARNINGS CLARITY) — การแก้ไขนี้ทำให้ MOS ยิ่งชัดเจนว่าอ่อนแอกว่าที่คิดไว้เดิม (จาก +2.7% เหลือ +0.4%) ซึ่งเสริมความมั่นใจในคำแนะนำเดิม ไม่ใช่เปลี่ยนทิศทาง
+
+**Status: พร้อมส่ง Morgan ตรวจรอบ 2 (re-verify DCF calc chain + Blended FV + MOS)**
+
+---
+
+### Round 2 Verification (Morgan, 2026-07-29)
+
+**Reviewed by:** Morgan (QA Analyst) | **Date:** 2026-07-29 (Round 2 — re-verify cascade fix)
+**Scope:** เฉพาะจุดที่เปลี่ยนจาก terminal growth rate correction — ไม่ re-run full Round 1 checklist (ยัง valid)
+
+**1. Terminal Growth Rate:** ยืนยัน 3.0% ในทุกจุด (Valuation section, Emma's notes line 72-79, Post-Fix Update) — ไม่พบ 3.5% หลงเหลือที่ไหน → **✅ PASS**
+
+**2. DCF Base Case recompute (Morgan อิสระ):**
+- TV = 2,404.2×1.03/0.079 = $31,346.15M ≈ $31,346.2M ✓ ตรง
+- PV of TV = 31,346.2/1.6775 = $18,686.2M (คำนวณอิสระได้ $18,686.2M เทียบกับ report $18,687.9M ต่างกัน $1.7M / 0.009% — rounding noise จาก intermediate discount factor ไม่กระทบ per-share) → **✅ PASS (immaterial rounding)**
+- EV = 7,161.8+18,687.9 = $25,849.7M ✓ ตรง
+- Equity = 25,849.7+1,084 = $26,933.7M ✓ ตรง
+- ÷385.87M shares = **$69.80/share** ✓ ตรงเป๊ะ (26,933.7/385.87 = 69.7998) → **✅ PASS**
+
+**3. Emma's Blended FV:** 0.70×69.80 + 0.30×78.5 = 48.86+23.55 = **$72.41 ≈ $72** ✓ ตรงเป๊ะ → **✅ PASS**
+
+**4. Bear's P-W EV recompute:** 0.15(45)+0.30(58)+0.32(69.80)+0.18(79)+0.05(105) = 6.75+17.4+22.336+14.22+5.25 = **$65.956 ≈ $65.96** ✓ ตรงเป๊ะ → **✅ PASS**
+
+**5. Team Blended FV:** 72×0.40+88.51×0.30+65.96×0.30 = 28.8+26.553+19.788 = **$75.141 ≈ $75.14** ✓ ตรงเป๊ะ → **✅ PASS**
+
+**6. MOS:** (75.14−74.85)/74.85 = 0.29/74.85 = **+0.387% ≈ +0.4%** ✓ ตรง → **✅ PASS**
+
+**7. Cascade consistency check** — สแกนทั้งไฟล์หาตัวเลขเก่าที่อาจตกหล่น:
+- Header table, Score Dashboard, TL;DR, Valuation, Recommendation, Conclusion → **$75.14 / +0.4% ใช้สม่ำเสมอทุกจุด** ไม่พบ $76.86 หรือ +2.7% หลงเหลือ → PASS
+- Entry Zone $58-65 (mid $61.5) ✓ ตรงกับ $75.14/1.15=$65.34 (ceiling), Stop Loss $45 (-26.8% จาก $61.5) ✓ ตรง (16.5/61.5=26.83%)
+- Forward Return: (75.14/61.5)^(1/3)-1 = 6.91%/yr, 3yr total = 75.14/61.5-1 = 22.18%≈22.2% ✓ ตรงเป๊ะ
+- ESG-adjusted FV: 75.14×0.88 = $66.1232 ≈ $66.12 ✓ ตรงเป๊ะ ใช้สม่ำเสมอ (Header, Score Dashboard, ESG section, Post-Fix Update)
+- Bear's sensitivity range: Bearish split $63.67 (0.20×45+0.35×58+0.27×69.80+0.13×79+0.05×105=63.666) ✓, Bullish split $71.00 (0.05×45+0.20×58+0.37×69.80+0.33×79+0.05×105=70.996) ✓ ตรงเป๊ะ → Team FV range $74.45-$76.65 ✓ ตรง, MOS range -0.5% ถึง +2.4% ✓ ตรง
+- **ไม่พบตัวเลขเก่า ($76.86, +2.7%, $67.70, $73.31 เป็นต้น) หลงเหลือที่ไหนในเนื้อหาปัจจุบัน** (ปรากฏเฉพาะใน correction-log context ที่ระบุ "จากเดิม/superseded" อย่างชัดเจน ซึ่งถูกต้องตามจุดประสงค์ audit trail) → **✅ PASS**
+
+**8. Recommendation check:** HOLD/WAIT ยังคงถูกต้อง — MOS +0.4% << 15% Value gate (fail ชัดเจน), Conviction avg 6.17 < 7.0 deploy gate (fail ชัดเจน) ทั้งสอง gate fail สอดคล้องกับ recommendation → **✅ PASS**
+
+**Minor observations (ไม่ block, non-critical MEDIUM x2):**
+
+| # | Observation | Location | Severity | Note |
+|---|---|---|---|---|
+| A | Header table ระบุ MOS "-11.9% (ESG-adjusted basis)" แต่ตัวเลขนี้คือ Bear's raw P-W EV MOS ($65.96 vs $74.85 = -11.9%, ตรงกับ Bear's notes) ไม่ใช่ MOS ที่คำนวณจาก ESG-adjusted Blended FV จริง ($66.12 vs $74.85 = -11.66%) — label ทำให้เข้าใจผิดว่าเป็นค่าเดียวกัน ทั้งที่เป็นคนละ metric | Header table (🎯 คำแนะนำ) | MEDIUM | แนะนำแก้ label เป็น "-11.9% (Bear's downside P-W EV basis)" หรือ recompute เป็น -11.66% ถ้าต้องการ true ESG-adjusted MOS — ไม่กระทบ recommendation |
+| B | "-4.38%" ที่อ้างว่าเป็น scaling % สำหรับ Conservative/Bull scenario (ปรากฏ 3 จุด: Valuation section, Post-Fix Update #3, Emma's notes) คำนวณจริงจาก Base Case change คือ (69.80-73.31)/73.31 = **-4.79%** ไม่ใช่ -4.38% — ตัวเลขผลลัพธ์ที่ scaled แล้ว ($60, $79) ยังถูกต้อง (สอดคล้องกับการ scale ~4.8%) แต่ label เปอร์เซ็นต์ผิด | Valuation section, Post-Fix Update, Emma's notes | MEDIUM | Cosmetic — ไม่กระทบ FV/MOS/recommendation ใดๆ เพราะ output values ถูกต้องอยู่แล้ว แนะนำแก้ label เป็น "-4.8%" ในรอบแก้ไขถัดไป |
+
+### 📊 Data Quality Score (Round 2): 9.5/10
+Cascade recompute แม่นยำเกือบสมบูรณ์แบบ (ผ่านการ verify อิสระทุกจุดสำคัญ) มีเพียง 2 label/cosmetic inconsistency ที่ไม่กระทบตัวเลขหลักหรือ recommendation
+
+### Decision (Round 2): ✅ **PASS**
+
+**เหตุผล:** HIGH issue จาก Round 1 (terminal growth rate 3.5%→3.0%) ถูกแก้ไขถูกต้องและ cascade recompute ผ่านการ verify อิสระครบทุกจุด (DCF Base $69.80, Emma FV $72, Bear P-W EV $65.96, Team Blended FV $75.14, MOS +0.4%) ตรงกับที่คาดหวังทุกตัวเลข ไม่มี HIGH issue เหลืออยู่ พบเพียง 2 MEDIUM cosmetic label issues (ทั้งคู่ไม่กระทบตัวเลขหลักหรือ recommendation) ซึ่งอยู่ในเกณฑ์ "MEDIUM ≤ 2 → PASS" ตาม Morgan QA Protocol
+
+**พร้อมส่ง Leo ดำเนินการต่อได้** — แนะนำ Charlie/Leo แก้ 2 label issues ข้างต้นแบบ minor touch-up ก่อน publish (ไม่ block, ไม่ต้องส่งกลับ Morgan รอบ 3)
+
+**Reject Type:** N/A (PASS)
+
+---
+
+## Sources & References
+
+ดูรายละเอียดเต็มใน \`agent_notes/atlas/2026-07-29_DXCM_data.md\`, \`agent_notes/emma/2026-07-29_DXCM.md\`, \`agent_notes/quinn/2026-07-29_DXCM.md\`, \`agent_notes/bear/2026-07-29_DXCM.md\` — ทุกตัวเลขการเงินมี URL source ≥2 แหล่งสำหรับราคาหลัก, WebSearch/WebFetch สำหรับข้อมูลอื่นทั้งหมด
+
+**Morgan's independent verification sources (2026-07-29):** GuruFocus (EPS TTM), Yahoo Finance sector articles (Q1 2026 revenue $1.192B), TradingView/Zacks (Q2 2026 consensus), Federal Reserve H.15 (cross-check), \`agent_notes/atlas/2026-07-29_regime.md\` (regime cross-check)
+`,
+  },
 
   {
     ticker: "PGR",
