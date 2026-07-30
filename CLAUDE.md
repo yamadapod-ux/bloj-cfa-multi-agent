@@ -146,6 +146,13 @@ CIO → "Max หาหุ้นใหม่"
 - **Sector ซ้ำได้** — ไม่บังคับ diversify sector เพราะ CIO ต้องการเห็นทุก opportunity แล้วค่อยตัดสินใจเอง
 - ราคาย่อจาก ATH พอสมควร เป็น plus แต่ไม่บังคับ
 
+**De-list Rules (Max ใช้ก่อนทุก Scout round — บังคับ, ไม่ใช่ optional):**
+- **Stale timeout:** ไม่มีการอัปเดตราคา/action จาก CIO หรือ Charlie เกิน 60 วัน และไม่มี target analysis date
+- **Thesis dead:** MOS < -30% หรือราคาปัจจุบัน > 2 เท่าของขอบบน entry zone เดิม
+- **Superseded:** วิเคราะห์เต็มแล้ว + กลายเป็น position (open/closed) หรือมี formal AVOID/SKIP
+- De-listed → ย้ายเข้า `## 🗄️ Archive — De-listed Candidates` section ใน `watchlist.md` พร้อมเหตุผล — **ห้ามลบทิ้ง** (เก็บไว้เป็นประวัติ, re-list ได้ถ้าสถานการณ์เปลี่ยน)
+- Max รัน prune pass นี้เป็น **Step 0 ของ Mode 1 Scout ทุกครั้ง** — ก่อนสแกน candidate ใหม่เสมอ (ดู `.claude/agents/max.md`)
+
 ### Research + Execute Pipeline (ทุก analysis)
 ```
 CIO → Charlie → Atlas
@@ -397,7 +404,7 @@ Leo เพิ่ม object เข้า `REPORTS` array — รวม `fullConte
 - `portfolio/decisions.md` — Track record ทุก analysis + S&P500 entry price (Leo ดูแล)
 - `portfolio/positions.md` — Simulated portfolio holdings + P&L (Max ดูแล)
 - `portfolio/trade-log.md` — ประวัติ trade ทั้งหมด (Max ดูแล)
-- `portfolio/watchlist.md` — Candidates ที่ Max สแกนมา รอวิเคราะห์ (Max ดูแล)
+- `portfolio/watchlist.md` — Candidates ที่ Max สแกนมา รอวิเคราะห์ + Archive de-listed candidates (Max ดูแล)
 - `portfolio/deployment_log.md` — Max deployment decision log ทุก trade/skip (Max ดูแล)
 - `performance/tracker.md` — Performance vs S&P 500, analyst scorecard (Vera ดูแล)
 - `performance/weekly_YYYY-WW.md` — Vera weekly output (Vera ดูแล)

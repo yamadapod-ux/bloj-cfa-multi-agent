@@ -311,6 +311,34 @@ Avg Conv: [X.X]  [✅/⚠️]
 
 ### เมื่อ CIO พูดว่า "Max หาหุ้นใหม่"
 
+**Step 0 — Prune Existing Watchlist ก่อนเสมอ (บังคับ — ห้ามข้าม)**
+
+ก่อนสแกน candidate ใหม่ทุกครั้ง ต้อง prune watchlist เดิมก่อน — ป้องกัน watchlist กลายเป็น dumping ground ที่โตไม่หยุดและทำให้ทุก session ถัดไปต้องอ่านไฟล์ยาวขึ้นเรื่อยๆ
+
+```
+Read portfolio/watchlist.md   ← อ่านทั้ง 3 live tables: Re-Analysis Queue, Pending Analysis, Price Alert
+```
+
+สำหรับทุก ticker ใน live tables ทั้ง 3 ตาราง เช็คตามเงื่อนไข De-list Rules (ดู CLAUDE.md § Scout Pipeline):
+
+| # | เงื่อนไข | Threshold |
+|---|---------|-----------|
+| 1 | **Stale timeout** | ไม่มีการอัปเดตราคา/action จาก CIO หรือ Charlie เกิน 60 วัน และไม่มี target analysis date |
+| 2 | **Thesis dead** | MOS < -30% หรือราคาปัจจุบัน > 2 เท่าของขอบบน entry zone เดิม |
+| 3 | **Superseded** | วิเคราะห์เต็มแล้ว + กลายเป็น position (open/closed ใน portfolio.js) หรือมี formal AVOID/SKIP |
+
+**สำคัญ:** ก่อน archive ticker ใดๆ ด้วยเหตุผล "thesis dead" ให้ WebSearch เช็คราคาปัจจุบันสดก่อนเสมอ — ห้าม archive จากข้อมูลเก่าที่อาจไม่ตรงกับความจริงแล้ว (เช่น ราคาอาจ pull back กลับเข้า range ก็ได้)
+
+Ticker ที่เข้าเงื่อนไขข้อใดข้อหนึ่ง → **ย้าย** row นั้นออกจาก live table เข้าไปที่ `## 🗄️ Archive — De-listed Candidates` section (ท้ายไฟล์ ก่อน `## Scout History`) พร้อมกรอก: Ticker, Company, Original Scout Date, De-listed Date (วันนี้), Reason (อ้างอิงเงื่อนไขข้อไหน), Final Snapshot (ราคา/MOS ล่าสุดที่เช็ค) — **ห้ามลบทิ้ง**
+
+รายงาน CIO สั้นๆ ก่อนไปต่อ Step 1:
+```
+🗄️ Prune pass: de-listed [N] tickers ([TICKER1, TICKER2, ...]) — เหตุผลโดยย่อ
+เหลือ live watchlist [N] tickers
+```
+
+---
+
 **Step 1 — อ่าน Macro Context ก่อน**
 ```
 Read agent_notes/atlas/[LATEST]_data.md   ← ดู sector ที่ Atlas แนะนำ
@@ -342,12 +370,11 @@ https://stockanalysis.com/stocks/[ticker]/
 
 **Step 4 — Filter เบื้องต้น**
 
-เลือก 3-5 หุ้นที่ผ่านเกณฑ์:
-- P/E ≤ sector median (หรือ growth justify premium)
-- FCF Yield ≥ 3%
-- Revenue Growth ≥ 5% YoY
-- ROE ≥ 12%
-- ไม่อยู่ใน portfolio แล้ว
+**ใช้ Scout Filter Rules จาก CLAUDE.md เท่านั้น** (ห้ามใช้ threshold อื่นที่ไม่ตรงกัน — ป้องกันสองไฟล์ drift ออกจากกัน):
+- Revenue growth >20% (Growth bucket) **หรือ** FCF-positive + wide moat (Value bucket)
+- ห้ามซ้ำกับที่ถืออยู่หรือเคยวิเคราะห์ไปแล้ว (เช็คกับ portfolio.js + watchlist.md live tables + archive)
+- Sector ซ้ำได้ — ไม่บังคับ diversify
+- ราคาย่อจาก ATH พอสมควร เป็น plus แต่ไม่บังคับ
 
 **Step 5 — เขียน Scout Report**
 
