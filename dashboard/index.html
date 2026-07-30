@@ -259,6 +259,14 @@
     .cycle-marker circle { transition:r .15s ease, stroke-width .15s ease; }
     .cycle-marker:hover circle { r:11; stroke-width:3; }
     .cycle-marker:hover text { text-decoration:underline; }
+    .cycle-legend { display:grid; grid-template-columns:repeat(4, 1fr); gap:.75rem; margin-top:1rem; }
+    .cycle-legend-item { display:flex; gap:.5rem; align-items:flex-start; }
+    .cycle-legend-swatch { width:12px; height:12px; border-radius:3px; margin-top:.2rem; flex-shrink:0; }
+    .cycle-legend-title { font-size:.76rem; font-weight:700; color:#1A3A7A; }
+    .cycle-legend-desc { font-size:.68rem; color:#5870A8; line-height:1.4; margin-top:.15rem; }
+    @media (max-width: 768px) {
+      .cycle-legend { grid-template-columns:repeat(2, 1fr); }
+    }
     .cycle-track-note { font-size:.7rem; color:#8AAAD4; margin-top:.4rem; text-align:center; }
     .cycle-table-toggle { font-size:.72rem; color:#4A7CC7; cursor:pointer; margin-top:.6rem; }
     .cycle-table { width:100%; border-collapse:collapse; font-size:.72rem; margin-top:.6rem; }
@@ -562,6 +570,7 @@
   <div class="card" style="margin-bottom:1.25rem;">
     <div class="section-title">ตำแหน่งในวัฏจักรเศรษฐกิจ · Business Cycle Position <span style="text-transform:none;letter-spacing:0;color:#8AAAD4;">[CFA L1: Economics — Business Cycle]</span></div>
     <div class="cycle-wheel-wrap"><svg id="cycle-wheel" viewBox="0 0 520 520"></svg></div>
+    <div class="cycle-legend" id="cycle-legend"></div>
     <div class="cycle-track-note" id="cycle-track-note"></div>
     <details class="cycle-table-toggle">
       <summary>แสดงเป็นตาราง</summary>
@@ -1764,13 +1773,13 @@ function toggleSectorHistory(slug) {
 // where every covered sector sits right now. Keyword match only — never writes
 // back to sectorViews.js.
 const CYCLE_STAGES = [
-  { key: 'early',     label: 'Early Cycle',              fill: '#CFE3F5', text: '#1A3A7A', start: 0,   end: 90,
+  { key: 'early',     label: 'Early Cycle',              ringLabel: 'Early',     fill: '#CFE3F5', text: '#1A3A7A', start: 0,   end: 90,
     desc: 'เศรษฐกิจเพิ่งพ้นจุดต่ำสุด สินเชื่อเริ่มคลาย demand เร่งตัว' },
-  { key: 'mid',       label: 'Mid Cycle',                 fill: '#9CC1EA', text: '#1A3A7A', start: 90,  end: 180,
+  { key: 'mid',       label: 'Mid Cycle',                 ringLabel: 'Mid',       fill: '#9CC1EA', text: '#1A3A7A', start: 90,  end: 180,
     desc: 'การเติบโตแข็งแรงต่อเนื่อง อัตราดอกเบี้ยเริ่มขยับขึ้น' },
-  { key: 'late',      label: 'Late Cycle',                fill: '#5A8FD6', text: '#ffffff', start: 180, end: 270,
+  { key: 'late',      label: 'Late Cycle',                ringLabel: 'Late',      fill: '#5A8FD6', text: '#ffffff', start: 180, end: 270,
     desc: 'การเติบโตชะลอตัว เงินเฟ้อ/ดอกเบี้ยตึงตัว กำไรใกล้จุดพีค' },
-  { key: 'recession', label: 'Recession / Contraction',   fill: '#2F5AA0', text: '#ffffff', start: 270, end: 360,
+  { key: 'recession', label: 'Recession / Contraction',   ringLabel: 'Recession', fill: '#2F5AA0', text: '#ffffff', start: 270, end: 360,
     desc: 'เศรษฐกิจหดตัว demand อ่อนแอ เงินไหลเข้าสินทรัพย์ defensive' },
 ];
 
@@ -1830,7 +1839,7 @@ function buildCycleTrack(allGroups) {
 
     const mid = (stage.start + stage.end) / 2;
     const lp = cyclePolarToXY(cx, cy, labelR, mid);
-    labels += svgWrappedText(stage.label, lp.x, lp.y, 'middle', 13, stage.text, 700);
+    labels += svgWrappedText(stage.ringLabel, lp.x, lp.y, 'middle', 13, stage.text, 700);
 
     const here = allGroups.filter(g => inferCycleStage(g.cyclePosition) === stage.key);
     const spread = 22;
@@ -1856,6 +1865,18 @@ function buildCycleTrack(allGroups) {
     ${labels}
     ${markers}
   `;
+
+  const legend = document.getElementById('cycle-legend');
+  if (legend) {
+    legend.innerHTML = CYCLE_STAGES.map(stage => `
+      <div class="cycle-legend-item">
+        <span class="cycle-legend-swatch" style="background:${stage.fill};"></span>
+        <div>
+          <div class="cycle-legend-title">${stage.label}</div>
+          <div class="cycle-legend-desc">${stage.desc}</div>
+        </div>
+      </div>`).join('');
+  }
 
   const tbody = document.querySelector('#cycle-table tbody');
   if (tbody) {
