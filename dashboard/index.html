@@ -541,6 +541,10 @@
     </div>
   </div>
   <div class="stat-grid" id="sector-stat-grid"></div>
+  <div class="card" style="margin-bottom:1rem;max-width:360px;">
+    <div class="section-title">Sector Stance Distribution</div>
+    <div class="chart-wrap"><canvas id="chart-sector-stance"></canvas></div>
+  </div>
   <div id="sector-views-list"></div>
 </div>
 
@@ -1701,6 +1705,7 @@ function buildNews() {
 // SECTOR_VIEWS array โหลดจาก sectorViews.js (managed by Atlas · ad-hoc, ไม่ใช่ daily)
 
 let currentSectorFilter = 'ALL';
+let sectorStanceChart = null;
 function filterSectorViews(f, btn) {
   currentSectorFilter = f;
   document.querySelectorAll('#sector-filter-btns .nav-tab').forEach(b => b.classList.remove('active'));
@@ -1738,6 +1743,22 @@ function buildSectorViews() {
     <div class="stat-card"><div class="stat-label">Fresh (&lt;30d)</div><div class="stat-value" style="color:#16A34A;">${tiers.filter(t=>t==='ok').length}</div></div>
     <div class="stat-card"><div class="stat-label">Stale (30-59d)</div><div class="stat-value" style="color:#D97706;">${tiers.filter(t=>t==='warn').length}</div></div>
     <div class="stat-card"><div class="stat-label">Needs Re-Call (60d+)</div><div class="stat-value" style="color:#DC2626;">${tiers.filter(t=>t==='critical').length}</div></div>`;
+
+  // Stance distribution chart — always reflects ALL sectors (current view per sector),
+  // independent of the stance filter above (matches Portfolio tab's chart-vs-list-filter convention)
+  const stanceOrder = ['POSITIVE', 'CAUTIOUS', 'NEGATIVE', 'NEUTRAL'];
+  const stanceCounts = stanceOrder.map(s => allGroups.filter(g => g.stance === s).length);
+  const stanceFill = ['#B8EAC8', '#F7E8A0', '#F4B8C1', '#B0C8F0'];
+  const stanceBorder = ['#0ca30c', '#fab219', '#d03b3b', '#4A7CC7'];
+  if (sectorStanceChart) { sectorStanceChart.destroy(); sectorStanceChart = null; }
+  sectorStanceChart = new Chart(document.getElementById('chart-sector-stance'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Positive', 'Cautious', 'Negative', 'Neutral'],
+      datasets: [{ data: stanceCounts, backgroundColor: stanceFill, borderColor: stanceBorder, borderWidth: 2 }]
+    },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: '#6888B8', font: { family: 'Prompt' } } } } }
+  });
 
   if (groups.length === 0) {
     document.getElementById('sector-views-list').innerHTML = `<div class="news-empty"><div style="font-size:2rem;margin-bottom:.75rem;">📭</div><div>No sector views in this category</div></div>`;
