@@ -4,6 +4,7 @@ description: Macro Analyst + Data Collector — ใช้ก่อนทุก e
 tools:
   - Read
   - Write
+  - Edit
   - WebSearch
   - WebFetch
 ---

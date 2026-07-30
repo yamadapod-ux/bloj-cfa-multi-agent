@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-07-30 09:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-07-31 14:00";
 
 const SECTOR_VIEWS = [
   {
@@ -100,5 +100,48 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-07-30",
     author: "Atlas",
     trigger: "CIO ad-hoc request — sector coverage expansion (portfolio holds REGN + DXCM/ZTS/PODD watchlist)",
+  },
+  {
+    sector: "Energy",
+    slug: "energy",
+    stance: "NEGATIVE",
+    cyclePosition: "Late-cycle",
+    headline: "War premium ยังไม่นิ่ง — Brent ดีดกลับ $89-90 ปลาย ก.ค. (ไม่ใช่ $76 ตามที่ brief เข้าใจ) เทคนิคเริ่มอ่อนตัว ยืนยัน 'รอ' ไม่ใช่ 'เข้า'",
+    thesis: "อัปเดตต่อยอด entry Energy เดิม (30 ก.ค. 2026, NEGATIVE) จาก brief ของ CIO/Bear ที่ขอให้ verify war timeline + technical signals + ตัวเลขที่ยังไม่ยืนยัน — ทีม WebFetch หลายแหล่ง (TradingEconomics, OilPrice.com futures, CNBC, Bloomberg) พบว่า ณ 29-30 ก.ค. 2026 Brent อยู่ที่ราว $89-90/bbl ไม่ใช่ $76-77 ตามที่ brief อ้าง เพราะเกิดการยกระดับความรุนแรงรอบใหม่ (สหรัฐฯ โจมตี Iran คืนวันที่ 29 ก.ค. ตอบโต้การโจมตีฐานทัพสหรัฐฯ, Iran ขู่ตอบโต้เพิ่ม, กลุ่มติดอาวุธหนุน Iran ยิงโดรนใส่โรงกลั่นซาอุฯ ต่อเนื่อง 2 วัน) หลัง ceasefire เดิมพังไปแล้วตั้งแต่ 8 ก.ค. timeline สงครามที่ verify แล้วก็คลาดเคลื่อนจาก brief หลายจุด: peak ราคาแรกอยู่ที่ $116.29/bbl วันที่ 9 มี.ค. (ไม่ใช่ช่วง 11-24 มี.ค.), ceasefire จริงครั้งแรกเกิด 7-8 เม.ย. ไม่ใช่ 23-31 มี.ค. ตามที่ brief อ้าง (มีแต่การเจรจา/บล็อกท่าเรือระหว่างนั้น ไม่มี ceasefire ในมี.ค.) จากนั้นขยายไม่มีกำหนด 21 เม.ย., เจรจา Islamabad ล้มเหลวกลาง เม.ย., เซ็น MOU 60 วันรอบใหม่ 17 มิ.ย. ก่อนพังอีกครั้ง 8 ก.ค. และ escalate ต่อเนื่องถึงปลาย ก.ค. — ทั้งหมดนี้ยืนยันว่าความเสี่ยงเป็น dual-direction จริงตามที่ brief เตือน สงครามยังไม่จบ ราคาสวิงได้ทั้งพุ่งแรงกว่านี้ถ้า Hormuz ปิดอีกรอบ และร่วงแรงถ้า de-escalate จริงจัง ไม่ใช่ downside scenario เดียวที่เคยเน้น ด้านเทคนิคของ XLE เริ่มส่งสัญญาณอ่อนตัวสอดคล้องกับความเสี่ยงนี้: Aroon เข้าสู่ downtrend ตั้งแต่ 13 ก.ค., RSI(14) เคยพุ่งถึง 85 (severely overbought) ก่อนหลุดจากโซน overbought เมื่อ 27 ก.ค. แม้จะมี bullish MA crossover (10dma ตัดขึ้นเหนือ 50dma เมื่อ 20 ก.ค.) แทรกอยู่ทำให้ signal ยังไม่ชี้ทางเดียวขาด แต่ momentum โดยรวมเริ่มเสีย ด้าน valuation หลัง verify จริงผ่าน stockanalysis.com: XLE ราคา $58.59 market cap ~$39.5B P/E 20.94 div yield 2.59% (ตรงกับตัวเลขที่ brief อ้างเกือบสนิท) YTD return อยู่ราว 30-35% แล้วแต่แหล่ง/วันวัด ส่วนคำถามที่ brief สงสัยเองว่า Tech comeback อาจทำให้ gap แคบลง ทีมตรวจแล้วพบว่าถูกทิศทางจริง — XLK ปีนี้ให้ผลตอบแทนประมาณ 33% ใกล้เคียง XLE มาก ต่างจาก entry เดิมที่ gap อยู่ราว 9-17 จุด แปลว่า gap แคบลงจริง แต่ตัวเลข quarter-specific ที่ brief อ้าง (XLK Q2 +43% large cap, Energy large cap -13%) หาแหล่งยืนยันไม่เจอเลยในทุกแหล่งที่ค้น จึงต้องระบุว่า unverified สำหรับตัวเลขนั้นโดยเฉพาะ ประเด็นที่สำคัญที่สุดคือตัวเลข earnings เดิม: +57% (2026F) / -5% (2027F) ที่ entry เก่าอ้างอิง Forbes — ทีม re-fetch บทความ Forbes ตรงๆ แล้วพบว่าบทความไม่มีตัวเลขนี้เลย มีแค่ข้อความว่า Energy นำ Q2 ตามด้วย Tech โดยไม่ระบุเปอร์เซ็นต์ และไม่มี forecast ปี 2027 เลย ตัวเลขจริงที่ verify ได้จาก FactSet คือ Energy earnings growth YoY: Q2 2026 +122.9% (สูงกว่าที่เคยอ้างมาก) ลดหลั่นเหลือ Q3 2026 +75.6%, Q4 2026 +69.5%, Q1 2027 +49.6% แล้วพลิกลบ Q2 2027 -26.3% — ยืนยัน pattern peak-then-decline เดียวกับ thesis เดิม เพียงแต่ magnitude ต่างจากที่เคยอ้างไว้มาก ทีมอื่นควรใช้ตัวเลขชุดนี้แทนตัวเลขเดิม ส่วน EIA oversupply 2.0-2.26 mb/d และ upstream capex -2 ถึง -3% YoY ที่ brief ขอให้ verify ทั้งสองผ่านตรงตามอ้าง (EIA คาด glut 2.2 mb/d ปี 2026, OilPrice.com ยืนยัน capex ลดต่อเนื่องปีที่ 2) สรุป: stance ยังคง NEGATIVE เหมือนเดิม แต่ต้อง update ว่าความเสี่ยงตอนนี้กำลัง escalate ไปในทิศ 'ราคาสูงกว่าที่คิด' ไม่ใช่ de-escalate ตามที่ brief เข้าใจตอนแรก — เข้าซื้อตอนนี้เสี่ยงจ่ายที่ war-premium peak ซ้อนกับ valuation ตึงและ momentum กำลังเสียพร้อมกันสามชั้น",
+    keyPoints: [
+      "Brent ปัจจุบัน (29-30 ก.ค. 2026) อยู่ที่ราว $89-90/bbl หลังยกระดับรุนแรงรอบใหม่ (สหรัฐฯ โจมตี Iran, Iran ขู่ตอบโต้, โดรนโจมตีโรงกลั่นซาอุฯ) — ไม่ใช่ $76-77 ตามที่ brief เข้าใจตอนแรก คลาดเคลื่อนจริง",
+      "Timeline สงคราม verify แล้ว: เริ่ม 28 ก.พ. (Operation Epic Fury/Roaring Lion) → peak $116.29 วันที่ 9 มี.ค. → ceasefire จริงครั้งแรก 7-8 เม.ย. (ไม่ใช่มี.ค. ตามที่ brief อ้าง) → ขยายไม่มีกำหนด 21 เม.ย. → MOU รอบใหม่ 17 มิ.ย. → พังอีกครั้ง 8 ก.ค. → escalate ต่อเนื่องถึง 29-30 ก.ค.",
+      "เทคนิคเริ่มอ่อนตัว: Aroon downtrend ตั้งแต่ 13 ก.ค., RSI(14) เคยแตะ 85 ก่อนหลุด overbought 27 ก.ค. — แม้มี bullish MA crossover แทรก signal ยังไม่ชี้ทางเดียวขาด",
+      "ตัวเลข earnings เดิม +57%/-5% ที่อ้าง Forbes ไม่มีอยู่จริงในบทความ — ตัวเลข FactSet ที่ verify ได้คือ Q2 2026 +122.9% ลดหลั่นจนพลิกลบ -26.3% ใน Q2 2027 (peak-then-decline ยืนยัน แต่ magnitude ต่างจากเดิมมาก)",
+      "EIA oversupply 2.2 mb/d และ upstream capex -2 ถึง -3% YoY verify ผ่านตรงตามอ้าง — gap XLE vs Tech แคบลงจริง (XLE YTD ~30-35% vs XLK ~33%) แต่ตัวเลข quarter-specific +43%/-13% หาแหล่งยืนยันไม่เจอ (unverified)",
+    ],
+    metrics: [
+      { label: "Brent crude ปัจจุบัน (29-30 ก.ค. 2026, USD/bbl)", value: 89 },
+      { label: "Brent crude พีคสงคราม (9 มี.ค. 2026, USD/bbl)", value: 116 },
+      { label: "S&P 500 Energy earnings growth Q2 2026 (YoY %)", value: 122.9 },
+      { label: "S&P 500 Energy earnings growth Q2 2027F (YoY %)", value: -26.3 },
+    ],
+    relatedTickers: ["XLE", "XOM", "CVX"],
+    sources: [
+      { title: "TradingEconomics — Brent Crude Oil (current price)", url: "https://tradingeconomics.com/commodity/brent-crude-oil" },
+      { title: "OilPrice.com — Brent Crude Oil Futures Contracts (real-time futures price)", url: "https://oilprice.com/futures/brent/" },
+      { title: "CNBC — Oil prices move higher as Iran threatens response to latest U.S. strikes (30 Jul 2026)", url: "https://www.cnbc.com/amp/2026/07/30/oil-prices-us-iran-war.html" },
+      { title: "Bloomberg — Oil Holds Gain as Trump Vows to Hit Iran and US Stockpiles Slump (29-30 Jul 2026)", url: "https://www.bloomberg.com/news/articles/2026-07-29/latest-oil-market-news-and-analysis-for-july-30" },
+      { title: "CNBC — Oil prices jump more than 4% after Trump threatens to bomb Iran and reimpose naval blockade (8 Jul 2026)", url: "https://www.cnbc.com/2026/07/08/oil-prices-brent-wti-iran-us-hormuz.html" },
+      { title: "Wikipedia — 2026 Iran war ceasefire (timeline)", url: "https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire" },
+      { title: "Wikipedia — 2026 Strait of Hormuz crisis", url: "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" },
+      { title: "Databoks/Katadata — Iran continues to close the Strait of Hormuz, oil prices break $100/bbl (13 Mar 2026)", url: "https://databoks.katadata.co.id/en/datapublish/2026/03/13/iran-continues-to-close-the-strait-of-hormuz-oil-prices-break-us100-per-barrel" },
+      { title: "Army Recognition — US and Israel Launch Operation Epic Fury Against Iran", url: "https://www.armyrecognition.com/news/army-news/2026/us-israel-launch-operation-epic-fury-against-iran-nuclear-program-and-missile-arsenal" },
+      { title: "stockanalysis.com — XLE ETF overview (price, market cap, P/E, dividend yield)", url: "https://stockanalysis.com/etf/xle/" },
+      { title: "Tickeron — XLE technical analysis (RSI, Aroon, moving averages)", url: "https://tickeron.com/ticker/XLE/" },
+      { title: "FactSet Insight — S&P 500 Energy Sector Earnings Preview: Q2 2026 (quarterly YoY growth rates)", url: "https://insight.factset.com/sp-500-energy-sector-earnings-preview-q2-2026" },
+      { title: "FactSet Insight — S&P 500 Earnings Season Update: July 17, 2026 (sector leaders, Healthcare sole decline)", url: "https://insight.factset.com/sp-500-earnings-season-update-july-17-2026" },
+      { title: "Forbes — S&P 500 Earnings Outlook Hinges On Tech, Energy And The Fed (re-verified: no +57%/-5% figures present)", url: "https://www.forbes.com/sites/bill_stone/2026/07/05/sp-500-earnings-outlook-hinges-on-tech-energy-and-the-fed/" },
+      { title: "Global News — EIA raises oil output forecast, says oversupply will weigh on prices in 2026", url: "https://globalnews.ca/news/11523165/eia-oil-price-forecast-oversupply-2026/" },
+      { title: "OilPrice.com — Global Upstream Capex Set To Fall Again In 2026 Amid Low Oil Prices", url: "https://oilprice.com/Energy/Crude-Oil/Global-Upstream-Capex-Set-To-Fall-Again-In-2026-Amid-Low-Oil-Prices.html" },
+    ],
+    lastUpdated: "2026-07-31",
+    author: "Atlas",
+    trigger: "CIO/Bear brief update — war timeline + technical signal addendum to Energy entry (2026-07-30), plus re-verification of figures the brief itself flagged as unconfirmed",
   },
 ];

@@ -252,6 +252,28 @@
     .sector-stale-critical { color:#8A1A2A; font-weight:700; }
     .sector-card.stale-critical { border-left-color:#DC2626; background:#fbe4e7; }
 
+    /* CYCLE TRACK */
+    .cycle-track { display:grid; grid-template-columns: repeat(4, 1fr); gap:.75rem; }
+    .cycle-stage { background:#f4fafc; border:1px solid #B0C8F0; border-top:5px solid #B0C8F0; border-radius:10px; padding:.9rem 1rem; min-height:150px; }
+    .cycle-stage-title { font-size:.82rem; font-weight:700; color:#1A3A7A; margin-bottom:.25rem; }
+    .cycle-stage-desc { font-size:.68rem; color:#5870A8; line-height:1.45; margin-bottom:.7rem; min-height:2.6em; }
+    .cycle-chip-wrap { display:flex; flex-direction:column; gap:.5rem; }
+    .cycle-chip { border-radius:6px; padding:.4rem .6rem .5rem; cursor:pointer; transition:filter .15s, box-shadow .15s; }
+    .cycle-chip:hover { filter:brightness(0.97); box-shadow:0 2px 6px rgba(0,0,0,0.12); }
+    .cycle-chip-title { font-size:.76rem; font-weight:700; margin-bottom:.2rem; }
+    .cycle-chip-reason { font-size:.66rem; font-weight:500; line-height:1.4; opacity:.9;
+      display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+    .cycle-empty { font-size:.7rem; color:#8AAAD4; font-style:italic; }
+    .cycle-track-note { font-size:.7rem; color:#8AAAD4; margin-top:.6rem; }
+    .sector-card-flash { animation: sectorFlash 1.6s ease; }
+    @keyframes sectorFlash {
+      0%   { box-shadow: 0 0 0 3px #4A7CC7; }
+      100% { box-shadow: 0 1px 5px rgba(0,0,0,0.06); }
+    }
+    @media (max-width: 768px) {
+      .cycle-track { grid-template-columns: repeat(2, 1fr); }
+    }
+
     /* MOBILE FRM */
     @media (max-width: 768px) {
       .frm-content { padding: 1rem; }
@@ -540,6 +562,11 @@
       <button class="nav-tab" onclick="filterSectorViews('NEGATIVE',this)">Negative</button>
       <button class="nav-tab" onclick="filterSectorViews('NEUTRAL',this)">Neutral</button>
     </div>
+  </div>
+  <div class="card" style="margin-bottom:1.25rem;">
+    <div class="section-title">ตำแหน่งในวัฏจักรเศรษฐกิจ · Business Cycle Position <span style="text-transform:none;letter-spacing:0;color:#8AAAD4;">[CFA L1: Economics — Business Cycle]</span></div>
+    <div class="cycle-track" id="cycle-track"></div>
+    <div class="cycle-track-note" id="cycle-track-note"></div>
   </div>
   <div class="stat-grid" id="sector-stat-grid"></div>
   <div class="card" style="margin-bottom:1rem;max-width:360px;">
@@ -1728,6 +1755,67 @@ function toggleSectorHistory(slug) {
   el.style.display = el.style.display === 'block' ? 'none' : 'block';
 }
 
+// Business Cycle Position track — maps each sector's free-text cyclePosition
+// (written by Atlas ad-hoc, e.g. "Late-cycle / Defensive rotation") onto one of
+// 4 canonical macro stages so the reader sees at a glance where every covered
+// sector currently sits. Keyword match only — does not modify sectorViews.js.
+const CYCLE_STAGES = [
+  { key: 'early', label: 'Early Cycle', color: '#CFE3F5',
+    desc: 'เศรษฐกิจเพิ่งพ้นจุดต่ำสุด สินเชื่อเริ่มคลาย demand เร่งตัว' },
+  { key: 'mid', label: 'Mid Cycle', color: '#9CC1EA',
+    desc: 'การเติบโตแข็งแรงต่อเนื่อง อัตราดอกเบี้ยเริ่มขยับขึ้น' },
+  { key: 'late', label: 'Late Cycle', color: '#5A8FD6',
+    desc: 'การเติบโตชะลอตัว เงินเฟ้อ/ดอกเบี้ยตึงตัว กำไรใกล้จุดพีค' },
+  { key: 'recession', label: 'Recession / Contraction', color: '#2F5AA0',
+    desc: 'เศรษฐกิจหดตัว demand อ่อนแอ เงินไหลเข้าสินทรัพย์ defensive' },
+];
+
+function inferCycleStage(cyclePosition) {
+  const t = (cyclePosition || '').toLowerCase();
+  if (t.includes('recession') || t.includes('contraction')) return 'recession';
+  if (t.includes('late')) return 'late';
+  if (t.includes('early')) return 'early';
+  if (t.includes('mid')) return 'mid';
+  return null;
+}
+
+function buildCycleTrack(allGroups) {
+  const track = document.getElementById('cycle-track');
+  if (!track) return;
+  track.innerHTML = CYCLE_STAGES.map(stage => {
+    const here = allGroups.filter(g => inferCycleStage(g.cyclePosition) === stage.key);
+    const chips = here.length
+      ? here.map(g => `
+          <div class="cycle-chip sector-stance-${g.stance}" onclick="scrollToSectorCard('${g.slug}')" title="คลิกดูเหตุผลเต็ม + evidence chart ด้านล่าง">
+            <div class="cycle-chip-title">${g.sector}</div>
+            <div class="cycle-chip-reason">${g.headline || g.thesis}</div>
+          </div>`).join('')
+      : `<div class="cycle-empty">— ไม่มี sector ในเฟสนี้ —</div>`;
+    return `
+      <div class="cycle-stage" style="border-top-color:${stage.color};">
+        <div class="cycle-stage-title">${stage.label}</div>
+        <div class="cycle-stage-desc">${stage.desc}</div>
+        <div class="cycle-chip-wrap">${chips}</div>
+      </div>`;
+  }).join('');
+
+  const unclassified = allGroups.filter(g => !inferCycleStage(g.cyclePosition));
+  const note = document.getElementById('cycle-track-note');
+  if (note) {
+    note.textContent = unclassified.length
+      ? `หมายเหตุ: ${unclassified.map(g => g.sector).join(', ')} — cyclePosition ยังไม่ระบุเฟสชัดเจน จึงไม่แสดงในผังนี้`
+      : 'สีของแต่ละ chip = stance ปัจจุบันของ sector นั้น (เขียว=Positive, เหลือง=Cautious, ชมพู=Negative, ฟ้า=Neutral) · คลิก chip เพื่อดูเหตุผลเต็มด้านล่าง';
+  }
+}
+
+function scrollToSectorCard(slug) {
+  const el = document.getElementById('sector-card-' + slug);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.add('sector-card-flash');
+  setTimeout(() => el.classList.remove('sector-card-flash'), 1600);
+}
+
 function buildSectorViews() {
   const bySector = {};
   SECTOR_VIEWS.forEach(v => { (bySector[v.slug] = bySector[v.slug] || []).push(v); });
@@ -1739,6 +1827,7 @@ function buildSectorViews() {
   if (currentSectorFilter !== 'ALL') groups = groups.filter(g => g.current.stance === currentSectorFilter);
 
   const allGroups = Object.values(bySector).map(entries => entries.sort((a,b)=>b.lastUpdated.localeCompare(a.lastUpdated))[0]);
+  buildCycleTrack(allGroups);
   const tiers = allGroups.map(g => sectorStaleTier(g.lastUpdated).tier);
   document.getElementById('sector-stat-grid').innerHTML = `
     <div class="stat-card"><div class="stat-label">Sectors Tracked</div><div class="stat-value">${allGroups.length}</div></div>
@@ -1785,7 +1874,7 @@ function buildSectorViews() {
     const c = g.current, s = g._stale;
     const cardClass = s.tier === 'critical' ? 'stale-critical' : s.tier === 'warn' ? 'stale-warn' : '';
     return `
-      <div class="sector-card ${cardClass}">
+      <div class="sector-card ${cardClass}" id="sector-card-${c.slug}">
         <div class="sector-card-header">
           <span class="sector-name">${c.sector}</span>
           <span class="sector-stance sector-stance-${c.stance}">${c.stance}</span>
