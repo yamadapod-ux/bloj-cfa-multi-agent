@@ -21,6 +21,12 @@ const SECTOR_VIEWS = [
       "Upstream capex ลดต่อเนื่องปีที่ 2 (-2-3% YoY) + rig count ยังต่ำเทียบ shale-boom — ยังไม่ใช่ euphoria-style bubble top",
       "ถ้าจะพิจารณาจริง: integrated majors (XOM/CVX) หรือ midstream/pipeline (FCF นิ่งกว่า) ดีกว่า pure-play E&P ที่จะโดนแรงสุดถ้า cycle หัน",
     ],
+    metrics: [
+      { label: "Energy earnings growth 2026F", value: 57 },
+      { label: "Energy earnings growth 2027F", value: -5 },
+      { label: "XLE YTD return", value: 32 },
+      { label: "S&P 500 YTD return", value: 8.8 },
+    ],
     relatedTickers: [],
     sources: [
       { title: "Forbes — S&P 500 Earnings Outlook Hinges On Tech, Energy And The Fed", url: "https://www.forbes.com/sites/bill_stone/2026/07/05/sp-500-earnings-outlook-hinges-on-tech-energy-and-the-fed/" },
@@ -49,6 +55,11 @@ const SECTOR_VIEWS = [
       "หลักฐานเชิงประจักษ์จากพอร์ตเราเอง: ADBE/CRM/GOOGL ทั้งหมดโดน sell-the-news ซ้ำๆ ทุกครั้งที่มีข่าว capex แม้ fundamentals จริงจะแข็งแกร่งขึ้นต่อเนื่อง",
       "Technology sector Q2 2026 earnings +64.6% YoY (เร่งขึ้น) ยืนยันว่า demand ยังจริง ไม่ใช่แค่ hype — แต่ market ยัง discount ด้วย ROI doubt",
     ],
+    metrics: [
+      { label: "US Big Tech capex growth (YoY)", value: 50 },
+      { label: "Capex intensity (% of revenue)", value: 23 },
+      { label: "Technology sector Q2 2026 earnings growth", value: 64.6 },
+    ],
     relatedTickers: ["ADBE", "NOW", "GOOGL", "CRM", "ADSK"],
     sources: [
       { title: "CNBC — AI boom: Big Tech capex now seen topping $1 trillion in 2027", url: "https://www.cnbc.com/2026/04/30/ai-boom-big-tech-capital-expenditures-now-seen-topping-1-trillion-in-2027-.html" },
@@ -66,13 +77,17 @@ const SECTOR_VIEWS = [
     stance: "CAUTIOUS",
     cyclePosition: "Late-cycle / Defensive rotation",
     headline: "Valuation ถูก + rotation story น่าสนใจ แต่ earnings ยังหดตัวจริง และมี stock-specific risk ในพอร์ตเราเอง",
-    thesis: "Sell-side หลายสำนัก (Janus Henderson, BlackRock iShares, Bloomberg) มองปี 2026 เป็นปีที่ healthcare 'กลับมา' ได้ — valuation ยังอยู่ใกล้จุดต่ำสุดในรอบ ~30 ปีจาก policy uncertainty ที่เริ่มคลี่คลาย (drug pricing reform ชัดเจนขึ้น, M&A เริ่มกลับมาคึกคัก) และเป็น sector defensive ที่มักได้ประโยชน์จาก rotation ช่วงปลายวัฏจักร แต่ข้อมูลจริงจาก Q2 2026 earnings season ขัดแย้งกับ narrative นี้บางส่วน — healthcare เป็น sector เดียวใน S&P 500 ที่ earnings หดตัว YoY ไตรมาสนี้ ไม่ใช่แค่ sentiment ที่แย่ ทีมเจอสัญญาณ stock-specific คล้ายกันในพอร์ต/watchlist ของเราเอง: REGN เจอ securities class action lawsuit ใหม่ (Phase 3 melanoma setback), ZTS growth ชะลอเหลือ 2-5% พร้อม analyst PT ถูกหั่นต่อเนื่อง 2 รอบ, DXCM มีประวัติ crash -40% ในไตรมาสเดียวกันเมื่อ 2 ปีก่อน — ทำให้ยังไม่มั่นใจพอจะเรียกทั้ง sector ว่า positive แม้ valuation จะน่าสนใจ",
+    thesis: "Sell-side หลายสำนัก (Janus Henderson, BlackRock iShares, Bloomberg) มองปี 2026 เป็นปีที่ healthcare 'กลับมา' ได้ — valuation ยังอยู่ใกล้จุดต่ำสุดในรอบ ~30 ปีจาก policy uncertainty ที่เริ่มคลี่คลาย (drug pricing reform ชัดเจนขึ้น, M&A เริ่มกลับมาคึกคัก) และเป็น sector defensive ที่มักได้ประโยชน์จาก rotation ช่วงปลายวัฏจักร แต่ข้อมูลจริงจาก Q2 2026 earnings season ขัดแย้งกับ narrative นี้ชัดเจน — FactSet รายงานว่า healthcare เป็น sector เดียวใน S&P 500 ที่ earnings หดตัว YoY ไตรมาสนี้ และหดตัวหนักที่สุดในบรรดาทุก sector ที่ -18.2% (แย่กว่าคาดการณ์เดิม -9.5% ก่อนหน้านี้) สาเหตุหลักมาจาก managed care/health insurer เจอ patient utilization สูงเกินคาด + ค่าใช้จ่ายยา GLP-1 พุ่ง ไม่ใช่แค่ sentiment ที่แย่ ทีมเจอสัญญาณ stock-specific คล้ายกันในพอร์ต/watchlist ของเราเอง: REGN เจอ securities class action lawsuit ใหม่ (Phase 3 melanoma setback), ZTS growth ชะลอเหลือ 2-5% พร้อม analyst PT ถูกหั่นต่อเนื่อง 2 รอบ, DXCM มีประวัติ crash -40% ในไตรมาสเดียวกันเมื่อ 2 ปีก่อน — ทำให้ยังไม่มั่นใจพอจะเรียกทั้ง sector ว่า positive แม้ valuation จะน่าสนใจ",
     keyPoints: [
       "Valuation healthcare ใกล้จุดต่ำสุดรอบ ~30 ปี จาก policy uncertainty ที่เริ่มคลี่คลาย (drug pricing reform, Medicare Advantage rate decision เม.ย.)",
-      "แต่ Q2 2026: healthcare เป็น sector เดียวใน S&P 500 ที่ earnings หดตัว YoY — ขัดกับ 'comeback' narrative ของ sell-side บางส่วน",
+      "Q2 2026: healthcare earnings -18.2% YoY (FactSet) — แย่ที่สุดในบรรดาทุก sector ของ S&P 500 และแย่กว่าคาดการณ์เดิม -9.5% ต้นเหตุจาก managed care/GLP-1 cost surge",
       "M&A activity เริ่มกลับมาคึกคักขึ้น เป็นสัญญาณบวกเชิง structural",
       "Stock-specific risk ในพอร์ต/watchlist เราเอง: REGN lawsuit ใหม่, ZTS growth deceleration + PT cuts 2 รอบ, DXCM มี crash pattern -40% ประวัติศาสตร์ก่อน earnings",
       "สรุป: เป็น sector ที่ 'น่าดูใกล้ชิด' ไม่ใช่ 'รีบเพิ่มทุน' — รอดู Q3 earnings ว่า decline เป็น trough จริงหรือแค่เริ่มต้น",
+    ],
+    metrics: [
+      { label: "Healthcare Q2 2026 earnings growth", value: -18.2 },
+      { label: "S&P 500 overall Q2 2026 earnings growth", value: 24.5 },
     ],
     relatedTickers: ["REGN", "DXCM", "ZTS", "PODD"],
     sources: [
@@ -80,6 +95,7 @@ const SECTOR_VIEWS = [
       { title: "Janus Henderson — Why healthcare stocks could excel in 2026", url: "https://www.janushenderson.com/article/why-healthcare-stocks-could-excel-in-2026/" },
       { title: "BlackRock iShares — Healthcare making a comeback?", url: "https://www.blackrock.com/au/insights/ishares/2026-comeback-year-for-healthcare" },
       { title: "Forbes — S&P 500 Earnings Outlook (healthcare sole YoY earnings decline)", url: "https://www.forbes.com/sites/bill_stone/2026/07/05/sp-500-earnings-outlook-hinges-on-tech-energy-and-the-fed/" },
+      { title: "ETF Trends — Q2 Earnings Preview: Tech & Energy Drive Growth Amid Healthcare Headwinds", url: "https://www.etftrends.com/sector-investing-content-hub/q2-earnings-preview-tech-energy-drive-growth-amid-healthcare-headwinds/" },
     ],
     lastUpdated: "2026-07-30",
     author: "Atlas",

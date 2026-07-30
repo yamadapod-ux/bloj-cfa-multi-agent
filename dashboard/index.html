@@ -240,6 +240,7 @@
     .sector-history-toggle { background:none; border:none; color:#4A7CC7; font-size:.72rem; font-weight:600; cursor:pointer; padding:0; margin-top:.5rem; }
     .sector-history-list { margin-top:.5rem; padding-top:.5rem; border-top:1px dashed #B0C8F0; display:none; }
     .sector-history-item { font-size:.75rem; color:#5870A8; padding:.3rem 0; }
+    .sector-metrics-wrap { position:relative; height:120px; margin:.5rem 0 .75rem; }
     .sector-stance { display:inline-block; padding:.2rem .65rem; border-radius:20px; font-size:.72rem; font-weight:600; letter-spacing:.5px; }
     .sector-stance-POSITIVE { background:#B8EAC8; color:#1A5A30; border:1px solid #7ACFA0; }
     .sector-stance-CAUTIOUS { background:#F7E8A0; color:#7A5A00; border:1px solid #E8C830; }
@@ -1706,6 +1707,7 @@ function buildNews() {
 
 let currentSectorFilter = 'ALL';
 let sectorStanceChart = null;
+let sectorMetricsCharts = {};
 function filterSectorViews(f, btn) {
   currentSectorFilter = f;
   document.querySelectorAll('#sector-filter-btns .nav-tab').forEach(b => b.classList.remove('active'));
@@ -1792,6 +1794,7 @@ function buildSectorViews() {
         <div style="font-size:.92rem;font-weight:600;color:#1A3A7A;">${c.headline || ''}</div>
         <div class="sector-thesis">${c.thesis}</div>
         ${c.keyPoints && c.keyPoints.length ? `<ul class="sector-keypoints">${c.keyPoints.map(k => `<li>${k}</li>`).join('')}</ul>` : ''}
+        ${c.metrics && c.metrics.length ? `<div class="sector-metrics-wrap"><canvas id="sector-metrics-${c.slug}"></canvas></div>` : ''}
         <div class="sector-meta-row">
           ${staleLabel(s)}
           <div>${(c.relatedTickers || []).map(t => `<span class="news-ticker-tag">${t}</span>`).join('')}</div>
@@ -1805,6 +1808,34 @@ function buildSectorViews() {
           </div>` : ''}
       </div>`;
   }).join('');
+
+  // Per-card metric bar charts — small evidence-bars behind each stance (built after
+  // innerHTML so the canvases exist in the DOM). Destroy stale instances first since
+  // this rebuilds on every filter click, and the set of visible cards can shrink/change.
+  Object.values(sectorMetricsCharts).forEach(ch => ch.destroy());
+  sectorMetricsCharts = {};
+  groups.forEach(g => {
+    const c = g.current;
+    if (!c.metrics || !c.metrics.length) return;
+    const canvas = document.getElementById('sector-metrics-' + c.slug);
+    if (!canvas) return;
+    const barColors = c.metrics.map(m => m.value >= 0 ? '#7ACFA0' : '#E090A0');
+    sectorMetricsCharts[c.slug] = new Chart(canvas, {
+      type: 'bar',
+      data: {
+        labels: c.metrics.map(m => m.label),
+        datasets: [{ data: c.metrics.map(m => m.value), backgroundColor: barColors, borderRadius: 4 }]
+      },
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.parsed.x + '%' } } },
+        scales: {
+          x: { ticks: { color: '#5870A8', callback: (v) => v + '%' }, grid: { color: '#B0C8F0' } },
+          y: { ticks: { color: '#3A5A8A', font: { size: 10 } }, grid: { display: false } }
+        }
+      }
+    });
+  });
 }
 
 // ─── INIT ALL PAGES ──────────────────────────────────────

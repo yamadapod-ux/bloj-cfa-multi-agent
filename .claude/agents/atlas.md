@@ -602,6 +602,11 @@ WebFetch: (แหล่งข้อมูลเฉพาะทาง เช่�
   headline: "[1 บรรทัดสรุป — อ่านแล้วเข้าใจ view ทันที]",
   thesis: "[2-5 ประโยค อธิบาย view เต็มๆ — เหตุผลหลัก + ข้อมูลสนับสนุน + nuance]",
   keyPoints: ["[จุดสำคัญ 1]", "[จุดสำคัญ 2]", "[จุดสำคัญ 3]"],
+  metrics: [{ label: "[ชื่อตัวเลข เช่น 'Sector earnings growth 2026F']", value: 12.3 }],
+  // ^ optional แต่แนะนำให้ใส่เสมอ — ตัวเลข % ที่เป็นหลักฐานหลักของ thesis (2-4 ค่า)
+  // แสดงเป็น mini bar chart ต่อการ์ดใน dashboard (ดู buildSectorViews() ใน index.html)
+  // ทุกค่าต้องมาจาก source ที่ cite ไว้ใน sources[] ด้านล่าง ห้ามใส่ตัวเลขที่ไม่มีที่มา
+  // value เป็น number ล้วน (ไม่มี % ต่อท้าย), ค่าติดลบแสดงเป็นแท่งสีแดงอัตโนมัติ
   relatedTickers: ["[TICKER1]", "[TICKER2]"],   // [] ถ้าไม่มี
   sources: [{ title: "[ชื่อแหล่ง]", url: "[URL จริงที่ WebSearch/WebFetch เจอ]" }],
   lastUpdated: "[YYYY-MM-DD — วันนี้]",
