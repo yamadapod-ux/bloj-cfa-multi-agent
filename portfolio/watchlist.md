@@ -1,6 +1,6 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด: Scout Round 15 (2026-07-29) — ดู Scout History ด้านล่าง*
+*ล่าสุด: Scout Round 16 (2026-07-30) — ดู Scout History ด้านล่าง*
 
 ---
 
@@ -47,6 +47,10 @@
 | DXCM | DexCom, Inc. | Medical Devices / Continuous Glucose Monitoring | 2026-07-29 | $74.85 (2026-07-28 close, verified) | 4.8% (unlevered FCF yield, 82nd percentile sector) | +15.6% FY2025 (Rev $4.66B) | ROE 34.50% / ROIC 31.73-33.98% | Analyzed 2026-07-29 (Charlie/Emma/Quinn/Bear, Morgan QA PASS Round 2, Data Quality 9.5/10). Value bucket — both gates FAIL: Conviction 6.17/10 (Emma 6.0/Quinn 5.5/Bear 7.0) < 7.0 gate + MOS +0.4% (Blended FV $75.14, ESG-adj $66.12) << 15% required. CGM duopoly moat + ROE/ROIC extraordinary confirmed, but priced fairly not undervalued. Q2 2026 earnings 2026-07-30 (พรุ่งนี้) = binary event risk, historical -40.66% crash same quarter 2 ปีก่อน (2024-07-26) — เหตุผลเสริมให้ไม่รีบเข้า. Max: SKIPPED — NO DEPLOY ที่ราคานี้. Entry zone $58-65. **Re-analysis trigger:** (1) ราคาย่อสู่ entry zone $58-65 (ต้องลง -13% ถึง -22%), หรือ (2) post-Q2 earnings (2026-07-30) — ถ้า crash เหมือน 2024 pattern ต้อง re-analyze thesis ก่อนตัดสินใจ (อาจเป็น opportunity ถ้า thesis ยังสมบูรณ์ หรือ AVOID ถ้า competitive dynamics เปลี่ยน) | **HOLD/WAIT FOR PULLBACK + EARNINGS CLARITY — Analyzed 2026-07-29, conv 6.17 < 7.0 gate + MOS +0.4%** |
 | ICE | Intercontinental Exchange, Inc. | Financial Exchange / Market Data & Clearing | 2026-07-29 | $152.72 (2026-07-28, -19.3% จาก 52w high $189.35) | ~4.4% (FCF $4.29B TTM / EV proxy, EV/FCF 22.58x) | +7% FY2025 (Rev $9.9B) | ROE 13.85-19.36% | Wide moat exchange/data network (NYSE ownership + mortgage tech data + clearing house) — FCF-positive + ROE ผ่าน gate; sector ใหม่ทั้งหมด (ต่างจาก CME ที่เคย scout ตกไปแล้ว, ต่างจาก MA/V/PYPL payment network); ย่อ -19% จาก ATH; ⚠️ earnings July 30 (พรุ่งนี้) = event risk ก่อนส่งวิเคราะห์เต็ม ควรรอผลก่อนหรือ flag ให้ Charlie ระวัง | **NEW — รอ Analysis (earnings July 30 ก่อน full analysis)** |
 | CPRT | Copart, Inc. | Salvage Auto Auction / Vehicle Remarketing | 2026-07-29 | $29.79 (2026-07-27, -42% ใน 52 สัปดาห์) | FCF growth กำลังชะลอ (ไม่ใช่ yield แข็งเหมือน ZTS/DXCM) | ~1-2% (near-flat, ชะลอหนักจาก historical double-digit) | ROE 17.13% / ROIC 30.48-30.50% | ⚠️ CAUTION — auction duopoly moat (กับ IAA/RB Global) + ROIC สูงมาก + P/E 17.65x ถูกกว่า historical avg 40% แต่ revenue growth ใกล้แบนราบ (salvage/total-loss volume headwind จาก insurance loss ratio trends) + FCF growth momentum อ่อนลง + CEO Jeff Liaw ลาออกมีผล Jul31 2026 (leadership transition risk) — โปรไฟล์คล้าย NKE/ACN (deep value แต่ growth ไม่ชัดว่ากลับมาเมื่อไหร่) ไม่ใช่ default recommend | **NEW — CAUTION, growth stall + CEO transition — รอ Analysis เฉพาะถ้า CIO สนใจ contrarian value** |
+| MELI | MercadoLibre, Inc. | LatAm E-commerce + Fintech Platform (Marketplace + Mercado Pago) | 2026-07-30 | $1,862.52 (2026-07-28 close, 2 sources: stockinvest.us + stockanalysis.com/GuruFocus cross-check ~$1,862-1,869) | P/FCF 8.02x (85% below 10yr median, ~12% FCF yield equiv) | +49% Q1 2026 YoY | ROE 31.26% / ROIC 16.68% | Growth bucket clean pass — dominant LatAm digital ecosystem (marketplace + Mercado Pago fintech + logistics), -40.3% จาก 52w high $2,645.22 ขณะที่ growth เร่งขึ้น; FCF CAGR 3yr +75%; ความเสี่ยง: margin compression จาก logistics/credit investment หนักใน Brazil, sector ใหม่ทั้งหมด (ไม่ overlap SHOP/e-comm US) | **NEW — รอ Analysis** |
+| TDG | TransDigm Group Incorporated | Aerospace / OEM Aftermarket Parts (Sole-Source Monopoly) | 2026-07-30 | $1,264.60 (2026-07-29 close, -3.3% day, 2 sources: GuruFocus + Barchart $1,286.27 Jul27 cross-check consistent trend) | FCF yield ~2.4% (FCF $1.88B TTM, mkt cap $73.4B) | +13.3% Q2 FY26 (FY26 guide raised +17% YoY to $10.36B) | ROIC 16.7-19.4% (GuruFocus, methodology variance) | Value bucket — น่าจะเป็น widest moat ใน industrials ที่เคย scout มา: sole-source certified aerospace parts = pricing power สุดขั้ว (op margin 46-47%), -22.1% จาก 52w high $1,623.83; growth ไม่ถึง 20% Growth-bucket bar เลยจัดเป็น Value-bucket case (moat+FCF) ไม่ใช่ growth story; sector ใหม่ (ต่างจาก FTAI ที่เป็น aviation leasing/MRO ไม่ใช่ OEM parts monopoly) | **NEW — รอ Analysis** |
+| PODD | Insulet Corporation | Medical Devices / Insulin Pump (Omnipod) | 2026-07-30 | $167.47 (2026-07-28 close, 2 sources: Macrotrends + Robinhood $167.37 cross-check) | ยังไม่ verify session นี้ — ให้ Charlie/Emma ยืนยัน | +33.87% Q1 2026 YoY | ROE 16.31% / ROIC 13.74% (91st/95th percentile vs medtech peers) | Growth bucket clean pass — tubeless insulin pump category leader, Omnipod 5 international expansion หนุน accel; sector ใหม่ (ต่างจาก DXCM ที่เป็น CGM, ต่างจาก ISRG robotic surgery) | **NEW — รอ Analysis (⚠️ earnings Aug 5, 2026 = event risk ก่อน full analysis เสร็จ)** |
+| ONON | On Holding AG | Consumer / Athletic Footwear & Apparel | 2026-07-30 | ~$37.24 (2026-07-21, single-source WebSearch — Charlie ต้อง re-verify ≥2 sources สดก่อนวิเคราะห์) | ยังไม่ verify session นี้ | +14.5% Q1 2026 reported USD (+26.4% constant-currency) | ROIC 26.4-33.9% (source variance) / ROE 15.5% reported | CONDITIONAL — reported USD revenue growth 14.5% ไม่ถึง 20% Growth-bucket threshold แม้ constant-currency (26.4%) และ ROIC จะแข็งแกร่งมาก — FX headwind เป็นตัวแปรหลัก ต้องมี Bear case หนักเรื่อง FX durability ก่อนตั้ง conviction คล้าย precedent ZTS/CI/NKE | **NEW — CAUTION, headline growth ไม่ผ่าน (FX-driven miss) — รอ Analysis เฉพาะถ้า CIO สนใจ** |
 
 ---
 
@@ -1748,3 +1752,70 @@ ADBE, NOW, GOOGL, CRM, RDDT, REGN, ACN, ADSK, BAH, MCO, EOG, PGR, DVN, NEM, GD, 
 - CPRT → WATCH (ส่งเฉพาะถ้า CIO ต้องการ contrarian bet, ต้อง Bear case หนัก เรื่อง CEO transition + growth stall)
 
 **Excluded universe เพิ่มเติมจาก Round 15 (ห้ามซ้ำรอบถัดไป):** SNPS, APO, KKR, DHI, CSCO, ETSY, MET, ALGN (รวมกับ Round 1-14 excluded ~110+ tickers + DASH, RBLX, OKTA, AON, EQIX, TTWO) — PASS candidates (DXCM, ICE, ZTS, CPRT) อยู่ใน Pending Analysis table ด้านบนแล้ว ไม่ต้องเพิ่มในนี้
+
+
+---
+
+## Scout Report — 2026-07-30 (Max Scout Mode — Round 16: Fresh-Universe Cross-Sector Scan)
+
+**Trigger:** CIO "Max หาหุ้นใหม่" (Scout Pipeline, Round 16). Portfolio state (as of 2026-07-29 last review): Total $9,980.90, Cash $6,132.34 (61.44% — เกิน 30% floor ต่อเนื่อง 6+ สัปดาห์), 8 positions (ADBE/NOW/GOOGL/CRM/RDDT/REGN/ACN[1.4sh]/ADSK) — sector หนัก Software/Tech (6/8). **Regime: RISK-ON 3/4 — Atlas re-called สดวันนี้ (2026-07-29, agent_notes/atlas/2026-07-29_regime.md) ยืนยันไม่เปลี่ยนจากเดิม** — regime staleness ที่เคย flag ใน Round 15 (ค้าง 17 วัน) **หมดปัญหาแล้ว**. VIX 18.67 / YC +34bps / HY 281bps = 3/4 RISK-ON, Fed stance เป็น dissenter (hawkish hold + hike bias). Force Deploy ACTIVE, Position Size Multiplier 1.0×, Cash Floor 10%.
+
+**Market Context:** Iran ballistic missile intercepted (2026-07-29) + FOMC hold today พร้อม hawkish tone — ทั้งสองปัจจัยไม่ทำให้ VIX spike (ตลาด absorb ได้). DXCM Q2 2026 earnings รายงานหลังตลาดปิดวันนี้ (2026-07-30) — ยังไม่ออกผล ณ เวลาสแกน (แค่ confirm schedule ผ่าน DexCom IR + หลายแหล่งข่าว — ไม่มีตัวเลขจริงให้ report). DXCM ยังอยู่ status HOLD/WAIT ในตาราง Pending Analysis (conv 6.17 < 7.0 gate, MOS +0.4%) — ไม่เปลี่ยนแปลงจนกว่าจะมีผล earnings จริง.
+
+**Excluded universe (~130+ tickers ที่ analyzed/held/watchlist แล้ว — ห้ามซ้ำ):** อ้างอิง excluded universe เดิมทั้งหมด (Round 1-15) รวม ADBE/NOW/GOOGL/CRM/RDDT/REGN/ACN/ADSK/INTU/V/FICO/MCO/PGR/VEEV/GEV/MSFT/META/AVGO/WPM/NVDA/TSM/AAPL/AMZN/TSLA/BRK.B/JPM/WMT/LLY/DXCM/ICE/ZTS/CPRT/SNPS/APO/KKR/DHI/CSCO/ETSY/MET/ALGN + PWR/LDOS/QCOM/PG/APP/ANET/SPOT/APH/RKLB/CCJ/HIMS/TMDX/UBER/DUOL/STRL/NOK/ALAB/FPS/CLFD/PYPL/VRTX/XOM/CVX/COST/BAC/SPGI/RTX/HWM/LMT/NOC/FIX/CLS/LNG/CME/CB/LHX/STE/ACGL/BSX/TOST/TW/VRT/LRCX/FOUR/NET/HOOD/PEN/AMAT/CDNS/KLAC/IDXX/SYK/DHR/MDT/ETN/TTD/COIN/S/CRWV/ZS/DDOG/AXON/NVO/CRWD/LULU/PLTR/FTAI/SHOP/NKE/CRDO/MPWR/ORCL/WDAY/SNOW/MA/BKNG/NFLX/ISRG/UNH/BAH/EOG/DVN/NEM/GD/FNV/CI/DASH/RBLX/OKTA/AON/EQIX/TTWO/GOLD/SLB/FCX/ABBV/NEE/GPN/FISV/CAVA/TXN/EME/DAL/TJX/GEHC/ELV/CELH/TMUS/HUBS/BMY
+
+### Screen Methodology
+1. อ่าน agent_notes/atlas/2026-07-29_regime.md (RISK-ON 3/4 ยืนยันสด) + dashboard/portfolio.js + positions.md (8 positions, cash 61.44%) + portfolio/watchlist.md ทั้งไฟล์ (~130 tickers excluded)
+2. WebSearch หา sector ใหม่ทั้งหมดที่ยังไม่เคยสแกน — เน้น LatAm digital ecosystem, Aerospace OEM parts monopoly (ต่างจาก FTAI leasing), Medical device growth (นอกเหนือจาก CGM/robotic surgery), Athletic footwear/apparel growth
+3. WebSearch verify ราคา ≥2 sources ทุกตัว (ยกเว้น ONON ที่มีแค่ 1 source ชัดเจน — flag ให้ Charlie re-verify) + ROE/ROIC/FCF yield/Revenue growth
+4. Filter Growth bucket: Rev >20% YoY + ROIC/ROE คุณภาพดี | Value bucket: FCF-positive + wide moat
+5. คัดออก universe ~130+ tickers ข้างต้น
+
+### Screening Results — 2026-07-30
+
+| # | Ticker | Company | Sector | ราคา (source) | ROE/ROIC | Rev Growth | Moat | Bucket | ผ่าน Filter? |
+|---|--------|---------|--------|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | **MELI** | MercadoLibre, Inc. | LatAm E-commerce + Fintech | **$1,862.52** (Jul28, 2 sources) | ROE 31.26% / ROIC 16.68% | **+49% Q1 2026** | Wide (dominant LatAm marketplace+payments network, logistics moat) | Growth | **PASS — clean, top pick** |
+| 2 | **TDG** | TransDigm Group | Aerospace / OEM Aftermarket Parts | **$1,264.60** (Jul29, 2 sources) | ROIC 16.7-19.4% | +13.3% Q2 FY26 (below 20% Growth bar) | Wide (sole-source certified parts monopoly, op margin 46-47%) | Value | **PASS — moat/FCF case, not growth case** |
+| 3 | **PODD** | Insulet Corporation | Medical Devices / Insulin Pump | **$167.47** (Jul28, 2 sources) | ROE 16.31% / ROIC 13.74% | **+33.87% Q1 2026** | Narrow-Wide (Omnipod tubeless platform, switching cost) | Growth | **PASS — clean แต่ ⚠️ earnings Aug 5 event risk** |
+| 4 | **ONON** | On Holding AG | Athletic Footwear & Apparel | **~$37.24** (Jul21, 1 source only) | ROIC 26.4-33.9% / ROE 15.5% | +14.5% reported (+26.4% cc) | Narrow-Wide (DTC brand + tech IP, CloudTec) | Growth | **CONDITIONAL — reported growth ไม่ถึงเกณฑ์, FX-driven miss** |
+
+**Source:** MELI $1,862.52 (stockinvest.us WebSearch Jul28 close, cross-check stockanalysis.com/GuruFocus range $1,862-1,869) | ROE 31.26%/ROIC 16.68% (stockanalysis.com/gurufocus.com) | Rev +49% Q1 2026 (SEC 8-K coverage) | 52w high $2,645.22/low $1,536.71 (WallStreetZen/Motley Fool) | P/FCF 8.02x (GuruFocus Jul13) | TDG $1,264.60 (GuruFocus WebSearch Jul29 close, -3.3% day) + $1,286.27 (Barchart Jul27) cross-check | ROIC 16.74-19.40% (GuruFocus, methodology variance flagged) | Rev Q2 FY26 +13.3%, FY26 guide $10.36B +17% (Seeking Alpha) | Market cap $73.4B + FCF $1.88B TTM (FinanceCharts) | 52w high $1,623.83/low $1,123.61 (Simply Wall St) | PODD $167.47 (Macrotrends WebSearch Jul28) + $167.37 (Robinhood Jul16, consistent trend) | Rev Q1 2026 +33.87% $0.762B (webull/Yahoo Finance earnings coverage) | ROE 16.31%/ROIC 13.74% (WallStreetZen) | Q2 2026 earnings date Aug 5 2026 (company IR) | ONON ~$37.24 (Yahoo Finance WebSearch, Jul21 close, -1.09% day — **เตือน: single-source เท่านั้น, ไม่มี 2nd source cross-check session นี้**) | Rev Q1 2026 CHF 831.9M +14.5% reported / +26.4% constant-currency (Globe and Mail/StockTitan 6-K) | ROIC 26.4-33.9% (GuruFocus/AlphaSpread variance) | ROE 15.5% reported (stockanalysis.com)
+
+### Candidates ที่สำรวจแต่ตกรอบ — 2026-07-30
+
+| Ticker | Sector | เหตุผลที่ตกรอบ | ปัญหาหลัก |
+|--------|--------|---------------|-----------|
+| **WING** (Wingstop) | Restaurant Franchise | Rev growth จริงแค่ +6.4% Q2 2026 (+7.4% Q1) << 20% Growth threshold แม้ analyst คาด forward 16.2%; ราคาอยู่ใกล้ 52w high (+7.48% ใน 52 สัปดาห์ ไม่มี pullback) | Growth ไม่ถึงเกณฑ์ + ไม่มี MOS ด้าน price |
+| **DECK** (Deckers Brands / HOKA) | Apparel / Footwear | Rev growth เพียง +10% FY26 (HOKA +16%, UGG +8%) << 20% Growth threshold; ไม่ได้ down มากพอสำหรับ deep-value Value-bucket case (เทรดที่ P/E 13.9x ซึ่งไม่แพงแต่ก็ไม่ใช่ deep pullback ชัดเจนแบบ NKE) | Growth ไม่ถึงเกณฑ์ Growth bucket, ไม่ deep-value พอสำหรับ Value bucket |
+
+### Sector Coverage Update (2026-07-30)
+
+| Sector | มีในพอร์ต/Watchlist แล้ว | Scout ใหม่ 2026-07-30 |
+|--------|------------------------|----------------------|
+| LatAm E-commerce + Fintech | ไม่มีเลย (SHOP=US e-comm, PYPL=US/global payments, ต่างกันทั้งคู่) | **MELI** — sector ใหม่ทั้งหมด (geography + dual business model) |
+| Aerospace OEM Aftermarket Parts (sole-source) | FTAI (aviation leasing/MRO, business model ต่างกัน — ไม่ deploy) | **TDG** — sector ใหม่ (monopoly parts manufacturer ไม่ใช่ leasing/trading) |
+| Medical Devices / Insulin Delivery | DXCM (CGM, HOLD/WAIT), ISRG (robotic surgery, ตกรอบ FCF yield) | **PODD** — sector ใหม่ (insulin pump modality ต่างจาก CGM) |
+| Athletic Footwear & Apparel (DTC brand) | NKE (analyzed, CAUTION turnaround), DECK (ตกรอบ growth ต่ำ) | **ONON** — conditional เฉพาะ (FX-driven growth miss) |
+
+### Max's Overall Assessment — Round 16
+
+1. **MELI = top pick รอบนี้ ชัดเจนที่สุด** — Growth bucket clean pass ที่แข็งแกร่งที่สุดเท่าที่เคย scout มาในหลายรอบหลัง: Rev +49% (เกิน threshold เกือบ 2.5 เท่า), ROE 31%, P/FCF เพียง 8x (ถูกกว่า median 10 ปีตัวเองถึง 85%) — combination ของ growth เร่งตัว + valuation ถูกกว่า historical average มาก เป็น mispricing signature แบบเดียวกับ ADBE/NOW ตอน scout ครั้งแรก แต่ growth สูงกว่ามาก sector ใหม่ 100% ไม่ overlap อะไรในพอร์ต (LatAm ยังไม่มีเลย)
+
+2. **TDG = priority #2 — เป็น Value-bucket case ที่ moat แข็งที่สุดเท่าที่เคย scout** — sole-source certified aerospace parts (เปลี่ยน supplier ไม่ได้ตามกฎ FAA) ให้ pricing power ที่ op margin 46-47% พิสูจน์ได้ real — ย่อ -22% จาก ATH ให้ entry ที่สมเหตุสมผลกว่าที่เคยเห็น แต่ revenue growth 13.3% ไม่ผ่าน Growth-bucket bar เลยต้องพิสูจน์ MOS ผ่าน DCF-based Value framework (FCF yield 2.4% ต่ำ ต้องดู absolute FCF quality/growth trajectory แทน)
+
+3. **PODD ผ่านสะอาดแต่ event risk ใกล้ตัว** — Rev +33.87% Q1 ชัดเจนเกิน threshold, ROE/ROIC ผ่าน percentile สูง แต่ earnings Aug 5 (6 วันข้างหน้า) เป็น binary catalyst ที่ควรรอผลก่อนส่ง Charlie เต็มรูปแบบ เหมือน pattern ICE ที่เคย flag ไว้ Round 15
+
+4. **ONON เป็น conditional ที่ต้องระวัง FX accounting** — ROIC/ROE แข็งแกร่งมาก แต่ reported (USD) revenue growth 14.5% ต่ำกว่า threshold ทั้งที่ constant-currency 26.4% ผ่านสบาย — นี่คือคำถามที่ต้องตอบก่อน: FX headwind ชั่วคราวหรือโครงสร้าง (Swiss franc strength)? ไม่แนะนำส่ง Charlie ทันทีจนกว่า CIO อยากได้ deep-value/FX-arbitrage bet โดยเฉพาะ — ราคาที่ใช้เป็น single-source เท่านั้น (ต้อง re-verify ก่อนตัดสินใจใดๆ)
+
+5. **Regime staleness ที่เคยเป็นปัญหาใหญ่ที่สุดใน Round 15 หมดไปแล้ว** — Atlas re-call สดวันนี้ (2026-07-29) ยืนยัน RISK-ON 3/4 ไม่เปลี่ยน — deployment gate เปิดตามปกติ ไม่มี blocking issue ด้าน regime อีกต่อไป จุดที่ควรระวังต่อคือ **cash 61.44% เกิน floor ต่อเนื่อง 6+ สัปดาห์** — priority ที่แท้จริงยังเป็นการ deploy บาง candidate จริงจัง (MELI ดูดีที่สุดให้ Charlie ตรวจ Growth MOS ต่อ) ไม่ใช่แค่สะสม watchlist เพิ่มเรื่อยๆ
+
+**คำแนะนำ Max:** ส่ง **MELI** ให้ Charlie วิเคราะห์เต็มก่อน (top pick, clean pass, sector ใหม่ 100%, valuation ถูกสุดขั้วเทียบ historical) ตามด้วย **TDG** (priority #2, ต้องพิสูจน์ MOS ผ่าน DCF ไม่ใช่ Growth-reverse-DCF เพราะเป็น Value case) — **PODD ส่งได้แต่รอผล earnings Aug 5 ก่อน** — **ONON ส่งได้เฉพาะถ้า CIO สนใจ FX-arbitrage/deep-value bet โดยเฉพาะ ต้อง re-verify ราคาก่อน**
+
+**Target Analysis Dates (Charlie SLA ≤5 วัน):**
+- MELI → target **2026-08-04** (top pick, clean pass)
+- TDG → target **2026-08-04** (priority #2, Value-bucket DCF case)
+- PODD → WATCH จนกว่าจะผ่าน earnings Aug 5, 2026 — แล้วค่อยส่ง target **2026-08-06**
+- ONON → WATCH (ส่งเฉพาะถ้า CIO ต้องการ FX-arbitrage bet, ต้อง re-verify ราคาก่อน)
+
+**Excluded universe เพิ่มเติมจาก Round 16 (ห้ามซ้ำรอบถัดไป):** WING, DECK (รวมกับ Round 1-15 excluded ~130+ tickers) — PASS candidates (MELI, TDG, PODD, ONON) อยู่ใน Pending Analysis table ด้านบนแล้ว ไม่ต้องเพิ่มในนี้
