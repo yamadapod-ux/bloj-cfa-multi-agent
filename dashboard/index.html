@@ -252,26 +252,22 @@
     .sector-stale-critical { color:#8A1A2A; font-weight:700; }
     .sector-card.stale-critical { border-left-color:#DC2626; background:#fbe4e7; }
 
-    /* CYCLE TRACK */
-    .cycle-track { display:grid; grid-template-columns: repeat(4, 1fr); gap:.75rem; }
-    .cycle-stage { background:#f4fafc; border:1px solid #B0C8F0; border-top:5px solid #B0C8F0; border-radius:10px; padding:.9rem 1rem; min-height:150px; }
-    .cycle-stage-title { font-size:.82rem; font-weight:700; color:#1A3A7A; margin-bottom:.25rem; }
-    .cycle-stage-desc { font-size:.68rem; color:#5870A8; line-height:1.45; margin-bottom:.7rem; min-height:2.6em; }
-    .cycle-chip-wrap { display:flex; flex-direction:column; gap:.5rem; }
-    .cycle-chip { border-radius:6px; padding:.4rem .6rem .5rem; cursor:pointer; transition:filter .15s, box-shadow .15s; }
-    .cycle-chip:hover { filter:brightness(0.97); box-shadow:0 2px 6px rgba(0,0,0,0.12); }
-    .cycle-chip-title { font-size:.76rem; font-weight:700; margin-bottom:.2rem; }
-    .cycle-chip-reason { font-size:.66rem; font-weight:500; line-height:1.4; opacity:.9;
-      display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
-    .cycle-empty { font-size:.7rem; color:#8AAAD4; font-style:italic; }
-    .cycle-track-note { font-size:.7rem; color:#8AAAD4; margin-top:.6rem; }
+    /* CYCLE WHEEL */
+    .cycle-wheel-wrap { display:flex; justify-content:center; padding:.5rem 0; }
+    #cycle-wheel { width:100%; max-width:460px; display:block; }
+    .cycle-marker { cursor:pointer; }
+    .cycle-marker circle { transition:r .15s ease, stroke-width .15s ease; }
+    .cycle-marker:hover circle { r:11; stroke-width:3; }
+    .cycle-marker:hover text { text-decoration:underline; }
+    .cycle-track-note { font-size:.7rem; color:#8AAAD4; margin-top:.4rem; text-align:center; }
+    .cycle-table-toggle { font-size:.72rem; color:#4A7CC7; cursor:pointer; margin-top:.6rem; }
+    .cycle-table { width:100%; border-collapse:collapse; font-size:.72rem; margin-top:.6rem; }
+    .cycle-table th, .cycle-table td { padding:.35rem .5rem; border-bottom:1px solid #B0C8F0; text-align:left; color:#3A5A8A; }
+    .cycle-table th { color:#5870A8; font-weight:700; }
     .sector-card-flash { animation: sectorFlash 1.6s ease; }
     @keyframes sectorFlash {
       0%   { box-shadow: 0 0 0 3px #4A7CC7; }
       100% { box-shadow: 0 1px 5px rgba(0,0,0,0.06); }
-    }
-    @media (max-width: 768px) {
-      .cycle-track { grid-template-columns: repeat(2, 1fr); }
     }
 
     /* MOBILE FRM */
@@ -565,8 +561,15 @@
   </div>
   <div class="card" style="margin-bottom:1.25rem;">
     <div class="section-title">ตำแหน่งในวัฏจักรเศรษฐกิจ · Business Cycle Position <span style="text-transform:none;letter-spacing:0;color:#8AAAD4;">[CFA L1: Economics — Business Cycle]</span></div>
-    <div class="cycle-track" id="cycle-track"></div>
+    <div class="cycle-wheel-wrap"><svg id="cycle-wheel" viewBox="0 0 520 520"></svg></div>
     <div class="cycle-track-note" id="cycle-track-note"></div>
+    <details class="cycle-table-toggle">
+      <summary>แสดงเป็นตาราง</summary>
+      <table class="cycle-table" id="cycle-table">
+        <thead><tr><th>Sector</th><th>Cycle Stage</th><th>Stance</th><th>Headline</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </details>
   </div>
   <div class="stat-grid" id="sector-stat-grid"></div>
   <div class="card" style="margin-bottom:1rem;max-width:360px;">
@@ -1755,20 +1758,28 @@ function toggleSectorHistory(slug) {
   el.style.display = el.style.display === 'block' ? 'none' : 'block';
 }
 
-// Business Cycle Position track — maps each sector's free-text cyclePosition
-// (written by Atlas ad-hoc, e.g. "Late-cycle / Defensive rotation") onto one of
-// 4 canonical macro stages so the reader sees at a glance where every covered
-// sector currently sits. Keyword match only — does not modify sectorViews.js.
+// Business Cycle Wheel — maps each sector's free-text cyclePosition (written by
+// Atlas ad-hoc, e.g. "Late-cycle / Defensive rotation") onto one of 4 canonical
+// macro stages arranged clockwise around a ring, so the reader sees at a glance
+// where every covered sector sits right now. Keyword match only — never writes
+// back to sectorViews.js.
 const CYCLE_STAGES = [
-  { key: 'early', label: 'Early Cycle', color: '#CFE3F5',
+  { key: 'early',     label: 'Early Cycle',              fill: '#CFE3F5', text: '#1A3A7A', start: 0,   end: 90,
     desc: 'เศรษฐกิจเพิ่งพ้นจุดต่ำสุด สินเชื่อเริ่มคลาย demand เร่งตัว' },
-  { key: 'mid', label: 'Mid Cycle', color: '#9CC1EA',
+  { key: 'mid',       label: 'Mid Cycle',                 fill: '#9CC1EA', text: '#1A3A7A', start: 90,  end: 180,
     desc: 'การเติบโตแข็งแรงต่อเนื่อง อัตราดอกเบี้ยเริ่มขยับขึ้น' },
-  { key: 'late', label: 'Late Cycle', color: '#5A8FD6',
+  { key: 'late',      label: 'Late Cycle',                fill: '#5A8FD6', text: '#ffffff', start: 180, end: 270,
     desc: 'การเติบโตชะลอตัว เงินเฟ้อ/ดอกเบี้ยตึงตัว กำไรใกล้จุดพีค' },
-  { key: 'recession', label: 'Recession / Contraction', color: '#2F5AA0',
+  { key: 'recession', label: 'Recession / Contraction',   fill: '#2F5AA0', text: '#ffffff', start: 270, end: 360,
     desc: 'เศรษฐกิจหดตัว demand อ่อนแอ เงินไหลเข้าสินทรัพย์ defensive' },
 ];
+
+const STANCE_COLORS = {
+  POSITIVE: { fill: '#B8EAC8', stroke: '#0ca30c' },
+  CAUTIOUS: { fill: '#F7E8A0', stroke: '#fab219' },
+  NEGATIVE: { fill: '#F4B8C1', stroke: '#d03b3b' },
+  NEUTRAL:  { fill: '#B0C8F0', stroke: '#4A7CC7' },
+};
 
 function inferCycleStage(cyclePosition) {
   const t = (cyclePosition || '').toLowerCase();
@@ -1779,32 +1790,87 @@ function inferCycleStage(cyclePosition) {
   return null;
 }
 
+function cyclePolarToXY(cx, cy, r, angleDeg) {
+  const a = (angleDeg - 90) * Math.PI / 180; // 0deg = 12 o'clock, clockwise
+  return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) };
+}
+
+function cycleDonutSlice(cx, cy, outerR, innerR, a0, a1) {
+  const po = cyclePolarToXY(cx, cy, outerR, a1);
+  const p1 = cyclePolarToXY(cx, cy, outerR, a0);
+  const pi = cyclePolarToXY(cx, cy, innerR, a0);
+  const p2 = cyclePolarToXY(cx, cy, innerR, a1);
+  const large = (a1 - a0) > 180 ? 1 : 0;
+  return `M ${po.x} ${po.y} A ${outerR} ${outerR} 0 ${large} 0 ${p1.x} ${p1.y} L ${pi.x} ${pi.y} A ${innerR} ${innerR} 0 ${large} 1 ${p2.x} ${p2.y} Z`;
+}
+
+function esc(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+
+// Splits on " / " so long labels ("Recession / Contraction", "Software / AI")
+// wrap onto stacked tspans instead of overflowing past the SVG viewBox.
+function svgWrappedText(text, x, y, anchor, fontSize, fill, weight) {
+  const parts = String(text || '').split(' / ');
+  const lh = fontSize + 3;
+  const startDy = -((parts.length - 1) * lh) / 2;
+  const tspans = parts.map((p, i) =>
+    `<tspan x="${x}" dy="${i === 0 ? startDy : lh}">${esc(p)}${i < parts.length - 1 ? ' /' : ''}</tspan>`
+  ).join('');
+  return `<text x="${x}" y="${y}" text-anchor="${anchor}" font-size="${fontSize}" font-weight="${weight}" fill="${fill}" font-family="Prompt, sans-serif">${tspans}</text>`;
+}
+
 function buildCycleTrack(allGroups) {
-  const track = document.getElementById('cycle-track');
-  if (!track) return;
-  track.innerHTML = CYCLE_STAGES.map(stage => {
+  const svg = document.getElementById('cycle-wheel');
+  if (!svg) return;
+  const cx = 260, cy = 260, outerR = 168, innerR = 108, labelR = (outerR + innerR) / 2, markerR = outerR + 40;
+
+  let arcs = '', labels = '', markers = '';
+
+  CYCLE_STAGES.forEach(stage => {
+    arcs += `<path d="${cycleDonutSlice(cx, cy, outerR, innerR, stage.start, stage.end)}" fill="${stage.fill}" stroke="#f4fafc" stroke-width="3"/>`;
+
+    const mid = (stage.start + stage.end) / 2;
+    const lp = cyclePolarToXY(cx, cy, labelR, mid);
+    labels += svgWrappedText(stage.label, lp.x, lp.y, 'middle', 13, stage.text, 700);
+
     const here = allGroups.filter(g => inferCycleStage(g.cyclePosition) === stage.key);
-    const chips = here.length
-      ? here.map(g => `
-          <div class="cycle-chip sector-stance-${g.stance}" onclick="scrollToSectorCard('${g.slug}')" title="คลิกดูเหตุผลเต็ม + evidence chart ด้านล่าง">
-            <div class="cycle-chip-title">${g.sector}</div>
-            <div class="cycle-chip-reason">${g.headline || g.thesis}</div>
-          </div>`).join('')
-      : `<div class="cycle-empty">— ไม่มี sector ในเฟสนี้ —</div>`;
-    return `
-      <div class="cycle-stage" style="border-top-color:${stage.color};">
-        <div class="cycle-stage-title">${stage.label}</div>
-        <div class="cycle-stage-desc">${stage.desc}</div>
-        <div class="cycle-chip-wrap">${chips}</div>
-      </div>`;
-  }).join('');
+    const spread = 22;
+    here.forEach((g, i) => {
+      const offset = here.length > 1 ? (i - (here.length - 1) / 2) * spread : 0;
+      const mp = cyclePolarToXY(cx, cy, markerR, mid + offset);
+      const sc = STANCE_COLORS[g.stance] || STANCE_COLORS.NEUTRAL;
+      const anchor = mp.x < cx - 8 ? 'end' : mp.x > cx + 8 ? 'start' : 'middle';
+      const dx = mp.x < cx - 8 ? -11 : mp.x > cx + 8 ? 11 : 0;
+      const dy = mp.y < cy - 8 ? -10 : mp.y > cy + 8 ? 18 : (anchor === 'middle' ? -14 : 4);
+      markers += `
+        <g class="cycle-marker" onclick="scrollToSectorCard('${g.slug}')">
+          <title>${esc(g.sector)} — ${esc(g.headline || g.thesis)}</title>
+          <circle cx="${mp.x}" cy="${mp.y}" r="8" fill="${sc.fill}" stroke="${sc.stroke}" stroke-width="2"/>
+          ${svgWrappedText(g.sector, mp.x + dx, mp.y + dy, anchor, 12, '#1A3A7A', 700)}
+        </g>`;
+    });
+  });
+
+  svg.innerHTML = `
+    <circle cx="${cx}" cy="${cy}" r="${outerR + 1}" fill="none" stroke="#B0C8F0" stroke-width="1" stroke-dasharray="2 4"/>
+    ${arcs}
+    ${labels}
+    ${markers}
+  `;
+
+  const tbody = document.querySelector('#cycle-table tbody');
+  if (tbody) {
+    tbody.innerHTML = allGroups.map(g => {
+      const stage = CYCLE_STAGES.find(s => s.key === inferCycleStage(g.cyclePosition));
+      return `<tr><td>${g.sector}</td><td>${stage ? stage.label : 'ไม่ระบุ'}</td><td>${g.stance}</td><td>${g.headline || ''}</td></tr>`;
+    }).join('');
+  }
 
   const unclassified = allGroups.filter(g => !inferCycleStage(g.cyclePosition));
   const note = document.getElementById('cycle-track-note');
   if (note) {
     note.textContent = unclassified.length
-      ? `หมายเหตุ: ${unclassified.map(g => g.sector).join(', ')} — cyclePosition ยังไม่ระบุเฟสชัดเจน จึงไม่แสดงในผังนี้`
-      : 'สีของแต่ละ chip = stance ปัจจุบันของ sector นั้น (เขียว=Positive, เหลือง=Cautious, ชมพู=Negative, ฟ้า=Neutral) · คลิก chip เพื่อดูเหตุผลเต็มด้านล่าง';
+      ? `หมายเหตุ: ${unclassified.map(g => g.sector).join(', ')} — cyclePosition ยังไม่ระบุเฟสชัดเจน จึงไม่แสดงบนวงล้อ`
+      : 'สีของจุด = stance ปัจจุบัน (เขียว=Positive, เหลือง=Cautious, ชมพู=Negative, ฟ้า=Neutral) · คลิกจุด/ชื่อเพื่อดูเหตุผลเต็มด้านล่าง · ชี้เมาส์ค้างดู headline';
   }
 }
 
