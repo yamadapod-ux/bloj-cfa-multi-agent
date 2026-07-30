@@ -108,6 +108,26 @@ Atlas ต้องบันทึก Regime call ใน `agent_notes/atlas/YYYY-
 - Override note (ถ้ามี): เหตุผลที่ judgment override majority vote
 ถ้า Atlas ไม่บันทึก → Max ถือว่า Regime ยัง TRANSITIONAL-CAUTIOUS จนกว่าจะมี record
 
+### Sector Views Protocol (Atlas ดูแล — ad-hoc, ไม่ใช่ scheduled job)
+
+CIO ต้องการเห็น "ทีมคิดยังไงกับทั้ง sector" ไม่ใช่แค่ ticker เดี่ยวๆ หรือข่าว — เพราะ dashboard
+ไม่ได้มีไว้อ่านเฉพาะ CIO คนเดียว คนอื่นอ่านเพื่อเข้าใจว่าทีมกำลังคิด/ทำอะไรอยู่ (แสดงใน dashboard tab "Sector Views")
+
+**เขียน entry ใหม่ใน `dashboard/sectorViews.js` เมื่อ (อย่างใดอย่างหนึ่ง):**
+1. CIO ถามตรงๆ ("Atlas วิเคราะห์ [sector] sector cycle ให้หน่อย")
+2. Atlas re-call Macro Regime แล้วมุมมองต่อ sector ใดเปลี่ยนไปจากเดิม
+3. Phase 1 Macro Brief ของ ticker analysis ใดๆ เปิดเผยมุมมองใหม่ต่อทั้ง sector (ไม่ใช่แค่ตัวหุ้นนั้น)
+
+**ห้าม:** ตั้งเป็น scheduled/daily job แบบ `/news-scan` — ต้องเป็น byproduct ของงานจริงหรือคำขอจริงเท่านั้น
+
+**กฎการเขียน (append-only — ตาม Dashboard Write Safety):**
+- ห้ามแก้/ลบ entry เดิมใน `SECTOR_VIEWS` array — push entry ใหม่เข้าไปเท่านั้น (entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน)
+- ทุก entry ต้องมี `sources: [{title, url}]` อย่างน้อย 1 รายการ ตาม Training Knowledge Ban
+- ทุก entry ต้องมี `lastUpdated` เป็นวันที่ authored จริง — ห้ามใช้วันที่ file ถูก touch
+- ไฟล์ใหม่ทั้งไฟล์ (ครั้งแรก) ใช้ Write ได้ปกติ แต่การเพิ่ม entry ครั้งถัดๆ ไป **ห้าม Write ทับทั้งไฟล์** — ใช้ targeted Edit หรือ Python/Node append script เท่านั้น
+
+**Staleness ไม่ใช่เรื่อง optional** — dashboard คำนวณเองจาก `lastUpdated` ทุกครั้งที่เปิดหน้า (ไม่ใช่ pre-baked) ถ้า entry ล่าสุดของ sector ใดเก่าเกิน 60 วัน → ระบบ pin ขึ้นบนสุดพร้อม warning "ต้อง re-call" อัตโนมัติ — Atlas ควรถือเป็นสัญญาณให้ re-visit sector นั้น ไม่ใช่ปล่อยผ่าน
+
 ### Single Source of Truth Rule (กฎเหล็ก — ทุก agent ต้องปฏิบัติ)
 
 1. **S&P 500 prices** — Atlas บันทึกใน `agent_notes/atlas/YYYY-MM-DD_regime.md` ทุก session ที่มี analysis หรือ trade
@@ -233,6 +253,8 @@ CIO → "Vera ออก performance report"
 | Leo's Notes | Leo | `agent_notes/leo/YYYY-MM-DD_TICKER.md` |
 
 นอกจากนี้ Leo ต้องอัปเดต `portfolio/decisions.md` + `dashboard/data.js` ทุกครั้ง
+
+หมายเหตุ: `dashboard/sectorViews.js` **ไม่ใช่** ส่วนหนึ่งของ 7 ไฟล์บังคับทุก analysis ข้างต้น — Atlas เขียนเฉพาะ ad-hoc ตาม Sector Views Protocol ด้านบน
 
 ## Research Report Format (บังคับ — ทุกรายงาน)
 
@@ -410,7 +432,8 @@ Leo เพิ่ม object เข้า `REPORTS` array — รวม `fullConte
 - `performance/weekly_YYYY-WW.md` — Vera weekly output (Vera ดูแล)
 - `performance/quarterly_YYYY-Q.md` — Vera quarterly output + conviction calibration (Vera ดูแล)
 - `session_logs/lessons_YYYY-MM.md` — Leo monthly lessons + pattern extraction (Leo ดูแล)
-- `dashboard/index.html` — Investment Dashboard (เปิดด้วย file://) | **Macro Dashboard tab: แสดง 4 regime indicators + regime history timeline (Priority 4 feature)**
+- `dashboard/index.html` — Investment Dashboard (เปิดด้วย file://) | **Sector Views tab: built** — แสดง team qualitative view ต่อ sector พร้อม staleness indicator | **Macro Dashboard tab: ยังไม่ได้สร้าง (Priority 4 feature)** — 4 regime indicators + regime history timeline (คนละเรื่องกับ Sector Views — อันนี้คือ quantitative regime data ไม่ใช่ per-sector thesis)
+- `dashboard/sectorViews.js` — ทีม view ระดับ sector (ไม่ใช่ ticker) — Energy, Software/AI, Healthcare ฯลฯ (Atlas ดูแล, **ad-hoc — ไม่ใช่ daily job เหมือน news.js**)
 - `dashboard/data.js` — Auto-managed by Leo (อย่าแก้มือ)
 - `.claude/agents/` — agent system prompts
 - `reports/` — Research reports (Charlie สร้าง)

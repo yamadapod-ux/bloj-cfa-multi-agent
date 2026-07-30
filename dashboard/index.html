@@ -10,6 +10,7 @@
   <script src="data.js"></script>
   <script src="portfolio.js"></script>
   <script src="news.js"></script>
+  <script src="sectorViews.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     @font-face {
@@ -226,6 +227,30 @@
     .news-ticker-tag { display:inline-block; background:#d5eff2; border:1px solid #B0C8F0; border-radius:3px; padding:.1rem .35rem; font-size:.65rem; color:#4A7CC7; font-weight:600; margin-right:.25rem; }
     .news-empty { text-align:center; padding:4rem 1rem; color:#8AAAD4; }
 
+    /* SECTOR VIEWS */
+    .sector-card { background:#e6f3f5; border:1px solid #B0C8F0; border-left:4px solid #B0C8F0; border-radius:10px; padding:1.1rem 1.25rem; margin-bottom:1rem; box-shadow:0 1px 5px rgba(0,0,0,0.06); font-family:'Playpen Sans Thai','Prompt',sans-serif; }
+    .sector-card-header { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; margin-bottom:.5rem; }
+    .sector-name { font-size:1.05rem; font-weight:700; color:#1A3A7A; }
+    .sector-cycle-tag { font-size:.68rem; color:#5870A8; background:#d5eef1; border:1px solid #B0C8F0; border-radius:4px; padding:.1rem .5rem; }
+    .sector-thesis { font-size:.85rem; color:#3A5A8A; line-height:1.6; margin:.5rem 0 .6rem; }
+    .sector-keypoints { margin:.4rem 0 .6rem; padding-left:1.1rem; font-size:.8rem; color:#3A5A8A; line-height:1.6; }
+    .sector-meta-row { display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; font-size:.7rem; color:#5870A8; margin-top:.5rem; }
+    .sector-source-link { color:#4A7CC7; font-size:.7rem; text-decoration:none; font-weight:600; }
+    .sector-source-link:hover { text-decoration:underline; }
+    .sector-history-toggle { background:none; border:none; color:#4A7CC7; font-size:.72rem; font-weight:600; cursor:pointer; padding:0; margin-top:.5rem; }
+    .sector-history-list { margin-top:.5rem; padding-top:.5rem; border-top:1px dashed #B0C8F0; display:none; }
+    .sector-history-item { font-size:.75rem; color:#5870A8; padding:.3rem 0; }
+    .sector-stance { display:inline-block; padding:.2rem .65rem; border-radius:20px; font-size:.72rem; font-weight:600; letter-spacing:.5px; }
+    .sector-stance-POSITIVE { background:#B8EAC8; color:#1A5A30; border:1px solid #7ACFA0; }
+    .sector-stance-CAUTIOUS { background:#F7E8A0; color:#7A5A00; border:1px solid #E8C830; }
+    .sector-stance-NEGATIVE { background:#F4B8C1; color:#8A1A2A; border:1px solid #E090A0; }
+    .sector-stance-NEUTRAL  { background:#B0C8F0; color:#1A3A7A; border:1px solid #8AAAD4; }
+    .sector-stale-ok       { color:#5870A8; }
+    .sector-stale-warn     { color:#7A5A00; font-weight:700; }
+    .sector-card.stale-warn     { border-left-color:#E8C830; background:#fbf5df; }
+    .sector-stale-critical { color:#8A1A2A; font-weight:700; }
+    .sector-card.stale-critical { border-left-color:#DC2626; background:#fbe4e7; }
+
     /* MOBILE FRM */
     @media (max-width: 768px) {
       .frm-content { padding: 1rem; }
@@ -296,6 +321,7 @@
     <button class="nav-tab" onclick="showPage('watchlist')">Watchlist</button>
     <button class="nav-tab" onclick="showPage('portfolio')">Portfolio</button>
     <button class="nav-tab" onclick="showPage('news')">News</button>
+    <button class="nav-tab" onclick="showPage('sectorviews')">Sector Views</button>
   </div>
   <span class="updated-tag">Updated: <span id="last-updated"></span></span>
 </nav>
@@ -495,6 +521,27 @@
     </div>
   </div>
   <div id="news-list"></div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- PAGE: Sector Views                        -->
+<!-- ══════════════════════════════════════════ -->
+<div id="page-sectorviews" class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;flex-wrap:wrap;gap:.75rem;">
+    <div>
+      <div style="font-size:1.4rem;font-weight:700;font-family:'Playpen Sans Thai','Prompt',sans-serif;">Sector Views</div>
+      <div style="font-size:.8rem;color:#5870A8;margin-top:2px;">ทีมมองแต่ละ sector ยังไงตอนนี้ — อัปเดตแบบ ad-hoc โดย Atlas ไม่ใช่ scheduled job</div>
+    </div>
+    <div id="sector-filter-btns" style="display:flex;gap:.5rem;flex-wrap:wrap;">
+      <button class="nav-tab active" onclick="filterSectorViews('ALL',this)">All</button>
+      <button class="nav-tab" onclick="filterSectorViews('POSITIVE',this)">Positive</button>
+      <button class="nav-tab" onclick="filterSectorViews('CAUTIOUS',this)">Cautious</button>
+      <button class="nav-tab" onclick="filterSectorViews('NEGATIVE',this)">Negative</button>
+      <button class="nav-tab" onclick="filterSectorViews('NEUTRAL',this)">Neutral</button>
+    </div>
+  </div>
+  <div class="stat-grid" id="sector-stat-grid"></div>
+  <div id="sector-views-list"></div>
 </div>
 
 <script>
@@ -1650,6 +1697,95 @@ function buildNews() {
     }).join('');
 }
 
+// ─── PAGE: SECTOR VIEWS ──────────────────────────────────
+// SECTOR_VIEWS array โหลดจาก sectorViews.js (managed by Atlas · ad-hoc, ไม่ใช่ daily)
+
+let currentSectorFilter = 'ALL';
+function filterSectorViews(f, btn) {
+  currentSectorFilter = f;
+  document.querySelectorAll('#sector-filter-btns .nav-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  buildSectorViews();
+}
+
+function sectorStaleTier(lastUpdatedStr) {
+  const days = Math.floor((new Date() - new Date(lastUpdatedStr + 'T00:00:00')) / 86400000);
+  if (days >= 60) return { tier: 'critical', days };
+  if (days >= 30) return { tier: 'warn', days };
+  return { tier: 'ok', days };
+}
+
+function toggleSectorHistory(slug) {
+  const el = document.getElementById('sector-history-' + slug);
+  if (!el) return;
+  el.style.display = el.style.display === 'block' ? 'none' : 'block';
+}
+
+function buildSectorViews() {
+  const bySector = {};
+  SECTOR_VIEWS.forEach(v => { (bySector[v.slug] = bySector[v.slug] || []).push(v); });
+  let groups = Object.values(bySector).map(entries => {
+    entries.sort((a, b) => b.lastUpdated.localeCompare(a.lastUpdated));
+    return { current: entries[0], history: entries.slice(1) };
+  });
+
+  if (currentSectorFilter !== 'ALL') groups = groups.filter(g => g.current.stance === currentSectorFilter);
+
+  const allGroups = Object.values(bySector).map(entries => entries.sort((a,b)=>b.lastUpdated.localeCompare(a.lastUpdated))[0]);
+  const tiers = allGroups.map(g => sectorStaleTier(g.lastUpdated).tier);
+  document.getElementById('sector-stat-grid').innerHTML = `
+    <div class="stat-card"><div class="stat-label">Sectors Tracked</div><div class="stat-value">${allGroups.length}</div></div>
+    <div class="stat-card"><div class="stat-label">Fresh (&lt;30d)</div><div class="stat-value" style="color:#16A34A;">${tiers.filter(t=>t==='ok').length}</div></div>
+    <div class="stat-card"><div class="stat-label">Stale (30-59d)</div><div class="stat-value" style="color:#D97706;">${tiers.filter(t=>t==='warn').length}</div></div>
+    <div class="stat-card"><div class="stat-label">Needs Re-Call (60d+)</div><div class="stat-value" style="color:#DC2626;">${tiers.filter(t=>t==='critical').length}</div></div>`;
+
+  if (groups.length === 0) {
+    document.getElementById('sector-views-list').innerHTML = `<div class="news-empty"><div style="font-size:2rem;margin-bottom:.75rem;">📭</div><div>No sector views in this category</div></div>`;
+    return;
+  }
+
+  groups.forEach(g => { g._stale = sectorStaleTier(g.current.lastUpdated); });
+  groups.sort((a, b) => {
+    const aCrit = a._stale.tier === 'critical', bCrit = b._stale.tier === 'critical';
+    if (aCrit !== bCrit) return aCrit ? -1 : 1;
+    if (aCrit && bCrit) return b._stale.days - a._stale.days;
+    return b.current.lastUpdated.localeCompare(a.current.lastUpdated);
+  });
+
+  const staleLabel = (s) => s.tier === 'critical'
+    ? `<span class="sector-stale-critical">Needs re-call - updated ${s.days}d ago</span>`
+    : s.tier === 'warn'
+      ? `<span class="sector-stale-warn">Stale - updated ${s.days}d ago</span>`
+      : `<span class="sector-stale-ok">Updated ${s.days}d ago</span>`;
+
+  document.getElementById('sector-views-list').innerHTML = groups.map(g => {
+    const c = g.current, s = g._stale;
+    const cardClass = s.tier === 'critical' ? 'stale-critical' : s.tier === 'warn' ? 'stale-warn' : '';
+    return `
+      <div class="sector-card ${cardClass}">
+        <div class="sector-card-header">
+          <span class="sector-name">${c.sector}</span>
+          <span class="sector-stance sector-stance-${c.stance}">${c.stance}</span>
+          ${c.cyclePosition ? `<span class="sector-cycle-tag">${c.cyclePosition}</span>` : ''}
+        </div>
+        <div style="font-size:.92rem;font-weight:600;color:#1A3A7A;">${c.headline || ''}</div>
+        <div class="sector-thesis">${c.thesis}</div>
+        ${c.keyPoints && c.keyPoints.length ? `<ul class="sector-keypoints">${c.keyPoints.map(k => `<li>${k}</li>`).join('')}</ul>` : ''}
+        <div class="sector-meta-row">
+          ${staleLabel(s)}
+          <div>${(c.relatedTickers || []).map(t => `<span class="news-ticker-tag">${t}</span>`).join('')}</div>
+          <div>${(c.sources || []).map(src => `<a class="sector-source-link" href="${src.url}" target="_blank" rel="noopener">${src.title} -></a>`).join(' &nbsp;')}</div>
+          <span style="margin-left:auto;color:#8AAAD4;">Atlas . ${c.lastUpdated}${c.trigger ? ' . ' + c.trigger : ''}</span>
+        </div>
+        ${g.history.length ? `
+          <button class="sector-history-toggle" onclick="toggleSectorHistory('${c.slug}')">Show ${g.history.length} prior view${g.history.length > 1 ? 's' : ''}</button>
+          <div class="sector-history-list" id="sector-history-${c.slug}">
+            ${g.history.map(h => `<div class="sector-history-item"><b>${h.lastUpdated}</b> - <span class="sector-stance sector-stance-${h.stance}" style="font-size:.62rem;">${h.stance}</span> ${h.headline || ''}</div>`).join('')}
+          </div>` : ''}
+      </div>`;
+  }).join('');
+}
+
 // ─── INIT ALL PAGES ──────────────────────────────────────
 buildOverview();
 buildReports();
@@ -1657,6 +1793,7 @@ buildTrack();
 buildWatchlist();
 buildPortfolio();
 buildNews();
+buildSectorViews();
 </script>
 </body>
 </html>
