@@ -1,5 +1,33 @@
 # Simulated Portfolio — บลจ. CFA
-*Managed by Max | Updated: 2026-07-29 (PRICE REVIEW — no trade | July28 close (Tue), last complete trading day | Total $9,980.90 (+3.49% จาก July26) | Alpha -0.594% (แคบลงมากจาก -3.737% — enterprise software rebound + REGN/ADSK rally แรงกว่า S&P) | ✅ NOW +23.64% best performer (2-day post-earnings recovery +14.8%), ADSK +19.68%, REGN +15.48%, ADBE/CRM/RDDT พลิกบวกทั้งหมด | 🟢 GOOGL stopDist ฟื้นจากวิกฤต 3.05%→7.11% หลัง Berkshire Hathaway ทุ่ม $10B หนุน Alphabet $80B equity raise | 🟢 ACN พ้น stop breach แล้ว (+3.93%, จาก -0.69%) | 🟠 RDDT MOS พลิกลบ -5.17% เข้า STRONG SELL territory — earnings พรุ่งนี้ (July30) | ⚠️ ADBE weight 10.09% ชนขอบบน IPS band | Cash 61.44% > 30% เกิน 6 สัปดาห์ | ⚠️⚠️⚠️ Atlas regime re-call ค้าง 17 วัน)*
+*Managed by Max | Updated: 2026-08-01 (PORTFOLIO REVIEW — no new trade | July31 close (Fri), last complete trading day, Aug1-2 = weekend | Total $9,938.59 (-0.42% จาก July28) | Alpha -1.841% (กว้างขึ้นจาก -0.594% — S&P วิ่งแรงกว่าพอร์ตจาก GOOGL Cloud backlog $514B news) | 🔴🔴 RDDT STOP LOSS BREACHED ครั้งแรก $140.67 < stop $140.75 — Q2 beat ชัดเจน (Rev +61%, ARPU +36%) แต่หุ้นร่วง -21% (no new AI deal + search referral choppy). REVIEW THESIS: ไม่มี Bear Flip/Invalidation ยิง → HOLD รอ CIO confirm, ไม่ auto-sell | 🟢 GOOGL หลุด WATCH (stopDist 7.11%→12.95%, Cloud backlog $514B + TPU hardware sales +6.73%) | 🟢 ACN หลุด WATCH (stopDist 3.93%→10.80%) | REGN +26.68% best performer (Q2 beat) MOS แคบลงเหลือ +3.71% | ⚠️ ADBE weight 10.08% ยังชนขอบบน IPS band | Cash 61.70% > 30% เกิน 7 สัปดาห์ | ⚠️⚠️⚠️ Atlas regime re-call ค้าง 20 วัน)*
+
+---
+
+## 🔴🔴 STOP LOSS BREACHED — RDDT 2026-08-01 (First Breach — Review Thesis, No Auto-Sell)
+
+> **TRIGGER:** ราคา RDDT $140.67 (July31 close, 2 sources: stockanalysis.com + Google Finance ตรงกัน) < Stop Loss $140.75 = stopDist -0.06% — **BREACH ครั้งแรก** นับตั้งแต่เปิด position (2026-05-30)
+>
+> **บริบท:** Q2 2026 earnings (July30) **BEAT ชัดเจนทุกตัวชี้วัด** — Revenue $804.9M (+61% YoY, beat est $730M), EPS $1.25 vs $0.95 est (+32%), Global ARPU +36% YoY to $6.18 (US ARPU +51% to $11.85, Intl ARPU +31% to $2.26), Weekly Active Uniques 514.6M (+24% YoY, ข้าม half-billion). แต่หุ้นร่วง **-20.99% วันเดียว (largest single-day drop on record)** เพราะ:
+> 1. ไม่มี AI data licensing deal ใหม่ประกาศ (ตลาดคาดหวังไว้)
+> 2. Management เตือน "search referrals were choppy" — ยืนยันความกังวลเรื่อง Google AI Overview ลด referral traffic
+> 3. US DAUq 53.2M เพียง +6% YoY (เบากว่าคาด 54M เล็กน้อย) แม้ Intl DAUq +28% YoY to 77.1M
+>
+> **THESIS REVIEW (per report RDDT_2026-05-30.md — Bear Flip Triggers + Thesis Invalidation):**
+> | # | Bear Flip Trigger | เกณฑ์ | ผลจริง | Fired? |
+> |---|-------------------|-------|--------|--------|
+> | 1 | DAU growth < +10% YoY, 2Q ติด | ต้อง 2 ไตรมาสติด | US +6% (1Q แรก, ยังไม่ครบ 2Q); Intl +28% ยังแรงมาก | ❌ ไม่ยิง |
+> | 2 | ARPU growth < +20% YoY | | Global ARPU **+36%** (ห่างไกลเกณฑ์มาก) | ❌ ไม่ยิง |
+> | 3 | Google AI Overview ลด traffic > 15% วัดได้ | ต้อง quantified | ยังเป็น qualitative "choppy" ไม่มีตัวเลข >15% ยืนยัน | ❌ ไม่ยิง |
+> | 4 | Meta Forum DAU > 50M ใน 18 เดือน | | ไม่มีข้อมูลยืนยัน | ❌ ไม่ยิง |
+> | 5 | Revenue miss guidance > 5% | | **BEAT** +10% เหนือ est (ตรงข้าม) | ❌ ไม่ยิง |
+>
+> **Thesis Invalidation (3 เงื่อนไข):** Google terminate deal + DAU<10% (Google ยังเจรจาต่อ ไม่ terminate) → ❌ | Revenue growth <20% + EBITDA margin <25% (Revenue +61% ไกลเกิน floor) → ❌ | EU GDPR ban AI licensing (ไม่เกิดขึ้น) → ❌
+>
+> **DECISION (ตาม Exit Rules — กฎเหล็ก Stop Loss):** ราคา ≤ Stop Loss ครั้งแรก = **REVIEW THESIS ก่อนเสมอ ไม่ใช่ auto-sell**. ผลการ review: **thesis ยังสมบูรณ์ครบทุกมิติ** — ไม่มี Bear Flip หรือ Thesis Invalidation ใดยิงจริง. การร่วงของราคาคือ sentiment/sell-the-news (ขาดข่าวดีใหม่ + ความกังวลเชิงคุณภาพ) ไม่ใช่ fundamental deterioration ("earnings beat + raised metrics ≠ thesis เปลี่ยน" ตามกฎ)
+> **ACTION: HOLD 3sh ต่อ — ไม่ auto-sell, ไม่ trim — แจ้ง CIO พร้อม context เต็ม รอ confirm ก่อนตัดสินใจใดๆ เพิ่มเติม (SELL/TRIM/HOLD)**
+> **Google-Reddit AI licensing deal renewal ($60M/yr เดิม):** ยังอยู่ระหว่างเจรจา ไม่มีข้อสรุป (ไม่ terminate) — ติดตามต่อ, เป็นจุดชี้ขาดสำคัญที่สุดของ core thesis ถ้าจบลบ
+> **MOS พลิกกลับมาบวก +16.89%** (ราคาร่วงเร็วกว่า FV $169.25) — return -20.05%
+> **Cash:** ไม่เปลี่ยนแปลง $6,132.34 (ไม่มี trade)
 
 ---
 
@@ -7,16 +35,12 @@
 
 > **TRIGGER:** ราคา ACN $127.98 (June 18 close) < Stop $148.00 = STOP BREACH (-15.64% below stop, return -28.17%) หลัง Q3 FY26 crash -17.97% (วันแย่สุดในประวัติศาสตร์ ACN)
 > **THESIS REVIEW (per report ACN_2026-06-05.md):**
-> - **Bear Flip #1** (rev growth <5%) → ✅ FIRING (FY guide หั่นเหลือ 3-4%) | **#2** (bookings <$18B) → weak bookings flagged
+> - **Bear Flip #1** (rev growth <5% via guide cut) → ✅ FIRING (FY guide หั่นเหลือ 3-4%) | **#2** (bookings <$18B) → weak bookings flagged
 > - **#3** (EBIT <14%) → ✗ ไม่ firing (margin ขยายเป็น 17%) | **#5** (FCF cut) → ✗ ไม่ firing (FCF $3.6B strong)
 > - **Thesis Invalidation (EXIT ทันที):** ✗ ยังไม่ครบ — ต้อง 3 consecutive Q bookings decline + Rev <4% / >10% AI layoff / major client exit (เพิ่ง 1 Q แรก)
 > **DECISION (Max autonomy — CIO ให้ทีมตัดสินเอง, สังเกตการณ์):** **TRIM 50%** ไม่ full exit
-> - Bear Flip = report framework ระบุ "REDUCE/SELL" → REDUCE (trim) consistent กับกฎ; full exit จะข้าม Invalidation criteria ของเราเอง
-> - Stop breached -28% → ต้องลดความเสี่ยง (ไม่ hold เฉยๆ)
-> - เก็บครึ่งเพราะ deep value: P/E 14, yield 5%, FCF $3.6B, MOS +49% (FV $252) + Q4 bookings จะเป็นตัวตัดสิน
 > **SELL:** 1.4 shares @ $127.98 = $179.17 proceeds | **Realized P&L:** -$70.25 (-28.17%)
-> **เหลือ:** 1.4 shares (cost $249.43, MV $179.17, wt 1.90%) | **NO ADD** จนกว่า rev growth >5% + bookings stabilize
-> **Cash:** $5,953.17 → $6,132.34 (64.87%)
+> **เหลือ:** 1.4 shares — 🟢 **ตอนนี้ (2026-08-01): พ้น stop breach + หลุด WATCH threshold แล้ว** ราคา $165.92, stopDist +10.80%, return -6.87% (ดีขึ้นต่อเนื่อง)
 
 ---
 
@@ -26,31 +50,31 @@
 |---|---|
 | **Starting Capital** | $10,000.00 |
 | **Current Cash** | $6,132.34 |
-| **Invested Value (Market)** | $3,848.56 |
-| **Total Portfolio Value** | $9,980.90 |
-| **Total Return** | -0.191% |
+| **Invested Value (Market)** | $3,806.25 |
+| **Total Portfolio Value** | $9,938.59 |
+| **Total Return** | -0.614% |
 | **S&P 500 at Inception (2026-05-09)** | 7,398.93 |
-| **S&P 500 Close (2026-07-28, latest verified — Tue)** | 7,428.78 |
-| **S&P 500 Return (since inception)** | +0.403% |
-| **Alpha** | -0.594% |
+| **S&P 500 Close (2026-07-31, latest verified — Fri)** | 7,489.72 |
+| **S&P 500 Return (since inception)** | +1.227% |
+| **Alpha** | -1.841% |
 | **# Positions** | 8 (ADBE + NOW + GOOGL + CRM + RDDT + REGN + ACN[1.4sh] + ADSK) |
-| **Cash %** | 61.44% |
-| **Last Updated** | 2026-07-29 |
+| **Cash %** | 61.70% |
+| **Last Updated** | 2026-08-01 |
 
-> **Price Sources — 2026-07-29 review (July 28 close, Tuesday — last complete trading day; ≥2 sources each):**
-> - ADBE $251.76: 2 sources exact match (+5.9% day). ต่อยอด software rally 2 วันติด. stopDist **26.52%**. MOS +19.23%
-> - NOW $110.62: 2 sources math-consistent (July27 $105.56 +6.9% → July28 +4.79%). MOS **+8.92%** (แคบลงจาก post-earnings surge)
-> - GOOGL $333.73: 2 sources (GOOGL $333.73 + GOOG-C $332.60). 🟢 stopDist ฟื้นเป็น **7.11%** (จาก 3.05% วิกฤต) — Berkshire $10B stake news
-> - CRM $183.27: 2 sources ($183.27+$183.60). stopDist ฟื้นเป็น **20.99%** จาก VA contract + software rally
-> - RDDT $178.00: 2 sources exact match. 🟠 **MOS พลิกลบ -5.17%** (จาก +0.31%) เข้า STRONG SELL territory — earnings พรุ่งนี้ (July30)
-> - REGN $695.18: 2 sources ($695.18+$690.07). ไต่ก่อน Q2 earnings (July30). MOS **+12.22%**
-> - ACN $154.06: 2 sources exact match. 🟢 พ้น stop breach แล้ว **+3.93%** (จาก -0.69%)
-> - ADSK $237.48: 2 sources (math-chain July24→27→28 + aggregator $239.72). stopDist **33.16%**. MOS +18.11%
-> - S&P 500 7,428.78: 2 sources ยืนยันตรงกัน สำหรับ July 28 close (Tue, +0.21% วัน)
+> **Price Sources — 2026-08-01 review (July 31 close, Friday — last complete trading day; Aug 1-2 = weekend, markets closed; ≥2 sources each, all exact match):**
+> - ADBE $250.41: stockanalysis.com + Google Finance (prev $247.90, +1.01%). stopDist **26.12%**. MOS +19.66%
+> - NOW $111.23: stockanalysis.com + Google Finance (prev $110.07, +1.05%). MOS **+8.41%**
+> - GOOGL $356.13: stockanalysis.com + Google Finance (prev $333.66, +6.73% — Cloud backlog $514B + TPU direct hardware sales). 🟢 stopDist หลุด WATCH เป็น **12.95%** (จาก 7.11%)
+> - CRM $184.02: stockanalysis.com + Google Finance (prev $180.71, +1.83%). stopDist **21.31%**
+> - RDDT $140.67: stockanalysis.com + Google Finance (prev $178.04, **-20.99%** — largest single-day drop on record). 🔴🔴 **STOP BREACHED** stopDist **-0.06%** — earnings beat แต่ sell-the-news
+> - REGN $762.63: stockanalysis.com + Google Finance (prev $738.34, +3.29% — Q2 beat EPS $14.29 vs $10.53). MOS แคบลงเหลือ **+3.71%**
+> - ACN $165.92: stockanalysis.com + Google Finance (prev $163.29, +1.61%). 🟢 หลุด WATCH stopDist **+10.80%**
+> - ADSK $234.20: stockanalysis.com + Google Finance (prev $234.97, -0.33%). stopDist **32.22%**
+> - S&P 500 7,489.72: CNBC/24-7 Wall St ("+0.7% to close at 7,489.72") + Google Finance ตรงกัน, prev close $7,437.63
 
 ---
 
-## Regime Update — 2026-06-13 (Atlas Re-Call — RISK-ON 3/4) ⚠️ STALE 17 วัน
+## Regime Update — 2026-06-13 (Atlas Re-Call — RISK-ON 3/4) ⚠️ STALE 20 วัน
 
 > **RISK-ON 3/4** (Atlas re-call 2026-06-13 — `agent_notes/atlas/2026-06-13_regime.md`, ยัง re-verify ล่าสุด 2026-07-02, **last formal call 2026-07-12**)
 > - VIX: 16.59 (July2) → RISK-ON (<20)
@@ -60,25 +84,14 @@
 >
 > Majority 3/4 → RISK-ON | Position Size Multiplier: **1.0×** | Force Deploy: Active | Cash Floor: 10%
 >
-> **⚠️⚠️⚠️ ต้อง re-call ด่วนที่สุด (17 วันค้าง):** Iran attack ทหารสหรัฐฯ ใหม่ (July29, oil +5% แตะ $83+), Fed rate decision วันนี้ (July29), semiconductor selloff ต่อเนื่อง, tariff ใหม่ 60+ ประเทศ (Section 301 forced labor). ปัจจัยเหล่านี้อาจพลิก VIX/credit spreads/Fed stance indicators — per CLAUDE.md ถ้า Atlas ไม่บันทึก regime ใหม่ ถือว่ายัง TRANSITIONAL-CAUTIOUS จนกว่าจะมี record ใหม่ — Max ยังใช้ RISK-ON 3/4 เดิมต่อเพราะยังไม่มี re-call มา override
+> **⚠️⚠️⚠️ ต้อง re-call ด่วนที่สุด (20 วันค้าง, last formal call 2026-07-12):** Fed dovish signal ใหม่ (หนุน GOOGL rally July31), semiconductor/AI capex sentiment ผันผวนต่อเนื่อง. ปัจจัยเหล่านี้อาจพลิก VIX/credit spreads/Fed stance indicators — per CLAUDE.md ถ้า Atlas ไม่บันทึก regime ใหม่ ถือว่ายัง TRANSITIONAL-CAUTIOUS จนกว่าจะมี record ใหม่ — Max ยังใช้ RISK-ON 3/4 เดิมต่อเพราะยังไม่มี re-call มา override
 
 ---
 
 ## POSITION DEPLOYED — ADSK 2026-06-14 (Cash Drag Fix — Tranche 1)
 
 > **ACTION:** BUY T1 — ADSK 2.4 shares @ $198.43 = $476.23
-> **Rationale:** Cash drag fix — cash 66.8% ใน RISK-ON ละเมิด IPS (deployed 80-90%) + Force Deploy trigger active. ADSK เป็น backlog ตัวสะอาดสุดที่ผ่าน gate จริง:
-> - Conviction 7.0 ≥ 7.0 (Value) ✅ และ ≥ 6.5 (Growth) ✅
-> - MOS **+31.6%** ที่ราคา verified $198.43 (Blended FV $290) — ดีขึ้นจาก +26.6% เพราะราคา drop 13% จาก $229
-> - Revenue +18.4% YoY (Q1 FY27 BEAT) > 15% Growth gate ✅
-> - RISK-ON 3/4 multiplier 1.0× ✅
-> **Thesis check post-drop:** ราคา drop เพราะ MaintainX M&A concern ($3.6B/27x ARR + $2B borrow) ไม่ใช่ thesis invalidation — Q1 FY27 BEAT (Rev +18.4%, EPS $2.99 vs $2.84, FCF $876M +25% beat) = **FCF inflection thesis แข็งขึ้น** "earnings beat ≠ thesis เปลี่ยน"
-> **Sources:** stockanalysis.com $198.43 (June 12 close) + Robinhood/CNN $198.43-198.91 (June 13) + Investing.com $198.19 (≥2 sources verified)
-> **Entry:** $198.43 (ต่ำกว่า entry zone $183-... = ซื้อถูกลง) | **Stop:** $158.74 (-20.0%) | **Target Base:** $290 (Blended FV)
-> **Discipline:** Deploy **T1 5% เดี่ยว** (ไม่ deploy ตัวที่ 2 พร้อมกัน) — MCO ราคาเกิน gate, PGR ยังไม่ผ่าน QA, ไม่ทุ่มก่อน FOMC
-> **Cash after deploy:** $5,953.17 (~61.88%)
-> **Sector:** Design Software / AEC + Manufacturing CAD — sector ใหม่ (Design Software) ในพอร์ต
-> **Morgan QA:** CONDITIONAL PASS (June 9 analysis — price now URL-verified)
+> **ปัจจุบัน (2026-08-01):** ราคา $234.20, return +18.03%, stopDist 32.22% — ปลอดภัยต่อเนื่อง
 
 ---
 
@@ -93,67 +106,63 @@
 
 ## POSITION DEPLOYED — ACN 2026-06-05
 
-> **ACTION:** BUY T1 — ACN 2.8 shares @ $178.16 = $498.85
-> **Rationale:** Value bucket gates ALL pass — Conviction 7.17/10 ≥ 7.0 | MOS +41.6% ≥ 15% | RISK-ON 4/4 | Force Deploy ACTIVE
-> **Entry:** $178.16 | **Stop:** $148.00 (-20.4%) | **Target Base:** $252.35 (Blended FV)
+> **ACTION:** BUY T1 — ACN 2.8 shares @ $178.16 = $498.85 (ต่อมา TRIM 50% June22 — ดูด้านบน)
 
 ---
 
 ## POSITION DEPLOYED — REGN 2026-06-03
 
 > **ACTION:** BUY T1 — REGN 0.6 shares @ $602.00 = $361.20
-> **Rationale:** Value bucket gates ALL pass — Conviction 7.2/10 ≥ 7.0 | MOS +31.6% ≥ 15% | RISK-ON 4/4 | Force Deploy ACTIVE
-> **Entry:** $602.00 | **Stop:** $482 (-19.9%) | **Target Base:** $792 (Blended FV)
+> **ปัจจุบัน (2026-08-01):** ราคา $762.63, return +26.68% (best performer) — MOS แคบลงเหลือ +3.71% หลัง Q2 beat rally ต่อเนื่อง
 
 ---
 
-## Current Positions — 2026-07-29 (July 28 close, Tue)
+## Current Positions — 2026-08-01 (July 31 close, Fri)
 
 | Ticker | Entry Date | Entry $ | Shares | Cost Basis | Current $ | Mkt Value | Return % | Weight % | Stop Loss | Stop Dist % | Status |
 |--------|-----------|---------|--------|-----------|----------|----------|---------|---------|----------|-------------|--------|
-| ADBE (avg) | 2026-05-09 T1 / 2026-05-15 T2 | $247.03 avg | 4 | $988.10 | **$251.76** | $1,007.04 | **+1.91%** | 10.09% | $185.00 | +26.52% | OPEN — พลิกบวกครั้งแรก mid-June, ⚠️ weight ชนขอบบน IPS |
-| NOW | 2026-05-11 T1 | $89.47 | 2 | $178.94 | **$110.62** | $221.24 | **+23.64%** | 2.22% | $58.00 | +47.57% | OPEN — best performer, 2-day post-earnings recovery |
-| GOOGL | 2026-05-21 T1 | $388.91 | 1 | $388.91 | **$333.73** | $333.73 | **-14.19%** | 3.34% | $310.00 | **+7.11%** | 🟢 OPEN — stopDist ฟื้นจากวิกฤต, Berkshire $10B stake news |
-| CRM | 2026-05-29 T1 | $181.00 | 3 | $543.00 | **$183.27** | $549.81 | **+1.25%** | 5.51% | $144.80 | +20.99% | OPEN — พลิกบวก, stopDist ฟื้นตัวมาก |
-| RDDT | 2026-05-30 T1 | $175.94 | 3 | $527.82 | **$178.00** | $534.00 | **+1.17%** | 5.35% | $140.75 | +20.93% | 🟠 OPEN — MOS พลิกลบ STRONG SELL territory, earnings พรุ่งนี้ |
-| REGN | 2026-06-03 T1 | $602.00 | 0.6 | $361.20 | **$695.18** | $417.11 | **+15.48%** | 4.18% | $482.00 | +30.67% | OPEN — ไต่ก่อน earnings July30 |
-| ACN | 2026-06-05 T1 | $178.16 | 1.4 | $249.43 | **$154.06** | $215.68 | **-13.53%** | 2.16% | $148.00 | **+3.93%** | 🟢 พ้น stop breach แล้ว เหลือ 1.4sh (HOLD รอ Q4) |
-| **ADSK** | **2026-06-14 T1** | **$198.43** | **2.4** | **$476.23** | **$237.48** | **$569.95** | **+19.68%** | **5.71%** | **$158.74** | **+33.16%** | **OPEN — rally ต่อเนื่อง 2 วัน, ⚠️ technical overbought** |
+| ADBE (avg) | 2026-05-09 T1 / 2026-05-15 T2 | $247.03 avg | 4 | $988.10 | **$250.41** | $1,001.64 | **+1.37%** | 10.08% | $185.00 | +26.12% | OPEN — ⚠️ weight ชนขอบบน IPS |
+| NOW | 2026-05-11 T1 | $89.47 | 2 | $178.94 | **$111.23** | $222.46 | **+24.32%** | 2.24% | $58.00 | +47.86% | OPEN — momentum ต่อเนื่อง |
+| GOOGL | 2026-05-21 T1 | $388.91 | 1 | $388.91 | **$356.13** | $356.13 | **-8.43%** | 3.58% | $310.00 | **+12.95%** | 🟢 OPEN — หลุด WATCH, Cloud backlog $514B news |
+| CRM | 2026-05-29 T1 | $181.00 | 3 | $543.00 | **$184.02** | $552.06 | **+1.67%** | 5.55% | $144.80 | +21.31% | OPEN — ทรงตัวบวก |
+| **RDDT** | **2026-05-30 T1** | **$175.94** | **3** | **$527.82** | **$140.67** | **$422.01** | **-20.05%** | **4.25%** | **$140.75** | **-0.06%** | **🔴🔴 STOP BREACHED (ครั้งแรก) — REVIEW THESIS ผ่านแล้ว, thesis intact, รอ CIO confirm** |
+| REGN | 2026-06-03 T1 | $602.00 | 0.6 | $361.20 | **$762.63** | $457.58 | **+26.68%** | 4.60% | $482.00 | +36.80% | OPEN — best performer, MOS แคบลง +3.71% |
+| ACN | 2026-06-05 T1 | $178.16 | 1.4 | $249.43 | **$165.92** | $232.29 | **-6.87%** | 2.34% | $148.00 | **+10.80%** | 🟢 หลุด WATCH — HOLD รอ Q4 bookings |
+| ADSK | 2026-06-14 T1 | $198.43 | 2.4 | $476.23 | **$234.20** | $562.08 | **+18.03%** | 5.66% | $158.74 | +32.22% | OPEN — พักฐานเบาหลัง rally |
 
 ---
 
-## Stop Loss Check — 2026-07-29 (July 28 close)
+## Stop Loss Check — 2026-08-01 (July 31 close)
 
 | Ticker | Current $ | Stop Loss $ | Distance $ | Distance % | สถานะ |
 |--------|----------|------------|-----------|-----------|-------|
-| **GOOGL** | **$333.73** | **$310.00** | **$23.73** | **+7.11%** | 🟡 **ยังต่ำกว่า 10% WATCH threshold แต่ฟื้นจากวิกฤต 3.05% มาก — Berkshire $10B stake news หนุน sentiment** |
-| **ACN** | **$154.06** | **$148.00** | **$6.06** | **+3.93%** | 🟢 **พ้น stop breach แล้ว (จาก -0.69%) — ยังต่ำกว่า 10% threshold, HOLD รอ Q4, NO ADD** |
-| CRM | $183.27 | $144.80 | $38.47 | +20.99% | OK — ฟื้นตัวมากจาก 10.74% |
-| RDDT | $178.00 | $140.75 | $37.25 | +20.93% | 🟠 stopDist OK แต่ MOS พลิกลบ -5.17% STRONG SELL — earnings พรุ่งนี้ชี้ขาด |
-| ADSK | $237.48 | $158.74 | $78.74 | +33.16% | OK — rally ต่อเนื่อง |
-| REGN | $695.18 | $482.00 | $213.18 | +30.67% | OK — ไต่ก่อน earnings |
-| ADBE | $251.76 | $185.00 | $66.76 | +26.52% | OK — แต่ weight 10.09% ชนขอบบน IPS |
-| NOW | $110.62 | $58.00 | $52.62 | +47.57% | OK — ปลอดภัยที่สุด |
+| **RDDT** | **$140.67** | **$140.75** | **-$0.08** | **-0.06%** | **🔴🔴 STOP BREACHED (ครั้งแรก) — thesis reviewed, NO Bear Flip/Invalidation fired, HOLD รอ CIO confirm (ไม่ auto-sell)** |
+| GOOGL | $356.13 | $310.00 | $46.13 | +12.95% | 🟢 หลุด WATCH threshold แล้ว (จาก 7.11%) |
+| ACN | $165.92 | $148.00 | $17.92 | +10.80% | 🟢 หลุด WATCH threshold แล้ว (จาก 3.93%) |
+| CRM | $184.02 | $144.80 | $39.22 | +21.31% | OK |
+| ADSK | $234.20 | $158.74 | $75.46 | +32.22% | OK |
+| REGN | $762.63 | $482.00 | $280.63 | +36.80% | OK — แต่ MOS แคบลงมาก +3.71% |
+| ADBE | $250.41 | $185.00 | $65.41 | +26.12% | OK — แต่ weight 10.08% ชนขอบบน IPS |
+| NOW | $111.23 | $58.00 | $53.23 | +47.86% | OK — ปลอดภัยที่สุด |
 
-> **🟢 GOOGL — stopDist ฟื้นตัวจากวิกฤต (2026-07-29):** ราคา $333.73 vs stop $310.00 = stopDist 7.11% (จาก 3.05% วิกฤตสุด) หลัง Reuters รายงาน (July28) Alphabet เตรียมระดมทุน $80B equity offering + Berkshire Hathaway ทุ่ม $10B ซื้อหุ้นที่ราคา $348-352 (สูงกว่าตลาด) — ตลาดตีความเป็นสัญญาณ high-conviction สนับสนุน AI capex thesis. ยังต่ำกว่า 10% WATCH threshold — priority monitoring ต่อเนื่อง.
-> **🟢 ACN — พ้น stop breach แล้ว (2026-07-29):** ราคา $154.06 ยืนเหนือ stop $148.00 ได้ 3 sessions ติด stopDist กลับมาเป็นบวก +3.93%. return ดีขึ้นเป็น -13.53%. ไม่มี earnings ใหม่ — Bear Flip #1/#2 สถานะเดิม. HOLD 1.4sh ต่อ รอ Q4 bookings. NO ADD.
-> **🟠 RDDT — MOS พลิกลบ เข้า STRONG SELL territory (2026-07-29):** ราคาเด้งกลับ +5.5% เป็น $178.00 เกินกว่า Blended FV $169.25 ไปแล้ว (MOS -5.17%, จาก +0.31%) แม้ WSJ Google-licensing-risk story ยังไม่คลี่คลาย. Q2 earnings พรุ่งนี้ (July30) เป็น binary catalyst ชี้ขาด — ต้องยืนยัน/ปฏิเสธ Google deal risk พร้อมประเมินว่า FV ควร update หรือไม่.
-> **REGN/ACN/ADSK — rally ต่อเนื่อง:** ทั้ง 3 ตัวขึ้นแรงจาก sector rotation (software) และ pre-earnings momentum (REGN) — ไม่มี fundamental catalyst ใหม่ที่เปลี่ยน thesis เฉพาะตัว
+> **🔴🔴 RDDT — STOP LOSS BREACHED ครั้งแรก (2026-08-01):** ดูรายละเอียดเต็มใน section ด้านบน "STOP LOSS BREACHED — RDDT". สรุป: Q2 earnings beat ทุกตัวชี้วัด (Rev +61%, ARPU +36%) แต่หุ้น sell-the-news -21% วันเดียว. Bear Flip/Invalidation ไม่มีข้อใดยิง — thesis ยังสมบูรณ์. **HOLD, ไม่ auto-sell, รอ CIO confirm**.
+> **🟢 GOOGL — หลุด WATCH (2026-08-01):** ราคา $356.13 (+6.73% day) หลัง Q2 earnings เปิดเผย Cloud backlog $514B + TPU hardware direct sales pivot + Fed dovish signal. stopDist กลับมาปลอดภัย 12.95%.
+> **🟢 ACN — หลุด WATCH (2026-08-01):** ราคา $165.92 (+1.61%), stopDist 10.80% (พ้นเส้น 10% ครั้งแรกนับตั้งแต่ stop breach มิถุนายน). HOLD 1.4sh ต่อ รอ Q4 bookings.
 
 ---
 
-## Sector Allocation — 2026-07-29 (July 28 close)
+## Sector Allocation — 2026-08-01 (July 31 close)
 
 | Sector | Value | Weight % | Limit |
 |--------|-------|---------|-------|
-| Software / AI Layer (ADBE + NOW) | $1,228.28 | 12.31% | 25% |
-| Comm. Services / AI Platform (GOOGL) | $333.73 | 3.34% | 25% |
-| Enterprise SaaS / CRM (CRM) | $549.81 | 5.51% | 25% |
-| Social Media / AI Data (RDDT) | $534.00 | 5.35% | 25% |
-| Healthcare / Pharma-Biotech (REGN) | $417.11 | 4.18% | 25% |
-| IT Services / AI Consulting (ACN — 1.4sh post-trim) | $215.68 | 2.16% | 25% |
-| Design Software / CAD (ADSK) | $569.95 | 5.71% | 25% |
-| Cash | $6,132.34 | 61.44% | — |
+| Software / AI Layer (ADBE + NOW) | $1,224.10 | 12.32% | 25% |
+| Comm. Services / AI Platform (GOOGL) | $356.13 | 3.58% | 25% |
+| Enterprise SaaS / CRM (CRM) | $552.06 | 5.55% | 25% |
+| Social Media / AI Data (RDDT) | $422.01 | 4.25% | 25% |
+| Healthcare / Pharma-Biotech (REGN) | $457.58 | 4.60% | 25% |
+| IT Services / AI Consulting (ACN — 1.4sh post-trim) | $232.29 | 2.34% | 25% |
+| Design Software / CAD (ADSK) | $562.08 | 5.66% | 25% |
+| Cash | $6,132.34 | 61.70% | — |
 
 ทุก sector ต่ำกว่า 25% limit — ไม่มีปัญหา concentration
 
@@ -164,29 +173,29 @@
 | | ค่า |
 |---|---|
 | Available Cash | $6,132.34 |
-| Cash % | 61.44% |
-| Min Required (floor — RISK-ON 3/4) | ~$998 (10% RISK-ON) |
+| Cash % | 61.70% |
+| Min Required (floor — RISK-ON 3/4) | ~$994 (10% RISK-ON) |
 | Force Deploy Threshold | >30% + RISK-ON + มี candidate ผ่าน gate |
-| Note | Cash 61.44% — เกิน 30% floor มาก ต่อเนื่อง 6+ สัปดาห์ (Force Deploy ACTIVE ตาม RISK-ON 3/4 regime แต่ยังไม่มี candidate ใหม่ผ่าน conviction gate session นี้ — session นี้เป็น price review only ไม่ได้ scan candidate ใหม่). Iran attack ใหม่ + Fed decision วันนี้ + Atlas regime re-call ค้าง 17 วัน เป็นเหตุผลเพิ่มให้ระมัดระวังก่อน deploy เพิ่ม. dry powder รอ candidate ผ่าน gate (watchlist: VEEV analyst momentum building, MCO/PGR รอ) |
+| Note | Cash 61.70% — เกิน 30% floor มาก ต่อเนื่อง 7+ สัปดาห์ (Force Deploy ACTIVE ตาม RISK-ON 3/4 regime แต่ยังไม่มี candidate ใหม่ผ่าน conviction gate session นี้ — session นี้เป็น portfolio review only). ไม่มี trade เพิ่ม — RDDT stop breach ต้องรอ CIO confirm ก่อน จึงยังไม่ deploy dry powder เพิ่มจนกว่าสถานการณ์ RDDT ชัดเจน |
 
 ---
 
-## P&L Summary — 2026-07-29 (July 28 close, Tue)
+## P&L Summary — 2026-08-01 (July 31 close, Fri)
 
 | Ticker | Cost Basis | Current Price | Market Value | Unrealized P&L | Return % |
 |--------|-----------|--------------|-------------|---------------|---------|
-| ADBE | $988.10 | $251.76 | $1,007.04 | **+$18.94** | **+1.91%** |
-| NOW | $178.94 | $110.62 | $221.24 | **+$42.30** | **+23.64%** |
-| GOOGL | $388.91 | $333.73 | $333.73 | **-$55.18** | **-14.19%** |
-| CRM | $543.00 | $183.27 | $549.81 | **+$6.81** | **+1.25%** |
-| RDDT | $527.82 | $178.00 | $534.00 | **+$6.18** | **+1.17%** |
-| REGN | $361.20 | $695.18 | $417.11 | **+$55.91** | **+15.48%** |
-| ACN (1.4sh remaining) | $249.43 | $154.06 | $215.68 | **-$33.75** | **-13.53%** |
-| ADSK | $476.23 | $237.48 | $569.95 | **+$93.72** | **+19.68%** |
-| **รวม Invested (8 holdings, ACN ครึ่ง)** | **$3,713.63** | | **$3,848.56** | **+$134.93** | **+3.63%** |
+| ADBE | $988.10 | $250.41 | $1,001.64 | **+$13.54** | **+1.37%** |
+| NOW | $178.94 | $111.23 | $222.46 | **+$43.52** | **+24.32%** |
+| GOOGL | $388.91 | $356.13 | $356.13 | **-$32.78** | **-8.43%** |
+| CRM | $543.00 | $184.02 | $552.06 | **+$9.06** | **+1.67%** |
+| RDDT | $527.82 | $140.67 | $422.01 | **-$105.81** | **-20.05%** |
+| REGN | $361.20 | $762.63 | $457.58 | **+$96.38** | **+26.68%** |
+| ACN (1.4sh remaining) | $249.43 | $165.92 | $232.29 | **-$17.14** | **-6.87%** |
+| ADSK | $476.23 | $234.20 | $562.08 | **+$85.85** | **+18.03%** |
+| **รวม Invested (8 holdings, ACN ครึ่ง)** | **$3,713.63** | | **$3,806.25** | **+$92.62** | **+2.49%** |
 | ACN (Realized — TRIM 50%) | $249.42 | $127.98 | — | **-$70.25** | **-28.17%** |
 | INTU (Realized) | $299.39 | — | — | **-$83.98** | **-27.84%** |
-| **Portfolio Total** | $10,000.00 | | **$9,980.90** | **-$19.10** | **-0.191%** |
+| **Portfolio Total** | $10,000.00 | | **$9,938.59** | **-$61.41** | **-0.614%** |
 
 ---
 
@@ -205,16 +214,16 @@
 | Ticker | Rating | Entry Zone | Stop | ราคา Current | สถานะ | Blended FV | MOS |
 |--------|--------|-----------|------|----------|-------|-----------|-----|
 | MCO | HOLD/WAIT | $390–415 | $359 | ~$487 (July analyst PT context) | เกิน zone → รอ pullback | $429 | ต้อง re-verify |
-| ADSK T2 | T1 executed — รอ T2 trigger | post-FOMC ถ้า thesis ยืน | $158.74 | $237.48 | T2: รอ thesis confirm ต่อเนื่อง | $290 | +18.1% |
+| ADSK T2 | T1 executed — รอ T2 trigger | post-FOMC ถ้า thesis ยืน | $158.74 | $234.20 | T2: รอ thesis confirm ต่อเนื่อง | $290 | +19.2% |
 | PGR | Scout (June 13) — รอ Charlie | TBD | — | ~$213.84 (July24, MS upgrade) | ส่ง Charlie pipeline — sentiment ฟื้นตัวหลัง valuation reset | TBD | TBD |
 | V | HOLD/WAIT | $285–300 | $240 | ~$332-336 (July28, Q3 beat + job cuts) | เกิน zone → รอ pullback | $286 | ต้อง re-verify |
 | FICO | HOLD/WAIT | $950–1,020 | $720 | ~$1,289-1,390 (July29, pre-Q3 earnings) | เกิน zone → รอ pullback | $1,078 | ต้อง re-verify |
 | VEEV | HOLD/WAIT — conviction upgrade watch | $148–158 | $118 | ~$179-183 (July23-27) | เกิน zone — analyst momentum building (RBC/Wells Fargo/Guggenheim Buy) | $192 | ต้อง re-verify |
-| GOOGL T2 | T1 executed — T2 zone | $360–375 | $310 | $333.73 | ราคาต่ำกว่า T2 zone | $414 | +19.4% |
-| RDDT T2 | T1 executed — รอ T2 trigger | $145–160 | $140.75 | $178.00 | ราคาเกิน T2 zone มาก — ไม่เกี่ยวข้องปัจจุบัน | $169.25 | -5.2% |
-| REGN T2 | T1 executed — รอ T2 trigger | $510–570 | $482 | $695.18 | ราคาเกิน T2 zone มาก — ไม่เกี่ยวข้องปัจจุบัน | $792 | +12.2% |
-| MSFT | Pending Analysis | TBD | — | earnings July29 (คืนนี้) | รอ Charlie | — | — |
-| META | Pending Analysis | TBD | — | earnings July29 (คืนนี้) | รอ Charlie | — | — |
+| GOOGL T2 | T1 executed — T2 zone | $360–375 | $310 | $356.13 | ราคาใน T2 zone เกือบพอดี | $414 | +13.98% |
+| RDDT T2 | T1 executed — รอ T2 trigger | $145–160 | $140.75 | $140.67 | 🔴 ราคาต่ำกว่า T2 zone (post-stop-breach crash) — ไม่ add จนกว่า CIO confirm สถานะ T1 | $169.25 | +16.9% |
+| REGN T2 | T1 executed — รอ T2 trigger | $510–570 | $482 | $762.63 | ราคาเกิน T2 zone มาก — ไม่เกี่ยวข้องปัจจุบัน | $792 | +3.7% |
+| MSFT | Pending Analysis | TBD | — | Q4 earnings reported July29 | รอ Charlie | — | — |
+| META | Pending Analysis | TBD | — | Q2 earnings reported July29 | รอ Charlie | — | — |
 | **WPM** | **HOLD/WAIT FOR PULLBACK** (2026-07-12, no deploy — Conv 6.3 ❌ <7.0, MOS -9.9% ❌ <15%, both Value gates FAIL) | **$85–92** | **$71** | **$110.05** (July10 close) | เกิน zone มาก (+19.6%) → รอ pullback สู่ normalized gold range; re-check conviction ด้วยเมื่อราคาเข้า zone | **$99.20** | **-9.9%** |
 | INTU | **SOLD** | — | — | — | **AUTO-SELL 2026-05-21 @ $321.50** | — | — |
 
@@ -224,14 +233,12 @@
 
 | Date | Ticker | Event | Portfolio Impact |
 |------|--------|-------|-----------------|
-| **July 29, 2026 (วันนี้)** | **MSFT, META, FICO** | Q4/Q2/Q3 earnings หลังตลาดปิด/วันนี้ | Big10/Watchlist — ไม่กระทบ position โดยตรง |
-| **July 30, 2026** | **REGN, AMZN, AAPL, RDDT** | Q2 earnings | **REGN = position catalyst สำคัญ (IPR&D charge ~$127M + securities lawsuit scope) | RDDT = catalyst ชี้ขาดที่สุด (ยืนยัน/ปฏิเสธ Google AI deal risk + MOS ที่พลิกลบแล้ว)** |
 | **Aug 5, 2026** | **LLY (Q2)** | Q2 earnings | Big10 — ไม่กระทบ position โดยตรง |
 | **Aug 20, 2026** | **WMT** | Q2 earnings | Big10 — ไม่กระทบ position โดยตรง |
 | **Aug 27, 2026** | **ADSK** | Q2 FY27 earnings | Position catalyst |
 
-> ผ่านไปแล้ว: GOOGL Q2 (July22, beat แต่ capex fear กด stopDist วิกฤต — ฟื้นแล้วจาก Berkshire news July28), NOW Q2 (July23, ทุบคาดการณ์ +7.44%, +2-day recovery), V Q3 (July28, beat + 2,600 job cuts), MCO Q2 (July22, beat), GEV Q2 (July22, mixed -6.4%), TSLA Q2 (July22, miss -14.5%), TSM Q2 (July16, beat แต่หุ้นร่วง -15% MTD capex fear), PGR (July15-16, ร่วง -9.4% แล้วฟื้น MS upgrade July24)
-> ⚠️ NEW 2026-07-28/29: Alphabet $80B equity raise + Berkshire $10B GOOGL stake | Visa 2,600 job cuts | Iran attack ทหารสหรัฐฯ ใหม่ (July29) oil +5% | semiconductor selloff ต่อเนื่อง
+> ผ่านไปแล้ว: **RDDT Q2 (July30, beat ทุกตัวชี้วัดแต่ sell-the-news -21% → 🔴🔴 STOP BREACHED)**, **REGN Q2 (July30, beat EPS $14.29 vs $10.53, Telix $2.1B collab, ราคาไต่ +26.68%)**, MSFT/META/FICO (July29), GOOGL Q2 (July22, beat แต่ capex fear กด stopDist วิกฤต — ฟื้นเต็มที่แล้วจาก Cloud backlog $514B news July31), NOW Q2 (July23, ทุบคาดการณ์), V Q3 (July28, beat + 2,600 job cuts), MCO Q2 (July22, beat), GEV Q2 (July22, mixed -6.4%), TSLA Q2 (July22, miss -14.5%), TSM Q2 (July16, beat แต่หุ้นร่วง capex fear), PGR (July15-16, ร่วง -9.4% แล้วฟื้น MS upgrade July24)
+> ⚠️ NEW 2026-07-31: RDDT stop breach (largest single-day drop on record) | GOOGL Cloud backlog $514B + TPU direct hardware sales pivot (+6.73%) | Amazon +15.32% cloud beat (S&P +0.68% day)
 
 ---
 
@@ -255,19 +262,20 @@
 | **2026-07-21** | **$9,824.66** | **-1.753%** | **+0.599%** | **-2.353%** |
 | **2026-07-26** | **$9,643.97** | **-3.560%** | **+0.176%** | **-3.737%** |
 | **2026-07-29** | **$9,980.90** | **-0.191%** | **+0.403%** | **-0.594%** |
+| **2026-08-01** | **$9,938.59** | **-0.614%** | **+1.227%** | **-1.841%** |
 
-> **Note:** พอร์ต +$336.93 (July26→July29 review, +3.49%) — สัปดาห์ enterprise software rebound แรงที่สุดในรอบเดือน. Alpha แคบลงมากเหลือ -0.594% (จาก -3.737%). **Best movers:** NOW +23.64% (2-day post-earnings recovery), ADSK +19.68% (Guggenheim Buy + software rally), REGN +15.48% (pre-earnings momentum). **ตัวถ่วงหลัก:** GOOGL -14.19% ยังติดลบมากสุด แต่ stopDist ฟื้นจากวิกฤตแล้ว. **จุดบวกสำคัญ:** GOOGL stopDist 3.05%→7.11% (Berkshire $10B stake news), ACN พ้น stop breach (+3.93% จาก -0.69%). **จุดที่ต้องระวังใหม่:** 🟠 RDDT MOS พลิกลบ -5.17% เข้า STRONG SELL territory, ⚠️ ADBE weight 10.09% ชนขอบบน IPS band. **Catalyst ถัดไป:** REGN/RDDT/AMZN/AAPL รายงาน 30 ก.ค. (RDDT ชี้ขาด Google deal), Atlas regime re-call ค้าง 17 วัน (last call 2026-07-12). Cash 61.44% ยังสูงเกิน floor — ไม่มี candidate ผ่าน gate deploy เพิ่ม session นี้ (price review only).
+> **Note:** พอร์ต -$42.31 (July29→Aug1 review, -0.42%) — RDDT stop-breach crash (-$105.81 วันเดียว) ฉุดพอร์ตแม้ REGN (+$96.38 จาก Q2 beat) + ACN (+$16.61) + GOOGL (+$22.40 จาก Cloud backlog news) ฟื้นแรง. Alpha กว้างขึ้นเป็น -1.841% (จาก -0.594%) เพราะ S&P +1.227% วิ่งแรงกว่าพอร์ตมาก (Amazon +15% cloud beat + GOOGL Cloud backlog $514B ดัน sentiment ตลาดกว้าง). **Best movers:** REGN +26.68% (Q2 beat + Telix collab), NOW +24.32%, ADSK +18.03%. **ตัวถ่วงหลัก:** 🔴🔴 RDDT -20.05% (stop breached, sell-the-news หลัง Q2 beat). **จุดบวกสำคัญ:** GOOGL หลุด WATCH (stopDist 7.11%→12.95%), ACN หลุด WATCH (3.93%→10.80%). **จุดที่ต้องระวังที่สุด:** RDDT stop breach ครั้งแรก — thesis review ผ่านแล้ว (ไม่มี Bear Flip/Invalidation ยิง) แต่ต้องรอ CIO confirm ก่อนตัดสินใจเพิ่มเติม. **Catalyst ถัดไป:** LLY Aug5, WMT Aug20, ADSK Aug27. Atlas regime re-call ค้าง 20 วัน (last call 2026-07-12). Cash 61.70% ยังสูงเกิน floor.
 
 ---
 
-## Action Items — 2026-07-29
+## Action Items — 2026-08-01
 
-1. **🟢 GOOGL — stopDist ฟื้นจากวิกฤต (3.05%→7.11%)** — Berkshire Hathaway ทุ่ม $10B ซื้อหุ้นที่ราคาสูงกว่าตลาด ($348-352 vs $333.73) หนุน Alphabet $80B equity raise เพื่อ AI capex — สัญญาณ high-conviction จากภายนอก. ยังต่ำกว่า 10% WATCH threshold — priority monitoring ต่อเนื่อง
-2. **🟠 RDDT — MOS พลิกลบ -5.17% เข้า STRONG SELL territory** — ราคาเด้งกลับเกิน FV $169.25 แล้ว แม้ WSJ Google-deal-risk story ยังไม่คลี่คลาย. earnings พรุ่งนี้ (July30) เป็น binary catalyst ชี้ขาด — ต้อง re-assess FV หลังผลประกอบการ
-3. **🟢 ACN — พ้น stop breach แล้ว, HOLD 1.4sh ต่อ** — stopDist +3.93% (จาก -0.69%), return -13.53% ดีขึ้นต่อเนื่อง. ไม่มี earnings ใหม่ → HOLD รอ Q4 bookings. NO ADD
-4. **⚠️ ADBE weight 10.09%** — ชนขอบบนของ IPS single-position band (8-10%) จาก rally แรง — ไม่ trim อัตโนมัติใน review mode (ไม่มี trade signal อื่นสนับสนุน) แต่ต้อง monitor ถ้าราคาวิ่งต่อ
-5. **⚠️⚠️⚠️ Atlas regime re-call ด่วนที่สุด** — ค้างมา 17 วัน (last formal call 2026-07-12) ท่ามกลาง Iran attack ทหารสหรัฐฯ ใหม่ (July29) + Fed decision วันนี้ + semiconductor selloff ต่อเนื่อง ที่ยังไม่ผ่าน re-assessment
-6. **Cash 61.44%** — เกิน 30% floor ต่อเนื่อง 6+ สัปดาห์. dry powder รอ candidate ผ่าน conviction gate (watchlist: VEEV analyst momentum building — RBC/Wells Fargo/Guggenheim Buy ทั้งหมด, MCO/PGR รอ) — ไม่ force ซื้อของแพงท่ามกลาง macro overhang
-7. **July 30 earnings — REGN + RDDT รายงานพร้อมกัน:** RDDT เป็น catalyst ชี้ขาดที่สุดของสัปดาห์หน้า (ยืนยัน/ปฏิเสธ Google deal risk + MOS ที่พลิกลบแล้ว), REGN ยืนยัน scope ของ lawsuit + IPR&D charge
+1. **🔴🔴 RDDT — STOP LOSS BREACHED ครั้งแรก (ด่วนที่สุด — รอ CIO)** — ราคา $140.67 < stop $140.75 หลัง Q2 earnings beat ทุกตัวชี้วัด (Rev +61%, ARPU +36%) แต่หุ้น sell-the-news -21% วันเดียว. Max review thesis ครบตาม Exit Rules แล้ว — **ไม่มี Bear Flip Trigger หรือ Thesis Invalidation ใดยิงจริง** — thesis ยังสมบูรณ์. **HOLD 3sh ต่อ ไม่ auto-sell** ตามกฎ "earnings beat ≠ thesis เปลี่ยน" — **รอ CIO confirm การตัดสินใจสุดท้าย (HOLD/TRIM/SELL)**
+2. **🟢 GOOGL — หลุด WATCH list** — stopDist ฟื้นจาก 7.11% เป็น 12.95% หลัง Q2 earnings เปิดเผย Cloud backlog $514B + TPU direct hardware sales pivot + Fed dovish signal (+6.73% day). return ดีขึ้นมากเป็น -8.43%
+3. **🟢 ACN — หลุด WATCH list, HOLD 1.4sh ต่อ** — stopDist ฟื้นจาก 3.93% เป็น 10.80%, return -6.87% ดีขึ้นต่อเนื่อง. ไม่มี earnings ใหม่ → HOLD รอ Q4 bookings. NO ADD
+4. **⚠️ REGN — MOS แคบลงมากเหลือ +3.71%** — best performer +26.68% หลัง Q2 beat (EPS $14.29 vs $10.53) + Telix $2.1B collab แต่ราคาไต่ใกล้ Blended FV $792 แล้ว ต้อง monitor ว่าจะเข้า STRONG SELL territory หรือไม่ถ้าราคาวิ่งต่อ
+5. **⚠️ ADBE weight 10.08%** — ยังชนขอบบนของ IPS single-position band (8-10%) ต่อเนื่อง — ไม่ trim อัตโนมัติใน review mode แต่ต้อง monitor
+6. **⚠️⚠️⚠️ Atlas regime re-call ด่วนที่สุด** — ค้างมา 20 วัน (last formal call 2026-07-12) ท่ามกลาง Fed dovish signal ใหม่ + AI capex sentiment ผันผวนต่อเนื่อง ที่ยังไม่ผ่าน re-assessment
+7. **Cash 61.70%** — เกิน 30% floor ต่อเนื่อง 7+ สัปดาห์. ไม่ deploy เพิ่มจนกว่า RDDT situation จะชัดเจนจาก CIO confirm ก่อน
 
-> **Regime ยังอ้างอิง RISK-ON 3/4 (2026-07-12 call, 17 วันแล้ว)** — **Bright spot สัปดาห์นี้:** software/healthcare rally ทั้งพอร์ตแทบทุกตัวพลิกบวกหรือดีขึ้น, GOOGL/ACN stopDist ฟื้นจากวิกฤต. **จุดที่ต้องจับตาใหม่:** RDDT MOS พลิกลบ (STRONG SELL territory) และ ADBE weight ชนขอบบน IPS — ทั้งคู่ต้องติดตามใกล้ชิด. Atlas regime re-call ค้างนานเกินไปต้องทำด่วนที่สุด.
+> **Regime ยังอ้างอิง RISK-ON 3/4 (2026-07-12 call, 20 วันแล้ว)** — **จุดสำคัญที่สุดสัปดาห์นี้:** RDDT stop breach ครั้งแรกของพอร์ต ทั้งที่ earnings beat ชัดเจน — เป็นบททดสอบสำคัญของ Exit Rules "review thesis ก่อนเสมอ ไม่ auto-sell ทันที". **Bright spot:** GOOGL/ACN หลุด WATCH list พร้อมกัน, REGN best performer. Atlas regime re-call ค้างนานเกินไปต้องทำด่วนที่สุด.
