@@ -3,10 +3,82 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-07-29 09:00";
+const NEWS_LAST_UPDATED = "2026-08-01 09:00";
 
 const NEWS = [
+  // ── 2026-07-31 ──────────────────────────────────────────
+  {
+    date: "2026-07-31", category: "MACRO",
+    headline: "🚀 ตลาดพุ่งต่อเนื่อง 2 วันติด — AMZN +15% พา Nasdaq/S&P ขึ้นต่อ แต่ AAPL ร่วง -10% จากต้นทุนชิปหน่วยความจำพุ่ง",
+    summary: "วันศุกร์ที่ 31 กรกฎาคม ตลาดหุ้นสหรัฐฯ บวกต่อเนื่องจากวันพฤหัส — Nasdaq +0.9%, S&P 500 +0.7% — นำโดย Amazon ที่พุ่ง +15% หลัง Q2 beat ทั้ง cloud/margin, Alphabet +6% และ Microsoft/Meta ราว +3% (ตลาด re-price AI-capex trade เป็นบวกหลัง hyperscaler beats ติดกัน) ขณะที่ Apple ร่วงแรง -10% จากปัญหาต้นทุนชิปหน่วยความจำ (memory chip) ที่พุ่งขึ้นกดดันต้นทุนผลิตและ margin ไตรมาสหน้า ด้าน bond market ส่งสัญญาณเตือนคู่ขนาน — 30-year Treasury yield พุ่งแตะ 5.26% สูงสุดตั้งแต่ปี 2007 และ 10-year yield ทะลุ 4.7% สูงสุดตั้งแต่ม.ค. 2025 สะท้อนความกังวล fiscal/inflation ระยะยาว. นัยพอร์ต: sentiment เปลี่ยนจาก 'AI capex fear' เป็น 'AI capex confirmed working' ชัดเจน เป็นบวกโดยตรงต่อ GOOGL position (ควรหนุน stopDist ฟื้นตัวต่อ) แต่ yield ที่พุ่งแรงอาจกดดัน valuation growth/duration-sensitive names อื่นในพอร์ต (ADBE/ADSK/CRM) ระยะถัดไป — Atlas ควรใส่ yield spike นี้เข้า regime re-call ด้วย.",
+    impact: "MIXED", tickers: ["AMZN", "AAPL", "GOOGL", "MSFT", "META"],
+    url: "https://www.bloomberg.com/news/articles/2026-07-28/stock-market-today-dow-s-p-live-updates",
+  },
+  // ── 2026-07-30 ──────────────────────────────────────────
+  {
+    date: "2026-07-30", category: "MACRO",
+    headline: "📈 Nasdaq ทำสถิติปิดตลาดแรงสุดในรอบหลายเดือน (+2.8%) ยุติสตรีคร่วง 6 วัน — MSFT + เซมิคอนดักเตอร์นำตลาดฟื้นหลัง Fed hawkish hold",
+    summary: "หนึ่งวันหลัง Fed คงดอกเบี้ยแบบ hawkish (3 เสียงค้านอยากขึ้นดอกเบี้ย) ตลาดหุ้นสหรัฐฯ พลิกบวกแรงวันพฤหัสที่ 30 กรกฎาคม — Dow +613.92 จุด (+1.2%) ปิดสถิติใหม่ 52,208.06, S&P 500 +1.7% ปิด 7,437.64, Nasdaq +2.8% ปิด 25,122.18 ยุติสตรีคร่วง 6 วันติด แรงหนุนหลักจาก Microsoft ที่พุ่ง +16% หลังผลประกอบการเหนือคาดมาก และหุ้นกลุ่มเซมิคอนดักเตอร์ที่ฟื้นตัวหลัง hedge fund เทขายเสร็จสิ้น (de-leveraging cycle จบ). นัยพอร์ต: การฟื้นตัวแรงของ mega-cap tech หลัง earnings beat ยืนยันว่าตลาดยัง reward AI capex ที่ execution จริง เป็นสัญญาณบวกกว้างสำหรับ software/AI positions ในพอร์ต (ADBE, ADSK, NOW, CRM, GOOGL) — ต้องติดตามว่า rally นี้ยั่งยืนหรือเป็นเพียง short-covering หลัง 6 วันร่วงติด.",
+    impact: "POSITIVE", tickers: [],
+    url: "https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html",
+  },
+  {
+    date: "2026-07-30", category: "EARNINGS",
+    headline: "💻 Microsoft Q4 FY26 ทุบคาดทุกตัวชี้วัด — Revenue $90.01B (+18% YoY) EPS $4.81 หนุนกำไรพิเศษ $3.2B จาก Anthropic หุ้นพุ่ง +16%",
+    summary: "Microsoft รายงานผลไตรมาส 4 ปีงบประมาณ 2026 เมื่อ 29 กรกฎาคม เหนือคาดมาก — revenue $90.01B เทียบคาด $87.62B (+18% YoY), net income $35.77B หรือ EPS $4.81 เทียบ $3.65 ปีก่อน ได้แรงหนุนพิเศษจากกำไร $3.2B ที่รับรู้จากการลงทุนใน Anthropic บวกต้นทุนโครงการเกษียณอายุแบบสมัครใจที่ต่ำกว่าคาด ผู้บริหารระบุ capex ปีงบ 2027 จะเพิ่มต่อเนื่องจากระดับ ~$175B ปีนี้ หุ้นพุ่ง +16% ตอบรับ. นัยพอร์ต: สัญญาณบวกกว้างต่อ AI-infrastructure thesis ทั้งหมด รวมถึง GOOGL (Cloud comparison) และ growth/software positions ในพอร์ต ยืนยันว่า AI capex กำลังแปลงเป็นรายได้จริง ไม่ใช่แค่ story.",
+    impact: "POSITIVE", tickers: ["MSFT"],
+    url: "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
+  },
+  {
+    date: "2026-07-30", category: "EARNINGS",
+    headline: "📦 Amazon Q2 2026 ทุบคาดทั้ง Top-Bottom Line — Revenue $200.6B (+20% YoY) Margin ขยายเป็น 13.7% หุ้นพุ่ง +15%",
+    summary: "Amazon รายงานผลไตรมาส 2 ปี 2026 เหนือ high-end ของ guidance ทั้งด้าน revenue ที่โต +20% YoY แตะ $200.6B และ operating margin ที่ขยายเป็น 13.7% จาก 11.4% ปีก่อน สะท้อน AWS cloud ที่เร่งตัวแรง หุ้นพุ่ง +15% ตอบรับ Morgan Stanley ปรับเป้าราคาขึ้นเป็น $335 จาก $330 และ RBC Capital ปรับเป็น $330 จาก $320 คงเรตติ้ง Overweight/Buy บริษัทยังลงทุน AI ต่อเนื่องหลังปิดดีลลงทุน $50B ใน OpenAI ที่ประกาศไปตั้งแต่ก.พ. นัยพอร์ต: ยืนยันธีม hyperscaler cloud AI beat ต่อเนื่องจาก MSFT เมื่อคืนก่อน เป็นบวกทางอ้อมต่อ GOOGL (Cloud peer comparison) แม้ AMZN ไม่ใช่ position/watchlist ตรง.",
+    impact: "POSITIVE", tickers: ["AMZN", "GOOGL"],
+    url: "https://www.cnbc.com/quotes/AMZN",
+  },
+  {
+    date: "2026-07-30", category: "EARNINGS",
+    headline: "🔴 Reddit Q2 2026 ทุบคาดทุกตัวชี้วัด (Rev +61% YoY, EPS $1.25 vs $0.95 est, DAU +18%) แต่หุ้นร่วง -10% เพราะเงา Google AI-deal risk ยังไม่คลี่คลาย",
+    summary: "Reddit รายงานผลไตรมาส 2 ปี 2026 เมื่อ 30 กรกฎาคม แข็งแกร่งเกินคาดทุกมิติ — revenue $805M เทียบคาด $744.94M (+61% YoY, ไตรมาสที่ 8 ติดต่อกันที่โตเกิน 60%), advertising revenue $762M (+64% YoY), EPS $1.25 เทียบคาด $0.95, Daily Active Uniques 130.3M (+18% YoY), Weekly Active Uniques ทะลุ 500M เป็นครั้งแรกที่ 514.6M (+24%), ARPU $6.18 (+36% YoY) พร้อม guide Q3 revenue $860-870M แต่หุ้นกลับร่วง -10 ถึง -11% ใน after-hours แม้ผลประกอบการดีมาก — สะท้อนว่าตลาดยังกังวลประเด็น WSJ รายงาน (22 ก.ค.) ว่า Reddit อาจไม่ต่อสัญญา AI content licensing กับ Google ที่ยังไม่มีข้อสรุปชัดเจนจาก earnings call นี้. นัยพอร์ต: ⚡ Binary catalyst ที่รอคอยมานาน — fundamentals (user growth, ARPU, ad revenue) แข็งแกร่งกว่าที่กลัวมาก ไม่มีสัญญาณ core business เสียหาย แต่ราคาตอบสนองลบเพราะ Google licensing overhang ยังไม่ได้รับการยืนยัน/ปฏิเสธชัดเจนจาก management — Charlie/Emma ควรอ่าน earnings call transcript เพิ่มเติมว่าผู้บริหารพูดถึงประเด็นนี้อย่างไร ก่อนสรุป thesis ใหม่.",
+    impact: "MIXED", tickers: ["RDDT"],
+    url: "https://www.cnbc.com/2026/07/30/reddit-rddt-q2-2026-earnings-report.html",
+  },
+  {
+    date: "2026-07-30", category: "EARNINGS",
+    headline: "💊 Regeneron Q2 2026 ทุบคาดหนักทุกด้าน — Revenue $4.29B (+17% YoY) Adj EPS $14.29 vs คาด $10.26 Dupixent โต +38% YoY",
+    summary: "Regeneron รายงานผลไตรมาส 2 ปี 2026 เมื่อ 30 กรกฎาคม เหนือคาดมาก — revenue รวม $4.29B (+17% YoY) เทียบคาด ~$3.89B, adjusted EPS $14.29 เทียบคาด $10.26-10.53 (GAAP EPS $12.23) Dupixent global net sales แตะ $6.0B (+38% YoY) และ EYLEA HD สหรัฐฯ โต $596M (+52% YoY) บริษัทปรับ guidance FY26 (ลด capex เหลือ $1.03-1.1B จาก $1.1-1.2B เดิม, เพิ่ม gross margin guide เป็น 84-85%) ผลประกอบการนี้ดีกว่าที่ตลาดกลัวไว้มาก (เดิมคาด EPS หดตัว -22.4% YoY จาก one-time charge). นัยพอร์ต: บวกอย่างมากต่อ REGN position — core business (Dupixent, EYLEA) แข็งแกร่งเกินคาดชัดเจน ช่วยลดน้ำหนักความกังวลจาก securities class action lawsuit (24 ก.ค.) ที่เกี่ยวกับ pipeline อื่น (melanoma) ไม่ใช่ core Dupixent — ต้องติดตาม stock reaction วันจริงและ commentary เรื่อง IRA Q4 2026.",
+    impact: "POSITIVE", tickers: ["REGN"],
+    url: "https://www.tradingview.com/news/tradingview:fc0280e1983f4:0-regeneron-posts-q2-2026-revenue-4-29b-gaap-eps-12-23-adjusted-eps-14-29/",
+  },
+  {
+    date: "2026-07-30", category: "EARNINGS",
+    headline: "📉 FICO ร่วงหนักสุดในรอบ 6 ปี (-17 ถึง -18%) เป็นหุ้นแย่สุดใน S&P 500 วันเดียว แม้ Revenue โต +26% YoY — guidance เต็มปีต่ำกว่าคาด",
+    summary: "Fair Isaac (FICO) รายงานผลไตรมาส 3 ปีงบประมาณ 2026 เมื่อ 29-30 กรกฎาคม — revenue โต +26% YoY แตะ $674.2M แต่ต่ำกว่าคาด $679.2M เล็กน้อย และปรับ guidance เต็มปีเป็น adjusted EPS $42.43 (สูงขึ้นจาก $40.45 เดิม) แต่ยังต่ำกว่า consensus $43.09 — ตลาดตอบรับลบรุนแรง หุ้นร่วง -17% ปิดที่ $1,139.54 (แตะต่ำสุดระหว่างวัน -18.1%) กลายเป็นหุ้นแย่ที่สุดใน S&P 500 วันนั้น (ขณะดัชนีรวมบวก +1.7%) ประเด็นหลักคือ mortgage origination revenue ชะลอตัวทั้ง YoY/QoQ จาก mortgage volume ที่อ่อนลงตามดอกเบี้ยสูง แม้ Scores segment โต +41% และมี FICO Score 10T ที่ mortgage lenders กว่า 70 รายเริ่มใช้แล้ว. นัยต่อ watchlist FICO (เดิม HOLD/WAIT, MOS -9.1%): ราคาที่ร่วงแรงอาจทำให้ MOS พลิกเป็นบวกได้ — Max ควรประเมิน entry zone ใหม่หลังราคาปรับฐานลงมามาก.",
+    impact: "NEGATIVE", tickers: ["FICO"],
+    url: "https://www.msn.com/en-us/money/economy/fico-stock-drops-the-most-in-6-years-here-s-what-went-wrong/ar-AA294AWT",
+  },
+  {
+    date: "2026-07-30", category: "EARNINGS",
+    headline: "📱 Meta Q2 2026: Revenue beat เล็กน้อยแต่ EPS พลาดคาด + guidance อ่อนแอ + Free Cash Flow หดตัว หุ้นร่วง -7% ก่อนเด้งกลับตามตลาด",
+    summary: "Meta Platforms รายงานผลไตรมาส 2 ปี 2026 แบบผสม — revenue เหนือคาดเล็กน้อย (+0.85%) แต่ EPS ต่ำกว่าคาดถึง -16.47% พร้อม guidance รายได้ไตรมาสหน้าที่อ่อนแอกว่าคาด และ free cash flow ที่หดตัวลง จุดชนวนความกังวลว่าการลงทุน AI infrastructure มหาศาลจะให้ผลตอบแทนคุ้มค่าเมื่อไหร่ หุ้นร่วง -7% ใน after-hours ทันที ก่อนฟื้นกลับมาบวก +3% ในการซื้อขายวันที่ 31 กรกฎาคม ตามแรงบวกกว้างของตลาดหลัง MSFT/AMZN beat. นัยพอร์ต: สัญญาณเตือนว่าตลาดเริ่มแยกแยะระหว่าง hyperscaler ที่ AI capex แปลงเป็นรายได้ชัดเจน (MSFT, AMZN) กับที่ยังไม่ชัดเจน (META) — ไม่ใช่ position/watchlist ตรงแต่เป็น read สำคัญสำหรับ AI-capex sentiment โดยรวมที่กระทบ GOOGL ด้วย.",
+    impact: "MIXED", tickers: ["META", "GOOGL"],
+    url: "https://finance.yahoo.com/quote/META/news/",
+  },
+  {
+    date: "2026-07-30", category: "EARNINGS",
+    headline: "🍎 Apple Q3 FY26 กำไรเหนือคาด (EPS $2.02) แต่ guidance อ่อนแอ + ต้นทุนชิปหน่วยความจำพุ่ง กดหุ้นร่วง -9% สองวันติด",
+    summary: "Apple รายงานผลไตรมาส 3 ปีงบประมาณ 2026 เมื่อ 30 กรกฎาคม เหนือคาดทั้ง EPS ($2.02) และ revenue ($109.4B เทียบคาด $108.96B) แต่หุ้นร่วงหนักในการซื้อขายนอกเวลาและต่อเนื่องวันศุกร์รวมกว่า -9% หลังบริษัทให้ guidance รายได้ไตรมาสหน้าอ่อนแอกว่าคาด ผสม CEO Tim Cook เตือนนักลงทุนถึงต้นทุนชิปหน่วยความจำ (memory chip) ที่พุ่งขึ้นกระทบต้นทุนผลิตและอาจกดดัน margin ไตรมาสก.ย. นัยพอร์ต: cross-sector warning สำคัญเรื่องต้นทุน memory chip ที่อาจกระทบ hardware-heavy tech ทั้งกลุ่ม แม้ AAPL ไม่ใช่ position/watchlist ตรง แต่เป็นสัญญาณเตือน supply-chain cost inflation ที่อาจลามถึงบริษัทเทคอื่น.",
+    impact: "NEGATIVE", tickers: ["AAPL"],
+    url: "https://www.investing.com/equities/apple-computer-inc-news",
+  },
   // ── 2026-07-29 ──────────────────────────────────────────
+  {
+    date: "2026-07-29", category: "MACRO",
+    headline: "🏦 Fed คงดอกเบี้ย 3.50-3.75% ครั้งที่ 5 ติดต่อกัน แต่โหวตไม่เป็นเอกฉันท์ 9-3 — 3 ประธาน Fed สาขาโหวตหนุนขึ้นดอกเบี้ยจาก inflation ที่ยังสูงเกิน 5 ปี",
+    summary: "ธนาคารกลางสหรัฐฯ (Fed) ประกาศผลการประชุมนโยบายการเงินเมื่อ 29 กรกฎาคม คงอัตราดอกเบี้ยไว้ที่กรอบ 3.50-3.75% เป็นครั้งที่ 5 ติดต่อกัน แต่การโหวตไม่เป็นเอกฉันท์ — ผลโหวต 9 ต่อ 3 โดยประธาน Fed สาขา Cleveland (Beth Hammack), Minneapolis (Neel Kashkari) และ Dallas (Lorie Logan) โหวตค้านต้องการขึ้นดอกเบี้ย สะท้อนความกังวล inflation ที่ยังสูงกว่าเป้าหมาย 2% มานานกว่า 5 ปี และถูกซ้ำเติมด้วยราคาพลังงานที่พุ่งจากสงครามอิหร่าน ครั้งล่าสุดที่ Fed ปรับลดดอกเบี้ยคือธ.ค. 2025 (-0.25%). นัยพอร์ต: signal hawkish ชัดเจนขึ้น (3 dissents ต้องการ hike) เพิ่มความเสี่ยงต่อ RISK-ON regime ที่ Atlas เคยประกาศไว้ (ค้าง re-call มา 17+ วัน) — Atlas ควร re-call regime โดยด่วนที่สุด โดยเฉพาะ Fed Stance indicator ที่อาจเปลี่ยนจาก 'cuts priced' เป็น 'neutral/hawkish' ซึ่งอาจพลิก majority vote ของ 4 indicators.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html",
+  },
   {
     date: "2026-07-29", category: "MACRO",
     headline: "🛢️ อิหร่านโจมตีทหารสหรัฐฯ แบบไม่ทันตั้งตัว สหรัฐฯ สกัดได้ — น้ำมันพุ่ง +5% แตะ $83+/บาร์เรล ก่อนวัน Fed ประกาศดอกเบี้ย",
