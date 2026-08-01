@@ -21,6 +21,16 @@
 
 ---
 
+## Decision Log — Stop-Loss Review Outcomes (No Trade Executed)
+
+*Per Exit Rules (CLAUDE.md): price ≤ Stop Loss triggers thesis review, NOT automatic sale. Logged here when review results in HOLD (no shares bought/sold).*
+
+| Date | Ticker | Trigger | Review Outcome | Decision | Authority |
+|------|--------|---------|----------------|----------|-----------|
+| 2026-08-01 | **RDDT** | Stop loss breached (first time): price $140.67 < stop $140.75 (-0.06%), despite Q2 2026 earnings beat (Rev $804.9M +61% YoY, EPS $1.25 vs $0.95 est, ARPU +36% YoY). Stock crashed -20.99% same day (largest single-day drop on record) on no new AI licensing deal + management warning "search referrals choppy" (Google dependency concern). | Reviewed all 5 Bear Flip Triggers + 3 Thesis Invalidation conditions per report RDDT_2026-05-30.md — **none fired**. ARPU +36% far exceeds <20% floor; Revenue beat (not miss) vs guidance; Google has not terminated the licensing deal (renewal talks ongoing); DAU growth blend still positive. Conclusion: sell-off is sentiment/lack-of-new-catalyst driven, not fundamental deterioration. | **HOLD** 3 shares — no trade executed. Formalized 2026-08-02 after CIO delegated decision authority ("แล้วแต่พวกนาย เรามาศึกษาเฉยๆ"). | Max (CIO-delegated autonomy, per precedent) |
+
+---
+
 ## Summary Stats
 
 | Metric | ค่า |
