@@ -1,5 +1,5 @@
 # Performance Tracker — บลจ. CFA
-*Managed by Vera | Migrated: 2026-05-19 | Protocol v2 (Opus audit) | Last update: 2026-07-29 (DXCM added — HOLD/WAIT watchlist entry, first Medical Devices/CGM sector, both Value gates fail simultaneously; DXCM Q2 2026 earnings 2026-07-30 pending — historical -40.66% single-day crash precedent flagged)*
+*Managed by Vera | Migrated: 2026-05-19 | Protocol v2 (Opus audit) | Last update: 2026-08-02 (ABBV added — HOLD/WAIT watchlist entry, 2nd Healthcare sector, both Value gates fail simultaneously — 5th instance of this pattern; sync check vs positions.md performed, see Reconciliation Flag below)*
 
 ---
 
@@ -20,11 +20,13 @@
 | **REGN** | **2026-06-03** | **$602.00** | **TBD (T1 deploy)** | **TBD** | **$602.00** | **+0.00%** | **+0.00%** | **~7,590** | **~7,590** | **OPEN T1 — NEW 2026-06-03** |
 | **ACN** | **2026-06-05** | **$178.16** | **T1 planned (~2.8 shares)** | **~$500** | **$178.16** | **+0.00%** | **+0.00%** | **7,553.68** | **7,553.68** | **OPEN T1 — NEW 2026-06-05** |
 
-**S&P 500 reference:** ~7,590 (June 2, 2026 close — positions.md source) → **7,483.24** (July 2, 2026 close — Atlas regime record 2026-07-06) → **7,575.39** (July 10, 2026 close — Atlas `2026-07-12_regime.md` + portfolio.js `sp500Current` ✅ latest verified level) → **7,443.28** (July 20, 2026 close — `portfolio/positions.md` — latest verified figure available, used as PGR analysis baseline 2026-07-22; ยังไม่ได้ refresh Current $ column สำหรับ position เก่าตั้งแต่ May-June — ดู flag ด้านล่าง) → **7,428.78** (July 28, 2026 close — `dashboard/portfolio.js` `sp500Current` field, 2-source cross-check per Max session 2026-07-29 + consistent with `agent_notes/atlas/2026-07-29_regime.md` context — used as DXCM analysis baseline 2026-07-29; three-file consistency check ✅ PASS: decisions.md / portfolio.js / Atlas regime note all reference same date range, no contradicting S&P level found)
+**S&P 500 reference:** ~7,590 (June 2, 2026 close — positions.md source) → **7,483.24** (July 2, 2026 close — Atlas regime record 2026-07-06) → **7,575.39** (July 10, 2026 close — Atlas `2026-07-12_regime.md` + portfolio.js `sp500Current` ✅ latest verified level) → **7,443.28** (July 20, 2026 close — `portfolio/positions.md` — latest verified figure available, used as PGR analysis baseline 2026-07-22; ยังไม่ได้ refresh Current $ column สำหรับ position เก่าตั้งแต่ May-June — ดู flag ด้านล่าง) → **7,428.78** (July 28, 2026 close — `dashboard/portfolio.js` `sp500Current` field, 2-source cross-check per Max session 2026-07-29 + consistent with `agent_notes/atlas/2026-07-29_regime.md` context — used as DXCM analysis baseline 2026-07-29; three-file consistency check ✅ PASS: decisions.md / portfolio.js / Atlas regime note all reference same date range, no contradicting S&P level found) → **7,489.72** (July 31, 2026 close — `portfolio/positions.md` 2026-08-01 review, CNBC/24-7 Wall St + Google Finance ✅, used as ABBV analysis baseline 2026-08-02 — matches decisions.md entry exactly)
 
 **REGN entry:** BUY T1 4-5% at ~$602, Stop $482
 
-> ⚠️ **Reconciliation Flag (2026-07-06, still open as of 2026-07-29):** คอลัมน์ "Current $" / "S&P@Current" ในตารางนี้ยังอิงข้อมูลถึง ~2026-06-05/07 (ACN, REGN, RDDT ยัง +0.00% = ราคาวันที่ deploy ยังไม่ refresh) — ห่างจากปัจจุบันเกือบ 8 สัปดาห์แล้ว ต้องขอ Max ดึงราคาปัจจุบันจริงเพื่อ refresh ตารางนี้ก่อนออก weekly/quarterly report รอบถัดไป — **หมายเหตุ: การเช็คนี้เป็นของ Active Positions เท่านั้น ไม่กระทบ PGR/DXCM entries ด้านล่าง เพราะทั้งสองไม่มี position จริง (HOLD/WAIT — thesis tracking only)**
+> ⚠️ **Reconciliation Flag (2026-07-06, still open as of 2026-08-02):** คอลัมน์ "Current $" / "S&P@Current" ในตารางนี้ยังอิงข้อมูลถึง ~2026-06-05/07 (ACN, REGN, RDDT ยัง +0.00% = ราคาวันที่ deploy ยังไม่ refresh) — ห่างจากปัจจุบันเกือบ 9 สัปดาห์แล้ว ต้องขอ Max ดึงราคาปัจจุบันจริงเพื่อ refresh ตารางนี้ก่อนออก weekly/quarterly report รอบถัดไป — **หมายเหตุ: การเช็คนี้เป็นของ Active Positions เท่านั้น ไม่กระทบ ABBV/PGR/DXCM entries ด้านล่าง เพราะทั้งหมดไม่มี position จริง (HOLD/WAIT — thesis tracking only)**
+>
+> **Sync check เพิ่มเติม (2026-08-02, ทำเพื่อ ABBV addition):** ตรวจ `portfolio/positions.md` (last updated 2026-08-01, July 31 close) เทียบกับตารางนี้ — พบว่า gap ขยายกว้างขึ้นอีก ตั้งแต่ table ด้านบนไม่มี ADSK (deployed 2026-06-14), ไม่สะท้อน ACN 50% trim (2026-06-22, เหลือ 1.4sh), และไม่สะท้อน **🔴🔴 RDDT stop loss breach ครั้งแรก (2026-08-01, ราคา $140.67 < stop $140.75)** ที่ positions.md บันทึกไว้แล้ว. **ตัวเลข portfolio-level ล่าสุดที่ถูกต้องที่สุดคือจาก positions.md**: Total Portfolio Value $9,938.59 (-0.614%), S&P 500 7,489.72 (+1.227% since inception), **Alpha -1.841%** — ไม่ใช่ตัวเลขใน Portfolio Summary table ด้านล่างของไฟล์นี้ที่ยัง freeze ที่ 2026-05-30. ABBV ไม่กระทบ gap นี้เพราะไม่มี position เปิดใหม่ แต่ escalate ซ้ำอีกครั้ง: **Active Positions table + Portfolio Summary table ในไฟล์นี้ต้องการ full refresh ด่วน** ก่อนออก weekly/quarterly report ครั้งถัดไป — ยิ่งปล่อยนานยิ่งเสี่ยง CIO อ่านตัวเลขผิดจากไฟล์นี้แทนที่จะเป็น positions.md
 
 ---
 
@@ -45,7 +47,7 @@
 > **Data Integrity Fixed (2026-05-19):** S&P ~5,400-5,825 เดิมผิด (เป็นระดับ S&P ปี 2024)
 > S&P 500 ในช่วง Apr-May 2026 อยู่ที่ **7,000–7,600 range** — alpha ปรับใหม่สะท้อนระดับที่ถูกต้อง
 
-> ⚠️ **Stale note (2026-07-06, still open as of 2026-07-29):** ตัวเลขข้างบนยังอิงข้อมูลถึง 2026-05-30 เป็นข้อมูลล่าสุดที่มี — ต้องการ Full Portfolio Refresh (Max ดึงราคาปัจจุบันทุก position) ก่อนคำนวณ Portfolio Alpha ที่แม่นยำ ณ วันนี้ — ล่าสุด portfolio.js (2026-07-29, July 28 close) รายงาน Total $9,980.90 (-0.191%), S&P 7,428.78 (+0.403% since inception), **Alpha -0.594%** (แคบลงมากจาก -3.737% สัปดาห์ก่อน — enterprise software rebound) ซึ่งเป็นตัวเลขที่แม่นยำกว่า table ด้านบน — Vera ควรใช้ portfolio.js เป็น source of truth จนกว่าตารางนี้จะ refresh
+> ⚠️ **Stale note (2026-07-06, still open as of 2026-08-02):** ตัวเลขข้างบนยังอิงข้อมูลถึง 2026-05-30 เป็นข้อมูลล่าสุดที่มี — ต้องการ Full Portfolio Refresh (Max ดึงราคาปัจจุบันทุก position) ก่อนคำนวณ Portfolio Alpha ที่แม่นยำ ณ วันนี้ — ล่าสุด `portfolio/positions.md` (2026-08-01 review, July 31 close) รายงาน **Total $9,938.59 (-0.614%), S&P 7,489.72 (+1.227% since inception), Alpha -1.841%** (กว้างขึ้นจาก -0.594% สัปดาห์ก่อน — S&P วิ่งแรงกว่าพอร์ตจาก GOOGL Cloud backlog $514B news + Amazon cloud beat, ขณะที่พอร์ตโดน 🔴🔴 RDDT stop loss breach ครั้งแรก -$105.81 วันเดียวฉุดไว้) — Vera ควรใช้ `portfolio/positions.md` เป็น source of truth จนกว่าตารางนี้จะ refresh เต็มรูปแบบ. **RDDT stop breach ต้องรอ CIO confirm ก่อนตัดสินใจเพิ่มเติม (HOLD/TRIM/SELL) — ไม่กระทบ ABBV analysis (ไม่มี position)**
 
 ---
 
@@ -64,7 +66,7 @@
 | **FPS** | **2026-05-22** | **~5,650 (est. — ต้องการ verified source)** | **HOLD/WAIT $49** | **MOS -41.7%, Conviction 6.0 < gate 6.5, Growth MOS FAIL** | WATCHLIST — รอ entry $25-30 | — | — | First Industrials/Power Equipment. AI demand story แข็งแต่ valuation hype |
 | **CLFD** | **2026-05-22** | **7,432.97** (last verified Atlas 2026-05-21) | **HOLD/WAIT $42.71** | **MOS -43.4%, MOS gate FAIL** | WATCHLIST — รอ entry $20-26 | — | — | Fiber + BEAD thesis แต่ valuation -43.4% ไม่ผ่าน MOS gate |
 | **CRM** | **2026-05-29** | **7,520.36** (verified) | **BUY (Value Bucket) $181** | **Deployed T1 5.48% — OPEN** | OPEN — tracking | — | **ALPHA PENDING** | Wide Moat CRM, FCF yield 9.77%, Agentforce +205% YoY |
-| **ACN** | **2026-06-05** | **7,553.68** (June 3 close — positions.md) | **BUY (Value) $178.16** | **Deployed T1 5% — OPEN** | OPEN — tracking | — | **ALPHA PENDING** | Wide Moat IT Services, FCF yield 11.42%, Bookings ATH $22.1B, P/E 14.54x (31% discount) |
+| **ACN** | **2026-06-05** | **7,553.68** (June 3 close — positions.md) | **BUY (Value) $178.16** | **Deployed T1 5% — TRIMMED 50% 2026-06-22 (stop breach + Bear Flip #1) — OPEN 1.4sh** | OPEN — tracking | — | **ALPHA PENDING** | Wide Moat IT Services, FCF yield 11.42%, Bookings ATH $22.1B, P/E 14.54x (31% discount). Stop breach June18 → TRIM 50%, realized -28.17%; remainder recovered to -6.87% by Aug1, หลุด WATCH |
 | **MA** | **2026-06-07** | **~7,600-7,700 (est.)** | **HOLD/WAIT $484** | **MOS -11.6% < 15% Value gate — no deploy** | WATCHLIST — รอ pullback $410-440 | — | — | Payment Network Duopoly, ROIC 95%, Wide Moat. Stablecoin risk 25-30%. Entry T1 $410-440 |
 | **ACGL** | **2026-06-14** | **7,431.46** (June 12 close — verified baseline) | **HOLD/WAIT $91.66** | **Conviction 6.3 < 7.0 Value gate + FOMC Jun 16-17 hold** | WATCHLIST — รอ entry $80-88 | — | **PENDING (open/no position)** | First Insurance/Financials sector. Beta 0.31 (lowest in universe). MOS +15.6% pass แต่ Conviction gate fail |
 | **TOST** | **2026-06-17** | **7,554.29** (June 15 close — verified TheStreet + CNBC) | **HOLD/WAIT-to-BUY $25.28** | **Conviction 6.33 < 6.5 Growth gate (MOS +33.3% passed both Growth MOS methods)** | WATCHLIST — รอ Q2 CY2026 earnings (Aug) FCF-quality confirm | — | **PENDING (open/no position)** | First B2B Fintech/vertical SaaS sector. FCF quality risk (FCF $654M vs NI $412M gap). Re-evaluate post-Q2 earnings for conviction lift ≥6.5 |
@@ -72,12 +74,43 @@
 | **WPM** | **2026-07-12** | **7,575.39** (July 10, 2026 close — CNBC + Yahoo Finance, verified — cross-checked against Atlas `2026-07-12_regime.md` and portfolio.js `sp500Current` ✅ ตรงกันทั้ง 3 ไฟล์) | **HOLD/WAIT FOR PULLBACK $110.05** | **Conviction 6.3 < 7.0 Value gate AND MOS -9.9% < 15% Value gate — both gates fail simultaneously** | WATCHLIST — รอ entry $85-92 | — | **PENDING (open/no position)** | First Precious Metals Streaming sector. Salobo (Vale) ~38-40% NAV concentration (2x the 20% single-asset threshold). Forward Sharpe -0.17 (negative vs S&P ~0.55), Kelly NEGATIVE. Return 1Y +23.87% flagged by Quinn as leveraged commodity beta (gold/silver), not genuine alpha — calibration note for future streaming/royalty names |
 | **PGR** | **2026-07-22** | **7,443.28** (July 20, 2026 close — `portfolio/positions.md`, most recent verified figure this session; July 21 close not independently re-verified — no WebSearch access this session) | **HOLD/WAIT FOR PULLBACK $205.90** | **Conviction 6.67 < 7.0 Value gate AND MOS +1.0% < 15% Value gate — both gates fail simultaneously** | WATCHLIST — รอ entry $175-185 | — | **PENDING (open/no position)** | First Auto/Personal-Lines P&C sector (distinct from ACGL's Specialty/Reinsurance/Mortgage). Operating margin 16.56% = LOWEST among 4 named peers (ALL/TRV/CB/ACGL) despite highest revenue growth (+10.49%) — underwriting discipline gap. Stock fell twice in one week (-9% growth deceleration signal, -2.98% post-earnings margin concern) — Bear flagged as confirmed signal (leading+lagging indicator convergence), not noise. Beta 0.25 = new portfolio-low. 2nd use of Insurance Residual Income/Justified P/B-ROE framework after ACGL |
 | **DXCM** | **2026-07-29** | **7,428.78** (July 28, 2026 close — Yahoo Finance, Atlas Data Package Section F, cross-verified — consistent with `dashboard/portfolio.js` `sp500Current` field same date) | **HOLD/WAIT FOR PULLBACK + EARNINGS CLARITY $74.85** | **Conviction 6.17 < 7.0 Value gate AND MOS +0.4% < 15% Value gate — both gates fail simultaneously (post Morgan Round 2 TGR fix)** | WATCHLIST — รอ entry $58-65 + Q2 2026 earnings 2026-07-30 clarity | — | **PENDING (open/no position)** | First Medical Devices / Continuous Glucose Monitoring (CGM) sector ในพอร์ต. Quality สูงสุดที่ทีมเคยวิเคราะห์ (ROE 35.62%, ROIC 39.25%, FCF-positive 2 ปีติด, net cash) แต่ MOS แทบเป็นศูนย์และ Conviction ไม่ผ่าน gate. Earnings binary 2026-07-30 with historical -40.66% single-day crash precedent (2024-07-26 guidance cut) — market pricing only ~9% weekly implied move, possible tail-risk underpricing. Beta 1.45 (5Y monthly) vs 0.84 (3Y daily, correlation only 0.265) = CAPM poorly explains this stock. |
+| **ABBV** | **2026-08-02** | **7,489.72** (July 31, 2026 close — `portfolio/positions.md` verified, CNBC/24-7 Wall St + Google Finance ✅ ≥2 sources — matches decisions.md entry exactly, inter-file consistency PASS) | **HOLD/WAIT FOR PULLBACK $250.94** | **Conviction 6.77 < 7.0 Value gate AND MOS +0.06% < 15% Value gate — both gates fail simultaneously (5th instance of this pattern, after ACGL/WPM/PGR/DXCM)** | WATCHLIST — รอ entry $205-220 + CMS 2027 IRA decision clarity (~Feb 2027) | — | **PENDING (open/no position)** | 2nd Healthcare sector ในพอร์ต (diversified dividend-pharma vs REGN's specialty biotech-growth). Scout Round 17 claimed ROIC 22.49% + Wide Moat — full analysis corrected to ROIC 14-16% (team reference) and Moat **Narrow** (not Wide — Rinvoq 2037 patent extension from legal settlement/evergreening, not structural). DCF divergence 21% (Emma $256 vs Quinn $310.61) root-caused to discount rate methodology gap (Quinn CAPM raw 6.17% vs Emma credit-adjusted 8.0% for negative equity) — same calibration lesson as future negative-equity/high-leverage names: reconcile Re/WACC methodology BEFORE blend, not after |
 
 **Framing note:** AMD counterfactual ไม่ใช่ "เราพลาด +333%" แต่คือ "system correctly avoided confirming entry ณ ราคาที่ไม่ verified — gate ทำงานถูกต้อง"
 
 ---
 
-## DXCM Watchlist Entry (2026-07-29) — NEW
+## ABBV Watchlist Entry (2026-08-02) — NEW
+
+| Field | ค่า |
+|-------|-----|
+| Ticker | ABBV (AbbVie Inc.) |
+| Date | 2026-08-02 |
+| Rec | HOLD / WAIT FOR PULLBACK (Value bucket) |
+| Price at Analysis | $250.94 (July 31, 2026 close — Stockanalysis.com https://stockanalysis.com/stocks/abbv/ + WebSearch aggregator ✅ ≥2 sources, diff 0.27%) |
+| S&P 500 at Analysis | **7,489.72** (July 31, 2026 close — `portfolio/positions.md` verified, CNBC/24-7 Wall St + Google Finance ✅ ≥2 sources — matches `portfolio/decisions.md` ABBV row exactly, inter-file consistency check ✅ PASS) |
+| Blended FV | $251.08 (Emma $256×40% + Quinn $310.61×30% + Bear $185×30%; ESG-adj ~$226) |
+| MOS | **+0.06%** (ราคา $250.94 vs Blended FV $251.08 — แทบเป็นศูนย์, ไม่ผ่าน 15% Value gate) |
+| Conviction | **6.77/10** (Emma 6.5 / Quinn 6.8 / Bear 7.0) |
+| Gate Check | MOS ❌ (+0.06% << 15%) \| Conviction ❌ (6.77 < 7.0 Value gate) → **HOLD/WAIT — both Value gates fail simultaneously** (5th instance of this pattern, after ACGL 2026-06-14 / WPM 2026-07-12 / PGR 2026-07-22 / DXCM 2026-07-29) |
+| Entry Zone | $205-220 |
+| Max Position | 0% (no deploy currently) |
+| Stop Loss | $160 (-24.7% จาก entry mid $212.5) — อยู่ใต้ Bear's Base Bear scenario ($166), เหนือ Severe Bear ($136) |
+| Beta | 0.35 (reconciled, range 0.28-0.54, 3 sources) — lower than every currently deployed position; among watchlist-only entries PGR (0.25) and ACGL (0.31) are lower but neither is deployed [Source: report agent_notes/emma, quinn] |
+| Sector | Healthcare / Pharma — Diversified Large-Cap Dividend-Pharma, S&P Dividend Aristocrat (**2nd Healthcare position candidate in portfolio, distinct sub-sector from REGN**: specialty biotech-growth vs diversified value/income pharma) |
+| Key Risk | (1) Rinvoq IRA Medicare negotiation risk round 2027 (precedent Imbruvica -38%, IPAY effective 2029); (2) Skyrizi patent cliff 2033 with NO evergreening settlement (unlike Rinvoq's 2037 extension), revenue at risk >$20B/yr (bigger than Humira's original peak); (3) 10Y yield spike (4.75%, multi-decade high) pressures bond-proxy/dividend-heavy valuation, Terminal Value = 81.4% of EV = model fragile to WACC; (4) Moat downgraded from Scout's "Wide" claim to team's "Narrow" verdict — Rinvoq's patent extension is legal settlement/evergreening basis (FTC/Congress reform target), not structural |
+| Forward Sharpe | 0.17 (low) |
+| Reason No Deploy | Both Value bucket gates fail simultaneously: MOS +0.06% << 15% AND Conviction 6.77 < 7.0 |
+| Status | **OPEN / PENDING** — no position, tracking only |
+| Trigger for Re-Rate | (1) ราคาย่อสู่โซน $205-220 (MOS ≥15% vs Base FV $256), หรือ (2) CMS ประกาศไม่เลือก Rinvoq เข้า IRA Medicare negotiation รอบ 2027 (คาดประกาศ ~ก.พ. 2027), หรือ (3) Skyrizi ได้ patent settlement ขยายอายุคล้าย Rinvoq (เช่น 2033→2035+) |
+| Days Since Rec | 0 (baseline 2026-08-02) |
+| Morgan QA | PASS (Data Quality 8.5/10, 0 HIGH, 1 MEDIUM ไม่กระทบ recommendation) |
+| Calibration Note | Emma 6.5 / Quinn 6.8 / Bear 7.0 — Bear สูงสุด (bearish-risk conviction จาก mathematical fact ของ WACC divergence + IRA precedent, ไม่ใช่ bullish undervaluation) — pattern เดียวกับ DXCM/PGR ที่ Bear conviction สูงจาก risk-identification ไม่ใช่จาก MOS upside; Quinn's standalone P-W EV MOS ก่อน blend (+23.8%) สูงกว่า Emma ($256, MOS+2.0%) มาก — Bear สืบหา root cause สำเร็จว่าเป็น discount rate methodology gap (Quinn CAPM ดิบ 6.17% ไม่ปรับ credit-risk premium สำหรับ negative equity -$6.612B, Emma ปรับเป็น 8.0%) ไม่ใช่ growth assumption gap — บันทึกเป็น calibration lesson: **สำหรับ negative-equity/high-leverage names ในอนาคต ต้อง reconcile Re/WACC methodology ระหว่าง Emma-Quinn ก่อน finalize FV ไม่ใช่หลัง** (ป้องกัน 20%+ gap ที่ discovered post-hoc) |
+| Scout Correction Note | Max's Scout Round 17 claimed ROIC 22.49% + Wide Moat as top-pick rationale — full team analysis corrected both: ROIC → 14-16% (asset-based IC, conservative team reference — GuruFocus 14.08% / Financecharts 19.15% / Scout 22.49%, team chose conservative end) and Moat → **Narrow** (not Wide) — flagged for Max to review Scout invested-capital methodology (possibly using average IC during deleveraging, or adjusted NOPAT overstating) in next Scout round |
+
+---
+
+## DXCM Watchlist Entry (2026-07-29)
 
 | Field | ค่า |
 |-------|-----|
@@ -297,7 +330,7 @@
 
 ## Weekly Reports
 
-> ⚠️ **Cadence Gap Flag (updated 2026-07-29):** Week 2026-W24 (Jun 9-15) ยังคงสถานะ "IN PROGRESS" และไม่มี weekly report ถูกสร้างสำหรับ W25-W30 (Jun 16 – Jul 27) แม้จะมี analysis ใหม่เกิดขึ้นต่อเนื่อง (TOST 2026-06-17, CRDO 2026-07-06, WPM 2026-07-12, PGR 2026-07-22, **DXCM 2026-07-29**) — เป็นหลายสัปดาห์ที่ไม่มี weekly output ตาม Vera Protocol บังคับ ("ห้าม run experiment โดยไม่มี Vera output") ควร escalate ให้ Charlie/CIO ทราบและพิจารณาให้ Vera ออก catch-up weekly report ครอบคลุมช่วง Jun 16 – Jul 29 ในรอบถัดไป (นอกขอบเขต session นี้ — บันทึกเฉพาะ DXCM entry เท่านั้นสำหรับตอนนี้)
+> ⚠️ **Cadence Gap Flag (updated 2026-08-02, still open):** Week 2026-W24 (Jun 9-15) ยังคงสถานะ "IN PROGRESS" และไม่มี weekly report ถูกสร้างสำหรับ W25-W31 (Jun 16 – Aug 2) แม้จะมี analysis ใหม่เกิดขึ้นต่อเนื่อง (TOST 2026-06-17, CRDO 2026-07-06, WPM 2026-07-12, PGR 2026-07-22, DXCM 2026-07-29, **ABBV 2026-08-02**) — เป็นหลายสัปดาห์ที่ไม่มี weekly output ตาม Vera Protocol บังคับ ("ห้าม run experiment โดยไม่มี Vera output") ควร escalate ให้ Charlie/CIO ทราบและพิจารณาให้ Vera ออก catch-up weekly report ครอบคลุมช่วง Jun 16 – Aug 2 ในรอบถัดไป (นอกขอบเขต session นี้ — บันทึกเฉพาะ ABBV entry เท่านั้นสำหรับตอนนี้). **เพิ่มเติม:** RDDT stop loss breach ครั้งแรก (2026-08-01) ยังไม่มี weekly report ครอบคลุมด้วยเช่นกัน — สมควรมีความสำคัญสูงสุดในรอบ catch-up ถัดไป
 
 ### Week 2026-W24 (Jun 9–15, 2026) — IN PROGRESS
 - New Analysis: **ACGL (2026-06-14)** — HOLD/WAIT Value Bucket | Conviction 6.3/10 | MOS +15.6% | Blended FV $106 | **No deploy — Conviction gate fail (6.3 < 7.0) + FOMC June 16-17 hold**
@@ -358,3 +391,5 @@
 ### Week 2026-W17 (Apr 21–27, 2026) — Initial Sessions
 - Analyses: NVDA, CCJ, HIMS, TMDX, AVGO v1
 - Portfolio inception — no capital deployed yet
+</content>
+</invoke>
