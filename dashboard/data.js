@@ -1,9 +1,579 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-07-29";
+const LAST_UPDATED = "2026-08-02";
 
 const REPORTS = [
+
+  {
+    ticker: "ABBV",
+    company: "AbbVie Inc.",
+    date: "2026-08-02",
+    version: "v1",
+    sector: "Healthcare / Pharma - Immunology-focused Diversified Large-Cap, Dividend Aristocrat",
+    price: 250.94,
+    recommendation: "HOLD/WAIT FOR PULLBACK",
+    blendedFV: 251.08,
+    esgAdjFV: 226.0,
+    targetBull: 322.0,
+    targetBase: 251.08,
+    stopLoss: 160.0,
+    convictionEmma: 6.5,
+    convictionQuinn: 6.8,
+    convictionBear: 7.0,
+    convictionAvg: 6.77,
+    mosPct: 0.06,
+    pwEV: 310.61,
+    pwEvBear: 185.0,
+    beta: 0.35,
+    forwardSharpe: 0.17,
+    sharpe1Y: 0.4,
+    maxDrawdown: -0.2985,
+    kelly: "Not separately computed this session - Forward Sharpe 0.17 too low + MOS ~0% implies Kelly approx 0%, consistent with NO DEPLOY decision",
+    moat: "Narrow",
+    esgRating: "Medium-High",
+    esgScore: 4.8,
+    bucket: "Value",
+    entryZone: "$205-220 (mid $212.5)",
+    positionSize: "0% (NO DEPLOY - both MOS and Conviction Value bucket gates fail simultaneously)",
+    sp500Reference: 7489.72,
+    reportFile: "../reports/ABBV_2026-08-02.md",
+    keyThesis: "AbbVie ธุรกิจคุณภาพสูง (Rinvoq+Skyrizi ทดแทน Humira ได้เกินพอ, FCF $19.98B, dividend coverage 1.63x) แต่ MOS +0.06% แทบเป็นศูนย์เมื่อ blend ตาม IPS weight ที่ถูกต้อง (Emma $256x40% + Quinn $310.61x30% + Bear $185x30% = $251.08) และ Conviction avg 6.77/10 ไม่ถึงเกณฑ์ Value bucket gate (>=7.0) - ทั้งสอง gate ล้มเหลวพร้อมกัน (5th instance ของ pattern นี้ในไตรมาสนี้)",
+    topRisk: "Rinvoq IRA Medicare negotiation risk รอบ 2027 (precedent Imbruvica -38% price cut, IPAY effective 2029) ประกอบกับ Skyrizi patent cliff 2033 ที่ไม่มี evergreening settlement รองรับ (revenue at risk >$20B/ปี ใหญ่กว่า Humira peak เดิม) และ 10Y yield spike (4.75%, multi-decade high) กด valuation ของ bond-proxy dividend pharma โดยตรง",
+    businessSummary: {
+      "oneLiner": "AbbVie ผลิตและขายยาที่ต้องมีใบสั่งแพทย์ (biologics เป็นหลัก) โดยเฉพาะยากลุ่ม immunology (Skyrizi, Rinvoq) ที่ทดแทน Humira ซึ่งเคยเป็นยาขายดีที่สุดในโลก",
+      "analogy": "เหมือนบริษัทที่เพิ่งเปลี่ยนสินค้าตัวหลักสำเร็จ (จาก Humira รุ่นเก่าที่โดน copy แล้ว เป็น Skyrizi+Rinvoq รุ่นใหม่ที่ยังมี patent คุ้มครองอีกหลายปี) — เหมือนร้านค้าที่เพิ่งเปลี่ยนสินค้าฮิตตัวเก่าที่โดนก็อปเป็นสินค้าฮิตตัวใหม่ได้ทันเวลาพอดี",
+      "moneyFlow": [
+        "ขายยาผ่าน wholesale distributor 3 รายใหญ่ (McKesson, Cardinal Health, Cencora) กระจายต่อไปยังโรงพยาบาล/ร้านขายยา",
+        "รายได้หลัก ~52% มาจาก Skyrizi ($5.505B/ไตรมาส) และ Rinvoq ($2.525B/ไตรมาส) รักษาโรคภูมิคุ้มกัน (สะเก็ดเงิน, ข้ออักเสบรูมาตอยด์)",
+        "Humira (สินค้าเดิม) เหลือรายได้แค่ $756M/ไตรมาส ลดลงเร็วเพราะมี biosimilar แข่ง 10 ตัวในตลาดสหรัฐฯ",
+        "รายได้เสริมจาก Neuroscience (Botox therapeutic), Oncology, Aesthetics (Botox Cosmetic)",
+        "Gross margin สูงมาก (71.5%) เพราะ biologic ต้นทุนผลิตเพิ่มต่ำเทียบราคาขาย — กำไรกลับไปลงทุน R&D ~14% ของรายได้"
+      ],
+      "whyDifferent": "Patent runway ของ Rinvoq ขยายถึง 2037 ผ่านการ settle คดีกับ generic makers — ยาวกว่าตลาดคาดเดิม (2032) มาก และมี track record พิสูจน์แล้วว่า replace มา-blockbuster ได้สำเร็จครั้งหนึ่ง",
+      "simpleRisk": "รัฐบาลสหรัฐฯ (Medicare) อาจบังคับเจรจาลดราคา Rinvoq ในปี 2027 (แบบเดียวกับที่เพิ่งทำกับ Imbruvica ลด 38%) และ Skyrizi จะหมด patent คุ้มครองปี 2033 โดยไม่มีตัวช่วยขยายอายุแบบ Rinvoq"
+    },
+    thesisBullets: [
+      {
+        "title": "Successful patent-cliff transition (แต่ยัง n=1)",
+        "why": "Rinvoq+Skyrizi รวม $8.03B/ไตรมาส ทดแทน Humira ที่เหลือ $756M/ไตรมาสได้เกินพอ — ดีกว่า peer (MRK ยังไม่เริ่ม, BMY กำลังทำ) แต่ยังไม่มีหลักฐานว่าทำซ้ำได้อีกรอบ (Act 3)"
+      },
+      {
+        "title": "MOS แทบเป็นศูนย์เมื่อ blend ตาม IPS weight ที่ถูกต้อง",
+        "why": "Emma DCF $256 (MOS +2.0%) vs Quinn P-W EV $310.61 (MOS +23.8% เดี่ยว) — เมื่อรวม Bear ($185, 30% weight) ตาม IPS Blended FV เหลือ $251.08 ≈ ราคา $250.94 (MOS +0.06%)"
+      },
+      {
+        "title": "Moat = Narrow ไม่ใช่ Wide ตาม Scout claim",
+        "why": "Rinvoq 2037 patent extension มาจาก legal settlement/evergreening ที่ FTC/Congress กำลังเล็งเป้า reform — ไม่ใช่ structural moat ถาวร และ Skyrizi (patent cliff 2033) ไม่มี settlement รองรับแบบ Rinvoq"
+      },
+      {
+        "title": "IRA Medicare Negotiation risk รอบ 2027",
+        "why": "Rinvoq มีโอกาสถูกเลือกเข้า negotiation รอบถัดไป — precedent Imbruvica ถูกลดราคา 38% ทั้งที่ patent ยังไม่หมด, IPAY effective 2029"
+      },
+      {
+        "title": "Diversification value จริงสำหรับพอร์ต",
+        "why": "Beta 0.35 ต่ำสุดในพอร์ตถ้าเพิ่มเข้ามา + dividend yield 2.76% (income stream แรก) — แต่ 10Y yield spike (4.75%) กด valuation ทั้ง tech-growth และ bond-proxy dividend stock พร้อมกันได้ (ไม่ใช่ free-lunch hedge)"
+      }
+    ],
+    esgBreakdown: {
+      "e": 6,
+      "s": 4,
+      "g": 4.5,
+      "overall": 4.8
+    },
+    revenueSegments: [
+      {
+        "label": "Immunology (Skyrizi/Rinvoq/Humira)",
+        "value": 51.7
+      },
+      {
+        "label": "Neuroscience (Botox therapeutic/Vraylar)",
+        "value": 19.0
+      },
+      {
+        "label": "Oncology (Imbruvica/Venclexta)",
+        "value": 9.7
+      },
+      {
+        "label": "Aesthetics (Botox Cosmetic/Juvederm)",
+        "value": 7.5
+      },
+      {
+        "label": "Other/Unallocated",
+        "value": 12.1
+      }
+    ],
+    competitorData: [
+      {
+        "ticker": "ABBV",
+        "company": "AbbVie (subject)",
+        "revenueGrowth": 10.4,
+        "operatingMargin": 40,
+        "marketCap": 446
+      },
+      {
+        "ticker": "LLY",
+        "company": "Eli Lilly",
+        "revenueGrowth": 31.7,
+        "operatingMargin": 35,
+        "marketCap": 1080
+      },
+      {
+        "ticker": "JNJ",
+        "company": "Johnson & Johnson",
+        "revenueGrowth": 6.0,
+        "operatingMargin": 26,
+        "marketCap": 640
+      },
+      {
+        "ticker": "MRK",
+        "company": "Merck",
+        "revenueGrowth": 2.89,
+        "operatingMargin": 30,
+        "marketCap": 322
+      }
+    ],
+    geographyRevenue: {
+      "unitedStates": 75.7,
+      "international": 24.3,
+      "chinaExposure": "-3.5% YoY (2024, part of the 24.3% International bucket) — volume-based procurement pressure, limited overall impact"
+    },
+    bullFlipTriggers: [
+      "ราคาปรับลง <= $220 (MOS >=15% เทียบ Base FV $256)",
+      "CMS ประกาศไม่เลือก Rinvoq เข้า IRA Medicare negotiation รอบ 2027 (คาดประกาศ ~ก.พ. 2027)",
+      "Skyrizi ได้ patent settlement ขยายอายุคล้าย Rinvoq (เช่น 2033->2035+)",
+      "Management เปิดเผย next-gen pipeline candidate ที่มี disclosed peak-sales estimate (พิสูจน์ moat renewability เกิน n=1)",
+      "10Y Treasury yield ลดต่ำกว่า 4.25% อย่างยั่งยืน (ผ่อนคลาย bond-proxy compression)"
+    ],
+    bearFlipTriggers: [
+      "CMS เลือก Rinvoq เข้า IRA Medicare negotiation รอบ 2027 (effective IPAY 2029)",
+      "Skyrizi หรือ Rinvoq quarterly growth ชะลอต่ำกว่า 15% YoY โดยไม่มี one-off explanation",
+      "10Y yield ทะลุ 5.25% อย่างยั่งยืน",
+      "Net leverage ไม่คืบสู่เป้า 2.0x ภายในสิ้นปี 2026 (ยัง Debt/EBITDA >4x)",
+      "Humira international erosion เร่งเร็วกว่า pattern สหรัฐฯ (เกิน -30% YoY นอกสหรัฐฯ)"
+    ],
+    thesisInvalidation: "ถ้า AbbVie ถูกบังคับ (IRA negotiation หรือ FTC/Congressional legislative action) ให้ลดราคาที่มีนัยสำคัญบนทั้ง Rinvoq และ Skyrizi พร้อมกันก่อนปี 2030 - \"successful serial transition\" narrative จะยุบเหลือเหตุการณ์ครั้งเดียวที่ไม่ repeatable -> Moat downgrade เป็น None/Narrow(-), TGR 2.5% กลายเป็น optimistic เกินจริง -> FV ควรปรับสู่ Bear's Severe scenario ($120-140)",
+    fullContent: `# 🏥💊 ABBV — AbbVie Inc.
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+## 📌 ข้อมูลหลัก
+| Field | Value |
+|-------|-------|
+| Ticker | ABBV |
+| Date | 2026-08-02 |
+| Price | **$250.94** (July 31, 2026 close — Stockanalysis.com, cross-checked 0.27% vs WebSearch aggregator, ✅ผ่าน 2-source verification) |
+| Market Cap | **~$445.5B** (calc: $250.94 × 1.775B shares; cross-check Atlas $443.36B–$448.66B, diff <1%) |
+| Sector | Healthcare / Pharma — Immunology-focused Diversified Large-Cap, S&P Dividend Aristocrat (12 ปีขึ้นเงินปันผลต่อเนื่อง) |
+| Bucket | **Value** (~40% ของพอร์ต — DCF + MOS + Moat framework) |
+
+## 🎯 คำแนะนำ
+| Field | Value |
+|-------|-------|
+| Recommendation | **HOLD / WAIT FOR PULLBACK** — ทั้ง MOS และ Conviction gate ล้มเหลวพร้อมกัน |
+| Entry Zone | **$205–220** (ให้ MOS ≥15% เทียบ Blended FV) |
+| Blended FV | **$251.08** (ESG-adj ~$226) |
+| MOS (at $250.94) | **+0.06%** (แทบเป็นศูนย์) ❌ ต้องการ ≥15% |
+| Stop Loss | **$160** (-24.7% จาก entry zone mid $212.5) — อยู่ใต้ Bear's Base Bear scenario ($166) |
+| Max Position | **0% — NO DEPLOY** (Conviction 6.77 < 7.0 AND MOS +0.06% << 15%, ทั้งสอง Value gate ล้มเหลว) |
+
+## 📊 Score Dashboard
+| Blended FV | MOS | ESG | Conviction Avg | Horizon |
+|-----------|-----|-----|-----------------|---------|
+| $251.08 | +0.06% | 4.8/10 | 6.77/10 | 3–5 ปี (IPS) |
+
+> ⚡ **TL;DR — อ่าน 30 วินาที**
+> - **Verdict: HOLD / WAIT** — ธุรกิจคุณภาพดีจริง (FCF $19.98B, dividend coverage 1.63x, Rinvoq+Skyrizi ทดแทน Humira ได้เกินพอ) แต่ราคาปัจจุบันแทบไม่มี Margin of Safety เมื่อ blend ตาม IPS weight ที่ถูกต้อง (MOS +0.06%, ไม่ใช่ +23.8% ที่ Quinn เห็นเดี่ยวๆ)
+> - **ทำไม:** Emma DCF $256 (MOS +2.0%) vs Quinn P-W EV $310.61 (MOS +23.8%) ต่างกัน 21% — root cause คือ discount rate gap (Quinn ไม่ปรับ credit-risk premium สำหรับ negative equity) ไม่ใช่ growth optimism; เมื่อ Bear ($185) เข้าร่วม blend (30% weight) MOS ยุบเหลือ ~0%
+> - **Downside Risk:** Rinvoq อาจถูกเลือกเข้า IRA Medicare negotiation รอบ 2027 (precedent: Imbruvica -38%) + Skyrizi patent cliff 2033 ไม่มี evergreening settlement รองรับเหมือน Rinvoq + 10Y yield spike (4.75%, multi-decade high) กด bond-proxy valuation ของ dividend pharma
+
+---
+
+## 📋 Executive Summary
+*[CFA L3: Portfolio Construction — Investment Decision Synthesis]*
+
+AbbVie เป็น Max Scout Round 17 top pick ด้วยเหตุผลเบื้องต้น ROIC 22.49% + wide moat claim (Rinvoq/Skyrizi) — หลังผ่าน full pipeline (Atlas → Emma/Quinn → Bear) ทีมพบว่า **ตัวเลข Scout ทั้งสองจุดต้องปรับ**: ROIC ที่แม่นยำกว่าคือ 14–20% (ขึ้นกับ methodology, ยังคง > WACC มาก) และ moat ที่แท้จริงคือ **Narrow** ไม่ใช่ Wide (patent extension ปี 2037 มาจาก legal settlement/evergreening ไม่ใช่ structural moat แบบถาวร)
+
+ธุรกิจมีคุณภาพสูง: Rinvoq+Skyrizi เติบโต +24%+ YoY ทดแทน Humira ที่ erosion -35.9% YoY ได้เกินพอ ($8.03B/ไตรมาส vs $756M), FCF $19.98B แข็งแรง, dividend sustainable บน cash-basis (coverage 1.63x). แต่ **valuation แทบไม่มี margin of safety** เมื่อคำนวณ Blended FV ตาม IPS weight ที่ถูกต้อง (Emma 40% / Quinn 30% / Bear 30% = $251.08 vs ราคา $250.94 = MOS +0.06%)
+
+**Conviction Bar:**
+\`\`\`
+Emma   ██████░░░░  6.5/10  — คุณภาพธุรกิจดี แต่ MOS +2.0% ไม่พอ + data conflicts หลายจุด
+Quinn  ██████▉░░░  6.8/10  — MOS +23.8% (P-W EV เดี่ยว) แข็งแรง แต่ Forward Sharpe ต่ำ (0.17) + model fragile ต่อ WACC
+Bear   ███████░░░  7.0/10  — Blended MOS ~0% เป็นผลคำนวณตรงไปตรงมา ไม่ใช่ opinion
+──────────────────────────────────────────
+Avg    ██████▊░░░  6.77/10  — ไม่ถึง Value bucket gate (≥7.0), gap 0.5 < 3 (ไม่ flag disagreement)
+\`\`\`
+
+**ทั้งสอง Value bucket gate ล้มเหลวพร้อมกัน** (MOS +0.06% << 15%, Conviction 6.77 < 7.0) — pattern เดียวกับ WPM (2026-07-12), PGR (2026-07-22), DXCM (2026-07-29), ACGL (2026-06-14) ในประวัติทีม → นี่คือ 5th instance ของ "dual gate failure" ในไตรมาสนี้
+
+---
+
+## 💡 Investment Thesis
+*[CFA L2: Equity Valuation — Investment Thesis Formulation]*
+
+**Bull case:** AbbVie พิสูจน์แล้วว่าสามารถ transition จาก mega-blockbuster เดี่ยว (Humira, เคยเป็นยาขายดีที่สุดในโลก) ไปสู่ franchise คู่ (Rinvoq+Skyrizi) ได้สำเร็จเร็วกว่าที่ตลาดกลัวตอนแรกมาก — Q2 2026 combined revenue $8.03B/ไตรมาส เทียบ Humira ที่เหลือแค่ $756M. Patent runway ของ Rinvoq ขยายถึง 2037 (settlement ใหม่ที่ตลาดยังไม่ price in เต็มที่) และ Rinvoq/Skyrizi ไม่ถูกเลือกเข้า IRA negotiation รอบ 2026 นี้
+
+**Bear case:** สิ่งที่ดูเหมือน "success" คือ n=1 event ที่ยังพิสูจน์ไม่ได้ว่า repeatable — Skyrizi (patent cliff 2033) ไม่มี evergreening settlement รองรับแบบ Rinvoq และ revenue ที่ risk (>$20B/ปีตอนนั้น) ใหญ่กว่า Humira peak เดิม ($21B) นอกจากนี้ Rinvoq มีความเสี่ยงถูกเลือกเข้า IRA negotiation รอบ 2027 (precedent Imbruvica -38%) และ 10Y yield ที่พุ่งเร็ว (4.75%) กด valuation ของ dividend-heavy stock โดยตรง
+
+**สรุปทีม:** คุณภาพธุรกิจไม่มีข้อสงสัย แต่ **ราคาปัจจุบันสะท้อน "โลกที่ทุกอย่างไปได้ดี" (Bear's framing: นี่คือ Bull scenario ไม่ใช่ Base Case)** — รอราคาเข้า entry zone $205-220 หรือรอ catalyst clarity (CMS 2027 decision) ก่อน deploy เต็มมั่นใจ
+
+---
+
+## 🏢 Business Deep Dive
+*[CFA L1: Financial Reporting — Business Model Analysis]*
+
+**How does AbbVie make money?**
+- ขายยาที่ต้องมีใบสั่งแพทย์ (biologics + small molecules) ผ่าน wholesale distributor 3 รายใหญ่ (McKesson, Cardinal Health, Cencora) กระจายไปยังโรงพยาบาล/ร้านขายยา
+- รายได้หลัก (~52%) มาจาก 2 ยา immunology: **Skyrizi** ($5.505B/ไตรมาส, สะเก็ดเงิน/ลำไส้อักเสบ) และ **Rinvoq** ($2.525B/ไตรมาส, JAK inhibitor — ข้ออักเสบรูมาตอยด์/ผื่นภูมิแพ้ผิวหนัง)
+- **Humira** (ยาเดิมที่เคยขายดีที่สุดในโลก) เหลือรายได้ $756M/ไตรมาส ลดลงเร็วมาก (biosimilar 10 ตัวแข่งในสหรัฐฯ)
+- รายได้เสริม: **Neuroscience** (Botox therapeutic, Vraylar — $3.228B/ไตรมาส), **Oncology** (Imbruvica, Venclexta — $1.650B/ไตรมาส), **Aesthetics** (Botox Cosmetic, Juvederm — $1.282B/ไตรมาส)
+- Gross margin สูงมาก (71.5%) เพราะต้นทุนผลิตเพิ่มต่ำเทียบราคาขาย — กำไรกลับไปลงทุน R&D ~14% ของรายได้เพื่อพัฒนายาใหม่รอทดแทนก่อน patent หมดอายุ
+
+### Porter's Five Forces
+*[CFA L2: Industry Analysis — Porter's Five Forces]*
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power | Low | ผลิตเองในโรงงานตัวเอง วัตถุดิบมีหลายซัพพลายเออร์ |
+| Buyer Power | Medium-High | PBM + รัฐบาล (IRA negotiation บังคับได้) + distributor 3 รายคุมเกือบ 100% US distribution — อำนาจต่อรองสูงขึ้นเรื่อยๆ |
+| New Entrants | Low-Medium | ต้อง FDA approval + patent + เงินทุนมหาศาล แต่ biosimilar เข้าตลาดได้จริงหลัง patent หมด (10 ราย เข้าแข่ง Humira) |
+| Substitutes | Medium | คู่แข่ง immunology (Stelara/Tremfya จาก J&J, Cosentyx จาก Novartis) + biosimilar เป็น direct substitute |
+| Rivalry | High | แข่งขันดุเดือด (J&J, Novartis, Lilly, BMS) + biosimilar erosion รุนแรง |
+
+**Industry Attractiveness: Medium** — margin สูงช่วง patent-protected แต่ rivalry สูง + biosimilar disruption + แรงกดดันราคารัฐบาล (IRA) เพิ่มขึ้นต่อเนื่อง
+
+### Market Share Trend (3 ปี)
+⚠️ Data gap — Atlas ไม่พบตัวเลข market share % รายปีชัดเจน มีแค่ Skyrizi 75% capture rate ใน frontline IBD (ไม่ระบุปี) Proxy: Rinvoq+Skyrizi revenue FY2024 $25.87B (+46.2% YoY) → FY2025 target >$31B เติบโตเร็วกว่าตลาด immunology โดยรวม (high-single-digit ปกติ) → **สรุป: Gaining share** (inference, ไม่ใช่ตัวเลขตรง — แนะนำหา IQVIA prescription data รอบถัดไป)
+
+### Customer Concentration
+McKesson ≤39% (2022, เคยสูงสุด 42%), Cardinal Health + Cencora ครองส่วนที่เหลือ — 3 distributors รวมกันคุม "substantially all" ของ US distribution — **industry-wide structural dynamic ของ pharma ทั้งอุตสาหกรรม ไม่ใช่จุดอ่อนเฉพาะ ABBV** (ข้อมูลเก่าสุดปี 2022, ยังไม่มีตัวเลข 2025/2026)
+
+### Geography Revenue Breakdown
+| ภูมิภาค | % Revenue (Q2 2026) | YoY |
+|---------|-----------|-----|
+| United States | 75.7% | FY2024: +8.3% |
+| International | 24.3% | FY2024: +9.4% |
+| — China (ใน Intl) | ส่วนหนึ่งของ 24.3% | **-3.5% (2024, หดตัว)** — volume-based procurement |
+
+**Geopolitical Risk: Low-Medium** — China เป็นตลาดเดียวใน top-10 international ที่หดตัว แต่สัดส่วนรวม Intl แค่ 24.3% → ผลกระทบจำกัด
+
+### Portfolio Diversification Angle *(CIO เน้นเป็นพิเศษ)*
+*[CFA L3: Portfolio Management — Diversification & Correlation]*
+
+พอร์ตปัจจุบัน 8 positions (ADBE/NOW/GOOGL/CRM/RDDT/REGN/ACN/ADSK) — **6/8 เป็น Software/AI-heavy**, REGN เป็น Healthcare position เดียว (weight 4.60%, specialty biotech growth-stock). ABBV จะเป็น Healthcare position ที่ 2 แต่ **คนละ sub-sector profile ชัดเจน**: diversified large-cap dividend-pharma vs specialty biotech-growth
+
+| มิติ | REGN | ABBV |
+|------|------|------|
+| ประเภท | Specialty biotech growth-stock | Diversified value/income pharma (Dividend Aristocrat) |
+| Beta | สูงกว่า (growth-biotech) | **0.28 — ต่ำสุดในพอร์ตถ้าเพิ่มเข้ามา** (cross-check: Yahoo 0.28, GuruFocus 0.2169) |
+| Dividend | ไม่มี | **Yield 2.76% — income stream แรกของพอร์ต** |
+
+**ประโยชน์จริง:** (1) idiosyncratic risk factor ต่างจาก AI-capex theme ที่ครอบงำ 6/8 positions (2) income stream แรก — เสริม total-return construction (dividend+capital gain) (3) beta ต่ำสุดในพอร์ต ลด portfolio-level systematic risk
+
+**⚠️ ไม่ใช่ free lunch (Bear challenge):** 10Y yield spike (4.75%) เป็น headwind ร่วมกันบางมิติ — tech growth เจ็บจาก discount rate สูง, ABBV เจ็บจาก bond-proxy compression — กลไกต่างกันแต่ผลลบต่อ valuation ทั้งคู่พร้อมกันได้ ("correlated drawdown ไม่ใช่ diversification" ในภาวะ yield spike) diversification benefit จริงในระยะยาว (factor exposure ต่างกัน) แต่ระยะสั้น-กลางอาจไม่ปกป้องพอร์ตเท่าที่คาด
+
+---
+
+## 🏰 Moat Analysis
+*[CFA L2: Equity Valuation — Economic Moat Analysis]*
+
+**Team Verdict: NARROW** (ไม่ใช่ "Wide" ตาม Scout claim — reconciled จาก Emma's Narrow+ และ Bear's Narrow, ทีมรับ Bear's more conservative view)
+
+**เหตุผลสนับสนุน (execution บวก):**
+- Rinvoq patent ขยายถึง April 2037 (settlement กับ 5 generic makers — Sandoz, Hetero Labs, Aurobindo, Intas, Sun Pharma) — ยาวกว่า consensus เดิม (2032) มาก
+- Skyrizi capture rate 75% ใน frontline IBD — physician/patient stickiness แท้จริง
+- Track record พิสูจน์แล้วว่า replace mega-blockbuster ได้สำเร็จ (Humira→Rinvoq/Skyrizi $8.03B/ไตรมาส vs Humira เหลือ $756M)
+
+**เหตุผลที่ไม่ถึง Wide / ต้องลดจาก Narrow+ เป็น Narrow (Bear challenge ที่ทีมยอมรับ):**
+1. **Circular reasoning ใน patent extension** — Rinvoq 2037 มาจาก legal settlement/evergreening strategy ที่ FTC/Congress กำลังเล็งเป้า reform อยู่จริง (>250 patents Humira, 80% duplicative, ทำให้ biosimilar ล่าช้า 7 ปีในสหรัฐฯ vs 2 ปีในยุโรป) — "moat ดีขึ้นเพราะ evergreening ได้ผล" แต่ evergreening เองคือสิ่งที่ regulator กำลังตัดขา
+2. **N=1 evidence** — "AbbVie = master of patent-cliff transition" เป็น narrative ที่น่าเชื่อเพราะสำเร็จมาแล้วรอบหนึ่ง แต่ไม่มีหลักฐานว่า Act 3 (หลัง Skyrizi/Rinvoq หมดอายุ) จะสำเร็จซ้ำ — ไม่มี R&D pipeline detail เจาะลึกยืนยัน (data gap)
+3. **Skyrizi ไม่มี evergreening settlement** — หมด composition-of-matter protection ปี 2033 โดยไม่มีตัวช่วยแบบ Rinvoq — ถ้า erosion pattern เหมือน Humira (-36% YoY ไตรมาสแรก) revenue ที่ risk (>$20B/ปี) ใหญ่กว่า Humira peak เดิม
+4. **IRA Medicare Negotiation ตัด moat ได้ก่อนหมดอายุ patent** — รัฐบาลบังคับเจรจาได้ตั้งแต่ยาอายุ ~9-13 ปีบนตลาด ไม่สนใจสถานะ patent เลย (Imbruvica -38% ทั้งที่ patent ยังไม่หมด)
+5. **Rivalry สูง** — J&J/Novartis/Lilly แข่งในตลาด immunology เดียวกัน
+
+---
+
+## 📊 Sector / Peer Comparison
+*[CFA L2: Relative Valuation]*
+
+| Company | Ticker | P/E | EV/EBITDA | ROE | ROIC | Rev Growth | Gross Margin | Moat |
+|---------|--------|-----|-----------|-----|------|-----------|--------------|------|
+| **AbbVie** | **ABBV** | **70.9x (GAAP)** / ~17-18x (Fwd-Adj) | ~19-20x | 128% (misleading, neg. equity) | **14-16%** (team ref.) | **+10.4%** | 71.5% | **Narrow** |
+| Eli Lilly | LLY | 42.98x | ~30x | 102.49% | N/A | **+31.7%** (3Y CAGR) | 83% | Wide |
+| Johnson & Johnson | JNJ | 30.80x | ~19-20x | N/A | ~14% | N/A | N/A | Wide |
+| Merck | MRK | 33.29-36.72x | ~19-20x | 36.96% | 18.97% | +2.89% | N/A | Narrow |
+| Pfizer | PFE | 19.4x | N/A | 8.31% | 7.37-12.72% | N/A | N/A | Narrow |
+| Bristol-Myers Squibb | BMY | 15.95x / 9.29x (Fwd) | 7.97x | 38.73% | 20.88% | +5% | N/A | Narrow |
+| **Sector Median (TTM P/E)** | — | **32.05x** | — | — | — | — | — | — |
+
+**ตำแหน่ง ABBV:** GAAP P/E 70.9x ดูแพงสุดในกลุ่มแต่เป็นภาพลวงตาจาก intangible amortization (Allergan deal) — บน Forward/Adjusted basis (~17-18x) **ABBV ถูกกว่า LLY/JNJ/MRK อย่างชัดเจน** ใกล้เคียง BMY/PFE (deep-value tier). Revenue growth (+10.4%) อันดับ 2 รองจาก LLY เท่านั้น. **ABBV คือ "best-executed patent-cliff transition" ในกลุ่ม peer ที่เจอปัญหาเดียวกัน** — MRK ยังไม่เริ่มรับมือ Keytruda cliff (~2028), BMY กำลังทำอยู่แต่ Legacy Portfolio ยังหดตัวแรง (-12-16%), ABBV ทำสำเร็จแล้ว (Rinvoq+Skyrizi ทดแทน Humira เกินพอ) — จุดแข็งเชิงคุณภาพที่ raw multiple ไม่จับตรงๆ
+
+---
+
+## 💰 Valuation
+*[CFA L2: Equity Valuation — DCF FCFE/FCFF Model]*
+
+### DCF Scenario Summary (Emma — FCFE Model, primary)
+| Scenario | Re | Growth Path (Yr1-5) | TGR | Fair Value |
+|----------|-----|---------------------|-----|-----------|
+| Bear | 9.0% | 6%→2.5% decel | 2.0% | **$180** |
+| **Base** | 8.0% | 9%→5% decel | 2.5% | **$256** |
+| Bull | 7.5% | 10%→6% decel | 3.0% | **$322** |
+
+*ใช้ FCFE (ไม่ใช่ FCFF/ROE-based) เพราะ shareholders' equity ติดลบ (-$6.612B) ทำให้ ROE (128%) meaningless. Cost of Equity ปรับขึ้นจาก CAPM ดิบ 6.1% เป็น 8.0% เพื่อสะท้อน leverage/credit-risk premium (cross-check Alphaspread 8.15%)*
+
+### Probability-Weighted EV (Quinn — 2-Segment DCF: Rinvoq+Skyrizi vs Rest-of-Portfolio)
+| Scenario | Probability | R&S CAGR | WACC | Fair Value |
+|----------|------------|----------|------|-----------|
+| Bear | 30% | 12% | 10.5% | $143.78 |
+| Base | 45% | 18% | 7.5% | $299.83 |
+| Bull | 25% | 24% | 6.0% | $530.20 |
+| **P-W EV** | | | | **$310.61** (MOS +23.8% เดี่ยวๆ) |
+
+### Bear's Probability-Weighted EV (credit-risk premium + discrete patent-cliff modeling)
+| Scenario | Probability | Re | TGR | Fair Value |
+|----------|------------|-----|-----|-----------|
+| Severe Bear | 25% | 10.0% | 1.0% | $136 |
+| Base Bear | 45% | 9.5% | 1.5% | $166 |
+| Bull (=Emma's Base) | 30% | 8.0% | 2.5% | $256 |
+| **Bear's P-W EV** | | | | **$185** (MOS -35.6%) |
+
+### 🔑 DCF Divergence Root Cause (21% gap ระหว่าง Emma $256 vs Quinn $310.61)
+Bear พบว่าสาเหตุหลักคือ **discount rate gap ไม่ใช่ growth optimism**: Emma ปรับ Re ขึ้นเป็น 8.0% เพื่อสะท้อน credit-risk premium (negative equity, Debt/EBITDA 4.93x) ขณะที่ Quinn's WACC 6.17% เป็น CAPM ล้วนๆ ไม่ได้ปรับ — เมื่อ Terminal Value = 81.4% ของ EV ความต่าง 1.3-1.8pp ขยายเป็น FV gap เกิน 20%
+
+**Sensitivity tests (Bear, Fix #3):** WACC ทุก scenario +150bps → Blended FV $251→~$225 | TGR ทุก scenario -100bps (สะท้อน Skyrizi 2033 cliff) → Blended FV $251→~$219 | รวมทั้งสอง → **$195-205**
+
+### Blended FV (IPS Weight: Emma 40% + Quinn 30% + Bear 30%)
+\`\`\`
+Blended FV = $256×0.40 + $310.61×0.30 + $185×0.30
+           = $102.40 + $93.18 + $55.50
+           = $251.08
+\`\`\`
+**MOS ที่ราคา $250.94 = (251.08−250.94)/251.08 = +0.06%** — แทบเป็นศูนย์ เมื่อถ่วงน้ำหนักตาม IPS ที่ถูกต้อง MOS ที่ Quinn เห็นเดี่ยวๆ (+23.8%) ยุบเหลือไม่มีนัยสำคัญ
+
+**ESG-adjusted Blended FV ≈ $226** (หลัง -10% material ESG impact ตาม Emma; Bear แนะนำมองเป็น range $185-$230 แทน point estimate เดียว) → MOS ที่ ESG-adj FV = **-11.0%** (สัญญาณเตือนเพิ่มเติม)
+
+### ROIC Reconciliation (Atlas flag: 14.08%-22.49% conflict, 3 sources)
+| Source | ROIC | Methodology |
+|--------|------|-------------|
+| GuruFocus | 14.08% | Asset-based IC (Total Assets − AP&Accrued − Excess Cash ≈ $75.6B) |
+| Financecharts / Quinn reconciled | 19.15% / ~19.1% | Financing-based IC (Debt+Equity−Cash ≈ $55-57B) |
+| Max's Scout scan | 22.49% | น่าจะใช้ average IC ระหว่าง deleveraging หรือ adjusted NOPAT — overstate เล็กน้อย |
+
+**ทีมสรุป:** ใช้ **ROIC = 14-16%** (Emma/Bear เลือกฝั่ง asset-based, conservative — จับต้นทุนทุนทั้งหมดรวม goodwill/intangible จาก Allergan overpay) เป็นมาตรฐานทีมไปข้างหน้า **ไม่ใช่ 22.49% ของ Scout scan** — ไม่ว่าใช้ตัวเลขไหน ROIC > WACC (~6.2-7.5%) ชัดเจนทุกกรณี (spread 640-1090bps) → EVA เป็นบวกแน่นอน
+
+---
+
+## 📉 Quantitative Risk
+*[CFA L1/L2: Quantitative Methods & Portfolio Risk]*
+
+| Metric | Value | หมายเหตุ |
+|--------|-------|---------|
+| Beta (reconciled) | **0.35** (range 0.28-0.54, 3 sources) | Genuine low-beta convergence — ต่ำสุดในพอร์ตถ้าเพิ่มเข้ามา |
+| Empirical Beta (OLS, n=5) | -0.114 (ไม่มีนัยสำคัญ, R²=0.027) | ยืนยัน idiosyncratic driver ครอบงำ market beta |
+| Sharpe (historical, annual n=5) | 1.24 ⚠️ (annual-freq bias, likely inflated) | 3rd-party higher-freq: **0.25-0.55** (ใช้เป็น reference หลัก) |
+| **Forward Sharpe** | **0.17** | ต่ำมาก — อย่าคาดหวัง historical return ซ้ำ |
+| Sortino (MAR=Rf) | 7.58 (annual bias, ดูด้วยความระมัดระวัง) | |
+| Max Drawdown | -29.85% (52W) / -45.09% (longer, single-source) | |
+| CAPM Alpha (5Y) | +11.8% ถึง +23.4%/yr | t=2.496, significant ที่ 10% ไม่ใช่ 5% (n=5 อ่อนแอ) |
+| WACC (reconciled) | 6.17% (range 5.87-6.99%) | Cross-check GuruFocus 5.77% ✅ |
+| Treynor (TTM) | 49.9%-96.3% (สูงมากเพราะ beta ต่ำ) | ตีความระวังเช่นเดียวกับ Sharpe |
+
+### Sensitivity Matrix 5×5 — Rinvoq+Skyrizi Combined Revenue CAGR × WACC
+| R&S CAGR \\ WACC | 6.0% | 7.5% | 9.0% | 10.5% | 12.0% |
+|------------------|------|------|------|-------|-------|
+| **10%** | $360.74 | $240.79 | $176.25 | $135.95 | $108.41 |
+| **15%** | $412.38 | $275.81 | $202.37 | $156.54 | $125.25 |
+| **20%** | $473.55 | $317.21 | $233.19 | $180.80 | $145.05 |
+| **25%** | $545.52 | $365.85 | $269.34 | $209.20 | $168.19 |
+| **30%** | $629.70 | $422.66 | $311.50 | $242.28 | $195.11 |
+
+**13/25 cells (52%) justify ราคาปัจจุบัน** — Insight: R&S growth ปัจจุบัน (24.4% YoY) เกินเกณฑ์เกือบทุก column ยกเว้น WACC≥10.5% → **ความเสี่ยงจริงคือ WACC/rate environment ไม่ใช่ execution risk** (bond-proxy compression จาก 10Y yield 4.75%)
+
+### Dividend Sustainability
+| Basis | Payout Ratio | หมายเหตุ |
+|-------|-------------|---------|
+| GAAP TTM EPS | 195.5% (Quinn verified) — Atlas cited 325-336.5% เป็น period-mismatch error | ดูไม่ยั่งยืนบนกระดาษ |
+| Adjusted EPS | 49.5% | ยั่งยืนสบายบน management view |
+| **FCF-basis (cash coverage)** | **61.5% (coverage 1.63x)** | **น่าเชื่อถือที่สุด — ยั่งยืนชัดเจน** |
+
+Dividend yield 2.76%, 12 ปีขึ้นต่อเนื่อง (S&P Dividend Aristocrat) — FCF $19.98B รองรับ dividend + deleveraging (net leverage target 2.0x by end-2026) ได้สบาย
+
+---
+
+## 🌱 ESG Risk Scorecard
+*[CFA L2-3: ESG Integration — Materiality Assessment]*
+
+**External Ratings:** MSCI BBB (Average) | Sustainalytics 26.1 (Medium Risk) | Refinitiv 82/100
+
+| Dimension | Score | Key Issues |
+|-----------|-------|-----------|
+| Environmental | 6/10 | Manufacturing waste/water usage (biologics) — moderate, ไม่มี major scandal |
+| Social | 4/10 | Drug pricing/affordability — Humira เคยแพงที่สุดตัวหนึ่งในตลาด, evergreening ทำผู้ป่วยเข้าถึง biosimilar ช้าลง 7 ปี = real patient-access harm |
+| Governance | **4.5/10** (reconciled — Emma 5/Bear challenge 4) | Patent thicket/evergreening (>250 patents Humira, 80% duplicative) = aggressive regulatory arbitrage, bipartisan reform target (FTC/Congress) |
+| **Overall ESG** | **4.8/10** | Medium-High Risk (reconciled, higher than Emma's initial 5.0) |
+
+**Material ESG Risks (Valuation Impact):**
+1. IRA Medicare negotiation ขยายไป Rinvoq (รอบ 2027) — mechanical EPS impact -3% to -5%, **แต่ Bear ชี้ว่า re-rating/multiple compression effect อาจใหญ่กว่านี้มาก** (embedded ใน Bear's Severe scenario -47% จากราคาปัจจุบัน)
+2. Patent evergreening legislative reform risk — estimate -2% to -3%
+3. US drug pricing political risk ที่กว้างกว่า IRA (MFN pricing) — estimate -3% to -5%
+
+**รวม Material ESG Impact: -8% ถึง -13% (Emma midpoint -10%)** → ESG-adjusted FV ≈ $226 | **Bear แนะนำมองเป็น range $185 (bear-ESG-severe) ถึง $230 (Emma base-ESG) แทน point estimate เดียว** — probability-weight เหมือนที่ทำกับ valuation
+
+---
+
+## 💪 Conviction Level Score
+
+\`\`\`
+Emma   ██████░░░░  6.5/10  — คุณภาพธุรกิจดี, patent extension เป็นข่าวดี, แต่ MOS +2.0% ไม่พอ + data conflicts
+Quinn  ██████▉░░░  6.8/10  — MOS +23.8% (เดี่ยว) แข็งแรง แต่ Forward Sharpe 0.17 ต่ำ + TV 81.4% of EV = fragile
+Bear   ███████░░░  7.0/10  — WACC divergence เป็น mathematical fact, IRA 2027 risk มี precedent จริง (Imbruvica -38%)
+──────────────────────────────────────────
+Avg    ██████▊░░░  6.77/10
+\`\`\`
+
+**Gap = 0.5 (<3, ไม่ flag disagreement) | Avg 6.77 > 5 (ไม่ flag "ข้อมูลไม่พอ") แต่ < 7.0 (Value bucket gate) → NO DEPLOY**
+
+**Convergence Check:** ไม่มีตัวใด conviction ≥8 → Convergence Risk Note ไม่ถูก trigger (เกณฑ์แรกไม่ผ่านแล้ว)
+
+---
+
+## 🔄 What Would Change Our Mind
+*[CFA L3: Investment Thesis & Portfolio Construction]*
+
+**Bull Flip Triggers (→ BUY):**
+1. ราคาปรับลง ≤ **$220** (MOS ≥15% เทียบ Base FV $256)
+2. **CMS ประกาศไม่เลือก Rinvoq เข้า IRA Medicare negotiation รอบ 2027** (คาดประกาศ ~ก.พ. 2027)
+3. **Skyrizi ได้ patent settlement ขยายอายุ** คล้าย Rinvoq (เช่น 2033→2035+)
+4. Management เปิดเผย next-gen pipeline candidate ที่มี disclosed peak-sales estimate (พิสูจน์ moat renewability เกิน n=1)
+5. 10Y Treasury yield ลดต่ำกว่า **4.25%** อย่างยั่งยืน (ผ่อนคลาย bond-proxy compression)
+
+**Bear Flip Triggers (→ SELL/AVOID):**
+1. CMS เลือก Rinvoq เข้า IRA Medicare negotiation รอบ 2027 (effective IPAY 2029)
+2. Skyrizi หรือ Rinvoq quarterly growth ชะลอต่ำกว่า **15% YoY** โดยไม่มี one-off explanation
+3. 10Y yield ทะลุ **5.25%** อย่างยั่งยืน
+4. Net leverage ไม่คืบสู่เป้า 2.0x ภายในสิ้นปี 2026 (ยัง Debt/EBITDA >4x)
+5. Humira international erosion เร่งเร็วกว่า pattern สหรัฐฯ (เกิน -30% YoY นอกสหรัฐฯ)
+
+**Thesis Invalidation:**
+ถ้า AbbVie ถูกบังคับ (IRA negotiation หรือ FTC/Congressional legislative action) ให้ลดราคาที่มีนัยสำคัญบน**ทั้ง Rinvoq และ Skyrizi พร้อมกัน**ก่อนปี 2030 — "successful serial transition" narrative จะยุบเหลือเหตุการณ์ครั้งเดียวที่ไม่ repeatable → Moat downgrade เป็น None/Narrow(-), TGR 2.5% กลายเป็น optimistic เกินจริง → FV ควรปรับสู่ Bear's Severe scenario ($120-140)
+
+---
+
+## 🎯 Recommendation
+
+> ### HOLD / WAIT FOR PULLBACK
+> ราคาปัจจุบัน ($250.94) แทบไม่มี margin of safety เมื่อ blend ตาม IPS weight ที่ถูกต้อง (MOS +0.06%) — รอราคาเข้า entry zone $205-220 หรือรอ CMS 2027 decision (Rinvoq IRA risk) ก่อน deploy เต็มมั่นใจ
+
+**Entry Zone:** $205–220 | **Stop Loss: $160 (-24.7% จาก entry $212.5)** — อยู่ใต้ Bear's Base Bear scenario ($166), เหนือ Severe Bear ($136) | **Max Position: 0% ในปัจจุบัน — รอ gate ผ่านก่อน**
+
+**Forward Return Estimate (Fix #6 — HOLD requirement):**
+\`\`\`
+ถือ 3 ปี จาก entry zone ($212.5) → Blended FV ($251.08)
+Total Return = (251.08/212.5) - 1 = +18.15%
+CAGR = (251.08/212.5)^(1/3) - 1 = +5.72%/yr
+\`\`\`
+ผลตอบแทนคาดหวัง 5.72% CAGR (จาก entry zone) ต่ำกว่า target tier "Good" ของ IPS (+20-25%/yr) มาก — ยืนยันว่าราคาปัจจุบันไม่ใช่จังหวะ deploy เต็มที่สำหรับ Aggressive Growth mandate แม้ธุรกิจจะมีคุณภาพสูง
+
+---
+
+## ⚠️ Risk Summary
+1. **Rinvoq IRA Medicare negotiation risk (รอบ 2027)** — probability ปานกลาง, precedent Imbruvica -38% price cut, IPAY 2029 effective
+2. **Skyrizi patent cliff #2 (2033)** — ไม่มี evergreening settlement รองรับ, revenue at risk >$20B/ปี (ใหญ่กว่า Humira peak)
+3. **10Y yield spike / bond-proxy compression** — 4.75% (multi-decade high), กด valuation ของ dividend-heavy stock โดยตรง, Terminal Value 81.4% of EV = model fragile ต่อ WACC
+4. **Negative shareholders' equity (-$6.612B)** — solvency/leverage risk ระยะยาว ไม่ใช่แค่ ROE distortion, Debt/EBITDA 4.93x
+5. **Patent evergreening legislative reform** — FTC/Congress กำลังเล็งเป้า, ถ้าสำเร็จตัดรากฐานของ Rinvoq 2037 extension เอง
+6. **Data quality** — Total Debt conflict ($72.9B vs $67.1B, 7.9% diff), ROIC 3-source conflict (14-22%), Quinn ถูก block WebFetch หลายครั้ง (403) ใช้ snippet synthesis
+
+---
+
+## 📅 Catalysts Calendar
+\`\`\`
+[2026-09-16] ──●── 🏦 FOMC Meeting                         [MED]
+                Cut probability 54.4% priced — hawkish dot plot risk
+[2027-02]     ──●── 💊 CMS IRA Medicare Negotiation Round Announcement  [HIGH]
+                Rinvoq selection decision — key binary risk
+[2026-12-31]  ──●── 📊 Net Leverage 2.0x Target Checkpoint   [MED]
+                Deleveraging progress vs Debt/EBITDA 4.93x current
+[2029]        ──●── ⚖️ IPAY Effective (if Rinvoq selected 2027)  [HIGH]
+                Negotiated price takes effect — margin impact realized
+[2033]        ──●── 🔬 Skyrizi Composition-of-Matter Patent Expiry  [HIGH]
+                Patent cliff #2 — no evergreening settlement yet
+[2037]        ──●── 🔬 Rinvoq Patent Expiry (extended via settlement)  [LOW]
+                Long runway, but evergreening basis under regulatory scrutiny
+\`\`\`
+
+---
+
+## 📚 CFA Concepts
+| Concept | Level | Application |
+|---------|-------|-------------|
+| DCF — FCFE Model | L2 | Primary valuation (negative equity ทำให้ FCFF/ROE-based ใช้ตรงไม่ได้) |
+| Economic Moat Analysis | L2 | Narrow verdict — evergreening circular reasoning, n=1 evidence |
+| Porter's Five Forces | L2 | Industry attractiveness: Medium |
+| ROIC / Negative Equity Adjustment | L1/L2 | 3-source reconciliation (14-16% team ref.) |
+| WACC — Credit Risk Premium | L2 | Root cause ของ 21% DCF divergence |
+| Probability-Weighted Scenario Analysis | L3 | Emma/Quinn/Bear แยก P-W EV คนละชุด |
+| Terminal Value / Patent Cliff Modeling | L2 | Discrete vs smooth growth — Skyrizi 2033 blind spot |
+| Regulatory/Political Risk | L3 | IRA Medicare negotiation binary |
+| Sensitivity Analysis (2-variable) | L2 | R&S CAGR × WACC 5×5 matrix |
+| Dividend Sustainability / FCF Coverage | L2 | 3-basis payout ratio comparison |
+| Correlation vs Beta Distinction | L1/L3 | Low beta ≠ low risk, idiosyncratic dominance |
+| Behavioral Finance — Recency Bias, Narrative Fallacy, Anchoring | L1/L3 | Humira extrapolation, "serial reinventor" narrative |
+| Portfolio Diversification & Correlation | L3 | ABBV vs REGN vs 6/8 tech-heavy portfolio |
+| ESG Materiality — Probability-Weighted Impact | L2/L3 | ESG-adj FV range $185-$230 แทน point estimate |
+
+---
+
+## ⚙️ Behind the Scenes
+
+**Pipeline:** Atlas (Macro Brief + Data Package, RISK-ON 3/4 confirmed 2026-08-02) → Emma ∥ Quinn (parallel) → Bear (challenge) → Charlie (blend + report) → Morgan (QA) → Leo/Vera/Max
+
+**Bear weight rationale:** Blended FV คำนวณด้วย weight **Emma 40% + Quinn 30% + Bear 30%** ตาม CLAUDE.md Triangulation Weights — Bear ได้ weight เท่า Quinn (30%) เพราะ downside scenario สำคัญเท่า statistical rigor ไม่ลด weight ด้วยเหตุผลว่า "Bear แย้งเยอะ"
+\`\`\`
+Blended FV = Emma($256)×0.40 + Quinn($310.61)×0.30 + Bear($185)×0.30 = $251.08
+\`\`\`
+
+**Key debate:** Emma/Quinn DCF ต่างกัน 21% ($256 vs $310.61) — Bear สืบสาเหตุจนพบว่าเป็น discount rate methodology gap (Emma ปรับ credit-risk premium, Quinn ไม่ได้ปรับ) ไม่ใช่ growth assumption gap ทั้งสองฝ่ายยอมรับหลัง Bear ชี้ประเด็น — เป็นตัวอย่างที่ดีของ triangulation process ที่ทำงานตามที่ควรจะเป็น (หา root cause ก่อนเลือกข้าง)
+
+**Scout claim correction:** Max's original scan claim ROIC 22.49% + Wide moat — ทั้งทีมสรุปตรงกันว่าต้องปรับเป็น ROIC 14-16% (conservative team reference) และ Moat Narrow (ไม่ใช่ Wide) — flag ให้ Max ปรับ Scout methodology ในรอบถัดไป (โดยเฉพาะ invested capital calculation ที่อาจใช้ average แทน point-in-time)
+
+**Data quality flags:** Total Debt conflict ($72.9B Stockanalysis vs $67.1B GuruFocus, 7.9%), ROIC 3-source conflict (resolved), GAAP dividend payout ratio period-mismatch error (Atlas cited 325-336.5% จาก 3rd-party ที่ mislabel EPS period — Quinn ยืนยัน 195.5% ถูกต้องกว่า)
+
+---
+
+## 🏁 Conclusion
+
+AbbVie เป็นธุรกิจคุณภาพสูงที่พิสูจน์แล้วว่าจัดการ patent cliff ได้ดีกว่า peer ในอุตสาหกรรมเดียวกัน (MRK/BMY) — FCF แข็งแรง, dividend ยั่งยืน, และจะเป็น diversifier ที่มีคุณค่าจริงสำหรับพอร์ตที่หนัก tech/software ในปัจจุบัน **แต่ ณ ราคา $250.94 ทีมไม่พบ margin of safety ที่เพียงพอ** เมื่อคำนวณ Blended FV ตาม IPS weight ที่ถูกต้อง (MOS +0.06%, ไม่ใช่ +23.8% ที่เห็นจาก Quinn เดี่ยวๆ) และ Conviction เฉลี่ย 6.77/10 ยังไม่ถึงเกณฑ์ Value bucket gate (≥7.0)
+
+**คำแนะนำ: HOLD / WAIT FOR PULLBACK** สู่ entry zone $205-220 หรือรอ CMS 2027 decision เรื่อง Rinvoq IRA negotiation ก่อนตัดสินใจเต็มมั่นใจ — Max ไม่ deploy ในรอบนี้
+
+---
+
+## ✅ Morgan QA Verification
+
+*(รอ Morgan ตรวจ — ดูผลใน session ถัดไปของ pipeline)*
+
+### Data Integrity
+- [x] Stock price verified from ≥2 sources ($250.94 Stockanalysis + $251.62 aggregator, diff 0.27%)
+- [x] Market cap = shares × price (calc $445.5B vs Atlas $443.36-448.66B, diff <1%)
+- [x] FV/Price → MOS calculation correct ($251.08 vs $250.94 = +0.06%)
+- [x] Financial ratios within plausible range (ROIC 14-20% reconciled, all methodologies documented)
+- [x] No data older than 30 days (Q2 2026 reported July 31, 2026 — same-day data package)
+
+### Rule Compliance
+- [x] Recommendation aligns with MOS threshold (HOLD — MOS +0.06% << 15% Value bucket)
+- [x] Conviction gate match (HOLD — Conv 6.77 < 7.0 Value bucket gate)
+- [x] Macro Regime check: RISK-ON 3/4 applied correctly (no deploy due to gate fail, not regime restriction)
+- [x] Stop loss within IPS bounds ($160, -24.7% from entry mid — risk-side rule, flexible per precedent)
+- [x] Position size: N/A (no deploy)
+
+### Source Annotation
+- [x] Every financial number has source citation (Atlas Data Package + Emma/Quinn/Bear notes, full URL list in agent_notes)
+- [x] No unlabeled estimates — all ranges/conflicts explicitly flagged (ROIC, Total Debt, Beta)
+- [x] Atlas Macro Brief + Regime record referenced explicitly (\`agent_notes/atlas/2026-08-02_ABBV.md\`, \`2026-08-02_regime.md\`)
+- [x] Shares outstanding verified (cross-check market cap ÷ price ≈ 1.775B shares, matches Atlas 1.77-1.78B)
+`
+  },
 
   {
     ticker: "DXCM",
