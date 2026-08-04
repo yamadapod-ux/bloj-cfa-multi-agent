@@ -3,9 +3,130 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-08-01 09:00";
+const NEWS_LAST_UPDATED = "2026-08-05 10:00";
 
 const NEWS = [
+  // ── 2026-08-04 ──────────────────────────────────────────
+  {
+    date: "2026-08-04", category: "MACRO",
+    headline: "🚀 Nasdaq พุ่งต่อเนื่องวันที่ 4 ติด (+2%) ตลาดใกล้ทำสถิติใหม่ — เก็ง Middle East คลี่คลาย + earnings season แข็งแกร่ง 85% beat",
+    summary: "วันอังคารที่ 4 สิงหาคม ตลาดหุ้นสหรัฐฯ ยังคงพุ่งต่อเนื่องเป็นวันที่ 4 ติด — Nasdaq Composite +2.1% ปิดที่ 25,913.9, S&P 500 +1.48% ปิด 7,600.50 ทำสถิติปิดใหม่, Dow Jones ปิดสถิติใหม่ 53,178.41 (+1.32%) แรงหนุนจากหุ้นเทคโนโลยีขนาดใหญ่ (Microsoft +4.9%, Nvidia +2.9%, Meta +6%, Alphabet +4.9%, Tesla +3.5%, Amazon ทะลุ market cap $3 ล้านล้านดอลลาร์). จากบริษัทใน S&P 500 ที่รายงานผลประกอบการแล้วราว 300 บริษัท กว่า 85% ทำได้เหนือคาดการณ์ ยืนยัน earnings season แข็งแกร่ง. นัยพอร์ต: บวกกว้างต่อ mega-cap tech/software positions ทั้งหมด (GOOGL, META watchlist, ADBE, NOW, CRM, ADSK) — momentum จาก sentiment ที่พลิกจาก 'AI capex fear' เป็น 'confirmed working' ต่อเนื่องจากสัปดาห์ก่อน.",
+    impact: "POSITIVE", tickers: ["MSFT", "META", "GOOGL", "AMZN", "TSLA"],
+    url: "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-4-dow-sp-500-nasdaq-100140227.html",
+  },
+  {
+    date: "2026-08-04", category: "EARNINGS",
+    headline: "Progressive รายงานผล Q2 2026 วันนี้ — ครึ่งปีแรก Revenue $45.8B กำไรสุทธิ $6.1B, Morgan Stanley เพิ่งอัปเกรดเป็น Equal Weight",
+    summary: "Progressive Corp (PGR) มีกำหนดประกาศผลประกอบการ Q2 2026 วันที่ 4 สิงหาคม เวลา 9:30 ET หลังจากครึ่งปีแรกทำผลงานได้แข็งแกร่ง — revenue $45.8B, net income $6.1B ซึ่งบ่งชี้ undervaluation ราว 7% จากผลครึ่งปี Morgan Stanley เพิ่งอัปเกรดหุ้นจาก Underweight เป็น Equal Weight เมื่อ 24 ก.ค. ขณะที่ TD Cowen หั่น price target ลงเหลือ $222 จาก $266 เมื่อ 28 ก.ค. หุ้นเทรดที่ราว $211 (P/E 10.6, dividend yield 6.57%) ลดลง -10.21% ในช่วง 1 เดือนที่ผ่านมา. นัยพอร์ต: PGR เป็น scout candidate ที่ SKIPPED (2026-06-14) รอ Charlie research pipeline อย่างเป็นทางการ — earnings วันนี้เป็นจุดข้อมูลสำคัญที่ Charlie ควรพิจารณาหากมีการวิเคราะห์เต็มรูปแบบในอนาคต.",
+    impact: "MIXED", tickers: ["PGR"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/why-progressive-pgr-could-one-005547109.html",
+  },
+  {
+    date: "2026-08-04", category: "SECTOR",
+    headline: "AVGO +6.5% รับอานิสงส์ AI/semi relief rally จาก Palantir beat — เซ็น MOU กับ Samsung มูลค่า $200B ผลิตชิป AI ถึงปี 2030",
+    summary: "หุ้น Broadcom พุ่ง +6.52% เมื่อวันที่ 4 สิงหาคม ได้แรงหนุนจากผลประกอบการแข็งแกร่งของ Palantir ที่จุดกระแส relief rally ในกลุ่ม AI chip/semiconductor ทั้งหมด นอกจากนี้ Samsung และ Broadcom ยังลงนาม MOU ความร่วมมือด้าน AI chip มูลค่า $200B ระยะยาวถึงปี 2030 อย่างไรก็ตาม Goldman Sachs ถอด AVGO ออกจาก US Conviction List (แต่ยังคง Buy rating) และบริษัทเผชิญความเสี่ยงด้านกฎระเบียบจากคำตัดสิน EU antitrust ล่าสุด. นัยพอร์ต: AVGO อยู่ใน watchlist NO ADD (MOS -50.6%, ราคาไกลจาก entry zone $200-215 มาก ปัจจุบัน ~$392-418) — ข่าวนี้ยืนยัน AI chip demand thesis ต่อเนื่องแต่ไม่เปลี่ยนสถานะ valuation ที่ยังแพงเกินไป.",
+    impact: "MIXED", tickers: ["AVGO"],
+    url: "https://www.benzinga.com/markets/tech/26/08/60921906/what-is-going-on-with-broadcom-stock-on-tuesday-2",
+  },
+  {
+    date: "2026-08-04", category: "EARNINGS",
+    headline: "Eli Lilly เตรียมประกาศผล Q2 วันนี้ (5 ส.ค.) — ตลาดคาด Revenue $20.26B EPS $6.71, เก็งกำไร stock split หลังหุ้นพุ่งแรงจากยาลดน้ำหนัก",
+    summary: "Eli Lilly มีกำหนดประกาศผลประกอบการ Q2 2026 วันที่ 5 สิงหาคม โดยตลาดคาดการณ์ revenue $20.26B และ EPS $6.71 หุ้นล่าสุดปิดที่ $1,121.36 (3 ส.ค.) ลดลง -11% จากจุดสูงสุดตลอดกาล $1,235.56 (7 ก.ค.) เริ่มมีการคาดเดาเรื่อง stock split เนื่องจากหุ้นพุ่งขึ้น +285% นับตั้งแต่ปี 2022 จากความสำเร็จของยา GLP-1 (Mounjaro/Zepbound) จนบริษัทกลายเป็นบริษัทยาแห่งแรกที่ market cap ทะลุ $1 ล้านล้านดอลลาร์ นอกจากนี้บริษัทเพิ่งได้ FDA Breakthrough Therapy designation ตัวที่ 2 สำหรับ olomorasib (มะเร็งตับอ่อนระยะลุกลาม). นัยพอร์ต: ไม่ใช่ position ตรง (Big 10, อยู่ sector เดียวกับ REGN) — ผลประกอบการวันนี้เป็นจุดเทียบเคียงสำคัญสำหรับ Healthcare/Pharma sector view ที่ REGN position อยู่ในนั้น.",
+    impact: "NEUTRAL", tickers: ["LLY"],
+    url: "https://www.bloomberg.com/news/articles/2026-08-04/eli-lilly-ripe-for-stock-split-after-obesity-drug-fueled-rally",
+  },
+  // ── 2026-08-03 ──────────────────────────────────────────
+  {
+    date: "2026-08-03", category: "MACRO",
+    headline: "🕊️ Trump ยกเลิกแผนโจมตี Iran หวังเจรจาเปิดช่องแคบ Hormuz — ตลาดพุ่งแรง Dow ทำสถิติใหม่ น้ำมันร่วง 5%",
+    summary: "วันจันทร์ที่ 3 สิงหาคม ประธานาธิบดี Trump ประกาศยกเลิกแผนโจมตี Iran ที่วางไว้ เพื่อเปิดทางเจรจาข้อตกลงเปิดช่องแคบ Hormuz แทน ส่งผลให้ราคาน้ำมันร่วงลงราว 5% ทันที และหนุน sentiment ตลาดหุ้นสหรัฐฯ พุ่งแรง — S&P 500 +1.5% เข้าใกล้สถิติเดิม, Dow +693 จุด (+1.32%) ปิดสถิติใหม่ 53,178, Nasdaq 100 +1.8%. แรงหนุนเสริมจาก Treasury yields ที่ปรับตัวลงหลังความกังวลเงินเฟ้อจากราคาพลังงานคลี่คลาย. นัยพอร์ต: ลดแรงกดดัน macro overhang จาก Middle East ที่เคยเป็นปัจจัยลบต่อเนื่องหลายสัปดาห์ (oil spike, yield spike) — เป็นบวกกว้างต่อทุก risk asset ในพอร์ต โดยเฉพาะ growth/duration-sensitive names (ADBE, ADSK, CRM, NOW) ที่อ่อนไหวต่อ yield.",
+    impact: "POSITIVE", tickers: [],
+    url: "https://www.benzinga.com/markets/equities/26/08/60897120/stock-market-today-sp-500-dow-and-nasdaq-futures-rise-after-strong-monday-gains-mcdonalds-amd-palantir-in-focus",
+  },
+  {
+    date: "2026-08-03", category: "EARNINGS",
+    headline: "📦 Amazon ทะลุ Market Cap $3 ล้านล้านดอลลาร์ครั้งแรก — AWS เร่งตัวเร็วสุดในรอบ 18 ไตรมาส หนุน sentiment cloud ทั้ง sector",
+    summary: "หุ้น Amazon พุ่งต่อเนื่องหลัง Q2 2026 beat ทั้ง top-bottom line — net sales +20% YoY แตะ $200.6B, operating income +43% เป็น $27.5B, AWS growth เร่งเป็น +37% (เร็วสุดในรอบ 18 ไตรมาส) with $496B order backlog และ custom-chip run-rate $25B บริษัทยก FY26 capex guide เป็น $220B (ส่วนใหญ่เพื่อ AI/data center). ราคาหุ้นพุ่งจน market cap ทะลุ $3 ล้านล้านดอลลาร์ครั้งแรกในประวัติศาสตร์เมื่อวันที่ 3 สิงหาคม. นัยพอร์ต: เป็นสัญญาณบวกทางอ้อมสำคัญต่อ GOOGL position ผ่าน cloud-peer comparison — ยืนยันว่า hyperscaler cloud capex กำลังแปลงเป็นรายได้จริง สอดคล้องกับ GOOGL Cloud +82% YoY narrative ที่ตลาดเพิ่งเริ่มยอมรับ.",
+    impact: "POSITIVE", tickers: ["AMZN", "GOOGL"],
+    url: "https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html",
+  },
+  {
+    date: "2026-08-03", category: "TECH",
+    headline: "🟢 GOOGL +5.1% หลัง Morgan Stanley ออกมาย้ำมั่นใจ AI capex — ฟื้นตัวจาก post-earnings selloff แต่ยังต่ำกว่าราคาก่อนประกาศงบ",
+    summary: "หุ้น Alphabet พุ่ง +5.1% เมื่อวันที่ 3 สิงหาคม หลังนักวิเคราะห์ Morgan Stanley ออกมาย้ำความเชื่อมั่นต่อแนวโน้มบริษัทท่ามกลางการลงทุนโครงสร้างพื้นฐาน AI ที่สูงเป็นประวัติการณ์ ถือเป็นการฟื้นตัวต่อเนื่องจากที่หุ้นร่วงหลังประกาศงบ Q2 (กำไร $9.11/หุ้น เกินคาดเกือบ 3 เท่า) แต่ยังคงเทรดต่ำกว่าราคาก่อนประกาศงบจนถึงสัปดาห์ที่แล้ว. Google Cloud ยังโต +82% YoY, บริษัทวางแผน capex ปีนี้ราว $200B แต่ยังมี FCF บวก $53.3B ในรอบ 12 เดือน. Analyst consensus 64 คน given Strong Buy เฉลี่ย PT $427.59 (+13.84% upside). นัยพอร์ต: บวกตรงต่อ GOOGL position ที่เพิ่งหลุดจาก critical stop-distance watch — ช่วยขยาย buffer ต่อจาก stopDist 12.95% (July31).",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/why-alphabet-stock-popped-today-173231226.html",
+  },
+  {
+    date: "2026-08-03", category: "EARNINGS",
+    headline: "META +6.6% หลัง MS ปลุกความเชื่อมั่น AI — แต่ Q2 EPS หด -13% YoY, FCF ทรุด -91%, ยกระดับ capex guide เป็น $130-145B",
+    summary: "หุ้น Meta Platforms พุ่งเกือบ 7% เมื่อวันที่ 3 สิงหาคม หลังนักวิเคราะห์ Morgan Stanley ออกมาย้ำมั่นใจ AI infrastructure investment เช่นเดียวกับ GOOGL ทำให้เม็ดเงินไหลกลับเข้า mega-cap tech หลัง sell-off สัปดาห์ก่อน. ผลประกอบการ Q2 (ประกาศ 29 ก.ค.) แสดง revenue +28% YoY เป็น $60.8B แต่ EPS ร่วง -13% YoY เหลือ $6.18 และ free cash flow ทรุดหนัก -91% เหลือเพียง $784M เพราะทุ่มลงทุน AI หนัก. บริษัทยกระดับ capex guide ปี 2026 ขั้นต่ำเป็น $130-145B (จาก $125-145B) และเปิดเผยกำลังเจรจาให้ Anthropic เช่า AI compute capacity. นัยพอร์ต: META เป็น watchlist 'Pending Analysis' — สัญญาณ margin pressure จาก AI capex หนักคล้ายที่เห็นใน GOOGL อาจเป็นประเด็นต้องพิจารณาถ้า Charlie จะวิเคราะห์ META เต็มรูปแบบ.",
+    impact: "MIXED", tickers: ["META"],
+    url: "https://www.fool.com/investing/2026/08/03/why-meta-platforms-stock-popped-today/",
+  },
+  {
+    date: "2026-08-03", category: "EARNINGS",
+    headline: "🔴 AAPL ร่วงต่อเนื่อง 4 วันติด -10% แม้กำไรทำสถิติใหม่ — ต้นทุนชิ้นส่วนพุ่งกดดัน margin outlook + ยื่นฟ้อง OpenAI",
+    summary: "หุ้น Apple ร่วงต่อเนื่องเป็นวันที่ 4 ติดจนถึง 3 สิงหาคม รวมลงกว่า 10% แม้รายงานผล Q3 FY26 (30 ก.ค.) จะทำ EPS สถิติใหม่เหนือคาด เพราะบริษัทเตือนต้นทุนชิ้นส่วน (โดยเฉพาะชิปหน่วยความจำ) ที่พุ่งขึ้นแรงจะกดดัน margin ไตรมาสหน้า ประกอบกับ revenue growth forecast ที่อ่อนแอกว่าคาดจาก supply constraint. นอกจากนี้ Apple ยื่นคำร้องต่อศาลรัฐบาลกลางสหรัฐฯ เมื่อ 3 ส.ค. ขอคำสั่งห้ามชั่วคราว (injunction) ต่อ OpenAI. Analyst เฉลี่ย (46 คน) ยังให้ Buy PT $322.82 (+6.79%) แต่ technical score ติดลบ. นัยพอร์ต: AAPL อยู่ใน Big 10 ไม่ใช่ position/watchlist ตรง — ประเด็นต้นทุนชิปหน่วยความจำอาจกระทบ hardware/consumer tech sentiment กว้างขึ้น ควรติดตามว่ากระทบ supply chain ของ ADSK/software positions หรือไม่ (ไม่น่าจะมีผลตรง).",
+    impact: "NEGATIVE", tickers: ["AAPL"],
+    url: "https://247wallst.com/investing/2026/08/03/apples-predictable-august-news-vacuum-tells-you-exactly-what-to-expect-this-month/",
+  },
+  {
+    date: "2026-08-03", category: "EARNINGS",
+    headline: "🟢 RDDT เด้ง +11% วันเดียว — นักลงทุนกลับมาทบทวน Q2 earnings ที่แข็งแกร่ง หลัง sell-off เกินเหตุ",
+    summary: "หุ้น Reddit พุ่ง +11% ช่วงบ่ายวันที่ 3 สิงหาคม หลังนักลงทุนกลับมาพิจารณาผลประกอบการ Q2 ที่แข็งแกร่ง (Revenue +61% YoY ที่ $805M) อีกครั้ง หลังจากที่หุ้นเคยร่วงกว่า 20% ทันทีหลังประกาศงบเพราะกังวลเรื่อง 'search referral traffic จาก Google ที่ผันผวน' และไม่มีดีล AI licensing ใหม่ บริษัทให้ Q3 revenue guide $860-870M ซึ่งสูงกว่า consensus ที่ ~$830M. แม้เด้งแรง หุ้นยังคงติดลบ -39% นับจากต้นปี 2026. Analyst เฉลี่ย (34 คน) ให้ Buy PT $216.35 (+39.88% upside). นัยพอร์ต: บวกตรงต่อ RDDT position ที่เพิ่ง stop breach ครั้งแรกเมื่อ 1 ส.ค. — การเด้งกลับนี้ช่วยขยาย buffer จาก stop $140.75 และสนับสนุนการตัดสินใจ HOLD ที่ทีมทำไปแล้ว (2026-08-02) ว่า thesis ยังไม่เสียหาย เป็นเพียง sentiment overshoot.",
+    impact: "POSITIVE", tickers: ["RDDT"],
+    url: "https://stockstory.org/us/stocks/nyse/rddt/news/why-up-down/why-are-reddit-rddt-shares-soaring-today-5",
+  },
+  {
+    date: "2026-08-03", category: "SECTOR",
+    headline: "🔴 FICO ร่วง -6.8% หลัง Wolfe Research หั่นเรตติ้งหลัง Q3 revenue miss — กังวลแรงกดดันจาก VantageScore คู่แข่ง",
+    summary: "หุ้น Fair Isaac (FICO) ร่วง -6.8% ช่วงบ่ายวันที่ 3 สิงหาคม หลัง Wolfe Research ปรับลดเรตติ้งจาก Outperform เป็น Peer Perform ตามหลัง Q3 revenue ที่พลาดคาดการณ์ นักวิเคราะห์ชี้แรงกดดันด้านการแข่งขันจาก VantageScore ที่เพิ่มขึ้นเป็นความกังวลหลัก แม้ผล Q3 จะมี non-GAAP EPS โต +42.1% YoY. มีการเปิดเผยว่า Director ขายหุ้นล็อตใหญ่ราว $1.35M และสถาบัน Amundi ลดสัดส่วนถือครองในไตรมาสก่อน. นัยพอร์ต: FICO เป็น watchlist HOLD/WAIT (conviction 7.0, MOS -9.1% ก่อนหน้า) — แรงกดดันด้านการแข่งขันจาก VantageScore เป็นความเสี่ยงต่อ moat thesis ที่ควรติดตามหาก MOS เข้าใกล้ entry zone ในอนาคต.",
+    impact: "NEGATIVE", tickers: ["FICO"],
+    url: "https://stockstory.org/us/stocks/nyse/fico/news/why-up-down/why-fair-isaac-corporation-fico-stock-is-trading-lower-today",
+  },
+  {
+    date: "2026-08-03", category: "SECTOR",
+    headline: "Visa ประกาศซื้อกิจการ BioCatch มูลค่า $2.4B เสริมเทคโนโลยีป้องกันการทุจริต — เตรียมเปิดตัว AI Financial Assistant สิงหาคมนี้",
+    summary: "Visa ประกาศเมื่อวันที่ 3 สิงหาคมว่าจะเข้าซื้อกิจการ BioCatch บริษัทด้าน fraud intelligence ด้วยเงินสดมูลค่า $2.4B ดีลนี้มีเป้าหมายเสริมความสามารถด้าน cyber, fraud, risk และ security solutions ของ Visa นอกจากนี้บริษัทยังวางแผนเปิดตัว AI Financial Assistant สำหรับธนาคาร โดยจะเริ่ม pilot ในสหรัฐฯ เดือนสิงหาคม 2026 ก่อนขยายทั่วโลก ผลประกอบการล่าสุด net revenue โต +14% YoY เป็น $11.6B, EPS +11%. นัยพอร์ต: Visa เป็น watchlist HOLD/WAIT (conviction 7.0, MOS -13.3%) — การขยายสู่ AI fraud-prevention เสริม moat ของ payment network เดิม แต่ราคายังอยู่เหนือ entry zone $285-300 มาก (ปัจจุบัน ~$365-372) ยังไม่ผ่านเกณฑ์ deploy.",
+    impact: "POSITIVE", tickers: ["V"],
+    url: "https://robinhood.com/us/en/stocks/V/",
+  },
+  {
+    date: "2026-08-03", category: "EARNINGS",
+    headline: "TSMC ทวงคืน Market Cap $2 ล้านล้านดอลลาร์ — Q2 Revenue $40.2B beat, ยกเป้า FY26 revenue growth เกิน 40% ผู้บริหารซื้อหุ้นคืนสวนตลาด",
+    summary: "หุ้น Taiwan Semiconductor (TSM) ฟื้นตัวแรงหลังพุ่ง +7.6% เมื่อ 30 ก.ค. ทำให้ market cap กลับมาแตะ $2 ล้านล้านดอลลาร์อีกครั้ง ราคาปิดที่ ~$406 เมื่อ 4 ส.ค. ผลประกอบการ Q2 ทำได้ revenue $40.2B พร้อม gross margin 67.7% เหนือ guidance และบริษัทยกระดับเป้า FY26 revenue growth เป็น 'เกิน 40%' ผู้บริหาร TSMC ยังซื้อหุ้นคืนส่วนตัวเพิ่มเติมช่วงปลาย ก.ค.-ต้น ส.ค. ส่งสัญญาณมั่นใจ แม้ Philadelphia Semiconductor Index จะร่วงหนัก -21% ในเดือนกรกฎาคม (แย่สุดตั้งแต่ปี 2008) จากความกังวลว่าลูกค้าชิป AI จะรับต้นทุนขึ้นราคาปี 2027 ได้หรือไม่ และความยั่งยืนของ capex ทั้ง supply chain. นัยพอร์ต: ไม่ใช่ position/watchlist ตรง (Big 10) แต่เป็น leading indicator สำคัญของ AI chip demand ทั้ง supply chain — สัญญาณบวกสนับสนุน AVGO/semis thesis กว้าง.",
+    impact: "POSITIVE", tickers: ["TSM"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-just-reclaimed-2-134600639.html",
+  },
+  {
+    date: "2026-08-03", category: "EARNINGS",
+    headline: "🔴 TSLA ร่วงเกือบ 25% ในรอบเดือน — Q2 EPS พลาดคาด -38.5%, Operating Margin ทรุดเหลือ 1.4%, FCF ติดลบ",
+    summary: "หุ้น Tesla ร่วงลงเกือบหนึ่งในสี่ของมูลค่าในรอบหนึ่งเดือน หลังผลประกอบการ Q2 2026 (ประกาศ 21 ก.ค.) แม้ revenue $28.24B จะเหนือคาด +7.1% แต่ EPS $0.33 พลาดคาดการณ์หนักถึง -38.51% Operating margin ทรุดลงเหลือเพียง 1.4% และ free cash flow พลิกเป็นลบ -$1.09B เพราะต้นทุน opex พุ่งจากการลงทุน AI และ CEO Performance Award ปี 2025 นอกจากนี้บริษัทยังเผชิญการสอบสวนด้านความปลอดภัยรถยนต์ 1.2 ล้านคัน ราคาหุ้นล่าสุดอยู่ที่ ~$313 (จากที่เคยสูงกว่านี้มาก) Analyst เฉลี่ยให้ PT $386.29 (+24.13% upside). นัยพอร์ต: TSLA อยู่ใน Big 10 ไม่ใช่ position/watchlist — earnings miss หนักเป็นสัญญาณเตือนว่า EV/AI-adjacent names บางตัวเริ่มเผชิญ margin pressure จาก capex race เช่นเดียวกับที่เห็นใน META.",
+    impact: "NEGATIVE", tickers: ["TSLA"],
+    url: "https://www.forbes.com/sites/investor-hub/article/tesla-stock-last-half-2026/",
+  },
+  {
+    date: "2026-08-03", category: "TECH",
+    headline: "Autodesk ปิดดีลควบรวม MaintainX สำเร็จ — ขยายความสามารถด้าน CMMS เข้าสู่ระบบนิเวศซอฟต์แวร์",
+    summary: "Autodesk ประกาศปิดการซื้อกิจการ MaintainX Inc. สำเร็จเมื่อวันที่ 3 สิงหาคม ภายใต้สัญญาที่ลงนามไปตั้งแต่ 28 พฤษภาคม ผ่านบริษัทลูก Matterhorn Acquisition Corp ดีลนี้จะขยายความสามารถของ Autodesk ด้วยการผนวกระบบปฏิบัติการบำรุงรักษา (CMMS) ของ MaintainX เข้ากับ ecosystem ซอฟต์แวร์เดิม ราคาหุ้นล่าสุด ~$234 (P/E 34.2) Analyst เฉลี่ย (35 คน) ให้ Strong Buy PT $313.89 (+34.39% upside) แม้หุ้นจะร่วง -23% ในรอบ 1 ปีที่ผ่านมา. นัยพอร์ต: ตรงกับ position ADSK ที่ deploy T1 เมื่อ 14 มิ.ย. โดยระบุ MaintainX integration เป็นหนึ่งใน T2 trigger — การปิดดีลสำเร็จตามแผนเป็นสัญญาณบวกต่อ execution risk ที่เคยถูกกังวล.",
+    impact: "POSITIVE", tickers: ["ADSK"],
+    url: "https://www.tipranks.com/news/company-announcements/autodesk-completes-acquisition-of-maintainx-to-expand-capabilities",
+  },
+  {
+    date: "2026-08-03", category: "MACRO",
+    headline: "JPMorgan ทำจุดสูงสุดในประวัติศาสตร์ $359.30 — ประกาศลงทุน $750B พัฒนาที่อยู่อาศัยสหรัฐฯ ถึงปี 2035",
+    summary: "หุ้น JPMorgan Chase ทำจุดสูงสุดตลอดกาลใหม่ที่ $359.30 เมื่อต้นเดือนสิงหาคม โต +22.6% ในรอบ 1 ปี บริษัทประกาศแผนลงทุน $750B ถึงปี 2035 เพื่อเพิ่มความพร้อมด้านที่อยู่อาศัยในสหรัฐฯ ตั้งเป้าปล่อยสินเชื่อสร้างบ้านราคาประหยัด 1 ล้านยูนิต และช่วยเหลือผู้ซื้อบ้านครั้งแรก 500,000 ราย ซึ่งเพิ่มขึ้น 40% จากทศวรรษก่อนหน้า UBS ปรับเป้าราคาขึ้นเป็น $400 จาก $384. นัยพอร์ต: ไม่ใช่ position/watchlist ตรง (Big 10) — สะท้อนภาพรวม financial sector ที่แข็งแกร่ง สนับสนุน macro regime โดยรวมที่เอื้อต่อ risk-on positioning.",
+    impact: "POSITIVE", tickers: ["JPM"],
+    url: "https://www.investing.com/news/company-news/jpmorgan-chase-stock-hits-alltime-high-3593-usd-93CH-4834645",
+  },
+  {
+    date: "2026-08-03", category: "SECTOR",
+    headline: "GE Vernova Backlog พุ่งทะลุ $176B (+88% orders) — ยกเป้า FY26 Guidance เป็น $46B หนุน demand ไฟฟ้าจาก Data Center",
+    summary: "GE Vernova รายงานผล Q2 2026 ด้วย revenue $11.1B เหนือคาดการณ์นักวิเคราะห์ แม้ EPS จะพลาดคาดเล็กน้อย แต่บริษัทยกระดับ guidance FY26 ทั้งปีขึ้นเป็นราว $46B order backlog ขยายตัวแรงทะลุ $176B พร้อม gas turbine reservation 116 กิกะวัตต์ ยอด order ไตรมาสนี้โต +88% organic (book/bill ratio ~2.2x) Morgan Stanley ชี้ว่าสหรัฐฯ เผชิญ shortfall ไฟฟ้าสำหรับ data center ถึง 38 กิกะวัตต์ภายในปี 2028 ซึ่งเป็นแรงหนุนระยะยาวให้ GEV. นัยพอร์ต: GEV เป็น watchlist HOLD/WAIT — RE-ANALYSIS status (MOS -307.9% เพราะราคาห่างไกล entry zone $320-380 มาก ปัจจุบัน ~$958-1,073) backlog ที่แข็งแกร่งต่อเนื่องยืนยัน thesis พื้นฐานยังดี แต่ valuation ยังคงเป็นอุปสรรคหลักต่อการ deploy.",
+    impact: "POSITIVE", tickers: ["GEV"],
+    url: "https://www.quiverquant.com/news/GE+Vernova+Stock+(GEV)+Opinions+on+Q2+Earnings+and+AI-Driven+Backlog",
+  },
   // ── 2026-07-31 ──────────────────────────────────────────
   {
     date: "2026-07-31", category: "MACRO",
