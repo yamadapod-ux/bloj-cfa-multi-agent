@@ -237,6 +237,7 @@
 | META | Pending Analysis | TBD | — | Q2 earnings reported July29 | รอ Charlie | — | — |
 | **WPM** | **HOLD/WAIT FOR PULLBACK** (2026-07-12, no deploy — Conv 6.3 ❌ <7.0, MOS -9.9% ❌ <15%, both Value gates FAIL) | **$85–92** | **$71** | **$110.05** (July10 close) | เกิน zone มาก (+19.6%) → รอ pullback สู่ normalized gold range; re-check conviction ด้วยเมื่อราคาเข้า zone | **$99.20** | **-9.9%** |
 | **ABBV** | **HOLD/WAIT FOR PULLBACK** (2026-08-02, no deploy — Conv 6.77 FAIL <7.0, MOS +0.06% FAIL <<15%, both Value gates FAIL) | **$205–220** | **$160** | **$250.94** (July31 close) | เกิน zone มาก (+14% เหนือ upper bound) → รอ pullback; Moat ปรับจาก Wide→Narrow ระหว่าง pipeline (ROIC ที่ถูกต้อง 14-16%, ไม่ใช่ 22.49% ตาม Scout เดิม) — re-check conviction ด้วยเมื่อราคาเข้า zone | **$251.08** | **+0.06%** |
+| **ETN** | **HOLD/WAIT FOR PULLBACK** (2026-08-05, no deploy — Conv 6.23 FAIL <7.0, MOS -30.7% FAIL <<15%, both Value gates FAIL — dual gate fail รุนแรงกว่า WPM/PGR/ABBV) | **$255–270 (T1) / $225–245 (T2)** | **$210** | **$444.80** (Aug4 close, verified) | เกิน T1 zone มาก (+64.7% เหนือ upper bound) → รอ pullback ขนาดใหญ่; Quinn/Emma methodology divergence ใหญ่สุดเท่าที่เคยเจอ (3.05x) ยังไม่ resolve เต็ม — re-check conviction ด้วยเมื่อราคาเข้า zone | **$308.25** (ESG-adj $293) | **-30.7%** |
 | INTU | **SOLD** | — | — | — | **AUTO-SELL 2026-05-21 @ $321.50** | — | — |
 
 ---
