@@ -11,6 +11,7 @@
   <script src="portfolio.js"></script>
   <script src="news.js"></script>
   <script src="sectorViews.js"></script>
+  <script src="thesisWatch.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     @font-face {
@@ -278,6 +279,34 @@
       100% { box-shadow: 0 1px 5px rgba(0,0,0,0.06); }
     }
 
+    /* THESIS WATCH */
+    .thesis-card { background:#e6f3f5; border:1px solid #B0C8F0; border-left:4px solid #B0C8F0; border-radius:10px; padding:1.1rem 1.25rem; margin-bottom:1rem; box-shadow:0 1px 5px rgba(0,0,0,0.06); font-family:'Playpen Sans Thai','Prompt',sans-serif; }
+    .thesis-card.health-FIRING  { border-left-color:#DC2626; background:#fbe4e7; }
+    .thesis-card.health-WATCH   { border-left-color:#E8C830; background:#fbf5df; }
+    .thesis-card.health-INTACT  { border-left-color:#7ACFA0; background:#e6f5ec; }
+    .thesis-card-header { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; margin-bottom:.6rem; }
+    .thesis-ticker { font-size:1.05rem; font-weight:700; color:#1A3A7A; }
+    .thesis-live-tag { font-size:.7rem; color:#5870A8; background:#d5eef1; border:1px solid #B0C8F0; border-radius:4px; padding:.1rem .5rem; }
+    .thesis-health-badge { display:inline-block; padding:.2rem .65rem; border-radius:20px; font-size:.72rem; font-weight:600; letter-spacing:.3px; }
+    .thesis-health-FIRING { background:#F4B8C1; color:#8A1A2A; border:1px solid #E090A0; }
+    .thesis-health-WATCH  { background:#F7E8A0; color:#7A5A00; border:1px solid #E8C830; }
+    .thesis-health-INTACT { background:#B8EAC8; color:#1A5A30; border:1px solid #7ACFA0; }
+    .thesis-verdict { font-size:.85rem; color:#3A5A8A; line-height:1.65; margin:.5rem 0 .75rem; }
+    .thesis-section-label { font-size:.72rem; font-weight:700; color:#5870A8; text-transform:uppercase; letter-spacing:.4px; margin:.75rem 0 .35rem; }
+    .thesis-trigger-list { display:flex; flex-direction:column; gap:.35rem; }
+    .thesis-trigger-row { display:flex; align-items:flex-start; gap:.5rem; font-size:.78rem; color:#3A5A8A; line-height:1.5; }
+    .thesis-trigger-dot { flex-shrink:0; width:8px; height:8px; border-radius:50%; margin-top:.35rem; }
+    .thesis-trigger-dot.FIRED,.thesis-trigger-dot.MET { background:#DC2626; }
+    .thesis-trigger-dot.WATCH,.thesis-trigger-dot.PARTIAL { background:#E8C830; }
+    .thesis-trigger-dot.NOT_FIRED,.thesis-trigger-dot.NOT_MET { background:#7ACFA0; }
+    .thesis-trigger-status { font-weight:700; font-size:.68rem; text-transform:uppercase; margin-right:.3rem; }
+    .thesis-trigger-status.FIRED,.thesis-trigger-status.MET { color:#DC2626; }
+    .thesis-trigger-status.WATCH,.thesis-trigger-status.PARTIAL { color:#7A5A00; }
+    .thesis-trigger-status.NOT_FIRED,.thesis-trigger-status.NOT_MET { color:#1A5A30; }
+    .thesis-catalyst-box { background:#d5eef1; border:1px dashed #B0C8F0; border-radius:8px; padding:.6rem .75rem; margin-top:.75rem; font-size:.78rem; color:#3A5A8A; }
+    .thesis-catalyst-box b { color:#1A3A7A; }
+    .thesis-meta-row { display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; font-size:.7rem; color:#8AAAD4; margin-top:.6rem; }
+
     /* MOBILE FRM */
     @media (max-width: 768px) {
       .frm-content { padding: 1rem; }
@@ -349,6 +378,7 @@
     <button class="nav-tab" onclick="showPage('portfolio')">Portfolio</button>
     <button class="nav-tab" onclick="showPage('news')">News</button>
     <button class="nav-tab" onclick="showPage('sectorviews')">Sector Views</button>
+    <button class="nav-tab" onclick="showPage('thesiswatch')">Thesis Watch</button>
   </div>
   <span class="updated-tag">Updated: <span id="last-updated"></span></span>
 </nav>
@@ -586,6 +616,26 @@
     <div class="chart-wrap"><canvas id="chart-sector-stance"></canvas></div>
   </div>
   <div id="sector-views-list"></div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- PAGE: Thesis Watch                        -->
+<!-- ══════════════════════════════════════════ -->
+<div id="page-thesiswatch" class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;flex-wrap:wrap;gap:.75rem;">
+    <div>
+      <div style="font-size:1.4rem;font-weight:700;font-family:'Playpen Sans Thai','Prompt',sans-serif;">Thesis Watch</div>
+      <div style="font-size:.8rem;color:#5870A8;margin-top:2px;">Thesis health-check ของทุก OPEN position — Bear Flip Triggers + Thesis Invalidation status ล่าสุด</div>
+    </div>
+    <div id="thesis-filter-btns" style="display:flex;gap:.5rem;flex-wrap:wrap;">
+      <button class="nav-tab active" onclick="filterThesisWatch('ALL',this)">All</button>
+      <button class="nav-tab" onclick="filterThesisWatch('FIRING',this)">🔴 Firing</button>
+      <button class="nav-tab" onclick="filterThesisWatch('WATCH',this)">🟡 Watch</button>
+      <button class="nav-tab" onclick="filterThesisWatch('INTACT',this)">🟢 Intact</button>
+    </div>
+  </div>
+  <div class="stat-grid" id="thesis-stat-grid"></div>
+  <div id="thesis-watch-list"></div>
 </div>
 
 <script>
@@ -1745,6 +1795,7 @@ function buildNews() {
 // SECTOR_VIEWS array โหลดจาก sectorViews.js (managed by Atlas · ad-hoc, ไม่ใช่ daily)
 
 let currentSectorFilter = 'ALL';
+let currentThesisFilter = 'ALL';
 let sectorStanceChart = null;
 let sectorMetricsCharts = {};
 function filterSectorViews(f, btn) {
@@ -2014,6 +2065,77 @@ function buildSectorViews() {
   });
 }
 
+function filterThesisWatch(f, btn) {
+  currentThesisFilter = f;
+  document.querySelectorAll('#thesis-filter-btns .nav-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  buildThesisWatch();
+}
+
+function buildThesisWatch() {
+  if (typeof THESIS_WATCH === 'undefined') return;
+  const posByTicker = (typeof PORTFOLIO !== 'undefined' && PORTFOLIO.positions)
+    ? Object.fromEntries(PORTFOLIO.positions.map(p => [p.ticker, p]))
+    : {};
+
+  const healthLabel = { FIRING: '🔴 Bear Flip Firing', WATCH: '🟡 Watch', INTACT: '🟢 Thesis Intact' };
+  const statusLabel = { FIRED: 'FIRED', MET: 'MET', WATCH: 'WATCH', PARTIAL: 'PARTIAL', NOT_FIRED: 'NOT FIRED', NOT_MET: 'NOT MET' };
+
+  // ── Summary stat grid ──
+  const counts = { FIRING: 0, WATCH: 0, INTACT: 0 };
+  THESIS_WATCH.forEach(t => counts[t.healthStatus]++);
+  document.getElementById('thesis-stat-grid').innerHTML = [
+    { label: 'Bear Flip Firing', value: counts.FIRING, sub: 'ต้องจับตาด่วนสุด', color: '#DC2626' },
+    { label: 'Watch', value: counts.WATCH, sub: 'ใกล้ trigger หรือรอข้อมูล', color: '#D97706' },
+    { label: 'Thesis Intact', value: counts.INTACT, sub: 'ไม่มี trigger ใกล้ยิง', color: '#16A34A' },
+    { label: 'Total Positions', value: THESIS_WATCH.length, sub: 'OPEN positions', color: '#4A7CC7' },
+  ].map(s => `
+    <div class="stat-card">
+      <div class="stat-label">${s.label}</div>
+      <div class="stat-value" style="color:${s.color};font-size:1.25rem;">${s.value}</div>
+      <div class="stat-sub">${s.sub}</div>
+    </div>`).join('');
+
+  // ── Cards ──
+  let items = THESIS_WATCH.slice();
+  if (currentThesisFilter !== 'ALL') items = items.filter(t => t.healthStatus === currentThesisFilter);
+  const healthOrder = { FIRING: 0, WATCH: 1, INTACT: 2 };
+  items.sort((a, b) => healthOrder[a.healthStatus] - healthOrder[b.healthStatus]);
+
+  if (items.length === 0) {
+    document.getElementById('thesis-watch-list').innerHTML = `<div class="news-empty"><div style="font-size:2rem;margin-bottom:.75rem;">📭</div><div>No positions in this category</div></div>`;
+    return;
+  }
+
+  document.getElementById('thesis-watch-list').innerHTML = items.map(t => {
+    const p = posByTicker[t.ticker];
+    const liveTag = p ? `<span class="thesis-live-tag">${fmtRetPct(p.returnPct)} · MOS ${fmtRetPct(p.mosPct)} · Conv ${p.conviction}/10</span>` : '';
+    const triggerRows = (list) => list.map(item => `
+      <div class="thesis-trigger-row">
+        <span class="thesis-trigger-dot ${item.status}"></span>
+        <span><span class="thesis-trigger-status ${item.status}">${statusLabel[item.status]}</span>${item.trigger || item.criteria}${item.note ? ` — <span style="color:#5870A8;">${item.note}</span>` : ''}</span>
+      </div>`).join('');
+    return `
+      <div class="thesis-card health-${t.healthStatus}" id="thesis-card-${t.ticker}">
+        <div class="thesis-card-header">
+          <span class="thesis-ticker">${t.ticker}</span>
+          <span class="thesis-health-badge thesis-health-${t.healthStatus}">${healthLabel[t.healthStatus]}</span>
+          ${liveTag}
+        </div>
+        <div class="thesis-verdict">${t.verdict}</div>
+        <div class="thesis-section-label">Bear Flip Triggers</div>
+        <div class="thesis-trigger-list">${triggerRows(t.bearFlipTriggers)}</div>
+        <div class="thesis-section-label">Thesis Invalidation</div>
+        <div class="thesis-trigger-list">${triggerRows(t.thesisInvalidation)}</div>
+        <div class="thesis-catalyst-box"><b>Next Catalyst:</b> ${t.nextCatalyst}</div>
+        <div class="thesis-meta-row">
+          <span>Reviewed: ${t.lastReviewDate}</span>
+          ${t.reportFile ? `<a class="sector-source-link" href="javascript:void(0)" onclick="openFullReport('${t.ticker}')">Full Report →</a>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+}
+
 // ─── INIT ALL PAGES ──────────────────────────────────────
 buildOverview();
 buildReports();
@@ -2022,6 +2144,7 @@ buildWatchlist();
 buildPortfolio();
 buildNews();
 buildSectorViews();
+buildThesisWatch();
 </script>
 </body>
 </html>
