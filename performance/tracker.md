@@ -1,6 +1,8 @@
 # Performance Tracker — บลจ. CFA
 *Managed by Vera | Migrated: 2026-05-19 | Protocol v2 (Opus audit) | Last update: 2026-08-05 (VRT added — HOLD/WAIT NO DEPLOY watchlist entry, Data Center Infrastructure/Electrical Equipment sector, Growth bucket, first single-gate-failure case [Conviction only, 6.00<6.5] after a run of 6 consecutive Value-bucket dual-gate-fail names [ACGL/WPM/PGR/DXCM/ABBV/ETN]; direct same-day comparator to ETN (Value bucket) — VRT wins growth+margin per ETN's calibration note; sync check vs decisions.md performed, see Reconciliation Flag below)*
 
+> 📊 **2026-08-10 — First Vera Quarterly Checkpoint published:** `performance/quarterly_2026-Q3.md` — interim report ที่ 1 quarter นับจาก inception (2026-05-09). Alpha Q1 = **-3.098%**, flagged explicitly as "noise" per Pre-Commitment Rule (rolling 4Q/8Q ยังประเมินไม่ได้ ต้องการข้อมูลมากกว่านี้). รายงานนี้ยังเป็น **Vera output ฉบับแรก** ทั้ง weekly/quarterly ที่เคยสร้างขึ้นจริง — ควรเริ่ม weekly cadence อย่างเป็นทางการต่อจากนี้ (ดู Recommendations ในไฟล์ quarterly)
+
 ---
 
 ## Active Positions (จริง — synced จาก portfolio.js)
