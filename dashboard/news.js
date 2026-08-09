@@ -3,9 +3,125 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-08-05 10:00";
+const NEWS_LAST_UPDATED = "2026-08-09 10:15";
 
 const NEWS = [
+  // ── 2026-08-08 ──────────────────────────────────────────
+  {
+    date: "2026-08-08", category: "SECTOR",
+    headline: "🟠 NOW: ServiceNow เลิกจ้าง ~300 ตำแหน่งใน California (Santa Clara 154 + San Diego 133) มีผล 28 ก.ย. — CEO McDermott เตือนอาจเลิกจ้างเพิ่มอีกถึง 700 ตำแหน่งก่อนสิ้นปี",
+    summary: "ServiceNow ยื่นแจ้งเลิกจ้างพนักงานเกือบ 300 ตำแหน่งใน 2 ออฟฟิศแคลิฟอร์เนีย — 154 ตำแหน่งจาก Santa Clara HQ และ 133 ตำแหน่งจาก San Diego — มีผล 28 กันยายน 2026 เป็นส่วนหนึ่งของแผนคุมจำนวนพนักงานรวมให้เท่าเดิมตลอดปี (เริ่มปีที่ ~29,000 คน ปัจจุบัน ~30,000 คน) ตำแหน่งที่โดนตัดหลักๆ อยู่ใน customer-facing, engineering และ QA — CEO Bill McDermott เตือนว่าจะมีการเลิกจ้างเพิ่มอีกก่อนสิ้นปีเพื่อให้ headcount กลับสู่ระดับต้นปี (เหลือพื้นที่ตัดได้อีกราว 700 ตำแหน่ง) เป็นส่วนหนึ่งของการ pivot องค์กรไปสู่ AI-focused skills ต่อเนื่องจากรอบเลิกจ้างก่อนหน้าในเดือนมิถุนายน ในขณะเดียวกัน Goldman Sachs ถอด NOW ออกจาก US Conviction List ในการอัปเดตประจำเดือน (ยังคง Buy rating). นัยพอร์ต: NOW เป็น position ที่ถืออยู่ (T1, return +30.64%, MOS แคบมาก +3.76%) — การเลิกจ้างต่อเนื่องเป็นสัญญาณ cost-discipline ที่อาจบวกต่อ margin ระยะยาว แต่ McDermott เตือนเรื่องเลิกจ้างเพิ่มอีกสะท้อนว่าองค์กรยังอยู่ระหว่างปรับโครงสร้างหนัก — ควร monitor ว่ากระทบ execution/customer delivery หรือไม่ ยังไม่ถึงระดับ Thesis Invalidation (ไม่ใช่ CEO exit, subscription growth ยังแข็งแกร่ง).",
+    impact: "MIXED", tickers: ["NOW"],
+    url: "https://finance.yahoo.com/technology/articles/servicenow-cuts-nearly-300-jobs-100000472.html",
+  },
+  {
+    date: "2026-08-08", category: "TECH",
+    headline: "🚕 AMZN: Zoox เตรียมเปิดตัวบริการ Robotaxi แบบเสียเงินใน Las Vegas 10 ส.ค. — ก้าวสำคัญสู่ commercialization",
+    summary: "Zoox (บริษัทลูก Amazon ด้าน autonomous vehicle) ประกาศเปิดตัวบริการ robotaxi แบบเสียเงินจริงครั้งแรกใน Las Vegas วันที่ 10 สิงหาคม 2026 — เป็นก้าวสำคัญจากช่วง testing/free-ride สู่ commercial service จริง ท่ามกลางที่ Amazon เพิ่งประกาศเพิ่มงบลงทุน AI ปี 2026 เป็น $220B (จากเดิม $200B) ส่วนหนึ่งเพราะต้นทุน memory chip พุ่งขึ้น. นัยพอร์ต: AMZN เป็น Big 10 (ไม่ได้ถือ/ไม่ใช่ watchlist ตรง) — เป็นสัญญาณบวกต่อ diversification ของ Amazon นอกเหนือจาก e-commerce/AWS core และยืนยัน AI capex thesis ที่ทีมติดตามกว้างๆ ผ่าน GOOGL/AVGO positions ในพอร์ต.",
+    impact: "POSITIVE", tickers: ["AMZN"],
+    url: "https://www.fool.com/investing/2026/08/08/huge-news-for-amazon-stock-investors/",
+  },
+  {
+    date: "2026-08-08", category: "EARNINGS",
+    headline: "💰 Berkshire Hathaway Q2 2026: กำไรสุทธิพุ่งกว่าเท่าตัวเป็น $25.67B — พลิกกลับมาซื้อหุ้นสุทธิ ~$20B ครั้งแรกในรอบ 14 ไตรมาส",
+    summary: "Berkshire Hathaway รายงานผล Q2 2026 เมื่อ 8 สิงหาคม — net income $25.67B เพิ่มขึ้นกว่าเท่าตัวจาก $10.1B ใน Q1, operating earnings +16% YoY หนุนจากธุรกิจพลังงาน รถไฟ และการผลิตที่แข็งแกร่ง ชดเชยผล insurance ที่อ่อนตัว จุดที่สำคัญที่สุดคือบริษัทพลิกกลับมาเป็น net buyer หุ้นสุทธิเกือบ $20B ในไตรมาสนี้ หลังขายสุทธิต่อเนื่องมา 14 ไตรมาสติด สะท้อนว่า Greg Abel (ผู้สืบทอด Buffett) เริ่มมองเห็น value ในตลาดที่ปรับฐาน เงินสดของบริษัทลดลงเหลือ $365.5B จากระดับสูงสุดเป็นประวัติการณ์ $397.4B เมื่อไตรมาสก่อน พร้อมซื้อหุ้นคืนตัวเองเพิ่มอีก $4.5B. นัยพอร์ต: ไม่ใช่ position ตรง (Big 10) แต่เป็นสัญญาณบวกกว้างต่อ risk sentiment — 'smart money' เริ่มกลับมาซื้อหลังตลาดผันผวนหนักช่วง earnings season, สอดคล้องกับที่ Berkshire เพิ่งซื้อ GOOGL $10B private placement ราคาสูงกว่าตลาด (28 ก.ค.).",
+    impact: "POSITIVE", tickers: ["BRK.B"],
+    url: "https://www.cnbc.com/2026/08/08/berkshire-hathaway-earnings-q2-2026.html",
+  },
+  {
+    date: "2026-08-08", category: "SECTOR",
+    headline: "🏦 JPMorgan ประกาศแผนลงทุน $1.5 ล้านล้านดอลลาร์ ระยะ 10 ปี หนุนอุตสาหกรรมความมั่นคงแห่งชาติสหรัฐฯ",
+    summary: "JPMorgan Chase เปิดตัว 'Security and Resiliency Initiative' เมื่อ 8 สิงหาคม วงเงินรวม $1.5 ล้านล้านดอลลาร์ตลอด 10 ปี มุ่งลงทุนใน 4 กลุ่มอุตสาหกรรมหลัก: supply chain/advanced manufacturing, defense/aerospace, energy independence และ frontier/strategic technologies (27 กลุ่มย่อย ตั้งแต่ cybersecurity ถึง nuclear energy) โดยจะลงทุนโดยตรงในหุ้น/venture capital สูงสุด $10B เพื่อช่วยบริษัทสหรัฐฯ ขยายการผลิตเชิงยุทธศาสตร์ CEO Jamie Dimon ระบุสหรัฐฯ พึ่งพาแหล่งแร่ธาตุ/การผลิตจากต่างประเทศมากเกินไปซึ่งเป็นความเสี่ยงต่อความมั่นคง หุ้น JPM ทำจุดสูงสุดใหม่ตลอดกาล $359+ ต้นเดือนนี้. นัยพอร์ต: ไม่ใช่ position ตรง (Big 10) — สะท้อนภาพรวม financial sector แข็งแกร่งและ capital allocation เชิงรุกที่อาจเป็น tailwind กว้างต่อ industrial/defense supply chain ทั้งกลุ่ม.",
+    impact: "POSITIVE", tickers: ["JPM"],
+    url: "https://www.fool.com/investing/2026/08/08/jpmorgans-15-trillion-initiative-to-finance-us-shi/",
+  },
+  // ── 2026-08-07 ──────────────────────────────────────────
+  {
+    date: "2026-08-07", category: "MACRO",
+    headline: "🚀 S&P 500 ปิดสถิติใหม่ 7,758 จุด สัปดาห์ดีสุดตั้งแต่เมษายน — ตัวเลขจ้างงานอ่อนแอกลับเป็นบวกต่อตลาด (ลดโอกาส Fed ขึ้นดอกเบี้ย)",
+    summary: "วันศุกร์ที่ 7 สิงหาคม ตลาดหุ้นสหรัฐฯ ปิดบวกแรงหลังตัวเลขจ้างงานนอกภาคเกษตร (Nonfarm Payrolls) เดือนกรกฎาคมออกมาอ่อนแอกว่าคาดมาก ลดลง 23,000 ตำแหน่ง ขณะที่อัตราว่างงานและอัตราการมีส่วนร่วมแรงงานลดลงทั้งคู่ — ตลาดตีความว่าตลาดแรงงานที่ชะลอตัวจะลดแรงกดดันเงินเฟ้อ ทำให้โอกาส Fed ขึ้นดอกเบี้ยเดือนต.ค. ลดลง (สวนทางกับ 3 เสียงค้าน hawkish จากการประชุม 29 ก.ค.) S&P 500 ปิดสถิติใหม่ 7,758 จุด (+0.62%) เป็นสัปดาห์ที่ดีที่สุดนับตั้งแต่เดือนเมษายน ก่อนหน้านั้น Dow เคยหลุดจากสถิติ -450+ จุดในวันที่ 5 ส.ค. จากแรงกดดันราคาน้ำมันและ yield ที่พุ่ง. นัยพอร์ต: บวกกว้างต่อทุก risk asset ในพอร์ต — ตลาดกลับมามอง 'weak data = dovish Fed' เป็นบวก แม้สัปดาห์นี้จะมี GOOGL/CRM leadership shakeup กดดันเฉพาะตัว.",
+    impact: "POSITIVE", tickers: [],
+    url: "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-7-nasdaq-dow-sp-500-july-jobs-report-surprises-100009572.html",
+  },
+  // ── 2026-08-06 ──────────────────────────────────────────
+  {
+    date: "2026-08-06", category: "MACRO",
+    headline: "📉 Dow หลุดจากสถิติ ร่วง S&P/Nasdaq ลบ — ราคาน้ำมันขึ้น + Treasury yield พุ่งกดดันตลาด",
+    summary: "วันพฤหัสที่ 6 สิงหาคม ตลาดหุ้นสหรัฐฯ พลิกลบ — Dow หลุดจากระดับสถิติที่เพิ่งทำไว้ ขณะ S&P 500 และ Nasdaq ปรับตัวลง เหตุผลหลักจากราคาน้ำมันที่ปรับขึ้นและ Treasury yield ที่พุ่งขึ้นต่อเนื่อง สร้างแรงกดดันต่อ valuation หุ้นเติบโต หลังจากสัปดาห์ก่อนหน้าตลาดวิ่งแรงต่อเนื่องจาก Iran de-escalation rally. นัยพอร์ต: yield-sensitive growth names ในพอร์ต (ADBE, ADSK, CRM, NOW) อาจเผชิญแรงกดดันระยะสั้น — ต้องติดตามว่าเป็นเพียงการพักฐานชั่วคราวหรือสัญญาณ trend เปลี่ยน.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-6-dow-sp-nasdaq-091620000.html",
+  },
+  {
+    date: "2026-08-06", category: "REGULATION",
+    headline: "🔴 META ถูกศาลนิวเม็กซิโกสั่งจ่ายเพิ่ม $567M คดีความปลอดภัยเด็ก — รวมค่าปรับสะสมทั้งหมด $942M",
+    summary: "ศาลแขวง First Judicial District รัฐนิวเม็กซิโก สั่งให้ Meta Platforms จ่ายเงินเข้ากองทุนเยียวยา $567M เมื่อ 6 สิงหาคม หลังคณะลูกขุนตัดสินเมื่อมีนาคมว่า Meta ละเมิดกฎหมายคุ้มครองผู้บริโภคของรัฐด้วยการบิดเบือนความปลอดภัยของ Facebook/Instagram สำหรับเด็ก โดย $420M จะใช้เพื่อการบำบัดเด็กและวัยรุ่น ส่วนที่เหลือใช้เพื่อป้องกัน/ตรวจคัดกรอง รวมกับค่าปรับเดิม $375M เมื่อมีนาคม ทำให้ยอดรวมที่ Meta ต้องจ่ายในคดีนี้แตะ $942M นอกจากนี้ศาลยังสั่งให้ Meta ปรับการทำงานของแพลตฟอร์ม เช่น ซ่อนยอด Like สำหรับผู้ใช้อายุต่ำกว่า 18 ปี และจำกัดเวลาการแจ้งเตือน. นัยพอร์ต: META เป็น watchlist 'Pending Analysis' — ความเสี่ยง regulatory/legal ต่อเนื่องเป็นปัจจัยที่ Charlie ควรพิจารณาหากวิเคราะห์ META เต็มรูปแบบในอนาคต ไม่กระทบ position ที่ถืออยู่โดยตรง.",
+    impact: "NEGATIVE", tickers: ["META"],
+    url: "https://www.cnbc.com/2026/08/06/meta-to-pay-into-567-million-fund-after-child-harms-case-new-mexico.html",
+  },
+  {
+    date: "2026-08-06", category: "SECTOR",
+    headline: "REGN ได้รับอนุมัติจาก Health Canada สำหรับข้อบ่งใช้ใหม่ของ Libtayo",
+    summary: "Regeneron ประกาศเมื่อ 6 สิงหาคมว่า Health Canada อนุมัติข้อบ่งใช้ใหม่สำหรับยา Libtayo (cemiplimab) เพิ่มเติมจากที่มีอยู่ เป็นการขยายฐานตลาดยา immuno-oncology ของบริษัทในตลาดแคนาดาต่อเนื่องจากที่ขยายในสหรัฐฯ ก่อนหน้านี้ ข่าวนี้ตามมาหลัง Q2 2026 earnings ที่แข็งแกร่งมาก (Dupixent +38% YoY, EPS beat หนัก) และ Guggenheim ปรับเป้าราคาขึ้นเป็น $1,030 จาก $1,000 คง Buy rating. นัยพอร์ต: บวกเล็กน้อยต่อ REGN position — เสริม pipeline diversification นอกเหนือจาก Dupixent core และช่วยลดน้ำหนักความกังวลจาก securities class action lawsuit (24 ก.ค.) ที่เกี่ยวกับ pipeline อื่น.",
+    impact: "POSITIVE", tickers: ["REGN"],
+    url: "https://finance.yahoo.com/quote/REGN/",
+  },
+  {
+    date: "2026-08-06", category: "TECH",
+    headline: "TSLA/SpaceX ทุ่ม $16.8B สร้างโรงงานชิป 'Terafab' ในเท็กซัส — Jefferies หั่น PT เหลือ $350",
+    summary: "Tesla และ SpaceX ประกาศเมื่อ 6 สิงหาคม ทุ่มทุนเริ่มต้น $16.8B สร้างโรงงานผลิตชิปเซมิคอนดักเตอร์ชื่อ 'Terafab' ที่ Grimes County รัฐเท็กซัส ครอบคลุมพื้นที่กว่า 100 ล้านตารางฟุต รองรับการผลิต logic, memory, packaging และ testing ในที่เดียว เป้าหมายผลิตชิปสำหรับหุ่นยนต์อัตโนมัติ, robotaxi และ data center ในอวกาศ เพื่อรองรับความต้องการ compute มากกว่า 1 terawatt ต่อปี — เป็นเพียง phase แรกของโครงการ ในขณะเดียวกัน Jefferies ปรับลดเป้าราคาหุ้น TSLA ลงเหลือ $350 จาก $400 ยังคง Hold rating หลังหุ้นร่วงเกือบ 25% ในรอบเดือนจาก Q2 earnings miss หนัก. นัยพอร์ต: ไม่ใช่ position/watchlist ตรง (Big 10) — สัญญาณการขยาย vertical integration ด้าน AI compute ของ Tesla/SpaceX เป็น secular theme ที่อาจกระทบ semiconductor supply chain กว้าง (AVGO เป็นหนึ่งใน supplier ของ AI ecosystem).",
+    impact: "MIXED", tickers: ["TSLA"],
+    url: "https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/",
+  },
+  {
+    date: "2026-08-06", category: "SECTOR",
+    headline: "🟡 GOOGL: Bloomberg รายงาน Alphabet เตรียมออกหุ้นกู้ระดมทุนสูงสุด $25B — หนุน AI capex guide ที่เพิ่งปรับขึ้นเป็น $195-205B",
+    summary: "Bloomberg รายงานเมื่อวันพฤหัสที่ 6 สิงหาคมว่า Alphabet กำลังเตรียมออกหุ้นกู้ (bond offering) ในตลาดสหรัฐฯ ระดมทุนสูงสุดถึง $25 พันล้านดอลลาร์ — เป็นการระดมทุนผ่านหนี้ครั้งใหญ่ที่สุดครั้งหนึ่งของบริษัท สอดคล้องกับ capex guide ที่เพิ่งปรับขึ้นเป็น $195-205B (จาก $180-190B เดิม) ที่ประกาศพร้อม Q2 earnings (22 ก.ค.) ซึ่งเป็นสาเหตุหลักที่กดราคาหุ้นหนักช่วงปลายเดือนกรกฎาคม แม้ผลประกอบการ core business (Cloud +82% YoY, EPS $9.11) จะแข็งแกร่งเกินคาด. นัยพอร์ต: ⚠️ ตรง GOOGL position โดยตรง — การหันไปใช้หนี้ระดมทุนแทน/เสริม cash on hand ยืนยันว่า AI capex commitment ยังหนักหน่วงต่อเนื่อง ทีมควรติดตามว่าต้นทุนดอกเบี้ยจากหนี้ก้อนนี้กระทบ FCF margin ในรายงานถัดไปหรือไม่ — ไม่ใช่สัญญาณลบทันที (Alphabet ยังมี balance sheet แข็งแกร่งมาก, debt/equity ต่ำ) แต่เป็นจุดที่ต้อง monitor ประกอบกับ stopDist ที่เพิ่งฟื้นจากจุดวิกฤต 3.05%.",
+    impact: "MIXED", tickers: ["GOOGL"],
+    url: "https://www.bloomberg.com/news/articles/2026-08-06/alphabet-bond-offering",
+  },
+  {
+    date: "2026-08-06", category: "TECH",
+    headline: "🤖 META: เปิดเผย AI model ของบริษัทแฮ็กเข้าระบบบริษัทหนึ่งได้สำเร็จระหว่าง cybersecurity test ภายใน",
+    summary: "Meta Platforms เปิดเผยเมื่อ 6 สิงหาคมว่า AI model ของบริษัทสามารถแฮ็กเข้าระบบของบริษัทหนึ่งได้สำเร็จระหว่างการทดสอบ cybersecurity ภายใน (red-team exercise) — สะท้อนทั้งความสามารถขั้นสูงของ AI model ด้าน offensive security และความเสี่ยง dual-use ที่มาพร้อมกับ AI capability ที่พัฒนาต่อเนื่อง เกิดขึ้นในสัปดาห์เดียวกับที่ Meta เผชิญแรงกดดันด้าน regulatory (New Mexico child-safety case $942M รวม) และตลาดยังคง watch เรื่อง AI safety practices ของบริษัท. นัยพอร์ต: META เป็น Big 10 + watchlist 'Pending Analysis' (ไม่ได้ถือ) — เป็น data point ที่ Charlie ควรพิจารณาด้าน AI safety/regulatory risk หากมีการวิเคราะห์เต็มรูปแบบในอนาคต ไม่กระทบ position ที่ถืออยู่โดยตรง.",
+    impact: "MIXED", tickers: ["META"],
+    url: "https://www.fool.com/investing/2026/08/07/where-will-meta-platforms-stock-be-in-5-years/",
+  },
+  // ── 2026-08-05 ──────────────────────────────────────────
+  {
+    date: "2026-08-05", category: "MACRO",
+    headline: "📉 S&P 500 ร่วง ราคาน้ำมันกดดันตลาด — Dow ร่วงกว่า 450 จุด ยุติสตรีคบวก 5 วันติด",
+    summary: "วันพุธที่ 5 สิงหาคม ตลาดหุ้นสหรัฐฯ พลิกลบหลังบวกต่อเนื่อง 5 วันติด — Dow Jones ร่วงกว่า 450 จุด จากแรงกดดันราคาน้ำมันที่ปรับตัวขึ้น S&P 500 และ Nasdaq ปรับฐานลงเช่นกัน เป็นการหยุดพักหลัง rally แรงจาก Iran de-escalation ในสัปดาห์ก่อนหน้า. นัยพอร์ต: เตือนว่า oil-driven inflation overhang ยังไม่หายไปสนิท แม้ sentiment กว้างจะยังบวก — ต้องติดตามว่าเป็นการพักฐานปกติหรือสัญญาณ reversal.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.cnbc.com/2026/08/05/stock-market-today-live-updates.html",
+  },
+  {
+    date: "2026-08-05", category: "TECH",
+    headline: "🔴🔴 GOOGL ร่วง ~4-5% — Jeff Dean (Chief Scientist, 27 ปีที่ Google) ลาออกตั้งบริษัทใหม่ Discovery Loop, Demis Hassabis ถอยจาก CEO DeepMind",
+    summary: "Alphabet เผชิญการเปลี่ยนแปลงผู้นำ AI ครั้งใหญ่ที่สุดในรอบหลายปีเมื่อ 5-6 สิงหาคม — Jeff Dean (Chief Scientist, ทำงานที่ Google มา 27 ปี) และ Sanjay Ghemawat ลาออกไปร่วมก่อตั้งบริษัทใหม่ 'Discovery Loop' ร่วมกับ Oriol Vinyals และ Quoc Le (มุ่งใช้ AI พัฒนางานวิจัยวิทยาศาสตร์/วิศวกรรม) โดย Google เป็นนักลงทุนผู้ก่อตั้งและ cloud partner ของบริษัทใหม่ — การลาออกเป็นไปด้วยดี ไม่ใช่ความขัดแย้ง ในวันเดียวกัน Demis Hassabis ถอยจากตำแหน่ง CEO ของ Google DeepMind ไปเป็น Chair of GDM + Chief Scientist ของ Alphabet (โฟกัส AGI strategy และ Isomorphic Labs) ให้ Koray Kavukcuoglu ขึ้นเป็น SVP แทน หุ้น Alphabet ร่วง ~4-5% ตอบรับ สะท้อนความกังวลเรื่องความสามารถรักษาความเป็นผู้นำ AI ท่ามกลางการแข่งขันกับ OpenAI/Anthropic ที่ดุเดือด. นัยพอร์ต: ⚠️ Management Change flag ตรง GOOGL position — แม้เป็นการลาออกด้วยดีไม่ใช่วิกฤต แต่เป็นการเสีย AI talent ระดับสูงสุดในช่วงเวลาที่ execution ด้าน AI-model-leadership (Gemini delay ก่อนหน้า) กำลังถูกตั้งคำถามอยู่แล้ว — Charlie ควร monitor ว่ากระทบ Cloud/Search core thesis หรือเป็นแค่ sentiment/personnel noise, ยังไม่ถึงระดับ Thesis Invalidation (ไม่ใช่ CEO/CFO exit, Search/Cloud leadership ไม่เปลี่ยน).",
+    impact: "NEGATIVE", tickers: ["GOOGL"],
+    url: "https://www.cnbc.com/2026/08/05/google-chief-scientist-jeff-dean-leaving-company-after-27-years.html",
+  },
+  {
+    date: "2026-08-05", category: "TECH",
+    headline: "🟡 CRM: ประธานฝ่ายวิศวกรรม Srini Tallapragada ลาออกจากตำแหน่งบริหาร — Miguel Milano ขึ้นเป็น COO คนใหม่",
+    summary: "Salesforce ประกาศเมื่อ 5 สิงหาคม (มีผล 6 สิงหาคม) ว่า Srini Tallapragada (พนักงาน 14 ปี, President and Chief Engineering and Customer Success Officer ตั้งแต่ปี 2019) ก้าวลงจากตำแหน่งบริหาร เปลี่ยนไปเป็น Special Advisor to CEO ถึงเดือนสิงหาคม 2027 ภายใต้ transition agreement — Rohan Kumar (อดีตผู้บริหาร Microsoft ที่เพิ่งเข้าร่วม Salesforce มิ.ย. 2026) ขึ้นรับตำแหน่ง Chief Platform and Engineering Officer แทน รับผิดชอบงานวิศวกรรมเพิ่มเติม ในขณะเดียวกัน Marc Benioff เลื่อนตำแหน่ง Miguel Milano ขึ้นเป็น Chief Operating Officer คนใหม่ นอกจากนี้มีรายงานว่า Salesforce ตัดพนักงานเพิ่มอีก 133 ตำแหน่งในรอบที่ 3 ของปี 2026 (ส่วนหนึ่งของ AI restructuring ต่อเนื่อง) นัยพอร์ต: ⚠️ Management Change flag ตรง CRM position — เป็นการปรับโครงสร้างผู้บริหารระดับสูงครั้งสำคัญท่ามกลาง AI pivot ที่ยังไม่ชัดเจนว่าจะกระทบ execution เชิงบวกหรือลบ ไม่ใช่ CEO exit (Benioff ยังคุมบริษัท) จึงยังไม่ trigger Thesis Invalidation แต่ควร monitor closely โดยเฉพาะ Agentforce roadmap ว่าจะสะดุดหรือไม่ภายใต้ผู้นำวิศวกรรมใหม่.",
+    impact: "MIXED", tickers: ["CRM"],
+    url: "https://www.streetinsider.com/Corporate+News/Salesforce+president+Srini+Tallapragada+steps+down,+becomes+advisor/26875305.html",
+  },
+  {
+    date: "2026-08-05", category: "SECTOR",
+    headline: "PGR: นักวิเคราะห์ปรับเป้าราคาลดลงหลังผล Q2 — JPMorgan/TD Cowen/BMO หั่น PT แม้ Morgan Stanley อัปเกรดเป็น Equal Weight",
+    summary: "หลัง Progressive รายงานผล Q2 2026 เมื่อ 4 สิงหาคม นักวิเคราะห์หลายรายปรับเป้าราคาลง — JPMorgan ลด PT เป็น $241 จาก $250 (คง Neutral), TD Cowen ลดเป็น $222 จาก $266 (คง Hold), BMO Capital ลดเป็น $205 จาก $220 (คง Market Perform) ขณะที่ Morgan Stanley ปรับเพิ่มจาก Underweight เป็น Equal Weight PT $210 (จาก $190) ภาพรวมผลประกอบการยังแข็งแกร่ง (personal lines PIF ทะลุ 40 ล้านราย, auto/property growth ดี, property turnaround เกือบเสร็จสมบูรณ์) แต่นักวิเคราะห์ส่วนใหญ่ยังระมัดระวังเรื่อง valuation. นัยพอร์ต: PGR เป็น scout candidate ที่ SKIPPED (2026-06-14) รอ Charlie research pipeline อย่างเป็นทางการ — mixed analyst reaction หลัง earnings เป็นข้อมูลเพิ่มเติมที่ควรพิจารณาหากมีการวิเคราะห์เต็มรูปแบบในอนาคต.",
+    impact: "MIXED", tickers: ["PGR"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/why-progressive-pgr-could-one-005547109.html",
+  },
+  {
+    date: "2026-08-04", category: "SECTOR",
+    headline: "WMT: Oppenheimer หั่นเรตติ้งเป็น Perform ก่อนประกาศงบ 20 ส.ค. — กังวล pharmacy headwind จาก IRA + valuation ตึง",
+    summary: "Oppenheimer ปรับลดเรตติ้ง Walmart จาก Outperform เป็น Perform เมื่อ 4 สิงหาคม พร้อมถอด price target $140 ออก ก่อนหน้าการประกาศผลประกอบการวันที่ 20 สิงหาคม นักวิเคราะห์นำโดย Rupesh Parikh ระบุ 3 ปัจจัยหลัก: (1) แรงกดดันต่อ same-store sales จากธุรกิจ pharmacy ที่เชื่อมโยงกับ Inflation Reduction Act, (2) valuation ที่มองว่า 'peakish' เสี่ยงถูก re-rate ลงหาก comp growth ชะลอ, (3) ตัวเลขคาดการณ์ Wall Street ที่สูงกว่า guidance ระยะยาวของบริษัทเองอยู่แล้ว หุ้นร่วง -1.4% ใน premarket ตอบรับ. นัยพอร์ต: ไม่ใช่ position/watchlist ตรง (Big 10) — เป็น data point สำคัญก่อนวันประกาศงบ 20 ส.ค. ที่ควรติดตามต่อเนื่องเพื่อประเมิน consumer/retail health โดยรวม.",
+    impact: "NEGATIVE", tickers: ["WMT"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/walmart-wmt-faces-oppenheimer-downgrade-025050211.html",
+  },
   // ── 2026-08-04 ──────────────────────────────────────────
   {
     date: "2026-08-04", category: "MACRO",
@@ -34,6 +150,13 @@ const NEWS = [
     summary: "Eli Lilly มีกำหนดประกาศผลประกอบการ Q2 2026 วันที่ 5 สิงหาคม โดยตลาดคาดการณ์ revenue $20.26B และ EPS $6.71 หุ้นล่าสุดปิดที่ $1,121.36 (3 ส.ค.) ลดลง -11% จากจุดสูงสุดตลอดกาล $1,235.56 (7 ก.ค.) เริ่มมีการคาดเดาเรื่อง stock split เนื่องจากหุ้นพุ่งขึ้น +285% นับตั้งแต่ปี 2022 จากความสำเร็จของยา GLP-1 (Mounjaro/Zepbound) จนบริษัทกลายเป็นบริษัทยาแห่งแรกที่ market cap ทะลุ $1 ล้านล้านดอลลาร์ นอกจากนี้บริษัทเพิ่งได้ FDA Breakthrough Therapy designation ตัวที่ 2 สำหรับ olomorasib (มะเร็งตับอ่อนระยะลุกลาม). นัยพอร์ต: ไม่ใช่ position ตรง (Big 10, อยู่ sector เดียวกับ REGN) — ผลประกอบการวันนี้เป็นจุดเทียบเคียงสำคัญสำหรับ Healthcare/Pharma sector view ที่ REGN position อยู่ในนั้น.",
     impact: "NEUTRAL", tickers: ["LLY"],
     url: "https://www.bloomberg.com/news/articles/2026-08-04/eli-lilly-ripe-for-stock-split-after-obesity-drug-fueled-rally",
+  },
+  {
+    date: "2026-08-04", category: "REGULATION",
+    headline: "⚖️ AMZN: อัยการรัฐ New Jersey ยื่นฟ้อง Amazon คดี antitrust ใหม่",
+    summary: "อัยการสูงสุดรัฐ New Jersey ยื่นฟ้องคดี antitrust ต่อ Amazon เมื่อ 4 สิงหาคม 2026 — เป็นคดีระดับรัฐล่าสุดที่เพิ่มเข้ามาซ้อนกับคดี antitrust ระดับ federal (FTC) ที่มีอยู่แล้ว รายละเอียดข้อกล่าวหาเฉพาะยังไม่ชัดเจนในรายงานเบื้องต้น แต่สอดคล้องกับแนวโน้ม regulatory scrutiny ต่อ Big Tech ที่ทวีความเข้มข้นขึ้นทั้งระดับ state และ federal. นัยพอร์ต: AMZN เป็น Big 10 (ไม่ได้ถือ/ไม่ใช่ watchlist ตรง) — เป็น data point ด้าน regulatory risk ที่ควรติดตามต่อเนื่องหากมีการวิเคราะห์ AMZN เต็มรูปแบบในอนาคต ไม่กระทบ position ที่ถืออยู่โดยตรง.",
+    impact: "NEGATIVE", tickers: ["AMZN"],
+    url: "https://www.fool.com/investing/2026/08/08/huge-news-for-amazon-stock-investors/",
   },
   // ── 2026-08-03 ──────────────────────────────────────────
   {
