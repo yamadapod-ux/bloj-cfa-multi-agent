@@ -3,9 +3,73 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-08-09 10:15";
+const NEWS_LAST_UPDATED = "2026-08-11 09:30";
 
 const NEWS = [
+  // ── 2026-08-11 ──────────────────────────────────────────
+  {
+    date: "2026-08-11", category: "MACRO",
+    headline: "🌍 US-Iran ตึงเครียดกลับมาอีกครั้ง — Strait of Hormuz reopening ค้าง น้ำมันขยับขึ้น กด futures ตลาดกว้าง",
+    summary: "สถานการณ์ US-Iran กลับมาตึงเครียดอีกครั้งในวันที่ 11 สิงหาคม หลังทั้งสองฝ่าย 'harden stances' — ความคืบหน้าเรื่องข้อตกลงเปิดช่องแคบ Hormuz กลับมาเป็นที่กังขา สวนทางกับกระแส de-escalation ต้นเดือนที่ผ่านมา ราคาน้ำมันขยับขึ้นต่อเนื่องกดดัน sentiment ตลาดกว้าง แม้ future S&P 500/Nasdaq จะขยับบวกเล็กน้อยจากตัวเลขจ้างงานอ่อนแอที่หนุนความหวัง Fed dovish (Nasdaq futures +0.4%). นัยพอร์ต: ความเสี่ยง geopolitical กลับมาเป็นปัจจัยต้องจับตาอีกครั้ง หลังจากที่ตลาดเพิ่งฟื้นตัวแรงจาก de-escalation rally — อาจกระทบ oil-sensitive sectors และ risk sentiment กว้างถ้าสถานการณ์ทวีความรุนแรง.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-11-dow-sp-500-nasdaq-102827503.html",
+  },
+  {
+    date: "2026-08-11", category: "SECTOR",
+    headline: "📉 LITE ร่วง -8.61% + COHR ร่วง -14.24% — ตลาดทบทวน optical transceiver policy news ที่เคยดันหุ้นกลุ่มนี้ขึ้นแรง",
+    summary: "หุ้นกลุ่ม optical networking/AI interconnect ปรับฐานแรงเมื่อ 10-11 สิงหาคม — Lumentum (LITE) ร่วง -8.61% และ Coherent (COHR) ร่วง -14.24% หลังนักลงทุนกลับมาทบทวนความมั่นใจก่อนหน้านี้เกี่ยวกับข่าวนโยบาย US optical transceiver ที่เคยดันหุ้นกลุ่มนี้ขึ้นแรงมาก (LITE เคยวิ่ง +117.5% ใน 6 เดือนที่ผ่านมา). นัยพอร์ต: LITE เป็นหนึ่งใน 4 candidates ที่ Max scout เข้า watchlist เมื่อวันก่อน (Round 19) พร้อม flag เตือนเรื่อง 'extreme momentum' อยู่แล้ว — การปรับฐานนี้ยืนยัน caution ที่ตั้งไว้ อาจเป็นจุดเริ่มต้นของการ unwind momentum ที่วิ่งนำหน้า fundamentals ไปมาก ควรจับตาต่อเนื่องก่อนตัดสินใจ target analysis date.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://ts2.tech/en/stock-market-today-11-08-2026/",
+  },
+  {
+    date: "2026-08-11", category: "EARNINGS",
+    headline: "🔴 GOOGL: หุ้นกู้ $25B ปิดดีลสำเร็จ demand ท่วมท้น $115B (oversubscribed 4.6x) แต่ FCF ติดลบ $5.86B + หนี้พุ่ง $46.5B→$98.2B + ระงับ buyback",
+    summary: "Alphabet ปิดดีลออกหุ้นกู้ investment-grade มูลค่า $25B สำเร็จเมื่อสัปดาห์ที่ผ่านมา โดยมี investor demand สูงถึง ~$115B (oversubscribed ~4.6 เท่า) สะท้อนความต้องการตราสารหนี้ที่เกี่ยวโยงกับ AI capex สูงมาก อย่างไรก็ตามตัวเลขที่น่ากังวลคือ: Q2 2026 free cash flow ติดลบ $5.86B (จาก capex ที่พุ่งสูง), long-term debt เพิ่มขึ้นจาก $46.5B เป็น $98.2B, และบริษัทระงับโครงการซื้อหุ้นคืน (buyback) ชั่วคราว. นัยพอร์ต: ⚠️ ยืนยันความกังวลเรื่อง AI capex ที่กดดัน GOOGL มาตลอดเดือน — แม้ demand ต่อหุ้นกู้จะสูงมาก (ตลาด debt ยังเชื่อมั่น credit quality) แต่ FCF ติดลบ + ระงับ buyback เป็นสัญญาณว่าฝ่ายบริหารกำลัง prioritize AI infrastructure เหนือ capital return ระยะสั้น — ตรงกับ theme ที่ Bear/Quinn ควร re-calibrate CapEx threshold ตามที่ Thesis Watch เคยแนะนำไว้.",
+    impact: "MIXED", tickers: ["GOOGL"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/alphabet-still-16-2026-googl-183005987.html",
+  },
+  {
+    date: "2026-08-11", category: "TECH",
+    headline: "🟢 MSFT ฟื้นตัวแรง +28% ใน 7 trading sessions หลังติดลบมาทั้งปี — เตรียมเปิดตัวชิป AI Maia 300 ลดพึ่งพา Nvidia",
+    summary: "Microsoft ฟื้นตัวอย่างแข็งแกร่งที่สุดในรอบปี — หุ้นบวกราว 28% ใน 7 trading sessions ล่าสุด หลังใช้เวลาส่วนใหญ่ของปี 2026 อยู่ในแดนลบ ราคาล่าสุด $505.30 บริษัทเตรียมเปิดตัวชิป AI รุ่นใหม่ Maia 300 มุ่งลดการพึ่งพา Nvidia และเสริมประสิทธิภาพ Azure ให้แข่งขันได้มากขึ้น. นัยพอร์ต: ไม่ใช่ position ตรง (Big10 watch) แต่เป็นสัญญาณบวกกว้างต่อ AI infrastructure theme ที่เกี่ยวโยงกับ ADSK/ADBE/NOW/CRM ในพอร์ต — การฟื้นตัวแรงของ MSFT สะท้อนว่าตลาดเริ่มกลับมาให้เครดิต AI capex ที่แปลงเป็นผลประกอบการจริง ไม่ใช่แค่ hype.",
+    impact: "POSITIVE", tickers: [],
+    url: "https://finance.yahoo.com/news/strong-analyst-sentiment-microsoft-msft-111625829.html",
+  },
+  {
+    date: "2026-08-11", category: "REGULATION",
+    headline: "🔴 META เสี่ยงเสีย safe harbor protection ในอินเดีย หลังบล็อกโพสต์ของนายกฯ Modi",
+    summary: "Meta Platforms เผชิญความเสี่ยงสูญเสีย safe harbor protection ในอินเดียหลังจากบริษัทจำกัดการเข้าถึงโพสต์หนึ่งของนายกรัฐมนตรี Narendra Modi — ประเด็นนี้อาจนำไปสู่การเปลี่ยนแปลงสถานะทางกฎหมายของ Meta ในตลาดอินเดียซึ่งเป็นหนึ่งในตลาดผู้ใช้งานที่ใหญ่ที่สุดของบริษัท. นัยพอร์ต: META เป็น Big10 + watchlist 'Pending Analysis' (ไม่ได้ถือ) — เป็น regulatory risk data point ที่ Charlie ควรพิจารณาหากมีการวิเคราะห์ META เต็มรูปแบบในอนาคต โดยเฉพาะเรื่อง geographic regulatory exposure ในตลาดเกิดใหม่ขนาดใหญ่.",
+    impact: "NEGATIVE", tickers: ["META"],
+    url: "https://www.benzinga.com/trading-ideas/movers/26/08/61082061/whats-going-on-with-meta-platforms-stock-monday-2",
+  },
+  {
+    date: "2026-08-11", category: "TECH",
+    headline: "🟢 AVGO +9.9% หลังอัปเดต VMware vDefend + Avi Load Balancer เพิ่มความสามารถ AI",
+    summary: "Broadcom ประกาศอัปเดตสำคัญให้ VMware vDefend และ Avi Load Balancer เพิ่มความสามารถด้าน AI เมื่อ 6 สิงหาคม ส่งผลให้หุ้นพุ่งขึ้นประมาณ +9.9% ในวันนั้น ต่อเนื่องจากผลประกอบการ Q2 ที่แข็งแกร่ง (AI semiconductor revenue $10.8B, Q3 guide $16.0B +200% YoY) ยืนยันว่า VMware software stack ที่ได้มาจากการซื้อกิจการยังคงสร้างมูลค่าเพิ่มต่อเนื่องผ่านการเสริม AI capability. นัยพอร์ต: AVGO อยู่ใน watchlist NO ADD (MOS ลบลึกมาก ราคาไกลจาก entry zone) — ข่าวนี้ยืนยัน AI/enterprise software integration thesis ต่อเนื่องแต่ไม่เปลี่ยนสถานะ valuation ที่ยังแพงเกินไปสำหรับ deploy.",
+    impact: "POSITIVE", tickers: ["AVGO"],
+    url: "https://www.cnbc.com/quotes/AVGO",
+  },
+  {
+    date: "2026-08-11", category: "REGULATION",
+    headline: "AMZN: นายกเทศมนตรีนิวยอร์ก Mamdani หนุนกฎหมายเพิ่มการกำกับดูแลศูนย์กระจายสินค้า last-mile — Amazon เตือนกระทบธุรกิจรายย่อย",
+    summary: "นายกเทศมนตรีนครนิวยอร์ก Zohran Mamdani สนับสนุนกฎหมายใหม่ที่จะเพิ่มการกำกับดูแล (oversight) ศูนย์กระจายสินค้าที่ใช้สำหรับการจัดส่งระยะสุดท้าย (last-mile delivery) ในนครนิวยอร์ก Amazon ออกมาเตือนว่ากฎหมายนี้อาจส่งผลกระทบต่อธุรกิจรายย่อยที่รับช่วงจัดส่งสินค้าให้บริษัท อาจนำไปสู่การสูญเสียตำแหน่งงาน. นัยพอร์ต: AMZN เป็น Big10 (ไม่ได้ถือ) — เป็น regulatory risk เฉพาะพื้นที่ (city-level) ที่ยังไม่กระทบวงกว้าง แต่ควรติดตามว่าจะขยายไปเมืองอื่นหรือไม่ เป็น pattern ที่คล้ายกับ gig-economy regulation ในอดีต.",
+    impact: "NEGATIVE", tickers: ["AMZN"],
+    url: "https://www.fool.com/investing/2026/08/03/whats-going-on-with-amazon-stock/",
+  },
+  {
+    date: "2026-08-11", category: "SECTOR",
+    headline: "🟢 JPM ปรับเป้า S&P 500 สิ้นปี 2026 ขึ้นเป็น 8,000 จุด (จาก 7,800) — เพิ่มคาดการณ์ EPS ปี 2026/2027",
+    summary: "JPMorgan Chase ธนาคารใหญ่สุดของสหรัฐฯ ปรับเป้าหมาย S&P 500 สิ้นปี 2026 ขึ้นเป็น 8,000 จุด จากเดิม 7,800 จุด พร้อมปรับเพิ่มคาดการณ์ EPS ของ S&P 500 ปี 2026 เป็น $365/หุ้น (จาก $350) และปี 2027 เป็น $420/หุ้น (จาก $390) สะท้อนมุมมองเชิงบวกต่อ earnings growth ต่อเนื่อง. นัยพอร์ต: JPM เป็น Big10 (ไม่ได้ถือ) — เป็นสัญญาณบวกกว้างต่อ risk sentiment ตลาดโดยรวม สอดคล้องกับ RISK-ON regime ที่ Atlas ประกาศอยู่ในปัจจุบัน (formal re-call 2026-08-10).",
+    impact: "POSITIVE", tickers: ["JPM"],
+    url: "https://www.gurufocus.com/news/9021638/jpmorgan-stock-rises-as-bank-lifts-sp-target-to-8000",
+  },
+  {
+    date: "2026-08-11", category: "SECTOR",
+    headline: "🔴 AAPL: Jefferies หั่นเรตติ้งกังวลแผนสินค้าที่ถูกยกเลิก + ต้นทุน memory chip พุ่ง — GF Value ชี้ overvalued 9.1%",
+    summary: "Apple เผชิญการหั่นเรตติ้งจาก Jefferies จากความกังวล 2 ประเด็นหลัก: (1) แผนพัฒนาสินค้าบางรายการถูกยกเลิก และ (2) ต้นทุนชิปหน่วยความจำ (memory) ที่พุ่งสูงต่อเนื่อง กดดัน margin outlook GuruFocus ประเมินว่าราคาปัจจุบัน $308.26 สูงกว่า GF Value ที่ $282.67 อยู่ราว 9.1% (overvalued เล็กน้อย) แม้นักวิเคราะห์ส่วนใหญ่ยังคาดหวัง upgrade cycle จาก AI ในอนาคต. นัยพอร์ต: AAPL เป็น Big10 (ไม่ได้ถือ) — เป็น data point ต่อเนื่องเรื่อง memory cost inflation ที่กระทบทั้งกลุ่ม hardware (เช่น AMZN ที่เพิ่งเพิ่มงบ AI เป็น $220B ก็อ้างเหตุผลเดียวกัน).",
+    impact: "NEGATIVE", tickers: ["AAPL"],
+    url: "https://www.gurufocus.com/news/9024127/aapl-looks-91-overvalued-on-gf-value-as-of-august-11-2026",
+  },
   // ── 2026-08-08 ──────────────────────────────────────────
   {
     date: "2026-08-08", category: "SECTOR",
