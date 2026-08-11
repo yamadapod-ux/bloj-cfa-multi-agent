@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-07-31 14:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-08-10 12:00";
 
 const SECTOR_VIEWS = [
   {
@@ -143,5 +143,38 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-07-31",
     author: "Atlas",
     trigger: "CIO/Bear brief update — war timeline + technical signal addendum to Energy entry (2026-07-30), plus re-verification of figures the brief itself flagged as unconfirmed",
+  },
+  {
+    sector: "Gold / Precious Metals",
+    slug: "gold-precious-metals",
+    stance: "NEUTRAL",
+    cyclePosition: "Late-cycle hedge / defensive rotation signal",
+    headline: "Gold แทบ flat YTD หลัง round-trip +30%/-23% สุดขั้ว — S&P 500 ชนะ YTD ชัดเจนแม้ headline ทองดูน่าตื่นเต้นกว่า",
+    thesis: "เรื่องเล่าที่ตลาดพูดถึงบ่อยคือ 'ทองชนะหุ้นปี 2026' แต่ตัวเลขจริงเมื่อดูทั้งปีบอกเรื่องตรงข้าม — gold ทำสถิติใหม่ $5,542-5,602/oz ปลายเดือนม.ค. 2026 (+30%+ ใน 4 สัปดาห์แรกของปี) แล้วพลิกกลับร่วงลงมาต่อเนื่องเหลือ ~$4,330-4,360/oz ปัจจุบัน (ลดลง ~22-23% จากพีค) ทำให้ YTD จริงๆ ของทองใกล้เคียง **flat (~+0.7-1%)** เทียบกับราคาเปิดปีที่ราว $4,313 (คำนวณย้อนจาก close $4,865.37 ม.ค.31 ซึ่ง +12.8% MoM) ในขณะที่ S&P 500 เดินหน้าทำสถิติปิดใหม่ต่อเนื่องด้วย **YTD +12.5%** (ณ 7 ส.ค. 2026) แบบไม่มีการ correction ลึกระหว่างทาง ภาพรวมคือหุ้นชนะทองขาดในปีนี้ทั้งที่ headline ข่าวทองดูน่าตื่นเต้นกว่ามาก (พาดหัวข่าวเน้นที่ spike/correction ระหว่างทางมากกว่าผลตอบแทนสุทธิ) — สาเหตุหลักของความผันผวนทองคือ real-rate/dollar swings รวมถึง geopolitical premium (Iran/Hormuz) ที่ผ่อนคลายลงหลัง de-escalation ต้นเดือนส.ค. ส่วนแรงหนุนเชิงโครงสร้างของทอง (central bank buying ต่อเนื่อง — 43% ของรัฐบาลวางแผนเพิ่ม reserve, de-dollarization trend) ยังไม่หายไปและอาจกลับมาเป็นแรงหนุนถ้า Fed หันมาลดดอกเบี้ยจริงตามที่ weak July jobs report เริ่มบ่งชี้ — แต่ ณ วันนี้ยังไม่ใช่จุดที่ทองราคาถูกเทียบ historical range จนน่าเปลี่ยนพอร์ตไปทางนั้น",
+    keyPoints: [
+      "Gold YTD 2026 ≈ flat (+0.7-1%) vs S&P 500 YTD +12.5% (7 ส.ค. 2026) — ตรงข้ามกับ narrative ตลาดที่มักพูดว่าทองชนะหุ้นปีนี้",
+      "Gold spike +30%+ สู่สถิติใหม่ $5,542-5,602/oz (28-29 ม.ค. 2026) แล้ว correct ลงต่อเนื่อง -22-23% เหลือ ~$4,330-4,360/oz ปัจจุบัน — round-trip รุนแรงที่สุดในรอบปีของสินทรัพย์นี้",
+      "Gold รีบาวด์ +7%+ ในสัปดาห์ล่าสุด (ต้นส.ค.) หลัง weak July jobs report (-23K payrolls) ดันตลาดคาด Fed dovish มากขึ้น — แต่ยังห่างจาก peak มาก",
+      "แรงหนุนเชิงโครงสร้างยังอยู่: central bank buying ต่อเนื่อง (43% ของรัฐบาลวางแผนเพิ่ม gold reserve), de-dollarization trend, ความเสี่ยง real-rate ลดลงถ้า Fed cut จริง",
+      "เชื่อมโยงพอร์ตโดยตรง: WPM (Wheaton Precious Metals, precious-metals streaming) วิเคราะห์เต็มแล้ว 2026-07-12 — NO DEPLOY (Conv 6.3<7.0, MOS -9.9%<15%) เพราะ Blended FV $99.20 ใช้ normalized gold $3,400-4,000 ไม่ใช่ spot record ตอนนั้น ($4,120) — ราคาทองปัจจุบัน ~$4,330-4,360 ยังไม่เข้า normalized zone แต่ trend ทิศทางถูกต้อง (correction จาก peak ต่อเนื่อง) ควรจับตาต่อว่าจะย่อเข้า $3,400-3,800 จริงหรือไม่",
+    ],
+    metrics: [
+      { label: "S&P 500 YTD 2026", value: 12.5 },
+      { label: "Gold YTD 2026 (est.)", value: 0.8 },
+      { label: "Gold correction from Jan 2026 peak", value: -23 },
+      { label: "Gold 1-week rally (early Aug)", value: 7 },
+    ],
+    relatedTickers: ["WPM"],
+    sources: [
+      { title: "Yahoo Finance — Gold prices today, Monday, August 10, 2026: Highest opening price since early June", url: "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-august-10-2026-highest-opening-price-since-early-june-123242269.html" },
+      { title: "Yahoo Finance — Gold prices today, Friday, August 7, 2026: Gold prices continue to rise even after July jobs report misses", url: "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-friday-august-7-2026-gold-prices-continue-to-rise-even-after-july-jobs-report-misses-122102132.html" },
+      { title: "24/7 Wall St. — GLD Has Returned ~9% Year to Date While the S&P 500 Has Stalled (Apr 2026 snapshot, superseded by later data — kept for trend context)", url: "https://247wallst.com/investing/2026/04/23/gld-has-returned-9-year-to-date-while-the-sp-500-has-stalled-here-is-what-is-driving-gold-higher/" },
+      { title: "StatMuse Money — Gold Price Per Ounce Jan 2026 Chart (Jan 31 close $4,865.37, +12.8% MoM)", url: "https://www.statmuse.com/money/ask/gold-price-per-ounce-jan-2026-chart" },
+      { title: "GoldSilver.com — Gold Price Forecast 2026: What the Major Banks Are Predicting Now (record $5,542-5,602/oz late-Jan 2026, central bank buying context)", url: "https://goldsilver.com/industry-news/article/gold-price-forecast-2026-2027-key-predictions-from-top-analysts/" },
+      { title: "StatMuse Money — S And P 500 Returns YTD 2026 (+12.5% as of 2026-08-07 close)", url: "https://www.statmuse.com/money/ask/s-and-p-500-returns-ytd-2026" },
+    ],
+    lastUpdated: "2026-08-10",
+    author: "Atlas",
+    trigger: "CIO ad-hoc request — gold vs S&P 500 comparison",
   },
 ];
