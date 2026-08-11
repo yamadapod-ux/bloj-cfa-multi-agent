@@ -12,6 +12,7 @@
   <script src="news.js"></script>
   <script src="sectorViews.js"></script>
   <script src="thesisWatch.js"></script>
+  <script src="todoList.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     @font-face {
@@ -307,6 +308,27 @@
     .thesis-catalyst-box b { color:#1A3A7A; }
     .thesis-meta-row { display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; font-size:.7rem; color:#8AAAD4; margin-top:.6rem; }
 
+    /* TODO / IDEAS */
+    .todo-card { background:#fdf3e7; border:1px solid #ecd4ae; border-left:4px solid #E8A94A; border-radius:10px; padding:1.1rem 1.25rem; margin-bottom:1rem; box-shadow:0 1px 5px rgba(0,0,0,0.06); font-family:'Playpen Sans Thai','Prompt',sans-serif; }
+    .todo-card-header { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; margin-bottom:.5rem; }
+    .todo-title { font-size:1.05rem; font-weight:700; color:#7A4A0A; }
+    .todo-badge { display:inline-block; padding:.2rem .65rem; border-radius:20px; font-size:.68rem; font-weight:700; letter-spacing:.3px; text-transform:uppercase; }
+    .todo-badge.status-IDEA { background:#F7E8A0; color:#7A5A00; border:1px solid #E8C830; }
+    .todo-badge.status-IN_PROGRESS { background:#B0C8F0; color:#1A3A7A; border:1px solid #8AAAD4; }
+    .todo-badge.status-DONE { background:#B8EAC8; color:#1A5A30; border:1px solid #7ACFA0; }
+    .todo-badge.status-PARKED { background:#e0e0e0; color:#666; border:1px solid #ccc; }
+    .todo-badge.priority-HIGH { background:#F4B8C1; color:#8A1A2A; border:1px solid #E090A0; }
+    .todo-badge.priority-MEDIUM { background:#F7E8A0; color:#7A5A00; border:1px solid #E8C830; }
+    .todo-badge.priority-LOW { background:#B0C8F0; color:#1A3A7A; border:1px solid #8AAAD4; }
+    .todo-summary { font-size:.9rem; font-weight:600; color:#5A3A10; margin:.4rem 0 .6rem; }
+    .todo-context { font-size:.83rem; color:#7A5A2A; line-height:1.65; margin-bottom:.75rem; padding:.6rem .75rem; background:#fbe9d4; border-radius:8px; }
+    .todo-section-label { font-size:.72rem; font-weight:700; color:#A87830; text-transform:uppercase; letter-spacing:.4px; margin:.75rem 0 .35rem; }
+    .todo-list-items { margin:0 0 .5rem 1.1rem; padding:0; font-size:.82rem; color:#5A3A10; line-height:1.7; }
+    .todo-list-items li { margin-bottom:.4rem; }
+    .todo-hook { background:#fff8ec; border:1px dashed #E8A94A; border-radius:6px; padding:.45rem .65rem; margin-bottom:.4rem; font-size:.8rem; color:#5A3A10; font-style:italic; }
+    .todo-next-step { background:#fbe9d4; border-left:3px solid #E8A94A; border-radius:6px; padding:.6rem .75rem; margin-top:.75rem; font-size:.82rem; color:#5A3A10; }
+    .todo-meta-row { display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; font-size:.7rem; color:#A87830; margin-top:.6rem; }
+
     /* MOBILE FRM */
     @media (max-width: 768px) {
       .frm-content { padding: 1rem; }
@@ -379,6 +401,7 @@
     <button class="nav-tab" onclick="showPage('news')">News</button>
     <button class="nav-tab" onclick="showPage('sectorviews')">Sector Views</button>
     <button class="nav-tab" onclick="showPage('thesiswatch')">Thesis Watch</button>
+    <button class="nav-tab" onclick="showPage('todo')">💡 Todo</button>
   </div>
   <span class="updated-tag">Updated: <span id="last-updated"></span></span>
 </nav>
@@ -636,6 +659,17 @@
   </div>
   <div class="stat-grid" id="thesis-stat-grid"></div>
   <div id="thesis-watch-list"></div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- PAGE: Todo / Ideas                        -->
+<!-- ══════════════════════════════════════════ -->
+<div id="page-todo" class="page">
+  <div style="margin-bottom:1.25rem;">
+    <div style="font-size:1.4rem;font-weight:700;font-family:'Playpen Sans Thai','Prompt',sans-serif;">💡 Todo / Ideas</div>
+    <div style="font-size:.8rem;color:#5870A8;margin-top:2px;">ที่จดไอเดียส่วนตัว — ไม่เกี่ยวกับการตัดสินใจลงทุนของพอร์ต เก็บไว้ที่นี่เพราะเปิด dashboard ค้างไว้ตลอด</div>
+  </div>
+  <div id="todo-list"></div>
 </div>
 
 <script>
@@ -2136,6 +2170,39 @@ function buildThesisWatch() {
   }).join('');
 }
 
+function buildTodoList() {
+  if (typeof TODO_LIST === 'undefined') return;
+  if (TODO_LIST.length === 0) {
+    document.getElementById('todo-list').innerHTML = `<div class="news-empty"><div style="font-size:2rem;margin-bottom:.75rem;">📭</div><div>ยังไม่มีไอเดียบันทึกไว้</div></div>`;
+    return;
+  }
+  const statusLabel = { IDEA: 'Idea', IN_PROGRESS: 'In Progress', DONE: 'Done', PARKED: 'Parked' };
+  document.getElementById('todo-list').innerHTML = TODO_LIST.map(t => `
+    <div class="todo-card" id="todo-card-${t.id}">
+      <div class="todo-card-header">
+        <span class="todo-title">${t.title}</span>
+        <span class="todo-badge status-${t.status}">${statusLabel[t.status] || t.status}</span>
+        ${t.priority ? `<span class="todo-badge priority-${t.priority}">${t.priority} priority</span>` : ''}
+        <span style="font-size:.7rem;color:#A87830;">${t.category}</span>
+      </div>
+      <div class="todo-summary">${t.summary}</div>
+      ${t.context ? `<div class="todo-context"><b>บริบท:</b> ${t.context}</div>` : ''}
+      ${t.keyInsights && t.keyInsights.length ? `
+        <div class="todo-section-label">Key Insights</div>
+        <ul class="todo-list-items">${t.keyInsights.map(k => `<li>${k}</li>`).join('')}</ul>` : ''}
+      ${t.contentHooks && t.contentHooks.length ? `
+        <div class="todo-section-label">Content Hooks</div>
+        ${t.contentHooks.map(h => `<div class="todo-hook">${h}</div>`).join('')}` : ''}
+      ${t.openQuestions && t.openQuestions.length ? `
+        <div class="todo-section-label">Open Questions</div>
+        <ul class="todo-list-items">${t.openQuestions.map(q => `<li>${q}</li>`).join('')}</ul>` : ''}
+      ${t.nextStep ? `<div class="todo-next-step"><b>Next step:</b> ${t.nextStep}</div>` : ''}
+      <div class="todo-meta-row">
+        <span>เพิ่มเมื่อ: ${t.dateAdded}</span>
+      </div>
+    </div>`).join('');
+}
+
 // ─── INIT ALL PAGES ──────────────────────────────────────
 buildOverview();
 buildReports();
@@ -2145,6 +2212,7 @@ buildPortfolio();
 buildNews();
 buildSectorViews();
 buildThesisWatch();
+buildTodoList();
 </script>
 </body>
 </html>
