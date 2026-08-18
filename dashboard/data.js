@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-08-10";
+const LAST_UPDATED = "2026-08-18";
 
 const REPORTS = [
 
@@ -9346,70 +9346,74 @@ ALAB คือ pure-play CXL/PCIe connectivity สำหรับ AI data center
   {
     ticker: "ACGL",
     company: "Arch Capital Group Ltd.",
-    date: "2026-06-14",
+    date: "2026-08-18",
+    version: "v2 (Re-Analysis + QA Fix)",
     sector: "Financials / Insurance (P&C + Reinsurance + Mortgage)",
-    price: 91.66,
+    price: 97.81,
     recommendation: "HOLD/WAIT",
-    blendedFV: 106.00,
-    targetBull: 125.00,
-    targetBase: 99.00,
-    stopLoss: 73.00,
-    convictionEmma: 7,
-    convictionQuinn: 6,
-    convictionBear: 6,
-    convictionAvg: 6.3,
-    mosPct: 15.6,
-    pwEV: 97.85,
-    beta: 0.31,
-    sharpe1Y: 0.30,
-    maxDrawdown: -0.30,
-    moat: "Narrow",
+    blendedFV: 91.86,
+    esgAdjFV: 85.43,
+    targetBull: 120.01,
+    targetBase: 99.45,
+    stopLoss: 62.00,
+    convictionEmma: 5.5,
+    convictionQuinn: 4.5,
+    convictionBear: 6.5,
+    convictionAvg: 5.5,
+    mosPct: -6.08,
+    pwEV: 91.94,
+    beta: 0.29,
+    sharpe1Y: -0.55,
+    maxDrawdown: -0.23,
+    moat: "Narrow+",
     esgRating: "Medium",
-    esgScore: 5.8,
-    keyThesis: "Quality insurance BVPS compounder (~15% CAGR) ที่ราคาเหมาะสม + diversifier (beta 0.31) สำหรับพอร์ตที่ขาด insurance 100% — combined ratio 81.7%, ROE 21.3%, P/E 7.05x at sector median. MOS ผ่าน +15.6% แต่ Conviction 6.3 < Value gate 7.0 + soft P&C pricing cycle ทำให้ MOS พึ่ง peak-ROE → HOLD/WAIT FOR PULLBACK ($80-88).",
-    topRisk: "Peak-ROE anchoring — Emma FV $126 พึ่ง ROE 21.3% peak; ถ้า fade → 13% Blended FV → ~$96, trough 11% → ~$86 ≈ ราคาวันนี้. Soft P&C/reinsurance pricing cycle (cat renewals -10/-20%, ex-cat combined +130bps). Cat tail + reserve quality = shared blind spot (beta 0.31 ไม่ capture cat).",
-    entryZone: "80-88",
-    positionSize: "5% (Value diversifier — ยังไม่ deploy, Conviction gate fail)",
+    esgScore: 5.5,
+    keyThesis: "Q2 2026 ยืนยัน \"peak-ROE anchoring\" ที่ Bear เตือนไว้ตอน initiation (2026-06-14) จริง — Revenue -10.46% (2 ไตรมาสติดเร่งลง), ROE 21.31%\u219219.36%, Combined Ratio 81.7%\u219283.5% (แย่ทั้ง QoQ/YoY) ราคาขึ้น +6.7% พร้อม fundamentals แย่ลง = MOS พลิกจาก +15.6% เป็น -6.08% และ Conviction 6.3\u21925.5 ตกต่ำกว่าแม้แต่ BUY-gate ขั้นต่ำ (6.0) เป็นครั้งแรก = dual-gate-failure เต็มรูป (รอบก่อนมีแค่ MOS ผ่าน/Conviction ไม่ผ่าน)",
+    topRisk: "Insurance segment ex-cat CR 91.6% (แย่กว่า Reinsurance ex-cat 79.9% ถึง 11.7pt) + TRV ROE (26.51%) แซง ACGL (19.36%) แล้ว = quality-premium narrative เดิมต้องแก้ไข + Iran-conflict geopolitical cat loss $201M (risk category ใหม่นอก E/S/G) + Mortgage segment เพียง 5.3% ของ GPW (เล็กเกินกว่าจะเป็น structural 3rd engine) + EPS +32.66% YoY ส่วนใหญ่จาก buyback (~6.3%) ไม่ใช่ organic NI growth (+6.81%)",
+    entryZone: "71-79",
+    positionSize: "0% (NO DEPLOY \u2014 dual-gate-failure: MOS -6.08% < 15%, Conviction 5.5 < BUY-gate 6.0)",
     bucket: "Value",
     bullFlipTriggers: [
-      "Ex-cat accident-year combined ratio กลับ <=81% 2 ไตรมาสติด (margin stabilize)",
-      "Reinsurance pricing re-hardens (1/1/2027 renewals positive)",
-      "ROE >=16% organic (ไม่ใช่จาก commuted reinsurance one-off / reserve release)",
-      "ราคา pullback <=$80 → MOS หนาขึ้น",
-      "Conviction re-rate >=7.0 หลัง catalyst → ผ่าน Value gate"
+      "Insurance segment ex-cat CR กลับมา \u226487% ภายใน Q3/Q4 2026 (baseline ใหม่ = 91.6%) 1-2 ไตรมาสติด",
+      "Q3/Q4 cat losses ต่ำกว่า $150M/ไตรมาส (สอดคล้อง NOAA below-normal 75%)",
+      "Revenue growth QoQ หยุดเร่งลง — Q3 ไม่แย่กว่า Q2's -10.46%",
+      "ROE ยืน \u226516% operating อย่างน้อย 1 ไตรมาส โดยไม่มี one-off/commuted transaction",
+      "ราคาย่อ \u2264$81 (เข้าใกล้ Bear P-W EV) = entry ที่มี real margin"
     ],
     bearFlipTriggers: [
-      "Consolidated combined ratio เกิน 93% (underwriting profit หาย)",
-      "Casualty reserve charge >=$200M (social inflation hits)",
-      "ROE fade < 12% (peak-cycle หมด)",
-      "Q2-Q3 revenue miss ต่อเนื่อง (cycle turn confirmed)"
+      "Insurance ex-cat CR แย่ลงต่อ >93-95% ใน Q3",
+      "Combined ratio consolidated ทะลุ 88-90% ไตรมาสใด",
+      "Revenue decline เร่งต่อ (Q3 แย่กว่า -10.46%)",
+      "Cat event ใหม่ (hurricane Cat 3+ หรือ geopolitical episode คล้าย Iran conflict) เกิดซ้ำใน Q3/Q4 2026",
+      "Reserve charge / adverse PYD \u2265$150-200M",
+      "TRV/RNR ROE gap ยังกว้างขึ้นต่อ (ยืนยัน quality erosion เชิงเปรียบเทียบ ไม่ใช่แค่ mean-reversion เดี่ยว)"
     ],
-    thesisInvalidation: "ถ้า ROE fade ไป 12-13% mid-cycle แต่ราคายัง P/E 7x → MOS +15.6% ที่เห็นวันนี้คือ illusion จาก peak-ROE extrapolation ไม่ใช่ real margin of safety → re-analysis required",
+    thesisInvalidation: "Insurance segment ex-cat CR ยืนเหนือ 95% ติดต่อกัน 2 ไตรมาส พร้อมกับ Reinsurance ex-cat เริ่มแย่ลงด้วย = soft cycle กินเข้าไปถึง engine หลัก (52.3% ของ GPW) — diversification moat จะไม่มีความหมายเพราะ Mortgage เล็กเกินไป (5.3%)",
     reportFile: "../reports/ACGL_2026-06-14.md",
     businessSummary: {
-      oneLiner: "Arch Capital เป็น specialty insurer ระดับโลก 3 engine (Insurance / Reinsurance / Mortgage) ที่มี underwriting discipline ดีเด่น — combined ratio 81.7% ทำกำไร underwriting จริง",
-      analogy: "เหมือน บริษัทที่รับเดิมพันความเสี่ยงอย่างมีวินัย — เก็บเบี้ยมากกว่าที่ต้องจ่ายเคลม + เอา float ไปลงทุน, มี 3 ขาเสริมกันเมื่อขาใดขาหนึ่ง soft",
+      oneLiner: "Arch Capital เป็น specialty insurer ระดับโลก 3 engine (Insurance / Reinsurance / Mortgage) ที่มี underwriting discipline ดีเด่น — แต่ Q2 2026 เผยว่า Insurance engine เริ่มอ่อนแอ (ex-cat CR 91.6%) และ Mortgage เล็กเกินกว่าจะเป็น 3rd engine จริง (5.3% ของ GPW)",
+      analogy: "เหมือนบริษัทที่รับเดิมพันความเสี่ยงอย่างมีวินัย — เก็บเบี้ยมากกว่าที่ต้องจ่ายเคลม + เอา float ไปลงทุน, มี 3 ขาเสริมกัน แต่ตอนนี้พบว่าขาหนึ่ง (Insurance) กำลังสั่นและอีกขา (Mortgage) เล็กเกินกว่าจะช่วยพยุงจริง",
       moneyFlow: [
-        "Insurance: รับประกัน specialty P&C เก็บเบี้ย จ่ายเคลม กำไรจากส่วนต่าง (underwriting profit)",
-        "Reinsurance: รับประกันต่อให้ insurer อื่น = engine ใหญ่สุด ~76% ของ underwriting income, combined ratio ~76%",
-        "Mortgage Insurance: ประกัน default สินเชื่อบ้าน combined ratio 22.3% (กำไรสูงมาก) = differentiator",
-        "Investment income (float): เอาเบี้ยที่เก็บก่อนจ่ายเคลมไปลงทุน — ได้เพิ่มในยุค rate สูง",
-        "Total return = BVPS growth (~15% CAGR) + buyback (ไม่จ่าย dividend)"
+        "Insurance segment (42.5% ของ GPW): รับประกัน specialty P&C — segment อ่อนแอสุดรอบนี้ (CR headline 98.5%, ex-cat 91.6%)",
+        "Reinsurance segment (52.3% ของ GPW, engine ใหญ่สุด): ยังแข็งแกร่งมาก (CR 77.5%, ex-cat 79.9%)",
+        "Mortgage Insurance segment (เพียง 5.3% ของ GPW, เดิมประมาณผิดว่า ~20%): combined ratio 22.8% กำไรสูงแต่เล็กเกินไปที่จะเป็น structural offset ระดับ scale",
+        "Investment income (float): ยังเป็น tailwind ในยุค rate สูง",
+        "Total return = BVPS growth + buyback — EPS TTM +32.66% YoY ส่วนใหญ่มาจาก buyback (~6.3% share reduction) ไม่ใช่ organic NI growth (+6.81%) = quality-of-earnings flag ใหม่"
       ],
-      whyDifferent: "3-engine diversification (Insurance/Reinsurance/Mortgage) ลด correlation ของ underwriting cycle + mortgage segment ที่ P&C peer ส่วนใหญ่ไม่มี + underwriting discipline ข้าม cycle (4 ไตรมาสติด reinsurance combined ratio sub-80%)",
-      simpleRisk: "เข้าสู่ soft P&C/reinsurance pricing cycle — เบี้ยเริ่มลด, margin บางลง, valuation พึ่ง ROE ที่อาจเป็น peak"
+      whyDifferent: "3-engine diversification ที่จริงแล้วพึ่ง Reinsurance engine เดียวเป็นหลัก (52.3%) — Insurance segment เริ่มแสดง underlying pricing weakness (ex-cat 91.6%) และ Mortgage (5.3%) เล็กเกินกว่าจะ offset ระดับ scale ต่างจากที่เคยประเมินไว้ตอน initiation",
+      simpleRisk: "Peak-ROE anchoring ที่ Bear เตือนไว้ตอน initiation กำลังเกิดขึ้นจริง — ROE ลดลง 2 ไตรมาสติด, TRV แซง ACGL บน ROE แล้ว, ราคายังขึ้นสวนทางกับ fundamentals"
     },
     thesisBullets: [
-      { title: "BVPS compounder ~15% CAGR ที่ P/B 1.38x", why: "Total return ขับด้วย book growth + buyback ไม่ต้องพึ่ง multiple re-rate — เป็น quality compounding ไม่ใช่ re-rating play" },
-      { title: "Combined ratio 81.7% = underwriting profit จริง", why: "ต่ำกว่า 100% มาก = ทำกำไรจาก underwriting เอง ก่อนรวม investment income; reinsurance segment ~76% combined ratio" },
-      { title: "Beta 0.31 = defensive diversifier ที่สุดในพอร์ต", why: "พอร์ตขาด insurance 100% + semiconductor-heavy; ACGL beta 0.31 (vs LDOS 0.80, V 0.90) ลด portfolio beta" },
-      { title: "P/E 7.05x at sector median + ROE 21.3% top-tier", why: "Quality + diversification ดีที่สุดในกลุ่มที่ราคา median = best risk-adjusted positioning (แต่ไม่ใช่ deep value bargain)" }
+      { title: "Bull: ยังเป็น BVPS compounder คุณภาพสูง", why: "Diversification moat ทำงานตามที่ออกแบบไว้จริงบางส่วน — Reinsurance ex-cat 79.9% + Mortgage CR 22.8% offset Insurance segment ที่อ่อนแอลง; sector-wide soft cycle ไม่ใช่ ACGL-specific failure (AIG -2.4%, RNR -13.94% ก็หดตัว); P/E ยังถูกเป็นอันดับ 2 ในกลุ่ม (7.62-7.72x)" },
+      { title: "Bear: Insurance segment ex-cat CR 91.6% พิสูจน์ pricing weakness จริง", why: "แย่กว่า Reinsurance ex-cat (79.9%) ถึง 11.7pt — ไม่ใช่ cat noise แต่เป็นสัญญาณ underwriting discipline erosion ใน engine รอง" },
+      { title: "TRV แซง ACGL บน ROE แล้ว (26.51% vs 19.36%)", why: "Quality-premium narrative เดิม (\"cheap ทั้งที่ quality สูงกว่าเฉลี่ย\") อ่อนแอลงเป็น \"cheap และ quality mid-pack\" — risk/reward favorable น้อยกว่าเดิม" },
+      { title: "Mortgage เล็กเกินกว่าจะเป็น 3rd engine จริง (5.3% ของ GPW)", why: "เดิมประมาณผิดว่า ~20% — diversification story ที่แท้จริงพึ่ง Reinsurance (52.3%) เป็นหลักตัวเดียว ทำให้ moat เปราะบางกว่าที่เคยเชื่อ" }
     ],
     esgBreakdown: {
-      e: 5,
+      e: 4.5,
       s: 7,
-      g: 6,
-      overall: 5.8
+      g: 5.0,
+      overall: 5.5
     },
     customerConcentration: {
       note: "B2B insurance/reinsurance — กระจายข้าม cedents/brokers หลายราย ไม่มี single-client concentration risk แบบ tech",
@@ -9417,26 +9421,34 @@ ALAB คือ pure-play CXL/PCIe connectivity สำหรับ AI data center
       fortune500: "Reinsurance buyers = insurers ทั่วโลก; mortgage = GSE/lender ecosystem"
     },
     geographyRevenue: {
-      americas: "US-centric specialty + mortgage (majority)",
-      europe: "Specialty + reinsurance exposure",
-      asiaPacific: "Selective reinsurance",
-      china: "n/a (Bermuda-domiciled reinsurance, global cat exposure)"
+      status: "DATA NOT AVAILABLE",
+      note: "SEC 10-Q WebFetch ล้มเหลว (403 Forbidden) รอบ 2026-08-18 — ตัวเลขประมาณเดิม (US ~60-65% / International ~30-35%) เป็น stale/unverified และไม่ถูกใช้ในรายงานฉบับนี้"
     },
     competitorData: [
-      { ticker: "ACGL", company: "Arch Capital", revenueGrowth: 8.83, operatingMargin: 25, marketCap: 31900, strengths: "3-engine diversification, combined ratio 81.7%, ROE 21.3% top-tier, mortgage differentiator", weaknesses: "Soft pricing cycle exposure, peak-ROE valuation, single-President concentration", threatLevel: "SUBJECT" },
-      { ticker: "CB", company: "Chubb", revenueGrowth: 8.2, operatingMargin: 20, marketCap: 127270, strengths: "Largest blue-chip P&C, scale, brand", weaknesses: "Premium valuation P/E 11.59x, lower diversification into mortgage", threatLevel: "Medium" },
-      { ticker: "EG", company: "Everest Group", revenueGrowth: -0.3, operatingMargin: 14, marketCap: 13430, strengths: "Pure reinsurance scale", weaknesses: "Revenue declining, reserve concerns, no mortgage engine", threatLevel: "Medium" },
-      { ticker: "RNR", company: "RenaissanceRe", revenueGrowth: 9.26, operatingMargin: 22, marketCap: 12830, strengths: "Pure cat reinsurer, ROE 22%, deep discount P/E 4.97x", weaknesses: "Highest cat volatility, single-engine exposure", threatLevel: "Medium" },
-      { ticker: "TRV", company: "Travelers", revenueGrowth: 5.18, operatingMargin: 16, marketCap: 64740, strengths: "Strong US P&C franchise, ROE 19.7%", weaknesses: "Premium P/E 9.06x, US-concentrated, no reinsurance/mortgage diversification", threatLevel: "Medium" }
+      { ticker: "ACGL", company: "Arch Capital", revenueGrowth: 0.40, operatingMargin: 28.13, marketCap: 33353, pe: 7.67, roe: 19.36, roic: null, grossMargin: null, strengths: "3-engine diversification, Reinsurance ex-cat 79.9% แข็งแรง, valuation ถูกอันดับ 2 ในกลุ่ม", weaknesses: "Insurance ex-cat CR 91.6% ใหม่, ROE ไม่ top-quartile อีกต่อไป, Mortgage เล็กเกินกว่าจะเป็น 3rd engine (5.3%)", threatLevel: "SUBJECT" },
+      { ticker: "CB", company: "Chubb", revenueGrowth: 7.67, operatingMargin: 23.56, marketCap: 131500, pe: 12.06, roe: 14.82, roic: 11.15, grossMargin: 31.13, strengths: "Largest/highest-quality global P&C insurer, brand + distribution", weaknesses: "P/E แพงสุดในกลุ่ม (รองจาก AIG), ROE 14.82% ต่ำกว่า ACGL/TRV/RNR", threatLevel: "Medium" },
+      { ticker: "AIG", company: "American International Group", revenueGrowth: -2.40, operatingMargin: 17.40, marketCap: 39640, pe: 13.93, roe: 7.22, roic: 7.66, grossMargin: 35.09, strengths: "ขนาดใหญ่ multinational, กระจายธุรกิจหลายประเทศ", weaknesses: "ROE 7.22% ต่ำสุดในกลุ่มทั้งหมด (เกือบ 3 เท่าต่ำกว่า ACGL), ROIC ต่ำสุดเช่นกัน", threatLevel: "Low" },
+      { ticker: "TRV", company: "Travelers", revenueGrowth: 2.38, operatingMargin: 22.03, marketCap: 76030, pe: 9.76, roe: 26.51, roic: 20.78, grossMargin: 34.73, strengths: "ROE 26.51% สูงสุดในกลุ่ม (แซง ACGL แล้ว), US domestic brand แข็งแกร่ง, dividend aristocrat", weaknesses: "ไม่มี reinsurance/mortgage diversification, exposure หนัก US personal/commercial cat-exposed lines", threatLevel: "Medium (upgrade จาก Low — TRV ROE แซง ACGL แล้ว)" },
+      { ticker: "RNR", company: "RenaissanceRe", revenueGrowth: -13.94, operatingMargin: 40.91, marketCap: 13230, pe: 5.43, roe: 21.47, roic: 19.41, grossMargin: 45.35, strengths: "Gross Margin 45.35% สูงสุดในกลุ่ม, ROE/ROIC อันดับ 2, P/E ถูกสุดในกลุ่ม (5.43x)", weaknesses: "Revenue growth -13.94% แย่สุดในกลุ่ม, concentration ใน property cat ผันผวนตามฤดูเฮอริเคน", threatLevel: "Medium" }
     ],
     revenueSegments: [
-      { label: "Reinsurance", value: 45 },
-      { label: "Insurance", value: 35 },
-      { label: "Mortgage", value: 12 },
-      { label: "Investment Income", value: 8 }
+      { label: "Reinsurance", value: 52.3 },
+      { label: "Insurance", value: 42.5 },
+      { label: "Mortgage", value: 5.3 }
     ],
     fullContent: `# 🛡️ ACGL — Arch Capital Group Ltd.
 ### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+---
+
+## 🔄 Update Log
+
+| Date | การเปลี่ยนแปลง | เหตุผล |
+|------|----------------|--------|
+| **2026-08-18** | Price $91.66→$97.81 (+6.7%) · Blended FV $106→**$91.86** (-13.3%) · MOS **+15.6%→-6.08%** (พลิกลบ) · Conviction **6.3→5.5** (ต่ำกว่า BUY-gate 6.0 เป็นครั้งแรก) · Recommendation ยังคง HOLD/WAIT แต่เปลี่ยนจาก "MOS ผ่าน/Conviction ไม่ผ่าน" เป็น **dual-gate-failure เต็มรูป** | Q2 2026 earnings ยืนยัน "peak-ROE anchoring" risk ที่ Bear เตือนไว้ตอน initiation: Revenue -3.25%→**-10.46%** (2 ไตรมาสติด เร่งลง), ROE 21.31%→**19.36%**, Combined Ratio 81.7%→**83.5%** (แย่ทั้ง QoQ และ YoY เทียบ Q2 2025's 81.2%). Bear WebSearch พบใหม่: Insurance segment **ex-cat CR 91.6%**, cat losses $201M จาก **Iran conflict** (geopolitical risk ใหม่), Mortgage GPW แก้เป็น **5.3%** (ไม่ใช่ ~20% เดิม). Peer refresh พบว่า **TRV ROE 26.51% แซง ACGL 19.36% แล้ว** — ACGL ไม่ใช่ top-quartile ROE ในกลุ่มอีกต่อไป |
+| **2026-08-18 (QA Fix Round)** | Morgan QA Round 1 **FAIL** (HIGH: terminal growth rate 4-5.5% เกิน sanity ceiling 3% ใน Emma's Two-Stage RI/Justified P/B และ Bear's Bull/Base scenarios; MEDIUM×2: Competitor Profiles + Peer metrics ไม่ครบ) → Charlie แก้ terminal g→3% ทุกจุด, recompute cascade เต็ม: **Emma FV $108→$100, Bear P-W EV $84→$80.93, Blended FV $95.98→$91.86, MOS -1.87%→-6.08%** (ลบลึกขึ้น ไม่เปลี่ยนทิศทาง) + Emma เพิ่ม Peer P/E/ROE/ROIC/Gross Margin ครบ + Competitor Profiles (AIG ใหม่ + update CB/RNR/TRV) → ส่ง Morgan ตรวจรอบ 2 | เกณฑ์ sanity check บังคับ terminal growth ≤3% (established จาก DXCM 2026-07-29 precedent) — Emma เคยใช้ g สูงถึง 5.5% ใน conservative case ซึ่งไม่ sustainable ระยะยาวสำหรับ insurer |
+
+*(รายงานนี้เป็น re-analysis ของ \`reports/ACGL_2026-06-14.md\` เดิม — อัปเดตในไฟล์เดียวกันตาม house rule ห้ามสร้างไฟล์ใหม่)*
 
 ---
 
@@ -9444,250 +9456,325 @@ ALAB คือ pure-play CXL/PCIe connectivity สำหรับ AI data center
 | Field | Detail |
 |-------|--------|
 | **Ticker** | ACGL (NASDAQ) |
-| **Date** | 2026-06-14 |
-| **Price** | $91.66 (June 12, 2026 close — verified 2 sources) |
-| **Market Cap** | $31.9B (Shares 347.98M) |
+| **Date** | 2026-08-18 (re-analysis; initiation 2026-06-14) |
+| **Price** | $97.81 (2026-08-17 close — verified 2 sources: Yahoo Finance + Stockanalysis.com, exact match) |
+| **Market Cap** | $33.35B (Shares 339.6–339.8M) |
 | **Sector** | Financials / Insurance (P&C + Reinsurance + Mortgage) |
 | **Bucket** | **Value** (Insurance — P/B-ROE / Residual Income) |
 
 ## 🎯 คำแนะนำ
 | Field | Detail |
 |-------|--------|
-| **Recommendation** | **HOLD / WAIT FOR PULLBACK** |
-| **Entry Zone** | $80–88 (Conviction gate ไม่ผ่าน — รอ entry ที่มี MOS หนาขึ้น หรือ catalyst) |
-| **Blended FV** | **$106** (ESG-adj $103) |
-| **MOS** | **+15.6%** (ESG-adj +12.4%) |
-| **Stop Loss** | $73 (-17% จาก entry mid $88) |
-| **Max Position** | 5% (Value diversifier — ยังไม่ deploy) |
+| **Recommendation** | **HOLD / WAIT FOR PULLBACK — NO DEPLOY** |
+| **Entry Zone** | $71–79 (mid $75) — จุดที่ MOS กลับมา ≥15% |
+| **Blended FV** | **$91.86** (ESG-adj $85.43) |
+| **MOS** | **-6.08%** (ESG-adj -12.66%) |
+| **Stop Loss** | $62 (-17.3% จาก entry mid $75) |
+| **Max Position** | **0% (NO DEPLOY)** — ถ้าผ่าน gate ในอนาคต: Value diversifier max 5% |
 
 ## 📊 Score Dashboard
 | Metric | Value |
 |--------|-------|
-| **Blended FV** | $106 (40/30/30) |
-| **MOS** | +15.6% (ผ่าน Value 15% — ฉิวเฉียด) |
-| **ESG Score** | 5.8/10 (Medium — reconciled Emma 6.0 / Bear 5.5) |
-| **Conviction Avg** | **6.3/10** ⚠️ (< Value gate 7.0 → no deploy) |
+| **Blended FV** | $91.86 (40/30/30) |
+| **MOS** | -6.08% (ไม่ผ่าน Value gate ≥15% — พลิกจาก +15.6% เดิม) |
+| **ESG Score** | 5.5/10 (Medium — Bear-reconciled, ลงจาก 5.8/10) |
+| **Conviction Avg** | **5.5/10** ⚠️ (< BUY gate 6.0 **และ** < Deploy gate 7.0 — dual-fail ครั้งแรกของ ACGL) |
 | **Investment Horizon** | 3–5 ปี |
 
 > ⚡ **TL;DR — อ่าน 30 วินาที**
-> - **Verdict:** HOLD/WAIT — ธุรกิจคุณภาพดี (ROE 21%, combined ratio 81.7%, 3-engine diversification) ราคาไม่แพง แต่ **Conviction avg 6.3 < 7.0 ไม่ผ่าน Value deploy gate** + FOMC binary 3 วันข้างหน้า
-> - **ทำไม:** MOS ผ่าน (+15.6%) แต่ MOS นี้พึ่ง peak-ROE extrapolation — soft P&C pricing cycle เริ่มแล้ว (ex-cat combined +130bps, Q1 revenue miss, consensus EPS -4.4%/yr). 3 agents ดู metrics ในปีที่ cat เบา = shared blind spot
-> - **Downside Risk:** Bear P-W EV $88 (-3.6%) — ถ้า ROE fade เร็ว + full cat year → FV $66 (-28%). ราคาวันนี้ "fair ที่ mid-cycle" ไม่ใช่ "cheap"
+> - **Verdict:** HOLD/WAIT — NO DEPLOY. Dual-gate-failure ครั้งแรกของ ACGL (รอบก่อน MOS ผ่านแต่ Conviction ไม่ผ่าน; รอบนี้ **ทั้งสอง gate ล้มเหลวพร้อมกัน**)
+> - **ทำไม:** Q2 2026 ยืนยัน "peak-ROE anchoring" ที่ Bear เตือนไว้ตอน initiation จริง — Revenue -10.46% (2nd ไตรมาสติดเร่งลง), ROE 19.36% (จาก 21.31%), Combined Ratio 83.5% (แย่ทั้ง QoQ และ YoY) ราคาขึ้น +6.7% พร้อมกับ fundamentals แย่ลง = MOS หายไปสองทางพร้อมกัน และ **TRV ROE 26.51% แซง ACGL แล้ว** — ไม่ใช่ top-quartile ROE อีกต่อไป
+> - **Downside Risk:** Bear P-W EV $80.93 (-17.3%) — Insurance segment **ex-cat CR 91.6%** (แย่กว่า Reinsurance ex-cat 79.9% ถึง 11.7pt), cat losses มาจาก **Iran conflict** (geopolitical risk ใหม่), Mortgage segment เพียง **5.3% ของ GPW** (เล็กเกินกว่าจะเป็น "3rd equal engine")
 
 ---
 
 ## 📋 Executive Summary [CFA L2: Equity Valuation — Residual Income Model]
 
-ACGL เป็น specialty insurer ระดับโลก 3 engine (Insurance / Reinsurance / Mortgage) ที่มี underwriting discipline ดีเด่น — consolidated combined ratio Q1 2026 = 81.7% (ทำกำไร underwriting จริง, ต่ำกว่า 100% มาก) ROE 21.3% top-tier, BVPS compounder ระยะยาว ~15% CAGR, no dividend (return capital ผ่าน buyback) เทรดที่ P/B 1.38x / P/E 7.05x = at sector median แต่คุณภาพ + diversification ดีที่สุดในกลุ่ม
+ACGL ยังคงเป็น specialty insurer 3-engine (Insurance/Reinsurance/Mortgage) ที่มี underwriting discipline และ diversification ดีเด่นในกลุ่ม — แต่ข้อมูล Q2 2026 เผยให้เห็นว่า **peak-ROE anchoring risk ที่ Bear เตือนไว้ตอน initiation (2026-06-14) กำลังเกิดขึ้นจริง**: ROE ลดจาก 21.31%→19.36%, revenue growth พลิกลบเร่งขึ้น 2 ไตรมาสติด (-3.25%→-10.46%), Combined Ratio แย่ลงทั้ง QoQ (81.7%→83.5%) **และ YoY** (เทียบ Q2 2025's 81.2%) และ peer refresh พบว่า **TRV ROE (26.51%) แซง ACGL ไปแล้ว** — ACGL ไม่ใช่ top-quartile ROE ในกลุ่มอีกต่อไป (อันดับ 3 จาก 5, รองจาก TRV 26.51% และ RNR 21.47%)
 
-**ปัญหา:** เรากำลังเข้าสู่ **soft P&C/Reinsurance pricing cycle** — property cat reinsurance renewals (segment ที่ ACGL พึ่งพา 76% ของ underwriting income) softening -10 ถึง -20%, ex-cat accident-year combined ratio แย่ลง +130bps เป็น 82.3% "ในปีที่ cat เบา", Q1 revenue miss $210M, consensus EPS -4.4%/yr 3 ปี Valuation ทั้ง 3 anchors ของ Emma พึ่ง peak ROE — Bear ชี้ว่าถ้า ROE mean-revert → 13% mid-cycle, FV เลื่อนลงไปใกล้ราคาปัจจุบัน = MOS หายไปมาก
+**สิ่งที่เปลี่ยนจากรอบก่อน:** ราคาขึ้น +6.7% ($91.66→$97.81) **ในขณะที่** fundamentals แย่ลงต่อเนื่อง — Blended FV ลงจาก $106→$91.86 (-13.3%) พร้อมกัน = "double-hit" MOS erosion ที่ทำให้ MOS พลิกจาก +15.6% เป็น **-6.08%** Conviction เฉลี่ยลดจาก 6.3→**5.5/10** — ต่ำกว่าแม้แต่ BUY-gate ขั้นต่ำ (≥6.0) เป็นครั้งแรก ไม่ใช่แค่ Deploy-gate (≥7.0) เหมือนรอบก่อน
+
+**สิ่งที่ยังสนับสนุน thesis:** ธุรกิจยัง profitable ทุก segment, Reinsurance (engine ใหญ่สุด 52.3% ของ GPW) ยัง ex-cat 79.9% แข็งแรง, BVPS ยังโต ($66.45→$68.32), P/E ยังถูกที่สุดเป็นอันดับ 2 ในกลุ่ม (7.62-7.72x รองจาก RNR 5.43x), sector-wide soft cycle (AIG -2.4%, RNR -13.94% ก็หดตัว) ลด company-specific execution concern, และ NOAA คาด hurricane season 2026 below-normal (75% probability)
 
 ### 💪 Conviction Level Score [CFA L3: Investment Decision — Confidence Calibration] *(ยังไม่เรียน — คะแนนความมั่นใจของแต่ละ analyst 1–10)*
 \`\`\`
-Emma   ███████░░░  7/10  — Quality BVPS compounder, MOS +27%, combined ratio profitable; แต่ FV sensitive ต่อ ROE assumption
-Quinn  ██████░░░░  6/10  — Anchors converge $92-100, downside protected (16/25 cells FV>price) แต่ base upside จำกัด +6-8%
-Bear   ██████░░░░  6/10  — Cycle-turn thesis มีหลักฐาน แต่ timing ประเมินยาก, mortgage engine อาจ delay ROE fade
-────────────────────────────────────────────────
-Avg    ██████░░░░  6.3/10  ⚠️ < Value gate 7.0 → no deploy | gap 1pt < 3pt (no disagreement flag)
+Emma   █████░░░░░  5.5/10  — MOS ยุบจาก +27%→+2.2% (ESG-adj -4.1%), moat ยัง Narrow+ แต่ TRV ROE แซง = quality edge หาย
+Quinn  ████░░░░░░  4.5/10  — P-W EV พลิกลบครั้งแรก (+6.8%→-6.0%), reversion-Sharpe ติดลบครั้งแรกในประวัติ ACGL
+Bear   ██████░░░░  6.5/10  — thesis confirmed (YoY CR deterioration, ex-cat 91.6% ใหม่) แต่ moderate hurricane-tail ตาม NOAA, ไม่ full-AVOID
+──────────────────────────────────────────────────
+Avg    █████░░░░░  5.5/10  ⚠️ < BUY gate 6.0 (Value) และ < Deploy gate 7.0 → NO DEPLOY | gap สูงสุด Bear-Quinn 2.0 < 3.0 (ไม่ flag disagreement)
 \`\`\`
-**Flag:** Conviction 6.3 ต่ำกว่า Value deploy gate 7.0 → recommendation = HOLD/WAIT แม้ MOS ผ่าน. ข้อมูลไม่ขาด แต่ความเชื่อมั่นใน sustainability ของ ROE ยังไม่พอ — รอ catalyst (margin stabilize 2Q ติด) หรือ pullback
+**Flag:** Conviction 5.5 ต่ำกว่าแม้แต่ BUY-gate ขั้นต่ำของ Value bucket (6.0) — ครั้งแรกที่ ACGL ตกต่ำกว่าระดับนี้ รอ Insurance segment ex-cat CR รอบ Q3 2026 เป็น catalyst หลักตัดสิน (ถ้ากลับมา ≤87% = cat noise เท่านั้น; ถ้ายังแย่ >93% = pricing discipline erosion จริง)
 
 ---
 
 ## 💡 Investment Thesis [CFA L2: Equity Valuation]
 
-**Bull case (Emma):** ซื้อ BVPS compounder ที่ 1.38x book — total return ขับด้วย book growth (~15% long-run CAGR) + buyback ไม่ต้องพึ่ง multiple re-rate. 3-engine diversification ลด volatility ของ underwriting cycle (เมื่อ P&C soft, mortgage/อื่นชดเชย). Beta 0.31 = defensive diversifier vs portfolio semiconductor-heavy.
+**Bull case (Emma):** ยังเป็น BVPS compounder คุณภาพสูง — diversification moat "ทำงานตามที่ออกแบบไว้จริง" (Reinsurance ex-cat 79.9% + Mortgage CR 22.8% offset Insurance segment ที่อ่อนแอลง) sector-wide soft cycle ไม่ใช่ ACGL-specific failure P/E ยังถูกเป็นอันดับ 2 ในกลุ่ม
 
-**Bear counter:** Thesis พึ่ง ROE 21.3% ที่เป็น cyclical peak — consensus เอง model EPS -4.4%/yr. ที่ ROE 11% trough + g 4%, Justified P/B = 1.4x = $93 ≈ ราคาวันนี้ = ราคา fair ที่ trough ไม่ใช่ cheap.
+**Bear counter (confirmed มากขึ้นจากรอบก่อน):** Insurance segment **ex-cat CR 91.6%** พิสูจน์ underlying pricing weakness จริง Mortgage GPW ที่แท้จริงคือ 5.3% ไม่ใช่ ~20% — "3-engine diversification" จริงๆ พึ่ง Reinsurance engine เดียวเป็นหลัก (52.3%) และตอนนี้ **TRV แซง ACGL บน ROE แล้ว (26.51% vs 19.36%)** — quality premium ที่เคยเป็นจุดขายหลักของ thesis กำลังหายไป
 
 ---
 
 ## 🏢 Business Deep Dive [CFA L2: Industry & Company Analysis]
 
-### How does ACGL make money? (ภาษาธรรมดา)
-- **Insurance segment** — รับประกันภัยทรัพย์สิน/ความเสี่ยงเฉพาะทาง (specialty P&C) เก็บเบี้ย จ่ายเคลม กำไรจากส่วนต่าง (underwriting profit)
-- **Reinsurance segment** — รับประกันต่อให้บริษัทประกันอื่น (insurer ของ insurer) = engine ใหญ่สุด ~76% ของ underwriting income Q1 2026, combined ratio ~76% (ทำกำไรสูง)
-- **Mortgage Insurance segment** — ประกันความเสี่ยง default ของสินเชื่อบ้าน combined ratio 22.3% (กำไรสูงมาก) — segment ที่ P&C peer ส่วนใหญ่ "ไม่มี" = differentiator
-- **Investment income (float)** — เอาเบี้ยที่เก็บมาก่อนจ่ายเคลม (float) ไปลงทุน — ได้ผลตอบแทนเพิ่มในยุค rate สูง
-- **Total return = BVPS growth + buyback** (ไม่จ่าย dividend) — book value ต่อหุ้นโตปีละ ~15% ระยะยาว
+### How does ACGL make money? (อัปเดต — สัดส่วนแก้ตาม GPW จริง)
+- **Insurance segment (42.5% ของ GPW)** — รับประกันภัยทรัพย์สิน/ความเสี่ยงเฉพาะทาง — segment ที่อ่อนแอสุดรอบนี้ (CR 98.5% headline, **91.6% ex-cat**)
+- **Reinsurance segment (52.3% ของ GPW — engine ใหญ่สุด)** — ยังแข็งแกร่งมาก (CR 77.5%, ex-cat 79.9%)
+- **Mortgage Insurance segment (เพียง 5.3% ของ GPW — เดิมประมาณผิดว่า ~20%)** — combined ratio 22.8% แต่เล็กเกินไปที่จะเป็น structural offset ระดับ scale
+- **Investment income (float)** — ยังเป็น tailwind ในยุค rate สูง
+- **Total return = BVPS growth + buyback** — **EPS TTM +32.66% YoY ส่วนใหญ่มาจาก buyback (~6.3% share reduction TTM) ไม่ใช่ organic NI growth (+6.81%)** — quality-of-earnings flag
 
-### Porter's Five Forces [CFA L2: Industry Analysis]
-| Force | ระดับ | เหตุผล |
+### Porter's Five Forces [CFA L2: Industry Analysis] — Update
+| Force | ระดับ | เหตุผล (อัปเดต) |
 |-------|------|--------|
-| Threat of New Entrants | **Low-Medium** | ต้องมี capital base ใหญ่ + A+ rating + underwriting track record — barrier สูง แต่ alternative capital (ILS/cat bonds) เพิ่ม supply |
-| Bargaining Power of Buyers | **Medium** | Reinsurance buyers (insurers) มี broker leverage ในช่วง soft market — pricing power ย้ายไปฝั่ง buyer |
-| Bargaining Power of Suppliers | **Low** | "Suppliers" = capital markets; ACGL access capital ได้ดี (เพิ่งออก $2B notes) |
-| Threat of Substitutes | **Medium-High** | Alternative capital / cat bonds / self-insurance retention = substitute ที่กดราคา reinsurance |
-| Competitive Rivalry | **High** | Commodity-like pricing ใน soft cycle; CB, RNR, EG, TRV แข่งบนเบี้ย — rivalry สูงขึ้นเมื่อ pricing soft |
+| Threat of New Entrants | Low-Medium | ไม่เปลี่ยน |
+| Bargaining Power of Buyers | Medium | ไม่เปลี่ยน |
+| Bargaining Power of Suppliers | Low | ไม่เปลี่ยน |
+| Threat of Substitutes | Medium-High | ไม่เปลี่ยน |
+| **Competitive Rivalry** | **High — ยืนยันหนักขึ้น** | Sector-wide soft cycle ยืนยันจาก peer data จริง (AIG -2.40%, RNR -13.94%) และตอนนี้ TRV ยังชนะ ACGL บน ROE ด้วย — rivalry ไม่ใช่แค่ pricing แต่ profitability positioning ก็เสียเปรียบขึ้น |
 
-### Market Share & Geography
-- Market share trend: gaining ในช่วง hard market 2023-2024 (revenue +41.8% → +27.9%) แต่ growth decelerating (+14.3% FY25, +8.83% TTM) สะท้อน cycle turn — discipline ในการ "ไม่โตด้วยเบี้ยถูก"
-- Geography: US-centric specialty + Bermuda-domiciled reinsurance (global cat exposure)
+### Market Share & Revenue Segment Trend — Update
+- Revenue growth deceleration ต่อเนื่อง: FY2023 +41.8% → FY2024 +27.9% → FY2025 +14.3% → TTM +0.40% → **Q2 2026 -10.46%**
+- **Revenue Segment Breakdown (GPW basis, Q2 2026):** Insurance $2,603M (42.5%), Reinsurance $3,202M (52.3%), Mortgage $324M (**5.3%**, ไม่ใช่ ~20% ที่ประมาณไว้ตอน initiation) [Source: businesswire.com/archgroup.com Q2 2026 press release]
+- **Geography Revenue Breakdown: DATA NOT AVAILABLE รอบนี้** — SEC 10-Q WebFetch ล้มเหลว (403 Forbidden) ตัวเลขประมาณการเดิม (US ~60-65%/International ~30-35%) ถือเป็น **stale, unverified**
+
+### 4.3b Competitor Profiles [CFA L2: Industry Analysis — Competitive Positioning] *(Updated — peer set CB/AIG/TRV/RNR, verified stockanalysis.com/statistics/ WebFetch 2026-08-18)*
+
+**Chubb Limited (CB)**
+- เก่งอะไร: Largest/highest-quality global P&C insurer, Gross Margin 31.13%, brand + distribution ไม่มีใครแข่งได้
+- ไม่เก่งอะไร: P/E 12.06x แพงสุดในกลุ่ม (รองจาก AIG), ROE 14.82% ยังต่ำกว่า ACGL (19.36%)/TRV/RNR
+- Threat Level: 🟡 Medium — แข่ง P&C/specialty โดยตรง แต่ valuation premium ทำให้ relative attractiveness ของ ACGL ยังอยู่
+
+**American International Group (AIG)**
+- เก่งอะไร: Multinational insurer ขนาดใหญ่ (Market Cap $39.64B), กระจายธุรกิจหลายประเทศ/segment, Gross Margin 35.09% (อันดับ 2 ในกลุ่ม)
+- ไม่เก่งอะไร: Revenue growth -2.40%, **ROE 7.22% ต่ำสุดในกลุ่มทั้งหมด** (ต่ำกว่า ACGL เกือบ 3 เท่า), ROIC 7.66% ต่ำสุดเช่นกัน — profitability อ่อนแอสุดในกลุ่มทุกมิติ
+- Threat Level: 🟢 Low — ขนาดใหญ่กว่ามากแต่ profitability ต่ำกว่าอย่างมีนัยสำคัญทุก metric
+
+**The Travelers Companies (TRV)** ⚠️ *Threat Level upgrade*
+- เก่งอะไร: **ROE 26.51% สูงสุดในกลุ่มทั้งหมด** (แซง ACGL 19.36% และ RNR 21.47%), ROIC 20.78% อันดับ 2, US domestic brand แข็งแกร่ง, dividend aristocrat
+- ไม่เก่งอะไร: ไม่มี reinsurance/mortgage diversification, exposure หนัก US personal/commercial lines (cat-exposed homeowners)
+- Threat Level: 🟡 Medium **(upgrade จาก 🟢 Low เดิม)** — **TRV ROE แซง ACGL แล้ว = ACGL ไม่ใช่ top-quartile ROE ในกลุ่มอีกต่อไป**, เป็น evidence ใหม่ที่สนับสนุน conviction downgrade
+
+**RenaissanceRe Holdings (RNR)**
+- เก่งอะไร: Gross Margin 45.35% สูงสุดในกลุ่ม, ROE 21.47% + ROIC 19.41% อันดับ 2, P/E 5.43x ถูกสุดในกลุ่ม, third-party capital management fee income
+- ไม่เก่งอะไร: Revenue growth -13.94% แย่สุดในกลุ่ม, concentration ใน property cat = ผันผวนตามฤดูเฮอริเคน
+- Threat Level: 🟡 Medium — ROE/ROIC สูงกว่าและ P/E ถูกกว่า ACGL บน pure-play basis
 
 ---
 
 ## 🏰 Moat Analysis [CFA L2: Economic Moat]
-**Rating: NARROW+** (reconciled — Emma NARROW+, Bear ไม่โต้แย้ง rating แต่เตือน execution-dependent)
+**Rating: NARROW+ (ไม่ downgrade — แต่ upgrade เป็น "active monitoring required")**
 
-- **Underwriting discipline (process moat)** — cycle management ที่พิสูจน์มาหลาย cycle (4 ไตรมาสติด reinsurance combined ratio sub-80%)
-- **3-engine diversification** — Insurance/Reinsurance/Mortgage = ลด correlation ของ underwriting cycle
-- **Mortgage insurance** — combined ratio 22% = structural differentiator ที่ P&C peer ส่วนใหญ่ไม่มี
-- **ทำไมไม่ใช่ Wide:** moat = management execution + scale ไม่ใช่ structural barrier ที่ลอกไม่ได้; industry = commodity-like cyclical; leadership transition Q2'26 = watch item
+- **Underwriting discipline (process moat)** — ยังพิสูจน์อยู่ แต่ Insurance segment ex-cat CR 91.6% เป็น watch item ใหม่
+- **Diversification — scale correction สำคัญ:** Reinsurance (52.3% ของ GPW) เป็น offsetting engine หลักที่ทำงานจริง (ex-cat 79.9%) ส่วน **Mortgage (5.3%) เล็กเกินกว่าจะเป็น structural 3rd engine**
+- **ทำไมไม่ downgrade:** Reinsurance ex-cat ยังแข็งแรงมาก, Insurance ex-cat 91.6% ยังกำไร, sector-wide headwind
+- **ทำไมต้อง active-monitor:** ถ้า Insurance ex-cat ยังแย่ >93% ใน Q3 = ยืนยัน pricing discipline erosion จริง; ถ้า Reinsurance เองเริ่มอ่อนแอ = moat thesis invalidate; **TRV ROE แซงหน้า = quality-moat premium ที่เคยอ้างต้องพิสูจน์ใหม่**
 
 ---
 
-## 📊 Sector / Peer Comparison [CFA L2: Relative Valuation] *(Cross-sectional peer comp — ยังไม่ confirm)*
+## 📊 Sector / Peer Comparison [CFA L2: Relative Valuation]
 
-| Ticker | Company | Rev Growth TTM | ROE | Market Cap ($M) | P/E | Positioning |
-|--------|---------|---------------|-----|-----------------|-----|-------------|
-| **ACGL** | **Arch Capital** | **+8.83%** | **21.31%** | **31,900** | **7.05x** | **Quality at median valuation** |
-| CB | Chubb | +8.2% | N/A (NI +33.6%) | 127,270 | 11.59x | Premium (largest, blue-chip) |
-| EG | Everest Group | -0.3% | N/A | 13,430 | 6.92x | Discount (revenue declining) |
-| RNR | RenaissanceRe | +9.26% | 22% | 12,830 | 4.97x | Deep discount (pure cat reinsurer) |
-| TRV | Travelers | +5.18% | 19.7% | 64,740 | 9.06x | Premium (US P&C franchise) |
+| Ticker | Company | Rev Growth TTM | Op Margin TTM | P/E TTM | ROE | ROIC | Gross Margin | Market Cap ($M) |
+|--------|---------|-----------------|-----------------|---------|-----|------|---------------|-------------------|
+| **ACGL** | **Arch Capital** | **+0.40%** | **28.13%** | **7.62–7.72x** | **19.36%** | N/A* | N/A* | **33,353** |
+| CB | Chubb | +7.67% | 23.56% | 12.06x | 14.82% | 11.15% | 31.13% | 131,500 |
+| AIG | American International Group | -2.40% | 17.40% | 13.93x | 7.22% | 7.66% | 35.09% | 39,640 |
+| TRV | Travelers | +2.38% | 22.03% | 9.76x | **26.51%** | 20.78% | 34.73% | 76,030 |
+| RNR | RenaissanceRe | -13.94% | 40.91% | **5.43x** | 21.47% | 19.41% | 45.35% | 13,230 |
 
-**ACGL อยู่ตรงไหน:** P/E 7.05x = **at sector median** (ถูกกว่า CB 11.59x / TRV 9.06x, แพงกว่า RNR 4.97x / EG 6.92x) — ROE 21.3% top-tier + diversification ดีที่สุด → "best risk-adjusted positioning ในกลุ่ม at median price" ไม่ใช่ deep value bargain
+*ACGL ROIC/Gross Margin: N/A — data gap ใน verified package รอบนี้ (flag สำหรับรอบหน้า) | EV/EBITDA: N/A ทุกตัว — ไม่ applicable โดยตรงสำหรับ insurer (debt = operating leverage/float ไม่ใช่ financing)*
+[Source: stockanalysis.com/statistics/ WebFetch โดย Emma, 2026-08-18 — cross-checked กับ WebSearch พบ discrepancy เล็กน้อยบางจุด (เช่น CB P/E 12.06 WebFetch vs 12.79 WebSearch) ใช้ WebFetch เป็น primary]
+
+**ACGL อยู่ตรงไหน — เปลี่ยนจากรอบก่อนอย่างมีนัยสำคัญ:** Valuation ยังคง **cheap เป็นอันดับ 2 ในกลุ่ม** (P/E 7.62-7.72x, ถูกกว่าเพียง RNR 5.43x) **แต่ ROE ไม่ใช่ top-quartile อีกต่อไป** — อยู่อันดับ 3 จาก 5 (19.36%, ตามหลัง TRV 26.51% และ RNR 21.47%) ทั้งที่รอบก่อนมองว่า ACGL "top-quartile ROE" นี่คือ **quality-repricing ที่ต้อง flag เป็น key finding ใหม่** — thesis เดิม "cheap ทั้งที่ quality สูงกว่าเฉลี่ย" อ่อนแอลงเป็น "cheap และ quality mid-pack" ซึ่งเป็น risk/reward ที่ favorable น้อยกว่าเดิม
 
 ---
 
 ## 💰 Valuation [CFA L2: Residual Income / Justified P/B-ROE]
 
-### Emma — Insurance-Specific (ไม่ใช้ FCFF DCF)
-| Method | FV | Note |
-|--------|-----|------|
-| Two-Stage Residual Income (PRIMARY) | $127 | BVPS₀ $66.45 + PV excess returns; ROE fade 17%→11%, r=9% |
-| Justified P/B-ROE (conservative 2.29x) | $152 | single-stage 3.0x reject (sensitive) |
-| BVPS compounding cross-check | $118 | |
-| **Emma Blend (50/20/30)** | **$126** | ESG-adj $120 |
+> **QA Correction Note:** Terminal growth rate ทุกจุดปรับเป็น **g=3%** (จาก 4-5.5% เดิม) ตาม Morgan QA Round 1 HIGH finding (sanity ceiling ≤3%, established จาก DXCM 2026-07-29 precedent) — recompute cascade เต็มรูปแบบด้านล่าง
 
-> ⚠️ CoE floor 9.0% (CAPM literal ให้แค่ 5.9% — beta 0.31 ต่ำเกินจริงไม่ capture cat/reserve tail)
+### Emma — Two-Stage Residual Income (Update, BVPS₀ $68.32, g=3% capped)
+| Method | FV | Weight | หมายเหตุ |
+|--------|-----|--------|---------|
+| Two-Stage Residual Income (terminal ROE 10%, r 9%, **g 3%**) | $97.07 | 50% | (จาก $99.85 ที่ g=4% เดิม) |
+| Conservative Justified P/B (ROE 13%, r 9.5%, **g 3%**) | $105.10 | 20% | (จาก $128.10 ที่ g=5.5% เดิม — ปรับมากสุด) |
+| BVPS Compounding cross-check (terminal ROE 11%, r 9%, **g 3%**) | $102.38 | 30% | (จาก $107.50 ที่ g=4% เดิม) |
+| **Emma Blend** | **$100** | | ESG-adj $94 (haircut -6%) |
 
-### Blended FV Triangulation (IPS 40/30/30)
+MOS Emma standalone = (100-97.81)/100 = **+2.19%** (จาก +9.26% ก่อนแก้ g) — ยังไม่ผ่าน Value gate 15%
+> ⚠️ CoE floor คงที่ 9.0% (CAPM literal ยิ่งต่ำลงเหลือ 5.80% จาก beta 0.29)
+
+### Quinn — Probability-Weighted EV (ไม่กระทบจาก g-correction — ใช้ fair P/E multiples ไม่ใช่ Gordon-growth model)
+| Scenario | CR | Growth | FV | Prob |
+|----------|-----|--------|-----|------|
+| Bull (CR stabilizes) | 82% | -5% | $120.01 | 20% |
+| Base (CR ไหลต่อจาก Q2) | 85% | -10% | $99.45 | 45% |
+| Bear (CR ไหลต่อ, growth เร่งลง) | 90% | -16% | $66.24 | 35% |
+| **Quinn P-W EV** | | | **$91.94** | |
+
+*(หมายเหตุ: Quinn's normalized-P/B cross-check table ใน agent_notes ใช้ g สูงถึง 4% เป็น illustrative sensitivity range — ไม่ได้ feed เข้า P-W EV ที่ใช้จริงข้างต้น จึงไม่กระทบ Blended FV)*
+
+### Bear — Justified P/B, Ke floor 9.5% (Update, g=3% capped)
+| Scenario | ROE/g | FV | Prob |
+|----------|-------|-----|------|
+| Bull (Insurance ex-cat ≤87%) | 13%/**3%** | $105.10 | 20% |
+| Base (trend ทรงตัวที่ Q2 pace) | 11%/**3%** | $84.09 | 45% |
+| Bear (ex-cat แย่ลงต่อ + cat/geopolitical เพิ่ม) | 9%/3% (ไม่เปลี่ยน) | $63.06 | 35% |
+| **Bear P-W EV** | | **$80.93** | |
+
+*(จาก $84 ที่ g=4% เดิมใน Bull/Base — ลดลง 3.7%)*
+
+### Blended FV Triangulation (40/30/30)
 | Analyst | FV ($/share) | Weight | Contribution |
 |---------|-------------|--------|--------------|
-| Emma (Residual Income) | $126 | 40% | $50.40 |
-| Quinn (P-W EV) | $97.85 | 30% | $29.36 |
-| Bear (P-W EV, downside) | $88 | 30% | $26.40 |
-| **Blended FV** | **$106** | | **MOS +15.6%** |
+| Emma (Two-Stage RI) | $100 | 40% | $40.00 |
+| Quinn (P-W EV) | $91.94 | 30% | $27.58 |
+| Bear (P-W EV, downside) | $80.93 | 30% | $24.28 |
+| **Blended FV** | **$91.86** | | **MOS -6.08%** |
 
-**Forward Return Estimate (HOLD requirement):**
-ถือ 3 ปี จาก current $91.66 → Blended FV $106 = **+15.6% total / +5.0% CAGR**
-ถือ 3 ปี จาก entry zone mid $88 → **+20.5% total / +6.4% CAGR**
-*(ผลตอบแทนนี้ต่ำกว่า S&P 500 historical ~10% CAGR — สนับสนุน HOLD จนกว่าจะมี entry ดีกว่า)*
+**ESG-adjusted Blended FV** (haircut -7%, สะท้อน ESG overall 5.5/10 team-reconciled + political-risk finding ใหม่) **= $85.43 → MOS ESG-adj -12.66%**
+
+**Forward Return Estimate (HOLD requirement — Fix #6):**
+- จาก **entry zone mid $75** → Blended FV $91.86 ถือ 3 ปี = **+22.5% total / +7.00% CAGR**
+- จาก **ราคาปัจจุบัน $97.81** → Blended FV $91.86 ถือ 3 ปี = **-6.08% total / -2.07% CAGR** (negative embedded return ที่ราคาวันนี้ — สนับสนุนการรอ pullback ชัดเจน)
+*(คำนวณ: ((FV/base)^(1/3)-1)×100)*
 
 ---
 
 ## 📉 Quantitative Risk [CFA L1: Risk Metrics, CAPM] / [CFA L2: Scenario Analysis]
 
-- **Beta 0.31** = defensive ที่สุดในประวัติพอร์ต (vs LDOS 0.80, V 0.90, FICO 0.95) — เพิ่ม 8% ลด portfolio beta ~0.07. **เตือน:** beta ไม่ capture underwriting/cat tail (เหมือน V beta 0.90 ไม่ capture DOJ)
-- **Sharpe:** CAPM literal → 0.06-0.08 (CAPM ลงโทษ beta ต่ำ = Low-Vol Anomaly). Earnings-power return → ~0.30-0.45 (ดีในแง่ drawdown protection)
-- **Quinn P-W EV $97.85** (Bull $125/25% · Base $99/50% · Bear $68/25%)
-- **Bear P-W EV $88** (Bull $118/20% · Base $90/50% · Bear $66/30%)
+- **Beta 0.29** (ลงเล็กน้อยจาก 0.31) — ยังคง defensive ที่สุดในประวัติพอร์ต
+- **Reversion-based Sharpe พลิกลบครั้งแรกในประวัติ coverage ACGL:** -0.52 ถึง -0.58
+- Earnings Yield (TTM) = 13.12% (ลงจาก 14.20%), spread vs rf 4.35% = +877bps
 
 ### Sensitivity Matrix 5×5 (Quinn) — Combined Ratio × Premium (Revenue) Growth [CFA L2: Scenario Analysis]
-Fair value ($/share) — **Combined Ratio ครอบงำ growth ขาดลอย** (CR เลื่อน 12pt = FV ±$45; growth เลื่อน 16pt = FV ±$13)
+**Anchors ปรับใหม่ทั้งคู่** — CR 78–90% (re-center รอบ Q2 actual 83.5%) | Growth -20%→0% (re-center รอบ Q2 actual -10.46%)
 
-| CR ↓ / Rev Growth → | -4% | 0% | +4% | +8% | +12% |
-|---------------------|-----|-----|-----|-----|------|
-| **78% (excellent)** | $128 | $132 | $136 | $141 | $146 |
-| **82% (current)** | $110 | $114 | $118 | $122 | $127 |
-| **86% (soft)** | $92 | $96 | $99 | $103 | $107 |
-| **90% (weak)** | $74 | $77 | $80 | $84 | $88 |
-| **95% (cat year)** | $54 | $57 | $60 | $63 | $66 |
+| Growth ↓ / CR → | 78% | 81% | 84% | 87% | 90% |
+|---------------------|-----|-----|-----|-----|-----|
+| **-20%** | $112 | $104 | $95 | $86 | $77 |
+| **-15%** | $117 | $108 | $99 | $89 | $80 |
+| **-10% (current)** | $123 | $113 | **$103** | $93 | $83 |
+| **-5%** | $128 | $117 | $107 | $96 | $86 |
+| **0%** | $133 | $122 | $111 | $100 | $89 |
 
-**Takeaway:** 16/25 cells (64%) FV > ราคาปัจจุบัน — downside protected ตราบ CR ≤ 90%. จุดเฝ้าระวัง = combined ratio เกิน 93-95% (cat year/reserve charge). ตลาดที่กลัว soft pricing (growth ลด) โฟกัสผิดตัวแปร — CR คือตัวที่กำหนด FV จริง
+**15/25 cells (60%) FV > ราคา $97.81** *Bold = current cell (g -10%, CR 84%) = $103 (+5.3% เหนือราคา)*
+
+**Insight สำคัญที่สุดของรอบนี้ — Divergence ระหว่าง static matrix กับ P-W EV:** matrix "current" cell ยังบวก (+5.3%) แต่ P-W EV ให้ผล **ลบ (-6.0%)** เพราะ momentum (revenue accel-down, ROE down, CR up) ชี้ไปทาง deterioration ต่อ ไม่ใช่ stabilization
 
 ---
 
-## 🌱 ESG Risk Scorecard [CFA L2-3: ESG Materiality] *(ยังไม่ confirm)*
-**Overall: 5.8/10 (Medium Risk)** — reconciled Emma 6.0 / Bear 5.5
+## 🌱 ESG Risk Scorecard [CFA L2-3: ESG Materiality]
+**Overall: 5.5/10 (Medium Risk)** — Bear-reconciled
 
-| Pillar | Score | Material Risk | Valuation Impact |
+| Pillar | Score | Material Risk (Update) | Valuation Impact |
 |--------|-------|---------------|------------------|
-| **E** | 5/10 | Climate/Cat risk = core underwriting exposure (hurricane, wildfire frequency rising) | -3 ถึง -5% FV |
-| **S** | 7/10 | Mortgage insurance = housing access positive; social inflation (litigation) negative | -2 ถึง -3% FV |
-| **G** | 6/10 | Single-President model (Rajeh คุม 3 segments) = concentration; A+ governance otherwise | -2% FV |
+| **E** | 4.5/10 | Q2 cat loss จริงมาจาก Iran conflict (war-risk) ไม่ใช่ climate peril — E-framing เดิมจับ root-cause ไม่ครบ | -3% ถึง -5% |
+| **S** | 7/10 | ไม่มีข้อมูลใหม่กระทบ | -2% ถึง -3% |
+| **G** | 5.0/10 | Leadership transition timing + GPW segment-mix reporting confusion | -2% ถึง -3% |
+| **🆕 Political/War-Risk** | — | Iran-conflict cat loss $201M — risk category ใหม่นอก E/S/G taxonomy ดั้งเดิม | -1% ถึง -2% เพิ่มเติม |
 
-ESG-adj Blended FV ≈ $103 (MOS +12.4%)
+**Insider selling check:** สะอาด — director-level preferred-share sale เล็กน้อย ($93,263) ไม่มี red flag
+
+ESG-adjusted Blended FV ≈ **$85.43** (MOS ESG-adj -12.66%)
 
 ---
 
-## 🔄 What Would Change Our Mind [CFA L3: Investment Thesis Construction] *(ยังไม่ confirm)*
+## 🔄 What Would Change Our Mind [CFA L3: Investment Thesis Construction]
 
 ### Bull Flip Triggers (→ BUY)
-1. **Ex-cat accident-year combined ratio กลับ ≤81% 2 ไตรมาสติด** (margin stabilize, soft cycle หยุด)
-2. **Reinsurance pricing re-hardens** (1/1/2027 renewals positive) — segment หลักกลับมา
-3. **ROE ≥16% organic** (ไม่ใช่จาก commuted reinsurance one-off / reserve release)
-4. **ราคา pullback ≤$80** → MOS หนาขึ้น + Conviction น่าจะ re-rate ขึ้น
-5. **Conviction re-rate ≥7.0** หลัง catalyst → ผ่าน Value gate
+1. **Insurance segment ex-cat CR กลับมา ≤87%** ภายใน Q3/Q4 2026 (baseline ใหม่ = 91.6%) 1-2 ไตรมาสติด
+2. **Q3/Q4 cat losses ต่ำกว่า $150M/ไตรมาส** (สอดคล้อง NOAA below-normal 75%)
+3. **Revenue growth QoQ หยุดเร่งลง** — Q3 ไม่แย่กว่า Q2's -10.46%
+4. **ROE ยืน ≥16% operating** อย่างน้อย 1 ไตรมาส โดยไม่มี one-off/commuted transaction
+5. **ราคาย่อ ≤$81** (เข้าใกล้ Bear P-W EV) = entry ที่มี real margin
 
 ### Bear Flip Triggers (→ SELL/AVOID)
-1. **Consolidated combined ratio เกิน 93%** (underwriting profit หาย)
-2. **Casualty reserve charge ≥$200M** (social inflation hits)
-3. **ROE fade < 12%** (peak-cycle หมด)
-4. **Q2-Q3 revenue miss ต่อเนื่อง** (cycle turn confirmed, ไม่ใช่ one-off)
+1. **Insurance ex-cat CR แย่ลงต่อ >93-95%** ใน Q3
+2. **Combined ratio consolidated ทะลุ 88-90%** ไตรมาสใด
+3. **Revenue decline เร่งต่อ** (Q3 แย่กว่า -10.46%)
+4. **Cat event ใหม่** (hurricane Cat 3+ หรือ geopolitical episode คล้าย Iran conflict) เกิดซ้ำใน Q3/Q4 2026
+5. **Reserve charge / adverse PYD** ≥$150-200M
+6. **TRV/RNR ROE gap ยังกว้างขึ้นต่อ** (ยืนยัน quality erosion เชิงเปรียบเทียบ ไม่ใช่แค่ mean-reversion เดี่ยว)
 
 ### Thesis Invalidation
-ถ้า ROE fade ไป 12-13% mid-cycle แต่ราคายัง P/E 7x → MOS +15.6% ที่เห็นวันนี้คือ **illusion จาก peak-ROE extrapolation** ไม่ใช่ real margin of safety → re-analysis required
+Insurance segment ex-cat CR ยืนเหนือ 95% ติดต่อกัน 2 ไตรมาส **พร้อมกับ** Reinsurance ex-cat เริ่มแย่ลงด้วย = soft cycle กินเข้าไปถึง engine หลัก (52.3% ของ GPW) — diversification moat จะไม่มีความหมายเพราะ Mortgage เล็กเกินไป (5.3%)
+
+---
+
+## ✅ Morgan QA Verification
+
+| Round | Status | Data Quality | Key Findings |
+|-------|--------|---------------|---------------|
+| **Round 1** | ❌ FAIL | 7.6/10 | HIGH: Terminal growth rate 4-5.5% เกิน sanity ceiling ≤3% (Emma Two-Stage RI + Justified P/B, Bear Bull/Base) · MEDIUM: Competitor Profiles ไม่ครบ (AIG ไม่มี profile) · MEDIUM: Peer table ขาด P/E/ROE/ROIC/Gross Margin |
+| **Round 2** | (ส่งตรวจหลัง fix) | — | Fixed: g→3% ทุกจุด (recompute Emma $108→$100, Bear $84→$80.93, Blended $95.98→$91.86, MOS -1.87%→-6.08%) + Peer table เต็ม (P/E/ROE/ROIC/Gross Margin, WebFetch stockanalysis.com) + Competitor Profiles ครบ 4 ตัว (AIG ใหม่ + update CB/RNR/TRV) |
+
+**Independent verification ที่ Morgan ทำ (Round 1):** ราคา $97.81, Revenue TTM $19,232M, NI TTM $4,652M, Combined Ratio 83.5%, Insurance ex-cat CR 91.6%, cat cause (Iran conflict), GPW segment mix — **ทั้งหมดยืนยันอิสระตรงเป๊ะ 100%** และยืนยันว่า Charlie ใช้ตัวเลขที่ Emma/Quinn/Bear แก้ไขแล้วจริงในสูตร Blended FV (ไม่ recycle ตัวเลขเก่าแบบที่เคยพลาดใน ICE 2026-08-10)
 
 ---
 
 ## 🎯 Recommendation
 
-> ### HOLD / WAIT FOR PULLBACK — Entry zone $80–88, Stop $73, Max 5%
-> ธุรกิจคุณภาพดีจริง MOS ผ่านฉิวเฉียด (+15.6%) แต่ Conviction avg 6.3 < Value gate 7.0 + soft pricing cycle ทำให้ MOS พึ่ง peak-ROE — รอ margin stabilize หรือ pullback ก่อน deploy
+> ### HOLD / WAIT FOR PULLBACK — NO DEPLOY — Entry Zone $71–79, Stop $62, Max Position 0%
+> Q2 2026 ยืนยัน peak-ROE anchoring risk จริง — MOS พลิกลบ (-6.08%) และ Conviction (5.5) ตกต่ำกว่าแม้แต่ BUY-gate ขั้นต่ำ — dual-gate-failure ครั้งแรกของ ACGL
 
-- **Bucket:** Value | **MOS:** +15.6% (ผ่าน ≥15%) | **Conviction:** 6.3 (ไม่ผ่าน ≥7.0) → **net: no deploy**
-- **Stop Loss:** $73 (-17% จาก entry mid $88 — ภายใน IPS -20%)
-- **FOMC June 16-17 binary 3 วันข้างหน้า** → ถึงผ่าน gate ก็ HOLD deploy จนผ่าน FOMC (Max policy). งานนี้ = analysis + QA-ready ไว้ deploy post-FOMC ถ้า catalyst มา
-- พอร์ตขาด Insurance sector 100% — ACGL เป็น diversification candidate ที่ดี (beta 0.31 ถ่วง semiconductor-heavy portfolio) แต่ entry discipline สำคัญกว่า rush
+- **Bucket:** Value | **MOS:** -6.08% (ไม่ผ่าน ≥15%) | **Conviction:** 5.5 (ไม่ผ่านแม้ BUY-gate ≥6.0) → **net: NO DEPLOY**
+- **Stop Loss:** $62 (-17.3% จาก entry mid $75 — ภายใน IPS -20%)
+- **Entry Zone $71-79** = จุดที่ MOS กลับมา ≥15-29% เทียบ Blended FV $91.86
+- พอร์ตยังขาด Insurance sector 100% — ACGL ยังเป็น diversification candidate ที่ดี (beta 0.29) แต่ entry discipline สำคัญกว่า chase ที่ราคาปัจจุบัน
+- **Catalyst หลักที่ตัดสิน:** Q3 2026 earnings — Insurance segment ex-cat CR (≤87% = bull / >93% = bear) และ TRV/RNR ROE gap (แคบลง = ACGL quality edge กลับมา / กว้างขึ้น = confirm erosion)
 
 ---
 
 ## ⚠️ Risk Summary
-1. **Peak-ROE anchoring** (รุนแรงสุด) — FV $126 ของ Emma พึ่ง ROE 21.3% peak; ถ้า fade → 13%, Blended FV → ~$96; ถ้า trough 11% → ~$86 ≈ ราคาวันนี้
-2. **Soft P&C/Reinsurance pricing cycle** — cat reinsurance renewals -10/-20%, ex-cat combined +130bps rising, Q1 revenue miss $210M
-3. **Reserve quality + cat tail (shared blind spot)** — Q1 favorable PYD จาก commuted reinsurance one-off; social inflation; beta 0.31 = false comfort (3 agents ดู metrics ปี cat เบา)
-4. **Execution/key-person** — single-President + Gansberg (Global Insurance) ออก ช่วง cycle turn
+1. **Peak-ROE anchoring — confirmed** — ROE 21.31%→19.36% เกิดขึ้นจริง 2 ไตรมาสติด YoY-confirmed
+2. **Insurance segment ex-cat CR 91.6%** — แย่กว่า Reinsurance ex-cat 79.9% ถึง 11.7pt
+3. **🆕 TRV ROE (26.51%) แซง ACGL (19.36%) แล้ว** — quality-premium narrative เดิมต้องแก้ไข
+4. **🆕 Geopolitical/War-Risk underwriting exposure** — Iran conflict cat loss $201M
+5. **Moat scale correction** — Mortgage เพียง 5.3% ของ GPW
+6. **Buyback-driven EPS quality** — EPS +32.66% YoY ส่วนใหญ่จาก buyback (~6.3%)
+7. **Sector-wide soft cycle** — AIG -2.4%, RNR -13.94% หดตัวเช่นกัน
 
 ---
 
 ## 📅 Catalysts Calendar
 \`\`\`
-2026-06-16/17  ──●── 🏛️ FOMC Decision           [HIGH] — rate path กระทบ float investment income + housing (mortgage seg)
-2026-07-xx     ──●── 📊 Q2 2026 Earnings          [HIGH] — ex-cat AY combined ratio stabilize ไหม? revenue miss ซ้ำไหม?
-2026-Q3/Q4     ──●── 🌀 Atlantic Hurricane Season  [HIGH] — cat exposure tail test (combined ratio spike risk)
-2027-01-01     ──●── 📝 1/1/2027 Reinsurance Renewals [HIGH] — pricing re-harden หรือ soft ต่อ = thesis decider
+2026-Q3/Q4     ──●── 🌀 Atlantic Hurricane Season      [MED — NOAA below-normal 75%]
+2026-11-xx     ──●── 📊 Q3 2026 Earnings               [HIGH] — Insurance ex-cat CR ตัวชี้ขาด (≤87% bull / >93% bear)
+2027-01-01     ──●── 📝 1/1/2027 Reinsurance Renewals   [HIGH] — pricing re-harden หรือ soft ต่อ = thesis decider
 \`\`\`
 
 ---
 
 ## 📚 CFA Concepts ที่ใช้
-- **L2 Residual Income / Justified P/B-ROE** — insurance valuation core (Justified P/B = (ROE−g)/(r−g))
-- **L2 Relative Valuation** — peer P/E / ROE cross-sectional
-- **L2 Scenario Analysis** — Quinn sensitivity matrix (Combined Ratio × Growth)
-- **L1 CAPM / Low-Vol Anomaly** — beta 0.31 interpretation
+- **L2 Residual Income / Justified P/B-ROE** — insurance valuation core (พร้อม terminal growth sanity ceiling ≤3%)
+- **L2 Relative Valuation** — peer P/E/ROE/ROIC/Gross Margin cross-sectional
+- **L2 Scenario Analysis** — Sensitivity matrix + P-W EV
+- **L2 Risk-Adjusted Performance — Sharpe Ratio (reversion-based)**
+- **L1 Country/Political Risk** *(ยังไม่เรียนอย่างเป็นทางการ)* — geopolitical/war-risk underwriting exposure
+- **L1 Behavioral Finance — Overconfidence & Confirmation Bias** — Bear self-check
 - **L3 Investment Thesis Construction** — Bull/Bear flip triggers
-- **L2-3 ESG Materiality** — climate/cat underwriting risk
-- **Insurance-specific:** Combined ratio, BVPS compounding + buyback yield, float, ex-cat accident-year
+- **Insurance-specific:** Combined ratio (consolidated + ex-cat by segment), BVPS compounding, GPW mix reconciliation
 
 ---
 
 ## ⚙️ Behind the Scenes
-- **Pipeline:** Charlie → (Atlas data verified ใน main conversation, RISK-ON 3/4) → Emma ∥ Quinn → Bear → Charlie blend → Morgan QA → Leo/Vera/Max
-- **Emma** ($126): Residual income + BVPS compounder thesis, Moat NARROW+, Conviction 7
-- **Quinn** ($97.85): Combined ratio dominates sensitivity, beta 0.31 defensive แต่ไม่ capture cat tail, Conviction 6
-- **Bear** ($88): Peak-ROE anchoring = #1 risk, soft cycle, shared recency bias blind spot (3 agents ดู metrics ปี cat เบา), Conviction 6. แก้ข้อเท็จจริง 2 จุด: Gansberg ดู Global Insurance (ไม่ใช่ mortgage architect), $2B debt = refinance ไม่ใช่ buyback funding
-- **Blended FV weight:** Emma×0.40 + Quinn×0.30 + Bear×0.30 = $106 (IPS triangulation 40/30/30 — Bear weight 30% เพราะ downside scenario สำคัญเท่า Quinn; ไม่ลด weight แม้ Bear แย้งเยอะ)
-- **Anti-Convergence:** Emma 7/Quinn 6/Bear 6 — ไม่ trigger Convergence Risk Note (ไม่มี unanimity ≥8) แต่ Bear flag shared blind spot = collective recency bias (valuation อิงปี cat เบา)
-- **Key decision:** MOS ผ่าน แต่ Conviction gate ไม่ผ่าน → HOLD/WAIT (Value bucket ต้องผ่านทั้ง MOS ≥15% AND Conviction ≥7.0)
+- **Pipeline:** Charlie → Atlas (Macro Brief RISK-ON + Data Package + WebSearch) → Emma ∥ Quinn → Bear → Charlie blend → **Morgan QA Round 1 FAIL** → Charlie fix (g=3% cap) + Emma fix (peer data/profiles) → **Morgan QA Round 2** → Leo/Vera/Max
+- **Emma** ($100, ESG-adj $94): Two-stage RI + Justified P/B recompute ด้วย g=3% cap (จาก $108 เดิมที่ g เกิน sanity), พบ TRV ROE แซง ACGL ในรอบ peer-refresh, Conviction 5.5
+- **Quinn** ($91.94): ไม่กระทบจาก g-correction (ใช้ fair P/E ไม่ใช่ Gordon-growth), Conviction 4.5
+- **Bear** ($80.93): recompute Bull/Base ด้วย g=3% cap (จาก $84), WebSearch 6 หัวข้อใหม่ (ex-cat CR, Iran conflict, NOAA, JPM rating, GPW reconciliation, insider selling), Conviction 6.5
+- **Blended FV weight:** Emma×0.40 + Quinn×0.30 + Bear×0.30 = **$91.86** (IPS Triangulation Weights — Bear weight 30% เท่า Quinn เพราะ downside scenario สำคัญเท่ากัน) *[หมายเหตุ: CLAUDE.md มี 2 rule ขัดแย้งกันเรื่อง Bear weight (25% ตาม "IPS 2026-05-15" vs 30% ตาม "Blended FV Triangulation Weights") — ใช้ 30% ตาม precedent จริงของทีม (ETN/VRT/ICE/NET) และคำสั่ง CIO ชัดเจนใน task นี้ — flag ให้ Leo บันทึกเพื่อขอ CIO เคลียร์กฎที่ขัดแย้งกัน]*
+- **QA Fix Round:** Morgan Round 1 FAIL (HIGH: terminal g เกิน 3% ceiling) → Charlie recompute cascade เต็ม (แบบเดียวกับ DXCM 2026-07-29 precedent) — MOS ยิ่งลบลึกขึ้น (-1.87%→-6.08%) ยืนยันว่า correction ไม่เปลี่ยนทิศทาง recommendation แต่ทำให้ตัวเลขถูกต้องตาม house sanity rule
+- **Anti-Convergence check:** Emma 5.5/Quinn 4.5/Bear 6.5 (gap สูงสุด 2.0 < 3.0, ไม่มีใคร ≥8) → ไม่ trigger formal protocol
+- **Key decision:** ทั้ง MOS gate (≥15%) และ Conviction gate (≥6.0 BUY / ≥7.0 Deploy) ล้มเหลวพร้อมกัน — dual-gate-failure ครั้งแรกของ ACGL
 
 ---
 
 ## 🏁 Conclusion
-ACGL = quality insurance compounder ที่ราคาเหมาะสม (P/E 7x, MOS +15.6%) และเป็น diversification ที่ดีสำหรับพอร์ตที่ขาด insurance 100% **แต่ Conviction 6.3 < Value gate 7.0** + soft pricing cycle ที่ทำให้ MOS พึ่ง peak-ROE = **HOLD/WAIT** รอ entry ที่หนาขึ้น ($80-88) หรือ catalyst (margin stabilize 2Q ติด / pricing re-harden) ก่อน deploy — และอย่างไรก็ตาม HOLD deploy จนผ่าน FOMC June 16-17
+ACGL ยังเป็นธุรกิจคุณภาพดี (profitable ทุก segment, Reinsurance engine หลักแข็งแรง, BVPS ยังโต, valuation ยังถูกเป็นอันดับ 2 ในกลุ่ม) แต่ Q2 2026 ยืนยันว่า **"peak-ROE anchoring" ที่ Bear เตือนตั้งแต่ initiation กำลังเกิดขึ้นจริง** และ **TRV แซง ACGL บน ROE แล้ว** — MOS พลิกลบ (-6.08%) และ Conviction (5.5) ตกต่ำกว่า BUY-gate ขั้นต่ำเป็นครั้งแรก = **HOLD/WAIT FOR PULLBACK — NO DEPLOY** รอราคาย่อลงมาที่ $71-79 หรือ Q3 2026 earnings ยืนยัน Insurance segment ex-cat CR กลับมา ≤87% (bull) หรือแย่ลงต่อ >93% (bear, thesis invalidation)
 
-*รายงานนี้จัดทำโดยทีม บลจ. CFA | 2026-06-14 | ใช้ภายในเท่านั้น | ราคา/financials verified ≥2 sources*
+*รายงานนี้จัดทำโดยทีม บลจ. CFA | Initiation 2026-06-14 · Re-Analysis + QA Fix 2026-08-18 | ใช้ภายในเท่านั้น | ราคา/financials verified ≥2 sources*
 `
   },
   {
