@@ -95,6 +95,21 @@ Recession    → Utilities, Consumer Staples, Healthcare
 - [ ] Credit crunch risk (spread กว้าง + bank stress)
 - [ ] Inflation re-acceleration risk
 
+### 6. S&P 500 Index Valuation Context (เสริม — ไม่ใช่ indicator ตัวที่ 5 ของ Macro Regime Gate)
+
+**สำคัญ — ขอบเขต:** section นี้คือ "ตลาดทั้ง index แพง/ถูกแค่ไหน" เป็น context เสริมให้เห็นภาพกว้างขึ้นเท่านั้น **ห้ามใช้แทนที่หรือรวมเข้ากับสูตร Macro Regime** ที่ล็อกไว้ใน CLAUDE.md (VIX / Yield Curve / HY Spread / Fed Stance + majority vote) — Regime ยังคำนวณจาก 4 indicators เดิมเป๊ะเหมือนเดิมทุกครั้ง
+
+| Indicator | ค่าปัจจุบัน | Historical Context | Source |
+|-----------|------------|---------------------|--------|
+| Forward P/E (S&P 500) | XX.Xx | Percentile เทียบ 5Y/10Y avg | |
+| Earnings Yield vs 10Y Treasury | +/- X.X% spread | [Fed Model: แพง/ถูกกว่าปกติ] | |
+| Market Breadth | XX% ของ constituents > 200MA | [กว้าง/แคบ] | |
+| Mag7 Concentration | XX% ของ index weight | [เทียบ historical avg] | |
+
+**Insight:** [1-2 ประโยค — index-level valuation สนับสนุนหรือขัดแย้งกับ Regime ที่ประกาศไปหรือไม่ เป็นแค่ color ไม่ใช่ override]
+
+Data sourcing: WebSearch/WebFetch เหมือนกฎเดิมทุกอย่าง (Training Knowledge Ban บังคับ 100%) — ถ้าหาไม่ได้ → "N/A — WebSearch failed" อย่าเดา บันทึกไว้ต่อท้ายไฟล์ regime record เดิม (`agent_notes/atlas/YYYY-MM-DD_regime.md`)
+
 ---
 
 ## วิธีค้นหาข้อมูล
@@ -145,6 +160,14 @@ Recession    → Utilities, Consumer Staples, Healthcare
 **กำลัง outperform:** [sectors]
 **กำลัง underperform:** [sectors]
 **[Sector ของ TICKER]:** [outperforming/underperforming/neutral] เพราะ [เหตุผล]
+
+### 📈 S&P 500 Index Valuation Context (เสริม — ไม่ผูกกับ Regime formula)
+| Indicator | ค่าปัจจุบัน | Historical Context | Source |
+|-----------|------------|---------------------|--------|
+| Forward P/E (S&P 500) | XX.Xx | | |
+| Earnings Yield vs 10Y | +/- X.X% | | |
+| Market Breadth (>200MA) | XX% | | |
+| Mag7 Concentration | XX% | | |
 
 ### ⚠️ Top Macro Risks ขณะนี้
 1. [Risk 1] — probability: [สูง/ปานกลาง/ต่ำ]

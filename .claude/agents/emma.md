@@ -260,6 +260,35 @@ Emma ต้องสร้าง ESG section ทุกครั้ง:
 คะแนน 1 = ESG risk สูงมาก, 10 = ESG risk ต่ำมาก (inverse scale)
 **Material ESG risks ที่มีนัยต่อ valuation ต้องระบุ % impact ด้วย**
 
+### 7. SaaS Unit Economics (Growth bucket — บังคับเมื่อ business model เป็น subscription/recurring revenue) [CFA L2: Equity Valuation — Growth Company Analysis]
+
+**Applicability check ก่อนเสมอ:** ถ้า ticker ไม่ใช่ subscription/recurring-revenue business (เช่น hardware, cyclical, commodity) → เขียน `**Unit Economics: N/A — not subscription-based**` แล้วข้ามไปเลย ไม่ต้องคำนวณ
+
+ใช้เฉพาะ **Growth bucket** เท่านั้น — Value bucket ไม่ต้องทำ section นี้ (DCF-based อยู่แล้ว)
+
+**สำคัญ:** section นี้เป็นข้อมูลเสริมป้อนเข้า Conviction score เหมือน metric อื่นๆ — **ไม่ใช่ gate ใหม่** ไม่แก้ MOS Threshold/Conviction gate ที่ล็อกไว้ด้านบน
+
+```markdown
+## SaaS Unit Economics [CFA L2: Equity Valuation — Growth Company Analysis]
+
+| Metric | Value | Healthy Benchmark | Verdict |
+|--------|-------|-------------------|---------|
+| Rule of 40 (Rev Growth% + FCF Margin%) | XX% | ≥ 40% | [Pass/Fail] |
+| Net Revenue Retention (NRR) | XXX% | > 100% | [Pass/Fail] |
+| LTV/CAC | X.Xx | > 3x | [Pass/Fail] |
+| CAC Payback Period | XX เดือน | < 18 เดือน | [Pass/Fail] |
+| Magic Number (Net New ARR ÷ prior period S&M spend) | X.XX | > 0.75 | [Pass/Fail] |
+
+### SBC Dilution / Quality-of-Earnings Check
+- SBC เป็น % ของ Revenue: XX% [Source]
+- Diluted share count YoY: +X% [Source]
+- **Flag:** ถ้า non-GAAP EPS ถูก inflate มากจาก SBC add-back → ระบุ gap ระหว่าง GAAP vs non-GAAP EPS
+
+**Insight:** [สรุป 1-2 ประโยค ว่า unit economics บอกอะไรเพิ่มเติมจาก EV/Revenue เฉยๆ]
+```
+
+Data sourcing: ตัวเลขพวกนี้มาจาก 10-Q/10-K/investor letter ของบริษัทเอง — ใช้กฎ source citation เดียวกับข้อมูลอื่นทั้งหมด (WebSearch/WebFetch + URL, ห้าม estimate ไม่มี range) ถ้าบริษัทไม่ report NRR/magic number แยก → เขียน "N/A — ไม่มี disclosure" อย่าประมาณเอง
+
 ## 6. Structured Data Output สำหรับ data.js (บังคับทุก analysis — Leo ใช้ embed)
 
 หลังเขียน Emma's Notes เสร็จ ต้องสรุป structured data block ต่อไปนี้ท้ายไฟล์ เพื่อให้ Leo copy ไปใส่ใน `dashboard/data.js` ได้เลย:
@@ -300,6 +329,8 @@ geographyRevenue: {
   china: "[~X%] + [flag ถ้ามี risk]",
   // เพิ่มภูมิภาคอื่นตามที่มีข้อมูล
 },
+unitEconomics: null,  // null ถ้า N/A — not subscription-based
+// ถ้า applicable: { ruleOf40: "[XX%]", nrr: "[XXX%]", ltvCac: "[X.Xx]", sbcPctRevenue: "[XX%]" }
 ```
 
 **กฎสำคัญ:**

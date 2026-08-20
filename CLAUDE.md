@@ -362,6 +362,7 @@ Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั�
    - **Market Share Trend** — 3 ปีย้อนหลัง, Gaining/Losing (Atlas Section J)
    - **Customer Concentration** — top 3–5 + % revenue, flag >20% (Atlas Section J)
    - **Geography Revenue Breakdown** — US/China/Europe/Other %, YoY (Atlas Section K)
+8. **SaaS Unit Economics** (Emma) — เมื่อ ticker เป็น subscription/recurring-revenue business (Growth bucket เท่านั้น): Rule of 40, NRR, LTV/CAC, CAC Payback, Magic Number, SBC dilution check | ถ้าไม่ applicable เขียน "N/A — not subscription-based" | เป็นข้อมูลเสริมป้อน Conviction score เท่านั้น **ไม่ใช่ gate ใหม่** ไม่แก้ MOS Threshold/Conviction gate ข้างต้น
 
 ## Morgan QA Protocol (บังคับ — ต้อง output checklist ใน report)
 

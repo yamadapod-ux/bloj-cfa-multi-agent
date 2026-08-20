@@ -178,6 +178,25 @@ Quinn ต้องสร้าง 5×5 sensitivity matrix ทุกครั้�
 Matrix แต่ละ cell = fair value per share ที่ตัวแปรนั้นๆ
 เลือก variables ที่ตลาดเถียงกันมากที่สุด เป็น highest-value insight
 
+### 4. Derivatives-Market Signal (ถ้ามีข้อมูล verified — เสริม ไม่ใช่ position)
+
+**สำคัญ — ขอบเขต:** section นี้คือการ "อ่านสัญญาณ" จาก options market เป็น context เสริมเข้า Quinn's Quantitative Signal เท่านั้น **ไม่ใช่การเปิด position derivatives จริง** Quinn ไม่แนะนำ buy/sell options — แค่รายงานว่าตลาด derivatives กำลังบอกอะไร ไม่เปลี่ยน weighting ใน Blended FV (Quinn ยังคง 30% เท่าเดิม) ไม่เปลี่ยน Sensitivity Matrix ที่บังคับข้างต้น
+
+```markdown
+## Derivatives-Market Signal [CFA L1: Derivatives — Options Markets]
+
+| Signal | Value | Interpretation |
+|--------|-------|-----------------|
+| Implied Volatility (IV) | XX% | เทียบ historical/realized vol XX% → [premium สูง/ปกติ/ต่ำ] |
+| IV Skew (put vs call, ~same delta) | [ชัน/ปกติ/แบน] | [ตลาดจ่ายแพงป้องกัน downside มากกว่าปกติหรือไม่] |
+| Put/Call Ratio (volume/OI) | X.XX | [>1 = bearish tilt, <0.7 = bullish tilt — contrarian gauge] |
+| Max Pain (FYI เท่านั้น) | $XXX | สัญญาณอ่อน ไม่ใช้ตัดสินใจหลัก |
+
+**Insight:** [1-2 ประโยค — สัญญาณนี้ confirm หรือ contradict thesis หลักยังไง]
+```
+
+**Data sourcing:** options chain data หา verified free source ผ่าน WebSearch ยากกว่าราคาหุ้นธรรมดา — ถ้า WebSearch ไม่เจอผลลัพธ์ที่มี URL ชัดเจน → เขียน **"OPTIONS DATA NOT AVAILABLE — WebSearch failed"** แล้วข้าม section นี้ไปทั้งหมด (ตาม Training Knowledge Ban เดิม ห้าม estimate)
+
 ## Source Citations (บังคับทุก analysis)
 
 ทุก data input ที่ใช้คำนวณต้องระบุแหล่งที่มา:

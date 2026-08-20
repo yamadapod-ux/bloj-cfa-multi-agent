@@ -287,7 +287,7 @@
 | PGR | Scout (June 13) — รอ Charlie | TBD | — | ~$213.84 (July24, MS upgrade) | ส่ง Charlie pipeline — sentiment ฟื้นตัวหลัง valuation reset | TBD | TBD |
 | V | HOLD/WAIT | $285–300 | $240 | ~$332-336 (July28, Q3 beat + job cuts) | เกิน zone → รอ pullback | $286 | ต้อง re-verify |
 | FICO | HOLD/WAIT | $950–1,020 | $720 | ~$1,289-1,390 (July29, pre-Q3 earnings) | เกิน zone → รอ pullback | $1,078 | ต้อง re-verify |
-| VEEV | HOLD/WAIT — conviction upgrade watch | $148–158 | $118 | ~$179-183 (July23-27) | เกิน zone — analyst momentum building (RBC/Wells Fargo/Guggenheim Buy) | $192 | ต้อง re-verify |
+| VEEV | HOLD/WAIT FOR PULLBACK — NO DEPLOY (re-analysis v2, 2026-08-20) | T1 $185–200 (watch) / T2 $150-167 (target) | $160 | $251.00 (Aug19 close, 2 sources) | Single-gate FAIL — Conv 6.5 PASS แต่ MOS -24.78% FAIL หนัก; Vault CRM de-risked แต่ราคาแพงกว่า Bull DCF | $188.81 (ESG-adj) | -24.78% |
 | GOOGL T2 | T1 executed — T2 zone | $360–375 | $310 | $356.13 | ราคาใน T2 zone เกือบพอดี | $414 | +13.98% |
 | RDDT T2 | T1 executed — รอ T2 trigger | $145–160 | $140.75 | $140.67 | 🔴 ราคาต่ำกว่า T2 zone (post-stop-breach crash) — ไม่ add จนกว่า CIO confirm สถานะ T1 | $169.25 | +16.9% |
 | REGN T2 | T1 executed — รอ T2 trigger | $510–570 | $482 | $762.63 | ราคาเกิน T2 zone มาก — ไม่เกี่ยวข้องปัจจุบัน | $792 | +3.7% |
@@ -296,6 +296,7 @@
 | **WPM** | **HOLD/WAIT FOR PULLBACK** (2026-07-12, no deploy — Conv 6.3 ❌ <7.0, MOS -9.9% ❌ <15%, both Value gates FAIL) | **$85–92** | **$71** | **$110.05** (July10 close) | เกิน zone มาก (+19.6%) → รอ pullback สู่ normalized gold range; re-check conviction ด้วยเมื่อราคาเข้า zone | **$99.20** | **-9.9%** |
 | **ABBV** | **HOLD/WAIT FOR PULLBACK** (2026-08-02, no deploy — Conv 6.77 FAIL <7.0, MOS +0.06% FAIL <<15%, both Value gates FAIL) | **$205–220** | **$160** | **$250.94** (July31 close) | เกิน zone มาก (+14% เหนือ upper bound) → รอ pullback; Moat ปรับจาก Wide→Narrow ระหว่าง pipeline (ROIC ที่ถูกต้อง 14-16%, ไม่ใช่ 22.49% ตาม Scout เดิม) — re-check conviction ด้วยเมื่อราคาเข้า zone | **$251.08** | **+0.06%** |
 | **ETN** | **HOLD/WAIT FOR PULLBACK** (2026-08-05, no deploy — Conv 6.23 FAIL <7.0, MOS -30.7% FAIL <<15%, both Value gates FAIL — dual gate fail รุนแรงกว่า WPM/PGR/ABBV) | **$255–270 (T1) / $225–245 (T2)** | **$210** | **$444.80** (Aug4 close, verified) | เกิน T1 zone มาก (+64.7% เหนือ upper bound) → รอ pullback ขนาดใหญ่; Quinn/Emma methodology divergence ใหญ่สุดเท่าที่เคยเจอ (3.05x) ยังไม่ resolve เต็ม — re-check conviction ด้วยเมื่อราคาเข้า zone | **$308.25** (ESG-adj $293) | **-30.7%** |
+| **TDG** | **HOLD/WAIT FOR PULLBACK** (2026-08-19, no deploy — Conv 6.33 FAIL <7.0, MOS -11.88% FAIL <15%, both Value gates FAIL — Emma 6.5/Quinn 6.5/Bear 6.0) | **$900–940** | **$736** | **$1,231.62** (Aug18, 2 sources: Yahoo Finance + stockanalysis.com) | เกิน zone มาก (+31.0% เหนือ upper bound) → รอ pullback; widest-moat industrials ที่ทีมเคย scout (Op Margin 46.72%, sole-source FAA/PMA certified parts) แต่ moat พึ่งพา regulatory status quo — ติดตาม 2027 NDAA right-to-repair legislation ใกล้ชิด (ถ้าผ่าน = thesis invalidation ทันที, FV ร่วงสู่ $430-515); re-check conviction ด้วยเมื่อราคาเข้า zone | **$1,085.33** (ESG-adj $998.50) | **-11.88%** |
 | INTU | **SOLD** | — | — | — | **AUTO-SELL 2026-05-21 @ $321.50** | — | — |
 
 ---
