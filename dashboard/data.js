@@ -1,9 +1,553 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-08-18";
+const LAST_UPDATED = "2026-08-20";
 
 const REPORTS = [
+
+  {
+    ticker: "TDG",
+    company: "TransDigm Group Incorporated",
+    date: "2026-08-18",
+    version: "v1",
+    sector: "Aerospace & Defense — OEM Parts / Sole-Source Certified Components",
+    price: 1231.62,
+    recommendation: "HOLD/WAIT FOR PULLBACK",
+    blendedFV: 1085.33,
+    esgAdjFV: 998.50,
+    targetBull: 1620.90,
+    targetBase: 1085.33,
+    stopLoss: 736.00,
+    convictionEmma: 6.5,
+    convictionQuinn: 6.5,
+    convictionBear: 6.0,
+    convictionAvg: 6.33,
+    mosPct: -11.88,
+    mosPctEsgAdj: -18.93,
+    pwEV: 1396.53,
+    pwEvBear: 1146.00,
+    beta: 0.91,
+    sharpe1Y: -0.27,
+    maxDrawdown: -0.232,
+    moat: "Wide",
+    esgRating: "High",
+    esgScore: 4.7,
+    macroRegime: "RISK-ON",
+    morganQA: "PASS (Data Quality 8.5/10)",
+    sp500Reference: 7747,
+    sp500ReferenceNote: "TBD verification — no fresh WebSearch available in Leo session; using last verified team figure 7,747 (Aug 17, 2026 close, cross-check Trading Economics 7,754.01) logged same-day via ACGL session. Vera ต้อง verify Aug 18 close ก่อนใช้ alpha calc จริง",
+    bucket: "Value",
+    entryZone: "$900-940",
+    positionSize: "0% (NO DEPLOY — dual gate fail: MOS -11.88% < 15% AND Conviction 6.33 < 7.0)",
+    keyThesis: "TransDigm เป็น widest-moat industrial ที่ทีมเคย scout (Op Margin 46.72% เกือบ 2 เท่าของ HEI 23.72%, ROIC 19.40% trending ขึ้นต่อเนื่อง 3 ไตรมาส, ROIC-WACC spread +11.67pp) — Wide Moat จาก FAA/PMA sole-source certification barrier แข็งแกร่งจริง แต่ราคาปัจจุบัน $1,231.62 แพงเกินไป: Blended FV $1,085.33 ให้ MOS เพียง -11.88% (ESG-adj -18.93%) ต่ำกว่าเกณฑ์ BUY 15% ของ Value bucket ทุก sensitivity range (exit multiple ±2x ยัง FAIL ทุกจุด) และ Conviction เฉลี่ย 6.33 < 7.0 gate — ทั้งสอง Value gate ล้มเหลวพร้อมกัน แม้ Emma/Quinn/Bear ใช้ methodology ต่างกันสิ้นเชิงแต่ลงเอยที่ HOLD เดียวกัน (triangulation แข็งแรง)",
+    topRisk: "Right-to-repair legislation (repeated-game risk) — ถูกตัดจาก 2026 NDAA แต่ momentum กลับมาแรงสำหรับ 2027 NDAA (Sen. Warren+Sheehy Warrior Right to Repair Act, HASC advance มิ.ย. 2026) — ถ้าผ่านจริงกระทบ core moat (sole-source pricing power) โดยตรง FV ร่วงสู่ $430-515 (-58% ถึง -65%); root cause เดียวกันกับ governance overhang (DoD IG พบ price-gouging ซ้ำ 2019+2021); negative equity -$9.7B + Interest Coverage 2.63x < 3x safe threshold เป็นความเสี่ยงเชิงโครงสร้างเพิ่มเติมถ้า refinancing cost เพิ่ม",
+    reportFile: "../reports/TDG_2026-08-18.md",
+    businessSummary: {
+      oneLiner: "TransDigm ออกแบบและผลิตชิ้นส่วนอากาศยานที่จดสิทธิบัตร/ได้รับ certification แบบ sole-source เกือบทั้งหมด แล้วขายอะไหล่ทดแทน (aftermarket) ในราคาสูงเพราะไม่มีคู่แข่งที่ได้รับอนุญาตผลิตชิ้นส่วนเดียวกัน",
+      analogy: "เหมือนเป็นเจ้าของกุญแจดอกเดียวที่ล็อคประตูทุกหลังในเมือง — กุญแจหายต้องซื้อจากเจ้าของกุญแจเท่านั้น ไม่มีทางเลือกอื่นแม้ราคาแพงแค่ไหน",
+      moneyFlow: [
+        "สายการบิน/กองทัพซื้อเครื่องบินที่มีชิ้นส่วน TransDigm ติดตั้งอยู่ (OEM sale, margin ต่ำกว่า)",
+        "เมื่อเครื่องบินบินไปเรื่อยๆ ชิ้นส่วนสึกหรอ ต้องเปลี่ยนอะไหล่จาก TransDigm เท่านั้นเพราะเป็นเจ้าของ FAA/PMA certification เดียว (aftermarket sale, ~75% ของ EBITDA ทั้งหมด)",
+        "TransDigm ใช้ 'value-based pricing' ตั้งราคาตามมูลค่าที่ลูกค้าได้ ไม่ใช่ตามต้นทุนผลิต ทำให้ margin สูงกว่าคู่แข่ง 2 เท่า",
+        "กำไรส่วนใหญ่นำไปซื้อกิจการชิ้นส่วนอากาศยาน niche อื่นเพิ่ม (debt-funded M&A) แล้วใช้สูตรราคาเดียวกันขยายผลต่อเนื่อง"
+      ],
+      whyDifferent: "คู่แข่งตามไม่ได้เพราะต้องผ่าน FAA/PMA certification ใหม่ทั้งหมด ใช้เวลา/เงินมหาศาล ขณะที่ตลาดแต่ละชิ้นส่วนมักเล็กเกินคุ้มทุนสำหรับผู้เล่นรายที่ 2 (efficient scale moat) — ลูกค้าก็เปลี่ยนอะไหล่นอกระบบ certification ไม่ได้ด้วยเหตุผลความปลอดภัย",
+      simpleRisk: "รัฐบาลสหรัฐฯ เคยสอบสวนและพบว่า TransDigm ตั้งราคาสูงเกินจริงกับกองทัพซ้ำหลายครั้ง (2019, 2021) — ถ้ามีกฎหมาย right-to-repair หรือปฏิรูปจัดซื้อจัดจ้างผ่านจริง อาจทำลาย pricing power moat ที่เป็นหัวใจธุรกิจ"
+    },
+    thesisBullets: [
+      { title: "Textbook Efficient-Scale + Certification Moat", why: "Op Margin 46.72% สูงกว่า peer ที่ดีที่สุด (HEI 23.72%) เกือบ 2 เท่า มาจาก sole-source FAA/PMA certification barrier" },
+      { title: "DCF ชี้ overvaluation ทุก scenario", why: "Base -34.5%, Bull -25.9%, Bear -48.7% MOS — Reverse DCF ชี้ implied growth 6.27% เกิน sanity ceiling 3% มาก" },
+      { title: "Relative valuation กลับมองว่าถูกกว่า peer", why: "Fwd P/E 26.49x/EV-EBITDA 19.41x ต่ำกว่า median กลุ่ม (-5.7%/-12.7%) แม้ margin เหนือกว่ามาก — tension ที่ต้อง reconcile" },
+      { title: "Governance overhang จาก price-gouging pattern", why: "DoD IG พบ excess profit ซ้ำ 2 รอบ (2019/2021) จาก sole-source pricing ที่เป็นหัวใจ moat — เสี่ยง right-to-repair legislation" },
+      { title: "Interest Coverage ต่ำกว่าเกณฑ์ปลอดภัย", why: "EBIT/Interest ≈2.63x < 3x safe threshold ท่ามกลาง negative equity -$9.7B + debt $33.5B" }
+    ],
+    esgBreakdown: { e: 6, s: 5, g: 3, overall: 4.7 },
+    customerConcentration: {
+      note: "ไม่พบลูกค้ารายใดเดี่ยวเกิน 20% ทั้งในข้อมูลปัจจุบันและย้อนหลัง — ข้อมูลที่ verify ได้มีเฉพาะช่วงเก่า (FY2015-2019): 2 ลูกค้ารวมกัน ~11-13% เท่านั้น FY2025 ปัจจุบัน DATA NOT AVAILABLE (SEC EDGAR blocked 403)",
+      top2Combined: null
+    },
+    geographyRevenue: {
+      unitedStates: 62.7,
+      international: 37.3,
+      note: "MEDIUM confidence — WebSearch aggregated, ไม่มี direct-fetch URL primary source (SEC EDGAR 403 blocked); international ไม่แยกย่อย China/Europe"
+    },
+    revenueSegments: [
+      { label: "Power & Control", value: 51.6 },
+      { label: "Airframe", value: 46.6 },
+      { label: "Non-aviation", value: 1.8 }
+    ],
+    revenueSegmentsNote: "MEDIUM confidence — WebSearch aggregated (SEC EDGAR 403 blocked)",
+    competitorData: [
+      { ticker: "TDG", company: "TransDigm Group", revenueGrowth: 16.62, operatingMargin: 46.72, marketCap: 68890 },
+      { ticker: "HEI", company: "HEICO Corp", revenueGrowth: 18.80, operatingMargin: 23.72, marketCap: 51140 },
+      { ticker: "PH", company: "Parker-Hannifin", revenueGrowth: 8.31, operatingMargin: 21.55, marketCap: 130740 },
+      { ticker: "HON", company: "Honeywell International", revenueGrowth: 11.01, operatingMargin: 18.73, marketCap: 72500 }
+    ],
+    bullFlipTriggers: [
+      "ราคาปรับลงสู่ ≤$940/share โดย thesis ไม่เปลี่ยน → MOS ≥15% ผ่าน Value gate",
+      "2027 NDAA ผ่านโดยไม่มี right-to-repair provision (ยืนยันภายใน ธ.ค. 2026/ต้นปี 2027) → ตัด tail risk ใหญ่สุดออก",
+      "Organic revenue growth ≥15% YoY ต่อเนื่อง 2 ไตรมาสติดต่อกัน (Q4 FY26 + Q1 FY27) → เปิดทาง reclassify เป็น Growth bucket",
+      "Interest Coverage ฟื้นกลับสู่ ≥3.0x",
+      "ยืนยัน M&A pipeline ยัง accretive ต่อเนื่อง 2 ไตรมาสถัดไป"
+    ],
+    bearFlipTriggers: [
+      "Right-to-repair provision ผ่านในรูปแบบใดก็ตาม (แม้บางส่วน) ใน NDAA หรือ standalone bill",
+      "DoD IG พบ price-gouging ครั้งที่ 3 (ยืนยัน systemic pattern)",
+      "Interest Coverage ร่วงต่ำกว่า 2.0x",
+      "Insider selling เร่งตัวเกิน pattern ปัจจุบัน (non-10b5-1 discretionary sales ขนาดใหญ่)",
+      "Organic revenue growth ชะลอต่ำกว่า 8% YoY ติดต่อกัน 2 ไตรมาส"
+    ],
+    thesisInvalidation: "ถ้า right-to-repair legislation ผ่านในรูปแบบใดก็ตาม (แม้บางส่วน) หรือ DoD IG พบ price-gouging ครั้งที่ 3 → core moat thesis (sole-source pricing power) ถือว่าผิดพลาดแล้ว ต้อง re-analysis ทันที",
+    fullContent: `# ✈️ TDG — TransDigm Group Incorporated
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: Value** (Revenue Growth TTM +16.62% ไม่ถึง 20% Growth threshold — แม้ Q3 FY26 เร่งเป็น +23% YoY ก็ยังไม่ sustain 2 ไตรมาสติดต่อกัน)
+
+## 📌 ข้อมูลหลัก
+
+| Field | Value |
+|---|---|
+| Ticker | TDG (NYSE) |
+| Date | 2026-08-18 |
+| Price | $1,231.62 (Yahoo Finance $1,231.62 / stockanalysis.com $1,230.87 — 0.06% diff, 2 sources) |
+| Market Cap | $68.04B – $68.89B |
+| Sector | Aerospace & Defense — OEM Parts / Sole-Source Certified Components |
+
+## 🎯 คำแนะนำ
+
+| Field | Value |
+|---|---|
+| Recommendation | **HOLD / WAIT FOR PULLBACK** |
+| Entry Zone | $900 – $940 (MOS ≥15% zone) |
+| Blended FV | $1,085.33 (ESG-adj $998.50) |
+| MOS | -11.88% (raw) / -18.93% (ESG-adj) |
+| Stop Loss | $736 (-20.0% จาก entry $920) *(ถ้าเข้าตำแหน่งในอนาคต)* |
+| Max Position | N/A — ไม่ deploy ขณะนี้ (ถ้า gate ผ่านในอนาคต: 5–8% ตาม IPS Value bucket) |
+
+## 📊 Score Dashboard
+
+| Blended FV | MOS | ESG | Conviction | Horizon |
+|---|---|---|---|---|
+| $1,085.33 | -11.88% | 4.7/10 (High Risk) | 6.33/10 | 3–5 ปี (long-term hold thesis, ปัจจุบัน: WAIT) |
+
+> ⚡ **TL;DR — อ่าน 30 วินาที**
+> - **Verdict:** HOLD / WAIT FOR PULLBACK — ไม่ deploy ที่ราคาปัจจุบัน $1,231.62 ธุรกิจคุณภาพสูงสุดขั้วหนึ่งที่ทีมเคย scout แต่ราคาแพงเกินไป
+> - **ทำไม:** Blended FV $1,085.33 (MOS -11.88%) ต่ำกว่าเกณฑ์ BUY 15% ทุก sensitivity range (แม้ปรับ exit multiple ±2x ก็ยัง FAIL ทุกจุด) และ Conviction เฉลี่ย 6.33 < 7.0 gate — Emma, Quinn, Bear ทั้ง 3 คนใช้ methodology ต่างกันสิ้นเชิงแต่ลงเอยที่ HOLD เหมือนกัน (triangulation แข็งแรง)
+> - **Downside Risk:** Right-to-repair legislation เป็น **repeated-game risk** (ถูกตัดจาก 2026 NDAA แล้วแต่ momentum กลับมาแรงสำหรับ 2027 NDAA) — ถ้าผ่านจริงกระทบ moat โดยตรง FV ร่วงสู่ $430-515 (-58% ถึง -65%); negative equity -$9.7B + interest coverage 2.63x ก็เป็นความเสี่ยงเชิงโครงสร้างถ้า refinancing cost เพิ่ม
+
+---
+
+## 📋 Executive Summary
+*[CFA L3: Portfolio Management — Investment Recommendation Synthesis]*
+
+TransDigm เป็นหนึ่งใน widest-moat industrials ที่ทีมเคย scout มา (Op Margin 46.72% เกือบ 2 เท่าของ peer ที่ดีที่สุด HEI 23.72%, ROIC 19.40% เพิ่มขึ้นต่อเนื่อง 3 ไตรมาส) แต่ทั้ง 3 มุมมองการวิเคราะห์อิสระ (Emma's absolute DCF, Quinn's multiple-based P-W EV, Bear's downside-weighted scenario) ต่างชี้ตรงกันว่าราคาปัจจุบันแพงเกินกว่าจะ deploy ได้ ณ ขณะนี้ — Blended FV $1,085.33 ให้ MOS เพียง -11.88% ต่ำกว่าเกณฑ์ BUY 15% ของ Value bucket และแม้ทำ sensitivity test บน key assumption (exit multiple ±2x) ผลลัพธ์ยัง FAIL threshold ทุกจุด ($1,010-$1,160 range)
+
+**Conviction Level Score**
+
+\`\`\`
+Emma   ██████░░░░  6.5/10  — Moat wide + DCF overvaluation robust (3 scenarios + reverse DCF), แต่ data gaps + DCF-vs-relative tension ยังไม่ reconcile เต็มที่
+Quinn  ██████░░░░  6.5/10  — ROIC-WACC spread +11.67pp แข็งแกร่ง, แต่ 1Y risk metrics แย่ + sensitivity matrix ไม่ capture binary legislative risk เต็มที่
+Bear   ██████░░░░  6.0/10  — Downside catalysts วัดได้ชัดเจน (2027 NDAA cycle), แต่ genuine two-sided uncertainty + execution ยังแข็งแกร่งจริง
+──────────────────────────────────────────
+Avg    ██████░░░░  6.33/10  [ต่ำกว่า Value bucket gate 7.0 → ไม่ deploy]
+\`\`\`
+Disagreement ระหว่าง agents ≤0.5 จุด (ไม่ถึง 3pt threshold) — ไม่ flag divergence ด้าน conviction แม้ Fair Value estimate จะกระจายกว้างมาก ($806 Emma ถึง $1,397 Quinn) ซึ่งเป็นสัญญาณ methodology-driven divergence ไม่ใช่ genuine disagreement เรื่อง business quality
+
+---
+
+## 💡 Investment Thesis
+*[CFA L3: Equity Portfolio Management — Investment Thesis Statement]*
+
+1. **Textbook Efficient-Scale + Certification Moat** — Op Margin 46.72% สูงกว่า peer ที่ดีที่สุด (HEI 23.72%) เกือบ 2 เท่า มาจาก sole-source FAA/PMA certification barrier ที่ทำให้คู่แข่งเข้าตลาดไม่ได้
+2. **DCF ชี้ overvaluation ทุก scenario** — Base -34.5%, Bull -25.9%, Bear -48.7% MOS (Emma) — Reverse DCF ยืนยันซ้ำว่าราคาตลาด implied perpetual growth 6.27% เกิน sanity ceiling ของทีม (3%) เกือบเท่าตัว
+3. **Relative valuation กลับมองว่าถูกกว่า peer** — Fwd P/E 26.49x / EV-EBITDA 19.41x ต่ำกว่า peer median (-5.7% / -12.7%) ทั้งที่ margin เหนือกว่ามาก — tension ที่ต้อง reconcile (ดู Behind the Scenes)
+4. **Governance overhang เป็น root cause ของ legislative tail risk** — DoD IG พบ price-gouging pattern ซ้ำ 2 รอบ (2019, 2021) จาก sole-source pricing ซึ่งเป็นหัวใจของ moat เดียวกัน — ไม่ใช่ risk แยกจากกัน
+5. **Interest Coverage 2.63x ต่ำกว่าเกณฑ์ปลอดภัย 3x** ท่ามกลาง negative equity -$9.7B + debt $33.5B — stress test (+100bps refinancing) ดันลงสู่ ~2.21x
+
+---
+
+## 🏢 Business Deep Dive
+*[CFA L2: Industry & Competitive Analysis]*
+
+### How TransDigm Makes Money
+- สายการบิน/กองทัพซื้อเครื่องบินที่มีชิ้นส่วน TransDigm ติดตั้งอยู่ (OEM sale, margin ต่ำกว่า)
+- เมื่อเครื่องบินบินไปเรื่อยๆ ชิ้นส่วนสึกหรอ ต้องเปลี่ยนอะไหล่จาก TransDigm เท่านั้นเพราะเป็นเจ้าของ FAA/PMA certification เดียว (**aftermarket sale ~75% ของ EBITDA ทั้งหมด** — WebSearch aggregated, MEDIUM confidence)
+- ใช้ "value-based pricing" ตั้งราคาตามมูลค่าที่ลูกค้าได้ ไม่ใช่ตามต้นทุนผลิต → margin สูงกว่าคู่แข่งเกือบ 2 เท่า
+- กำไรส่วนใหญ่นำไปซื้อกิจการชิ้นส่วนอากาศยาน niche อื่นเพิ่ม (debt-funded M&A, ~$3.3B YTD 2026: Jet Parts Engineering+Victor Sierra $2.2B, Prince & Izant $1.1B) แล้วใช้สูตรราคาเดียวกันขยายผลต่อเนื่อง — capacity เหลือ >$10B
+
+**Analogy:** เหมือนเป็นเจ้าของกุญแจดอกเดียวที่ล็อคประตูทุกหลังในเมือง — กุญแจหายต้องซื้อจากเจ้าของกุญแจเท่านั้น ไม่มีทางเลือกอื่นแม้ราคาแพงแค่ไหน
+
+### Porter's Five Forces
+| Force | Rating | เหตุผล |
+|---|---|---|
+| Threat of New Entrants | **LOW** | FAA/PMA certification barrier ใช้เวลา/เงินมหาศาล + ตลาดแต่ละชิ้นส่วนมักเล็กเกินคุ้มทุนสำหรับผู้เล่นรายที่ 2 (efficient scale moat) |
+| Bargaining Power of Suppliers | LOW-MEDIUM | TDG vertically integrated เป็นส่วนใหญ่ ผู้ผลิตวัตถุดิบ/ชิ้นส่วนย่อยมี leverage จำกัด |
+| Bargaining Power of Buyers | **LOW** | สายการบิน/กองทัพเปลี่ยนไปใช้ชิ้นส่วนทางเลือกไม่ได้ (sole-source, safety certification) — แต่ DoD ใช้ช่องทาง regulatory (IG investigation, right-to-repair legislation) เป็น counter-power แทนการต่อรองราคาตรง |
+| Threat of Substitutes | **LOW** | ไม่มี substitute สำหรับ certified aircraft parts เพราะข้อกำหนดความปลอดภัย — right-to-repair legislation คือ primary threat vector ต่อ force นี้โดยตรง |
+| Competitive Rivalry | LOW-MEDIUM | แต่ละ niche part มักผูกขาดรายเดียว — HEI เป็น closest analog ในโมเดลธุรกิจใกล้เคียงกันที่สุด, PH/HON เป็น diversified industrials ไม่แข่งตรง niche model |
+
+### Market Share Trend
+DATA NOT AVAILABLE — ไม่พบตัวเลข market share % ระดับ segment ย้อนหลัง 3 ปีที่ verify ได้ (SEC EDGAR blocked 403 ทั้งวัน) ใช้ ROIC trend (10.49%→16.74%→19.40% ต่อเนื่อง 3 ไตรมาส) และ Q3 revenue beat +23% YoY + raised FY26 guidance เป็น directional proxy ว่า pricing power/capital efficiency กำลังดีขึ้น — ไม่ใช่หลักฐาน market share โดยตรง
+
+### Customer Concentration
+ไม่พบลูกค้ารายใดเดี่ยวเกิน 20% ทั้งในข้อมูลปัจจุบันและย้อนหลัง — ข้อมูลที่ verify ได้มีเฉพาะช่วงเก่า (FY2015-2019): 2 ลูกค้ารวมกัน ~11-13% เท่านั้น ไม่ trigger concentration flag ตาม protocol แต่ **FY2025 ปัจจุบัน DATA NOT AVAILABLE** (SEC EDGAR blocked 403) — ไม่สามารถยืนยัน Boeing/Airbus % แยกได้ในรอบนี้
+
+### Geography Revenue Breakdown *(MEDIUM confidence — WebSearch aggregated, ไม่มี direct-fetch URL primary source)*
+| ภูมิภาค | % Revenue (FY2025) |
+|---|---|
+| United States | ~62.7% |
+| International (รวม) | ~37.3% (ไม่แยกย่อย China/Europe) |
+
+### Segment Revenue Breakdown *(MEDIUM confidence)*
+| Segment | % of FY2025 Revenue |
+|---|---|
+| Power & Control | ~51.6% |
+| Airframe | ~46.6% |
+| Non-aviation | ~1.8% |
+
+---
+
+## 🏰 Moat Analysis
+*[CFA L2: Economic Moat — Sources of Sustainable Competitive Advantage]*
+
+**Rating: WIDE** — driven หลักโดย **Efficient Scale + Intangible/Certification Assets** (FAA/PMA sole-source parts) มากกว่า network effects หรือ switching cost แบบทั่วไป
+
+หลักฐานเชิงตัวเลขที่ชัดเจนที่สุด: Operating Margin 46.72% เกือบ 2 เท่าของ peer ที่ดีที่สุดในกลุ่ม (HEI 23.72%) และ ROIC−WACC spread +11.3 ถึง +11.6pp (ROIC 19.40% vs WACC ~7.8-8.1%) — ยืนยัน economic value creation จริง ไม่ใช่แค่ accounting margin
+
+**จุดเปราะบางของ moat นี้:** ไม่เหมือน network-effect moat (เช่น platform businesses) moat ของ TDG พึ่งพา **regulatory/legislative status quo** เป็นเงื่อนไขคงอยู่ — right-to-repair legislation คือภัยคุกคามโดยตรงต่อแหล่งที่มาของ moat เอง ไม่ใช่แค่ demand-side risk ทั่วไป
+
+---
+
+## 📊 Sector / Peer Comparison
+*[CFA L2: Relative Valuation]*
+
+| Company | Ticker | Fwd P/E | EV/EBITDA | ROE | ROIC | Rev Growth TTM | Op Margin | Moat |
+|---|---|---|---|---|---|---|---|---|
+| **TransDigm** | **TDG** | **26.49x** | **19.41x** | **N/A (neg. equity)** | **19.40%** | **+16.62% (Q3 +23%)** | **46.72%** | **WIDE** |
+| HEICO | HEI | 57.82x | 39.17x | 17.21% | 12.73% | +18.80% | 23.72% | Narrow-Wide |
+| Parker-Hannifin | PH | 29.71x | 25.07x | 25.08% | 15.72% | +8.31% | 21.55% | Narrow |
+| Honeywell | HON | 24.71x* | 11.50x | 46.58%* | 13.48% | +11.01% | 18.73% | Narrow |
+| **Sector Median** | — | 28.10x | 22.24x | — | — | — | — | — |
+
+*\\*HON trailing P/E 8.79x และ ROE ดูผิดปกติ — น่าจะจาก one-time item จาก spin-off, ใช้ forward figures แทน*
+
+**TDG vs Median:** P/E discount -5.7%, EV/EBITDA discount -12.7% — ทั้งที่ ROIC สูงกว่าทุก peer และ Op Margin สูงกว่า peer ที่ดีที่สุดเกือบ 2 เท่า **นี่คือ tension สำคัญ** ที่ absolute DCF (overvalued) กับ relative valuation (discount to peers) ชี้ตรงข้ามกัน — ดู reconciliation ใน Behind the Scenes
+
+*Source: stockanalysis.com/stocks/[ticker]/statistics/, WebFetch 2026-08-18*
+
+---
+
+## 💰 Valuation
+*[CFA L2: Equity Valuation — DCF & Enterprise Value Methods]*
+
+### Emma — Absolute DCF (FCFE-approximation, Ke = 9.28%)
+| Scenario | FV/share | MOS vs $1,231.62 |
+|---|---|---|
+| Base (taper 15%→7%, terminal g=3%) | $806.42 | -34.53% |
+| Bull (taper 20%→8%, terminal g=3%) | $912.30 | -25.94% |
+| Bear (taper 10%→4%, terminal g=2.5%) | $631.51 | -48.73% |
+
+Reverse DCF cross-check: implied perpetual growth ณ ราคาปัจจุบัน ≈ **6.27%** เทียบ terminal growth sanity ceiling 3.0% ของทีม — ยืนยัน overvaluation signal ด้วยวิธีอิสระอีกทาง
+
+### Quinn — P-W EV (EV/EBITDA exit-multiple bridge, WACC = 7.73%)
+| Scenario | Rev CAGR | EBITDA Margin | Exit EV/EBITDA | FV/sh | Prob |
+|---|---|---|---|---|---|
+| Bear | 6% | 44% | 13.0x | $515 | 25% |
+| Base | 13% | 52% | 17.0x | $1,405 | 50% |
+| Bull | 19% | 55% | 20.0x | $2,262 | 25% |
+
+**P-W EV = $1,396.53 → MOS +13.4%**
+
+### Bear — Downside-weighted P-W EV (probability 20/55/25)
+| Scenario | Rev CAGR | EBITDA Margin | Exit EV/EBITDA | FV/sh | Prob |
+|---|---|---|---|---|---|
+| Extreme Bear | 4% | 44% | 11.0x | $429.80 | 20% |
+| Base (adj) | 9% | 49% | 14.0x | $1,052.50 | 55% |
+| Bull (capped) | 15% | 53% | 17.0x | $1,924.60 | 25% |
+
+**Bear's P-W EV = $1,146.00 → MOS -6.95%**
+
+### Blended FV Triangulation
+\`\`\`
+Blended FV = Emma($806.42)×0.40 + Quinn($1,396.53)×0.30 + Bear($1,146.00)×0.30
+           = $322.57 + $418.96 + $343.80 = $1,085.33
+MOS = (1,085.33 − 1,231.62)/1,231.62 = -11.88%
+\`\`\`
+
+**Sensitivity Test (Quinn's exit multiple ±2x จาก 17x base):** Blended FV range $1,010.40 – $1,160.40 (MOS -17.9% ถึง -5.8%) — **ทั้ง range ยัง FAIL threshold 15% ทุกจุด** → BUY case ไม่ robust ต่อ reasonable assumption changes
+
+**ESG-adjusted FV:** $998.50 (-8% governance discount) → MOS ESG-adj = **-18.93%**
+
+**Target (Blended Bull, 40/30/30):** $1,620.90 | **Downside (Blended Bear):** $536.04 (-56.5%)
+
+---
+
+## 📉 Quantitative Risk
+*[CFA L1: Portfolio Management — Risk-Adjusted Return Measures]*
+
+| Metric | Value | หมายเหตุ |
+|---|---|---|
+| Beta (5Y monthly) | 0.91 | ต่ำกว่าตลาด — สะท้อนว่าความเสี่ยงหลักของ TDG เป็น idiosyncratic/regulatory ไม่ใช่ systematic |
+| Annualized Volatility (σ) | 28.55% | Triangulated 3 sources (27.6-28.8%) |
+| Sharpe Ratio (1Y) | **-0.27** | 1Y snapshot บิดเบือนโดย idiosyncratic derating event (Stifel downgrade) — cross-checked กับ external aggregators (-0.20 ถึง -0.28) |
+| Sortino Ratio (parametric) | -0.38 | Approximation — ไม่มี monthly return series เต็ม |
+| Max Drawdown (52W) | -23.2% | Cross-check TradingKey 240-day: -21.87% |
+| VaR 95% (1-day, parametric) | -2.96% | CVaR 95%: -3.71% |
+| Realized Alpha vs CAPM (1Y, n=1) | -22.8% | ไม่ใช่ Jensen's/Carhart alpha ที่ validate ได้ — Carhart 4-factor **DATA NOT AVAILABLE** (ไม่มี SMB/HML/MOM loadings) |
+| ROIC − WACC Spread | **+11.67pp** | ROIC 19.40% vs WACC 7.73% — สัญญาณ value creation แข็งแกร่งมาก |
+| Net Debt/EBITDA | 5.81x | Leverage สูงระดับ LBO-style, by-design ไม่ใช่ distress signal เดี่ยวๆ |
+| Interest Coverage | 2.63x | **ต่ำกว่าเกณฑ์ปลอดภัย 3x** — stress test +100bps → 2.21x |
+
+### Sensitivity Matrix 5×5 — Revenue Growth CAGR × EBITDA Margin
+*(Exit multiple fix ที่ current 18.77x — ไม่ price-in multiple compression, ดู P-W EV สำหรับมุมมองที่รวม compression risk)*
+
+| Rev Growth \\ EBITDA Margin | 46% | 49% | 52% | 55% | 58% |
+|---|---|---|---|---|---|
+| **8%** | $1,111 | $1,219 | $1,328 | $1,437 | $1,545 |
+| **11%** | $1,251 | $1,369 | $1,487 | $1,604 | $1,722 |
+| **14%** | $1,399 | **$1,528** | $1,654 | $1,781 | $1,908 |
+| **17%** | $1,554 | $1,692 | $1,830 | $1,967 | $2,105 |
+| **20%** | $1,718 | $1,866 | $2,015 | $2,163 | $2,311 |
+
+⚠️ **Caveat สำคัญ (Bear เน้นย้ำ):** 24/25 cells ให้ FV สูงกว่าราคาปัจจุบัน — **ห้ามใช้เป็น deployment justification** เพราะ matrix นี้ fix exit multiple ที่ current level (circular reasoning แบบเดียวกับ ETN/VRT precedent) — ตอบคำถาม "ถ้าตลาดยัง pay 18.77x ต่อไป" ไม่ใช่ "ควร pay เท่าไหร่"
+
+---
+
+## 🌱 ESG Risk Scorecard
+*[CFA L2-3: ESG Integration — Materiality Analysis]*
+
+| Dimension | Score | Key Issues |
+|---|---|---|
+| Environmental | 6/10 | Aerospace component manufacturing — moderate footprint, ไม่พบ major controversy |
+| Social | 5/10 | Safety-critical aviation products, defense/military ties, ไม่พบ major labor controversy |
+| Governance | **3/10** | DoD IG พบ price-gouging ซ้ำ 2 รอบ (2019: $16.1M excess profit, 2021: ~$21M) — **pattern ซ้ำ ไม่ใช่ one-off** |
+| **Overall** | **4.7/10 (High Risk)** | Cross-check: MSCI BB, Sustainalytics 39.1 (High Risk), Refinitiv 46/100 |
+
+**Bear's Challenge (สำคัญ):** Governance risk และ legislative tail risk **ไม่ใช่ 2 risk อิสระ** — เป็นเหตุ-ผลเดียวกัน (repeat price-gouging pattern คือ root cause ที่สร้าง political momentum ให้ right-to-repair legislation) ควรตีความรวมกัน ไม่แยก valuation impact estimate
+
+### Material ESG Risks
+1. **Right-to-repair legislative risk** — impact -10% ถึง -15% (Emma) แต่ Bear's scenario analysis ชี้ว่าถ้าเกิดจริงอาจลึกกว่านั้นมาก (-58% ถึง -65%, รวม multiple re-rating)
+2. **Repeat governance findings** — clawback/TINA enforcement risk, impact -5% ถึง -8%
+3. **Leverage/capital allocation risk** — Interest Coverage 2.63x < 3x safe threshold ท่ามกลาง negative equity
+
+---
+
+## 💪 Conviction Level Score
+*(ดู bar chart ใน Executive Summary)* — **Average 6.33/10** — ต่ำกว่า Value bucket gate 7.0 → **ไม่ deploy**
+
+---
+
+## 🔄 What Would Change Our Mind
+*[CFA L3: Portfolio Construction — Investment Thesis]*
+
+**Bull Flip Triggers (→ BUY):**
+1. ราคาปรับลงสู่ ≤$940/share โดย thesis ไม่เปลี่ยน → MOS ≥15% ผ่าน Value gate
+2. 2027 NDAA ผ่านโดยไม่มี right-to-repair provision (ยืนยันภายใน ธ.ค. 2026/ต้นปี 2027) → ตัด tail risk ใหญ่สุดออก
+3. Organic revenue growth ≥15% YoY ต่อเนื่อง 2 ไตรมาสติดต่อกัน (Q4 FY26 + Q1 FY27) → เปิดทาง reclassify เป็น Growth bucket
+4. Interest Coverage ฟื้นกลับสู่ ≥3.0x
+5. ยืนยัน M&A pipeline ยัง accretive ต่อเนื่อง 2 ไตรมาสถัดไป
+
+**Bear Flip Triggers (→ SELL/AVOID):**
+1. Right-to-repair provision ผ่านในรูปแบบใดก็ตาม (แม้บางส่วน) ใน NDAA หรือ standalone bill
+2. DoD IG พบ price-gouging ครั้งที่ 3 (ยืนยัน systemic pattern)
+3. Interest Coverage ร่วงต่ำกว่า 2.0x
+4. Insider selling เร่งตัวเกิน pattern ปัจจุบัน (non-10b5-1 discretionary sales ขนาดใหญ่)
+5. Organic revenue growth ชะลอต่ำกว่า 8% YoY ติดต่อกัน 2 ไตรมาส
+
+**Thesis Invalidation:** ถ้า right-to-repair legislation ผ่านในรูปแบบใดก็ตาม (แม้บางส่วน) หรือ DoD IG พบ price-gouging ครั้งที่ 3 → core moat thesis (sole-source pricing power) ถือว่าผิดพลาดแล้ว ต้อง re-analysis ทันที
+
+---
+
+## 🎯 Recommendation
+*[CFA L3: Portfolio Construction — Buy/Hold/Sell Decision]*
+
+> ### HOLD / WAIT FOR PULLBACK — ไม่ Deploy ณ ราคาปัจจุบัน ($1,231.62)
+> Blended FV $1,085.33 (MOS -11.88%) ต่ำกว่าเกณฑ์ 15% ของ Value bucket, Conviction เฉลี่ย 6.33/10 < 7.0 gate — ทั้งสองด้าน FAIL แม้ business quality จะแข็งแกร่งที่สุดในกลุ่ม industrials ที่ทีมเคย scout
+
+**Entry Zone:** $900 – $940 (MOS 15.5%–20.6%)
+**Stop Loss:** $736 (-20.0% จาก entry $920) — ตาม IPS Risk Rule -20% ต่อ position *(กรณีเข้าตำแหน่งในอนาคต)*
+**Target:** Base $1,085 (Blended FV) / Bull $1,621 (Blended Bull)
+
+### Forward Return Estimate (HOLD — Fix #6)
+ถ้าเข้า entry zone mid ($920) แล้วถือ 3 ปีจนถึง Blended FV ($1,085.33):
+\`\`\`
+((1,085.33 / 920)^(1/3) - 1) × 100 = 5.66% CAGR → 17.97% total return (3 ปี)
+\`\`\`
+Forward return ค่อนข้างต่ำแม้ที่ entry zone target — สะท้อนว่าราคาปัจจุบันของตลาด priced-in การเติบโตเกินกว่าที่ DCF-based framework ของทีมจะ justify ได้ในระยะ 3 ปี ไม่ใช่แค่ "แพงชั่วคราว"
+
+---
+
+## ⚠️ Risk Summary
+
+1. **Right-to-repair legislative risk (repeated-game)** — ถูกตัดจาก 2026 NDAA (ธ.ค. 2025) แต่ Sen. Warren + Sheehy ผลักดัน "Warrior Right to Repair Act" ใหม่ทันที, HASC advance ข้อเสนออีกครั้งมิ.ย. 2026 — cumulative probability ตลอด 3-5yr horizon ประเมินสูงกว่า single-year 25% อย่างมีนัยสำคัญ
+2. **Rate sensitivity ผ่าน leveraged balance sheet** — negative equity -$9.7B, debt $33.5B, interest coverage 2.63x
+3. **Aerospace demand cyclicality** — high fuel cost + rising rates (Stifel note) แม้ aftermarket มัก lag OEM cycle
+4. **Insider selling** — Founder W. Nicholas Howley + Co-COO Joel Reiss ขายหลายครั้ง มิ.ย.-ส.ค. 2026 (ส่วนใหญ่ 10b5-1 pre-arranged — signal อ่อนแต่ direction สอดคล้อง overvaluation thesis)
+5. **Governance repeat-offender pattern** — DoD IG price-gouging 2019+2021, root cause เดียวกับ legislative risk
+
+---
+
+## 📅 Catalysts Calendar
+
+\`\`\`
+[2026-09-16] ──●── 🏦 FOMC Decision                    [MED]
+                    Refinancing cost sensitivity สำหรับ debt $33.5B
+
+[2026-11]    ──●── 📊 Q4 FY26 Earnings                  [HIGH]
+                    ยืนยัน organic growth trend + FY27 guidance
+
+[2026-12→2027Q1] ──●── ⚖️ 2027 NDAA Markup              [HIGH — Binary]
+                    Right-to-repair provision — thesis invalidation trigger ถ้าผ่าน
+
+[Ongoing]    ──●── 🤝 M&A Pipeline Execution            [MED]
+                    >$10B capacity เหลือ, ROIC-accretive track record ($3.3B+ YTD 2026)
+\`\`\`
+
+---
+
+## 📚 CFA Concepts
+
+- **DCF — FCFE-approximation [CFA L2: Equity Valuation]**
+- **Reverse DCF [CFA L2 extension]**
+- **Enterprise Value Bridge [CFA L2]** — หลีกเลี่ยง negative book equity problem
+- **Economic Moat / Porter's Five Forces [CFA L2: Industry & Competitive Analysis]**
+- **ROIC vs WACC / Economic Value Added [CFA L1-L2]**
+- **Systematic vs Unsystematic Risk [CFA L1: Portfolio Management]**
+- **Sharpe/Sortino/VaR [CFA L1-L2: Risk-Adjusted Return]**
+- **Anchoring Bias [CFA L3: Behavioral Finance]**
+- **Circular Reasoning in Relative Valuation [CFA L2]**
+- **Probability-Weighted Expected Value / Scenario Analysis [CFA L3: Portfolio Management]**
+- **Cross-sectional Relative Valuation [CFA L2]**
+- **ESG Materiality Analysis [CFA L2-3]**
+- **Interest Coverage & Credit Analysis [CFA L1: Fixed Income]**
+
+---
+
+## ⚙️ Behind the Scenes
+
+**Team Process:** Atlas (Macro Brief + Data Package, RISK-ON regime 3/4 ต่อเนื่องครั้งที่ 4) → Emma (Absolute DCF, Moat Wide, ESG 4.7/10) ∥ Quinn (P-W EV multiple-based, Capital structure handling ด้วย EV bridge เพราะ negative equity) → Bear (Challenge ทั้งคู่, reconcile divergence, downside-weighted P-W EV ของตัวเอง) → Charlie (Blended + Report)
+
+**Bear Weight Rationale:** Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30 ตาม CLAUDE.md house rule ปัจจุบัน (Blended FV Triangulation Weights) และตรงกับที่ CIO ระบุชัดเจนในโจทย์งานนี้ — **⚠️ พบ discrepancy:** Charlie's persona system prompt อ้างอิง "IPS 2026-05-15" ที่ระบุ Bear weight = 25% (ไม่ใช่ 30%) ในขณะที่ CLAUDE.md (house rule ที่ override) และ CIO's explicit instruction ระบุ 30% ทั้งคู่ — ใช้ **30%** เป็น authoritative ตามลำดับความสำคัญ (CLAUDE.md override + explicit CIO instruction) แต่ flag ให้ CIO reconcile ไฟล์ persona prompt กับ house rule ที่อาจไม่ sync กัน
+
+**Emma-Quinn Divergence Reconciliation:** Root cause คือ methodology mismatch — Emma's absolute DCF (FCF discounting, terminal growth ceiling 3%) เป็น conservative-by-construction ไม่มี mechanism รองรับ M&A-funded growth; Quinn's P-W EV ฝัง exit-multiple assumption ที่ anchor ใกล้ current trading multiple (17-20x) ซึ่งเป็น circular reasoning risk แบบเดียวกับ ETN/VRT precedent Bear ยืนยันว่าทั้งสอง methodology ไม่ผิด แต่ตอบคำถามต่างกัน — ใช้ weighted blend + sensitivity test เป็นทางออก
+
+**Convergence Check:** Emma-Quinn conviction gap = 0, Bear = 6.0 — ไม่มีใครถึง ≥8 → ไม่ trigger Anti-Convergence Protocol formal แต่สังเกตว่าทั้ง 3 agents (methodology ต่างกันสิ้นเชิง) ลงเอยที่ recommendation เดียวกัน (HOLD) — สัญญาณ triangulation ทำงานถูกต้อง ไม่ใช่ concerning groupthink
+
+**Data Quality Note:** SEC EDGAR blocked (403 Forbidden) ตลอดวัน — Segment/Geography/Customer concentration data ทั้งหมดเป็น WebSearch aggregated (MEDIUM confidence) ไม่ใช่ primary-source verified เต็มรูปแบบ
+
+---
+
+## 🏁 Conclusion
+
+TDG เป็นธุรกิจคุณภาพสูงสุดขั้วหนึ่งที่ทีมเคย scout มา — Wide Moat ที่มีหลักฐานเชิงตัวเลขชัดเจน (ไม่ใช่แค่ narrative), ROIC trending ขึ้นต่อเนื่อง, execution แข็งแกร่ง (Q3 beat, raised guidance) แต่ราคาปัจจุบันไม่ให้ margin of safety เพียงพอตามเกณฑ์ Value bucket ของทีม (Conviction 6.33 < 7.0, MOS -11.88% < 15%) ทีมแนะนำ **HOLD / WAIT** และ monitor active สำหรับ 2 catalyst หลัก: ราคาย่อสู่ $900-940 หรือ 2027 NDAA outcome (right-to-repair) — ปัญหาไม่ใช่ business quality แต่คือ price + unpriced legislative tail risk
+
+---
+
+## Morgan QA Verification
+**Reviewed by:** Morgan (QA Analyst)
+**Date reviewed:** 2026-08-19
+**Status:** ✅ PASS
+
+### Step 0 — Independent Price Verification (BLOCKING CHECK)
+- WebFetch \`stockanalysis.com/stocks/tdg/\` directly (independent, not from report) → **$1,233.78** at market close 2026-08-18, 4:00 PM EDT
+- Compare to report price $1,231.62 → diff = **0.18%** → ✅ PASS (≤5%)
+- Note: an initial WebSearch snippet returned a stale/erroneous quote ($1,419.56) — this was rejected as unreliable after cross-checking with a direct WebFetch of the primary data page, which matched the report closely. WebFetch data treated as authoritative per protocol.
+- Shares outstanding cross-check: stockanalysis.com WebFetch confirms 55.28M shares, matching report's 55.27–55.28M ✅
+
+### Step 0.5 — Independent Financial Data Spot-check (BLOCKING CHECK)
+- Revenue (Q3 FY26): WebSearch confirms net sales **$2.741B**, +23% YoY, organic +13% — matches report exactly ($2,741M, +23%) ✅
+- EPS (Q3 FY26, adjusted): WebSearch confirms **$10.87**, beat consensus $10.29 by 5.6% — matches report exactly ✅
+- FY26 Guidance: WebSearch confirms revenue midpoint raised to **$10.51B**, EBITDA guidance $5.52B — consistent with report's "$10,470–$10,550M sales" ✅
+- Market Cap: WebFetch confirms **$68.20B** at close — within report's stated range $68.04B–$68.89B ✅ (see Issue #1 below re: range internal consistency)
+
+### Data Integrity Checklist
+- [x] Stock price verified from ≥ 2 independent sources (Yahoo Finance, stockanalysis.com) + Morgan's own independent WebFetch — all converge within 0.2%
+- [x] Market cap = shares × price (calculation check ±10%) — $1,231.62 × 55.275M ≈ $68.07B, within report's stated range; upper bound $68.89B implies ~55.94M shares (1.2% off stated 55.27–55.28M) — within 10% tolerance, flagged as MEDIUM below
+- [x] FV/Price → MOS calculation correct — independently recomputed: Blended FV = 0.40×806.42 + 0.30×1,396.53 + 0.30×1,146.00 = $1,085.33 ✓; MOS = (1,085.33−1,231.62)/1,231.62 = -11.88% ✓; ESG-adj FV $998.50 = 1,085.33×0.92 ✓, MOS ESG-adj -18.93% ✓; Blended Bull $1,620.90 ✓; Blended Bear $536.04 (-56.5%) ✓; Sensitivity range $1,010.40–$1,160.40 ✓ — all recomputed independently and match report exactly
+- [x] All financial ratios within plausible range — ROIC 19.40%, WACC 7.73–7.80%, Interest Coverage 2.63x, Net Debt/EBITDA 5.81x, Sharpe -0.27, VaR -2.96% — all recomputed and verified correct
+- [x] No data older than 30 days unless flagged explicitly — price/revenue/EPS same-session or within days; segment/geography/customer data explicitly flagged MEDIUM confidence with reason (SEC EDGAR 403)
+
+### Rule Compliance Checklist
+- [x] Recommendation aligns with MOS threshold — MOS -11.88% < 15% required for Value bucket BUY → correctly HOLD, not BUY
+- [x] Conviction gate match — Conviction 6.33 < 7.0 Value bucket gate → correctly HOLD, not BUY
+- [x] Macro Regime check — Atlas declared RISK-ON (3/4 indicators), correctly referenced in report and Behind the Scenes; Quinn/Bear reflected rate-sensitivity concern via exit-multiple scenario + explicit +100bps stress test (interest coverage 2.63x→2.21x)
+- [x] Stop loss within IPS bounds — $736 = $920 × 0.80 (-20.0%) ✓ correct, matches -20% per-position rule
+- [x] Position size — N/A correctly stated since not deployed (no gate pass) — compliant, no violation
+- [x] Blended FV weight — 40% Emma / 30% Quinn / 30% Bear — matches CURRENT CLAUDE.md house rule (not the outdated 30/30/40) ✓; team proactively flagged and resolved a persona-prompt vs house-rule discrepancy (25% vs 30%) transparently — good practice, not a violation
+- [x] Bucket clearly stated — "Bucket: Value" declared at top with rationale ✓
+- [x] Negative equity handled correctly — Emma used FCFE-approximation with market-value WACC weights (not book equity), Net Debt/EBITDA & Debt/EBITDA instead of D/E, and flagged ROE as "N/A (neg. equity)" throughout — no misuse of ROE/D/E found. Quinn used market-value WACC weights and EV bridge (EV − Net Debt) instead of equity-based DCF — correctly implemented per instructions
+- [x] Terminal growth rate sanity ceiling — Emma used 3.0% (Base/Bull) and 2.5% (Bear) — within team's 3% sanity ceiling ✓
+- [x] DCF/WACC assumptions sanity — WACC 7.73–7.80% (within 7–13% range) ✓; Revenue growth taper well within 2× historical CAGR ✓
+
+### Source Annotation Checklist
+- [x] Every financial number has source citation (URL or Atlas Data Package reference)
+- [x] No unlabeled "around X" / "approximately X" estimates — all estimates explicitly flagged as *(assumption)* or MEDIUM confidence with reasoning
+- [x] Atlas Macro Brief + Data Package referenced explicitly throughout report and Behind the Scenes
+- [x] Shares outstanding verified — cross-checked independently via WebFetch (55.28M), matches Atlas Data Package
+- [x] MEDIUM-confidence data (segment/geography/customer concentration) explicitly disclosed with confidence flag in Business Deep Dive — not presented as verified fact
+- Spot-checked 2 external URLs independently (DoD IG price-gouging findings; right-to-repair stripped from 2026 NDAA) via WebSearch (WebFetch blocked 403 by both sites, consistent with Atlas/Bear's own experience) — both confirmed to be real, accurate content matching what was cited in the report ($16.1M 2019 / ~$21M 2021 excess profit findings confirmed; NDAA strip-out narrative confirmed)
+
+### 📊 Data Quality Score: 8.5/10
+
+| มิติ | คะแนน | หมายเหตุ |
+|------|-------|---------|
+| Source Quality (Tier) | 8/10 | ส่วนใหญ่ Tier 1/2 (SEC-adjacent gov sources, Bloomberg, stockanalysis.com WebFetch); segment/geography/customer data เป็น Tier 2B ที่ disclose ชัดเจนตามโปรโตคอล (SEC EDGAR 403 documented) |
+| Data Freshness | 9/10 | ราคา/Revenue/EPS ข้อมูลสดวันเดียวกัน/สัปดาห์เดียวกัน; Beta/ESG ไม่มี staleness issue ที่พบ |
+| DCF Assumptions | 9/10 | WACC 7.73–7.80% (ในช่วง), Terminal growth 3.0%/2.5% (ที่ ceiling พอดีแต่มีเหตุผลรองรับชัดเจนตาม precedent) |
+| Cross-agent Consistency | 9/10 | Emma/Quinn ใช้ FCF, Beta, Risk-free rate, shares สอดคล้องกัน; conviction gap ≤0.5 |
+| Atlas Integration | 8/10 | Regime + rate-sensitivity risk ถูกสะท้อนผ่าน Quinn's exit-multiple scenario + Bear's stress test |
+| **Overall** | **8.5/10** | |
+
+### ✅ Passed Checks
+- ราคาหุ้น verified อิสระ (WebFetch โดยตรง) ตรงกับ report ภายใน 0.18%
+- Revenue/EPS Q3 FY26 verified อิสระ ตรงกับ report 100%
+- Blended FV, MOS, ESG-adj FV, Blended Bull/Bear, sensitivity range — คำนวณซ้ำอิสระทุกตัว ตรงกับ report 100%
+- Negative equity handling ถูกต้องตามโปรโตคอล (ไม่ใช้ ROE/D/E ตรงๆ, ใช้ market-value WACC weights, EV bridge)
+- Terminal growth ceiling, WACC range, MOS/Conviction gate compliance ทั้งหมดผ่าน
+- Stop Loss format ถูกต้องตาม Fix #1 ($736 = $920×0.80)
+- Forward Return Estimate (Fix #6) มีและคำนวณถูกต้อง (5.66% CAGR, 17.97% total return)
+- Bucket ระบุชัดเจน (Value) พร้อมเหตุผล
+- Bear's HIGH severity challenges (cumulative legislative probability, anchoring bias, negative equity stress test, M&A slowdown reframing, insider selling, ESG-legislative linkage) ทั้งหมดถูก address ใน report จริง ไม่ใช่แค่ acknowledge
+- Section emojis, Conviction Bar (█), Key Verdict callout, Catalyst Timeline format ครบถ้วนตาม house rule
+- Spot-check 2 external sources ยืนยันความถูกต้องของเนื้อหาที่อ้างอิง
+
+### ❌ Issues Found
+
+| # | Issue | Location | Severity | Action Required |
+|---|-------|----------|----------|----------------|
+| 1 | Business Deep Dive ขาด "Competitor Profiles" subsection แบบมีโครงสร้าง (3–5 คู่แข่งพร้อม เก่งอะไร/ไม่เก่งอะไร/Threat Level ต่อราย) — มีแค่ Porter's Five Forces ที่กล่าวถึง HEI/PH/HON สั้นๆ ไม่ครบตามสเปก 4.3b | 🏢 Business Deep Dive | MEDIUM | ให้ Emma เพิ่ม subsection "Competitor Profiles" พร้อม HEI/PH/HON (และอาจเพิ่ม RTX/Woodward ถ้ามีข้อมูล) ระบุจุดแข็ง/จุดอ่อน/Threat Level (HIGH/MEDIUM/LOW) ต่อราย |
+| 2 | Atlas Data Package Section A Market Cap range ($68.04B–$68.89B) ไม่ reconcile กับ Shares Outstanding ที่ระบุ (55.27–55.28M) อย่างสมบูรณ์ — upper bound ($68.89B) implied shares ≈55.94M ซึ่งต่างจากตัวเลขที่ระบุ ~1.2% (ยังอยู่ในเกณฑ์ ±10% ที่ยอมรับได้ แต่ไม่มีคำอธิบายว่าทำไม range กว้างขนาดนี้) | 📌 ข้อมูลหลัก / Atlas Data Package Sec. A | LOW | Atlas ควรระบุแหล่งที่มาของ market cap สูง/ต่ำแต่ละค่าให้ตรงกับ shares/price คู่กันชัดเจนขึ้นในรอบถัดไป ไม่ block การ deploy รอบนี้เพราะไม่กระทบ valuation math (Emma/Quinn ใช้ shares 55.275M ตรงกันทั้งคู่) |
+
+**Reject Type:** ไม่มี — ไม่ FAIL (Issues ทั้งหมดเป็น MEDIUM 1 รายการ + LOW 1 รายการ ซึ่งอยู่ในเกณฑ์ PASS ตาม Morgan reject rate criteria: MEDIUM ≤ 2 และไม่มี HIGH)
+
+### 📋 Independent Verification
+
+| ตัวเลข | ใน Report | Morgan หาได้ (อิสระ) | ต่างกัน | ผล |
+|--------|----------|-------------|--------|-----|
+| ราคา | $1,231.62 | $1,233.78 (WebFetch stockanalysis.com, close 8/18) | 0.18% | ✅ |
+| Shares Outstanding | 55.27–55.28M | 55.28M (WebFetch) | ~0% | ✅ |
+| Market Cap | $68.04B–$68.89B | $68.20B (WebFetch) | within range | ✅ |
+| Revenue (Q3 FY26) | $2,741M, +23% YoY | $2.741B, +23% YoY (WebSearch, Yahoo/Stocktitan) | 0% | ✅ |
+| EPS (Q3 FY26, Adj) | $10.87 | $10.87 (WebSearch) | 0% | ✅ |
+| FY26 Revenue Guidance | $10,470–$10,550M | $10.51B midpoint (WebSearch) | ~0% | ✅ |
+
+### 📋 Source Verification
+
+| URL / Source ที่ตรวจ | Tier | สถานะ | หมายเหตุ |
+|---------------------|------|-------|---------|
+| stockanalysis.com/stocks/tdg/ | Tier 2 | ✅ | WebFetch โดยตรงสำเร็จ, ราคา/market cap/shares ตรงกับ report |
+| DoD IG price-gouging findings (oversightdemocrats.house.gov) | Tier 1 (gov source) | ✅ | WebFetch ถูก 403 block (เหมือนที่ Atlas/Bear เจอ) แต่ WebSearch ยืนยันเนื้อหาตรงกับที่ report อ้าง ($16.1M 2019, ~$21M 2021) |
+| Federal News Network — right-to-repair stripped from 2026 NDAA | Tier 1/2 (specialty journalism) | ✅ | WebFetch ถูก 403 block แต่ WebSearch ยืนยันเนื้อหาตรงกับ narrative ที่ Bear อ้างอิง |
+| Yahoo Finance / Stocktitan — Q3 FY26 earnings | Tier 2 | ✅ | ยืนยัน revenue/EPS ตรงกับ report 100% |
+
+### 📝 QA Summary
+รายงาน TDG ฉบับนี้มีคุณภาพสูง — การคำนวณ Blended FV, MOS, sensitivity range, ESG-adjusted FV และตัวเลข quant ทั้งหมดถูกต้องตรงตามที่ตรวจสอบซ้ำอิสระทุกจุด ราคาหุ้นและ financial data สำคัญ (Revenue, EPS Q3 FY26) verified อิสระตรงกับ report เกือบสมบูรณ์แบบ (diff <0.2%) การจัดการ negative equity ของทั้ง Emma และ Quinn ถูกต้องตามโปรโตคอล ไม่มีการใช้ ROE/D/E ที่ไม่มีความหมายอย่างผิดพลาด Terminal growth และ WACC assumptions อยู่ในเกณฑ์ sanity ที่กำหนด Gate compliance (Conviction 6.33<7.0, MOS -11.88%<15%) นำไปสู่ HOLD ที่ถูกต้องตาม rule ไม่มี BUY ที่ผิดเกณฑ์ Bear's HIGH severity challenges ถูก address ครบถ้วนในรายงานจริง ไม่ใช่แค่ acknowledge ผิวเผิน
+
+พบ 1 ประเด็น MEDIUM (ขาด Competitor Profiles subsection แบบมีโครงสร้างใน Business Deep Dive) และ 1 ประเด็น LOW (market cap range ไม่ reconcile กับ shares 100% แต่อยู่ในเกณฑ์ยอมรับได้) — ทั้งสองไม่กระทบ valuation หรือ recommendation logic ของรายงาน จึงยังคง**PASS**ได้ตามเกณฑ์ (MEDIUM ≤2, ไม่มี HIGH, Data Quality Score 8.5/10 ≥6)
+
+**Decision: PASS** — Leo สามารถดำเนินการบันทึกและ push Life OS ได้ทันที แนะนำให้ Emma เพิ่ม Competitor Profiles subsection ใน future update ของ report นี้ (ไม่บังคับต้องแก้ก่อนบันทึกครั้งนี้ เนื่องจากเป็น MEDIUM เดี่ยว ไม่ใช่ blocking issue)
+`
+  },
 
   {
     ticker: "NET",
@@ -6921,66 +7465,120 @@ Wide Moat ที่แข็งแกร่ง + AI monetization inflection จ�
   {
     ticker: "VEEV",
     company: "Veeva Systems Inc.",
-    date: "2026-05-11",
+    date: "2026-08-20",
+    version: "v2",
     sector: "Healthcare Technology / Life Sciences SaaS",
-    price: 166.00,
-    recommendation: "HOLD",
-    blendedFV: 192.00,
-    esgAdjFV: 196.00,
-    targetBull: 265.00,
-    targetBase: 192.00,
-    stopLoss: 118.00,
-    convictionEmma: 7,
-    convictionQuinn: 7,
-    convictionBear: 6,
-    convictionAvg: 6.7,
-    pwEV: 205.00,
-    beta: 0.82,
-    sharpe1Y: 0.78,
-    maxDrawdown: -0.64,
+    price: 251.00,
+    recommendation: "HOLD/WAIT FOR PULLBACK — NO DEPLOY",
+    blendedFV: 192.66,
+    esgAdjFV: 188.81,
+    targetBull: 245.00,
+    targetBase: 188.81,
+    stopLoss: 160.00,
+    convictionEmma: 7.0,
+    convictionQuinn: 5.5,
+    convictionBear: 7.0,
+    convictionAvg: 6.5,
+    mosPct: -23.24,
+    mosPctEsgAdj: -24.78,
+    pwEV: 231.88,
+    pwEvBear: 173.00,
+    beta: 0.92,
+    sharpe1Y: 0.53,
+    maxDrawdown: -0.6374,
     moat: "Wide",
-    esgRating: "Low",
-    esgScore: 7.3,
-    macroRegime: "TRANSITIONAL-CAUTIOUS",
-    sp500Reference: 7399,
-    keyThesis: "Healthcare SaaS ที่มี FDA 21 CFR regulatory lock-in แน่นที่สุดในพอร์ต; Alpha t=2.1 สูงสุดใน universe; FCF Yield 5.1%; S&P 500 inclusion May 19; แต่ MOS เพียง +15.7% vs threshold 20% = HOLD",
-    topRisk: "Vault CRM migration off Salesforce = unresolved operational risk; Revenue CAGR debate Emma 16% vs Bear 12% = $45 FV swing; Salesforce Life Sciences Cloud threat (30% revenue); Bear DCF $152 ใกล้ราคาปัจจุบัน",
-    entryZone: "$148–158 (T1 2%) / $130–145 (T2 0.5%)",
-    positionSize: "3% max (Quarter-Kelly 1% Tranche 1; MOS얇 = small initial size)",
-    businessModel: {
-      oneLiner: "Veeva ขาย SaaS software ให้อุตสาหกรรมยาและ biotech สำหรับ CRM, clinical data, regulatory affairs — ต้องได้รับการ validate จาก FDA ก่อนใช้",
-      analogy: "เหมือน Salesforce + SharePoint ที่ FDA ต้อง approve ก่อนใช้ — บริษัทยาเปลี่ยนไม่ได้ง่ายๆ เพราะ re-validate ใช้เวลา 18-24 เดือน",
+    esgRating: "Low-Medium",
+    esgScore: 7.35,
+    macroRegime: "RISK-ON",
+    morganQA: "PASS (Data Quality 8.7/10)",
+    sp500Reference: 7707.98,
+    sp500ReferenceNote: "7,707.98 (Aug 19, 2026 close — Yahoo Finance + StockAnalysis.com SPY $769.06 cross-check, verified โดย Vera 2026-08-20 session, resumed 2026-08-21)",
+    bucket: "Value",
+    entryZone: "T1 $185-200 (watch zone) / T2 $150-167 (target zone, MOS >=15%)",
+    positionSize: "0% (NO DEPLOY — MOS gate FAIL -24.78% << 15% required, แม้ Conviction 6.5 PASS gate >=6 — single-gate failure, ต่างจาก dual-gate-failure pattern เดิม)",
+    keyThesis: "Vault CRM migration win rate >80% เทียบ Salesforce พิสูจน์ moat จริงในสถานการณ์แข่งขันเต็มที่ (top-20 pharma 10-6 favoring Veeva), FCF +38.3% YoY สู่ $1,640M (margin 49.4%), Rule of 40 = 65.65% — คุณภาพธุรกิจสูงสุดตัวหนึ่งในพอร์ต แต่ราคา $251 แพงกว่าแม้แต่ Bull-case DCF ของ Emma ($245). Reclassified เป็น Value bucket (revenue growth 16.25% < 20% threshold) — Blended FV (ESG-adj) $188.81 ให้ MOS -24.78%, ล้มเหลว Value gate (>=15%) หนักมาก แม้ Conviction 6.5/10 ผ่านเกณฑ์ (>=6) สบายๆ — 'great company, priced beyond even bull-case DCF'",
+    topRisk: "Fed hawkish pivot ต่อเนื่อง (2 hikes priced Sept+Dec 2026) กดดัน premium multiple (P/E TTM 43-44.5x) โดยตรง — ถ้า WACC ดันขึ้นสู่ 11.5-12% FV ร่วงสู่ $190-207; ประกอบกับ Emma-Quinn DCF base-case divergence ที่ยังไม่ reconcile ($145 vs $261.5, 80% gap จาก FCF-conversion/deferred-revenue methodology) เพิ่ม uncertainty band ให้ negative-MOS signal",
+    reportFile: "../reports/VEEV_2026-05-11.md",
+    businessSummary: {
+      oneLiner: "Veeva ขายซอฟต์แวร์ cloud subscription เฉพาะทางให้บริษัทยา/ไบโอเทค ใช้บริหารตั้งแต่ขายยา ทดลองยา จนถึงควบคุมคุณภาพ ภายใต้กฎ FDA",
+      analogy: "เหมือน Salesforce แต่สร้างมาเฉพาะสำหรับอุตสาหกรรมยา — ลูกค้าเปลี่ยนออกยากมากเพราะต้องผ่านการตรวจสอบใหม่จาก FDA ใช้เวลา 18-24 เดือน",
       moneyFlow: [
-        "Vault Platform (~70% revenue): regulatory affairs, clinical data management, quality management — FDA lock-in สูงที่สุด",
-        "Commercial Cloud / CRM (~30%): pharma sales rep management — กำลัง migrate ออกจาก Salesforce",
-        "Professional Services (~20% ของ total): implementation + FDA validation work"
+        "บริษัทยาซื้อ subscription รายปี (สัญญา 3-5 ปี) เพื่อใช้ Commercial Cloud (ขายยา) และ Vault platform (ทดลอง/กฎระเบียบ/คุณภาพ/ความปลอดภัย) — ~80% ของรายได้",
+        "ลูกค้าซื้อ module เพิ่มเรื่อยๆ ภายใน customer base เดิม (เฉลี่ย 5-7 module ต่อลูกค้า จาก 2-3 module ในปี 2020) — cross-sell ไม่ต้องหาลูกค้าใหม่",
+        "ค่า implementation/validation (ที่จำเป็นตามกฎ FDA) เป็นรายได้เสริมอีก ~20%",
+        "กำลังย้ายลูกค้าเก่าจาก Salesforce-based CRM ไปแพลตฟอร์มตัวเอง (Vault CRM) — ล่าสุดชนะ competitive evaluation ไปแล้ว >80% ของ decisions"
       ],
-      whyDifferent: "FDA 21 CFR Part 11 validation requirement = switching cost ที่บริษัทยาไม่ยอมรับ risk; PBC (Public Benefit Corporation) = governance ที่ดีที่สุดใน SaaS universe; Alpha t=2.1 สูงสุดในพอร์ต",
-      simpleRisk: "Vault CRM migration off Salesforce — ถ้า retention < 90% = switching cost thesis ใน Commercial Cloud แตก; Salesforce กำลังสร้าง Life Sciences Cloud มาแข่ง"
+      whyDifferent: "Switching cost สูงที่สุดในกลุ่ม software เพราะระบบต้องผ่านการรับรอง FDA (21 CFR Part 11) — เปลี่ยนระบบต้อง re-validate ใหม่ 18-24 เดือนและเสี่ยงตรวจสอบล้มเหลว ล่าสุดพิสูจน์แล้วจริงในการแข่งขันกับ Salesforce (win rate >80%) แม้ลูกค้าเปิดให้แข่งขันเต็มที่",
+      simpleRisk: "ราคาหุ้นวิ่งขึ้นเร็วกว่าการเติบโตของธุรกิจมาก (+51% ใน 3.5 เดือน) ทำให้ตอนนี้ valuation แพงเกินกว่าที่ DCF จะ justify ได้ แม้ธุรกิจจะยังดีขึ้นจริง"
     },
-    catalysts: [
-      { date: "2026-05-19", event: "S&P 500 Inclusion Effective — $3.5B passive buying", magnitude: "MEDIUM-HIGH" },
-      { date: "Aug 2026", event: "Vault CRM migration completion check (Q2 FY2027)", magnitude: "CRITICAL" },
-      { date: "H2 2026", event: "Data Cloud revenue > $200M annualized", magnitude: "HIGH" }
+    thesisBullets: [
+      { title: "Vault CRM Migration สำเร็จเกินคาด", why: "Win rate >80% เทียบ Salesforce ในการแข่งขัน, ชนะ top-20 pharma decisions 10-6 — พิสูจน์ switching-cost moat ในสถานการณ์จริง (self-reported stat, 4/20 ยัง pending)" },
+      { title: "FCF เร่งตัวแรง", why: "FCF +38.3% YoY สู่ $1,640M, FCF margin 49.4% — Rule of 40 = 65.65% (สูงกว่าเกณฑ์ 40% เกือบเท่าตัว)" },
+      { title: "ราคาแพงกว่า fundamentals มาก", why: "P/E premium +107% เหนือ sector median, EV/EBITDA premium +164%, ราคาปัจจุบันเหนือแม้กระทั่ง Bull-case DCF ($245) — MOS ติดลบ -24.78% เทียบ Blended FV (ESG-adj) $188.81" },
+      { title: "จัดกลุ่มใหม่เป็น Value bucket", why: "Revenue growth TTM 16.25% ต่ำกว่าเกณฑ์ Growth bucket 20% แล้ว — ต้องใช้ MOS gate ที่เข้มงวดกว่า (>=15%) ซึ่งปัจจุบัน fail อย่างชัดเจน" },
+      { title: "S&P 500 inclusion catalyst หมดอายุแล้ว", why: "Effective May 19, 2026 realized แล้ว — Bear v1's call ว่า 'priced in' ถูกยืนยัน ไม่มี forward flow-driven upside เหลืออยู่" }
     ],
+    esgBreakdown: { e: 7.5, s: 6.75, g: 7.85, overall: 7.35 },
+    customerConcentration: {
+      top10Combined: "~28% (SEC 10-K FY2023 — ข้อมูลเก่าที่สุดที่หาได้ ไม่ใช่ FY2027 ปัจจุบัน, ใช้เป็น directional)",
+      singleCustomerMax: "ไม่มีลูกค้ารายเดียวเกิน 10% ของ revenue"
+    },
+    geographyRevenue: { unitedStates: 60.94, europe: 30.09, asiaPacific: 8.97, note: "North America รวม 60.94% (SEC 10-K FY2026 aggregator, TradingView) — China ไม่ระบุแยก ไม่ใช่สัดส่วนที่มีนัยสำคัญ" },
+    revenueSegments: [
+      { label: "North America", value: 60.94 },
+      { label: "Europe", value: 30.09 },
+      { label: "Asia Pacific", value: 8.97 }
+    ],
+    revenueSegmentsNote: "ไม่มี business-segment revenue breakdown แยกใน data package — ใช้ geography breakdown แทนตาม house rule",
+    unitEconomics: {
+      ruleOf40: "65.65% (16.25% rev growth + 49.4% FCF margin) — Pass เกณฑ์ >=40% อย่างมาก",
+      nrr: "N/A — ไม่มี disclosure",
+      ltvCac: "N/A — ไม่มี disclosure",
+      sbcPctRevenue: "13.5% (Q1 FY2027, SEC 10-Q)"
+    },
+    competitorData: [
+      { ticker: "VEEV", company: "Veeva Systems (subject)", revenueGrowth: 16.25, operatingMargin: 29.5, marketCap: 40770 },
+      { ticker: "IQV", company: "IQVIA Holdings", revenueGrowth: 8.17, operatingMargin: 13.95, marketCap: 67060 },
+      { ticker: "CERT", company: "Certara", revenueGrowth: 11.09, operatingMargin: 4.27, marketCap: 1280 },
+      { ticker: "DOCS", company: "Doximity", revenueGrowth: 11.18, operatingMargin: 30.57, marketCap: 4590 },
+      { ticker: "HCAT", company: "Health Catalyst", revenueGrowth: -7.54, operatingMargin: -8.05, marketCap: 127 }
+    ],
+    competitorDataNote: "operatingMargin ใช้ net margin เป็น proxy (ไม่มี operating margin แยกในข้อมูลที่ verify ได้สำหรับ peers); IQV marketCap คำนวณจาก Revenue $15.9B x Net Margin 13.95% x P/E 30.22x (derived จากตัวเลข verified 2 ค่า ไม่ใช่ training-knowledge estimate)",
     bullFlipTriggers: [
-      "Vault CRM migration Q2 FY2027 >= 95% retention",
-      "Data Cloud revenue > $200M annualized",
-      "FY2027 Revenue guidance >= 18%",
-      "Fed rate cut >= 50bp cumulative 2026",
-      "ราคา pullback ถึง $140-150"
+      "ราคาย่อกลับมาที่ $190-210 (MOS เข้าใกล้ 0% ถึงบวกเทียบ Bear P-W EV $173)",
+      "FY2027 full-year revenue guidance ยกระดับเป็น >=18%",
+      "Veeva เปิดเผยรายได้จาก AI/agentic labor product line >=$100-150M annualized",
+      "4 top-20 pharma decisions ที่เหลือปิดครบในทาง Veeva พร้อม retention >=90% independently-verified",
+      "Fed พลิกกลับมา dovish (ยกเลิก hikes ที่ priced) -> WACC ลดสู่ 9.5-10%"
     ],
     bearFlipTriggers: [
-      "Vault CRM customer retention < 90%",
-      "Revenue CAGR < 12% สองไตรมาสติดกัน",
-      "Salesforce wins top-20 pharma customer from VEEV",
-      "VEEV M&A > $5B",
-      "FDA CSA modernization removes 21 CFR Part 11 requirement"
+      "Fed hike ทั้ง 2 ครั้ง (Sept+Dec 2026) แล้ว signal ต่อเนื่อง 2027 -> WACC ดันสู่ 11.5-12%",
+      "Revenue growth หลุดต่ำกว่า 14% สำหรับ 2 ไตรมาสติดต่อกัน",
+      "4 top-20 decisions ที่เหลือพลิกไป Salesforce ทั้งหมด หรือ win-rate ไตรมาสหน้า <70%",
+      "Forward P/E ไม่ compress แม้ growth ชะลอ (ยังเทรดเกิน 35x)",
+      "Insider selling เปลี่ยนจาก scheduled 10b5-1 เป็น opportunistic (โดยเฉพาะ Gassner)"
     ],
-    thesisInvalidation: "Vault CRM migration failure > 15% customer churn หรือ Peter Gassner ลาออก หรือ Revenue < 8% any full fiscal year",
-    reportFile: "../reports/VEEV_2026-05-11.md",
+    thesisInvalidation: "Revenue growth หลุดต่ำกว่า 10% full fiscal year ใดๆ, หรือ Peter Gassner ลาออกจากตำแหน่ง CEO, หรือ VEEV ถูก acquired, หรือ FDA CSA modernization ยกเลิก 21 CFR Part 11 validation requirement จริง -> re-analysis required ทันที",
     fullContent: `# 💊 VEEV — Veeva Systems Inc.
 ### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+---
+
+## 🔄 Update Log
+
+**2026-08-20 — Re-Analysis (v2)** — ราคาวิ่งขึ้น +51% จาก entry zone เดิม ($148-158) หลัง S&P 500 inclusion (May 19, 2026) สำเร็จ + Q1 FY2027 earnings beat. รายงานนี้ **อัปเดตในไฟล์เดิม** (ไม่สร้างไฟล์ใหม่ ตาม CLAUDE.md Rule 11) — เนื้อหาด้านล่างทั้งหมดคือผลวิเคราะห์ล่าสุด (2026-08-20) เนื้อหา v1 (2026-05-11) เก็บไว้เต็มใน \`agent_notes/{emma,quinn,bear}/2026-05-11_VEEV.md\` ส่วนบนของแต่ละไฟล์เพื่อ audit trail
+
+| รายการ | v1 (2026-05-11 @ $166) | v2 (2026-08-20 @ $251) |
+|--------|--------------------------|---------------------------|
+| Recommendation | HOLD/WAIT FOR PULLBACK | **HOLD/WAIT FOR PULLBACK — NO DEPLOY** |
+| Blended FV (ESG-adj) | $192 | **$188.81** |
+| MOS | +15.7% | **-24.78%** (พลิกจากบวกเป็นลบหนัก) |
+| Bucket | Growth-style (implicit) | **Value** (reclassified — Rev growth 16.25% < 20%) |
+| Conviction Avg | 6.7/10 | **6.5/10** |
+| Vault CRM Migration | "Unresolved risk" | **De-risked — win rate >80% vs Salesforce** |
+| Gate Status | Dual gate check N/A (old MOS rule) | **Single-gate failure — Conviction PASSES (6.5≥6), MOS FAILS (-24.8%<<15%)** |
+
+**สาเหตุหลักของการเปลี่ยนแปลง:** ราคาวิ่งไล่ตาม fundamentals เร็วกว่าที่ Value bucket MOS gate จะ justify ได้ — ธุรกิจดีขึ้นจริง (Vault CRM migration สำเร็จ, FCF เร่งตัว) แต่ราคาแพงกว่าแม้แต่ Bull-case DCF ของ Emma ($245)
 
 ---
 
@@ -6989,13 +7587,15 @@ Wide Moat ที่แข็งแกร่ง + AI monetization inflection จ�
 | Field | Detail |
 |-------|--------|
 | **Ticker** | VEEV (NYSE) |
-| **วันที่วิเคราะห์** | 2026-05-11 |
-| **ราคาปัจจุบัน** | ~$166 |
-| **Market Cap** | ~$25.7B ($166 × ~155M diluted shares) |
+| **วันที่วิเคราะห์** | 2026-08-20 (ราคา close 2026-08-19) |
+| **ราคาปัจจุบัน** | $251.00 (verified 2 sources: Yahoo Finance + Stockanalysis.com, +3.40% day) |
+| **Market Cap** | $40.77B |
 | **Sector** | Healthcare Technology / Life Sciences SaaS |
+| **Bucket** | **Value** *(reclassified จาก Growth-style เดิม — Rev Growth TTM 16.25% < 20% threshold)* |
 | **Exchange** | NYSE |
-| **Analyst Team** | Emma · Quinn · Bear · Charlie (Orchestrator) |
-| **S&P 500 Inclusion** | ประกาศ April 2026, effective May 19, 2026 |
+| **Analyst Team** | Atlas · Emma · Quinn · Bear · Charlie (Orchestrator) |
+| **Latest Earnings** | Q1 FY2027 (ended April 2026) |
+| **S&P 500 Inclusion** | Effective May 19, 2026 — **realized แล้ว, catalyst หมดอายุ** |
 
 ---
 
@@ -7003,13 +7603,14 @@ Wide Moat ที่แข็งแกร่ง + AI monetization inflection จ�
 
 | Field | Detail |
 |-------|--------|
-| **Recommendation** | **HOLD / WAIT FOR PULLBACK** |
-| **Entry Zone (Tranche 1)** | $148–158 (target MOS ≥15% vs Bear DCF $152) |
-| **Entry Zone (Tranche 2)** | $130–145 (target MOS ≥25%) |
-| **Blended Fair Value** | **$192** |
-| **Margin of Safety (ณ $166)** | +15.7% (positive but thin — Bear DCF $152 warns of limited cushion) |
-| **Stop Loss** | $118 (ต่ำกว่า Bear Extreme $88 + 34% buffer สำหรับ pre-Vault-CRM-migration risk) |
-| **Max Position Size** | 3% (Quarter-Kelly = 1% Tranche 1; total 3 tranches) |
+| **Recommendation** | **HOLD / WAIT FOR PULLBACK — NO DEPLOY** |
+| **Entry Zone T1 (2%, watch zone)** | $185–200 (MOS ~-4% ถึง +4% — เข้าเฉพาะถ้า Bull Flip triggers ยืนยัน) |
+| **Entry Zone T2 (1%, target zone)** | $150–167 (MOS ≥15% เทียบ Blended FV) |
+| **Blended Fair Value (ESG-adj)** | **$188.81** |
+| **Blended Fair Value (raw)** | $192.66 |
+| **Margin of Safety (ณ $251)** | **-24.78%** (ESG-adj) / -23.24% (raw) |
+| **Stop Loss** | $160 (-20.0% จาก entry T1 mid $200) — reference สำหรับ future entry เท่านั้น |
+| **Max Position Size** | **0% (NO DEPLOY)** — MOS gate FAIL หนัก แม้ Conviction gate PASS |
 | **Investment Horizon** | 3–5 ปี |
 
 ---
@@ -7018,466 +7619,467 @@ Wide Moat ที่แข็งแกร่ง + AI monetization inflection จ�
 
 | Metric | Value | Benchmark |
 |--------|-------|-----------|
-| **Blended Fair Value** | $192 | — |
-| **Margin of Safety** | +15.7% | ต้องการ ≥20% สำหรับ BUY เต็ม |
-| **ESG Score** | 7.3/10 (Reconciled) | พอร์ต avg 6.2 |
-| **Conviction Average** | **6.7/10** | พอร์ต avg 6.39 |
+| **Blended Fair Value (ESG-adj)** | $188.81 | ราคา $251.00 |
+| **Margin of Safety** | -24.78% | ต้องการ ≥15% สำหรับ BUY (Value bucket) |
+| **ESG Score** | 7.35/10 (Reconciled) | พอร์ต avg ~6.3 |
+| **Conviction Average** | **6.5/10** | Value bucket gate ≥6.0 — **PASS** (แต่ MOS gate FAIL) |
 | **Investment Horizon** | Long-term (3–5+ ปี) | Strategy: Aggressive Growth |
-| **Alpha (Carhart)** | +4.8%/yr (t=2.1) | Highest t-stat in BUY universe |
-| **Kelly** | Quarter = 1% (thin MOS) | MRVL = 3%, AMD = 4% |
+| **3-Yr Forward Return (จาก entry T2 zone)** | ~19.1% total (~6.0%/yr CAGR) | ถ้าราคาย่อเข้า T2 zone และ converge สู่ FV ใน 3 ปี |
 
 ---
 
 > ## ⚡ TL;DR — อ่าน 30 วินาที
 >
-> - **Verdict:** HOLD / WAIT FOR PULLBACK — Thesis แข็งมาก (FDA lock-in + PBC + S&P 500) แต่ MOS เพียง +15.7% vs Blended FV $192, และ Bear DCF $152 ใกล้ราคาปัจจุบัน $166 มากเกินไปสำหรับ BUY เต็ม
-> - **ทำไม:** ROIC 115.9% เป็น accounting artifact (ปรับ excess cash แล้วจริงๆ ~15-20%); Vault CRM migration (off Salesforce) = operational risk ที่ยังไม่ resolve; Revenue CAGR อาจ decelerate 12-13% (vs Emma 16%); Kelly Quarter = 1% = signal ว่า risk/reward ยังไม่ compelling ณ ราคานี้
-> - **Downside Risk:** Vault CRM migration miss + Revenue deceleration + Rate re-rating = Bear scenario $88-110; MOS ต้องกว้างกว่านี้สำหรับ Healthcare SaaS ที่มี execution risk
+> - **Verdict:** HOLD / WAIT FOR PULLBACK — NO DEPLOY. ธุรกิจดีขึ้นจริงมาก (Vault CRM migration ชนะ Salesforce win-rate >80%, FCF +38.3% YoY) แต่ราคา $251 แพงกว่า Blended FV $188.81 ถึง -24.78% และแพงกว่าแม้แต่ Bull-case DCF ของ Emma ($245)
+> - **ทำไม:** ราคาวิ่งขึ้น +51% ใน 3.5 เดือน ไล่ตาม fundamentals ไปไกลเกินกว่าที่ Value bucket MOS gate (≥15%) จะ justify — Emma DCF Base $145, Quinn P-W EV $231.88 (MOS -7.62%), Bear P-W EV $173 (MOS -31.1%) — ทั้ง 3 agents เห็นตรงกันว่าติดลบ
+> - **Downside Risk:** Fed hawkish pivot (2 hikes priced Sept+Dec 2026) กดดัน premium multiple (P/E TTM 43-44.5x) โดยตรง + S&P 500 inclusion catalyst หมดอายุแล้ว + index-level valuation ตึง (earnings-yield spread -110bps, widest since 2003)
 
 ---
 
 ## 📋 Executive Summary [CFA L2: Equity Valuation — Integrated Valuation Framework]
 
-Veeva Systems เป็น healthcare SaaS ที่มี moat แข็งแกร่งที่สุดตัวหนึ่งในจักรวาล coverage ของทีม สร้างบน FDA 21 CFR Part 11 regulatory lock-in ที่ทำให้การ switching ต้องใช้เวลา 18-24 เดือนและเสี่ยง audit failure ซึ่งไม่มีบริษัทยาไหนยอมทำ
+Veeva Systems ยังคงเป็นบริษัทคุณภาพสูงสุดตัวหนึ่งในจักรวาล coverage ของทีม — ข่าวดีที่สุดจากรอบนี้คือ **Vault CRM migration ที่เคยเป็นความเสี่ยงหลักใน v1 (2026-05-11) ได้พิสูจน์ตัวเองแล้วว่าประสบความสำเร็จเกินคาด**: win rate >80% เทียบ Salesforce ในการแข่งขัน, ชนะ top-20 pharma decisions 10 ต่อ 6 (เหลือ 4 pending), 150+ customers live บน Vault CRM แล้ว นี่คือ real-world stress-test ของ switching-cost moat ที่ยืนยันว่า FDA 21 CFR Part 11 lock-in ยัง intact แม้ในสถานการณ์ที่ลูกค้าเปิดให้แข่งขันเต็มที่
 
-**ข้อเด่น:**
-- ROIC 115.9% (adjusted ~15-20% หลังหัก excess cash) — ROIC > WACC ยืนยัน economic value creation
-- Revenue Growth +16.3% YoY = สม่ำเสมอ 5 ปี
-- FCF Yield 5.1% ณ $166 = กำไรจริง เงินสดจริง
-- S&P 500 inclusion May 19 = institutional flow catalyst
-- PBC (Public Benefit Corporation) = governance ที่แข่งขันได้ใน ESG universe
-- Alpha Carhart = +4.8%/yr (t=2.1) = highest alpha significance ในพอร์ต
+**ปัญหาคือราคา ไม่ใช่ธุรกิจ:** ที่ $251.00 (+51% จาก entry zone เดิม $148-158) VEEV เทรดที่ P/E premium **+107%** เหนือ sector median และ EV/EBITDA premium **+164%** — ทั้ง Emma (DCF+Relative, Conviction 7/10), Quinn (Probability-Weighted EV, Conviction 5.5/10) และ Bear (independent P-W EV, Conviction 7/10) ต่างสรุปตรงกันว่า MOS ติดลบที่ราคานี้ในทุก methodology ที่ทีมสร้างไว้ — แม้แต่ Emma's Bull-case DCF ($245) ก็ยังต่ำกว่าราคาตลาดปัจจุบัน
 
-**ข้อกังวล (จาก Bear):**
-- MOS เพียง +15.7% จาก Blended FV =얇 (ต้องการ ≥20% สำหรับ BUY)
-- Vault CRM migration off Salesforce platform = unresolved operational risk
-- Revenue CAGR debate: Emma 16% vs Bear 12% = $45 FV swing ขนาดใหญ่
-- Salesforce Life Sciences Cloud = credible Commercial Cloud threat (30% of revenue)
-- S&P 500 inclusion catalyst อาจ priced in แล้วตั้งแต่ announcement
+**Bucket Reclassification:** Revenue Growth TTM ลดลงเหลือ 16.25% ต่ำกว่าเกณฑ์ Growth bucket (20%) แล้ว ทีมจึงจัดกลุ่มใหม่เป็น **Value bucket** (FCF-positive แข็งแกร่ง, Wide Moat validated, mature company profile) ซึ่งใช้เกณฑ์ MOS≥15%+Conviction≥6 — **ผลคือ single-gate failure ที่ไม่เหมือน pattern เดิม**: Conviction 6.5/10 ผ่านเกณฑ์ (≥6) สบายๆ แต่ MOS -24.78% ล้มเหลวหนักมาก (ต่างจาก dual-gate-failure pattern ที่เจอซ้ำๆ ในไตรมาสนี้ที่ทั้งสอง gate ล้มเหลวพร้อมกัน — ACGL/WPM/PGR/DXCM/ABBV/ETN/ICE/TDG)
 
-**ผลสรุป Charlie:** HOLD/WAIT — รอ Entry T1 $148-158 เมื่อ MOS กว้างพอ หรือ รอ Bull Flip catalyst (Vault CRM migration success + Data Cloud >$200M)
+**ผลสรุป Charlie:** HOLD/WAIT — NO DEPLOY จนกว่าราคาจะย่อเข้า entry zone หรือมี Bull Flip catalyst (agentic AI revenue disclosure, Fed dovish pivot)
 
 ### 💪 Conviction Level Score
 
 \`\`\`
-Emma   ███████░░░  7/10  — Wide moat clear, DCF base $170 ≈ current price, peer/analyst targets $280+ = upside compelling
-Quinn  ███████░░░  7/10  — Alpha t=2.1 (highest in portfolio), 72% sensitivity scenarios above $166, Kelly thin but positive
-Bear   ██████░░░░  6/10  — Moat real but ROIC inflated, Vault CRM migration unresolved, S&P 500 catalyst priced in
+Emma   ███████░░░  7.0/10  — Valuation methodology robust, 3 มุมมองสอดคล้องกันว่า overvalued, แต่มี tension กับ Street PT $244
+Quinn  █████░░░░░  5.5/10  — Kelly พลิกลบ (-13.4%), P-W EV MOS -7.62%, vol regime เพิ่มเท่าตัว, แต่ base DCF ยัง marginally positive
+Bear   ███████░░░  7.0/10  — Double-confirmation จาก Emma+Quinn อิสระ, S&P500-priced-in call ของ v1 ถูกยืนยันแล้ว, moat แข็งแรงจริง
 ──────────────────────────────────────────────────────────────────────────────────────────────────────
-Avg    ██████░░░░  6.7/10  [No flag: gap Emma-Bear = 1pt < 3pt threshold; avg > 5 = data sufficient]
+Avg    ██████░░░░  6.5/10  [No flag: gap สูงสุด Emma/Bear-Quinn = 1.5pt < 3pt threshold; avg > 5 = data sufficient]
 \`\`\`
 
-*Note: Conviction 6.7 > พอร์ต avg 6.39 → VEEV above-average portfolio confidence*
+*Note: Conviction 6.5 ผ่าน Value bucket gate (≥6) — แต่ MOS gate ล้มเหลวหนัก จึงยัง NO DEPLOY*
 
 ---
 
 ## 💡 Investment Thesis [CFA L2: Equity — Investment Thesis Construction]
 
-### Three Pillars of the VEEV Bull Case:
+### Three Pillars ที่ยังคงแข็งแกร่ง (Business Quality Confirmed):
 
-**Pillar 1: FDA Regulatory Lock-In = Strongest Switching Cost in Portfolio**
-Veeva Vault ต้องผ่าน FDA Computer System Validation (CSV) under 21 CFR Part 11. การ switch ออกต้องใช้ 18-24 เดือน re-validate + FDA notification + risk of audit gap ระหว่างช่วง transition. ไม่มีบริษัทยาขนาดใหญ่ที่จะเสี่ยงนี้เพื่อประหยัดค่า SaaS subscription.
+**Pillar 1: FDA Regulatory Lock-In — Validated ในสถานการณ์จริงแล้ว**
+Vault CRM migration คือ real-world stress test ของ switching-cost moat — แม้ Salesforce เปิดแข่งขันเต็มที่ (มี resource มหาศาล) ลูกค้าส่วนใหญ่ก็ยังเลือก Veeva (win rate >80%, top-20 pharma 10-6) นี่คือ moat validation ไม่ใช่แค่ theory อีกต่อไป
 
-**Pillar 2: Lifecycle Expansion = Growing TAM ภายใน Customer Base เดิม**
-VEEV ไม่ใช่แค่ CRM (Commercial Cloud) อีกต่อไป ปัจจุบัน Vault platform ครอบคลุม:
-- Clinical Data Management (Clinical Vault)
-- Regulatory Affairs (RegulatoryOne)
-- Quality Management System (Quality Vault)
-- Drug Safety/Pharmacovigilance (Safety Vault)
-- Medical Affairs (Medical CRM)
-- Real-World Data (Data Cloud)
+**Pillar 2: FCF Acceleration**
+FCF +38.3% YoY สู่ $1,640M, FCF margin 49.4% (จาก ~44% ใน v1) — Rule of 40 = **65.65%** (เกือบ 2 เท่าของเกณฑ์ 40%) ยืนยันคุณภาพ business model ระดับสูงสุดในกลุ่ม SaaS ทั้งหมดที่ทีมเคยวิเคราะห์
 
-Average revenue per customer เพิ่มขึ้นเรื่อยๆ (cross-sell/upsell ภายใน locked customer base)
-
-**Pillar 3: S&P 500 Inclusion = Near-Term Institutional Flow**
-Effective May 19, 2026 → ~$3.5B passive buying mandate (8.4 วันของ avg daily volume) → price support และ long-term liquidity improvement → ลด vol premium ใน WACC
+**Pillar 3: ราคาได้วิ่งนำหน้า Fundamentals ไปมากแล้ว (เหตุผลที่ยัง NO DEPLOY)**
+S&P 500 inclusion catalyst ที่เคยเป็น future event ใน v1 realized แล้ว (May 19) และ Bear v1's call ว่า "priced in ส่วนใหญ่" ถูกยืนยัน — ไม่มี forward flow-driven upside เหลืออยู่ ราคาต้อง justify ด้วย fundamentals ล้วนๆ ซึ่งยังไม่ถึง ณ จุดนี้
 
 ---
 
-## 🏢 Business Overview [CFA L2: Equity — Business Quality Analysis]
+## 🏢 Business Deep Dive [CFA L2: Equity — Business Quality Analysis + Industry Analysis]
 
-### Revenue Model
-- **SaaS Subscription (~80%):** Multi-year contracts (3-5 ปี typically), renew rate >99%, NRR (Net Revenue Retention) ~115%+
-- **Professional Services (~20%):** Implementation + validation — ไม่ใช่ loss leader แต่ margin ต่ำกว่า subscription; จำเป็นต้องมีสำหรับ FDA compliance validation work
+> **Veeva ทำเงินยังไง?**
+> - ขาย **software subscription รายปี** (multi-year contract) ให้บริษัทยา/ไบโอเทค/CRO ใช้บริหารตั้งแต่ขายยา (Commercial Cloud CRM) จนถึงทดลองยา ควบคุมคุณภาพ ความปลอดภัยยา (Vault platform) — ~80% ของรายได้
+> - ลูกค้าจ่ายเพิ่มเรื่อยๆ เพราะใช้ Vault module มากขึ้น (จาก 2-3 module ปี 2020 เป็น 5-7 module ปัจจุบัน) — cross-sell ภายใน customer base เดิม
+> - ค่า implementation/validation ที่จำเป็นตามกฎ FDA (~20% ของรายได้)
+> - กำลังย้ายลูกค้าเก่าจาก Salesforce-based CRM ไปแพลตฟอร์มตัวเอง (Vault CRM) — ล่าสุดชนะ competitive evaluation ไปแล้ว >80% ของ decisions
 
-### Key Financial Metrics (FY2026E)
-| Metric | Value | YoY Change |
-|--------|-------|-----------|
-| Revenue | ~$2.77B | +16.3% |
-| Subscription Revenue | ~$2.22B | +18% |
-| Gross Margin | ~73% | stable |
-| Operating Margin (non-GAAP) | ~35% | +1pp |
-| FCF | ~$1.22B | +15% |
-| FCF Margin | ~44% | stable |
-| EPS (non-GAAP) | ~$6.20 | +18% |
-| Net Cash | ~$4.5B | growing |
-| Shares Outstanding (diluted) | ~155M | stable |
+### Vault CRM Migration Status — Key Update จาก v1
+v1 ระบุ migration เป็น "unresolved operational risk" (Bull Flip threshold ≥95% retention / Bear Flip <90%) ข้อมูลล่าสุด (Q1 FY2027, มิ.ย. 2026): **win rate >80%**, 150+ customers live, top-20 pharma decisions 10-6 favoring Veeva (4 pending), ลูกค้าใหม่ Teva/Merck KGaA [Source: TIKR.com Q1 FY2027 review], end-of-support legacy CRM เลื่อนเข้ามาเป็น Dec 31, 2029 เพราะ momentum แข็งแรง [Source: IntuitionLabs]
 
-### Customer Profile
-- 1,000+ pharma/biotech/CRO accounts
-- Top 50 global pharma: ~80% penetrated
-- Average customer uses 5-7 Vault modules (vs 2-3 in 2020)
-- Customer retention: >99% annually
+**⚠️ Bear's caveat (สำคัญ):** "Win rate >80%" เป็นสถิติ self-reported จาก management commentary บน earnings call ไม่ใช่ third-party audited data และยังมี 4/20 top-pharma decisions pending ที่อาจพลิกกลับ — treat เป็น **"de-risking evidence" ไม่ใช่ "full closure"**
 
----
+### Porter's Five Forces [CFA L2: Industry Analysis]
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power | Low | Cloud infra (AWS/Azure) เป็น commodity input |
+| Buyer Power | Low | Switching cost สูงมาก (FDA re-validation 18-24 เดือน) — ลูกค้า fragmented |
+| New Entrants | Very Low | ต้อง FDA validation IP + domain expertise สะสม 5-10 ปี |
+| Substitutes | Low-Medium | Salesforce Life Sciences Cloud แข่งเฉพาะ Commercial Cloud (~30%) แต่แพ้ win-rate >80% |
+| Rivalry | Low-Moderate | ไม่มี pure-play peer ใกล้เคียง; IQVIA แข่งฝั่ง data/CRO ไม่ใช่ core Vault |
 
-## 🏰 Moat Analysis [CFA L2: Equity — Economic Moat Framework]
+**Industry Attractiveness:** High
 
-**Moat Rating: WIDE** [Source: Emma + Morningstar concur]
+### Market Share Trend
+Atlas Data Package ไม่มีตัวเลข market share % ย้อนหลัง 3 ปีชัดเจน — ใช้ proxy จาก win-rate/growth: **Directional call: Gaining** (win rate >80%, revenue growth +16.25% นำ peer group ทั้งหมด — IQV +8.17%, CERT +11.09%, DOCS +11.18%, HCAT -7.54%)
 
-| Moat Source | Strength | Durability |
-|-------------|----------|-----------|
-| Switching Cost (FDA CSV) | Very High | 10+ years |
-| Intangible Assets (Life Sciences IP) | High | 7-10 years |
-| Network Effects (Data Cloud) | Medium | 5-7 years (growing) |
-| Scale Advantages | Medium | 5-7 years |
-| Cost Advantage (Focus) | Medium | 5+ years |
+### Competitor Profiles [CFA L2: Industry Analysis — Competitive Positioning]
 
-**Bear's Moat Challenge:**
-- Salesforce Life Sciences Cloud = Commercial Cloud threat (30% VEEV revenue)
-- Vault CRM migration off Salesforce platform = execution risk window
-- Microsoft 365 + Copilot = long-term Vault regulatory module threat (7-10yr horizon)
-- FDA CSA modernization = potential regulatory change reducing lock-in (low probability)
+**IQVIA Holdings (IQV)** — 🟡 Medium Threat
+- เก่ง: สเกลใหญ่ที่สุด (~$15.9B revenue), dominant ใน CRO + real-world data, global reach กว้างกว่า
+- ไม่เก่ง: Margin ต่ำกว่ามาก (net 13.95% vs VEEV 28.4%), ROIC ต่ำ (6.68%), growth ช้า (+8.17%), leverage สูง
+- Threat: คนละ business model หลัก แต่แข่งบางส่วนใน Data Cloud/real-world-data
 
-**Emma Counter-argument:**
-- Commercial Cloud (at risk from Salesforce) is 30% of revenue; Vault (totally defensible) is 70%
-- Even if Salesforce wins Commercial Cloud fully → VEEV Vault = intact, thesis survives
-- Salesforce cannot replicate FDA CSV validation IP without 5-7 year build
-- **Net moat assessment: WIDE remains valid; Commercial Cloud risk = real but contained**
+**Certara (CERT)** — 🟢 Low Threat
+- เก่ง: เฉพาะทาง biosimulation/regulatory science (Simcyp) — niche moat
+- ไม่เก่ง: Margin ต่ำมาก (4.27%), growth หยุดชะงัก, ขนาดเล็ก ($1.28B)
+- Threat: Overlap แคบ ไม่ใช่คู่แข่งตรงกับ Vault/Commercial Cloud
 
----
+**Doximity (DOCS)** — 🟡 Medium Threat
+- เก่ง: Dominant HCP engagement platform สหรัฐฯ, margin สูงสุดในกลุ่ม (30.57%), asset-light
+- ไม่เก่ง: Focus แคบกว่ามาก, ขนาดเล็กกว่า VEEV มาก ($4.59B)
+- Threat: แข่งทางอ้อมสำหรับงบ pharma marketing/HCP engagement
 
-## 📊 Sector / Peer Comparison [CFA L2: Relative Valuation — Peer Multiples]
+**Health Catalyst (HCAT)** — 🟢 Low Threat
+- เก่ง: Data analytics สำหรับ health systems (ฝั่ง provider)
+- ไม่เก่ง: ขาดทุนต่อเนื่อง (net -8.05%), revenue หดตัว (-7.54%), ขนาดเล็กมาก ($127M)
+- Threat: ลูกค้าคนละกลุ่มเลย แทบไม่ overlap
 
-| Metric | **VEEV** | CRM (Salesforce) | ADBE (Adobe) | IQVIA Holdings | Medidata* |
-|--------|----------|-----------------|-------------|---------------|----------|
-| Market Cap | $25.7B | $230B | $38B | $35B | N/A (private) |
-| P/E (NTM) | **40x** | 35x | 28x | 25x | ~22x |
-| EV/EBITDA | **28x** | 24x | 22x | 15x | ~22x |
-| EV/Revenue | **10x** | 7x | 10x | 3x | 8x |
-| ROE | 13.9% | 10% | 58.8% | 18% | N/A |
-| ROIC (adjusted) | **~15-20%** | 8% | 42% | 12% | N/A |
-| Revenue Growth YoY | **+16.3%** | +9% | +11% | +7% | ~6% |
-| Gross Margin | **73%** | 76% | 87% | 32% | 73% |
-| FCF Margin | **~44%** | ~30% | ~42% | ~15% | ~25% |
-| Moat | **Wide** | Wide | Wide | Narrow-Wide | Narrow |
-| Alpha (Carhart) | **+4.8% (t=2.1)** | N/A | N/A | N/A | N/A |
+### Customer Concentration
+Top 10 customers รวม **~28%** ของ total revenues, ไม่มีลูกค้ารายเดียวเกิน 10% [Source: SEC 10-K FY2023 — ข้อมูลเก่าที่สุดที่หาได้, ไม่ใช่ FY2027 ปัจจุบัน, ใช้เป็น directional] — ไม่ trigger concentration flag (threshold >20%)
 
-**VEEV's Position in Peer Group:**
-- **P/E 40x = PREMIUM** vs peer median 28x → justified by superior growth (16.3% vs peer median 9%) and regulatory moat
-- **EV/Revenue 10x = at-peer** with ADBE (comparable SaaS quality) vs CRM discount (lower growth) and IQVIA discount (lower margin/moat)
-- **Growth leader** in peer group: 16.3% >> peer median ~9%
-- **FCF Margin 44% = top quartile** (tied with ADBE, well above CRM 30%, IQVIA 15%)
-- **At $166: VEEV at DISCOUNT to peer-implied FV of $210-222** → valuation anomaly vs quality profile
+### Geography Revenue Breakdown
+| ภูมิภาค | % Revenue (FY2026) |
+|---------|-----------|
+| North America | ~60.94% |
+| Europe | ~30.09% |
+| Asia Pacific | ~8.97% |
 
-*Medidata = Dassault Systèmes subsidiary (acquired 2019 for $5.8B); closest clinical/regulatory peer but not publicly traded separately; est. metrics from Dassault reporting*
+**Geopolitical Risk:** Low — ไม่มี China exposure ที่มีนัยสำคัญ
 
 ---
 
-## 💰 Valuation [CFA L2: Equity Valuation — Absolute + Relative]
+## 🏰 Moat Analysis Update [CFA L2: Equity — Economic Moat Framework]
 
-### Method 1: DCF FCFF 2-Stage (Emma) [CFA L2: DCF — FCFF]
-- **WACC: 10.0%** (Beta 0.82; Rf 4.30%; ERP 5.50%; +1pp regulatory concentration premium)
-- **Base Revenue CAGR: 16% → 8% (10-year)**
-- **Terminal Growth: 3.5%**
-- **DCF Fair Value: $170** (base), $265 (bull), $110 (bear)
+**Moat Rating: WIDE (คงเดิม, confidence เพิ่มขึ้นจาก v1)**
 
-### Method 2: Peer/Relative Valuation (Emma) [CFA L2: Relative Valuation]
-- EV/Revenue 10x → **$208**
-- P/E 40x × EPS $6.20 → **$248**
-- EV/EBITDA 28x → **$210**
-- **Relative Blended: $222**
-
-### Method 3: External Reference
-- Morningstar FV: **$287** (15% weight — lower weight because uses different WACC assumption)
-- Analyst Consensus: **$280** (20% weight)
-
-### Valuation Triangulation (Charlie — 30/30/40 Emma/Quinn/Bear):
-
-| Method | Value | Emma Weight | Quinn Weight | Bear Weight |
-|--------|-------|------------|-------------|------------|
-| Emma DCF Base | $170 | 35% | — | — |
-| Emma Relative | $222 | 30% | — | — |
-| Morningstar | $287 | 15% | — | — |
-| Analyst Consensus | $280 | 20% | — | — |
-| **Emma Blended** | **$225** | | | |
-| Quinn P-W EV | $205 | — | 100% | — |
-| Bear P-W EV | $178 | — | — | 100% |
-
-**Charlie Triangulation (30/30/40):**
-- Emma $225 × 30% = $67.50
-- Quinn $205 × 30% = $61.50
-- Bear $178 × 40% = $71.20
-- **Blended FV = $200.20 ≈ $200**
-
-**ESG Adjustment (-2%, reconciled 7.3/10):**
-- **ESG-Adjusted Blended FV = $200 × 0.98 = $196**
-
-**Charlie Final Blended FV = $196 (rounding → $195 reported, presented as $192 midpoint of 30/30/40 blend)**
-
-*Note: Charlie rounds conservatively to $192 to give Bear's concerns on thin MOS and ROIC quality full expression.*
-
-**Margin of Safety at $166:**
-- vs Blended FV $192: +15.7% → POSITIVE but THIN
-- vs Emma DCF $170: +2.4% → nearly at current price (no real MOS vs DCF alone)
-- vs Bear DCF $152: -9.2% → NEGATIVE vs Bear's own DCF = Bear side says "slightly overvalued at DCF level"
-- vs Bear P-W EV $178: +7.2% → narrow
-
-**Verdict: HOLD, NOT BUY — MOS 15.7% blended is below our 20% threshold for full BUY (established from AMD/AVGO precedent); Kelly Quarter-Kelly = 1% confirms thin risk/reward**
+Vault CRM migration win-rate >80% เป็นหลักฐาน real-world stress-test ที่แข็งแรงกว่าที่ v1 คาด — v1 มองเป็น "unresolved risk" แต่ข้อมูลล่าสุดแสดงว่าแม้ลูกค้าเปิดแข่งขันเต็มที่ (มี Salesforce เป็นทางเลือก) ส่วนใหญ่ก็ยังเลือก Veeva — **moat validation ไม่ใช่ moat erosion**
 
 ---
 
-## 📉 Quantitative Risk [CFA L1: Risk Management — Quantitative Metrics]
+## 📊 Sector / Peer Comparison [CFA L2: Relative Valuation]
 
-| Metric | VEEV | S&P 500 (Benchmark) | Portfolio Avg |
-|--------|------|--------------------|----|
-| Beta (5Y Monthly) | 0.82 | 1.00 | ~1.30 |
-| Sharpe Ratio (3Y) | 0.78 | 0.55 | ~0.80 |
-| Sortino Ratio (3Y) | 1.10 | 0.85 | ~1.05 |
-| Treynor Ratio | 0.095 | — | ~0.095 |
-| Jensen's Alpha | +4.8%/yr (t=2.1) | — | +4.2%/yr |
-| VaR (95%, 1Y) | -24% | -16% | -22% |
-| CVaR (95%, 1Y) | -31% | -20% | -28% |
-| Max Drawdown (Historical) | -64% | -24% | -55% |
-| R² vs SPX | 0.58 | — | ~0.55 |
+*Peer set ตาม Atlas Data Package Section G — MODN ตัดออกเพราะ private หลัง Vista Equity acquisition มิ.ย. 2024*
 
-**Key Quant Findings:**
-1. **Alpha significance t=2.1 = highest in portfolio** → strongest statistical evidence of genuine excess return
-2. **Beta 0.82 = defensive** → VEEV adds portfolio stability vs semiconductor-heavy current mix (semi avg beta ~1.6)
-3. **Sharpe 0.78 > S&P 500** → risk-adjusted outperformer vs benchmark [per CIO rule: benchmark comparison mandatory]
-4. **Max Drawdown -64% = concerning** → but driven by 2021-22 SaaS crash (extraordinary); forward beta lower with S&P 500 inclusion dampening vol
-5. **Kelly Quarter = 1%** → thin MOS signal; position should be SMALL initially
+| Company | Ticker | P/E (TTM) | EV/EBITDA | ROE | ROIC | Rev Growth | Net/Gross Margin | Moat |
+|---------|--------|-----------|-----------|-----|------|-----------|-------------------|------|
+| **Veeva Systems** | **VEEV** | **43-44.5x** | **~35.6x (est.)** | **~12.9%** | **~14.2%** | **+16.25%** | **28.4% net / 75.0% gross** | **Wide** |
+| IQVIA | IQV | 30.22x | 17.39x | 19.37% | 6.68% | +8.17% | 13.95% net | Narrow-Wide |
+| Certara | CERT | ~12.0x | ~11.06x | N/A | N/A | +11.09% | 4.27% net | Narrow |
+| Doximity | DOCS | 21.31x | 13.46x | 19.28% | N/A | +11.18% | 30.57% net | Narrow-Wide |
+| Health Catalyst | HCAT | N/A (loss) | N/A | -31.33% | N/A | -7.54% | -8.05% net | None |
+| **Sector Median** (ex-HCAT) | — | 21.31x | 13.46x | 19.28% | 6.68% | +11.09% | 13.95% net | — |
+| **VEEV vs Median** | — | **+107% premium** | **+164% premium** | **-33% (ต่ำกว่า)** | **+113% (สูงกว่า)** | **+47% (สูงกว่า)** | **+104% (สูงกว่า)** | Only Wide-moat name |
+
+**สรุป:** VEEV เทรดที่ P/E premium +107% และ EV/EBITDA premium +164% เหนือ sector median — **สูงกว่า v1 มาก** (v1: P/E premium ~+43%) เพราะราคาวิ่งขึ้น +51% เร็วกว่า fundamentals VEEV ยังนำ growth (+47% เหนือ median) และ margin (+104%) และเป็น wide-moat เพียงตัวเดียวในกลุ่ม แต่ระดับ premium ปัจจุบันเริ่มยากที่จะ justify ด้วย fundamental gap เพียงอย่างเดียว
 
 ---
 
-## 🌱 ESG Risk Scorecard [CFA L2-L3: ESG Materiality Analysis]
+## 💰 Valuation — Full Recalculation [CFA L2: Equity Valuation — FCFF Model + Relative Valuation]
+
+### Emma: Method 1 — DCF FCFF 2-Stage (10-Year)
+- **WACC = 10.5%** (Rf 4.66% + Beta 0.92×ERP 5.50% + 0.75pp regulatory premium, ลดจาก 1.0pp เพราะ Vault CRM de-risking)
+- **Terminal Growth Rate = 3.0%** (capped ตาม house rule — ลดจาก 3.5% ใน v1)
+- **DCF Fair Value: $145 (Base), $245 (Bull), $88 (Bear)**
+- **⚠️ ราคาปัจจุบัน $251 อยู่เหนือแม้กระทั่ง Bull-case DCF ($245)**
+
+### Emma: Method 2 — Relative Valuation
+- Raw peer-multiple FV = **$112** (P/E $122 + EV/EBITDA $101, เฉลี่ย)
+- Quality Premium +50% (growth/margin/moat premium) → **Adjusted Relative FV = $168**
+- *(Bear challenge: +50% premium เป็น judgment call, sensitivity: +25%→$140, 0%→$112)*
+
+### Method 3 — Analyst Price Targets
+Stifel $275 / Guggenheim $232 / Oppenheimer $225 → **Average = $244**
+*(Bear challenge: sell-side PT เป็น lagging/herding indicator — Stifel เพิ่ง revise PT ตามราคาที่ขึ้นไปแล้ว)*
+
+### Emma Blended FV
+| Method | Value | Weight |
+|--------|-------|--------|
+| DCF Base | $145 | 40% |
+| Relative (quality-adj) | $168 | 35% |
+| Analyst PT average | $244 | 25% |
+| **Emma Blended FV** | **$178** | |
+
+### Quinn: Probability-Weighted EV (Sensitivity Matrix based)
+Bull $345.3 (10%) / Base $261.5 (30%) / Bear $192.4 (35%) / Extreme $141.5 (25%)
+**Quinn P-W EV = $231.88**
+
+### Bear: Independent P-W EV (Dual-Anchor Average)
+เนื่องจาก Emma-Quinn base case ต่างกันมาก ($145 vs $261.5 — 80% gap, unreconciled FCF-conversion methodology) Bear เฉลี่ย 2 anchor sets แทนเลือกฝั่งเดียว:
+- Anchor A (Quinn's FCF-based scenarios, Bear weights 10/30/35/25) = **$216**
+- Anchor B (Emma's DCF-based scenarios, Bear weights 10/30/35/25) = **$130**
+- **Bear P-W EV = ($216+$130)/2 = $173**
+
+### Charlie's Blended FV Triangulation (IPS 40/30/30)
+
+| Analyst | FV | Weight | Contribution |
+|---------|-----|--------|---------------|
+| Emma (DCF/Fundamental) | $178 | 40% | $71.20 |
+| Quinn (Quant/P-W EV) | $231.88 | 30% | $69.564 |
+| Bear (Downside/P-W EV) | $173 | 30% | $51.90 |
+| **Blended FV (raw)** | | | **$192.66** |
+
+**ESG Adjustment (-2%, reconciled 7.35/10):**
+**Blended FV (ESG-adj) = $192.66 × 0.98 = $188.81**
+
+### Margin of Safety at $251.00
+| vs | FV | MOS |
+|----|-----|-----|
+| Blended FV (ESG-adj) | $188.81 | **-24.78%** |
+| Blended FV (raw) | $192.66 | -23.24% |
+| Emma DCF Base | $145 | -42.2% |
+| Emma Bull DCF | $245 | -2.4% (ราคาเหนือ Bull case) |
+| Quinn P-W EV | $231.88 | -7.62% |
+| Bear P-W EV | $173 | -31.1% (range -13.9% ถึง -48.2%) |
+| Analyst PT avg | $244 | -2.9% |
+
+**Value Bucket MOS Gate Check (≥15% required): FAIL หนักในทุก methodology — แม้แต่ optimistic ends**
+
+---
+
+## 🧮 SaaS Unit Economics [CFA L2: Equity Valuation — Growth Company Analysis] *(Phase 1 Feature — First Test)*
+
+*Applicability: VEEV มี subscription revenue ~80% — applicable แม้จัดเป็น Value bucket*
+
+| Metric | Value | Healthy Benchmark | Verdict |
+|--------|-------|--------------------|---------|
+| Rule of 40 (Rev Growth% + FCF Margin%) | 16.25% + 49.4% = **65.65%** | ≥ 40% | **Pass (มาก)** |
+| Net Revenue Retention (NRR) | **N/A — ไม่มี disclosure** | > 100% | N/A |
+| LTV/CAC | **N/A — ไม่มี disclosure** | > 3x | N/A |
+| CAC Payback Period | **N/A — ไม่มี disclosure** | < 18 เดือน | N/A |
+| Magic Number | **N/A — VEEV ไม่ report ARR แยก** | > 0.75 | N/A |
+
+### SBC Dilution / Quality-of-Earnings Check
+- SBC Q1 FY2027 = **13.5%** ของรายได้ [SEC 10-Q FY2027 Q1]
+- $2B buyback authorized Jan 2026 (~5.5% ของ shares) — offset dilution
+- **GAAP vs non-GAAP EPS gap = 33%** (FY2026 GAAP $5.44 vs non-GAAP $8.10) — ส่วนใหญ่จาก SBC add-back — Forward P/E ~27x ที่ตลาดใช้น่าจะอิง non-GAAP
+
+**Insight:** Rule of 40 ที่ 65.65% ยืนยันคุณภาพ business model สูงมาก แต่การไม่มี NRR/LTV-CAC disclosure ทำให้ประเมิน unit-level economics ยากกว่า peer ทั่วไปในกลุ่ม high-growth SaaS ทั่วไป (ServiceNow, Snowflake) — ต้องพึ่ง aggregate metrics แทน
+
+**Phase 1 Test Result: บางส่วนใช้งานได้ (Rule of 40 + SBC ได้ครบ) แต่ NRR/LTV-CAC/Magic Number ไม่มี disclosure จาก VEEV เอง — N/A ตรงไปตรงมา**
+
+---
+
+## 📉 Quantitative Risk [CFA L1: Risk Management — Quantitative Metrics] (Updated)
+
+| Metric | v1 ($166) | v2 ($251) | Direction |
+|--------|-----------|-----------|-----------|
+| Beta (5Y Monthly) | 0.82 | **0.92** | ↑ risk (S&P inclusion mechanical co-movement) |
+| Sharpe Ratio | 0.78 | ~0.53 (methodology changed — ดู note) | ↓ (vol-driven, ไม่ใช่ return แย่ลง) |
+| Sortino Ratio (proxy) | 1.10 | ~0.75 | ↓ |
+| Jensen's Alpha (CAPM) | +4.8%/yr (Carhart, t=2.1) | +15.77%/yr (CAPM, คนละโมเดล) | ต้อง re-run Carhart รอบหน้า |
+| Kelly (Quarter) | +1% | **-13.4%** | **พลิกลบ — quant edge เป็นลบที่ราคานี้** |
+| P-W EV | $205 | $231.88 | MOS พลิก +23.5%→-7.62% |
+| VaR (95%, 1Y) | -24% | -54.5% ถึง -66% (ตาม vol assumption) | ↑↑ |
+| CVaR (95%, 1Y) | -31% | -70.8% ถึง -85.2% | ↑↑ |
+| Max Drawdown (all-time) | -64% | -63.74% (unchanged, $342→$124) | — |
+| 52W High vs Current | — | $310.50 → $251 = **-19.16%** | ราคา pull back จาก peak รอบนี้แล้วบางส่วน |
+| Implied/Historical Vol (30d) | 26%/28% | **53.47%/46.03%** | ↑↑ regime shift ชัดเจน |
+| Sensitivity cells above price | 72% | 56% | margin of error แคบลง |
+
+**⚠️ Data Limitation:** Session นี้ดึง full 3Y monthly price series ไม่ได้ (403 blocked หลาย source) — Quinn ใช้ "Realized CAGR จาก anchor points" (Oct 2023 trough $124 → 2026-08-19 $251 = 25.47%/yr) แทน mean-of-monthly-returns — Sharpe/Sortino/Alpha จึงไม่ apples-to-apples กับ v1 เต็มรูปแบบ, ระบุไว้ชัดเจน
+
+**Key Finding:** Sharpe/Sortino ที่ลดลงไม่ได้แปลว่าผลงานแย่ลง — vol กำลังเพิ่มเร็วกว่า return สอดคล้องกับคำเตือน Atlas เรื่อง Fed hawkish/multiple compression risk
+
+---
+
+## 🎲 Derivatives-Market Signal [CFA L1: Derivatives — Options Markets] *(Phase 1 Feature — First Test)*
+
+| Signal | Value | Interpretation |
+|--------|-------|-----------------|
+| Implied Volatility (IV, 30d mean) | 53.47% [AlphaQuery] | เทียบ HV 46.03% → IV premium +7.44pp = ตลาดคาด vol อนาคตสูงกว่า realized ปานกลาง |
+| IV Skew (put vs call) | **N/A — ไม่พบข้อมูล verified** | Barchart/OptionCharts ไม่แสดงตัวเลขนี้ตรงๆ |
+| Put/Call Ratio (Volume) | 0.44 [Barchart] | <0.7 = **bullish tilt** |
+| Put/Call Ratio (OI) | 0.45 [Barchart] | สอดคล้องกัน — bullish positioning |
+| Max Pain | **N/A — ไม่พบข้อมูล verified** | Fetch ไม่ได้เนื้อหาจริง |
+
+**Insight — Contradiction ที่สำคัญ:** สัญญาณ options market (bullish P/C ratio) **ขัดแย้งโดยตรง**กับ Kelly/P-W EV เชิงลบของ Quinn — Bear วิเคราะห์ว่า options flow เป็น sentiment/momentum-chasing indicator (recency bias หลังหุ้นวิ่ง +51% + beat earnings) ไม่ใช่ forward-looking fundamental signal และให้น้ำหนัก Kelly มากกว่าสำหรับการตัดสินใจ 3-5 ปี — **ไม่เปลี่ยน weighting ใน Blended FV ตาม house rule (Quinn ยังคง 30%)**
+
+**Phase 1 Test Result: ใช้งานได้บางส่วน — IV/HV/Put-Call Ratio หาได้จาก AlphaQuery+Barchart แต่ IV Skew/Max Pain หาไม่ได้ (VEEV ไม่ใช่ high-volume options name ตามคาด) — ให้ signal ที่มีค่าจริง (contradiction flag ที่มีประโยชน์) แม้ไม่ครบทุก metric**
+
+---
+
+## 🌱 ESG Risk Scorecard [CFA L2-L3: ESG Materiality Analysis] (Re-analysis Update)
 
 | Dimension | Emma | Bear | Reconciled | Material Risk | Valuation Impact |
 |-----------|------|------|-----------|--------------|----------------|
 | Environmental (E) | 8/10 | 7/10 | 7.5/10 | LOW | 0% |
-| Social (S) | 7/10 | 6/10 | 6.5/10 | LOW-MEDIUM | -1% |
-| Governance (G) | 9/10 | 7/10 | 8.0/10 | LOW | -1% |
-| **Overall** | **8.0** | **6.7** | **7.3/10** | **LOW** | **-2%** |
+| Social (S) | 7/10 | 6.5/10 | 6.75/10 | LOW-MEDIUM | -1% |
+| Governance (G) | 8.5/10 | 7.2/10 | **7.85/10** | LOW-MEDIUM | -1% |
+| **Overall** | **7.8** | **6.9** | **7.35/10** | **LOW-MEDIUM** | **-2%** |
 
-**ESG Rating: LOW RISK / POSITIVE**
+**ESG Rating: LOW-MEDIUM RISK / POSITIVE**
 
-**Material ESG Factors:**
-- **E:** Cloud-native SaaS = near-zero direct emissions; AWS/Azure renewable commitments (3rd party risk)
-- **S:** Healthcare mission = positive (drug development efficiency); pharma client pricing controversy = indirect reputational risk; PBC legally mandates social mission consideration
-- **G:** Founder-CEO Peter Gassner = skin-in-game + PBC conversion in 2021 = unique governance signal; Risk: dual-class voting structure, no formal succession plan
+**Bear's ESG Re-Challenge:** Emma ปรับ Governance 8.0→8.5 โดยอ้าง "Vault CRM migration success" — Bear ปฏิเสธเหตุผลนี้เพราะเป็นการ **conflate business execution กับ governance structure** (scope creep) — dual-class voting control (Gassner) + ไม่มี formal succession plan ยัง unchanged จาก v1 100% — Bear ให้ credit เพียง +0.2 จาก $2B buyback discipline เท่านั้น ผลคือ Reconciled ESG (7.35) ใกล้เคียง v1 (7.3) มากกว่าที่ Emma เสนอ (7.8)
 
-**ESG Special Note: PBC Structure**
-Veeva is the first major SaaS company to convert to Public Benefit Corporation (Oct 2021). This legally requires board to balance profit vs human health mission → ESG funds generally POSITIVE on this structure → ESG-fund eligible (vs RKLB defense exclusion). **This is a genuine ESG differentiator, not marketing.**
-
-**Bear ESG Challenge:**
-- PBC structure untested in shareholder conflict scenario
-- Gassner's voting control could override minority shareholders (G downgrade)
-- Reconciled to 7.3/10 (-2% valuation impact applied to Blended FV)
+**Total ESG Valuation Impact: -2%** (คงเดิมจาก v1)
 
 ---
 
-## 💰 Sensitivity Matrix 5×5 — Fair Value per Share ($) [CFA L2: Scenario Analysis — Sensitivity]
+## 💰 Sensitivity Matrix 5×5 — Fair Value per Share ($) [CFA L2: Scenario Analysis]
 
-**Variable 1:** Revenue CAGR FY2026-2030 (5 levels: 8%, 12%, 16%, 20%, 24%)
-**Variable 2:** WACC (5 levels: 8.5%, 9.0%, 10.0%, 11.0%, 12.0%)
+**Variable 1:** Revenue CAGR (8%, 12%, 16%, 20%, 24%) | **Variable 2:** WACC (9.0%, 10.0%, **10.7% base**, 11.5%, 12.5%)
 
-*Selected because: (1) Revenue CAGR = single most important driver — Emma (16%) vs Bear (12%) dispute = $55 FV swing; (2) WACC = SaaS is long-duration, highly rate-sensitive; Bear argues WACC 11% is more appropriate in 4.25-4.50% rate environment*
+*WACC base เพิ่มจาก v1 (10.0%→10.7%) เพราะ Rf ขึ้น 4.30%→4.66% และ Beta ขึ้น 0.82→0.92*
 
-| | **WACC 8.5%** | **WACC 9.0%** | **WACC 10.0%** | **WACC 11.0%** | **WACC 12.0%** |
+| | **WACC 9.0%** | **WACC 10.0%** | **WACC 10.7%** | **WACC 11.5%** | **WACC 12.5%** |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **Rev CAGR 8%** | $148 | $135 | $118 | $105 | $93 |
-| **Rev CAGR 12%** | $192 | $176 | $155 | $138 | $123 |
-| **Rev CAGR 16%** | $248 | $228 | **$170*** | $152 | $135 |
-| **Rev CAGR 20%** | $322 | $296 | $230 | $205 | $183 |
-| **Rev CAGR 24%** | $412 | $379 | $295 | $263 | $235 |
+| **Rev CAGR 8%** | $225.8 | $192.4 | $174.6 | $158.0 | $141.5 |
+| **Rev CAGR 12%** | $279.4 | $236.5 | $213.7 | $192.4 | $171.3 |
+| **Rev CAGR 16%** | $345.3 | $290.6 | **$261.5*** | $234.5 | $207.5 |
+| **Rev CAGR 20%** | $425.9 | $356.6 | $319.7 | $285.5 | $251.5 |
+| **Rev CAGR 24%** | $523.9 | $436.6 | $390.2 | $347.3 | $304.6 |
 
-*[Base case]* = 16% CAGR × 10% WACC = $170
+*[Base case]* = 16% CAGR × 10.7% WACC = $261.5 (Quinn's independent FCF-based model — ดู Challenge 4 ใน Behind the Scenes สำหรับ divergence กับ Emma's DCF)
 
-**Cells above current price ($166):** 18/25 = **72%** — asymmetrically favorable
-**Cells above $200 (20% MOS):** 12/25 = **48%** — nearly half scenarios support strong BUY
+**Cells above current price ($251):** 14/25 = **56%** *(ลดลงจาก 72% ใน v1)*
 
-**Bear applies independent weights (Bear scenario distribution):**
-- Emma distribution: Bull 25% / Base 40% / Bear 25% / Extreme 10%
-- Bear distribution: Bull 15% / Base 35% / Bear 35% / Extreme 15%
-- Quinn P-W EV: **$205** | Bear P-W EV: **$178**
-
-**Key Finding:** Current price $166 = **base case DCF ($170)** — meaning the market is currently pricing VEEV at exactly its base case. Any upside requires EITHER CAGR acceleration OR rate decline. Bear's preferred cell (12% CAGR × 11% WACC = $138) = 16.9% BELOW current price → Bear sees downside risk at current levels.
+**Key Finding:** ถ้า WACC ขยับขึ้นแค่ 0.8pp (11.5%) ที่ CAGR 16% → FV ตกไปที่ $234.5 ทันที (ต่ำกว่าราคาตลาด -6.6%) — margin of error ต่อ assumption ผิดพลาดแคบลงกว่าเดิมมาก
 
 ---
 
 ## 🔄 What Would Change Our Mind [CFA L3: Investment Thesis — Bull/Bear Flip Triggers]
 
-### Bull Flip Triggers → Change to BUY (ณ $166 ปัจจุบัน ถ้าเกิดสิ่งเหล่านี้):
-1. **Vault CRM migration completes Q2 FY2027 (Aug 2026) with ≥95% customer retention** → switching cost thesis validated under real Salesforce-off stress; re-run DCF with 18% base CAGR
-2. **Data Cloud revenue > $200M annualized** → network effect monetization confirmed; new rev stream = 1-2x EV/Revenue re-rate
-3. **FY2027 (อีก 1 ปี) Revenue guidance ≥ 18%** → CAGR deceleration thesis broken; DCF jumps to $200+
-4. **Fed rate cut ≥ 50bp cumulative 2026** → WACC drops 9% → sensitivity matrix base = $228 → MOS >37% vs $166
-5. **Price pullback to $140-150** → MOS widens to 20%+ vs Blended FV $192 → Kelly turns clearly positive; BUY T1
+### Bull Flip Triggers → เข้าเพิ่ม/BUY:
+1. **ราคาย่อกลับมาที่ $190-210** → MOS เข้าใกล้ 0% ถึงบวก เทียบ Bear P-W EV $173
+2. **FY2027 full-year revenue guidance ยกระดับเป็น ≥18%** → support CAGR assumption ที่สูงขึ้น
+3. **Veeva เปิดเผยรายได้จาก AI/"agentic labor" product line ≥$100-150M annualized** → ปิด blind spot ที่ Bear พบ (TAM-expansion catalyst ที่ยังไม่ได้ model)
+4. **4 top-20 pharma decisions ที่เหลือปิดครบในทาง Veeva** พร้อม retention ≥90% independently-verified
+5. **Fed พลิกกลับมา dovish** (ยกเลิก hikes ที่ priced) → WACC ลดสู่ 9.5-10% → FV $290-345 range
 
-### Bear Flip Triggers → Change to AVOID/SELL:
-1. **Vault CRM migration customer retention < 90%** → switching cost thesis broken; moat narrower than Wide; immediate re-analysis
-2. **Revenue CAGR deceleration to < 12% for 2 consecutive quarters** → DCF drops to $155-145; VEEV overvalued at $166
-3. **Salesforce wins top-20 pharma customer from VEEV Commercial Cloud** → competitive breach signal; upgrade Salesforce threat from MEDIUM to HIGH
-4. **VEEV M&A > $5B** → capital allocation red flag; execution risk spikes; dilution risk
-5. **FDA CSA modernization removes 21 CFR Part 11 software validation requirements** → structural moat threat; re-analysis mandatory
+### Bear Flip Triggers → Downgrade AVOID/SELL:
+1. **Fed hike ทั้ง 2 ครั้ง (Sept+Dec 2026) แล้ว signal ต่อเนื่อง 2027** → WACC ดันสู่ 11.5-12% → FV ร่วงสู่ $190-207
+2. **Revenue growth หลุดต่ำกว่า 14% สำหรับ 2 ไตรมาสติด**
+3. **4 top-20 decisions ที่เหลือพลิกไป Salesforce ทั้งหมด หรือ win-rate ไตรมาสหน้า <70%**
+4. **Forward P/E ไม่ compress แม้ growth ชะลอ** (ยังเทรดเกิน 35x)
+5. **Insider selling เปลี่ยนจาก scheduled 10b5-1 เป็น opportunistic (โดยเฉพาะ Gassner)**
 
 ### Thesis Invalidation (Re-Analysis REQUIRED):
-- **Vault CRM migration failure > 15% customer churn** → moat quality was wrong; full re-thesis
-- **Peter Gassner departs as CEO** → PBC + founder vision = core thesis component; immediate re-analysis
-- **Revenue growth < 8% any full fiscal year** → structural slowdown, not cyclical; AVOID territory
-- **VEEV acquired** → different valuation framework entirely
+- Revenue growth หลุดต่ำกว่า 10% full fiscal year ใดๆ
+- Peter Gassner ลาออกจากตำแหน่ง CEO
+- VEEV ถูก acquired
+- FDA CSA modernization ยกเลิก 21 CFR Part 11 validation requirement จริง
 
 ---
 
 ## 🎯 Recommendation [CFA L3: Portfolio Construction — Asset Allocation]
 
-> ### HOLD / WAIT FOR PULLBACK
-> Blended FV $192 vs price $166 = MOS +15.7% — POSITIVE but BELOW our 20% BUY threshold. Bear DCF $152 vs price $166 = NEGATIVE MOS on Bear's own model. Thin margin of safety + unresolved Vault CRM migration risk = WAIT for better entry OR Bull Flip catalyst.
+> ### HOLD / WAIT FOR PULLBACK — NO DEPLOY
+> Blended FV (ESG-adj) $188.81 vs ราคา $251.00 = MOS **-24.78%** — FAIL Value bucket gate (≥15%) หนักมาก แม้ Conviction 6.5/10 จะผ่านเกณฑ์ (≥6) สบายๆ. ธุรกิจคุณภาพสูงสุดตัวหนึ่งที่ทีมเคยวิเคราะห์ (Vault CRM migration สำเร็จ, Rule of 40 = 65.65%) แต่ราคาแพงกว่าแม้แต่ Bull-case DCF ($245)
 
-**Position Sizing (if entry conditions met):**
-- **Tranche 1 (2%):** Entry $148-158 — MOS ≥15% vs Blended, near Bear P-W EV $178
-- **Tranche 2 (0.5%):** Entry $130-145 — strong MOS; Bear bear scenario approached
-- **Tranche 3 (0.5%):** IF Vault CRM migration success confirmed (Aug 2026) + price still ≤ $175 — add on thesis validation
+**Position Sizing (ถ้าเข้าเงื่อนไข entry ในอนาคต):**
+- **Tranche 1 (2%, watch zone):** Entry $185-200 — MOS ~-4% ถึง +4% — เข้าเฉพาะถ้า Bull Flip triggers ยืนยัน (ไม่ใช่ full MOS entry)
+- **Tranche 2 (1%, target zone):** Entry $150-167 — MOS ≥15% เทียบ Blended FV — entry ที่แท้จริงตาม Value bucket gate
 
-**Total max position: 3%**
-*(vs ADBE 5%, AVGO 5%, NVDA 7% — smaller because MOS thinner and Vault CRM migration uncertainty)*
+**Total max position (ถ้า deploy): 3%** (เท่า v1 — thin-MOS profile ยังคงมีลักษณะเดียวกัน)
 
-**Portfolio Context:**
-- VEEV opens **Healthcare SaaS** sector in portfolio (first position)
-- Correlation vs portfolio: ρ ~0.25-0.45 vs existing holdings → diversification benefit
-- Sector distribution: Previously 0% Healthcare Tech; VEEV adds new uncorrelated vector
+**Stop Loss: $160 (-20.0% จาก entry T1 mid $200)** — reference สำหรับการเข้า position ในอนาคตเท่านั้น (ปัจจุบันไม่มี position)
 
-**Stop Loss: $118**
-- Below Bear Extreme case $88-110 + adequate buffer
-- Reflects Vault CRM migration binary risk + potential rate re-rating to 12% WACC scenario
+**3-Year Forward Return Estimate (จาก entry T2 zone mid $158.50):**
+((188.81/158.50)^(1/3) - 1) × 100 ≈ **6.00%/yr CAGR → ~19.1% total return ใน 3 ปี** (ถ้าราคาย่อเข้า T2 zone และ FV converge)
 
 **Target:**
-- **Base Target: $192** (+15.7% from $166)
-- **Bull Target: $265** (+59.6%; requires 20% CAGR + WACC 8.5%)
-- **Analyst Consensus: ~$280** (+68.7%; Morningstar $287)
+- **Base Target: $188.81** (Blended FV ESG-adj)
+- **Bull Target: $245-345** (Emma Bull DCF / Quinn Bull sensitivity range)
+- **Analyst Consensus: ~$244** (Stifel/Guggenheim/Oppenheimer average)
+
+**Portfolio Context:** ไม่มี position อยู่ในปัจจุบัน (v1 ก็ไม่เคย deploy) — VEEV ยังคง watchlist-only status
 
 ---
 
-## ⚠️ Risk Summary [CFA L2: Risk Analysis — Top Risk Factors]
+## ⚠️ Risk Summary [CFA L2: Risk Analysis]
 
 | Risk | Probability | Impact | Bear's Assessment |
 |------|------------|--------|------------------|
-| Vault CRM migration miss | 25% | HIGH (-30-50% to FV) | Top operational risk; window opens for customer evaluation of alternatives |
-| Revenue deceleration <12% CAGR | 35% | MEDIUM-HIGH (-20-30% to FV) | 80% top-50 penetration = incremental growth harder |
-| S&P 500 inflow priced in | 60% | LOW (announcement premium captured) | Trading catalyst, not valuation catalyst |
-| Salesforce Life Sciences Cloud win | 20% | MEDIUM (-$0.20-0.30 EPS impact) | Real but contained to Commercial Cloud 30% |
-| Rate re-rating (WACC 11-12%) | 30% | HIGH (-20-35% DCF impact) | Bear applies 11% WACC → $152 bear DCF |
-| FDA 21 CFR Part 11 modernization | 10% | VERY HIGH (structural moat disruption) | 7-10yr horizon; monitor regulatory calendars |
-| Gassner departure | 5% | HIGH (immediate re-analysis) | Low probability, extreme impact |
+| Fed hawkish pivot ต่อเนื่อง (2 hikes priced) | ปานกลาง-สูง | HIGH (-15-20% DCF) | WACC ดันสู่ 11.5-12% กด FV โดยตรง |
+| 4 top-20 decisions พลิกไป Salesforce | ต่ำ-ปานกลาง | MEDIUM (reverse de-risking) | Win-rate อาจไม่ใช่ 80% เต็มถ้า pending ทั้งหมดเสีย |
+| Revenue deceleration <14% ต่อเนื่อง | ปานกลาง | MEDIUM-HIGH | Top-50 saturation risk |
+| Index-level valuation reprice (Mag7/EY spread) | ปานกลาง | MEDIUM (correlated sell-off) | Beta ขึ้นเป็น 0.92 = correlation สูงขึ้นกับตลาดรวม |
+| FDA 21 CFR Part 11 modernization | ต่ำ | VERY HIGH (structural) | 5-10yr horizon, monitor |
+| Emma-Quinn methodology divergence unreconciled | มีอยู่แล้ว | เพิ่ม uncertainty band | FCF-conversion gap ($145 vs $261.5) ยังไม่ resolve |
 
 ---
 
 ## 📅 Catalysts Calendar [CFA L2: Equity — Catalyst Analysis]
 
 \`\`\`
-2026-05-19  ──●── 🏛️ S&P 500 Inclusion Effective       [MEDIUM-HIGH]
-                  ~$3.5B passive buying obligation; 8.4 days avg vol
-                  *(announcement premium likely already priced)*
+2026-09/12 ──●── 🏦 FOMC Meetings (2×25bps hikes priced)   [HIGH]
+                  ยืนยัน/พลิก hawkish stance — WACC sensitivity สูงสุด
 
-2026-06     ──●── 📊 Q1 FY2027 Earnings Release         [HIGH]
-                  Key: Revenue vs guide (≥17% = bullish), Vault CRM migration update
-                  Gross margin stability, Data Cloud revenue disclosure
+2026-Q3      ──●── 📊 Q2 FY2027 Earnings                     [HIGH]
+                  4 top-20 pending decisions อาจปิด, revenue growth trajectory ต่อเนื่อง
 
-2026-08     ──●── 🔄 Vault CRM Migration Progress Check  [VERY HIGH]
-                  Q2 FY2027 Earnings — definitive Vault CRM retention data
-                  ≥95% = Bull Flip trigger; <90% = Bear Flip trigger; THE key event
+2026-Q4      ──●── 🤖 Agentic AI/Labor Product Disclosure    [MEDIUM-HIGH]
+                  TAM-expansion catalyst ที่ Bear พบเป็น blind spot — ยังไม่มี guidance ชัดเจน
 
-2026-09     ──●── 🌎 Veeva Commercial Summit (annual)    [MEDIUM]
-                  Product roadmap, new Vault modules announced
-                  Data Cloud strategy update expected
-
-2026-Q4     ──●── 💊 FDA CSA Guidance Update (monitor)  [LOW-MEDIUM]
-                  Computer System Assurance modernization — watch for 21 CFR Part 11 changes
-                  Low prob but high impact if regulatory framework shifts
-
-2027-Q1     ──●── 📈 FY2027 Full Year Results            [HIGH]
-                  Revenue CAGR confirmation for full thesis validation
-                  ≥16% = thesis holds; <12% = major Bear Flip signal
+2029-12-31   ──●── 🔄 Legacy Veeva CRM End-of-Support         [MEDIUM]
+                  Vault CRM migration deadline เต็มรูปแบบ
 \`\`\`
 
 ---
 
 ## 📚 CFA Concepts ที่ใช้
 
-| Concept | CFA Level | Section | การประยุกต์ใช้ |
-|---------|----------|---------|--------------|
-| DCF — FCFF | L2 | Equity Valuation | Base valuation model ($170 Emma base) |
-| Economic Moat Framework | L2 | Equity | Wide moat classification + 5 sources |
-| Porter's Five Forces | L2 | Industry Analysis | Competitive positioning assessment |
-| Relative Valuation (EV/Revenue, P/E, EV/EBITDA) | L2 | Relative Valuation | Peer comparison $208-$248 range |
-| DuPont Analysis | L1 | Financial Reporting | ROE decomposition; ROIC vs accounting ROIC |
-| ESG Materiality Analysis | L2-L3 | ESG Investing | PBC structure, healthcare mission |
-| CAPM / Beta | L1 | Quantitative Methods | Beta 0.82; WACC derivation |
-| Carhart 4-Factor Model | L2 | Portfolio Management | Alpha +4.8% (t=2.1) |
-| Sharpe / Sortino / Treynor | L1 | Risk-Adjusted Returns | VEEV 0.78 vs S&P 0.55 |
-| VaR / CVaR | L3 | Risk Management | -24% VaR, -31% CVaR (1Y 95%) |
-| Kelly Criterion | L3 | Portfolio Construction | Quarter-Kelly = 1% → thin MOS signal |
-| Sensitivity Matrix 5×5 | L2 | Scenario Analysis | Rev CAGR × WACC; 72% cells above $166 |
-| Probability-Weighted EV | L2 | Scenario Analysis | Quinn $205 / Bear $178 |
-| Investment Thesis + Flip Triggers | L3 | Portfolio Construction | 5 Bull + 5 Bear + 4 Invalidation points |
-| Behavioral Finance | L3 | Behavioral Finance | 5 biases identified by Bear |
-| Institutional Flow Analysis | L3* | Market Microstructure | S&P 500 inclusion ~$3.5B passive flow *(ยังไม่เรียน — วิเคราะห์ผลกระทบ passive index inclusion ต่อราคา/vol)* |
+| Concept | CFA Level | Application |
+|---------|----------|--------------|
+| DCF — FCFF 2-Stage | L2 | DCF Base $145 |
+| CAPM / Beta | L1 | WACC derivation (Beta 0.92) |
+| Relative Valuation | L2 | Peer-multiple + quality premium |
+| Economic Moat Framework | L2 | Wide moat validated |
+| Porter's Five Forces | L2 | Industry Attractiveness = High |
+| ESG Materiality Analysis | L2-L3 | Overall 7.35/10 |
+| Probability-Weighted EV | L2 | Quinn $231.88 / Bear $173 |
+| Kelly Criterion | L3 | -13.4% negative edge signal |
+| Sensitivity Matrix | L2 | Revenue CAGR × WACC |
+| Rule of 40 | L2* | *(ไม่ใช่ formal CFA term — practitioner metric)* |
+| IPS Bucket Classification | L3 | Growth→Value reclassification |
+| Options Market Signals (P/C ratio, IV) | L1 | Derivatives — sentiment context เสริม |
+| Behavioral Finance (Herding, Narrative Fallacy) | L3 | Bear challenge บน analyst PT + win-rate stat |
 
 ---
 
 ## ⚙️ Behind the Scenes
 
 **Charlie's Orchestration:**
-- Atlas Macro Brief: Fed Funds 4.25-4.50% (stable May 2026); 10Y UST 4.30%; S&P 500 ~7,399; VIX ~22 (declining); US-China 90d truce still active; Hyperscaler capex robust; Healthcare SaaS multiple compression from 2021-22 not fully recovered
-- Emma + Quinn delegated simultaneously (parallel)
-- Emma: Fundamental + Valuation + ESG + Peer Comp
-- Quinn: Quant metrics + Sensitivity Matrix + Kelly + Factor Model
-- Bear: Challenged all 7 areas (ROIC quality, Vault CRM migration, Salesforce threat, Revenue decel, Multiple justification, ESG re-score, Behavioral biases)
-- Triangulation: 30/30/40 (Emma/Quinn/Bear) → Blended FV $200 → ESG-adj $196 → Conservative round $192
+- Atlas: Macro Brief + Regime RISK-ON (3/4) + S&P 500 Index Context (Forward P/E ~20x near median, Earnings Yield spread -110bps widest since 2003, Mag7 concentration 31.5-34%)
+- Emma + Quinn dispatched พร้อมกัน (parallel) — ใช้ CIO Verified Data Package เดียวกัน
+- Bear challenge ทั้ง Emma และ Quinn รวม methodology divergence (Emma-Quinn DCF gap 80% — unreconciled FCF-conversion) + ESG re-score + Convergence blind-spot check
+
+**Bear weight ปรับเป็น 30% (จาก IPS มาตรฐาน 40/30/30 Emma/Quinn/Bear) ตาม CLAUDE.md ปัจจุบัน — ไม่ใช่ existential binary (30% มาตรฐาน ไม่ override เป็น 40%)**
+\`Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30 = $178×0.40 + $231.88×0.30 + $173×0.30 = $192.66\`
 
 **Key Debates:**
-1. **ROIC 115.9% vs Adjusted 15-20% (Bear wins):** Bear's point about excess cash distorting ROIC denominator is analytically correct. Emma concedes adjusted ROIC ~15-20% but argues even adjusted ROIC > WACC = value creation.
-2. **Revenue CAGR 16% (Emma) vs 12% (Bear):** Unresolved — biggest single variable. Vault CRM migration result (Aug 2026 Q2 FY2027) = definitive data point. Bears point: 80% top-50 penetration limits growth runway.
-3. **S&P 500 inclusion (Quinn: +5-12%) vs (Bear: priced in, +1-3% residual):** Bear wins partial argument — announcement premium already captured; Q5 Bear is right.
-4. **WACC 10% (Emma) vs 11% (Bear):** Split decision. Charlie applies 10% in base but Bear's 11% in Bear scenario → sensitivity matrix shows this is the largest source of valuation swing (-$18/share).
-5. **Position sizing:** Quarter-Kelly 1% → Charlie rounds to 3% total (3 tranches) = smaller than ADBE (5%), AMD (4%), MRVL (3%). Parity with MRVL because similar thin-MOS profile at entry.
+1. **Emma-Quinn DCF base case divergence ($145 vs $261.5, 80% gap)** — Bear พบว่าไม่มีใคร reconcile สาเหตุ (FCF-conversion/deferred-revenue methodology) — Bear ใช้ dual-anchor average แทนเลือกฝั่งเดียว
+2. **Quality premium +50% (Emma's Relative Val)** — Bear ท้าทายว่าเป็น judgment call ไม่ใช่ analytical (คล้าย pattern ที่เจอใน ETN/VRT) — sensitivity แสดงว่า MOS แย่ลงอีกถ้าลด premium
+3. **Analyst PT $244 weight 25%** — Bear ตัดออกจาก P-W EV ตัวเองเพราะเป็น lagging/herding indicator
+4. **Kelly (-13.4%) vs Put/Call ratio (0.44 bullish)** — Bear เข้าข้าง Kelly เพราะ options flow เป็น sentiment ไม่ใช่ fundamental signal
+5. **ESG Governance 8.0→8.5 (Emma) vs 7.2 (Bear)** — Bear ชนะข้อโต้แย้งเรื่อง conflating business execution กับ governance structure
+
+**Convergence Check:** Emma 7/Quinn 5.5/Bear 7 — gap 1.5 ไม่ trigger full Anti-Convergence Protocol (ไม่ unanimity ≥8) แต่ Bear ทดสอบ shared blind spot แล้วพบจริง: **agentic AI/labor product line ที่ TIKR กล่าวถึงแต่ไม่มีใคร model** — ระบุเป็น Bull Flip Trigger #3 ผลลัพธ์: **Partial Convergence Risk Note** (ไม่ใช่ Strong Convergence Verified เต็มรูปแบบ)
 
 **Morgan QA (Pre-Publication Check):**
-- Price ~$166: VERIFIED (Scout brief from Max + S&P 500 inclusion news)
-- Revenue FY2026E $2.77B (+16.3%): VERIFIED (Q4 FY2026 earnings release March 2026)
-- FCF ~$1.22B (Yield 5.1%): VERIFIED (consistent with $2.77B revenue × 44% FCF margin)
-- ROIC 115.9%: VERIFIED as reported; Bear's adjusted figure ~15-20% also computed correctly
-- Market Cap ~$25.7B: VERIFIED ($166 × 155M shares = $25.73B)
-- Morningstar FV $287: VERIFIED (from Scout brief)
-- S&P 500 inclusion effective May 19, 2026: VERIFIED
-- **Morgan QA: PASS with annotation** (Bear's ROIC adjustment is material — disclosed in report)
+- Price $251.00: VERIFIED (2 sources — Yahoo Finance + Stockanalysis.com, match)
+- Market Cap $40.77B: VERIFIED ($251 × ~162.4-163.8M ≈ $40.76-41.1B, ตรงกัน ±10%)
+- Blended FV formula: VERIFIED = 40/30/30 ตรงตาม IPS
+- MOS calculation: VERIFIED (188.81/251-1 = -24.78%)
+- Net Cash correction ($7,210M web-display error → $1,794M correct): VERIFIED ไม่หลุดเข้ารายงาน ใช้ $1,794M ตลอด
+- Terminal Growth Rate 3.0%: VERIFIED ≤3.0% cap
+- Value bucket gate check: VERIFIED (Conviction 6.5≥6 PASS, MOS -24.78%<<15% FAIL) → correctly NO DEPLOY
+- S&P 500 reference: **TBD — CIO data package ไม่มีตัวเลข index level ตรงๆ (มีแต่ P/E/earnings-yield context) — Vera ต้อง verify แยกก่อนใช้ alpha calculation**
 
 ---
 
 ## 🏁 Conclusion [CFA L3: Portfolio Management — Investment Decision]
 
-**Veeva Systems (VEEV)** เป็นบริษัทที่มีคุณภาพสูงมาก ทีมเห็นตรงกันว่า moat เป็น Wide จาก FDA 21 CFR switching cost ที่แข็งแกร่งที่สุดในพอร์ต แต่ราคา $166 ณ วันนี้ไม่มี margin of safety เพียงพอสำหรับ BUY เต็ม:
+Veeva Systems ยังคงเป็นบริษัทคุณภาพสูงที่มี Wide Moat แข็งแกร่งที่สุดตัวหนึ่งในพอร์ต — Vault CRM migration ที่เคยเป็นความเสี่ยงหลักได้พิสูจน์ตัวเองแล้วว่าประสบความสำเร็จเกินคาด แต่ราคา $251 ณ วันนี้ไม่มี margin of safety สำหรับ new money:
 
-- **Blended FV $192** vs price $166 = MOS +15.7% (ต้องการ ≥20%)
-- **Bear DCF $152** vs price $166 = -9.2% (Bear sees slight overvaluation)
-- **Quarter-Kelly = 1%** = สัญญาณ risk/reward ยังไม่ compelling
+- **Blended FV (ESG-adj) $188.81** vs ราคา $251.00 = MOS **-24.78%**
+- **Conviction 6.5/10 ผ่าน Value bucket gate (≥6)** แต่ **MOS ล้มเหลวหนัก** — single-gate failure ที่ต่างจาก dual-gate pattern เดิม
+- แม้แต่ **Emma's Bull-case DCF ($245)** ก็ยังต่ำกว่าราคาตลาด
 
 **Action:**
-- **ณ ราคา $166:** HOLD / WATCHLIST
-- **ถ้าราคาลงถึง $148-158:** เข้า Tranche 1 (2%) — MOS สู่ ≥22% vs Blended FV
-- **ถ้า Vault CRM migration success confirm (Aug 2026):** re-analyse; likely upgrade BUY ณ ราคาใดก็ได้ ≤$190
-- **Catalyst ที่สำคัญที่สุด:** Vault CRM migration result (Q2 FY2027 ส.ค. 2026) — นี่คือ THE single most important data point สำหรับ VEEV thesis
+- **ณ ราคา $251:** HOLD / WATCHLIST — NO DEPLOY
+- **ถ้าราคาลงถึง $185-200:** พิจารณา T1 (2%) เฉพาะถ้า Bull Flip triggers ยืนยัน
+- **ถ้าราคาลงถึง $150-167:** T2 (1%) — MOS ≥15% เต็มรูปแบบ
+- **Catalyst สำคัญที่สุด:** Q2 FY2027 earnings (4 top-20 pending decisions) + agentic AI revenue disclosure (blind spot ที่ Bear พบ)
 
-**Portfolio fit:** ดีมาก — เพิ่ม Healthcare SaaS sector ใหม่, beta 0.82 ช่วย defensive balance กับ semi-heavy portfolio, ESG 7.3/10 = clean position สำหรับ ESG-conscious mandate
-
-*Max — Execute เมื่อ: ราคาลงถึง $148-158 OR Vault CRM migration success confirmed ก่อนราคา — ไม่ใช่ตอนนี้ที่ $166*
+*Max — ยังไม่ Execute ที่ราคา $251 — รอ pullback เข้า entry zone หรือ Bull Flip trigger ยืนยันก่อน*
 
 ---
 
-*รายงานโดย: Charlie (Orchestrator) | Emma (Equity) | Quinn (Quant) | Bear (Devil's Advocate) | Leo (Learning Log)*
-*บลจ. CFA Multi-Strategy Aggressive Growth — 2026-05-11*
-*Working directory: C:/Users/user/Desktop/บลจ/บลจ CFA*
-`
+*รายงานโดย: Charlie (Orchestrator) | Atlas (Macro) | Emma (Equity) | Quinn (Quant) | Bear (Devil's Advocate) | Leo (Learning Log)*
+*บลจ. CFA Multi-Strategy Aggressive Growth — Re-Analysis 2026-08-20 (v1: 2026-05-11)*
+*Working directory: C:\\Users\\user\\Desktop\\บลจ\\บลจ CFA*
+`,
   },
   {
     ticker: "FICO",
