@@ -215,6 +215,11 @@ WebFetch: https://stockanalysis.com/stocks/[ticker]/financials/balance-sheet/
 ```
 ดึง: Cash, Total Debt, Net Debt, Total Assets, Shareholders Equity, Shares Outstanding
 
+**⚠️ Arithmetic Sanity Check (บังคับ — ที่มา: VEEV session 2026-08-20 เจอ "Net Cash" ที่ fetch มาผิดจากค่าจริง $5,400M+):**
+หลัง fetch เสร็จ **ห้ามใช้ค่า "Net Debt/(Cash)" ที่ tool คืนมาตรงๆ** — ต้องคำนวณเองเทียบ: `Net Cash/(Debt) = Cash & Equivalents − Total Debt`
+- ถ้าค่าที่คำนวณเองตรงกับค่าที่ fetch มา (±1% สำหรับ rounding) → ใช้ค่าที่ fetch ได้ปกติ
+- **ถ้าต่างกันเกิน 1% → ค่าที่ fetch มามี extraction error สูง — ใช้ค่าที่คำนวณเอง (Cash − Debt) เป็น ground truth เสมอ** และระบุใน Section I (Data Quality Notes) ว่าพบ discrepancy พร้อมทั้งสองค่า ห้ามส่งค่าที่ผิดต่อให้ Emma/Quinn เงียบๆ
+
 **Step D — Cash Flow Statement (Stockanalysis)**
 ```
 WebFetch: https://stockanalysis.com/stocks/[ticker]/financials/cash-flow-statement/
@@ -316,7 +321,7 @@ WebSearch: "[TICKER] [ข้อมูล] site:macrotrends.net"
 |-------|-------|--------|
 | Cash & Equivalents | $XXB | |
 | Total Debt | $XXB | |
-| Net Debt / (Cash) | $XXB | |
+| Net Debt / (Cash) | $XXB *(verified = Cash − Debt, ดู Arithmetic Sanity Check ด้านบน — ⚠️ flag ถ้า tool-fetched value ต่างจากนี้เกิน 1%)* | |
 | Total Assets | $XXB | |
 | Shareholders Equity | $XXB | |
 

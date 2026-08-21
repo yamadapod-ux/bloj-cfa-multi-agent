@@ -235,6 +235,11 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 
 ตรวจว่า report ระบุ `Bucket: Value / Growth` ชัดเจน — ถ้าไม่มี = **MEDIUM**
 
+**⚠️ Bucket Correctness Cross-check (บังคับ — ที่มา: VEEV v1 2026-05-11 ถูกจัดเป็น growth-style implicit ทั้งที่ revenue growth 16.25% ไม่ถึงเกณฑ์ Growth bucket 20% มาตั้งแต่ต้น กว่าจะจับได้ก็ re-analysis รอบถัดไป):**
+อย่าเช็คแค่ว่า "มีการระบุ Bucket" — ต้อง **เทียบ Bucket ที่ประกาศกับ TTM Revenue Growth จริงจาก Atlas Data Package Section B**:
+- ประกาศ **Growth** แต่ Revenue Growth ≤ 20% → **HIGH FAIL** (ผิดเกณฑ์ทันที ไม่ใช่แค่ format issue)
+- ประกาศ **Value** แต่ Revenue Growth > 20% โดยไม่มีเหตุผลอธิบาย (เช่น mature FCF-positive company ที่บังเอิญโตเร็วปีนี้) → **MEDIUM** — ขอให้ Charlie ระบุเหตุผลเลือก Value ทั้งที่ growth สูง
+
 ### Step 4 — ตรวจ Format Compliance
 - [ ] Section emojis ครบตาม CLAUDE.md (📋💡🏢🏰📊💰📉🌱💪🔄🎯⚠️📅📚⚙️🏁)
 - [ ] Conviction Bar ใช้ `█` characters (ไม่ใช่ตัวเลขธรรมดา)
@@ -331,7 +336,7 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 **Severity กำหนดโดย:**
 | Severity | ตัวอย่าง |
 |----------|---------|
-| **HIGH** | ราคาต่างจาก market > 5%, Revenue/EPS ต่างกัน > 10%, ขาด source key data, section บังคับหาย, **ขาด Business Deep Dive section ทั้งหมด**, WACC < 7% หรือ > 13%, Terminal growth > 3%, Data เก่ากว่า 1 quarter, ใช้ Tier 3 source สำหรับ key metrics, **Blended FV ใช้ weight เก่า 30/30/40**, **Emma/Quinn DCF FV ต่างกัน ≥25% + SBC >10% Revenue แต่ไม่มีฝั่งไหน disclose cash-flow basis เลย** |
+| **HIGH** | ราคาต่างจาก market > 5%, Revenue/EPS ต่างกัน > 10%, ขาด source key data, section บังคับหาย, **ขาด Business Deep Dive section ทั้งหมด**, WACC < 7% หรือ > 13%, Terminal growth > 3%, Data เก่ากว่า 1 quarter, ใช้ Tier 3 source สำหรับ key metrics, **Blended FV ใช้ weight เก่า 30/30/40**, **Emma/Quinn DCF FV ต่างกัน ≥25% + SBC >10% Revenue แต่ไม่มีฝั่งไหน disclose cash-flow basis เลย**, **ประกาศ Growth bucket ทั้งที่ Revenue Growth ≤20%** |
 | **MEDIUM** | Data freshness เกิน threshold แต่ไม่ใช่ key metric, Emma/Quinn assumption ต่างกันโดยไม่มี justification, Atlas macro ไม่ถูก reflect, Bear challenge ไม่มี response, Source format ผิด, ขาด CFA footnote, **ขาด subsection ใน Business Deep Dive (Porter's / Customer / Geography)**, **Stop Loss ไม่มี reference price**, **Bear weight rationale ไม่มีใน Behind the Scenes**, **HOLD report ไม่มี forward return estimate**, **ไม่ระบุ Bucket (Value/Growth)**, **Emma/Quinn DCF FV ต่างกัน ≥25% แต่ไม่มี reconciliation table** |
 | **LOW** | Typo, format เล็กน้อย, ภาษา |
 
