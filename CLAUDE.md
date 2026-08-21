@@ -217,6 +217,16 @@ CIO → "Vera ออก performance report"
 - Pending analysis ค้างเกิน 5 วัน → Charlie ต้อง flag ใน watchlist.md และแจ้ง CIO
 - ห้าม watchlist เป็น dumping ground — ทุก ticker ต้องมี target analysis date
 
+### Session Interruption / Resume Protocol (บังคับ — ทุก agent ที่ resume งานค้าง)
+
+**ที่มา:** VEEV re-analysis (2026-08-20/21) ถูกตัดกลางคันเพราะ session limit — resume สำเร็จเพราะ CIO สั่ง manual ให้ Charlie เช็คไฟล์เดิมก่อนเริ่มต่อ แต่นั่นไม่ใช่กฎบังคับ ถ้าไม่มีใครสั่งแบบนี้ทุกครั้งเสี่ยงเสีย token ซ้ำ (เริ่มใหม่ทั้ง pipeline) หรือแย่กว่านั้นคือสร้าง entry ซ้อนใน dashboard/decisions/deployment_log — กฎนี้ทำให้ resume ปลอดภัยโดยไม่ต้องพึ่งว่า CIO/Charlie จะจำสั่งเองทุกครั้ง
+
+**กฎ:**
+1. **Step 0 ก่อน resume งานใดๆ ที่อาจทำค้างไว้** (session limit, interruption, หรือถูกสั่งกลับมาทำต่อ) — เช็คไฟล์ dated ที่มีอยู่แล้วสำหรับ ticker/session นั้นก่อนเสมอ: `agent_notes/{atlas,emma,quinn,bear,leo,morgan}/YYYY-MM-DD_TICKER*.md`, `reports/TICKER_*.md`, `session_logs/` — ห้ามเริ่มใหม่ทั้งหมดโดยไม่เช็คก่อน
+2. **ตรวจ file completeness ก่อนเชื่อว่า phase นั้น "เสร็จแล้ว"** — ไฟล์ที่สมบูรณ์ต้องจบด้วย closing signature line ตามรูปแบบเดิมของแต่ละ agent (เช่น `*Emma — YYYY-MM-DD | TICKER Analysis*`, `*Quinn — YYYY-MM-DD (Re-Analysis Update) | TICKER Quantitative Analysis*`) — **ถ้าไฟล์ตัดกลางคัน (ไม่มี closing line) → ถือว่า phase นั้นยังไม่เสร็จ ต้องทำใหม่ทั้ง phase ห้าม build ต่อจาก content ที่ตัดกลาง**
+3. **ห้ามสร้าง entry ซ้อนเมื่อ resume** — เช็คก่อน append ว่า `dashboard/data.js` REPORTS array, `portfolio/decisions.md`, `portfolio/deployment_log.md` มี entry ของ ticker/date นั้นอยู่แล้วหรือยัง (ตาม Re-Analysis Rule ข้อ 11 เดิม — ใช้กฎเดียวกัน ไม่ต้องคิดใหม่)
+4. **บันทึก interruption ไว้ให้โปร่งใส** — ถ้างานถูกตัดกลางคันจริง Leo ต้องระบุใน `session_logs/YYYY-MM-DD_HHMM_TICKER.md` ว่า "Session interrupted at [phase], resumed [date/time]" — ห้ามซ่อนว่ามีการขัดจังหวะเกิดขึ้น
+
 ## กฎเหล็ก
 
 > ### ⛔ TRAINING KNOWLEDGE BAN (บังคับทุก agent — ห้ามละเมิดเด็ดขาด)
