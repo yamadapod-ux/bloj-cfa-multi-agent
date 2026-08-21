@@ -222,18 +222,26 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 
 **3.5C — Blended FV Weight Check**
 
-ตรวจว่า Blended FV คำนวณถูก weight:
-- Emma × 0.40 + Quinn × 0.35 + Bear × 0.25 = Blended FV
-- ถ้า weight เป็น 30/30/40 (เก่า) → **HIGH FAIL**
+> ⚠️ **ห้ามเชื่อตัวเลข weight ที่ hardcode ไว้ในไฟล์นี้หรือไฟล์ไหนก็ตาม (รวมถึงบรรทัดด้านล่างนี้เอง)** — ที่มา: SHOP session (2026-08-21) พบว่า section นี้เคย hardcode ผิดเป็น "40/35/25" ขัดกับ CLAUDE.md ที่ล็อกไว้จริง (40/30/30) มานานโดยไม่มีใครจับได้จนกว่าจะมี report ใช้เลขผิดจริง — **ทุกครั้งก่อนตรวจข้อนี้ ต้องเปิดอ่าน `CLAUDE.md § Blended FV Triangulation Weights` สดๆ เพื่อดึง weight ปัจจุบันมาเทียบ ห้ามใช้ค่าที่จำหรือ copy มาจากที่อื่น**
+
+ตรวจว่า Blended FV คำนวณถูก weight ตามที่ CLAUDE.md ระบุ ณ ขณะนั้น (ปัจจุบัน: Emma 40% / Quinn 30% / Bear 30% — `FV = Emma×0.40 + Quinn×0.30 + Bear×0.30` แต่ **ต้อง verify กับ CLAUDE.md สดทุกครั้ง อย่าเชื่อเลขนี้เฉยๆ เผื่อ CLAUDE.md เปลี่ยนไปแล้วในอนาคต**):
+- ถ้า weight ในรายงานไม่ตรงกับที่ CLAUDE.md ระบุจริง (ไม่ว่าจะเป็นค่าเก่าแบบไหนก็ตาม เช่น 30/30/40, 40/35/25) → **HIGH FAIL**
+- **ถ้ารายงานอ้างอิงชื่อ/วันที่ของกฎ (เช่น "IPS 2026-05-15", "House Rule YYYY-MM-DD") เพื่อ justify ตัวเลขใดๆ** — ต้องเปิด CLAUDE.md เช็คว่า reference นั้นมีอยู่จริงและตัวเลขที่อ้างตรงกับที่ CLAUDE.md ระบุจริง ไม่ใช่แค่เชื่อว่า reference "ฟังดูน่าเชื่อถือ" → ถ้าตรวจไม่พบ reference นั้นใน CLAUDE.md หรือตัวเลขไม่ตรง → **HIGH FAIL** พร้อมระบุว่า reference ที่อ้างถึงไม่มีอยู่จริงหรือถูกอ้างผิด
 
 **3.5D — MOS Threshold ตาม Bucket**
 
-| Bucket | เกณฑ์ BUY | ถ้าไม่ผ่าน |
+> ⚠️ **เช็ค CLAUDE.md § MOS Threshold แยกตาม Bucket สดทุกครั้งก่อนตรวจข้อนี้** — ที่มา: SHOP session (2026-08-21) พบว่าตารางด้านล่างนี้เคย hardcode ผิดพลาด 2 จุดพร้อมกัน (Growth Conviction gate เขียนเป็น ≥7 ทั้งที่ CLAUDE.md ล็อกไว้ที่ ≥6.5, และไม่มี Growth MOS check เลยทั้งที่ CLAUDE.md บังคับไว้) — เป็น section ที่เสี่ยง drift ซ้ำได้ง่ายเหมือน 3.5C ด้านบน
+
+| Bucket | เกณฑ์ BUY (ตาม CLAUDE.md ปัจจุบัน — verify สดทุกครั้ง) | ถ้าไม่ผ่าน |
 |--------|-----------|-----------|
 | Value bucket | MOS ≥ 15% + Conviction ≥ 6 | MEDIUM — ระบุว่าทำไม BUY ทั้งที่ MOS ต่ำ |
-| Growth bucket | Conviction ≥ 7 + Rev Growth > 20% → ไม่ต้อง MOS 15% | ✅ ถ้าระบุ bucket ชัดเจน |
+| Growth bucket | **Conviction ≥ 6.5** + Rev Growth > 20% **+ ต้องผ่าน Growth MOS อย่างน้อย 1 ใน 2 วิธี** (ดูด้านล่าง) | HIGH FAIL ถ้า BUY โดยไม่ผ่าน Growth MOS ทั้ง 2 วิธี — ไม่ใช่แค่ MEDIUM เพราะเป็น gate บังคับ ไม่ใช่ optional |
 
-ตรวจว่า report ระบุ `Bucket: Value / Growth` ชัดเจน — ถ้าไม่มี = **MEDIUM**
+**Growth MOS — 2 วิธี (ต้องผ่านอย่างน้อย 1 วิธีก่อน BUY ได้):**
+- **Reverse DCF:** implied growth rate ณ ราคาปัจจุบัน ต้องไม่เกิน **1.2×** analyst consensus growth
+- **Multiple Percentile:** EV/Revenue หรือ Forward P/E ต้องไม่เกิน **70th percentile** ของ 5-year historical range
+
+ตรวจว่า report มีทั้ง (a) `Bucket: Value / Growth` ระบุชัดเจน และ (b) ถ้าเป็น Growth bucket ต้องเห็น Reverse DCF หรือ Multiple Percentile calculation จริงในรายงาน (ไม่ใช่แค่กล่าวถึงลอยๆ) — ถ้าขาด (a) = **MEDIUM** | ถ้าขาด (b) ทั้งที่ recommendation เป็น BUY = **HIGH FAIL**
 
 **⚠️ Bucket Correctness Cross-check (บังคับ — ที่มา: VEEV v1 2026-05-11 ถูกจัดเป็น growth-style implicit ทั้งที่ revenue growth 16.25% ไม่ถึงเกณฑ์ Growth bucket 20% มาตั้งแต่ต้น กว่าจะจับได้ก็ re-analysis รอบถัดไป):**
 อย่าเช็คแค่ว่า "มีการระบุ Bucket" — ต้อง **เทียบ Bucket ที่ประกาศกับ TTM Revenue Growth จริงจาก Atlas Data Package Section B**:
