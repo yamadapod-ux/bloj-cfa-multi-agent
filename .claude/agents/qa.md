@@ -140,6 +140,7 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 - [ ] Revenue growth ที่ Emma ใช้ใน DCF ✓ อยู่ใน range ของ Quinn's sensitivity matrix?
 - [ ] Beta ที่ Quinn ใช้ ✓ สอดคล้องกับ WACC ที่ Emma คำนวณ?
 - [ ] Conviction scores ของทั้งสองต่างกัน ≥ 3 จุดหรือเปล่า? (ถ้าใช่ → MEDIUM — Charlie ต้องอธิบาย)
+- [ ] **DCF Cash Flow Consistency** (ที่มา: VEEV 2026-08-20, ดู CLAUDE.md § DCF Cash Flow Consistency Rule) — ถ้า Emma's DCF FV กับ Quinn's DCF/independent-model FV ต่างกัน **≥25%**: ต้องมี **reconciliation table** ระบุ cash-flow basis ของแต่ละฝั่ง (Operating-Income/NOPAT-based vs reported-FCF-based) + สาเหตุหลักของ gap ถ้าไม่มี reconciliation table → **MEDIUM** (ยกระดับเป็น **HIGH** ถ้า SBC > 10% ของ Revenue และไม่มีฝั่งไหน disclose cash-flow basis ที่ใช้เลย)
 
 **2.6C — Atlas Macro Integration:**
 - [ ] Atlas บอก market regime อะไร? Emma/Quinn สะท้อนใน scenario assumption ไหม?
@@ -330,8 +331,8 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 **Severity กำหนดโดย:**
 | Severity | ตัวอย่าง |
 |----------|---------|
-| **HIGH** | ราคาต่างจาก market > 5%, Revenue/EPS ต่างกัน > 10%, ขาด source key data, section บังคับหาย, **ขาด Business Deep Dive section ทั้งหมด**, WACC < 7% หรือ > 13%, Terminal growth > 3%, Data เก่ากว่า 1 quarter, ใช้ Tier 3 source สำหรับ key metrics, **Blended FV ใช้ weight เก่า 30/30/40** |
-| **MEDIUM** | Data freshness เกิน threshold แต่ไม่ใช่ key metric, Emma/Quinn assumption ต่างกันโดยไม่มี justification, Atlas macro ไม่ถูก reflect, Bear challenge ไม่มี response, Source format ผิด, ขาด CFA footnote, **ขาด subsection ใน Business Deep Dive (Porter's / Customer / Geography)**, **Stop Loss ไม่มี reference price**, **Bear weight rationale ไม่มีใน Behind the Scenes**, **HOLD report ไม่มี forward return estimate**, **ไม่ระบุ Bucket (Value/Growth)** |
+| **HIGH** | ราคาต่างจาก market > 5%, Revenue/EPS ต่างกัน > 10%, ขาด source key data, section บังคับหาย, **ขาด Business Deep Dive section ทั้งหมด**, WACC < 7% หรือ > 13%, Terminal growth > 3%, Data เก่ากว่า 1 quarter, ใช้ Tier 3 source สำหรับ key metrics, **Blended FV ใช้ weight เก่า 30/30/40**, **Emma/Quinn DCF FV ต่างกัน ≥25% + SBC >10% Revenue แต่ไม่มีฝั่งไหน disclose cash-flow basis เลย** |
+| **MEDIUM** | Data freshness เกิน threshold แต่ไม่ใช่ key metric, Emma/Quinn assumption ต่างกันโดยไม่มี justification, Atlas macro ไม่ถูก reflect, Bear challenge ไม่มี response, Source format ผิด, ขาด CFA footnote, **ขาด subsection ใน Business Deep Dive (Porter's / Customer / Geography)**, **Stop Loss ไม่มี reference price**, **Bear weight rationale ไม่มีใน Behind the Scenes**, **HOLD report ไม่มี forward return estimate**, **ไม่ระบุ Bucket (Value/Growth)**, **Emma/Quinn DCF FV ต่างกัน ≥25% แต่ไม่มี reconciliation table** |
 | **LOW** | Typo, format เล็กน้อย, ภาษา |
 
 ---

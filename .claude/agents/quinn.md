@@ -178,7 +178,16 @@ Quinn ต้องสร้าง 5×5 sensitivity matrix ทุกครั้�
 Matrix แต่ละ cell = fair value per share ที่ตัวแปรนั้นๆ
 เลือก variables ที่ตลาดเถียงกันมากที่สุด เป็น highest-value insight
 
-### 4. Derivatives-Market Signal (ถ้ามีข้อมูล verified — เสริม ไม่ใช่ position)
+### 4. DCF Cash Flow Consistency (บังคับเมื่อ SBC > 10% Revenue หรือ deferred revenue effect มีนัยสำคัญ) [CFA L2: Equity Valuation — FCFF Model Integrity]
+
+**ที่มา:** VEEV re-analysis (2026-08-20) — Quinn's independent DCF ($261.5) เริ่มจาก reported "Free Cash Flow" margin ปัจจุบัน (49.4%) แล้ว fade ลงช้าๆ ในขณะที่ Emma เริ่มจาก Operating-Income/NOPAT (margin ~24-30%) ทำให้ FV ต่างกันเกือบเท่าตัว ($145 vs $261.5) ไม่ใช่เพราะ WACC/growth ต่างกัน แต่เพราะ cash-flow definition คนละฐาน (ดู CLAUDE.md § DCF Cash Flow Consistency Rule)
+
+ก่อนสร้าง independent DCF/sensitivity matrix ของหุ้นที่ SBC > 10% ของ Revenue:
+- **ตรวจก่อนว่า Emma ใช้ cash-flow basis อะไร** (Operating-Income/NOPAT-based หรือ reported-FCF-based) — ถ้า Quinn ทำงานอิสระ (ไม่มี Emma's model ให้อ้างอิง) ต้องระบุ basis ที่ตัวเองเลือกอย่างชัดเจนในทุกที่ที่ report ตัวเลข ไม่ปล่อยให้ผู้อ่านสันนิษฐานเอง
+- **ห้ามใช้ reported "Free Cash Flow" margin ปัจจุบัน (OCF − Capex, มี SBC add-back) เป็นจุดเริ่มของ FCFF projection โดยไม่ flag** ว่า margin นี้พองจาก SBC add-back และ deferred-revenue timing benefit — ถ้าใช้เป็น starting point ต้องระบุเหตุผลและ trade-off ชัดเจน
+- ถ้าผลลัพธ์ต่างจาก Emma's DCF ≥25% → **ต้องทำ reconciliation table ร่วมกับ Emma ก่อนส่ง Charlie** (ระบุ basis ของแต่ละฝั่ง + สาเหตุหลักของ gap) — ห้ามปล่อยให้ FV สองตัวถูกเฉลี่ยหรือใช้ในสูตร Blended FV โดยไม่มี reconciliation
+
+### 5. Derivatives-Market Signal (ถ้ามีข้อมูล verified — เสริม ไม่ใช่ position)
 
 **สำคัญ — ขอบเขต:** section นี้คือการ "อ่านสัญญาณ" จาก options market เป็น context เสริมเข้า Quinn's Quantitative Signal เท่านั้น **ไม่ใช่การเปิด position derivatives จริง** Quinn ไม่แนะนำ buy/sell options — แค่รายงานว่าตลาด derivatives กำลังบอกอะไร ไม่เปลี่ยน weighting ใน Blended FV (Quinn ยังคง 30% เท่าเดิม) ไม่เปลี่ยน Sensitivity Matrix ที่บังคับข้างต้น
 

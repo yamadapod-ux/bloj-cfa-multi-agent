@@ -330,6 +330,29 @@ Avg    ██████░░░░  6.0/10  [flag ถ้า avg < 5 หรื
 
 Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั้ง: `FV = Emma×0.40 + Quinn×0.30 + Bear×0.30`
 
+### DCF Cash Flow Consistency Rule (บังคับ — เมื่อ SBC > 10% Revenue หรือ deferred revenue effect มีนัยสำคัญ)
+
+**ที่มา:** VEEV re-analysis (2026-08-20) — Emma DCF Base $145 vs Quinn DCF Base $261.5 (gap $116.5, เกือบเท่าตัว) จากหุ้นตัวเดียวกัน ข้อมูลชุดเดียวกัน สาเหตุไม่ใช่ใครคำนวณผิด แต่เพราะ Emma เริ่ม FCFF จาก **Operating-Income/NOPAT** ในขณะที่ Quinn เริ่มจาก **reported "Free Cash Flow" margin ปัจจุบัน** (ซึ่งพองจาก SBC add-back ใน Operating Cash Flow) — เป็น methodological inconsistency ที่เกิดซ้ำได้กับหุ้น SaaS/Growth ตัวอื่นเสมอ (เช่น CRM, NOW, SNOW, DDOG) ไม่ใช่ one-off lesson ของ VEEV ตัวเดียว
+
+**กฎ:**
+1. เมื่อหุ้นมี **SBC > 10% ของ Revenue** หรือมี **working-capital effect จาก deferred revenue ที่มีนัยสำคัญ** — Emma และ Quinn ต้องเริ่ม DCF จาก **cash-flow definition เดียวกัน** และระบุชัดว่าใช้:
+   - **Operating-income/NOPAT-based FCFF**, หรือ
+   - **Reported FCF-based approach**
+2. **SBC treatment ต้องถูกเปิดเผยเสมอ:**
+   - ถ้า SBC ถูกหักเป็น operating expense ใน FCFF → ต้องพิจารณาผล dilution (share count growth) อย่างสอดคล้องกัน ไม่ใช่หักต้นทุนแล้วลืม dilution
+   - **ห้ามนำ reported "Free Cash Flow" ที่มี SBC add-back มา extrapolate เป็น DCF โดยไม่ flag** ว่า margin นี้ไม่เท่ากับ NOPAT-based FCFF margin
+3. **Deferred revenue / working-capital benefit ต้องแยกออกจาก sustainable operating economics** — ห้ามปล่อยให้ timing benefit ของการเก็บเงินล่วงหน้า (SaaS collect-upfront) ปนเข้าไปในสมมติฐาน margin ระยะยาวโดยไม่ระบุ
+4. **ถ้า Emma กับ Quinn ใช้ methodology ต่างกันจนได้ FV ต่างกัน ≥25%** → ต้องมี **reconciliation table** (ระบุ basis ของแต่ละฝั่ง + สาเหตุหลักของ gap) แทนที่จะเอา FV สองตัวมาเฉลี่ย/ใช้ weighted-average ทันทีโดยไม่อธิบาย — ตัวอย่างรูปแบบ:
+
+   | Analyst | FV | Cash-flow Basis |
+   |---------|-----|-----------------|
+   | Emma | $XXX | Operating-income / NOPAT framework |
+   | Quinn | $XXX | Reported FCF framework |
+   | **Gap** | **$XXX** | **สาเหตุหลัก: [เช่น FCF-definition / SBC treatment]** |
+
+5. **ห้ามเปลี่ยน Blended FV weighting (40/30/30)** เพื่อ "แก้" ปัญหานี้ — นี่คือ Return-side locked rule (ดู Pre-commitment Rules) การ reconcile methodology ไม่ใช่เหตุผลให้แก้ weight
+6. **Morgan QA** ต้องตรวจว่ามี reconciliation table เมื่อเข้าเงื่อนไขข้อ 4 — ดู Morgan QA Protocol § Cross-agent Consistency
+
 ### MOS Threshold แยกตาม Bucket (บังคับ — ใช้แทนกฎ MOS 20% เดิม)
 | Bucket | เกณฑ์ BUY | เหตุผล |
 |--------|-----------|--------|

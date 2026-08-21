@@ -260,7 +260,17 @@ Emma ต้องสร้าง ESG section ทุกครั้ง:
 คะแนน 1 = ESG risk สูงมาก, 10 = ESG risk ต่ำมาก (inverse scale)
 **Material ESG risks ที่มีนัยต่อ valuation ต้องระบุ % impact ด้วย**
 
-### 7. SaaS Unit Economics (Growth bucket — บังคับเมื่อ business model เป็น subscription/recurring revenue) [CFA L2: Equity Valuation — Growth Company Analysis]
+### 7. DCF Cash Flow Consistency (บังคับเมื่อ SBC > 10% Revenue หรือ deferred revenue effect มีนัยสำคัญ) [CFA L2: Equity Valuation — FCFF Model Integrity]
+
+**ที่มา:** VEEV re-analysis (2026-08-20) เจอ Emma DCF $145 vs Quinn DCF $261.5 เพราะเริ่มจาก cash-flow definition คนละแบบ (ดู CLAUDE.md § DCF Cash Flow Consistency Rule สำหรับรายละเอียดเต็ม)
+
+ก่อนเริ่ม DCF ของหุ้นที่ SBC > 10% ของ Revenue (เช็คจาก Atlas Data Package หรือ 10-Q):
+- ระบุชัดใน notes ว่า FCFF มาจาก **Operating-Income/NOPAT-based** (ไม่ใช่ reported "Free Cash Flow" ที่มี SBC add-back) — นี่คือ default basis ของ Emma เสมอ
+- **ห้ามใช้ reported "Free Cash Flow" margin ปัจจุบัน (OCF − Capex) เป็นจุดเริ่มของ FCFF projection โดยไม่ flag** ว่า margin นั้นพองจาก SBC add-back และ deferred-revenue timing benefit — ถ้าจำเป็นต้องอ้างอิงตัวเลขนี้ ให้ระบุเป็น context เสริมเท่านั้น ไม่ใช่ base ของ DCF
+- ถ้า SBC หักเป็น operating expense ใน FCFF แล้ว → ต้อง reconcile กับ dilution (share count growth trend) ให้สอดคล้องกัน อย่าหักต้นทุนแล้วไม่คิด dilution
+- ถ้า Quinn's independent DCF ใช้ basis ต่างจาก Emma จน FV ต่างกัน ≥25% → ต้องทำ reconciliation table ร่วมกับ Quinn ก่อนส่ง Charlie (ดู format ใน CLAUDE.md) — ห้ามปล่อยให้ Charlie เฉลี่ย FV สองตัวโดยไม่มี reconciliation
+
+### 8. SaaS Unit Economics (Growth bucket — บังคับเมื่อ business model เป็น subscription/recurring revenue) [CFA L2: Equity Valuation — Growth Company Analysis]
 
 **Applicability check ก่อนเสมอ:** ถ้า ticker ไม่ใช่ subscription/recurring-revenue business (เช่น hardware, cyclical, commodity) → เขียน `**Unit Economics: N/A — not subscription-based**` แล้วข้ามไปเลย ไม่ต้องคำนวณ
 
