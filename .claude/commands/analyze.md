@@ -85,17 +85,18 @@ WebFetch: https://stockanalysis.com/stocks/{ticker}/financials/cash-flow-stateme
 ดึง: Operating CF, CapEx, Free Cash Flow TTM + annual
 
 **2D — SEC EDGAR Cross-check (revenue + shares outstanding):**
+> ⚡ Token-saving note: `sec.gov/cgi-bin/browse-edgar` reliably 403s WebFetch (confirmed 2026-08-20 VEEV session) — **ข้าม WebFetch ไปที่ WebSearch โดยตรง** อย่าเสีย call ลอง WebFetch ก่อน
 ```
-WebFetch: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={TICKER}&type=10-K&dateb=&owner=include&count=3
+WebSearch: "{TICKER} 10-K annual report revenue shares outstanding site:sec.gov"
 ```
-ดึง: link 10-K ล่าสุด → เปิดดู Shares Outstanding (cover page) และ Revenue (ปีล่าสุด)
-ถ้า EDGAR WebFetch ซับซ้อน → WebSearch: `"{TICKER} 10-K annual report revenue shares outstanding site:sec.gov"`
+ดึง: link 10-K ล่าสุด → เปิดดู Shares Outstanding (cover page) และ Revenue (ปีล่าสุด) — ถ้าเจอ URL ตรงของ filing document (ไม่ใช่ browse-edgar listing page) สามารถ WebFetch URL นั้นตรงๆ ได้ (มักไม่ 403 เพราะเป็น static document ไม่ใช่ CGI endpoint)
 
 **2E — Historical Revenue (growth rate):**
+> ⚡ Token-saving note: `macrotrends.net` reliably 403s WebFetch (confirmed 2026-08-20 VEEV session) — **ข้าม WebFetch ไปที่ WebSearch โดยตรง**
 ```
-WebFetch: https://www.macrotrends.net/stocks/charts/{TICKER}/{company-slug}/revenue
+WebSearch: "{TICKER} revenue history 5 year fiscal {YEAR-4} {YEAR-3} {YEAR-2} {YEAR-1} {YEAR}"
 ```
-ดึง: Revenue 5 ปีย้อนหลัง (ใช้คำนวณ CAGR สำหรับ DCF)
+ดึง: Revenue 5 ปีย้อนหลัง (ใช้คำนวณ CAGR สำหรับ DCF) — cross-check ตัวเลขจาก 2 แหล่งใน search results ถ้ามี (เช่น WallStreetZen + stockanalysis.com มักให้ตัวเลขตรงกัน)
 
 **Fallback สำหรับ 2A-2C — ถ้า Stockanalysis WebFetch ล้มเหลว:**
 ```

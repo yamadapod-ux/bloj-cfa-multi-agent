@@ -234,26 +234,22 @@ WebFetch: https://home.treasury.gov/resource-center/data-chart-center/interest-r
 ถ้า treasury.gov fetch ไม่ได้ → WebSearch: `"10 year treasury yield today"` แล้วบันทึก source
 
 **Step G — Historical Revenue (Macrotrends) — สำหรับ growth rate calculation**
+> ⚡ Token-saving note (ยืนยันแล้ว VEEV session 2026-08-20): `macrotrends.net` WebFetch คืน 403 Forbidden ทุกครั้งเท่าที่เจอมา — **ข้าม WebFetch ไป WebSearch โดยตรง** อย่าเสีย call ลอง WebFetch ก่อน
 ```
-WebFetch: https://www.macrotrends.net/stocks/charts/[TICKER]/[company-name]/revenue
+WebSearch: "[TICKER] revenue history 5 year fiscal [YEAR-4] [YEAR-3] [YEAR-2] [YEAR-1] [YEAR]"
 ```
-ดึง: Revenue 5 ปีย้อนหลัง (ใช้คำนวณ CAGR สำหรับ Emma's DCF + Quinn's sensitivity)
+ดึง: Revenue 5 ปีย้อนหลัง (ใช้คำนวณ CAGR สำหรับ Emma's DCF + Quinn's sensitivity) — cross-check จาก 2 แหล่งใน search results ถ้ามี (เช่น WallStreetZen + stockanalysis.com)
 
 **Step H — SEC EDGAR 10-K (primary source สำหรับ Sections J + K และ cross-check ตัวเลขงบการเงิน)**
 
-ขั้นตอนบังคับ 2 ระดับ:
+> ⚡ Token-saving note (ยืนยันแล้ว VEEV session 2026-08-20): `sec.gov/cgi-bin/browse-edgar` WebFetch คืน 403 Forbidden ทุกครั้งเท่าที่เจอมา — **ข้าม H1 (WebFetch) ไป H2 (WebSearch) โดยตรงเสมอ** อย่าเสีย call ลอง browse-edgar ก่อน
 
-*H1 — หา filing index ล่าสุด:*
+*H1 (ข้ามได้เสมอ — WebSearch ตรงแทน):*
 ```
-WebFetch: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=[TICKER]&type=10-K&dateb=&owner=include&count=5
+WebSearch: "[TICKER] 10-K annual report [YEAR] customer concentration revenue geography site:sec.gov"
+WebSearch: "[TICKER] 10-K item 1 business segments revenue breakdown filetype:htm site:sec.gov"
 ```
-ดึง: link ของ 10-K ล่าสุด (Annual Report) → copy URL ของ filing document
-
-*H2 — ถ้า H1 ล้มเหลวหรือ HTML ซับซ้อน → WebSearch fallback:*
-```
-"[TICKER] 10-K annual report 2024 2025 customer concentration revenue geography site:sec.gov"
-"[TICKER] 10-K item 1 business segments revenue breakdown filetype:htm site:sec.gov"
-```
+ดึง: link ของ 10-K ล่าสุด (Annual Report) → ถ้าเจอ URL ตรงของ filing document (ไม่ใช่ browse-edgar listing page) สามารถ WebFetch URL นั้นตรงๆ ได้ (มักไม่ 403 เพราะเป็น static document ไม่ใช่ CGI endpoint)
 
 **ข้อมูลที่ต้องดึงจาก SEC EDGAR (ใช้ใน Sections J + K):**
 - Customer concentration (Item 1 — Business, หรือ Note ใน Financial Statements)
