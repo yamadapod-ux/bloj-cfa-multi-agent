@@ -3,9 +3,153 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-08-18 10:00";
+const NEWS_LAST_UPDATED = "2026-08-22 09:30";
 
 const NEWS = [
+  // ── 2026-08-21 ──────────────────────────────
+  {
+    date: "2026-08-21", category: "MACRO",
+    headline: "🟢 ตลาดสหรัฐฯ ปิดบวกวันศุกร์ทวงคืนความเชื่อมั่น แต่ทั้งสัปดาห์ยังติดลบ — Bitcoin ทะยาน 22%, กลุ่มเทคโนโลยีร่วง 3% ใน 5 วัน",
+    summary: "ตลาดหุ้นสหรัฐฯ ปิดบวกในวันศุกร์ที่ 21 สิงหาคม โดย S&P 500 +0.43% ปิดที่ 7,674.37 จุด, Nasdaq +0.43% ปิดที่ 26,180.45 จุด และ Dow Jones +0.98% (+517.80 จุด) ปิดที่ 53,277.01 จุด ช่วยพยุงดัชนีหลังสัปดาห์ผันผวนจาก bond sell-off ที่กดดัน risk asset แต่ทั้งสามดัชนียังปิดสัปดาห์ติดลบ กลุ่มการเงินและคริปโตนำตลาดขึ้น (Bitcoin พุ่งแตะ $77,000 สัปดาห์ที่ดีที่สุดในรอบ 2 ปี, Robinhood +14%, Coinbase +8%) ขณะที่กลุ่มเทคโนโลยีร่วงกว่า 3% ใน 5 วันที่ผ่านมาจากแรงกดดันด้าน valuation และ AI cost concerns. นัยพอร์ต: การ rotation จาก growth/tech ไปยัง financials/materials ในสัปดาห์นี้เป็นสัญญาณเตือนสำหรับ position หนัก tech ในพอร์ต (MSFT, GOOGL, META, AVGO, ADBE, NOW, CRM) ควรติดตาม bond yield direction ต่อเนื่องเพราะเป็นตัวขับเคลื่อนหลักของ sell-off รอบนี้.",
+    impact: "MIXED", tickers: [],
+    url: "https://finance.yahoo.com/markets/live/stock-market-today-friday-august-21-dow-sp-500-nasdaq-bitcoin-080533702.html",
+  },
+  {
+    date: "2026-08-21", category: "MACRO",
+    headline: "🟡 เส้นตายภาษี Canada 50% ใกล้ถึง — Trump ระบุ 'ควรจะตกลงกันได้' ก่อน deadline เที่ยงคืน 22 ส.ค.",
+    summary: "ประธานาธิบดี Trump กล่าวเมื่อวันที่ 21 สิงหาคมว่าสหรัฐฯ และแคนาดา 'ควรจะสามารถ' บรรลุข้อตกลงการค้าได้ ก่อนเส้นตายเที่ยงคืนวันเสาร์ที่ 22 สิงหาคม (เวลาสหรัฐฯ) ซึ่งหากไม่มีข้อตกลง ภาษีนำเข้า 50% จะมีผลบังคับใช้กับสินค้านำเข้าจากแคนาดามูลค่าประมาณ $20 พันล้าน เหตุการณ์นี้เกิดขึ้นท่ามกลางนโยบาย reciprocal tariff ที่ขยายไปยัง 69 ประเทศคู่ค้าตั้งแต่ 7 สิงหาคม ทำให้อัตราภาษีนำเข้าเฉลี่ยของสหรัฐฯ สูงที่สุดในรอบศตวรรษ. นัยพอร์ต: ความไม่แน่นอนด้านการค้ายังเป็นความเสี่ยง macro สำคัญที่กดดัน supply chain และ input cost ของบริษัทข้ามชาติในพอร์ต (AAPL, TSLA, AMZN) ต้องติดตามผลการเจรจาอย่างใกล้ชิด.",
+    impact: "MIXED", tickers: [],
+    url: "https://www.cnbc.com/2026/08/21/trump-canada-tariffs-trade-deal-deadline.html",
+  },
+  {
+    date: "2026-08-21", category: "SECTOR",
+    headline: "🟢 AVGO: BMO เปิด coverage ใหม่ Outperform เป้า $455 — ชู Broadcom ผู้นำ AI XPU/Networking",
+    summary: "BMO Capital Markets เริ่ม coverage หุ้น Broadcom (AVGO) ด้วยเรตติ้ง Outperform และราคาเป้าหมาย $455 เมื่อวันที่ 21 สิงหาคม โดยระบุว่า Broadcom เป็นผู้นำด้าน AI supplier ทั้งตลาด XPU (custom AI chip) และ networking หุ้น AVGO ปรับตัวขึ้น 1.3% แตะ $368.88 หลังข่าว และยืนเหนือแนวรับ $360 ได้ หลังจากดีดตัวกลับจาก 4-day losing streak บริษัทยังเดินหน้าหาแหล่งเงินทุนขนาดใหญ่ถึง $100 พันล้านเพื่อขยายกำลังผลิตชิป AI. นัยพอร์ต: มุมมองเชิงบวกจาก BMO ช่วย offset ความกังวลเรื่องการแข่งขันจาก Marvell-Google chip deal ที่กดดันราคาก่อนหน้านี้ในสัปดาห์เดียวกัน — ต้องติดตามผลประกอบการ Q3 FY26 ที่กำลังจะมาถึงเพื่อยืนยัน AI business momentum.",
+    impact: "POSITIVE", tickers: ["AVGO"],
+    url: "https://www.schaeffersresearch.com/content/news/2026/08/21/broadcom-stock-picks-up-another-lofty-bull-note",
+  },
+  // ── 2026-08-20 ──────────────────────────────
+  {
+    date: "2026-08-20", category: "EARNINGS",
+    headline: "🔴 WMT ร่วง 9% แม้ Q2 เอาชนะคาดการณ์ — same-store sales โตช้าสุดตั้งแต่ปลายปี 2020",
+    summary: "Walmart รายงานผลประกอบการ Q2 FY2027 (ประกาศ 20 สิงหาคม) เหนือคาดการณ์ทั้ง revenue ($187.9B, +6% YoY, เหนือ consensus ~$186B) และ adjusted EPS ($0.81 vs คาด $0.74) แต่หุ้นร่วงแรงถึง 9% เพราะ US same-store sales โตเพียง 2.6% ต่ำกว่าคาด 3.7% ซึ่งเป็นอัตราการเติบโตที่ช้าที่สุดนับตั้งแต่ไตรมาส 4 ปี 2020 บริษัทให้ guidance Q3 อนุรักษ์นิยม (net sales +3-3.75%) และ FY2027 (+4-5%, ต่ำกว่าที่ตลาดคาด ~5%) Oppenheimer ปรับลด rating เหลือ Perform จาก Outperform ก่อนประกาศงบ ส่วน Goldman Sachs หั่นราคาเป้าหมายเหลือ $130. นัยพอร์ต: WMT เป็น Big 10 bellwether สำหรับ consumer spending health — สัญญาณชะลอตัวของ same-store sales บ่งชี้ผู้บริโภคเริ่ม trade-off จากต้นทุนพลังงาน/เชื้อเพลิงสูงขึ้น เป็นสัญญาณเตือน macro regime เชิงลบสำหรับ consumer-facing names.",
+    impact: "NEGATIVE", tickers: ["WMT"],
+    url: "https://finance.yahoo.com/markets/stocks/article/walmart-stock-drops-9-as-sales-growth-slows-customers-make-trade-offs-amid-high-fuel-costs-182327744.html",
+  },
+  {
+    date: "2026-08-20", category: "SECTOR",
+    headline: "🟢 NOW ฟื้นตัวสู่ $129.42 — BofA ขึ้น PT เป็น $150 พร้อมขยายพันธมิตร Tech Mahindra ด้าน Enterprise AI",
+    summary: "ServiceNow (NOW) เทรดที่ $129.42 เมื่อวันที่ 20 สิงหาคม ฟื้นตัวขึ้นจาก $117.70 เมื่อวันที่ 17 สิงหาคม ที่เคยหลุดเข้าเขต STRONG SELL Bank of America ปรับราคาเป้าหมายขึ้นเป็น $150 จาก $130 พร้อมคง Buy rating ในวันเดียวกัน ServiceNow ยังประกาศขยายความร่วมมือระยะยาวกับ Tech Mahindra เพื่อผลักดัน enterprise AI จากขั้น pilot สู่ production-scale deployment. นัยพอร์ต: การฟื้นตัวของราคาใกล้ FV $121.45 ที่เคย verify ไว้ ช่วยคลายความกังวลเรื่อง MOS ติดลบที่เคย flag เมื่อต้นเดือน — ควร re-verify valuation รอบถัดไปพร้อมพิจารณา BofA PT ใหม่.",
+    impact: "POSITIVE", tickers: ["NOW"],
+    url: "https://www.thestreet.com/investing/stocks/now-servicenow-stock-bank-of-america-raises-now-stock-price-target-august-2026",
+  },
+  {
+    date: "2026-08-20", category: "SECTOR",
+    headline: "🟡 VEEV: ผู้บริหารระดับสูง Thomas Schwenger ลาออกไปเป็น CEO คู่ค้า — ก่อนประกาศงบ Q2 วันที่ 26 ส.ค.",
+    summary: "Veeva Systems ประกาศเมื่อวันที่ 20 สิงหาคมว่า Dan Rizzo จะขึ้นเป็น Executive VP ฝ่าย Sales, Consulting and Services มีผล 2 ตุลาคม แทนที่ Thomas D. Schwenger ประธานและ Chief Customer Officer คนปัจจุบันที่แจ้งลาออกเมื่อ 18 สิงหาคม เพื่อไปดำรงตำแหน่ง CEO ที่พาร์ทเนอร์ระยะยาวของ Veeva เหตุการณ์นี้เกิดขึ้นท่ามกลางราคาหุ้นที่พุ่งแรง 10 วันติดต่อกัน (+25% สะสม) และนักวิเคราะห์ปรับราคาเป้าหมายขึ้นยกแผง (Guggenheim $276, Barclays $275, Oppenheimer $300) ก่อนประกาศงบ Q2 วันที่ 26 สิงหาคม (คาด EPS $2.22, revenue $904M). นัยพอร์ต: การเปลี่ยนแปลงผู้บริหารระดับสูงก่อนงบสำคัญเป็นความเสี่ยงที่ต้องจับตา แม้ momentum ราคาและ sentiment นักวิเคราะห์ยังบวกแรง — ควรติดตามคำอธิบายสาเหตุการลาออกในการประชุมนักวิเคราะห์.",
+    impact: "MIXED", tickers: ["VEEV"],
+    url: "https://www.tipranks.com/news/company-announcements/veeva-systems-announces-new-executive-vice-president-appointment",
+  },
+  {
+    date: "2026-08-20", category: "SECTOR",
+    headline: "🟠 GEV ร่วง 3.5% แม้ปรับเพิ่ม guidance รายได้ปี 2026 ขึ้น $1 พันล้าน — แรงกดดันจากธุรกิจกังหันลมและภาษีนำเข้า",
+    summary: "GE Vernova ปิดที่ $966.01 เมื่อวันที่ 20 สิงหาคม ลดลง 3.52% ในวันเดียว และห่างจากจุดสูงสุดตลอดกาล $1,174.86 (30 มิถุนายน) ราว 18% แม้บริษัทเพิ่งปรับเพิ่ม guidance รายได้ปี 2026 ขึ้น $1 พันล้าน แต่ตลาดกังวลเรื่องผลขาดทุนในธุรกิจกังหันลม (wind division) และแรงกดดันจากภาษีนำเข้าที่กระทบ margin execution ทั้งนี้ backlog รวมยังแข็งแกร่งที่ $176B และ backlog อุปกรณ์ผลิตไฟฟ้าก๊าซ 116 GW จาก demand AI data center. นัยพอร์ต: GEV อยู่ใน watchlist ที่ราคาห่างจาก entry zone เดิม ($320-380) มาก — การย่อตัวรอบนี้ยังไม่เพียงพอเปลี่ยนสถานะ MOS แต่ยืนยันความเสี่ยงด้าน margin execution ที่ต้องติดตามก่อนพิจารณา re-analysis.",
+    impact: "MIXED", tickers: ["GEV"],
+    url: "https://www.tradingkey.com/news/market-movers/262121725-market-movers-gev-20260820",
+  },
+  {
+    date: "2026-08-20", category: "TECH",
+    headline: "🔴 MSFT ร่วง 3.2% — นักลงทุนกังวลต้นทุน AI โตเร็วกว่ารายได้ AI",
+    summary: "หุ้น Microsoft ร่วง 3.2% เมื่อวันที่ 20 สิงหาคม จากความกังวลว่ารายได้จาก AI ยังเติบโตไม่ทันต้นทุนการลงทุน AI ที่พุ่งสูง แม้บริษัทมีเงินสดในมือ $77 พันล้านและกระแสเงินสดอิสระแข็งแกร่งรองรับได้ ทั้งนี้ราคาหุ้นยังคงเทรดใกล้ระดับ $478-486 หลังพุ่งขึ้นเกือบ 30% ในช่วง 30 วันจากผลประกอบการ Q4 FY26 ที่แข็งแกร่ง (Azure +43% YoY ทะลุ $100B annual revenue ครั้งแรก, Copilot 30M+ paid seats). นัยพอร์ต: MSFT เป็นตำแหน่งหลักในพอร์ต — narrative เรื่อง AI monetization lag เป็นความเสี่ยงร่วมกับ AVGO และ GOOGL ที่ต้องติดตามในรอบ earnings ถัดไป โดยเฉพาะอัตราการแปลง AI capex เป็นรายได้จริง.",
+    impact: "NEGATIVE", tickers: ["MSFT"],
+    url: "https://www.fool.com/investing/2026/08/17/why-microsoft-stock-dropped-today/",
+  },
+  {
+    date: "2026-08-20", category: "TECH",
+    headline: "🟡 AAPL เปิด Advanced Manufacturing Center ที่ Houston พร้อมปรับลดพนักงานกว่า 200 คนทีม Siri/Vision Pro",
+    summary: "Apple เปิดตัว Advanced Manufacturing Center แห่งใหม่ที่เมือง Houston รัฐเท็กซัส ในเดือนสิงหาคม 2026 ถือเป็นการขยายกำลังการผลิตในสหรัฐฯ อย่างเป็นรูปธรรม สอดคล้องกับแรงกดดันนโยบายการค้าและภาษีนำเข้าจากรัฐบาล Trump ในเวลาเดียวกันบริษัทประกาศปรับลดพนักงานมากกว่า 200 ตำแหน่งในทีมที่เกี่ยวข้องกับ Siri และ Vision Pro headset เพื่อโยกทรัพยากรไปสู่อุปกรณ์ใหม่และฟีเจอร์ AI ที่แข็งแกร่งขึ้น ราคาหุ้นเทรดในกรอบ $307-313 เมื่อวันที่ 22 สิงหาคม โดย Bank of America คง Buy rating ที่ PT $380 (20 ส.ค.) นักวิเคราะห์บางรายมองว่า trailing P/E 35.57x เหลือ upside จำกัดเพียง 5.5% เทียบ average target. นัยพอร์ต: การลงทุนโรงงานในประเทศช่วยลด tariff exposure ระยะยาว แต่การปรับลดทีม Siri/Vision Pro สะท้อนว่า AI strategy ของ Apple ยังต้อง reprioritize — ติดตามว่าจะกระทบ timeline ผลิตภัณฑ์ AI ใหม่หรือไม่.",
+    impact: "MIXED", tickers: ["AAPL"],
+    url: "https://stockinvest.us/stock-news/apple-stock-price-ended-at-31130-on-thursday-after-losing-175-2026-08-20",
+  },
+  {
+    date: "2026-08-20", category: "EARNINGS",
+    headline: "🟢 ADSK: นักวิเคราะห์ปรับเป้าราคาขึ้นยกแผงก่อนประกาศงบ Q2 FY27 วันที่ 27 ส.ค.",
+    summary: "Autodesk ได้รับการปรับราคาเป้าหมายขึ้นจากหลายสำนักก่อนประกาศผลประกอบการไตรมาส 2 ปีงบประมาณ 2027 ในวันที่ 27 สิงหาคม ได้แก่ Baird ($325 จาก $312), Guggenheim ($277 จาก $245, คง Buy) และ Citi ($269 จาก $252) ส่วน Morgan Stanley คง Buy rating ที่ PT $315 โดยชี้ demand ที่ดีขึ้น, margin แข็งแกร่งขึ้น, free cash flow ดี และภูมิคุ้มกันต่อ AI disruption ราคาหุ้นเทรดที่ $251.02 เมื่อ 20 สิงหาคม (กรอบ $250.19-255.86) โดย mean price target $320.72 บ่งชี้ upside ราว 30%. นัยพอร์ต: FY2026 ที่ผ่านมา revenue โต 17.53% YoY เป็นพื้นฐานสนับสนุน — ความเห็นตรงกันของนักวิเคราะห์หลายสำนักในทิศทางบวกเพิ่มความมั่นใจก่อนงบ แต่ยังต้องรอผลจริงยืนยัน.",
+    impact: "POSITIVE", tickers: ["ADSK"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/autodesk-stock-wall-street-bullish-114222105.html",
+  },
+  {
+    date: "2026-08-20", category: "REGULATION",
+    headline: "🟡 REGN: FDA อนุมัติยา Pasatru รักษาโรคหายาก ท่ามกลางคดี securities class action เรื่องข้อมูลทดลองยา",
+    summary: "Regeneron ได้รับการอนุมัติจาก FDA สำหรับยา Pasatru รักษาโรคหายาก เป็นข่าวบวกที่ช่วยหนุนราคาหุ้นให้ยืนใกล้โซน $820 ต่อเนื่อง แต่ในเวลาเดียวกันบริษัทเผชิญคดี securities class action ที่ยื่นฟ้องในนามนักลงทุนที่ซื้อหุ้นระหว่างสิงหาคม 2025 ถึงพฤษภาคม 2026 กล่าวหาว่าบริษัทให้ข้อมูลเท็จเกี่ยวกับผลการทดลองทางคลินิก Phase III ของยา Fianlimab-Libtayo รักษามะเร็งผิวหนัง (melanoma) ที่ล้มเหลว ราคาหุ้นปิดที่ $826.64 เมื่อวันที่ 20 สิงหาคม ใกล้ 52-week high ขณะที่ Leerink ปรับราคาเป้าหมายขึ้นเป็น $824 จาก $641. นัยพอร์ต: ความเสี่ยงด้าน litigation เป็น overhang ใหม่ที่ต้องติดตามควบคู่กับ catalyst บวกจาก FDA approval — ยังไม่ถึงระดับ thesis invalidation แต่ควร flag ไว้ใน risk summary.",
+    impact: "MIXED", tickers: ["REGN"],
+    url: "https://www.ad-hoc-news.de/boerse/news/corporate-news/regeneron-stock-holds-above-826-as-fda-approval-and-lawsuit-reshape-risk/69980287",
+  },
+  // ── 2026-08-19 ──────────────────────────────
+  {
+    date: "2026-08-19", category: "SECTOR",
+    headline: "🟢 FICO พุ่ง 7.7% — Informative Research เข้าร่วม FICO Mortgage Direct License Program",
+    summary: "หุ้น Fair Isaac (FICO) ปรับขึ้น 7.7% เมื่อวันที่ 19 สิงหาคม แตะระดับ $1,161.59 หลัง Informative Research เข้าร่วมโครงการ FICO Mortgage Direct License Program ซึ่งเป็นการขยายการเข้าถึง FICO Score ให้กับผู้ปล่อยสินเชื่อ mortgage มากขึ้น ราคาหุ้นบวกสะสม 7 วัน 7.64% ทั้งนี้นักวิเคราะห์ยังคงมีมุมมองแตกต่างกัน โดยราคาเป้าหมายกระจายกว้างตั้งแต่ $1,250-1,639 ท่ามกลาง fair value estimate ที่ปรับลงเล็กน้อยจาก $1,552.52 เหลือ $1,512.25 สะท้อนความกังวลเรื่อง mortgage credit trend และ valuation ที่ตึง แม้ Scores segment เติบโตแรง (+41% YoY, mortgage revenue +97% จาก pricing ไม่ใช่ volume). นัยพอร์ต: การขยาย partnership เป็นบวกต่อ moat ของ FICO ในตลาด mortgage scoring แต่ valuation ยังคงเป็นความเสี่ยงหลักที่เคย flag ไว้.",
+    impact: "POSITIVE", tickers: ["FICO"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/fair-isaac-fico-stock-jumped-131006148.html",
+  },
+  {
+    date: "2026-08-19", category: "EARNINGS",
+    headline: "🟢 CRM บวก 5% ก่อนประกาศงบ 26 ส.ค. — Agentforce demand หนุน Polymarket ให้โอกาส beat 91%",
+    summary: "หุ้น Salesforce ปรับขึ้น 5% ก่อนประกาศผลประกอบการวันที่ 26 สิงหาคม จากแรงหนุน demand ผลิตภัณฑ์ Agentforce นักวิเคราะห์คาด EPS $3.27 เพิ่มขึ้น 12.37% YoY โดย Salesforce เอาชนะ EPS consensus มาแล้ว 6 จาก 7 ไตรมาสล่าสุด และ Polymarket ให้ความน่าจะเป็น 91% ที่จะ beat อีกครั้ง BMO Capital ปรับราคาเป้าหมายขึ้นเป็น $230 จาก $215 เมื่อ 20 สิงหาคม ราคาหุ้นบวกสะสม 17.85% ในเดือนที่ผ่านมา ด้าน Marc Benioff เพิ่งแต่งตั้ง Miguel Milano เป็น Chief Operating Officer คนใหม่เมื่อต้นเดือน. นัยพอร์ต: momentum เชิงบวกก่อนงบสอดคล้องกับ thesis เดิมเรื่อง AI-driven enterprise software growth — ต้องติดตามผลจริงวันที่ 26 สิงหาคมเพื่อยืนยัน Agentforce monetization.",
+    impact: "POSITIVE", tickers: ["CRM"],
+    url: "https://247wallst.com/investing/2026/08/20/why-salesforce-stock-could-pop-on-august-26th/",
+  },
+  {
+    date: "2026-08-19", category: "TECH",
+    headline: "🔴 AVGO ร่วง 5% หลัง Google-Marvell ประกาศดีลชิป AI inference ตัวใหม่ — สัญญาณ diversify supplier",
+    summary: "หุ้น Broadcom ร่วงลง 5% ระหว่างวันเทรด หลัง Marvell Technology และ Google ประกาศข้อตกลงเชิงพาณิชย์พัฒนาชิป custom รวมถึง AI inference accelerator ร่วมกัน สะท้อนว่า Google กำลัง qualify แหล่งผลิตชิป TPU ใหม่เพิ่มเติมจาก Broadcom ซึ่งเดิมเป็นพาร์ทเนอร์หลัก โดยมี MediaTek และอาจรวมถึง AMD เป็นตัวเลือกใหม่ด้วย เหตุการณ์นี้เกิดขึ้นในสัปดาห์เดียวกับที่ Broadcom เผชิญแรงกดดันจาก 4-day losing streak. นัยพอร์ต: ความเสี่ยงเรื่อง customer concentration ของ Broadcom ต่อ Google TPU business ปรากฏชัดขึ้น — เป็นสัญญาณเตือนให้ทบทวน customer concentration risk section ใน AVGO thesis รอบถัดไป แม้ BMO ยังให้มุมมองบวกในสัปดาห์เดียวกัน.",
+    impact: "NEGATIVE", tickers: ["AVGO", "GOOGL"],
+    url: "https://finance.yahoo.com/news/analysts-bullish-broadcom-avgo-amid-111607957.html",
+  },
+  {
+    date: "2026-08-19", category: "SECTOR",
+    headline: "🟡 TSM ร่วง 4% ตามตลาดกว้างจาก bond yield spike — ฟื้นตัวเล็กน้อยเช้าวันพุธ",
+    summary: "หุ้น Taiwan Semiconductor ร่วงลง 4.07% เมื่อวันที่ 19 สิงหาคม ตามแรงเทขายในตลาดกว้างจากความกังวลเรื่อง Treasury yield ที่พุ่งสูง ก่อนจะฟื้นตัวขึ้นเล็กน้อยในช่วง premarket วันพุธ ราคาหุ้นยังคงห่างจากจุดสูงสุดตลอดกาล $477.57 (30 มิถุนายน) ทั้งนี้ปัจจัยพื้นฐานยังแข็งแกร่งจากงบ Q2 ที่รายได้ $40.2B เหนือ guidance และบริษัทปรับเพิ่ม outlook การเติบโตรายได้ปี 2026 ขึ้นเป็นมากกว่า 40% พร้อมเพิ่ม capex เป็น $60-64 พันล้าน เพื่อขยายกำลังผลิต 3nm/2nm ในไต้หวัน, Arizona และ Kumamoto. นัยพอร์ต: การร่วงรอบนี้เป็นแรงกดดันเชิง macro (yield-driven) ไม่ใช่ fundamental deterioration — สอดคล้องกับภาพรวมตลาดที่ tech sector อ่อนแอในสัปดาห์นี้จาก bond yield spike.",
+    impact: "NEGATIVE", tickers: ["TSM"],
+    url: "https://www.benzinga.com/markets/tech/26/08/61296346/whats-going-on-with-taiwan-semiconductor-stock-wednesday-5",
+  },
+  {
+    date: "2026-08-19", category: "MACRO",
+    headline: "🔴 30-Year Treasury Yield พุ่งแตะระดับสูงสุดตั้งแต่ปี 2007 — กดดันกลุ่มการเงินและตลาดกว้าง",
+    summary: "อัตราผลตอบแทนพันธบัตรรัฐบาลสหรัฐฯ อายุ 30 ปี ปรับตัวขึ้นแตะระดับสูงสุดนับตั้งแต่ปี 2007 ในสัปดาห์ที่ผ่านมา (ราว 19-20 สิงหาคม) สร้างแรงกดดันต่อกลุ่มการเงินและตลาดหุ้นกว้าง เช่น JPMorgan ที่ร่วงลง 1.2-1.7% ในช่วงเวลาดังกล่าว ก่อนที่ yield จะเริ่ม retreat ลงบางส่วนช่วยให้ตลาดฟื้นตัวปลายสัปดาห์ ปัจจัยหนุน yield ที่สูงขึ้นมาจากความกังวลเงินเฟ้อระยะยาว, ราคาน้ำมันที่พุ่งขึ้นจากความตึงเครียด Iran/Lebanon และท่าที Fed ที่ยังคง hold แม้มี dissent 3 เสียงต้องการขึ้นดอกเบี้ย. นัยพอร์ต: เป็น key macro indicator ที่ต้องติดตามต่อเนื่องสำหรับ Regime call ครั้งถัดไป — bond yield spike เป็นสาเหตุหลักของ sell-off ในกลุ่ม growth/tech สัปดาห์นี้ ไม่ใช่ปัจจัย fundamental เฉพาะตัวหุ้น.",
+    impact: "NEGATIVE", tickers: ["JPM"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-stock-falls-1-2-191715485.html",
+  },
+  {
+    date: "2026-08-19", category: "TECH",
+    headline: "🟢 TSLA บวก 3% รับข่าวเปิดตัว Cybercab สาธารณะที่ Austin — ตามด้วย Semi Europe และใบอนุญาต Robotaxi Las Vegas",
+    summary: "หุ้น Tesla ปรับขึ้นกว่า 3% แตะ $347.09 เมื่อวันที่ 19 สิงหาคม จากข่าวการเปิดตัว Cybercab สู่สาธารณะที่เมือง Austin รัฐเท็กซัส และยังมีข่าวบวกเพิ่มเติมเรื่องแผนเปิดตัว Semi truck ในยุโรปและการได้รับใบอนุญาต robotaxi ในลาสเวกัส ซึ่งช่วยหนุนราคาหุ้นรวม 4% ราคาล่าสุด ณ 22 สิงหาคม เทรดที่ $363.92 ทั้งนี้ Tesla ยังคงครองส่วนแบ่งตลาด EV สหรัฐฯ สูงสุดนับตั้งแต่ปี 2023 ที่ 59% แต่ยังเผชิญความเสี่ยงจากการ recall ครั้งใหญ่ในจีนและคดีความเกี่ยวกับ Autopilot. นัยพอร์ต: catalyst ด้าน autonomous driving/robotaxi commercialization เป็นบวกต่อ thesis ระยะยาวของ TSLA แต่ risk ด้าน legal/recall ยังเป็น overhang ที่ต้องติดตาม โดยเฉพาะเมื่อหุ้นยังติดลบ 25% YTD.",
+    impact: "POSITIVE", tickers: ["TSLA"],
+    url: "https://www.gurufocus.com/news/9043459/tesla-tsla-eyes-cybercab-launch-following-stock-surge",
+  },
+  {
+    date: "2026-08-19", category: "SECTOR",
+    headline: "🟢 ADBE: BofA ขึ้น PT เป็น $220, CLSA เปิด coverage ใหม่ Outperform เป้า $300",
+    summary: "Bank of America ปรับราคาเป้าหมาย Adobe ขึ้นเป็น $220 จาก $190 เมื่อวันที่ 19 สิงหาคม ขณะที่ CLSA เริ่ม coverage ใหม่ด้วยเรตติ้ง Outperform และราคาเป้าหมายสูงถึง $300 โดยชี้ว่า Adobe มี moat แข็งแกร่งในตลาด enterprise software การปรับราคาเป้าหมายเหล่านี้เกิดขึ้นในสัปดาห์เดียวกับที่ BlackRock ประกาศเพิ่มสัดส่วนถือหุ้นทะลุ 10% สะท้อนความเชื่อมั่นเชิงบวกที่เพิ่มขึ้นจากทั้งฝั่งสถาบันและนักวิเคราะห์ ราคาหุ้นล่าสุดเทรดที่ $263.56. นัยพอร์ต: มุมมองเชิงบวกที่สอดคล้องกันจากหลายแหล่งในสัปดาห์เดียวกันเป็นสัญญาณบวกต่อ momentum ระยะสั้น แต่ upside เป้าหมาย CLSA ที่ $300 (+14%) ยังห่างจาก all-time high เดิมมาก บ่งชี้ว่าตลาดยัง price in ความเสี่ยง AI disruption อยู่บางส่วน.",
+    impact: "POSITIVE", tickers: ["ADBE"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/why-adobe-adbe-stock-today-230133887.html",
+  },
+  // ── 2026-08-18 (เพิ่มเติม) ──────────────────────────────
+  {
+    date: "2026-08-18", category: "REGULATION",
+    headline: "🔴 META เข้าสู่การพิจารณาคดีครั้งใหญ่ 29 รัฐฟ้องออกแบบแพลตฟอร์มให้เสพติดเยาวชน — ความเสี่ยงสูงสุด $1.4 ล้านล้านดอลลาร์",
+    summary: "การพิจารณาคดีของรัฐบาลกลางเปิดขึ้นที่เมือง Oakland รัฐแคลิฟอร์เนีย เมื่อวันที่ 18 สิงหาคม โดยกลุ่มอัยการสูงสุด 29 รัฐ ยื่นฟ้อง Meta ในข้อหาออกแบบ Facebook และ Instagram ให้เสพติดสำหรับผู้ใช้วัยรุ่นโดยเจตนา เอกสารของ Meta เองระบุโทษปรับสูงสุดที่เป็นไปได้ถึง $1.4 ล้านล้านดอลลาร์ แม้ทนายฝ่ายรัฐมองว่าตัวเลขที่สมจริงกว่าอยู่ที่ราว $200 พันล้านดอลลาร์ คดีนี้คาดว่าจะใช้เวลาพิจารณา 6 สัปดาห์ ราคาหุ้น META ปิดที่ $543.67 เมื่อ 18 สิงหาคม ลดลงเกือบ 31% จากจุดสูงสุดตลอดกาล $787.42 (สิงหาคม 2025) ก่อนแกว่งตัวในกรอบ $544-556 ช่วง 19-20 สิงหาคม. นัยพอร์ต: legal overhang ระดับใหญ่นี้เป็นความเสี่ยงเชิง binary event สำคัญที่สุดของ META ในขณะนี้ ต้องติดตามความคืบหน้าคดีตลอด 6 สัปดาห์ข้างหน้าอย่างใกล้ชิด แม้ Morgan Stanley ยังให้ความเชื่อมั่นเรื่อง AI infrastructure investment.",
+    impact: "NEGATIVE", tickers: ["META"],
+    url: "https://www.vantagemarkets.com/market-analysis/meta-stock-price-today-august-20-2026/",
+  },
+  {
+    date: "2026-08-18", category: "SECTOR",
+    headline: "🟢 ADBE บวก 4.5% — BlackRock เพิ่มสัดส่วนถือหุ้นทะลุ 10% มูลค่าลงทุนกว่า $8.4 พันล้าน",
+    summary: "หุ้น Adobe พุ่งขึ้น 4.5% หลัง BlackRock ซึ่งเป็นผู้จัดการสินทรัพย์รายใหญ่ เพิ่มสัดส่วนการถือหุ้นใน Adobe ขึ้นเป็นมากกว่า 10% ของบริษัท คิดเป็นเงินลงทุนราว $8.4 พันล้านดอลลาร์ การลงทุนครั้งนี้ถูกตีความว่าเป็นการโหวตความเชื่อมั่นระดับสถาบันว่าธุรกิจซอฟต์แวร์ creative ของ Adobe ยังคุ้มค่าการถือครองในขนาดใหญ่ แม้ตลาดกังวลว่าเครื่องมือ generative AI จะกัดกร่อนธุรกิจ Creative Cloud ราคาหุ้นยังคงติดลบ 20.9% ตั้งแต่ต้นปี และต่ำกว่า 52-week high ที่ $367.46 อยู่ 28.3%. นัยพอร์ต: แรงหนุนจากนักลงทุนสถาบันรายใหญ่ช่วยสร้างความเชื่อมั่นระยะสั้น แต่ยังไม่ได้แก้ปัญหาเชิงโครงสร้างเรื่อง AI disruption risk ที่กดดันหุ้นมาตลอดปี — ควรติดตามว่าจะมีสถาบันอื่นตามรอยหรือไม่.",
+    impact: "POSITIVE", tickers: ["ADBE"],
+    url: "https://stockstotrade.com/news/adobe-inc-adbe-news-2026_08_18/",
+  },
   // ── 2026-08-18 ──────────────────────────────
   {
     date: "2026-08-18", category: "SECTOR",
