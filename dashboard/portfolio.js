@@ -4,7 +4,7 @@
 // Do NOT edit manually — Max overwrites this file on every update
 // =================================================================
 
-const PORTFOLIO_LAST_UPDATED = "2026-08-22 (PORTFOLIO REVIEW — no new trade | ราคาปิด 2026-08-21 close, verified ≥2 sources ต่อ ticker | Total $10,291.71 (+$111.76 จาก Aug18, +1.10%) | S&P 7,674.37 (2 sources: Yahoo Finance + FRED, +0.40% day แต่ -0.91% จาก Aug17 หลังสัปดาห์ผันผวน bond yields) → Alpha -0.806% (ดีขึ้นมากจาก -2.879% เพราะพอร์ตขึ้นแรงขณะ S&P ร่วง) | 🟡 RDDT WATCH ใหม่ — stopDist หดฯวบเหลือ 8.18% (จาก 20.97%) ราคาร่วง -13.9% ใน 4 วัน ($178.09→$153.29) จาก ChatGPT citation collapse -86% (Reddit block robots.txt) + insider selling + S&P inclusion profit-taking, MOS พลิกบวก +9.43% | 🟠 NOW STRONG SELL กลับมา — MOS -5.79% ราคาพุ่งเป็น best performer ใหม่ +43.60% | 🟠 REGN STRONG SELL ลึกขึ้น — MOS -5.31% (จาก -1.83%), return +38.54% | 🟢 GOOGL stopDist ฟื้นเล็กน้อยเป็น 10.10% (จาก 9.82%) ยังอยู่ critical zone | ⚠️ ADBE weight 10.70% ยังชนขอบบนของ IPS band | ⚠️ Cash 59.59% > 30% เกิน 10+ สัปดาห์)";
+const PORTFOLIO_LAST_UPDATED = "2026-08-23 (REGN TRIM 30% EXECUTED — CIO CONFIRMED | Max×Charlie consultation 2026-08-22/23, CIO: \"หมายถึง now hold ได้ regn 30% เอาตามที่พวกนายว่า\" | ขาย 0.18sh @ $834.04 (re-verified 2026-08-23, 2 sources) = $150.13 proceeds, realized P&L +$41.77 (+38.54%), เหลือ 0.42sh weight 3.40% | NOW: HOLD ต่อ ไม่มี action — ปิด case ตามข้อเสนอ | Total $10,291.72 (แทบไม่เปลี่ยนจาก trim, แค่ realize gain บางส่วน) | Cash 61.04% (+จาก proceeds) | ⚠️ ADBE weight 10.70% ยังชนขอบบนของ IPS band)";
 
 const PORTFOLIO = {
 
@@ -50,24 +50,25 @@ const PORTFOLIO = {
     { date: "2026-08-22", ticker: "RDDT",  issue: "🟡 WATCH ใหม่ — stopDist หดฮวบเหลือ 8.18% (จาก 20.97% Aug17) ต่ำกว่า 10% threshold ครั้งแรกนับตั้งแต่ stop breach recovery Aug4. ราคาร่วง -13.9% ใน 4 วัน ($178.09→$153.29). สาเหตุ: ChatGPT Search citation share ของ Reddit ร่วง -86% (จาก ~4% เป็น ~0.5%, ก.ค.18-ส.ค.17) หลัง Reddit บล็อค crawler ด้วย robots.txt ตัดช่องทาง AI licensing/search access เดิม + insider Form 144 filings (Aug14) + valuation concern (~40x earnings) หลัง S&P inclusion profit-taking fade. MOS พลิกบวก +9.43%.", action: "THESIS REVIEW — robots.txt block เป็นการตัดสินใจเชิงกลยุทธ์ของ Reddit เอง (อาจปกป้อง licensing revenue จาก free AI scraping) ไม่ตรงกับ Bear Flip #3 (Google AI Overview ลด traffic >15%) โดยตรง และไม่เข้าเงื่อนไข Thesis Invalidation (ไม่มี Google terminate deal). ไม่ auto-sell — stopDist ยังไม่ breach. HOLD 3sh ต่อ แต่ยกระดับเป็น priority monitoring อันดับ 1 ของพอร์ต — ถ้าหลุด stop $140.75 ต้อง re-review Bear Flip/Invalidation ทันที.", severity: "🟡 NEW WATCH — STOP DISTANCE 8.18% (< 10% threshold ครั้งแรกหลัง Aug4 recovery)" },
     { date: "2026-08-22", ticker: "NOW",   issue: "🟠 STRONG SELL TERRITORY กลับมาอีกครั้ง — ราคาพุ่งจาก $117.70 (Aug17) เป็น $128.48 (Aug21) ทะลุ Blended FV $121.45 อีกครั้ง, MOS พลิกลบเป็น -5.79% (จาก +3.09%). return พุ่งเป็น +43.60% เป็น best performer ใหม่ของพอร์ต แซง REGN.", action: "HOLD 2sh ต่อ — ไม่มี Bear Flip/Invalidation ยิง, thesis ยัง intact. stopDist 54.86% ปลอดภัยที่สุดในพอร์ต ไม่มีความเสี่ยง stop breach. MOS ติดลบสะท้อน valuation ตึง ไม่ใช่ fundamental deterioration — pattern เดิมที่เคยเห็น (Aug9).", severity: "WATCH — STRONG SELL TERRITORY (MOS -5.79%, กลับมาเป็นรอบที่ 2)" },
     { date: "2026-08-22", ticker: "REGN",  issue: "🟠 STRONG SELL TERRITORY ลึกขึ้น — MOS -5.31% (จาก -1.83% Aug18) ราคา $834.04 ทะลุ Blended FV $792 ไกลขึ้นเรื่อยๆ. return พุ่งต่อเนื่องเป็น +38.54% แต่ถูก NOW แซงเป็น best performer แล้ว (43.60%).", action: "HOLD 0.6sh ต่อ — thesis ยัง intact (Dupixent/Libtayo momentum), ไม่มี Bear Flip/Invalidation ยิง. MOS ลบต่อเนื่อง 2 รอบติด (Aug18, Aug22) — ควรพิจารณา trim lock gain จริงจังรอบหน้าแทนที่จะรอต่อไปเรื่อยๆ.", severity: "WATCH — STRONG SELL TERRITORY DEEPENED (MOS -5.31%)" },
-    { date: "2026-08-22", ticker: "GOOGL", issue: "🟢 stopDist ฟื้นเล็กน้อยเป็น 10.10% (จาก 9.82% Aug17) — หลุดออกจาก critical zone เล็กน้อย แต่ยังใกล้เกณฑ์ WATCH 10% มาก. return ดีขึ้นเล็กน้อยเป็น -11.34% (จาก -11.61%) แต่ยังแย่สุดอันดับ 2 ในพอร์ต. ไม่มี catalyst ใหม่สัปดาห์นี้.", action: "HOLD ต่อ — core business (Cloud +82%, EPS $9.11 record) ไม่เปลี่ยน, ยังไม่ถึง Thesis Invalidation. ยังคงเป็น priority monitoring สูงสุดของพอร์ตต่อเนื่อง — stopDist แคบเกินไปที่จะผ่อนคลาย monitoring แม้จะดีขึ้นเล็กน้อย.", severity: "WATCH CRITICAL ต่อเนื่อง — STOP DISTANCE 10.10% (ยังใกล้ 10% threshold มาก)" }
+    { date: "2026-08-22", ticker: "GOOGL", issue: "🟢 stopDist ฟื้นเล็กน้อยเป็น 10.10% (จาก 9.82% Aug17) — หลุดออกจาก critical zone เล็กน้อย แต่ยังใกล้เกณฑ์ WATCH 10% มาก. return ดีขึ้นเล็กน้อยเป็น -11.34% (จาก -11.61%) แต่ยังแย่สุดอันดับ 2 ในพอร์ต. ไม่มี catalyst ใหม่สัปดาห์นี้.", action: "HOLD ต่อ — core business (Cloud +82%, EPS $9.11 record) ไม่เปลี่ยน, ยังไม่ถึง Thesis Invalidation. ยังคงเป็น priority monitoring สูงสุดของพอร์ตต่อเนื่อง — stopDist แคบเกินไปที่จะผ่อนคลาย monitoring แม้จะดีขึ้นเล็กน้อย.", severity: "WATCH CRITICAL ต่อเนื่อง — STOP DISTANCE 10.10% (ยังใกล้ 10% threshold มาก)" },
+    { date: "2026-08-23", ticker: "REGN", issue: "TRIMMED 30% — STRONG SELL Exit Rule (MOS -5.31% deepening 2 rounds straight, weight 4.86%), CIO confirmed after Max×Charlie consultation 2026-08-22/23", action: "SOLD 0.18sh @ $834.04 (re-verified 2026-08-23, 2 sources: stockanalysis.com + general aggregator, <0.22% diff) = $150.13. Realized P&L +$41.77 (+38.54%). Remaining 0.42sh, weight 3.40%.", severity: "TRIMMED — CIO CONFIRMED" }
   ],
 
   summary: {
     startingCapital:  10000.00,
-    currentCash:      6132.34,
-    investedValue:    4159.37,
-    totalValue:       10291.71,
+    currentCash:      6282.47,
+    investedValue:    4009.25,
+    totalValue:       10291.72,
     totalReturnPct:   2.917,
     sp500AtInception: 7398.93,
     sp500Current:     7674.37,
     sp500Return:      3.723,
     alpha:            -0.806,
     positionCount:    8,
-    cashPct:          59.59,
+    cashPct:          61.04,
     benchmark:        "S&P 500",
-    lastUpdated:      "2026-08-22",
-    lastTradeAction:  "📊 PORTFOLIO REVIEW 2026-08-22 (no new trade, ราคาปิด 2026-08-21 close — วันทำการล่าสุด) | S&P 7,674.37 (+0.40% day แต่ -0.91% จาก Aug17 — สัปดาห์ผันผวน bond yields ก่อนฟื้น Aug21) | Total $10,291.71 (+$111.76 จาก Aug18, +1.10%) → Alpha -0.806% (ดีขึ้นมากจาก -2.879% เพราะพอร์ตขึ้นแรงขณะ S&P ร่วง) | 🟡 RDDT WATCH ใหม่ — stopDist 8.18% (จาก 20.97%) ราคาร่วง -13.9% จาก ChatGPT citation collapse -86% + insider selling | 🟠 NOW STRONG SELL กลับมา — MOS -5.79% เป็น best performer ใหม่ +43.60% | 🟠 REGN STRONG SELL ลึกขึ้น — MOS -5.31% | 🟢 GOOGL stopDist ฟื้นเป็น 10.10% | ⚠️ ADBE weight 10.70% ชนขอบบน | Cash 59.59% > 30% เกิน 10+ สัปดาห์",
+    lastUpdated:      "2026-08-23",
+    lastTradeAction:  "🔪 REGN TRIM 30% EXECUTED 2026-08-23 — CIO CONFIRMED (\"หมายถึง now hold ได้ regn 30% เอาตามที่พวกนายว่า\") after Max×Charlie consultation. ขาย 0.18sh @ $834.04 (re-verified 2 sources) = $150.13 proceeds, realized P&L +$41.77 (+38.54%), เหลือ 0.42sh (weight 3.40%). เหตุผล: STRONG SELL Exit Rule — MOS -5.31% ลึกขึ้นต่อเนื่อง 2 รอบ (Aug18/Aug22), weight ใหญ่ 4.86%, lock partial gain. NOW: HOLD ต่อ ไม่มี action — ปิด case ตามข้อเสนอเดิม (MOS -5.79% oscillation, ไม่ใช่แนวโน้ม, weight เล็ก, ไม่มี Bear Flip/Invalidation). Cash เพิ่มเป็น $6,282.47 (61.04%) จาก proceeds. Total $10,291.72.",
     macroRegime:      "✅ RISK-ON 3/4 (Atlas formal re-call 2026-08-10 — agent_notes/atlas/2026-08-10_regime.md — ยังไม่มี re-call ใหม่ session นี้). VIX 14.90 🟢 / Yield Curve +45bps 🟢 / HY Spreads 271-273bps 🟢 / Fed Stance ambiguous 🟡. Force Deploy ACTIVE, Multiplier 1.0×, Cash Floor 10% — cash 60%+ ยังเกินมาก ไม่มี candidate ผ่าน gate ใหม่รอบนี้. Next re-call trigger: หลัง Sept 16 FOMC หรือเร็วกว่านั้นถ้า CPI/PCE ผิดคาดมาก.",
     regimeMultiplier: 1.0,
     priceSourceNote:  "2026-08-22 review (ราคาปิด 2026-08-21 close): ทุกราคา cross-check ≥2 sources อิสระต่อ ticker: ADBE $275.30, NOW $128.48, GOOGL $344.82, CRM $209.17, RDDT $153.29, REGN $834.04, ACN $185.28, ADSK $253.83. S&P 500 = 7,674.37 (2026-08-21 close, Yahoo Finance + FRED confirm, +33.21pts +0.40% day). Alpha -0.806% (ดีขึ้นมากจาก -2.879%). ไม่มี trade ใหม่ — portfolio review only.",
@@ -174,19 +175,19 @@ const PORTFOLIO = {
     },
     {
       ticker: "REGN", company: "Regeneron Pharmaceuticals, Inc.", sector: "Healthcare / Pharma-Biotech",
-      recommendation: "BUY", conviction: 7.2,
+      recommendation: "BUY — HOLD (TRIMMED 30%)", conviction: 7.2,
       tranches: [
-        { tranche: "T1", entryDate: "2026-06-03", entryPrice: 602.00, shares: 0.6, costBasis: 361.20, note: "Value | MOS +31.6% | Conv 7.2 | Force Deploy RISK-ON | Morgan CONDITIONAL PASS" },
+        { tranche: "T1", entryDate: "2026-06-03", entryPrice: 602.00, shares: 0.6, costBasis: 361.20, note: "Value | MOS +31.6% | Conv 7.2 | Force Deploy RISK-ON | Morgan CONDITIONAL PASS | TRIMMED 30% 2026-08-23 @ $834.04 — เหลือ 0.42sh จาก 0.6sh" },
       ],
-      totalShares: 0.6, avgEntryPrice: 602.00, totalCostBasis: 361.20,
-      entryPrice: 602.00, shares: 0.6, costBasis: 361.20,
-      currentPrice: 834.04, marketValue: 500.42, returnPct: 38.54, weightPct: 4.86,
+      totalShares: 0.42, avgEntryPrice: 602.00, totalCostBasis: 252.84,
+      entryPrice: 602.00, shares: 0.42, costBasis: 252.84,
+      currentPrice: 834.04, marketValue: 350.30, returnPct: 38.54, weightPct: 3.40,
       stopLoss: 482.00, stopDistancePct: 42.21, blendedFV: 792.00, mosPct: -5.31,
       entryZone: "$580-640", tranche: "T1",
-      t2Zone: "$510-570 — pullback or IRA exemption confirmed",
-      thesis: "Dupixent multi-indication growth (atopic dermatitis, asthma, COPD, PRURIGO). Oncology pipeline PSMA-CD3 bispecific. Strong FCF. IRA binary risk Q4 2026 (Dupixent price negotiation). Wide Moat Healthcare. ⚠️ securities class action lawsuit (July24, melanoma pipeline ไม่ใช่ Dupixent core) ยังค้าง. 🟠 ราคาทะลุ Blended FV $792 แล้ว — MOS พลิกลบ.",
-      status: "OPEN", bucket: "Value", reportFile: "reports/REGN_2026-06-03.md",
-      priceUpdated: "2026-08-22", priceSource: "$834.04 (2026-08-21 close, 4:00 PM EDT, stockanalysis.com — cross-check: general aggregator intraday $835.86, <0.22% diff, +0.90% day). 🟠 STRONG SELL TERRITORY ลึกขึ้น — MOS -5.31% (จาก -1.83%) ราคาทะลุ Blended FV $792 ไกลขึ้นเรื่อยๆ. return พุ่งต่อเนื่องเป็น +38.54% แต่ถูก NOW แซงเป็น best performer แล้ว. stopDist ยังปลอดภัยมาก 42.21%. thesis ยัง intact (Dupixent/Libtayo momentum) ไม่มี Bear Flip/Invalidation ยิง. ควรพิจารณา trim lock gain จริงจังรอบหน้า — MOS ลบต่อเนื่อง 2 รอบติด (Aug18, Aug22).",
+      t2Zone: "$510-570 — pullback or IRA exemption confirmed (NOTE: T1 TRIMMED 30% 2026-08-23 — เหลือ 0.42sh)",
+      thesis: "Dupixent multi-indication growth (atopic dermatitis, asthma, COPD, PRURIGO). Oncology pipeline PSMA-CD3 bispecific. Strong FCF. IRA binary risk Q4 2026 (Dupixent price negotiation). Wide Moat Healthcare. ⚠️ securities class action lawsuit (July24, melanoma pipeline ไม่ใช่ Dupixent core) ยังค้าง. 🔪 TRIMMED 30% 2026-08-23 @ $834.04 — CIO confirmed, lock partial gain, MOS -5.31% deepening trend (2 รอบติด Aug18/Aug22). thesis ยัง intact — ไม่มี Bear Flip/Invalidation ยิง, เหลือ 0.42sh ต่อ.",
+      status: "OPEN — TRIMMED 30%", bucket: "Value", reportFile: "reports/REGN_2026-06-03.md",
+      priceUpdated: "2026-08-23", priceSource: "$834.04 (2026-08-21 close, 4:00 PM EDT, re-verified 2026-08-23 — 2 sources cross-check: stockanalysis.com $834.04 (WebFetch) + general aggregator intraday $835.86, <0.22% diff). 🔪 TRIM 30% EXECUTED 2026-08-23 — ขาย 0.18sh @ $834.04 = $150.13 proceeds, realized P&L +$41.77 (+38.54%). เหตุผล: STRONG SELL Exit Rule (MOS -5.31% ลึกขึ้นต่อเนื่อง 2 รอบ Aug18/Aug22) + weight ใหญ่ 4.86% ก่อน trim + lock partial gain. CIO confirmed after Max×Charlie consultation (\"หมายถึง now hold ได้ regn 30% เอาตามที่พวกนายว่า\"). เหลือ 0.42sh, weight ใหม่ 3.40%. thesis ยัง intact ไม่มี Bear Flip/Invalidation ยิง.",
       regime: "RISK-ON 4/4 | Multiplier: 1.0x",
     },
     {
@@ -238,6 +239,7 @@ const PORTFOLIO = {
     { date: "2026-06-05", action: "BUY",  ticker: "ACN",   shares: 2.8,  price: 178.16, tradeValue: 498.85,  conviction: 7.17, tranche: "T1", rulesPass: true, regimeNote: "RISK-ON 4/4 1.0x | Force Deploy Active", ipsRule: "Value: Conv 7.17 >= 7.0 + MOS +41.6% >= 15% | Force Deploy: Cash 69.28% > 30% + RISK-ON active", note: "ACN T1. IT Services AI Consulting. Record bookings $22.1B (+6%) at 52w price low. ROIC 27.19% FCF 11.42% P/E 14.54x. Morgan CONDITIONAL PASS.", cashBefore: 6928.25, cashAfter: 6429.40 },
     { date: "2026-06-14", action: "BUY",  ticker: "ADSK",  shares: 2.4,  price: 198.43, tradeValue: 476.23,  conviction: 7.0, tranche: "T1", rulesPass: true, regimeNote: "RISK-ON 3/4 1.0x | Force Deploy Active (cash drag fix)", ipsRule: "Value: Conv 7.0 >= 7.0 + MOS +31.6% >= 15% | Growth: Rev +18.4% > 15% + Reverse DCF 0.71× <= 1.2× | Force Deploy: Cash 66.83% > 30% + RISK-ON active", note: "ADSK T1 — CASH DRAG FIX pre-FOMC. Design Software Wide Moat (DWG/Revit standard). ราคา verified สด ≥2 sources: stockanalysis.com $198.43 + Robinhood/CNN $198.43-198.91 + WebSearch range. ราคา drop 13% ($229→$198.43) เพราะ MaintainX M&A concern ไม่ใช่ thesis invalid — Q1 FY27 BEAT (Rev +18.4%, EPS $2.99 vs $2.84, FCF $876M +25%). Blended FV $290. Stop $158.74 (-20.0%). DISCIPLINED — T1 เดี่ยว ไม่ deploy ตัวที่ 2 พร้อมกัน, เก็บ dry powder รอ FOMC June 16-17. Morgan CONDITIONAL PASS (price now URL-verified).", cashBefore: 6429.40, cashAfter: 5953.17 },
     { date: "2026-06-22", action: "SELL", ticker: "ACN",  shares: 1.4,  price: 127.98, tradeValue: 179.17,  conviction: 7.17, tranche: "T1", sellType: "TRIM_50", exitRule: "Stop breach (-28.17%, $127.98 < $148) + Bear Flip #1 firing (Q3 FY26 Rev $18.72B MISS + FY guide cut 3-4% + weak bookings). Bear Flip = REDUCE/SELL signal; formal Thesis Invalidation (3Q) ยังไม่ครบ → TRIM ไม่ full exit. Max autonomy decision (CIO observing). เก็บ 1.4sh รอ Q4 bookings (P/E 14, FCF $3.6B, MOS +49% deep value).", realizedPnl: -70.25, realizedReturnPct: -28.17, cashBefore: 5953.17, cashAfter: 6132.34 },
+    { date: "2026-08-23", action: "SELL", ticker: "REGN", shares: 0.18, price: 834.04, tradeValue: 150.13, conviction: 7.2, tranche: "T1", sellType: "TRIM_30", exitRule: "STRONG SELL Exit Rule — MOS -5.31% deepening 2 rounds straight (Aug18/Aug22), weight 4.86% ก่อน trim. Max×Charlie consultation 2026-08-22/23 → เสนอ CIO → CIO CONFIRMED 2026-08-23 (\"หมายถึง now hold ได้ regn 30% เอาตามที่พวกนายว่า\"). Lock partial gain, thesis ยัง intact (ไม่มี Bear Flip/Invalidation). เหลือ 0.42sh.", realizedPnl: 41.77, realizedReturnPct: 38.54, cashBefore: 6132.34, cashAfter: 6282.47 },
   ],
 
   closedPositions: [
