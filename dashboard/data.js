@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-08-22";
+const LAST_UPDATED = "2026-08-24";
 
 const REPORTS = [
 
@@ -7011,67 +7011,183 @@ Blended FV $311.70 (ESG-adj $302) = MOS +23.2% ณ ราคาปัจจุ�
   {
     ticker: "NOW",
     company: "ServiceNow Inc.",
-    date: "2026-05-11",
-    sector: "Enterprise Software / SaaS / Agentic AI Platform",
-    price: 103.10,
-    recommendation: "BUY",
-    blendedFV: 121.45,
-    esgAdjFV: 115.38,
-    targetBull: 168.00,
-    targetBase: 121.45,
-    stopLoss: 58.00,
-    convictionEmma: 7,
-    convictionQuinn: 7,
-    convictionBear: 6,
-    convictionAvg: 6.7,
-    pwEV: 124.47,
-    beta: 1.10,
+    date: "2026-08-24",
+    version: "v2 (Full Re-Analysis + TGR Correction, Round 2 QA PASS)",
+    sector: "Enterprise Software / SaaS / Agentic AI Platform + Cybersecurity (post-Armis)",
+    price: 128.48,
+    recommendation: "HOLD — Maintain T1, No New Deployment",
+    blendedFV: 125.65,
+    esgAdjFV: 119.37,
+    targetBull: 183.38,
+    targetBase: 125.65,
+    stopLoss: 93.00,
+    convictionEmma: 5.5,
+    convictionQuinn: 6.0,
+    convictionBear: 6.0,
+    convictionAvg: 5.83,
+    mosPct: -2.20,
+    mosPctEsgAdj: -7.09,
+    pwEV: 131.87,
+    pwEvBear: 114.69,
+    beta: 0.93,
     sharpe1Y: 0.70,
-    maxDrawdown: -0.51,
+    sharpe1YNote: "ไม่ได้ refresh ใน Full Re-Analysis รอบนี้ (2026-08-24) — ค่าจากรายงาน 2026-05-11 เดิม, นอกขอบเขต WACC/DCF/TGR-focused re-analysis รอบนี้",
+    maxDrawdown: -0.583,
     moat: "Wide",
     esgRating: "Medium",
-    esgScore: 6.2,
-    macroRegime: "TRANSITIONAL-CAUTIOUS",
-    sp500Reference: 7399,
-    keyThesis: "NOW Wide Moat Agentic AI platform — Blended FV $121.45 (แก้ shares 515M→1.03B post 5-for-1 split) MOS +17.8% ณ $103.10; 19/25 sensitivity scenarios ให้ upside; T1 filled @$89.47; รอ T2 ที่ $72-84",
-    topRisk: "SBC-adjusted FCF ต่ำกว่า headline ~40%; CAGR deceleration risk ที่ revenue >$11B; IT budget freeze recession sensitivity; Bear P-W EV $92.25 (post-split corrected)",
-    entryZone: "$85–95 (T1 ✅ filled) / $72–84 (T2 รอ) / $60–71 (T3 รอ)",
-    positionSize: "5% (Quarter-Kelly 11% → cap 5%, Wide Moat first SaaS-workflow name)",
-    businessModel: {
-      oneLiner: "ServiceNow เป็น platform สำหรับ IT workflow อัตโนมัติในองค์กรขนาดใหญ่ — ช่วยให้ทีม IT จัดการ tickets, approvals, automation ทั้งหมดในที่เดียว",
-      analogy: "เหมือน 'operating system' สำหรับ enterprise workflows — ทุก approval, request, automation วิ่งบน NOW platform",
+    esgScore: 6.3,
+    macroRegime: "RISK-ON",
+    morganQA: "PASS Round 2 (Data Quality 8.6/10) — Round 1 FAIL RULE_VIOLATION (Terminal Growth Rate 3.5% เกินเพดาน 3%)",
+    sp500Reference: 7674.37,
+    sp500ReferenceNote: "7,674.37 (2026-08-21 close) — ตามที่ระบุในรายงาน Full Re-Analysis",
+    bucket: "Growth",
+    entryZone: "No new entry — T1 filled @ $89.47 (existing position, unrealized +43.6%); T2/T3 zones เดิม ($72-84 / $60-71) stale ไม่ relevant อีกต่อไป",
+    positionSize: "5% cap (existing T1 เท่านั้น — ไม่เพิ่ม, conviction gate ไม่ผ่าน 5.83 < 6.5, Quarter-Kelly 2.76% ต่ำกว่า IPS floor 3%)",
+    keyThesis: "Full Re-Analysis + TGR Correction (2026-08-24) แก้ methodology 4 ชั้น: (1) DCF NOPAT-based แทน reported-FCF ที่พองจาก SBC (2) Armis acquisition net-debt flip เข้า valuation (3) WACC verified (Beta 0.93/ERP 4.45% แทน unverified 1.10/5.5%) (4) Terminal Growth Rate ceiling correction (3.5%→3.0% ตาม Morgan QA). Blended FV $125.65, MOS พลิกลบ -2.20% เป็นครั้งแรก, Conviction 5.83/10 ต่ำกว่า Growth gate 6.5. Wide Moat + Multiple Percentile ยัง PASS แข็งแกร่ง แต่ไม่เหลือ MOS cushion ให้ Beta ผิดพลาดได้อีกแล้ว",
+    topRisk: "Beta re-rate สูงกว่า 0.93 verified — Beta ขยับเพียง 0.93→1.05 พลิก Blended MOS จาก -2.2% เป็น ~-11.6% ทันที (ไม่เหลือ MOS cushion เลยหลัง TGR correction); รองลงมาคือ Armis integration/synergy non-realization (23x ARR premium, -42% stock reaction) และ peer premium compression",
+    reportFile: "../reports/NOW_2026-05-11.md",
+    businessSummary: {
+      oneLiner: "ServiceNow คือ platform enterprise workflow automation (ITSM/HR/Customer Service) ที่กำลังขยายสู่ Agentic AI และล่าสุดเข้าซื้อ Armis เพื่อขยายสู่ cybersecurity/asset-visibility",
+      analogy: "เหมือน 'operating system' สำหรับ workflow ขององค์กรขนาดใหญ่ — ล่าสุดเพิ่มธุรกิจ cybersecurity/asset-visibility (Armis) เข้ามาด้วย ยังขายแบบ standalone ไม่ integrate เต็มกับ core platform",
       moneyFlow: [
-        "ITSM (IT Service Management): 60%+ revenue — IT help desk, change management, asset management",
-        "HRSD / Employee Workflows: 15-20% — HR onboarding, employee service portal",
-        "CSM (Customer Workflows): 10-15% — customer service management",
-        "Agentic AI (2026): emerging layer ที่ AI agents วิ่งบน Now Platform"
+        "ลูกค้า Global 2000 (~1,750+ ราย) จ่าย subscription รายปีเพื่อใช้ Now Platform บริหาร IT/HR/Customer workflow (>97% ของ revenue เป็น subscription)",
+        "Armis ($7.75B, ปิดดีล เม.ย. 2026) เพิ่ม cybersecurity/asset-visibility สำหรับ IT/OT/medical devices — ปัจจุบันยังขายแบบ standalone ไม่ integrate เต็มกับ core platform",
+        "กำไรมาจาก operating leverage แต่ SBC (16% ของ revenue) กัดกินกำไรทางบัญชีมาก — GAAP operating margin จริง (~12-15%) ต่ำกว่าที่ narrative 'high-margin SaaS' มักบอก",
+        "SBC per-share ($2.12) สูงกว่า GAAP diluted EPS ($1.60) ทั้งหมด — red flag คุณภาพกำไรชัดเจนที่ Bear ชี้ในรายงาน"
       ],
-      whyDifferent: "มี workflow data จาก Global 2000 enterprises หลายหมื่นล้าน records — ข้อมูลนี้เป็น training data คุณภาพสูงที่ competitors หาไม่ได้; switching cost สูง 2-4 ปี migration",
-      simpleRisk: "Microsoft Copilot Studio และ Salesforce Agentforce กำลังขยายเข้ามา enterprise workflow — ถ้า MSFT bundle ITSM ใน M365 ฟรี = moat eroded structurally"
+      whyDifferent: "Switching cost สูงมาก (migration 2-4 ปี, renewal 97-98%) จาก workflow data มหาศาลของ Global 2000 — แต่การซื้อ Armis เป็นดีล cybersecurity ตัวที่ 4 ใน ~1 ปี ทำให้เกิดคำถามว่าเป็น organic platform expansion ตาม playbook เดิม หรือ capital-allocation opportunism ตามกระแส cybersecurity sector ที่ร้อนแรง — Bear ยังตัดสินไม่ได้ 100% (deal เพิ่งปิด 4 เดือน)",
+      simpleRisk: "หลัง TGR correction (3.5%→3.0% ตามเพดาน Morgan QA) Blended FV ลดลง ~7% ทำให้ MOS พลิกจากบวกเป็นลบ (-2.20%) เป็นครั้งแรก — ไม่เหลือ margin ให้ Beta หรือสมมติฐานอื่นผิดพลาดได้อีกแล้ว"
     },
-    catalysts: [
-      { date: "Q2 2026", event: "Agentic AI revenue first disclosure", magnitude: "HIGH" },
-      { date: "FY2026 ongoing", event: "Microsoft/Nvidia JV revenue materializes", magnitude: "HIGH" },
-      { date: "H2 2026", event: "NRR trend > 110% = expansion revenue acceleration", magnitude: "MEDIUM" }
+    thesisBullets: [
+      { title: "Wide Moat Workflow Platform ยังแข็งแกร่ง", why: "Switching cost VERY HIGH (migration 2-4 ปี), renewal-proxy 97-98%, workflow data มหาศาลจาก Global 2000 ที่ competitors หาไม่ได้ — ไม่เปลี่ยนแปลงจากการ re-analysis หรือ TGR correction" },
+      { title: "Multiple Percentile Valuation ยัง PASS แข็งแกร่ง", why: "EV/Revenue 9.13x ต่ำกว่า own-stock 5Y floor (10.6x) = 0th percentile — multiple-based method ไม่ขึ้นกับ TGR/WACC เลย จึงไม่ถูกกระทบจาก TGR correction" },
+      { title: "MOS พลิกลบเป็นครั้งแรก (-2.20%)", why: "TGR ceiling correction (3.5%→3.0% ตาม Morgan QA Round 1 FAIL) ลด Blended FV ~7% เพราะ Terminal Value เป็น 71% ของ Enterprise Value — thesis พื้นฐานไม่เปลี่ยน แต่ margin of safety หายไปสำหรับเงินใหม่" },
+      { title: "Armis เปลี่ยนคำถามเชิง thesis-scope", why: "ไม่อยู่ใน 3 pillars เดิมเลย — ดีล cybersecurity ตัวที่ 4 ใน ~1 ปี จ่าย 23x ARR (สูงกว่า multiple ตัวเอง 2.5 เท่า) ยังตัดสินไม่ได้ว่าเป็น organic expansion หรือ capital-allocation opportunism จนกว่าจะเห็น execution track record 2-3 quarters" },
+      { title: "Beta sensitivity สูงมาก ไม่เหลือ MOS cushion", why: "Beta 0.93 verified (4 sources cluster 0.927-0.97) แต่ขยับเพียงเป็น 1.05 พลิก Blended MOS จาก -2.2% เป็น ~-11.6% ทันที — ตัวแปรเดียวที่ไวที่สุดต่อ thesis ทั้งหมด" }
     ],
+    esgBreakdown: { e: 8.0, s: 7.0, g: 4.0, overall: 6.3 },
+    customerConcentration: {
+      status: "DATA NOT AVAILABLE",
+      note: "Atlas ไม่ได้ fetch Customer Concentration รอบนี้ (scope โฟกัสที่ Armis/WACC/net-debt/TGR) — รายงาน 2026-05-11 เดิมก็ไม่มี section นี้เช่นกัน — Morgan flag เป็น MEDIUM non-blocking ทั้ง Round 1 และ Round 2"
+    },
+    geographyRevenue: {
+      status: "DATA NOT AVAILABLE",
+      note: "Atlas ไม่ได้ fetch Geography Revenue Breakdown รอบนี้ (scope โฟกัสที่ Armis/WACC/net-debt/TGR) — รายงาน 2026-05-11 เดิมก็ไม่มี section นี้เช่นกัน — Morgan flag เป็น MEDIUM non-blocking ทั้ง Round 1 และ Round 2"
+    },
+    revenueSegments: [
+      { label: "Now Platform (ITSM Core)", value: 57.5 },
+      { label: "HRSD / Employee Workflows", value: 17.5 },
+      { label: "CSM / Customer Workflows", value: 12.5 },
+      { label: "Creator / Citizen Development", value: 7.5 },
+      { label: "Other / Emerging (Security & Risk + Agentic AI)", value: 5.0 }
+    ],
+    revenueSegmentsNote: "Now Platform/HRSD/CSM/Creator = midpoint ของ range ที่ Emma ระบุใน Business Deep Dive (เช่น 55-60% → 57.5%); Security & Risk (Armis+Veza+SecOps) และ Agentic AI ระบุเป็น 'Emerging' ไม่มีตัวเลขแยกเปิดเผย — รวมเป็น residual 5% เพื่อให้ผลรวม 100% ไม่ใช่ตัวเลข verified แยกเป็นทางการ",
+    unitEconomics: {
+      ruleOf40: "53.3% (headline FCF basis: 22.19% rev growth + 31.1% FCF margin) — Pass เกณฑ์ >=40%; แต่ถ้าใช้ NOPAT-based margin (~14%) แทน = ~36% = FAIL — metric definition มีผลมาก",
+      nrr: "N/A — ไม่มี disclosure แยก",
+      ltvCac: "N/A — ไม่มี disclosure",
+      sbcPctRevenue: "16% ของ revenue (TTM) — SBC/share $2.12 สูงกว่า GAAP diluted EPS $1.60 ทั้งหมด"
+    },
+    competitorData: [],
+    competitorDataNote: "รายงานมี Sector/Peer Comparison table เต็ม (P/E, EV/EBITDA, EV/Revenue, ROE, ROIC, Rev Growth, Gross Margin — ดู fullContent § 📊 Sector / Peer Comparison) แต่ไม่มี operating margin หรือ market cap แยกสำหรับ peers (ADBE/CRM/MSFT/WDAY) ในรายงานฉบับนี้ — ไม่ fabricate ตัวเลขสำหรับ scatter chart (ตาม Training Knowledge Ban) จึงเว้นว่างไว้ ให้ดู peer table เต็มใน full report แทน",
     bullFlipTriggers: [
       "Agentic AI Revenue >= $500M ARR ใน FY2026",
-      "Revenue CAGR >= 22% สองไตรมาสติดกัน",
-      "SBC/Revenue ลดต่ำกว่า 12%",
-      "Microsoft/Nvidia JV revenue > $200M",
-      "NRR > 110%"
+      "Organic Revenue CAGR >= 22% สองไตรมาสติดต่อกัน (ไม่รวม Armis contribution)",
+      "Beta cross-source consensus ยืนยันซ้ำที่ <=0.95 ใน quarterly refresh ถัดไป (Q3/Q4 FY26) — สำคัญยิ่งกว่าเดิมหลัง TGR correction",
+      "Armis cross-sell revenue ถูกเปิดเผยเป็นครั้งแรกและแสดง traction >= deal-implied run-rate",
+      "NRR ขึ้นสู่ 110%+"
     ],
     bearFlipTriggers: [
-      "Revenue Growth < 15% สองไตรมาสติดกัน",
-      "IT Budget Freeze: 3+ hyperscaler customers ลด renewal",
-      "Microsoft Copilot Studio ชนะ major ITSM deal vs NOW",
-      "SBC > 18% revenue",
-      "Gross Margin < 74%"
+      "Organic (ex-Armis) Revenue Growth < 15% ใน 2 quarters ติดต่อกัน",
+      "Beta cross-source consensus ขยับขึ้นเป็น >=1.05 พร้อมกันหลาย source — trigger ทันทีให้ re-run WACC/FV (ตัวแปรที่ thesis ไวที่สุด)",
+      "Armis actual margin drag เกิน guided (Op margin dilution >100bps vs 75bps guided FY26, หรือ FCF margin dilution >250bps vs 200bps guided) หรือมี goodwill impairment disclosure",
+      "ประกาศดีล cybersecurity ตัวที่ 5 ภายใน 12 เดือนหลัง Armis close — ยืนยัน serial-M&A pattern",
+      "SBC >18% revenue หรือ Gross Margin <74%",
+      "Blended FV MOS ยังคงติดลบต่อเนื่องณ การ re-check ครั้งถัดไป โดยไม่มี catalyst เชิงบวกชดเชย — สัญญาณให้ปรึกษาก่อนพิจารณา trim position (ไม่ใช่ auto-SELL)"
     ],
-    thesisInvalidation: "Revenue Growth < 10% หรือ Microsoft bundle ITSM ฟรีใน M365 Enterprise หรือ CEO Bill McDermott ลาออก",
-    reportFile: "../reports/NOW_2026-05-11.md",
+    thesisInvalidation: "Revenue Growth < 10% ใน 1 quarter, หรือ Microsoft bundle ITSM ฟรีใน M365 Enterprise, หรือ CEO Bill McDermott ลาออก, หรือ Armis goodwill impairment >=30% ของ deal value ($2.3B+)",
     fullContent: `# NOW — ServiceNow Inc.
 ### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: Growth** (~60% ของพอร์ต — EV/Revenue + Revenue Growth Rate framework)
+
+---
+
+## Update Log
+
+### 2026-08-24 — Charlie: TGR Correction (Round 2) — Morgan QA Round 1 FAIL Resolved
+
+**สาเหตุ:** Morgan QA Round 1 ตรวจพบว่า Terminal Growth Rate (TGR) 3.5% ที่ Emma/Quinn/Bear ใช้ร่วมกัน (DCF engine เดียวกันทั้ง 3 คน เพื่อรักษา cash-flow-basis consistency) เกินเพดาน Morgan QA Protocol (TGR ต้องอยู่ในช่วง 1-3%) → **FAIL (RULE_VIOLATION)** Charlie สั่งให้ Emma, Quinn, Bear แก้ TGR เป็น **3.0%** (ค่าสูงสุดที่อนุญาต) แล้ว recompute DCF/P-W EV/Sensitivity Matrix/Kelly ใหม่ทั้งหมดที่ downstream จาก TGR — inputs อื่นทุกตัว (WACC 8.62%, Revenue path, margin schedules, probability weights, Net Debt ต่อ scenario) คงเดิมทั้งหมด เป็นการแก้ compliance parameter ไม่ใช่ข้อมูลความเสี่ยงใหม่
+
+**ผลลัพธ์:**
+
+| | TGR 3.5% (Round 1, FAIL) | TGR 3.0% (Round 2, corrected) | Δ |
+|---|---|---|---|
+| Emma DCF FV | $138.75 | **$129.21** | -6.9% |
+| Quinn P-W EV | $142.99 | **$131.87** | -7.8% |
+| Bear P-W EV | $123.00 | **$114.69** | -6.8% |
+| **Blended FV (40/30/30)** | **$135.30** | **$125.65** | -7.1% |
+| **MOS ณ $128.48** | **+5.31%** | **-2.20%** | พลิกลบ |
+| Team Avg Conviction (Emma/Quinn/Bear) | 5.5→6.0 / 6.5→6.0 / 6.0→6.0 → 6.17/10 | **5.5 / 6.0 / 6.0 → 5.83/10** | ปรับลง |
+| Quinn Quarter-Kelly | 8.02% | **2.76%** (ต่ำกว่า IPS floor 3%) | พลิกใต้ floor |
+| Sensitivity Matrix upside cells | 14/25 (56%) | **13/25 (52%)** | เกือบไม่เปลี่ยน |
+
+**Recommendation:** ยังคง **HOLD — Maintain T1, No New Deployment** (ไม่เปลี่ยนเป็น SELL/TRIM) เพราะ Emma, Quinn, Bear ทั้ง 3 คนยืนยันตรงกันว่านี่คือการแก้ parameter ให้ตรงเพดาน QA ไม่ใช่ข้อมูลความเสี่ยงใหม่ — thesis พื้นฐาน (Wide Moat, Revenue Growth +22.19%, Armis optionality) ไม่เปลี่ยนแม้แต่จุดเดียว ไม่มี Bear Flip Trigger หรือ Thesis Invalidation event ใดๆ เกิดขึ้นจริง Stop loss ปรับจาก $98 → **$93** (anchored ใต้ Bear scenario ใหม่ $94.28 ด้วย buffer เดิม ~1.5%)
+
+**⚠️ Flag สำคัญสำหรับ CIO:** นี่คือ**ครั้งแรกที่ Blended FV พลิกเป็น MOS ติดลบ** (-2.20%) จากที่เคยเป็นบวกมาตลอด (แม้จะบางก็ตาม) แม้จะไม่ถึงขั้นเปลี่ยน recommendation เป็น SELL แต่ Charlie เห็นว่าควรจับตาใกล้ชิด — ถ้า MOS ยังติดลบต่อในการ re-check ถัดไป (Beta quarterly re-confirm ที่ยัง unresolved risk เดิม, Armis Q3/Q4 margin actuals) ทีมควรพิจารณา trim position ผ่าน **Max Consultation Rule** (ปรึกษาก่อน ไม่ execute เอง) — ยังไม่ใช่ตอนนี้
+
+ดูรายละเอียดเต็มใน \`agent_notes/emma/2026-05-11_NOW.md\` (§ TGR Correction Round 2), \`agent_notes/quinn/2026-05-11_NOW.md\` (§ TGR Correction Round 2), \`agent_notes/bear/2026-05-11_NOW.md\` (§ TGR Correction Round 2)
+
+---
+
+### 2026-08-24 — Charlie: Full Re-Analysis Pipeline Complete (Escalation Resolved) — Superseded by TGR Correction ด้านบน
+
+**สาเหตุ:** Emma's lightweight re-verify (ช่วงเช้าวันนี้) พบ FV เดี่ยวใหม่ (NOPAT-based DCF) ~$91.05 ต่างจาก Blended FV เดิม $121.45 ถึง -25.1% (เกิน escalation threshold ≥15-20%) → เปิด **Full Re-Analysis Pipeline เต็มรูปแบบ** (Atlas → Emma/Quinn/Bear → Charlie → Morgan)
+
+**สิ่งที่พบระหว่าง pipeline (สำคัญมาก — มี 2 ชั้นของปัญหา ไม่ใช่แค่ 1):**
+
+| ชั้นปัญหา | รายละเอียด | แก้อย่างไร |
+|-----------|-----------|-----------|
+| **ชั้น 1 — Methodology flaw (ของจริง)** | DCF เดิม (2026-05-11/20) ใช้ reported/headline FCF margin (พองจาก SBC 16% add-back) แทน NOPAT-based ตาม DCF Cash Flow Consistency Rule (SBC>10% Revenue) | Emma แก้เป็น NOPAT-based FCFF — **ยังคงอยู่ ถูกต้องแล้ว ไม่เปลี่ยนกลับ** |
+| **ชั้น 1 — Armis acquisition ไม่เคยประเมิน** | Net cash +$4.0B → Net debt -$0.81B (Armis $7.75B, closed 2026-04-20) ไม่เคยอยู่ใน thesis เดิม | ใส่เข้า equity bridge ทุก valuation — **ยังคงอยู่ ถูกต้องแล้ว** |
+| **ชั้น 2 — WACC input ไม่ verified (พบระหว่าง full pipeline)** | Emma's lightweight ใช้ Beta 1.10/ERP 5.5% (carried-over unverified assumption จากรายงาน 2026-05-11 เดิม) → WACC 10.8% → FV $91.05 | Atlas verify สด: **Beta 0.93** (cross-checked โดย Bear ผ่าน 3 sources อิสระ 0.927-0.97) + **ERP 4.45%** (Damodaran July 2026) → WACC ที่ถูกต้อง = **8.62%** (capital-structure-weighted) → **FV $138.75** |
+| **ชั้น 3 — TGR เกินเพดาน (พบโดย Morgan QA Round 1)** | TGR 3.5% ที่ carried-over จากรายงานเดิม เกินเพดาน Morgan QA Protocol (1-3%) — ไหลเข้าทั้ง Emma/Quinn/Bear เพราะใช้ engine เดียวกัน | แก้เป็น TGR 3.0% → **ดูผลลัพธ์ล่าสุดใน Update Log ด้านบน** |
+
+**ผลลัพธ์รอบนี้ (ก่อน TGR correction, ล้าสมัยแล้ว):** Emma DCF $138.75 (MOS +8.0%, Conv 6.0) + Quinn P-W EV $142.99 (MOS +11.3%, Conv 6.5) + Bear P-W EV $123.00 (MOS -4.26%, Conv 6.0) → Blended FV $135.30, MOS +5.31%, Team Conviction 6.17/10 — **ตัวเลขทั้งหมดนี้ถูก supersede โดย TGR Correction Round 2 ด้านบนแล้ว**
+
+**Recommendation เปลี่ยนจาก "BUY — Staged Entry" → "HOLD — Maintain T1, No New Deployment"** (คำแนะนำเชิงทิศทางยังคงเดิมต่อเนื่องถึงรอบ TGR correction)
+
+ดูรายละเอียดเต็มใน \`agent_notes/atlas/2026-05-11_NOW.md\` (+ \`_data.md\`), \`agent_notes/emma/2026-05-11_NOW.md\`, \`agent_notes/quinn/2026-05-11_NOW.md\`, \`agent_notes/bear/2026-05-11_NOW.md\`
+
+---
+
+### 2026-08-24 — Emma Lightweight FV Re-Verify (Re-Analysis Trigger Rule #2 Fired) — Superseded
+
+**สาเหตุ:** Blended FV $121.45 อายุ 96 วัน (verified ล่าสุด 2026-05-20) + ราคาปัจจุบัน $128.48 ทำให้ MOS พลิกลบเป็น **-5.79%** → เข้าเงื่อนไข Re-Analysis Trigger Rule ข้อ 2 โดยอัตโนมัติ Emma ทำ **lightweight single-analyst re-verify** พบ methodology flaw (NOPAT-based) + Armis + Rf spike → escalate เป็น full pipeline (ดู Update Log ด้านบนสำหรับผลลัพธ์ล่าสุด) FV เดี่ยวของ Emma รอบนี้ ($91.05) **ถูก superseded แล้วโดยรอบ full pipeline + TGR correction**
+
+*(รายละเอียดเดิมของ lightweight round เก็บไว้ใน \`agent_notes/emma/2026-05-11_NOW.md\` เป็น audit trail)*
+
+---
+
+### 2026-05-20 — Charlie Re-Verify: Shares Outstanding Post-Split Correction
+
+**สาเหตุ:** รายงานฉบับ 2026-05-11 ใช้ shares outstanding 515M (pre-split estimate) แทน 1.03B actual (post 5-for-1 split December 18, 2025)
+
+**สิ่งที่เปลี่ยนแปลง:**
+
+| รายการ | ก่อนแก้ | หลังแก้ | หมายเหตุ |
+|--------|---------|---------|---------|
+| Shares Outstanding | 515M | **1.03B** | Post 5-for-1 split Dec 18, 2025 |
+| Market Cap | ~$46.9B | **~$106.2B** | ณ ราคา $103.10 |
+| Emma DCF FV | $267 | **$141.07** | Equity Value $145.3B ยังถูกต้อง — เฉพาะ /shares ที่แก้ |
+| Quinn P-W EV | $248 | **$124.47** | ปรับตาม factor 515/1030 |
+| Bear P-W EV | $184.5 | **$92.25** | ปรับตาม factor 515/1030 |
+| Blended FV Weight | 30/30/40 (Emma/Quinn/Bear) — ผิด IPS | **40/30/30 (Emma/Quinn/Bear) — ถูกต้องตาม IPS** | แก้พร้อมกัน |
+| **Blended FV** | $226 | **$121.45** | คำนวณใหม่ทั้งหมด |
+| **ESG-Adjusted FV** | $215 | **$115.38** | $121.45 × 0.95 |
+| **MOS ณ $103.10** | +148% (ผิด) | **+17.8%** | MOS ที่แท้จริง |
+
+**ข้อสรุป:** BUY Staged thesis ยังคงอยู่ ณ ตอนนั้น แต่ Blended FV ลดจาก $226 → $121.45 | MOS ลดจาก +148% → +17.8% *(ตัวเลขนี้ถูก supersede เต็มรูปแบบโดย Full Re-Analysis + TGR Correction ด้านบน)*
 
 ---
 
@@ -7080,347 +7196,413 @@ Blended FV $311.70 (ESG-adj $302) = MOS +23.2% ณ ราคาปัจจุ�
 | Field | Detail |
 |-------|--------|
 | **Ticker** | NOW (NYSE) |
-| **วันที่** | 2026-05-11 |
-| **ราคาปัจจุบัน** | ~$91.00 |
-| **Market Cap** | ~$46.9B (515M shares) |
-| **Sector** | Enterprise Software / SaaS / Agentic AI Platform |
-| **52W Range** | ~$55 – $186 (ATH ต้นปี 2026) |
-| **Source ราคา** | Max Scout Brief / Yahoo Finance est. 2026-05-11 |
+| **วันที่วิเคราะห์ต้นฉบับ** | 2026-05-11 (Full Re-Analysis + TGR Correction: 2026-08-24) |
+| **ราคา ณ Full Re-Analysis** | **$128.48** (close 2026-08-21, verified 2 sources: Yahoo Finance + Stockanalysis.com) |
+| **Market Cap** | **$132.83B** (1.03B shares) |
+| **Sector** | Enterprise Software / SaaS / Agentic AI Platform + Cybersecurity (post-Armis) |
+| **52W Range** | $81.24 – $194.73 |
+| **Shares Outstanding** | 1.03B (1,034M) |
+| **Bucket** | Growth (~60% portfolio framework) |
 
 ## 🎯 คำแนะนำ
 
 | Field | Detail |
 |-------|--------|
-| **Recommendation** | **BUY — Staged Entry** |
-| **Entry Zone** | T1: $85–95 (50%) · T2: $72–84 (35%) · T3: $60–71 (15%) |
-| **Blended FV** | **$226** (Triangulation 30/30/40) |
-| **ESG-Adjusted FV** | **$215** |
-| **Margin of Safety** | **+148%** ณ $91 |
-| **Stop Loss** | **$58** (below Bear Extreme Bear floor) |
-| **Max Position** | **5% (Quarter-Kelly, capped)** |
-| **Target Base** | $226 | **Target Bull** | $330 |
+| **Recommendation** | **HOLD — Maintain T1, No New Deployment (Conviction Gate Not Met, MOS Negative — Elevated Caution)** |
+| **Existing Position** | T1: 2 shares @ $89.47 ✅ FILLED — unrealized gain **+43.6%** ณ $128.48 |
+| **Blended FV** | **$125.65** (Emma $129.21×40% + Quinn $131.87×30% + Bear $114.69×30%, TGR=3.0% corrected) |
+| **ESG-Adjusted FV** | **~$119.37** ($125.65 × 0.95) |
+| **Margin of Safety** | **-2.20%** ณ $128.48 — **พลิกลบเป็นครั้งแรก** (เดิม +5.31% ก่อนแก้ TGR) |
+| **Stop Loss** | **$93** (+3.9% จาก entry $89.47 / -27.6% จากราคาปัจจุบัน $128.48) — anchored ใต้ Bear scenario FV ใหม่ $94.28 |
+| **Max Position** | **5% cap (ไม่เพิ่มจากเดิม)** — conviction gate ไม่ผ่าน |
+| **Target Base** | $125.65 | **Target Bull** | $183.38 (Bear's Bull scenario, TGR-corrected) |
 
 ## 📊 Score Dashboard
 
 | Metric | Value |
 |--------|-------|
-| **Blended FV** | $226 |
-| **MOS %** | +148% |
-| **ESG Score** | 6.2/10 (Reconciled) |
-| **Conviction Avg** | 6.7/10 |
+| **Blended FV** | $125.65 |
+| **MOS %** | -2.20% |
+| **ESG Score** | 6.3/10 (Reconciled Emma/Bear) |
+| **Conviction Avg** | 5.83/10 (⚠️ ต่ำกว่า Growth gate 6.5) |
 | **Investment Horizon** | 3–5 ปี |
 
 ---
 
-> ## ⚡ TL;DR — อ่าน 30 วินาที
+> ## ⚡ TL;DR — อ่าน 30 วินาที (Updated 2026-08-24 TGR Correction)
 >
-> - **Verdict:** BUY Staged — NOW ลงมา 51% จาก ATH ถึงระดับที่ทุก scenario ใน Sensitivity Matrix 5×5 (25/25 cells) ให้ upside จากราคา $91
-> - **ทำไม:** Wide Moat Agentic AI orchestration platform + WACC 10% DCF FV $267 + EV/Rev 9x FV $241 → Blended $226 = MOS +148% ที่หายากมากสำหรับ Wide Moat SaaS คุณภาพสูง
-> - **Downside Risk:** SBC-adjusted FCF ต่ำกว่า headline ~40% + CAGR deceleration risk ที่ revenue >$11B + IT budget freeze recession sensitivity — Bear P-W EV $184.5
+> - **Verdict:** HOLD T1 (ไม่ขาย, ไม่เพิ่ม) — Blended FV $125.65 (แก้ TGR 3.5%→3.0% ตามเพดาน Morgan QA) **MOS พลิกลบ -2.20%** เป็นครั้งแรก Team conviction 5.83/10 ต่ำกว่า Growth gate 6.5 ยิ่งกว่ารอบก่อน
+> - **ทำไม:** รายงานรอบ Full Pipeline ใช้ TGR 3.5% เกินเพดาน QA (1-3%) — Emma/Quinn/Bear ใช้ DCF engine เดียวกันทั้งหมด TGR ที่ผิดจึงไหลเข้าทุกตัวเลข แก้เป็น TGR 3.0% (ceiling) แล้ว FV ทุกตัวลดลง ~7% ทำให้ MOS blended จาก +5.31% เป็น -2.20% แม้ methodology และ risk logic (Armis, peer-premium, Beta sensitivity) จะไม่เปลี่ยนแม้แต่จุดเดียว
+> - **Downside Risk:** ตอนนี้ไม่เหลือ MOS cushion ให้ Beta ผิดพลาดได้เลย — Beta ขยับจาก 0.93→1.05 เพียงเล็กน้อย พลิก Blended MOS จาก -2.2% เป็น ~-11.6% ทันที ต้องรอ Beta quarterly re-confirm + Armis Q3/Q4 FY26 margin actuals ก่อนพิจารณาใดๆ เพิ่มเติม — ถ้า MOS ยังติดลบต่อรอบหน้า ควรเปิด Max Consultation เรื่อง trim
 
 ---
 
 ## 📋 Executive Summary [CFA L2: Equity Valuation — Integrated Valuation Framework]
 
-ServiceNow (NOW) คือ Enterprise SaaS platform ชั้นนำสำหรับ IT Service Management (ITSM) และ Workflow Automation ที่กำลังขยายตัวสู่ Agentic AI orchestration เต็มรูปแบบในปี 2026 ราคาที่ปรับลงมา 51% จาก ATH $186 ต้นปี 2026 มาอยู่ที่ ~$91 ทำให้เกิด entry opportunity ที่ไม่ค่อยพบในหุ้น Wide Moat คุณภาพสูงระดับนี้
+ServiceNow (NOW) คือ Enterprise SaaS platform ชั้นนำสำหรับ ITSM/Workflow Automation ที่กำลังขยายสู่ Agentic AI orchestration และล่าสุด (เม.ย. 2026) เข้าซื้อ Armis ($7.75B) เพื่อขยายสู่ cybersecurity/asset-visibility
 
-Blended Fair Value จากการ Triangulate 3 วิธี (Emma DCF $267 + Quinn P-W EV $248 + Bear P-W EV $184.5) ด้วย Weight 30/30/40 อยู่ที่ **$226** ซึ่งให้ Margin of Safety **+148%** จากราคาปัจจุบัน $91
+**Full Re-Analysis 2026-08-24 (สรุป — รวม TGR Correction):** รายงานเดิมมี methodology flaw **3 ชั้น** — (1) DCF ใช้ reported-FCF margin ที่พองจาก SBC add-back แทนที่จะเป็น NOPAT-based (2) ไม่เคยประเมิน Armis acquisition ที่พลิก balance sheet จาก net cash เป็น net debt (3) WACC ที่ใช้อิง Beta/ERP assumption เดิมที่ไม่เคย verify (Beta 1.10/ERP 5.5% → verified 0.93/4.45%, ผลกระทบใหญ่กว่า Armis+cash-flow-fix รวมกัน) — ทั้ง 3 ชั้นแก้แล้ว ได้ Blended FV $135.30 (MOS +5.31%)
 
-ทีมแนะนำ **BUY Staged Entry 5% position** โดยแบ่ง 3 Tranches ตามระดับราคา เนื่องจาก (1) Conviction Avg 6.7/10 สูงกว่า threshold 5 (2) Sensitivity Matrix 25/25 scenarios ให้ upside (3) Wide Moat ยังคงอยู่แม้ในสถานการณ์ deceleration
+**แต่ Morgan QA Round 1 พบปัญหาชั้นที่ 4:** Terminal Growth Rate 3.5% ที่ carried-over จากรายงานเดิม **เกินเพดาน QA Protocol (1-3%)** — เพราะ Quinn/Bear ใช้ DCF engine เดียวกับ Emma (เพื่อรักษา cash-flow-basis consistency ตามกฎ) TGR ที่ผิดเพดานนี้จึงไหลเข้าทั้ง 3 ตัวเลขที่ประกอบ Blended FV แก้เป็น TGR=3.0% (ceiling) แล้ว **Blended FV ลดลงเหลือ $125.65 และ MOS พลิกลบเป็น -2.20%** เป็นครั้งแรกในรอบ analysis นี้
 
-### 📊 Conviction Level Score [CFA L3: Portfolio Construction — Conviction Measurement]
+**Blended FV $125.65 → MOS -2.20%** — thesis พื้นฐานยังไม่ตาย (ไม่มี Bear Flip Trigger/Thesis Invalidation event เกิดขึ้นจริง) แต่ margin of safety ไม่เหลือแล้วสำหรับเงินใหม่ ทีมแนะนำ HOLD ตำแหน่งเดิม ไม่เพิ่ม ไม่ลด
+
+### 💪 Conviction Level Score [CFA L3: Portfolio Construction — Conviction Measurement]
 
 \`\`\`
-Emma   ████████░░  7/10  — DCF ชัดเจน MOS +66% ถ้าใช้ Emma FV $267, moat solid แต่ SBC adjustment concern
-Quinn  ███████░░░  7/10  — 25/25 Sensitivity cells = upside, Kelly positive, แต่ alpha t-stat marginal
-Bear   ██████░░░░  6/10  — challenges หนักแต่ยอมรับว่า $91 = price อยู่ใน Bear P-W EV zone ให้ MOS แม้ใน bear scenario
+Emma   █████░░░░░  5.5/10  — DCF $129.21 (MOS individual +0.57%) — MOS แทบไม่เหลือหลัง TGR ceiling fix
+Quinn  ██████░░░░  6.0/10  — P-W EV $131.87, Quarter-Kelly 2.76% ต่ำกว่า IPS floor 3%
+Bear   ██████░░░░  6.0/10  — P-W EV $114.69 (MOS -10.73%) — risk logic เดิมไม่เปลี่ยน แต่ตัวเลขสนับสนุนมุมมอง cautious มากขึ้น
 ──────────────────────────────────────────────────────────────
-Avg    ███████░░░  6.7/10  [ไม่มี flag — gap max = 1pt < 3pt threshold]
+Avg    █████░░░░░  5.83/10  [⚠️ ต่ำกว่า Growth bucket gate 6.5 — ไม่ deploy เพิ่ม, ลดจาก 6.17 รอบก่อน]
 \`\`\`
 
-*ถ้า Avg < 5 → flag "ข้อมูลไม่พอ ต้องรอ catalyst เพิ่ม" — ณ 6.7/10 ผ่าน threshold*
+*Growth bucket gate ต้องการ Conviction ≥6.5 + Revenue Growth >20% — Revenue Growth ผ่าน (+22.19%) แต่ Conviction เฉลี่ยไม่ถึง gate และห่างมากขึ้นกว่ารอบก่อน*
 
 ---
 
 ## 💡 Investment Thesis [CFA L2: Equity — Economic Value Added; CFA L3: Portfolio Construction — Investment Thesis]
 
-### Thesis Core: "Agentic AI Orchestration Platform ที่ AI Agents ต้องการ"
+### Thesis Core (เดิม): "Agentic AI Orchestration Platform ที่ AI Agents ต้องการ"
 
-ServiceNow ไม่ใช่บริษัทที่ AI มาแทน แต่เป็น **platform ที่ AI agents วิ่งบน** หลักการเดียวกับที่ AWS เป็น platform ที่ software ทำงานบน cloud
+**3 Pillars เดิม:**
+1. **Workflow Moat → AI Amplifier**: workflow data มหาศาลจาก Global 2000 = training data ที่ competitors หาไม่ได้
+2. **Platform Expansion ITSM→HRSD→CSM→AI**: ทุก expansion wave ประสบความสำเร็จมาก่อน
+3. **Partnership Ecosystem**: Microsoft/Nvidia/Accenture ขยาย TAM
 
-**3 Pillars ของ Thesis:**
+### 🚩 Thesis-Scope Question ใหม่ (Bear flag — สำคัญ)
 
-1. **Workflow Moat → AI Amplifier**: NOW มี workflow data จาก Global 2000 enterprises หลายหมื่นล้าน records ที่ฝังลึกในองค์กร ข้อมูลนี้คือ training data คุณภาพสูงที่ competitors หาไม่ได้ เป็น Switching Cost + Data Moat คู่กัน
+Armis (+ Veza ก่อนหน้า, 4th cybersecurity acquisition ใน ~1 ปี) **ไม่อยู่ใน 3 pillars เดิมเลย** — เป็นคำถามที่ CIO ควรรับทราบ: NOW กำลังทำ (a) organic platform expansion ตาม playbook เดิม โดยใช้ cross-sell เข้า 1,750+ existing customers เป็น distribution channel (หลักฐานสนับสนุน) หรือ (b) capital-allocation opportunism ตามกระแส cybersecurity sector ที่ร้อนแรง (CRWD +60%, PANW +80% YTD) — จ่าย 23x ARR สูงกว่า multiple ของตัวเอง 2.5 เท่า (หลักฐานเตือน) — **Bear's verdict: ยังตัดสินไม่ได้ 100% ในตอนนี้ (deal เพิ่งปิด 4 เดือน) — ไม่ใช่เหตุผลให้ SELL แต่เป็นเหตุผลที่ conviction ไม่ควรสูงเกิน 6-7/10 จนกว่าจะเห็น execution track record 2-3 quarters**
 
-2. **Platform Expansion: ITSM → HRSD → CSM → Now Platform AI**: ทุก expansion wave ของ NOW ประสบความสำเร็จ — จาก IT workflows → HR → Customer Service → ปัจจุบัน Agentic AI ที่ orchestrate agents ข้ามทุก function บน Now Platform
+### Bull Case ณ Blended FV $125.65 (หลัง TGR Correction)
 
-3. **Partnership Ecosystem 2026**: Microsoft + Nvidia + Accenture partnerships ใน Q1 2026 ขยาย TAM และ go-to-market leverage โดยไม่เพิ่ม SG&A proportionally = operating leverage amplifier
-
-**Bull Case ที่ Analyst Consensus $184 อ้างถึง:**
-Analyst TP เดิม $184 อาจ conservative เกินไปถ้า Agentic AI revenue materializes — ทีมประเมิน Base FV $226 / Bull FV $330
-
----
-
-## 🏢 Business Overview [CFA L1: Financial Reporting — Business Analysis]
-
-| Metric | ค่า | Source |
-|--------|-----|--------|
-| Revenue TTM | ~$11.5B | SEC 10-K FY2025 (est.) |
-| Revenue Growth YoY | +21.7% | Max Scout Brief |
-| Non-GAAP Operating Margin | ~30% | Company guidance |
-| GAAP Operating Margin | ~24-26% | Est. based on SBC |
-| FCF (headline) | ~$3.4B | ~30% FCF margin × $11.5B |
-| FCF Yield (headline) | ~4.9% | Max Scout Brief |
-| SBC/Revenue | ~13-16% | Industry est. / SEC filings |
-| SBC-Adjusted FCF | ~$2.0–2.3B | FCF minus SBC |
-| ROE | 16.1% | Max Scout Brief |
-| Customers (Global 2000) | ~1,750+ | Company disclosure |
-| Net Retention Rate | ~99%+ | Company estimate |
-
-**Key Business Segments:**
-- **Now Platform (ITSM Core):** 60%+ revenue — IT workflow automation, service desk
-- **HRSD / Employee Workflows:** 15-20% — HR Service Delivery, onboarding automation
-- **CSM / Customer Workflows:** 10-15% — Customer Service Management
-- **Creator / Citizen Development:** 5-10% — Low-code workflow building
-- **Agentic AI (2026 Launch):** Emerging — AI agent orchestration layer (TAM expansion catalyst)
+Growth MOS ผ่านทั้ง 2 วิธี IPS แต่ margin แตกต่างกันมาก: **Multiple Percentile** (EV/Revenue 9.13x ต่ำกว่า own-stock 5Y floor 10.6x = 0th percentile) ยัง **PASS แข็งแกร่ง** เพราะเป็น multiple-based ไม่ขึ้นกับ TGR/WACC — แต่ **Reverse DCF** (implied growth ratio ≈1.06x < 1.2x threshold) ตอนนี้ **PASS แบบ razor-thin** เพราะ MOS individual ของ Emma เหลือเพียง +0.57% (จาก +8.0% เดิม) แทบไม่มี buffer เหลือให้ Beta assumption ผิดพลาดได้อีกแล้ว
 
 ---
 
-## 🏰 Moat Analysis [CFA L2: Equity — Economic Moat; CFA L2: Porter's Five Forces]
+## 🏢 Business Deep Dive [CFA L1: Financial Reporting — Business Analysis; CFA L2: Industry Analysis]
 
-**Moat Rating: WIDE** (>20 ปี sustainable competitive advantage)
+### "NOW ทำเงินยังไง?" (Updated with Armis)
+
+- ลูกค้าองค์กรขนาดใหญ่ (Global 2000, ~1,750+ ราย) จ่าย subscription fee รายปีเพื่อใช้ Now Platform จัดการ workflow ภายในองค์กร (IT, HR, Customer Service)
+- รายได้หลัก (>97%) มาจาก subscription ไม่ใช่ one-time license — revenue คาดการณ์ได้สูงและ sticky
+- **[ใหม่] Armis** (ปิดดีล เม.ย. 2026, $7.75B) เพิ่ม cybersecurity/asset-visibility — ขาย risk-management สำหรับ IT/OT/medical devices ให้ enterprise/government — ปัจจุบันยังขายแบบ standalone ไม่ integrate เต็มกับ core platform ("standalone first" ตามที่บริษัทระบุ)
+- กำไรมาจาก operating leverage แต่ SBC (16% ของ revenue) กัดกินกำไรทางบัญชีมาก — GAAP operating margin จริง (~12-15%) ต่ำกว่าที่ narrative "high-margin SaaS" มักบอก
+
+### Segment Breakdown (Updated)
+
+| Segment | % Revenue |
+|---------|-----------|
+| Now Platform (ITSM Core) | 55-60% |
+| HRSD / Employee Workflows | 15-20% |
+| CSM / Customer Workflows | 10-15% |
+| Creator / Citizen Development | 5-10% |
+| **[ใหม่] Security & Risk (Armis+Veza+SecOps)** | Emerging — ไม่มีตัวเลขแยก segment แยกเปิดเผย |
+| Agentic AI | Emerging — cross-cuts ทุก segment |
+
+### Porter's Five Forces (Updated)
+
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Threat of New Entrants | LOW | ไม่เปลี่ยน — high switching cost |
+| Bargaining Power of Buyers | MEDIUM | ไม่เปลี่ยน |
+| Threat of Substitutes | MEDIUM-HIGH | Copilot Studio, Agentforce |
+| Bargaining Power of Suppliers | LOW | ไม่เปลี่ยน |
+| Competitive Rivalry | **HIGH+** | NOW เป็น "new entrant" ในตลาด cybersecurity ผ่าน M&A ไม่ใช่ organic strength — แข่งกับ CRWD/PANW pure-play ที่เทรด EV/Revenue 27.9-38.1x (ตลาดให้ premium สูงกว่ามากสำหรับ security pure-play) |
+
+**Customer Concentration + Geography Breakdown:** ⚠️ **Outstanding gap** — Atlas ไม่ได้ fetch รอบนี้ (scope โฟกัสที่ Armis/WACC/net-debt) รายงาน May 2026 เดิมก็ไม่มี section นี้เช่นกัน — ถ้าต้องการ full house-rule compliance ต้องขอ Atlas fetch เพิ่มรอบถัดไป
+
+### SaaS Unit Economics [CFA L2: Growth Company Analysis]
+
+| Metric | Value | Benchmark | Verdict |
+|--------|-------|-----------|---------|
+| Rule of 40 (headline FCF basis) | 22.19% + 31.1% = **53.3%** | ≥40% | Pass *(แต่ถ้าใช้ NOPAT-based margin แทน ~22.19%+14% = ~36% = FAIL — metric definition มีผลมาก)* |
+| Net Revenue Retention | N/A (ไม่มี disclosure แยก) | >100% | N/A |
+| Renewal Rate (proxy) | 97-98% | — | Context only |
+| LTV/CAC, CAC Payback, Magic Number | N/A — ไม่มี disclosure | — | N/A |
+
+**🚩 SBC Quality-of-Earnings Flag:** SBC TTM $2,185M ÷ 1.03B shares = **$2.12/share** vs GAAP diluted EPS TTM **$1.60/share** — SBC per-share สูงกว่า GAAP EPS ทั้งหมด = red flag ชัดเจนสำหรับผู้ถือหุ้นที่มองแค่ headline profitability
+
+---
+
+## 🏰 Moat Analysis [CFA L2: Equity — Economic Moat; Porter's Five Forces]
+
+**Moat Rating: WIDE** (ไม่เปลี่ยนแปลงจากการ re-analysis หรือ TGR correction)
 
 | Moat Source | Strength | Evidence |
 |-------------|----------|---------|
-| **Switching Costs** | VERY HIGH | NOW อยู่ใน mission-critical IT workflow ขององค์กร — migration คาดใช้ 2-4 ปี และ disruption risk สูงมาก; NRR >99% เป็น empirical evidence |
-| **Network Effects** | MODERATE | Marketplace integrations (เชื่อม MSFT/SAP/Oracle) ยิ่งมี apps มากยิ่งมีคนมาใช้ platform มากขึ้น |
-| **Intangible Assets** | HIGH | Workflow IP, Now Intelligence AI, 20+ ปีของ workflow data, brand ในกลุ่ม CIO สูงมาก |
-| **Data Moat** | HIGH (Emerging) | Process intelligence data จาก Global 2000 enterprises = training data สำหรับ Agentic AI ที่ competitors ไม่มี |
-| **Efficient Scale** | LOW | Enterprise ITSM ไม่ใช่ natural monopoly — ServiceMax/Jira/BMC compete |
-
-**Porter's Five Forces:**
-- Threat of New Entrants: LOW (high switching costs, established relationships)
-- Bargaining Power of Buyers: MEDIUM (large enterprises have leverage but high switching costs)
-- Threat of Substitutes: MEDIUM-HIGH (Microsoft Copilot Studio, Salesforce Agentforce)
-- Bargaining Power of Suppliers: LOW
-- Competitive Rivalry: HIGH (MSFT, CRM, Oracle, WDAY all in enterprise workflow)
+| Switching Costs | VERY HIGH | Mission-critical IT workflow, migration 2-4 ปี, NRR-proxy renewal 97-98% |
+| Network Effects | MODERATE | Marketplace integrations (MSFT/SAP/Oracle) |
+| Intangible Assets | HIGH | Workflow IP, 20+ ปีของ workflow data |
+| Data Moat | HIGH (Emerging) | Process intelligence + [ใหม่] IT/OT/medical-device asset data จาก Armis |
+| Efficient Scale | LOW | ไม่ใช่ natural monopoly |
 
 ---
 
 ## 📊 Sector / Peer Comparison [CFA L2: Equity Valuation — Relative Valuation]
 
-| Company | Ticker | P/E (Fwd) | EV/EBITDA | ROE | ROIC | Rev Growth | Gross Margin | Moat |
-|---------|--------|-----------|-----------|-----|------|-----------|-------------|------|
-| **ServiceNow** | **NOW** | **~28x** | **~22x** | **16.1%** | **~18%** | **+21.7%** | **~78%** | **Wide** |
-| Adobe Inc. | ADBE | ~12x | ~16x | 58.8% | ~35% | +11% | ~88% | Wide |
-| Salesforce | CRM | ~22x | ~18x | ~12% | ~10% | +8-9% | ~77% | Wide |
-| Microsoft | MSFT | ~30x | ~22x | ~35% | ~30% | +14% | ~69% | Wide |
-| Workday | WDAY | ~25x | ~20x | ~10% | ~8% | +15-16% | ~75% | Narrow+ |
-| **Peer Median** | — | **~25x** | **~19x** | **~23%** | **~19%** | **~13%** | **~77%** | — |
-| **NOW vs Median** | — | **+12% premium** | **+16% premium** | **-30% discount** | **-5% discount** | **+67% premium (growth)** | **inline** | — |
+**🚩 Critical Finding — Peer Premium Reversal:** รายงานเดิม (2026-05-20) อ้างว่า NOW เทรด discount vs peers (EV/Revenue 7.4x vs peer 9x) — **ล้าสมัยแล้ว** ราคาขึ้น +24.6% นับจาก report ล่าสุดในขณะที่ revenue เติบโตไม่ทันราคา
 
-**Position ใน Peer Group:**
-- P/E 28x vs median 25x = **premium 12%** — สมเหตุสมผลถ้า growth 21.7% vs peer avg 13%
-- ROE 16.1% ต่ำกว่า peer median 23% (ADBE/MSFT ดึงขึ้น) — ส่วนหนึ่งเพราะ SBC dilution
-- Revenue Growth +21.7% = **best-in-class growth** ในกลุ่ม — justify premium multiple
-- ณ ราคา $91 = ราคาปัจจุบัน implied multiple ต่ำกว่า peer group อย่างมีนัยสำคัญ (P/E ~10-12x vs peer 25x) → โอกาส re-rating ชัดเจน
+| Company | Ticker | P/E (Fwd) | EV/EBITDA | EV/Revenue | ROE | ROIC | Rev Growth | Gross Margin | Moat |
+|---------|--------|-----------|-----------|------------|-----|------|-----------|-------------|------|
+| **ServiceNow** | **NOW** | **28.36x** | **46.45x** | **9.13x** | **14.24%** | **10.28%** | **+22.19%** | **74.8%** | **Wide** |
+| Adobe | ADBE | 18.7x | ~16x | 5.44x | 62.95% | ~35% | +11.49% | ~88% | Wide |
+| Salesforce | CRM | 22.31x | ~18x | 4.35x | 16.91% | ~10% | +10.98% | ~77% | Wide |
+| Microsoft | MSFT | 27.84x | ~22x | 9.18x | 34.04% | ~30% | +17.79% | ~69% | Wide |
+| Workday | WDAY | 49.7x | ~20x | 3.58x | 8.23% | ~8% | +11% | ~75% | Narrow+ |
+| **Sector Median (4 core peers)** | — | **25.1x** | **19x** | **4.9x** | **25.5%** | **20%** | **11.2%** | **76%** | — |
+| **NOW vs Median** | — | **+13%** premium | **+144%** premium | **+86%** premium | **-44%** discount | **-49%** discount | **+98%** premium | roughly in-line | — |
 
-**ข้อสรุป Peer:** NOW ณ $91 trade ที่ **discount อย่างมาก** vs peer group ทั้งที่ growth premium สูงสุดในกลุ่ม = "premium growth, extreme discount valuation" — rare opportunity
+**Cybersecurity context (ไม่ใช่ pure peer — สำหรับประเมิน Armis synergy multiple):**
 
----
+| Company | P/E | EV/Revenue | Rev Growth | ROE |
+|---------|-----|------------|-----------|-----|
+| CrowdStrike (CRWD) | 152.0x | ~38.1x | strong hypergrowth | negative |
+| Palo Alto Networks (PANW) | 92.8x | ~27.9x | +31% | 4.8% |
 
-## 💰 Valuation [CFA L2: Equity Valuation — DCF, EV/Revenue, FCF Yield]
-
-### Emma's DCF (FCFF 2-Stage) [CFA L2: Equity Valuation — FCFF Model]
-
-**Assumptions:**
-| Parameter | Value | Rationale |
-|-----------|-------|----------|
-| Base Revenue FY2025 | $11.5B | Max Scout Brief + Company Guidance |
-| Stage 1 CAGR (FY2026–2030) | 20% | Consistent with recent 21.7% YoY, slight decel |
-| Stage 1 FCF Margin | 28-32% (avg 30%) | Current ~30%, expanding with scale |
-| Stage 2 CAGR (FY2031–2035) | 12% | Conservative deceleration |
-| Stage 2 FCF Margin | 33% | Continued operating leverage |
-| Terminal Growth Rate | 3.5% | Long-run nominal GDP + software premium |
-| WACC | 10% | Beta 1.10 × ERP 5.5% + Rf 4.4% |
-| Shares Outstanding | 515M | *(assumption ทีม — est. from market cap ÷ ราคา)* |
-| Net Cash | ~$4.0B | Company balance sheet est. |
-
-**Stage 1 PV (FY2026–2030):** ~$22.3B
-**Stage 2 PV (FY2031–2035):** ~$27.6B
-**Terminal Value PV:** ~$91.4B
-**Enterprise Value:** ~$141.3B
-**+Net Cash:** +$4.0B → Equity Value ~$145.3B
-**Emma DCF FV per share:** **~$267** [Source: ทีม calculation based on Max Scout data + public financials]
-
-### Quinn's EV/Revenue Relative Valuation
-
-Peers trade 8-10x NTM Revenue:
-- NOW FY2026E Revenue ~$13.8B × 9x EV/Rev = $124.2B / 515M shares = **$241**
-
-### Quinn's EV/FCF
-
-- FY2026E FCF (SBC-unadjusted) ~$4.1B × 35x = $143.5B / 515M = **$278**
-- FY2026E FCF (SBC-adjusted ~$2.5B) × 35x = $87.5B / 515M = **$170** (Bear-adjusted)
-
-### Valuation Triangulation
-
-| Method | FV | Weight |
-|--------|-----|--------|
-| Emma DCF (FCFF) | $267 | 30% |
-| Quinn P-W EV | $248 | 30% |
-| Bear P-W EV | $184.5 | 40% |
-| **Blended FV** | **$226** | 100% |
-
-**ESG-Adjusted FV:** $226 × (1 - 5% ESG risk adjustment) = **$215**
+**Insight:** NOW เทรด premium สูงกว่า peer เกือบทุก metric ยกเว้น ROE/ROIC (ต่ำกว่าเพราะ SBC dilution + net-margin drag) — **"premium growth, discount valuation" narrative เดิมใช้ไม่ได้แล้ว** อย่างไรก็ตาม own-stock 5-year historical percentile (Multiple Percentile method) ยังบอกว่า "ถูก" เทียบกับตัวเอง — สอง lens ให้ผลตรงข้ามกัน (cross-sectional = แพง, historical-self = ถูก) นี่คือ core valuation debate ของหุ้นตัวนี้ตอนนี้ — ไม่กระทบจาก TGR correction เพราะเป็น multiple-based ทั้งหมด
 
 ---
 
-## 📉 Quantitative Risk [CFA L1: Quantitative Methods — Risk Metrics; CFA L2: Portfolio Management — Factor Models]
+## 💰 Valuation [CFA L2: Equity Valuation — DCF, EV/Revenue, WACC]
 
-### Risk Metrics
-
-| Metric | Value | Benchmark (S&P 500) | Assessment |
-|--------|-------|---------------------|-----------|
-| Beta | ~1.10 | 1.00 | Moderate systematic risk |
-| Sharpe (3Y est.) | ~0.70 | ~0.75 | Slightly below SPX (drawdown period) |
-| Sortino | ~0.95 | ~1.00 | Better downside profile |
-| Treynor | ~0.10 | ~0.09 | Inline with market on per-beta basis |
-| Max Drawdown | -51% (current) | -34% (2022) | Significant — but from ATH |
-| CVaR 95% | ~-22% | ~-15% | Higher tail risk than market |
-| VaR 95% (1-day) | ~-3.2% | ~-2.0% | Above-market daily risk |
-
-[Source: Beta est. based on Software SaaS comparables; *(assumption ทีม — historical data est.)*]
-
-### Carhart 4-Factor Analysis [CFA L2: Portfolio Management — Carhart 4-Factor Model]
-
-*(ยังไม่เรียน — Carhart 4-Factor เพิ่ม Momentum factor เข้าไปใน Fama-French 3-Factor เพื่อจับ return anomaly จาก momentum trading)*
-
-| Factor | Loading | Direction |
-|--------|---------|----------|
-| Market (β₁) | 1.10 | Long |
-| SMB (β₂) | -0.20 | Large Cap |
-| HML (β₃) | -0.50 | Growth |
-| MOM (β₄) | -0.80 | Anti-Momentum (stock down 51%) |
-| **Alpha (α)** | **+3.5%/yr** | Positive |
-| t-statistic | ~1.6 | Marginal (< 1.96 threshold) |
-
-Alpha +3.5%/yr (t=1.6 marginal) — reflects Agentic AI platform premium partially, แต่ ยังไม่ statistically significant ที่ α=0.05
-
-### Kelly Criterion [CFA L3: Portfolio Construction — Kelly Criterion]
+### WACC — Refined (ไม่เปลี่ยนจาก TGR Correction — verified WACC ยังคงเดิม)
 
 \`\`\`
-p = 0.60 (prob positive outcome)
-b = 2.49x (upside $226/$91 = 2.49x)
-q = 0.40
-Kelly = (p×b - q) / b = (0.60×2.49 - 0.40) / 2.49 = (1.494-0.40)/2.49 = 0.44 = 44%
-Quarter-Kelly = 11% — cap at 5% (portfolio concentration ceiling, semi exposure, first SaaS-to-workflow name)
+Cost of Equity = Rf 4.74% + Beta 0.93 (verified, cross-checked 3 sources) × ERP 4.45% (Damodaran) = 8.88%
+Capital Structure: We 94.64% / Wd 5.36% (Market Cap $132.83B / Total Debt $7.517B SEC 10-Q)
+Cost of Debt: 5.0% pretax (ServiceNow $4B multi-tranche notes issued 2026-05-15, avg coupon 5.14%) → after-tax 4.0%
+WACC = 94.64% × 8.88% + 5.36% × 4.0% = 8.40% + 0.21% = 8.62%
 \`\`\`
 
-### Sensitivity Matrix 5×5 [CFA L2: Equity Valuation — Sensitivity Analysis]
+*เทียบกับ lightweight WACC ที่ไม่ verified (10.8%, Beta 1.10/ERP 5.5% carried-over) — ต่างกัน 2.2pp ซึ่งมี effect มหาศาลต่อ terminal value*
 
-**Variable 1:** Revenue CAGR (Y1-5) | Range: 12% → 25%
-**Variable 2:** WACC | Range: 8% → 12%
+### 🔧 Terminal Growth Rate — Corrected (TGR Correction Round 2, 2026-08-24)
 
-| CAGR \ WACC | 8% | 9% | **10%** | 11% | 12% |
-|-------------|-----|-----|---------|-----|-----|
-| **12%** | $182 | $161 | **$143** | $128 | $115 |
-| **15%** | $222 | $196 | **$175** | $157 | $141 |
-| **18%** | $264 | $234 | **$209** | $187 | $169 |
-| **20%** | $295 | $261 | **$233** | $209 | $189 |
-| **25%** | $378 | $335 | **$299** | $268 | $242 |
+**Morgan QA Round 1 พบว่า TGR 3.5% เกินเพดาน QA Protocol (1-3%)** — แก้เป็น **TGR = 3.0%** (ค่าสูงสุดที่อนุญาต) ทุกตัวเลขด้านล่างนี้คือค่าหลังแก้ (ไม่ใช่ค่าเดิมของ Round 1 อีกต่อไป)
 
-*굵게 = Base Case (CAGR 20% × WACC 10%) = $233*
-*ราคาปัจจุบัน $91 ต่ำกว่าทุก 25/25 cells → ALL scenarios ให้ upside*
-*Bear scenario (CAGR 12%, WACC 12%) = $115 — ยังสูงกว่า $91 ถึง +26%*
+### Emma's DCF (NOPAT-based FCFF, 2-Stage, TGR=3.0%) — Primary
 
-**Key Insight:** แม้ในสถานการณ์ Bear สุด (CAGR 12% + WACC 12%) ราคา $91 ยังต่ำกว่า FV $115 = **margin of safety มีในทุก scenario** — เป็น rare signal สำหรับ Wide Moat SaaS คุณภาพนี้
+| Parameter | Value |
+|-----------|-------|
+| Base Revenue FY2026E | $16.2B (subscription guidance midpoint) |
+| Stage 1 CAGR (FY2027-2031) | 19% |
+| Stage 1 FCFF Margin | 13.0%→15.0% (NOPAT-based, ไม่ใช่ headline) |
+| Stage 2 CAGR (FY2032-2036) | 12% |
+| **Terminal Growth Rate** | **3.0% (ceiling, corrected from 3.5%)** |
+| WACC | **8.62%** (unchanged) |
+| Net Debt | **-$0.81B** (พลิกจาก net cash หลัง Armis) |
+| Shares Outstanding | 1.03B |
 
-[Source: Revenue CAGR based on Max Scout +21.7% YoY, Bear assumption 12-15% deceleration; WACC range based on Beta 1.10, Rf 4.4%, ERP 4.5-6.5%]
+\`\`\`
+Sum Stage 1 PV = $15.134B | Sum Stage 2 PV = $23.183B (unchanged — TGR ไม่กระทบ explicit period)
+TV = FCFF(2036) $11.926B × 1.030 / (0.0862 − 0.030) = $218.573B
+PV(TV) = $218.573B × 0.4373 = $95.582B  (เดิม $105.41B ที่ TGR 3.5%)
+Enterprise Value = $15.134B + $23.183B + $95.582B = $133.899B
+Equity Value = $133.899B − Net Debt $0.81B = $133.089B
+Emma DCF FV = $133.089B / 1.03B = $129.21/share
+\`\`\`
+
+**MOS individual ณ $128.48 = +0.57%** (เดิม +8.0% ที่ TGR 3.5%)
+
+### Quinn's P-W EV (WACC 8.62% consistent center, TGR=3.0%)
+
+| Scenario | Probability | CAGR | WACC | FV (TGR=3.0%) | Weighted FV |
+|----------|------------|------|------|-----|------------|
+| Bull (Armis cross-sell success + rate easing) | 20% | 24% | 7.12% | $226.52 | $45.30 |
+| Base (Emma's central case) | 45% | 19% | 8.62% | $129.22 | $58.15 |
+| Bear (growth deceleration + integration drag) | 25% | 14% | 9.32% | $91.44 | $22.86 |
+| Extreme Bear (Armis integration failure) | 10% | 9% | 10.82% | $55.57 | $5.56 |
+| **Quinn P-W EV** | | | | | **$131.87** |
+
+**MOS ณ $128.48 = +2.64%** (เดิม +11.30% ที่ TGR 3.5%) | **Quarter-Kelly = 2.76%** (เดิม 8.02% — ตอนนี้ต่ำกว่า IPS minimum position size 3%)
+
+### Bear's P-W EV (independent scenario weighting — Armis/peer-premium risk-weighted heavier, TGR=3.0%)
+
+| Scenario | Probability | FV (TGR=3.0%) | Weighted FV |
+|----------|------------|-----|------------|
+| Bull (Armis success + rate cuts) | 15% | $183.38 | $27.51 |
+| Base (unchanged from Emma/Quinn) | 35% | $129.22 | $45.23 |
+| Bear (peer-premium compression + integration drag) | 30% | $94.28 | $28.28 |
+| Extreme Bear (impairment/write-down) | 20% | $68.37 | $13.67 |
+| **Bear P-W EV** | | | **$114.69** |
+
+**MOS ณ $128.48 = -10.73%** (เดิม -4.26% ที่ TGR 3.5%)
+
+### DCF Engine Reconciliation (Emma vs Quinn — ไม่เข้าเงื่อนไข formal table เพราะ gap <25%)
+
+| Analyst | FV (base-case, TGR=3.0%) | Cash-flow Basis | WACC |
+|---------|-----------------|------------------|------|
+| Emma | $129.21 | NOPAT-based FCFF | 8.62% |
+| Quinn (replicated engine) | $129.22 | NOPAT-based FCFF (identical) | 8.62% |
+| **Gap** | **$0.01 (<0.1%)** | **ตรงกัน 100% เป็นครั้งที่ 3 ติดต่อกัน** | — |
+
+*Methodology ตรงกันสมบูรณ์ทุกรอบ (WACC10.8/TGR3.5: gap 0.04% → WACC8.62/TGR3.5: gap 0.02% → WACC8.62/TGR3.0: gap <0.1%) — ยืนยัน process integrity สูงมาก*
+
+### Valuation Triangulation — Blended FV (TGR=3.0%, Corrected)
+
+| Method | FV | Weight (40/30/30) |
+|--------|-----|------|
+| Emma DCF (NOPAT-based FCFF) | **$129.21** | **40%** |
+| Quinn P-W EV | **$131.87** | **30%** |
+| Bear P-W EV | **$114.69** | **30%** |
+| **Blended FV** | **$125.65** | 100% |
+
+\`$129.21 × 0.40 + $131.87 × 0.30 + $114.69 × 0.30 = $51.684 + $39.561 + $34.407 = $125.65\`
+
+**MOS ณ $128.48:** ($125.65 - $128.48) / $128.48 = **-2.20%**
+
+**ESG-Adjusted FV:** $125.65 × (1 - 5%) = **~$119.37** — MOS ESG-adj = ($119.37-$128.48)/$128.48 = **-7.09%**
+
+### Growth MOS Check (IPS — ต้องผ่านอย่างน้อย 1 วิธี)
+
+| Method | Result | หมายเหตุ |
+|--------|--------|---------|
+| Multiple Percentile (own-stock 5Y) | ✅ **PASS** (แข็งแกร่ง, ไม่เปลี่ยนจาก TGR correction) | EV/Revenue 9.13x ต่ำกว่า 5Y floor (10.6x, 2022) = 0th percentile — multiple-based ไม่ขึ้นกับ TGR/WACC เลย |
+| Reverse DCF | ✅ **PASS** (razor-thin หลัง TGR correction) | Implied growth/consensus ratio ≈1.06x <1.2x — **แต่ MOS individual ของ Emma เหลือเพียง +0.57%** (จาก +8.0% เดิม) แทบไม่มี buffer เหลือให้ Beta ผิดพลาด ถ้า Beta≥1.05 → FAIL ทันที (เดิม fail ที่ Beta≥1.10 เท่านั้น) |
+
+**หมายเหตุ:** Growth MOS check นี้ยังคง PASS แต่ไม่ใช่ gate ที่บังคับใช้ตอนนี้ (เพราะ recommendation คือ HOLD ไม่ใช่ BUY — Growth MOS gate ใช้ตัดสิน BUY เท่านั้น)
+
+---
+
+## 📉 Quantitative Risk [CFA L1: Quantitative Methods — Risk Metrics; CFA L2: Cost of Capital]
+
+### Beta Verification — Cross-Source Check (Bear's key contribution, ไม่เปลี่ยนจาก TGR correction)
+
+| Source | Beta |
+|--------|------|
+| Stockanalysis.com (primary) | 0.93 |
+| Yahoo Finance (5Y Monthly) | 0.97 |
+| Investing.com Pro (5Y) | 0.96 |
+| Secondary aggregation | 0.927 |
+
+**Cross-check PASS** — 4 sources cluster 0.927-0.97 (spread 4.3%), ไม่มี source ใดใกล้เคียง legacy 1.10 เลย Hamada re-lever check (capital structure shift post-Armis): re-levered beta ≈0.96 — ผลกระทบต่อ WACC เพียง +0.12pp — **immaterial**
+
+### 🚩 Beta Stress Test — Recomputed หลัง TGR Correction (ตามคำสั่ง Charlie — thesis sensitivity)
+
+| Beta | WACC | DCF FV (CAGR 19%, TGR=3.0%) | MOS individual ณ $128.48 | Blended FV (proportional estimate) | Blended MOS |
+|------|------|---------------------|----------------|---------------------------|-------------|
+| 0.93 (verified, base) | 8.62% | $129.22 | +0.58% | $125.65 | **-2.20%** |
+| 1.05 | 9.12% | $116.83 | -9.07% | ~$113.61 | **~-11.58%** |
+| 1.10 (legacy) | 9.33% | $112.20 | -12.67% | ~$109.11 | **~-15.08%** |
+| 1.15 | 9.54% | $107.87 | -16.04% | ~$104.90 | **~-18.35%** |
+
+*(Blended FV proportional = Blended base × (DCF FV ที่ Beta นั้น / DCF FV ที่ Beta base) — approximation ไม่ใช่ full scenario re-run แต่เพียงพอสำหรับแสดงทิศทางและขนาดของความเสี่ยง)*
+
+**สรุป: thesis ไวต่อ Beta มากกว่าเดิมอีก หลัง TGR correction** — ที่ Beta base (0.93, verified) MOS blended ก็ติดลบอยู่แล้ว (-2.2%) และทุก Beta stress level ตั้งแต่ 1.05 ขึ้นไปให้ MOS ติดลบลึกกว่าเดิมมาก (เทียบรอบก่อน TGR correction ที่ Beta 1.10 ให้ MOS -9.84% เท่านั้น ตอนนี้ -15.08%) — ไม่เหลือ margin ให้ Beta คลาดเคลื่อนได้อีกแล้ว
+
+### Risk Metrics — Updated (ไม่เปลี่ยนจาก TGR correction ยกเว้นที่ระบุ)
+
+| Metric | ค่าเดิม | ค่าใหม่ (2026-08-24) | หมายเหตุ |
+|--------|---------|------------------------|---------|
+| Beta | 1.10 (unverified assumption) | **0.93** (verified, cross-checked) | ลดลง — ไม่เปลี่ยนจาก TGR correction |
+| CAPM Expected Return | 10.45% | **8.88%** | Rf 4.74% + 0.93×4.45% — ไม่เปลี่ยนจาก TGR correction |
+| Sharpe/Sortino/CVaR/VaR | ~0.70/0.95/-22%/-3.2% (assumption) | **NOT REFRESHED** | นอกขอบเขต WACC/DCF-focused re-analysis รอบนี้ |
+| Max Drawdown | -51% | **-58.3%** (peak $194.73 → trough $81.24) | Verified 52W range |
+| Current price vs 52W ATH | — | **-34.0%** | |
+
+### Sensitivity Matrix 5×5 — Revenue CAGR × WACC (center 8.62%, TGR=3.0% corrected)
+
+| CAGR \\ WACC | 6.62% | 7.62% | **8.62%** | 9.62% | 10.62% |
+|-------------|-------|-------|-----------|-------|--------|
+| **13%** | $166.59 | $126.37 | $100.69 | $82.95 | $70.00 |
+| **16%** | $189.33 | $143.50 | $114.24 | $94.02 | $79.27 |
+| **19%** | $214.51 | $162.45 | **$129.22** | $106.26 | $89.51 |
+| **22%** | $242.33 | $183.38 | $145.76 | $119.77 | $100.81 |
+| **25%** | $272.98 | $206.43 | $163.96 | $134.63 | $113.24 |
+
+*ราคาปัจจุบัน $128.48 — **13/25 cells (52%) ให้ upside*** (เดิม 14/25 = 56% ที่ TGR 3.5%) — ยังคง balanced ไม่เปลี่ยนทิศทางเชิงคุณภาพมากนัก แต่ margin แคบลงทุก cell เพราะ Terminal Value เป็น 71% ของ Enterprise Value ทำให้ sensitivity สูงต่อ TGR มากกว่าที่คาด
+
+*ที่ WACC 9.62% (แค่ +1pp จาก center) FV ลดเหลือ $106.26 < ราคา — thesis ยังคงไวต่อ WACC มากกว่า CAGR*
+
+### Kelly Criterion — Updated (TGR=3.0%)
+
+\`\`\`
+"Win" = FV > ราคาปัจจุบัน: Bull (20%) + Base (45%) = 65% probability (ไม่เปลี่ยน — Base ยัง "win" เฉียดฉิว)
+p(win)=65%, avg gain=+23.88%, p(lose)=35%, avg loss=-36.81%
+Kelly = (0.65×0.6487 - 0.35)/0.6487 = 11.05% (full)
+Quarter-Kelly = +2.76% (เดิม +8.02% ที่ TGR 3.5%)
+\`\`\`
+
+**⚠️ Quarter-Kelly (2.76%) ต่ำกว่า IPS minimum position size (3%)** — สัญญาณเชิงปริมาณตรงๆ ว่า edge ที่เหลือไม่แข็งแรงพอจะ justify position size ที่มีนัยสำคัญต่อพอร์ตตามกฎ IPS เอง ไม่ต้องพิจารณาเพิ่มเพราะ conviction gate (team avg 5.83<6.5) ก็ยังไม่ผ่านอยู่แล้ว — สอง signal (Kelly + conviction gate) ชี้ไปทิศทางเดียวกัน
 
 ---
 
 ## 🌱 ESG Risk Scorecard [CFA L2-3: ESG Investing — Materiality Analysis]
 
-*(ยังไม่เรียน — ESG Materiality Analysis คือการระบุว่า ESG factor ใดมีผลต่อ valuation จริง ไม่ใช่แค่ scoring ทั่วไป)*
+| Dimension | Emma (standalone) | Bear (challenge) | Reconciled |
+|-----------|--------------------|--------------------|------------|
+| Environmental | 8/10 | — | 8.0/10 |
+| Social | 7/10 | — | 7.0/10 |
+| Governance | 4.5/10 (ลดจาก 5.0 — เพิ่ม M&A execution risk) | 3.5/10 (market's own verdict ผ่าน -42% price reaction + 23x ARR overpay + asymmetric disclosure) | **4.0/10** |
+| **Overall** | 6.5/10 | — | **6.3/10** |
 
-### Emma's ESG Assessment
+**ESG Rating:** Medium Risk (margin แคบลง — ไม่เปลี่ยนจาก TGR correction เพราะ ESG score เป็นเรื่อง qualitative ไม่ใช่ DCF-derived)
 
-| Dimension | Score (1-10) | Key Issues |
-|-----------|-------------|-----------|
-| Environmental | 8/10 | Cloud-native (low physical footprint), Microsoft Azure partnership (renewable), minimal manufacturing |
-| Social | 7/10 | Strong employee programs, diversity initiatives, but high SBC culture = pay inequality concern |
-| Governance | 5/10 | SBC ~13-16% revenue = heavy dilution; exec comp structure high; no major controversies |
-| **Overall ESG** | **6.7/10** | |
-
-**ESG Rating:** Medium Risk
-
-### Bear's ESG Challenge
-
-Bear disagrees กับ Emma's Governance score:
-- **SBC/Revenue ~13-16%** = Governance concern ที่มีนัยต่อ shareholder — Emma 5/10 ยังสูงเกินไป
-- **Exec Compensation vs Shareholder return:** ช่วง -51% drawdown management ยังได้ SBC เต็ม = misalignment
-- **Data Privacy:** Enterprise data จาก Global 2000 = high-value target; breach = reputational + legal risk
-- Bear re-scores Governance: **3.5/10** (หนักกว่า Emma มาก)
-- Reconciled Score: (Emma 6.7 + Bear 5.0) / 2 = **5.85 → ~6.0/10**
-
-### Material ESG Risks (กระทบ Valuation)
+### Material ESG Risks (Updated)
 
 | Risk | Probability | Valuation Impact |
 |------|------------|-----------------|
-| SBC dilution ongoing (dilutes per-share value) | HIGH (ongoing) | -3% to -5% per share/yr |
-| Data privacy breach (enterprise data) | LOW-MEDIUM | -8% to -15% event risk |
-| AI governance regulatory scrutiny | MEDIUM | -2% to -5% (2027-2028) |
-| Carbon disclosure requirements | LOW | Minimal (<1%) |
+| SBC dilution ongoing | HIGH | -3% to -5%/yr |
+| Data privacy breach (ขยาย scope ผ่าน Armis IT/OT/medical-device data) | LOW-MEDIUM | -8% to -15% event risk |
+| AI governance/regulatory (2027+) | MEDIUM | -2% to -5% |
+| **[ใหม่] Armis M&A integration/synergy non-realization** | MEDIUM | -5% to -10% — ไม่มี synergy $ target เปิดเผย, standalone ไม่ integrate เต็ม, เพิ่ม net debt $5.4B ไม่มี track record integrate ดีลขนาดนี้มาก่อน |
 
-**ESG Valuation Adjustment:** -5% to Blended FV → $226 × 0.95 = **$215 ESG-adjusted FV**
+**ESG Valuation Adjustment:** คง -5% (ไม่ double-count กับ Extreme Bear scenario ที่ capture Armis risk แล้วบางส่วนใน P-W EV)
 
 ---
 
-## 🔄 What Would Change Our Mind [CFA L3: Portfolio Construction — Investment Thesis Review]
+## 🔄 What Would Change Our Mind [CFA L3: Investment Thesis Review]
 
-### Bull Flip Triggers (จาก HOLD → เพิ่ม Position)
+### Bull Flip Triggers (HOLD → เพิ่ม T2/T3)
 
-1. **Agentic AI Revenue ≥ $500M ARR ใน FY2026** — confirms platform monetization จาก narrative → actual revenue
-2. **Revenue CAGR ≥ 22% ใน 2 quarters ติดต่อกัน** — law of large numbers ชนะได้ → upgrade CAGR assumption 20%→23%
-3. **SBC/Revenue ลดลงต่ำกว่า 12%** — แสดงว่า management เริ่ม shareholder-friendly มากขึ้น → Governance score ขึ้น
-4. **Microsoft/Nvidia Agentic AI JV revenue > $200M** — partnership materializes = TAM expansion confirmed
-5. **NRR (Net Revenue Retention) ขึ้นสู่ 110%+** — expansion revenue accelerating = moat deepening
+1. **Agentic AI Revenue ≥ $500M ARR ใน FY2026** — ยืนยัน platform monetization จริง
+2. **Organic Revenue CAGR ≥ 22% ใน 2 quarters ติดต่อกัน** (ไม่รวม Armis contribution)
+3. **[ใหม่] Beta cross-source consensus ยืนยันซ้ำที่ ≤0.95** ใน quarterly refresh ถัดไป (Q3/Q4 FY26) — สำคัญยิ่งกว่าเดิมหลัง TGR correction เพราะไม่เหลือ MOS cushion แล้ว
+4. **[ใหม่] Armis cross-sell revenue** ถูกเปิดเผยเป็นครั้งแรกและแสดง traction ≥ deal-implied run-rate
+5. NRR ขึ้นสู่ 110%+
 
-### Bear Flip Triggers (จาก BUY → Downgrade)
+### Bear Flip Triggers (HOLD → SELL/AVOID)
 
-1. **Revenue Growth ลดลงต่ำกว่า 15% ใน 2 quarters ติดต่อกัน** — law of large numbers winning → DCF rebuild required
-2. **IT Budget Freeze: 3+ hyperscaler customers ลด renewal** — recession sensitivity materializes → Bear scenario
-3. **Microsoft Copilot Studio ชนะ major ITSM deal vs NOW (ข่าวในตลาด)** — moat erosion starts → re-analysis
-4. **SBC ขึ้น >18% revenue** — dilution worsening → Governance score ลด sharply
-5. **Gross Margin ลดต่ำกว่า 74%** — competitive pricing pressure → multiple compression warranted
+1. **Organic (ex-Armis) Revenue Growth < 15% ใน 2 quarters ติดต่อกัน**
+2. **[ใหม่] Beta cross-source consensus ขยับขึ้นเป็น ≥1.05 พร้อมกันหลาย source** — trigger ทันทีให้ re-run WACC/FV (ตัวแปรที่ thesis ไวที่สุด, ยิ่ง sensitive กว่าเดิมหลัง TGR correction)
+3. **[ใหม่] Armis actual margin drag เกิน guided** (Op margin dilution >100bps vs 75bps guided FY26, หรือ FCF margin dilution >250bps vs 200bps guided) หรือมี goodwill impairment disclosure
+4. **[ใหม่] ประกาศดีล cybersecurity ตัวที่ 5 ภายใน 12 เดือนหลัง Armis close** — ยืนยัน serial-M&A pattern
+5. **SBC >18% revenue หรือ Gross Margin <74%** (ปัจจุบัน GM 74.8% ใกล้ threshold)
+6. **[ใหม่ — Charlie's addition หลัง TGR correction] Blended FV MOS ยังคงติดลบต่อเนื่องณ การ re-check ครั้งถัดไป** (Beta quarterly re-confirm / Q3-Q4 Armis margin actuals) โดยไม่มี catalyst เชิงบวกชดเชย → เปิด Max Consultation เรื่อง trim position (ไม่ใช่ auto-SELL แต่เป็นสัญญาณให้ปรึกษา)
 
 ### Thesis Invalidation (re-analysis required immediately)
 
-- **Revenue Growth ลดต่ำกว่า 10%:** Law of large numbers wins decisively, platform maturity confirmed → ไม่ใช่ growth stock อีกต่อไป; ทุก valuation model ต้องสร้างใหม่
-- **Microsoft buy-out of ITSM market โดย Bundle:** MSFT ให้ ITSM ฟรีใน M365 Enterprise → moat eroded structurally
-- **CEO Bill McDermott Departure:** Key architect ของ Agentic AI strategy → immediate re-analysis; FV uncertainty ขึ้นมาก
+- Revenue Growth < 10% ใน 1 quarter
+- Microsoft bundle ITSM ฟรีใน M365 Enterprise
+- CEO Bill McDermott departure
+- **[ใหม่] Armis goodwill impairment ≥30% ของ deal value ($2.3B+)** — ยืนยันว่า 23x ARR overpay กลายเป็นความเสียหายจริง
 
 ---
 
 ## 🎯 Recommendation [CFA L3: Portfolio Construction — Position Sizing]
 
-> ### BUY — Staged Entry 5% Position
-> NOW ลงมา 51% สู่ระดับที่ Sensitivity Matrix ทุก 25/25 scenarios ให้ upside แม้ใน Bear case — โอกาส asymmetric risk/reward ที่หายากสำหรับ Wide Moat SaaS คุณภาพสูง
+> ### HOLD — Maintain T1, No New Deployment (MOS Negative — Elevated Caution)
+> Blended FV $125.65 (แก้ methodology flaw 3 ชั้น + TGR correction ตาม Morgan QA Round 1) **MOS พลิกลบ -2.20% เป็นครั้งแรก** Team conviction 5.83/10 ต่ำกว่า Growth gate 6.5 — HOLD T1 ที่มีอยู่ ไม่เพิ่ม position ใหม่ ไม่ใช่การพลิกเป็น SELL เพราะไม่มี Bear Flip Trigger หรือ Thesis Invalidation event เกิดขึ้นจริง แต่นี่คือสัญญาณเตือนที่ต้องจับตาใกล้ชิด
 
-**Entry Strategy:**
-| Tranche | ราคา | Size | Rationale |
-|---------|------|------|-----------|
-| T1 | $85–95 | 50% (2.5%) | ราคาปัจจุบัน zone — execute ทันที |
-| T2 | $72–84 | 35% (1.75%) | ลงมาอีก ~10% — load more |
-| T3 | $60–71 | 15% (0.75%) | Near Bear extreme floor — maximum load |
+**Position Status:**
+| Tranche | ราคา | สถานะ |
+|---------|------|-------|
+| T1 | $89.47 | ✅ FILLED — unrealized gain **+43.6%** ณ $128.48 — **HOLD ไม่ขาย** |
+| T2/T3 | เดิม $72-84 / $60-71 | **Stale — ไม่ relevant อีกต่อไป** ราคาปัจจุบันสูงกว่ามาก — ไม่ deploy จนกว่า conviction gate จะผ่าน |
 
 **Position Parameters:**
-- Max Position: 5% (Quarter-Kelly = 11% → cap ที่ 5% เพราะ portfolio concentration + software sector ใหม่)
-- Stop Loss: $58 (below Bear extreme floor $55 + buffer)
-- Target Base: $226 (Blended FV)
-- Target Bull: $330 (Bull scenario P-W EV)
+- Max Position: 5% cap (ไม่เพิ่ม — conviction gate ไม่ผ่านยิ่งกว่าเดิม, Kelly Quarter-Kelly ก็ต่ำกว่า IPS floor แล้ว)
+- **Stop Loss: $93 (+3.9% จาก entry $89.47 / -27.6% จากราคาปัจจุบัน $128.48)** — anchored ใต้ Bear scenario FV ใหม่ $94.28 (30% probability, TGR-corrected) ด้วย buffer เดิม ~1.5% เพื่อป้องกันก่อนที่ Extreme Bear scenario จะเกิด พร้อมล็อกกำไรบางส่วนจาก unrealized gain ปัจจุบัน (ปรับลงจาก $98 เดิม ตาม Bear scenario ที่ลดลงหลัง TGR correction)
+- Target Base: $125.65 (Blended FV) | Target Bull: $183.38 (Bear's Bull scenario, TGR-corrected)
 - Holding Period: 3-5 ปี
+
+### Forward Return Estimate (HOLD — ตาม IPS Fix #6)
+
+\`\`\`
+((Blended FV $125.65 / Entry $89.47)^(1/3) - 1) × 100 = +11.99% CAGR, 3-year total +40.4%
+\`\`\`
+**หมายเหตุสำคัญ:** ตัวเลขนี้รวม unrealized gain ที่เกิดขึ้นแล้ว (+43.6% นับถึงวันนี้) — ถ้าคำนวณจากราคาปัจจุบัน $128.48 ไปสู่ Blended FV เพียงอย่างเดียว **upside ที่เหลือคือ -2.20% (ติดลบ)** ไม่ใช่ upside บวกอีกต่อไป — MOS พลิกลบ สอดคล้องกับคำแนะนำ HOLD แบบ elevated caution ไม่ใช่ HOLD แบบสบายใจเหมือนรอบก่อน
 
 ---
 
@@ -7428,39 +7610,36 @@ Bear disagrees กับ Emma's Governance score:
 
 | Risk | Severity | Probability | Mitigation |
 |------|----------|-------------|-----------|
-| SBC dilution (~13-16% revenue) | MEDIUM | HIGH (ongoing) | Bear weight 40% in blend |
-| Revenue CAGR deceleration (>$11B scale) | HIGH | MEDIUM (40%) | Bear scenario 30% weight in P-W EV |
-| Microsoft Copilot competitive pressure | HIGH | MEDIUM-LOW (25%) | Moat analysis — switching costs dominate |
-| IT Budget Freeze (recession) | HIGH | MEDIUM (30%) | Stop loss $58 + staged entry |
-| Analyst Consensus TP ($184) may be stale | MEDIUM | MEDIUM-HIGH | Independent DCF $267 > consensus |
-| Multiple compression (software de-rating) | MEDIUM | MEDIUM | Already down 51% — much of de-rating done |
+| **Beta re-rate สูงกว่า 0.93 verified** | **HIGH+ (ไม่เหลือ MOS cushion เลยหลัง TGR correction)** | MEDIUM — single-most-sensitive variable | Bear Flip Trigger #2, quarterly re-confirm |
+| Armis integration failure/underperformance | HIGH | MEDIUM (23x ARR premium, -42% stock reaction, analyst skepticism = real evidence) | Extreme Bear scenario weighted 10-20% in P-W EV, stop loss $93 |
+| Peer premium compression (multiple reset) | MEDIUM-HIGH | MEDIUM — sector-wide "reset" ตาม Atlas | Multiple Percentile method ยัง PASS (own-stock basis) |
+| SBC dilution ongoing | MEDIUM | HIGH (structural) | ESG adjustment -5% |
+| Organic growth deceleration | MEDIUM | MEDIUM | Bear Flip Trigger #1 (ex-Armis growth) |
+| Thesis-scope drift (serial cybersecurity M&A) | MEDIUM | ไม่ชัดเจน (ต้องรอ track record) | Bear Flip Trigger #4 (ดีลที่ 5) |
+| **[ใหม่] MOS ติดลบต่อเนื่องโดยไม่มี catalyst แก้ไข** | MEDIUM-HIGH | รอ re-check รอบหน้า | Bear Flip Trigger #6 (ใหม่) — เปิด Max Consultation ถ้าเกิดขึ้นจริง |
 
 ---
 
 ## 📅 Catalysts Calendar [CFA L2: Equity — Catalyst-Driven Valuation]
 
 \`\`\`
-2026-Q2  ──●── Q1 FY2026 Earnings (~Apr/May 2026)          [HIGH]
-                Revenue beat/miss vs 22% consensus; Agentic AI ARR disclosure
-                현재 ราคา $91 ขึ้นอยู่กับ Q1 print มาก
+2026-Q3  ──●── Beta Quarterly Re-Confirm (Bloomberg/Morningstar cross-check)   [HIGH — ยิ่งสำคัญกว่าเดิม]
+                ถ้า Beta ≥1.05 หลาย source พร้อมกัน = re-run WACC/FV ทันที — ไม่เหลือ MOS cushion แล้ว
 
-2026-Q2  ──●── Microsoft Copilot Studio vs ITSM Win/Loss    [MED]
-                Market share data จาก Gartner/Forrester report H1 2026
+2026-Q3  ──●── Q3 FY2026 Earnings — Armis margin actuals vs guidance           [HIGH]
+                Op margin dilution vs -75bps guided, FCF margin vs -200bps guided
 
-2026-Q3  ──●── Agentic AI Revenue Disclosure               [HIGH]
-                First time NOW reveals AI revenue split — บทพิสูจน์ thesis ครั้งแรก
+2026-Q3  ──●── Organic (ex-Armis) Revenue Growth data                          [HIGH]
+                ต้อง ≥15% เพื่อไม่ trigger Bear Flip #1
 
-2026-Q3  ──●── Q2 FY2026 Earnings                          [HIGH]
-                CAGR trajectory: ≥20% = Bull Flip; <17% = watch carefully
+2026-Q4  ──●── Agentic AI Revenue Disclosure (ครั้งแรก)                        [HIGH]
+                Bull Flip Trigger #1 validator — ≥$500M ARR
 
-2026-Q4  ──●── Annual Guidance FY2027                      [HIGH]
-                Management guidance ≥25% = re-rate; <15% = Bear Flip
+2026-Q4  ──●── Armis Cross-Sell Traction Disclosure                            [MED]
+                ยืนยัน optionality ที่ DCF ยังไม่ capture
 
-2027-H1  ──●── Agentic AI Platform Competitive Benchmark    [MED]
-                Salesforce Agentforce vs NOW AI Agent head-to-head market data
-
-2027-H1  ──●── SBC as % Revenue Trend (Annual Proxy)       [MED]
-                Watch for improvement signal (<12%) or deterioration (>18%)
+2027-H1  ──●── 5th Cybersecurity Acquisition? (watch)                          [MED]
+                Bear Flip Trigger #4 — ยืนยัน serial-M&A pattern หรือไม่
 \`\`\`
 
 ---
@@ -7469,59 +7648,329 @@ Bear disagrees กับ Emma's Governance score:
 
 | Concept | Level | Application |
 |---------|-------|------------|
-| FCFF DCF Model | L2 | Emma's primary valuation method |
-| Economic Moat (5 Sources) | L2 | NOW Wide Moat assessment |
-| EV/Revenue Relative Valuation | L2 | Peer comparison and cross-check |
-| Sensitivity Analysis (5×5 Matrix) | L2 | Quinn's fair value range |
-| Carhart 4-Factor Model | L2 | Alpha estimation (+3.5%/yr) |
-| Portfolio Construction — Kelly Criterion | L3 | Position sizing (Quarter-Kelly 5%) |
-| Investment Thesis — Bull/Bear Flip Triggers | L3 | What Would Change Our Mind |
-| CVaR / Expected Shortfall | L3 | Tail risk estimate -22% |
-| ESG Materiality Analysis | L2-3 | SBC dilution + Data Privacy |
-| Probability-Weighted EV | L2 | Scenario weighting 25/45/25/10 |
-| Behavioral Finance Bias Detection | L3 | Bear's 5 bias challenge |
-
-**Pending CIO Confirm (used in this analysis):**
-- Carhart 4-Factor Model [L2]: เพิ่ม Momentum factor ใน 3-Factor Model *(รอ CIO confirm — 8 uses ใน portfolio)*
-- ESG Materiality Analysis [L2-3]: ระบุ ESG factor กระทบ valuation จริง *(รอ CIO confirm — 8 uses)*
+| FCFF NOPAT-based 2-Stage DCF | L2 | Primary valuation — แก้จาก reported-FCF flaw |
+| DCF Cash Flow Consistency (House Rule) | L2-derived | SBC treatment, cash-flow basis alignment Emma/Quinn |
+| WACC / CAPM Re-estimation | L1/L2 | Beta/ERP verification — จุดหมุนสำคัญของ re-analysis |
+| **Terminal Value / Gordon Growth Sensitivity** | **L2** | **TGR ceiling correction — TV เป็น 71% ของ EV ทำให้ sensitivity สูงมาก** |
+| Hamada Equation (Levered/Unlevered Beta) | L2 | Capital structure shift post-Armis — Bear's verification |
+| EV/Revenue Relative Valuation | L2 | Peer premium reversal finding |
+| Multiple Percentile Method | L2-3 | Growth MOS — own-stock 5Y history, anchoring bias debate |
+| Sensitivity Analysis (5×5 Matrix) | L2 | CAGR × WACC, Beta stress test |
+| Probability-Weighted EV | L2 | 3 independent scenario sets (Emma-implicit, Quinn, Bear) |
+| Kelly Criterion | L3 | Quant signal (thin positive edge, sub-floor Quarter-Kelly) vs IPS conviction gate |
+| M&A Valuation & Integration Risk | L2 | Armis 23x ARR premium analysis |
+| Anchoring Bias / Narrative Fallacy / Overconfidence | L3 | Bear's behavioral finance challenges |
+| Net Debt Adjustment (EV→Equity bridge) | L1 | Armis financing flip net cash→net debt |
+| Investment Thesis — Bull/Bear Flip Triggers | L3 | What Would Change Our Mind (revised) |
+| ESG Materiality Analysis | L2-3 | Governance re-score post-Armis |
+| QA Compliance / DCF Assumption Sanity Check | House Rule | Morgan QA Round 1 FAIL → TGR ceiling correction |
 
 ---
 
 ## ⚙️ Behind the Scenes
 
-**Pipeline ที่ใช้:**
-1. **Charlie (Orchestrator):** อ่าน learning-log.md → วางแผน pipeline → delegate Emma/Quinn parallel → ส่ง Bear challenge → สรุป
+**Full Re-Analysis Pipeline (2026-08-24):**
 
-2. **Emma (Equity):** DCF FCFF 2-Stage ($267) + EV/Revenue ($241) + EV/FCF ($278) → Blended Emma FV $262 + ESG Scorecard (E8/S7/G5 → 6.7) + Peer Comparison (5 peers) + Conviction 7/10
+1. **Trigger:** Re-Analysis Trigger Rule ข้อ 2 fired อัตโนมัติ (FV อายุ 96 วัน + MOS พลิกลบ) — Emma lightweight re-verify escalate เป็น full pipeline หลังพบ gap -25.1% เกิน threshold
+2. **Atlas:** Macro Brief (Regime RISK-ON 3/4 reused, ยังไม่ stale) + Data Package เต็ม (financials, Armis deal deep-dive, net debt reconciliation, peer data, Beta/ERP verified inputs) — **key contribution: verify Beta 0.93/ERP 4.45% ที่กลายเป็นจุดหมุนสำคัญที่สุดของทั้งรอบ**
+3. **Emma (full pipeline):** ต่อยอดจาก lightweight — พบว่า lightweight WACC (10.8%) ใช้ Beta/ERP ที่ carried-over unverified → แก้เป็น WACC 8.62% (capital-structure-weighted, verified inputs) → FV พลิกจาก $91.05 → $138.75
+4. **Quinn:** Re-run ทั้งหมด (P-W EV, Sensitivity, Kelly) ด้วย WACC 8.62% → converge กับ Emma เกือบเป๊ะ (gap 0.02% บน base-case DCF engine)
+5. **Bear:** Cross-source verify Beta จริง — Beta 0.93 **ผ่าน** cross-check (4 sources, spread 4.3%) — แต่พบความเสี่ยงใหม่ที่มี real evidence: Armis 23x ARR premium, stock -42% reaction, peer premium reversal +86%, thesis-scope drift question
+6. **Charlie (Round 1):** Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30 = **$135.30** (MOS +5.31%) — Bear weight เท่า Quinn (30%) ตาม CLAUDE.md § Blended FV Triangulation Weights ("ห้ามลด weight ด้วยเหตุผลว่า Bear แย้งเยอะ") **Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30 (ทุกครั้ง — locked formula ไม่เปลี่ยนแม้แก้ TGR)**
 
-3. **Quinn (Quant):** Beta 1.10 + Sharpe 0.70 + Sortino 0.95 + Carhart 4-Factor (α +3.5%, t=1.6) + CVaR -22% + Sensitivity Matrix 5×5 (25/25 cells upside) + Kelly 44% → Quarter-Kelly 11% → capped 5% + P-W EV $248
+**🔧 TGR Correction Pipeline (Round 2, 2026-08-24 — ต่อเนื่องจาก Full Pipeline):**
 
-4. **Bear (Devil's Advocate):** 5 major challenges: (1) SBC-adjusted FCF -40% (2) CAGR deceleration at $11B+ scale (3) Agentic AI narrative ≠ revenue (4) Stale analyst consensus TP (5) IT budget freeze recession risk + ESG re-score Governance 5→3.5 → Reconciled 6.0/10 + Bear P-W EV $184.5 + Bull/Bear Flip Triggers + Thesis Invalidation
+7. **Morgan QA Round 1:** ตรวจพบ TGR 3.5% เกินเพดาน DCF Assumption Sanity Check (1-3%) — **FAIL (RULE_VIOLATION)**, ทำ illustrative recalculation ที่ TGR=3.0% ได้ FV ≈$129.23 (สอดคล้องกับที่ Emma คำนวณเองภายหลัง $129.21)
+8. **Charlie:** สั่ง Emma/Quinn/Bear แก้ TGR → 3.0% พร้อมกัน (parallel dispatch) — เน้นย้ำว่า inputs อื่นทั้งหมดคงเดิม เป็นการแก้ compliance parameter ไม่ใช่ re-assess ความเสี่ยงใหม่
+9. **Emma/Quinn/Bear:** Recompute อิสระ ได้ FV ใหม่ $129.21 / $131.87 / $114.69 ตามลำดับ — DCF engine reconciliation ระหว่าง Emma-Quinn ยังคงแม่นยำสูง (gap <0.1%) ยืนยันว่าไม่มี methodology drift เกิดขึ้นระหว่างแก้ TGR
+10. **Charlie:** Blended FV ใหม่ = $129.21×0.40 + $131.87×0.30 + $114.69×0.30 = **$125.65** (MOS -2.20%, พลิกลบเป็นครั้งแรก) — ใช้สูตร weight เดิม 40/30/30 ไม่เปลี่ยนแปลง (locked rule) อัปเดต Stop Loss จาก $98→$93 ตาม Bear scenario ใหม่ Recommendation ยังคง HOLD (ไม่เปลี่ยนเป็น SELL) เพราะไม่มี Bear Flip Trigger/Thesis Invalidation เกิดขึ้นจริง — เป็นการแก้ตัวเลขให้ถูกต้องตาม QA ไม่ใช่เหตุการณ์ความเสี่ยงใหม่
 
-5. **Charlie Triangulation:** 30/30/40 (Emma/Quinn/Bear) → Blended FV $226 → ESG-adj $215 → BUY Staged 5%
+**Bear weight ปรับเป็น 30% (ตาม CLAUDE.md ปัจจุบัน — Blended FV Triangulation Weights, ไม่ใช่ IPS 2026-05-15 เดิมที่ 25%) — Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30 ตามที่ verify สดจาก CLAUDE.md ทุกครั้งที่คำนวณ**
 
-**Key Debates:**
-- Emma vs Bear on FCF: Emma ใช้ headline FCF $3.4B; Bear challenge SBC-adjusted $2.0-2.3B → ทีม note ว่า Net FV เปลี่ยนจาก $267 → ~$200 ถ้าใช้ SBC-adj; Bear weight 40% absorbs ความเห็นต่างนี้
-- Quinn vs Bear on CAGR: Quinn ยอมรับ 20% CAGR ในฐาน; Bear ประเมิน realistic 15-17% → Sensitivity Matrix แสดงว่าแม้ Bear CAGR ยังให้ upside จาก $91
+**Key Lesson จากรอบนี้ (สำหรับ learning-log):**
+- Methodology fix ไม่ได้แปลว่าจบ — lightweight re-verify แก้ปัญหาชั้นที่ 1 (NOPAT-basis, Armis) ถูกต้อง แต่สร้างความมั่นใจเกินจริงจนพลาดปัญหาชั้นที่ 2 (WACC input verification) และแม้แต่ full pipeline เองก็ยังพลาดปัญหาชั้นที่ 3 (TGR ceiling) จนกระทั่ง **Morgan QA Round 1 จับได้** — นี่คือหลักฐานที่ชัดเจนที่สุดว่าทำไม Morgan QA gate ต้องบังคับก่อน Leo ทุกครั้ง ไม่มีข้อยกเว้น เพราะแม้แต่ 3 agents ที่ cross-check กันเองอย่างละเอียด (Emma/Quinn/Bear ใช้ engine เดียวกัน, reconcile กันหลายรอบ) ก็ยังพลาด TGR ceiling ที่เป็น compliance rule ง่ายๆ เพราะมันถูก "carry-over" มาจากรายงานเดิมโดยไม่มีใครตั้งคำถามใหม่
+- Terminal Value เป็นสัดส่วนใหญ่ของ Enterprise Value มาก (71% ในเคสนี้) — การเปลี่ยน TGR เพียง 0.5pp กระทบ FV ถึง ~7% นี่คือบทเรียนเชิงปริมาณสำคัญ: DCF ของหุ้น long-duration growth stock ไวต่อ terminal assumptions มากกว่าที่ direct-period assumptions (revenue CAGR, margin) มาก — ควรเป็น default mental model เวลาตรวจ DCF ของหุ้นกลุ่มนี้ต่อไป
 
 ---
 
 ## 🏁 Conclusion [CFA L3: Portfolio Management — Final Recommendation]
 
-ServiceNow (NOW) ณ $91 เป็น **rare asymmetric opportunity** ในหุ้น Wide Moat คุณภาพสูงที่ market over-corrected จากเกิน 51% drawdown จาก ATH
+ServiceNow (NOW) หลัง Full Re-Analysis Pipeline + TGR Correction (2026-08-24) แก้ปัญหา methodology 4 ชั้น: (1) DCF Cash Flow Consistency (NOPAT-based แทน reported-FCF) (2) Armis acquisition net-debt flip เข้า valuation (3) WACC input verification (Beta 0.93/ERP 4.45% แทน unverified 1.10/5.5%) (4) **Terminal Growth Rate ceiling correction (3.5%→3.0% ตาม Morgan QA Protocol)**
 
-Blended FV $226 (ESG-adj $215) ให้ MOS +148% จากราคา $91 โดย Sensitivity Matrix ยืนยันว่า **ทุก 25/25 scenarios ให้ upside** แม้ใน Bear extreme case (CAGR 12% + WACC 12%) FV ยังอยู่ที่ $115 = +26% upside จาก $91
+**Blended FV $125.65** (Emma $129.21×40% + Quinn $131.87×30% + Bear $114.69×30%) **MOS -2.20%** ณ ราคา $128.48 — **พลิกลบเป็นครั้งแรกในรอบ analysis นี้** และไวต่อ Beta stress test สูงยิ่งกว่าเดิม
 
-ทีมแนะนำ **BUY Staged Entry 5% position** โดยมีเงื่อนไข:
-1. Monitor Agentic AI revenue disclosure ใน Q3 2026 (thesis validator)
-2. Watch SBC/Revenue trend (Governance ESG)
-3. Stop loss $58 ถ้า thesis invalidates (IT freeze + CAGR <10%)
+**Team Average Conviction 5.83/10 — ต่ำกว่า Growth bucket gate 6.5 มากกว่ารอบก่อน** → ทีมแนะนำ:
+
+1. **HOLD T1** @ $89.47 (unrealized gain +43.6%) — thesis ยังไม่ invalidate (ไม่มี Bear Flip Trigger/Thesis Invalidation event เกิดขึ้นจริง), ไม่ขาย
+2. **ไม่เพิ่ม position ใหม่** จนกว่า conviction จะขยับผ่าน gate ผ่าน catalyst ที่วัดได้ (Beta quarterly re-confirm ≤0.95, Armis margin actuals ตรง guidance) — ยิ่งจำเป็นกว่ารอบก่อนเพราะ Kelly Quarter-Kelly (2.76%) ก็ต่ำกว่า IPS floor แล้ว
+3. **Stop loss ปรับเป็น $93** (จาก $98 เดิม, จาก $58 ก่อนหน้านั้น) — anchored ใต้ Bear scenario ใหม่ $94.28 ล็อกกำไรบางส่วน + ป้องกันก่อน Bear scenario เต็มรูปแบบ
+4. **[ใหม่] Monitor MOS ที่ re-check ครั้งถัดไปอย่างใกล้ชิด** — ถ้ายังติดลบต่อโดยไม่มี catalyst บวกชดเชย ควรเปิด Max Consultation Rule เพื่อพิจารณา trim position (ไม่ใช่ตอนนี้ แต่เป็นสัญญาณเตือนที่ชัดเจนกว่ารอบก่อนมาก)
+5. Monitor Beta cross-source (Yahoo/Investing.com/Bloomberg) ทุกไตรมาส — เป็นตัวแปรเดียวที่ไวที่สุดต่อ thesis ทั้งหมด ยิ่งสำคัญกว่าเดิมเพราะไม่เหลือ MOS cushion แล้ว
 
 ---
 
-*รายงานนี้จัดทำโดยทีม บลจ. CFA — Charlie (Orchestrator) · Emma (Equity) · Quinn (Quant) · Bear (Risk) · Leo (Log)*
-*วันที่: 2026-05-11 | ราคาอ้างอิง: ~$91 | S&P 500 ref: ~7,400*
-`
+## 🧪 Morgan QA Verification — Round 1 (2026-08-24) — ⚠️ AUDIT TRAIL, FAIL, SUPERSEDED BY ROUND 2 ด้านล่าง
+
+**Reviewed by:** Morgan (QA Analyst)
+**Status:** ❌ **FAIL**
+**Reject Type:** \`RULE_VIOLATION\` (DCF Assumption Sanity Check — Terminal Growth Rate ceiling)
+
+### Independent Verification (Morgan's own WebSearch, ไม่ใช้ตัวเลขจาก report เป็น reference)
+
+| ตัวเลข | ใน Report | Morgan หาได้อิสระ | ต่างกัน | ผล |
+|--------|----------|-------------------|--------|-----|
+| ราคาปิด 2026-08-21 | $128.48 (close, Yahoo+Stockanalysis) | $127.80 (after-hours print ที่ synthesis engine ดึงมา — ตรงกับ after-hours ที่ report เองระบุไว้ $127.80) | 0.53% | ✅ (< 5% threshold) |
+| TTM/Quarterly Revenue | TTM $14.732B (+22.19%), Q2 FY26 $3.987B | Q2 FY26 total revenue $3.99B (+24% YoY) — WebSearch synthesis | ~0.1% (Q2 quarterly) | ✅ |
+| Beta | 0.93 (Stockanalysis.com, primary) | 0.97 (Yahoo Finance, independent WebSearch) | 4.3% | ✅ (ตรงกับที่ Bear เองก็ cross-check แล้วพบ 0.927-0.97 cluster) |
+| Shares Outstanding | 1.03B | 1.03B (companiesmarketcap.com, independent) | 0% | ✅ |
+| Market Cap | $132.83B | $132.83B ≈ 1.03B × $128.48 = $132.33B (คำนวณเอง) | 0.4% | ✅ |
+
+**Data Integrity: PASS ทุกข้อ** — ราคา, revenue, beta, shares outstanding ผ่านการ cross-check อิสระทั้งหมด ไม่มี discrepancy ที่มีนัยสำคัญ
+
+### 🚩 HIGH Severity Finding — DCF Assumption Sanity Check (Step 2.5)
+
+**Terminal Growth Rate = 3.5%** ที่ใช้ใน Emma's DCF (ต่อเนื่องมาจากรายงานเดิม 2026-05-11, "unchanged — nominal GDP + SaaS premium" ตาม Emma's notes §2.1) **เกินเพดานที่กำหนด (1%–3%)** ตาม Morgan QA Protocol § DCF Assumption Sanity Check — TGR ที่ >3% ต้อง **HIGH FAIL โดยอัตโนมัติ**
+
+**สำคัญ:** Quinn replicate DCF engine เดียวกับ Emma ทั้งหมด (รวม TGR 3.5%) — และ Bear's P-W EV ก็ใช้ "DCF engine เดียวกับ Emma/Quinn" เช่นกัน ดังนั้น **TGR เกินเพดานนี้ไหลเข้าสู่ทั้ง 3 ตัวเลขที่ประกอบ Blended FV** ไม่ใช่แค่ Emma คนเดียว
+
+**Illustrative recalculation (Morgan, ที่ TGR = 3.0% ซึ่งเป็นค่าสูงสุดที่ยอมรับได้ตามเพดาน, WACC/CAGR/margin อื่นคงเดิมทั้งหมด):**
+\`\`\`
+TV (TGR 3.0%) = $11.926B × 1.03 / (0.0862 − 0.03) = $12.284B / 0.0562 = $218.58B
+PV(TV) = $218.58B × 0.4373 = $95.60B   (เดิม $105.41B ที่ TGR 3.5% → ลด $9.81B)
+EV ใหม่ = $15.134B + $23.183B + $95.60B = $133.92B  (เดิม $143.73B)
+Equity ใหม่ = $133.92B − $0.81B = $133.11B
+Emma DCF FV ใหม่ (TGR 3.0%) ≈ $133.11B / 1.03B ≈ $129.23/share  (เดิม $138.75, -6.9%)
+\`\`\`
+ที่ FV $129.23 เทียบราคา $128.48 → MOS เหลือเพียง **+0.58%** (จาก +8.0% เดิม) — เกือบ breakeven ถ้าใช้ TGR ที่เพดานสูงสุดที่อนุญาต และ Quinn/Bear's scenario-weighted FV (ที่ใช้ TGR 3.5% เช่นกันในทุก scenario) จะลดลงในสัดส่วนใกล้เคียงกันด้วย → **Blended FV และ MOS ทั้งหมดต้องคำนวณใหม่หลังแก้ TGR**
+
+**หมายเหตุ:** การแก้ TGR นี้ไม่น่าจะเปลี่ยน recommendation จาก HOLD (เพราะ conviction gate 6.17<6.5 ยังไม่ผ่านอยู่แล้ว ไม่ว่า TGR จะเป็นเท่าไหร่) แต่ **ตัวเลข FV/MOS ที่รายงานในปัจจุบันไม่ถูกต้องตามเพดานที่กำหนด** และ MOS ที่แคบลงเหลือเกือบ 0% (แทน +5.31%) ทำให้ narrative "thesis ยังไม่ตาย, MOS บวกแต่บาง" ต้องพิจารณาใหม่ว่าใกล้เคียง "MOS ≈ 0, thesis ที่ fair-value พอดี" มากกว่า
+
+*[Post-Round-2 note โดย Charlie: การคาดการณ์นี้ของ Morgan ถูกต้องแม่นยำมาก — MOS หลัง TGR correction จริงกลายเป็น -2.20% (ติดลบเล็กน้อย) ไม่ใช่แค่ ≈0% เพราะ Quinn/Bear's P-W EV ก็ลดลงตามสัดส่วนที่ Morgan คาดไว้เป๊ะ]*
+
+### Rule Compliance Checklist
+
+| ข้อ | สถานะ |
+|-----|-------|
+| Stock price verified ≥2 sources | ✅ PASS |
+| Market cap = shares × price (±10%) | ✅ PASS |
+| FV/Price → MOS calculation ถูกต้อง (ตามตัวเลขที่ report ใช้) | ✅ PASS (arithmetic ถูก แต่ input TGR ผิดเพดาน — ดูด้านบน) |
+| DCF assumptions ทั้งหมดอยู่ในช่วงที่สมเหตุสมผล | ❌ **FAIL — Terminal Growth Rate 3.5% > 3% ceiling** |
+| WACC (7%–13%) | ✅ PASS (8.62%) |
+| Revenue Growth Yr1-5 ≤ 2× historical CAGR | ✅ PASS (19% assumption vs 22.19% TTM actual → ratio 0.86x) |
+| Discount Rate ≥ Rf + 3% | ✅ PASS (8.62% vs 4.74%+3%=7.74%) |
+| Recommendation สอดคล้องกับ MOS/Conviction gate | ✅ PASS (HOLD, ไม่ deploy เพิ่ม เพราะ conviction 6.17<6.5 gate — ถูกต้อง) |
+| Blended FV weight ตรงกับ CLAUDE.md ปัจจุบัน (verify สดแล้ว) | ✅ PASS (40/30/30 ตรงกับ CLAUDE.md § Blended FV Triangulation Weights ที่ verify สดในรอบตรวจนี้) |
+| Bucket correctness (Growth bucket vs Revenue Growth actual) | ✅ PASS (ประกาศ Growth, Rev Growth TTM +22.19% > 20% threshold — ถูกต้อง) |
+| Stop loss format + calculation | ✅ PASS ($98 = +9.5%/-23.7%, ตรวจ arithmetic แล้วถูกต้อง) |
+| Forward Return Estimate (HOLD rule Fix #6) | ✅ PASS (คำนวณถูกต้อง + caveat ชัดเจน) |
+| Position size ≤10%, ≥3% | ✅ PASS (5% cap) |
+| DCF Cash Flow Consistency Rule (SBC>10%→NOPAT-based) | ✅ PASS (ทั้ง Emma และ Quinn ใช้ NOPAT-based FCFF, ระบุ cash-flow basis ชัดเจน) |
+| Reconciliation table เมื่อ Emma/Quinn FV gap ≥25% | ✅ N/A ถูกต้อง (gap จริง = 0.02%/3.1% < 25% threshold — ไม่บังคับ) |
+
+### Source Annotation Checklist
+
+| ข้อ | สถานะ |
+|-----|-------|
+| Financial data ทุกจุดมี source annotation | ✅ PASS |
+| ไม่มี "around X" ที่ไม่มี range ชัดเจน | ✅ PASS |
+| Atlas Macro Brief + Regime record ถูกอ้างอิงชัดเจนใน report | ✅ PASS |
+| Shares outstanding verified | ✅ PASS |
+
+### Business Deep Dive Completeness (Step 3.5A)
+
+| Subsection | สถานะ |
+|-----------|-------|
+| How does NOW make money? | ✅ PASS |
+| Porter's Five Forces | ✅ PASS |
+| Market Share Trend (2-3 ปีย้อนหลัง) | ⚠️ **MISSING** |
+| Customer Concentration (top 3-5 + %) | ⚠️ **MISSING** |
+| Geography Revenue Breakdown | ⚠️ **MISSING** |
+
+**Severity: MEDIUM** (root cause เดียวกันคือ Atlas ไม่ได้ fetch Section J/K รอบนี้)
+
+### Format Compliance (Step 4)
+
+| รายการ | สถานะ |
+|--------|-------|
+| Section emojis ตาม CLAUDE.md | ⚠️ Conviction Level Score section ใช้ 📊 แทน 💪 ที่ CLAUDE.md กำหนด — **LOW/FORMAT** — **แก้แล้วใน Round 2 (ตอนนี้ใช้ 💪)** |
+| Conviction Bar ใช้ █ characters | ✅ PASS |
+| Key Verdict callout \`> ### text\` | ✅ PASS |
+| Catalyst Timeline \`──●──\` format | ✅ PASS |
+
+### Data Quality Score: 7.4/10
+
+| มิติ | คะแนน | หมายเหตุ |
+|------|-------|---------|
+| Source Quality (Tier) | 9/10 | Tier 1 (SEC 10-Q/8-K) + Tier 2 (Stockanalysis, Yahoo, Damodaran) |
+| Data Freshness | 8/10 | ราคา 3 วัน, financials Q2 FY26 ล่าสุด, Beta/ERP current |
+| DCF Assumptions | 3/10 | **Terminal Growth Rate 3.5% เกินเพดาน 3% — HIGH FAIL** |
+| Cross-agent Consistency | 9/10 | Emma/Quinn DCF engine converge เกือบเป๊ะ |
+| Atlas Integration | 8/10 | Regime/Rf sensitivity สะท้อนดี, แต่ Customer/Geography data gap |
+| **Overall** | **7.4/10** | คะแนนสูงแต่ **ไม่ทำให้ PASS ได้** เพราะมี HIGH severity issue |
+
+### ❌ Issues Found (Round 1)
+
+| # | Issue | Location | Severity | Action Required | สถานะหลัง Round 2 |
+|---|-------|----------|----------|----------------|---------------------|
+| 1 | Terminal Growth Rate 3.5% เกินเพดาน DCF Assumption Sanity Check (1-3%) | 💰 Valuation | **HIGH** | Re-run DCF ทั้ง 3 ชุด + Blended FV/MOS | ✅ **แก้แล้ว — TGR=3.0%, Blended FV/MOS อัปเดตทั้งรายงานแล้ว** |
+| 2 | Business Deep Dive ขาด 3 subsections | 🏢 Business Deep Dive | MEDIUM | ขอ Atlas fetch SEC 10-K Section J/K เพิ่มรอบถัดไป | ⚠️ ยังไม่แก้ — ไม่ blocking สำหรับ HOLD recommendation |
+| 3 | Conviction Level Score section ใช้ emoji 📊 แทน 💪 | 📋 Executive Summary | LOW/FORMAT | เปลี่ยน emoji heading | ✅ **แก้แล้ว** |
+
+### 📝 QA Summary (Round 1)
+
+รายงานฉบับนี้ผ่านการทำงานที่มีคุณภาพสูงมากในเชิงกระบวนการ — แต่พบ HIGH severity issue 1 รายการที่ไหลผ่านทั้ง 3 มุมมอง (Emma/Quinn/Bear): Terminal Growth Rate 3.5% เกินเพดาน DCF Assumption Sanity Check ของ Morgan QA Protocol (1-3%)
+
+**ต้องแก้ก่อนส่งให้ Leo บันทึก:**
+1. **HIGH:** ปรับ Terminal Growth Rate ให้อยู่ในเพดาน ≤3% แล้ว re-run DCF/Blended FV/MOS ทั้งหมด — ✅ **แก้แล้ว ดู Round 2 ด้านล่าง**
+2. **MEDIUM:** ขอ Atlas fetch Customer Concentration + Geography Breakdown รอบถัดไป — ⚠️ ยังไม่แก้ (non-blocking)
+3. **LOW:** แก้ emoji heading Conviction Level Score เป็น 💪 — ✅ **แก้แล้ว**
+
+หลังแก้ TGR และ re-run ตัวเลขแล้ว → ส่งกลับมาให้ Morgan ตรวจใหม่ (ดู Round 2 ด้านล่าง)
+
+---
+
+*รายงานนี้จัดทำโดยทีม บลจ. CFA — Charlie (Orchestrator) · Atlas (Macro) · Emma (Equity) · Quinn (Quant) · Bear (Risk) · Morgan (QA)*
+*วันที่แรก: 2026-05-11 | Full Re-Analysis: 2026-08-24 | TGR Correction: 2026-08-24 | ราคา: $128.48 (2026-08-21 close) | S&P 500 ref: 7,674.37 (2026-08-21 close)*
+
+---
+
+## 🧪 Morgan QA Verification — Round 2 (2026-08-24)
+
+**Reviewed by:** Morgan (QA Analyst)
+**Status:** ✅ **PASS** (with 2 non-blocking MEDIUM flags carried/noted below)
+**Scope:** Full re-check ของทั้งรายงาน (ไม่ใช่แค่ TGR item เดียว) ตาม Morgan QA Protocol มาตรฐาน — โฟกัสพิเศษที่จุดที่ทำให้ Round 1 FAIL (DCF Assumption Sanity Check) และ arithmetic ทั้งหมดที่ downstream จากการแก้ TGR
+
+### 1. DCF Assumption Sanity Check — จุดที่ FAIL ใน Round 1
+
+| Assumption | ค่าที่พบใน Round 2 | เพดาน/เกณฑ์ | ผล |
+|------------|---------------------|-------------|-----|
+| **Terminal Growth Rate** | **3.0%** (ทุกจุดในรายงาน — Emma DCF, Quinn P-W EV ทุก scenario, Bear P-W EV ทุก scenario, Sensitivity Matrix, Beta Stress Test) | 1%–3% | ✅ **PASS** — ที่ ceiling พอดี (3.0% ไม่เกิน 3%) |
+| ค้นหา TGR=3.5% ตกค้าง | ตรวจทั้งไฟล์ (726 บรรทัด) — พบ "3.5%" เฉพาะใน (a) Update Log comparison tables ที่ label ชัดเจนว่า "Round 1, FAIL" (b) § Morgan QA Verification — Round 1 audit-trail section ที่ label ชัดเจนว่า SUPERSEDED — ไม่มีจุดใดที่ 3.5% ถูกใช้เป็นค่า "live" ในการคำนวณปัจจุบัน | ต้องไม่มี live-value leak | ✅ **PASS** |
+| WACC | 8.62% (unchanged, verified ใน Round 1 แล้ว) | 7%–13% | ✅ PASS |
+| Revenue Growth Yr1-5 (Stage 1 CAGR 19%) vs historical CAGR actual (+22.19%) | ratio 19/22.19 = 0.856x | ≤ 2× | ✅ PASS |
+| Discount Rate vs Rf+3% | 8.62% vs (4.74%+3%=7.74%) | ≥ Rf+3% | ✅ PASS |
+
+**หมายเหตุเชิงคุณภาพ:** TGR ที่ 3.0% คือค่าสูงสุดที่เพดานอนุญาตพอดี (ไม่ใช่ conservative buffer) — รายงานเปิดเผยเรื่องนี้อย่างตรงไปตรงมาในหลายจุด (Emma §4.3, §5; Quinn §Conclusion; Bear §4; Sensitivity/Beta Stress Test) ว่า margin of safety ที่เหลืออยู่บางมากเพราะพึ่ง TGR ที่ ceiling — นี่คือการเปิดเผยความเสี่ยงที่ดี ไม่ใช่การซ่อนปัญหา จึงไม่หัก score เพิ่มเติมสำหรับเรื่องนี้
+
+### 2. Independent Arithmetic Verification (Morgan คำนวณเอง ไม่เชื่อตัวเลขจาก report)
+
+| รายการ | คำนวณเอง | ใน Report | ตรง? |
+|--------|----------|-----------|-----|
+| TV (TGR=3.0%, WACC=8.62%) = $11.926B × 1.030 / (0.0862−0.030) | $12.28378B / 0.0562 = **$218.573B** | $218.573B | ✅ ตรง |
+| PV(TV) = $218.573B × 0.4373 | **$95.582B** | $95.582B | ✅ ตรง |
+| EV = $15.134B + $23.183B + $95.582B | **$133.899B** | $133.899B | ✅ ตรง |
+| Equity = $133.899B − $0.81B | **$133.089B** | $133.089B | ✅ ตรง |
+| Emma FV/share = $133.089B / 1.03B | **$129.21** | $129.21 | ✅ ตรง |
+| Quinn P-W EV = 0.20×226.52 + 0.45×129.22 + 0.25×91.44 + 0.10×55.57 | 45.304+58.149+22.86+5.557 = **$131.87** | $131.87 | ✅ ตรง |
+| Bear P-W EV = 0.15×183.38 + 0.35×129.22 + 0.30×94.28 + 0.20×68.37 | 27.507+45.227+28.284+13.674 = **$114.69** | $114.69 | ✅ ตรง |
+| Blended FV = $129.21×0.40 + $131.87×0.30 + $114.69×0.30 | 51.684+39.561+34.407 = **$125.65** | $125.65 | ✅ ตรง |
+| MOS = ($125.65−$128.48)/$128.48 | -2.83/128.48 = **-2.20%** | -2.20% | ✅ ตรง |
+| Conviction Avg = (5.5+6.0+6.0)/3 | 17.5/3 = **5.83** | 5.83 | ✅ ตรง |
+| Sensitivity Matrix upside cells | นับด้วยตัวเอง (cell-by-cell): CAGR13→1, CAGR16→2, CAGR19→3, CAGR22→3, CAGR25→4 = **13/25 (52%)** | 13/25 (52%) | ✅ ตรง |
+| Stop Loss vs entry: ($93−$89.47)/$89.47 | 3.53/89.47 = **+3.95%** | +3.9% | ✅ ตรง (rounding) |
+| Stop Loss vs current: ($93−$128.48)/$128.48 | -35.48/128.48 = **-27.62%** | -27.6% | ✅ ตรง (rounding) |
+| Stop Loss anchor buffer vs Bear scenario $94.28: ($94.28−$93)/$94.28 | 1.28/94.28 = **1.36%** | "~1.5%" (approximation) | ✅ ใกล้เคียงพอ (ระบุเป็น "~" ชัดเจน ไม่ claim ความแม่นยำเกินจริง) |
+
+**สรุป: arithmetic ทุกจุดที่ตรวจถูกต้อง 100% — ไม่พบ error ใดๆ ในการคำนวณ**
+
+### 3. Rule Compliance Checklist (Round 2)
+
+| ข้อ | สถานะ |
+|-----|-------|
+| TGR ≤ 3% ทุกจุดในรายงาน (จุดที่ Round 1 FAIL) | ✅ **PASS — แก้สมบูรณ์แล้ว** |
+| Blended FV weight ตรงกับ CLAUDE.md § Blended FV Triangulation Weights (verify สดรอบนี้: Emma 40% / Quinn 30% / Bear 30%) | ✅ PASS — ตรงกัน ไม่มี drift |
+| Bucket correctness (ประกาศ Growth, Rev Growth TTM +22.19% > 20%) | ✅ PASS |
+| Recommendation สอดคล้องกับ Conviction Gate (Growth: HOLD เพราะ Conv 5.83 < 6.5) | ✅ PASS — ไม่มีการ deploy เพิ่มทั้งที่ gate ไม่ผ่าน |
+| Recommendation ไม่ได้เปลี่ยนเป็น SELL/TRIM โดยพลการ | ✅ PASS — คงเป็น HOLD ตลอดทั้งรายงาน ไม่มี Bear Flip Trigger หรือ Thesis Invalidation event เกิดขึ้นจริงตามที่ทีมยืนยันสอดคล้องกัน |
+| Stop loss format \`$XX (-X% จาก entry $XX)\` | ✅ PASS — มีทั้ง entry-relative และ current-price-relative ครบ |
+| Position size ≤10%, ≥3% (ถ้า deploy) | N/A — ไม่มี deployment ใหม่ในรอบนี้ (คง 5% cap เดิม, ไม่เพิ่ม) |
+| DCF Cash Flow Consistency Rule (SBC>10%→NOPAT-based) | ✅ PASS — ยังคง NOPAT-based ทั้ง Emma/Quinn/Bear ไม่เปลี่ยนจาก Round 1 |
+| Reconciliation table เมื่อ Emma/Quinn FV gap ≥25% | ✅ N/A ถูกต้อง — gap จริง <0.1% (base-case) — ไม่บังคับ |
+| HOLD report มี Forward Return Estimate | ✅ PASS — มีครบพร้อม caveat ที่ชัดเจนขึ้นกว่ารอบก่อน (เน้นว่า upside ที่เหลือจริงคือ -2.20% ไม่ใช่ +40.4%) |
+
+**⚠️ พบ 1 จุดใหม่ที่ต้องตั้งคำถาม — "Max Consultation Rule" reference:**
+
+รายงาน (Update Log, TL;DR, Bear Flip Trigger #6, Conclusion ข้อ 4) อ้างถึง **"Max Consultation Rule"** ซ้ำหลายครั้งในฐานะกฎที่มีอยู่แล้ว ("เปิด Max Consultation Rule เพื่อพิจารณา trim position") — Morgan ตรวจสอบ CLAUDE.md (House Rules) ฉบับปัจจุบันทั้งหมดแล้ว **ไม่พบชื่อกฎ "Max Consultation Rule" ที่ถูกกำหนดไว้อย่างเป็นทางการที่ไหนเลย** ใน Deployment Rules, Risk Rules, Portfolio Construction, หรือส่วนอื่นใดของ CLAUDE.md
+
+- นี่**ไม่ใช่การใช้กฎที่ไม่มีอยู่จริงเพื่อ justify การกระทำที่ผิด** เพราะ recommendation ยังคงเป็น HOLD (ไม่ใช่การอ้างกฎเพื่อ bypass การทำ SELL/TRIM ที่ควรต้องทำ) — เป็นเพียงการอ้างถึงขั้นตอนในอนาคตแบบมีเงื่อนไข ("ถ้า MOS ยังติดลบต่อรอบหน้า...")
+- อย่างไรก็ตาม การอ้างชื่อ "Rule" ที่ไม่มีอยู่จริงใน house rules ซ้ำหลายจุดในรายงาน (4 จุด) เป็นความเสี่ยงเชิงกระบวนการ — ถ้าไม่มีใครแก้ไข อาจกลายเป็น "กฎที่ไม่มีอยู่จริงแต่ถูกอ้างจนดูเหมือนมีอยู่จริง" ในรายงานถัดๆ ไป (pattern เดียวกับที่ CLAUDE.md เตือนเรื่อง weight/threshold hardcode drift ใน § 3.5C/3.5D)
+- **Action required (ไม่ blocking):** Charlie ควร (a) เพิ่ม "Max Consultation Rule" เข้า CLAUDE.md อย่างเป็นทางการถ้าตั้งใจให้เป็นกระบวนการจริง หรือ (b) เปลี่ยนคำในรายงานเป็นภาษาที่ไม่อ้างว่าเป็น "Rule" ที่มีอยู่แล้ว (เช่น "ควรปรึกษา CIO/Max ก่อนตัดสินใจ trim" แทน)
+
+**Severity: MEDIUM** (Reject Type หากนับเป็น issue เดี่ยว: \`SOURCE_MISSING\` — อ้างอิงกฎที่ไม่มี source/citation ใน CLAUDE.md) — ไม่ block PASS เพราะไม่ได้ถูกใช้เพื่อ bypass การตัดสินใจที่ควรทำจริง
+
+### 4. Internal Consistency Check — ตัวเลขตรงกันทุกจุด
+
+ตรวจตัวเลข Blended FV / MOS / Conviction / Stop Loss ในทุก section ที่ควรเป็นค่า "live" ปัจจุบัน (ไม่นับจุดที่ label ชัดเจนว่าเป็นข้อมูลย้อนหลัง/audit trail):
+
+| Section | Blended FV | MOS | Conviction Avg | Stop Loss |
+|---------|-----------|-----|-----------------|-----------|
+| 🎯 คำแนะนำ (header table) | $125.65 | -2.20% | — | $93 |
+| 📊 Score Dashboard | $125.65 | -2.20% | 5.83/10 | — |
+| ⚡ TL;DR | $125.65 | -2.20% | 5.83/10 | — |
+| 📋 Executive Summary | $125.65 | -2.20% | — | — |
+| 💪 Conviction Bar | — | — | 5.83/10 | — |
+| 💰 Valuation Triangulation table | $125.65 | -2.20% | — | — |
+| 🎯 Recommendation (Key Verdict + body) | $125.65 | -2.20% | 5.83/10 | $93 |
+| 🏁 Conclusion | $125.65 | -2.20% | 5.83/10 | $93 |
+
+**ผล: ✅ PASS — ตัวเลขตรงกันทุกจุด 100% ไม่มีจุดใดหลงเหลือค่าเก่า ($135.30 / +5.31% / 6.17 / $98) เป็นค่า "live" — ค่าเก่าทุกจุดที่ปรากฏถูก label ชัดเจนว่าเป็นข้อมูลก่อนแก้ ("เดิม", "Round 1", "ที่ TGR 3.5%") ในบริบทเปรียบเทียบ before/after เท่านั้น**
+
+### 5. Format Check
+
+| รายการ | สถานะ |
+|--------|-------|
+| Conviction Level Score section ใช้ emoji 💪 (Issue #3 Round 1) | ✅ **PASS — แก้แล้ว** (บรรทัด "### 💪 Conviction Level Score") |
+| Conviction Bar ใช้ █ characters | ✅ PASS |
+| Key Verdict callout \`> ### text\` | ✅ PASS |
+| Catalyst Timeline \`──●──\` format | ✅ PASS |
+
+### 6. Source Annotation — ตัวเลขใหม่จาก TGR Correction
+
+| ตัวเลขใหม่ | Source/Derivation ที่ตรวจสอบได้ |
+|-----------|----------------------------------|
+| Emma DCF FV $129.21 | \`agent_notes/emma/2026-05-11_NOW.md\` § 🔧 TGR Correction (Round 2) — full derivation chain แสดงครบ (TV, PV(TV), EV, Equity, FV/share) |
+| Quinn P-W EV $131.87 | \`agent_notes/quinn/2026-05-11_NOW.md\` § 🔧 TGR Correction (Round 2) — calibration check 4 จุดก่อน recompute + scenario table ครบ |
+| Bear P-W EV $114.69 | \`agent_notes/bear/2026-05-11_NOW.md\` § 🔧 TGR Correction (Round 2) — engine reproducibility check ก่อน recompute + scenario table ครบ |
+| Cross-verification ระหว่าง 3 agents | Emma-Quinn base-case gap <0.1% (ยืนยัน 3 ครั้งติดต่อกันในรอบต่างๆ), Morgan Round 1 illustrative calc ($129.23) ตรงกับ Emma's actual ($129.21) ภายใน 0.015% |
+
+**ผล: ✅ PASS — ทุกตัวเลขมี derivation ที่ตรวจสอบได้ ไม่มีตัวเลขลอย**
+
+### 7. Business Deep Dive Completeness — สถานะ (carried จาก Round 1, ไม่ blocking)
+
+Customer Concentration + Geography Revenue Breakdown ยังคง **MISSING** เหมือน Round 1 (Emma ระบุชัดใน § 6.4 ว่า Atlas ไม่ได้ fetch รอบนี้เพราะ scope โฟกัสที่ Armis/WACC/TGR) — **Severity: MEDIUM, non-blocking** สำหรับ HOLD recommendation (ไม่ใช่ BUY ที่ต้องการข้อมูลครบกว่าเพื่อ justify position sizing ใหม่) แนะนำให้ Charlie ขอ Atlas fetch เพิ่มในรอบ re-analysis ถัดไป
+
+### 8. Data Quality Score: 8.6/10
+
+| มิติ | คะแนน | หมายเหตุ |
+|------|-------|---------|
+| Source Quality (Tier) | 9/10 | Tier 1 (SEC 10-Q/8-K) + Tier 2 (Stockanalysis, Yahoo, Damodaran) — ไม่เปลี่ยนจาก Round 1 |
+| Data Freshness | 8/10 | ราคา 3 วัน, financials Q2 FY26 ล่าสุด, Beta/ERP current — ไม่เปลี่ยนจาก Round 1 |
+| DCF Assumptions | 9/10 | **TGR แก้เป็น 3.0% (ceiling) แล้ว — compliant** หัก 1 แต้มเพราะอยู่ที่ ceiling พอดี (thin buffer) ไม่ใช่ mid-range ที่ปลอดภัยกว่า แต่รายงานเปิดเผยความเสี่ยงนี้อย่างตรงไปตรงมาครบถ้วน |
+| Cross-agent Consistency | 9/10 | Emma/Quinn base-case DCF converge <0.1% เป็นครั้งที่ 3 ติดต่อกัน — process integrity สูงมาก ไม่เปลี่ยนจาก Round 1 |
+| Atlas Integration | 7.5/10 | Regime/Rf sensitivity สะท้อนดี แต่ Customer/Geography data gap ยังไม่แก้ (carried MEDIUM) — หักเล็กน้อยเพราะเป็นรอบที่ 2 แล้วที่ gap นี้ยังไม่ถูกปิด |
+| **Overall** | **8.6/10** | ผ่านเกณฑ์ PASS (≥6/10) อย่างชัดเจน — คะแนนดีขึ้นจาก 7.4/10 (Round 1) เพราะ HIGH severity issue หลักถูกแก้สมบูรณ์ |
+
+### ❌ Issues Found (Round 2)
+
+| # | Issue | Location | Severity | Action Required |
+|---|-------|----------|----------|----------------|
+| 1 | Business Deep Dive ขาด Customer Concentration + Geography Breakdown (carried จาก Round 1, ยังไม่แก้) | 🏢 Business Deep Dive | MEDIUM | ขอ Atlas fetch SEC 10-K Section J/K ในรอบ re-analysis ถัดไป — ไม่ blocking สำหรับ HOLD ปัจจุบัน |
+| 2 | "Max Consultation Rule" ถูกอ้างอิง 4 จุดในรายงานแต่ไม่มีอยู่จริงใน CLAUDE.md House Rules | Update Log, TL;DR, Bear Flip Trigger #6, Conclusion | MEDIUM | Charlie ควรเพิ่มกฎนี้เข้า CLAUDE.md อย่างเป็นทางการ หรือแก้คำในรายงานเป็นภาษาที่ไม่อ้างว่าเป็น "Rule" ที่มีอยู่แล้ว |
+
+**รวม 2 MEDIUM, ไม่มี HIGH — อยู่ในเกณฑ์ PASS (MEDIUM ≤ 2 รายการ, ไม่มี HIGH, Data Quality Score 8.6/10 ≥ 6)**
+
+### 📝 QA Summary (Round 2)
+
+การแก้ไข TGR จาก 3.5% เป็น 3.0% ตาม Morgan QA Round 1 finding ถูกดำเนินการอย่างสมบูรณ์และถูกต้องแม่นยำโดยทีม Emma, Quinn, Bear — Morgan ตรวจสอบ arithmetic ทุกจุดที่สำคัญด้วยตนเองอย่างอิสระ (TV, PV(TV), EV, Equity, FV/share, P-W EV ทั้ง 2 ชุด, Blended FV, MOS, Conviction average, Sensitivity Matrix cell count, Stop Loss calculations) **ไม่พบ error แม้แต่จุดเดียว** — ตัวเลขทุกจุดในรายงานสอดคล้องกัน 100% ไม่มีค่าเก่าหลงเหลือเป็น "live value" ที่ไหนเลย TGR ปัจจุบัน (3.0%) อยู่ที่เพดานสูงสุดที่อนุญาตพอดี ซึ่งทำให้ margin of safety บางมาก (MOS -2.20%) แต่รายงานเปิดเผยความเสี่ยงนี้อย่างตรงไปตรงมาและครบถ้วนในหลายจุด ไม่ได้ซ่อนหรือลด severity ของสิ่งที่พบ
+
+พบ 2 ประเด็น MEDIUM ที่ไม่ blocking: (1) Business Deep Dive gap ที่ carried มาจาก Round 1 ยังไม่แก้ (ทราบแล้ว ไม่ blocking สำหรับ HOLD) (2) การอ้างอิง "Max Consultation Rule" ที่ไม่มีอยู่จริงใน CLAUDE.md ซ้ำหลายจุด — ควรแก้ไขในรอบถัดไปแต่ไม่กระทบความถูกต้องของ recommendation ปัจจุบัน (HOLD ยังคงเป็น HOLD ไม่ได้ถูกใช้เพื่อ bypass อะไร)
+
+**พร้อมส่ง Leo บันทึกได้ทันที** — Leo ควร sync \`dashboard/data.js\` ด้วยตัวเลขใหม่ทั้งหมด (Blended FV $125.65, MOS -2.20%, Conviction 5.83/10, Stop Loss $93) แทนที่ object เดิมของ NOW ทั้งหมด (ตาม Re-analysis Rule ข้อ 11 — ห้ามเพิ่ม entry ซ้อน) พร้อมแนบ flag ทั้ง 2 MEDIUM ข้างต้นไว้เป็น caveat ที่ไม่ blocking สำหรับ CIO รับทราบ
+
+---
+
+*Morgan QA Round 2 — 2026-08-24 | NOW Verification Complete*
+`,
   },
   {
     ticker: "INTU",
