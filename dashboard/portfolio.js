@@ -4,7 +4,7 @@
 // Do NOT edit manually — Max overwrites this file on every update
 // =================================================================
 
-const PORTFOLIO_LAST_UPDATED = "2026-08-23 (REGN TRIM 30% EXECUTED — CIO CONFIRMED | Max×Charlie consultation 2026-08-22/23, CIO: \"หมายถึง now hold ได้ regn 30% เอาตามที่พวกนายว่า\" | ขาย 0.18sh @ $834.04 (re-verified 2026-08-23, 2 sources) = $150.13 proceeds, realized P&L +$41.77 (+38.54%), เหลือ 0.42sh weight 3.40% | NOW: HOLD ต่อ ไม่มี action — ปิด case ตามข้อเสนอ | Total $10,291.72 (แทบไม่เปลี่ยนจาก trim, แค่ realize gain บางส่วน) | Cash 61.04% (+จาก proceeds) | ⚠️ ADBE weight 10.70% ยังชนขอบบนของ IPS band)";
+const PORTFOLIO_LAST_UPDATED = "2026-08-24 (NOW Full Re-Analysis + TGR Correction — Morgan QA Round 2 PASS: Conv 5.83 (fail Growth gate 6.5), Blended FV $125.65 (จาก $135.30), MOS -2.20% (จาก +5.31%, พลิกลบครั้งแรก) → BUY→HOLD, Maintain T1 2sh, Stop $98→$93. ไม่มี Bear Flip/Invalidation ยิง — ไม่ SELL | REGN TRIM 30% EXECUTED 2026-08-23 — CIO CONFIRMED | Total $10,291.72 | Cash 61.04% | ⚠️ ADBE weight 10.70% ยังชนขอบบนของ IPS band)";
 
 const PORTFOLIO = {
 
@@ -107,7 +107,7 @@ const PORTFOLIO = {
       totalShares: 4, avgEntryPrice: 247.03, totalCostBasis: 988.10,
       entryPrice: 247.03, shares: 4, costBasis: 988.10,
       currentPrice: 275.30, marketValue: 1101.20, returnPct: 11.44, weightPct: 10.70,
-      stopLoss: 185.00, stopDistancePct: 32.80, blendedFV: 311.70, mosPct: 11.68,
+      stopLoss: 185.00, stopDistancePct: 32.80, blendedFV: 311.70, mosPct: 11.68, fvVerifiedDate: "2026-05-09",
       entryZone: "T1: $240-260 | T2: $215-235 | T3: $190-210",
       thesis: "Wide Moat Creative Software — FCF margin 42%, Firefly AI upside, $25B buyback",
       status: "OPEN", reportFile: "reports/ADBE_2026-05-09.md",
@@ -115,21 +115,21 @@ const PORTFOLIO = {
     },
     {
       ticker: "NOW", company: "ServiceNow Inc.", sector: "Software / AI Layer",
-      recommendation: "BUY — HOLD T1", conviction: 6.7,
+      recommendation: "HOLD — Maintain T1 (Re-Analysis 2026-08-24)", conviction: 5.83,
       entryPrice: 89.47, shares: 2, costBasis: 178.94,
       currentPrice: 128.48, marketValue: 256.96, returnPct: 43.60, weightPct: 2.50,
-      stopLoss: 58.00, stopDistancePct: 54.86, blendedFV: 121.45, blendedFVVerified: true, mosPct: -5.79,
+      stopLoss: 93.00, stopDistancePct: 38.15, blendedFV: 125.65, fvVerifiedDate: "2026-08-24", mosPct: -2.20,
       entryZone: "T1: $85-95 | T2: $72-84", tranche: "T1",
-      thesis: "Agentic AI platform leader. FV $121.45. MOS +19.4% Q1 subscription rev +22%, cRPO +22.5%. Thesis intact.",
+      thesis: "Agentic AI platform leader. Re-Analysis 2026-08-24 (Full Re-Analysis + TGR Correction, Morgan QA Round 2 PASS): TGR 3.5%→3.0% → Blended FV $135.30→$125.65, MOS +5.31%→-2.20% (turned negative first time), conviction 6.17→5.83 (fails Growth gate 6.5) → Recommendation BUY→HOLD. No Bear Flip/Thesis Invalidation fired (0/5, 0/3) — maintaining T1, no trade. Stop Loss tightened $98.00→$93.00 (anchored below new Bear scenario $94.28).",
       status: "OPEN", reportFile: "reports/NOW_2026-05-11.md",
-      priceUpdated: "2026-08-22", priceSource: "$128.48 (2026-08-21 close, 4:00 PM EDT — 2 sources cross-check: CNBC $128.48 -0.98% day + stockanalysis.com $128.48, ตรงกัน). 🟠 STRONG SELL TERRITORY กลับมาอีกครั้ง — ราคาพุ่งต่อเนื่องจาก $117.70 เป็น $128.48 ทะลุ Blended FV $121.45 อีกครั้ง, MOS พลิกลบเป็น -5.79% (จาก +3.09%). return พุ่งเป็น +43.60% เป็น best performer ใหม่ของพอร์ต (แซง REGN). stopDist 54.86% ปลอดภัยที่สุดในพอร์ต — ไม่มีความเสี่ยง stop breach. thesis ยัง intact ไม่มี Bear Flip/Invalidation ยิง.",
+      priceUpdated: "2026-08-22", priceSource: "$128.48 (2026-08-21 close, 4:00 PM EDT — 2 sources cross-check: CNBC $128.48 -0.98% day + stockanalysis.com $128.48, ตรงกัน). ⚠️ UPDATE 2026-08-24: Full Re-Analysis + TGR Correction pipeline complete — Morgan QA Round 2 PASS. Blended FV $135.30→$125.65, MOS +5.31%→-2.20% (พลิกลบครั้งแรก), team conviction 6.17→5.83 (หลุด Growth gate 6.5) → Recommendation เปลี่ยนจาก BUY เป็น HOLD. ไม่มี Bear Flip/Invalidation ยิง — ไม่ใช่ SELL, HOLD 2sh ต่อ ไม่เพิ่ม/ลด. สิ่งเดียวที่เปลี่ยน: Stop Loss $98.00→$93.00 (anchored ใต้ Bear scenario ใหม่ $94.28). stopDist ใหม่ 38.15% ยังปลอดภัย.",
     },
     {
       ticker: "GOOGL", company: "Alphabet Inc. Class A", sector: "Comm. Services / AI Platform",
       recommendation: "BUY", conviction: 7.2,
       entryPrice: 388.91, shares: 1, costBasis: 388.91,
       currentPrice: 344.82, marketValue: 344.82, returnPct: -11.34, weightPct: 3.35,
-      stopLoss: 310.00, stopDistancePct: 10.10, blendedFV: 414.00, mosPct: 16.71,
+      stopLoss: 310.00, stopDistancePct: 10.10, blendedFV: 414.00, mosPct: 16.71, fvVerifiedDate: "2026-05-21",
       entryZone: "$370-400", tranche: "T1",
       thesis: "AI Platform + Cloud hypergrowth: GCP +82% YoY (Q2 accelerate จาก +63%), Search AI overviews. Wide Moat. Conv 7.2. 🔴🔴 stopDist หลุดต่ำกว่า 10% เป็นครั้งแรก (9.82%, จาก 12.50% Aug9) — WATCH CRITICAL. ราคายังร่วงต่อเนื่องจาก AI leadership shakeup (Jeff Dean/Hassabis exit, ต้น ส.ค.) + capex/bond overhang แม้ core business (Cloud +82%, EPS $9.11 record) ยังไม่เปลี่ยน — ยังไม่ถึง Thesis Invalidation. T2 zone $360-375 — price $343.74 หลุดต่ำกว่า T2 zone มากขึ้น.",
       status: "OPEN", reportFile: "reports/GOOGL_2026-05-21.md",
@@ -145,7 +145,7 @@ const PORTFOLIO = {
       totalShares: 3, avgEntryPrice: 181.00, totalCostBasis: 543.00,
       entryPrice: 181.00, shares: 3, costBasis: 543.00,
       currentPrice: 209.17, marketValue: 627.51, returnPct: 15.56, weightPct: 6.10,
-      blendedFV: 279.00, mosPct: 25.03,
+      blendedFV: 279.00, mosPct: 25.03, fvVerifiedDate: "2026-05-29",
       stopLoss: 144.80, stopDistancePct: 30.77,
       entryZone: "$175-190", tranche: "T1",
       t2Zone: "TBD — Agentforce ARR >$2B or ROIC improvement or earnings beat 2Q+",
@@ -163,7 +163,7 @@ const PORTFOLIO = {
       totalShares: 3, avgEntryPrice: 175.94, totalCostBasis: 527.82,
       entryPrice: 175.94, shares: 3, costBasis: 527.82,
       currentPrice: 153.29, marketValue: 459.87, returnPct: -12.87, weightPct: 4.47,
-      blendedFV: 169.25, mosPct: 9.43,
+      blendedFV: 169.25, mosPct: 9.43, fvVerifiedDate: "2026-05-30",
       stopLoss: 140.75, stopDistancePct: 8.18,
       entryZone: "T1: $155-178 | T2: $145-160 (pullback or AI licensing $200M+ confirmed)",
       tranche: "T1",
@@ -182,7 +182,7 @@ const PORTFOLIO = {
       totalShares: 0.42, avgEntryPrice: 602.00, totalCostBasis: 252.84,
       entryPrice: 602.00, shares: 0.42, costBasis: 252.84,
       currentPrice: 834.04, marketValue: 350.30, returnPct: 38.54, weightPct: 3.40,
-      stopLoss: 482.00, stopDistancePct: 42.21, blendedFV: 792.00, mosPct: -5.31,
+      stopLoss: 482.00, stopDistancePct: 42.21, blendedFV: 792.00, mosPct: -5.31, fvVerifiedDate: "2026-06-03",
       entryZone: "$580-640", tranche: "T1",
       t2Zone: "$510-570 — pullback or IRA exemption confirmed (NOTE: T1 TRIMMED 30% 2026-08-23 — เหลือ 0.42sh)",
       thesis: "Dupixent multi-indication growth (atopic dermatitis, asthma, COPD, PRURIGO). Oncology pipeline PSMA-CD3 bispecific. Strong FCF. IRA binary risk Q4 2026 (Dupixent price negotiation). Wide Moat Healthcare. ⚠️ securities class action lawsuit (July24, melanoma pipeline ไม่ใช่ Dupixent core) ยังค้าง. 🔪 TRIMMED 30% 2026-08-23 @ $834.04 — CIO confirmed, lock partial gain, MOS -5.31% deepening trend (2 รอบติด Aug18/Aug22). thesis ยัง intact — ไม่มี Bear Flip/Invalidation ยิง, เหลือ 0.42sh ต่อ.",
@@ -199,7 +199,7 @@ const PORTFOLIO = {
       totalShares: 1.4, avgEntryPrice: 178.16, totalCostBasis: 249.43,
       entryPrice: 178.16, shares: 1.4, costBasis: 249.43,
       currentPrice: 185.28, marketValue: 259.39, returnPct: 4.00, weightPct: 2.52,
-      stopLoss: 148.00, stopDistancePct: 20.12, blendedFV: 252.35, mosPct: 26.58,
+      stopLoss: 148.00, stopDistancePct: 20.12, blendedFV: 252.35, mosPct: 26.58, fvVerifiedDate: "2026-06-05",
       entryZone: "T1: $175-192 | T2: $155-175",
       t2Zone: "NO ADD — Bear Flip firing. Re-evaluate only if Q4 bookings stabilize >$22B + Rev growth >5%",
       thesis: "IT Services Wide Moat AI Consulting. ⚠️ Q3 FY26 (June18): EPS $3.80 beat แต่ Rev $18.72B MISS + FY guide cut เหลือ 3-4% + weak bookings = Bear Flip #1 (rev <5%) firing → bear thesis 'AI displaces consulting' กำลัง materialize. ยัง: ROIC 27%, FCF $3.6B/margin 17%, P/E 14, yield 5%, MOS +42% (FV $252). TRIMMED 50% — เก็บครึ่งรอ Q4 bookings ตัดสิน. พาร์ทเนอร์ agentic AI ขยายต่อเนื่อง (OpenAI, Microsoft/Avanade, ServiceNow) แต่ยังไม่พลิก Bear Flip.",
@@ -216,7 +216,7 @@ const PORTFOLIO = {
       totalShares: 2.4, avgEntryPrice: 198.43, totalCostBasis: 476.23,
       entryPrice: 198.43, shares: 2.4, costBasis: 476.23,
       currentPrice: 253.83, marketValue: 609.19, returnPct: 27.92, weightPct: 5.92,
-      stopLoss: 158.74, stopDistancePct: 37.46, blendedFV: 290.00, mosPct: 12.47,
+      stopLoss: 158.74, stopDistancePct: 37.46, blendedFV: 290.00, mosPct: 12.47, fvVerifiedDate: "2026-06-09",
       entryZone: "T1: $183-205 (เข้าต่ำกว่า zone — ซื้อถูกลง) | T2: post-FOMC ถ้า thesis ยืน",
       t2Zone: "post-FOMC June 17 — ถ้า RISK-ON ยืน + thesis intact + MaintainX integration on-track",
       thesis: "Design Software Wide Moat — DWG/Revit format 40-year industry standard. ROIC 49.15% (top tier), FCF Yield 5.62%, ROE 50.40%. Q1 FY27 Revenue +18.4% YoY = acceleration post-subscription transition. 'ADBE 2022-2023 pattern': FCF inflection thesis. AI integration genuine (Forma BIM AI, Fusion generative design). Bear risk: AEC cyclicality + MaintainX integration execution + sales force transition. ✅ MaintainX acquisition ปิดดีลสำเร็จ (Aug3). ⚠️ Goldman Sachs เปิด coverage ใหม่ Neutral PT $260 (13 ส.ค.) สวนทาง Street Buy consensus $314 — ก่อนงบ 27 ส.ค.",

@@ -4,6 +4,8 @@ description: Performance Tracker — ใช้เมื่อ CIO ต้อง�
 tools:
   - Read
   - Write
+  - Edit
+  - Bash
   - WebSearch
   - WebFetch
 ---
@@ -290,6 +292,7 @@ Calibration Error per Analyst:
 ## กฎการทำงาน
 - **ใช้ WebFetch หาราคาปัจจุบันก่อนเสมอ** — ถ้า WebFetch ล้มเหลวจึงใช้ WebSearch เป็น fallback
 - อ่าน `performance/tracker.md` ก่อนเขียนทุกครั้ง — ห้าม overwrite ข้อมูลเก่า
+- **⚠️ ห้ามใช้ Write tool เขียน `tracker.md` (หรือไฟล์ใหญ่อื่นๆ) ทั้งไฟล์เด็ดขาด — ใช้ `Edit` tool แก้เฉพาะ row/section ที่เปลี่ยนเท่านั้น** (เดียวกับ Dashboard Write Safety ของ `dashboard/data.js`) ที่มาของกฎนี้: 2026-08-24 Vera (ตอนนั้นมีแค่ Read/Write) ต้อง reconstruct ทั้งไฟล์ด้วย Write แล้วทำข้อมูลหาย 561 บรรทัด (757→373) โดยไม่ตั้งใจ ก่อนถูกแก้คืนจาก git — ตอนนี้มี `Edit`/`Bash` tool แล้ว ไม่มีข้อแก้ตัวที่จะ overwrite ทั้งไฟล์อีก ถ้าไฟล์ใหญ่เกินจะแก้ตรงๆ ให้ใช้ Bash + Python/Node script ทำ targeted replace แทน (ตาม pattern เดียวกับ Leo's Dashboard Write Safety script)
 - ถ้า ticker ไม่มีราคาปัจจุบัน (หุ้น delisted, ชื่อเปลี่ยน) → flag และระบุ "N/A — ต้องตรวจสอบ"
 - คำนวณตัวเลขจริง — ห้ามประเมินคร่าวๆ
 - เน้นความจริง: ถ้า call ผิด → บอกตรงๆ ไม่ต้อง spin

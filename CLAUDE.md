@@ -149,6 +149,27 @@ CIO ต้องการเห็น "ทีมคิดยังไงกั�
 2. **Single position -20% จาก entry** → review thesis ทันที
 3. **Thesis เปลี่ยน** → ออกทันที ไม่รอ price recovery
 
+### Max Consultation Rule (บังคับ — ตั้งแต่ 2026-08-23)
+**Max ต้องปรึกษา Charlie ก่อนทุกครั้งที่จะ Buy / Sell / Trim / AUTO-SELL จริง** — ไม่ว่า trigger จะมาจาก Exit Rules (Mode 0.5 Portfolio Brain), Portfolio Review (Mode 3), Force Deploy, backlog deployment assessment, หรือ tranche add (T2/T3) ใดๆ
+
+**ไม่รวม:** routine **"HOLD — ไม่มี action"** ระหว่าง portfolio review/monitoring ปกติ — Max ยังรายงาน HOLD เองได้ทันทีโดยไม่ต้องปรึกษา (ป้องกัน overhead ทุก position ทุก session ที่ไม่มีอะไรเปลี่ยน)
+
+**กลไก:**
+- Max ส่งข้อเสนอ action (BUY/SELL/TRIM) พร้อมเหตุผล + ตัวเลขสนับสนุน (MOS/conviction/stopDist) ให้ Charlie ก่อน execute
+- บันทึกความเห็นของ Charlie ไว้ใน `trade-log.md` / `deployment_log.md` / `dataIntegrityLog` ก่อนทำจริงเสมอ
+- นี่คือ **"ปรึกษา" ไม่ใช่ "ขออนุมัติ"** — Max ยังเป็นคนตัดสินใจสุดท้าย (ไม่ขัดกับ [[feedback_cio_selection_gate]] ที่ CIO ไม่ต้องการ approval gate ของตัวเอง) แต่ถ้า Charlie เห็นต่างอย่างมีนัยสำคัญ ให้ flag ให้ CIO เห็นทั้งสองมุมมองก่อนตัดสินใจสุดท้าย
+- **ห้ามมาถาม CIO กลางทางระหว่างทีมยังคุยกันไม่จบ** (บังคับ — CIO ยืนยัน 2026-08-23) — Max + Charlie ต้องคุยกันจนได้ **ข้อสรุปเดียวที่ reconcile แล้ว** (หรือระบุจุดที่เห็นต่างชัดเจนถ้าตกลงกันไม่ได้จริงๆ) ก่อนค่อยเอาไปเสนอ CIO ครั้งเดียว — ไม่ใช่ไปๆ มาๆ ถามคุณระหว่างขั้นตอน consult
+- BUY ที่มาจาก fresh research pipeline (Charlie → Morgan QA PASS → Max execute) ถือว่าผ่านการปรึกษา Charlie แล้วโดยธรรมชาติของ pipeline — ไม่ต้องปรึกษาซ้ำ
+
+**เหตุผล:** CIO ต้องการให้มี second opinion ในทีมก่อน Max ตัดสินใจ trade จริงแต่ละครั้ง (2026-08-23) — ป้องกันการตัดสินใจเดี่ยวไร้การถ่วงดุล ไม่ใช่การยกเลิก autonomy ของ Max ในภาพรวม
+
+**Precedent (2026-08-24, CIO ยืนยันแล้ว — ใช้เป็นบรรทัดฐาน):** MOS ที่พลิกลบ (≤0%, เข้าเงื่อนไข STRONG SELL ตามตัวอักษร Exit Rules) **ไม่ต้อง trigger Max Consultation Rule ทันที** ถ้าเข้าเงื่อนไขครบทุกข้อนี้:
+1. สาเหตุคือการแก้ compliance/methodology parameter (เช่น TGR เกินเพดาน QA) — **ไม่ใช่**ข้อมูลตลาด/ธุรกิจใหม่ที่แย่ลงจริง
+2. ไม่มี Bear Flip Trigger หรือ Thesis Invalidation ยิงแม้แต่ข้อเดียว (0/5, 0/3)
+3. ไม่มี action จริงเกิดขึ้น (ยังคง HOLD position เดิม ไม่ deploy/sell/trim)
+
+ในกรณีนี้ให้ **flag เป็น watch item สำหรับ re-check รอบถัดไปแทน** — เหตุผล: การ full re-analysis pipeline ที่นำไปสู่การค้นพบนี้ (Atlas→Emma/Quinn/Bear→Morgan) ก็คือ "ทีมปรึกษากันจนได้ข้อสรุป" อยู่แล้วโดย spirit เข้มกว่า consultation เดี่ยวๆ ของ Max×Charlie — ไม่จำเป็นต้องทำซ้ำ **ข้อควรระวัง:** ถ้า MOS ยังติดลบต่อในการ re-check รอบถัดไป (ไม่ใช่แค่ one-time correction artifact แล้ว แต่เป็น trend จริง) → **ต้อง treat เป็น STRONG SELL จริงจัง เข้า Max Consultation Rule ทันที** ไม่ได้รับข้อยกเว้นซ้ำอีก (ตัวอย่างเคสแรก: NOW TGR correction 2026-08-24 — ดู [[project_reanalysis_trigger_rule]])
+
 ## Pipeline
 
 ### Scout Pipeline (Max หาหุ้นเอง)
@@ -216,6 +237,33 @@ CIO → "Vera ออก performance report"
 **Charlie SLA:**
 - Pending analysis ค้างเกิน 5 วัน → Charlie ต้อง flag ใน watchlist.md และแจ้ง CIO
 - ห้าม watchlist เป็น dumping ground — ทุก ticker ต้องมี target analysis date
+
+### Re-Analysis Trigger Rule (บังคับ — ทุก OPEN position, เพิ่ม 2026-08-23)
+
+**ที่มา:** NOW consultation (2026-08-23) เจอว่า Blended FV $121.45 ไม่เคย re-verify มา ~3 เดือน (คำนวณจาก data 2026-05-20) ระหว่างที่ MOS แกว่งบวก/ลบ 3 รอบใน 3 เดือน — ไม่มีใครรู้แน่ชัดว่า MOS ติดลบเพราะราคาแพงจริงหรือเพราะ FV ล้าสมัย เพราะไม่มีกฎบังคับว่า "เมื่อไหร่ต้อง re-verify FV" กฎนี้ปิดช่องว่างนั้น
+
+CIO เจตนาชัดเจน (2026-08-23): **ห้ามใช้ปฏิทิน/เวลาเปล่าๆ เป็น trigger หลัก** — ต้องผูกกับสัญญาณที่สังเกตได้จริง (event-driven) เหตุผล: เช็คกับ real-world practice แล้ว (Morningstar Equity Research Methodology) ยืนยันว่า fair-value update ในอุตสาหกรรมจริงเป็น **event-driven ไม่ใช่ time-driven** — อัปเดตเมื่อ earnings/guidance เปลี่ยน ไม่มีรอบเวลาตายตัว ([source](https://www.morningstar.com/content/dam/marketing/shared/research/methodology/705988Morningstar_Equity_Research_Methodology.pdf))
+
+**Trigger — re-verify FV (อย่างน้อย) เมื่อเข้าเงื่อนไขข้อใดข้อหนึ่งใน 5 ข้อนี้:**
+1. **Earnings-driven:** ticker ที่ถือ (OPEN position) มี earnings report ใหม่ออก → ต้อง re-verify FV ก่อนรอบ portfolio review ถัดไป
+2. **Staleness + Price-driven:** FV/DCF อายุเกิน **90 วัน** นับจาก `fvVerifiedDate` **และ** MOS พลิกลบ (STRONG SELL territory) → ต้อง re-verify FV ก่อนตัดสินใจ sell/trim ใดๆ บน MOS นั้น
+3. **Missed-earnings backstop:** ผ่าน earnings ไปแล้ว **≥2 รอบ** นับจาก `fvVerifiedDate` โดยไม่มีการ re-verify FV เกิดขึ้นเลย → trigger ทันที (นี่คือ audit ของ trigger #1 เอง — ถ้า #1 ทำงานถูกต้องเสมอ ข้อนี้จะไม่มีวัน fire)
+4. **Price divergence:** ราคาปัจจุบันห่างจากราคา ณ `fvVerifiedDate` **≥30-40%** (ไม่ว่าทิศทางไหน) → สมมติฐานเดิมน่าจะไม่ทันสถานการณ์แล้ว
+5. **Street PT divergence:** analyst consensus price target ห่างจาก internal Blended FV **≥25%** → สัญญาณว่าตลาดกับทีมมอง fundamental ต่างกันมาก ควร reconcile
+
+**ระดับการ re-analyze (ไม่ต้องเรียกทีมเต็มทุกครั้ง — เลือกตามความจำเป็น):**
+- **Lightweight (ค่าเริ่มต้น):** Emma re-run DCF/FV เดี่ยวด้วยข้อมูลการเงินล่าสุด (ไม่ต้อง Atlas/Quinn/Bear/Morgan เต็ม pipeline) — พอสำหรับ trigger ส่วนใหญ่
+- **Full pipeline:** ถ้า Emma พบว่า FV เปลี่ยนไปมาก (≥15-20%) หรือ fundamental เปลี่ยนจนกระทบ conviction/thesis อย่างมีนัยสำคัญ → ยกระดับเป็น full re-analysis pipeline ตามปกติ (Atlas → Emma/Quinn → Bear → Morgan QA) และปฏิบัติตาม Re-analysis file rule เดิม (กฎเหล็กข้อ 11 — update รายงานเดิม ห้ามสร้างไฟล์ใหม่)
+
+**ผู้รับผิดชอบตรวจจับ trigger (บังคับ — เจ้าของเดียว ไม่กระจายความรับผิดชอบ):** **Max** ตรวจครบทั้ง 5 ข้อในทุก Portfolio Review (Mode 3) และ Portfolio Brain (Mode 0.5) โดยดึงข้อมูลจาก 2 แหล่งที่มีอยู่แล้ว (ไม่ต้องให้ Atlas เช็คซ้ำแยกต่างหาก):
+- `dashboard/portfolio.js` field **`fvVerifiedDate`** (ต่อ position) + price ปัจจุบัน → ใช้เช็คข้อ 2, 3, 4
+- `dashboard/news.js` (ผลจาก Atlas news-scan) — earnings/analyst PT ที่ประกาศใหม่ → ใช้เช็คข้อ 1, 3, 5
+
+**⚠️ Field Integrity (บังคับ — ป้องกันกฎนี้ตาบอดซ้ำแบบเดียวกับปัญหาเดิม):** `fvVerifiedDate` **ต้องแยกขาดจาก** `priceUpdated` เด็ดขาด — `priceUpdated` อัปเดตทุกครั้งที่เช็คราคา (routine review) แต่ `fvVerifiedDate` **อัปเดตเฉพาะตอน Emma/ทีม re-run DCF จริงเท่านั้น** ห้าม Max แตะ field นี้ตอนแค่ WebSearch ราคาใหม่ — ถ้าปนกันสองอันนี้ trigger #2/#3/#4 จะอ่านค่า "สด" ตลอดแม้ FV จะเก่าจริงก็ตาม (นี่คือสาเหตุที่ NOW's FV $121.45 เก่าไป 3 เดือนโดยไม่มีใครรู้ตัว ก่อนจะเพิ่ม field นี้แยกออกมาวันนี้ 2026-08-24 — พบว่า NOW ผ่าน trigger #2 อยู่แล้วตอนนี้ทันทีที่เพิ่ม field: `fvVerifiedDate` 2026-05-20 = อายุ 96 วัน + MOS -5.79% ≤ 0%)
+
+ถ้า position เข้าเงื่อนไข trigger ข้อใดข้อหนึ่ง → Max ต้อง flag ใน summary ให้ CIO เห็นชัดเจน ก่อนเสนอ sell/trim ใดๆ บน FV ที่อาจ stale
+
+**บังคับให้เห็น ไม่ใช่แค่บังคับให้เช็ค:** ทุกรายงาน Portfolio Review (Mode 3) และ Portfolio Brain (Mode 0.5) ต้องมี block **"🔍 Re-Analysis Trigger Check"** โชว์สถานะทุก OPEN position เสมอ (แม้ผลจะเป็น "ไม่มี trigger" ก็ต้องเขียนระบุ ไม่ใช่เว้นว่าง) — CIO ใช้ความไม่ครบของ block นี้เป็นสัญญาณจับได้ทันทีว่า Max ข้าม process ไป (ดูรายละเอียด format ใน `.claude/agents/max.md` Mode 3 Step 5 และ Mode 0.5 Step 5)
 
 ### Session Interruption / Resume Protocol (บังคับ — ทุก agent ที่ resume งานค้าง)
 

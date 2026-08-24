@@ -1,5 +1,23 @@
 # Simulated Portfolio — บลจ. CFA
-*Managed by Max | Updated: 2026-08-23 (🔪 REGN TRIM 30% EXECUTED — CIO CONFIRMED after Max×Charlie consultation | ขาย 0.18sh @ $834.04 = $150.13, realized P&L +$41.77 (+38.54%), เหลือ 0.42sh weight 3.40% | NOW: HOLD ต่อ ไม่มี action — ปิด case | Total $10,291.72 | Cash 61.04% (+จาก proceeds) | Alpha -0.806% | ⚠️ ADBE weight 10.70% ชนขอบบน IPS band)*
+*Managed by Max | Updated: 2026-08-24 (🔄 NOW Full Re-Analysis + TGR Correction — Morgan QA Round 2 PASS: Conviction 5.83/10 (fail Growth gate 6.5), Blended FV $125.65 (จาก $135.30), MOS -2.20% (จาก +5.31%, พลิกลบครั้งแรก) → Recommendation BUY→HOLD, Maintain T1 2sh ไม่เพิ่ม/ลด, Stop Loss $98→$93 (anchored ใต้ Bear scenario ใหม่ $94.28) | ไม่มี Bear Flip/Invalidation ยิง จึงไม่ SELL | 🔪 REGN TRIM 30% EXECUTED (2026-08-23) — CIO CONFIRMED after Max×Charlie consultation | ขาย 0.18sh @ $834.04 = $150.13, realized P&L +$41.77 (+38.54%), เหลือ 0.42sh weight 3.40% | Total $10,291.72 | Cash 61.04% | Alpha -0.806% | ⚠️ ADBE weight 10.70% ชนขอบบน IPS band)*
+
+---
+
+## 🔄 RE-ANALYSIS COMPLETE — NOW 2026-08-24 (TGR Correction, HOLD Maintained — No Trade)
+
+> **TRIGGER:** Full Re-Analysis + Terminal Growth Rate (TGR) Correction pipeline — Morgan QA Round 2 = PASS. TGR ปรับจาก 3.5%→3.0% ให้ตรงเพดาน Morgan QA Protocol
+>
+> **ผลกระทบ:** Blended FV ลดลงจาก $135.30 → **$125.65** | MOS พลิกจาก +5.31% → **-2.20%** (ติดลบครั้งแรก) | Team conviction เฉลี่ยลดลงจาก 6.17 → **5.83/10** (ต่ำกว่า Growth gate 6.5) | Recommendation เปลี่ยนจาก **BUY → HOLD**
+>
+> **DECISION (ตาม Exit Rules):** ไม่มี Bear Flip Trigger หรือ Thesis Invalidation event เกิดขึ้นจริง — MOS≤0%/conviction gate fail ไม่ใช่คำสั่งขายอัตโนมัติ (เป็น valuation-methodology correction ไม่ใช่ fundamental deterioration) จึงยังไม่ใช่ SELL/TRIM — **HOLD 2 shares ต่อ ไม่เพิ่ม ไม่ลด position**
+>
+> **สิ่งเดียวที่เปลี่ยน:** Stop Loss ปรับจาก **$98.00 → $93.00** (anchored ใต้ Bear scenario ใหม่ $94.28 หลัง TGR correction) — เป็น risk-management action ไม่ใช่ trade
+>
+> **Position ปัจจุบัน:** 2 shares @ entry $89.47, ราคา $128.48, unrealized P&L +$78.02 (+43.60%), weight 2.50% ของพอร์ต — ไม่เปลี่ยนแปลง
+>
+> **⚠️ Open Question สำหรับ CIO (flagged by Morgan):** รายงานอ้างถึง "Max Consultation Rule" (SELL/TRIM ต้องปรึกษา Charlie ก่อน execute) — Morgan ตรวจพบว่ากฎนี้**ไม่มีอยู่จริงใน CLAUDE.md ปัจจุบัน** เป็น concept ที่ session ก่อนอ้างถึง (ดู `portfolio/deployment_log.md` แถว 2026-08-23 NOW/REGN consultation) แต่ไม่เคยถูก formalize เป็นกฎลายลักษณ์อักษร — รอบนี้ไม่กระทบเพราะ recommendation เป็น HOLD ไม่มี SELL/TRIM ให้ตัดสินใจ แต่ Leo บันทึกเป็น open question ไว้แล้ว (learning-log.md Error #9) — CIO ควรตัดสินใจว่าจะ formalize เข้า CLAUDE.md หรือไม่
+>
+> **Cash:** ไม่เปลี่ยนแปลง (ไม่มี trade)
 
 ---
 
@@ -222,7 +240,7 @@
 | Ticker | Entry Date | Entry $ | Shares | Cost Basis | Current $ | Mkt Value | Return % | Weight % | Stop Loss | Stop Dist % | Status |
 |--------|-----------|---------|--------|-----------|----------|----------|---------|---------|----------|-------------|--------|
 | ADBE (avg) | 2026-05-09 T1 / 2026-05-15 T2 | $247.03 avg | 4 | $988.10 | **$275.30** | $1,101.20 | **+11.44%** | 10.70% | $185.00 | +32.80% | OPEN — ⚠️ weight ชนขอบบน IPS |
-| NOW | 2026-05-11 T1 | $89.47 | 2 | $178.94 | **$128.48** | $256.96 | **+43.60%** | 2.50% | $58.00 | +54.86% | 🟠 STRONG SELL กลับมา — MOS -5.79%, best performer ใหม่ |
+| NOW | 2026-05-11 T1 | $89.47 | 2 | $178.94 | **$128.48** | $256.96 | **+43.60%** | 2.50% | $93.00 | +38.15% | 🟡 HOLD (Re-Analysis 2026-08-24) — Conv 5.83 fail Growth gate, MOS -2.20% post-TGR correction, stop tightened $58→$93 |
 | **GOOGL** | **2026-05-21 T1** | **$388.91** | **1** | **$388.91** | **$344.82** | **$344.82** | **-11.34%** | **3.35%** | **$310.00** | **10.10%** | **🟢 stopDist ฟื้นเล็กน้อย — ยังใกล้ critical zone** |
 | CRM | 2026-05-29 T1 | $181.00 | 3 | $543.00 | **$209.17** | $627.51 | **+15.56%** | 6.10% | $144.80 | +30.77% | OPEN — earnings 26 ส.ค. (UBS เตือน downside risk) |
 | RDDT | 2026-05-30 T1 | $175.94 | 3 | $527.82 | **$153.29** | $459.87 | **-12.87%** | 4.47% | $140.75 | +8.18% | 🟡 WATCH ใหม่ — ChatGPT citation collapse -86%, stopDist <10% |
@@ -243,7 +261,7 @@
 | ADSK | $253.83 | $158.74 | $95.09 | +37.46% | OK |
 | ADBE | $275.30 | $185.00 | $90.30 | +32.80% | OK — แต่ weight 10.70% ชนขอบบน IPS |
 | REGN | $834.04 | $482.00 | $352.04 | +42.21% | OK — 🔪 TRIMMED 30% 2026-08-23 (เหลือ 0.42sh, MOS -5.31%, CIO confirmed) |
-| NOW | $128.48 | $58.00 | $70.48 | +54.86% | OK — ปลอดภัยที่สุด, 🟠 STRONG SELL กลับมา (MOS -5.79%) |
+| NOW | $128.48 | $93.00 | $35.48 | +38.15% | OK — 🟡 HOLD (re-analysis 2026-08-24, stop $58→$93, MOS -2.20% post-TGR correction) |
 
 > **🟡 RDDT — WATCH ใหม่ (2026-08-22):** stopDist หดฮวบเหลือ 8.18% (จาก 20.97%) — ราคาร่วง -13.9% ใน 4 วัน จาก ChatGPT citation collapse -86% (Reddit block robots.txt) + insider selling + valuation concern. thesis review: ไม่มี Bear Flip/Invalidation ยิง, ไม่ auto-sell แต่ต้อง monitor ใกล้ชิดอันดับ 1.
 > **🟢 GOOGL — stopDist ฟื้นเล็กน้อย (2026-08-22):** 10.10% (จาก 9.82%) — หลุด critical zone เล็กน้อยแต่ยังใกล้เกณฑ์ 10% มาก, core business ไม่เปลี่ยน ยังเป็น priority monitoring สูงสุด.

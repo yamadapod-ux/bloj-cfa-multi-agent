@@ -75,4 +75,14 @@
 
 ---
 
+## NOW — Full Re-Analysis + TGR Correction — 2026-08-24 (HOLD Maintained, No Trade)
+
+| Date | Ticker | Action | Gate Status | Size | Tranche | Rationale | Counter-factual |
+|------|--------|--------|-------------|------|---------|-----------|-----------------|
+| 2026-08-24 | NOW | **HOLD** (existing position — re-analysis decision, not new deployment) | Conv 5.83 ❌ (<6.5 Growth gate) post-TGR correction (3.5%→3.0%) | MOS -2.20% (พลิกลบครั้งแรก จาก +5.31%) | Regime RISK-ON 3/4 (last formal call 2026-08-21) | ไม่เปลี่ยน — คงเดิม 2 shares (2.50% weight, mkt value $256.96 ณ $128.48) | T1 (maintained, ไม่มี tranche ใหม่) | Full Re-Analysis + TGR Correction pipeline เสร็จสมบูรณ์ — Morgan QA Round 2 PASS. TGR ปรับ 3.5%→3.0% ให้ตรงเพดาน Morgan QA Protocol → Blended FV ลดจาก $135.30→$125.65, MOS พลิกจาก +5.31%→-2.20% (ติดลบครั้งแรก), team conviction เฉลี่ยลดจาก 6.17→5.83 (หลุด Growth gate 6.5) → Recommendation BUY→HOLD. ไม่มี Bear Flip Trigger หรือ Thesis Invalidation event เกิดขึ้นจริง (0/5 Bear Flip, 0/3 Invalidation ยังไม่ยิงตาม report NOW_2026-05-11.md) → ไม่ใช่ SELL ตาม Exit Rules (MOS≤0%/conviction-gate-fail ไม่ใช่คำสั่งขายอัตโนมัติเมื่อไม่มี thesis-invalidation จริง). Action เดียวที่เปลี่ยน: **Stop Loss $98.00 → $93.00** (anchored ใต้ Bear scenario ใหม่ $94.28 หลัง TGR correction) เป็น risk-management adjustment ไม่ใช่ trade. Position คงเดิม 2sh @ entry $89.47, unrealized +43.60% ($128.48, +$78.02). เนื่องจากนี่คือ HOLD (ไม่ใช่ SELL/TRIM) ไม่เข้าเงื่อนไข consultation-required row ตาม precedent 2026-08-23 (NOW/REGN STRONG SELL consultation ด้านบน) — ไม่มี action ที่ต้องปรึกษา Charlie รอบนี้ | N/A — HOLD ต่อเนื่อง ไม่มี trade. Track: ราคา 30 วันข้างหน้า + Blended FV re-verify รอบถัดไป เพื่อดูว่า MOS -2.20% เป็น sustained trend หรือ noise (คล้าย oscillation pattern ที่เคยเห็น Aug9/Aug18/Aug22) |
+
+**⚠️ Open Question flagged to CIO (Morgan QA finding):** รายงานอ้างถึง "Max Consultation Rule" (แนวคิด: SELL/TRIM ต้องปรึกษา Charlie ก่อน execute) — Morgan ตรวจสอบพบว่ากฎนี้**ไม่มีอยู่จริงใน CLAUDE.md ปัจจุบัน** เป็น concept ที่ session ก่อนอ้างถึงซ้ำหลายครั้ง (ดู correction note 2026-08-23 ด้านบน ที่ label แถว NOW/REGN ว่า "Max Consultation Rule" เช่นกัน) แต่ไม่เคยถูก formalize เป็นกฎลายลักษณ์อักษรในไฟล์ house-rules จริง. รอบนี้ไม่กระทบการทำงาน เพราะ recommendation = HOLD ไม่มี SELL/TRIM ให้ตัดสินใจ (ไม่มี trade ต้อง consult) — บันทึกไว้เป็น open question ที่ Leo เคย log แล้ว (learning-log.md Error #9). CIO ควรตัดสินใจว่าจะ formalize เข้า CLAUDE.md อย่างเป็นทางการหรือไม่.
+
+---
+
 ## INTU T2 Pre-Decision Analysis — 2026-05-20
