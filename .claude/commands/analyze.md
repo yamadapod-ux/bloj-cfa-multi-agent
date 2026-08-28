@@ -78,6 +78,8 @@ WebFetch: https://stockanalysis.com/stocks/{ticker}/financials/balance-sheet/
 ```
 ดึง: Cash, Total Debt, Net Debt, Total Assets, Shareholders Equity, Shares Outstanding
 
+> ⚠️ **Arithmetic Sanity Check (บังคับ — เพิ่มหลัง MU session 2026-08-27):** WebFetch ใช้ AI model สรุปหน้าเว็บให้ — ตัวเลข "Net Cash/Net Debt" ที่หน้าเว็บสรุปมาเองบางครั้ง**ไม่ตรงกับ Cash − Total Debt** ที่ควรจะเป็น (เคยพบ: หน้าเว็บสรุป Net Cash $23.8B แต่ Cash $24.99B − Debt $6.38B = $18.61B จริง ต่างกัน 22% — ไม่ถูกจับได้จนกว่าจะถึงชั้น Atlas downstream) ให้ **คำนวณ Net Cash/Net Debt เองเสมอ** จาก Cash และ Total Debt ที่ fetch มา แล้วเทียบกับตัวเลขที่หน้าเว็บสรุปไว้ — ถ้าต่างกัน > 5% ให้ใช้ **ค่าที่คำนวณเอง** (Cash − Debt) เป็นค่าหลักในการส่งต่อ พร้อม flag ความขัดแย้งไว้ในบันทึกผลด้านล่าง อย่ารอให้ downstream agent จับ
+
 **2C — Cash Flow:**
 ```
 WebFetch: https://stockanalysis.com/stocks/{ticker}/financials/cash-flow-statement/
@@ -111,6 +113,8 @@ Revenue TTM:       $_____B  (YoY: +__%)  [Source: Stockanalysis / EDGAR]
 EPS (Diluted):     $_____                [Source: Stockanalysis]
 Free Cash Flow:    $_____B               [Source: Stockanalysis]
 Gross Margin:      _____%
+Cash / Total Debt: $_____B / $_____B
+Net Cash (Debt):   $_____B  [self-calc: Cash − Debt]  (page สรุปว่า: $_____B — ⚠️ conflict [ระบุถ้าต่างกัน > 5%, ใช้ self-calc])
 Shares Outstanding:_____M               [Source: Stockanalysis / EDGAR cross-check]
 ⚠️ EDGAR vs Stockanalysis conflict: [ระบุถ้าต่างกัน > 5%]
 ```

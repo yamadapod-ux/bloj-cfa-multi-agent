@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-08-10 12:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-08-28 12:00";
 
 const SECTOR_VIEWS = [
   {
@@ -176,5 +176,39 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-08-10",
     author: "Atlas",
     trigger: "CIO ad-hoc request — gold vs S&P 500 comparison",
+  },
+  {
+    sector: "Stablecoin / Crypto-Fintech Infrastructure",
+    slug: "stablecoin-crypto-fintech",
+    stance: "CAUTIOUS",
+    cyclePosition: "Rate-cycle sensitive / early commoditization phase",
+    headline: "Stablecoin adoption ของจริง แต่ issuer economics เข้าสู่ commoditization + โดน Fed cuts กด float income พร้อมกัน — selective ไม่ broad-buy",
+    thesis: "การวิเคราะห์ CRCL (Circle, 2026-08-28) เปิดเผยมุมมองระดับ sector ที่กว้างกว่าตัวหุ้น — stablecoin/crypto-fintech infrastructure กำลังเจอ 2 แรงบีบเชิงโครงสร้างพร้อมกัน (1) **Rate-cycle headwind:** ผู้ออก stablecoin หารายได้หลักจาก reserve income (ดอกเบี้ยบน USD reserve assets) — Circle ~95% ของ revenue เป็น float income และ reserve income Q2 2026 โตแค่ +5% YoY ทั้งที่ USDC average circulation โต +25% เพราะ Reserve Return Rate ลด -66bps YoY จาก Fed cuts ในภาวะ RISK-ON/easing regime ที่ตลาดมองว่าดีต่อ growth equity ทั่วไป กลุ่มนี้กลับสวนทาง (2) **Commoditization ของ distribution economics:** GENIUS Act (กม. stablecoin สหรัฐฯ 2025) เปิดทางผู้เล่นใหม่จำนวนมาก — PayPal PYUSD (ขยาย 70 ตลาด), Open USD consortium 140+ บริษัท (Visa/Mastercard/Stripe/Coinbase/Shopify/BlackRock) ที่ประกาศ 30 มิ.ย. 2026 คืน reserve income ส่วนใหญ่ให้พันธมิตร (CRCL ร่วง 8% วันนั้น) — และที่สำคัญคือ Coinbase ซึ่งเป็น distribution partner หลักของ Circle กลับหนุนคู่แข่ง stablecoin tech เป็น commodity ไปแล้ว ผู้ชนะระยะยาวคือใครก็ตามที่คุม distribution + volume ไม่ใช่ผู้ที่มี tech ดีที่สุด — usage เริ่มแยกจาก supply (USDC ครอง ~70% ของ adjusted transaction volume H1 2026 แต่ supply share แค่ ~23-24% เทียบ Tether ~59%) ทีมยังไม่ avoid ทั้งกลุ่มเพราะ secular adoption จริง (onchain transaction volume +151% YoY, regulatory clarity จาก GENIUS Act, TAM ขยาย) แต่ CAUTIOUS ต่อ pure issuer ที่ earnings ผูก inverse กับ rate cycle และ selective เฉพาะ platform ที่มี volume/distribution moat + margin structure ที่ทน (เช่น HOOD op margin 46% vs CRCL/COIN ~7%)",
+    keyPoints: [
+      "Reserve-income model = inverse rate sensitivity: Circle reserve income Q2 2026 +5% YoY ทั้งที่ circulation +25% — Reserve Return Rate -66bps YoY จาก Fed cuts",
+      "Fed easing regime (RISK-ON 4/4) เป็น structural revenue headwind ต่อ stablecoin issuer — สวนทางกับ growth equity ทั่วไป",
+      "Commoditization: GENIUS Act + Open USD consortium (Visa/MC/Stripe/Coinbase/BlackRock, 30 มิ.ย. 2026) + PayPal PYUSD กด distribution economics ของ incumbent issuer",
+      "Coinbase = distribution partner หลักของ Circle แต่หนุน Open USD คู่แข่ง — conflict เชิงโครงสร้าง, FY2025 gross margin ของ Circle ร่วงเหลือ 8.67% จาก distribution cost",
+      "Usage แยกจาก supply: USDC ~70% ของ adjusted transaction volume H1 2026 vs supply share ~23-24% (Tether ~59%) — onchain volume ทั้งกลุ่ม +151% YoY = adoption จริง",
+      "Selective: platform ที่มี volume/distribution moat + margin ที่ทน (HOOD op margin 46%) น่าสนใจกว่า pure issuer (CRCL/COIN op margin ~7%)",
+    ],
+    metrics: [
+      { label: "Circle USDC circulation growth YoY (Q2 2026)", value: 19 },
+      { label: "Circle reserve income growth YoY (Q2 2026)", value: 5 },
+      { label: "Reserve Return Rate change YoY (bps)", value: -66 },
+      { label: "Industry onchain transaction volume growth YoY (Q2 2026)", value: 151 },
+    ],
+    relatedTickers: ["CRCL", "COIN", "PYPL", "HOOD"],
+    sources: [
+      { title: "Circle — Circle Reports Second Quarter 2026 Results", url: "https://www.circle.com/pressroom/circle-reports-second-quarter-2026-results" },
+      { title: "CoinDesk — Circle Slides 8% as Stripe, Coinbase and BlackRock Back Rival Stablecoin Network", url: "https://www.coindesk.com/business/2026/06/30/circle-slides-8-as-stripe-coinbase-and-blackrock-back-rival-stablecoin-network" },
+      { title: "CoinDesk — Circle's USDC Is Leaving Tether Behind in the Stablecoin Volume Race", url: "https://www.coindesk.com/business/2026/07/06/circle-s-usdc-is-leaving-tether-behind-in-the-stablecoin-volume-race" },
+      { title: "CoinDesk — Circle Stock Plunges 18% as a New Draft of the CLARITY Act Threatens Stablecoin Rewards", url: "https://www.coindesk.com/markets/2026/03/24/circle-stock-plunges-18-as-a-new-draft-of-the-clarity-act-threatens-stablecoin-rewards" },
+      { title: "The Motley Fool — Which Stablecoins Are the Largest and Most Popular in 2026?", url: "https://www.fool.com/research/largest-stablecoins/" },
+      { title: "CoinLaw — Stablecoin Market Cap Statistics 2026: Issuer Share and Growth", url: "https://coinlaw.io/stablecoin-market-cap-statistics/" },
+    ],
+    lastUpdated: "2026-08-28",
+    author: "Atlas",
+    trigger: "Byproduct of CRCL Phase 1 Macro Brief — reveals sector-level view on stablecoin issuer economics (rate-cycle + commoditization), applies beyond CRCL to COIN/PYPL/HOOD",
   },
 ];
