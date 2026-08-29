@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-08-28 12:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-08-29 10:00";
 
 const SECTOR_VIEWS = [
   {
@@ -210,5 +210,38 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-08-28",
     author: "Atlas",
     trigger: "Byproduct of CRCL Phase 1 Macro Brief — reveals sector-level view on stablecoin issuer economics (rate-cycle + commoditization), applies beyond CRCL to COIN/PYPL/HOOD",
+  },
+  {
+    sector: "Semiconductors — Analog & Mixed-Signal",
+    slug: "semiconductors-analog",
+    stance: "CAUTIOUS",
+    cyclePosition: "Mid-cycle",
+    headline: "Analog recovery ของจริงและกว้าง — แต่ตลาดจ่ายราคา cycle-peak multiple ก่อน 2027 comp wall + Fed hawkish กลับมา",
+    thesis: "การวิเคราะห์ ADI (2026-08-29) เปิดเผยมุมมองระดับ sector — analog semiconductor (ADI, TXN, NXPI, MCHP, ON) กำลังฟื้นจาก downturn ที่ลึกและยาว (ADI revenue trough FY2024 -23.4% YoY) และการฟื้นตอนนี้ 'กว้างมาก' ตามที่ management ทั้ง ADI และ TXN บอกตรงกัน — โตทุก end-market พร้อมกัน (industrial restock, auto content, และที่ใหม่คือ data-center/AI pull บน analog+power content) BofA คาด diversified semiconductor sales ของ top suppliers เร่งขึ้นเป็น +19% ปี 2026 จากแค่ +1% ปี 2025 (CAGR ~12% ถึง 2028) ADI report record bookings ทั่วทุก B2B market และ Q3 FY2026 เป็น quarter แรกที่ทะลุ $4B (+40% YoY, Comms +84% YoY) โครงสร้างของ analog ยังน่าสนใจในเชิงคุณภาพ: product lifecycle 10-20 ปี, gross margin 65-72%, fab-lite (capex ~4% ของ revenue), FCF machine, pricing power, wide moat จาก consolidation (ADI+Linear+Maxim, TXN scale) — ต่างจาก memory (MU) ที่เป็น commodity price-taker อย่างสิ้นเชิง **แต่ทีมยัง CAUTIOUS ไม่ POSITIVE** เพราะ 3 เหตุผล: (1) valuation — ADI เทรด ~43x trailing P/E, EV/Revenue ~12x บน revenue ที่ inflate จาก trough comp (TTM revenue สูงกว่า prior-peak FY2023 แล้ว) ตลาดจ่ายราคา perfection ที่ cyclical high multiple (2) 2027 comp wall + double-order risk — +40% YoY และ Comms +84% ไม่ใช่ run-rate ที่ยั่งยืน ถ้าการฟื้นวิ่งนำ end-demand จริง (channel restock > sell-through) 2027 จะ decelerate แรง ซึ่งเป็น failure mode คลาสสิกของ analog cycle (3) Fed hawkish shift (Warsh Jackson Hole, Sept hike ~50/50) กด high-multiple semi + ชะลอ industrial capex ที่เป็น ~50% ของ mix พร้อมกัน — selective เฉพาะชื่อที่มี real margin of safety บน normalized (ไม่ใช่ peak) earnings เท่านั้น",
+    keyPoints: [
+      "Recovery กว้างและ broad-based — ADI + TXN management บอกตรงกันว่า demand 'อยู่ทุกที่'; BofA คาด diversified semi sales +19% 2026F vs +1% 2025 (CAGR ~12% ถึง 2028)",
+      "Quality cycle ต่างจาก memory: product lifecycle 10-20 ปี, GM 65-72%, fab-lite capex ~4% ของ rev, FCF machine, pricing power, moat จาก consolidation (ADI/Linear/Maxim, TXN scale)",
+      "Analog lag memory/logic ในการฟื้น — ADI trough FY2024 (-23%), ตอนนี้ mid-cycle recovery ไม่ใช่ early; pockets ร้อน (Comms +84% YoY = AI data-center content step-up, เป็น secular overlay จริง)",
+      "Valuation overhang: ADI ~43x trailing P/E / EV/Rev ~12x บน revenue ที่ inflate จาก trough comp (TTM > prior-peak FY2023) — ตลาดจ่าย cycle-peak multiple",
+      "2027 comp wall + double-order risk = failure mode คลาสสิกของ analog cycle; Fed hawkish (Sept hike ~50/50) กด multiple + ชะลอ industrial capex (~50% ของ ADI mix) พร้อมกัน",
+      "Peer cycle position กระจายมาก: ON ยัง -3% YoY (ยัง downturn), NXPI +9%, MCHP +21%, ADI +34% — ตำแหน่ง cycle ไม่เท่ากัน, selective by name",
+    ],
+    metrics: [
+      { label: "Diversified semi sales growth 2026F (BofA)", value: 19 },
+      { label: "Diversified semi sales growth 2025 (BofA)", value: 1 },
+      { label: "ADI Q3 FY2026 revenue growth YoY", value: 40 },
+      { label: "ADI Industrial segment Q3 growth YoY", value: 53 },
+    ],
+    relatedTickers: ["ADI", "TXN", "NXPI", "MCHP", "ON"],
+    sources: [
+      { title: "Investing.com — Top analog semiconductor stocks as sector recovery gains momentum (BofA +19% 2026F, 12% CAGR to 2028)", url: "https://www.investing.com/news/stock-market-news/top-analog-semiconductor-stocks-as-sector-recovery-gains-momentum-93CH-4794264" },
+      { title: "Investing.com — Analog Devices Surges 9% on Record Orders: 5 Chip Stocks Riding the Analog Recovery", url: "https://www.investing.com/analysis/analog-devices-surges-9-on-record-orders5-chip-stocks-riding-the-analog-recovery-200675272" },
+      { title: "Analog Devices — Reports Record Fiscal Third Quarter 2026 (first $4B quarter, end-market mix, +40% YoY)", url: "https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-record-fiscal-third-quarter-2026/" },
+      { title: "CNBC — S&P 500 falls to start the week, dragged down by a sell-off in chip stocks (2026-08-23)", url: "https://www.cnbc.com/2026/08/23/stock-market-today-live-updates.html" },
+      { title: "CNBC — September Fed decision now a coin flip as rate hike odds increase post Warsh (2026-08-28)", url: "https://www.cnbc.com/2026/08/28/-september-fed-decision-now-a-coin-flip-as-rate-hike-odds-increase.html" },
+    ],
+    lastUpdated: "2026-08-29",
+    author: "Atlas",
+    trigger: "Byproduct of ADI Phase 1 Macro Brief — reveals sector-level view on the analog semiconductor cycle (mid-cycle recovery vs cycle-peak valuation + Fed hawkish), applies beyond ADI to TXN/NXPI/MCHP/ON",
   },
 ];

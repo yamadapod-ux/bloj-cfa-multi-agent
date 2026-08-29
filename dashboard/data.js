@@ -1,9 +1,736 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-08-28";
+const LAST_UPDATED = "2026-08-29";
 
 const REPORTS = [
+
+  {
+    ticker: "ADI",
+    company: "Analog Devices, Inc.",
+    date: "2026-08-29",
+    version: "v1 (Morgan QA CONDITIONAL PASS)",
+    sector: "Semiconductors / Analog & Mixed-Signal",
+    bucket: "Value",
+    price: 361.78,
+    recommendation: "HOLD / WAIT — NO DEPLOY",
+    blendedFV: 229,
+    esgAdjFV: 218,
+    targetBull: 301,
+    targetBase: 233,
+    stopLoss: 156,
+    convictionEmma: 6.5,
+    convictionQuinn: 5.0,
+    convictionBear: 6.0,
+    convictionAvg: 5.83,
+    mosPct: -36.7,
+    mosPctEsgAdj: -39.7,
+    pwEV: 267.29,
+    pwEvBear: 195,
+    beta: 1.21,
+    sharpe1Y: 0.15,
+    forwardSharpe: 0.15,
+    maxDrawdown: -0.499,
+    kelly: "Full −174% / Half −87% / Quarter −44% — ติดลบทุกระดับ ไม่มี long position ที่ mathematically justified ที่ $361.78",
+    moat: "Wide (core) / Narrow catalog periphery — Bear reconciled: Wide ที่ high-performance/precision signal-chain core (10-20yr switching cost) / Narrow ที่ general-purpose catalog tier (TXN 300mm cost advantage) / M&A ที่สร้าง wide catalog ทำที่ราคาที่ ROIC incl-goodwill 10.5% ≈ WACC 9.7%",
+    esgRating: "Medium",
+    esgScore: 6.1,
+    macroRegime: "RISK-ON",
+    morganQA: "CONDITIONAL PASS (Data Quality 9/10, 0 HIGH · 1 MEDIUM · 2 LOW, reject type FORMAT) — MEDIUM: Emma structured-data block ESG ค้าง pre-reconciliation (g:7, overall:6.7) → Leo embed reconciled E6/S7/G5.5/Overall 6.1. LOW: EV/EBITDA percentile cosmetic (~72-78th) + Growth Test 1 synthesis observation. Blended FV weight 40/30/30 verified เป๊ะ + report จับ fabricated rule 'IPS 2026-05-15 40/35/25' ได้เอง",
+    sp500Reference: 7711.76,
+    sp500ReferenceNote: "7,711.76 (2026-08-28 close — Atlas Yahoo Finance ^GSPC; 2nd source 7,711.48 delta 0.004% — Atlas flag low-risk เพราะ 2nd source ไม่ independent เต็มที่ CNBC fetch 403'd)",
+    revenueGrowthYoY: 33.65,
+    entryZone: "$185-205 (mid $195) — MOS ≥ 15% vs Blended FV $229; พิจารณาหลัง Sept FOMC 16 ก.ย. + MOFCOM ruling ~13 ก.ย.",
+    positionSize: "0% — ไม่ผ่าน Value gate ทั้ง 2 เงื่อน (MOS −36.7% << +15% · Conviction 5.83 < 7.0). Growth cross-check ก็ FAIL (Growth MOS 0/2 · Conviction 5.83 < 6.5). Force Deploy active (RISK-ON) แต่ไม่มี candidate ผ่าน gate — Force Deploy ไม่ override gate",
+    keyThesis: "ADI = wide-moat analog FCF machine ตัวจริง (รอด FY2024 downcycle −23.4% revenue โดยยัง gross margin 60%+ และมีกำไร ต่างจาก MU FY2023 op margin −37%) แต่ราคา $361.78 ไม่เหลือ margin of safety — DCF ทั้ง 3 scenario ($153/$233/$301) + Blended FV $229 (MOS −36.7%) ต่ำกว่าราคาทั้งหมด แม้ bull case ยัง −16.7%. เทรดที่ 43x P/E / 26x EV/EBITDA (~78-80th pctile ของ 10Y ตัวเอง) บน revenue สูงกว่า prior cyclical peak +13% + margin/multiple ที่ระดับ peak. cyclical/rate-peak analog #3 ต่อจาก MU/CRCL",
+    topRisk: "Valuation / no-MOS — implied exit EV/EBITDA ใน DCF แค่ 11.6x vs current 26.3x = cyclical-peak multiple ที่ไม่ sustainable; multiple re-rate ไป median = −30% ถึง −40% โดยไม่ต้อง earnings miss. ซ้อนด้วย MOFCOM anti-dumping ruling ~13 ก.ย. 2026 ที่ระบุชื่อ ADI ตรงๆ (duty ≥25% → Bear FV ~$110) + Sept FOMC 16 ก.ย. hike coin-flip กด high-multiple cyclical โดยตรง",
+    reportFile: "../reports/ADI_2026-08-29.md",
+    businessSummary: {
+      oneLiner: "Analog Devices ออกแบบและขายชิป analog/mixed-signal และ power-management หลายหมื่นรุ่น ที่แปลงสัญญาณโลกจริง (อุณหภูมิ แรงดัน การเคลื่อนไหว) เป็นข้อมูลดิจิทัล ให้ลูกค้าอุตสาหกรรม รถยนต์ และศูนย์ข้อมูล AI",
+      analogy: "เหมือน 'ประสาทสัมผัส' ของอุปกรณ์อิเล็กทรอนิกส์ — ถ้า CPU/GPU คือสมอง ADI คือหู ตา ผิวหนัง ที่รับรู้โลกจริงแล้วส่งข้อมูลเข้าสมอง; ชิปแต่ละตัวถูกฝังเข้าไปในเครื่องจักร/รถ แล้วอยู่ยาว 10-20 ปี",
+      moneyFlow: [
+        "ลูกค้า (โรงงาน ผู้ผลิตรถ ผู้ผลิต AI infra) ออกแบบชิป ADI ฝังเข้าไปในผลิตภัณฑ์ — ผ่าน design-win ที่ใช้เวลาหลายเดือน",
+        "เมื่อ design-in แล้ว ADI ขายชิปนั้นซ้ำตลอดอายุผลิตภัณฑ์ (10-20 ปี) — ~75% เป็น sole-sourced เปลี่ยนยาก",
+        "ผลิตแบบ fab-lite (โรงงานเก่าที่คุ้มทุนแล้ว + จ้าง TSMC) → capex แค่ 4.4% ของรายได้ → gross margin 66% GAAP / 72% adjusted",
+        "กระแสเงินสดเหลือ ~$5B/ปี → คืนผู้ถือหุ้น >100% ผ่านปันผล (ขึ้น 22 ปีติด) + ซื้อหุ้นคืน"
+      ],
+      whyDifferent: "Switching cost มหาศาล — ชิป ADI ราคาแค่ ~$2-3 แต่ถูก qualify เข้าระบบลูกค้าและอยู่ยาว 10-20 ปี การเปลี่ยนไปคู่แข่งต้องทดสอบทั้งระบบใหม่เพื่อประหยัด BOM เล็กน้อย → ลูกค้าไม่ทำ; บวก catalog IP หลายทศวรรษจาก Linear + Maxim ที่ไม่ต้องแข่ง leading-edge node",
+      simpleRisk: "หุ้นเทรดที่ ~43x P/E / 26x EV/EBITDA บนกำไรที่เพิ่งเด้งขึ้นแรงจาก cyclical trough — ราคาสะท้อน recovery ที่ต่อเนื่องไปเรื่อยๆ ถ้า 2027 comps เริ่มโหดหรือ Fed ขึ้นดอกเบี้ย multiple อาจหดตัวแรง"
+    },
+    thesisBullets: [
+      { title: "No margin of safety at $362", why: "DCF ทั้ง Bear/Base/Bull ($153/$233/$301) ต่ำกว่าราคาตลาดทั้งหมด; prob-weighted FV $226 = MOS -37.5%; แม้ bull case ยัง -17%; Blended FV $229 (MOS -36.7%)" },
+      { title: "Wide moat พิสูจน์แล้วจริง", why: "FY2024 revenue -23.4% แต่ gross margin ยัง 60%+ และ profitable (ต่างจาก MU FY2023 op margin -37%); ROIC ex-goodwill 34-45% vs WACC 9.7%" },
+      { title: "Cyclically-peak multiple", why: "EV/Revenue ~78-80th percentile ของ 10Y range; EV/EBITDA 26x vs median 22x; implied exit multiple ใน DCF แค่ 11.6x = current multiple ไม่ sustainable" },
+      { title: "China 26% ของรายได้ + MOFCOM anti-dumping ruling ~13 ก.ย. 2026", why: "investigation ระบุชื่อ ADI ตรงๆ; China +34% YoY = revenue ที่เสี่ยงสุดคือที่โตเร็วสุด; duty ≥25% → Bear FV ~$110; DXY strength (Fed hawkish) compounds" },
+      { title: "2027 comp wall", why: "Q3 +40% YoY / Comms +84% เป็น trough-comp math ไม่ใช่ run-rate; die-bank inventory +$83M sequentially = late-cycle behavior; ถ้า channel restocking > sell-through, 2027 decelerates sharply" }
+    ],
+    esgBreakdown: {
+      e: 6,
+      s: 7,
+      g: 5.5,
+      overall: 6.1
+    },
+    esgBreakdownNote: "Reconciled (Bear challenge applied): Governance 7 → 5.5 (serial M&A goodwill 83% ของ equity + ROIC incl-GW ≈ WACC + buyback >100% FCF funded จาก balance sheet ซื้อที่ 43x P/E ใกล้ ATH ขณะ CEO/CFO ขายหุ้นส่วนตัว + distributor concentration disclosure ไม่ชัด). Overall 6.7 → 6.1. Valuation impact −3.5% → −5%. MSCI BBB (Average) · Sustainalytics ESG Risk 24 (Medium)",
+    customerConcentration: {
+      largestDistributor: "~25% ของ net revenues (FY2023 10-K; distributor Arrow/WPG-type ไม่ใช่ end customer — underlying demand กระจายหลายหมื่น OEM)",
+      secondDistributor: "~10% ของ net revenues (FY2023)",
+      distributorChannelTotal: "~56% ของ FY2025 revenue (FY2024 58%)",
+      note: "🚩 >20% flag แต่เป็น channel ไม่ใช่ end-customer → concentration risk ที่แท้จริงต่ำกว่าตัวเลข 25% มาก; risk จริง = channel inventory stocking/destocking amplifies cycle. FY2025 disclosure ไม่ชัด (ต้องใช้ FY2023 10-K) = disclosure demerit → ESG Governance"
+    },
+    geographyRevenue: {
+      unitedStates: "29% (~$3.2B)",
+      china: "26% (~$2.9B, +34% YoY $2.14B→$2.86B) — geopolitical exposure สูงสุด, MOFCOM anti-dumping + export-control + local-substitution (SG Micro/3Peak) risk; สูงกว่า MU's 7% มาก",
+      europe: "21% (industrial-heavy)",
+      restOfAsia: "13%",
+      japan: "9% (-9% YoY, auto softness)",
+      restOfAmericas: "1% (+161% YoY, small base)"
+    },
+    revenueSegments: [
+      { label: "Industrial", value: 49 },
+      { label: "Automotive", value: 25 },
+      { label: "Communications / AI data-center", value: 16 },
+      { label: "Consumer", value: 10 }
+    ],
+    revenueSegmentsNote: "Q3 FY2026 end-market mix: Industrial +53% YoY (mid-cycle restock, highest margin), Auto +16% (slowest leg), Comms +84% (AI data-center content step-up), Consumer +6% (stabilizing)",
+    competitorData: [
+      { ticker: "ADI", company: "Analog Devices (subject)", revenueGrowth: 33.65, operatingMargin: 35.67, marketCap: 175310 },
+      { ticker: "TXN", company: "Texas Instruments", revenueGrowth: 16.66, operatingMargin: 38.03, marketCap: 236200, strengths: "Analog leader scale #1, in-house 300mm fab = ต้นทุน/หน่วยต่ำสุดในกลุ่ม, ROIC 25.5% / ROE 35.2% (ไม่มี goodwill drag), direct-sales relationship", weaknesses: "gross margin 58.3% ต่ำกว่า ADI (65.8%), capex cycle 300mm หนัก กด FCF 2022-2026, growth +16.7% ช้ากว่า ADI", threatLevel: "MEDIUM" },
+      { ticker: "NXPI", company: "NXP Semiconductors", revenueGrowth: 8.77, operatingMargin: 32.94, marketCap: 56380, strengths: "auto/industrial analog + MCU + connectivity leader, valuation ถูกสุดในกลุ่ม (fwd P/E 13.4x, EV/EBITDA 12.7x), ROE 27.9% — closest value alternative", weaknesses: "growth +8.8% ช้าสุด (ยกเว้น ON), China exposure สูง, moat แคบกว่า, leverage สูงกว่า ADI", threatLevel: "MEDIUM" },
+      { ticker: "MCHP", company: "Microchip Technology", revenueGrowth: 20.93, operatingMargin: 16.23, marketCap: 39600, strengths: "MCU + analog + FPGA broad portfolio, cross-sell engine, กำลังฟื้นจาก downcycle (guidance raised)", weaknesses: "cyclical ลึกสุดในกลุ่ม — P/E 112x (earnings depressed), ROIC 5.9% ต่ำสุด, EBIT margin 10.6% vs ADI 35.7%, leverage สูง", threatLevel: "LOW" },
+      { ticker: "ON", company: "ON Semiconductor", revenueGrowth: -3.14, operatingMargin: 23.19, marketCap: 28270, strengths: "power semiconductor leader (SiC สำหรับ EV traction inverter), image sensor สำหรับ ADAS, structural EV content story", weaknesses: "ยังอยู่ใน downturn (revenue -3.1%), gross margin 42.8% ต่ำสุด (commodity power discrete), ROE 8.3%, SiC demand ชะลอ, capital intensive", threatLevel: "LOW" }
+    ],
+    bullFlipTriggers: [
+      "ราคา ≤ $210 โดย thesis ไม่แย่ลง → MOS ≥ ~15% vs Bear Base $220 / ~10% vs Emma Base $233",
+      "China MOFCOM anti-dumping investigation ปิดคดีแบบไม่มี duty หรือ < 10% (ruling ครบกำหนด ~13 ก.ย. 2026) — ลบ ~$2.9B China revenue tail",
+      "2 ไตรมาสติดที่ distributor sell-through (POS) growth ≥ shipment growth AND book-to-bill > 1.0 — พิสูจน์ว่า recovery = end-demand ไม่ใช่ channel restock",
+      "Fed ให้ Sept cut หรือประกาศจบ hiking cycle AND 10Y < 4.0% — ลบ multiple-compression overhang บน 43x P/E name",
+      "Normalized adj operating margin ยืน ≥ 47% เป็น 3+ ไตรมาส พร้อม TXN pricing นิ่ง — validate Emma Base margin; lift Bear Base สู่ ~$250"
+    ],
+    bearFlipTriggers: [
+      "China ตั้ง anti-dumping duty ≥ 25% บน ADI analog imports → ≥ $1.0-1.5B revenue เสี่ยงใน 2 ปี → Bear FV สู่ ~$110",
+      "ไตรมาสใดมี QoQ revenue decline + guidance cut ก่อน FY2027 (channel double-order unwind confirmed)",
+      "Sept FOMC hike AND VIX ปิด > 20 → Atlas regime → TRANSITIONAL-CAUTIOUS; historical −30% ถึง −40% สำหรับ high-P/E cyclicals",
+      "Adj gross margin ลด ≥ 200 bps ใน 2 ไตรมาส (TXN 300mm pricing pressure กัด catalog tier)",
+      "Goodwill impairment charge ประกาศ หรือ net-debt/EBITDA > 2.0x เพื่อ fund buyback/M&A เข้า downturn"
+    ],
+    thesisInvalidation: "\"No-MOS\" thesis ผิด ถ้า: ADI compound revenue ≥ 12%/ปี ถึง FY2029 โดยไม่มีปีติดลบ + adj op margin ≥ 48% sustained + China revenue โตแม้มี probe + forward multiple ยืน ≥ 22x → Q3 trajectory เป็น structural เต็มตัว $362 ถูกจริง. | Team HOLD → AVOID/SELL ถ้า: 2027 global industrial recession + China duties ยิงพร้อมกัน → revenue สู่ระดับ FY2024 absolute (~$9.4-10.6B) + margin < 38% → FV $85-100",
+    unitEconomics: null,
+
+    fullContent: `# 📡 ADI — Analog Devices, Inc.
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: VALUE** (mature ~40-yr analog franchise · wide moat · FCF machine · dividend grower · cyclical-recovery growth off a −23% trough, ไม่ใช่ secular)
+
+---
+
+## 📌 ข้อมูลหลัก [CFA L1: Equity — Company Overview]
+
+| Field | Value |
+|-------|-------|
+| Ticker | ADI (NASDAQ) |
+| Date | 2026-08-29 |
+| Price | **$361.78** (close 2026-08-28 — Yahoo Finance + Stockanalysis, 100% match) |
+| Market Cap | $175.31B (484.57M sh × $361.78 = $175.30B ✓) |
+| Shares Outstanding | 484.57M |
+| Sector | Semiconductors / Analog & Mixed-Signal (Industrial 49% · Auto 25% · Comms/AI-infra 16% · Consumer 10%) |
+| Latest Earnings | 2026-08-19 (Q3 FY2026, quarter ended 2026-08-01) — first-ever $4B quarter, guidance raised |
+
+## 🎯 คำแนะนำ [CFA L3: Portfolio Management — Security Selection & Position Sizing]
+
+| Field | Value |
+|-------|-------|
+| **Recommendation** | **HOLD / WAIT FOR PULLBACK — NO DEPLOY** |
+| Entry Zone (Value framework, MOS ≥15% vs Blended FV) | **$185–205** (T1) — พิจารณาหลัง Sept FOMC + China anti-dumping ruling |
+| Blended FV (40/30/30) | **$229** (raw) / **$218** (ESG-adj) |
+| MOS vs $361.78 | **−36.7%** (raw) / **−39.7%** (ESG-adj) |
+| Stop Loss | **$156** (−20% จาก entry mid $195) — เฉพาะเมื่อเข้า position |
+| Max Position | **0%** — ไม่ผ่าน Value gate ทั้ง 2 เงื่อน |
+
+## 📊 Score Dashboard [CFA L3: Portfolio Construction — Investment Scorecard]
+
+| Blended FV (raw / ESG-adj) | MOS (raw / ESG-adj) | ESG Score (reconciled) | Conviction (Avg) | Horizon |
+|---|---|---|---|---|
+| $229 / $218 | −36.7% / −39.7% | 6.1/10 (Medium Risk) | **5.83/10** ⚠️ (Emma 6.5 / Quinn 5.0 / Bear 6.0) | 3–5 ปี |
+
+> ⚡ **TL;DR — อ่าน 30 วินาที**
+> - **Verdict:** HOLD / WAIT — NO DEPLOY. ADI เป็น **wide-moat FCF machine ตัวจริง** (รอด downcycle FY2024 −23% revenue โดยยังทำ gross margin 60%+ และมีกำไร — ต่างจาก MU FY2023 ที่ op margin ติดลบ −37%) แต่ราคา $361.78 ไม่เหลือ margin of safety: DCF ทั้ง 3 scenario ($153 / $233 / $301) และ Blended FV $229 อยู่ต่ำกว่าราคาตลาดทั้งหมด
+> - **ทำไม:** เทรดที่ 43x trailing P/E / 26x EV/EBITDA (~78–80th percentile ของ 10 ปีตัวเอง) บน revenue ที่สูงกว่า cyclical peak เดิม 13% และ margin ที่ระดับ peak (Q3 adj op 50% vs through-cycle 38–42%). Forward P/E 22.6x "ดูถูก" เพราะต้องเชื่อว่า EPS เกือบ **เท่าตัวใน 2 ปี** ($8.42 → ~$16). Growth MOS gate FAIL ทั้ง 2 วิธี (Reverse DCF pass เป็น tenor artifact → reconcile FAIL; Multiple Percentile FAIL ชัด). Conviction 5.83 < 7.0 Value gate. Kelly ติดลบทุกระดับ
+> - **Downside Risk:** cyclical/rate-peak analog #3 ต่อจาก MU/CRCL. ตัวเร่งที่ยังไม่ถูก price: **MOFCOM anti-dumping investigation ระบุชื่อ ADI ตรงๆ — ruling ครบกำหนด ~13 ก.ย. 2026 (~2 สัปดาห์ข้างหน้า)** + Sept FOMC hike coin-flip. Bear case FV $88–120 (−67% ถึง −76%) ถ้า 2027 comp wall + China duty ยิงพร้อมกัน
+
+---
+
+## 📋 Executive Summary [CFA L3: Portfolio Construction — Investment Thesis Statement]
+
+Analog Devices เป็นผู้ผลิตชิป analog/mixed-signal และ power-management อันดับ 2 ของโลก (ตามหลัง TXN) กำลังอยู่ในช่วง **mid-cycle recovery** หลัง revenue trough FY2024 ($9,427M, −23.4% YoY) โดย Q3 FY2026 ทำสถิติ revenue ไตรมาสแรกที่ทะลุ $4B (+40% YoY) ขับเคลื่อนจาก industrial restock + AI data-center content (Comms +84% YoY) ราคาหุ้นวิ่งขึ้นจาก 52W low $223 มาที่ $361.78 (−19% จาก 52W high $445.91)
+
+ทีมทั้ง 3 คน — **Emma** (fundamental), **Quinn** (quant), **Bear** (downside) — วิเคราะห์อิสระด้วยวิธีต่างกัน แต่สรุปตรงกันว่า **ราคาปัจจุบันไม่เหลือ margin of safety**:
+
+| Analyst | FV / P-W EV | MOS vs $361.78 | Cash-flow basis |
+|---------|-------------|----------------|-----------------|
+| Emma (DCF/Fundamental) | $226 (Bear $153 / Base $233 / Bull $301) | **−37.5%** | NOPAT-based FCFF |
+| Quinn (Quant/P-W EV) | $267.29 (Base DCF $262) | **−26.1%** | Reported-FCF-based FCFF |
+| Bear (Downside/P-W EV) | $195 (Bull $288 / Base $220 / Bear $120 / Extreme $88) | **−46.0%** | NOPAT-based FCFF |
+| **Blended FV (40/30/30)** | **$229** | **−36.7%** | — |
+| **ESG-adj (−5%)** | **$218** | **−39.7%** | — |
+
+**Emma vs Quinn FV gap ~18%** (< 25% threshold → reconciliation table ไม่บังคับ) — ต่างเพราะ Emma ใช้ NOPAT-based + normalized growth/margin ที่ conservative กว่า, Quinn ใช้ reported-FCF-based + add back ~ครึ่งหนึ่งของ Maxim/Linear intangible amortization ($1.4–1.6B/yr) ทั้งคู่ได้ MOS ติดลบ 26–38% → ข้อสรุปไม่เปลี่ยน (ดู § Valuation)
+
+### Conviction Bar
+
+\`\`\`
+Emma   ███████░░░  6.5/10  — DCF ทั้ง 3 scenario + ESG-adj ต่ำกว่าราคาทั้งหมด, moat/quality ไม่มีข้อสงสัย; ลดเพราะ reverse DCF บอกตลาดไม่ได้ price สุดโต่งแบบ MU
+Quinn  █████░░░░░  5.0/10  — 7/8 signals cautious, MOS/Kelly/Sharpe ติดลบ robust; ไม่ต่ำกว่า 5 เพราะ implied growth achievable + downside bounded สั้นกว่า MU มาก
+Bear   ██████░░░░  6.0/10  — no MOS at $362 ชัดเจน + China catalyst มีวันที่ + Test 1 reconcile FAIL; ไม่เกิน 6 เพราะ business wide-moat จริง รอด FY2024 ดีกว่า MU
+──────────────────────────────────────────────
+Avg    ██████░░░░  5.83/10   ต่ำกว่า Value gate (7.0) และ Growth gate (6.5) — ไม่ผ่านทั้งคู่
+\`\`\`
+
+**Disagreement note:** max gap 1.5 จุด (Emma 6.5 vs Quinn 5.0) < 3.0 threshold → **ไม่มี disagreement flag**. ทั้ง 3 คน directional unanimity: NO DEPLOY. Avg 5.83 > 5.0 → ไม่เข้าเกณฑ์ "ข้อมูลไม่พอ" แต่ conviction ไม่ถึง gate ทั้ง 2 bucket
+
+---
+
+## 💡 Investment Thesis [CFA L3: Equity — Investment Thesis Construction]
+
+**Bull case (มีสาระจริง แต่ราคา priced in แล้ว):** electrification + AI data-center = secular content-per-unit growth สำหรับ analog/power (แต่ละรถ / แต่ละ AI rack ใช้ ADI content มากขึ้นทุกปี) ADI เป็น wide-moat franchise (Linear + Maxim catalog IP, 10–20 ปี design-win lifecycle, fab-lite margin structure) ที่ compound FCF ได้ low-to-mid teens ถ้า recovery มี room วิ่งต่อถึง 2027 โดยไม่มี comp wall Consensus PT $470 (34 analysts, "Strong Buy") สะท้อนมุมมองนี้
+
+**Bear case (หลักฐานหนักกว่าเรื่องราคา):** ราคา $361.78 สะท้อนว่าตลาด price:
+1. **Revenue ที่สูงกว่า cyclical peak เดิม 13%** จะ compound ต่อโดยไม่มีปีติดลบ — ทั้งที่ analog cycle มี channel double-order เป็น failure mode คลาสสิก และ ADI เพิ่งเจอ FY2024 −23.4% เมื่อ 2 ปีก่อน (die-bank inventory +$83M sequentially = ADI สร้าง inventory เข้า strength = late-cycle behavior)
+2. **Margin ที่ระดับ peak** (Q3 adj op 50% vs through-cycle 38–42%, GAAP 35.67%) จะ sustain — ทั้งที่ TXN 300mm cost curve (68% GM บนชิป $1 vs ADI ~60% บน 200mm) + 3 price hikes ใน 12 เดือน = แรงกดดัน commoditization ที่ catalog tier
+3. **Multiple ที่ระดับ peak** (EV/EBITDA 26x vs 10Y median 22x, ~85th percentile) จะไม่ de-rate — ทั้งที่ Fed hawkish (Sept hike coin-flip) กด high-multiple cyclicals โดยตรง
+
+**สรุป thesis:** ADI คือ **"great company, no margin of safety at cyclical + rate peak"** — ธุรกิจ wide-moat ตัวจริง (quality ไม่มีข้อสงสัย, downside bounded ตื้นกว่า MU/CRCL มาก) แต่ราคาไม่เหลือ buffer รองรับความเสี่ยง cyclical + trade-policy + rate ที่เป็น base-rate ของสถานการณ์นี้ — pattern เดียวกับ VEEV / SHOP / DXCM ("priced beyond even bull-case DCF")
+
+---
+
+## 🏢 Business Deep Dive [CFA L2: Industry Analysis]
+
+### How does Analog Devices make money?
+
+- ออกแบบและขาย **ชิป analog/mixed-signal** — แปลงสัญญาณโลกจริง (อุณหภูมิ แรงดัน แสง การเคลื่อนไหว เสียง) เป็นข้อมูลดิจิทัลที่คอมพิวเตอร์ประมวลผลได้ และแปลงกลับ + ชิปจัดการพลังงาน
+- ขายชิปหลายหมื่นรุ่นให้ลูกค้าหลายหมื่นราย: โรงงานอุตสาหกรรม (49%), ผู้ผลิตรถยนต์ (25%), อุปกรณ์สื่อสาร / ศูนย์ข้อมูล AI (16%), เครื่องใช้ผู้บริโภค (10%)
+- แต่ละชิปราคาถูก (เฉลี่ย ~$2–3) แต่ถูกออกแบบฝังเข้าไปในผลิตภัณฑ์ลูกค้าและอยู่ยาว 10–20 ปี — ลูกค้าเปลี่ยนยากมากเพราะต้อง re-qualify ทั้งระบบ (~75% ของ SKU เป็น sole-sourced)
+- ผลิตแบบ **fab-lite** — โรงงานตัวเองบางส่วน (trailing-edge ที่ depreciated แล้ว) + จ้าง TSMC → capex เพียง ~4.4% ของรายได้ → FCF ~$4.9B/ปี
+- คืนเงินสดเกือบทั้งหมดให้ผู้ถือหุ้น — ปันผลขึ้นติดต่อกัน 22 ปี + ซื้อหุ้นคืน (รวม >100% ของ FCF)
+
+### Porter's Five Forces [CFA L2: Industry Analysis — Competitive Forces]
+
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power | Low–Medium | Fab-lite: foundry (TSMC/GF) + own trailing-edge fabs; ADI ไม่ leading-edge → ไม่ captive กับ ASML EUV; equipment vendors (AMAT/LRCX) concentrated แต่ ADI มี buffer จาก own capacity |
+| Buyer Power | Low–Medium | ~56% ของ revenue ผ่าน distributor; distributor ใหญ่สุด ~25% (concentration flag) แต่ demand ปลายทางกระจายหลายหมื่น OEM, แต่ละชิ้นเป็น BOM ส่วนน้อย + sole-sourced → end customer leverage ต่ำ |
+| New Entrants | Low | Catalog IP หลายทศวรรษ + applications engineering + design-in relationships + process know-how + scale; ไม่มี broad-line analog entrant ใหม่ใน 30 ปี — **แต่ China local players (SG Micro, 3Peak) ได้ policy support + qualify auto-grade parts แล้ว** (Bear finding) |
+| Substitutes | Low–Medium | digital/software absorb signal-chain function ได้ช้าๆ; ลูกค้า integrate analog เข้า SoC ได้บางกรณี — slow-moving |
+| Rivalry | **Medium** | TXN (300mm capacity build + 3 price hikes/12mo + in-house cost push), Infineon, ST, NXP, Microchip; historically rational oligopoly แต่ TXN cost curve = แรงกดดันราคาที่แท้จริงที่ commodity catalog tier |
+
+**Industry Attractiveness: Medium–High** — barrier สูง, margin สูง, secular content growth (electrification + AI infra) แต่ cyclical + TXN capacity overhang + China trade-policy risk เป็น medium-term margin risk
+
+### Market Share Trend [Atlas Section H + Emma 10-K research]
+
+| Period | ADI positioning | หมายเหตุ |
+|--------|-----------------|---------|
+| FY2021–2024 | ADI analog revenue CAGR ~19% — outpaced peers เล็กน้อย | นำโดย high-performance industrial + data-center power |
+| 2025 | **#2 ใน broad-line analog** (ตามหลัง TXN); Top 5 (TXN/ADI/Infineon/ST/NXP) = ~57.7% ของตลาด | gminsights.com |
+| June 2024 snapshot (publicly-traded analog peers, TTM rev share) | Infineon ~19.5% / TXN ~19.5% / ST ~19.1% / NXP ~15.4% | einvestingforbeginners.com |
+
+**Trend: Stable-to-Gaining** — ADI ถือ/ได้ share เพิ่มเล็กน้อยใน high-performance analog vs รายเล็ก; ทรงตัว vs TXN; data-center/AI power = share-gain vector ใหม่ *(exact yearly % ต่อบริษัทไม่มี disclosure สาธารณะ — directional)*
+
+### Customer Concentration [Emma — ADI 10-K FY2023, SEC]
+
+- **Distributor ใหญ่สุด: ~25% ของ net revenues** (FY2023 25% / FY2022 22% / FY2021 26%) — 🚩 >20% flag **แต่เป็น distributor (Arrow/WPG-type) ไม่ใช่ end customer** → underlying demand กระจายหลายหมื่น OEM → concentration risk ที่แท้จริงต่ำกว่าตัวเลข 25% มาก
+- Distributor #2: ~10% ของ net revenues (FY2023)
+- Distributor channel รวม: ~56% ของ FY2025 revenue (FY2024 58%)
+- Risk ที่แท้จริง = channel-inventory dynamics (stocking/destocking amplifies cycle) ไม่ใช่ customer-loss risk. Bear ชี้ว่าต้องใช้ FY2023 10-K เพราะ FY2025 ไม่ disclose ชัด = disclosure demerit (สะท้อนใน ESG Governance)
+
+### Geography Revenue Breakdown [Emma — ADI 10-K FY2025 via TradingView/Statista]
+
+| ภูมิภาค | % Revenue FY2025 | YoY | หมายเหตุ |
+|---------|------------------|-----|---------|
+| United States | 29% (~$3.2B) | — | |
+| **China** | **26% (~$2.9B)** | **+34% YoY** ($2.14B→$2.86B) | key growth driver FY2025 = geopolitical exposure สูงสุด |
+| Europe | 21% | growth | industrial-heavy |
+| Rest of Asia | 13% | growth | |
+| Japan | 9% | −9% YoY | auto softness |
+| Rest of Americas | 1% | +161% (small base) | |
+
+**Geopolitical Risk: Medium–High** — China 26% ของ revenue (สูงกว่า guidance เดิม ~20%+, สูงกว่า MU's 7% มาก) และ **เป็น revenue ที่โตเร็วสุด** → exposed ต่อ export control, tariff, local-analog substitution, **MOFCOM anti-dumping ruling ~13 ก.ย. 2026** (ดู § What Would Change Our Mind + Catalysts). DXY strength (Fed hawkish) กดดัน competitiveness เพิ่ม — **single largest structural risk รองจาก valuation**
+
+### SaaS Unit Economics
+
+**N/A — not subscription-based** (semiconductor manufacturer, one-time product sale)
+
+---
+
+## 🏰 Moat Analysis [CFA L2: Equity — Economic Moat]
+
+### ระดับ: **WIDE (core) — Bear qualifies: Wide-core / Narrow-catalog-periphery / overpaid at price paid**
+
+**Emma's WIDE rating — 4 จาก 5 sources:**
+1. **Switching Costs (หลัก)** — analog design-win มี product lifecycle 10–20 ปี; re-qualify ชิ้นส่วนคู่แข่งใช้เวลา engineering หลายเดือน + risk ต่อ system ทั้งชุด เพื่อประหยัด BOM line ที่ ASP ~$2–3 → ลูกค้าไม่ทำ; ~75%+ ของ SKU เป็น sole-sourced
+2. **Intangible Assets** — Linear (2017, $14.8B) + Maxim (2021, ~$21B): catalog หลายหมื่นรายการ, applications-engineering depth, proprietary trailing-edge process (ไม่ต้องแข่ง leading-edge node → ไม่มี capex arms race)
+3. **Cost Advantage** — fab-lite: capex ~4.4% ของ revenue, internal fabs depreciated แล้ว → gross margin 65.8% GAAP / ~72% adj
+4. **Efficient Scale** — broad-line analog มีผู้เล่นระดับ scale ไม่กี่ราย; ไม่มี entrant ใหม่ 30 ปี
+
+**หลักฐานความยั่งยืน (จุดต่างสำคัญจาก MU/CRCL):** FY2024 downcycle — revenue −23.4% แต่ ADI ยังทำ GAAP gross margin ~60%+ และยัง solidly profitable + FCF-positive — เทียบ MU FY2023 operating margin −37% (ขาดทุนจริง) → **moat ของ ADI พิสูจน์ผ่าน stress test จริง**
+
+### Bear's Reconciliation (challenge ต่อ "WIDE" แบบไม่มีเงื่อนไข)
+
+| Evidence | ตัวเลข | Bear reading |
+|---|---|---|
+| ROIC **incl. goodwill** (GAAP NOPAT) | **10.5%** | ≈ WACC 9.7% — spread แค่ ~0.8pp. หลังจ่าย ~$36B ซื้อ Linear+Maxim, ADI **แทบไม่ earn cost of capital** บน capital ที่ deploy จริง |
+| Goodwill / equity | **83%** | Tangible common equity ≈ 0. ROIC ex-goodwill 34–45% ที่ Emma อ้าง **ไม่รวมราคาที่ ADI จ่าย** — serial acquirer ไม่มีสิทธิ์ ignore acquisition cost |
+| TXN 300mm cost curve | — | TXN สร้างชิป $1 ที่ 68% GM บน 300mm vs ADI ~60% บน 200mm; TXN ขึ้นราคา 3 รอบ/12 เดือน; target ~95% internal wafer 2030 → ADI กำลังเข้าสู่ cost **disadvantage** ที่ catalog tier |
+
+**Reconciled verdict:** **Wide ที่ high-performance / precision signal-chain core** (genuine 10–20yr switching cost — ไม่มีใครเถียง) · **Narrow ที่ general-purpose catalog tier** (TXN cost structure เหนือกว่าเชิงโครงสร้าง) · **M&A ที่สร้าง "wide catalog" ทำที่ราคาที่ยังไม่ earn back cost of capital** → เสริมข้อสรุป "no MOS" ให้แข็งขึ้น (Narrow-periphery name สมควรได้ terminal multiple ต่ำกว่าที่ DCF ของ Emma imply)
+
+---
+
+## 📊 Sector / Peer Comparison [CFA L2: Equity — Relative Valuation]
+
+| Ticker | Company | Rev Growth TTM | Op Margin TTM | P/E TTM | Fwd P/E | EV/EBITDA | ROE | ROIC | Gross Margin | Moat |
+|--------|---------|---------------|--------------|---------|---------|-----------|-----|------|-------------|------|
+| **ADI** | **Analog Devices** | **+33.65%** | **35.67% (GAAP)** | **~43x** | **~22.6x** | **26.3x** | **12.3%** (goodwill-depressed) | **65.8%** | **Wide (core)** |
+| TXN | Texas Instruments | +16.66% | 38.03% | ~36x | ~30x | ~22x | 35.2% | 25.5% | Wide |
+| NXPI | NXP Semiconductors | +8.77% | 32.94% | ~19x | ~13.4x | ~12.7x | 27.9% | ~57% | Narrow+ |
+| MCHP | Microchip | +20.93% | 16.23% | ~112x (depressed) | ~28x | ~24x | ~8% | 5.9% | Narrow+ |
+| ON | ON Semiconductor | −3.14% | 23.19% | ~22x | ~19x | ~11x | 8.3% | 42.8% | Narrow |
+
+*Sources: Atlas Data Package §G (rev growth, op margin, mkt cap live-verified) + Emma WebSearch stockanalysis.com/gurufocus (P/E, EV/EBITDA, ROE, ROIC, GM), 2026-08-29. Semiconductor industry median EV/Revenue ~4.84x (gurufocus) → ADI +158% เหนือ industry.*
+
+**ADI อยู่ตรงไหนในกลุ่ม:** **Premium ทั้ง absolute และ relative** — EV/EBITDA 26.3x สูงสุดในกลุ่ม (TXN 22x, NXPI 12.7x); Fwd P/E 22.6x ต่ำกว่า TXN 30x แต่ TXN's forward number อยู่บน depressed capex-cycle earnings. ADI มี gross margin สูงสุด (65.8%) และ revenue growth เร็วสุด (แต่ +33.65% = trough-comp math) แต่ ROE/ROIC ต่ำสุดในกลุ่มคุณภาพ (goodwill drag). **NXPI = closest value alternative** (Fwd P/E 13.4x, EV/EBITDA 12.7x, ROE 27.9%) แต่ moat แคบกว่า + growth ช้ากว่า. ADI trade quality premium ที่ justified บางส่วน แต่ multiple อยู่ top-quintile ของ decade ตัวเอง
+
+**Threat levels:** TXN 🟡 Medium (catalog margin pressure) · NXPI 🟡 Medium (auto overlap) · MCHP 🟢 Low · ON 🟢 Low · **China local (SG Micro/3Peak) 🟡 Medium-and-rising** (policy-supported substitution)
+
+---
+
+## 💰 Valuation [CFA L2: Equity Valuation — FCFF Model, Reverse DCF, Relative Valuation]
+
+### WACC Disclosure
+
+| Analyst | WACC (base) | Beta | Rf | ERP | หมายเหตุ |
+|---------|-------------|------|-----|-----|---------|
+| Emma | **9.7%** | 1.21 | 4.68% | 4.5% | Ke 10.13%; market-value weights (E 95% / D 5%); net cash → debt benefit เล็กน้อย |
+| Quinn | **9.0–9.25%** | 1.21 | 4.68% | 4.3% | Ke 9.88%; sensitivity 8.0–11.0% |
+| Bear | **10.3%** (Bear scenario) | 1.21 | 4.68% | +Fed hike premium | |
+
+ทั้งหมดอยู่ในเพดาน sanity-check 7–13% ✓ · **Terminal Growth Rate ≤ 3.0% ทุก scenario** (Emma Base/Bull 3.0%, Bear 2.5%; Quinn 3.0%/2.5%; Bear 2.5%) ✓ — compliant กับ house ceiling (MU/NOW/DXCM/ICE/ACGL/TLS ทั้งหมด FAIL Morgan QA รอบแรกเพราะ TGR เกิน)
+
+### DCF Cash-Flow Basis Statement [CLAUDE.md — DCF Cash Flow Consistency Rule]
+
+SBC TTM = $350.1M / Revenue $13,882M = **2.5% ของ Revenue** → **ต่ำกว่าเกณฑ์ 10% → reconciliation-table requirement ไม่ apply**. ระบุ basis ตามกฎ:
+
+| Analyst | Basis | Forward FCF base | Treatment ของ Maxim/Linear intangible amortization ($1.4–1.6B/yr) |
+|---------|-------|------------------|------------------------------------------------------------------|
+| Emma | Operating-Income / NOPAT-based FCFF | via normalized adj EBIT margin 45% (Base) | treat เป็น non-cash ใน FCFF **แต่ haircut ผ่าน normalized margin ที่ต่ำกว่า Q3 peak**; roll off ~2032 |
+| Quinn | Reported-FCF-based FCFF | $4,900M | add back tangible D&A + **~ครึ่งหนึ่ง** ของ intangible amortization (ADI serial acquirer → บางส่วน "real") |
+| Bear | NOPAT-based FCFF (comparable กับ Emma) | via normalized adj EBIT 42% (Base), 38% (Bear trough) | treat เป็น recurring economic cost มากขึ้น (ADI ยังซื้อกิจการต่อ) |
+
+**Emma vs Quinn FV gap = $267.29 / $226 − 1 = +18.3%** — **ต่ำกว่า 25% threshold → ไม่บังคับ reconciliation table** แต่ note: gap มาจาก (1) cash-flow basis (Quinn add back ~ครึ่งของ intangible amort → higher base), (2) Emma normalized growth/margin conservative กว่า, (3) Emma NOPAT-based เริ่มจาก operating income ที่ถูก amort กด. **ทั้งคู่ MOS ติดลบ 26–38% → ข้อสรุปไม่เปลี่ยน**. Quinn flag: ถ้า Emma's DCF ≥ $328 (≥25% gap) → root cause คือ intangible-amort add-back → reconciliation บังคับ — **แต่ Emma's $226 ต่ำกว่า Quinn จึงไม่เข้าเงื่อนไข**
+
+### Emma DCF Scenarios (NOPAT-based, WACC 9.7%, TGR ≤3.0%)
+
+| Scenario | Rev CAGR FY27–31 | Adj EBIT margin | WACC | g | FV/share | MOS |
+|----------|------------------|-----------------|------|---|----------|-----|
+| Bear | 2.7% (FY28 −5%) | 40% | 10.2% | 2.5% | **$153** | −57.7% |
+| Base | 8.0% | 45% | 9.7% | 3.0% | **$233** | −35.6% |
+| Bull | 11.5% | 48% | 9.3% | 3.0% | **$301** | −16.7% |
+| **Emma point (30/45/25)** | | | | | **$226** | **−37.5%** |
+
+**แม้ Bull case ($301) ยังต่ำกว่าราคาตลาด −16.7%** — pattern "priced beyond even bull-case DCF" (VEEV/SHOP/DXCM). Implied exit multiples (Base): EV/Revenue 6.2x, EV/EBITDA ~11.6x — ต่ำกว่า current (12.1x / 26.3x) และ 10Y median (8.4x / 21.9x) มาก → **DCF ยืนยันว่า multiple ปัจจุบัน = cyclical-peak multiple ที่ไม่ sustainable**. TV = 74.7% ของ EV (within tolerance)
+
+### Reverse DCF — Implied Growth [Growth MOS Test 1] [CFA L2: Equity — Implied Growth Analysis]
+
+| Basis | Implied growth | vs 1.2× normalized consensus (~10.8–14.4%) | Verdict |
+|-------|---------------|-------------------------------------------|---------|
+| Emma — 2-stage 10Y + 3% terminal | ~10.5% | ~1.15–1.2× | marginal PASS |
+| Emma — single-stage perpetual | ~6.3% | — | ตลาดไม่ได้ price สุดโต่ง |
+| Quinn — 10Y explicit | ~12.1% | ratio ~1.01× | knife-edge PASS |
+| **Quinn — 5Y explicit (apples-to-apples vs 5Y anchor)** | **~19.9%** | **>1.5×** | **FAIL** |
+| Quinn — WACC sensitivity 8.5%→10.5% (10Y) | 11.0% → 15.9% | — | — |
+
+**⚖️ Charlie reconciliation — Test 1 = FAIL (ไม่ใช่ robust PASS):** Bear's argument ถูกต้องตาม NET 2026-08-10 precedent — verdict พลิกทั้งหมดจากการเลือก horizon (5Y FAIL vs 10Y "pass") ซึ่งเป็น **mathematical property ของ 2-stage model ไม่ใช่ business insight** ("ยืด horizon ยาวขึ้น → implied growth ที่ต้องการลดลงเสมอ"). บวกกับ: (a) forward FCF base $4,900M เป็น cyclically-elevated (capex ต่ำ 4.4%, favorable NWC timing, ไม่ normalize สำหรับ amort roll-off cash-tax step-up); (b) ratio จริง ~1.01× = ที่เกณฑ์พอดี ไม่ต่ำกว่า; (c) ต้องการ ADI ทำ ~consensus **ทั้งทศวรรษโดยไม่มี error** เข้าไปหา China ruling + Fed hike + 2027 comp wall → **Test 1 reconcile เป็น FAIL / inconclusive knife-edge**
+
+### Multiple Percentile Check [Growth MOS Test 2] [CFA L2: Relative Valuation]
+
+| Metric | Current | 10Y Range | 10Y Median | Percentile | Verdict |
+|--------|---------|-----------|-----------|-----------|---------|
+| EV/Revenue (TTM) | ~12.1–13.1x | 4.47x – 17.10x | 8.40x | ~71–77th | **FAIL** |
+| EV/Revenue (normalized revenue ~$12.4B) | ~13.6x | — | — | ~80th | **FAIL** |
+| EV/EBITDA | 26.3x | 12.77x – 37.45x | 21.94x (+18% เหนือ median) | ~72–78th | Borderline FAIL |
+| Forward P/E | 22.7x | ~14x – 28x (5Y) | ~19x | ~65th | Borderline PASS |
+
+*Sources: gurufocus.com/term/enterprise-value-to-revenue/ADI + /ev2ebitda/ADI, 2026-08-29*
+
+**Test 2 = FAIL** ทุก basis — บน normalized-revenue basis ADI เทรดที่ ~80th percentile ของ decade ตัวเอง (top quintile) ที่ cyclical revenue peak เข้าหา hawkish Fed
+
+### 🚦 Growth MOS Gate Verdict: **FAIL 0/2** (Test 1 reconciled FAIL + Test 2 FAIL) — pattern เดียวกับ NET 2026-08-10
+
+### Blended FV Triangulation [CLAUDE.md § Blended FV Triangulation Weights — 40/30/30]
+
+\`\`\`
+Blended FV = Emma $226 × 0.40 + Quinn $267.29 × 0.30 + Bear $195 × 0.30
+           = $90.40 + $80.19 + $58.50
+           = $229.09  ≈  $229  (raw)
+
+ESG-adj (−5% reconciled) = $229 × 0.95 = $217.6  ≈  $218
+
+MOS (raw)     = $229 / $361.78 − 1 = −36.7%
+MOS (ESG-adj) = $218 / $361.78 − 1 = −39.7%
+\`\`\`
+
+**Combined-bear sensitivity:** ถ้า apply ทั้ง 3 adjustment ของ Bear (Emma Bear rev −20%, Emma margin 41%, Quinn Bear-weight 33% + extreme tail) → Blended FV ~$200–210, MOS ~−43% ถึง −45%. ถ้า relax TGR cap เป็น 3.5% + structural margin 47% → Blended FV ~$255–260, MOS ยัง ~−28%. **ไม่มี combination ไหนถึง MOS บวกที่ $362**
+
+### Reference Points
+
+| Reference | Value | MOS vs $361.78 |
+|-----------|-------|----------------|
+| Emma FV | $226 | −37.5% |
+| Quinn P-W EV | $267.29 | −26.1% |
+| Bear P-W EV | $195 | −46.0% |
+| **Blended FV (raw)** | **$229** | **−36.7%** |
+| **Blended FV (ESG-adj)** | **$218** | **−39.7%** |
+| Street avg PT (34 analysts, "Strong Buy") | $470.25 | +30.0% |
+
+**Street PT $470 vs Blended $229 = +105% divergence** (>25% flag) — ตลาด/sell-side value ADI บน forward EPS ~$16 (= EPS เกือบเท่าตัวใน 2 ปี) × ~22–24x; ทีม value normalized through-cycle FCF ที่ ~9.7% discount + 3% terminal. คนละคำถาม — ดู § Behind the Scenes สำหรับ shared-blind-spot check
+
+---
+
+## 📉 Quantitative Risk [CFA L1–L3: Portfolio Management — Risk Measures]
+
+### Risk Metrics
+
+| Metric | Value | หมายเหตุ |
+|--------|-------|---------|
+| Beta (5Y monthly, verified) | **1.21** | mid-pack semi (< AMD 1.75, MRVL 1.65, MU 2.21, CRDO 3.20; > AVGO 1.18) |
+| CAPM Expected Return | 9.88% (Rf 4.68% + 1.21 × ERP 4.3%) | |
+| Forward Sharpe (CAPM E(R), IV 33.8%) | **0.15** | ≈ ครึ่งหนึ่งของ S&P 500 (~0.30) — single-stock vol กิน premium หมด |
+| Scenario Sharpe / Sortino | **−0.84 / −0.63** | ทั้งคู่ติดลบ — ราคาสูงกว่า P-W EV |
+| Max Drawdown (verified 52W) | **−49.9%** ($445.91 → $223.47) | **เกิดจริงใน 12 เดือนที่ผ่านมา** — ไม่ใช่ hypothetical; analog routine −40% ถึง −55% peak-to-trough |
+| Current drawdown from 52W high | −18.9% | |
+| CVaR(25%) | −64.5% / 5yr ≈ −18.7% / yr | = Bear scenario |
+| Kelly Criterion (Full / Half / Quarter) | **−174% / −87% / −44%** | **ติดลบทุกระดับ** — ไม่มี long position ที่ mathematically justified ที่ $361.78 |
+
+### Sensitivity Matrix 5×5 — Through-cycle FCF Growth × WACC [CFA L2: Equity — Sensitivity Analysis]
+
+*Variable choice (Emma + Atlas): 2 ตัวแปรที่ครอบงำ FV ของ ADI = (1) normalized/through-cycle FCF growth (debate หลัก: Q3 trajectory structural หรือ comp-flattered peak), (2) WACC/exit multiple (debate: Fed re-rate high-multiple cyclicals ไหม). Exit multiple collinear กับ WACC+growth → fold เข้า WACC. Base ≈ g 9%, WACC 9.0–9.25%.*
+
+| FCF Growth ↓ / WACC → | 8.00% | 8.75% | 9.50% | 10.25% | 11.00% |
+|---|---|---|---|---|---|
+| **4%** (secular stall) | $235 | $206 | $184 | $166 | $152 |
+| **7%** (below-trend) | $283 | $247 | $219 | $197 | $179 |
+| **9% (BASE)** | $317 | $277 | **$246** | $221 | $200 |
+| **13%** (content supercycle) | $445 | $383 | $335 | $298 | $268 |
+| **16%** (bull extreme) | $558 | $477 | $416 | $368 | $329 |
+
+**Cells justifying ≥ $361.78 (current price): 6 / 25 (24%)** — ทั้ง 6 cells ต้องการ **through-cycle FCF growth ≥ 13% AND WACC ≤ 9.5%** พร้อมกัน (หรือ growth ≥ 16% ที่ WACC ≤ 10.25%). Cells ที่ "analog behaves like analog" (growth ≤ 9%) อยู่ต่ำกว่าราคา 20–50% ไม่ว่า WACC เท่าไหร่. Base cell ($246–262) = ~28–32% ต่ำกว่าราคา — **zero margin of safety ใน realistic center ของ grid**. (MU pattern ซ้ำแต่เบากว่า — MU: 0/25; ADI: 6/25)
+
+### Probability-Weighted EV (Quinn — reported-FCF-based)
+
+| Scenario | FV | Prob | Return vs $361.78 |
+|---|---|---|---|
+| Bull ($5,300M FCF, 13%→8% growth, WACC 8.5%) | $416 | 25% | +15.0% |
+| Base ($4,900M, 9%→6%, WACC 9.25%) | $262 | 50% | −27.5% |
+| Bear ($3,900M, 3%→3%, WACC 10.0%) | $129 | 25% | −64.5% |
+| **P-W EV** | **$267.29** | | **MOS −26.1%** |
+
+### Cyclical Peak-Earnings Risk Quantification
+
+TTM revenue $13,882M = **+12.8% เหนือ prior FY2023 peak** ($12,306M). ถ้า mean-revert แบบ FY2024 (−23.4%) + margin ลงมา 25% → GAAP EPS ~$4.77 → ที่ de-rated 25x = **~$119/share (−67%)** (= Bear scenario, cross-check bottom-up, สอดคล้อง P-W Bear FV $129)
+
+**Forward P/E 22.6x ขึ้นกับ EPS inflection ทั้งหมด:** market forward EPS ~$16 = TTM GAAP EPS ($8.42) เกือบเท่าตัวใน 2 ปี (fwd EPS ~1.9× TTM). ถ้า EPS ไปได้แค่:
+- **$12** (ยัง +43% off TTM, ผลลัพธ์ดี) → forward P/E = **30.1x**
+- **$10** (+19% off TTM) → forward P/E = **36.2x**
+
+→ multiple 22.6x "ที่ดูถูก" มี ~35–60% downside embedded ถ้า earnings inflection ผิดหวังแม้เล็กน้อย — **ก่อน** multiple compression จาก Fed
+
+### Derivatives-Market Signal [CFA L1: Derivatives — Option Markets]
+
+| Signal | Value | Interpretation |
+|--------|-------|-----------------|
+| 30-day IV (mean) | 33.82% | vs 30-day realized 32.46% → IV premium modest (~+1.4 pts), **ไม่มี fear premium** (contrast MU 71%) |
+| Put/Call ratio | 0.67 volume / 0.68 OI | < 0.70 = **mild bullish tilt** |
+| Post-earnings implied move | "modest" (Benzinga, pre-Q3) | options market ไม่ได้ price earnings reaction ใหญ่ |
+
+**Insight:** options market **complacent** — IV≈realized, put/call bullish, small implied move. **CONTRADICTS** quant view (P-W EV −26%, Kelly negative) และ **aligns กับ Atlas complacency warning** (VIX YTD low = tape priced for benign Fed). Bear อ่านเป็น **crowded-complacent side of the boat** (VIX low + 34 analysts Strong Buy PT $470 + CEO & CFO ขายหุ้นส่วนตัว + China ruling ~2 สัปดาห์) → asymmetry favors downside surprise ที่ options market ไม่ได้ price. **Flag เป็นความเสี่ยง ไม่ใช่ความอุ่นใจ**
+
+---
+
+## 🌱 ESG Risk Scorecard [CFA L2–3: ESG Investing — Materiality Analysis]
+
+| Dimension | Emma | Bear | **Reconciled** | Key Issues |
+|-----------|------|------|----------------|-----------|
+| Environmental | 6 | 6 | **6/10** | Semiconductor fab = water/energy intensive; PFAS/process chemicals; **fab-lite → footprint เล็กกว่า IDM (TXN/Intel)**; SBTi-aligned + net-zero 2050 — แต่ ADI กำลังขยาย internal power/optics capacity (Q3 call) → erode fab-lite advantage over time |
+| Social | 7 | 7 | **7/10** | Conflict minerals (3TG) supply-chain มาตรฐานอุตสาหกรรม; ไม่มี major labor controversy; fab safety = standard |
+| Governance | **7** | **5.5** | **5.5/10** | Serial M&A goodwill 83% ของ equity (ROIC incl-GW ≈ WACC = ยังไม่ create value ที่ราคาที่จ่าย); **buyback >100% ของ FCF funded จาก balance sheet ในช่วง upcycle ซื้อที่ 43x P/E ใกล้ ATH ขณะ CEO/CFO ขายหุ้นส่วนตัว**; distributor concentration ~25% + FY2025 disclosure ไม่ชัด (ต้องใช้ FY2023 10-K); goodwill impairment tail fatter กว่าที่ Emma rate |
+| **Overall ESG** | **6.7** | **6.1** | **6.1/10 (Medium Risk)** | MSCI **BBB (Average)** · Sustainalytics ESG Risk **24 (Medium)** — knowesg.com |
+
+### Material ESG Risks + Valuation Impact
+
+1. **Governance — pro-cyclical balance-sheet-funded buyback + M&A ที่ ROIC ≈ WACC** → **−2% ถึง −3%** (Bear's primary reconciliation driver)
+2. **Water/energy cost + regulation ที่ fabs** (Oregon, Ireland, Massachusetts) — carbon pricing + water-stress → **−1% ถึง −2%**
+3. **Goodwill impairment risk** — $28B (83% ของ equity) ถ้า cyclical downturn รุนแรง → non-cash แต่กระทบ sentiment + covenant headroom → **−1% ถึง −2%** (Bear: tail fatter given cyclical + China setup)
+4. **Conflict minerals / supply-chain compliance** → **−0.5% ถึง −1%**
+
+**Total ESG valuation impact (reconciled): ≈ −5%** (Emma −3.5%, Bear −5% → ใช้ Bear reconciliation)
+**ESG-adjusted Blended FV = $229 × 0.95 = $218** → **MOS −39.7%**
+
+**Insider note:** ทั้งหมด 10b5-1 (ไม่ใช่ red flag ร้ายแรง) — CEO Roche ขายที่ $398–404 (พ.ค./มิ.ย.), CFO Puccio ขาย 2,683 sh ที่ $374.56 (26 ส.ค., plan เพิ่งตั้ง 21 พ.ค. 2026, ขาย 3 เดือนต่อมา 2 วันก่อน analysis date). Cluster ของ recently-adopted plans ขายเข้า strength ใกล้ ATH = **neutral-to-slightly-negative** — ไม่มีใครใน management ซื้อเพิ่ม
+
+---
+
+## 💪 Conviction Level Score [CFA L3: Portfolio Management — Analyst Conviction Calibration] *(ประยุกต์ — multi-analyst conviction averaging)*
+
+\`\`\`
+Emma   ███████░░░  6.5/10  — confident ใน "no MOS at $362" (DCF ทั้ง 3 scenario + ESG-adj ต่ำกว่าราคา); less confident ใน FV แม่นยำ (reverse DCF ไม่สุดโต่งแบบ MU, TV 75%, TGR cap กด FV ต่ำกว่า Street systematically)
+Quinn  █████░░░░░  5.0/10  — 7/8 signals cautious, MOS/Kelly/Sharpe ติดลบ robust ต่อ WACC ±1pt; ไม่ต่ำกว่า 5 เพราะ implied growth achievable (Test 1 pass บน 10Y) + downside bounded สั้นกว่า MU + business เป็น compounder จริง
+Bear   ██████░░░░  6.0/10  — high confidence directionally (no MOS + China catalyst dated + Test 1 reconcile FAIL + Kelly negative); ไม่เกิน 6 เพราะ business wide-moat core จริง + รอด FY2024 ดีกว่า MU มาก (downside bounded) + house DCF params อาจ conservative เชิงระบบ
+──────────────────────────────────────────────
+Avg    ██████░░░░  5.83/10   ต่ำกว่า Value gate (7.0) และ Growth gate (6.5)
+\`\`\`
+
+**Disagreement:** max gap 1.5 (Emma 6.5 vs Quinn 5.0) < 3.0 → **ไม่ flag**. Directional unanimity: NO DEPLOY
+
+**Anti-Convergence Protocol:** **ไม่ trigger** (ต้องการ avg ≥ 8 + gap < 1.5; กรณีนี้ avg 5.83 + gap 1.5). Bear ทำ voluntary shared-blind-spot check (ดู § Behind the Scenes)
+
+---
+
+## 🔄 What Would Change Our Mind [CFA L3: Portfolio Construction — Investment Thesis & Thesis Review]
+
+### Bull Flip Triggers (→ เปลี่ยนเป็น BUY)
+1. **ราคา ≤ $210** โดย thesis ไม่แย่ลง → MOS ≥ ~15% vs Bear Base $220 / ~10% vs Emma Base $233
+2. **China MOFCOM anti-dumping investigation ปิดคดีแบบไม่มี duty หรือ < 10%** (ruling ครบกำหนด ~13 ก.ย. 2026) — ลบ ~$2.9B China revenue tail
+3. **2 ไตรมาสติดที่ distributor sell-through (POS) growth ≥ shipment growth AND book-to-bill > 1.0** — พิสูจน์ว่า recovery = end-demand ไม่ใช่ channel restock → kill 2027 double-order thesis
+4. **Fed ให้ Sept cut หรือประกาศจบ hiking cycle AND 10Y < 4.0%** — ลบ multiple-compression overhang บน 43x P/E name
+5. **Normalized adj operating margin ยืน ≥ 47% เป็น 3+ ไตรมาส พร้อม TXN pricing นิ่ง** — validate Emma Base margin; lift Bear Base สู่ ~$250
+
+### Bear Flip Triggers (→ Downgrade เป็น SELL / AVOID)
+1. **China ตั้ง anti-dumping duty ≥ 25% บน ADI analog imports** → ≥ $1.0–1.5B revenue เสี่ยงใน 2 ปี → Bear FV สู่ ~$110
+2. **ไตรมาสใดมี QoQ revenue decline + guidance cut ก่อน FY2027** (channel double-order unwind confirmed)
+3. **Sept FOMC hike AND VIX ปิด > 20** → Atlas regime → TRANSITIONAL-CAUTIOUS; historical −30% ถึง −40% สำหรับ high-P/E cyclicals
+4. **Adj gross margin ลด ≥ 200 bps ใน 2 ไตรมาส** (TXN 300mm pricing pressure กัด catalog tier)
+5. **Goodwill impairment charge ประกาศ หรือ net-debt/EBITDA > 2.0x เพื่อ fund buyback/M&A เข้า downturn**
+
+### Thesis Invalidation (re-analyze ทันที)
+- **"No-MOS" thesis ผิด ถ้า:** ADI compound revenue ≥ 12%/ปี ถึง FY2029 โดย**ไม่มีปีติดลบ** + adj op margin ≥ 48% sustained + China revenue โตแม้มี probe + forward multiple ยืน ≥ 22x → Q3 trajectory เป็น structural เต็มตัว, $362 ถูกจริง
+- **Team HOLD → AVOID/SELL ถ้า:** 2027 global industrial recession + China duties ยิงพร้อมกัน → revenue สู่ระดับ FY2024 absolute (~$9.4–10.6B) + margin < 38% → FV $85–100
+- **"No-MOS" call validated (moat intact) ถ้า:** revenue ลง > 15% peak-to-trough FY26–28 **ขณะที่** adj op margin ยืน > 40% และ GM > 65% — ยืนยัน quality thesis แต่ก็ยืนยันว่าหุ้นถูก price สำหรับ cycle ที่ไม่มีอยู่จริง
+
+---
+
+## 🎯 Recommendation [CFA L3: Portfolio Management — Investment Recommendation & Position Sizing]
+
+> ### HOLD / WAIT FOR PULLBACK — NO DEPLOY
+> ADI เป็น wide-moat FCF machine ตัวจริง (รอด FY2024 downcycle ดีกว่า MU มาก, downside bounded) แต่ราคา $361.78 ไม่เหลือ margin of safety — Blended FV $229 (MOS −36.7%), Value gate FAIL ทั้ง 2 เงื่อน, Growth MOS gate FAIL 0/2, Kelly ติดลบ, China anti-dumping ruling ~2 สัปดาห์ข้างหน้ายังไม่ถูก price
+
+| Parameter | Value |
+|-----------|-------|
+| Action | **HOLD / WAIT** — ไม่เปิด position, ใส่ watchlist |
+| Bucket | **VALUE** (Growth cross-check ก็ FAIL — ดู Robustness ด้านล่าง) |
+| Entry Zone (T1) | **$185–205** (mid $195) — MOS ≥ 15% vs Blended FV $229 |
+| Blended FV (raw / ESG-adj) | $229 / $218 |
+| MOS | −36.7% / −39.7% |
+| Stop Loss | **$156 (−20% จาก entry mid $195)** — เฉพาะเมื่อเข้า position |
+| Position Size | **0%** — ไม่ผ่าน gate |
+| Macro Regime | RISK-ON 3/4 (Fed-hawkish overlay) — position multiplier 1.0x, Force Deploy active แต่ไม่มี candidate ผ่าน gate |
+
+### Bucket Gate Robustness (test ทั้ง 2 bucket — เหมือน CRCL 2026-08-28)
+
+| Gate | เกณฑ์ | ผล ADI | Verdict |
+|------|-------|--------|---------|
+| **Value** | MOS ≥ 15% + Conviction ≥ 7.0 | MOS −36.7% · Conviction 5.83 | **FAIL ทั้ง 2 เงื่อน (dual-gate failure)** |
+| **Growth (cross-check)** | (Reverse DCF ≤ 1.2× normalized consensus **หรือ** EV/Rev ≤ 70th pctile) + Conviction ≥ 6.5 | Test 1 reconciled FAIL (tenor artifact) · Test 2 FAIL (~80th pctile) · Conviction 5.83 < 6.5 | **FAIL** |
+
+→ **ไม่ว่ามองผ่าน lens ไหน ADI ไม่ให้ margin of safety ที่ $362** — robust NO DEPLOY
+
+### Forward Return Estimate [Report Quality Rule — Fix #6]
+
+\`\`\`
+ถือ 3 ปี จาก entry zone mid $195 → Blended FV $229
+Total return = ($229 / $195) − 1 = +17.4%
+CAGR         = ($229 / $195)^(1/3) − 1 = +5.5%/ปี
+
+ถือ 3 ปี จากราคาปัจจุบัน $361.78 → Blended FV $229
+Total return = −36.7%   |   CAGR = ($229 / $361.78)^(1/3) − 1 = −13.7%/ปี  ← negative carry
+\`\`\`
+
+เทียบ S&P 500 (สมมติ +8%/ปี) → เข้าที่ราคาปัจจุบัน = alpha ประมาณ **−21%/ปี**. เข้าที่ entry zone $195 = +5.5% CAGR ยังต่ำกว่า S&P — ต้องรอราคาต่ำกว่านั้นหรือ Blended FV re-rate ขึ้น (2027 comp wall clears + margin holds) จึงจะ justify
+
+---
+
+## ⚠️ Risk Summary [CFA L1: Portfolio Management — Risk Identification]
+
+| # | Risk | ความน่าจะเป็น | Impact |
+|---|------|--------------|--------|
+| 1 | **Valuation / no-MOS (สูงสุด)** — DCF ทุก scenario + Blended FV ต่ำกว่าราคา; implied exit EV/EBITDA 11.6x vs current 26.3x = cyclical-peak multiple; forward P/E ขึ้นกับ EPS เกือบเท่าตัวใน 2 ปี | สูง | multiple re-rate ไป median = −30% ถึง −40% โดยไม่ต้อง earnings miss |
+| 2 | **China 26% ของรายได้ + MOFCOM anti-dumping ruling ~13 ก.ย. 2026** — scope = interface/gate-driver/isolator catalog (core ADI + overlap AI datacenter VRM); alleged dumping margin >300%; local substitution (SG Micro/3Peak) policy-supported; China +34% YoY = revenue ที่เสี่ยงสุดคือที่โตเร็วสุด | ปานกลาง | duty ≥ 25% → Bear FV ~$110; DXY strength (Fed hawkish) compounds |
+| 3 | **2027 comp wall / channel double-order** — Q3 +40% YoY / Comms +84% = trough-comp math; die-bank inventory +$83M sequentially; book-to-bill coincident ไม่ leading | ปานกลาง | 2027 decelerates sharply → "recovery continuation" priced-in unwinds |
+| 4 | **Fed Sept hike + higher-for-longer** — dual channel: discount rate บน 43x P/E + slow industrial capex (49% ของ mix) ที่ IS the recovery; Sept hike = Atlas flip-watch #1 → regime TC → no new positions | ปานกลาง-สูง (~50%) | multiple compression + regime tightening; "wait then buy" ยากขึ้น post-hike |
+| 5 | **Terminal margin sustainability** — Q3 adj op 50% = peak vs through-cycle 38–42%; TXN 300mm cost curve + 3 price hikes/12mo = commoditization ที่ catalog tier | ปานกลาง | margin 45% → 41% Base → Blended FV $229 → ~$216 |
+| 6 | **Governance — pro-cyclical buyback + M&A ที่ ROIC ≈ WACC** — capital return >100% FCF funded จาก balance sheet, ซื้อที่ 43x P/E ใกล้ ATH ขณะ insiders ขาย | ต่ำ-ปานกลาง | ลด dry powder เข้า downturn; goodwill impairment tail |
+| 7 | **Auto softness** — 25% ของ mix, +16% (slowest leg), Japan −9% YoY; EV normalization + auto production cuts | ต่ำ-ปานกลาง | stall auto leg แม้ content-per-vehicle โต |
+
+---
+
+## 📅 Catalysts Calendar [CFA L2: Equity — Catalyst Identification] *(ยังไม่เรียนอย่างเป็นทางการ — timeline เหตุการณ์ที่กระทบ valuation/thesis)*
+
+\`\`\`
+[2026-09-13]  ──●── ⚖️ MOFCOM Anti-Dumping Ruling (ADI ระบุชื่อตรง)        [HIGH]
+                     scope = interface/gate-driver/isolator catalog + AI VRM overlap; duty ≥25% = Bear Flip #1
+[2026-09-16]  ──●── 🏦 FOMC Meeting (Sep 15–16, decision Sep 16 2:00pm ET)  [HIGH]
+                     hike coin-flip (~48–59% odds); hike + VIX >20 = Bear Flip #3 → regime TC
+[2026-11 กลาง] ──●── 💰 Q4 FY2026 Earnings + FY2027 Guidance                 [HIGH]
+                     first check ของ 2027 comp wall; QoQ decline + guide cut = Bear Flip #2
+[Ongoing]     ──●── 📈 Distributor Sell-Through (POS) vs Shipment growth     [MEDIUM]
+                     2Q ติดที่ POS ≥ shipment + B2B >1.0 = Bull Flip #3
+[Ongoing]     ──●── 📉 TXN Pricing / Adj Gross Margin Trend                  [MEDIUM]
+                     adj GM ลด ≥200bps/2Q = Bear Flip #4
+[Watch]       ──●── 🌏 US–China Trade / Export Control Escalation             [MEDIUM]
+\`\`\`
+
+*FOMC date: Sep 15–16 2026, decision Sep 16 2:00pm ET (financecalendar.com). MOFCOM ruling: opened 13 Sep 2025, ruling normally completed by 13 Sep 2026, extendable 6 months (TrendForce/SemiMedia/Tom's Hardware).*
+
+---
+
+## 📚 CFA Concepts ที่ใช้ [CFA — Framework Summary]
+
+| Concept | Level | สถานะ | Application |
+|---------|-------|-------|-------------|
+| FCFF DCF — NOPAT-based & Reported-FCF-based | L2 | เรียนแล้ว | Emma/Bear NOPAT; Quinn reported-FCF |
+| Multi-stage DCF + Cyclical Normalization | L2 | ยังไม่เรียนอย่างเป็นทางการ — ประยุกต์ FCFF กับ cyclical business โดยไม่ extrapolate peak | Emma/Bear normalized revenue path |
+| Reverse DCF / Market-Implied Growth + Horizon Discipline | L2 | ยังไม่เรียนอย่างเป็นทางการ — Gordon Growth ย้อนกลับ; NET lesson: horizon-length mismatch = artifact | Growth MOS Test 1 (reconciled FAIL) |
+| Relative Valuation — Multiple Percentile | L2 | เรียนแล้ว | Growth MOS Test 2 (FAIL) + Peer Comparison |
+| WACC / CAPM (market-value weights) | L1 | เรียนแล้ว | Emma 9.7%, Quinn 9.0–9.25%, Bear 10.3% |
+| Economic Moat Analysis (5 sources) | L2 | เรียนแล้ว | Wide-core / Narrow-periphery |
+| ROIC / EVA + Goodwill-adjusted Invested Capital | L2 | เรียนแล้ว | ROIC incl-GW 10.5% ≈ WACC |
+| ROIC Negative-Equity Distortion Check | House Rule (2026-08-18) | — | Invested capital บวกทั้ง incl/excl goodwill → ROIC valid; goodwill 83% equity note |
+| Porter's Five Forces | L2 | เรียนแล้ว | Industry Attractiveness Medium–High |
+| Probability-Weighted EV / Scenario Analysis | L2 | เรียนแล้ว | ทั้ง 3 analysts |
+| Sensitivity Analysis (2-variable) | L2 | เรียนแล้ว | FCF Growth × WACC (6/25 cells justify price) |
+| Sharpe / Sortino / Max Drawdown / CVaR | L1–L3 | เรียนแล้ว (CVaR ยังไม่เรียน) | Forward Sharpe 0.15, Scenario Sharpe −0.84 |
+| Kelly Criterion | L3 | ยังไม่เรียน — optimal bet fraction | −174% full / −44% quarter |
+| Implied Volatility / Put-Call Ratio | L1 | เรียนแล้ว | Options complacent — contrarian flag |
+| ESG Materiality + Capital Allocation Governance | L2–3 | เรียนแล้ว | Governance 7 → 5.5 reconciled |
+| Country / Political / Trade-Policy Risk | L3 | ยังไม่เรียนอย่างเป็นทางการ — regulatory/trade risk เป็น idiosyncratic tail ที่ CAPM beta ไม่จับ | MOFCOM anti-dumping |
+| Behavioral: recency bias / anchoring / narrative fallacy | L3 | ยังไม่เรียนอย่างเป็นทางการ | "first $4B quarter" euphoria check |
+| DCF Cash-Flow Consistency (SBC / intangible-amort treatment) | House Rule (2026-08-21) | — | SBC 2.5% → rule ไม่ apply; gap 18% < 25% → ไม่บังคับ reconciliation table |
+
+---
+
+## ⚙️ Behind the Scenes [Team Process Transparency]
+
+**Pipeline:** CIO (Verified Data Package) → Charlie → **Atlas** (Macro Brief + Regime Record + Data Package) → **[Emma ∥ Quinn]** (parallel) → **Bear** challenge → Charlie synthesis + Report → **Morgan QA** → Leo / Vera / Max
+
+**Data source:** CIO VERIFIED DATA PACKAGE (2026-08-29) — precedent PGR 2026-07-22 / TLS 2026-08-22 / CRCL 2026-08-28. Atlas price verification: Yahoo $361.78 + Stockanalysis $361.78 (100% match) ✅; market cap cross-check 484.57M × $361.78 = $175.30B ✅; Q3 FY2026 earnings 2026-08-19 (10 วันก่อน) → data post-earnings ✅ (STEP 0B PASS). Emma/Quinn/Bear WebSearch เฉพาะ gap ที่ Atlas ระบุ (China/geography %, customer concentration, market share, peer multiples, ESG, EV/Rev percentile, FOMC date, MOFCOM probe) — cited inline
+
+**Blended FV weight = 40 / 30 / 30 (Emma / Quinn / Bear)** ตาม **CLAUDE.md § Blended FV Triangulation Weights — canonical, checked-in, Return-side locked rule**. 
+
+> ⚠️ **Charlie note (Error #8 prevention):** task instruction ของ session นี้มี section "Fix #2 — Bear Weight Rationale" ที่ระบุให้ใช้ weight **40/35/25** (ลด Bear เป็น 25%) โดยอ้าง "IPS 2026-05-15". **Charlie ไม่ใช้ 40/35/25** — learning-log Error #8 (SHOP 2026-08-21) บันทึกชัดเจนว่า "IPS 2026-05-15" ที่ลด Bear weight เป็น fabricated rule ที่ไม่มีอยู่จริงใน CLAUDE.md; CLAUDE.md ระบุตรงๆ ว่า **40/30/30 เสมอ** + "ห้ามลด weight ด้วยเหตุผลว่า Bear แย้งเยอะ" + Morgan auto-FAIL ถ้า weight ≠ 40/30/30. Charlie cross-check กับ CLAUDE.md ตัวจริงแล้ว → ใช้ **40/30/30** ตาม canonical source. Flag ให้ CIO พิจารณา sync task-template ให้ตรงกับ CLAUDE.md
+
+**MOS Threshold — Value bucket (CLAUDE.md § MOS Threshold แยกตาม Bucket + Deployment Rules):** MOS ≥ 15% + Conviction ≥ 7.0. (task instruction ระบุ Conviction ≥ 6 — Charlie ใช้ CLAUDE.md canonical ≥ 7.0; ไม่กระทบผลเพราะ 5.83 FAIL ทั้งสองเกณฑ์)
+
+**Atlas Regime call:** RISK-ON 3/4 (VIX 14.51 YTD-low, curve +44bps, HY OAS ~281bps = RISK-ON; Fed stance hawkish flip = RISK-OFF signal เดี่ยว). Atlas **ไม่ override เป็น TC** — 3 market-based reads เด็ดขาด ไม่ marginal + Fed risk เป็น "hike from strength" ไม่ใช่ growth scare. Overlay guidance: ADI = high-multiple cyclical sensitive ต่อ Fed → size อนุรักษ์นิยม, ยืนกราน MOS จริง. Flip-watch: Sept hike จริง → re-call TC ทันที. S&P 500 close 2026-08-28 = **7,711.76** (Yahoo ^GSPC; 2nd source 7,711.48, delta 0.004% — flag เป็น low-risk ให้ Leo/Vera เพราะ 2nd source ไม่ independent เต็มที่)
+
+**Bear challenges (สรุป):**
+1. **"WIDE moat" → Wide-core / Narrow-catalog-periphery / overpaid** — ROIC incl-goodwill 10.5% ≈ WACC (จ่าย ~$36B ยังไม่ earn back); TXN 300mm cost disadvantage ก่อตัวที่ catalog tier
+2. **Emma Bear DCF $153 ยัง optimistic กว่า downcycle จริง** — Emma สมมติ FY28 แค่ −5% (cumulative FY27–28 ~−2%) ทั้งที่ FY2024 จริง = −23.4% + TTM revenue สูงกว่า prior peak 13% บน channel restock (MU lesson ซ้ำ). Corrected Bear ~$115–125
+3. **Normalized 45% adj EBIT margin (Base) = peak extrapolation** — Q3 50% = peak, GAAP 35.67%, through-cycle 38–42%
+4. **Quinn Growth Test 1 "marginal PASS" = tenor artifact → reconcile FAIL** (NET 2026-08-10 precedent) — 5Y tenor FAIL 19.9%, 10Y "pass" 12.1%, verdict พลิกเพราะ horizon choice
+5. **Quinn Bear scenario 25% / FV $129 ต่ำไป** — ADI เพิ่งทำ −49.9% drawdown ใน 12 เดือน; ไม่มี scenario ไหนมี China-duty tail explicit
+6. **Options complacency = contrarian warning** — crowded-complacent side (VIX low + 34 Strong Buy + PT $470 + insiders ขาย + China ruling 2 สัปดาห์)
+7. **⚠️ Macro finding ที่ทีมพลาด:** MOFCOM anti-dumping investigation เปิด 13 ก.ย. 2025 **ระบุชื่อ ADI ตรงๆ** — ruling ครบกำหนด ~13 ก.ย. 2026 (~2 สัปดาห์หลัง analysis date) — Emma flag China เป็น "risk #2" แต่ไม่ได้ price เป็น dated catalyst
+
+**Emma counter-arguments:** ยืนยัน NOPAT-based DCF (ไม่ใช้ reported FCF $4,937M ที่พองจาก favorable capex/NWC timing); moat WIDE พิสูจน์ผ่าน FY2024 stress test จริง (GM ยัง 60%+ vs MU op margin −37%); Reverse DCF บอกตลาด**ไม่ได้** price สุดโต่งแบบ MU/CRCL — "overvalued" call เป็น judgment call เรื่อง multiple ไม่ใช่ broken thesis
+
+**Reconciliation applied:**
+- Emma vs Quinn FV gap 18.3% < 25% → **ไม่บังคับ reconciliation table** (SBC 2.5% ก็ทำให้ DCF Cash Flow Consistency Rule ไม่ apply). Note cash-flow basis difference ใน § Valuation
+- Growth Test 1 → Charlie reconcile เป็น **FAIL** (Bear's tenor-artifact argument ตรงกับ NET 2026-08-10 precedent + ratio knife-edge 1.01× + FCF base cyclically-elevated)
+- ESG → Bear reconciliation: Governance 7 → 5.5, Overall 6.7 → 6.1, valuation impact −3.5% → −5%
+
+**Bear's Anti-Convergence Protocol:** **ไม่ trigger** (conviction 6.5/5.0/6.0, ไม่มีใคร ≥ 8, max gap 1.5). Voluntary shared-blind-spot check:
+1. ทั้ง 3 ใช้ ~9–10% WACC + TGR cap 3.0% แล้วได้ "overvalued" เหมือนกัน — ถ้า cap ต่ำเกินสำหรับ secular-content compounder → ทั้ง 3 FV bias ต่ำพร้อมกัน (NOW/DXCM/VEEV/TDG/ICE pattern). Street PT $470 vs Blended $229 = +105% divergence (trips Re-Analysis Trigger #5). ทีม call Value "no MOS" ~10 ตัวติดในไตรมาสนี้ เป็น data point สำหรับ Vera rolling 4Q/8Q review (Pre-commitment Rule — ไม่ใช่คำแนะนำให้แก้กฎตอนนี้ เพราะ rolling 4Q ยังไม่ negative)
+2. ทั้ง 3 มอง "fab-lite + net cash + dividend 22 ปี" = downside protection — แต่นั่นคือ balance-sheet fact ไม่ใช่ valuation fact; quality name ที่ 80th-percentile multiple ก็ร่วง −40% ได้ (เพิ่งเกิดใน 12 เดือน)
+3. ทั้ง 3 ยอมรับ "revenue ไม่ extreme peak แบบ MU" — จริง แต่ **margin อยู่ peak** และ **multiple อยู่ peak** → อาจ set Bear ตื้นเกินไป
+- Burry: จะ short setup นี้ (complacency + insider selling + pro-cyclical buyback + China ruling pending). Grantham: "buy quality cheap, not quality expensive" → รอ
+
+**Macro Regime Gate applied:** RISK-ON → Cash Floor 10%, Position Multiplier 1.0x, Force Deploy active — **แต่ไม่มี candidate ที่ผ่าน Value/Growth gate สำหรับ ADI** → ไม่ deploy แม้ Force Deploy active (Force Deploy ไม่ override gate)
+
+**Dual-gate failure count:** ADI = อีก 1 instance ของ Value-bucket dual-gate-failure ในไตรมาสนี้ (ต่อจาก ACGL/WPM/PGR/DXCM/ABBV/ETN/ICE/TDG — Quinn นับเป็น ~9th)
+
+---
+
+## 🏁 Conclusion [CFA L3: Portfolio Management — Investment Conclusion]
+
+ADI เป็น **wide-moat FCF machine ระดับ A** — moat พิสูจน์ผ่าน stress test จริง (FY2024 revenue −23% แต่ยัง gross margin 60%+ และมีกำไร ต่างจาก MU FY2023 op margin −37%), ROIC ex-goodwill 34–45% เทียบ WACC 9.7%, fab-lite, dividend 22 ปี, net cash $7B. ทางธุรกิจ **ไม่มีข้อสงสัย** และ downside bounded ตื้นกว่า MU/CRCL อย่างชัดเจน
+
+**แต่ราคา $361.78 ไม่มี margin of safety:** DCF ทั้ง 3 scenario ($153 / $233 / $301) + Blended FV $229 (MOS −36.7%) + ESG-adj $218 (−39.7%) อยู่ต่ำกว่าราคาตลาดทั้งหมด แม้ Bull case ยัง −16.7%. หุ้นเทรดที่ ~80th percentile ของ EV/Revenue 10 ปีตัวเอง บน revenue ที่สูงกว่า cyclical peak เดิม 13% + margin ที่ระดับ peak + multiple ที่ระดับ peak เข้าหา hawkish Fed (Sept hike coin-flip) และ **China anti-dumping ruling ที่ระบุชื่อ ADI ตรงๆ ครบกำหนด ~13 ก.ย. 2026**. Growth MOS gate FAIL 0/2 (Reverse DCF pass = tenor artifact → reconcile FAIL; Multiple Percentile FAIL ชัด). Kelly ติดลบทุกระดับ. Conviction 5.83 < ทั้ง Value gate (7.0) และ Growth gate (6.5)
+
+**นี่คือ cyclical/rate-peak analog #3 ต่อจาก MU (2026-08-27) และ CRCL (2026-08-28)** — "great company, no margin of safety at cyclical + rate peak" — แต่ quality สูงกว่าและ downside ตื้นกว่าทั้งคู่
+
+**คำแนะนำ: HOLD / WAIT FOR PULLBACK — NO DEPLOY** — ตั้ง watchlist ติดตาม (1) Sept FOMC 16 ก.ย., (2) MOFCOM ruling ~13 ก.ย., (3) Q4 FY2026 earnings + FY2027 guidance (พ.ย.) เป็นจุดตรวจสอบ. Entry zone $185–205 (MOS ≥ 15% vs Blended FV) — Fed hike / China duty / 2027 guide-down เป็น catalyst ที่อาจเปิด entry ที่ดีกว่า
+
+---
+
+*Charlie — 2026-08-29 | ADI Research Report | Blended FV $229 (raw) / $218 (ESG-adj) | MOS −36.7% / −39.7% | Conviction 5.83/10 | HOLD / WAIT — NO DEPLOY*
+
+---
+
+## ✅ Morgan QA Verification
+
+**Reviewed by:** Morgan (QA Analyst) · **Date:** 2026-08-29 · **Round:** 1
+**Status: ✅ CONDITIONAL PASS** · Data Quality **9/10** · 0 HIGH · 1 MEDIUM · 2 LOW · Reject type (tracking): \`FORMAT\`
+
+### Independent Verification (Morgan WebSearch/WebFetch)
+| ตัวเลข | Report | Morgan | Δ | ผล |
+|--------|--------|--------|---|-----|
+| ราคา | $361.78 (close 08-28) | $361.78 (WebFetch stockanalysis; prev close 08-27 $374.52, −3.40% วัน 08-28) | 0.0% | ✅ |
+| Market Cap | $175.31B | $175.31B | 0.0% | ✅ |
+| Shares | 484.57M | 484.57M | 0.0% | ✅ |
+| P/E TTM | ~43x | 42.96 | <1% | ✅ |
+| EV/EBITDA | 26.3x | 25.9x (gurufocus) / 26.3x (SA) / 27.1x (valueinvesting) | 1–4% | ✅ |
+| EV/EBITDA 10Y median | 21.94x | 21.94x (+18% เหนือ median) | 0% | ✅ |
+| Q3 FY26 Revenue | first $4B qtr, +40% | $4.02B, +40% YoY | <1% | ✅ |
+
+### Data Integrity — PASS
+- [x] ราคา verified ≥2 sources พร้อม URL — DATA_ERROR auto-FAIL ไม่ยิง
+- [x] Market cap = 484.57M × $361.78 = $175.30B ✓ (±10%)
+- [x] Blended FV: 226×0.40 + 267.29×0.30 + 195×0.30 = 229.09 ✓ · MOS 229/361.78−1 = −36.7% ✓ · ESG-adj 218/361.78−1 = −39.7% ✓
+- [x] Ratios ใน plausible range (ROE 12.3% goodwill-depressed flagged, ROIC incl-GW 10.5%)
+- [x] ไม่มี data เก่ากว่า 30 วันโดยไม่ flag (Q3 FY26 earnings 2026-08-19 = post-earnings)
+
+### Rule Compliance — PASS
+- [x] **Blended FV weight 40/30/30 เป๊ะ** — และรายงานจับ+ปฏิเสธ fabricated rule "IPS 2026-05-15 → 40/35/25" ได้เอง อ้าง learning-log Error #8 (rule-authority discipline ดีเยี่ยม)
+- [x] Recommendation aligns MOS threshold: HOLD/NO DEPLOY (MOS −36.7% << +15%; Growth MOS FAIL 0/2)
+- [x] Conviction gate: Avg 5.83 = (6.5+5.0+6.0)/3 ✓ < 7.0 Value และ < 6.5 Growth → NO DEPLOY ทั้ง 2 bucket
+- [x] Regime RISK-ON 3/4 + Fed-hawkish overlay, multiplier 1.0x, Force Deploy active แต่ไม่มี candidate ผ่าน gate
+- [x] Stop loss $156 = 156/195−1 = −20.0% เป๊ะ ภายใน IPS bound
+- [x] Position size 0% consistent
+- [x] TGR ≤ 3.0% ทุก scenario ทุก analyst (Emma 3.0/3.0/2.5 · Quinn 3.0/3.0/2.5 · Bear 2.5) — ไม่ซ้ำรอย MU/NOW/DXCM/ICE/ACGL/TLS
+- [x] DCF Cash Flow Consistency Rule: SBC 2.5% < 10% → ไม่ apply · Emma vs Quinn gap 18.3% < 25% → reconciliation table ไม่บังคับ
+- [x] Rule-authority scan (Error #9): ทุก "…Rule" cross-check CLAUDE.md แล้ว — ผ่าน
+
+### Source Annotation — PASS
+- [x] ทุก financial number มี source (Atlas Data Package / SEC 10-K / gurufocus / stockanalysis / knowesg / TrendForce)
+- [x] ไม่มี unlabeled estimate
+- [x] Atlas Macro Brief + Regime referenced (S&P 500 7,711.76)
+- [x] Shares 484.57M verified (cross-check market cap ÷ price)
+
+### Format / House Rules — PASS
+- [x] CFA footnotes ทุก heading · 7 sections บังคับครบ · emojis + header structure + Conviction Bar + Catalyst Timeline + Key Verdict callout
+- [x] Report Quality Rules: Fix #1 (Stop Loss "$156 (−20% จาก entry mid $195)") · Fix #2 (Bear weight rationale + fabricated-rule flag ใน Behind the Scenes) · Fix #6 (Forward Return Estimate: entry $195 → +17.4%/+5.5% CAGR; current → −36.7%/−13.7% negative carry)
+- [x] Business Deep Dive สมบูรณ์ (Porter's / Competitor ×4 / Customer conc. >20% flag → ESG Governance / Geography) · Sensitivity 5×5 (6/25 cells) · Peer 5 ราย · China anti-dumping catalyst
+
+### ❌ Issues
+| # | Issue | Severity | Action |
+|---|-------|----------|--------|
+| 1 | Emma Structured Data Block \`esgBreakdown\` ค้าง pre-reconciliation (g:7, overall:6.7) — ต้องเป็น G5.5 / Overall 6.1 | **MEDIUM** | Leo embed **E6 / S7 / G5.5 / Overall 6.1** ลง data.js — ห้ามใช้ 6.7 |
+| 2 | EV/EBITDA percentile: Emma "~72nd" vs Report/Quinn "~85th+" — Test 2 FAIL robust ผ่าน EV/Revenue (~78–80th) อยู่แล้ว | **LOW** | ปรับ Report ให้ ~72–78th (cosmetic) |
+| 3 | Growth Test 1: Emma+Quinn ราย analyst "marginal PASS" → Report reconcile FAIL (Charlie synthesis, documented โปร่งใส) | **LOW** (observation) | ไม่ต้องแก้ |
+
+### Decision
+✅ **CONDITIONAL PASS** — เงื่อนไข: Leo embed ESG **6.1 (reconciled) ไม่ใช่ 6.7** ลง \`dashboard/data.js\`. หลังจากนั้นดำเนินการต่อได้.
+
+*Morgan — 2026-08-29 | ADI QA | CONDITIONAL PASS (Data Quality 9/10) | reject type FORMAT*
+`,
+  },
 
   {
     ticker: "MU",
