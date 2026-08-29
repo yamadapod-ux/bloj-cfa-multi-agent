@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-08-29 10:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-08-29 12:30";
 
 const SECTOR_VIEWS = [
   {
@@ -243,5 +243,42 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-08-29",
     author: "Atlas",
     trigger: "Byproduct of ADI Phase 1 Macro Brief — reveals sector-level view on the analog semiconductor cycle (mid-cycle recovery vs cycle-peak valuation + Fed hawkish), applies beyond ADI to TXN/NXPI/MCHP/ON",
+  },
+  {
+    sector: "LatAm E-commerce & Fintech",
+    slug: "latam-ecommerce-fintech",
+    stance: "CAUTIOUS",
+    cyclePosition: "Mid-cycle",
+    headline: "Structural winner ในภูมิภาคที่ valuation ถูกสุดใน 2 ทศวรรษ — แต่กลุ่มอยู่ใน margin-compression investment phase + Fed hawkish/strong-dollar เป็น EM headwind เฉพาะหน้า",
+    thesis: "การวิเคราะห์ MELI (2026-08-29) เปิดเผยมุมมองระดับ sector ที่กว้างกว่าตัวหุ้น — LatAm digital commerce + fintech (MELI, SE/Shopee ในเชิง analog, NU, StoneCo, dLocal) กำลังเจอ 3 แรงพร้อมกัน (1) **Structural tailwind:** LatAm rate-cutting cycle เพิ่งเริ่ม (Brazil Selic ลดรอบที่ 4 ติดเหลือ 14.00% เมื่อ 5 ส.ค., Focus คาดจบปี 13.75%; Argentina disinflation จาก 211% YoY สู่ ~33% ใน 18 เดือน + primary surplus + Fitch upgrade CCC+→B-) = consumer credit demand ฟื้น + credit-loss ต่ำลง + local multiple re-rate; e-commerce penetration ยังต่ำ (~12% CAGR); Mercado Pago TPV ทะลุ $100B/ไตรมาสครั้งแรก (2) **Valuation reset:** MSCI LatAm เทรดที่ ~51% discount เทียบ broader EM (near-record, จาก divergence กับ Asia) และใกล้จุดต่ำสุดในรอบ >20 ปี; MELI EV/Revenue 3.05x = 5-year low ทั้งที่ revenue โต +46% YoY (3) **แต่ margin-compression phase:** ผู้เล่นใหญ่ทุกรายเลือก growth-over-margin — MELI op margin หด 550bps YoY เหลือ 6.7% (Q2'26) จาก free shipping + credit card push + PIX discounts เพื่อป้องกัน share จาก Shopee (Brazil GMV ~$10B ≈ 40% ของ MELI, เพิ่ม ~$6B ในปีเดียว) และ Amazon/Shein; ROIC ของ MELI ร่วงจาก 63.75% (2024) → 14.20% (2026) จาก credit-book scaling + logistics capex. เฉพาะหน้า Fed hawkish (Warsh Jackson Hole, Sept hike ~50/50) → DXY แข็ง → BRL อ่อน (~5.19) → reported USD revenue โดน FX drag 10-18pp (เห็นชัดใน Argentina Q2 +20% reported vs +38% FX-neutral GMV) + de-rating risk ต่อ high-multiple names. ทีม CAUTIOUS ไม่ NEGATIVE เพราะ demand จริง (โต >35% ทุก segment) + valuation base ถูก แต่ยังไม่ POSITIVE เพราะ normalized margin + credit-loss cycle + FX ยัง unresolved — selective เฉพาะชื่อที่มี real MOS บน normalized (ไม่ใช่ peak-recovery) earnings และ distribution/scale moat.",
+    keyPoints: [
+      "LatAm easing cycle เพิ่งเริ่ม: Brazil Selic 14.00% (cut รอบ 4 ติด, จบปี ~13.75%), Argentina inflation 211%→33% ใน 18 เดือน — tailwind ต่อ consumer credit + e-comm demand + local multiple",
+      "Valuation ถูกสุดใน >20 ปี: MSCI LatAm ~51% discount เทียบ EM; MELI EV/Revenue 3.05x = 5-year low ทั้งที่ revenue +46% YoY",
+      "Margin-compression เป็น deliberate ทั้งกลุ่ม: MELI op margin -550bps YoY เหลือ 6.7% (Q2'26) จาก free shipping + credit card + PIX discounts เพื่อกัน share จาก Shopee/Amazon/Shein",
+      "Fed hawkish + strong USD = EM headwind เฉพาะหน้า: BRL ~5.19 อ่อนจาก Warsh; reported USD growth โดน FX drag 10-18pp (Argentina +20% reported vs +38% FX-neutral GMV)",
+      "Credit book scaling เร็ว = risk ใหม่: MELI credit portfolio $7.7B (+91% YoY), ลงทุน $2.1B ในไตรมาสเดียว; ROIC ร่วง 63.75%→14.20% (2024→2026)",
+      "Selective: NU/StoneCo แสดงว่า mature LatAm fintech ทำ op margin 50%+ ได้ — MELI credit book มี runway แต่ยัง early; ต้องการ MOS บน normalized margin ไม่ใช่ peak extrapolation",
+    ],
+    metrics: [
+      { label: "MELI revenue growth YoY (Q2'26 reported)", value: 46 },
+      { label: "MELI operating margin Q2'26 (%)", value: 6.7 },
+      { label: "MELI operating margin YoY change (bps)", value: -550 },
+      { label: "Brazil Selic rate (%)", value: 14.0 },
+      { label: "MSCI LatAm discount vs broader EM (%)", value: -51 },
+    ],
+    relatedTickers: ["MELI", "SE", "NU", "STNE"],
+    sources: [
+      { title: "Central Banking — Brazil cuts rates for a fourth time in a row (Selic 14.00%)", url: "https://www.centralbanking.com/central-banks/monetary-policy/monetary-policy-decisions/7976592/brazil-cuts-rates-for-a-fourth-time-in-a-row" },
+      { title: "Rio Times — Brazil Copom Selic 14 percent fourth cut 2026", url: "https://www.riotimesonline.com/brazil-copom-selic-14-percent-fourth-cut-2026/" },
+      { title: "Buenos Aires Herald — Milei's economy in 2026: macroeconomic consolidation and politics", url: "https://buenosairesherald.com/economics/mileis-economy-in-2026-between-macroeconomic-consolidation-and-politics" },
+      { title: "Rio Times — Argentina Economy 2026: Milei Cuts Inflation to 33%", url: "https://www.riotimesonline.com/argentina-economy-2026-guide/" },
+      { title: "Morgan Stanley — Latin America Economic Outlook 2026: A Bull Case for Latam", url: "https://www.morganstanley.com/insights/articles/latin-america-ecnomic-bullish-outlook-2026" },
+      { title: "TradingEconomics — Brazilian Real (USD/BRL current ~5.19, Warsh-driven dollar strength)", url: "https://tradingeconomics.com/brazil/currency" },
+      { title: "MercadoLibre Q2 2026 earnings (SEC 8-K meli-20260805) — op margin 6.7%, -550bps YoY", url: "https://www.sec.gov/Archives/edgar/data/0001099590/000109959026000021/meli-20260805xex991.htm" },
+      { title: "Buenos Aires Times — Amazon and Shopee challenging MercadoLibre's e-commerce dominance", url: "https://www.batimes.com.ar/news/economy/amazon-and-shopee-are-challenging-mercadolibres-e-commerce-market-dominance.phtml" },
+    ],
+    lastUpdated: "2026-08-29",
+    author: "Atlas",
+    trigger: "Byproduct of MELI Phase 1 Macro Brief — reveals sector-level view on LatAm e-commerce + fintech (structural growth + valuation reset vs margin-compression phase + Fed-hawkish/strong-dollar EM headwind), applies beyond MELI to SE/NU/STNE/dLocal",
   },
 ];
