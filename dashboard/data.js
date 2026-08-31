@@ -1,9 +1,725 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-08-30";
+const LAST_UPDATED = "2026-08-31";
 
 const REPORTS = [
+
+  {
+    ticker: "CHYM",
+    company: "Chime Financial, Inc.",
+    date: "2026-08-31",
+    version: "v1 (Morgan QA CONDITIONAL PASS \u2014 Data Quality 8/10)",
+    sector: "US Consumer Fintech / Neobank (interchange-fee-based digital banking for underbanked / paycheck-to-paycheck)",
+    bucket: "GROWTH",
+    price: 33.20,
+    recommendation: "AVOID / HOLD-WAIT \u2014 NO DEPLOY",
+    blendedFV: 22.30,
+    esgAdjFV: 21.07,
+    mos: "-32.8%",
+    mosPct: -32.8,
+    mosPctEsgAdj: -36.5,
+    conviction: 4.83,
+    convictionEmma: 4.0,
+    convictionQuinn: 4.5,
+    convictionBear: 6.0,
+    convictionAvg: 4.83,
+    targetBull: 38,
+    targetBase: 22,
+    stopLoss: 15.60,
+    pwEV: 24.47,
+    pwEvBear: 19.85,
+    beta: 1.70,
+    sharpe1Y: 0.15,
+    forwardSharpe: 0.15,
+    maxDrawdown: "-64.7% (since IPO; -53.5% ex IPO-day spike)",
+    kelly: "Negative \u0e17\u0e38\u0e01 fraction (Full / Half / Quarter) \u2192 allocation 0%. E[3yr return] \u221226.3% (Quinn) = negative edge. Kelly \u0e1e\u0e25\u0e34\u0e01\u0e1a\u0e27\u0e01\u0e17\u0e35\u0e48\u0e23\u0e32\u0e04\u0e32 ~$24\u201325 \u0e2b\u0e23\u0e37\u0e2d\u0e15\u0e48\u0e33\u0e01\u0e27\u0e48\u0e32",
+    moat: "NARROW (weak) \u2014 Emma NARROW ~7\u201310 \u0e1b\u0e35 / Bear NONE (\u0e22\u0e2d\u0e21 'weak Narrow') \u2192 reconciled NARROW-weak, durability ~5\u20137 \u0e1b\u0e35. \u0e41\u0e2b\u0e25\u0e48\u0e07\u0e2b\u0e25\u0e31\u0e01 = cost advantage (branchless serve underbanked) + brand \u2014 \u0e41\u0e15\u0e48 no pricing power \u0e1e\u0e34\u0e2a\u0e39\u0e08\u0e19\u0e4c\u0e41\u0e25\u0e49\u0e27 (ARPAM +6% \u0e02\u0e13\u0e30 revenue +27%), \u0e44\u0e21\u0e48\u0e21\u0e35 bank charter (ARPU ~1/3 SoFi), 64\u201370% \u0e23\u0e32\u0e22\u0e44\u0e14\u0e49\u0e1a\u0e19 Durbin regulatory arbitrage \u0e17\u0e35\u0e48\u0e21\u0e35 pending adverse court case",
+    esgRating: "Medium-High",
+    esgScore: 5.0,
+    macroRegime: "RISK-ON",
+    morganQA: "CONDITIONAL PASS (Data Quality 8/10, 0 HIGH / 3 MEDIUM / 3 LOW, reject type SANITY_FAIL + soft RULE_VIOLATION). Price gate PASS ($33.20 Stockanalysis + $33.77 Yahoo + Morgan independent $33.36, \u0394 < 5%). Financial spot-check 5/5 PASS. Market cap sanity 378.6M \u00d7 $33.20 = $12,570M \u2713. Blended FV 40/30/30 canonical verified \u2014 report \u0e40\u0e1b\u0e34\u0e14\u0e42\u0e1b\u0e07 fabricated 'IPS 2026-05-15 \u2192 40/35/25' \u0e43\u0e19 Charlie base-prompt (Error #8/#9 prevention instance \u0e15\u0e48\u0e2d\u0e40\u0e19\u0e37\u0e48\u0e2d\u0e07). DCF Cash Flow Consistency Rule: SBC 11.5% > 10% \u2192 \u0e22\u0e34\u0e07; \u0e17\u0e31\u0e49\u0e07 3 NOPAT-based FCFF; Emma DCF base $21 vs Quinn base $26 gap +23.8% < 25% \u2192 reconciliation table \u0e44\u0e21\u0e48\u0e1a\u0e31\u0e07\u0e04\u0e31\u0e1a. 3 MEDIUM \u0e41\u0e01\u0e49\u0e01\u0e48\u0e2d\u0e19 Leo embed: (1) Emma esgBreakdown block raw (e8/s5/g4/5.5) \u2192 embed reconciled {e:8,s:4.5,g:3.5,overall:5.0}; (2) ESG table Bear column \u2192 Bear notes \u00a77 (E8/S4/G3); (3) Stop Loss $15.50 \u221220.5% \u2192 $15.60 \u221220.0% \u0e40\u0e1b\u0e4a\u0e30. \u0e44\u0e21\u0e48\u0e21\u0e35\u0e02\u0e49\u0e2d\u0e44\u0e2b\u0e19\u0e40\u0e1b\u0e25\u0e35\u0e48\u0e22\u0e19 verdict.",
+    sp500Reference: 7711.76,
+    sp500ReferenceNote: "7,711.76 (2026-08-28 close \u2014 reuse agent_notes/atlas/2026-08-31_CHYM.md \u00a7A; \u0e44\u0e21\u0e48\u0e21\u0e35 trading session \u0e43\u0e2b\u0e21\u0e48\u0e23\u0e30\u0e2b\u0e27\u0e48\u0e32\u0e07 2026-08-28 \u2192 2026-08-31)",
+    revenueGrowthYoY: 26.4,
+    entryZone: "$18\u201321 (mid $19.50) \u2014 \u0e15\u0e49\u0e2d\u0e07\u0e44\u0e14\u0e49 MOS \u2265 15% vs Blended FV $22.30 AND Bull Flip Trigger \u0e22\u0e37\u0e19\u0e22\u0e31\u0e19 (Reg II resolution / GAAP-margin proof 2Q / member re-accel). \u0e08\u0e32\u0e01 entry mid $19.50 \u2192 Blended FV $22.30 = CAGR +4.6%/\u0e1b\u0e35 (modest \u2014 \u0e15\u0e49\u0e2d\u0e07\u0e21\u0e35 bull-flip \u0e40\u0e2a\u0e23\u0e34\u0e21)",
+    positionSize: "0% \u2014 FAIL Growth conviction gate (avg 4.83 < 6.5) + FAIL Growth MOS Gate 0/2 (Reverse DCF 1.24\u20131.42\u00d7 consensus > 1.2\u00d7; EV/Rev + Fwd P/E ~90th pctile > 70th). Value cross-check \u0e01\u0e47 FAIL \u0e17\u0e31\u0e49\u0e07 2 \u0e40\u0e07\u0e37\u0e48\u0e2d\u0e19 (MOS \u221232.8% << 15%; Conviction < 7.0). Regime RISK-ON 3/4 (Fed-hawkish overlay), 1.0x, Force Deploy active \u0e41\u0e15\u0e48\u0e44\u0e21\u0e48\u0e21\u0e35 candidate \u0e1c\u0e48\u0e32\u0e19 gate \u2192 \u0e44\u0e21\u0e48 force",
+    keyThesis: "CHYM = neobank consumer-facing \u0e23\u0e32\u0e22\u0e43\u0e2b\u0e0d\u0e48\u0e2a\u0e38\u0e14\u0e02\u0e2d\u0e07\u0e2a\u0e2b\u0e23\u0e31\u0e10\u0e2f \u0e17\u0e35\u0e48\u0e1e\u0e36\u0e48\u0e07 interchange fees (~64\u201370% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49) \u0e1c\u0e48\u0e32\u0e19 partner banks (Bancorp + Stride) \u0e1a\u0e19 Durbin exemption. Q2'26 = GAAP-profitable quarter \u0e41\u0e23\u0e01, FCF TTM +$312M, net cash +$980M, member +20% \u2014 \u0e18\u0e38\u0e23\u0e01\u0e34\u0e08\u0e08\u0e23\u0e34\u0e07. \u0e41\u0e15\u0e48\u0e17\u0e35\u0e48 $33.20 \u0e40\u0e17\u0e23\u0e14 ~50x forward P/E \u0e1a\u0e19 fundamental \u0e17\u0e35\u0e48\u0e41\u0e22\u0e48\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e14\u0e43\u0e19\u0e01\u0e25\u0e38\u0e48\u0e21 peer (revenue growth +26.4% \u0e15\u0e48\u0e33\u0e2a\u0e38\u0e14 + operating margin 15.2% \u0e15\u0e48\u0e33\u0e2a\u0e38\u0e14 vs SOFI/DAVE/NU/HOOD). Growth MOS Gate FAIL 0/2 + Conviction 4.83 < 6.5 + MOS \u221232.8% + Kelly 0%. Street mean 12M PT ~$33 \u2248 spot = upside ~0% \u0e41\u0e21\u0e49\u0e08\u0e32\u0e01 Street. Interchange \u0e41\u0e02\u0e27\u0e19\u0e1a\u0e19 Reg II 8th Circuit litigation \u0e17\u0e35\u0e48\u0e1c\u0e25\u0e25\u0e31\u0e1e\u0e18\u0e4c\u0e2a\u0e2d\u0e07\u0e17\u0e34\u0e28\u0e17\u0e32\u0e07. 6th consecutive 'priced-for-perfection' NO-DEPLOY (MU/CRCL/ADI/MELI/GCT\u2192CHYM). \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 hard AVOID \u2014 net cash + FCF+ + NOL shield = downside floor \u0e08\u0e23\u0e34\u0e07. Watchlist \u2014 Bull Flip \u0e17\u0e35\u0e48 \u2264$24 + regulatory/margin proof",
+    topRisk: "Interchange regulatory binary (\u0e2a\u0e2d\u0e07\u0e17\u0e34\u0e28\u0e17\u0e32\u0e07) \u2014 ~64\u201370% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49 = debit interchange \u0e1a\u0e19 Durbin exemption. Reg II \u0e16\u0e39\u0e01 ND District Court vacated \u0e17\u0e31\u0e49\u0e07\u0e09\u0e1a\u0e31\u0e1a (\u0e2a.\u0e04. 2025, stay), 8th Circuit fully briefed \u0e15\u0e31\u0e49\u0e07\u0e41\u0e15\u0e48 \u0e21\u0e35.\u0e04. 2026, \u0e23\u0e2d\u0e04\u0e33\u0e1e\u0e34\u0e1e\u0e32\u0e01\u0e29\u0e32 \u0e44\u0e21\u0e48\u0e21\u0e35\u0e27\u0e31\u0e19\u0e17\u0e35\u0e48. \u0e16\u0e49\u0e32 affirm vacatur \u2192 \u0e18\u0e19\u0e32\u0e04\u0e32\u0e23\u0e43\u0e2b\u0e0d\u0e48\u0e40\u0e01\u0e47\u0e1a interchange \u0e44\u0e21\u0e48\u0e16\u0e39\u0e01 cap \u2192 gap compression \u2192 CHYM \u0e40\u0e2a\u0e35\u0e22 relative advantage \u0e1a\u0e19\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49\u0e2a\u0e48\u0e27\u0e19\u0e43\u0e2b\u0e0d\u0e48. Bear P-W EV $19.85 (MOS \u221240%). Sensitivity: 6/25 cells (24%) justify $33.20 \u2014 \u0e15\u0e49\u0e2d\u0e07\u0e01\u0e32\u0e23 Revenue CAGR \u2265 20% AND terminal op margin \u2265 30% \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e01\u0e31\u0e19 (best-in-cohort \u2014 CHYM \u0e1b\u0e31\u0e08\u0e08\u0e38\u0e1a\u0e31\u0e19 worst-in-cohort \u0e17\u0e31\u0e49\u0e07\u0e2a\u0e2d\u0e07\u0e21\u0e34\u0e15\u0e34)",
+    reportFile: "../reports/CHYM_2026-08-31.md",
+    businessSummary: {
+      oneLiner: "\u0e18\u0e19\u0e32\u0e04\u0e32\u0e23\u0e14\u0e34\u0e08\u0e34\u0e17\u0e31\u0e25\u0e44\u0e21\u0e48\u0e21\u0e35\u0e2a\u0e32\u0e02\u0e32 \u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e04\u0e19 underbanked / \u0e2b\u0e32\u0e40\u0e0a\u0e49\u0e32\u0e01\u0e34\u0e19\u0e04\u0e48\u0e33 \u2014 \u0e23\u0e32\u0e22\u0e44\u0e14\u0e49\u0e2b\u0e25\u0e31\u0e01\u0e21\u0e32\u0e08\u0e32\u0e01\u0e04\u0e48\u0e32\u0e18\u0e23\u0e23\u0e21\u0e40\u0e19\u0e35\u0e22\u0e21 interchange \u0e17\u0e38\u0e01\u0e04\u0e23\u0e31\u0e49\u0e07\u0e17\u0e35\u0e48\u0e25\u0e39\u0e01\u0e04\u0e49\u0e32\u0e23\u0e39\u0e14\u0e1a\u0e31\u0e15\u0e23 debit",
+      analogy: "\u0e40\u0e2b\u0e21\u0e37\u0e2d\u0e19\u0e41\u0e2d\u0e1e\u0e18\u0e19\u0e32\u0e04\u0e32\u0e23\u0e17\u0e35\u0e48\u0e44\u0e21\u0e48\u0e21\u0e35\u0e2a\u0e32\u0e02\u0e32 \u0e44\u0e21\u0e48\u0e04\u0e34\u0e14\u0e04\u0e48\u0e32\u0e18\u0e23\u0e23\u0e21\u0e40\u0e19\u0e35\u0e22\u0e21 overdraft \u2014 \u0e41\u0e15\u0e48\u0e40\u0e07\u0e34\u0e19\u0e17\u0e35\u0e48\u0e44\u0e14\u0e49\u0e21\u0e32\u0e08\u0e23\u0e34\u0e07\u0e04\u0e37\u0e2d\u0e2a\u0e48\u0e27\u0e19\u0e41\u0e1a\u0e48\u0e07\u0e04\u0e48\u0e32\u0e18\u0e23\u0e23\u0e21\u0e40\u0e19\u0e35\u0e22\u0e21\u0e17\u0e38\u0e01\u0e04\u0e23\u0e31\u0e49\u0e07\u0e17\u0e35\u0e48\u0e25\u0e39\u0e01\u0e04\u0e49\u0e32\u0e23\u0e39\u0e14\u0e1a\u0e31\u0e15\u0e23 (interchange ~1.5% \u0e02\u0e2d\u0e07\u0e22\u0e2d\u0e14) \u0e41\u0e1a\u0e48\u0e07\u0e01\u0e31\u0e1a partner bank",
+      moneyFlow: [
+        "Interchange (~64\u201370% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49) \u2014 \u0e17\u0e38\u0e01\u0e04\u0e23\u0e31\u0e49\u0e07 member \u0e23\u0e39\u0e14\u0e1a\u0e31\u0e15\u0e23 debit \u0e23\u0e49\u0e32\u0e19\u0e04\u0e49\u0e32\u0e08\u0e48\u0e32\u0e22 interchange fee \u2192 Chime \u0e41\u0e1a\u0e48\u0e07\u0e01\u0e31\u0e1a partner bank (Bancorp/Stride); partner bank <$10B assets \u2192 Durbin exemption \u2192 \u0e44\u0e21\u0e48\u0e16\u0e39\u0e01 Reg II cap",
+        "SpotMe (fee-free overdraft \u0e16\u0e36\u0e07 ~$200) \u2014 \u0e02\u0e2d 'tip' \u0e41\u0e1a\u0e1a\u0e2a\u0e21\u0e31\u0e04\u0e23\u0e43\u0e08 (headline/regulatory tail risk)",
+        "MyPay (earned-wage access), Credit Builder (secured card), ChimePlus (premium subscription)",
+        "Platform / lending revenue (Instant Loans unsecured, +48% YoY) \u2014 ARPAM expansion vector \u0e41\u0e15\u0e48\u0e40\u0e1e\u0e34\u0e48\u0e21 credit risk",
+        "\u0e40\u0e07\u0e34\u0e19\u0e2a\u0e14\u0e40\u0e2b\u0e25\u0e37\u0e2d ($1.16B liquid) \u0e40\u0e01\u0e47\u0e1a T-bills \u2192 other income \u0e40\u0e25\u0e47\u0e01\u0e19\u0e49\u0e2d\u0e22; \u0e44\u0e21\u0e48\u0e08\u0e48\u0e32\u0e22\u0e1b\u0e31\u0e19\u0e1c\u0e25"
+      ],
+      whyDifferent: "largest US consumer neobank member base (10.4M primary-account) + brand \u0e17\u0e35\u0e48\u0e41\u0e02\u0e47\u0e07\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e14\u0e43\u0e19\u0e01\u0e25\u0e38\u0e48\u0e21 underbanked/Gen-Z + branchless cost advantage \u2014 \u0e41\u0e15\u0e48 interchange-only model \u0e21\u0e35 hard ARPU ceiling \u0e17\u0e35\u0e48 SoFi/NU (\u0e21\u0e35 charter) \u0e44\u0e21\u0e48\u0e21\u0e35",
+      simpleRisk: "64\u201370% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49\u0e41\u0e02\u0e27\u0e19\u0e1a\u0e19\u0e0a\u0e48\u0e2d\u0e07\u0e01\u0e0e\u0e2b\u0e21\u0e32\u0e22 (Durbin exemption) \u0e17\u0e35\u0e48\u0e21\u0e35\u0e04\u0e14\u0e35\u0e28\u0e32\u0e25\u0e04\u0e49\u0e32\u0e07\u0e2d\u0e22\u0e39\u0e48 (Reg II 8th Circuit) \u2014 \u0e16\u0e49\u0e32\u0e28\u0e32\u0e25\u0e15\u0e31\u0e14\u0e2a\u0e34\u0e19\u0e25\u0e1a Reg II \u0e17\u0e31\u0e49\u0e07\u0e09\u0e1a\u0e31\u0e1a \u0e18\u0e19\u0e32\u0e04\u0e32\u0e23\u0e43\u0e2b\u0e0d\u0e48\u0e01\u0e47\u0e40\u0e01\u0e47\u0e1a interchange \u0e44\u0e21\u0e48\u0e16\u0e39\u0e01 cap \u0e40\u0e0a\u0e48\u0e19\u0e01\u0e31\u0e19 \u2192 Chime \u0e40\u0e2a\u0e35\u0e22\u0e04\u0e27\u0e32\u0e21\u0e44\u0e14\u0e49\u0e40\u0e1b\u0e23\u0e35\u0e22\u0e1a; + \u0e44\u0e21\u0e48\u0e21\u0e35 pricing power (ARPAM +6% \u0e02\u0e13\u0e30 revenue +27%) + SBC 11.5% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49 \u0e17\u0e33\u0e43\u0e2b\u0e49 GAAP net loss \u2212$18.2M + credit-loss line \u0e42\u0e15\u0e40\u0e23\u0e47\u0e27\u0e01\u0e27\u0e48\u0e32\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49"
+    },
+    thesisBullets: [
+      { title: "Worst-in-cohort fundamentals @ premium multiple", why: "revenue growth +26.4% (\u0e15\u0e48\u0e33\u0e2a\u0e38\u0e14) + operating margin 15.2% (\u0e15\u0e48\u0e33\u0e2a\u0e38\u0e14) vs SOFI (+40.9%/17.3%), DAVE (+48.6%/36.0%), NU (+44.3%/52.0%), HOOD (+38.3%/46.0%) \u2014 \u0e41\u0e15\u0e48\u0e40\u0e17\u0e23\u0e14 forward P/E ~50x (\u0e2a\u0e39\u0e07\u0e2a\u0e38\u0e14, ~2x peer median). \u0e15\u0e25\u0e32\u0e14\u0e44\u0e21\u0e48\u0e44\u0e14\u0e49 apply discount \u0e17\u0e35\u0e48 fundamental \u0e2a\u0e21\u0e04\u0e27\u0e23\u0e44\u0e14\u0e49" },
+      { title: "Interchange concentration + regulatory binary \u0e2a\u0e2d\u0e07\u0e17\u0e34\u0e28\u0e17\u0e32\u0e07", why: "~64\u201370% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49 = debit interchange \u0e1a\u0e19 Durbin exemption. Reg II vacated \u0e17\u0e31\u0e49\u0e07\u0e09\u0e1a\u0e31\u0e1a (\u0e2a.\u0e04. 2025, stay), 8th Circuit \u0e23\u0e2d\u0e04\u0e33\u0e1e\u0e34\u0e1e\u0e32\u0e01\u0e29\u0e32. affirm \u2192 gap exempt/non-exempt \u0e41\u0e04\u0e1a\u0e25\u0e07 \u2192 CHYM \u0e40\u0e2a\u0e35\u0e22 relative advantage. 'deregulation \u0e14\u0e35\u0e15\u0e48\u0e2d fintech' \u0e40\u0e1b\u0e47\u0e19\u0e2a\u0e31\u0e0d\u0e0a\u0e32\u0e15\u0e0d\u0e32\u0e13\u0e1c\u0e34\u0e14\u0e43\u0e19\u0e01\u0e23\u0e13\u0e35\u0e19\u0e35\u0e49" },
+      { title: "\u0e44\u0e21\u0e48\u0e21\u0e35 pricing power + \u0e44\u0e21\u0e48\u0e21\u0e35 bank charter", why: "ARPAM +6% \u0e02\u0e13\u0e30 revenue +27% = growth \u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14\u0e21\u0e32\u0e08\u0e32\u0e01 member adds \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 monetization. \u0e44\u0e21\u0e48\u0e21\u0e35 charter (\u0e15\u0e48\u0e32\u0e07\u0e08\u0e32\u0e01 SOFI) \u2192 ARPU ~1/3 SoFi, \u0e1e\u0e36\u0e48\u0e07 partner bank 2 \u0e23\u0e32\u0e22 (Bancorp + Stride ~46% \u0e02\u0e2d\u0e07 receivables)" },
+      { title: "SBC wedge + credit-loss line \u0e42\u0e15\u0e40\u0e23\u0e47\u0e27", why: "SBC TTM $283.6M = 11.5% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49 \u2192 GAAP net loss \u2212$18.2M \u0e17\u0e31\u0e49\u0e07\u0e17\u0e35\u0e48 op margin +15%. Q2'26 transaction & risk losses $103.3M (+16% QoQ vs revenue +4% QoQ); mix shift \u2192 Instant Loans unsecured \u0e0a\u0e48\u0e27\u0e07 near-prime credit normalize" },
+      { title: "\u0e23\u0e32\u0e04\u0e32 near-ATH, Street mean PT \u2248 spot", why: "+25% \u0e08\u0e32\u0e01 IPO, \u22122.8% \u0e08\u0e32\u0e01 52W high \u2014 \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 pullback. Street consensus 12M PT mean ~$33.15 \u2248 spot = Street \u0e40\u0e2d\u0e07\u0e01\u0e47\u0e40\u0e2b\u0e47\u0e19 upside ~0%; 'Buy' upgrades $38\u201345 = IPO-syndicate outliers (MS/Goldman = underwriters)" }
+    ],
+    esgBreakdown: { e: 8, s: 4.5, g: 3.5, overall: 5.0 },
+    esgBreakdownNote: "Reconciled \u0e08\u0e32\u0e01 report \u00a7ESG (Emma / Bear \u2192 Reconciled): Environmental 8 / 8 \u2192 8.0 (digital-only, carbon footprint \u0e15\u0e48\u0e33, immaterial). Social 5 / 4 \u2192 4.5 (financial-inclusion positive \u0e41\u0e15\u0e48 monetize vulnerable paycheck-to-paycheck demographic; SpotMe tip + MyPay EWA fee criticism; CFPB $3.25M penalty + \u2265$1.3M redress \u0e1e.\u0e04. 2024; predatory-lending optics \u0e1a\u0e19 Instant Loans). Governance 4 / 3 \u2192 3.5 (dual-class \u2014 co-founders Britt/King \u0e04\u0e38\u0e21 voting power ~65\u201374% \u0e14\u0e49\u0e27\u0e22 economic stake \u0e40\u0e25\u0e47\u0e01\u0e01\u0e27\u0e48\u0e32; SBC $1,082M FY2025 spike; adjusted-metrics reliance; partner-bank concentration governance). Overall 5.5 / 5.0 \u2192 5.0/10 (MEDIUM\u2013HIGH RISK). Total ESG valuation impact reconciled \u2248 \u22125.5% (Emma \u22125% / Bear \u22126%) \u2192 ESG-adj Blended FV $21.07 \u2192 MOS \u221236.5%. Emma structured-data block \u0e22\u0e31\u0e07 stale (e8/s5/g4/overall5.5) \u2014 Leo embed \u0e08\u0e32\u0e01 reconciled report \u0e15\u0e32\u0e21 Morgan Issue #1 (ESG structured-block staleness \u0e0b\u0e49\u0e33\u0e15\u0e48\u0e2d\u0e08\u0e32\u0e01 TLS/CRCL/ADI/MELI/GCT)",
+    customerConcentration: {
+      note: "Members: \u0e44\u0e21\u0e48\u0e21\u0e35 member \u0e40\u0e14\u0e35\u0e22\u0e27 >1% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49 \u2014 fragmented (10.4M primary-account members). Partner-bank concentration: The Bancorp + Stride Bank \u2248 46% \u0e02\u0e2d\u0e07 receivables (10-Q; ~27% / 19%) \u2014 single point of failure \u0e15\u0e48\u0e2d business model (\u0e44\u0e21\u0e48\u0e21\u0e35 charter \u0e2a\u0e33\u0e23\u0e2d\u0e07). \u26a0\ufe0f flag > 20%. Card networks: Visa/Mastercard \u2014 interchange schedule dependency"
+    },
+    geographyRevenue: {
+      unitedStates: "~100% \u2014 domestic-only neobank",
+      international: "~0%",
+      china: "~0% \u2014 \u0e44\u0e21\u0e48\u0e21\u0e35 exposure. Geopolitical Risk LOW (domestic) \u2014 \u0e41\u0e15\u0e48 Regulatory Risk HIGH: 100% \u0e02\u0e2d\u0e07 business \u0e41\u0e02\u0e27\u0e19\u0e1a\u0e19 US interchange/consumer-finance regulation (Durbin exemption, Reg II, CFPB, EWA classification)"
+    },
+    revenueSegments: [
+      { label: "Payments (debit interchange + MyPay / out-of-network ATM fees)", value: 64 },
+      { label: "Platform / lending (Instant Loans, ChimePlus, other)", value: 36 }
+    ],
+    revenueSegmentsNote: "Q2'26 10-Q: Payments revenue $430.0M (64%) / Platform-related $239.7M (36%) / total $669.8M. Interchange \u0e08\u0e23\u0e34\u0e07 ~60\u201365% \u0e02\u0e2d\u0e07 total (payments revenue \u0e44\u0e21\u0e48\u0e44\u0e14\u0e49\u0e40\u0e1b\u0e47\u0e19 interchange 100% \u2014 \u0e21\u0e35 MyPay fee, out-of-network ATM). Bear Data Integrity #2: Atlas '70% interchange' overstate \u0e40\u0e25\u0e47\u0e01\u0e19\u0e49\u0e2d\u0e22",
+    competitorData: [
+      { ticker: "CHYM", company: "Chime Financial (subject)", revenueGrowth: 26.4, operatingMargin: 15.2, marketCap: 12570 },
+      { ticker: "SOFI", company: "SoFi Technologies", revenueGrowth: 40.9, operatingMargin: 17.3, marketCap: 23310, strengths: "\u0e21\u0e35 bank charter \u2192 ARPU ~3x CHYM, NIM capture, lending + investing + wealth cross-sell; growth +40.9% \u0e40\u0e23\u0e47\u0e27\u0e01\u0e27\u0e48\u0e32 CHYM; \u0e40\u0e1b\u0e47\u0e19 proof point \u0e27\u0e48\u0e32 charter model \u0e0a\u0e19\u0e30 interchange-only", weaknesses: "op margin 17.3% \u0e22\u0e31\u0e07\u0e44\u0e21\u0e48\u0e2a\u0e39\u0e07; beta ~2.17; rate-sensitive; \u0e41\u0e02\u0e48\u0e07\u0e15\u0e23\u0e07\u0e01\u0e31\u0e1a CHYM \u0e43\u0e19 underbanked segment", threatLevel: "HIGH" },
+      { ticker: "DAVE", company: "Dave Inc.", revenueGrowth: 48.6, operatingMargin: 36.0, marketCap: 4260, strengths: "growth +48.6% \u0e40\u0e23\u0e47\u0e27\u0e2a\u0e38\u0e14\u0e43\u0e19\u0e01\u0e25\u0e38\u0e48\u0e21, op margin 36% \u0e2a\u0e39\u0e07\u0e01\u0e27\u0e48\u0e32 CHYM 2x; ExtraCash + fee model \u0e17\u0e35\u0e48\u0e21\u0e35 pricing power \u0e21\u0e32\u0e01\u0e01\u0e27\u0e48\u0e32; Fwd P/E ~15x \u0e16\u0e39\u0e01\u0e01\u0e27\u0e48\u0e32 CHYM 3x", weaknesses: "scale \u0e40\u0e25\u0e47\u0e01\u0e01\u0e27\u0e48\u0e32\u0e21\u0e32\u0e01 ($4.3B market cap); micro-float; ExtraCash tip model \u0e21\u0e35 regulatory tail \u0e40\u0e0a\u0e48\u0e19\u0e01\u0e31\u0e19", threatLevel: "MEDIUM" },
+      { ticker: "NU", company: "Nu Holdings", revenueGrowth: 44.3, operatingMargin: 52.0, marketCap: 65500, strengths: "op margin 52% (best-in-cohort), bank charter, monopoly-ish Brazil position, 100M+ \u0e25\u0e39\u0e01\u0e04\u0e49\u0e32, credit underwriting \u0e0a\u0e31\u0e49\u0e19\u0e40\u0e22\u0e35\u0e48\u0e22\u0e21; proof \u0e27\u0e48\u0e32 neobank operating leverage \u0e40\u0e1b\u0e47\u0e19 non-linear (op margin ~0% 2021 \u2192 52% 2024)", weaknesses: "LatAm/EM concentration; \u0e44\u0e21\u0e48\u0e21\u0e35 e-commerce/logistics; credit-cycle exposure; \u0e44\u0e21\u0e48\u0e44\u0e14\u0e49\u0e41\u0e02\u0e48\u0e07\u0e43\u0e19 US", threatLevel: "LOW" },
+      { ticker: "HOOD", company: "Robinhood Markets", revenueGrowth: 38.3, operatingMargin: 46.0, marketCap: 75300, strengths: "op margin 46%, growth +38.3%, crypto + options + Gold subscription monetization \u0e2b\u0e25\u0e32\u0e01\u0e2b\u0e25\u0e32\u0e22; brand \u0e41\u0e02\u0e47\u0e07\u0e43\u0e19 retail; net cash \u0e21\u0e32\u0e01", weaknesses: "revenue \u0e1c\u0e39\u0e01\u0e01\u0e31\u0e1a trading volume / crypto cycle; Fwd P/E ~40x+ \u0e01\u0e47\u0e41\u0e1e\u0e07; \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 pure neobank (brokerage-first)", threatLevel: "MEDIUM" }
+    ],
+    bullFlipTriggers: [
+      "\u0e23\u0e32\u0e04\u0e32 \u2264 $24 \u2014 MOS \u0e1a\u0e27\u0e01 vs Blended FV + Kelly \u0e01\u0e25\u0e31\u0e1a\u0e40\u0e1b\u0e47\u0e19\u0e1a\u0e27\u0e01",
+      "GAAP profitability \u0e1e\u0e34\u0e2a\u0e39\u0e08\u0e19\u0e4c: 2 \u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a\u0e15\u0e34\u0e14\u0e01\u0e31\u0e19 GAAP operating margin > 12% AND GAAP net income \u0e1a\u0e27\u0e01 (\u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e41\u0e04\u0e48 adjusted)",
+      "Platform revenue > 35% YoY 2 \u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a\u0e15\u0e34\u0e14 AND Instant Loans charge-off < 4% \u0e1c\u0e48\u0e32\u0e19\u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a\u0e17\u0e35\u0e48 unemployment \u0e02\u0e36\u0e49\u0e19",
+      "Fed 2023 debit-cap proposal (\u221230%) finalized \u2192 gap exempt/non-exempt \u0e01\u0e27\u0e49\u0e32\u0e07\u0e02\u0e36\u0e49\u0e19 \u2192 interchange tailwind",
+      "ARPAM growth re-accelerate > 12% YoY \u2014 proof \u0e27\u0e48\u0e32\u0e21\u0e35 monetization lever (\u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 member-adds only)"
+    ],
+    bearFlipTriggers: [
+      "8th Circuit affirms ND vacatur \u0e02\u0e2d\u0e07 Reg II \u2192 interchange take-rate compression \u221215% \u2192 FV ~$13\u201315",
+      "Transaction & risk losses > 18% \u0e02\u0e2d\u0e07 revenue 2 \u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a\u0e15\u0e34\u0e14 (\u0e1b\u0e31\u0e08\u0e08\u0e38\u0e1a\u0e31\u0e19 ~15%)",
+      "Bancorp \u0e2b\u0e23\u0e37\u0e2d Stride \u0e44\u0e14\u0e49 BaaS consent order / exit / renegotiate adverse",
+      "Active member growth < 12% YoY \u0e2b\u0e23\u0e37\u0e2d management \u0e2b\u0e31\u0e48\u0e19 guidance",
+      "Purchase volume growth < 10% YoY \u0e2b\u0e23\u0e37\u0e2d guide take-rate \u0e25\u0e07\u0e2d\u0e35\u0e01"
+    ],
+    thesisInvalidation: "Bear \u0e1c\u0e34\u0e14\u0e16\u0e49\u0e32 \u0e20\u0e32\u0e22\u0e43\u0e19 4 \u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a: GAAP op margin > 20% AND revenue growth > 22% AND Platform > 45% \u0e02\u0e2d\u0e07\u0e23\u0e32\u0e22\u0e44\u0e14\u0e49 (charge-offs contained) \u0e1e\u0e23\u0e49\u0e2d\u0e21\u0e01\u0e31\u0e19 \u2192 CHYM \u0e40\u0e1b\u0e47\u0e19 top-quartile \u0e17\u0e31\u0e49\u0e07 growth+margin \u2192 ~50x justified \u2192 FV > $35. Holder \u0e1c\u0e34\u0e14\u0e16\u0e49\u0e32: Durbin exemption \u0e16\u0e39\u0e01 legislate \u0e22\u0e01\u0e40\u0e25\u0e34\u0e01 / \u0e02\u0e22\u0e32\u0e22 cap \u0e2a\u0e39\u0e48 partner banks / partner-bank disruption / direct-deposit member count YoY \u0e15\u0e34\u0e14\u0e25\u0e1a 2 \u0e44\u0e15\u0e23\u0e21\u0e32\u0e2a. Data invalidation: credit-loss reserves \u0e44\u0e21\u0e48\u0e1e\u0e2d (allowance ~$70M vs receivables ~$115M = ~61% coverage) \u2192 restatement / surprise provisioning",
+    unitEconomics: {
+      ruleOf40: "~39% (Rev growth +26.4% + FCF margin 12.7%) \u2014 Borderline Fail (43% \u0e16\u0e49\u0e32\u0e43\u0e0a\u0e49 adj EBITDA margin)",
+      nrr: "N/A \u2014 \u0e44\u0e21\u0e48 disclose (implied cohort ~120%+)",
+      ltvCac: "~9.0x (Emma est., S-1/shareholder letter)",
+      cacPayback: "15\u201318 \u0e40\u0e14\u0e37\u0e2d\u0e19",
+      sbcPctRevenue: "11.5% (SBC TTM $283.6M) \u2014 HIGH, DCF Cash Flow Consistency Rule \u0e22\u0e34\u0e07; net dilution ~1.5%/yr post-IPO",
+      note: "Active members 10.4M (+20% YoY); ARPAM $260 (+6% YoY) = ceiling \u0e15\u0e48\u0e33 ~1/3 charter peer; Gross Margin TTM 88.7%; Operating Margin GAAP 15.2% (worst-in-cohort vs peer median ~35%); Net Income TTM \u2212$18.2M (SBC wedge). \u0e04\u0e27\u0e32\u0e21\u0e40\u0e2a\u0e35\u0e48\u0e22\u0e07 = structural economics + regulatory binary + credit cycle \u2014 \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48 accounting fraud"
+    },
+    fvVerifiedDate: "2026-08-31",
+    priceUpdated: "2026-08-31",
+
+    fullContent: `# 💳 CHYM — Chime Financial, Inc.
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: GROWTH** (Revenue TTM +26.4% > 20% → Growth-bucket framework ~60% ของ IPS; Value cross-check ก็ FAIL — ดู § Bucket Gate Robustness)
+
+---
+
+## 📌 ข้อมูลหลัก [CFA L1: Equity — Company Overview]
+
+| Field | Value |
+|-------|-------|
+| Ticker | **CHYM** (NASDAQ) |
+| Date | 2026-08-31 |
+| Price (analysis) | **$33.20** (close 2026-08-28 — Stockanalysis; ตรงกับ S&P alpha baseline) · intraday $33.77 (+1.86%, Yahoo 2026-08-31) — Δ 1.7% < 5% gate ✅ |
+| Market Cap | ~$12.57B (378.6M sh × $33.20 = $12,570M ✓ sanity) |
+| Shares Outstanding | 378.6M · 52W Range **$15.88 – $34.16** (ราคาอยู่ที่ ~97% ของ 52W high) |
+| Sector | US Consumer Fintech / Neobank — interchange-fee-based digital banking สำหรับ underbanked/paycheck-to-paycheck |
+| Latest Earnings | **Q2 2026 (reported 2026-08-05)** — Rev $670M (+27% YoY), members 10.4M (+20%), ARPAM $260 (+6%), Platform (lending) revenue +48% YoY, adj EBITDA margin ~15%, **GAAP-profitable quarter** |
+| IPO | มิ.ย. 2025 @ ~$27 → history ~14 เดือน (Beta n/a — Quinn ใช้ peer proxy) |
+
+## 🎯 คำแนะนำ [CFA L3: Portfolio Management — Security Selection & Position Sizing] *(ยังไม่เรียน — กรอบการเลือกหลักทรัพย์เข้าพอร์ตและกำหนดขนาดสถานะ)*
+
+| Field | Value |
+|-------|-------|
+| **Recommendation** | **AVOID / HOLD-WAIT FOR PULLBACK — NO DEPLOY** |
+| Entry Zone (T1) | **$18–21** (mid $19.50) — ต้องได้ MOS ≥ 15% vs Blended FV **และ** Bull Flip Trigger ยืนยัน (Reg II resolution / GAAP-margin proof / member re-accel) |
+| Blended FV (40/30/30) | **$22.30** (raw) / **$21.07** (ESG-adj −5.5%) |
+| MOS vs $33.20 | **−32.8%** (raw) / **−36.5%** (ESG-adj) |
+| Stop Loss | **$15.60 (−20.0% จาก entry mid $19.50)** — ใกล้ 52W low $15.88; เฉพาะเมื่อเข้า position |
+| Max Position | **0%** — FAIL Growth conviction gate (avg 4.83 < 6.5) + FAIL Growth MOS Gate 0/2 |
+| Macro Regime | RISK-ON 3/4 + Fed-hawkish overlay · multiplier 1.0x · Force Deploy ACTIVE แต่ไม่มี candidate ผ่าน gate → ไม่ force |
+
+## 📊 Score Dashboard [CFA L3: Portfolio Construction — Investment Scorecard] *(ยังไม่เรียน — ตารางสรุปคะแนนการลงทุน)*
+
+| Blended FV (raw / ESG-adj) | MOS (raw / ESG-adj) | ESG Score (reconciled) | Conviction (Avg) | Horizon |
+|---|---|---|---|---|
+| $22.30 / $21.07 | −32.8% / −36.5% | 5.0/10 (MEDIUM–HIGH RISK) | **4.83/10** ⚠️ (Emma 4.0 / Quinn 4.5 / Bear 6.0) | 3–5 ปี |
+
+> ⚡ **TL;DR — อ่าน 30 วินาที**
+> - **Verdict:** AVOID / HOLD-WAIT — NO DEPLOY. Chime เป็นธุรกิจจริง (GAAP-profitable Q2'26, FCF TTM +$312M, net cash +$980M, member +20%, LTV/CAC ~9x) แต่เทรดที่ **~50x forward P/E / EV/Revenue 4.72x** ในขณะที่ fundamental **แย่ที่สุดในกลุ่ม peer** — revenue growth +26.4% (ต่ำสุด) และ operating margin 15.2% (ต่ำสุด) เทียบ SOFI/DAVE/NU/HOOD ทุกตัว. **Growth MOS Gate FAIL 0/2** + Conviction 4.83 < 6.5 + MOS −32.8%
+> - **ทำไม:** (1) รายได้ ~64–70% = **debit interchange** ผ่าน Durbin exemption ที่แขวนบน Reg II litigation (8th Circuit) ที่ผลลัพธ์ **สองทิศทาง** — ถ้า Reg II ถูก vacate ทั้งฉบับ ธนาคารใหญ่ก็เก็บ interchange ไม่ถูก cap → gap แคบลง → Chime เสีย relative advantage (2) ไม่มี pricing power — ARPAM โต +6% ขณะ revenue โต +27% = growth ทั้งหมดมาจาก member adds ไม่ใช่ monetization (3) ไม่มี bank charter (ต่างจาก SOFI) → ARPU ~1/3 ของ SoFi, พึ่ง partner bank (Bancorp + Stride) (4) SBC TTM $283.6M = 11.5% ของรายได้ = wedge GAAP (net loss −$18.2M) vs adjusted ทั้งที่ op margin +15% (5) Street consensus 12M PT mean ≈ $33 ≈ ราคาปัจจุบัน = **Street เองก็เห็น upside ~0%**
+> - **Downside Risk:** Blended P-W downside (Bear P-W EV $19.85, MOS −40%). Sensitivity matrix: **6/25 cells (24%)** เท่านั้นที่ justify $33.20 — ต้องการ Revenue CAGR ≥ 20% **และ** terminal op margin ≥ 30% พร้อมกัน (best-in-cohort ทั้งสองมิติ — ปัจจุบัน Chime worst-in-cohort ทั้งสอง). Kelly 0% ทุก fraction (พลิกบวกที่ ~$24). **แต่** net cash + FCF+ + NOL shield = downside floor จริง — ไม่ใช่ pre-profit AVOID (HIMS/TMDX/TLS)
+
+---
+
+## 📋 Executive Summary [CFA L3: Portfolio Construction — Investment Thesis Statement] *(ยังไม่เรียน — การเขียน thesis การลงทุนอย่างมีโครงสร้าง)*
+
+Chime Financial เป็น neobank consumer-facing รายใหญ่ที่สุดของสหรัฐฯ ที่พึ่งพา **interchange fees** (Visa/Mastercard debit) ผ่าน partner banks (The Bancorp, Stride Bank — ทั้งคู่ <$10B assets → Durbin exemption → เก็บ interchange อัตราไม่ถูก Reg II cap) เป็นสัดส่วน ~64–70% ของรายได้ เสริมด้วย SpotMe (fee-free overdraft), MyPay (earned-wage access), Credit Builder (secured card), ChimePlus (premium), และ Platform/lending revenue (+48% YoY = growth vector ใหม่).
+
+Scout Round เสนอ thesis "profitable neobank ที่ผ่านจุด GAAP-profitable แล้ว + member growth ยังแข็ง" — และ Q2 2026 print ก็สนับสนุน (adj EBITDA margin +12pp YoY, GAAP-positive quarter, guidance raised). **แต่ทีมทั้ง 3 คนสรุปตรงกันว่า NO DEPLOY** จากคนละมุมที่ converge:
+
+| Analyst | FV / P-W EV | MOS vs $33.20 | Cash-flow basis | Conviction |
+|---------|-------------|----------------|-----------------|-----------|
+| Emma (DCF/Fundamental) | **$22.50** (DCF Bear $9 / Base $21 / Bull $35; prob-wtd $20.20; EV/Rev cross-check $25–28) | **−32.2%** | NOPAT-based FCFF | 4.0 |
+| Quinn (Quant/P-W EV) | **$24.47** (DCF Base $26.00; P-W: Bull $41.40 / Base $26 / Bear $14.34 / Severe $8.99) | **−26.3%** | NOPAT-based FCFF | 4.5 |
+| Bear (Downside/P-W EV) | **$19.85** (Bull $38 / Base $23 / Bear $13 / Severe $7) | **−40.2%** | NOPAT-based FCFF | 6.0 |
+| **Blended FV (40/30/30 canonical)** | **$22.30** | **−32.8%** | — | — |
+| **ESG-adj (−5.5% reconciled)** | **$21.07** | **−36.5%** | — | — |
+
+**Emma vs Quinn FV gap = $26.00 / $22.50 − 1 = +15.6%** (< 25% → reconciliation table ไม่บังคับ; ทั้งคู่ NOPAT-based FCFF, disclosed basis). Gap มาจาก Quinn terminal op margin 25% vs Emma Base ~20% + Quinn CAGR 16% vs Emma Base 13.5% — **ไม่ใช่ cash-flow-definition mismatch**. SBC 11.5% > 10% → **DCF Cash Flow Consistency Rule ยิง** — Emma+Quinn จึง align basis (NOPAT-based, ไม่ add-back SBC, dilute share count สอดคล้อง) ตั้งแต่ต้น.
+
+### Conviction Bar
+
+\`\`\`
+Emma   ████░░░░░░  4.0/10  — ธุรกิจแข็งจริง (LTV/CAC 9x, Rule of 40 borderline, GAAP-profitable Q2, net cash $980M) แต่ Growth MOS FAIL ทั้งคู่ + DCF MOS −32/−37% + fundamental แย่สุดในกลุ่ม peer @ ~50x fwd P/E + Fed-hawkish overlay กัด profile นี้ตรงๆ
+Quinn  █████░░░░░  4.5/10  — มั่นใจสูงในทิศทาง (overvalued — ทุก metric สอดคล้อง: DCF, Kelly 0%, Sharpe negative, sensitivity 76% overvalued, Street PT flat) แต่ magnitude band กว้าง (beta/ERP/σ/WACC ล้วน assumption, history สั้น 14mo); net cash + FCF+ = downside floor จริง → "great business, wrong price, wrong macro window" ไม่ใช่ AVOID
+Bear   ██████░░░░  6.0/10  — ทิศทาง (overvalued ที่ $33.20) support จากหลายเส้นทางอิสระ; ไม่ถึง 7+ เพราะ interchange binary สองทาง **ไม่มีวันที่** (catalysts diffuse), margin inflection เพิ่ง 1 ไตรมาส = real optionality, net cash $980M + NOL = floor ดีกว่า pre-profit AVOIDs, team pattern-bias เป็น legit self-check
+──────────────────────────────────────────────
+Avg    █████░░░░░  4.83/10   ⚠️ FLAG: avg < 5.0 — แต่เป็น directional-unanimity AVOID (ทั้ง 3 คน < 6.5 Growth gate) ไม่ใช่ "ข้อมูลไม่พอ"; pattern เดียวกับ MELI 5.33 (2026-08-29) / CRCL 5.67 (2026-08-28)
+\`\`\`
+
+**Disagreement note:** max gap 2.0 จุด (Bear 6.0 vs Emma 4.0) < 3.0 threshold → **ไม่มี disagreement flag**. Directional unanimity: NO DEPLOY. Avg 4.83 < 5.0 → flag "conviction ต่ำ" แต่สาเหตุคือ **ทีมมั่นใจสูงว่า overvalued** (ไม่ใช่ข้อมูลไม่พอ) — magnitude ของ downside เท่านั้นที่ยังมี band กว้าง.
+
+---
+
+## 💡 Investment Thesis [CFA L3: Equity — Investment Thesis Construction] *(ยังไม่เรียน — การสร้างวิทยานิพนธ์การลงทุน)*
+
+**Bull case (มีสาระจริง — profitability pivot เกิดขึ้นแล้ว):** Chime ผ่านจุดที่ >76% ของ neobank ทั่วโลกยังทำไม่ได้ — **GAAP-profitable quarter (Q2'26)**, adj EBITDA margin ~15% (+12pp YoY), FCF TTM +$312M (12.7% margin), net cash +$980M, ไม่มี debt ที่มีนัยสำคัญ. Member base 10.4M (+20% YoY) ที่ใช้ Chime เป็นบัญชีหลัก (direct-deposit) = switching cost จริง. Platform/lending +48% YoY = ARPAM expansion vector (จาก $260) โดยส่วนใหญ่เป็น secured (Credit Builder) / payroll-linked (MyPay) = loss content ต่ำ. TAM ของ underbanked/digital-first ยังโตเชิงโครงสร้าง. ถ้า operating leverage ของ neobank เป็น non-linear (NU 2023 analog) + Fed 2023 debit-cap proposal (−30%) finalized → gap exempt/non-exempt กว้างขึ้น → tailwind. Street 20 analysts "Buy", upgrades แรง ส.ค. 2026 (Wells Fargo $39, Wolfe $38, Canaccord $45).
+
+**Bear case (หลักฐานหนักกว่า — เป็น structural-economics + regulatory-binary story):**
+1. **Fundamental แย่ที่สุดในกลุ่ม peer ทั้งสองมิติ** — revenue growth +26.4% (ต่ำสุด, decelerating จาก ~31%) + operating margin 15.2% (ต่ำสุด) เทียบ SOFI (+40.9%/17.3%), DAVE (+48.6%/36.0%), NU (+44.3%/52.0%), HOOD (+38.3%/46.0%) — แต่เทรด forward P/E ~50x (สูงสุด). ตลาด **ไม่ได้** apply discount ที่ fundamental สมควรได้
+2. **Interchange concentration + regulatory binary สองทิศทาง** — ~64–70% ของรายได้ = debit interchange บน Durbin exemption. Reg II ถูก ND District Court **vacated ทั้งฉบับ** (ส.ค. 2025, stay ระหว่างอุทธรณ์), 8th Circuit fully briefed ตั้งแต่ มี.ค. 2026, **รอคำพิพากษา ไม่มีวันที่**. ถ้า affirm → ธนาคารใหญ่เก็บ interchange ไม่ถูก cap เช่นกัน → **gap compression → Chime เสีย relative advantage** บนรายได้ส่วนใหญ่. "deregulation ดีต่อ fintech" เป็นสัญชาตญาณผิดในกรณีนี้
+3. **ไม่มี pricing power** — ARPAM +6% ขณะ revenue +27% = growth ทั้งหมดจาก member adds; take-rate ต่อ swipe ปรับขึ้นไม่ได้ (competitive). Terminal op margin ควร assume competitive 16–18% ไม่ใช่ 20–25%
+4. **ไม่มี bank charter** — ต่างจาก SOFI (มี charter, ARPU ~3x). พึ่ง partner bank 2 ราย (Bancorp + Stride — 10-Q: ~46% ของ receivables). BaaS "rent-a-BIN" scrutiny = structural tail risk
+5. **Credit-loss line โตเร็วที่สุดแต่ซ่อนใน opex** — Q2'26 transaction & risk losses $103.3M (+16% QoQ ขณะ revenue +4% QoQ); mix shift สู่ Instant Loans (unsecured, launch มี.ค. 2025) ช่วง near-prime credit normalize (subprime/small-bank DPD ~6.4%, ~2x avg). ไม่มีใน DCF แบบ explicit; allowance $70.2M vs receivables ~$115M = ~61% coverage
+6. **SBC wedge** — SBC TTM $283.6M = 11.5% ของ revenue → GAAP net loss −$18.2M ทั้งที่ op margin +15%. adjusted metrics ที่ Street ใช้มองข้าม dilution (~$260M/yr) + GAAP reality
+7. **ราคา near-ATH** (+25% จาก IPO, +109% จาก 52W low, −2.8% จาก 52W high) — ไม่ใช่ pullback; Street mean PT ~$33 ≈ spot = ~0% implied upside
+
+**สรุป thesis:** Chime คือ **"real business, wrong price, wrong macro window"** — GAAP-profitable + net cash ให้ downside floor จริง (ต่างจาก pre-profit AVOIDs) แต่ที่ $33.20 ตลาด price-in ทั้ง perfect execution (best-in-cohort growth+margin ที่ Chime worst-in-cohort อยู่) และ favorable regulatory outcome (บน binary ที่เอียงลบ). **Watchlist — Bull Flip ที่ ≤$24 + regulatory/margin proof**.
+
+---
+
+## 🏢 Business Deep Dive [CFA L2: Industry Analysis] *(ยังไม่เรียน — การวิเคราะห์อุตสาหกรรมและตำแหน่งการแข่งขัน)*
+
+### How does Chime make money?
+
+- **Interchange (แกนหลัก ~64–70% ของรายได้):** ทุกครั้งที่ member รูดบัตร debit Chime ผ่าน partner bank ร้านค้าจ่ายค่าธรรมเนียม interchange ~1.5%+ ของยอด — Chime แบ่งรายได้นี้กับ partner bank (Bancorp/Stride). เพราะ partner bank เล็ก (<$10B assets) จึงเข้า **Durbin exemption** = ไม่ถูก Reg II cap (~0.22 + 5bps) ที่ธนาคารใหญ่โดน
+- **SpotMe:** คุ้ม overdraft ถึง ~$200 ไม่มีค่าธรรมเนียมบังคับ — ขอ "tip" แบบสมัครใจ (headline/regulatory tail risk ในอนาคต)
+- **MyPay (earned-wage access):** ให้ member เบิกเงินเดือนที่หามาแล้วล่วงหน้า หักคืนวัน payday — CFPB advisory 2023 ตีว่า "ไม่ใช่ credit" (ถ้าไม่เกิน wages ที่หาแล้ว, หักผ่าน payroll, no recourse)
+- **Credit Builder:** บัตรเครดิต **secured** (ค้ำด้วยเงิน member เอง) → แทบไม่มี credit loss; สร้าง credit history ให้ member
+- **ChimePlus (premium subscription) + Platform/lending (Instant Loans, +48% YoY):** ARPAM expansion vectors — Instant Loans เป็น unsecured = credit-risk exposure ที่แท้จริง
+- เงินสดเหลือ ($1.16B liquid) เก็บใน T-bills/investments → "other income" เล็กน้อย; ไม่จ่ายปันผล
+
+### Porter's Five Forces [CFA L2: Industry Analysis — Competitive Forces] *(ยังไม่เรียน — กรอบแรงกดดัน 5 ประการของ Porter)*
+
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power (partner banks + card networks) | **Medium–High** | Chime ไม่มี charter → พึ่ง Bancorp + Stride (~46% ของ receivables); Visa/MC กำหนด interchange schedule; partner bank ต่อรอง revenue-share ได้ |
+| Buyer Power (members) | **Low–Medium** | 10.4M members, fragmented (ไม่มี member เดียว >1%), switching cost = ย้าย direct deposit (friction จริงแต่ไม่ lock-in ทางเศรษฐกิจ); free product → members ย้ายไป Cash App / SoFi / Current ได้ |
+| New Entrants | **High** | Cash App (Block), SoFi, Current, Varo, Dave, ธนาคารดั้งเดิมที่มี digital app — neobank software เลียนแบบได้; barrier จริง = brand + member-acquisition cost + partner-bank relationship |
+| Substitutes | **Medium–High** | บัญชีธนาคารดั้งเดิมที่ยกเลิก overdraft fee (Capital One, Ally), prepaid cards, Cash App, PayPal — ทั้งหมดแข่ง underbanked segment |
+| Rivalry | **High** | Cash App 55M+ users, SoFi (มี charter + ARPU 3x), Dave (+48.6% growth), Varo (มี charter). แข่งที่ราคา (free) + features → ไม่มี pricing power |
+
+**Industry Attractiveness: Low–Medium** — secular neobank-adoption runway จริง + deregulatory CFPB เฉพาะหน้า แต่ high rivalry + ไม่มี pricing power + interchange regulatory overhang + credit-cycle exposure กด attractiveness
+
+### Market Share Trend (3Y)
+
+- Chime ~10.4M primary-account members (Q2'26, +20% YoY) — จาก ~7M (2023) → ~8.7M (2024) → ~10.4M (2026) = **gaining** ใน US neobank primary-account
+- ARPAM $260 (+6% YoY) — monetization ต่อ member ขยับช้า (member adds ขับ growth)
+- **3-year verdict: Gaining members, flat monetization** — vs SoFi (member +growth + ARPU 3x จาก charter/cross-sell) และ Cash App (scale ใหญ่กว่า) — Chime ยัง #1–2 ใน pure-play consumer neobank แต่ ceiling ของ interchange-only model ต่ำกว่า charter peers
+
+### Customer / Counterparty Concentration
+
+- **Members:** ไม่มี member เดียว >1% ของรายได้ — fragmented ✅
+- **Partner-bank concentration:** The Bancorp + Stride Bank ≈ **46% ของ receivables** (10-Q; ประมาณ 27% / 19%) — single point of failure ต่อ business model (ไม่มี charter สำรอง). ⚠️ flag > 20%
+- **Card networks:** Visa/Mastercard — interchange schedule dependency
+
+### Geography Revenue Breakdown
+
+| ภูมิภาค | % Revenue | หมายเหตุ |
+|---------|-----------|---------|
+| United States | **~100%** | domestic-only neobank |
+| International | ~0% | — |
+| China exposure | **~0%** | ไม่มี |
+
+**Geopolitical Risk: LOW** (domestic). **Regulatory Risk: HIGH** — 100% ของ business แขวนบน US interchange/consumer-finance regulation (Durbin exemption, Reg II, CFPB, EWA classification)
+
+### Fintech / Subscription-Adjacent Unit Economics [CFA L2: Equity — Growth Company Analysis] *(ยังไม่เรียน — การวิเคราะห์บริษัทเติบโต)*
+
+| Metric | Value | Benchmark | Verdict |
+|--------|-------|-----------|---------|
+| Active members | 10.4M (+20% YoY) | — | Pass (แต่ decel จากอดีต) |
+| ARPAM | $260 (+6% YoY) | SoFi ~$800+ (มี charter) | ⚠️ ceiling ต่ำ — ~1/3 ของ charter peer |
+| Gross Margin TTM | 88.7% | — | High (fee-based) |
+| Rule of 40 (Rev growth +26.4% + FCF margin 12.7%) | **~39%** | ≥ 40% | **Borderline Fail** |
+| LTV / CAC | ~9x (Emma est., annotate S-1/shareholder letter) | ≥ 3x | Pass |
+| Operating Margin (GAAP) | 15.2% | peer median ~35% | **Worst-in-cohort** |
+| Net Income TTM | −$18.2M (EPS −$0.05) | — | GAAP loss (SBC wedge) |
+| **SBC dilution check** | SBC $283.6M = **11.5% ของ revenue**; FY2025 SBC $1,082M (IPO spike) | < 5% ดี | ⚠️ **HIGH — DCF Cash Flow Consistency Rule ยิง**; net dilution ~1.5%/yr post-IPO |
+| Platform (lending) revenue growth | +48% YoY | — | Growth vector — แต่เพิ่ม credit risk (unsecured Instant Loans) |
+| Credit-loss / transaction & risk losses (Q2'26) | $103.3M (+16% QoQ vs revenue +4% QoQ) | — | ⚠️ โตเร็วกว่ารายได้; allowance coverage ~61% |
+
+**Insight:** Chime = interchange-toll business ที่มี lending layer เพิ่ม — ไม่ใช่ high-margin platform. Rule of 40 borderline, ARPU ceiling ต่ำ (ไม่มี charter), GAAP loss จาก SBC. SBC/dilution เป็น **material issue** (ต่างจาก GCT/SHOP ที่ SBC ต่ำ). ความเสี่ยงคือ structural economics + regulatory binary + credit cycle — ไม่ใช่ accounting fraud
+
+---
+
+## 🏰 Moat Analysis [CFA L2: Equity — Economic Moat] *(ยังไม่เรียน — การประเมินความได้เปรียบเชิงแข่งขันที่ยั่งยืน)*
+
+### ระดับ: **NARROW (weak)** — Emma NARROW (7–10 ปี) / Bear NONE (ยอม "weak Narrow") → **reconciled NARROW-weak, durability ~5–7 ปี**
+
+**แหล่งที่มา:**
+
+1. **Switching Cost (หลัก) — Low–Medium** — direct-deposit primary-account relationship: member ที่ตั้ง payroll เข้า Chime ย้ายยากขึ้น (ต้องเปลี่ยน direct deposit, auto-pay, SpotMe eligibility reset). **แต่** เป็น operational friction ไม่ใช่ economic lock-in — บัญชี checking ทั่วไป
+2. **Brand — Medium** — Chime = brand recognition สูงในกลุ่ม underbanked/Gen-Z; marketing spend หนัก. Fragile ต่อ headline risk (CFPB penalty, tip-model criticism)
+3. **Cost Advantage — Low (eroding)** — branchless → serve underbanked ได้กำไร; **แต่** ถูก compete away — SoFi (charter), Cash App (scale), ธนาคารดั้งเดิมที่ยกเลิก overdraft fee
+4. **Network Effects — None** — ไม่มี two-sided marketplace; member-to-member ไม่สร้าง value
+5. **Regulatory arbitrage (Durbin exemption) — ไม่ใช่ moat** — reversible; แขวนบน Reg II litigation; partner-bank-dependent
+
+**Moat qualifiers (หัก):**
+- **ไม่มี pricing power (พิสูจน์แล้ว)** — ARPAM +6% ขณะ revenue +27%; take-rate ต่อ swipe ปรับขึ้นไม่ได้
+- **ไม่มี bank charter** — ARPU ~1/3 ของ SoFi; ต้องแบ่ง interchange กับ partner bank
+- **64–70% ของรายได้บน regulatory arbitrage ที่มี pending adverse court case**
+- **หลักฐานความยั่งยืน:** ยังไม่ผ่าน full credit-cycle test (Instant Loans launch มี.ค. 2025); margin inflection เพิ่ง 1 ไตรมาส
+
+Bear's implication: terminal op margin ควร assume competitive **16–18%** ไม่ใช่ Emma's 20–25% / Quinn's 25%
+
+---
+
+## 📊 Sector / Peer Comparison [CFA L2: Equity — Relative Valuation] *(ยังไม่เรียน — การประเมินมูลค่าเชิงเปรียบเทียบ)*
+
+| Company | Ticker | Rev Growth TTM | Op Margin TTM | Fwd P/E | EV/Revenue | Market Cap ($M) | Moat |
+|---------|--------|----------------|---------------|---------|-----------|-----------------|------|
+| **Chime Financial** | **CHYM** | **+26.4%** ⬇️ ต่ำสุด | **15.2%** ⬇️ ต่ำสุด | **~50x** ⬆️ สูงสุด | **4.72x** | **12,570** | Narrow-weak |
+| SoFi Technologies | SOFI | +40.9% | 17.3% | ~24.7x | ~4–5x | 23,310 | Narrow (มี charter) |
+| Dave Inc. | DAVE | +48.6% | 36.0% | ~15.2x | ~3x | 4,260 | Narrow |
+| Nu Holdings | NU | +44.3% | 52.0% | ~14.8x | ~5–6x | 65,500 | Narrow–Wide |
+| Robinhood Markets | HOOD | +38.3% | 46.0% | ~40x+ | ~high | 75,300 | Narrow |
+| **Peer median (ex-CHYM)** | — | **+42%** | **~41%** | **~24x** | — | — | — |
+
+*Sources: Atlas Data Package C.5 (stockanalysis.com, retrieved 2026-08-31); Fwd P/E per Quinn peer scan.*
+
+**Chime อยู่ตรงไหน:** **Premium multiple บน worst-in-class fundamentals** — revenue growth ต่ำกว่า peer median ~16pp, operating margin ต่ำกว่า ~26pp, แต่ forward P/E สูงกว่า median ~2x. นี่คือ **ตรงข้าม** ของ discount ที่ fundamental สมควรได้.
+
+**คำถามหลัก (Atlas FINDING): ทำไม Chime ควร trade ที่ multiple ใด?**
+- **Bull rebuttal:** Chime มี largest US consumer member base, brand ที่แข็งที่สุดในกลุ่ม, และ margin inflection เพิ่งเริ่ม (Q2'26 = +12pp adj EBITDA YoY) → ถ้า operating leverage เป็น non-linear (NU 2021→2024 analog: op margin 0% → 52%) → forward margin อาจ converge สู่ peer → multiple justified
+- **Bear rebuttal (ทีมเห็นด้วย):** (a) NU มี bank charter + monopoly-ish position ใน Brazil — Chime ไม่มีทั้งสอง (b) interchange-only model มี hard ceiling ที่ SoFi/NU ไม่มี (c) margin inflection 1 ไตรมาสไม่พิสูจน์ non-linear leverage (d) ~50x fwd P/E ต้องการ +25% CAGR sustained — decelerating อยู่. **Fair multiple = 20–28x forward** (SoFi/Dave range) → implied FV ~$18–24
+
+**Verdict: CHYM เทรด premium ที่ไม่มี fundamental support — market mispricing เอียงลง**
+
+---
+
+## 💰 Valuation [CFA L2: Equity Valuation — FCFF Model, Reverse DCF, Relative Valuation] *(ยังไม่เรียน — แบบจำลอง FCFF, Reverse DCF, การประเมินเชิงเปรียบเทียบ)*
+
+### WACC Disclosure
+
+| Analyst | WACC (base) | Beta (peer proxy) | Rf | ERP | Company-specific premium | หมายเหตุ |
+|---------|-------------|-------------------|-----|-----|--------------------------|---------|
+| Emma | **13.0%** | 1.5 (norm.) | 4.68% | 5.0% | + regulatory/no-charter/SBC premium | financial debt น้อย → WACC ≈ Ke |
+| Quinn | **13.0%** | **1.70** (SOFI 2.17 / HOOD 2.32 / NU 0.95 / DAVE ~1.9 → avg 1.84 ex-NU 2.13; ปรับลงจาก fee-based rate-insensitive + net cash) | 4.68% | 5.0% | CAPM E(R) 13.18%; sensitivity 11.5–15% | all-equity เชิงเศรษฐกิจ |
+| Bear | **14.0%+** (base) / 16% (bear scenario) | 1.70 → effective 2.0 (micro-float + 50x multiple-compression sensitivity + idiosyncratic regulatory tail) | 4.68% | 5.0% | + regulatory-binary premium | forward idiosyncratic tail |
+
+ทั้งหมดอยู่ในเพดาน sanity-check 7–17% ✓ · **Terminal Growth Rate ≤ 3.0% ทุก scenario** (Emma Bear 2.0% / Base 2.5% / Bull 3.0%; Quinn 3.0%; Bear 2.0–2.5%) ✓ — compliant กับ house ceiling (Morgan auto-FAIL ถ้าเกิน)
+
+### DCF Cash-Flow Basis Statement [CLAUDE.md — DCF Cash Flow Consistency Rule]
+
+**SBC TTM $283.6M / Revenue $2,457M = 11.5% ของ Revenue → > 10% เกณฑ์ → Rule ยิง.** Emma + Quinn + Bear ทั้งสามใช้ **NOPAT-based FCFF** เหมือนกัน:
+- เริ่มจาก GAAP EBIT (ที่หัก SBC เป็น operating expense แล้ว) → NOPAT = EBIT × (1 − tax) → **ไม่ add-back SBC**
+- Share count grow 378.6M → ~400M (net dilution ~1.5%/yr) — dilute สอดคล้อง ไม่ double-count (ไม่หัก SBC เป็นต้นทุนแล้วลืม dilution; ไม่ add-back แล้ว dilute เต็ม)
+- reported FCF TTM $312.2M **ไม่**ถูกใช้ extrapolate ตรงๆ — พองจาก SBC add-back ใน OCF (VEEV/SHOP/NOW pattern)
+
+| Analyst | Forward FCFF (Base) | Reason for gap |
+|---------|--------------------|--------------------|
+| Emma | ~$130–160M normalized (GAAP EBIT $373.7M − SBC drag − ΔNWC − tax) | Base terminal margin ~20%, CAGR 13.5% |
+| Quinn | similar starting point, terminal margin 25%, CAGR 16% | สมมติ operating-leverage inflection มากกว่า |
+| Bear | terminal margin 16–18% (competitive), CAGR ~10% | ไม่มี pricing power → ไม่ควร assume margin expansion |
+
+**Emma vs Quinn FV gap +15.6% (< 25%) → reconciliation table ไม่บังคับ.** Root cause = terminal margin + CAGR assumptions (Quinn bull-er ต่อ operating leverage), **ไม่ใช่ cash-flow-definition mismatch** (ทั้งคู่ NOPAT-based).
+
+### Emma DCF Scenarios (NOPAT-based, 10Y 2-stage, TGR ≤ 3.0%)
+
+| Scenario | 10Y Rev CAGR | Terminal GAAP EBIT margin | WACC | g | FV/share | MOS @ $33.20 |
+|----------|--------------|--------------------------|------|---|----------|-------------|
+| Bear (30%) | ~8.3% | 12% | 14.0% | 2.0% | **$9.00** | −73% |
+| Base (50%) | ~13.5% | 20% | 13.0% | 2.5% | **$21.00** | −37% |
+| Bull (20%) | ~15.7% | 25% | 12.0% | 3.0% | **$35.00** | +5% |
+| **Prob-weighted** | | | | | **$20.20** | −39% |
+| **EV/Revenue cross-check** | | | | | **$25–28** | −16% to −25% |
+| **Emma Point FV (DCF 60% / EV-Rev 40%)** | | | | | **$22.50** | **−32.2%** |
+
+### Reverse DCF — Implied Growth [Growth MOS Test 1] [CFA L2: Equity — Implied Growth Analysis] *(ยังไม่เรียน — การหาอัตราเติบโตที่ตลาดฝังในราคา)*
+
+| Analyst | Basis | Implied growth ณ $33.20 | vs 1.2× consensus | Verdict |
+|---------|-------|--------------------------|-------------------|---------|
+| Emma | 10Y explicit + 2.5% terminal | ~18.5% CAGR | consensus ~13% → **1.42×** | **FAIL** |
+| Emma | perpetual (Gordon) | สูงกว่า sustainable | > 1.2× | FAIL |
+| Quinn | reverse DCF, WACC 13% | ~21.1% CAGR | 1.2× consensus = 20.4% → **~1.24×** | **FAIL** (marginal) |
+| Quinn | near-term-guidance framing | ~เกาะ guidance | ~1.0× | PASS (ไม่ robust — pass เฉพาะ tenor เดียว) |
+
+**⚖️ Charlie reconciliation — Test 1 = FAIL.** ต่างจาก GCT (pass ทุก tenor) — CHYM: implied growth เกิน 1.2× consensus ใน perpetual + 10Y tenor; ผ่านเฉพาะ near-term-guidance framing (1 tenor, ไม่ robust). ตลาด price-in ~18–21% sustained CAGR บน business ที่ **decelerating** สู่ +26.4% และ guide +25–26% FY26.
+
+### Multiple Percentile Check [Growth MOS Test 2] [CFA L2: Relative Valuation]
+
+⚠️ **CHYM IPO มิ.ย. 2025 → history ~14 เดือน — ใช้ IPO-to-date range + peer-relative + ระบุ limitation ชัดเจน**
+
+| Metric | Current | IPO-to-date range | Est. Percentile | Peer-relative | Verdict |
+|--------|---------|-------------------|-----------------|---------------|---------|
+| EV/Revenue | 4.72x | ~2.5x (post-IPO trough) → ~5x (near-ATH now) | **~90th** | สูงกว่า DAVE ~3x, ใกล้ NU/SOFI แต่ fundamental แย่กว่า | **FAIL** |
+| Forward P/E | ~50x | ~30x → ~50x | **~90th+** | 2x peer median ~24x | **FAIL** |
+| P/FCF | ~40x | — | high | — | FAIL |
+
+**Test 2 = FAIL.** CHYM เทรดที่ top decile ของ short history + premium ต่อ peer ที่ทุกตัวโตเร็วกว่า + margin สูงกว่า. *Caveat: history 14 เดือนเป็น limitation — แต่ peer-relative ยืนยัน independent ว่า multiple elevated.*
+
+### 🚦 Growth MOS Gate Verdict: **FAIL 0/2** (Test 1 FAIL — implied growth 1.24–1.42× consensus > 1.2× · Test 2 FAIL — EV/Rev + Fwd P/E ~90th percentile > 70th)
+
+Compare: MU FAIL 0/2, CRCL FAIL 0/2, CRDO FAIL 0/2, GCT PASS 2/2, SHOP 1/2, ADI 1/2 → **CHYM joins the 0/2 group**.
+
+### Blended FV Triangulation [CLAUDE.md § Blended FV Triangulation Weights — canonical 40/30/30]
+
+\`\`\`
+Blended FV = Emma $22.50 × 0.40 + Quinn $24.47 × 0.30 + Bear $19.85 × 0.30
+           = $9.00 + $7.34 + $5.96
+           = $22.30  (raw)
+
+ESG-adj (−5.5% reconciled: Emma −5% / Bear −6%) = $22.30 × 0.945 = $21.07
+
+MOS (raw)     = $22.30 / $33.20 − 1 = −32.8%
+MOS (ESG-adj) = $21.07 / $33.20 − 1 = −36.5%
+\`\`\`
+
+**Methodology sensitivity (Bear note):** ถ้าใช้ Bear effective beta 2.0 → Quinn P-W EV ~$21.5, Bear ~$18.0 → Blended ~$20.6, MOS −38%. ไม่พลิก verdict (NO DEPLOY ทุกกรณี) — แสดงเป็น downside band.
+
+### Reference Points
+
+| Reference | Value | MOS vs $33.20 |
+|-----------|-------|----------------|
+| Emma Point FV | $22.50 | −32.2% |
+| Quinn P-W EV | $24.47 | −26.3% |
+| Bear P-W EV | $19.85 | −40.2% |
+| **Blended FV (raw)** | **$22.30** | **−32.8%** |
+| **Blended FV (ESG-adj)** | **$21.07** | **−36.5%** |
+| Street consensus 12M PT (mean) | ~$33.15 | ~0% |
+| Street "Buy" upgrade cluster (Wells Fargo/Wolfe/Canaccord) | $38–45 | +14% to +36% (IPO-syndicate bias — MS/Goldman = underwriters) |
+| 52W high | $34.16 | +2.9% |
+
+**Street mean PT ≈ spot ($33) → Street เองก็เห็น upside ~0%.** ทีม Blended FV $22.30 อยู่ต่ำกว่า Street mean −33% — divergence > 25% → **Street PT divergence flag** (Re-Analysis Trigger #5 territory ถ้าเป็น OPEN position; ที่นี่เป็น fresh analysis → note ว่าทีม bear กว่า Street เพราะ Street ใช้ adj-EBITDA/EV-Rev framework ที่มองข้าม SBC wedge + GAAP loss + worst-in-cohort discount).
+
+### 📈 Forward Return Estimate (HOLD/AVOID Report — บังคับ)
+
+\`\`\`
+จากราคาปัจจุบัน $33.20 → Blended FV $22.30
+Total return (3 ปี) = $22.30 / $33.20 − 1 = −32.8%
+CAGR = ($22.30 / $33.20)^(1/3) − 1 = −12.4%/ปี   ← ต่ำกว่า S&P 500 + ต่ำกว่า cash อย่างมาก → ยืนยัน NO DEPLOY ที่ $33.20
+
+จาก entry zone mid $19.50 → Blended FV $22.30
+Total return (3 ปี) = $22.30 / $19.50 − 1 = +14.4%
+CAGR = ($22.30 / $19.50)^(1/3) − 1 = +4.6%/ปี   ← modest; ต้องมี Bull Flip Trigger เสริมจึงจะน่าสนใจ
+\`\`\`
+
+*หมายเหตุ: ไม่รวม bull-path optionality (operating-leverage inflection / Fed 2023 debit-cap proposal finalized). Bull scenario FV $35–41 → ถ้าเกิด upside +5% ถึง +25% จาก spot — แต่ probability-weighted ยังลบ.*
+
+---
+
+## 📉 Quantitative Risk [CFA L1–L3: Portfolio Management — Risk Measures] *(ยังไม่เรียน — มาตรวัดความเสี่ยงพอร์ต)*
+
+### Risk Metrics
+
+| Metric | Value | หมายเหตุ |
+|--------|-------|---------|
+| Beta (peer proxy) | **1.70** (range 1.6–1.9) | SOFI 2.17 / HOOD 2.32 / NU 0.95 / DAVE ~1.9; history 14mo ไม่ครบ cycle — Bear: effective forward 2.0 |
+| CAPM Expected Return | **13.18%** (Rf 4.68% + 1.70 × ERP 5.0%) | |
+| Forward Sharpe (CAPM E(R), σ ~55%) | **0.15** | ≈ ครึ่งของ S&P 500 (~0.30) — high beta + micro-float vol |
+| Forward Sharpe (fundamental / P-W EV) | **−0.26** | expected return ติดลบเมื่อ weight downside scenarios |
+| Forward Sortino (CAPM) | **0.21** | vs S&P ~0.45 |
+| Max Drawdown (observed since IPO) | **−64.7%** ($44.94 IPO-day spike → $15.88) / **−53.5%** ex-spike | เกิดจริงใน ~14 เดือน — documented base rate |
+| Current drawdown from 52W high ($34.16) | **−2.8%** | ซื้อใกล้ยอด — ไม่ใช่ pullback |
+| 1-day VaR 95% / CVaR 95% (parametric) | **−5.7% / −7.1%** | micro-float |
+| Kelly Criterion (Full / Half / Quarter) | **negative ทุก fraction → allocation 0%** | E[3yr return] −26.3% (Quinn) — negative edge. Kelly พลิกบวกที่ราคา ~$24–25 หรือต่ำกว่า |
+
+### Sensitivity Matrix 5×5 — Revenue CAGR (FY27–31) × Terminal Operating Margin [CFA L2: Equity — Sensitivity Analysis]
+
+*Variable choice (Quinn + Emma): 2 ตัวแปรที่ครอบงำ FV และเป็น core debate ของ CHYM = (1) normalized revenue CAGR (decel structural หรือ noise + interchange regulatory outcome), (2) terminal operating margin (Chime worst-in-cohort ปัจจุบัน 15% — จะ converge สู่ peer 35–50% หรือ stall ที่ competitive 16–18%). WACC held at base 13.0% (mini-table แยกด้านล่าง).*
+
+| Rev CAGR ↓ / Term. Op Margin → | 15% | 20% | 25% (base) | 30% | 35% |
+|---|---|---|---|---|---|
+| **8%** (secular stall + Reg II hit) | 🔴 $12 | 🔴 $15 | 🔴 $18 | 🔴 $21 | 🔴 $24 |
+| **12%** (below guide) | 🔴 $15 | 🔴 $19 | 🔴 $23 | 🔴 $27 | 🔴 $31 |
+| **16% (BASE)** | 🔴 $18 | 🔴 $22 | 🔴 **$26** | 🔴 $31 | 🟢 $36 |
+| **20%** (guide sustained) | 🔴 $22 | 🔴 $27 | 🔴 $31 | 🟢 $38 | 🟢 $44 |
+| **24%** (share gain + Platform scale) | 🔴 $27 | 🔴 $32 | 🟢 $40 | 🟢 $47 | 🟢 $54 |
+
+🟢 = FV ≥ $33.20 | 🔴 = FV < $33.20 | **bold** = base cell
+
+**Cells justifying ≥ $33.20: 6 / 25 (24%).** ทุก cell อยู่มุมขวาบน — ต้องการ **Revenue CAGR ≥ 20% AND terminal op margin ≥ 30% พร้อมกัน** (best-in-cohort ทั้งสองมิติ) ในขณะที่ Chime ปัจจุบัน **worst-in-cohort ทั้งสอง**. Base cell ($26) = −22% ใต้ราคา.
+
+**WACC mini-sensitivity** (Base CAGR 16%, OpM 25%): FV = $31 (11.5%) / $28 (12.5%) / **$26 (13.0%)** / $23 (14.0%) / $20 (15.0%) → **FV ต่ำกว่าราคา $33.20 แม้ที่ WACC 11.5%** — valuation ไม่ได้ fragile ต่อ discount rate; มัน overvalued บน fundamentals
+
+**Insight:** CHYM = pattern เดียวกับ MU / CRCL / MELI / ADI — **"priced for perfection at rate-cycle peak"** — 24% ของ cells justify ราคา, base cell 22% ใต้ราคา, bear case ทั้งหมดเป็น structural-economics + regulatory-binary story. ต่างจาก GCT (76% cells justify, base cell +32%).
+
+### Probability-Weighted EV
+
+| Analyst | Scenarios | P-W EV | MOS |
+|---------|-----------|--------|-----|
+| Quinn | Bull $41.40 (20%) / Base $26.00 (45%) / Bear $14.34 (25%) / Severe $8.99 (10%) | **$24.47** | −26.3% |
+| Bear | Bull $38 (15%) / Base $23 (40%) / Bear $13 (30%) / Severe $7 (15%) | **$19.85** | −40.2% |
+
+**Severe Bear (Black Swan, ~10–15% prob):** 8th Circuit affirms full Reg II vacatur → interchange take-rate compression −15–25% บน 64–70% ของรายได้ → FV $13–15 · partner-bank (Bancorp/Stride) BaaS consent order / forced exit → operational disruption · credit-cycle turn + Instant Loans charge-off spike → provisioning drag ที่ scale เร็วกว่ารายได้
+
+### Derivatives-Market Signal [CFA L1: Derivatives — Option Markets] *(ยังไม่เรียน — สัญญาณจากตลาดออปชัน)*
+
+**N/A — micro-float, thin option OI, IPO < 15 เดือน.** ไม่ extrapolate stale data (Training Knowledge Ban). Realized vol > 50% consistent กับ σ ~55% assumption.
+
+---
+
+## 🌱 ESG Risk Scorecard [CFA L2–3: ESG Investing — Materiality Analysis] *(ยังไม่เรียน — การวิเคราะห์สาระสำคัญ ESG และผลต่อมูลค่า)*
+
+| Dimension | Emma | Bear | **Reconciled** | Key Issues |
+|-----------|------|------|----------------|-----------|
+| Environmental | 8 | 8 | **8.0/10** | Digital-only → carbon footprint ต่ำ; data-center energy; ไม่มี material environmental risk |
+| Social | 5 | 4 | **4.5/10** | Serving underbanked = financial-inclusion positive **แต่** monetize vulnerable demographic (paycheck-to-paycheck); overdraft "tip" model + EWA fee criticism; **CFPB $3.25M penalty + ≥$1.3M redress (พ.ค. 2024)** — คืนเงิน closed-account ล่าช้า; predatory-lending optics ถ้า Instant Loans charge-off สูง |
+| Governance | 4 | 3 | **3.5/10** | **Dual-class structure** — co-founders (Chris Britt / Ryan King) คุม voting power ~70% ด้วย economic stake เล็กกว่ามาก → minority shareholders powerless · IPO-related SBC $1,082M FY2025 (EPS −$4.27) · SBC TTM ยัง 11.5% ของ revenue · adjusted-metrics reliance ที่มองข้าม GAAP loss · partner-bank concentration governance (BaaS oversight) |
+| **Overall ESG** | **5.5** | **5.0** | **5.0/10 (MEDIUM–HIGH RISK)** | ไม่พบ MSCI/Sustainalytics score สาธารณะ — qualitative |
+
+### Material ESG Risks + Valuation Impact
+
+1. **Governance — dual-class + SBC dilution** → persistent discount ที่ arb ยาก; embedded บางส่วนใน WACC premium → incremental ESG haircut **−3% ถึง −4%**
+2. **Social — regulatory/headline risk บน fee model** (overdraft tips, EWA, Instant Loans predatory optics) → **−1% ถึง −2%**
+3. **CFPB enforcement history** ($3.25M penalty 2024) → signal ของ compliance-execution risk → **−0.5% ถึง −1%**
+
+**Total ESG valuation impact (reconciled): ≈ −5.5%** (Emma −5%, Bear −6% → midpoint)
+**ESG-adjusted Blended FV = $22.30 × 0.945 = $21.07** → **MOS −36.5%**
+
+---
+
+## 💪 Conviction Level Score [CFA L3: Portfolio Management — Analyst Conviction Calibration] *(ประยุกต์ — การเฉลี่ย conviction หลายนักวิเคราะห์)*
+
+\`\`\`
+Emma   ████░░░░░░  4.0/10  — ธุรกิจแข็งจริง แต่ Growth MOS FAIL 0/2 + DCF MOS −32/−37% + worst-in-cohort fundamentals @ ~50x fwd P/E + Fed-hawkish overlay กัด profile ตรงๆ + SBC wedge GAAP
+Quinn  █████░░░░░  4.5/10  — มั่นใจสูงในทิศทาง (ทุก metric สอดคล้อง: DCF, Kelly 0%, Sharpe negative, sensitivity 76% overvalued, Street PT flat) แต่ magnitude band กว้าง (assumptions, history 14mo); net cash + FCF+ = floor จริง
+Bear   ██████░░░░  6.0/10  — overvalued support จากหลายเส้นทางอิสระ; ไม่ถึง 7+ เพราะ interchange binary สองทางไม่มีวันที่ (diffuse catalysts) + margin inflection = real optionality + net cash $980M/NOL = floor + team pattern-bias self-check
+──────────────────────────────────────────────
+Avg    █████░░░░░  4.83/10   ⚠️ FLAG: avg < 5.0
+\`\`\`
+
+**Disagreement:** max gap 2.0 (Bear 6.0 vs Emma 4.0) < 3.0 → **ไม่ flag disagreement**. Directional unanimity: NO DEPLOY จาก 3 มุมอิสระ.
+
+**Avg < 5.0 flag:** ตามกฎ format = "ข้อมูลไม่พอ ต้องรอ catalyst เพิ่ม" — **แต่ในกรณีนี้ตีความว่า "ทีมมั่นใจสูงว่า overvalued ที่ $33.20, magnitude ของ downside เท่านั้นที่มี band"**. Precedent: MELI 5.33 (2026-08-29), CRCL 5.67 (2026-08-28) — low-conviction ที่หมายถึง "conviction ต่ำในการ deploy" ไม่ใช่ "ไม่รู้จะทำอะไร".
+
+**Anti-Convergence Protocol:** **ไม่ trigger** (ต้องการ avg ≥ 8 + gap < 1.5; กรณีนี้ avg 4.83). Bear ทำ contrarian self-check แล้ว (ดู § Behind the Scenes).
+
+---
+
+## 🔄 What Would Change Our Mind [CFA L3: Portfolio Construction — Investment Thesis & Thesis Review] *(ยังไม่เรียน — การทบทวนวิทยานิพนธ์การลงทุน)*
+
+### Bull Flip Triggers (→ เปลี่ยนเป็น BUY)
+1. **ราคา ≤ $24** — MOS บวก vs Blended FV + Kelly กลับเป็นบวก
+2. **GAAP profitability พิสูจน์:** 2 ไตรมาสติดกัน GAAP operating margin > 12% **และ** GAAP net income บวก (ไม่ใช่แค่ adjusted)
+3. **Platform revenue > 35% YoY 2 ไตรมาสติด AND Instant Loans charge-off < 4%** ผ่านไตรมาสที่ unemployment ขึ้น (proof ว่า credit underwriting durable)
+4. **Fed 2023 debit-cap proposal (−30%) finalized** → gap exempt/non-exempt กว้างขึ้น → interchange tailwind
+5. **ARPAM growth re-accelerate > 12% YoY** — proof ว่ามี monetization lever (ไม่ใช่ member-adds only)
+
+### Bear Flip Triggers (→ SELL / hard AVOID)
+1. **8th Circuit affirms ND vacatur ของ Reg II** → interchange take-rate compression −15% → FV ~$13–15
+2. **Transaction & risk losses > 18% ของ revenue 2 ไตรมาสติด** (ปัจจุบัน ~15%)
+3. **Bancorp หรือ Stride** ได้ BaaS consent order / exit / renegotiate adverse
+4. **Active member growth < 12% YoY** หรือ management หั่น guidance
+5. **Purchase volume growth < 10% YoY** หรือ guide take-rate ลงอีก
+
+### Thesis Invalidation (re-analyze ทันที)
+- **Bear ผิด** ถ้า ภายใน 4 ไตรมาส: GAAP op margin > 20% **AND** revenue growth > 22% **AND** Platform > 45% ของรายได้ (charge-offs contained) พร้อมกัน → CHYM เป็น top-quartile ทั้ง growth+margin → ~50x justified → FV > $35
+- **Holder ผิด** ถ้า: Durbin exemption ถูก legislate ยกเลิก / ขยาย cap สู่ partner banks · partner-bank disruption · direct-deposit member count YoY ติดลบ 2 ไตรมาส
+- **Data invalidation** ถ้า: credit-loss reserves ไม่พอ (allowance ~$70M vs receivables ~$115M = ~61% coverage) → restatement / surprise provisioning
+
+---
+
+## 🎯 Recommendation [CFA L3: Portfolio Management — Investment Recommendation & Position Sizing] *(ยังไม่เรียน)*
+
+> ### AVOID / HOLD-WAIT FOR PULLBACK — NO DEPLOY
+> Chime เป็นธุรกิจจริง (GAAP-profitable Q2'26, FCF +$312M, net cash +$980M, member +20%) — แต่ที่ $33.20 เทรด **~50x forward P/E บน fundamental ที่แย่ที่สุดในกลุ่ม peer** (revenue growth + operating margin ต่ำสุดทั้งคู่). **Growth MOS Gate FAIL 0/2** + Conviction 4.83 < 6.5 + MOS −32.8% + Kelly 0%. Street mean PT ≈ spot = upside ~0% แม้จาก Street เอง. Interchange (64–70% ของรายได้) แขวนบน Reg II litigation ที่ผลลัพธ์เอียงลบ.
+
+| Parameter | Value |
+|-----------|-------|
+| Action | **AVOID / HOLD-WAIT** — ไม่เปิด position; watchlist (มี downside floor + bull optionality → ไม่ใช่ hard AVOID แบบ pre-profit names) |
+| Bucket | **GROWTH** (Value cross-check ก็ FAIL — ดู Robustness) |
+| Entry Zone (T1) | **$18–21** (mid $19.50) — MOS ≥ 15% vs Blended FV **+ Bull Flip Trigger ยืนยัน** |
+| Blended FV (raw / ESG-adj) | $22.30 / $21.07 |
+| MOS | −32.8% / −36.5% |
+| Stop Loss | **$15.60 (−20.0% จาก entry mid $19.50)** — เฉพาะเมื่อเข้า position |
+| Position Size | **0%** — FAIL Growth conviction gate + Growth MOS Gate |
+| Macro Regime | RISK-ON 3/4 (Fed-hawkish overlay) — multiplier 1.0x, Force Deploy active แต่ไม่มี candidate ผ่าน gate → ไม่ force |
+
+### Bucket Gate Robustness (test ทั้ง 2 bucket)
+
+| Gate | เกณฑ์ | ผล CHYM | Verdict |
+|------|-------|---------|---------|
+| **Growth** | (Reverse DCF ≤ 1.2× consensus **หรือ** EV/Rev หรือ Fwd P/E ≤ 70th pctile) + Conviction ≥ 6.5 + Rev Growth > 20% | Growth MOS **FAIL 0/2** (Test 1 1.24–1.42×; Test 2 ~90th) · Rev +26.4% ✓ · **Conviction 4.83 < 6.5** | **FAIL** |
+| **Value** | MOS ≥ 15% + Conviction ≥ 7.0 | MOS −32.8% (<< 15%) · Conviction 4.83 (< 7.0) | **FAIL ทั้ง 2 เงื่อน** |
+
+→ **NO DEPLOY under either lens.** Pattern เดียวกับ MU/CRCL/MELI/ADI (valuation-driven FAIL) — ต่างจาก GCT/TOST/TLS (Growth MOS pass, conviction gate block).
+
+---
+
+## ⚠️ Risk Summary [CFA L2–L3: Portfolio Management — Risk Management] *(ยังไม่เรียน)*
+
+| # | Risk | Severity | Probability | Mitigation / Watch |
+|---|------|----------|-------------|--------------------|
+| 1 | **Interchange regulatory binary (สองทิศทาง)** — Reg II 8th Circuit; ถ้า vacatur affirm → gap compression บน 64–70% ของรายได้ | **Existential** (business-model) | Medium (ไม่มีวันที่, fully briefed) | 8th Circuit docket; Fed 2023 proposal status |
+| 2 | **Worst-in-cohort fundamentals @ premium multiple** — growth +26% (ต่ำสุด) + op margin 15% (ต่ำสุด) @ ~50x fwd P/E → de-rating risk | High | Medium-High | quarterly growth/margin vs SOFI/DAVE/NU; multiple compression |
+| 3 | **No pricing power** — ARPAM +6% vs revenue +27%; growth = member-adds only | High | High (structural) | ARPAM YoY trend; take-rate per swipe |
+| 4 | **Credit-cycle exposure via lending push** — Instant Loans (unsecured) +48% YoY ช่วง near-prime normalize; transaction & risk losses $103.3M Q2 (+16% QoQ) | High | Medium-High | net charge-off; allowance coverage; % unsecured of Platform |
+| 5 | **Partner-bank / no-charter concentration** — Bancorp + Stride ~46% ของ receivables; BaaS scrutiny | High | Low-Medium | consent orders; contract renewal terms |
+| 6 | **SBC dilution** — $283.6M TTM = 11.5% rev; net dilution ~1.5%/yr; GAAP loss | Medium | High (ongoing) | SBC % of revenue trend; share count |
+| 7 | **Fed hawkish / Sept FOMC** — de-rating ต่อ high-multiple; labor softening กระทบ core demographic (paycheck-to-paycheck) ก่อนใคร | Medium | Medium | VIX; regime flip → TC → suspend |
+| 8 | **Member growth deceleration** — +20% YoY จาก higher historical; ARPAM ceiling | Medium | Medium | member adds QoQ; guidance |
+
+---
+
+## 📅 Catalysts Calendar [CFA L2: Equity — Catalyst Identification] *(ยังไม่เรียน)*
+
+\`\`\`
+2026-09-16/17 ──●── 🏦 Sept FOMC — hike coin-flip (~48–59%)           [HIGH]
+                    regime flip risk → TRANSITIONAL-CAUTIOUS → suspend deployment;
+                    de-rating pressure ต่อ ~50x fwd P/E
+2026-Q4        ──●── ⚖️ 8th Circuit ruling — Reg II (Corner Post v. Fed)  [HIGH, undated]
+                    fully briefed ตั้งแต่ มี.ค. 2026; affirm vacatur = Bear Flip #1
+2026-11 ต้น    ──●── 📊 Q3 2026 earnings                                  [HIGH]
+                    member growth / ARPAM / Platform charge-off / GAAP margin — key test
+                    guide FY26 $2.725–2.745B (+25–26%)
+Ongoing        ──●── 📝 Durbin/CFPB legislative headlines               [MED]
+                    Fed 2023 debit-cap proposal (−30%) finalization = Bull Flip #4
+2027-02        ──●── 📈 FY2026 results + FY2027 guide                    [MED]
+\`\`\`
+
+---
+
+## 📚 CFA Concepts ที่ใช้
+
+| Concept | ใคร | หมายเหตุ |
+|---------|-----|---------|
+| FCFF DCF (NOPAT-based) + DCF Cash Flow Consistency Rule | Emma / Quinn / Bear | SBC 11.5% > 10% → Rule ยิง; ทั้ง 3 NOPAT-based, disclosed basis; Emma-Quinn gap +15.6% < 25% → ไม่บังคับ reconciliation table |
+| Reverse DCF / Market-Implied Growth (perpetual + 5Y + 10Y tenor) | Emma / Quinn | Growth MOS Test 1 FAIL — implied 1.24–1.42× consensus |
+| Relative Valuation — Multiple Percentile (IPO-to-date + peer-relative) | Emma / Quinn | history 14mo → limitation flagged; Test 2 FAIL ~90th pctile |
+| Cross-sectional Peer Comparison | Emma | รอ CIO confirm; SOFI/DAVE/NU/HOOD; CHYM worst-in-cohort growth + margin @ premium multiple |
+| WACC / CAPM + peer-proxy beta + company-specific premium | Emma / Quinn / Bear | Beta 1.70 peer proxy (IPO < 15mo); regulatory/no-charter/SBC premium |
+| Economic Moat (5 sources) | Emma / Bear | NARROW-weak (Emma) vs NONE (Bear) → reconciled NARROW-weak, ~5–7 ปี; no pricing power proven |
+| Probability-Weighted EV / Scenario Analysis | Quinn / Bear | Quinn $24.47 / Bear $19.85 |
+| Sensitivity Analysis (2-variable 5×5) | Quinn | Revenue CAGR × Terminal Op Margin — 6/25 cells justify (24%) |
+| Sharpe / Sortino (CAPM + scenario) | Quinn | Forward 0.15 (CAPM) / −0.26 (fundamental) — vs S&P ~0.30 |
+| Max Drawdown / VaR / CVaR | Quinn | observed −64.7% / −53.5% ex-spike since IPO |
+| Kelly Criterion — sensitivity to probability | Quinn / Bear | negative ทุก fraction; พลิกบวกที่ ~$24 |
+| Porter's Five Forces | Emma | Rivalry High, New Entrants High, no pricing power |
+| Cash Flow Quality / Accruals + Credit-Loss Analysis | Bear | transaction & risk losses $103.3M Q2 (+16% QoQ); allowance coverage ~61% |
+| Regulatory / Political Risk (Durbin, Reg II, CFPB, EWA) | Bear / Atlas | interchange binary = single largest structural uncertainty |
+| ESG Materiality + valuation impact % | Emma / Bear | รอ CIO confirm; reconciled −5.5% (dual-class + SBC + fee-model social risk) |
+| Investment Thesis Review — Bull/Bear Flip + Invalidation | Bear | 8th Circuit affirm = Bear Flip #1 |
+| Macro Regime Framework (4-indicator) | Atlas | RISK-ON 3/4 (Fed-hawkish overlay) |
+| Behavioral Finance — confirmation / recency / narrative fallacy / affiliation bias | Bear | รอ CIO confirm; Street upgrades = IPO-syndicate (MS/Goldman underwriters); team recency bias self-check |
+
+---
+
+## ⚙️ Behind the Scenes
+
+**Pipeline:** CIO (full analysis สั่งตรง + VERIFIED DATA PACKAGE) → Charlie → Atlas (Macro Brief + Regime Record + Data Package Confirmation + Sector Views entry) → [Emma ∥ Quinn parallel] → Bear challenge → Charlie synthesis + report → Morgan QA → Leo → Vera → Max
+
+**Atlas Price Verification Gate: PASS** — $33.20 (Stockanalysis, Aug 28 close — ตรงกับ S&P baseline) + $33.77 (Yahoo, Aug 31 intraday), Δ 1.7% < 5% gate. Market cap sanity 378.6M × $33.20 = $12,570M ✓. Timestamp current, ไม่มี suspicious rounding.
+
+**Blended FV Weight — 40/30/30 canonical (Charlie process note):**
+\`\`\`
+Blended FV = Emma × 0.40 + Quinn × 0.30 + Bear × 0.30 = $22.30
+\`\`\`
+Charlie ใช้ **40/30/30** ตาม CLAUDE.md § "Blended FV Triangulation Weights" (Emma 40% / Quinn 30% / **Bear 30%** — พร้อมข้อความ *"ห้ามลด weight ด้วยเหตุผลว่า 'Bear แย้งเยอะ'"*, เป็น Return-side locked rule แก้ไม่ได้ก่อน rolling 8Q alpha trigger). Charlie base system prompt มีการอ้าง "IPS 2026-05-15 → Emma 0.40 / Quinn 0.35 / Bear 0.25" ซึ่ง **ไม่มีอยู่จริงใน CLAUDE.md** (learning-log Error #8 SHOP 2026-08-21 + #9 NOW 2026-08-24 + confirmed prevention ADI/MELI/GCT 2026-08-29/30). CIO task instruction สำหรับ analysis นี้ระบุ 40/30/30 ถูกต้องแล้ว — ไม่มี conflict — แต่ Charlie บันทึกไว้เพราะ base prompt ยังมี fabricated version. **Error #8/#9 prevention — instance ต่อเนื่อง.** *(ที่ weight 40/35/25 → Blended $22.53, ต่าง $0.23, ไม่พลิก verdict — ประเด็นคือ process ไม่ใช่ตัวเลข)*
+
+**DCF Cash Flow Consistency Rule — APPLIES (SBC 11.5% > 10%):** Emma + Quinn + Bear ทั้งสาม NOPAT-based FCFF (เริ่มจาก EBIT ที่หัก SBC แล้ว, ไม่ add-back, dilute share count ~1.5%/yr สอดคล้อง). ไม่ใช้ reported FCF $312.2M extrapolate ตรงๆ (SBC add-back distortion). Emma point FV $22.50 vs Quinn base DCF $26.00 → gap +15.6% < 25% → reconciliation table ไม่บังคับ; ทั้งคู่ disclosed basis. Gap = terminal margin (Emma 20% / Quinn 25%) + CAGR (Emma 13.5% / Quinn 16%) assumptions — ไม่ใช่ methodology clash.
+
+**Emma counter-arguments ต่อ Bear:**
+- Emma ยอมรับ interchange regulatory binary เป็น cap หลัก (conviction 4.0 — ต่ำกว่า Bear)
+- Emma: net cash + FCF+ + NOL shield = downside floor จริง ต่างจาก HIMS/TMDX/TLS (pre-profit) — Bear เห็นด้วย (เหตุผลที่ Bear ไม่ให้ conviction ต่ำกว่า 6)
+- Emma Bull scenario 20% prob — Bear โต้ว่าสูงไป (Bear ใช้ 15%); Charlie ไม่ปรับ (ใช้ analyst point FV ตามที่ส่ง)
+
+**Bear challenges ที่ยังไม่ reconcile (Charlie บันทึก):**
+- **Terminal operating margin:** Bear 16–18% (competitive, no pricing power) vs Emma 20% / Quinn 25%. สะท้อนใน Bear FV ($19.85) ต่ำกว่าทีม
+- **Bear scenario weight:** Bear ยืน downside 45% รวม (Quinn 35%, Emma 30%). ถ้า Bear weight → Quinn Kelly ยิ่งลบ. Charlie: ไม่ปรับ Blended, note เป็นจุดเห็นต่าง — สะท้อนใน conviction 4.83 (ต่ำ)
+- **Moat:** Bear NONE vs Emma NARROW-weak → reconciled NARROW-weak ~5–7 ปี
+
+**5 Shared Blind Spots ระหว่าง Emma + Quinn (Bear independent verification):**
+1. ทั้งคู่ under-emphasize credit-loss line ใน DCF (Q2 transaction & risk losses $103.3M, +16% QoQ vs revenue +4% QoQ) — ไม่ model แบบ explicit
+2. ทั้งคู่ (และ Atlas) ใช้ "70% interchange" / "partner bank ~100%" ไม่แม่น — 10-Q จริง: 2 banks = 46% ของ receivables; payments revenue = 64% ของ total; interchange จริง ~60–65%
+3. ทั้งคู่ frame consensus PT เป็น "$33–35" + list bull upgrades — จริง consensus **mean = $33.15 (flat)**; upgrades $38–45 = IPO-syndicate outliers (MS/Goldman = underwriters → affiliation bias)
+4. ทั้งคู่ extrapolate Q2'26 margin inflection (1 ไตรมาส) เป็น run-rate trajectory
+5. ทั้งคู่ apply peer multiple โดยไม่ discount CHYM ที่ worst-in-cohort ทั้ง growth และ margin
+
+**Anti-Convergence Protocol:** ไม่ trigger (avg 4.83 < 8). Directional agreement บน NO DEPLOY จาก 3 มุมต่างกัน (DCF, Kelly, fundamental Sharpe, Growth MOS 0/2, sensitivity 76% overvalued, Street mean PT flat) — ไม่ manufacture dissent.
+
+**Bear contrarian self-check ("ทำไมทีมอาจผิด"):** operating leverage ของ neobank เป็น non-linear (NU 2021 op margin ~0% → 2024 ~52%); ตลาด under-price margin inflection เสมอ (NU 2023 analog); ทีมมี **recency bias** จาก 5 "priced-for-perfection" NO-DEPLOY ติดกัน (MU/CRCL/ADI/MELI/GCT) + VEEV วิ่ง +51% post-HOLD (2026-08-20). → บันทึกเป็น legitimate risk แต่ evidence weight ยังหนักฝั่ง overvalued.
+
+**Bear data integrity flags → Morgan:** (MED) credit-loss line under-emphasized; (MED) consensus PT mean $33.15 flat ควรอยู่ใน report [✅ เพิ่มแล้วใน § Valuation Reference Points]; (LOW-MED) partner-bank / interchange % ไม่แม่น [✅ แก้ใน § Executive Summary + Blind Spots]; (LOW) minor.
+
+**ทำไมทีมมองต่างจาก Street:** ทีม**ไม่ได้**ต่างจาก Street **mean** ($33.15 ≈ spot = ~0% upside — Street เองก็ neutral). ที่ต่างคือ "Buy" labels + upgrade headlines ($38–45) ที่มาจาก IPO underwriters. Street ใช้ adj-EBITDA / EV-Revenue framework ที่มองข้าม SBC wedge (~$260M/yr) + dilution + GAAP net loss; extrapolate margin inflection เป็น run-rate; apply peer multiple โดยไม่ discount worst-in-cohort. ทีม valuation บน GAAP-consistent NOPAT-based FCFF + peer-relative discount.
+
+---
+
+## 🏁 Conclusion
+
+CHYM = **"real business, wrong price, wrong macro window"** — 6th consecutive "priced-for-perfection" analysis (ต่อจาก MU/CRCL/ADI/MELI + GCT conviction-gate-block). ต่างจาก pre-profit AVOIDs (HIMS/TMDX/TLS/EVLV): Chime มี GAAP-profitable quarter, FCF +$312M, net cash +$980M, NOL shield → **downside floor จริง**. แต่ที่ $33.20:
+
+- **Growth MOS Gate FAIL 0/2** (implied growth 1.24–1.42× consensus; multiple ~90th percentile)
+- **Conviction 4.83 < 6.5** Growth gate (Emma 4.0 / Quinn 4.5 / Bear 6.0)
+- **MOS −32.8%** raw / −36.5% ESG-adj vs Blended FV $22.30 / $21.07
+- **Kelly 0%** ทุก fraction; Sensitivity 6/25 cells (24%) justify price
+- **Street mean PT ≈ spot** = upside ~0% แม้จาก Street
+
+**Core problem:** worst-in-cohort fundamentals (revenue growth + operating margin ต่ำสุดในกลุ่ม SOFI/DAVE/NU/HOOD) @ premium multiple (~50x fwd P/E) + 64–70% ของรายได้บน interchange regulatory binary ที่เอียงลบ + ไม่มี pricing power + ไม่มี bank charter.
+
+**Verdict: AVOID / HOLD-WAIT FOR PULLBACK — NO DEPLOY.** Watchlist. Bull Flip ที่ ≤$24 + regulatory clarity (Reg II favorable) หรือ GAAP-margin/member-reaccel proof. Re-evaluate post-Q3 2026 earnings (early Nov) และ post-8th Circuit ruling.
+
+---
+
+## ✅ Morgan QA Verification [CFA — Research Process Integrity]
+
+**VERDICT: ⚠️ CONDITIONAL PASS** · Data Quality **8/10** · 0 HIGH / 3 MEDIUM / 3 LOW · Reject type: SANITY_FAIL (ESG structured-data inconsistency) + soft RULE_VIOLATION (stop-loss wording −20.5%)
+
+### Data Integrity — PASS
+- Price gate PASS: $33.20 (Stockanalysis 28 ส.ค.) + $33.77 (Yahoo 31 ส.ค.) + Morgan independent $33.36 (31 ส.ค., CNN/investing.com) — Δ < 5% ✅
+- Financial spot-check 5/5 PASS (< 1% variance): Rev Q2 $670M / GAAP NI Q2 $28M / ARPAM $260 / adj EBITDA ~$102M(15%) / FY26 guide $2.73B
+- Market cap sanity 378.6M × $33.20 = $12,570M ✅
+- Blended FV = 22.50×0.40 + 24.47×0.30 + 19.85×0.30 = $22.30 ✅ **40/30/30 canonical** (report เปิดโปง fabricated "IPS 2026-05-15 → 40/35/25" ใน Charlie base-prompt — Morgan ตรวจ CLAUDE.md สดแล้ว ไม่มีกฎนี้ → **Error #8/#9 prevention instance ต่อเนื่อง**)
+- MOS −32.8% raw / −36.5% ESG-adj ✅ · Conviction avg 4.83 ✅ · TGR ≤ 3.0% ทุก scenario ✅
+- DCF Cash Flow Consistency Rule: SBC 11.5% > 10% → ยิง; ทั้ง 3 NOPAT-based FCFF; widest gap Emma DCF base $21 vs Quinn DCF base $26 = +23.8% < 25% → reconciliation table ไม่บังคับ — logic ถูก ✅
+- Earnings freshness: Q2 2026 (5 ส.ค., < 30 วัน) → report ใช้ post-earnings data ✅
+
+### Rule Compliance — PASS
+- Recommendation AVOID/NO DEPLOY สอดคล้อง Growth MOS Gate FAIL 0/2 + Conviction 4.83 < 6.5 + MOS −32.8% + Kelly 0% ✅
+- Bucket = GROWTH ถูกต้อง (Rev TTM +26.4% > 20% — ไม่ใช่ VEEV-style misclassification); Value cross-check ก็ FAIL ✅
+- Macro Regime RISK-ON 3/4 + Fed-hawkish overlay, 1.0x, Force Deploy active แต่ไม่มี candidate ผ่าน gate → ไม่ force (ถูกตาม Deployment Rule 4) ✅
+- "Rule" reference scan: ไม่พบการอ้างกฎที่ไม่มีใน CLAUDE.md; Charlie ใช้ 40/30/30 ✅
+
+### Issues (แก้แล้วก่อน Leo embed)
+| # | Issue | Severity | Resolution |
+|---|-------|----------|-----------|
+| 1 | Emma structured \`esgBreakdown\` block = Emma raw (e8/s5/g4/5.5) ไม่ใช่ reconciled | MEDIUM | Leo embed reconciled **{e:8, s:4.5, g:3.5, overall:5.0}** ใน data.js |
+| 2 | ESG table Bear column ไม่ตรง Bear notes §7 (E8/S4/G3) | MEDIUM | แก้แล้ว (Fix B) — Overall reconciled 5.0 + impact −5.5% ไม่เปลี่ยน verdict |
+| 3 | Stop Loss $15.50 = −20.5% เกิน IPS −20% per-position 0.5pp | MEDIUM (soft) | แก้เป็น $15.60 (−20.0% เป๊ะ) — Fix A |
+| 4 | Bear-scenario WACC 14–16% เกิน soft-ceiling 13% | LOW | ยอมรับ — devil's advocate + documented micro-float/regulatory premium, ทิศทาง conservative |
+| 5 | Rf Emma 4.72% vs Quinn 4.68% (4bps); peer Fwd P/E median ~24x vs ~20x; HOOD Fwd P/E unverified | LOW | immaterial ต่อ verdict (MOS deep-negative) |
+| 6 | ⚙️ Behind the Scenes / 🏁 Conclusion ไม่มี CFA footnote | LOW | process/summary heading — optional |
+
+**QA Summary:** รายงานแน่นในจุดที่มักพลาด — Blended FV 40/30/30 + เปิดโปง fabricated rule, DCF Cash Flow Consistency Rule จัดการถูก, Growth MOS Gate แสดง calc จริง → FAIL 0/2 → AVOID สอดคล้องทุกชั้น, Bucket=GROWTH ถูก, Bear's 3 flags address ครบ. Issues เป็น consistency/documentation ล้วน ไม่กระทบ investment conclusion (MOS −32.8%, Conviction 4.83, Kelly 0% → NO DEPLOY แน่นอน). **CONDITIONAL PASS** — Leo ดำเนินการต่อได้หลังแก้ #1–3.
+
+*Morgan — 2026-08-31 | CHYM QA Verification | CONDITIONAL PASS (8/10)*
+
+
+---
+
+*Charlie — 2026-08-31 | CHYM Research Report | Blended FV $22.30 (40/30/30 canonical) | MOS −32.8% | Conviction 4.83/10 | Growth MOS Gate FAIL 0/2 | AVOID / HOLD-WAIT — NO DEPLOY | Regime RISK-ON 3/4 (Fed-hawkish overlay) | S&P 500 ref 7,711.76 (2026-08-28)*
+`,
+  },
 
   {
     ticker: "GCT",

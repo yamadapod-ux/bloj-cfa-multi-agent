@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-08-29 12:30";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-08-31 15:00";
 
 const SECTOR_VIEWS = [
   {
@@ -280,5 +280,42 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-08-29",
     author: "Atlas",
     trigger: "Byproduct of MELI Phase 1 Macro Brief — reveals sector-level view on LatAm e-commerce + fintech (structural growth + valuation reset vs margin-compression phase + Fed-hawkish/strong-dollar EM headwind), applies beyond MELI to SE/NU/STNE/dLocal",
+  },
+  {
+    sector: "US Consumer Fintech / Neobank",
+    slug: "us-consumer-fintech-neobank",
+    stance: "CAUTIOUS",
+    cyclePosition: "Mid-cycle (profitability-pivot phase)",
+    headline: "Neobank adoption ของจริง + กลุ่มเข้าสู่ profitability pivot — แต่ interchange regulation ยัง unresolved (Reg II vacated, 8th Cir pending) + near-prime credit normalization + CHYM growth/margin ท้ายกลุ่ม peer",
+    thesis: "การวิเคราะห์ CHYM (Chime, 2026-08-31) เปิดเผยมุมมองระดับ sector ที่กว้างกว่าตัวหุ้น — US consumer neobank (CHYM, SOFI, DAVE + adjacency กับ HOOD/NU) กำลังเจอ 3 แรงพร้อมกัน: (1) Profitability pivot — ยุค growth-at-any-cost จบแล้ว, >76% ของ neobank ทั่วโลกยังขาดทุนในปี 2026 (ARPU เฉลี่ย ~$45/ปี vs ~$350 ของธนาคารดั้งเดิม) — ผู้ชนะคือคนที่ diversify เข้า lending/BaaS (Revolut PBT margin 38% ปีที่ 5, Nubank op margin 52%). CHYM ทำ pivot นี้สำเร็จ — GAAP-profitable Q2 2026 (adj EBITDA ~15%), Platform/lending revenue +48% YoY, FCF TTM +$312M. (2) Interchange regulation = sector-wide binary overhang — neobank ส่วนใหญ่พึ่ง debit interchange ผ่าน partner bank <$10B (Durbin exemption, ไม่โดน Reg II cap). ND District Court vacated Reg II ทั้งฉบับ (ส.ค. 2025, stay ระหว่างอุทธรณ์), 8th Circuit ฟัง oral args แล้วปี 2026 รอคำพิพากษา — ถ้า Reg II ถูก vacate ทั้งฉบับ ธนาคารใหญ่ก็เก็บ interchange ไม่ถูก cap → ช่องว่าง exempt/non-exempt แคบลง → neobank เสีย relative advantage; กลับกันถ้า Fed 2023 proposal (ลด cap ~30%) final → ช่องว่างกว้างขึ้น = tailwind. two-directional และยังไม่จบ. (3) Near-prime credit normalization — core demographic ของ neobank กลุ่มนี้ = paycheck-to-paycheck/underbanked; Q2 2026 subprime/small-bank delinquency ~6.4% (~2x ค่าเฉลี่ยรวม), 90+ DPD ขยับขึ้น 2.26% — การเร่ง lending push เข้า demographic นี้ช่วง credit เสื่อม = timing risk (mitigant: Chime lending ส่วนใหญ่ secured/payroll-linked duration สั้น). เชิงบวก: regulatory environment เฉพาะหน้า (2026) โน้ม deregulation — CFPB overdraft rule ถูก Congress ยกเลิกผ่าน CRA (+ ห้ามออก rule คล้ายกัน), EWA interpretive rule น่าจะตายภายใต้ Warsh-era CFPB — net positive ระยะสั้น. ทีม CAUTIOUS ไม่ NEGATIVE เพราะ adoption จริง + profitability pivot ของผู้นำเกิดขึ้นจริง — แต่ยังไม่ POSITIVE เพราะ interchange (สัดส่วนใหญ่ของรายได้) แขวนบน litigation ที่ผลลัพธ์สองทิศ + credit-loss cycle ยังไม่ resolved + valuation กลุ่มตึง (CHYM ~50x fwd P/E, Street PT ~$33-35 = upside จำกัด). selective เฉพาะชื่อที่มี real MOS บน normalized (ไม่ใช่ peak-inflection) earnings + distribution/scale moat หรือ bank charter (SOFI).",
+    keyPoints: [
+      "Profitability pivot: >76% neobank ทั่วโลกยังขาดทุน 2026; ผู้ชนะ diversify เข้า lending/BaaS — CHYM GAAP-profitable Q2'26 (adj EBITDA ~15%, Platform revenue +48% YoY)",
+      "Interchange = sector-wide binary: Reg II vacated (ND Dist. Ct. ส.ค. 2025, stay pending 8th Cir.) — full vacatur บีบช่อง exempt/non-exempt แคบลง (ลบ advantage); Fed 2023 proposal ลด cap 30% = ตรงข้าม (เพิ่ม advantage)",
+      "Near-prime credit normalization: subprime/small-bank delinquency Q2'26 ~6.4% (~2x avg), 90+ DPD 2.26% — neobank เร่ง lending เข้า demographic ที่เปราะบางลง",
+      "Deregulatory tailwind เฉพาะหน้า: CFPB overdraft rule ถูก Congress ยกเลิกผ่าน CRA + ห้ามออก similar rule; EWA-as-credit interpretive rule น่าจะตาย Warsh-era",
+      "CHYM ท้ายกลุ่ม peer: revenue growth 26.4% (ต่ำสุด) + op margin 15.2% (ต่ำสุด) vs SOFI 40.9%/17.3%, DAVE 48.6%/36.0%, NU 44.3%/52.0%, HOOD 38.3%/46.0%",
+      "No bank charter = โครงสร้างต่าง: CHYM พึ่ง partner bank (Bancorp/Stride), ไม่มี NIM, ARPU ceiling ต่ำกว่า SOFI ~3x — SOFI (มี charter) = structural comp",
+    ],
+    metrics: [
+      { label: "CHYM revenue growth TTM (YoY %)", value: 26.4 },
+      { label: "SOFI revenue growth TTM (YoY %)", value: 40.9 },
+      { label: "DAVE revenue growth TTM (YoY %)", value: 48.6 },
+      { label: "Neobanks globally unprofitable (%)", value: 76 },
+    ],
+    relatedTickers: ["CHYM", "SOFI", "DAVE", "HOOD", "NU"],
+    sources: [
+      { title: "Softjourn — The Top Challenges Confronting Neobanks in 2026 (76% unprofitable, ARPU $45 vs $350)", url: "https://softjourn.com/insights/redefining-resilience-the-top-challenges-confronting-neobanks" },
+      { title: "TechBullion — Digital Banking and Neobanks in the U.S. 2026: Where the Profitable Players Now Sit", url: "https://techbullion.com/digital-banking-and-neobanks-in-the-u-s-2026-where-the-profitable-players-now-sit/" },
+      { title: "Cooley — District Court Vacates Regulation II's Debit Card Interchange Fee Standard", url: "https://www.cooley.com/news/insight/2025/2025-08-15-district-court-vacates-regulation-iis-debit-card-interchange-fee-standard" },
+      { title: "America's Credit Unions — Fed interchange rule challenge heard by appeals court (8th Cir., 2026)", url: "https://www.americascreditunions.org/news-media/news/fed-interchange-rule-challenge-heard-appeals-court" },
+      { title: "Congress.gov CRS — Congress Repeals CFPB's Overdraft Rule", url: "https://www.congress.gov/crs-product/IN12513" },
+      { title: "TransUnion — Q2 2026 Credit Industry Insights Report", url: "https://newsroom.transunion.com/Q2-2026-CIIR/" },
+      { title: "Wolf Street — Credit Card Delinquencies in Q2 2026 (K-shaped, small-bank 6.4%)", url: "https://wolfstreet.com/2026/08/25/credit-card-delinquencies-payment-volume-balances-debt-to-income-and-credit-limits-in-q2-2026-americans-and-their-plastic/" },
+      { title: "Investing.com — Chime earnings loom as neobank giant eyes first profitable year", url: "https://www.investing.com/news/earnings/chime-earnings-loom-as-neobank-giant-eyes-first-profitable-year-93CH-4664832" },
+      { title: "Crowdfund Insider — US Fintech Firms Chime And SoFi Continue To Increase Competition Among Digital Banks", url: "https://www.crowdfundinsider.com/2026/05/279875-us-fintech-firms-chime-and-sofi-continue-to-increase-competition-among-digital-banks-analysis/" },
+    ],
+    lastUpdated: "2026-08-31",
+    author: "Atlas",
+    trigger: "Byproduct of CHYM Phase 1 Macro Brief — reveals sector-level view on US consumer fintech / neobank (profitability-pivot phase + interchange-regulation binary + near-prime credit normalization), applies beyond CHYM to SOFI/DAVE/HOOD/NU",
   },
 ];
