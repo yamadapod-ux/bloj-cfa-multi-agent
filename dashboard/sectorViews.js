@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-08-31 15:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-09-01 15:00";
 
 const SECTOR_VIEWS = [
   {
@@ -317,5 +317,43 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-08-31",
     author: "Atlas",
     trigger: "Byproduct of CHYM Phase 1 Macro Brief — reveals sector-level view on US consumer fintech / neobank (profitability-pivot phase + interchange-regulation binary + near-prime credit normalization), applies beyond CHYM to SOFI/DAVE/HOOD/NU",
+  },
+  {
+    sector: "Adtech / Martech",
+    slug: "adtech-martech",
+    stance: "CAUTIOUS",
+    cyclePosition: "Mid-cycle (decelerating)",
+    headline: "Secular digital-ad growth is real but decelerating into a constrained, consolidating budget pool — retail media + Meta/Google absorb the growth, the pure-play bellwether (TTD) is de-rating, and Fed-hawkish repricing hits the whole high-multiple cohort — selective, not broad-buy",
+    thesis: "การวิเคราะห์ ZETA (Zeta Global, 2026-09-01) เปิดเผยมุมมองระดับ sector ที่กว้างกว่าตัวหุ้น — US adtech/martech (ZETA, TTD, CRTO, APP, BRZE + adjacency กับ retail media ของ AMZN/WMT) กำลังเจอ 4 แรงพร้อมกัน: (1) **Digital ad spend decelerating:** eMarketer คาด US digital ad spend +7.9% ปี 2026 (programmatic display +12.5%, social +15.6%) แต่ growth rate 'normalizing as digital maturity sets in' — คาดชะลอต่อปี 2027+; Meta family แซง Google บน net US ad-revenue basis ครั้งแรก (~$100.9B) — การเติบโตกระจุกที่ social + retail media ไม่ใช่ independent middle. (2) **Retail media = competitive gravity well:** global retail media market >$196B ปี 2026, RMN spend ~$69B และ 'foundational to how retailers drive profitability' ไม่ใช่ incremental อีกต่อไป — Amazon/Walmart Connect/retailer networks ดูดงบที่เคยไหลผ่าน DSP + independent martech; structural headwind สำหรับใครที่ไม่มี first-party retail/commerce data. (3) **Enterprise martech budget constrained แต่ AI เป็น priority:** Gartner 2026 CMO Spend — overall marketing spend +1.7% YoY (อ่อนสุดตั้งแต่ 2021), martech share ของ budget แตะ 5-year low 19.4% (จาก 26.6% ปี 2021) — แต่ 62% ของ CMO วางแผนลงทุน martech เพิ่ม, 15.3% ของ budget ไป AI, 70% บอก AI คือ top priority H2 2026, 56% shift ไป consumption/usage-based pricing → งบหายาก + consolidate ไปหา platform ที่ AI-differentiated + outcome-priced น้อยราย. (4) **AI-in-marketing / agentic AI ยัง unproven ที่ enterprise scale:** 90.3% ของทีมการตลาดรัน AI agent ที่ไหนสักที่ในสแตกแล้ว แต่ 74% ของ martech leader บอก data integration/quality คือ barrier หลัก — narrative tailwind ที่ทุก vendor พูดเหมือนกัน. Bellwether check: The Trade Desk Q2 guide (~$750M) อ่านว่า 'soft', หุ้นร่วงแรงหลัง May call, 'conflicts over margin control ... indicative of a shrinking addressable market' (Digiday); TTD revenue growth TTM ~11.6% vs ZETA 35% total / 25% organic — pure-play DSP model กำลัง mature ขณะที่ identity-graph + owned-channel model ยัง compound. Martech landscape 2026: 15,505 products +0.79% (flattest ใน 15 ปี), 1,488 added / 1,367 removed — consolidation phase, scaled data platform ได้ share จาก point tool แต่ incremental TAM ไม่ขยาย. ทีม CAUTIOUS ไม่ NEGATIVE เพราะ secular adoption จริง + scaled players ที่มี first-party data moat ยังชนะได้ — แต่ยังไม่ POSITIVE เพราะ budget pool หด + retail media/Meta ดูด growth + Fed-hawkish (Sept hike priced) กด high-multiple cohort ทั้งกลุ่ม + ZETA เองมี data-provenance overhang (Culper short report + securities class action Davoodi v. Zeta — MTD denied 8 ก.ค. 2026, เข้าสู่ discovery). selective เฉพาะชื่อที่มี real MOS บน normalized earnings + first-party-data/owned-channel moat.",
+    keyPoints: [
+      "Digital ad spend decelerating: US +7.9% 2026F (eMarketer), slower 2027+; Meta family แซง Google net US ad revenue ครั้งแรก (~$100.9B) — growth กระจุกที่ social + retail media",
+      "Retail media networks = gravity well: global >$196B 2026, RMN spend ~$69B, 'foundational not incremental' — Amazon/Walmart ดูดงบจาก DSP + independent martech",
+      "Enterprise martech budget constrained: marketing spend +1.7% YoY (อ่อนสุดตั้งแต่ 2021), martech share 19.4% = 5-yr low — แต่ 62% CMO ลงทุน martech เพิ่ม, 70% บอก AI = top priority, 56% shift ไป consumption pricing",
+      "Bellwether de-rating: TTD Q2 guide 'soft', 'shrinking addressable market' (Digiday); TTD growth TTM ~11.6% vs ZETA 25% organic — pure-play DSP maturing",
+      "AI-in-marketing crowded + unproven: 90.3% ของทีมรัน AI agent แล้ว แต่ 74% ติด data integration/quality — narrative ที่ทุก vendor อ้างเหมือนกัน",
+      "Fed-hawkish (Sept 25bp hike priced, 10Y ~4.8% highest since Jan 2025) กด high-multiple adtech ทั้ง cohort; martech landscape +0.79% = consolidation, TAM ไม่ขยาย",
+    ],
+    metrics: [
+      { label: "US digital ad spend growth 2026F (eMarketer, %)", value: 7.9 },
+      { label: "US total marketing spend growth YoY (Gartner, %)", value: 1.7 },
+      { label: "Martech % of marketing budget 2026 (5-yr low, Gartner)", value: 19.4 },
+      { label: "CMOs planning to increase martech investment (%)", value: 62 },
+    ],
+    relatedTickers: ["ZETA", "TTD", "CRTO", "APP", "BRZE"],
+    sources: [
+      { title: "eMarketer — US Ad Spending 2026 (digital +7.9%, programmatic display +12.5%, social +15.6%)", url: "https://www.emarketer.com/content/us-ad-spending-2026" },
+      { title: "eMarketer — US ad spending growth normalizes as digital maturity sets in", url: "https://www.emarketer.com/content/us-ad-spending-growth-normalizes-digital-maturity-sets" },
+      { title: "Gartner — CMO Spend 2026 (marketing spend +1.7% YoY, martech share 19.4% 5-yr low, 62% plan to invest more, 70% name AI top priority)", url: "https://www.gartner.com/en/articles/cmo-spend" },
+      { title: "Chief Marketer — Gartner CMO Spend Survey: Consumption-Based Martech, Paid Media Spend", url: "https://www.chiefmarketer.com/gartner-cmo-spend-survey-budgets-reflect-increase-in-consumption-based-martech-paid-media-spend/" },
+      { title: "Digiday — By the numbers: Ad tech's quarter of mixed fortunes (TTD Q2 guide 'soft', shrinking addressable market)", url: "https://digiday.com/media-buying/by-the-numbers-ad-techs-quarter-of-mixed-fortunes/" },
+      { title: "MartechSeries — Where AdTech and Retail Media Are Headed in 2026 (retail media >$196B, RMN ~$69B, foundational not incremental)", url: "https://martechseries.com/mts-insights/guest-authors/where-adtech-and-retail-media-are-headed-in-2026/" },
+      { title: "everything-PR — AdTech 2026: AI Search Ads, Retail Media, CTV, Cookie Reversal", url: "https://everything-pr.com/adtech-2026-ai-search-ads-retail-media-ctv-and-the-cookie-reversal/" },
+      { title: "DigitalApplied — Martech Statistics 2026 (15,505 products +0.79% flattest in 15 yrs; 90.3% run AI agents; 74% cite data integration barrier)", url: "https://www.digitalapplied.com/blog/martech-statistics-2026-data-points" },
+      { title: "Campaigns & Elections — 2026 midterms forecast ~$10B+ ad spend (record non-presidential cycle)", url: "https://campaignsandelections.com/industry-news/new-report-forecasts-10-billion-in-midterm-ad-spending/" },
+      { title: "Stanford Securities Class Action Clearinghouse — Davoodi v. Zeta Global Holdings Corp. (case 108483; MTD denied Jul 8 2026, in discovery)", url: "https://securities.stanford.edu/filings-case.html?id=108483" },
+    ],
+    lastUpdated: "2026-09-01",
+    author: "Atlas",
+    trigger: "Byproduct of ZETA Phase 1 Macro Brief — first sector-level view on adtech/martech (secular growth decelerating + constrained/consolidating budget pool + retail-media crowding-out + Fed-hawkish multiple compression), applies beyond ZETA to TTD/CRTO/APP/BRZE",
   },
 ];
