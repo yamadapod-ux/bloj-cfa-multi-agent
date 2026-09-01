@@ -181,11 +181,30 @@ CIO → "Max หาหุ้นใหม่"
         → CIO เลือก → บอก Charlie วิเคราะห์
 ```
 
-**Scout Filter Rules (Max ใช้กรอง candidates):**
-- Revenue growth >20% (Growth bucket) หรือ FCF-positive + wide moat (Value bucket)
-- ห้ามซ้ำกับที่ถืออยู่หรือเคยวิเคราะห์ไปแล้ว
-- **Sector ซ้ำได้** — ไม่บังคับ diversify sector เพราะ CIO ต้องการเห็นทุก opportunity แล้วค่อยตัดสินใจเอง
-- ราคาย่อจาก ATH พอสมควร เป็น plus แต่ไม่บังคับ
+**Scout Filter Rules (Max ใช้กรอง candidates) — VALUE-FIRST (แก้ 2026-09-01 หลัง 0 deploy / ~20 analyses):**
+
+> **ที่มา:** ~2.5 เดือน (มิ.ย.–ก.ย. 2026) วิเคราะห์เต็ม ~20 ตัว, deploy 0. Root cause = scout screen เดิม (growth >20% + momentum) คัดแต่หุ้นที่เทรด premium multiple → gate ปฏิเสธ 20/20 อย่างถูกต้อง เพราะไม่มี MOS. **MOS มีได้เฉพาะในหุ้นที่ตลาดเกลียด/ทิ้งไปแล้ว ไม่ใช่หุ้นที่ตลาดรัก** (ดู `agent_notes/charlie/2026-09-01_strategic_note.md`). Scout screen นี้**ไม่ใช่ Return-side locked rule** — เปลี่ยนได้ (ไม่แตะ MOS threshold / conviction gate ที่ยังล็อกเหมือนเดิม)
+
+**Primary filter (บังคับ — candidate ต้องผ่านทั้ง A + B + C):**
+- **A. Beaten-down:** ราคาปัจจุบัน **ลง ≥ 30% จาก 52-week high** (บังคับ — นี่คือ filter ที่สำคัญที่สุด; ห้าม scout หุ้นที่อยู่ใน 10% ของ 52W high เว้นแต่ CIO สั่งตรง)
+- **B. Cheap on cash/asset:** FCF yield > 6% **หรือ** EV/EBITDA อยู่ bottom-third ของ 5-year history ตัวเอง **หรือ** P/B ต่ำกว่า 5Y median (สำหรับ financials/insurers)
+- **C. Still a real business:** ROIC > WACC (ล่าสุด TTM หรือ through-cycle) — กันไม่ให้เป็น value trap; ไม่ใช่ industry ที่ secular structural decline (เช่น linear TV, coal thermal, legacy retail)
+
+**Secondary (nice-to-have, ไม่ใช่ gate):**
+- Revenue growth เป็น bonus ไม่ใช่ requirement — Growth bucket ยังใช้ได้ถ้า candidate ผ่าน A+B+C แล้วบังเอิญโตเร็วด้วย
+- Catalyst ที่มองเห็น (earnings inflection, spin-off, activist, cycle turn, regulatory resolution)
+- Insider buying / buyback ที่ราคาปัจจุบัน
+
+**Hard exclusions:**
+- ห้ามซ้ำกับที่ถืออยู่ (`dashboard/portfolio.js`), เคยวิเคราะห์ไปแล้ว, หรืออยู่ใน watchlist (live table หรือ Archive)
+- **Sector ซ้ำได้** — ไม่บังคับ diversify — แต่ Max **ต้องหมุน sector mandate ทุก round** (Round N = healthcare-value, Round N+1 = energy, Round N+2 = financials-value ฯลฯ) ห้ามให้ 15/20 analyses กระจุกอยู่ sector เดียว (semis/AI-infra pattern มิ.ย.–ส.ค. 2026)
+
+**Scout → Analysis SLA (แก้ lag ที่ฆ่า MOS — ZETA precedent: scout $23.50 → analysis $30.88):**
+- Candidate ที่ Max ระบุเป็น TOP PICK → Charlie ต้อง verify ราคาสด + ตัดสินใจส่ง pipeline **ภายใน 5 วัน** ไม่ใช่หลายสัปดาห์
+- ทุก scout entry ต้องมี **entry zone (price range) + stop** ตั้งแต่ scout — เมื่อราคาแตะ entry zone → Max ping Charlie ให้ fast-track analysis
+- Scout price ที่เก่าเกิน 7 วัน = ต้อง re-verify ก่อนใช้ตัดสินใจ (flag ใน watchlist row)
+
+**Regime-adaptive note:** ในตลาด near-ATH + Fed-hawkish (เช่น ส.ค.–ก.ย. 2026) การมี deploy rate ต่ำ = ถูกต้อง ไม่ใช่ความล้มเหลว — สิ่งที่ทำได้คือสร้าง **pre-analyzed buy list** (`portfolio/buy_list.md`) พร้อม entry zone รอ pullback แทนการฝืน deploy ของแพง
 
 **De-list Rules (Max ใช้ก่อนทุก Scout round — บังคับ, ไม่ใช่ optional):**
 - **Stale timeout:** ไม่มีการอัปเดตราคา/action จาก CIO หรือ Charlie เกิน 60 วัน และไม่มี target analysis date
@@ -509,6 +528,7 @@ Leo เพิ่ม object เข้า `REPORTS` array — รวม `fullConte
 - `portfolio/positions.md` — Simulated portfolio holdings + P&L (Max ดูแล)
 - `portfolio/trade-log.md` — ประวัติ trade ทั้งหมด (Max ดูแล)
 - `portfolio/watchlist.md` — Candidates ที่ Max สแกนมา รอวิเคราะห์ + Archive de-listed candidates (Max ดูแล)
+- `portfolio/buy_list.md` — ชื่อที่**วิเคราะห์เต็มแล้ว** + มี entry zone/stop/Bull Flip Triggers คำนวณไว้ — รอ pullback / regime flip / catalyst เพื่อ deploy เร็ว (Charlie + Max ดูแล; Max อัปเดตราคา+gap ทุก Portfolio Review) — สร้าง 2026-09-01
 - `portfolio/deployment_log.md` — Max deployment decision log ทุก trade/skip (Max ดูแล)
 - `performance/tracker.md` — Performance vs S&P 500, analyst scorecard (Vera ดูแล)
 - `performance/weekly_YYYY-WW.md` — Vera weekly output (Vera ดูแล)
@@ -554,6 +574,11 @@ Leo เพิ่ม object เข้า `REPORTS` array — รวม `fullConte
    - Trades ที่ Bear challenge หนัก (≥2 bear flips triggered) → outcome
    - Force Deploy trades → outcome
 5. **Tier Verdict:** Pass / Good (ตาม 3-Tier Return Target — ห้าม judge ด้วย Stretch)
+6. **Funnel Health / Deploy-Rate Check (เพิ่ม 2026-09-01):**
+   - **Deploy rate** = # DEPLOYED ÷ # full analyses (จาก `portfolio/deployment_log.md`) รายไตรมาส
+   - **Baseline expectation:** RISK-ON regime → ~20–30% | TRANSITIONAL-CAUTIOUS → ~5–15% | RISK-OFF → ~0–5% (Force Deploy suspended)
+   - **Near-miss log:** ทุก analysis ที่ conviction 6.0–6.4 (Growth) หรือ 6.5–6.9 (Value) **พร้อม MOS ผ่าน** → Vera บันทึกแยก + track 6-month realized outcome (หุ้นขึ้นหรือลง) — สะสมข้อมูลว่า conviction gate ตึงเกินไปไหม สำหรับ rolling-8Q review
+   - **Funnel Diagnostic Trigger:** deploy rate < 10% ใน RISK-ON **ติดกัน 2 ไตรมาส** → mandatory diagnostic: (a) ตลาดแพงจริง? [เทียบ S&P fwd P/E percentile] (b) scout screen คัดผิด? [กี่ % ของ analyses ที่ราคาอยู่ใน 20% ของ 52W high] (c) gate ตึงเกิน? [near-miss realized outcomes] → flag ให้ Charlie + CIO พร้อมข้อมูล 3 ข้อนี้ ไม่ใช่แค่ "นานแล้วไม่ได้ซื้อ"
 
 ### Pre-Commitment Trigger Check (อัตโนมัติ — ทุกรายไตรมาส)
 - Rolling 4Q alpha < 0 → flag review ให้ Charlie + CIO ทันที

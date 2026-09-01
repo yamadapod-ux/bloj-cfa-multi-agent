@@ -371,36 +371,32 @@ Read agent_notes/atlas/[LATEST]_data.md   ← ดู sector ที่ Atlas แ�
 Read portfolio/positions.md               ← ดูว่า sector ไหน over-weight แล้ว
 ```
 
-**Step 2 — Screen ตาม Macro Regime**
+**Step 2 — เลือก Hunting Ground (VALUE-FIRST — แก้ 2026-09-01)**
 
-| Regime | Sector ที่ focus | Screen criteria |
-|--------|----------------|----------------|
-| Risk-ON | Technology, Industrials, Financials | Growth + Momentum |
-| Risk-OFF | Healthcare, Utilities, Consumer Staples | Quality + Low-Vol |
-| Stagflation | Energy, Materials | Hard assets, Pricing power |
-| Recovery | Cyclicals, Small-cap | Value + FCF |
+ล่าในที่ที่ตลาด**เกลียด/ทิ้ง**แล้ว — ที่ MOS มีได้จริง. **หมุน sector mandate ทุก round** (ดู Scout History ว่า 3–4 round ล่าสุดทำ sector ไหน → เลือกที่ยังไม่ได้ทำ / ที่เพิ่ง de-rate). Sector ที่มักมี de-rated value: managed care/health insurance, beaten pharma-medtech, energy E&P + midstream, regional banks, homebuilders, materials/chemicals, cyclical industrials, consumer discretionary ที่โดน tariff. Regime เป็น overlay (sizing/urgency) ไม่ใช่ screen.
 
-**Step 3 — WebSearch + WebFetch สแกน candidates**
+**Step 3 — WebSearch + WebFetch สแกน candidates (value-oriented)**
 
-ใช้ WebSearch หาหุ้นใน sector ที่ Atlas แนะนำ:
 ```
-"[sector] stocks high FCF yield low P/E 2026"
-"best [sector] stocks to buy 2026 undervalued"
-"[sector] stocks strong revenue growth ROIC"
+"[sector] stocks down 30% 40% from 52-week high 2026 undervalued"
+"[sector] stocks high free cash flow yield low EV/EBITDA 2026"
+"beaten down [sector] stocks 2026 insider buying buyback"
+"[sector] stocks trading below book value / historical multiple 2026 quality"
 ```
 
-WebFetch overview ของแต่ละ candidate:
-```
-https://stockanalysis.com/stocks/[ticker]/
-```
+WebFetch overview: `https://stockanalysis.com/stocks/[ticker]/` — ดึง **ราคาปัจจุบัน + 52W high (% จาก high)** + FCF yield/EV-EBITDA/P/B + ROIC + revenue growth (bonus)
 
-**Step 4 — Filter เบื้องต้น**
+**Step 4 — Filter ตาม Scout Filter Rules VALUE-FIRST (CLAUDE.md เท่านั้น — ป้องกันไฟล์ drift)**
 
-**ใช้ Scout Filter Rules จาก CLAUDE.md เท่านั้น** (ห้ามใช้ threshold อื่นที่ไม่ตรงกัน — ป้องกันสองไฟล์ drift ออกจากกัน):
-- Revenue growth >20% (Growth bucket) **หรือ** FCF-positive + wide moat (Value bucket)
-- ห้ามซ้ำกับที่ถืออยู่หรือเคยวิเคราะห์ไปแล้ว (เช็คกับ portfolio.js + watchlist.md live tables + archive)
-- Sector ซ้ำได้ — ไม่บังคับ diversify
-- ราคาย่อจาก ATH พอสมควร เป็น plus แต่ไม่บังคับ
+Primary — ต้องผ่านทั้ง A + B + C:
+- **A. Beaten-down (บังคับ):** ราคาลง **≥ 30% จาก 52W high** — ถ้าอยู่ใน 10% ของ 52W high → ตกรอบ (เว้นแต่ CIO สั่งตรง)
+- **B. Cheap:** FCF yield > 6% **หรือ** EV/EBITDA bottom-third ของ 5Y history **หรือ** P/B < 5Y median (financials)
+- **C. Real business:** ROIC > WACC + ไม่ใช่ secular-decline industry
+
+Secondary (bonus): revenue growth, catalyst มองเห็น, insider buying/buyback
+Hard exclusions: ซ้ำ position/analyzed/watchlist(live+archive); ต้องหมุน sector mandate
+ทุก candidate ที่ผ่าน → กำหนด **entry zone + stop ตั้งแต่ scout** (Scout → Analysis SLA)
+ถ้าหา 3 ตัวที่ผ่าน A+B+C จริงไม่ได้ → รายงาน "sector นี้ยังไม่มี value ชัดเจน" ดีกว่าฝืน
 
 **Step 5 — เขียน Scout Report**
 

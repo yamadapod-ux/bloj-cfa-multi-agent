@@ -56,45 +56,58 @@ Read portfolio/positions.md                 ← sector ไหน over-weight แ
 
 ---
 
-### Step 2 — Screen ตาม Macro Regime
+### Step 2 — เลือก Hunting Ground (VALUE-FIRST — แก้ 2026-09-01)
 
-| Regime | Sector ที่ focus | Screen criteria |
-|--------|----------------|----------------|
-| Risk-ON | Technology, Industrials, Financials | Growth + Momentum |
-| Risk-OFF | Healthcare, Utilities, Consumer Staples | Quality + Low-Vol |
-| Stagflation | Energy, Materials | Hard assets, Pricing power |
-| Recovery | Cyclicals, Small-cap | Value + FCF |
+**หลักการ:** ล่าในที่ที่ตลาด**เกลียด/ทิ้ง**แล้ว — ที่ที่ MOS มีได้จริง ไม่ใช่ที่ที่ momentum อยู่ (ดู CLAUDE.md § Scout Filter Rules — VALUE-FIRST)
 
----
-
-### Step 3 — WebSearch สแกน candidates
-
-```
-WebSearch: "[sector] stocks high FCF yield low P/E 2026"
-WebSearch: "best [sector] stocks to buy 2026 undervalued"
-WebSearch: "[sector] stocks strong revenue growth ROIC"
-```
-
-ดึงราคา + ROE/ROIC + revenue growth ของแต่ละ candidate พร้อม URL source (≥1 source ต่อตัว, เลือกเจาะจง 2 sources ถ้าจะเสนอเป็น top pick)
+1. **หมุน sector mandate ทุก round** — ดู `## Scout History` ว่า 3–4 round ล่าสุด scan sector ไหนไปแล้ว → round นี้เลือก sector ที่ยังไม่ได้ทำ / ที่เพิ่ง de-rate
+   - Sector ที่มักมี de-rated value ปี 2026: managed care / health insurance, beaten-down pharma-medtech, energy E&P + midstream, regional banks, homebuilders, materials/chemicals, industrials ที่ cyclical, consumer discretionary ที่โดน tariff
+2. **ถ้า `$ARGUMENTS` ระบุ sector** → ใช้ตามนั้น
+3. **Regime overlay** (ปรับ sizing/urgency ไม่ใช่ screen):
+   - RISK-ON → deploy rate เป้า ~20–30%, scan กว้างได้
+   - TRANSITIONAL-CAUTIOUS / RISK-OFF → Force Deploy suspended; scout เพื่อ **buy list** (`portfolio/buy_list.md`) รอ pullback, ไม่ใช่เพื่อ deploy ทันที
 
 ---
 
-### Step 4 — Filter ตาม Scout Filter Rules (CLAUDE.md — ใช้เกณฑ์นี้เท่านั้น ห้ามใช้เกณฑ์อื่น)
+### Step 3 — WebSearch สแกน candidates (value-oriented queries)
 
-- Revenue growth >20% (Growth bucket) **หรือ** FCF-positive + wide moat (Value bucket)
-- ห้ามซ้ำกับที่ถืออยู่ (`dashboard/portfolio.js`), เคยวิเคราะห์ไปแล้ว, หรืออยู่ใน watchlist ปัจจุบัน (live table หรือ Archive — เช็คทั้งคู่ป้องกัน re-scout ตัวที่เพิ่งถูก de-list)
-- Sector ซ้ำได้ — ไม่บังคับ diversify
-- ราคาย่อจาก ATH พอสมควร เป็น plus แต่ไม่บังคับ
+```
+WebSearch: "[sector] stocks down 30% 40% from 52-week high 2026 undervalued"
+WebSearch: "[sector] stocks high free cash flow yield low EV/EBITDA 2026"
+WebSearch: "beaten down [sector] stocks 2026 insider buying buyback"
+WebSearch: "[sector] stocks trading below book value / historical multiple 2026 quality"
+```
 
-เลือก 3-6 ตัวที่ผ่านเกณฑ์ชัดเจน
+ดึงต่อ candidate: **ราคาปัจจุบัน + 52W high (คำนวณ % จาก high)** + FCF yield / EV-EBITDA / P/B + ROIC + WACC proxy + revenue growth (bonus) — พร้อม URL source (≥1 ต่อตัว, 2 sources ถ้าจะเป็น top pick)
+
+---
+
+### Step 4 — Filter ตาม Scout Filter Rules VALUE-FIRST (CLAUDE.md — ใช้เกณฑ์นี้เท่านั้น)
+
+**Primary — candidate ต้องผ่านทั้ง A + B + C:**
+- **A. Beaten-down (บังคับ):** ราคาปัจจุบัน **ลง ≥ 30% จาก 52-week high** — ถ้าอยู่ใน 10% ของ 52W high ให้ตกรอบทันที (เว้นแต่ CIO สั่งตรง)
+- **B. Cheap:** FCF yield > 6% **หรือ** EV/EBITDA bottom-third ของ 5Y history **หรือ** P/B < 5Y median (financials)
+- **C. Real business:** ROIC > WACC + ไม่ใช่ secular structural decline industry (linear TV, thermal coal, legacy retail ฯลฯ)
+
+**Secondary (bonus ไม่ใช่ gate):** revenue growth, catalyst ที่มองเห็น (earnings inflection / spin-off / activist / cycle turn / regulatory resolution), insider buying / buyback ที่ราคานี้
+
+**Hard exclusions:**
+- ห้ามซ้ำกับที่ถืออยู่ (`dashboard/portfolio.js`), เคยวิเคราะห์ไปแล้ว, หรืออยู่ใน watchlist ปัจจุบัน (live table + Archive)
+- Sector ซ้ำได้ แต่ **ต้องหมุน mandate** (ห้ามกระจุก sector เดียวหลาย round ติด)
+
+**ทุก candidate ที่ผ่าน → ต้องกำหนด entry zone (price range) + stop ตั้งแต่ scout** (Scout → Analysis SLA — CLAUDE.md)
+
+เลือก 3–6 ตัวที่ผ่าน A+B+C ชัดเจน — ถ้าหาไม่ครบ 3 ตัวที่ผ่าน A+B+C จริง **ให้รายงานว่า "sector นี้ยังไม่มี value ที่ชัดเจน" ดีกว่าฝืนใส่ตัวที่ไม่ผ่าน A**
 
 ---
 
 ### Step 5 — เขียนผลลัพธ์
 
-**5.1 — เพิ่ม row เข้า `## Pending Analysis` table** (ตาม column schema เดิมของไฟล์)
+**5.1 — เพิ่ม row เข้า `## Pending Analysis` table** (ตาม column schema เดิม) — ทุก row ต้องมี **% จาก 52W high, entry zone, stop** (ตาม Scout Filter Rules VALUE-FIRST)
 
-**5.2 — Append `## Scout Report — [DATE] (Max Scout Mode — Round N)` เข้า `## Scout History`** ท้ายไฟล์ — รวม: trigger/portfolio state, market context, screening results table, candidates ที่ตกรอบ + เหตุผล, target analysis date ของแต่ละตัว
+**5.2 — Append `## Scout Report — [DATE] (Max Scout Mode — Round N)` เข้า `## Scout History`** ท้ายไฟล์ — รวม: trigger/portfolio state, market context, sector mandate ของ round นี้ (+ round ก่อนๆ ทำ sector อะไรไปแล้ว), screening results table (มี column "% from 52W high" + FCF yield/EV-EBITDA/P/B), candidates ที่ตกรอบ + เหตุผล (โดยเฉพาะที่ตก filter A), target analysis date
+
+**5.3 — ถ้า Regime = TRANSITIONAL-CAUTIOUS / RISK-OFF** → candidate ที่ conviction preliminary ดู >6.5 + value ชัด → เพิ่มเข้า `portfolio/buy_list.md` ด้วย (pre-analyzed entry zone รอ pullback / regime flip) — ไม่ใช่แค่ Pending Analysis
 
 **5.3 — Git commit + push** (บังคับ — ห้ามปล่อย uncommitted)
 
