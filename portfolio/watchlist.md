@@ -28,6 +28,8 @@
 
 > ⚠️ Charlie SLA: ทุก ticker ในตาราง Re-Analysis Queue ต้องมี target analysis date — ห้าม watchlist เป็น dumping ground
 
+> 🛑 **SCOUT PAUSE (Charlie Strategic Note 2026-09-01):** หยุด scout ใหม่ + full analysis pipeline จนกว่า **Sept FOMC (16–17 ก.ย. 2026)** ที่ Atlas re-call regime. เหตุผล: Regime = TRANSITIONAL-CAUTIOUS → Force Deploy SUSPENDED + ห้าม open new position → วิเคราะห์ตอนนี้ = journaling ที่การันตี NO-DEPLOY (ทำไป 3 ตัวในวันเดียว 2026-09-01: CHYM/ZETA/OSCR ทั้งหมด AVOID). Pending Analysis 33 tickers + VMD (Round 26) **freeze target dates** — ไม่นับเป็น SLA violation ระหว่าง pause. **หลัง FOMC:** Scout Round 27 mandate เปลี่ยนเป็นล่า de-rated sectors (managed care CNC/MOH/ELV, beaten healthcare, energy, rate-sensitive overreactions) — filter บังคับ: ราคาลง ≥30% จาก 52W high + FCF-positive + ROIC>WACC. **ยกเว้น:** CIO สั่งตรงให้วิเคราะห์ ticker ใด (learning objective) ยังทำได้. ดู `agent_notes/charlie/2026-09-01_strategic_note.md`
+
 ---
 
 ## Pending Analysis
