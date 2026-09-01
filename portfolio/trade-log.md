@@ -19,6 +19,8 @@
 | **2026-06-05** | **BUY** | **ACN** | **2.8** | **$178.16** | **$498.85** | **7.17/10** | **Value: Conv 7.17 ≥ 7.0 + MOS +41.6% ≥ 15% | Force Deploy RISK-ON** | **T1 — IT Services AI Consulting. Bookings $22.1B record. Stop $148.** |
 | **2026-06-14** | **BUY** | **ADSK** | **2.4** | **$198.43** | **$476.23** | **7.0/10** | **Value: Conv 7.0 ≥ 7.0 + MOS +31.6% ≥ 15% | Growth: Rev +18.4% > 15% + Reverse DCF 0.71× | RISK-ON 3/4 1.0× | Force Deploy ACTIVE (cash drag fix)** | **T1 (5%) — Design Software Wide Moat (DWG/Revit standard). ราคา drop 13% ($229→$198.43) เพราะ MaintainX M&A concern ไม่ใช่ thesis invalid — Q1 FY27 BEAT (Rev +18.4%, EPS $2.99 vs $2.84, FCF $876M +25% beat) = FCF inflection แข็งขึ้น. Verified ≥2 sources: stockanalysis.com $198.43 + Robinhood/CNN $198.43-198.91 + Investing.com $198.19. Blended FV $290. Stop $158.74 (-20.0%). Deploy แบบมีวินัย — T1 เดี่ยว ไม่ทุ่มก่อน FOMC June 16-17. Regime: RISK-ON 3/4 | Multiplier: 1.0×** |
 | 2026-08-23 | **PARTIAL_SELL (TRIM 30%)** | REGN | 0.18 | $834.04 | $150.13 | — | STRONG SELL Exit Rule, MOS -5.31% (deepening 2 rounds), Max×Charlie consultation, CIO confirmed | Remaining 0.42sh, realized P&L +$41.77 (+38.54%) |
+| 2026-09-01 | **PARTIAL_SELL (TRIM 50%)** | NOW | 1 | $147.99 | $147.99 | 5.83/10 | **Exit Rule TRIM** — Return +65.40% (>50%) AND conviction ล่าสุด 5.83 (<6). Confirmed by MOS -15.1% on FRESH FV $125.65 (fvVerifiedDate 2026-08-24 — NO re-analysis trigger fires, MOS signal real not stale) + Bear Flip #6 fired (MOS stays negative & deepens w/o offsetting catalyst). 0/4 Thesis Invalidation. Max×Charlie reconciled (Charlie Strategic Note 2026-09-01: trim 30–50% lock gain, hold core). Price stockanalysis.com Aug31 close $147.99, cross-check WebSearch $147.70 (0.2% diff). | Remaining 1sh (weight 1.4%). Realized P&L **+$58.52 (+65.40%)** |
+| 2026-09-01 | **PARTIAL_SELL (TRIM 33%)** | RDDT | 1 | $147.81 | $147.81 | 6.67/10 | **Risk-management defensive trim** (Regime TRANSITIONAL-CAUTIOUS → Risk-side rules flexible). Thesis review per RDDT_2026-05-30.md: **0/5 Bear Flip, 0/3 Thesis Invalidation — NOT invalidated** (EU VLOP = DSA content-moderation obligation, not GDPR AI-licensing ban; Google deal not terminated; Rev +61%). Trim rationale: stopDist 4.78% CRITICAL + accumulating negatives not captured by discrete triggers (EU 'Very Large Online Platform' designation 2026-08-31 + ChatGPT citation -86% + Google $60M/yr renewal at risk + insider Form 144) + lowest-conviction position (6.67). Max×Charlie reconciled (Charlie: HOLD core + defensive partial trim = Max's call). Price stockanalysis.com Aug31 close $147.81, cross-check FinancialContent $148.08 (0.2% diff). Emma FV re-verify commissioned (URGENT). | Remaining 2sh (weight 2.81%), stop held $140.75. Realized P&L **-$28.13 (-15.99%)** |
 
 ---
 
@@ -37,11 +39,11 @@
 
 | Metric | ค่า |
 |--------|-----|
-| Total Trades | 12 |
+| Total Trades | 15 |
 | BUY trades | 10 |
-| SELL trades | 2 (1 AUTO-SELL, 1 partial TRIM) |
-| Realized P&L (this table, historical snapshot) | See "Realized P&L Log" below — updated through 2026-08-23 TRIM entries |
-| Note | Table stats below last refreshed post-ADSK deploy (2026-06-14) — see positions.md / dashboard/portfolio.js for live current totals (Cash $6,282.47, Invested $4,009.25 as of 2026-08-23) |
+| SELL trades | 5 (1 AUTO-SELL, 4 partial TRIM: ACN/REGN/NOW/RDDT) |
+| Realized P&L (this table, historical snapshot) | See "Realized P&L Log" below — updated through 2026-09-01 TRIM entries (NOW +$58.52, RDDT -$28.13; session net +$30.39) |
+| Note | Table stats below last refreshed post-ADSK deploy (2026-06-14) — see positions.md / dashboard/portfolio.js for live current totals (Cash $6,578.27, Invested $3,948.48 as of 2026-09-01) |
 
 ---
 
@@ -52,5 +54,7 @@
 | INTU | 2026-05-16 | 2026-05-21 | $445.00 | $321.50 | 0.67 | **-$83.98** | **-27.84%** | 5 |
 | ACN (TRIM 50%) | 2026-06-05 | 2026-06-22 | $178.16 | $127.98 | 1.4 | **-$70.25** | **-28.17%** | 17 |
 | REGN (TRIM 30%) | 2026-06-03 | 2026-08-23 | $602.00 | $834.04 | 0.18 | **+$41.77** | **+38.54%** | 81 |
+| NOW (TRIM 50%) | 2026-05-11 | 2026-09-01 | $89.47 | $147.99 | 1 | **+$58.52** | **+65.40%** | 113 |
+| RDDT (TRIM 33%) | 2026-05-30 | 2026-09-01 | $175.94 | $147.81 | 1 | **-$28.13** | **-15.99%** | 94 |
 
 ---
