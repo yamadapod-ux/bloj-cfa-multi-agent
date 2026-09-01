@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-09-01 15:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-09-01 18:00";
 
 const SECTOR_VIEWS = [
   {
@@ -355,5 +355,45 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-09-01",
     author: "Atlas",
     trigger: "Byproduct of ZETA Phase 1 Macro Brief — first sector-level view on adtech/martech (secular growth decelerating + constrained/consolidating budget pool + retail-media crowding-out + Fed-hawkish multiple compression), applies beyond ZETA to TTD/CRTO/APP/BRZE",
+  },
+  {
+    sector: "ACA Marketplace / Managed Care",
+    slug: "aca-marketplace-managed-care",
+    stance: "NEGATIVE",
+    cyclePosition: "Policy-driven downturn / late-cycle (trough unconfirmed)",
+    headline: "The demand driver already lapsed — enhanced ACA subsidies expired Jan 1 2026, Congress is stalled, marketplace enrollment is falling 20%+ and every major peer is posting net losses on a sector-wide medical-cost blowout — a two-directional binary catalyst, not a place for new aggressive-growth capital",
+    thesis: "การวิเคราะห์ OSCR (Oscar Health, 2026-09-01) เปิดเผยมุมมองระดับ sub-sector ที่กว้างกว่าตัวหุ้น — US ACA marketplace / managed care (OSCR, CNC, MOH, ELV, ALHC) กำลังเจอ 4 แรงพร้อมกัน: (1) **Subsidy cliff เกิดขึ้นแล้ว ไม่ใช่ความเสี่ยงอนาคต:** enhanced premium tax credits (ARPA/IRA-era) หมดอายุจริง 1 ม.ค. 2026. Senate S.3385 (ต่อถึง 2028) ล้มเดือน ธ.ค. 2025 (ไม่ถึง 60 เสียง). House ผ่านร่างต่ออายุ 3 ปี 230–196 เมื่อ 8–9 ม.ค. 2026 แต่สมาชิกยอมรับเองว่า 'likely to fail in the Senate'. compromise ที่ยังมีชีวิตคือ CARE Act (Moreno R-OH + Collins R-ME) — ต่อ 2 ปี + income cap ~$200K/700% FPL + minimum premium ~$25/เดือน (ลบล้าง $0-premium plans) + CSR funding — ณ กลางปี 2026 ยัง stalled, แรงผลักเดียวคือ midterm พ.ย. 2026. (2) **Enrollment กำลังหด:** ACA effectuated enrollment 22.3M (2025) → คาด ~16.5–17.5M (2026, KFF) = −21% ถึง −26% แล้วสำหรับปีนี้; avg subsidized premium payment +114% ($888→$1,904/ปี); CBO คาด benchmark premium +7.7% เพิ่มปี 2027; ~4M คนจะกลายเป็น uninsured. analyst คาด marketplace decline อีก 10–20% สำหรับ 2027 จากฐานที่ลดแล้ว. (3) **MLR blowout ทั้ง sector:** Q2 2026 earnings ตอกย้ำ margin compression พร้อมกัน — ELV Health Benefits op margin 5.0%→3.6% YoY (หุ้น −6.7%, จุดชนวน selloff ทั้งกลุ่ม), MOH −9% premarket, CNC/MOH TTM net margin ติดลบ. สาเหตุ: Medicaid redetermination (เริ่ม เม.ย. 2023) ผลักคนเข้า ACA pool ที่ morbidity สูง + effectuation ต่ำ → market-wide medical cost trend spike; GLP-1 cost surge; lagging Medicaid rates. Healthcare = sole S&P 500 sector ที่ earnings หด YoY ใน Q2 2026 (−18.2%, FactSet). (4) **Medicare Advantage reimbursement pressure:** almost-flat MA rate proposal กด CNC/MOH/ELV เพิ่ม (Morningstar — 'managed care stocks plunge'). ทีมให้ stance NEGATIVE (ไม่ใช่ CAUTIOUS) สำหรับการ deploy เงินใหม่เข้า sub-sector นี้ เพราะ demand driver หลัก lapsed แล้ว + Congress stalled + ทุก peer ขาดทุน + regime = TRANSITIONAL-CAUTIOUS — แต่ยอมรับว่าเป็น **two-directional binary**: ถ้า CARE Act หรือ compromise ใดผ่านก่อน 2027 open enrollment (พ.ย. 2026) + valuations ที่ washed out (CNC <1x book, MOH net loss) → snap-back rally เป็นไปได้แรง. company-specific execution แยกจาก sub-sector call: OSCR เป็น positive outlier (Q2 2026 MLR 79.2% vs 91.1% YoY, swung to GAAP profit, ยก FY2026 earnings-from-ops guide $500–700M) เพราะ re-priced ก่อน peers — แต่ pure-play ACA (98% net premium, ไม่มี Medicaid/MA buffer) = binary exposure สูงสุดในกลุ่ม, beta 2.38. selective เฉพาะชื่อที่มี balance-sheet strength + pricing discipline + real MOS บน normalized (ไม่ใช่ favorable-MLR-year) earnings — และเฉพาะเมื่อ regime กลับเป็น RISK-ON.",
+    keyPoints: [
+      "Subsidy cliff เกิดแล้ว: enhanced PTCs หมดอายุ 1 ม.ค. 2026; Senate S.3385 ล้ม ธ.ค. 2025; House 3-yr ext (ม.ค. 2026, 230–196) 'likely to fail in Senate'; CARE Act 2-yr compromise (700% FPL cap + $25 min premium) stalled mid-2026",
+      "Enrollment หด: ACA effectuated 22.3M (2025) → ~16.5–17.5M (2026F, KFF) = −21–26%; subsidized premium payment +114%; CBO benchmark premium +7.7% เพิ่มปี 2027; analyst คาด marketplace −10–20% เพิ่มปี 2027",
+      "MLR blowout sector-wide Q2 2026: ELV Health Benefits op margin 5.0%→3.6% YoY (จุดชนวน selloff), MOH −9% premarket, CNC/MOH TTM net loss; ต้นเหตุ Medicaid-redetermination morbidity spike + GLP-1 cost + lagging Medicaid rates",
+      "Healthcare = sole S&P 500 sector ที่ earnings หด YoY ใน Q2 2026 (−18.2%, FactSet); MA almost-flat rate proposal กด CNC/MOH/ELV เพิ่ม",
+      "Two-directional binary: CARE Act / compromise ผ่านก่อน พ.ย. 2026 open enrollment + washed-out valuations (CNC <1x book) → snap-back rally เป็นไปได้แรง — จึงไม่ใช่ structural short",
+      "OSCR = positive outlier (Q2 2026 MLR 79.2% vs 91.1% YoY, GAAP profit, FY2026 earnings-from-ops guide $500–700M) เพราะ re-priced ก่อน peers — แต่ pure-play ACA, ไม่มี Medicaid/MA buffer, beta 2.38 = binary exposure สูงสุด",
+    ],
+    metrics: [
+      { label: "ACA marketplace enrollment 2025 (M)", value: 22.3 },
+      { label: "ACA marketplace enrollment 2026F (M, KFF)", value: 17.5 },
+      { label: "Avg subsidized premium payment increase 2026 (%)", value: 114 },
+      { label: "CBO benchmark premium increase 2027F additional (%)", value: 7.7 },
+    ],
+    relatedTickers: ["OSCR", "CNC", "MOH", "ELV", "ALHC"],
+    sources: [
+      { title: "ASTHO — ACA Enhanced Premium Tax Credits: Legislative Developments in 2025 and 2026", url: "https://www.astho.org/communications/blog/2026/aca-enhanced-premium-tax-credits-legislative-developments-2025-2026/" },
+      { title: "HMP — House Passes Bill to Extend ACA Premium Tax Credits", url: "https://www.hmpgloballearningnetwork.com/site/frmc/news/house-passes-bill-extend-aca-premium-tax-credits" },
+      { title: "Robertson Stephens — ACA Premium Relief in 2026 (CARE Act: Moreno/Collins, $200K/700% FPL cap, $25 minimum premium)", url: "https://rscapital.com/2026/01/12/will-aca-plan-enrollees-see-premium-relief-soon/" },
+      { title: "KFF — ACA Marketplace Premium Payments Would More than Double if Enhanced Premium Tax Credits Expire", url: "https://www.kff.org/affordable-care-act/aca-marketplace-premium-payments-would-more-than-double-on-average-next-year-if-enhanced-premium-tax-credits-expire/" },
+      { title: "KFF — What We Know So Far About 2026 ACA Marketplace Enrollment, Premiums, and Deductibles", url: "https://www.kff.org/affordable-care-act/what-we-know-so-far-about-2026-aca-marketplace-enrollment-premiums-and-deductibles/" },
+      { title: "Peterson-KFF — How much and why ACA Marketplace premiums are going up in 2027", url: "https://www.healthsystemtracker.org/brief/how-much-and-why-aca-marketplace-premiums-are-going-up-in-2027/" },
+      { title: "Modern Healthcare — Centene, Molina, Elevance face unexpected ACA market pressures", url: "https://www.modernhealthcare.com/insurance/mh-centene-molina-elevance-aca-market/" },
+      { title: "Yahoo Finance — Insurance stocks fall after Elevance Health results show margin pressure", url: "https://finance.yahoo.com/healthcare/articles/insurance-stocks-fall-elevance-health-112121271.html" },
+      { title: "Morningstar — Managed Care Stocks Plunge Following Almost-Flat Medicare Rate Proposal", url: "https://www.morningstar.com/markets/healthcare-managed-care-stocks-plunge-following-almost-flat-medicare-rate-proposal" },
+      { title: "Fierce Healthcare — Oscar Health hikes 2026 guidance after strong Q2 (MLR 79.2%, FY26 earnings-from-ops $500–700M)", url: "https://www.fiercehealthcare.com/finance/oscar-health-boosts-2026-earnings-outlook-after-record-profitability-during-first-half-year" },
+      { title: "SEC 10-Q Oscar Health oscr-20260630 (MLR, risk-adjustment payable $4.94B)", url: "https://www.sec.gov/Archives/edgar/data/0001568651/000156865126000069/oscr-20260630.htm" },
+      { title: "Remodel Health — As Enhanced ACA Tax Credits Expire, ICHRA May Emerge as an Individual Market Stabilizer", url: "https://remodelhealth.com/blog/as-enhanced-tax-credits-sunset-ichra-may-become-market-stabilizer" },
+    ],
+    lastUpdated: "2026-09-01",
+    author: "Atlas",
+    trigger: "Byproduct of OSCR Phase 1 Macro Brief — first sector-level view on ACA marketplace / managed care (subsidy cliff already lapsed + Congress stalled + enrollment declining 20%+ + sector-wide MLR blowout + MA rate pressure), applies beyond OSCR to CNC/MOH/ELV/ALHC",
   },
 ];
