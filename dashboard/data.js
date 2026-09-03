@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-09-01";
+const LAST_UPDATED = "2026-09-03";
 
 const REPORTS = [
 
@@ -15745,98 +15745,656 @@ ALAB คือ pure-play CXL/PCIe connectivity สำหรับ AI data center
   {
     ticker: "RDDT",
     company: "Reddit, Inc.",
-    date: "2026-05-30",
-    version: "v1 + Lightweight FV Re-Verify 2026-09-01 (Emma solo — Re-Analysis Trigger #1: Q2 2026 earnings + EU VLOP designation)",
+    date: "2026-09-03",
+    version: "v3 Full Re-Analysis Pipeline (Atlas→Emma∥Quinn→Bear→Morgan) — escalated from 2026-09-01 lightweight per Re-Analysis Trigger Rule; original 2026-05-30",
     sector: "Communication Services / Social Media",
-    price: 175.94,
-    priceUpdated: "2026-08-31 close $147.81 (position — Portfolio Review 2026-09-01)",
-    recommendation: "HOLD (No Add — bias to exit) — จาก BUY หลัง 2026-09-01 lightweight re-verify",
-    blendedFV: 159.25,
-    blendedFVNote: "Lightweight (2026-09-01): Emma FV $140 → $115 (−17.9%; NOPAT-based FCFF แทน reported-FCF-margin + TGR 4.0%→3.0% cap + beta 1.70→2.03 → WACC 13.5% + 2 headwind ใหม่: EU DSA/VLOP compliance+6%-revenue-fine tail, ChatGPT citation −86%). Blended = Emma $115×0.40 + Quinn $248.50×0.30 + Bear $129×0.30 = $159.25 — ⚠️ Quinn/Bear STALE หนัก (pre-inflection / pre-ChatGPT / pre-DSA). **Full re-analysis (Atlas→Emma∥Quinn→Bear→Morgan) REQUIRED ถ้า RDDT ยังถูกถือหลัง Sept FOMC.** Emma standalone FV $115 → MOS @ $147.81 = −22.2%",
-    esgAdjFV: 149.50,
-    targetBull: 165.00,
-    targetBase: 111.00,
+    price: 158.10,
+    priceUpdated: "2026-09-02 close $158.10 (Yahoo Finance + StockAnalysis.com, +9.31% single-day pop on S&P 500 index-inclusion flow, effective 2026-08-18)",
+    recommendation: "SELL — Exit remaining 2 shares (recommendation, pending Max×Charlie consultation before execution)",
+    blendedFV: 103.49,
+    blendedFVNote: "Full re-analysis (2026-09-03): Emma $118×40% + Quinn $100.62×30% + Bear $87×30% = $103.49. Blended FV path: $169.25 (05-30) → $159.25 (09-01 lightweight, Quinn/Bear stale) → $103.49 (09-03 full, all 3 inputs fresh). Emma↔Quinn reconciliation gap 12.5-14.3% (pure-DCF-to-DCF 8.5%) — below 25% mandatory-reconciliation threshold, DCF Cash Flow Consistency Rule confirmed working.",
+    esgAdjFV: 97.28,
+    targetBull: 174.00,
+    targetBase: 103.49,
     stopLoss: 140.75,
-    convictionEmma: 7,
-    convictionQuinn: 7,
-    convictionBear: 6,
+    convictionEmma: 6.0,
+    convictionQuinn: 7.0,
+    convictionBear: 7.0,
     convictionAvg: 6.67,
-    convictionNote: "2026-09-01 lightweight: Emma flag conviction เสี่ยงหลุด 6.5 Growth gate (2 headwind ใหม่ + Google $60M deal ยังไม่ renew) — ยังไม่ formal re-score (lightweight ไม่รวม Quinn/Bear re-run)",
-    mosPct: 7.7,
-    mosPctNote: "@ $147.81 vs lightweight Blended $159.25 = +7.7% (ลดจาก +14.5% ที่ FV เก่า $169.25). vs Emma standalone $115 = −22.2%. Growth MOS framework: EV/TTM-rev ~8.9× = 15–25th pctile ของ 5Y range (de-rate จาก 12.6×), reverse-DCF ~1.17× borderline <1.2× → ยังผ่าน Growth MOS gate เชิงเทคนิค",
-    pwEV: 248.50,
-    fvVerifiedDate: "2026-09-01 (Emma lightweight — Quinn/Bear ยัง 2026-05-30, ต้อง full re-analysis หลัง Sept FOMC)",
+    convictionNote: "Emma 6.0 (fundamentals strong but flat vs 09-01; MOS deepened; Reverse-DCF gate now fails) / Quinn 7.0 (every quant metric negative — MOS, Kelly, Sharpe all negative) / Bear 7.0 (deepest MOS −45.0%; challenges beta-reversion assumption, still concurs EXIT). Anti-Convergence Protocol NOT formally triggered (max conviction 7.0 < 8 threshold) — soft observation logged for Vera's quarterly review (shared blind spots: EU DSA algorithmic-audit growth risk, S&P permanent-ownership benefit under-modeled).",
+    mosPct: -34.5,
+    mosPctNote: "MOS at $158.10 vs Blended FV $103.49 = −34.5% — deepest negative MOS since position opened 2026-05-30. Emma standalone −25.4%, Quinn −36.4%, Bear −45.0%. Growth MOS Gate degraded from double-pass (05-30) → single-leg-pass borderline (09-01) → single-leg-pass only (09-03): Multiple Percentile PASS (~10-15th pctile) but Reverse DCF FAILS (1.43× > 1.2× cap).",
+    pwEV: 100.62,
+    fvVerifiedDate: "2026-09-03",
     beta: 2.03,
-    sharpe1Y: 0.335,
-    maxDrawdown: -0.65,
+    sharpe1Y: -0.335,
+    maxDrawdown: -0.441,
     moat: "Narrow+",
-    esgRating: "Medium",
-    esgScore: 6.0,
-    entryZoneLow: 155.00,
-    entryZoneHigh: 178.00,
-    maxPositionPct: 8,
+    esgRating: "Medium-High",
+    esgScore: 5.7,
+    entryZoneLow: null,
+    entryZoneHigh: null,
+    maxPositionPct: 0,
     bucket: "Growth",
-    macroRegime: "RISK-ON",
-    sp500Ref: 7591.42,
-    wacc: 13.5,
-    revenueGrowthTTM: 70.6,
+    macroRegime: "TRANSITIONAL-CAUTIOUS",
+    sp500Ref: 7666.60,
+    wacc: 13.24,
+    revenueGrowthTTM: 66.6,
     grossMarginPct: 91.4,
-    fcfYieldPct: 2.57,
-    roic: 56.7,
-    reportFile: "reports/RDDT_2026-05-30.md",
-    businessSummary: "Reddit เป็น social media platform 126.8M DAUq ใน 100,000+ niche communities. รายได้หลัก digital advertising 94% + AI data licensing 6% (high-growth). Revenue +69% YoY Q1 2026. Debt-free $2.77B net cash. ROIC 56.7% asset-light.",
+    fcfYieldPct: 3.35,
+    roic: 23.80,
+    reportFile: "../reports/RDDT_2026-05-30.md",
+    businessSummary: "Reddit เป็น social media platform 130.3M DAU (Q2 2026, +18% YoY) ใน 100,000+ niche communities รายได้หลักจาก digital advertising ~94-97% + AI data licensing ~3-6% (swing factor, Google $60M/yr deal ยัง unresolved). Business ยัง execute ได้ดีมาก (8 ไตรมาสติดที่ revenue growth >60% YoY) แต่ราคาวิ่งนำหน้า fundamental value ไปมากหลัง S&P 500 index-inclusion flow (+9.31% ในวันเดียว) — non-fundamental catalyst ที่ทำให้ MOS ติดลบลึกที่สุดนับตั้งแต่เปิด position.",
     thesisBullets: [
-      "Revenue +69% YoY accelerating — Q2 2026 guided +72% ($715-725M)",
-      "AI data licensing = irreplicable 18-year UGC corpus; Google $60M/yr to $400M/yr potential by 2027",
-      "ARPU $5.23 growing +45% YoY with massive gap to META $40+ = long monetization runway",
-      "Debt-free $2.77B net cash (8.2% of market cap); no dilution risk",
-      "Growth MOS both tests pass: Reverse DCF 1.03x + 55-60th pct multiple percentile"
+      "Revenue +61.1% YoY Q2 2026 (beat consensus); 8 ไตรมาสติดที่ growth >60% YoY — fundamentals ยังแข็งแกร่งมาก",
+      "แต่ราคาวิ่งนำ Blended FV มากจาก S&P 500 index-inclusion flow (non-fundamental, largely one-time)",
+      "ทีมทั้ง 3 คน (Emma/Quinn/Bear) วิเคราะห์อิสระด้วย NOPAT-based FCFF methodology เดียวกัน แล้ว converge ว่า MOS −34.5% ลึกมาก",
+      "0/9 Bear Flip Triggers, 0/3 Thesis Invalidation ยิง — นี่คือ valuation-driven exit ไม่ใช่ thesis-broken exit",
+      "Growth MOS gate เสื่อมลงจาก double-pass → single-leg-pass เท่านั้น (Reverse DCF FAIL 1.43×)"
     ],
     esgBreakdown: {
       environmental: 7,
-      social: 5,
+      social: 4,
       governance: 6,
-      overall: 6.0,
-      keyRisk: "Content moderation at scale; AI data ethics (user consent for training); dual-class governance Huffman control"
+      overall: 5.7,
+      keyRisk: "EU DSA/VLOP designation confirmed (Aug 31, 2026, deadline ~Jan 2027, fine ceiling 6% global revenue) — ล้ำสุดคือ potential growth-rate impact จาก mandated algorithmic-audit changes ที่ยังไม่มีใคร model เต็มรูปแบบ"
     },
     revenueSegments: [
-      { label: "Advertising", value: 94 },
-      { label: "AI Data Licensing & Other", value: 6 }
+      { label: "Advertising", value: 95 },
+      { label: "AI Data Licensing & Other", value: 5 }
     ],
     competitorData: [
-      { ticker: "RDDT", company: "Reddit", evRev: 12.6, revGrowth: 69, grossMargin: 91.4, arpu: 5.23, moat: "Narrow+" },
-      { ticker: "SNAP", company: "Snap", evRev: 4.0, revGrowth: 11, grossMargin: 52, arpu: 2.50, moat: "Narrow" },
-      { ticker: "PINS", company: "Pinterest", evRev: 5.0, revGrowth: 17, grossMargin: 80, arpu: 1.73, moat: "Narrow" },
-      { ticker: "META", company: "Meta Platforms", evRev: 7.5, revGrowth: 33, grossMargin: 82, arpu: 40.0, moat: "Wide" }
+      { ticker: "RDDT", company: "Reddit", revenueGrowth: 66.6, operatingMargin: 28.8, marketCap: 30.42 },
+      { ticker: "SNAP", company: "Snap", revenueGrowth: 12.6, operatingMargin: 2, marketCap: 15.0 },
+      { ticker: "PINS", company: "Pinterest", revenueGrowth: 16.6, operatingMargin: 12, marketCap: 25.0 },
+      { ticker: "META", company: "Meta Platforms", revenueGrowth: 27.7, operatingMargin: 42, marketCap: 1900 },
+      { ticker: "GOOGL", company: "Alphabet", revenueGrowth: 20.1, operatingMargin: 34, marketCap: 2400 }
     ],
     geographyRevenue: [
-      { region: "United States", pct: 77, note: "Primary ARPU market" },
-      { region: "International", pct: 23, note: "Growing faster, lower ARPU — expansion opportunity" }
+      { region: "United States", pct: 77, note: "Primary ARPU market (not refreshed 09-03, carried forward from FY2025 10-K)" },
+      { region: "International", pct: 23, note: "รวม EU sub-segment ที่มี DSA/VLOP regulatory tail risk ใหม่" }
     ],
     bullFlipTriggers: [
-      "AI licensing revenue crosses $200M/year — data moat commercial validation",
-      "ARPU reaches $8+ in 2 consecutive quarters — monetization gap closing",
-      "Meta Forum DAU less than 10M after 12 months — community moat validated",
-      "Google data deal renewal at $100M+ (2027) — licensing moat strengthens",
-      "International ARPU reaches $3+ by FY2027 — TAM expansion confirmed"
+      "Google data-licensing deal renews at ≥$100M/yr — confirms and re-prices the data moat",
+      "Reverse-DCF test re-passes (price pulls back toward ~$130-140 without fundamental deterioration)",
+      "ChatGPT citation share recovers materially within 1-2 quarters, repeating Sept-2025 precedent",
+      "Perplexity relationship formalizes into a paid-licensing deal (adds 2nd AI-licensing revenue stream)",
+      "Reddit passes EU VLOP audit with minimal disruption — becomes a positive trust/safety case study"
     ],
     bearFlipTriggers: [
-      "DAU growth falls below 10% YoY for 2 consecutive quarters",
-      "ARPU growth slows below 20% YoY",
-      "Google AI Overview measurably reduces Reddit traffic by more than 15%",
-      "Meta Forum DAU exceeds 50M within 18 months of launch",
-      "Q3 2026 revenue misses guidance by more than 5%"
+      "Google terminates the AI-licensing deal outright — removes swing-factor upside, caps Bull-case credibility",
+      "Q3 2026 revenue misses the $860-870M guidance by >5%",
+      "EU DSA compliance cost disclosure comes in materially above ~$20-40M/yr already modeled, or enforcement targets recommendation algorithm",
+      "ChatGPT citation loss proves structural (does not repeat the Sept-2025 recovery pattern)",
+      "Meta Forum DAU exceeds 50M within 18 months of May 2026 launch"
     ],
     thesisInvalidation: [
-      "Google terminates data deal AND DAU growth below 10% simultaneously",
-      "Revenue growth below 20% YoY AND EBITDA margin below 25% convergence",
-      "EU GDPR enforcement action banning AI data licensing"
+      "Google terminates data deal AND DAU growth <10% YoY — NOT triggered (deal not terminated; DAU +18%)",
+      "Revenue growth <20% YoY + EBITDA margin <25% — NOT triggered (revenue +61% YoY; op margin ~28.8%)",
+      "EU enforcement action bans AI-data licensing outright — NOT triggered (VLOP designation ≠ ban; obligations not yet in effect until ~Jan 2027)"
     ],
-    keyThesis: "Reddit emerging as AI data infrastructure company with irreplicable 18-year UGC corpus. Revenue +69% YoY. ARPU $5.23 growing 45% YoY. AI licensing $60M/yr to $400M/yr potential. Growth MOS both tests pass at $175.94.",
-    topRisk: "Meta Forum app launched May 2026 with 3B+ MAU distribution. Google double-dependency (traffic referral 25-30% + data deal). Bear FV $129. One year GAAP profit history.",
-    entryZone: "$155-178 (T1 5% immediate) / $145-160 (T2 3% after Meta Forum assessment or AI licensing $200M+)",
-    positionSize: "8% max (RISK-ON 1.0x; T1 5% = ~3 shares at $175.94; T2 3% conditional)",
-    fullContent: "## RDDT - Reddit, Inc. | BUY Growth Bucket\n### Blended FV $169.25 (Emma $140x40% + Quinn $248.50x30% + Bear $129x30%)\n### MOS -3.8% (Growth MOS gates BOTH pass) | Conviction 6.67/10\n\n## Analysis: 2026-05-30 | Price: $175.94 | Stop: $140.75 (-20%)\n## Entry Zone: $155-178 | Target: $226 (base) / $317 (bull)\n\n## Bull Thesis:\n1. Revenue +69% YoY accelerating; Q2 guided +72%\n2. AI data licensing = irreplicable 18-year corpus; $400M/yr potential\n3. ARPU $5.23 massive gap to META $40+ = long runway\n4. Debt-free $2.77B net cash; ROIC 56.7%\n\n## Bear Case:\n1. Meta Forum launched May 2026 with 3B MAU distribution\n2. Google double-dependency (traffic + data deal both at risk)\n3. Only 1 year GAAP profit history\n4. Bear FV $129\n\n## Sensitivity Matrix (Revenue Growth x EV/Rev Exit):\n15% growth, 7x = $96 | 30% growth, 11x = $226 (base)\n40% growth, 13x = $328 | 55% growth, 15x = $481\n44% of 25 scenarios justify current price\n\nSource: reports/RDDT_2026-05-30.md"
+    keyThesis: "Full re-analysis (09-03): business fundamentals ยังแข็งแกร่ง (8Q >60% YoY growth) แต่ราคา $158.10 วิ่งนำ Blended FV $103.49 ไปไกลมากหลัง S&P 500 index-inclusion flow — MOS −34.5%, ทีมทั้ง 3 คน converge อิสระบน EXIT. 0/9 Bear Flip + 0/3 Invalidation ยิง = valuation-driven exit ไม่ใช่ thesis-broken exit.",
+    topRisk: "Beta mean-reversion assumption ยัง unproven (in-session IV/HV แสดง vol กำลังขึ้น ไม่ใช่ลดลงตามสมมติฐาน); EU DSA algorithmic-audit growth-rate risk ที่ไม่มีใคร model; Google $60M/yr deal ยัง unresolved binary. Bear P-W FV −45.0% MOS, Extreme Bear tail −71.7% ($44.68) หาก ChatGPT loss structural + Google terminates.",
+    entryZone: "N/A — SELL recommendation, no re-entry zone applicable at this valuation",
+    positionSize: "0% target (exit remaining 2 shares, ~2.8% current weight, ~$316) — pending Max×Charlie consultation",
+    fullContent: `# 🔴 RDDT — Reddit, Inc.
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+**Bucket:** Growth (~60% allocation)
+
+---
+
+## 🔄 Update Log
+
+| วันที่ | ประเภท | สิ่งที่เปลี่ยน |
+|--------|--------|---------------|
+| **2026-09-03** | **Full Re-Analysis Pipeline (Atlas → Emma ∥ Quinn → Bear → Morgan) — escalated from lightweight** | **Trigger:** Charlie's 2026-09-01 flag — "full re-analysis REQUIRED if held past Sept FOMC" — CIO instructed proceed now (2 wks before Sept 16-17 FOMC) because Quinn/Bear inputs were still STALE from 2026-05-30 and stopDist was CRITICAL at time of flag. **Atlas:** Regime = TRANSITIONAL-CAUTIOUS (unchanged, judgment override — 3/4 indicators RISK-ON but Fed hawkish 66% hike odds + US-Iran/Hormuz escalation override). Price verified **$158.10** (Sept 2, 2026 close, Yahoo Finance + StockAnalysis.com, +9.31% single-day pop) — driven by **S&P 500 index-inclusion flow (effective Aug 18, 2026)**, a NEW catalyst never modeled in any prior version of this report. **Emma full DCF re-run** (NOPAT-based FCFF, same basis as 09-01 lightweight, refreshed with verified Rf 4.79% + verified net cash $2,765M vs prior $3.7B assumption): **FV $118** (+2.6% vs lightweight $115 — fundamentals essentially flat), conviction **6.0/10**, MOS **−25.4%**, recommends **EXIT**. **Quinn full quant re-run** (first full-pipeline input since 05-30 — was stale at $248.50): **P-W EV $100.62** (−59.5% vs stale figure — driven mainly by the mandatory NOPAT-based methodology fix + 2 new unmodeled risks + higher verified beta 2.03), conviction **7.0/10**, MOS **−36.4%**, Kelly Criterion **−59.7%** (optimal long allocation = 0%), Forward Sharpe **−0.335**, concurs EXIT/no-add. Emma↔Quinn reconciliation gap 12.5–14.3% (pure-DCF-to-DCF only 8.5% apart) — well under 25% mandatory-reconciliation threshold, Consistency Rule working as intended. **Bear full downside challenge** (first full-pipeline input since 05-30 — was stale at $129): **P-W FV $87** (deepest MOS **−45.0%**), conviction **7.0/10** — challenges Emma/Quinn's beta mean-reversion credit as an *unproven* assumption (in-session IV/vol data shows vol rising, not falling, post-S&P-inclusion), flags Emma's ChatGPT-citation probability de-risking (30%→28%) as possible recency bias, and identifies a shared blind spot across all 3 analysts (EU DSA algorithmic-audit risk is a *growth-rate* risk, not just a margin-drag risk, and nobody modeled it) — still concurs **EXIT**. **0/9 Bear Flip Triggers fired, 0/3 Thesis Invalidation conditions fired** — team unanimously confirms this is a **valuation-driven exit** (price ran ahead of fundamentals on a non-fundamental index-flow catalyst), **NOT a thesis-broken exit**. **Blended FV: $169.25 (05-30) → $159.25 (09-01 lightweight, Quinn/Bear stale) → $103.49 (09-03 full, all 3 inputs fresh)** = Emma $118×40% + Quinn $100.62×30% + Bear $87×30% (CLAUDE.md 40/30/30 weight — unchanged from May report). **MOS at $158.10 = −34.5%** (deepest since position opened 2026-05-30). **Recommendation: BUY (05-30) → HOLD/No-Add/bias-to-exit (09-01) → SELL — Exit remaining 2 shares (09-03)**, subject to Max Consultation Rule (Charlie concurs with unanimous 3/3 analyst consensus before Max executes). Growth MOS gate degraded to single-leg pass only (Reverse DCF now **fails** at 1.43× vs 1.2× cap — was borderline-pass at 1.17× on 09-01; Multiple Percentile still passes comfortably, ~10-15th percentile of 5Y range). ESG Overall 6.0→**5.7/10** (Social dimension downgraded 5→4 on confirmed, dated EU DSA/VLOP compliance deadline ~Jan 2027). Full detail: \`agent_notes/emma/2026-09-03_RDDT.md\`, \`agent_notes/quinn/2026-09-03_RDDT.md\`, \`agent_notes/bear/2026-09-03_RDDT.md\`, \`agent_notes/atlas/2026-09-03_regime.md\`, \`agent_notes/atlas/2026-09-03_RDDT_data.md\` |
+| **2026-09-01** | **Lightweight FV Re-Verify (Emma solo — Re-Analysis Trigger #1)** | **Trigger:** Q2 2026 earnings (7/30, beat ทุกตัว — Rev $804.9M +61%, EPS $1.25, ARPU +36%) + **EU "Very Large Online Platform" (DSA) designation 8/31** ยังไม่เคย model. FV เดิม $169.25 อายุ 94 วัน. **ผล:** ธุรกิจดีขึ้นจริง (breakeven → op margin TTM 28.25%, FCF TTM $1,019M, Q3 guide +47–49% / 45% EBITDA margin) **แต่ Emma FV ลดจาก $140 → $115 (−17.9%)** จาก (1) methodology fix — NOPAT-based FCFF แทน reported-FCF-margin (DCF Cash Flow Consistency Rule ยิง: SBC TTM $338M = 12.2% rev) + TGR cap 4.0%→3.0% + beta 1.70→2.03 (WACC 13.5%) (2) 2 headwind ใหม่จริง — EU DSA/VLOP (compliance cost + 6%-of-global-revenue fine tail, comply ภายใน ธ.ค. 2026) + ChatGPT Search citation −86% (robots.txt block กระทบ referral traffic + core info-seeking use case) + Google $60M/yr AI-licensing deal ยังไม่ renew. **Blended FV (lightweight — Emma updated เท่านั้น): $169.25 → $159.25** (Emma $115×0.40 + Quinn $248.50×0.30 + Bear $129×0.30) — ⚠️ **Quinn/Bear FVs STALE หนัก** (pre-inflection / pre-ChatGPT / pre-DSA). MOS @ $147.81: **+7.7%** (จาก +14.5%). Emma standalone $115 → MOS −22.2%. Growth MOS framework: EV/TTM-rev ~8.9× = 15–25th pctile 5Y range, reverse-DCF ~1.17× borderline → ยังผ่าน Growth MOS gate เชิงเทคนิค. **Rating: BUY → HOLD (No Add — bias to exit).** Position trimmed 33% (3→2 sh) ใน Portfolio Review 2026-09-01 — Emma's re-verify VALIDATES การ trim (FV ต่ำกว่าที่ Max ใช้ตอนนั้น). **Escalation:** Charlie ตัดสิน **ไม่ escalate เป็น full pipeline ตอนนี้** (position = 2 sh residual weight ~2.8%, session-limit risk, Sept FOMC ใกล้) — **full re-analysis (Atlas→Emma∥Quinn→Bear→Morgan) REQUIRED ถ้ายังถือหลัง Sept FOMC** → **ดำเนินการแล้วด้านบน (09-03)**. ดู \`agent_notes/emma/2026-09-01_RDDT.md\` |
+
+---
+
+## 📌 ข้อมูลหลัก
+
+| Field | ค่า | Source |
+|-------|-----|--------|
+| **Ticker** | RDDT | NYSE |
+| **วันที่วิเคราะห์ล่าสุด** | 2026-09-03 (full re-analysis; original 2026-05-30) | — |
+| **ราคา (2026-09-03 update)** | $158.10 | Yahoo Finance + StockAnalysis.com, Sept 2, 2026 close (≥2 sources) |
+| **ราคาวิเคราะห์เดิม (05-30)** | $175.94 | StockAnalysis.com, 2026-05-29 |
+| **Market Cap** | $30.42B | Yahoo Finance / StockAnalysis.com × 192.4M shares |
+| **Sector** | Communication Services / Social Media | — |
+| **Shares Outstanding** | 192.4M | Yahoo Finance / StockAnalysis.com |
+| **Net Cash (verified 09-03)** | $2,765M | StockAnalysis.com Balance Sheet, Q2 2026 10-Q (Cash $1,487M + ST Inv $1,300M − Debt $20.87M) |
+| **Price Verification (09-03)** | ✅ ≥2 sources: Yahoo Finance $158.10 + StockAnalysis.com $158.10 — exact match | Atlas Data Package \`2026-09-03_RDDT_data.md\` |
+
+---
+
+## 🎯 คำแนะนำ
+
+| Field | ค่า |
+|-------|-----|
+| **Recommendation** | **🔴 SELL — Exit remaining 2 shares** (was BUY 05-30 → HOLD 09-01 → SELL 09-03) |
+| **Position (current)** | 2 shares, cost basis $351.88 (avg entry $175.94), unrealized P&L −$35.68 (−10.14%) at $158.10 |
+| **Blended FV (09-03)** | **$103.49** (Emma $118×40% + Quinn $100.62×30% + Bear $87×30%) |
+| **MOS at $158.10** | **−34.5%** (deepest negative MOS since position opened) |
+| **Growth MOS Gate** | Single-leg pass only: Multiple Percentile PASS (~10-15th pctile, ≤70th ✅) / Reverse DCF **FAIL** (1.43× > 1.2× cap ❌) — degraded from double-pass in May |
+| **Stop Loss (historical, moot on exit)** | $140.75 (−10.97% from current price $158.10) |
+| **Rationale for SELL despite 0/9 Bear Flip + 0/3 Invalidation firing** | This is a **valuation-driven exit**, not a thesis-broken exit — price ($158.10) ran ahead of fundamentals (Blended FV $103.49) on a non-fundamental S&P 500 index-inclusion flow catalyst. All 3 analysts independently converge on EXIT. |
+| **Consultation** | Subject to Max Consultation Rule — Charlie concurs with unanimous Emma/Quinn/Bear EXIT recommendation prior to Max execution |
+| **Investment Horizon** | N/A post-exit (was 3–5 ปี) |
+
+---
+
+## 📊 Score Dashboard
+
+| Metric | ค่า (09-03 update) | ค่าเดิม (05-30) |
+|--------|--------------------|-------------------|
+| **Blended FV** | **$103.49** | $169.25 |
+| **ESG Score** | 5.7/10 Medium-High | 6/10 Medium |
+| **ESG-Adjusted Blended FV** | $97.28 (−6.0%) | $163 (−3.7%) |
+| **Conviction (Avg)** | **6.67/10** (Emma 6.0 / Quinn 7.0 / Bear 7.0) | 6.67/10 (Emma 7 / Quinn 7 / Bear 6) |
+| **Macro Regime** | TRANSITIONAL-CAUTIOUS (judgment override) — Atlas 2026-09-03 | RISK-ON 3/4 |
+| **Forward Sharpe** | **−0.335** (mirror-image flip from +0.335 in May) | 0.335 |
+| **Kelly Criterion** | **−59.7%** (optimal long allocation = 0%) | ~10.9% (capped 8-10%) |
+| **S&P 500 Ref (09-03)** | 7,666.60 (Sept 2 close — CNBC + TradingEconomics) | 7,591.42 (May 29 close) |
+
+---
+
+> ## ⚡ TL;DR — อ่าน 30 วินาที
+>
+> - **Verdict:** SELL — Exit remaining 2 shares. All 3 analysts (Emma $118 / Quinn $100.62 / Bear $87) independently converge on Blended FV $103.49 vs. current price $158.10 = **MOS −34.5%**, the deepest negative reading since the position opened.
+> - **ทำไม:** Price surged +9.31% (Sept 2) purely on S&P 500 index-inclusion flow — a non-fundamental, largely one-time catalyst — while underlying fundamentals stayed essentially flat (Emma FV +2.6% vs. two days prior). The gap between price and intrinsic value widened, not narrowed. Growth MOS gate degraded from double-pass to single-leg pass (Reverse DCF now fails).
+> - **Downside Risk (if held):** Bear's independent MOS is deepest at −45.0%; Extreme Bear tail scenario (ChatGPT citation loss proves structural + Google terminates deal) = $44.68/share (−71.7% from spot). **However:** 0/9 Bear Flip Triggers and 0/3 Thesis Invalidation conditions have fired — this is confirmed a **valuation-driven exit**, not a broken-business exit. Position is small (~2.8% weight, ~$316) so the portfolio-level stakes are low either way, but the asymmetry (limited further upside vs. two live unresolved binary risks — Google deal, EU DSA) favors closing now into strength rather than waiting for a stop.
+
+---
+
+## 📋 Executive Summary [CFA L3: Portfolio Construction — Conviction Framework]
+
+Reddit, Inc. เป็น social media platform ที่มี 130.3M Daily Active Users (Q2 2026, +18% YoY) ใน 100,000+ niche communities โดยมีรายได้หลักจาก digital advertising (~94-97%) และ AI data licensing (~3-6%, swing factor)
+
+**ภาพใหญ่ (09-03 update):** ธุรกิจ Reddit ยังคง execute ได้ดีมาก — Q2 2026 beat ทุกตัวชี้วัด, DAU/WAU/ARPU accelerating, 8 ไตรมาสติดต่อกันที่ revenue growth >60% YoY แต่ **ราคาหุ้นวิ่งนำหน้า fundamental value ไปไกลมาก** หลัง S&P 500 index-inclusion (มีผล 18 ส.ค. 2026) ดัน passive index-fund buying จน ราคาพุ่ง +9.31% ในวันเดียว (2 ก.ย.) — ทีมทั้ง 3 คน (Emma/Quinn/Bear) เห็นตรงกันว่านี่คือ **non-fundamental catalyst** ที่ทำให้ MOS ติดลบลึกที่สุดนับตั้งแต่เปิด position
+
+**Q2 2026 ผลประกอบการ (ยืนยันซ้ำ):** Revenue $804.91M (+61.1% YoY, beat consensus $744.94M); EPS $1.25 vs $0.95 consensus; DAU 130.3M (+18% YoY); WAU 514.6M (+24% YoY); Global ARPU $6.18 (+36% YoY); Q3 2026 guidance $860-870M
+Source: SEC 8-K (https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000098/earningspressreleaseq226.htm)
+
+**Key headwinds ที่ยังไม่ resolve (09-03):** EU DSA/VLOP designation confirmed (compliance deadline ~Jan 2027, fine ceiling 6% global revenue); ChatGPT Search citation −86% (nuanced — historical Sept-2025 precedent recovered fully, Perplexity citations growing 2x to replace); Google $60M/yr AI-licensing deal renewal still unresolved (open binary)
+
+**Blended FV (09-03) = $103.49 (Emma $118 × 40% + Quinn $100.62 × 30% + Bear $87 × 30%)**
+
+### 💪 Conviction Level Score (09-03 Full Re-Analysis)
+
+\`\`\`
+Emma   ██████░░░░  6.0/10  — Fundamentals strong but flat vs 09-01; MOS deepened −25.4%; Reverse-DCF gate now fails
+Quinn  ███████░░░  7.0/10  — Every quant metric negative (MOS −36.4%, Kelly −59.7%, Sharpe −0.335); reconciled with Emma
+Bear   ███████░░░  7.0/10  — Deepest MOS −45.0%; challenges beta-reversion assumption as unproven; still concurs EXIT
+──────────────────────────────────────────────────────────────────────────────
+Avg    ██████░░░░  6.67/10  [No flag — gap max 1.0 < 3pt threshold; unanimous directional agreement despite methodology differences]
+\`\`\`
+
+**Anti-Convergence Protocol check:** Max conviction 7.0 < 8 threshold → **NOT formally triggered**. Bear noted a soft observation (not formal Convergence Risk Note): all 3 analysts share 2 blind spots — (1) none price in EU DSA algorithmic-audit as a *growth-rate* risk, only margin-drag; (2) all treat S&P inclusion primarily as a WACC/beta lever without separately quantifying the permanent index-fund ownership demand-floor benefit. Flagged for Vera's quarterly conviction-calibration review.
+
+---
+
+## 💡 Investment Thesis [CFA L2: Equity Valuation — Growth Company Framework]
+
+### Original Three-Layer Bull Case (2026-05-30 — historical context, largely still structurally intact)
+
+**Layer 1 — Advertising Momentum:** Ad revenue Q2 2026 $762M (+64% YoY), ARPU $6.18 (+36% YoY) — momentum has *accelerated* since May, not decelerated. This layer of the bull case remains validated by the data.
+
+**Layer 2 — AI Data Licensing:** Google $60M/yr deal remains unresolved (neither renewed nor terminated as of 09-03) — this layer's resolution is still pending and is the single most important swing factor for whether the Bull scenario ($135-174 across analysts) or Base/Bear scenario ($57-118) plays out over the next 1-2 years.
+
+**Layer 3 — International Monetization:** Not re-verified this session (Atlas Section K geography data not refreshed) — carried forward as an unconfirmed but plausible incremental driver.
+
+### 09-03 Update: Why the Thesis Layers Being Intact Doesn't Change the SELL Call
+
+The recommendation to exit is **not** a reversal of the fundamental bull thesis — Layers 1-3 above are, if anything, more validated today than in May (8 consecutive quarters of >60% growth). **The SELL call is purely a valuation-timing decision**: the price moved +7.0% since 2026-09-01 ($147.81→$158.10) entirely on index-inclusion flow, while all three analysts' fair-value estimates stayed roughly flat-to-lower on a fresh, more rigorous methodology (NOPAT-based FCFF, verified net cash, verified risk-free rate). The gap between what the business is worth and what the market is paying widened to the point where continuing to hold a small residual 2-share position offers little upside optionality relative to two live unresolved binary risks (Google deal, EU DSA compliance).
+
+---
+
+## 🏢 Business Deep Dive [CFA L2: Industry Analysis — Porter's Five Forces]
+
+### How Does Reddit Make Money? (refreshed with Q2 2026 actuals — Emma § 8)
+1. **Advertising (~94-97% of revenue):** Display + video ads across 100,000+ subreddits. Q2 2026 ad revenue $762M (+64% YoY), global ARPU $6.18 (+36% YoY).
+2. **AI Data Licensing (~3-6%, unresolved swing factor):** Google deal $60M/yr — **still in unresolved renewal negotiation as of Sept 3, 2026**, reportedly Reddit pushing for usage-based fees scaling with importance to AI search results.
+3. **Index-inclusion flow (non-revenue, price-relevant only):** S&P 500 inclusion (Aug 18, 2026) drove passive index-fund buying — a structural demand shock affecting price/liquidity, not a new revenue stream.
+
+### Porter's Five Forces (updated 09-03 — Emma § 8)
+| Force | Rating | เหตุผล |
+|-------|--------|-----------|
+| **Competitive Rivalry** | HIGH | Meta "Forum" (launched May 2026), Discord, X/Twitter, Quora |
+| **Threat of New Entrants** | MEDIUM | Network effects strong; Meta Forum changes the calculus somewhat |
+| **Bargaining Power — Suppliers** | LOW | Volunteer content creators; platform controls distribution |
+| **Bargaining Power — Buyers (Advertisers)** | MEDIUM-HIGH | Many platforms compete for ad budget; niche targeting = partial differentiation |
+| **Threat of Substitutes** | HIGH | AI search (ChatGPT, Perplexity) substitutes info-seeking use case — **nuanced 09-03:** Perplexity increasingly *cites/drives traffic to* Reddit rather than purely substituting — partial mitigant |
+
+### Market Share Trend (09-03 update)
+DAU: 104M (2024) → 126.8M (Q1 2026) → **130.3M (Q2 2026, +18% YoY)**. WAU: **514.6M (+24% YoY)**. Trend: **GAINING** — 8 consecutive quarters of >60% revenue growth. Source: SEC 8-K Q2 2026.
+
+### Competitor Threat Assessment (Emma § 8, 09-03)
+| Competitor | Threat Level ต่อ RDDT | เหตุผล |
+|-----------|------------------------|--------|
+| **Meta (Forum)** | 🔴 High | 3B+ MAU distribution advantage; Forum unproven but instant reach |
+| **Alphabet (GOOGL)** | 🟡 Medium | Dual dependency — search-referral traffic source AND AI-licensing counterparty; Google's own AI Overview creates mutual LLM-disintermediation risk |
+| **Snap (SNAP)** | 🟢 Low | Different core use case (ephemeral messaging vs. forum/community) |
+| **Pinterest (PINS)** | 🟢 Low | Different core use case (visual discovery/shopping vs. text discussion) |
+
+### Customer Concentration (carried forward, not re-verified 09-03)
+- Advertising: No single advertiser >10% — LOW risk
+- Data Licensing: Google ~2-3% of TTM revenue (grown since deal struck) — unresolved renewal, WATCH
+- Traffic: Google referral ~25-30% of visits (May estimate) — HIGH dependency, compounded by AI-citation collapse
+
+### Geography Revenue ⚠️ (NOT refreshed 09-03 — flagged stale, carried forward from FY2025 10-K)
+US ~75-80% / International ~20-25%. EU sub-segment now carries dated regulatory tail risk (57.2M EU MAU, DSA/VLOP designation) not present at time of original breakdown.
+
+---
+
+## 🏰 Moat Analysis [CFA L2: Economic Moat — Sources of Competitive Advantage]
+
+| Source | Strength | Durability | Update (09-03) |
+|--------|---------|-----------|------------------|
+| **Network Effects (Community Graph)** | STRONG | HIGH | Unchanged — 18Y community-building intact |
+| **Switching Costs (Power Users)** | MODERATE | MEDIUM | Unchanged |
+| **UGC Historical Data Corpus (AI)** | WIDE | VERY HIGH | Google deal unresolved — moat *evidence* (not the moat itself) is in limbo until resolution |
+| **Brand / Authenticity** | MODERATE | MEDIUM | Contested by Meta Forum, unresolved |
+
+**Overall Moat: NARROW+ (unchanged)** — the moat itself has not eroded; the SELL call is about price vs. value, not moat deterioration.
+
+---
+
+## 📊 Sector / Peer Comparison [CFA L2: Relative Valuation — Cross-sectional] *(09-03 refresh — Atlas Data Package Section G)*
+
+| Company | Ticker | Fwd P/E | EV/Sales | EV/EBITDA | ROE | ROIC | Rev Growth YoY | Gross Margin | Moat |
+|---------|--------|---------|----------|-----------|-----|------|-----------------|--------------|------|
+| **Reddit** | **RDDT** | **22.08–26.16×** | **9.95×** | **34.50×** | **30.71%** | **23.80%** | **+66.6%** | **91.4%** | **NARROW+** |
+| Snap | SNAP | 7.79× | 1.74× | n/a | N/A | N/A | +12.6% | N/A | NARROW |
+| Pinterest | PINS | 9.96× | 2.62× | 37.71× | N/A | N/A | +16.6% | N/A | NARROW |
+| Meta | META | 18.32× | 6.71× | 13.97× | N/A | N/A | +27.7% | N/A | WIDE |
+| Alphabet | GOOGL | 25.29× | 8.97× | 23.11× | N/A | N/A | +20.1% | N/A | WIDE |
+| **Sector Median (peers only)** | — | 14.14× | 4.67× | 23.11× | — | — | 18.35% | — | — |
+| **RDDT vs Median** | — | **+70.6% premium** | **+113% premium** | **+49.3% premium** | — | — | **3.6× peer growth** | — | — |
+
+*Peer ROE/ROIC/Gross Margin not available in Atlas Data Package this session — flagged N/A rather than estimated, per Training Knowledge Ban.*
+
+**Verdict (09-03):** RDDT trades at a substantial premium to every peer on every multiple, most dramatically EV/Sales (+113% vs. median). The entire peer set has **de-rated sharply since May** (SNAP EV/Sales ~4×→1.74×, PINS ~5×→2.62×, META ~7-8×→6.71×) — broad multiple compression across ad-tech/social. RDDT's premium is directionally justified by 3.6× faster growth, but RDDT now trades at a premium to even META (highest-quality WIDE-moat comp) — a level requiring RDDT to keep outgrowing META by a wide margin indefinitely to sustain, which is a real but not certain proposition given decelerating growth and two open binary risks.
+
+---
+
+## 💰 Valuation — 2026-09-03 Full Re-Analysis [CFA L2: DCF Valuation + Scenario Analysis]
+
+**Methodology:** All three analysts use **NOPAT-based FCFF** (per DCF Cash Flow Consistency Rule — SBC $338M TTM = 12.2% of revenue, exceeds 10% threshold). No analyst uses reported "Free Cash Flow" ($1,019M TTM, 36.7% margin) as a projection base — that figure is inflated by SBC add-back + working-capital/deferred-revenue timing benefit.
+
+### Emma's DCF (NOPAT-based, full re-run)
+
+| Scenario | WACC | TGR | FV/share |
+|----------|------|-----|----------|
+| Bear | 15.5% | 2.5% | $60 |
+| Base | 14.0% | 3.0% | $105 |
+| Bull | 12.0% | 3.0% | $174 |
+| **P-W DCF (28/47/25)** | | | **$110** |
+| EV/Revenue cross-check (7×) | | | $135 |
+| **Emma Single FV (70% DCF / 30% EV-Rev)** | | | **$118** |
+
+### Quinn's P-W EV (NOPAT-based, independent build)
+
+| Scenario | WACC (Blume-adj β) | FV/share | Probability |
+|----------|----------------------|----------|--------------|
+| Bear | 14.94% (β 2.03 spot) | $57.05 | 30% |
+| Base | 13.24% (β 1.69 Blume-adj) | $100.44 | 45% |
+| Bull | 12.29% (β 1.50) | $153.24 | 25% |
+| **Quinn P-W EV** | | **$100.62** | |
+
+### Bear's Downside DCF (challenges beta-reversion credit)
+
+| Scenario | WACC (β, no/partial reversion) | FV/share | Probability |
+|----------|-----------------------------------|----------|--------------|
+| Bear | 14.94% (β 2.03, matches Quinn) | $57.05 | 32% |
+| Base | **14.94% (β 2.03 — no reversion credit)** | $84.56 | 45% |
+| Bull | 13.50% (β 1.85, partial reversion) | $135.00 | 23% |
+| **Bear P-W FV** | | **$87** | |
+| Extreme Bear tail (not in P-W blend) | 15.5% | **$44.68** (−71.7% from spot) | tail, not base case |
+
+### Reconciliation (Emma ↔ Quinn — CLAUDE.md DCF Cash Flow Consistency Rule §4)
+
+| Analyst | FV | Basis |
+|---------|-----|-------|
+| Emma | $118 (blend: pure-DCF $110 × 70% + EV/Rev $135 × 30%) | NOPAT-based FCFF |
+| Quinn | $100.62 (pure P-W DCF) | NOPAT-based FCFF — same basis |
+| **Gap** | **12.5–14.3%** (pure-DCF-to-DCF only **8.5%** apart: Emma $110 vs Quinn $100.62) | **Below 25% mandatory-reconciliation threshold** — Consistency Rule functioning correctly, contrast with the VEEV precedent that created the rule |
+
+### Blended FV Triangulation (09-03)
+
+| Analyst | FV | Weight | Weighted |
+|---------|----|--------|---------|
+| Emma (DCF/Fundamental) | $118 | 40% | $47.20 |
+| Quinn (P-W EV/Quant) | $100.62 | 30% | $30.19 |
+| Bear (Downside/Devil's Advocate) | $87 | 30% | $26.10 |
+| **Blended FV** | | | **$103.49** |
+
+> Bear weight 30% (unchanged) ตาม CLAUDE.md IPS 2026-05-15 — "Bear weight เท่ากับ Quinn เพราะ downside scenario สำคัญเท่ากัน ห้ามลด weight ด้วยเหตุผลว่า Bear แย้งเยอะ" — เดียวกับที่ใช้ในรายงาน 2026-05-30 เดิม ไม่เปลี่ยนแปลง
+
+**MOS at $158.10 = ($103.49 − $158.10) / $158.10 = −34.5%**
+
+### Growth MOS Gate Re-test [IPS 2026-05-15 Growth Gate]
+
+| Test | 2026-05-30 | 2026-09-01 | 2026-09-03 |
+|------|-----------|-----------|-----------|
+| Multiple Percentile (EV/TTM-Rev vs 5Y range) | PASS (55-60th pctile) | PASS (15-25th pctile) | **PASS** (~10-15th pctile, EV/TTM-Rev 9.95×) |
+| Reverse DCF (implied CAGR vs consensus) | PASS (1.03×) | Borderline-PASS (1.17×) | **FAIL** (1.43× — exceeds 1.2× cap) |
+| **Verdict** | Double-pass | Single-leg pass (borderline) | **Single-leg pass only** — degraded further |
+
+Gate technically still clears (1-of-2 required), but the deterioration trend (double-pass → borderline → clear single-leg-only) is itself a signal reinforcing the SELL timing decision on top of the absolute-value MOS.
+
+---
+
+## 📉 Quantitative Risk Analysis [CFA L2: Risk Metrics — 09-03 update, Quinn]
+
+| Metric | Value (09-03) | Value (05-30) | Assessment |
+|--------|----------------|----------------|-----------|
+| **Beta (spot, verified)** | 2.03 | 1.80 (est.) | High and confirmed higher than May's estimate |
+| **Beta (Blume-adjusted)** | 1.69 | — | Statistical mean-reversion technique (used for Base WACC) |
+| **Forward Sharpe** | **−0.335** | +0.335 | Mirror-image flip — DCF-implied return no longer compensates for risk |
+| **Kelly Criterion (full)** | **−59.7%** | ~+10.9% | Optimal long allocation = 0% — strongest quant sell signal |
+| **30D Implied Vol** | 56.09% | — | Elevated; options market expects vol to normalize down from Sept 2 pop |
+| **30D Historical Vol** | 76.81% | — | Distorted by Sept 2 +9.31% single-day pop |
+| **Put/Call Ratio (30D)** | 0.3983 | — | Bullish/momentum tilt — divergence signal (context only, doesn't override DCF) |
+| **ROIC** | 23.80% | 56.7% (est., recalculated basis) | ROIC > WACC (13.24-14.94%) by +8.9-10.6pp — still value-creating |
+| **FCF Yield (reported, inflated)** | 3.35% | 2.57% | ⚠️ Inflated by SBC add-back — not used for valuation |
+| **NOPAT-based "clean" Yield** | 2.04% | — | Better proxy for sustainable cash generation |
+| **Max Drawdown (52W high → current)** | −44.1% ($282.95→$158.10) | — | Already substantial drawdown from ATH |
+| **Max Drawdown (current → Bear P-W FV)** | −63.9% to −71.7% (tail) | — | If Bear/Extreme Bear scenario realizes |
+| **stopDist (recalculated at $158.10)** | **10.97%** | — | Improved from ~4.78% CRITICAL cited pre-pop — no longer imminent-breach distance, but moot given SELL recommendation |
+| **Position P&L (2 sh)** | −10.14% (−$35.68 on $351.88 cost basis) | — | Unrealized loss |
+
+---
+
+## 🌱 ESG Risk Scorecard [CFA L2-3: ESG Materiality Analysis — 09-03 update]
+
+| Factor | Score (09-03) | Score (05-30) | Material Risk | Valuation Impact |
+|--------|----------------|----------------|--------------|-----------------|
+| **Environmental (E)** | 7/10 | 7/10 | Modest data-center footprint; no manufacturing | 0% |
+| **Social (S)** | **4/10** | 5/10 | **EU DSA/VLOP designation now confirmed (Aug 31, 2026) with dated compliance deadline ~Jan 2027** — moved from probabilistic to concrete, dated obligation; content moderation at scale; AI-training-data consent ethics | −3% to −4% |
+| **Governance (G)** | 6/10 | 6/10 | Dual-class shares; Aug 2026 Form 4 review confirms bulk of insider activity is routine tax-withholding (not discretionary) — mild positive within dimension, offset by unchanged structural concerns | −2% |
+| **Overall ESG** | **5.7/10 — Medium-High** | 6.0/10 — Medium | S deteriorated on confirmed DSA timeline | **−6.0%** (widened from −3.7%) |
+
+**ESG-Adjusted Blended FV = $103.49 × (1 − 0.06) = $97.28**
+
+**Material ESG Risks (09-03):**
+1. **EU DSA/VLOP compliance (confirmed, dated):** Systemic risk assessments, algorithmic audits, minor-protection mechanisms due ~Jan 2027; penalty ceiling 6% global turnover. Quantified fine impact is small per-share (Bear: −$0.04 to −$0.13/share at realistic enforcement probability) — the **larger risk is a potential *growth-rate* impact** if mandated algorithm changes reduce engagement (a channel not modeled by any of the 3 analysts this session — flagged as a genuine gap). Valuation impact: −3% to −4%.
+2. **Content moderation / brand safety:** Advertiser-pause risk if moderation failure at scale (medium probability, 5Y horizon). Valuation impact: −2%.
+3. **AI data-licensing consent ethics:** If regulators restrict UGC-to-AI licensing on consent grounds, caps the Bull-case AI-licensing thesis. Valuation impact: −1% to −2% (tail).
+
+---
+
+## 📉 Sensitivity Matrix 5×5 (Quinn, 09-03 full re-run) [CFA L2: Sensitivity Analysis]
+
+**Variables: 3-Year Revenue CAGR (FY26→FY29) × Exit EV/Revenue Multiple** *(re-calibrated down from May's 7-15× range to 4-10× reflecting the de-rating already observed: spot EV/Rev fell from 12.6× in May to 9.95× now)*
+
+| CAGR ↓ \\ Exit Mult → | **4.0×** | **5.5×** | **7.0×** | **8.5×** | **10.0×** |
+|------------------------|---------|---------|---------|---------|----------|
+| **15%** | $87.29 | $114.64 | $141.99 | $169.33 | $196.68 |
+| **20%** | $97.23 | $128.30 | **$159.37** | $190.44 | $221.51 |
+| **25%** | $108.02 | $143.14 | $178.26 | $213.37 | $248.49 |
+| **30%** | $119.71 | $159.22 | $198.72 | $238.22 | $277.73 |
+| **35%** | $132.34 | $176.58 | $220.82 | $265.06 | $309.30 |
+
+**Bold cell (20% CAGR × 7.0× exit = $159.37)** ≈ current spot price $158.10 — i.e., **the market is pricing in a scenario close to Quinn's own independent Base case (21.9% CAGR)**, not an unreasonable growth assumption. The negative MOS comes not from the market assuming impossible growth, but from Quinn's P-W blend also carrying real weight (30%) on the Bear case ($57.05) — **the market is arguably under-weighting Bear-case probability** (DSA compliance costs, ChatGPT citation risk, Google-deal non-renewal) relative to the team's assessment.
+
+*Source: Quinn's agent notes 2026-09-03*
+
+---
+
+## 🔄 What Would Change Our Mind [CFA L3: Investment Thesis — Flip Triggers, 09-03 update]
+
+### Bull Flip Triggers (→ would support re-entry / re-consider ADD if position were re-opened)
+1. **Google data-licensing deal renews at ≥$100M/yr** — confirms and re-prices the data moat (Emma's Bull Flip #1)
+2. **Reverse-DCF test re-passes** (price pulls back toward ~$130-140 without fundamental deterioration) — restores double-pass Growth MOS
+3. **ChatGPT citation share recovers materially** within 1-2 quarters, repeating the Sept-2025 precedent directly rather than as a hopeful analogy
+4. **Perplexity relationship formalizes into a paid-licensing deal** (Perplexity already supplies 71% of tracked AI citations, up from a smaller share) — would both replace lost ChatGPT referral value AND add a second AI-licensing revenue stream (Bear's paired Bull Scenario 2)
+5. **Reddit passes EU VLOP audit with minimal disruption** — becomes a positive trust/safety case study, supports Base-case margin holding
+
+### Bear Flip Triggers (→ confirm the exit was correct / would justify avoiding re-entry)
+1. **Google terminates the AI-licensing deal outright** — removes the swing-factor upside entirely, caps Bull-case credibility (dollar impact small ~2-3% of revenue, but *signal* impact large — undermines the entire AI-licensing moat thesis)
+2. **Q3 2026 revenue misses the $860-870M guidance by >5%** — would suggest AI-citation traffic loss is beginning to bite core engagement, not just an isolated referral channel
+3. **EU DSA compliance cost disclosure comes in materially above the ~$20-40M/yr drag already modeled**, or enforcement specifically targets Reddit's recommendation algorithm forcing material product changes before Jan 2027
+4. **ChatGPT citation loss proves structural** (does not repeat the Sept-2025 recovery pattern) — because AI-search adoption is structurally larger now than a year ago, this scenario is more plausible than Emma's probability-shift implies (Bear's challenge)
+5. **Meta Forum DAU exceeds 50M within 18 months of May 2026 launch** (interim check due ~Nov 2027)
+
+### Thesis Invalidation (unchanged since 2026-05-30 — confirmed NOT triggered as of 09-03)
+| Condition | Status (09-03) |
+|-----------|------------------|
+| Google terminates data deal AND DAU growth <10% YoY | ❌ Not triggered (deal not terminated; DAU +18%) |
+| Revenue growth <20% YoY + EBITDA margin <25% | ❌ Not triggered (revenue +61% YoY; op margin ~28.8%) |
+| EU enforcement action bans AI-data licensing outright | ❌ Not triggered (VLOP designation ≠ ban; obligations not yet in effect until ~Jan 2027) |
+
+**This confirms the team's characterization: the SELL is a valuation-driven exit (price outran fundamentals on a non-fundamental catalyst), not a thesis-broken exit.**
+
+---
+
+## 🎯 Recommendation [CFA L3: Portfolio Construction — Deployment Decision]
+
+> ### 🔴 SELL — Exit remaining 2 shares (at or near current price $158.10)
+> Blended FV $103.49 vs. price $158.10 = MOS −34.5%, the deepest negative reading since the position opened. All three analysts (Emma $118 / Quinn $100.62 / Bear $87) independently converge on EXIT. Zero Bear Flip Triggers, zero Thesis Invalidation conditions fired — this is a clean valuation-driven exit into strength (S&P-inclusion flow pop), not a broken-business panic sale. Subject to Max Consultation Rule — Charlie concurs with the unanimous team recommendation.
+
+**Position:** 2 shares, cost basis $351.88 (avg entry $175.94)
+**Current Value:** $316.20 at $158.10 | **Unrealized P&L:** −$35.68 (−10.14%)
+**Blended FV:** $103.49 | **ESG-adj FV:** $97.28
+**MOS at Blended FV:** −34.5% (Emma standalone −25.4%, Quinn −36.4%, Bear −45.0%)
+**Stop Loss (moot on full exit):** $140.75 (−10.97% from $158.10)
+
+**Why exit now rather than wait for the stop or a better price:**
+1. Price ($158.10) sits squarely inside the exit zone ($155-160) flagged in Emma's 2026-09-01 lightweight note — the bounce being waited for has already happened
+2. stopDist has *improved* to ~11% (not a panic/stop-driven exit) — this is the higher-quality way to close a position, opportunistically into strength rather than waiting for a stop to be hit
+3. MOS deepened despite the price rally, because the move is non-fundamental (index flow, not earnings/guidance improvement) — waiting longer does not obviously improve the entry/exit math
+4. Growth MOS gate degraded from double-pass to single-leg-only — a real (if modest) technical deterioration layered on top of the absolute-value case
+5. Position is a small residual (2 shares, ~2.8% weight, ~$316) — two live unresolved binary risks (Google deal renewal, EU DSA compliance) offer no meaningful upside optionality benefit for a position this small relative to the tail risk carried
+
+**If the team's recommendation were instead to hold (not the base case here):** maintain stop $140.75 unchanged, no averaging down, no add under any circumstance until the Google deal resolves favorably or the Reverse-DCF test re-passes.
+
+**Forward Return Context (if held instead of exiting, informational only — SELL is the recommendation):** Holding at $158.10 with Blended FV $103.49 as a 3-year reversion target implies **($103.49/$158.10)^(1/3) − 1 = −13.98%/yr** expected return — i.e., the DCF framework itself argues for exiting, not holding for reversion-to-value (value is *below* price here, not above).
+
+---
+
+## ⚠️ Risk Summary [CFA L2: Risk Management — Systematic + Idiosyncratic Risk, 09-03 update]
+
+| Risk | Probability | Impact | Status (09-03) |
+|------|------------|--------|-----------------|
+| **Beta mean-reversion assumption unproven** | Ongoing | Medium — drives ~$4-16/share of the Emma/Quinn vs. Bear FV gap | In-session IV/vol data (56% IV, 77% HV, +9.31% single-day pop) contradicts the "S&P inclusion dampens vol" thesis so far — Bear's challenge, unresolved |
+| **EU DSA/VLOP compliance (confirmed, dated)** | Confirmed obligation | Fine ceiling 6% global revenue (tail); larger risk = algorithmic-audit-driven growth impact (unmodeled by all 3 analysts) | Deadline ~Jan 2027 — active, not resolved |
+| **ChatGPT citation collapse** | Ongoing, partially mitigated | Medium — −86% citation share, but Perplexity migration + Sept-2025 recovery precedent tempers severity | Nuanced but unresolved; Bear flags AI-search adoption now structurally larger than 2025, precedent may not fully apply |
+| **Google $60M/yr deal — unresolved binary** | Live negotiation | Small direct $ (~2-3% revenue) but large *signal* impact on AI-licensing moat credibility | Still unresolved as of 09-03 |
+| **Meta Forum competition** | Ongoing | High if DAU traction materializes | No fresh data this session — interim check due |
+| **S&P 500 index-removal tail risk (new, Bear-flagged)** | Low but new | If market cap falls far enough, forced index-fund selling would compound any decline | Newly identified this session, not previously tracked |
+| **Ad recession / macro** | Medium (TRANSITIONAL-CAUTIOUS regime, hawkish Fed 66% hike odds, US-Iran/Hormuz tension) | Medium | Atlas regime unchanged TC — governs sizing, not directly this SELL decision |
+
+**Maximum drawdown scenario:** Bear P-W FV implies −63.9% from spot if Bear case fully realizes; Extreme Bear tail (ChatGPT loss structural + Google terminates) = **−71.7% from spot ($44.68)**.
+
+---
+
+## 📅 Catalysts Calendar [CFA L2: Event-Driven Analysis — 09-03 update]
+
+\`\`\`
+2026-09-16/17  ──●── 🏛️ FOMC Meeting                                    [HIGH]
+                     66% hike odds priced (CME FedWatch) — governs Atlas Regime re-call
+
+2026-Q4 (~Nov 4, est.) ──●── 📊 Q3 2026 Earnings                        [HIGH]
+                     Guidance was $860-870M; unconfirmed date (TipRanks estimate)
+
+2026-Q4/2027-Q1 ──●── 🤝 Google AI-Licensing Deal Resolution            [HIGH]
+                     Still unresolved as of 09-03; renewal terms or termination = key signal
+
+2027-Jan (~)   ──●── 🌍 EU DSA/VLOP Compliance Deadline                 [HIGH]
+                     Systemic risk assessments, algorithmic audits, minor-protection due
+
+2026-Q4/2027   ──●── 📱 Meta Forum 18-Month DAU Check                   [MED]
+                     Interim data point due; full 18-month mark ~Nov 2027
+\`\`\`
+
+---
+
+## 📚 CFA Concepts ที่ใช้ (merged 05-30 + 09-03)
+
+| Concept | Framework | Section |
+|---------|---------|---------|
+| **DCF Valuation — FCFF 2-Stage (NOPAT-based)** | CFA L2: Equity Valuation | Valuation |
+| **DCF Cash Flow Consistency / SBC Treatment** | CFA L2: Equity Valuation — FCFF Model Integrity | Valuation reconciliation |
+| **CAPM / Blume-Adjusted Beta** | CFA L1-2: Cost of Capital | Quinn WACC |
+| **Porter's Five Forces** | CFA L2: Industry Analysis | Business Deep Dive |
+| **Economic Moat Analysis** | CFA L2: Competitive Advantage | Moat Section |
+| **Cross-sectional Relative Valuation** | CFA L2: Peer Comparison | Peer Comparison |
+| **ESG Materiality Analysis** | CFA L2-3: ESG Integration | ESG Scorecard |
+| **Probability-Weighted Scenario EV** | CFA L2: Scenario Analysis | Valuation |
+| **Kelly Criterion** | CFA L3: Position Sizing | Quant Risk |
+| **Sensitivity Analysis 5×5** | CFA L2: Sensitivity | Quinn Matrix |
+| **Sharpe Ratio (Forward)** | CFA L1: Risk-Return | Quant Risk |
+| **VaR / Max Drawdown** | CFA L1-2: Risk Management | Quant Risk |
+| **Institutional Flow / Index-Inclusion Effect** | CFA L3 extension: Market Microstructure | Executive Summary, Business Deep Dive |
+| **Behavioral Finance — Overconfidence / Anchoring / Recency / Narrative Fallacy** | CFA L3: Behavioral Finance | Bear's methodology challenge |
+| **Investment Thesis — Flip Triggers** | CFA L3: Portfolio Construction | What Would Change Our Mind |
+| **Growth MOS — Reverse DCF + Multiple Percentile** | IPS 2026-05-15 Growth Gate | MOS Assessment |
+
+---
+
+## ⚙️ Behind the Scenes
+
+**Pipeline Summary (09-03 full re-analysis):**
+- Atlas: Regime TRANSITIONAL-CAUTIOUS (unchanged, judgment override — 3/4 indicators RISK-ON but Fed hawkish 66% hike odds + US-Iran/Hormuz escalation) | Price verified $158.10 (2-source) | Regime record: \`agent_notes/atlas/2026-09-03_regime.md\` | Data Package: \`agent_notes/atlas/2026-09-03_RDDT_data.md\`
+- Emma + Quinn: Dispatched in parallel after Atlas Data Package verified | Emma FV $118 (NOPAT-DCF $110 × 70% + EV/Rev $135 × 30%) | Quinn P-W EV $100.62 (independent NOPAT-DCF build, Blume-adjusted beta)
+- Reconciliation: Emma↔Quinn gap 12.5-14.3% (pure-DCF 8.5%) — below 25% mandatory-reconciliation threshold, Consistency Rule confirmed working (contrast VEEV precedent)
+- Bear: Full downside challenge — beta-reversion assumption (unproven, contrary in-session evidence), ChatGPT-probability recency-bias check, S&P-inclusion two-sided framing (permanent ownership benefit vs. new index-removal tail risk), EU DSA algorithmic-audit growth-risk gap shared by all 3 analysts | Bear FV $87 | Extreme Bear tail $44.68
+- Blended FV: Emma×40% + Quinn×30% + Bear×30% = **$103.49** (CLAUDE.md IPS 2026-05-15 weights — unchanged from May report)
+
+**Blended FV Calculation:**
+\`\`\`
+Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30
+           = $118×0.40 + $100.62×0.30 + $87×0.30
+           = $47.20 + $30.186 + $26.10
+           = $103.49
+\`\`\`
+
+**Bear weight 30% (unchanged, ไม่ใช่ 40% หรือ 25%) ตาม CLAUDE.md IPS 2026-05-15 — เดียวกับที่ใช้ในรายงาน 2026-05-30 เดิม, "ห้ามลด weight ด้วยเหตุผลว่า Bear แย้งเยอะ"**
+
+**Anti-Convergence Check:** Emma 6.0 / Quinn 7.0 / Bear 7.0 — max 7.0 < 8 threshold — formal protocol **NOT triggered**. Soft observation logged (shared blind spots — EU algorithmic-audit growth risk; S&P permanent-ownership under-modeled) for Vera's quarterly review, per Bear's own note.
+
+**Stop Loss Format (historical reference, moot on full exit):**
+Stop Loss: $140.75 (−10.97% from current price $158.10)
+Calculation: ($140.75/$158.10 − 1) × 100 = −10.97%
+
+**SELL Rationale despite MOS gate technically still passing (1-of-2 legs):** The Growth MOS gate governs *BUY* eligibility, not sell timing. The sell decision is driven by (1) deeply negative absolute-value MOS (−34.5% blended, −45.0% at Bear's most conservative), (2) unanimous 3/3 analyst EXIT recommendation, (3) price sitting exactly inside a previously-flagged exit zone, and (4) small residual position size meaning limited cost to closing now vs. limited benefit to carrying open binary risks further.
+
+---
+
+## 🏁 Conclusion
+
+Reddit, Inc. ณ วันที่ 2026-09-03 (full re-analysis) คือ **SELL — Exit remaining 2 shares** ด้วย conviction เฉลี่ย 6.67/10 (Emma 6.0 / Quinn 7.0 / Bear 7.0)
+
+หุ้นนี้เป็นกรณีศึกษาที่ดีของ **valuation-timing exit ไม่ใช่ thesis-broken exit**:
+1. Business fundamentals ยัง execute ได้ดีมาก — 8 ไตรมาสติดต่อกันที่ revenue growth >60% YoY, ไม่มี Bear Flip Trigger หรือ Thesis Invalidation ใดยิงเลย (0/9, 0/3)
+2. แต่ราคาวิ่งนำหน้า fundamental value ไปไกล จาก S&P 500 index-inclusion flow (+9.31% ในวันเดียว) ซึ่งเป็น non-fundamental catalyst ล้วนๆ
+3. ทีมทั้ง 3 คน (Emma/Quinn/Bear) วิเคราะห์อิสระด้วย methodology ที่สอดคล้องกัน (NOPAT-based FCFF ตาม Consistency Rule) แล้วเห็นตรงกันหมดว่า Blended FV ($103.49) ต่ำกว่าราคาปัจจุบัน ($158.10) มากถึง −34.5%
+4. Growth MOS gate เสื่อมลงจาก double-pass เป็น single-leg-pass เท่านั้น — สัญญาณเสริมที่ไปทางเดียวกัน
+5. Position เหลือน้อย (2 shares, ~2.8% weight) — ความเสี่ยงจาก 2 binary risk ที่ยังไม่ resolve (Google deal, EU DSA) ไม่คุ้มกับ upside optionality ที่จำกัดของ residual position ขนาดเล็กนี้
+
+ความเสี่ยงหลักที่เหลือ (ถ้ายังถือ) คือ beta-reversion assumption ที่ยังไม่พิสูจน์ + EU DSA algorithmic-audit growth-risk ที่ยังไม่มีใคร model เต็มรูปแบบ — ทั้งสองเป็นเหตุผลเสริมให้ปิด position มากกว่าจะถือต่อรอความชัดเจน
+
+---
+
+## Morgan QA Verification Checklist
+
+**Reviewed by:** Morgan (QA Analyst) | **QA Date:** 2026-09-03 | **Status:** ✅ **PASS**
+
+### 📊 Data Quality Score: 9.0/10
+
+| มิติ | คะแนน | หมายเหตุ |
+|------|-------|---------|
+| Source Quality (Tier) | 9/10 | Predominantly Tier 1/2: SEC 8-K (Tier 1), Yahoo Finance + StockAnalysis.com WebFetched (Tier 2), CNBC US10Y (Tier 1/2), European Commission (Tier 1), AlphaQuery.com options data (Tier 2). Tier 3 news/blog sources (On-Page.ai, Pierview, StocksToTrade) used only for *qualitative catalyst context* (ChatGPT citation nuance, S&P-inclusion narrative) — not for key financial metrics. Compliant. |
+| Data Freshness | 9/10 | Price 1 day old (✅ ≤3d). Revenue/EPS from Q2 2026 (reported 7/30, ✅ ≤1 quarter). Beta/Rf same-session (✅). Geography Revenue + Customer Concentration explicitly flagged "NOT refreshed this session" (honest disclosure, not hidden) — minor deduction only because these carried-forward items exist, not because they were misrepresented. |
+| DCF Assumptions | 8/10 | TGR capped 2.5-3.0% (within 1-3% norm ✅). WACC range 12.0-15.5% exceeds the generic 7-13% guideline in Base/Bear scenarios — **reviewed, not failed**: fully CAPM-derived from a *verified* high beta (2.03, Yahoo Finance, 5Y monthly) + verified Rf (4.79%), cross-validated independently by all 3 analysts landing within ~0.3pp of each other, and the elevated WACC works *conservatively* (lowers FV, reinforces SELL) rather than being used to inflate a BUY case. Flagged for transparency, not a rule violation. |
+| Cross-agent Consistency | 10/10 | Emma↔Quinn gap 12.5-14.3% (pure-DCF-to-DCF 8.5%) — well under 25% mandatory-reconciliation threshold; reconciliation table provided anyway (exceeds requirement). Conviction gap max 1.0 (Emma 6.0 / Quinn 7.0 / Bear 7.0) — well under 3pt flag threshold. All three analysts independently verified arithmetic checks out (DCF math spot-checked line-by-line, no errors found). |
+| Atlas Integration | 9/10 | Regime (TRANSITIONAL-CAUTIOUS, judgment override) explicitly referenced in Score Dashboard, Risk Summary, and Behind the Scenes. Regime correctly does not block this SELL (existing position exit, not new-open). Sept FOMC rate-hike risk flagged in Catalysts Calendar as the regime re-assessment trigger. |
+| **Overall** | **9.0/10** | Exceptionally rigorous full re-analysis — well above PASS threshold. |
+
+---
+
+### ✅ Data Integrity (Morgan QA Protocol)
+- [x] Stock price verified from ≥2 sources — Yahoo Finance $158.10 + StockAnalysis.com $158.10, exact match, Sept 2 2026 close. **Independently re-verified by Morgan via WebFetch on both stockanalysis.com and Yahoo Finance historical data** — both confirm $158.10 close (+9.31%, +$13.46) on Sept 2, 2026. 0% variance vs. report. ✅
+- [x] Market cap = shares × price: 192.4M × $158.10 = $30.42B ✅ matches report exactly (within rounding).
+- [x] FV/Price → MOS calculation correct: ($103.49 − $158.10)/$158.10 = **−34.54%** ≈ report's −34.5% ✅ (Morgan independently recomputed).
+- [x] Blended FV arithmetic verified: $118×0.40 + $100.62×0.30 + $87×0.30 = $47.20 + $30.186 + $26.10 = **$103.486 ≈ $103.49** ✅ correct.
+- [x] All financial ratios within plausible range: ROIC 23.80% (0-200% band ✅), Beta 2.03 (plausible for a high-vol recent-IPO growth stock, verified Yahoo Finance), ROIC (23.80%) > WACC (13.24-14.94%) by +8.9-10.6pp — internally consistent economic value-creation claim ✅.
+- [x] No data older than 30 days without explicit flag — price/Rf/beta same-session; Q2 2026 financials ~5 weeks old (within 1-quarter norm, not flagged as stale); Geography Revenue + Customer Concentration explicitly flagged stale (carried forward, disclosed) ✅.
+- [x] **Morgan independent spot-check (Step 0.5):** Revenue $804.91M / EPS $1.25 / DAU 130.3M — all independently confirmed via WebSearch against SEC 8-K, CNBC, Yahoo Finance sources. 0% variance. ✅
+
+### ✅ Rule Compliance
+- [x] Recommendation (SELL) aligns with valuation: MOS −34.5% blended, all 3 analysts independently negative ($118/$100.62/$87 vs. $158.10) — deeply negative on every framework tested. ✅
+- [x] Blended FV weight = Emma 40% / Quinn 30% / Bear 30% — **verified fresh against CLAUDE.md § Blended FV Triangulation Weights this session** (not assumed from memory) — matches current locked weight exactly, no drift. ✅
+- [x] Macro Regime (TRANSITIONAL-CAUTIOUS) correctly referenced, correctly does NOT block this SELL (existing OPEN position exit is exempt from the "no new positions" TC restriction — Atlas's own regime record explicitly notes this). ✅
+- [x] Stop loss $140.75 = −20.0% from original entry $175.94 ✅ within IPS −20%/position bound; format correct (\`$XX (−X% จาก entry)\`) with dual reference: from cost basis AND from current price. ✅
+- [x] Position sizing N/A — this is a full-exit SELL of a residual 2-share position, not a new deployment; no 3-10% sizing check applicable. ✅
+- [x] **Max Consultation Rule** explicitly and correctly invoked — report states "subject to Max Consultation Rule — Charlie concurs with unanimous Emma/Quinn/Bear EXIT recommendation" in the header table, Recommendation section, and Update Log. Correct application (SELL requires consultation; this is not a routine HOLD). ✅
+- [x] Growth bucket declaration cross-checked against Atlas TTM Revenue Growth: report declares "Bucket: Growth (~60%)" and TTM Revenue Growth = +66.6% (Atlas Data Package Section B) — well above the 20% Growth-bucket threshold. **Bucket correctly matches fundamentals** — no Bucket Correctness violation. ✅
+- [x] Growth MOS Gate (Reverse DCF FAIL / Multiple Percentile PASS = single-leg pass) correctly scoped as a **BUY-eligibility gate, not a SELL-blocking gate** — report explicitly clarifies this in "Behind the Scenes" ("Growth MOS gate governs BUY eligibility, not sell timing"). This is the correct application — no HIGH FAIL for "BUY without double-pass" because this is not a BUY. ✅
+- [x] **DCF Cash Flow Consistency Rule (SBC 12.2% of revenue > 10% threshold)** — Emma and Quinn both explicitly confirmed and disclosed identical NOPAT-based FCFF basis (no SBC add-back), Bear's independent build also matches basis. Emma↔Quinn gap 12.5-14.3% is below the 25% mandatory-reconciliation threshold, but a reconciliation table was provided anyway (§ Reconciliation) — exceeds the rule's minimum requirement. ✅
+
+### ✅ Source Annotation
+- [x] Every financial number has source citation — Atlas Data Package (\`2026-09-03_RDDT_data.md\`) cites URL + retrieval date for every field; Emma/Quinn/Bear notes each carry a full "Sources & References" table. No unsourced numbers found. ✅
+- [x] No "around X" / "ประมาณ X" estimates without explicit range — ERP (5.0%) explicitly labeled "*team assumption*, no independent source verified this session" rather than disguised as fact — acceptable per house convention for non-market-observable assumptions, clearly flagged. ✅
+- [x] Atlas Macro Brief + Regime record explicitly referenced in report (Score Dashboard row, Risk Summary, Behind the Scenes) with direct file paths. ✅
+- [x] Shares outstanding verified: 192.4M (Yahoo) / 192.32M (StockAnalysis) — immaterial rounding difference, cross-check market cap ÷ price = 192.4M ≈ reported shares. ✅
+
+### 📋 Independent Verification (Morgan, WebFetch/WebSearch — Step 0 + Step 0.5)
+
+| ตัวเลข | ใน Report | Morgan หาได้ | ต่างกัน | ผล |
+|--------|----------|-------------|--------|-----|
+| ราคา (Sept 2, 2026 close) | $158.10 | $158.10 (WebFetch StockAnalysis.com + Yahoo Finance historical, both confirm +9.31%/+$13.46) | 0% | ✅ |
+| Revenue (Q2 2026) | $804.91M | $805M (WebSearch: SEC 8-K, CNBC, TradingView, Yahoo Finance — all consistent) | ~0% | ✅ |
+| EPS (Q2 2026, diluted) | $1.25 | $1.25 (WebSearch, multiple sources incl. SEC filing summary) | 0% | ✅ |
+| DAU (Q2 2026) | 130.3M (+18% YoY) | 130.3M (WebSearch, Motley Fool / GuruFocus / StockStory earnings-call coverage) | 0% | ✅ |
+
+*Note: initial generic WebSearch snippets returned stale/incorrect cached prices ($144.64, $149.16) — Morgan did NOT rely on these; direct WebFetch of stockanalysis.com and Yahoo Finance historical-data pages (which reflect live page content, not cached search snippets) confirmed the report's $158.10 figure exactly, cross-validated 2 ways. This is documented here for pipeline-transparency: search-snippet caching risk exists and WebFetch of the primary page is the more reliable verification method when discrepancies appear.*
+
+### 📋 Source Verification
+
+| URL / Source ที่ตรวจ | Tier | สถานะ | หมายเหตุ |
+|---------------------|------|-------|---------|
+| stockanalysis.com/stocks/rddt/ | 2 | ✅ | WebFetched directly by Morgan — confirms $158.10 close, +9.31%, matches report exactly |
+| finance.yahoo.com/quote/RDDT/history/ | 2 | ✅ | WebFetched directly by Morgan — confirms Sept 2, 2026 close $158.10 |
+| SEC 8-K (Q2 2026 earnings release) | 1 | ✅ | Cited with full URL in Emma's notes and report; cross-confirmed via WebSearch (revenue/EPS/DAU match) |
+| European Commission DSA/VLOP designation | 1 | ✅ | Official regulator source, appropriately used for EU DSA designation claim |
+| AlphaQuery.com (IV/HV/Skew/Put-Call) | 2 | ✅ | Specialized derivatives data provider, appropriately scoped to "context only" per house rule, not blended into headline FV |
+| CNBC US10Y (Rf 4.79%) | 1/2 | ✅ | Standard market-data source for Treasury yields |
+| News/blog sources (On-Page.ai, Pierview, StocksToTrade) | 3 | ✅ (acceptable use) | Used only for qualitative catalyst narrative (ChatGPT citation trend, S&P-inclusion story) — NOT for key financial metrics (price/revenue/EPS/ratios), so Tier-3 restriction on key metrics is not violated |
+
+### ❌ Issues Found
+
+| # | Issue | Location | Severity | Action Required |
+|---|-------|----------|----------|----------------|
+| 1 | Emma's agent notes (\`agent_notes/emma/2026-09-03_RDDT.md\`) do not include an explicit **Structured Data Block** (JSON-like object with \`businessSummary.oneLiner/analogy/moneyFlow/whyDifferent/simpleRisk\`, \`thesisBullets\` array, \`esgBreakdown{e,s,g,overall}\`, \`customerConcentration\` object, \`geographyRevenue\` object) for Leo to embed into \`dashboard/data.js\`. The underlying data (ESG E/S/G scores, customer concentration, geography split, thesis bullets) all exist in prose/table form within Emma's notes and the report itself — this is a **format/extraction gap for Leo's downstream step, not a missing-data or incorrect-data issue**. | Emma's Notes (end of file) | MEDIUM | Before Leo updates \`dashboard/data.js\`, ask Emma to append a short structured data block at the end of her notes file (or Leo can extract directly from the report's existing ESG Scorecard / Business Deep Dive tables, which contain all the needed values — esgBreakdown especially is NOT missing, just not pre-packaged as an object: E=7, S=4, G=6, overall=5.7). |
+
+**No HIGH severity issues found. No DATA_ERROR, RULE_VIOLATION, SOURCE_MISSING, or SANITY_FAIL issues identified. 1 MEDIUM (FORMAT/extraction-convenience) issue — well under the ≤2-MEDIUM PASS threshold.**
+
+**Reject Type (n/a — report PASSED):** No reject issued. The single MEDIUM finding is logged as an action item for Leo's downstream data.js step, not a reason to send the report back to Charlie/Emma for revision.
+
+### Decision
+
+\`\`\`
+✅ PASS
+\`\`\`
+
+Report ผ่านการตรวจ QA แล้ว — Leo สามารถบันทึกและ push Life OS ได้ (Leo ควรขอ Emma เติม Structured Data Block ก่อนหรือระหว่าง embed ข้อมูลลง dashboard/data.js ตาม Issue #1 ด้านบน — ไม่ block การ PASS แต่เป็น action item ที่ควรทำ)
+
+### 📝 QA Summary
+
+นี่คือหนึ่งใน full re-analysis ที่มีคุณภาพสูงที่สุดที่ Morgan เคยตรวจ — ราคาหุ้น verified อิสระ 2 ทาง (WebFetch จริงจาก StockAnalysis.com และ Yahoo Finance historical, ตรงกับรายงาน 100%) Revenue/EPS/DAU spot-check ตรงกับ SEC 8-K และหลายแหล่งข่าวการเงินอิสระ 100% DCF ของทั้ง Emma, Quinn, และ Bear ถูกคำนวณใหม่ทีละบรรทัดโดย Morgan และตรงกับตัวเลขในรายงานทุกจุด (ไม่มี arithmetic error) Blended FV weight (40/30/30) ตรวจสอบสดกับ CLAUDE.md แล้วตรงกันไม่มี drift Cross-agent reconciliation (Emma↔Quinn gap 8.5-14.3%) อยู่ในเกณฑ์ที่ดีมาก และมี reconciliation table ให้แม้ไม่ถึงเกณฑ์บังคับ Bear's downside challenge มีคุณภาพสูง ท้าทาย beta-reversion assumption ด้วยข้อมูล in-session จริง (IV/HV) ไม่ใช่ความเห็นลอยๆ และ 0/9 Bear Flip + 0/3 Thesis Invalidation ถูกตรวจสอบครบทุกข้อพร้อมสถานะชัดเจน
+
+จุดที่สังเกต (ไม่ถึงขั้น fail): WACC ในบาง scenario (14-15.5%) สูงกว่าเกณฑ์ทั่วไป 7-13% แต่มีที่มาชัดเจนจาก verified beta 2.03 ผ่าน CAPM และทิศทางที่สูงขึ้นนี้ทำให้ FV อนุรักษ์นิยมมากขึ้น (สนับสนุน SELL ไม่ใช่ inflate BUY) จึงไม่ถือเป็นการละเมิดกฎ เพียงบันทึกไว้เพื่อความโปร่งใส และมี MEDIUM 1 ข้อเรื่อง Structured Data Block สำหรับ Leo's data.js ที่ยังไม่ครบ (ข้อมูลจริงมีอยู่แล้ว เป็นแค่ format gap)
+
+**Re-Analysis File Rule Compliance (กฎเหล็กข้อ 11):** ✅ ใช้ไฟล์เดิม \`reports/RDDT_2026-05-30.md\` ไม่มีการสร้างไฟล์ใหม่ และมี "🔄 Update Log" ที่บันทึกประวัติทั้ง 2 รอบ (09-01 lightweight, 09-03 full) ครบถ้วนตามรูปแบบที่กำหนด
+
+**สรุป: PASS — Leo ดำเนินการต่อได้ทันที (พร้อม action item เล็กน้อยสำหรับ Structured Data Block)**
+
+---
+
+*Morgan — 2026-09-03 | QA Verification Complete*
+`
   },
 
   {
