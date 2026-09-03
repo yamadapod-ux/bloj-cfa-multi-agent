@@ -3,9 +3,199 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-08-22 09:30";
+const NEWS_LAST_UPDATED = "2026-09-04 09:30";
 
 const NEWS = [
+  // ── 2026-09-03 ──────────────────────────────
+  {
+    date: "2026-09-03", category: "MACRO",
+    headline: "🔴 JPMorgan Wealth คาด Fed ขึ้นดอกเบี้ย 25bps ที่ประชุม FOMC 16 ก.ย. — จาก 'hold' เป็น 'hike expected'",
+    summary: "JPMorgan Wealth Management ปรับมุมมองคาดการณ์ Fed จากที่เคยมองว่าจะ hold เปลี่ยนเป็นคาดว่า Fed จะขึ้นดอกเบี้ย 0.25% ที่ประชุม FOMC วันที่ 15-16 กันยายน 2026 หลังการประชุม FOMC เดือนกรกฎาคมที่ hold ไว้ที่ 3.50-3.75% ด้วยมติ 9-3 (3 เสียงค้านต้องการขึ้นดอกเบี้ย) ปัจจัยหนุนคือ supply-chain shock จากความขัดแย้ง Iran ที่ดันต้นทุนพลังงานสูงขึ้นต่อเนื่อง และความกังวลตลาดว่า Fed อาจคุมเงินเฟ้อไม่อยู่หลัง hold เดือนกรกฎาคม. นัยพอร์ต: การยืนยัน Fed hawkish shift ตรงกับสมมติฐานที่ Atlas ใช้ประกาศ Regime TRANSITIONAL-CAUTIOUS เมื่อ 1 ก.ย. (Fed Stance = hikes priced > cuts) — เพิ่มความมั่นใจว่า regime call ยังถูกต้อง ต้องติดตาม FOMC 16 ก.ย. อย่างใกล้ชิดเป็น re-call trigger หลัก.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks",
+  },
+  {
+    date: "2026-09-03", category: "TECH",
+    headline: "🟢 ตลาดหุ้นสหรัฐฯ ทรงตัวใกล้ high — Nvidia +3.2% ข่าวเทคโอเวอร์ Hugging Face $14B, Dell +15.8% จากงบเหนือคาด",
+    summary: "ตลาดหุ้นสหรัฐฯ วันที่ 2-3 กันยายน เคลื่อนไหวในกรอบแคบ (S&P 500 +0.46% ปิด 7,666.60, Nasdaq +0.45% ปิด 26,217.83, Dow +295.07 จุด ปิด 53,061.95) หลัง Treasury yield หยุดพักการปรับขึ้น นักลงทุนหวังว่า Fed อาจคง rate ไว้เดือนนี้ (ก่อนข่าว JPMorgan เปลี่ยนมุมมองเป็น hike) หุ้นเด่นวันนี้ได้แก่ Nvidia +3.2% จากรายงานใกล้ปิดดีลเทคโอเวอร์ AI startup Hugging Face มูลค่า $14 พันล้าน และ Dell +15.8% จากผลประกอบการเหนือคาดพร้อมปรับเพิ่ม revenue guidance. นัยพอร์ต: NVDA acquisition ของ Hugging Face (ถ้าปิดดีลจริง) เป็นสัญญาณบวกต่อ AI ecosystem theme กว้าง — เกี่ยวโยงกับ AVGO/GOOGL/TSM ในพอร์ตและ watchlist ทางอ้อม รายงานตัวเลข hiring ชะลอตัวยังกดดัน consumer spending sentiment.",
+    impact: "MIXED", tickers: [],
+    url: "https://www.cnbc.com/2026/09/02/stock-market-today-live-updates.html",
+  },
+  {
+    date: "2026-09-03", category: "TECH",
+    headline: "🟢 TSLA พุ่ง 6% ก่อนเปิดตัว Cybercab robotaxi อย่างเป็นทางการ — บวกสะสม 18% เดือนสิงหาคม",
+    summary: "หุ้น Tesla พุ่งขึ้น 6% แตะ $377 ในเช้าวันที่ 3 กันยายน ก่อนงานเปิดตัว Cybercab robotaxi อย่างเป็นทางการช่วงเย็นวันเดียวกัน ต่อเนื่องจากที่หุ้นบวกสะสม 18% ตลอดเดือนสิงหาคมจากความคาดหวังต่องานนี้ ราคาซื้อขายล่าสุดอยู่ในกรอบ $359.25-384.04 ประเด็นเสี่ยงคู่ขนาน ได้แก่ ยอดขาย EV ยุโรปเดือนสิงหาคมที่ผลลัพธ์ผสม (บางตลาดโตแรง บางตลาดร่วงหนัก) และแพคเกจค่าตอบแทน Musk ที่อาจสูงถึง $158.35 พันล้านซึ่งสร้างคำถามเรื่อง cash flow ระยะยาว. นัยพอร์ต: TSLA อยู่ใน Big 10 watch — ผลตอบรับ Cybercab event เป็น binary catalyst ระยะสั้นที่จะกำหนดทิศทางราคาต่อจากนี้ ต้องติดตามผลตอบรับตลาดหลังงานจบ.",
+    impact: "POSITIVE", tickers: ["TSLA"],
+    url: "https://247wallst.com/investing/2026/09/03/tesla-is-now-up-18-in-a-month-take-profits-or-buy-more/",
+  },
+  {
+    date: "2026-09-03", category: "EARNINGS",
+    headline: "🟡 AVGO: Q3 FY2026 beat ทุกตัวเลข (EPS $3.32, Rev $29.59B, AI chip +221% YoY) แต่ Q4 guide ต่ำคาด หุ้นร่วง AH",
+    summary: "Broadcom รายงานผลประกอบการ Q3 FY2026 (ประกาศ 2 กันยายน) เหนือคาดทุกตัวชี้วัด: adjusted EPS $3.32 vs คาด $3.24, revenue $29.59B vs คาด $29.36B (+86% YoY) โดย AI semiconductor revenue พุ่ง $16.7B (+221% YoY, +54% QoQ) แต่หุ้นกลับร่วงหลังตลาดปิดเพราะ Q4 guidance $34.8B ต่ำกว่าที่ตลาดคาด ส่งผลให้ราคาร่วง ~4% AH ราคาล่าสุด (3 ก.ย.) อยู่ที่ $356.87 CEO Hock Tan เผย Anthropic วางแผนใช้ TPU 8i รวม 5GW ในปี 2027 และ OpenAI กำลัง tape-out ชิป generation 2. นัยพอร์ต: AVGO อยู่ใน watchlist (AVGO_ADD, MOS -50.6%) — earnings beat ยืนยัน AI thesis แข็งแกร่งต่อเนื่อง แต่ guide-driven sell-off เป็น pattern เดิมที่เคยเกิดซ้ำ (buy-rumor-sell-news) valuation ยังคงตึงเกิน entry zone มาก.",
+    impact: "MIXED", tickers: ["AVGO"],
+    url: "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html",
+  },
+  {
+    date: "2026-09-03", category: "TECH",
+    headline: "🟢 MSFT ปรับโครงสร้างธุรกิจเหลือ 2 segment ครั้งใหญ่ตาม AI-driven overhaul — เริ่มเปิดเผยรายได้ Azure แยกรายไตรมาส",
+    summary: "Microsoft ประกาศปรับโครงสร้างการรายงานผลประกอบการครั้งใหญ่เมื่อวันที่ 3 กันยายน โดยรวมธุรกิจเข้าเป็น 2 segment หลักตามกลยุทธ์ AI-driven พร้อมเริ่มเปิดเผยตัวเลขรายได้ Azure แยกเป็นรายไตรมาสเป็นครั้งแรก (จากเดิมที่รวมอยู่ใน Intelligent Cloud) หุ้นบวก 2.60% แตะ $509.74 ในวันเดียวกัน ต่อเนื่องจากที่ Bank of America ปรับราคาเป้าหมายขึ้นเป็น $600 จาก $500 เมื่อ 31 สิงหาคม หุ้น MSFT บวกสะสม 31.5% ใน 30 วัน ทั้งนี้มีรายงานว่า CEO Satya Nadella ขายหุ้น 86,500 หุ้น มูลค่ารวม $43.4M ผ่านการยื่นเอกสารกำกับดูแล. นัยพอร์ต: MSFT อยู่ใน Big 10 watch — การเปิดเผย Azure revenue แยกช่วยเพิ่มความโปร่งใสในการประเมิน cloud growth เทียบ GOOGL Cloud ที่ +82% ในพอร์ต ควรติดตามตัวเลขใหม่นี้ในรอบรายงานถัดไป.",
+    impact: "POSITIVE", tickers: ["MSFT"],
+    url: "https://www.benzinga.com/markets/tech/26/09/61606546/microsoft-consolidates-business-into-two-segments-in-sweeping-ai-driven-overhaul",
+  },
+  {
+    date: "2026-09-03", category: "SECTOR",
+    headline: "🟢 NOW บวกสะสม 28% ใน 1 เดือนโดยไม่มีงบใหม่ — sector re-rating หลัง Benioff ปัดข้อกังวล AI disrupt seat-based software",
+    summary: "ServiceNow พุ่งขึ้นเกือบ 30% ในรอบเดือนที่ผ่านมาโดยไม่มีการประกาศผลประกอบการใหม่เลย ราคาล่าสุด (3 ก.ย.) เทรดในกรอบ $136.38-$142.59 ที่ระดับ ~$141 สาเหตุหลักคือ sector-wide re-rating ของกลุ่ม enterprise SaaS หลังความกังวลว่า AI agent จะ disrupt รายได้แบบ seat-based license เริ่มคลายลง โดย Marc Benioff (CEO Salesforce) ออกมาปัดข้อกังวลนี้ต่อสาธารณะช่วงปลายเดือนสิงหาคม ส่งผลบวกลามไปทั้งกลุ่มรวมถึง NOW/CRM ด้าน ServiceNow ยังคงแผนปลดพนักงาน ~300 ตำแหน่งใน California มีผล 28 ก.ย. เพื่อคง headcount รวมคงที่และโยกทรัพยากรสู่ AI skills. นัยพอร์ต: NOW ในพอร์ต (TRIMMED 50%, ถือ 1sh) ราคาปัจจุบันใกล้เคียงกับที่ trim ไปเมื่อ 1 ก.ย. ($147.99) — sector re-rating เชิงบวกยืนยันว่า trim เป็นการล็อกกำไรที่สมเหตุสมผล ไม่ใช่การขายผิดจังหวะ thesis.",
+    impact: "POSITIVE", tickers: ["NOW", "CRM"],
+    url: "https://247wallst.com/investing/2026/09/03/servicenow-just-rallied-28-in-a-month-take-profits-or-buy-more/",
+  },
+  // ── 2026-09-02 ──────────────────────────────
+  {
+    date: "2026-09-02", category: "TECH",
+    headline: "🟢 GOOGL เปิดตัว Gemini 3.8 Flash (โมเดลที่ 3 ใน 6 สัปดาห์) + ชนะคดี DOJ ไม่ต้องขาย ad exchange",
+    summary: "Alphabet เปิดตัว Gemini 3.8 Flash เมื่อต้นเดือนกันยายน เป็นโมเดล Flash รุ่นที่ 3 ภายใน 6 สัปดาห์ พร้อมโมเดลด้าน cybersecurity ใหม่สำหรับลูกค้าองค์กร/รัฐบาลที่ไว้วางใจ ช่วยให้หุ้นเริ่มเดือนกันยายนด้วยโมเมนตัมบวกหลังจบเดือนที่แย่ที่สุดในรอบทศวรรษกว่า (longest monthly losing streak) นอกจากนี้ผู้พิพากษาของรัฐบาลกลางปฏิเสธคำร้องของ DOJ ที่ต้องการบังคับให้ Google ขาย ad exchange business ถือเป็นชัยชนะด้าน antitrust ครั้งสำคัญ ด้าน Berkshire Hathaway CEO Greg Abel ระบุ Alphabet เป็น 'ผู้เล่นสำคัญ' ด้าน AI หลังเพิ่มสัดส่วนถือหุ้นใน Q2 หุ้นมีเงินปันผล $0.22 ex-date 4 กันยายน. นัยพอร์ต: GOOGL ในพอร์ต (return -12.75%, stopDist 8.65% WATCH) — ข่าวบวกคู่ (product momentum + antitrust win) ช่วยหนุน sentiment หลังสัปดาห์ที่ยากลำบาก แต่ Re-Analysis Trigger #1 (FV $414 age 103d+ ยังไม่ model Q2 earnings) ยังต้อง re-verify.",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://www.cnbc.com/2026/09/02/google-starts-september-with-ai-momentum-after-long-losing-streak.html",
+  },
+  {
+    date: "2026-09-02", category: "SECTOR",
+    headline: "🟡 TSM ร่วง >1% ตาม chip sector risk-off แม้เพิ่งปรับเพิ่ม outlook รายได้ปี 2026 เป็นโตกว่า 40%",
+    summary: "หุ้น Taiwan Semiconductor ร่วงมากกว่า 1% ในการเทรด premarket วันที่ 2 กันยายน ตามการปรับฐานกว้างของกลุ่มชิปจาก risk appetite ที่อ่อนแอลง ราคาล่าสุด (3 ก.ย.) อยู่ที่ $411.92 ทั้งนี้ปัจจัยพื้นฐานยังแข็งแกร่ง — Q2 revenue $40.2B เหนือ guidance, gross margin 67.7% เหนือคาด, ปรับเพิ่ม 2026 revenue growth outlook เป็นมากกว่า 40% และเพิ่ม capex guidance เป็น $18.75-20B (บางแหล่งระบุ $60-64B รวมทั้งปี) Q3 guide $44.6-45.8B revenue พร้อม gross margin 65-67% ที่รับแรงกดดันชั่วคราวจากต้นทุน ramp-up เทคโนโลยี 2nm บริษัทยังเดินหน้าสร้าง advanced packaging hub ที่ Kaohsiung. นัยพอร์ต: TSM อยู่ใน Big 10 watch — การร่วงรอบนี้เป็นแรงกดดันเชิง sector/macro (risk-off) ไม่ใช่ fundamental deterioration สอดคล้องกับ AI capex theme ที่ยังแข็งแกร่งตามที่ AVGO ยืนยันคู่ขนาน.",
+    impact: "MIXED", tickers: ["TSM"],
+    url: "https://www.benzinga.com/markets/tech/26/09/61569110/whats-going-on-with-taiwan-semiconductor-stock-wednesday-7",
+  },
+  {
+    date: "2026-09-02", category: "EARNINGS",
+    headline: "🟢 LLY ประกาศเทคโอเวอร์ Merida Biosciences มูลค่า $2.875 พันล้าน — กระจายพอร์ตยาไปกลุ่ม immunology",
+    summary: "Eli Lilly ประกาศเข้าซื้อกิจการ Merida Biosciences มูลค่า $2.875 พันล้านดอลลาร์ เมื่อต้นเดือนกันยายน เพื่อเสริมความแข็งแกร่งใน pipeline ยากลุ่ม immunology ถือเป็นความเคลื่อนไหวเชิงกลยุทธ์เพื่อกระจายความเสี่ยงออกจากธุรกิจยา GLP-1 (Mounjaro, Zepbound) ที่ครองสัดส่วนรายได้ใหญ่ในปัจจุบัน ท่ามกลางการแข่งขันที่รุนแรงขึ้นจาก Novo Nordisk ในตลาดยาลดน้ำหนัก ราคาหุ้นล่าสุด (3 ก.ย.) อยู่ที่ $1,157.79 นักวิเคราะห์ 24 จาก 26 รายแนะนำซื้อ (Buy consensus). นัยพอร์ต: LLY อยู่ใน Big 10 watch — การกระจายพอร์ตยาเป็นสัญญาณบวกระยะยาวลดความเสี่ยง concentration ต่อ GLP-1 เพียงกลุ่มเดียว relevant กับ REGN ในพอร์ตที่อยู่ใน healthcare sector เดียวกัน.",
+    impact: "POSITIVE", tickers: ["LLY"],
+    url: "https://247wallst.com/investing/2026/09/02/lillys-record-stock-price-is-hiding-an-even-bigger-opportunity/",
+  },
+  {
+    date: "2026-09-02", category: "SECTOR",
+    headline: "🟡 JPM: ขยายธุรกิจ Southwest airport lounge partnership + เผชิญแรงกดดัน G-SIB regulatory buffer สูงขึ้น",
+    summary: "JPMorgan Chase ประกาศพาร์ทเนอร์กับ Southwest Airlines เปิด airport lounge ใหม่ ขยายขอบเขตธุรกิจ consumer banking พร้อมกันนี้บริษัทยังคงเดินหน้าขยาย Kinexys blockchain platform สำหรับธุรกิจ payments ที่รายงานรายได้สถิติใหม่ในครึ่งปีแรก 2026 อย่างไรก็ตาม ธนาคารเผชิญแรงกดดันจากเกณฑ์ G-SIB regulatory capital buffer ที่สูงขึ้น ขณะเดียวกันยังคงเดินหน้าขยายโครงการ buyback และเงินปันผลต่อเนื่อง ราคาหุ้นล่าสุด (3 ก.ย.) อยู่ที่ $362.05 นักวิเคราะห์ 13 จาก 14 รายแนะนำซื้อ. นัยพอร์ต: JPM อยู่ใน Big 10 watch — เป็น financial sector bellwether ที่เกี่ยวโยงกับ macro regime โดยเฉพาะทิศทาง bond yield/Fed policy ที่กระทบ margin ธนาคารโดยตรง.",
+    impact: "NEUTRAL", tickers: ["JPM"],
+    url: "https://www.cnbc.com/2026/09/02/here-are-jpmorgans-favorite-stocks-as-september-gets-underway.html",
+  },
+  // ── 2026-09-01 ──────────────────────────────
+  {
+    date: "2026-09-01", category: "SECTOR",
+    headline: "🔴🟢 AAPL เปลี่ยนผู้นำครั้งแรกในรอบ 15 ปี — John Ternus ขึ้นเป็น CEO แทน Tim Cook (ย้ายเป็น Executive Chairman)",
+    summary: "Apple ประกาศเปลี่ยนแปลงผู้นำครั้งใหญ่ที่สุดในรอบ 15 ปี โดย John Ternus (อดีตหัวหน้าฝ่าย Hardware Engineering) ขึ้นดำรงตำแหน่ง CEO อย่างเป็นทางการมีผล 1 กันยายน แทนที่ Tim Cook ที่ย้ายไปเป็น Executive Chairman หุ้น AAPL บวก 2.5% ในวันประกาศสวนทางตลาดกว้างที่ S&P 500/Nasdaq ร่วง สะท้อนตลาดตอบรับเชิงบวกต่อ succession plan ที่ราบรื่น บริษัทเตรียมจัดงาน product event วันที่ 9 กันยายน คาดเปิดตัว iPhone 18 lineup รวมถึงอาจมี foldable iPhone รุ่นแรก อย่างไรก็ตาม Jefferies ปรับลดเรตติ้งเป็น Sell จากข่าวยกเลิกแผน all-glass iPhone. นัยพอร์ต: AAPL อยู่ใน Big 10 watch — การเปลี่ยนผู้นำที่ตลาดตอบรับบวกลดความเสี่ยง governance overhang แต่ยังต้องติดตามทิศทางกลยุทธ์ผลิตภัณฑ์ของ Ternus ต่อจากนี้ โดยเฉพาะงาน product event 9 ก.ย.",
+    impact: "MIXED", tickers: ["AAPL"],
+    url: "https://www.barchart.com/story/news/4378910/dear-apple-stock-fans-mark-your-calendars-for-september-1",
+  },
+  {
+    date: "2026-09-01", category: "EARNINGS",
+    headline: "🟢 ADBE: RBC ขึ้น PT เป็น $315 (จาก $285) ก่อนงบ Q3 FY26 วันที่ 10 ก.ย. — ตลาดคาด beat-and-raise",
+    summary: "RBC Capital ปรับราคาเป้าหมาย Adobe ขึ้นเป็น $315 จาก $285 คงเรตติ้ง Outperform ก่อนที่ Adobe จะประกาศผลประกอบการ Q3 FY2026 หลังตลาดปิดวันที่ 10 กันยายน ซึ่งตลาดคาดว่าจะเป็นผลประกอบการแบบ beat-and-raise ราคาหุ้นล่าสุด (ต้นเดือนกันยายน) อยู่ที่ $286.22 ยังคงติดลบราว 16% YTD ทั้งนี้ AI-driven ARR ของ Adobe (Firefly) เติบโตต่อเนื่องทะลุ $500M และบริษัทเพิ่งเข้าซื้อกิจการ Rilo สตาร์ทอัพด้าน marketing intelligence จากอินเดีย. นัยพอร์ต: ADBE ในพอร์ต (weight 11.13% เกิน IPS band, FV $311.70 stale 115+ วัน — Re-Analysis Trigger #1) — งบ Q3 วันที่ 10 ก.ย. เป็น catalyst สำคัญที่สุดที่จะยืนยันหรือ trigger full re-analysis เพื่อ re-verify FV.",
+    impact: "POSITIVE", tickers: ["ADBE"],
+    url: "https://www.ad-hoc-news.de/boerse/news/corporate-news/adobe-stock-holds-steady-as-wall-street-lifts-targets-ahead-of-q3-earnings/70035549",
+  },
+  {
+    date: "2026-09-01", category: "SECTOR",
+    headline: "🟠 REGN บวกสะสม 28% ใน 30 วัน ทำ 52-week high ใหม่ที่ $834 — เตรียมขึ้นเวที 2 healthcare conference กันยายน",
+    summary: "Regeneron ปรับตัวขึ้นราว 28% ในช่วง 30 วันที่ผ่านมา จาก ~$651 สู่ ~$834 ทำระดับสูงสุดในรอบ 52 สัปดาห์ใหม่ ทะลุจุดสูงสุดเดิม $821.11 บริษัทเริ่มการทดลอง Phase I ครั้งแรกในมนุษย์สำหรับยา REGN17235 (รักษาผู้ป่วย SF3B1-mutant clonal hematopoietic disorders) โดยเริ่มรับสมัครผู้ป่วยเดือนกันยายน และเตรียมขึ้นเวที Wells Fargo Healthcare Conference (9 ก.ย.) และ Morgan Stanley Global Healthcare Conference (14 ก.ย.) ทั้งนี้ยังมีคดี securities class action ค้างอยู่ (lead plaintiff deadline 14 ก.ย.). นัยพอร์ต: REGN ในพอร์ต (TRIMMED 30%, ถือ 0.42sh, MOS -0.89% ใกล้ FV $792 ที่ stale 90+ วัน — Re-Analysis Trigger #1+#2+#4) — การขึ้นทำ high ใหม่ต่อเนื่องเพิ่มความเร่งด่วนในการ re-verify FV ที่คาดว่า FV เดิมต่ำเกินไปหลัง Q2 beat.",
+    impact: "POSITIVE", tickers: ["REGN"],
+    url: "https://finance.yahoo.com/healthcare/articles/regeneron-pharmaceuticals-stock-regn-outperforming-103038158.html",
+  },
+  {
+    date: "2026-09-01", category: "SECTOR",
+    headline: "🟢 V: เปิดตัว A2A Protect ป้องกัน fraud แบบ real-time + RBC ขึ้น PT เป็น $466 (จาก $412)",
+    summary: "Visa เปิดตัวฟีเจอร์ A2A Protect เวอร์ชันปรับปรุงใหม่ ช่วยธนาคารสมาชิกตรวจจับและสกัดกั้นการฉ้อโกงประเภท account-to-account แบบ real-time ก่อนเงินจะถูกโอนออกจากบัญชีลูกค้า ประกาศต้นเดือนกันยายน ด้าน RBC Capital ปรับราคาเป้าหมายขึ้นเป็น $466 จาก $412 นักวิเคราะห์ส่วนใหญ่ยังคงมุมมองบวกก่อนที่ CEO Ryan McInerney จะขึ้นพูดในงาน investor conference วันที่ 8 กันยายน ราคาหุ้นล่าสุด (2 ก.ย.) เทรดที่ $378.94 market cap $706.67B ทั้งนี้ Hims & Hers ถูกจัดเข้า Acquirer Monitoring Program ของ Visa หลังมีข้อพิพาทการสมัครสมาชิกยาลดน้ำหนักพุ่งสูง. นัยพอร์ต: V อยู่ใน watchlist (HOLD/WAIT, MOS -13.3%, ราคาเกิน entry zone $285-300 มาก) — ข่าวบวกต่อเนื่องยืนยัน moat ธุรกิจ payment แต่ valuation ยังไม่เอื้อต่อการ deploy.",
+    impact: "POSITIVE", tickers: ["V"],
+    url: "https://www.top1markets.com/news/visa-stock-analysis-q3-2026",
+  },
+  // ── 2026-08-31 ──────────────────────────────
+  {
+    date: "2026-08-31", category: "REGULATION",
+    headline: "🔴 AMZN ร่วง 2.5% หลังมีรายงาน FTC เตรียมฟ้องคดีเรื่องแนวปฏิบัติโฆษณา",
+    summary: "หุ้น Amazon ปิดลบ 2.50% ที่ $259.77 เมื่อวันที่ 31 สิงหาคม หลังมีรายงานว่า Federal Trade Commission (FTC) กำลังเตรียมยื่นฟ้องคดีต่อ Amazon เกี่ยวกับแนวปฏิบัติด้านโฆษณา (advertising practices) ซึ่งเป็นความเสี่ยงด้าน regulatory ใหม่ที่เพิ่มเข้ามาซ้อนกับคดี FTC เดิมเรื่อง Prime subscription ทั้งนี้พื้นฐานธุรกิจยังแข็งแกร่ง — Q2 revenue โต 20% YoY (constant currency) สู่ $200.6B, operating margin ขยับขึ้นเป็น 13.7% จาก 11.4% ปีก่อน และ AWS โต 37% เร็วที่สุดใน 18 ไตรมาส พร้อม backlog $496B. นัยพอร์ต: AMZN อยู่ใน Big 10 watch — legal/regulatory overhang เป็นความเสี่ยงระยะสั้นที่ต้องติดตาม แต่ fundamental (AWS growth, margin expansion) ยังไม่เปลี่ยน ผลประกอบการถัดไป 22 ต.ค.",
+    impact: "NEGATIVE", tickers: ["AMZN"],
+    url: "https://pintu.co.id/en/news/289947-amazon-stock-price-amzn-today-september-1-2026",
+  },
+  // ── 2026-08-27 ──────────────────────────────
+  {
+    date: "2026-08-27", category: "EARNINGS",
+    headline: "🟡 ADSK: Q2 FY27 beat ชัดเจน (Rev +16%, EPS $3.30) แต่ Q3 profit outlook อ่อนกว่าคาด กดดันหุ้น",
+    summary: "Autodesk รายงานผลประกอบการ Q2 FY2027 (ประกาศ 27 สิงหาคม) เหนือคาด: revenue โต 16% YoY, EPS $3.30 เหนือคาดการณ์ พร้อมปรับเพิ่ม full-year guidance แต่ตลาดกังวลจาก Q3 profit outlook ที่อ่อนกว่าที่นักวิเคราะห์คาดไว้ ประกอบกับความกังวลเรื่องการแข่งขันในตลาด AI design tools ที่เพิ่มขึ้น ราคาหุ้นล่าสุด (3 ก.ย.) เทรดในกรอบ $241.05-248.12 นักวิเคราะห์ปรับ PT หลากหลายทิศทาง: Citi ขึ้นเป็น $276 (จาก $269, Neutral) ขณะที่ Berenberg ลดเป็น $333 (จาก $335) ทั้งนี้บริษัทยังเผชิญคดีความผู้ถือหุ้นเกี่ยวกับการตรวจสอบกระแสเงินสด. นัยพอร์ต: ADSK ในพอร์ต (return +30.29%, FV $290 age 84+ วัน — Re-Analysis Trigger #1) — ผล earnings ที่ beat แต่ guide อ่อนเป็นสัญญาณผสมที่ Emma ต้อง incorporate เข้า FV re-verify ครั้งถัดไป โดยเฉพาะประเด็น MaintainX integration และ FCF inflection thesis.",
+    impact: "MIXED", tickers: ["ADSK"],
+    url: "https://www.trefis.com/stock/adsk/articles-v3/611476/the-line-in-the-sand-for-adsk-stock/2026-08-14",
+  },
+  // ── 2026-08-26 ──────────────────────────────
+  {
+    date: "2026-08-26", category: "EARNINGS",
+    headline: "🟢 CRM: Q2 FY27 revenue $11.35B (+11% YoY) beat คาด — ดีล Anthropic + หุ้นบวกสะสม 40% เดือนสิงหาคม",
+    summary: "Salesforce รายงานผลประกอบการ Q2 FY2027 (ประกาศ 26 สิงหาคม) revenue รวม $11.35 พันล้านดอลลาร์ โต 11% YoY เหนือคาดการณ์นักวิเคราะห์ หนุนจาก Agentforce growth ที่แข็งแกร่งต่อเนื่อง บริษัทยังประกาศพาร์ทเนอร์กับ Anthropic เพื่อผนวกฟีเจอร์ AI เสริมความสามารถแข่งขัน หุ้นพุ่งบวกสะสมเกือบ 40% ตลอดเดือนสิงหาคมจากทั้งผล earnings และแรงหนุน analyst PT hike (Cantor Fitzgerald, BTIG, Needham) ราคาล่าสุด (3 ก.ย.) เทรดที่ $261.30 โดย TD Cowen ยกระดับ PT เป็น $300 จาก $280. นัยพอร์ต: CRM ในพอร์ต (return +42.29%, FV $279 stale 94+ วัน — Re-Analysis Trigger #1+#4 FIRED, ราคา +42.3% เกิน price ณ fvVerifiedDate) — earnings beat + Anthropic deal ยืนยันว่า FV เดิม $279 น่าจะต่ำเกินไปมาก ต้อง re-verify ด่วนก่อนพิจารณา trim ใดๆ.",
+    impact: "POSITIVE", tickers: ["CRM"],
+    url: "https://www.benzinga.com/markets/tech/26/09/61578471/salesforce-customers-are-burning-through-ai-credits-and-thats-great-news-for-revenue",
+  },
+  {
+    date: "2026-08-26", category: "EARNINGS",
+    headline: "🟢 VEEV: Q2 FY27 beat แรง (Rev $928M +17.6%, EPS $2.35) ปรับเพิ่ม FY guide + เปิดตัว Falcon Safety",
+    summary: "Veeva Systems รายงานผลประกอบการ Q2 FY2027 เหนือคาดทั้งสองตัวเลขหลัก: revenue $928M โต 17.6% YoY (เหนือ consensus $905.3M), adjusted EPS $2.35 เหนือคาด $2.22 หุ้นพุ่งขึ้นถึง 17-20% ในวันประกาศ บริษัทปรับเพิ่ม full-year guidance เป็น revenue $3.68B และ adjusted EPS $9.21 ที่จุดกึ่งกลาง พร้อมเปิดตัวผลิตภัณฑ์ใหม่ Veeva Falcon Safety สำหรับงาน agentic safety operations Truist ปรับราคาเป้าหมายขึ้นเป็น $305 จาก $262 คง Buy rating นักวิเคราะห์ 28 ราย เฉลี่ยแนะนำ Buy. นัยพอร์ต: VEEV อยู่ใน watchlist (conviction upgrade watch 6.7, entry zone $148-158 เดิม) — ผล earnings ที่ beat แรงต่อเนื่องเป็นสัญญาณชัดเจนสำหรับพิจารณา conviction upgrade เป็น 7.0+ แม้ราคาจะห่างจาก entry zone มากขึ้นอีก.",
+    impact: "POSITIVE", tickers: ["VEEV"],
+    url: "https://markets.financialcontent.com/stocks/article/stockstory-2026-8-27-why-veeva-systems-veev-stock-is-trading-up-today",
+  },
+  // ── 2026-08-25 ──────────────────────────────
+  {
+    date: "2026-08-25", category: "REGULATION",
+    headline: "🔴 META บรรลุข้อตกลง settlement $17 พันล้าน คดีออกแบบแพลตฟอร์มให้เสพติดเยาวชนกับกลุ่มอัยการรัฐ",
+    summary: "Meta Platforms บรรลุข้อตกลงยุติคดี (settlement) กับกลุ่มอัยการสูงสุดหลายรัฐ ในคดีกลางที่ฟ้องร้องเรื่องการออกแบบ Facebook/Instagram ให้เสพติดสำหรับผู้ใช้วัยรุ่น โดยตกลงจ่ายเงิน $17 พันล้านดอลลาร์ และปรับเปลี่ยนแพลตฟอร์มครั้งใหญ่ตามเงื่อนไข ถือเป็นการปิดความเสี่ยง binary legal event ที่เคย flag ไว้ตั้งแต่การพิจารณาคดีเปิดขึ้นที่ Oakland เดือนสิงหาคม (ความเสี่ยงสูงสุดที่เคยประเมินไว้ถึง $1.4 ล้านล้านดอลลาร์) ทั้งนี้บริษัทยังเดินหน้าโปรดักต์ AI ต่อเนื่องด้วยการเปิดตัว Muse Voice Transcribe โมเดล audio perception แบบ real-time ตัวแรก. นัยพอร์ต: META อยู่ใน Big 10 watch — การ settlement ช่วยลด legal overhang ที่เคยเป็นความเสี่ยงใหญ่ที่สุดของหุ้นลงอย่างมีนัยสำคัญ แม้มูลค่า $17B จะกระทบกำไรระยะสั้น แต่ removal of uncertainty มักเป็นบวกต่อ sentiment ระยะกลาง.",
+    impact: "MIXED", tickers: ["META"],
+    url: "https://www.benzinga.com/markets/tech/26/09/61554150/whats-going-on-with-salesforce-stock-2",
+  },
+  {
+    date: "2026-08-25", category: "SECTOR",
+    headline: "🟡 ACN เดินหน้าซื้อกิจการต่อเนื่อง (Dragos, runZero, NetRise, Comware มูลค่ารวม ~$4.18B) ท่ามกลางหุ้นร่วง >50% YTD",
+    summary: "Accenture เดินหน้ากลยุทธ์ M&A เชิงรับเพื่อเสริม capability ด้าน cybersecurity และ mid-market services โดยตกลงเข้าซื้อกิจการ Dragos, runZero (ส่วนใหญ่), NetRise และ Comware (Tokyo) มูลค่ารวมโดยประมาณ $4.18 พันล้านดอลลาร์ ท่ามกลางที่หุ้น ACN ร่วงลงมากกว่า 50% ตลอดปี 2026 หลังผลประกอบการ FQ3 พลาดคาด ปรับลด FY guidance รายได้ ยอด bookings ลดลงต่อเนื่องและดีลลูกค้าสำคัญเลื่อนไป FY2027 ประกอบกับความกังวลว่า AI จะ disrupt โมเดลธุรกิจ consulting เชิงโครงสร้าง ราคาเฉลี่ยเป้าหมายนักวิเคราะห์อยู่ที่ $193.46 (upside 3.25% จากราคาปัจจุบัน) buy consensus 76%. นัยพอร์ต: ACN ในพอร์ต (TRIMMED 50%, ถือ 1.4sh, ⚠️ FV $252.35 likely overstated — Bear Flip #1 ยังทำงาน) — M&A moves เป็นสัญญาณเชิงกลยุทธ์บวกระยะยาว แต่ไม่ใช่ catalyst พลิก Bear Flip #1/#2 รอ Q4 FY26 bookings (~ปลายก.ย.) เป็นจุดตัดสินใจหลัก.",
+    impact: "MIXED", tickers: ["ACN"],
+    url: "https://www.tikr.com/blog/accenture-stock-drops-50-in-2026-is-it-an-opportunity",
+  },
+  {
+    date: "2026-08-25", category: "EARNINGS",
+    headline: "🟠 GEV: Q2 EPS พลาดคาด 18.75% แต่ orders +88% YoY ทำสถิติ backlog $176B — ปรับเพิ่ม FCF guide เกือบเท่าตัว",
+    summary: "GE Vernova รายงาน Q2 2026 adjusted EPS $2.47 ต่ำกว่าคาด 18.75% แต่ revenue $11.1B เหนือคาด 3.45% จุดเด่นคือยอดสั่งซื้อ (orders) พุ่งขึ้น 88% YoY สู่ $24.2B ดัน backlog รวมทำสถิติใหม่ที่ $176B ขณะที่ free cash flow แข็งแกร่งถึง $5.1B ในไตรมาสเดียว ($10B YTD) บริษัทปรับเพิ่ม FY2026 revenue guidance เป็น $45.5-46.5B และปรับเพิ่ม free cash flow outlook เกือบเท่าตัวเป็น $11.5-12.5B (จากเดิม $6.5-7.5B) พร้อมประกาศเปลี่ยน CFO โดย McDonough จาก Rivian จะมารับตำแหน่งต่อจาก Parks ราคาหุ้นล่าสุด (3 ก.ย.) อยู่ที่ $943.34. นัยพอร์ต: GEV อยู่ใน watchlist (HOLD/WAIT — RE-ANALYSIS, MOS -307.9%, ราคาห่างจาก entry zone $320-380 เดิมมหาศาล) — FCF guide raise เกือบเท่าตัวเป็นสัญญาณบวกพื้นฐานที่แข็งแกร่งมาก แต่ valuation ปัจจุบันไกลเกินกว่าจะ deploy ได้ ต้อง full re-analysis หรือ de-list ตาม watchlist prune rules.",
+    impact: "MIXED", tickers: ["GEV"],
+    url: "https://www.investing.com/equities/ge-vernova-llc",
+  },
+  // ── 2026-08-22 ──────────────────────────────
+  {
+    date: "2026-08-22", category: "MACRO",
+    headline: "🟡 ภาษีนำเข้า Section 338 ต่อแคนาดามีผลบังคับใช้ + Section 232 ภาษี drone 10-100% ตามแหล่งผลิต",
+    summary: "ภาษีนำเข้า Section 338 ต่อสินค้าแคนาดามีผลบังคับใช้วันที่ 22 สิงหาคม ตามหลังศาล Court of International Trade เคยตัดสินคว่ำภาษี Section 122 (10% surcharge ทั่วโลก) เมื่อ 7 พฤษภาคม แต่คดียังอยู่ระหว่างอุทธรณ์และรัฐบาลยังเก็บภาษีต่อไป ก่อนหน้านั้นวันที่ 18 สิงหาคม รัฐบาล Trump ยังประกาศภาษี Section 232 สำหรับ drone และชิ้นส่วนที่เกี่ยวข้อง อัตรา 10-100% ขึ้นกับประเทศแหล่งผลิตและคุณสมบัติสินค้า ทั้งนี้ effective tariff rate เฉลี่ยของสหรัฐฯ ปี 2026 อยู่ที่ราว 7.2% สร้างภาระเฉลี่ยประมาณ $920 ต่อครัวเรือนต่อปี. นัยพอร์ต: ความไม่แน่นอนด้านการค้ายังเป็นความเสี่ยง macro ต่อเนื่องที่กดดัน supply chain ของบริษัทข้ามชาติในพอร์ตและ Big 10 (AAPL, TSLA, AMZN, TSM) ต้องติดตามผลอุทธรณ์คดีภาษีอย่างใกล้ชิด.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.atlanticcouncil.org/programs/geoeconomics-center/trump-tariff-tracker/",
+  },
+  {
+    date: "2026-08-22", category: "EARNINGS",
+    headline: "🟢 FICO: Q3 2026 revenue +26% YoY, GAAP net income +30%, FCF สถิติใหม่ + $1.96B buyback — ปรับเพิ่ม FY guide",
+    summary: "Fair Isaac Corporation รายงานผลประกอบการ Q3 2026 แข็งแกร่ง: revenue โต 26% YoY, GAAP net income เพิ่มขึ้น 30%, free cash flow ทำสถิติใหม่ พร้อมซื้อหุ้นคืนมูลค่า $1.96 พันล้านดอลลาร์ บริษัทปรับเพิ่ม full-year guidance หนุนจากผลงาน Scores segment และ Platform ที่แข็งแกร่งแม้เผชิญแรงกดดันจากตลาด mortgage ที่ซบเซา นอกจากนี้ Fannie Mae และ Freddie Mac เปิดเผยชุดข้อมูลย้อนหลังขยายเพิ่มเติมสำหรับ FICO Score 10T ครอบคลุมข้อมูล loan-level ตั้งแต่เมษายน 2013 ถึงกันยายน 2025 ถือเป็นก้าวสำคัญของการเปลี่ยนผ่านสู่ credit scoring ยุคใหม่ในอุตสาหกรรม mortgage นักวิเคราะห์ 21 รายเฉลี่ยให้ Buy PT $1,476.32 (+29.32%). นัยพอร์ต: FICO อยู่ใน watchlist (HOLD/WAIT, MOS -9.1%, ราคาเกิน entry zone $950-1020) — ผลประกอบการแข็งแกร่งต่อเนื่องยืนยัน moat ธุรกิจ scoring แต่ valuation ยังตึงเกินจะ deploy.",
+    impact: "POSITIVE", tickers: ["FICO"],
+    url: "https://www.tikr.com/blog/down-26-in-last-12-months-can-fair-issac-nyse-ficostock-deliver-strong-returns-in-2028",
+  },
+  {
+    date: "2026-08-22", category: "EARNINGS",
+    headline: "🟢 MCO: Q2 2026 beat ทั้งสองบรรทัด (EPS $5.04 จาก $3.22, Rev +15%) — ผนึก Google Cloud Gemini Enterprise",
+    summary: "Moody's Corporation รายงานผลประกอบการ Q2 2026 เหนือคาดทั้งรายได้และกำไร: EPS $5.04 เพิ่มขึ้นจาก $3.22 ปีก่อน, revenue $2.19B โต 15% YoY, net income $878.0M โต 52% YoY บริษัทยืนยัน FY26 outlook เดิม สะท้อนความมั่นใจในโมเมนตัมการเติบโต ในเดือนสิงหาคม Moody's ยังประกาศให้บริการ connected intelligence ผ่าน Google Cloud's Gemini Enterprise for Financial Services และแต่งตั้ง Keith Demmings เข้าคณะกรรมการบริษัท มีผล 1 พฤศจิกายน ราคาหุ้นล่าสุด (2 ก.ย.) อยู่ที่ $487.61 P/E 31.37x ปันผล yield 0.81%. นัยพอร์ต: MCO อยู่ใน watchlist (WAITED 2026-06-14, MOS -4.4%, ราคาเกิน entry zone $390-415) — ผลประกอบการแข็งแกร่งต่อเนื่องยืนยัน thesis เดิม แต่ยังรอ pullback เข้า entry zone ก่อนพิจารณา deploy.",
+    impact: "POSITIVE", tickers: ["MCO"],
+    url: "https://simplywall.st/stocks/us/diversified-financials/nyse-mco/moodys",
+  },
+  {
+    date: "2026-08-22", category: "SECTOR",
+    headline: "🟡 PGR: Q2 EPS beat 6.9% แต่นักวิเคราะห์กังวล auto pricing power อ่อนลง + การแข่งขันเพิ่มขึ้น",
+    summary: "Progressive Corporation รายงาน Q2 2026 EPS $5.68 เพิ่มขึ้นจาก $5.42 ปีก่อน เหนือคาดการณ์นักวิเคราะห์ 6.9%, revenue $23.6B โต 7.3% YoY, net income $3.31B โต 4.3% อย่างไรก็ตาม นักวิเคราะห์เริ่มแสดงความกังวลเรื่อง auto pricing power ที่อ่อนลง การเติบโตของ premium ที่ชะลอตัวเล็กน้อย และตลาดประกันภัยรถยนต์ส่วนบุคคลที่แข่งขันดุเดือดขึ้น หุ้นปรับตัวผสม (-2.18% ล่าสุด แม้บวก 14.5% ใน 3 เดือน) บริษัทประกาศเงินปันผล $0.10 ex-date 1 ตุลาคม. นัยพอร์ต: PGR อยู่ใน watchlist (SCOUT — รอ Charlie pipeline, SKIPPED 2026-06-14) — ยังไม่ผ่านการวิเคราะห์เต็มรูปแบบ ข่าวนี้เป็น context เพิ่มเติมสำหรับ Charlie พิจารณาหากมีการวิเคราะห์เต็มในอนาคต.",
+    impact: "MIXED", tickers: ["PGR"],
+    url: "https://stockstory.org/us/stocks/nyse/pgr",
+  },
+  {
+    date: "2026-08-22", category: "SECTOR",
+    headline: "🟢 BRK.B: Greg Abel ย้ำเน้นลงทุน AI/energy — ชี้ 'แรงต้าน' การสร้าง data center เพิ่มขึ้นทั่วสหรัฐฯ",
+    summary: "Greg Abel ซึ่งขึ้นเป็น CEO Berkshire Hathaway ตั้งแต่ต้นปี 2026 ย้ำเน้นกลยุทธ์การลงทุนในธีม AI และพลังงาน (energy) เป็นหลักในการให้สัมภาษณ์ล่าสุด พร้อมชี้ว่ามี 'แรงต้าน (pushback) เพิ่มขึ้นมาก' ต่อการก่อสร้าง data center ทั่วสหรัฐฯ ซึ่งอาจเป็นปัจจัยจำกัดการขยายตัวของ AI infrastructure ระยะต่อไป ทั้งนี้ Berkshire ยังคงถือหุ้น Alphabet อย่างมีนัยสำคัญ (เพิ่มสัดส่วนใน Q2) และยังคงถือ Apple เป็นสัดส่วนสำคัญของพอร์ตแม้มีการ trim บางส่วน ราคาหุ้นล่าสุด (3 ก.ย.) อยู่ที่ $505.24. นัยพอร์ต: BRK.B อยู่ใน Big 10 watch — มุมมอง Abel เรื่อง data center pushback เป็นสัญญาณเตือนความเสี่ยงเชิง regulatory/permitting ต่อ AI capex theme กว้าง relevant กับ GOOGL/AVGO/TSM ในพอร์ต.",
+    impact: "NEUTRAL", tickers: ["BRK.B", "GOOGL"],
+    url: "https://www.morningstar.com/stocks/xnys/brk.b/quote",
+  },
   // ── 2026-08-21 ──────────────────────────────
   {
     date: "2026-08-21", category: "MACRO",
