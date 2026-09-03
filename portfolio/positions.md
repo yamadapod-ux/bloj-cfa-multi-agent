@@ -1,5 +1,25 @@
 # Simulated Portfolio — บลจ. CFA
-*Managed by Max | Updated: 2026-09-01 (Portfolio Review Mode 3 + Max×Charlie consultation — Charlie Strategic Note 2026-09-01. Regime = TRANSITIONAL-CAUTIOUS (Atlas 2026-09-01). Fresh prices 2026-08-31 close. 🔪 NOW TRIM 50% (1 of 2sh @ $147.99) — Exit Rule TRIM (return +65.4% >50% AND conv 5.83 <6) + MOS -15.1% fresh FV + Bear Flip #6 | realized +$58.52 (+65.40%), remaining 1sh. 🔪 RDDT TRIM 33% (1 of 3sh @ $147.81) — risk-mgmt defensive trim, TC regime (thesis 0/5 Bear Flip, 0/3 Invalidation — NOT invalidated; stopDist 4.78% CRITICAL + EU VLOP 8/31) | realized -$28.13 (-15.99%), remaining 2sh. Session net realized +$30.39 | Total $10,526.75 | Cash 62.49% | Alpha +1.36% (พลิกบวก). ⚠️ 7/8 positions fire Re-Analysis FV trigger. | ✅ RDDT Emma lightweight FV re-verify DONE 2026-09-01: BUY→HOLD (No Add, bias-to-exit $155–160), Blended FV $169.25→$159.25 (Quinn/Bear stale), MOS +14.5%→+7.7% — re-verify VALIDATES การ trim; full re-analysis required if held past Sept FOMC.)*
+*Managed by Max | Updated: 2026-09-03 (Portfolio Review Mode 3 + Max×Charlie consultation — Charlie Strategic Note 2026-09-01. Regime = TRANSITIONAL-CAUTIOUS (Atlas 2026-09-01). Fresh prices 2026-08-31 close. 🔪 NOW TRIM 50% (1 of 2sh @ $147.99) — Exit Rule TRIM (return +65.4% >50% AND conv 5.83 <6) + MOS -15.1% fresh FV + Bear Flip #6 | realized +$58.52 (+65.40%), remaining 1sh. 🔪 RDDT TRIM 33% (1 of 3sh @ $147.81) — risk-mgmt defensive trim, TC regime (thesis 0/5 Bear Flip, 0/3 Invalidation — NOT invalidated; stopDist 4.78% CRITICAL + EU VLOP 8/31) | realized -$28.13 (-15.99%), remaining 2sh. Session net realized +$30.39 | Total $10,526.75 | Cash 62.49% | Alpha +1.36% (พลิกบวก). ⚠️ 7/8 positions fire Re-Analysis FV trigger. | ✅ RDDT Emma lightweight FV re-verify DONE 2026-09-01: BUY→HOLD (No Add, bias-to-exit $155–160), Blended FV $169.25→$159.25 (Quinn/Bear stale), MOS +14.5%→+7.7% — re-verify VALIDATES การ trim; full re-analysis required if held past Sept FOMC. 🔴 2026-09-03: RDDT FULL EXIT — full re-analysis pipeline (Atlas→Emma∥Quinn→Bear→Morgan QA PASS) returned SELL (Blended FV $169.25→$159.25→$103.49, MOS -34.5%, Bear -45.0%, 0/9 Bear Flip + 0/3 Invalidation = valuation-driven not thesis-broken; Charlie concur full exit). SELL remaining 2sh @ $158.10 (Sept 2 close, 2-source verified), realized -$35.68 (-10.14%). Cash $6,578.27→$6,894.47, Total $10,526.75→$10,547.33, 7 positions.)*
+
+---
+
+## 🔴 SELL EXECUTED — RDDT 2026-09-03 (Full Exit — Full Re-Analysis Pipeline)
+
+> **TRIGGER:** Full re-analysis pipeline (Atlas → Emma∥Quinn → Bear → Charlie → Morgan QA PASS) completed 2026-09-03 — escalation flagged in advance on 2026-09-01 ("full re-analysis required if held past Sept FOMC"), executed ~2 weeks early because Quinn/Bear inputs were stale since 2026-05-30 (never re-run through 2 trims). Recommendation: **BUY → HOLD (09-01, lightweight) → SELL — Exit remaining 2 shares (09-03, full pipeline)**.
+>
+> **Result:** Blended FV eroded 3 rounds running — $169.25 (05-30) → $159.25 (09-01 lightweight) → **$103.49** (09-03 full pipeline: Emma $118×40% + Quinn $100.62×30% + Bear $87×30%) — despite fundamentals still executing well (8 consecutive quarters >60% YoY revenue growth). Erosion driven mostly by methodology tightening (NOPAT-based FCFF, TGR cap, verified beta 2.03) + 2 new headwinds (EU DSA/VLOP designation, ChatGPT citation collapse -86%), not business deterioration. **MOS @ $158.10 = -34.5%** (Bear downside case -45.0%) — deepest negative MOS since position opened.
+>
+> **Thesis check: 0/9 Bear Flip Triggers, 0/3 Thesis Invalidation fired** — team unanimous this is a **valuation-driven exit** (price ran ahead of fundamentals on a non-fundamental catalyst — S&P 500 index-inclusion flow, +9.31% single-day pop 2026-09-02) not a broken-thesis exit.
+>
+> **Max Consultation Rule:** SELL recommendation originated from a fresh full research pipeline (Atlas→Emma/Quinn/Bear→Morgan QA PASS) — per CLAUDE.md this counts as having been "ปรึกษา Charlie แล้วโดยธรรมชาติของ pipeline." Charlie reviewed and **concurs with full exit** (not partial trim): deepest MOS in book (-34.5%, Bear -45.0%), unanimous 3/3 analyst EXIT call, 0/9 Bear Flip + 0/3 Invalidation confirms valuation-driven (not thesis-broken), and residual position too small (2sh, 2.81% weight) to justify holding through 2 remaining open binary risks (Google $60M/yr licensing renewal, EU DSA enforcement).
+>
+> **EXECUTED:** SELL 2 shares @ **$158.10** (verified 2-source: Yahoo Finance + Stockanalysis.com, Sept 2 2026 4:00–4:05PM EDT close, 0.0% diff — per `agent_notes/atlas/2026-09-03_RDDT_data.md`) = **$316.20 proceeds** | **Realized P&L: -$35.68 (-10.14%)** on this tranche (cost basis $351.88 @ entry $175.94)
+>
+> **Position CLOSED.** RDDT lifetime (3sh original, entry 2026-05-30 @ $175.94, cost basis $527.82): TRIM 33% 2026-09-01 (-$28.13) + SELL remainder 2026-09-03 (-$35.68) = **cumulative realized -$63.81** on this position.
+>
+> **Cash:** $6,578.27 → **$6,894.47** (+$316.20 proceeds) | **# Positions:** 8 → **7**
+>
+> Full detail: `reports/RDDT_2026-05-30.md` § Update Log (09-03 full re-analysis), `agent_notes/{atlas,emma,quinn,bear,leo}/2026-09-03_*RDDT*.md`, `session_logs/2026-09-03_1500_RDDT.md`, `portfolio/decisions.md` (2026-09-03 row).
 
 ---
 
@@ -195,23 +215,23 @@
 | | ค่า |
 |---|---|
 | **Starting Capital** | $10,000.00 |
-| **Current Cash** | $6,578.27 |
-| **Invested Value (Market)** | $3,948.48 |
-| **Total Portfolio Value** | $10,526.75 |
-| **Total Return** | +5.27% |
+| **Current Cash** | $6,894.47 |
+| **Invested Value (Market)** | $3,652.86 |
+| **Total Portfolio Value** | $10,547.33 |
+| **Total Return** | +5.47% |
 | **S&P 500 at Inception (2026-05-09)** | 7,398.93 |
-| **S&P 500 (2026-08-31 close — วันทำการล่าสุด)** | 7,688.39 |
+| **S&P 500 (2026-08-31 close — not re-verified this session)** | 7,688.39 |
 | **S&P 500 Return (since inception)** | +3.91% |
-| **Alpha** | **+1.36%** (พลิกบวก จาก -0.806% เมื่อ 8/22) |
-| **# Positions** | 8 (ADBE + NOW[1sh] + GOOGL + CRM + RDDT[2sh] + REGN[0.42sh] + ACN[1.4sh] + ADSK) |
-| **Cash %** | 62.49% |
-| **Last Updated** | 2026-09-01 (ราคาปิด 2026-08-31 — NOW TRIM 50% + RDDT TRIM 33% executed 2026-09-01) |
+| **Alpha** | **+1.56%** (provisional — only RDDT price refreshed this session, other 7 tickers still Aug31 close; not a full portfolio re-mark) |
+| **# Positions** | 7 (ADBE + NOW[1sh] + GOOGL + CRM + REGN[0.42sh] + ACN[1.4sh] + ADSK) — RDDT CLOSED 2026-09-03 |
+| **Cash %** | 65.37% |
+| **Last Updated** | 2026-09-03 (RDDT FULL EXIT — SELL remaining 2sh @ $158.10, full re-analysis pipeline SELL rec; other 7 tickers unchanged from 2026-08-31 close) |
 
-> **Price Sources — 2026-09-01 review (ราคาปิด 2026-08-31 close; stockanalysis.com primary, ≥2 sources เฉพาะ ticker ที่ trade):**
-> - NOW $147.99: stockanalysis.com Aug31 close + WebSearch $147.70 (post-trading, 0.2% diff) — 🔪 TRIMMED 50%. MOS **-15.1%** (FRESH FV $125.65)
-> - RDDT $147.81: stockanalysis.com Aug31 close + WebSearch/FinancialContent $148.08 (−3.2% day on EU VLOP news, 0.2% diff) — 🔪 TRIMMED 33%. stopDist **4.78%**
-> - ADBE $292.79 / GOOGL $339.35 / CRM $257.54 / REGN $799.08 / ACN $189.76 / ADSK $258.53: stockanalysis.com Aug31 close (single-source per Charlie Strategic Note; not traded this session)
-> - S&P 500 7,688.39 (2026-08-31 close): Yahoo Finance −23.37/−0.30% + TradingEconomics 7,688.30 cross-check (Atlas 2026-09-01 regime record)
+> **Price Sources — 2026-09-03 (RDDT exit only; other 7 tickers unchanged from 2026-09-01 review, ราคาปิด 2026-08-31 close):**
+> - **RDDT $158.10 (SELL, position CLOSED):** Yahoo Finance + Stockanalysis.com, both Sept 2 2026 4:00–4:05PM EDT close, 0.0% diff (2-source verified, per `agent_notes/atlas/2026-09-03_RDDT_data.md`) — +9.31% single-day pop on S&P 500 index-inclusion flow. Full re-analysis pipeline: Blended FV $103.49, MOS -34.5%.
+> - NOW $147.99: stockanalysis.com Aug31 close + WebSearch $147.70 (0.2% diff) — TRIMMED 50% 2026-09-01. MOS **-15.1%** (FRESH FV $125.65)
+> - ADBE $292.79 / GOOGL $339.35 / CRM $257.54 / REGN $799.08 / ACN $189.76 / ADSK $258.53: stockanalysis.com Aug31 close (single-source per Charlie Strategic Note; not traded/re-priced this session)
+> - S&P 500 7,688.39 (2026-08-31 close, not re-verified 09-03): Yahoo Finance −23.37/−0.30% + TradingEconomics 7,688.30 cross-check (Atlas 2026-09-01 regime record)
 
 ---
 
@@ -258,25 +278,25 @@
 
 ---
 
-## Current Positions — 2026-09-01 (ราคาปิด 2026-08-31 close | NOW TRIM 50%, RDDT TRIM 33%)
+## Current Positions — 2026-09-03 (RDDT CLOSED | other 7 tickers unchanged from 2026-08-31 close)
 
 | Ticker | Entry Date | Entry $ | Shares | Cost Basis | Current $ | Mkt Value | Return % | Weight % | Stop Loss | Stop Dist % | Status |
 |--------|-----------|---------|--------|-----------|----------|----------|---------|---------|----------|-------------|--------|
-| ADBE (avg) | 2026-05-09 T1 / 2026-05-15 T2 | $247.03 avg | 4 | $988.10 | **$292.79** | $1,171.16 | **+18.53%** | 11.13% | $185.00 | +36.82% | OPEN — ⚠️ weight 11.13% (>10% IPS band, <12% hard-trim); FV $311.70 stale 115d (Trigger #1) |
-| NOW | 2026-05-11 T1 | $89.47 | 1 | $89.47 | **$147.99** | $147.99 | **+65.40%** | 1.41% | $93.00 | +37.16% | 🔪 TRIMMED 50% 2026-09-01 — Exit Rule TRIM (return +65.4% >50% AND conv 5.83 <6) + MOS -15.1% fresh FV + Bear Flip #6. Remaining 1sh |
+| ADBE (avg) | 2026-05-09 T1 / 2026-05-15 T2 | $247.03 avg | 4 | $988.10 | **$292.79** | $1,171.16 | **+18.53%** | 11.11% | $185.00 | +36.82% | OPEN — ⚠️ weight 11.11% (>10% IPS band, <12% hard-trim); FV $311.70 stale 115d+ (Trigger #1) |
+| NOW | 2026-05-11 T1 | $89.47 | 1 | $89.47 | **$147.99** | $147.99 | **+65.40%** | 1.40% | $93.00 | +37.16% | 🔪 TRIMMED 50% 2026-09-01 — Exit Rule TRIM (return +65.4% >50% AND conv 5.83 <6) + MOS -15.1% fresh FV + Bear Flip #6. Remaining 1sh |
 | **GOOGL** | **2026-05-21 T1** | **$388.91** | **1** | **$388.91** | **$339.35** | **$339.35** | **-12.75%** | **3.22%** | **$310.00** | **+8.65%** | 🟡 **WATCH** — stopDist <10% (3rd review running); core intact (Cloud +82%); FV $414 stale (Trigger #1) |
-| CRM | 2026-05-29 T1 | $181.00 | 3 | $543.00 | **$257.54** | $772.62 | **+42.29%** | 7.34% | $144.80 | +43.78% | OPEN — Q2 FY27 beat 8/26 (+23% pop). 🚩 Trigger #1+#4 — Emma FV re-verify (no trim on stale FV) |
-| RDDT | 2026-05-30 T1 | $175.94 | 2 | $351.88 | **$147.81** | $295.62 | **-15.99%** | 2.81% | $140.75 | +4.78% | 🔪 TRIMMED 33% 2026-09-01 + **Emma FV re-verify: BUY→HOLD (No Add, bias-to-exit $155–160)**. Blended FV $169.25→$159.25 (lightweight; Quinn/Bear stale), MOS +7.7%. 🔴🔴 stopDist 4.78% CRITICAL. Breach $140.75 → stop out. Full re-analysis required if held past Sept FOMC |
-| **REGN** | **2026-06-03 T1** | **$602.00** | **0.42** | **$252.84** | **$799.08** | **$335.61** | **+32.74%** | **3.19%** | **$482.00** | **+39.68%** | ✅ STRONG SELL RESOLVED — MOS -0.9% flat (price ย่อ $834→$799). FV $792 stale + likely TOO LOW post Q2 EPS beat (Trigger #1+#2+#4). HOLD 0.42sh |
+| CRM | 2026-05-29 T1 | $181.00 | 3 | $543.00 | **$257.54** | $772.62 | **+42.29%** | 7.33% | $144.80 | +43.78% | OPEN — Q2 FY27 beat 8/26 (+23% pop). 🚩 Trigger #1+#4 — Emma FV re-verify (no trim on stale FV) |
+| **REGN** | **2026-06-03 T1** | **$602.00** | **0.42** | **$252.84** | **$799.08** | **$335.61** | **+32.74%** | **3.18%** | **$482.00** | **+39.68%** | ✅ STRONG SELL RESOLVED — MOS -0.9% flat (price ย่อ $834→$799). FV $792 stale + likely TOO LOW post Q2 EPS beat (Trigger #1+#2+#4). HOLD 0.42sh |
 | ACN | 2026-06-05 T1 | $178.16 | 1.4 | $249.43 | **$189.76** | $265.66 | **+6.51%** | 2.52% | $148.00 | **+21.99%** | OPEN — HOLD. ⚠️ FV $252.35 likely OVERSTATED (Bear Flip #1 firing + Street $150-170 << FV + Q3 guide-cut unmodeled; Trigger #1+#5). Q4 bookings = decision point |
-| ADSK | 2026-06-14 T1 | $198.43 | 2.4 | $476.23 | **$258.53** | $620.47 | **+30.29%** | 5.89% | $158.74 | +38.60% | OPEN — Q2 FY27 earnings 2026-08-27 (need result). 🚩 Trigger #1 — Emma FV re-verify |
+| ADSK | 2026-06-14 T1 | $198.43 | 2.4 | $476.23 | **$258.53** | $620.47 | **+30.29%** | 5.88% | $158.74 | +38.60% | OPEN — Q2 FY27 earnings 2026-08-27 (need result). 🚩 Trigger #1 — Emma FV re-verify |
+
+> **RDDT — CLOSED 2026-09-03.** Full re-analysis pipeline SELL — remaining 2sh sold @ $158.10, realized -$35.68 (-10.14%). See "🔴 SELL EXECUTED — RDDT 2026-09-03" section above for full detail.
 
 
-## Stop Loss Check — 2026-09-01 (ราคาปิด 2026-08-31 close)
+## Stop Loss Check — 2026-09-03 (RDDT CLOSED | other 7 tickers unchanged from 2026-08-31 close)
 
 | Ticker | Current $ | Stop Loss $ | Distance $ | Distance % | สถานะ |
 |--------|----------|------------|-----------|-----------|-------|
-| **RDDT** | **$147.81** | **$140.75** | **$7.06** | **+4.78%** | 🔴🔴 **CRITICAL (<5%)** — NOT breached. Thesis 0/5 Bear Flip, 0/3 Invalidation. 🔪 TRIMMED 33% (risk-mgmt). Breach → mandatory full review + likely exit remainder |
 | **GOOGL** | **$339.35** | **$310.00** | **$29.35** | **+8.65%** | 🟡 **WATCH (<10%)** — 3rd review running. Core intact (Cloud +82%, EPS $9.11). Priority monitoring. Breach → re-review Bear Flip/Invalidation |
 | ACN | $189.76 | $148.00 | $41.76 | +21.99% | OK |
 | ADBE | $292.79 | $185.00 | $107.79 | +36.82% | OK |
@@ -285,26 +305,25 @@
 | REGN | $799.08 | $482.00 | $317.08 | +39.68% | OK |
 | CRM | $257.54 | $144.80 | $112.74 | +43.78% | OK (safest) |
 
-> **🔴🔴 RDDT — CRITICAL (2026-09-01):** stopDist 4.78% (จาก 8.18% 8/22), ราคา -3.6% ใน 10 วัน. EU "Very Large Online Platform" designation 2026-08-31 (DSA compliance/moderation cost + oversight) ต่อเนื่องจาก ChatGPT citation -86% + Google $60M/yr renewal risk + insider Form 144. Thesis review: 0/5 Bear Flip, 0/3 Invalidation — NOT invalidated (EU VLOP = DSA ไม่ใช่ GDPR AI-licensing ban). 🔪 Max×Charlie → risk-mgmt defensive TRIM 33% (1 of 3sh), keep 2sh core, stop held $140.75. **priority-1 monitoring**.
-> **🟡 GOOGL — WATCH (2026-09-01):** stopDist 8.65% (จาก 10.10% 8/22), ต่ำกว่า 10% ต่อเนื่อง 3 review. core business ไม่เปลี่ยน — HOLD, priority monitoring – Emma FV re-verify (Q2 Cloud +82% beat น่าจะดัน FV ขึ้น).
+> **✅ RDDT — CLOSED 2026-09-03:** Full re-analysis pipeline SELL, remaining 2sh exited @ $158.10 (valuation-driven exit, MOS -34.5%, 0/9 Bear Flip + 0/3 Invalidation — thesis not broken but risk/reward no longer justified). No longer tracked in Stop Loss Check.
+> **🟡 GOOGL — WATCH (ต่อเนื่องจาก 2026-09-01):** stopDist 8.65% (จาก 10.10% 8/22), ต่ำกว่า 10% ต่อเนื่อง 3 review. core business ไม่เปลี่ยน — HOLD, priority monitoring – Emma FV re-verify (Q2 Cloud +82% beat น่าจะดัน FV ขึ้น).
 > **✅ NOW/REGN — STRONG SELL resolved:** NOW MOS -15.1% → 🔪 TRIMMED 50% (Exit Rule). REGN MOS -0.9% flat หลังราคาย่อ $834→$799 — HOLD 0.42sh (FV likely too low post Q2).
 
 
-## Sector Allocation — 2026-09-01 (ราคาปิด 2026-08-31 close | post-trims)
+## Sector Allocation — 2026-09-03 (RDDT sector CLOSED | other 7 tickers unchanged from 2026-08-31 close)
 
 | Sector | Value | Weight % | Limit |
 |--------|-------|---------|-------|
-| Software / AI Layer (ADBE + NOW[1sh]) | $1,319.15 | 12.53% | 25% |
-| Enterprise SaaS / CRM (CRM) | $772.62 | 7.34% | 25% |
-| Design Software / CAD (ADSK) | $620.47 | 5.89% | 25% |
+| Software / AI Layer (ADBE + NOW[1sh]) | $1,319.15 | 12.51% | 25% |
+| Enterprise SaaS / CRM (CRM) | $772.62 | 7.33% | 25% |
+| Design Software / CAD (ADSK) | $620.47 | 5.88% | 25% |
 | Comm. Services / AI Platform (GOOGL) | $339.35 | 3.22% | 25% |
-| Healthcare / Pharma-Biotech (REGN — 0.42sh) | $335.61 | 3.19% | 25% |
-| Social Media / AI Data (RDDT — 2sh post-trim) | $295.62 | 2.81% | 25% |
+| Healthcare / Pharma-Biotech (REGN — 0.42sh) | $335.61 | 3.18% | 25% |
 | IT Services / AI Consulting (ACN — 1.4sh) | $265.66 | 2.52% | 25% |
-| Cash | $6,578.27 | 62.49% | — |
+| Cash | $6,894.47 | 65.37% | — |
 
 
-ทุก sector ต่ำกว่า 25% limit — ไม่มีปัญหา concentration
+ทุก sector ต่ำกว่า 25% limit — ไม่มีปัญหา concentration. Social Media / AI Data sector (RDDT) CLOSED 2026-09-03 — พอร์ตเหลือ 6 sectors + cash
 
 ---
 
@@ -312,16 +331,16 @@
 
 | | ค่า |
 |---|---|
-| Available Cash | $6,578.27 |
-| Cash % | 62.49% |
-| Min Required (floor — TRANSITIONAL-CAUTIOUS) | ~$2,632 (25% TC — Atlas 2026-09-01) |
+| Available Cash | $6,894.47 |
+| Cash % | 65.37% |
+| Min Required (floor — TRANSITIONAL-CAUTIOUS) | ~$2,637 (25% TC — Atlas 2026-09-01, regime not re-called since) |
 | Force Deploy | ❌ SUSPENDED (Regime TC — ห้าม open new positions; รักษา positions ที่มีอยู่ได้) |
-| Note | Cash 62.49% (จาก 59.68% pre-trim) — +$295.80 จาก NOW+RDDT trim proceeds. เกิน 25% TC floor มาก — แต่ Charlie Strategic Note: scout pause + ถือ cash เข้า Sept 16-17 FOMC เป็นกลยุทธ์ที่ตั้งใจ. post-FOMC → Atlas regime re-call → ถ้า RISK-ON กลับ → re-orient scout ไป de-rated sectors (managed care / beaten-down healthcare / energy). |
+| Note | Cash 65.37% (จาก 62.49% 09-01) — +$316.20 จาก RDDT full-exit proceeds (2026-09-03). เกิน 25% TC floor มาก — Charlie Strategic Note: scout pause + ถือ cash เข้า Sept 16-17 FOMC เป็นกลยุทธ์ที่ตั้งใจ, RDDT exit เพิ่ม cash cushion ต่อ. post-FOMC → Atlas regime re-call → ถ้า RISK-ON กลับ → re-orient scout ไป de-rated sectors (managed care / beaten-down healthcare / energy). |
 
 
 ---
 
-## P&L Summary — 2026-09-01 (ราคาปิด 2026-08-31 close | post-trims)
+## P&L Summary — 2026-09-03 (RDDT CLOSED | other 7 tickers unchanged from 2026-08-31 close)
 
 | Ticker | Cost Basis | Current Price | Market Value | Unrealized P&L | Return % |
 |--------|-----------|--------------|-------------|---------------|---------|
@@ -329,18 +348,20 @@
 | NOW (1sh) | $89.47 | $147.99 | $147.99 | **+$58.52** | **+65.40%** |
 | GOOGL | $388.91 | $339.35 | $339.35 | **-$49.56** | **-12.75%** |
 | CRM | $543.00 | $257.54 | $772.62 | **+$229.62** | **+42.29%** |
-| RDDT (2sh) | $351.88 | $147.81 | $295.62 | **-$56.26** | **-15.99%** |
 | REGN (0.42sh) | $252.84 | $799.08 | $335.61 | **+$82.77** | **+32.74%** |
 | ACN (1.4sh) | $249.43 | $189.76 | $265.66 | **+$16.23** | **+6.51%** |
 | ADSK | $476.23 | $258.53 | $620.47 | **+$144.24** | **+30.29%** |
-| **รวม Invested (8 holdings)** | **$3,339.86** | | **$3,948.48** | **+$608.62** | **+18.22%** |
+| **รวม Invested (7 holdings)** | **$2,987.98** | | **$3,652.86** | **+$664.88** | **+22.25%** |
 | NOW (Realized — TRIM 50%) | $89.47 | $147.99 | — | **+$58.52** | **+65.40%** |
-| RDDT (Realized — TRIM 33%) | $175.94 | $147.81 | — | **-$28.13** | **-15.99%** |
+| RDDT (Realized — TRIM 33%, 2026-09-01) | $175.94 | $147.81 | — | **-$28.13** | **-15.99%** |
+| RDDT (Realized — SELL Remaining 2sh, 2026-09-03) | $351.88 | $158.10 | — | **-$35.68** | **-10.14%** |
 | REGN (Realized — TRIM 30%) | $108.36 | $834.04 | — | **+$41.77** | **+38.54%** |
 | ACN (Realized — TRIM 50%) | $249.42 | $127.98 | — | **-$70.25** | **-28.17%** |
 | INTU (Realized) | $299.39 | — | — | **-$83.98** | **-27.84%** |
-| **Cumulative Realized P&L** | | | | **-$82.07** | |
-| **Portfolio Total** | $10,000.00 | | **$10,526.75** | **+$526.75** | **+5.27%** |
+| **Cumulative Realized P&L** | | | | **-$117.75** | |
+| **Portfolio Total** | $10,000.00 | | **$10,547.33** | **+$547.33** | **+5.47%** |
+
+> **RDDT lifetime (position CLOSED 2026-09-03):** 3sh original @ $175.94 (cost basis $527.82) → TRIM 33% 2026-09-01 (-$28.13) + SELL remaining 2sh 2026-09-03 @ $158.10 (-$35.68) = **cumulative realized -$63.81** on this position.
 
 
 ---
@@ -366,7 +387,7 @@
 | FICO | HOLD/WAIT | $950–1,020 | $720 | ~$1,289-1,390 (July29, pre-Q3 earnings) | เกิน zone → รอ pullback | $1,078 | ต้อง re-verify |
 | VEEV | HOLD/WAIT FOR PULLBACK — NO DEPLOY (re-analysis v2, 2026-08-20) | T1 $185–200 (watch) / T2 $150-167 (target) | $160 | $251.00 (Aug19 close, 2 sources) | Single-gate FAIL — Conv 6.5 PASS แต่ MOS -24.78% FAIL หนัก; Vault CRM de-risked แต่ราคาแพงกว่า Bull DCF | $188.81 (ESG-adj) | -24.78% |
 | GOOGL T2 | T1 executed — T2 zone | $360–375 | $310 | $344.82 | ราคาต่ำกว่า T2 zone — stopDist ยังใกล้ 10% ไม่ใช่จังหวะ add | $414 | +16.71% |
-| RDDT T2 | T1 executed — รอ T2 trigger | $145–160 | $140.75 | $153.29 | ราคาใน T2 zone แต่ stopDist 8.18% WATCH — ไม่ add จนกว่าสถานการณ์ ChatGPT citation ชัดเจนขึ้น | $169.25 | +9.43% |
+| RDDT T2 | **SUPERSEDED — position CLOSED 2026-09-03** (full re-analysis pipeline SELL, remaining 2sh exited @ $158.10; no T2 add possible, thesis valuation-driven exit) | ~~$145–160~~ | ~~$140.75~~ | — | N/A — position fully closed | ~~$169.25~~ | N/A |
 | REGN T2 | T1 executed — รอ T2 trigger | $510–570 | $482 | $834.04 | ราคาเกิน T2 zone มาก — ไม่เกี่ยวข้องปัจจุบัน | $792 | -5.31% |
 | MSFT | Pending Analysis | TBD | — | Q4 earnings reported July29 | รอ Charlie | — | — |
 | META | Pending Analysis | TBD | — | Q2 earnings reported July29 | รอ Charlie | — | — |

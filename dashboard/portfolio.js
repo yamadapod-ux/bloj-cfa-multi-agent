@@ -4,7 +4,7 @@
 // Do NOT edit manually — Max overwrites this file on every update
 // =================================================================
 
-const PORTFOLIO_LAST_UPDATED = "2026-09-01 (Portfolio Review Mode 3 + Max×Charlie consultation — Charlie Strategic Note 2026-09-01. Regime = TRANSITIONAL-CAUTIOUS (Atlas 2026-09-01). Fresh prices 2026-08-31 close. NOW TRIM 50% (1 of 2sh @ $147.99) Exit Rule TRIM + MOS -15.1% fresh FV + Bear Flip #6 | realized +$58.52. RDDT TRIM 33% (1 of 3sh @ $147.81) risk-mgmt defensive trim, TC regime (thesis 0/5 Bear Flip, 0/3 Invalidation) | realized -$28.13. Session net realized +$30.39 | Total $10,526.75 | Cash 62.49% | Alpha +1.36%. 7/8 positions fire Re-Analysis FV trigger — batch Emma re-verify commissioned.)";
+const PORTFOLIO_LAST_UPDATED = "2026-09-03 (RDDT FULL EXIT — full re-analysis pipeline SELL, remaining 2sh @ $158.10 [Sept 2 close, 2-source verified]. Blended FV $169.25→$159.25→$103.49, MOS -34.5%, 0/9 Bear Flip + 0/3 Invalidation = valuation-driven exit; Charlie concurs full exit. Realized -$35.68 (-10.14%) this tranche; RDDT lifetime cumulative -$63.81. Position CLOSED, 8→7 positions. Cash $6,578.27→$6,894.47 (65.37%). Total $10,526.75→$10,547.33 [other 7 tickers unchanged from 2026-08-31 close — not a full re-mark]. Regime = TRANSITIONAL-CAUTIOUS (Atlas 2026-09-01, not re-called since).)";
 
 const PORTFOLIO = {
 
@@ -54,27 +54,28 @@ const PORTFOLIO = {
     { date: "2026-08-23", ticker: "REGN", issue: "TRIMMED 30% — STRONG SELL Exit Rule (MOS -5.31% deepening 2 rounds straight, weight 4.86%), CIO confirmed after Max×Charlie consultation 2026-08-22/23", action: "SOLD 0.18sh @ $834.04 (re-verified 2026-08-23, 2 sources: stockanalysis.com + general aggregator, <0.22% diff) = $150.13. Realized P&L +$41.77 (+38.54%). Remaining 0.42sh, weight 3.40%.", severity: "TRIMMED — CIO CONFIRMED" },
     { date: "2026-09-01", ticker: "NOW",  issue: "🔪 TRIMMED 50% — Exit Rule TRIM fired on 2 independent conditions: Return +65.40% (>50%) AND conviction ล่าสุด 5.83 (<6). Confirmed by MOS -15.1% on FRESH FV $125.65 (fvVerifiedDate 2026-08-24 post-TGR + post-Q2 — NO Re-Analysis trigger fires → MOS is a REAL valuation signal, not stale FV) + Bear Flip #6 fired (MOS stays negative & deepens w/o offsetting catalyst → trim-consultation, by design in report). Thesis Invalidation 0/4. Regime TRANSITIONAL-CAUTIOUS (risk-mgmt trim allowed).", action: "SOLD 1 of 2sh @ $147.99 (stockanalysis.com Aug31 close + WebSearch $147.70 cross-check, 0.2% diff) = $147.99. Realized P&L +$58.52 (+65.40%). Remaining 1sh weight 1.41%. Max×Charlie reconciled per Charlie Strategic Note 2026-09-01 (Charlie: trim 30-50%, hold core) — no CIO pre-approval gate.", severity: "🔪 TRIMMED 50% — EXIT RULE (return + conviction) + FRESH-FV MOS -15% + Bear Flip #6" },
     { date: "2026-09-01", ticker: "RDDT", issue: "🔪 TRIMMED 33% — RISK-MANAGEMENT DEFENSIVE TRIM (Regime TRANSITIONAL-CAUTIOUS — Risk-side rules flexible). Thesis review per RDDT_2026-05-30.md: 0/5 Bear Flip Triggers, 0/3 Thesis Invalidation — NOT invalidated (EU 'Very Large Online Platform' designation 2026-08-31 = DSA content-moderation/transparency obligation, NOT a GDPR ban on AI licensing; Google $60M/yr deal NOT terminated; Rev +61%; ARPU +36%). Trim rationale: stopDist 4.78% CRITICAL (not breached) + lowest conviction in book (6.67) + accumulating negatives not captured by discrete triggers (EU VLOP + ChatGPT Search citation -86% + Google licensing renewal risk + insider Form 144).", action: "SOLD 1 of 3sh @ $147.81 (stockanalysis.com Aug31 close + WebSearch/FinancialContent $148.08 cross-check, 0.2% diff) = $147.81. Realized P&L -$28.13 (-15.99%). Remaining 2sh weight 2.81%, stop held $140.75. Max×Charlie reconciled (Charlie delegated trim-increment to Max; his lean was HOLD-core + tighten stop). Emma FV re-verify commissioned URGENT. If breach $140.75 before re-verify → mandatory full thesis review + likely exit remainder.", severity: "🔪 TRIMMED 33% — RISK-MGMT DEFENSIVE (thesis NOT invalidated; stopDist CRITICAL + stacked regulatory/competitive negatives)" },
-    { date: "2026-09-01", ticker: "PORTFOLIO", issue: "🚩 Re-Analysis Trigger Check — 7 of 8 OPEN positions fire ≥1 trigger (portfolio FVs systematically stale post-Q2-earnings-season; only NOW is current). ADBE #1 (FV 115d, Q2 unmodeled), GOOGL #1 (Q2 unmodeled), CRM #1+#4 (earnings + price +42%), RDDT #1 (earnings + EU VLOP), REGN #1+#2+#4 (earnings + FV 90d + price +32.7%; FV likely too LOW), ACN #1+#5 (Q3 guide-cut unmodeled + Street PT ~$150-170 << FV $252.35; FV likely OVERSTATED), ADSK #1 (Q2 FY27 8/27 result).", action: "Batch Emma lightweight FV re-verify commissioned — priority RDDT → ACN → CRM → REGN → ADBE → GOOGL → ADSK. Lightweight DCF re-run (not full pipeline); escalate to full pipeline only if FV moves ≥15-20%. Deep re-analysis / scout otherwise paused until post-Sept-FOMC per Charlie Strategic Note 2026-09-01.", severity: "🚩 FV MAINTENANCE BACKLOG — batch re-verify is the top action item of this review" }
+    { date: "2026-09-01", ticker: "PORTFOLIO", issue: "🚩 Re-Analysis Trigger Check — 7 of 8 OPEN positions fire ≥1 trigger (portfolio FVs systematically stale post-Q2-earnings-season; only NOW is current). ADBE #1 (FV 115d, Q2 unmodeled), GOOGL #1 (Q2 unmodeled), CRM #1+#4 (earnings + price +42%), RDDT #1 (earnings + EU VLOP), REGN #1+#2+#4 (earnings + FV 90d + price +32.7%; FV likely too LOW), ACN #1+#5 (Q3 guide-cut unmodeled + Street PT ~$150-170 << FV $252.35; FV likely OVERSTATED), ADSK #1 (Q2 FY27 8/27 result).", action: "Batch Emma lightweight FV re-verify commissioned — priority RDDT → ACN → CRM → REGN → ADBE → GOOGL → ADSK. Lightweight DCF re-run (not full pipeline); escalate to full pipeline only if FV moves ≥15-20%. Deep re-analysis / scout otherwise paused until post-Sept-FOMC per Charlie Strategic Note 2026-09-01.", severity: "🚩 FV MAINTENANCE BACKLOG — batch re-verify is the top action item of this review" },
+    { date: "2026-09-03", ticker: "RDDT", issue: "🔴 FULL EXIT — Full re-analysis pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS) completed 2026-09-03, escalation flagged in advance 2026-09-01 (“full re-analysis required if held past Sept FOMC”) run ~2 weeks early because Quinn/Bear inputs stale since 2026-05-30. Blended FV eroded 3 rounds: $169.25(05-30)→$159.25(09-01 lightweight)→$103.49(09-03 full: Emma $118×40% + Quinn $100.62×30% + Bear $87×30%). MOS @ $158.10 = -34.5% (Bear -45.0%), deepest in book. 0/9 Bear Flip Triggers, 0/3 Thesis Invalidation fired — team unanimous this is a valuation-driven exit (price ran ahead of fundamentals on S&P 500 index-inclusion flow, +9.31% single-day pop 2026-09-02), not thesis-broken.", action: "SELL remaining 2sh @ $158.10 (Yahoo Finance + Stockanalysis.com, both Sept 2 2026 close, 0.0% diff, 2-source verified). Fresh full-pipeline SELL = consulted with Charlie by pipeline design per CLAUDE.md; Charlie reviewed and concurs with FULL exit (not partial) given deepest MOS in book, unanimous 3/3 EXIT, and residual weight too small (2.81%) to hold through 2 remaining binary risks (Google $60M/yr renewal, EU DSA enforcement). Realized -$35.68 (-10.14%) this tranche; RDDT lifetime cumulative realized -$63.81. Position CLOSED. Cash $6,578.27→$6,894.47.", severity: "🔴 SOLD — FULL EXIT (FULL RE-ANALYSIS PIPELINE, VALUATION-DRIVEN)" }
   ],
 
   summary: {
     startingCapital:  10000.00,
-    currentCash:      6578.27,
-    investedValue:    3948.48,
-    totalValue:       10526.75,
-    totalReturnPct:   5.27,
+    currentCash:      6894.47,
+    investedValue:    3652.86,
+    totalValue:       10547.33,
+    totalReturnPct:   5.47,
     sp500AtInception: 7398.93,
     sp500Current:     7688.39,
     sp500Return:      3.91,
-    alpha:            1.36,
-    positionCount:    8,
-    cashPct:          62.49,
+    alpha:            1.56,
+    positionCount:    7,
+    cashPct:          65.37,
     benchmark:        "S&P 500",
-    lastUpdated:      "2026-09-01",
-    lastTradeAction:  "🔪 NOW TRIM 50% + 🔪 RDDT TRIM 33% EXECUTED 2026-09-01 (Max Portfolio Review Mode 3 + Max×Charlie reconciled per Charlie Strategic Note 2026-09-01 — no CIO pre-approval gate, autonomy retained). NOW: SELL 1 of 2sh @ $147.99 = $147.99, realized +$58.52 (+65.40%), remaining 1sh (weight 1.41%) — Exit Rule TRIM fired on 2 conditions (return +65.4% >50% AND conviction 5.83 <6) + MOS -15.1% on FRESH FV $125.65 (no Re-Analysis trigger → real signal) + Bear Flip #6. RDDT: SELL 1 of 3sh @ $147.81 = $147.81, realized -$28.13 (-15.99%), remaining 2sh (weight 2.81%), stop held $140.75 — risk-management defensive trim (Regime TC), thesis 0/5 Bear Flip + 0/3 Thesis Invalidation = NOT invalidated; rationale = stopDist 4.78% CRITICAL + lowest conviction (6.67) + stacked negatives (EU VLOP designation 2026-08-31 + ChatGPT citation -86% + Google $60M/yr renewal risk + insider Form 144). Session net realized +$30.39. Cash $6,282.47 → $6,578.27 (62.49%). Total $10,526.75 (+5.27%). Alpha flipped positive to +1.36% (from -0.806% on 8/22). 7 of 8 OPEN positions fire ≥1 Re-Analysis FV trigger (only NOW current) → batch Emma lightweight FV re-verify commissioned, priority RDDT→ACN→CRM→REGN→ADBE→GOOGL→ADSK.",
-    macroRegime:      "⚠️ TRANSITIONAL-CAUTIOUS (Atlas formal re-call 2026-09-01 — agent_notes/atlas/2026-09-01_regime.md). Majority vote 3/4 RISK-ON (VIX 14.43 🟢 / Yield Curve +44bps 🟢 stale pre-shock / HY OAS ~275-285bps 🟢 stale pre-shock / Fed HAWKISH 25bp HIKE priced Sept 16-17 FOMC 🔴) BUT judgment override → TRANSITIONAL-CAUTIOUS: tightening Fed + active US–Iran conflict (Strait of Hormuz, Brent ~$90) + stale RISK-ON reads. Force Deploy SUSPENDED, ห้าม open new positions, Cash Floor 25%, Position Size Multiplier 0.75x. Risk-management trim/stop still allowed. Next re-call trigger: post-Sept 16-17 FOMC.",
+    lastUpdated:      "2026-09-03",
+    lastTradeAction:  "🔴 RDDT FULL EXIT EXECUTED 2026-09-03 (Full re-analysis pipeline SELL — Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS; Max×Charlie consultation satisfied by fresh-pipeline design per CLAUDE.md, Charlie concurs full exit). SELL remaining 2sh @ $158.10 (Yahoo Finance + Stockanalysis.com, both Sept 2 2026 close, 0.0% diff, 2-source verified) = $316.20 proceeds. Blended FV eroded 3 rounds: $169.25(05-30)→$159.25(09-01 lightweight)→$103.49(09-03 full pipeline: Emma $118×40% + Quinn $100.62×30% + Bear $87×30%). MOS @ $158.10 = -34.5% (Bear downside -45.0%), deepest in book. 0/9 Bear Flip Triggers, 0/3 Thesis Invalidation fired — team unanimous valuation-driven exit (price ran ahead of fundamentals on S&P 500 index-inclusion flow, +9.31% single-day pop 2026-09-02), not thesis-broken. Realized P&L this tranche -$35.68 (-10.14%); RDDT lifetime (3sh original, cost basis $527.82): TRIM 33% 2026-09-01 (-$28.13) + this SELL (-$35.68) = cumulative realized -$63.81. Position CLOSED. Cash $6,578.27 → $6,894.47 (65.37%). Total $10,526.75 → $10,547.33 (+5.47% total return) — other 7 tickers' prices unchanged from 2026-08-31 close (not a full portfolio re-mark, only RDDT refreshed for execution). Alpha provisional +1.56% (vs S&P +3.91% still Aug31, not re-verified this session). 7 positions remain: ADBE, NOW[1sh], GOOGL, CRM, REGN[0.42sh], ACN[1.4sh], ADSK.",
+    macroRegime:      "⚠️ TRANSITIONAL-CAUTIOUS (Atlas formal re-call 2026-09-01 — agent_notes/atlas/2026-09-01_regime.md, not re-called since). Majority vote 3/4 RISK-ON (VIX 14.43 🟢 / Yield Curve +44bps 🟢 stale pre-shock / HY OAS ~275-285bps 🟢 stale pre-shock / Fed HAWKISH 25bp HIKE priced Sept 16-17 FOMC 🔴) BUT judgment override → TRANSITIONAL-CAUTIOUS: tightening Fed + active US–Iran conflict (Strait of Hormuz, Brent ~$90) + stale RISK-ON reads. Force Deploy SUSPENDED, ห้าม open new positions, Cash Floor 25%, Position Size Multiplier 0.75x. Risk-management trim/exit of existing positions still allowed (used for RDDT full exit 2026-09-03). Next re-call trigger: post-Sept 16-17 FOMC.",
     regimeMultiplier: 0.75,
-    priceSourceNote:  "2026-09-01 Portfolio Review (Charlie Strategic Note dispatch). Prices = 2026-08-31 close from stockanalysis.com (single-source per Charlie); tickers traded this session cross-checked ≥2 sources per Single Source of Truth Rule: NOW $147.99 (stockanalysis.com + WebSearch $147.70, 0.2% diff), RDDT $147.81 (stockanalysis.com + WebSearch/FinancialContent $148.08, 0.2% diff). Not-traded (single-source): ADBE $292.79, GOOGL $339.35, CRM $257.54, REGN $799.08, ACN $189.76, ADSK $258.53. S&P 500 = 7,688.39 (2026-08-31 close, Yahoo Finance -23.37/-0.30% + TradingEconomics 7,688.30 cross-check, Atlas 2026-09-01 regime record). Alpha +1.36% (flipped positive from -0.806%).",
+    priceSourceNote:  "2026-09-03: RDDT full exit execution only. RDDT $158.10 verified 2-source: Yahoo Finance + Stockanalysis.com, both Sept 2 2026 4:00-4:05PM EDT close (0.0% diff) — per agent_notes/atlas/2026-09-03_RDDT_data.md. Other 7 tickers unchanged from 2026-09-01 review (2026-08-31 close, stockanalysis.com single-source, not re-priced this session): ADBE $292.79, NOW $147.99, GOOGL $339.35, CRM $257.54, REGN $799.08, ACN $189.76, ADSK $258.53. S&P 500 = 7,688.39 (2026-08-31 close, not re-verified 2026-09-03). Alpha +1.56% is provisional (only RDDT price refreshed this session, not a full portfolio re-mark).",
   },
 
   priceAudit: [
@@ -109,7 +110,7 @@ const PORTFOLIO = {
       ],
       totalShares: 4, avgEntryPrice: 247.03, totalCostBasis: 988.10,
       entryPrice: 247.03, shares: 4, costBasis: 988.10,
-      currentPrice: 292.79, marketValue: 1171.16, returnPct: 18.53, weightPct: 11.13,
+      currentPrice: 292.79, marketValue: 1171.16, returnPct: 18.53, weightPct: 11.11,
       stopLoss: 185.00, stopDistancePct: 36.82, blendedFV: 311.70, mosPct: 6.46, fvVerifiedDate: "2026-05-09",
       entryZone: "T1: $240-260 | T2: $215-235 | T3: $190-210",
       thesis: "Wide Moat Creative Software — FCF margin 42%, Firefly AI upside, $25B buyback. ⚠️ weight 11.13% (>10% IPS band, <12% hard-trim threshold — no trim yet). 🚩 Re-Analysis Trigger #1: Q2 FY26 earnings 2026-06-11 (beat, Firefly ARR tripled, raised guide) NEVER modeled into FV $311.70 (fvVerifiedDate 2026-05-09 = 115d, oldest in book) — Emma FV re-verify commissioned. Q3 FY26 earnings ~Sept 11.",
@@ -120,7 +121,7 @@ const PORTFOLIO = {
       ticker: "NOW", company: "ServiceNow Inc.", sector: "Software / AI Layer",
       recommendation: "HOLD — TRIMMED 50% (2026-09-01, Exit Rule TRIM)", conviction: 5.83,
       entryPrice: 89.47, shares: 1, costBasis: 89.47,
-      currentPrice: 147.99, marketValue: 147.99, returnPct: 65.40, weightPct: 1.41,
+      currentPrice: 147.99, marketValue: 147.99, returnPct: 65.40, weightPct: 1.40,
       stopLoss: 93.00, stopDistancePct: 37.16, blendedFV: 125.65, fvVerifiedDate: "2026-08-24", mosPct: -15.10,
       entryZone: "T1: $85-95 | T2: $72-84", tranche: "T1",
       thesis: "Agentic AI platform leader. 🔪 TRIMMED 50% 2026-09-01 (SELL 1 of 2sh @ $147.99, realized +$58.52 / +65.40%) — Exit Rule TRIM fired on 2 independent conditions: Return +65.40% (>50%) AND conviction ล่าสุด 5.83 (<6). Confirmed by MOS -15.1% on FRESH FV $125.65 (fvVerifiedDate 2026-08-24 post-TGR + post-Q2 — NO Re-Analysis trigger fires, MOS is a REAL valuation signal not stale FV) + Bear Flip #6 fired (MOS stays negative & deepens w/o offsetting catalyst). Thesis Invalidation 0/4 (Rev +22%, no McDermott exit, no MSFT ITSM bundle, no Armis impairment). HOLD remaining 1sh for subscription-growth optionality. Max×Charlie reconciled (Charlie: trim 30-50%, hold core).",
@@ -148,7 +149,7 @@ const PORTFOLIO = {
       ],
       totalShares: 3, avgEntryPrice: 181.00, totalCostBasis: 543.00,
       entryPrice: 181.00, shares: 3, costBasis: 543.00,
-      currentPrice: 257.54, marketValue: 772.62, returnPct: 42.29, weightPct: 7.34,
+      currentPrice: 257.54, marketValue: 772.62, returnPct: 42.29, weightPct: 7.33,
       blendedFV: 279.00, mosPct: 8.33, fvVerifiedDate: "2026-05-29",
       stopLoss: 144.80, stopDistancePct: 43.78,
       entryZone: "$175-190", tranche: "T1",
@@ -159,25 +160,6 @@ const PORTFOLIO = {
       regime: "RISK-ON 4/4 (entry) | current Regime TC",
     },
     {
-      ticker: "RDDT", company: "Reddit, Inc.", sector: "Communication Services / Social Media",
-      recommendation: "BUY — HOLD (TRIMMED 33% 2026-09-01, risk-mgmt defensive)", conviction: 6.67,
-      tranches: [
-        { tranche: "T1", entryDate: "2026-05-30", entryPrice: 175.94, shares: 3, costBasis: 527.82, note: "Growth | AI data licensing moat | Rev +69% | Conv 6.67 | Morgan QA PASS | TRIMMED 33% 2026-09-01 @ $147.81 — remaining 2sh" },
-      ],
-      totalShares: 2, avgEntryPrice: 175.94, totalCostBasis: 351.88,
-      entryPrice: 175.94, shares: 2, costBasis: 351.88,
-      currentPrice: 147.81, marketValue: 295.62, returnPct: -15.99, weightPct: 2.81,
-      blendedFV: 169.25, mosPct: 14.51, fvVerifiedDate: "2026-05-30",
-      stopLoss: 140.75, stopDistancePct: 4.78,
-      entryZone: "T1: $155-178 | T2: $145-160",
-      tranche: "T1",
-      t2Zone: "SUSPENDED — Regime TC + thesis under pressure",
-      thesis: "Social media + AI data licensing dual moat. 🔪 TRIMMED 33% 2026-09-01 (SELL 1 of 3sh @ $147.81, realized -$28.13 / -15.99%) — RISK-MANAGEMENT DEFENSIVE TRIM in TC regime. Thesis review per RDDT_2026-05-30.md: 0/5 Bear Flip Triggers, 0/3 Thesis Invalidation — NOT invalidated (EU 'Very Large Online Platform' designation 2026-08-31 = DSA content-moderation/transparency obligation, NOT a GDPR ban on AI licensing; Google $60M/yr deal NOT terminated; Rev +61% >> 20% floor; ARPU +36% >> 20% floor). Trim rationale: stopDist 4.78% CRITICAL (not breached) + lowest conviction in book (6.67) + accumulating negatives across multiple fronts not captured by the discrete triggers (EU VLOP + ChatGPT Search citation -86% + Google licensing renewal risk + insider Form 144). Keep 2sh for AI-data-licensing optionality. Stop held $140.75. Max×Charlie reconciled (Charlie delegated trim-increment to Max). If breach $140.75 before Emma FV re-verify → mandatory full thesis review + likely exit of remaining 2sh. 🚩 Re-Analysis Trigger #1 FIRED (Q2 2026-07-30 + EU VLOP + citation collapse; FV $169.25 stale 94d) — Emma FV re-verify URGENT (priority 1).",
-      status: "OPEN — TRIMMED 33%", bucket: "Growth", reportFile: "reports/RDDT_2026-05-30.md",
-      priceUpdated: "2026-09-01", priceSource: "$147.81 (2026-08-31 close, stockanalysis.com + WebSearch/FinancialContent cross-check $148.08 [-3.2% day on EU VLOP news], 0.2% diff — 2 sources for executed trade). 🔴🔴 stopDist 4.78% CRITICAL (from 8.18% 8/22). MOS +14.51% on STALE FV $169.25. 🔪 TRIM 33% EXECUTED — sold 1 of 3sh @ $147.81, realized -$28.13 (-15.99%), remaining 2sh weight 2.81%.",
-      regime: "TRANSITIONAL-CAUTIOUS | Multiplier: 0.75x",
-    },
-    {
       ticker: "REGN", company: "Regeneron Pharmaceuticals, Inc.", sector: "Healthcare / Pharma-Biotech",
       recommendation: "BUY — HOLD (TRIMMED 30% 2026-08-23)", conviction: 7.2,
       tranches: [
@@ -185,7 +167,7 @@ const PORTFOLIO = {
       ],
       totalShares: 0.42, avgEntryPrice: 602.00, totalCostBasis: 252.84,
       entryPrice: 602.00, shares: 0.42, costBasis: 252.84,
-      currentPrice: 799.08, marketValue: 335.61, returnPct: 32.74, weightPct: 3.19,
+      currentPrice: 799.08, marketValue: 335.61, returnPct: 32.74, weightPct: 3.18,
       stopLoss: 482.00, stopDistancePct: 39.68, blendedFV: 792.00, mosPct: -0.89, fvVerifiedDate: "2026-06-03",
       entryZone: "$580-640", tranche: "T1",
       t2Zone: "n/a — TRIMMED",
@@ -219,7 +201,7 @@ const PORTFOLIO = {
       ],
       totalShares: 2.4, avgEntryPrice: 198.43, totalCostBasis: 476.23,
       entryPrice: 198.43, shares: 2.4, costBasis: 476.23,
-      currentPrice: 258.53, marketValue: 620.47, returnPct: 30.29, weightPct: 5.89,
+      currentPrice: 258.53, marketValue: 620.47, returnPct: 30.29, weightPct: 5.88,
       stopLoss: 158.74, stopDistancePct: 38.60, blendedFV: 290.00, mosPct: 12.17, fvVerifiedDate: "2026-06-09",
       entryZone: "T1: $183-205 | T2: post-FOMC",
       t2Zone: "SUSPENDED — Regime TC",
@@ -243,13 +225,15 @@ const PORTFOLIO = {
     { date: "2026-06-05", action: "BUY",  ticker: "ACN",   shares: 2.8,  price: 178.16, tradeValue: 498.85,  conviction: 7.17, tranche: "T1", rulesPass: true, regimeNote: "RISK-ON 4/4 1.0x | Force Deploy Active", ipsRule: "Value: Conv 7.17 >= 7.0 + MOS +41.6% >= 15% | Force Deploy: Cash 69.28% > 30% + RISK-ON active", note: "ACN T1. IT Services AI Consulting. Record bookings $22.1B (+6%) at 52w price low. ROIC 27.19% FCF 11.42% P/E 14.54x. Morgan CONDITIONAL PASS.", cashBefore: 6928.25, cashAfter: 6429.40 },
     { date: "2026-06-14", action: "BUY",  ticker: "ADSK",  shares: 2.4,  price: 198.43, tradeValue: 476.23,  conviction: 7.0, tranche: "T1", rulesPass: true, regimeNote: "RISK-ON 3/4 1.0x | Force Deploy Active (cash drag fix)", ipsRule: "Value: Conv 7.0 >= 7.0 + MOS +31.6% >= 15% | Growth: Rev +18.4% > 15% + Reverse DCF 0.71× <= 1.2× | Force Deploy: Cash 66.83% > 30% + RISK-ON active", note: "ADSK T1 — CASH DRAG FIX pre-FOMC. Design Software Wide Moat (DWG/Revit standard). ราคา verified สด ≥2 sources: stockanalysis.com $198.43 + Robinhood/CNN $198.43-198.91 + WebSearch range. ราคา drop 13% ($229→$198.43) เพราะ MaintainX M&A concern ไม่ใช่ thesis invalid — Q1 FY27 BEAT (Rev +18.4%, EPS $2.99 vs $2.84, FCF $876M +25%). Blended FV $290. Stop $158.74 (-20.0%). DISCIPLINED — T1 เดี่ยว ไม่ deploy ตัวที่ 2 พร้อมกัน, เก็บ dry powder รอ FOMC June 16-17. Morgan CONDITIONAL PASS (price now URL-verified).", cashBefore: 6429.40, cashAfter: 5953.17 },
     { date: "2026-06-22", action: "SELL", ticker: "ACN",  shares: 1.4,  price: 127.98, tradeValue: 179.17,  conviction: 7.17, tranche: "T1", sellType: "TRIM_50", exitRule: "Stop breach (-28.17%, $127.98 < $148) + Bear Flip #1 firing (Q3 FY26 Rev $18.72B MISS + FY guide cut 3-4% + weak bookings). Bear Flip = REDUCE/SELL signal; formal Thesis Invalidation (3Q) ยังไม่ครบ → TRIM ไม่ full exit. Max autonomy decision (CIO observing). เก็บ 1.4sh รอ Q4 bookings (P/E 14, FCF $3.6B, MOS +49% deep value).", realizedPnl: -70.25, realizedReturnPct: -28.17, cashBefore: 5953.17, cashAfter: 6132.34 },
-    { date: "2026-08-23", action: "SELL", ticker: "REGN", shares: 0.18, price: 834.04, tradeValue: 150.13, conviction: 7.2, tranche: "T1", sellType: "TRIM_30", exitRule: "STRONG SELL Exit Rule — MOS -5.31% deepening 2 rounds straight (Aug18/Aug22), weight 4.86% ก่อน trim. Max×Charlie consultation 2026-08-22/23 → เสนอ CIO → CIO CONFIRMED 2026-08-23 (\"หมายถึง now hold ได้ regn 30% เอาตามที่พวกนายว่า\"). Lock partial gain, thesis ยัง intact (ไม่มี Bear Flip/Invalidation). เหลือ 0.42sh.", realizedPnl: 41.77, realizedReturnPct: 38.54, cashBefore: 6132.34, cashAfter: 6282.47 },,
+    { date: "2026-08-23", action: "SELL", ticker: "REGN", shares: 0.18, price: 834.04, tradeValue: 150.13, conviction: 7.2, tranche: "T1", sellType: "TRIM_30", exitRule: "STRONG SELL Exit Rule — MOS -5.31% deepening 2 rounds straight (Aug18/Aug22), weight 4.86% ก่อน trim. Max×Charlie consultation 2026-08-22/23 → เสนอ CIO → CIO CONFIRMED 2026-08-23 (\"หมายถึง now hold ได้ regn 30% เอาตามที่พวกนายว่า\"). Lock partial gain, thesis ยัง intact (ไม่มี Bear Flip/Invalidation). เหลือ 0.42sh.", realizedPnl: 41.77, realizedReturnPct: 38.54, cashBefore: 6132.34, cashAfter: 6282.47 },
     { date: "2026-09-01", action: "PARTIAL_SELL", ticker: "NOW",  shares: 1, price: 147.99, tradeValue: 147.99, conviction: 5.83, tranche: "T1", sellType: "TRIM_50", exitRule: "Exit Rule TRIM — Return +65.40% (>50%) AND conviction ล่าสุด 5.83 (<6); + MOS -15.1% on FRESH FV $125.65 (no Re-Analysis trigger) + Bear Flip #6. Thesis Invalidation 0/4. Regime TC. Max×Charlie reconciled (Charlie Strategic Note 2026-09-01).", realizedPnl: 58.52, realizedReturnPct: 65.40, cashBefore: 6282.47, cashAfter: 6430.46 },
-    { date: "2026-09-01", action: "PARTIAL_SELL", ticker: "RDDT", shares: 1, price: 147.81, tradeValue: 147.81, conviction: 6.67, tranche: "T1", sellType: "TRIM_33", exitRule: "Risk-management defensive trim (Regime TRANSITIONAL-CAUTIOUS — Risk-side rules flexible). Thesis review: 0/5 Bear Flip Triggers, 0/3 Thesis Invalidation — NOT invalidated (EU VLOP = DSA obligation not GDPR AI-licensing ban; Google deal not terminated; Rev +61%). Trim rationale: stopDist 4.78% CRITICAL + lowest conviction (6.67) + stacked negatives (EU VLOP 8/31 + ChatGPT citation -86% + Google renewal risk + insider Form 144). Max×Charlie reconciled (Charlie delegated trim-increment to Max).", realizedPnl: -28.13, realizedReturnPct: -15.99, cashBefore: 6430.46, cashAfter: 6578.27 }
+    { date: "2026-09-01", action: "PARTIAL_SELL", ticker: "RDDT", shares: 1, price: 147.81, tradeValue: 147.81, conviction: 6.67, tranche: "T1", sellType: "TRIM_33", exitRule: "Risk-management defensive trim (Regime TRANSITIONAL-CAUTIOUS — Risk-side rules flexible). Thesis review: 0/5 Bear Flip Triggers, 0/3 Thesis Invalidation — NOT invalidated (EU VLOP = DSA obligation not GDPR AI-licensing ban; Google deal not terminated; Rev +61%). Trim rationale: stopDist 4.78% CRITICAL + lowest conviction (6.67) + stacked negatives (EU VLOP 8/31 + ChatGPT citation -86% + Google renewal risk + insider Form 144). Max×Charlie reconciled (Charlie delegated trim-increment to Max).", realizedPnl: -28.13, realizedReturnPct: -15.99, cashBefore: 6430.46, cashAfter: 6578.27 },
+    { date: "2026-09-03", action: "SELL", ticker: "RDDT", shares: 2, price: 158.10, tradeValue: 316.20, conviction: 6.67, tranche: "T1", sellType: "FULL_EXIT", exitRule: "Full re-analysis pipeline SELL (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS 2026-09-03) — escalation flagged in advance 2026-09-01. Blended FV $169.25→$159.25→$103.49 (Emma $118×40% + Quinn $100.62×30% + Bear $87×30%). MOS -34.5% (Bear -45.0%), deepest in book. 0/9 Bear Flip Triggers, 0/3 Thesis Invalidation fired — unanimous valuation-driven exit (S&P 500 index-inclusion flow, +9.31% single-day pop 2026-09-02), not thesis-broken. Fresh-pipeline SELL satisfies Max Consultation Rule by pipeline design; Charlie reviewed and concurs with FULL exit given deepest MOS + unanimous 3/3 EXIT + residual weight too small (2.81%) to hold through 2 remaining binary risks (Google $60M/yr renewal, EU DSA enforcement). Position CLOSED. RDDT lifetime cumulative realized -$63.81.", realizedPnl: -35.68, realizedReturnPct: -10.14, cashBefore: 6578.27, cashAfter: 6894.47 }
   ],
 
   closedPositions: [
     { ticker: "INTU", company: "Intuit Inc.", entryDate: "2026-05-16", exitDate: "2026-05-21", entryPrice: 445.00, exitPrice: 321.50, shares: 0.67, costBasis: 299.39, proceeds: 215.41, realizedPnl: -83.98, realizedReturnPct: -27.84, holdingDays: 5, exitReason: "AUTO_SELL — Stop $321.50 < $348.00 (-7.6%). Thesis Invalidation: 17% workforce cut.", reportFile: "reports/INTU_2026-05-16.md" },
+    { ticker: "RDDT", company: "Reddit, Inc.", entryDate: "2026-05-30", exitDate: "2026-09-03", entryPrice: 175.94, exitPrice: 158.10, shares: 2, costBasis: 351.88, proceeds: 316.20, realizedPnl: -35.68, realizedReturnPct: -10.14, holdingDays: 96, exitReason: "FULL EXIT — Full re-analysis pipeline SELL (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS). Blended FV $169.25→$103.49, MOS -34.5% (deepest in book). 0/9 Bear Flip, 0/3 Thesis Invalidation — valuation-driven exit (S&P 500 index-inclusion flow pop), not thesis-broken. Charlie concurs full exit. RDDT lifetime (incl. prior 33% trim 2026-09-01, -$28.13): cumulative realized -$63.81 on 3sh original position.", reportFile: "reports/RDDT_2026-05-30.md" },
   ],
 
   performanceHistory: [

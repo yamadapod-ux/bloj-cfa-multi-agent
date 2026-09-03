@@ -21,6 +21,7 @@
 | 2026-08-23 | **PARTIAL_SELL (TRIM 30%)** | REGN | 0.18 | $834.04 | $150.13 | — | STRONG SELL Exit Rule, MOS -5.31% (deepening 2 rounds), Max×Charlie consultation, CIO confirmed | Remaining 0.42sh, realized P&L +$41.77 (+38.54%) |
 | 2026-09-01 | **PARTIAL_SELL (TRIM 50%)** | NOW | 1 | $147.99 | $147.99 | 5.83/10 | **Exit Rule TRIM** — Return +65.40% (>50%) AND conviction ล่าสุด 5.83 (<6). Confirmed by MOS -15.1% on FRESH FV $125.65 (fvVerifiedDate 2026-08-24 — NO re-analysis trigger fires, MOS signal real not stale) + Bear Flip #6 fired (MOS stays negative & deepens w/o offsetting catalyst). 0/4 Thesis Invalidation. Max×Charlie reconciled (Charlie Strategic Note 2026-09-01: trim 30–50% lock gain, hold core). Price stockanalysis.com Aug31 close $147.99, cross-check WebSearch $147.70 (0.2% diff). | Remaining 1sh (weight 1.4%). Realized P&L **+$58.52 (+65.40%)** |
 | 2026-09-01 | **PARTIAL_SELL (TRIM 33%)** | RDDT | 1 | $147.81 | $147.81 | 6.67/10 | **Risk-management defensive trim** (Regime TRANSITIONAL-CAUTIOUS → Risk-side rules flexible). Thesis review per RDDT_2026-05-30.md: **0/5 Bear Flip, 0/3 Thesis Invalidation — NOT invalidated** (EU VLOP = DSA content-moderation obligation, not GDPR AI-licensing ban; Google deal not terminated; Rev +61%). Trim rationale: stopDist 4.78% CRITICAL + accumulating negatives not captured by discrete triggers (EU 'Very Large Online Platform' designation 2026-08-31 + ChatGPT citation -86% + Google $60M/yr renewal at risk + insider Form 144) + lowest-conviction position (6.67). Max×Charlie reconciled (Charlie: HOLD core + defensive partial trim = Max's call). Price stockanalysis.com Aug31 close $147.81, cross-check FinancialContent $148.08 (0.2% diff). Emma FV re-verify commissioned (URGENT). | Remaining 2sh (weight 2.81%), stop held $140.75. Realized P&L **-$28.13 (-15.99%)** |
+| 2026-09-03 | **SELL (FULL EXIT)** | RDDT | 2 | $158.10 | $316.20 | 6.67/10 (Emma 6.0 / Quinn 7.0 / Bear 7.0) | **Full re-analysis pipeline SELL** (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS 2026-09-03) — escalation flagged in advance 2026-09-01 ("full re-analysis required if held past Sept FOMC"), executed early because Quinn/Bear inputs stale since 2026-05-30. Blended FV eroded 3 rounds: $169.25(05-30)→$159.25(09-01 lightweight)→**$103.49**(09-03 full: Emma $118×40% + Quinn $100.62×30% + Bear $87×30%). **MOS @ $158.10 = -34.5%** (Bear downside -45.0%), deepest in book. **0/9 Bear Flip, 0/3 Thesis Invalidation fired** — team unanimous valuation-driven exit (price ran ahead of fundamentals on S&P 500 index-inclusion flow, +9.31% single-day pop 2026-09-02), NOT thesis-broken. Fresh-pipeline SELL counts as "ปรึกษา Charlie แล้วโดยธรรมชาติของ pipeline" per CLAUDE.md Max Consultation Rule; Charlie reviewed and concurs with FULL exit (not partial) given deepest MOS in book + unanimous 3/3 EXIT + residual weight too small (2.81%) to justify holding through 2 open binary risks (Google $60M/yr renewal, EU DSA enforcement). Price $158.10 verified 2-source: Yahoo Finance + Stockanalysis.com, both Sept 2 2026 4:00-4:05PM EDT close (0.0% diff) — per agent_notes/atlas/2026-09-03_RDDT_data.md. | **Position CLOSED.** Realized P&L this tranche **-$35.68 (-10.14%)**. RDDT lifetime (3sh original, cost basis $527.82): TRIM 33% (-$28.13) + this SELL (-$35.68) = cumulative realized **-$63.81**. Cash $6,578.27 → $6,894.47. |
 
 ---
 
@@ -39,11 +40,11 @@
 
 | Metric | ค่า |
 |--------|-----|
-| Total Trades | 15 |
+| Total Trades | 16 |
 | BUY trades | 10 |
-| SELL trades | 5 (1 AUTO-SELL, 4 partial TRIM: ACN/REGN/NOW/RDDT) |
-| Realized P&L (this table, historical snapshot) | See "Realized P&L Log" below — updated through 2026-09-01 TRIM entries (NOW +$58.52, RDDT -$28.13; session net +$30.39) |
-| Note | Table stats below last refreshed post-ADSK deploy (2026-06-14) — see positions.md / dashboard/portfolio.js for live current totals (Cash $6,578.27, Invested $3,948.48 as of 2026-09-01) |
+| SELL trades | 6 (1 AUTO-SELL, 4 partial TRIM: ACN/REGN/NOW/RDDT, 1 FULL EXIT: RDDT) |
+| Realized P&L (this table, historical snapshot) | See "Realized P&L Log" below — updated through 2026-09-03 (RDDT full exit -$35.68; RDDT lifetime cumulative -$63.81) |
+| Note | Table stats below last refreshed post-ADSK deploy (2026-06-14) — see positions.md / dashboard/portfolio.js for live current totals (Cash $6,894.47, Invested $3,652.86, 7 positions as of 2026-09-03) |
 
 ---
 
@@ -56,5 +57,6 @@
 | REGN (TRIM 30%) | 2026-06-03 | 2026-08-23 | $602.00 | $834.04 | 0.18 | **+$41.77** | **+38.54%** | 81 |
 | NOW (TRIM 50%) | 2026-05-11 | 2026-09-01 | $89.47 | $147.99 | 1 | **+$58.52** | **+65.40%** | 113 |
 | RDDT (TRIM 33%) | 2026-05-30 | 2026-09-01 | $175.94 | $147.81 | 1 | **-$28.13** | **-15.99%** | 94 |
+| RDDT (SELL — FULL EXIT) | 2026-05-30 | 2026-09-03 | $175.94 | $158.10 | 2 | **-$35.68** | **-10.14%** | 96 |
 
 ---
