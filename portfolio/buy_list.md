@@ -24,8 +24,9 @@
 | **ZETA** | Growth | 2026-09-01 | $19.16 / $17.53 | **$17–20** ($18.50) | $14.80 | $30.88 (8/31) | **−40%** (ต้องย่อลึก) | Davoodi settle ≤$75M + no knowing-misrep docs / GAAP op margin >10% 2Q + organic ≥25% / SBC <9% rev + share count flat / gross margin ≥62% + Regime RISK-ON | Sept FOMC + Q3 2026 earnings + Davoodi discovery Q4 |
 | **CHYM** | Growth | 2026-08-31 | $22.30 / $21.07 | **$18–21** ($19.50) | $15.60 | $33.20 (8/28) | **−41%** (ต้องย่อลึก) | ราคา ≤$21 / 8th Circuit Reg II resolution ไม่กระทบ Durbin exemption / GAAP op margin ≥20% sustained 2Q / ARPAM growth re-accel ≥+12% YoY | 8th Circuit Reg II ruling + Q3 2026 earnings + Sept FOMC |
 | **OSCR** | Growth | 2026-09-01 | $21.10 / $19.20 | **$16–19** ($17.50) | $14.00 | $29.96 (8/31) | **−42%** (ต้องย่อลึก) | multi-yr (≥3yr) clean ePTC extension signed / 2027 membership decline ≤5% YoY / ราคา ≤$18–20 / Sept 16 Investor Day op margin ≥5.0% + H2 MLR ≤82% | Oscar Investor Day 16 ก.ย. + Sept FOMC + ACA legislation ก่อน Nov 1 |
+| **FSLR** | Value | 2026-09-03 | $155.29 / n/a (ESG not material to FV) | **$125–135** ($130) | $104 | $202.60 (9/2) | **-33% to -38%** (ต้องย่อลึก) | Book-to-bill ≥1.0x 2Q ติด / Section 301/122 litigation ชนะหรือ codify / ราคา ≤$135 (MOS≥15%) / gross margin ≥50% sustained 2Q / FY2027 growth guide ≥5% | Q3 2026 earnings (~ต.ค./พ.ย.) + CIT litigation ruling |
 
-> **หมายเหตุ:** 4/6 (ADI/MELI/ZETA/CHYM/OSCR) ต้องย่อ −40%+ ถึงเข้า entry — realistic เฉพาะใน bear market. **GCT (−13%) + potentially ADI on China ruling** = ใกล้ที่สุด. ถ้าตลาด correction −15–20% (มา ~1 ครั้ง/4–6 ปี) → ZETA/CHYM/OSCR เข้า range พร้อมกัน
+> **หมายเหตุ:** 6/7 (ADI/MELI/ZETA/CHYM/OSCR/FSLR) ต้องย่อ −40%+ ถึงเข้า entry — realistic เฉพาะใน bear market. **GCT (−13%) + potentially ADI on China ruling** = ใกล้ที่สุด (FSLR −33-38% อยู่อันดับถัดไป ไม่ไกลเท่า GCT แต่ใกล้กว่า 4 ตัวที่เหลือ). ถ้าตลาด correction −15–20% (มา ~1 ครั้ง/4–6 ปี) → ZETA/CHYM/OSCR เข้า range พร้อมกัน
 
 ---
 
@@ -48,4 +49,4 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
-*Charlie + Max | Last updated: 2026-09-01 (initial build — 6 Active from Aug–Sep 2026 analyses)*
+*Charlie + Max | Last updated: 2026-09-03 (added FSLR from Scout Round 27 full analysis — HOLD/WAIT, double-blocked valuation+regime, deployment_log.md SKIPPED) — 7 Active*
