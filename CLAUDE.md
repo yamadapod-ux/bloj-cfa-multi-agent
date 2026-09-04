@@ -223,23 +223,24 @@ CIO → "Max หาหุ้นใหม่"
 
 > **ที่มา:** CNC (2026-09-04) เสีย token ไป ~255K เพื่อพิสูจน์สิ่งที่ดูออกได้จากตัวเลข scout เบื้องต้นแล้ว (ROIC ต่ำกว่า WACC ชัดเจน) — ก่อนหน้านี้ระบบมีแค่ 2 ระดับ (Scout ถูก → Full Pipeline แพงมาก ~200-260K token) ไม่มีอะไรคั่นกลาง Tier 1 นี้**ไม่ใช่ Return-side locked rule** — เป็น resource-triage layer เท่านั้น ไม่แตะ MOS threshold/conviction gate/40-30-30 weight ที่ยังล็อกเหมือนเดิม
 
-**ใครทำ (แยกตาม check เพื่อไม่ขัด role):**
-- Check 1-2 (เลขคณิตล้วนๆ จากตัวเลขที่ scout มีอยู่แล้ว) → **Charlie ทำเอง ไม่ spawn agent** (เป็น routing decision ไม่ใช่ investment judgment — ไม่ขัดกับ "ไม่วิเคราะห์เองเด็ดขาด")
-- Check 3 (ตัดสินความน่าเชื่อถือของ red flag) → **spawn Bear แบบเบา (quick-flag) เท่านั้น** ไม่ใช่ full Bear role — แค่ 1-2 WebSearch + สรุปสั้น ไม่ต้องรอ Atlas/Emma/Quinn ก่อน
+**ใครทำ (v2 — แก้ 2026-09-05 หลัง live test QCOM เจอว่า check 3 แบบเดิมกินคุ้มไม่คุ้ม):**
+- Check 1-2 (เลขคณิตล้วนๆ จากตัวเลขที่ scout มีอยู่แล้ว) → **Charlie ทำเอง ไม่ spawn agent** เป็น routing decision ไม่ใช่ investment judgment (ไม่ขัดกับ "ไม่วิเคราะห์เองเด็ดขาด") **นี่คือตัวกรองจริงตัวเดียวที่ SKIP ได้** — ติดข้อไหนข้อหนึ่ง = SKIP ทันที ต้นทุนเกือบ 0
+- Check 3 (red-flag search) → **Charlie ทำเอง ไม่ spawn Bear-lite แล้ว** (เดิม spawn subagent ใช้ ~43K token/ครั้งจาก agent framework overhead — พบจาก live test QCOM 2026-09-05 ว่าแพงเกินคุ้ม เพราะเคสส่วนใหญ่ไม่ติด check 1-2 อยู่แล้วต้องเข้า check 3 ทุกที ทำให้เสีย 43K ทุกตัวโดยไม่ได้กรองอะไรออกเพิ่ม) **check 3 ไม่ใช่ gate อีกต่อไป — เป็นแค่ context flag ส่งต่อให้ Bear ใน Full Pipeline** ไม่ตัดสิน SKIP เอง (เหตุผลเสริม: red flag แบบ GCT — insider selling/governance — ควรได้ Bear ประเมินเต็มรูปแบบ ไม่ใช่ Charlie ตัดสินเองว่าน่าเชื่อถือพอจะ SKIP หรือไม่ ตรงกับ CIO's learning-goal ที่อยากได้ analysis เต็มสำหรับเคสก้ำกึ่ง)
 
-**เกณฑ์ตัดสิน (รันตามลำดับ — ติดข้อไหนข้อหนึ่ง = SKIP ทันที, ไม่ติดสักข้อ = ไป Full Pipeline):**
+**เกณฑ์ SKIP (รันตามลำดับ — ติดข้อไหนข้อหนึ่ง = SKIP ทันที, ไม่ติดสักข้อ = ไป Full Pipeline พร้อม flag จาก check 3 ถ้ามี):**
 
 | # | เช็ค | ข้อมูลจาก | เกณฑ์ SKIP | ถ้าไม่ถึงเกณฑ์ |
 |---|---|---|---|---|
 | 1 | ROIC แย่แค่ไหน | Scout Filter C | ROIC < 0.5× WACC **และ** แย่ลงต่อเนื่อง 2 ปี+ | → เช็ค 2 |
-| 2 | ราคาแพงเวอร์แค่ไหน | Scout Filter B → แปลงเป็น naive FV (ไม่ใช้ DCF เต็ม เช่น FCF÷WACC แบบ no-growth perpetuity) | ราคาปัจจุบัน > 1.5× naive FV | → เช็ค 3 |
-| 3 | เจอ red flag น่าเชื่อถือไหม | Bear-lite: WebSearch "[TICKER] short seller report" / "insider selling 2026" / "going concern auditor" | ต้องเจาะจง มีวันที่ น่าเชื่อถือจริง (ไม่ใช่แค่มีคนพูดลอยๆ) | → **Full Pipeline** (ไม่ติดสักข้อ) |
+| 2 | ราคาแพงเวอร์แค่ไหน | Scout Filter B → แปลงเป็น naive FV (ไม่ใช้ DCF เต็ม เช่น FCF÷WACC แบบ no-growth perpetuity) | ราคาปัจจุบัน > 1.5× naive FV | → **Full Pipeline** (ไม่ติด — ไป check 3 เป็น enrichment ไม่ใช่ gate) |
 
-**Token cost (calibrated จาก live test จริง QCOM 2026-09-05):** เช็ค 1-2 ≈ 0 เพิ่ม (Charlie ใช้ตัวเลขที่มีอยู่แล้ว) · เช็ค 3 ≈ **~43K จริง** (สูงกว่าที่ประมาณเดิม 10-15K ~3 เท่า เพราะ agent framework overhead) เฉพาะถ้าไปถึง (Bear-lite) → SKIP ที่ Tier 1 ใช้ ~43K รวม, ผ่านไป Full Pipeline เสีย ~43K เพิ่มจากเดิม — ยังถูกกว่า full pipeline (200K+) มาก แต่ estimated savings % ควรปรับลงเล็กน้อยจากตัวเลขนี้
+**Check 3 (enrichment เท่านั้น ไม่ gate):** Charlie WebSearch เอง 1-2 ครั้ง "[TICKER] short seller report" / "insider selling 2026" — ถ้าเจออะไร ใส่เป็น note แนบไปกับ dispatch ให้ Bear ตอน Full Pipeline (ให้ Bear เริ่มต้นได้เร็วขึ้น) **ไม่ว่าจะเจอหรือไม่เจอ ก็ยังส่งเข้า Full Pipeline เหมือนกัน** — ไม่มีทางที่ check 3 จะทำให้ SKIP อีกต่อไป
 
-**Calibration (ทดสอบย้อนหลังแล้ว):** GCT (2026-08-30, ROIC 23%>>WACC, MOS+7.7%) ไม่ติดเช็ค 1-2 เลย ต้องพึ่งเช็ค 3 (insider selling + short-seller reports) ถึงจะเจอ — เป็นเหตุผลที่เช็ค 3 บังคับ ไม่ใช่ optional | MU (2026-08-27, ราคา $918 vs naive FV ~$292 = 3.1×) ติดเช็ค 2 ชัดเจน — ตรงกับผล full pipeline จริง (MOS -68.2%)
+**Token cost (v2, calibrated จาก live test QCOM 2026-09-05):** check 1-2 ≈ 0 · check 3 ≈ 1-3K (Charlie WebSearch ตรงๆ ไม่ spawn agent, ถูกกว่า Bear-lite เดิม ~15-40 เท่า) → SKIP ที่ check 1-2 ใช้ ~0-3K รวม, ผ่านไป Full Pipeline เสียแค่ ~1-3K เพิ่มจากเดิม (ไม่ใช่ 43K แบบ v1)
 
-**คาดหวังตามจริง:** ประหยัด token เฉลี่ย ~15-20% ต่อรอบ scout เท่านั้น (ไม่ใช่ก้าวกระโดด) เพราะ candidate ส่วนใหญ่หลัง VALUE-FIRST pivot อยู่ในโซนก้ำกึ่งที่ยังต้องผ่าน Full Pipeline อยู่ดี — เช็ค 1-3 กรองได้เฉพาะเคสแพงเวอร์ชัดเจนแบบ MU/CRCL เท่านั้น
+**Calibration:** MU (2026-08-27, ราคา $918 vs naive FV ~$292 = 3.1×) ติดเช็ค 2 ชัดเจน — ตรงกับผล full pipeline จริง (MOS -68.2%) → SKIP ฟรี | GCT (2026-08-30, ROIC 23%>>WACC, MOS+7.7%) ไม่ติดเช็ค 1-2 → ไป Full Pipeline พร้อม flag จาก check 3 (ถ้าเจอ insider-selling signal ตอนนั้น) ให้ Bear ประเมินเต็มรูปแบบ ไม่ใช่ Charlie ตัดสินเอง | QCOM (2026-09-05) ไม่ติดเช็ค 1-2 → ไป Full Pipeline โดยเสีย check 3 แค่ ~1-3K แทน 43K แบบเดิม
+
+**คาดหวังตามจริง:** ประหยัดเฉพาะเคสแพงเวอร์ชัดเจนที่ติด check 1-2 เท่านั้น (~20-22% ของ candidate ในอดีต, ~200K/เคส) — เคสที่เหลือเสีย overhead แค่ ~1-3K ไม่ใช่ 43K แล้ว ทำให้ไม่มีต้นทุนแฝงที่กัดกินกำไรสุทธิเหมือน v1
 
 **Logging:** บันทึกใน `portfolio/deployment_log.md` เป็น tag แยก **`QUICK-SCREEN SKIP`** ไม่ปนกับ `SKIPPED` ปกติ (ที่มาจาก full pipeline fail gate) เพื่อไม่ให้ Vera's Funnel Health tracking สับสนระหว่าง "กรองถูกตั้งแต่ต้น" กับ "ผ่าน full pipeline แล้ว fail gate"
 

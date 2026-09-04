@@ -41,17 +41,16 @@ CIO ครับ ก่อนเริ่มวิเคราะห์ [TICKER]
 
 ## Tier 1 — Quick-Screen (ก่อนเข้า Full Pipeline — เฉพาะ candidate ใหม่จาก Scout, ไม่ใช้กับ OPEN position re-verify)
 
-> รายละเอียดเต็มดู CLAUDE.md § Tier 1 — Quick-Screen (เพิ่ม 2026-09-04, ป้องกันเสีย token เต็ม full pipeline กับ candidate ที่แพง/แย่ชัดเจนตั้งแต่ scout stage — precedent: CNC เสีย ~255K token ทั้งที่ ROIC<WACC ชัดเจนตั้งแต่ต้น)
+> รายละเอียดเต็มดู CLAUDE.md § Tier 1 — Quick-Screen (v2, แก้ 2026-09-05 หลัง live test QCOM พบว่า spawn Bear-lite แพงเกินคุ้ม ~43K/ครั้ง — ตอนนี้ check 3 ไม่ spawn agent แล้ว ไม่ใช่ gate ด้วย เป็นแค่ context ส่งต่อ Bear ตอน Full Pipeline)
 
 **ทำเมื่อ:** Max ส่ง candidate ใหม่จาก watchlist มาก่อนจะ dispatch เข้า Full Pipeline ด้านล่าง
 
-1. **เช็ค 1-2 — Charlie ทำเอง ไม่ spawn Agent** (เป็น routing decision ใช้เลขคณิตล้วนๆ จากตัวเลขที่ scout มีอยู่แล้ว ไม่ใช่ analysis — ไม่ขัดกับ "ไม่วิเคราะห์เองเด็ดขาด"):
-   - ROIC < 0.5× WACC และแย่ลงต่อเนื่อง 2 ปี+ → SKIP ทันที (ข้าม เช็ค 2-3)
-   - ราคา > 1.5× naive FV (จาก Filter B, ไม่ใช้ DCF เต็ม) → SKIP ทันที (ข้าม เช็ค 3)
-   - ไม่ติดทั้งคู่ → ไปเช็ค 3
-2. **เช็ค 3 — spawn Bear แบบเบา (quick-flag)** ไม่ใช่ full Bear role: สั่งแค่ "หา credible red flag สำหรับ [TICKER] — short seller report / insider selling 2026 / going concern auditor — ตอบแค่มี/ไม่มี พร้อม source" — ถ้าเจอจริง (เจาะจง มีวันที่ น่าเชื่อถือ) → SKIP
-3. **ไม่ติดสักข้อ → ไป Full Pipeline ด้านล่างตามปกติ ไม่มีการลดมาตรฐานใดๆ**
-4. ถ้า SKIP ที่ Tier 1 → แจ้ง Max บันทึก `QUICK-SCREEN SKIP` ใน deployment_log.md (แยกจาก `SKIPPED` ปกติ) — ไม่ต้องเขียน research report เต็ม
+1. **เช็ค 1-2 — Charlie ทำเอง ไม่ spawn Agent** (routing decision ใช้เลขคณิตล้วนๆ จากตัวเลขที่ scout มีอยู่แล้ว — ตัวกรองจริงตัวเดียวที่ SKIP ได้):
+   - ROIC < 0.5× WACC และแย่ลงต่อเนื่อง 2 ปี+ → **SKIP ทันที**
+   - ราคา > 1.5× naive FV (จาก Filter B, ไม่ใช้ DCF เต็ม) → **SKIP ทันที**
+   - ไม่ติดทั้งคู่ → ไป Full Pipeline (ผ่านเช็ค 3 ก่อนซึ่งไม่ใช่ gate)
+2. **เช็ค 3 (enrichment เท่านั้น ไม่ SKIP) — Charlie ทำเอง WebSearch ตรงๆ ไม่ spawn Bear แล้ว**: "[TICKER] short seller report" / "insider selling 2026" 1-2 ครั้ง — เจออะไรก็ใส่เป็น note แนบไปกับ dispatch ให้ Bear ใน Full Pipeline (ช่วย Bear เริ่มได้เร็วขึ้น) ไม่เจอก็ไม่เป็นไร **ไม่ว่าผลจะเป็นยังไง ก็ไป Full Pipeline เหมือนกัน**
+3. ถ้า SKIP ที่เช็ค 1-2 → แจ้ง Max บันทึก `QUICK-SCREEN SKIP` ใน deployment_log.md (แยกจาก `SKIPPED` ปกติ) — ไม่ต้องเขียน research report เต็ม
 
 ## Pipeline ที่ต้องทำตาม (Tier 2 — Full Pipeline, เข้าหลัง Tier 1 ผ่านแล้วเท่านั้นสำหรับ candidate ใหม่)
 ```
