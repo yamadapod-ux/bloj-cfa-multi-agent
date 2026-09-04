@@ -235,7 +235,7 @@ CIO → "Max หาหุ้นใหม่"
 | 2 | ราคาแพงเวอร์แค่ไหน | Scout Filter B → แปลงเป็น naive FV (ไม่ใช้ DCF เต็ม เช่น FCF÷WACC แบบ no-growth perpetuity) | ราคาปัจจุบัน > 1.5× naive FV | → เช็ค 3 |
 | 3 | เจอ red flag น่าเชื่อถือไหม | Bear-lite: WebSearch "[TICKER] short seller report" / "insider selling 2026" / "going concern auditor" | ต้องเจาะจง มีวันที่ น่าเชื่อถือจริง (ไม่ใช่แค่มีคนพูดลอยๆ) | → **Full Pipeline** (ไม่ติดสักข้อ) |
 
-**Token cost:** เช็ค 1-2 ≈ 0 เพิ่ม (Charlie ใช้ตัวเลขที่มีอยู่แล้ว) · เช็ค 3 ≈ 10-15K เฉพาะถ้าไปถึง (Bear-lite) → SKIP ที่ Tier 1 ใช้ ~10-15K รวม, ผ่านไป Full Pipeline เสีย ~10-15K เพิ่มจากเดิม
+**Token cost (calibrated จาก live test จริง QCOM 2026-09-05):** เช็ค 1-2 ≈ 0 เพิ่ม (Charlie ใช้ตัวเลขที่มีอยู่แล้ว) · เช็ค 3 ≈ **~43K จริง** (สูงกว่าที่ประมาณเดิม 10-15K ~3 เท่า เพราะ agent framework overhead) เฉพาะถ้าไปถึง (Bear-lite) → SKIP ที่ Tier 1 ใช้ ~43K รวม, ผ่านไป Full Pipeline เสีย ~43K เพิ่มจากเดิม — ยังถูกกว่า full pipeline (200K+) มาก แต่ estimated savings % ควรปรับลงเล็กน้อยจากตัวเลขนี้
 
 **Calibration (ทดสอบย้อนหลังแล้ว):** GCT (2026-08-30, ROIC 23%>>WACC, MOS+7.7%) ไม่ติดเช็ค 1-2 เลย ต้องพึ่งเช็ค 3 (insider selling + short-seller reports) ถึงจะเจอ — เป็นเหตุผลที่เช็ค 3 บังคับ ไม่ใช่ optional | MU (2026-08-27, ราคา $918 vs naive FV ~$292 = 3.1×) ติดเช็ค 2 ชัดเจน — ตรงกับผล full pipeline จริง (MOS -68.2%)
 
