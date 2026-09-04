@@ -190,6 +190,12 @@ CIO → "Max หาหุ้นใหม่"
 - **B. Cheap on cash/asset:** FCF yield > 6% **หรือ** EV/EBITDA อยู่ bottom-third ของ 5-year history ตัวเอง **หรือ** P/B ต่ำกว่า 5Y median (สำหรับ financials/insurers)
 - **C. Still a real business:** ROIC > WACC (ล่าสุด TTM หรือ through-cycle) — กันไม่ให้เป็น value trap; ไม่ใช่ industry ที่ secular structural decline (เช่น linear TV, coal thermal, legacy retail)
 
+**Price Verification ที่ scout stage (บังคับ — เพิ่ม 2026-09-04 หลัง ZETA +31% error 09-01 และ CNC +55.7% error 09-04 สองครั้งติดกัน):**
+- ราคาที่ใช้คำนวณ Filter A (% ลงจาก 52W high) และ Filter B (FCF yield/EV-EBITDA/P-B) ต้อง **WebSearch ≥2 sources cross-check ตั้งแต่ตอน scout scan** — ห้ามใช้ตัวเลขจาก source เดียว (เช่น stockanalysis.com อย่างเดียว) หรือจากบทความ/headline เก่าที่ไม่ระบุวันที่ชัดเจนมาคำนวณ % ลงจาก high
+- ถ้า 2 sources ต่างกัน >2% → ต้อง WebSearch เพิ่มรอบ 3 ก่อนใส่ตัวเลขลง watchlist ห้ามเดา/เฉลี่ยเอาเอง
+- เหตุผล: scout price ผิดพลาด ≠ scout price เก่า (Scout→Analysis SLA ด้านล่างแก้เรื่อง staleness แล้ว แต่ไม่ครอบคลุมเรื่องราคาผิดตั้งแต่ต้น) — ราคาที่ผิดทำให้ Filter A/B ผ่านหลอกๆ (CNC ดูเหมือนลง 33.8% ทั้งที่จริงลงแค่ 1.9% ไม่ผ่าน Filter A เลยด้วยซ้ำ) นำไปสู่การเสีย resource วิเคราะห์เต็ม pipeline โดยไม่จำเป็น และทำให้ data point ที่ได้มาใช้ประเมิน VALUE-FIRST screen เองไม่ valid
+- ถ้า full-analysis ภายหลังพบว่าราคา scout เดิมผิดพลาด (ไม่ใช่แค่ stale) → บันทึกเป็น scout data-integrity error แยกจาก AVOID/SKIP ปกติ ใน `portfolio/watchlist.md` § Scout Data Integrity Escalation เพื่อ track ว่าเกิดซ้ำกี่ครั้ง
+
 **Secondary (nice-to-have, ไม่ใช่ gate):**
 - Revenue growth เป็น bonus ไม่ใช่ requirement — Growth bucket ยังใช้ได้ถ้า candidate ผ่าน A+B+C แล้วบังเอิญโตเร็วด้วย
 - Catalyst ที่มองเห็น (earnings inflection, spin-off, activist, cycle turn, regulatory resolution)
