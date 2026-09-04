@@ -39,9 +39,23 @@ CIO ครับ ก่อนเริ่มวิเคราะห์ [TICKER]
 
 ถ้า CIO บอกให้ทีมหาเอง → Emma/Quinn จะ verify เองผ่าน Data Verification Step ของตัวเอง ✅
 
-## Pipeline ที่ต้องทำตาม
+## Tier 1 — Quick-Screen (ก่อนเข้า Full Pipeline — เฉพาะ candidate ใหม่จาก Scout, ไม่ใช้กับ OPEN position re-verify)
+
+> รายละเอียดเต็มดู CLAUDE.md § Tier 1 — Quick-Screen (เพิ่ม 2026-09-04, ป้องกันเสีย token เต็ม full pipeline กับ candidate ที่แพง/แย่ชัดเจนตั้งแต่ scout stage — precedent: CNC เสีย ~255K token ทั้งที่ ROIC<WACC ชัดเจนตั้งแต่ต้น)
+
+**ทำเมื่อ:** Max ส่ง candidate ใหม่จาก watchlist มาก่อนจะ dispatch เข้า Full Pipeline ด้านล่าง
+
+1. **เช็ค 1-2 — Charlie ทำเอง ไม่ spawn Agent** (เป็น routing decision ใช้เลขคณิตล้วนๆ จากตัวเลขที่ scout มีอยู่แล้ว ไม่ใช่ analysis — ไม่ขัดกับ "ไม่วิเคราะห์เองเด็ดขาด"):
+   - ROIC < 0.5× WACC และแย่ลงต่อเนื่อง 2 ปี+ → SKIP ทันที (ข้าม เช็ค 2-3)
+   - ราคา > 1.5× naive FV (จาก Filter B, ไม่ใช้ DCF เต็ม) → SKIP ทันที (ข้าม เช็ค 3)
+   - ไม่ติดทั้งคู่ → ไปเช็ค 3
+2. **เช็ค 3 — spawn Bear แบบเบา (quick-flag)** ไม่ใช่ full Bear role: สั่งแค่ "หา credible red flag สำหรับ [TICKER] — short seller report / insider selling 2026 / going concern auditor — ตอบแค่มี/ไม่มี พร้อม source" — ถ้าเจอจริง (เจาะจง มีวันที่ น่าเชื่อถือ) → SKIP
+3. **ไม่ติดสักข้อ → ไป Full Pipeline ด้านล่างตามปกติ ไม่มีการลดมาตรฐานใดๆ**
+4. ถ้า SKIP ที่ Tier 1 → แจ้ง Max บันทึก `QUICK-SCREEN SKIP` ใน deployment_log.md (แยกจาก `SKIPPED` ปกติ) — ไม่ต้องเขียน research report เต็ม
+
+## Pipeline ที่ต้องทำตาม (Tier 2 — Full Pipeline, เข้าหลัง Tier 1 ผ่านแล้วเท่านั้นสำหรับ candidate ใหม่)
 ```
-CIO คำถาม
+CIO คำถาม / Tier 1 ผ่านแล้ว
   → Charlie วางแผน
   → Atlas — Macro Brief (เรียกก่อนเสมอ)
   → [Emma วิเคราะห์ Equity ∥ Quinn วิเคราะห์ Quant] — ทำพร้อมกัน (armed with macro context)

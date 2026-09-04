@@ -219,6 +219,32 @@ CIO → "Max หาหุ้นใหม่"
 - De-listed → ย้ายเข้า `## 🗄️ Archive — De-listed Candidates` section ใน `watchlist.md` พร้อมเหตุผล — **ห้ามลบทิ้ง** (เก็บไว้เป็นประวัติ, re-list ได้ถ้าสถานการณ์เปลี่ยน)
 - Max รัน prune pass นี้เป็น **Step 0 ของ Mode 1 Scout ทุกครั้ง** — ก่อนสแกน candidate ใหม่เสมอ (ดู `.claude/agents/max.md`)
 
+### Tier 1 — Quick-Screen (บังคับ — คั่นระหว่าง Scout กับ Full Pipeline, เพิ่ม 2026-09-04)
+
+> **ที่มา:** CNC (2026-09-04) เสีย token ไป ~255K เพื่อพิสูจน์สิ่งที่ดูออกได้จากตัวเลข scout เบื้องต้นแล้ว (ROIC ต่ำกว่า WACC ชัดเจน) — ก่อนหน้านี้ระบบมีแค่ 2 ระดับ (Scout ถูก → Full Pipeline แพงมาก ~200-260K token) ไม่มีอะไรคั่นกลาง Tier 1 นี้**ไม่ใช่ Return-side locked rule** — เป็น resource-triage layer เท่านั้น ไม่แตะ MOS threshold/conviction gate/40-30-30 weight ที่ยังล็อกเหมือนเดิม
+
+**ใครทำ (แยกตาม check เพื่อไม่ขัด role):**
+- Check 1-2 (เลขคณิตล้วนๆ จากตัวเลขที่ scout มีอยู่แล้ว) → **Charlie ทำเอง ไม่ spawn agent** (เป็น routing decision ไม่ใช่ investment judgment — ไม่ขัดกับ "ไม่วิเคราะห์เองเด็ดขาด")
+- Check 3 (ตัดสินความน่าเชื่อถือของ red flag) → **spawn Bear แบบเบา (quick-flag) เท่านั้น** ไม่ใช่ full Bear role — แค่ 1-2 WebSearch + สรุปสั้น ไม่ต้องรอ Atlas/Emma/Quinn ก่อน
+
+**เกณฑ์ตัดสิน (รันตามลำดับ — ติดข้อไหนข้อหนึ่ง = SKIP ทันที, ไม่ติดสักข้อ = ไป Full Pipeline):**
+
+| # | เช็ค | ข้อมูลจาก | เกณฑ์ SKIP | ถ้าไม่ถึงเกณฑ์ |
+|---|---|---|---|---|
+| 1 | ROIC แย่แค่ไหน | Scout Filter C | ROIC < 0.5× WACC **และ** แย่ลงต่อเนื่อง 2 ปี+ | → เช็ค 2 |
+| 2 | ราคาแพงเวอร์แค่ไหน | Scout Filter B → แปลงเป็น naive FV (ไม่ใช้ DCF เต็ม เช่น FCF÷WACC แบบ no-growth perpetuity) | ราคาปัจจุบัน > 1.5× naive FV | → เช็ค 3 |
+| 3 | เจอ red flag น่าเชื่อถือไหม | Bear-lite: WebSearch "[TICKER] short seller report" / "insider selling 2026" / "going concern auditor" | ต้องเจาะจง มีวันที่ น่าเชื่อถือจริง (ไม่ใช่แค่มีคนพูดลอยๆ) | → **Full Pipeline** (ไม่ติดสักข้อ) |
+
+**Token cost:** เช็ค 1-2 ≈ 0 เพิ่ม (Charlie ใช้ตัวเลขที่มีอยู่แล้ว) · เช็ค 3 ≈ 10-15K เฉพาะถ้าไปถึง (Bear-lite) → SKIP ที่ Tier 1 ใช้ ~10-15K รวม, ผ่านไป Full Pipeline เสีย ~10-15K เพิ่มจากเดิม
+
+**Calibration (ทดสอบย้อนหลังแล้ว):** GCT (2026-08-30, ROIC 23%>>WACC, MOS+7.7%) ไม่ติดเช็ค 1-2 เลย ต้องพึ่งเช็ค 3 (insider selling + short-seller reports) ถึงจะเจอ — เป็นเหตุผลที่เช็ค 3 บังคับ ไม่ใช่ optional | MU (2026-08-27, ราคา $918 vs naive FV ~$292 = 3.1×) ติดเช็ค 2 ชัดเจน — ตรงกับผล full pipeline จริง (MOS -68.2%)
+
+**คาดหวังตามจริง:** ประหยัด token เฉลี่ย ~15-20% ต่อรอบ scout เท่านั้น (ไม่ใช่ก้าวกระโดด) เพราะ candidate ส่วนใหญ่หลัง VALUE-FIRST pivot อยู่ในโซนก้ำกึ่งที่ยังต้องผ่าน Full Pipeline อยู่ดี — เช็ค 1-3 กรองได้เฉพาะเคสแพงเวอร์ชัดเจนแบบ MU/CRCL เท่านั้น
+
+**Logging:** บันทึกใน `portfolio/deployment_log.md` เป็น tag แยก **`QUICK-SCREEN SKIP`** ไม่ปนกับ `SKIPPED` ปกติ (ที่มาจาก full pipeline fail gate) เพื่อไม่ให้ Vera's Funnel Health tracking สับสนระหว่าง "กรองถูกตั้งแต่ต้น" กับ "ผ่าน full pipeline แล้ว fail gate"
+
+**ไม่ใช้กับ:** OPEN-position re-verify (มี lightweight tier แยกอยู่แล้วตาม Re-Analysis Trigger Rule — ไม่เกี่ยวกัน ไม่แตะ)
+
 ### Research + Execute Pipeline (ทุก analysis)
 ```
 CIO → Charlie → Atlas

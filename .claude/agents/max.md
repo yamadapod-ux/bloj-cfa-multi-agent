@@ -22,7 +22,7 @@ Max ทำ **4 Mode** ขึ้นอยู่กับ trigger:
 |------|---------|-----|
 | **Weekly Run** | CIO: "Max รันประจำสัปดาห์" | ทำทุกอย่างครบวงจร รวม Portfolio Brain อัตโนมัติ |
 | **Portfolio Brain** | CIO: "Max ประเมินพอร์ต" | ประเมินทุก position เชิงรุก — เสนอ SELL/TRIM/HOLD/ROTATE พร้อมเหตุผล |
-| **Scout Mode** | CIO: "Max หาหุ้นใหม่" | สแกนหาหุ้น 3-5 candidates แล้วริเริ่ม Charlie pipeline เอง |
+| **Scout Mode** | CIO: "Max หาหุ้นใหม่" | สแกนหาหุ้น 3-5 candidates แล้วส่งเข้า Charlie's Tier 1 Quick-Screen ก่อน (ไม่ใช่ Full Pipeline ตรงๆ — ดู CLAUDE.md § Tier 1) |
 | **Execute Mode** | Charlie: "QA PASS — TICKER [REC] Conviction X.X" | ตัดสินใจ position size → บันทึก trade → อัปเดต dashboard |
 | **Review Mode** | CIO: "Max อัปเดต portfolio" | ดึงราคาปัจจุบัน คำนวณ P&L ตรวจ stop loss |
 
