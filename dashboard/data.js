@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-09-04";
+const LAST_UPDATED = "2026-09-05";
 
 const REPORTS = [
 
@@ -11194,38 +11194,633 @@ Conviction: Emma 6/10 | Quinn 5/10 | Bear 8/10 | Avg 6.3/10
   {
     ticker: "QCOM",
     company: "Qualcomm Inc.",
-    date: "2026-05-15",
+    date: "2026-09-05",
+    version: "v2 (Full Re-Analysis — Tier 1 Quick-Screen -> Tier 2 Full Pipeline)",
+    previousDate: "2026-05-15",
+    previousRating: "HOLD/WAIT @ $218.00 | FV $192.00 | MOS -11.9%",
     sector: "Semiconductor / Mobile AI / Automotive",
-    price: 218.00,
-    recommendation: "WAIT",
-    blendedFV: 192.00,
-    targetBull: 284.00,
-    targetBase: 192.00,
-    stopLoss: 150.00,
-    convictionEmma: 7,
-    convictionQuinn: 6,
-    convictionBear: 7,
-    convictionAvg: 6.5,
-    pwEV: 192.00,
-    beta: 1.35,
-    sharpe1Y: 0.34,
+    bucket: "Value",
+    price: 168.71,
+    recommendation: "AVOID",
+    blendedFV: 111.59,
+    esgAdjFV: 106.01,
+    mos: "-33.9%",
+    mosPct: -33.9,
+    mosPctEsgAdj: -37.16,
+    targetBull: 161.02,
+    targetBase: 111.59,
+    stopLoss: 73.00,
+    stopLossNote: "N/A — ไม่มี position เปิดอยู่ (never deployed, เดิม HOLD/WAIT). Hypothetical stop $73 (-20%) หากเข้า future watch zone mid $91",
+    convictionEmma: 6,
+    convictionQuinn: 7,
+    convictionBear: 6,
+    convictionAvg: 6.33,
+    pwEV: 111.59,
+    pwEvEmma: 97.15,
+    pwEvQuinn: 94.68,
+    pwEvBear: 103.10,
+    beta: 1.68,
+    sharpe1Y: 0.224,
+    forwardSharpe: 0.224,
+    sharpeDcfImplied: -2.05,
+    kelly: "-7.79 (continuous form, deeply negative — 0/3 scenarios produce positive return, even Bull -2.2%)",
+    wacc: "12.5% (Emma) / 12.53% (Quinn) — เพิ่มจาก 10.75% เดิม (beta 1.35->1.68, Rf 4.35%->4.78%, ทั้งคู่ market-verified 2026-09-05)",
     maxDrawdown: -0.45,
-    moat: "Narrow+",
+    moat: "Narrow",
+    moatNote: "Downgrade จาก Narrow+ (2026-05-15) — Apple modem defection เปลี่ยนจาก 'proven possible' เป็น 'confirmed happening' (QCT Handset -20% YoY)",
     esgRating: "Low-Medium",
-    esgScore: 6.35,
-    keyThesis: "Mobile AI Tollbooth (QTL licensing @70% margin) + Automotive $45B pipeline ramp. ROIC 33% top quartile. Twin binary: Apple modem transition + China 53% revenue (Jul 2026 truce expiry).",
-    topRisk: "Apple in-house modem (-$20-25/share) + China export restriction (-$35-53/share) simultaneously = FV $85-100",
-    entryZone: "$190-205",
-    positionSize: "5-7% max (T1 3% + T2 2%, staged; conviction 6.5 < 7 = no auto-deploy)",
+    esgScore: 6.5,
+    esgBreakdown: { e: 7, s: 6, g: 6.5, overall: 6.5 },
+    macroRegime: "RISK-ON",
+    macroRegimeNote: "3/4 indicators RISK-ON (VIX 16.34, Yield Curve +40-44bps, HY Spread 265bps); Fed Stance dissent (hikes priced, hawkish Chair Warsh) — ไม่กระทบ AVOID เพราะไม่ deploy อยู่แล้ว",
+    sp500Reference: 7718.60,
+    sp500ReferenceNote: "7,718.60 (Sept 4, 2026 close — Yahoo Finance ^GSPC -0.38% + stockanalysis.com SPY $770.19 -0.39% cross-check ≥2 sources, verified retroactively by Vera 2026-09-05, matches portfolio/decisions.md QCOM v2 row + performance/tracker.md, inter-file consistency PASS)",
+    entryZone: "$85–97 (MOS >=15% BUY gate) — MOS-turns-positive zone $97-112",
+    positionSize: "0% — AVOID, Conviction 6.33 ผ่าน gate (>=6) แต่ MOS -33.9% ล้มเหลวหนัก (ต้องการ >=15%)",
+    keyThesis: "Mobile AI Tollbooth (QTL licensing @69% margin, floor ถึงปี 2027 แม้ Apple เลิกใช้ modem) + Automotive ramp (BMW+VW LOI, exit run-rate $7B raised จาก $6B). แต่ราคาร่วง -22.6% จาก $218 ไม่ได้แปลว่า MOS ดีขึ้น — Blended FV ร่วงเร็วกว่าราคา (-41.9%) เพราะ Apple modem loss confirmed จริง (QCT Handset -20% YoY) + WACC พุ่ง 10.75%->12.5% (beta 1.35->1.68, Rf->4.78%, verified). Reclassified Growth->Value bucket (TTM Rev Growth +1.9%, ต่ำกว่าเกณฑ์ 20%). MOS -33.9% ยังคงติดลบลึก ไม่ผ่าน Value BUY gate.",
+    topRisk: "Twin binary risks: (1) Apple modem loss confirmed materializing worse than guided — QCT Handset -20% YoY; (2) China 46% revenue concentration, truce ต่ออายุถึง 10 พ.ย. 2026 แต่ Sept summit เป็น catalyst ตัดสินสำคัญ. ถ้ายิงพร้อมกัน -> FV ลงโซน $40-80. Street PT $193.10 ห่างจาก Team Blended FV -42.2% (เกิน threshold 25%, unresolved genuine disagreement)",
+    ratingChangeNote: "v1 (2026-05-15) HOLD/WAIT $192 FV @ $218 (MOS -11.9%, Growth bucket) -> v2 (2026-09-05) AVOID $111.59 FV @ $168.71 (MOS -33.9%, Value bucket) — ราคาร่วง -22.6% แต่ FV ร่วงเร็วกว่า (-41.9%), ไม่พลิกบวกอย่างที่ CIO ตั้งสมมติฐานไว้ตอนแรก",
     reportFile: "../reports/QCOM_2026-05-15.md",
-    fullContent: `# QCOM — Qualcomm Inc.
+    businessSummary: {
+      oneLiner: "Qualcomm ออกแบบชิปสมาร์ทโฟน (Snapdragon) และเก็บค่าลิขสิทธิ์สิทธิบัตร 5G จากผู้ผลิตมือถือทั่วโลก กำลังขยายไปรถยนต์และ data center",
+      analogy: "เหมือนเจ้าของสิทธิบัตรที่เก็บค่าผ่านทางจากทุกคันรถที่วิ่งบนถนน 5G ทั่วโลก ไม่ว่าจะใช้เครื่องยนต์ยี่ห้อไหน — บวกกับธุรกิจขายเครื่องยนต์ (ชิป) เอง",
+      moneyFlow: [
+        "ผู้ผลิตมือถือ (Samsung, Xiaomi ฯลฯ — Apple เดิมกำลังลดลง) ซื้อชิป Snapdragon จาก QCOM ไปใส่ในโทรศัพท์ = รายได้ QCT (~87% ของรายได้)",
+        "ทุกโทรศัพท์ 4G/5G ทั่วโลกต้องจ่ายค่าลิขสิทธิ์สิทธิบัตรให้ QCOM ไม่ว่าจะใช้ชิป QCOM หรือไม่ = รายได้ QTL (margin ~69% EBT)",
+        "กำลังขยายไปขายชิปให้รถยนต์ (digital cockpit, ADAS) — VW LOI + BMW primary supplier ใหม่ (29 ก.ค. 2026)",
+        "เพิ่งเข้าธุรกิจ data center/AI ผ่านการซื้อ Modular Inc (เสร็จสมบูรณ์ 29 ก.ค. 2026) — รายได้เริ่ม ธ.ค. 2026"
+      ],
+      whyDifferent: "QTL licensing เป็น near-zero-capex cash flow ที่หลีกเลี่ยงยาก (patent-essential) แต่ QCT chip moat อ่อนลงจริง — Apple พิสูจน์แล้วว่า switching ออกจาก Snapdragon ทำได้จริงในระดับ mega-customer",
+      simpleRisk: "ลูกค้ารายใหญ่ที่สุด (Apple) กำลังเลิกใช้ชิป QCOM จริง (ยืนยันแล้ว ไม่ใช่แค่ข่าวลือ) ทำให้รายได้ handset หดตัว -20% YoY — Automotive ยังโตไม่ทันชดเชย"
+    },
+    thesisBullets: [
+      { title: "Apple modem loss confirmed", why: "Management ยืนยัน Q3 FY2026 call ว่า Apple share ต่ำกว่า 20% ที่เคยประมาณ — เป็นข้อเท็จจริงที่เกิดแล้ว ไม่ใช่ risk ที่รอเกิด" },
+      { title: "Automotive ramp ยังแข็งแกร่งจริง", why: "23 ไตรมาสติดต่อกัน double-digit growth, VW LOI + BMW primary supplier ใหม่, exit run-rate $7B annualized (raised จาก $6B)" },
+      { title: "QTL licensing floor ยังอยู่", why: "Apple ยังต้องจ่าย patent fee ผ่าน QTL ถึงอย่างน้อยปี 2027 แม้เลิกใช้ modem — wide moat แยกต่างหากจากธุรกิจชิป" },
+      { title: "China risk ลดลงบางส่วนแต่ยังเปราะบาง", why: "China revenue ลดจาก 53%->46%, truce ขยายถึง 10 พ.ย. 2026 แต่ September summit เป็น catalyst ตัดสินสำคัญที่ยังไม่ resolve" },
+      { title: "MOS ยังติดลบแม้ราคาร่วง -22.6%", why: "Blended FV ใหม่ $111.59 ลดลงมากกว่าที่ราคาลง (-41.9% vs -22.6%) เพราะ WACC สูงขึ้นจาก beta+Rf และ growth ถูกปรับลงจาก Apple loss ที่ confirmed" }
+    ],
+    customerConcentration: {
+      apple: "≥10% (confirmed SEC 10-K FY2025, exact % not disclosed) — modem share declining to <20% of iPhone units, trending toward 0%",
+      samsung: "≥10% (confirmed SEC 10-K FY2025, exact % not disclosed)",
+      xiaomi: "≥10% (confirmed SEC 10-K FY2025, exact % not disclosed)",
+      note: "3 customers each ≥10% of consolidated revenue per 10-K FY2025 — concentration risk material, Apple already materializing negatively"
+    },
+    geographyRevenue: {
+      china: "~46% (FY2025, down from 53% prior thesis and 67% three years ago) — trade truce extended to Nov 10 2026 but still elevated geopolitical exposure",
+      other: "N/A — full US/Europe/Other breakdown not available in fetched 10-K excerpt this session"
+    },
+    revenueSegments: [
+      { label: "QCT Handset", value: 52 },
+      { label: "QCT IoT", value: 18 },
+      { label: "QCT Automotive", value: 16 },
+      { label: "QTL Licensing", value: 13 }
+    ],
+    revenueSegmentsNote: "Q3 FY2026 segment annualized run-rate weight [Atlas Data Package Section B] — Handset YoY -20% (confirmed Apple loss), Automotive YoY +61% (record), IoT +9%, Licensing steady",
+    competitorData: [
+      { ticker: "QCOM", company: "Qualcomm (subject)", revenueGrowth: 1.9, operatingMargin: 25.56, marketCap: 180.2,
+        strengths: "QTL licensing 69% margin floor to 2027+, ROIC 25.56% (+64% premium vs peer median), Automotive design-win $45B pipeline + BMW/VW", weaknesses: "Revenue growth laggard (+1.9% vs peer median +16.7%), Apple modem loss confirmed, China 46% revenue concentration", threatLevel: "SUBJECT" },
+      { ticker: "AVGO", company: "Broadcom", revenueGrowth: 48.7, operatingMargin: 30.54, marketCap: 1080,
+        strengths: "Wide Moat custom AI silicon + VMware, gross margin 75.5% highest in group, ROIC 30.54%", weaknesses: "Valuation แพงมาก P/E 45.6x, leverage สูงจาก VMware", threatLevel: "MEDIUM" },
+      { ticker: "MRVL", company: "Marvell Technology", revenueGrowth: 30.6, operatingMargin: 6.94, marketCap: 90,
+        strengths: "Custom silicon สำหรับ hyperscaler AI accelerator, revenue growth สูง", weaknesses: "ROIC ต่ำมาก 6.94% เทียบ valuation แพง P/E 74.5x — quality ไม่ตามทัน valuation", threatLevel: "LOW-MEDIUM" },
+      { ticker: "TXN", company: "Texas Instruments", revenueGrowth: 16.7, operatingMargin: 25.53, marketCap: 236.2,
+        strengths: "Wide Moat analog/embedded + in-house 300mm fab, ROIC 25.53% ใกล้เคียง QCOM, end-market กระจายตัว", weaknesses: "Growth ช้ากว่า AI peer group, valuation ค่อนข้างแพง P/E 38.6x", threatLevel: "MEDIUM" },
+      { ticker: "ON", company: "ON Semiconductor", revenueGrowth: -3.1, operatingMargin: 15.60, marketCap: 28.27,
+        strengths: "ผู้นำ power semiconductor (SiC) สำหรับ EV/automotive", weaknesses: "Revenue หดตัว -3.1% จาก EV slowdown, ROE ต่ำมาก 8.31%", threatLevel: "MEDIUM" },
+      { ticker: "SWKS", company: "Skyworks Solutions", revenueGrowth: 0.1, operatingMargin: 6.65, marketCap: 12,
+        strengths: "RF front-end module expert, balance sheet อนุรักษ์นิยม D/E 0.12x ต่ำสุดในกลุ่ม", weaknesses: "Revenue แทบไม่โต, ROE/ROIC ต่ำมาก, พึ่ง Apple เป็นลูกค้าหลักเช่นกัน (canary signal)", threatLevel: "LOW" }
+    ],
+    competitorDataNote: "operatingMargin ใช้ ROIC (%, verified via Stockanalysis.com 2026-09-05 โดย Emma) เป็น profitability proxy — GAAP operating margin ไม่ได้ fetch แยกรอบนี้ (Atlas Section G ไม่ได้ fetch, WebSearch budget หมด). marketCap: QCOM $180.2B verified today; TXN $236.2B + ON $28.27B จาก ADI analysis 2026-08-29 (~1 สัปดาห์, reliable); AVGO/MRVL/SWKS เป็นตัวเลข order-of-magnitude โดยประมาณ ไม่ได้ re-verify สดรอบนี้ — ใช้เพื่อ scatter chart เท่านั้น ไม่ใช่ input ของ valuation",
+    bullFlipTriggers: [
+      "Beta (5Y monthly) mean-reverts ≤1.50 สองไตรมาสติดต่อกัน (objective WACC-durability test)",
+      "BMW/VW LOI -> signed contract ≥$2B/yr disclosed volume",
+      "Sept 2026 US-China summit ได้ truce extension 12+ เดือน + semiconductor carve-out ชัดเจน",
+      "QCT Handset decline ชะลอเหลือ single-digit YoY 2 ไตรมาสติดต่อกัน (Apple loss lapped)",
+      "ราคาลงเข้า watch zone $85-97 (MOS>=15%) หรือ FV ขยับขึ้นสู่ $130-150 จาก WACC reversion"
+    ],
+    bearFlipTriggers: [
+      "China truce ไม่ต่ออายุหลัง 10 พ.ย. 2026 โดยไม่ extend หรือ extend แบบไม่มี semiconductor protection",
+      "QCT Handset decline เร่งตัวเกิน -20% YoY ใน Q4 FY2026 print",
+      "Insider selling เร่งตัว >$50M ใน 1 ไตรมาส ยังไม่มี buying",
+      "Beta ค้างที่ >=1.65 อีก 2 ไตรมาสติดต่อกัน (ยืนยัน structural re-rating)",
+      "BMW/VW LOI ถอนหรือ downgrade"
+    ],
+    thesisInvalidation: "Apple ยืนยัน 0% modem share พร้อมกับ China truce ล่มหลัง 10 พ.ย. 2026 ในไตรมาสเดียวกัน (twin binary ยิงพร้อมกัน -> FV ลงโซน $40-80) OR Automotive design-win pipeline ($45B) มี cancellation นัยสำคัญ หรือ BMW/VW ถอน LOI อย่างเป็นทางการ",
+    morganQA: "PASS (Data Quality 8.2/10, 0 HIGH / 2 MEDIUM transparency issues — Quinn/Bear single-analyst-construction caveat not fully surfaced, ERP/vol carried-forward not flagged consistently — ไม่ block push). Price verified independently via WebFetch $168.69 vs report $168.71/$168.72 (<0.02%). Blended FV/MOS/ESG-adj FV ทุกตัวคำนวณซ้ำถูกต้อง 100%.",
+    fullContent: `# 🔵 QCOM — Qualcomm Inc.
 ### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+*Date: 2026-05-15 (Original) | Updated: 2026-09-05 (Full Re-Analysis) | Analyst Team: Emma, Quinn, Bear, Charlie | QA: Morgan*
 
-คำแนะนำ: HOLD / WAIT | Entry Zone $190-205 | Blended FV $192 | MOS -11.9% | Stop $150
+---
 
-Conviction: Emma 7/10 | Quinn 6/10 | Bear 7/10 | Avg 6.5/10
+## 🔄 Update Log — 2026-09-05 (Full Re-Analysis, Tier 1 Quick-Screen → Tier 2 Full Pipeline)
 
-*Report สร้างโดย: Charlie | Emma | Quinn | Bear | Leo | 2026-05-15*
+**เหตุผลที่ re-analyze:** ราคาร่วงจาก $218 (พ.ค.) เหลือ $168.71 (ก.ย., -22.6%) — CIO ต้องการรู้ว่า MOS พลิกบวกหรือไม่ ผ่าน Tier 1 Quick-Screen ก่อน (ROIC/WACC ไม่ติด red flag, ราคาไม่เกิน naive FV, Bear-lite ไม่พบ credible red flag — short-seller claim ก.ค. 2026 debunk แล้ว) → เข้า Full Pipeline
+
+| Field | 2026-05-15 (เดิม) | 2026-09-05 (อัปเดต) | Δ |
+|-------|-------------------|----------------------|---|
+| Price | $218.00 | $168.71 | **-22.6%** |
+| Bucket | Growth (Rev +17% FY25) | **Value** (TTM Rev Growth +1.9%) | Reclassified |
+| Blended FV weight | Emma 40% / Quinn 35% / Bear 25% | **Emma 40% / Quinn 30% / Bear 30%** (current IPS) | Methodology update |
+| Blended FV | $192.00 | **$111.59** | **-41.9%** |
+| MOS | -11.9% | **-33.9%** | ลึกลงกว่าเดิม (ไม่พลิกบวก) |
+| ESG-Adjusted FV | $184.00 | **$106.01** | |
+| Conviction Avg | 6.5/10 | 6.33/10 | ~เท่าเดิม |
+| Moat | Narrow+ | **Narrow** (downgrade) | Apple defection confirmed |
+| Recommendation | HOLD / WAIT FOR PULLBACK | **AVOID** | เปลี่ยนทิศทาง |
+
+**ผลลัพธ์สำคัญ (ผิดคาด):** ราคาร่วง -22.6% แต่ **fair value ร่วงเร็วกว่าราคาเสียอีก (-41.9%)** เพราะ (1) Apple in-house modem risk ที่เดิมเป็นแค่ "risk" ตอนนี้ **confirmed จริงแล้ว** (QCT Handset -20% YoY, management ยืนยัน Q3 FY2026 call) และ (2) WACC พุ่งจาก 10.75% → 12.5% (beta 1.35→1.68, Rf 4.35%→4.78%, ทั้งคู่ market-verified วันนี้) — MOS **ไม่พลิกบวก** อย่างที่ตั้งสมมติฐานไว้ตอนแรก กลับติดลบลึกกว่าเดิม
+
+**สิ่งที่ดีขึ้น:** China revenue concentration ลดจาก 53%→46%, truce ต่ออายุถึง 10 พ.ย. 2026 (ดีกว่าเดิมที่กลัวหมดอายุ ก.ค. 2026), automotive design-win ยังแข็งแกร่ง (BMW เพิ่มเข้ามาเป็น primary supplier รายที่ 2 ต่อจาก VW — ข้อมูลใหม่ที่ Emma/Quinn ไม่มี), dividend maintained, ROIC 25.6% ยัง > WACC 12.5%
+
+**Street PT Divergence (unresolved):** Analyst consensus PT $193.10 vs Team Blended FV $111.59 = **-42.2%** — เกิน threshold 25% มาก ดู reconciliation table ในหัวข้อ 💰 Valuation
+
+*ตามกฎเหล็กข้อ 11 — รายงานนี้อัปเดตในไฟล์เดิม (\`QCOM_2026-05-15.md\`) ไม่สร้างไฟล์ใหม่ เนื้อหาด้านล่างทั้งหมด (ยกเว้น Appendix: Historical 2026-05-15 Snapshot ท้ายรายงาน) สะท้อนสถานะล่าสุด ณ 2026-09-05*
+
+---
+
+## 📌 ข้อมูลหลัก
+
+| Field | Value |
+|-------|-------|
+| Ticker | QCOM (NASDAQ) |
+| Date | 2026-09-05 (re-analysis; original 2026-05-15) |
+| Price (Analysis) | $168.71 [Yahoo Finance, 2:03:41 PM EDT Sept 4 2026] / $168.72 [Stockanalysis.com] |
+| Market Cap | $180.20B |
+| Sector | Semiconductor / Mobile AI / Automotive |
+| Sub-sector | Fabless SoC + IP Licensing |
+| Bucket | **Value** (reclassified จาก Growth — TTM Revenue Growth +1.9%, ต่ำกว่าเกณฑ์ 20%) |
+| Fiscal Year End | September 30 |
+
+## 🎯 คำแนะนำ
+
+| Field | Value |
+|-------|-------|
+| Recommendation | **AVOID** (ไม่ผ่าน Value bucket BUY gate: MOS ≥15% + Conviction ≥6) |
+| Current Position | None (never deployed — เดิม HOLD/WAIT ไม่เคยซื้อ) |
+| Blended FV | $111.59 |
+| ESG-Adjusted FV | $106.01 |
+| MOS (vs Blended FV) | **-33.9%** (ราคาเกิน FV มาก) |
+| Re-entry Watch Zone (BUY gate, MOS≥15%) | $85–$97 |
+| Re-entry Watch Zone (MOS turns positive) | $97–$112 |
+| Stop Loss | N/A — ไม่มี position เปิดอยู่ (hypothetical หากเข้า future watch zone mid $91: stop **$73 (-20% จาก $91)**) |
+| Max Position | 0% (AVOID — ไม่ deploy) |
+| Investment Horizon | 3–5 ปี |
+
+## 📊 Score Dashboard
+
+| Metric | Value |
+|--------|-------|
+| Blended FV | $111.59 |
+| MOS % | -33.9% |
+| ESG Score | 6.5/10 (Low-Medium Risk) |
+| Conviction Avg | 6.33/10 |
+| Investment Horizon | Long-term 3–5 ปี |
+| Moat | Narrow (downgrade จาก Narrow+) |
+| Sector Bucket | **Value** |
+| Regime | RISK-ON (3/4 indicators, Fed Stance dissent) |
+
+---
+
+> ### ⚡ TL;DR — อ่าน 30 วินาที
+> - **Verdict:** AVOID — ราคาร่วง -22.6% จาก $218 เหลือ $168.71 แต่ Blended FV ร่วงเร็วกว่า (-41.9%) เหลือ $111.59 → MOS **-33.9%** ลึกกว่าเดิม (-11.9% พ.ค.) ไม่พลิกบวกอย่างที่คาด
+> - **ทำไม:** Apple in-house modem risk confirmed แล้วจริง (QCT Handset -20% YoY) + WACC พุ่งจาก 10.75%→12.5% (beta 1.35→1.68 verified) = fair value ตกเร็วกว่าราคาหุ้น
+> - **Downside Risk เพิ่มเติม:** ถ้า twin binary risks ยิงพร้อมกัน (Apple 0% + China truce ล่มหลัง 10 พ.ย. 2026) → FV ลงโซน $40-80; **Upside watch:** ถ้า beta mean-revert กลับ ~1.35-1.50 → FV อาจขยับขึ้นไป $130-150 (ยังไม่ผ่าน BUY gate แต่ narrow gap มาก)
+
+---
+
+## 📋 Executive Summary [CFA L2: Equity — Fundamental Analysis]
+
+Qualcomm Inc. (QCOM) เป็น fabless semiconductor leader ด้าน Mobile AI ด้วย Snapdragon SoC + QTL patent licensing (dual-engine: QCT 87% revenue / QTL 13% revenue ที่ ~69% EBT margin) การวิเคราะห์รอบนี้ (2026-09-05) พบสิ่งที่ผิดจากสมมติฐานตั้งต้นของ CIO: แม้ราคาร่วง -22.6% จาก $218 เหลือ $168.71 แต่ **fair value ของทีมร่วงเร็วกว่าราคาหุ้นเสียอีก** (Blended FV -41.9% เหลือ $111.59) เพราะสาเหตุหลัก 2 ข้อที่ verified จริงวันนี้:
+
+1. **Apple in-house modem transition confirmed** — เดิมเป็นแค่ "risk ที่อาจเกิด" วันนี้ management ยืนยันเองใน Q3 FY2026 earnings call ว่า Apple share ต่ำกว่า 20% ที่เคยประมาณ และ QCT Handset revenue ลง -20% YoY จริงแล้ว
+2. **WACC เพิ่มขึ้น 175-178bps** (10.75%→12.5%) จาก beta ที่พุ่งจาก 1.35→1.68 และ risk-free rate จาก 4.35%→4.78% (ทั้งคู่ market-verified วันนี้ ไม่ใช่ assumption)
+
+ด้านบวก: China revenue concentration ลดลง (53%→46%), trade truce ต่ออายุถึง 10 พ.ย. 2026, automotive design-win pipeline ยังแข็งแกร่งขึ้น (BMW เพิ่มเข้ามาเป็น primary supplier รายที่ 2 — ข้อมูลใหม่ที่ Emma/Quinn ไม่มีตอนคำนวณ), ROIC 25.6% ยังเหนือ WACC +13pp
+
+**Conviction Bar:**
+\`\`\`
+Emma   ██████░░░░  6/10  — AVOID; DCF $97 vs Relative $162-166 dispersion ใหญ่ — ไม่มั่นใจระดับ FV แม่นยำ
+Quinn  ███████░░░  7/10  — STRONG AVOID; ทุก quant lens (Kelly, Sharpe, 0/25 sensitivity cells) ชี้ทางเดียวกัน
+Bear   ██████░░░░  6/10  — AVOID; ทิศทางถูกแต่ magnitude อาจ overstate เล็กน้อย (BMW + WACC durability doubt)
+──────────────────────────────────────────────────────────────────────────
+Avg    ██████░░░░  6.33/10  [gap 1pt สูงสุด — no disagreement flag, แต่ MOS ล้มเหลวหนักกว่าที่ conviction บ่งชี้]
+\`\`\`
+
+**Score Dashboard:**
+| Blended FV | MOS % | ESG | Conviction | Horizon |
+|-----------|-------|-----|-----------|---------|
+| $111.59 | -33.9% | 6.5/10 | 6.33/10 | 3–5 ปี |
+
+---
+
+## 💡 Investment Thesis [CFA L2: Equity — Investment Thesis Construction]
+
+**Thesis เดิม (พ.ค. 2026): "Mobile AI Tollbooth + Automotive Ramp"** — ยังคงโครงสร้างหลักไว้ แต่ **timeline ของ risk เดินเร็วกว่าที่คาด** ในขณะที่ automotive offset ยังตามไม่ทัน
+
+QTL licensing floor ($4.8-5.2B/yr ที่ ~69% margin) ยังเป็น near-zero-capex cash flow stream ที่แข็งแกร่ง — Apple ยังต้องจ่าย patent fee ถึงอย่างน้อยปี 2027 แม้เลิกใช้ modem แล้วก็ตาม แต่ **QCT chip moat (handset) อ่อนลงจริงและวัดผลได้แล้ว** ไม่ใช่แค่ theoretical risk อีกต่อไป
+
+**สถานะ 3 เสาหลักวันนี้:**
+1. **Mobile AI Premium Cycle** — ถูกกระทบหนักจาก Apple modem loss ที่ confirmed — QCT Handset -20% YoY ใน Q3 FY2026
+2. **Automotive Ramp** — ยังเป็นจุดแข็งที่สุด: 23 ไตรมาสติดต่อกัน double-digit growth, exit run-rate $7B (raised จาก $6B), FY2029 target เพิ่มเป็น $8B (เดิม $4B), และ **BMW Group ประกาศให้ QCOM เป็น primary silicon supplier 10 ปี** (29 ก.ค. 2026 — ข้อมูลใหม่) เพิ่มเติมจาก VW LOI เดิม = สอง German OEM รายใหญ่
+3. **Edge AI / Data Center** — Modular Inc acquisition เสร็จสมบูรณ์แล้ว (29 ก.ค. 2026), รายได้เริ่ม ธ.ค. 2026 — diversification ขาที่สามยังเป็นแค่จุดเริ่มต้น
+
+**ปัญหาหลักของ thesis วันนี้:** Automotive + QTL floor ยังไม่โตพอที่จะชดเชย handset erosion ได้ทันเวลาในโมเดล 5 ปีของทีม — และ WACC ที่สูงขึ้นมาก (จาก beta spike) บีบ fair value ลงแรงกว่าที่ fundamentals เพียงอย่างเดียวจะอธิบายได้
+
+---
+
+## 🏢 Business Deep Dive [CFA L2: Industry Analysis]
+
+### "How does Qualcomm make money?"
+- **ออกแบบชิป (ไม่ผลิตเอง — จ้าง TSMC ผลิต)** แล้วขายให้ผู้ผลิตสมาร์ทโฟน (Snapdragon SoC) = ธุรกิจ QCT ประมาณ 87% ของรายได้
+- **เก็บค่าลิขสิทธิ์สิทธิบัตร (QTL)** จากผู้ผลิตโทรศัพท์ 4G/5G ทุกเจ้าทั่วโลก **ไม่ว่าจะใช้ชิป QCOM หรือไม่** — เหมือนเก็บค่าผ่านทางจากทุกคันที่วิ่งบนถนนที่ QCOM เป็นเจ้าของสิทธิบัตร (margin ~69% EBT)
+- **กำลังขยายไปรถยนต์** — ขายชิป digital cockpit/ADAS/connectivity ให้ผู้ผลิตรถ (VW LOI + BMW primary supplier ใหม่)
+- **กำลังเริ่มธุรกิจ data center/AI** ผ่านการซื้อ Modular Inc (เสร็จสมบูรณ์ 29 ก.ค. 2026) — รายได้เริ่ม ธ.ค. 2026
+- รายได้หลักยังพึ่ง "handset" (~46% ของ QCT) ซึ่งกำลังหดตัวจาก Apple ย้ายไปทำ modem เอง
+
+### Porter's Five Forces [CFA L2: Industry Analysis]
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power | Medium-High | พึ่ง TSMC leading-edge process node — QCOM ไม่มี fab เอง |
+| Buyer Power | **High** | Apple/Samsung/Xiaomi แต่ละรายเกิน 10% รายได้รวม (SEC 10-K FY2025 ยืนยัน) — Apple พิสูจน์แล้วว่า switch ออกได้จริง |
+| New Entrants | Low-Medium | Barrier สูง (patent, R&D $7-8B/yr) แต่ Apple's in-house silicon success พิสูจน์ว่า well-funded player เข้าได้ |
+| Substitutes | Medium | MediaTek (mid-tier), Samsung Exynos/Apple in-house (vertical integration) — แต่ QTL licensing หลีกเลี่ยงยาก |
+| Rivalry | Medium-High | MediaTek ชิง mid-tier, TXN/ON/NXP แข่งใน automotive |
+
+**Industry Attractiveness: Medium** — IP moat (QTL) แข็ง แต่ QCT เผชิญแรงกดดัน customer concentration ชัดเจนขึ้น
+
+### Market Share Trend
+เชิงคุณภาพ (ไม่มีตัวเลข historical % แม่นยำรอบนี้): QCOM ยังครองผู้นำ premium Android SoC แต่ Apple modem share กำลังหายไปเป็นขั้นบันได (ต่ำกว่า 20% ที่เคยประมาณ) ส่วน automotive share เพิ่มขึ้นจาก design-win pipeline $45B (exit run-rate $7B, raised จาก $6B)
+
+### Customer Concentration [SEC 10-K FY2025]
+**Apple, Samsung, Xiaomi แต่ละรายเกิน 10% ของรายได้รวม** [SEC EDGAR 10-K FY2025](https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm) — Apple เฉพาะรายกำลัง materializing negative แล้วจริง (modem share <20% มุ่งสู่ 0%) ยังไม่มีสัญญาณ Samsung/Xiaomi ทำตาม แต่เป็น watch item
+
+### Geography Revenue Breakdown
+| ภูมิภาค | % Revenue | YoY |
+|---------|-----------|-----|
+| China (Greater China) | 46% (FY2025) | ลดจาก 53% (thesis เดิม), ลดจาก 67% (3 ปีก่อน) |
+| Other | N/A — ไม่ได้ breakdown ละเอียดรอบนี้ | — |
+
+**Geopolitical Risk: Medium-High** — China exposure ยังสูง (46%), truce ขยายถึง 10 พ.ย. 2026, Sept 2026 summit เป็น catalyst ตัดสินสำคัญ
+
+### Competitor Threat Snapshot
+| Competitor | Threat Level | เหตุผลสั้นๆ |
+|-----------|--------------|------------|
+| Broadcom (AVGO) | 🟡 Medium | ตลาดหลักต่างกัน (data center vs mobile) แต่แข่งกันดึงดูด hyperscaler custom silicon |
+| Marvell (MRVL) | 🟢 Low-Medium | networking/AI accelerator ไม่ใช่ core mobile/auto ของ QCOM |
+| Texas Instruments (TXN) | 🟡 Medium | incumbency ลึกใน automotive electronics — แย่ง design-win OEM เดียวกัน |
+| ON Semiconductor (ON) | 🟡 Medium | แข่งงบ automotive OEM แต่คนละ sub-segment (power/SiC vs compute) |
+| Skyworks (SWKS) | 🟢 Low | คนละ sub-market (RF front-end) แต่เป็น "canary" ของ Apple-dependency risk |
+
+---
+
+## SaaS Unit Economics
+N/A — not subscription-based (semiconductor hardware/IP-licensing company)
+
+---
+
+## 🏰 Moat Analysis [CFA L2: Equity — Economic Moat]
+
+**Moat Rating: NARROW (ปรับลงจาก Narrow+ เดิม)**
+
+| Moat Source | Strength | เปลี่ยนแปลงจาก พ.ค. 2026 |
+|-------------|---------|------------------------------|
+| IP Patent Portfolio (QTL) | **WIDE** — ~10B patents, mandatory licensing floor ผ่านอย่างน้อยปี 2027 | ไม่เปลี่ยน — แข็งแกร่งที่สุดในบริษัท |
+| Snapdragon Integration (Chipset) | **NARROW (อ่อนลง)** — Apple พิสูจน์ switching ทำได้จริง ไม่ใช่ theoretical | **อ่อนลง** — "proven possible" → "confirmed happening" |
+| Scale + R&D ($7-8B/yr) | NARROW+ | ไม่เปลี่ยนมาก |
+| Automotive Design-In | NARROW (early แต่โตเร็ว) | **ดีขึ้น** — BMW เพิ่มเข้ามา, exit run-rate $7B (จาก $6B) |
+| Fabless Capital Efficiency | NARROW | ไม่เปลี่ยน — TSMC concentration risk เดิม |
+
+**Moat Paradox (จาก FICO session):** QTL high-margin IP = antitrust target — ยังใช้ได้เหมือนเดิม
+
+---
+
+## 📊 Sector / Peer Comparison [CFA L2: Equity Valuation — Relative Valuation]
+
+| Company | Ticker | P/E (TTM) | EV/EBITDA | ROE | ROIC | Rev Growth (TTM) | Gross Margin | Moat |
+|---------|--------|-----------|-----------|-----|------|-------------------|--------------|------|
+| **Qualcomm** | **QCOM** | **19.61x** | **15.55x** | **33.75%** | **25.56%** | **+1.9%** | **54.2%** | **Narrow** |
+| Broadcom | AVGO | 45.59x | 33.32x | 44.25% | 30.54% | +48.7% | 75.5% | Wide |
+| Marvell Tech | MRVL | 74.51x | 68.15x | 16.52% | 6.94% | +30.6% | 52.2% | Narrow+ |
+| Texas Instruments | TXN | 38.56x | 25.50x | 35.18% | 25.53% | +16.7% | 61.0% | Wide |
+| ON Semiconductor | ON | 47.19x | 14.32x | 8.31% | 15.60% | -3.1% | 42.8% | Narrow |
+| Skyworks Solutions | SWKS | 38.38x | 12.54x | 5.09% | 6.65% | +0.1% | N/A | Narrow |
+| **Peer Median** | — | 45.59x | 25.50x | 16.52% | 15.60% | +16.7% | 56.6% | — |
+| **QCOM vs Median** | — | **-57% discount** | **-39% discount** | **+104% premium** | **+64% premium** | **-89% (laggard)** | **-4% (in-line)** | — |
+
+[Source: Stockanalysis.com ratios pages, fetched 2026-09-05]
+
+**Verdict:** QCOM ยัง trade ที่ส่วนลดมหาศาลบน multiples และมี ROE/ROIC premium ชัดเจน แต่ ROIC premium **แคบลงจากเดิม** (พ.ค. +83% → วันนี้ +64%) และที่สำคัญที่สุด: QCOM กลายเป็น **revenue growth laggard ชัดเจน** (+1.9% vs median +16.7%) ต่างจาก พ.ค. ที่ยังโต 17% — นี่คือหลักฐานเชิงตัวเลขของ Apple modem loss ที่ confirmed แล้ว
+
+---
+
+## 💰 Valuation [CFA L2: Equity — DCF, Relative Valuation]
+
+### Emma — DCF FCFF 2-Stage (Re-run, WACC 12.5%)
+
+| Scenario | FCF CAGR | Terminal g | DCF Fair Value | Probability |
+|----------|---------|-----------|-----------------|-------------|
+| Bull | 9% | 3.0% | $124.63 | 20% |
+| Base | 4% | 2.5% | $96.20 | 55% |
+| Bear | 0% | 2.0% | $77.24 | 25% |
+| **Emma DCF P-W EV** | | | **$97.15** | |
+
+Relative valuation: EV/EBITDA (15x base) = $162.39 | P/E (17x fwd) = $165.92
+
+**Emma Blended FV** (DCF 50% + EV/EBITDA 25% + P/E 25%) = **$130.65** | ESG-Adj = **$124.12**
+
+### Quinn — Bottom-Up Segment DCF (WACC 12.53%)
+
+| Scenario | Fair Value | Probability |
+|----------|-----------|-------------|
+| Bull | $165.04 | 20% |
+| Base | $91.52 | 55% |
+| Bear | $45.34 | 25% |
+| **Quinn P-W EV** | **$94.68** | |
+
+Reverse-DCF cross-check: ตลาดต้องการ perpetual FCF growth **~6.71%/yr** เพื่อ justify ราคาปัจจุบัน (ใกล้ Bull case มากกว่า Base)
+
+### Bear — 4-Scenario Reweight (anchored on Emma/Quinn + BMW/WACC-durability adjustment)
+
+| Scenario | Fair Value | Probability |
+|----------|-----------|-------------|
+| Bull (beta partial revert + BMW/VW execute) | $165 | 25% |
+| Base (beta stays ~1.55-1.60) | $113 | 35% |
+| Bear (China/Apple accelerate) | $61 | 30% |
+| Extreme Bear (twin binary fires) | $40 | 10% |
+| **Bear P-W EV** | **$103.10** | |
+
+### Charlie — Blended FV Reconciliation (Emma 40% / Quinn 30% / Bear 30% — IPS ปัจจุบัน)
+
+| Analyst | FV | Weight | Basis |
+|---------|-----|--------|-------|
+| Emma | $130.65 | 40% | DCF (50%) + Relative Multiples (50%) blend |
+| Quinn | $94.68 | 30% | Pure bottom-up segment DCF, no relative blend |
+| Bear | $103.10 | 30% | Scenario reweight anchored on Emma/Quinn, +BMW/WACC-durability credit |
+| **Blended FV** | **$111.59** | | |
+| ESG-Adjusted (−5%) | **$106.01** | | |
+
+**Margin of Safety:** ($111.59 − $168.71) / $168.71 = **-33.9%**
+
+### Street PT Reconciliation (Re-Analysis Trigger Rule ข้อ 5 — divergence ≥25%)
+
+| Source | FV | Gap vs Price $168.71 |
+|--------|-----|------------------------|
+| Team Blended FV | $111.59 | -33.9% |
+| Analyst Consensus PT | $193.10 | +14.4% |
+| **Gap (Team vs Street)** | **-42.2%** | **เกิน threshold 25% มาก** |
+
+**สาเหตุ (unresolved — ทีมไม่สามารถ verify ได้ครบวันนี้ เพราะ WebSearch budget หมด):**
+- Street อาจใช้ WACC ต่ำกว่าที่ทีมคำนวณ (ไม่ full-reflect beta 1.68 ล่าสุด)
+- Street อาจ assume automotive ramp เร็วกว่า base case ทีม หรือ terminal multiple สูงกว่า
+- **ไม่สามารถยืนยันได้ว่า consensus PT $193.10 ถูก refresh หลัง Q3 FY2026 earnings call (ปลาย ก.ค. 2026) แล้วหรือยัง** — อาจเป็น stale pre-earnings anchor (Bear flag เป็น data gap ที่ต้องตรวจสอบเพิ่ม)
+- นี่คือ genuine disagreement ไม่ใช่ error ของฝั่งใดฝั่งหนึ่ง — ต้อง re-verify ในรอบ re-analysis ถัดไป
+
+---
+
+## 📉 Quantitative Risk [CFA L3: Portfolio — Risk Management]
+
+| Metric | Value (2026-05-15) | Value (2026-09-05) | ประเมิน |
+|--------|---------------------|----------------------|--------|
+| Beta (5Y monthly) | 1.35 | **1.68** (verified 2 sources) | เพิ่มขึ้นมาก — Bear: ส่วนหนึ่งเป็น crash-artifact |
+| Cost of Equity | 11.10% | **13.19%** | +209bps |
+| WACC | 10.75% | **12.53%** | +178bps — ตัวขับหลักของ FV drop |
+| Kelly Criterion | NEGATIVE (binary) | **-7.79** (continuous form, deeply negative) | ไม่มี scenario ใดให้ positive return แม้แต่ Bull |
+| Forward Sharpe (CAPM-parity) | 0.18 | 0.224 | ปรับปรุงเล็กน้อยแต่ไม่ informative ต่อ mispricing |
+| Sharpe (DCF-implied) | N/A | **-2.05** | ยืนยัน negative MOS ชัดเจน |
+| Sensitivity cells justify price | 7/25 (28%) | **0/25 (0%)** | ราคาปัจจุบันไม่มี scenario ใดรองรับได้ |
+| Reverse-DCF implied perpetual growth | — | 6.71%/yr | ใกล้ Bull case มากกว่า Base |
+| VaR (95%, 1M) | -17.8% | -17.81% (carried-forward vol) | ไม่เปลี่ยนมาก |
+
+**⚠️ Data Staleness Flag (Morgan QA 2026-09-05):** ERP (5.0%) และ historical volatility (37.5%) ที่ใช้ใน Sharpe (CAPM-parity)/VaR/CVaR ด้านบนเป็นค่า **carried-forward จากรายงาน พ.ค. 2026 — ไม่ได้ re-verify รอบนี้** (WebSearch budget หมดกลาง session ก่อนถึงขั้นตอนนี้) ตัวเลขที่ inherit จาก input เหล่านี้ (Forward Sharpe 0.224, VaR -17.81%, CVaR -23.15%) จึงมีความไม่แน่นอนเพิ่มเติมที่ไม่ได้สะท้อนใน headline number — ต้อง re-verify ในรอบ re-analysis ถัดไป (ไม่กระทบ DCF-implied Sharpe -2.05 หรือ Kelly -7.79 ซึ่งไม่ได้พึ่งพา input สองตัวนี้)
+
+### Sensitivity Matrix 5×5 — QCT Handset YoY Growth × China Revenue % [Quinn]
+
+| Handset Growth \\ China Rev % | 30% | 38% | **46% (current)** | 54% | 62% |
+|-------------------------------|-----|-----|-----|-----|-----|
+| **+10%** | $100.23 | $95.81 | $91.40 | $86.99 | $82.58 |
+| **0%** | $95.49 | $91.27 | $87.05 | $82.83 | $78.60 |
+| **-10%** | $90.76 | $86.73 | $82.69 | $78.66 | $74.63 |
+| **-20% (current actual)** | $86.02 | $82.18 | **$78.34** | $74.49 | $70.65 |
+| **-30%** | $81.29 | $77.64 | $73.98 | $70.33 | $66.67 |
+
+**Insight:** 0/25 cells ให้ fair value เกินราคาปัจจุบัน $168.71 — แม้แต่มุมที่ optimistic ที่สุด (Handset +10% กลับมาเป็นบวก, China ลดเหลือ 30%) ก็ยังได้แค่ $100.23 (-40.6% ต่ำกว่าราคา) **ตัวขับหลักของ gap คือ WACC ไม่ใช่ handset/China โดยตรง** — การขยับจาก worst-case ไป best-case ทั้งสองแกนปิด gap ได้แค่ ~$33/share จาก ~$70-94/share ทั้งหมด คำถามสำคัญคือ beta 1.68 เป็น structural re-rating ถาวรหรือ crash-artifact ชั่วคราว
+
+**WACC/Beta Sensitivity (Bear's stress test):** ถ้า beta mean-revert กลับ ~1.35 → WACC ลด ~150bps → Base FV อาจขยับจาก $92-96 เป็น **$130-150** และ Bear's own P-W EV จาก $103 เป็น **$130-150** — ยังไม่ผ่าน BUY gate ($194 ต้องการ) แต่ narrow gap อย่างมีนัยสำคัญ (MOS จาก -34% เหลือ ~ -11% ถึง -23%)
+
+---
+
+## 🌱 ESG Risk Scorecard [CFA L2-3: ESG Investing]
+
+| Dimension | Score (1–10) | Key Issues |
+|-----------|-------------|-----------|
+| Environmental | 7/10 | Fabless = low direct emissions; Scope 3 (TSMC) moderate risk; ไม่เปลี่ยน |
+| Social | 6/10 | Supply chain labor; patent licensing access barrier; ไม่เปลี่ยน |
+| Governance | 6.5/10 | China concentration ลดลง (46% vs 53%) = ดีขึ้น แต่ customer concentration confirmed จาก 10-K (3 ราย ≥10% แต่ละราย) = risk ใหม่ที่ชัดเจนกว่าเดิม |
+| **Overall ESG** | **6.5/10** | Low-Medium Risk (ระดับไม่เปลี่ยน แต่ risk mix เปลี่ยน) |
+
+### Material ESG Risks (กระทบ Valuation)
+1. **Customer Concentration** (Apple/Samsung/Xiaomi each ≥10%, SEC 10-K FY2025) — Apple loss = ตัวอย่างที่เกิดขึ้นแล้วจริง สะท้อนอยู่ใน base case แล้ว; หาก Samsung/Xiaomi ทำตาม = **-10% ถึง -15% เพิ่มเติม** (tail risk, ยังไม่เกิด)
+2. **China Revenue Concentration** (46%, ลดจาก 53%) — หาก Sept summit ล้มเหลว + truce ไม่ต่ออายุ → **-15% ถึง -25% FV impact**
+3. **QTL FRAND Litigation** — 40% probability rate reduction ใน 5 ปี = **-4% ถึง -6% FV impact**
+4. **TSMC/Taiwan Concentration** — geo-risk เดิม → **-9% ถึง -14% FV impact**
+
+**ESG-Adjusted FV:** $111.59 × (1 − 0.05) = **$106.01**
+
+---
+
+## 💪 Conviction Level Score [CFA L3: Portfolio Construction — Conviction]
+
+\`\`\`
+Emma   ██████░░░░  6/10  — DCF ($97) vs Relative ($162-166) dispersion ใหญ่; มั่นใจทิศทาง ไม่มั่นใจระดับ FV
+Quinn  ███████░░░  7/10  — ทุก independent quant lens ชี้ทางเดียวกัน (Kelly, Sharpe, 0/25 cells)
+Bear   ██████░░░░  6/10  — ทิศทางถูก แต่ WACC-durability + BMW ยังไม่ resolve เต็มที่ (capped 5-7 range)
+──────────────────────────────────────────────────────────────────────────────────────────
+Avg    ██████░░░░  6.33/10  [gap max 1pt — no disagreement flag]
+\`\`\`
+
+**Note:** Conviction gate (≥6, Value bucket) **ผ่าน** แต่ MOS gate (≥15%) **ล้มเหลวหนักมาก** (-33.9%) → Recommendation = AVOID ตาม MOS Threshold rule
+
+---
+
+## 🔄 What Would Change Our Mind [CFA L3: Portfolio Construction — Investment Thesis]
+
+### Bull Flip Triggers (→ อัพเกรดเป็น BUY)
+| # | Trigger | Threshold |
+|---|---------|-----------|
+| 1 | Beta (5Y monthly) mean-reverts | ≤1.50 สองไตรมาสติดต่อกัน (objective WACC-durability test) |
+| 2 | BMW/VW LOI → signed contract | ≥$2B/yr disclosed volume |
+| 3 | Sept 2026 US-China summit | Truce extension 12+ เดือน + semiconductor carve-out ชัดเจน |
+| 4 | QCT Handset decline ชะลอ | Single-digit YoY decline 2 ไตรมาสติดต่อกัน ("Apple loss lapped") |
+| 5 | ราคาลงเข้า watch zone | $85–$97 (MOS≥15% ที่ Blended FV ปัจจุบัน) หรือ FV ขยับขึ้นสู่ $130-150 จาก WACC reversion |
+
+### Bear Flip Triggers (→ ยืนยัน STRONG AVOID)
+| # | Trigger | Threshold |
+|---|---------|-----------|
+| 1 | China truce ไม่ต่ออายุ | หมดอายุ 10 พ.ย. 2026 โดยไม่ extend หรือ extend แบบไม่มี semiconductor protection |
+| 2 | QCT Handset decline เร่งตัว | เกิน -20% YoY ใน Q4 FY2026 print |
+| 3 | Insider selling เร่งตัว | >$50M ใน 1 ไตรมาส ยังไม่มี buying |
+| 4 | Beta ค้างที่ระดับสูง | ≥1.65 อีก 2 ไตรมาสติดต่อกัน (ยืนยัน structural re-rating) |
+| 5 | BMW/VW LOI ถอน | ถอนหรือ downgrade |
+
+### Thesis Invalidation (re-analysis ทันที)
+- Apple ยืนยัน 0% modem share **พร้อมกับ** China truce ล่มหลัง 10 พ.ย. 2026 ในไตรมาสเดียวกัน → twin binary ยิงพร้อมกัน → FV ลงโซน **$40-80**
+- Automotive design-win pipeline ($45B) มี cancellation นัยสำคัญ หรือ BMW/VW ถอน LOI อย่างเป็นทางการ
+
+---
+
+## 🎯 Recommendation [CFA L3: Portfolio Construction]
+
+> ### AVOID — ไม่ผ่าน Value Bucket BUY Gate (MOS ≥15% + Conviction ≥6)
+> Conviction 6.33/10 ผ่านเกณฑ์ แต่ MOS -33.9% ล้มเหลวหนักมาก — ราคาต้องลงมาที่ $85-97 หรือ WACC ต้อง mean-revert ก่อนจึงจะพิจารณา BUY ได้
+
+**Forward Return Estimate (ถ้าซื้อวันนี้ที่ $168.71 ถือ 3 ปีจนราคาเข้า Blended FV — illustrative, ไม่ใช่คำแนะนำให้ซื้อ):**
+\`\`\`
+Total Return (3Y) = (Blended FV / Price - 1) × 100 = (111.59/168.71 - 1) × 100 = -33.9%
+CAGR = ((Blended FV / Price)^(1/3) - 1) × 100 ≈ -12.9%/yr
+\`\`\`
+→ แม้ถือยาว 3 ปีจนราคา converge เข้า fair value ก็ยังขาดทุน — สนับสนุน AVOID ชัดเจน
+
+**Action สำหรับทีม:**
+- ไม่ deploy ที่ราคาปัจจุบัน
+- เพิ่ม QCOM เข้า \`portfolio/buy_list.md\` — Conviction gate ผ่านแล้ว (6.33≥6) เหลือรอ MOS catch up: watch zone $85-97
+- ติดตาม 2 catalysts ใกล้: Sept 2026 US-China summit และ Q4 FY2026 earnings (~พ.ย. 2026) — จะ resolve ความไม่แน่นอนสำคัญภายใน 4-8 สัปดาห์
+- Re-verify beta ทุกไตรมาสถัดไป — ถ้า mean-revert สู่ ~1.35-1.50 จะเปลี่ยนภาพ valuation มีนัยสำคัญ (Bull Flip Trigger #1)
+
+---
+
+## ⚠️ Risk Summary [CFA L2-3: Risk Management]
+
+| Risk | Probability | Impact | FV Impact | Mitigation |
+|------|-------------|--------|-----------|-----------|
+| China truce ไม่ต่ออายุหลัง 10 พ.ย. 2026 | MEDIUM | HIGH | -15% ถึง -25% | ติดตาม Sept summit ใกล้ชิด — catalyst ใน ~9 สัปดาห์ |
+| QCT Handset decline เร่งตัวต่อ | MEDIUM | HIGH | ลึกกว่า base case ปัจจุบัน | ติดตาม Q4 FY2026 guidance ($5.2B target) |
+| Beta/WACC ค้างสูงถาวร (ไม่ mean-revert) | MEDIUM | HIGH | ตรึง FV ไว้ที่โซน $90-113 | Re-verify beta ทุกไตรมาส |
+| QTL FRAND rate reduction | HIGH (long-term) | MEDIUM | -4% ถึง -6% | ติดตาม court cases EU/US |
+| Samsung/Xiaomi ทำตาม Apple | LOW (ยังไม่เกิด) | HIGH ถ้าเกิด | -10% ถึง -15% | Watch item — ยังไม่มีสัญญาณ |
+| TSMC Taiwan geo-risk | LOW-MEDIUM | HIGH | -9% ถึง -14% | Systematic — portfolio hedge |
+| Street PT ($193.10) อาจถูกกว่าโมเดลทีม | UNRESOLVED | — | ไม่แน่นอน | ต้อง verify ว่า PT refresh หลัง Q3 call หรือยัง |
+
+---
+
+## 📅 Catalysts Calendar [CFA L2: Equity — Catalyst Analysis]
+
+\`\`\`
+[September 2026]  ──●── [CRITICAL] US-China Trade Summit
+                          ผลลัพธ์กำหนดว่า truce จะขยายเกิน 10 พ.ย. 2026 หรือไม่
+                          Bull Trigger #3 / Bear Trigger #1 ตัดสินที่นี่
+
+[Nov 10, 2026]  ──●── [CRITICAL] China Trade Truce Deadline
+                        ถ้าไม่ extend = Bear Trigger #1 ยิงทันที
+
+[~Nov 2026]  ──●── [HIGH] Q4 FY2026 Earnings
+                      QCT Handset trajectory (guidance ~$5.2B), Automotive run-rate check
+                      Bull Trigger #4 (decline ชะลอ) หรือ Bear Trigger #2 (decline เร่ง)
+
+[Ongoing — ทุกไตรมาส]  ──●── [HIGH] Beta Re-verification
+                                Bull Trigger #1: beta ≤1.50 สองไตรมาสติดต่อกัน = WACC reversion signal
+
+[FY2029]  ──●── [MEDIUM] Automotive Revenue Target $8B
+                    BMW + VW LOI ต้อง convert เป็น signed contract ตามทาง
+\`\`\`
+
+---
+
+## 📚 CFA Concepts ที่ใช้ [CFA L1-3]
+
+| Section | CFA Concept | Level | Status |
+|---------|-------------|-------|--------|
+| WACC Derivation (CAPM) | Corporate Issuers — Cost of Capital | L2 | เรียนแล้ว |
+| DCF FCFF (2-stage + bottom-up segment) | Equity Valuation — FCFF Model | L2 | เรียนแล้ว |
+| Reverse-DCF / Implied Growth | Equity Valuation — Implied Growth Rate | L2 | เรียนแล้ว |
+| EV/EBITDA, P/E Relative | Equity — Relative Valuation | L2 | เรียนแล้ว |
+| DuPont ROE | Financial Reporting — DuPont Decomposition | L1 | เรียนแล้ว |
+| Moat Analysis / Porter's 5 Forces | Equity — Economic Moat / Industry Analysis | L2 | เรียนแล้ว |
+| Kelly Criterion (continuous) | Portfolio Construction | L3 | เรียนแล้ว |
+| Sharpe / Treynor | Portfolio — Risk-Adjusted Metrics | L1 | รอ CIO confirm |
+| VaR / CVaR | Portfolio — Tail Risk | L3 | เรียนแล้ว |
+| Sensitivity Matrix 5×5 | Equity — Sensitivity Analysis | L2 | เรียนแล้ว |
+| Regression estimation-window sensitivity (beta) | Quantitative Methods | L1 | เรียนแล้ว |
+| Behavioral Finance — Confirmation Bias/Anchoring | Portfolio Management | L3 | เรียนแล้ว |
+| ESG Materiality | ESG Investing | L2-3 | เรียนแล้ว |
+| Investment Thesis Construction | Portfolio — Bull/Bear Flip Triggers | L3 | เรียนแล้ว |
+| FRAND Licensing Risk | Regulatory Law + IP Economics | L2* | *(ยังไม่เรียน — FRAND = Fair, Reasonable, and Non-Discriminatory terms ที่ court บังคับ IP holders ใช้เพื่อป้องกัน monopoly abuse)* |
+
+---
+
+## ⚙️ Behind the Scenes
+
+**ทีมที่ทำงาน:**
+- **Atlas**: Regime = RISK-ON (3/4, Fed Stance dissent — hikes priced ไม่ใช่ cuts) + Data Package เต็ม รวม Twin Binary Risk status update — flag Net Debt tool-fetch error ($6,966M ผิด ต้องใช้ $10,737M) และ WebSearch budget หมดก่อนถึง peer table/SEC customer concentration detail (Emma/Bear หาเพิ่มเองสำเร็จ)
+- **Emma**: DCF re-run WACC 12.5% → Blended FV $130.65 | Moat downgrade Narrow+ → Narrow | Conviction 6/10 (ลดจาก 7)
+- **Quinn**: Bottom-up segment DCF อิสระ (ไม่ reuse Emma's growth input เหมือนรอบเดิม) → P-W EV $94.68 | Kelly -7.79 | Conviction 7/10 (เพิ่มจาก 6) เพราะทุก independent quant lens ชี้ทางเดียวกัน
+- **Bear**: Challenge 7 ประเด็นตาม CIO brief — พบข้อมูลใหม่สำคัญ (BMW primary supplier, Apple mmWave technical gap) ที่ Emma/Quinn ไม่มี → Bear P-W EV $103.10 อยู่ระหว่าง Quinn-Emma ค่อนไป Quinn | Conviction 6/10 | สรุปว่า AVOID ทิศทางถูก แต่ magnitude อาจ overstate เล็กน้อย
+
+**Bear weight rationale (Fix #2):** Blended FV ใช้ **Emma 40% / Quinn 30% / Bear 30%** ตาม CLAUDE.md Blended FV Triangulation Weights ปัจจุบัน (ไม่ใช่ 40/35/25 ของรายงาน พ.ค. 2026 เดิม) — Bear คง weight เท่า Quinn ที่ 30% โดยเจตนา (ห้ามลด weight เพียงเพราะ "Bear แย้งเยอะ")
+
+**Convergence Risk Note (voluntary — ไม่ trigger mandatory protocol เพราะ conviction ทั้ง 3 คน <8):** Bear ระบุ shared blind spot 3 ข้อ: (1) ทั้งสามคนอ้างอิง Street PT/Atlas data package ชุดเดียวกัน — ถ้า beta 1.68 เป็น artifact ผิด ทั้งสามจะผิดทิศทางเดียวกัน; (2) Apple-fear anchoring ตั้งแต่รายงาน พ.ค. — เสี่ยง confirmation bias มองข้าม BMW/mmWave gap ที่ไม่เข้ากับ narrative เดิม; (3) ไม่มี fresh cross-validated Emma DCF หรือ Bear-cross-validated Quinn DCF รอบนี้ (ต่างคนต่างทำ single-analyst construction) — Bear เอง lean บน Emma/Quinn's anchor values ไม่ได้ build DCF จากศูนย์
+
+**⚠️ Transparency Flag (Morgan QA 2026-09-05):** ทั้ง Quinn และ Bear ระบุชัดในบันทึกของตัวเองว่าตัวเลขรอบนี้เป็น **single-analyst construction** — Quinn สร้าง bottom-up DCF อิสระโดยไม่มี fresh Emma DCF ให้ cross-validate แบบ real-time, Bear เองก็ lean บน anchor values ของ Emma/Quinn แทนที่จะ build DCF จากศูนย์ ต่างจากรอบ พ.ค. 2026 ที่มี cross-validation แบบ real-time เต็มรูปแบบ ทั้งสองคนแนะนำว่า**ไม่ควรใช้ตัวเลขรอบนี้ตัดสิน Blended FV เดี่ยวๆ โดยไม่ทำ full cross-validated pipeline ซ้ำก่อนตัดสินใจ trade จริง** — เนื่องจาก recommendation คือ AVOID (ไม่มี trade action ทันที) ความเสี่ยงจาก gap นี้จึงต่ำในตอนนี้ แต่ต้อง **re-run cross-validated pipeline ก่อนใช้ตัวเลขนี้ตัดสินใจ BUY ในอนาคต** หากราคาลงเข้า watch zone $85-97
+
+**Key Debate ที่ยังไม่ resolve:** Street consensus PT $193.10 vs Team Blended FV $111.59 (-42.2%) — ทีมไม่สามารถยืนยันได้ว่า Street PT refresh หลัง Q3 FY2026 call แล้วหรือยัง (WebSearch budget หมดกลาง session) — ต้อง re-verify รอบถัดไป
+
+**Resolution:** Blended FV $111.59 = **AVOID** — MOS -33.9% ล้มเหลวหนัก แม้ conviction gate ผ่าน สอดคล้องกับทั้ง Emma, Quinn, Bear ที่ต่างเห็นตรงกันในทิศทาง (แม้ magnitude ต่างกัน)
+
+---
+
+## 🏁 Conclusion
+
+QCOM ยังเป็นบริษัทคุณภาพสูง (ROIC 25.6% > WACC 12.5%, ROE/ROIC premium เหนือ peer median, dividend maintained) แต่การวิเคราะห์รอบนี้พบผลลัพธ์ที่ **ผิดจากสมมติฐานตั้งต้นของ CIO อย่างสิ้นเชิง**: ราคาร่วง -22.6% ไม่ได้แปลว่า MOS ดีขึ้น เพราะ **fair value ร่วงเร็วกว่าราคาเสียอีก** (-41.9%) จากสองสาเหตุที่ verified จริง — Apple modem loss ที่ confirmed แล้ว และ WACC ที่พุ่งขึ้นจาก beta/risk-free rate ที่สูงขึ้นจริง
+
+**Twin Binary Risks เดิมยังไม่คลี่คลายเต็มที่:** Apple modem risk แย่ลง (จาก "risk" เป็น "confirmed") ในขณะที่ China risk ดีขึ้นบางส่วน (concentration ลดลง, truce ต่ออายุ) — สุทธิแล้วภาพรวมแย่ลง เพราะ Apple risk เป็นตัวที่ materialize จริง
+
+**Tier 1 Quick-Screen บทบาท:** ในเคสนี้ QCOM ผ่าน Tier 1 (ไม่ติด red flag ROIC/WACC, ราคาไม่เกิน naive FV, ไม่พบ credible red flag จริงจัง) จึงเข้า Full Pipeline ตามปกติ — Tier 1 **ไม่ได้ประหยัด token ในเคสนี้** (เพราะไม่ได้ skip) แต่ทำหน้าที่ตามที่ออกแบบไว้: กรองเฉพาะ candidate ที่ชัดเจนว่าแย่/แพงออกตั้งแต่ต้น โดยไม่ตัดโอกาสของ candidate ที่ยังคลุมเครือ (เหมือน QCOM) ออกไปก่อนเวลาอันควร — คุ้มค่าที่ทำ Full Pipeline เพราะพบข้อมูลสำคัญ (BMW, WACC durability, Street PT gap) ที่ quick-screen ระดับ Bear-lite ไม่มีทางจับได้
+
+**Final Recommendation:** **AVOID** ที่ $168.71 — เพิ่มเข้า buy_list.md รอราคาลงมา $85-97 หรือ beta mean-revert (ทั้งสองเส้นทางที่ตรวจสอบได้ objective) — re-verify ภายใน 4-8 สัปดาห์หลัง Sept summit + Q4 FY2026 earnings
+
+---
+
+*Report updated by Charlie — บลจ. CFA | Date: 2026-09-05 (original: 2026-05-15)*
+*Quality Assurance: Morgan | Trade Execution: Max | Performance Tracking: Vera*
+
+---
+
+## Appendix A: Sources & Data Quality (2026-09-05 Update)
+
+| ข้อมูล | แหล่งที่มา | Notes |
+|--------|-----------|-------|
+| Price $168.71/$168.72, Market Cap $180.2B, Beta 1.68 | Yahoo Finance / Stockanalysis.com | agent_notes/atlas/2026-09-05_QCOM_data.md |
+| Revenue TTM $44,069M, Q3 FY2026 segment data, guidance | Atlas Data Package Section B | agent_notes/atlas/2026-09-05_QCOM_data.md |
+| Net Debt $10,737M (ground truth, tool-fetch $6,966M ผิด) | Computed: Cash $4,533M − Debt $15,270M | agent_notes/atlas/2026-09-05_QCOM_data.md |
+| WACC 12.5-12.53%, Rf 4.78-4.79% | Atlas Macro Brief + Emma/Quinn derivation | agent_notes/atlas/2026-09-05_QCOM.md |
+| DCF, Peer Comp, ESG, Moat, Business Deep Dive | Emma's Analysis | agent_notes/emma/2026-09-05_QCOM.md |
+| Bottom-up DCF, Kelly, Sharpe, Sensitivity Matrix | Quinn's Analysis | agent_notes/quinn/2026-09-05_QCOM.md |
+| Bear Scenarios, BMW/mmWave findings, Insider trades | Bear's Analysis | agent_notes/bear/2026-09-05_QCOM.md |
+| Customer concentration (Apple/Samsung/Xiaomi ≥10% each) | SEC 10-K FY2025 | https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm |
+| BMW primary supplier deal (Jul 29 2026), Modular completed, dividend | stocktitan.net/news/QCOM/ | fetched 2026-09-05 |
+| Insider selling data | marketbeat.com/stocks/NASDAQ/QCOM/insider-trades/ | fetched 2026-09-05 |
+| Apple C1 modem / mmWave roadmap | telecomstechnews.com | fetched 2026-09-05 |
+| Consensus PT $193.10 | Stockanalysis.com | fetched 2026-09-05 |
+
+---
+
+## Appendix B: Historical Analysis Snapshot (2026-05-15, ก่อนอัปเดต — เก็บไว้เป็น audit trail)
+
+| Field | Value (2026-05-15) |
+|-------|---------------------|
+| Price | $218 |
+| Blended FV | $192 (Emma 40% / Quinn 35% / Bear 25% — weight เดิมก่อน IPS ปัจจุบัน) |
+| MOS | -11.9% |
+| ESG-Adjusted FV | $184 |
+| Conviction | 6.5/10 (Emma 7 / Quinn 6 / Bear 6.5) |
+| Moat | Narrow+ |
+| Bucket | Growth (Revenue +17% FY25) |
+| Recommendation | HOLD / WAIT FOR PULLBACK — Entry $190-205 |
+| Stop Loss | $150 |
+| Twin Binary Risks identified | (1) Apple in-house modem — HIGH probability, -$20-25/share; (2) China 53% concentration, truce expiry ก.ค. 2026 (CRITICAL) — -$35-53/share |
+
+*เนื้อหาเต็มของรายงานเดิม 2026-05-15 อยู่ใน git history ของไฟล์นี้ (ก่อน commit วันที่ 2026-09-05) — ใช้ \`git log -p reports/QCOM_2026-05-15.md\` เพื่อดูเวอร์ชันเต็ม*
 `
   },
   {
