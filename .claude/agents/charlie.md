@@ -5,6 +5,7 @@ tools:
   - Agent
   - Read
   - Write
+  - WebSearch
   - TodoWrite
   - TodoRead
 ---
