@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-09-01 18:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-09-06 17:00";
 
 const SECTOR_VIEWS = [
   {
@@ -395,5 +395,51 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-09-01",
     author: "Atlas",
     trigger: "Byproduct of OSCR Phase 1 Macro Brief — first sector-level view on ACA marketplace / managed care (subsidy cliff already lapsed + Congress stalled + enrollment declining 20%+ + sector-wide MLR blowout + MA rate pressure), applies beyond OSCR to CNC/MOH/ELV/ALHC",
+  },
+  {
+    sector: "Auto Suppliers / Auto Tech",
+    slug: "auto-suppliers-auto-tech",
+    stance: "CAUTIOUS",
+    cyclePosition: "Late-cycle / cyclical trough (turn unconfirmed)",
+    headline: "Trading ที่ multiple ถูกสุดในรอบหลายปี — แต่ China structural shift + EV-adoption slowdown + tariff 2-directional overhang ยัง unresolved พร้อมกันสามอย่าง; content-per-vehicle thesis ยัง intact เชิงโครงสร้างแต่ timeline ยืดออก — selective เฉพาะชื่อที่มี real MOS บน normalized (ไม่ใช่ recovery-peak) earnings",
+    thesis: "การวิเคราะห์ APTV (Aptiv, 2026-09-06) เปิดเผยมุมมองระดับ sector ที่กว้างกว่าตัวหุ้น — auto suppliers / auto tech (APTV, BWA, LEA, MGA, VC, ADNT, และในเชิง analog overlay: ADI/NXPI/ON auto exposure) กำลังเจอ 4 แรงพร้อมกัน: (1) **Volume ไม่มี tailwind:** US light-vehicle production 2026F ~10.04M units (+1.1% YoY, ฟื้นบางจากการหดตัวปี 2025), US new-vehicle sales ~15.8M (-2.9% YoY, Cox) — flattish-to-down 2026, modest recovery 2027+ (production rise ต่อเนื่องถึง 11.3M by 2030) แต่ไม่มี cyclical upswing ยกทั้งกลุ่ม; affordability (ATP สูง) + Fed hawkish (auto loan 90+ delinquency 5.60% Q1 2026 vs long-term avg 3.59%, subprime auto delinquency = 32-year high) กดยอดขายส่วนล่างของตลาด (2) **China = structural ไม่ใช่ cyclical:** overcapacity ~55.5M คัน/ปี vs demand ~23M (utilization ~50%), price war กด sector-wide auto profit -18% YoY Q1 2026 (avg margin เหลือ ~3.2%), luxury/foreign-brand collapse (BBA sales -260K units 2025, Mercedes -19% YoY, avg luxury price ¥358K→¥344K) — suppliers ที่ขาย content ให้ Western/luxury OEM ที่ export เข้าจีนโดนกระทบถาวร; pivot ไปหา local OEM (BYD/Geely) ได้ volume แต่ content-per-vehicle + supplier margin ต่ำกว่า Aptiv ถึงกับ reclassify China เป็น 'structural headwind' อย่างเป็นทางการใน Q2 2026 (guide cut $300M, หุ้น -17.9% post-print) (3) **EV-adoption slowdown ยืด content thesis:** US federal EV tax credit ($7,500) หมดอายุ 30 ก.ย. 2025 → US new-BEV sales Q1 2026 -28% YoY, US EV market 2026F -15%, plug-in share ค้าง ~8-9% ถึง 2027 (recovery ไม่คาดก่อนปลายทศวรรษ); content-per-vehicle 2-3x บน EV vs ICE ยังจริง และ SDV/zonal architecture/software (~35% ของ vehicle value ในปี 2026) เป็น secular tailwind ของจริง — แต่ content-dollar growth เป็น mid-single-digit ในกรอบ 2026-2027 ไม่ใช่ inflection (4) **Tariff 2-directional:** USMCA/Section 232 auto-parts tariffs = reshoring beneficiary (BWA, US footprint หนัก) vs OEM-cost-passthrough loser (suppliers exposed VW/Stellantis เช่น APTV) — ยังไม่ resolve. **Valuation:** กลุ่มเทรด near-trough (APTV fwd P/E 8.4x / EV/EBITDA 6.4x / normalized FCF yield ~8.5%; BWA, VC ก็ single-digit P/E) = cheap พอที่จะมี MOS ถ้า normalized margin story credible. Margin แผ่กว้างมาก — harness/seating (LEA/MGA op margin 4-5%) vs propulsion/electronics (BWA ~9-10%, Aptiv RemainCo adj EBITDA ~18% หลัง spin EDS ออก) — peer comparison ต้องระวังไม่ใช่ apples-to-apples. ทีมให้ stance CAUTIOUS (ไม่ NEGATIVE เพราะ valuation base ถูกจริง + content thesis เชิงโครงสร้างยัง intact + long-term BEV mix 22.7% ของ NA production by 2030; ไม่ POSITIVE เพราะ China + EV-pace + tariff ยัง unresolved พร้อมกัน และไม่มี volume catalyst) — selective เฉพาะชื่อที่มี real MOS บน normalized (ไม่ใช่ trough หรือ recovery-peak) earnings + margin-mix ที่ทน China local-OEM shift ได้.",
+    keyPoints: [
+      "Volume ไม่มี tailwind: US production 2026F ~10.04M (+1.1% YoY), sales ~15.8M (-2.9%, Cox) — flattish 2026, modest recovery 2027+; affordability + Fed hawkish (subprime auto delinquency = 32-year high) กดตลาดล่าง",
+      "China = structural ไม่ใช่ cyclical: overcapacity ~55.5M vs demand ~23M, price war → sector auto profit -18% YoY Q1 2026 (margin ~3.2%), luxury collapse (BBA -260K units 2025); Aptiv reclassify China เป็น 'structural headwind' อย่างเป็นทางการ",
+      "EV-adoption slowdown ยืด content thesis: US EV tax credit หมด 30 ก.ย. 2025 → new-BEV sales Q1 2026 -28% YoY, EV market 2026F -15%, plug-in share ค้าง 8-9% ถึง 2027 — content-per-vehicle 2-3x ยังจริง แต่ dollar growth = mid-single-digit ไม่ใช่ inflection",
+      "Tariff 2-directional: reshoring beneficiary (BWA, US footprint) vs OEM-cost-passthrough loser (APTV, exposed VW/Stellantis) — unresolved",
+      "Valuation near-trough: APTV fwd P/E 8.4x / EV/EBITDA 6.4x / normalized FCF yield ~8.5%; BWA/VC single-digit P/E — cheap พอมี MOS ถ้า normalized margin credible",
+      "Margin แผ่กว้าง — harness/seating (LEA/MGA 4-5%) vs propulsion/electronics (BWA ~9-10%, Aptiv RemainCo adj EBITDA ~18% หลัง spin EDS→Versigent 2026-04-01) — peer comp ต้องระวังไม่ใช่ apples-to-apples",
+      "Content-per-vehicle / SDV thesis เชิงโครงสร้างยัง intact (software ~35% ของ vehicle value 2026, zonal architecture, BEV 22.7% ของ NA production by 2030) — แต่ payoff เลื่อนออกไปนอกกรอบ 3-5 ปี",
+    ],
+    metrics: [
+      { label: "US light-vehicle production 2026F growth YoY (%)", value: 1.1 },
+      { label: "US new-vehicle sales 2026F growth YoY (%, Cox)", value: -2.9 },
+      { label: "US new-BEV sales Q1 2026 YoY (%)", value: -28 },
+      { label: "China sector-wide auto profit Q1 2026 YoY (%)", value: -18 },
+      { label: "APTV fwd P/E (2026E adj EPS)", value: 8.4 },
+      { label: "APTV EV / 2026E EBITDA (x)", value: 6.4 },
+    ],
+    relatedTickers: ["APTV", "BWA", "LEA", "MGA", "VC"],
+    sources: [
+      { title: "Cox Automotive — 2026 Outlook: Strategic Themes and Sales Forecast for the Automotive Industry", url: "https://www.coxautoinc.com/insights/2026-outlook-strategic-themes-and-sales-forecast-for-the-automotive-industry/" },
+      { title: "Cox Automotive — June 2026 U.S. Auto Sales Forecast (~15.8M units, -2.9% YoY)", url: "https://www.coxautoinc.com/insights/cox-automotive-forecast-june-2026-u-s-auto-sales-forecast/" },
+      { title: "Fastmarkets — EV pivot by automakers will likely drive 2026 US auto production trends (~10.04M units +1.1%, BEV share 7.9%→22.7% by 2030)", url: "https://www.fastmarkets.com/insights/ev-pivot-by-automakers-will-likely-drive-2026-us-auto-production-trends-analysts/" },
+      { title: "TradingEconomics — Car Production Forecast 2026/2027 (US rises to 11.3M by 2030)", url: "https://tradingeconomics.com/forecast/car-production" },
+      { title: "Seafarer Funds — Nobody Wins in a Price War: Destructive Competition in China (overcapacity 55.5M vs demand 23M)", url: "https://www.seafarerfunds.com/prevailing-winds/destructive-competition-in-china/" },
+      { title: "36Kr — 2026 Landscape (Part 2): Automobile Manufacturers' Loss of Pricing Power (sector profit -18% Q1 2026, margin 3.2%, luxury price ¥358K→¥344K)", url: "https://eu.36kr.com/en/p/3679596382269057" },
+      { title: "Rest of World — China's EV export surge reshapes global auto markets (NEV exports +112.6% YoY May 2026)", url: "https://restofworld.org/2026/china-ev-exports-overcapacity-global-markets/" },
+      { title: "Automotive World — China summons automakers again over irrational price war", url: "https://www.automotiveworld.com/topics/e-mobility/china-summons-automakers-again-over-irrational-price-war/" },
+      { title: "EVTech.News — New EV Sales Plunge Nearly 28% in U.S. Q1 2026 as Federal Tax Credits End", url: "https://evtech.news/news/new-ev-sales-plunge-nearly-28-in-us-q1-2026-as-federal-tax-credits-end-while-used-ev-demand-hits-record-highs.html" },
+      { title: "Fox Business — Americans are pumping the brakes on electric vehicle adoption: 'Affordability is a big issue'", url: "https://www.foxbusiness.com/lifestyle/americans-pumping-brakes-electric-vehicle-adoption-affordability-big-issue" },
+      { title: "WardsAuto — Auto loan delinquency rates increased more slowly in Q1 (90+ day 5.60% vs long-term avg 3.59%)", url: "https://www.wardsauto.com/news/auto-loan-delinquency-rates-increased-more-slowly-in-q1/820045/" },
+      { title: "Symend — The Auto Loan Crisis: Why Traditional Collections Won't Work in 2026 (subprime auto delinquency 32-year high)", url: "https://www.symend.com/blog/the-auto-loan-crisis-why-traditional-collections-wont-work-in-2026" },
+      { title: "Simply Wall St — Aptiv Stock And Two Auto Suppliers Worth Watching For Tariff Driven Supply Chain Shifts (VW/Stellantis tariff exposure)", url: "https://simplywall.st/stocks/us/automobiles/nyse-aptv/aptiv/news/aptiv-stock-and-two-auto-suppliers-worth-watching-for-tariff" },
+      { title: "GM Insights — Software-Defined Vehicle Market Size, Growth Trends 2026-2035 (SDV market $447.55B 2026)", url: "https://www.gminsights.com/industry-analysis/software-defined-vehicle-market" },
+      { title: "Businesswire — Aptiv Reports Q2 2026 Financial Results (guide cut $300M, China structural headwind)", url: "https://www.businesswire.com/news/home/20260804874546/en/" },
+    ],
+    lastUpdated: "2026-09-06",
+    author: "Atlas",
+    trigger: "Byproduct of APTV Phase 1 Macro Brief — first sector-level view on auto suppliers / auto tech (no volume tailwind + China structural shift + EV-adoption slowdown + tariff 2-directional overhang, vs near-trough valuation + intact content-per-vehicle thesis), applies beyond APTV to BWA/LEA/MGA/VC",
   },
 ];

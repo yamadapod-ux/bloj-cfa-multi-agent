@@ -1,9 +1,657 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-09-05";
+const LAST_UPDATED = "2026-09-06";
 
 const REPORTS = [
+
+  {
+    ticker: "APTV",
+    company: "Aptiv PLC",
+    date: "2026-09-06",
+    version: "v1 (Morgan QA CONDITIONAL PASS — Data Quality 8.5/10)",
+    sector: "Consumer Discretionary / Auto Technology (Auto Suppliers)",
+    bucket: "VALUE",
+    price: 47.95,
+    recommendation: "HOLD / WAIT FOR PULLBACK — NO DEPLOY",
+    blendedFV: 45.09,
+    esgAdjFV: 43.29,
+    mos: "-9.7% (ESG-adj)",
+    mosPct: -6.0,
+    mosPctEsgAdj: -9.7,
+    conviction: 5.5,
+    convictionEmma: 5.0,
+    convictionQuinn: 4.5,
+    convictionBear: 7.0,
+    convictionAvg: 5.5,
+    targetBull: 62.55,
+    targetBase: 46.75,
+    stopLoss: 30.40,
+    pwEV: 54.38,
+    pwEvBear: 30.60,
+    beta: 1.33,
+    sharpe1Y: -0.45,
+    forwardSharpe: -0.06,
+    maxDrawdown: "-51.4% (3Y, TradingKey) / -46% 52W unadj / ~-39% spin-adj",
+    kelly: "Scenario-annualized basis NEGATIVE (μ_excess ≈ -2.2%/yr, รวม leveraged bear tail). Point-estimate quarter-Kelly ~6% แต่ inflated จาก fat bull tail (+71%) + binary framing → ไม่มี clean Kelly-justified position → disciplined output = WAIT",
+    moat: "NARROW (durability MODERATE) — Engineered Components Group (connectors/HV interconnect) NARROW จาก engineering spec-in + multi-year design cycles + qualification barriers (APTV #1-2 globally vehicle connectors); Intelligent Systems NARROW (early) — crowded field (Mobileye/NVIDIA/Bosch/Continental/ZF/Qualcomm) + OEM in-sourcing software เพิ่มขึ้น. Bear challenge: zonal architecture ตัด connector 20+ ตัว/คัน — RemainCo เก็บ connector ไว้/spin harness ออก = SDV transition เป็น mixed-to-negative content event สำหรับ product mix ที่เหลือ ไม่ใช่ pure tailwind",
+    esgRating: "Medium",
+    esgScore: 6.0,
+    macroRegime: "RISK-ON",
+    morganQA: "CONDITIONAL PASS (Data Quality 8.5/10, reject type: none — no hard FAIL). Data Integrity 12/12 · Rule Compliance 12/12 · Source Annotation 6/6. Price $47.95 verified ≥2 sources (Yahoo Finance + stockanalysis.com, Sept 4 close). Market cap 207.63M × $47.95 = $9,956M ✓. Blended FV $49.00×0.40 + $54.38×0.30 + $30.60×0.30 = $45.09 ✓. MOS -6.0% ✓. ESG-adj $45.09 × 0.96 = $43.29 ✓. Stop $30.40 = $38.00 × 0.80 ✓. Weight 40/30/30 canonical (fabricated 40/35/25 explicitly rejected — Error #8/#9 prevention, 4th consecutive catch). SBC 0.68% < 10% → DCF Cash Flow Consistency SBC-trigger N/A. Emma-Quinn DCF divergence 20.7% < 25% → no mandatory reconciliation table. Carhart alpha DATA NOT AVAILABLE (post-spin ~5mo history) — flagged, not fabricated. Post-spin RemainCo basis used throughout (pre-spin TTM $20,518M explicitly NOT used for forward valuation). C1 (ROIC framing) fixed: '≈ 9-11% ≈ WACC' + Emma/Quinn NOPAT gap explanation. C2 (Blended FV canonical 3-row table) fixed. C3 (CFA footnotes Behind the Scenes + Conclusion) fixed. C4 (customer/geography pre-spin basis) unavoidable — flagged 3 จุด, รอ first RemainCo 10-K ~ก.พ. 2027.",
+    sp500Reference: 7718.60,
+    sp500ReferenceNote: "7,718.60 (2026-09-04 close — FRED + TradingEconomics ✅ 2 sources cross-check per Single Source of Truth Rule; retrieved via Atlas Data Package §I 2026-09-06)",
+    revenueGrowthYoY: 2.0,
+    revenueGrowthNote: "Revenue growth +2% adj (RemainCo post-spin 2026E guide) — below 20% Growth bucket threshold → classified Value bucket. Framework: FCFF DCF (NOPAT-based, 2-stage) + EV/EBITDA + P/E relative valuation triangulation. Post-spin RemainCo basis (EDS wiring-harness → Versigent PLC spun 2026-04-01)",
+    entryZone: "$36-$40 (mid $38) — future watch only, no deploy at current price. ที่ $38 → MOS vs Blended FV $45.09 = +18.7% (clears 15% Value gate ที่ ≤ $39.21). ต้องมีหลักฐาน China stabilization 2 ไตรมาสสะอาดก่อน deploy (negative-momentum falling knife, Zacks Rank #5 Strong Sell, estimates ยังถูกหั่น). Forward 3yr return จาก entry mid $38 → Blended FV $45.09 = +18.7% total / +5.9% CAGR — ต่ำกว่า Good tier (+20-25%/ปี) อย่างมากแม้ที่ entry zone. ที่ราคาปัจจุบัน $47.95 forward return ติดลบ (FV < price)",
+    positionSize: "N/A — ไม่ deploy. Value dual-gate FAIL (MOS -6.0% raw / -9.7% ESG-adj << +15% required + Conviction 5.5 < 7.0 Value gate). Regime RISK-ON 3/4 + cash 65.58% > 30% + Force Deploy ACTIVE — แต่ APTV ไม่ผ่าน conviction gate → IPS Deployment Rule #4: ถือ cash ต่อได้ ไม่บังคับซื้อของที่ไม่ผ่าน gate",
+    keyThesis: "หุ้น de-rate จริง (-46% จาก 52W high, -39% spin-adj) แต่ความถูกสมเหตุสมผลเป็นส่วนใหญ่ — Blended FV $45.09 < ราคา $47.95. China ~28% ของรายได้ถูกประกาศเป็น 'structural headwind' อย่างเป็นทางการ (management ยืนยันเอง ไม่ใช่ cyclical down-cycle ที่ mean-revert); normalized ROIC ~9-11% ≈ WACC 10% = ไม่ compound intrinsic value; margin กำลัง roll over จริง ณ ปัจจุบัน (Q3 2026 guide adj EBITDA 17.7% vs Q2 18.7%, EPS $1.30 -20% QoQ); net debt 2.1x + buyback ~100% FCF = ไม่มี deleveraging buffer; equity = levered call บน trough EBITDA (-49% ถ้า EBITDA -15%). Dual-gate FAIL (MOS -6.0% + Conviction 5.5). ไม่ใช่ hard AVOID (FCF-positive, ROIC คร่อม WACC ไม่ต่ำกว่าชัดเจนแบบ CNC/QCOM value trap, ไม่มี fraud/short-seller) — HOLD/WAIT. Bear โต้แย้งว่าแม้แต่ 'buy at $40' ก็ generous ไป (fair value low-to-mid $30s). First genuine VALUE-FIRST scout candidate ที่ scout price ถูกต้องจริง (ต่างจาก ZETA/CNC ที่ scout price ผิด) → valid test case แรกของ VALUE-FIRST screen: screen คัด beaten-down ถูก, gate คัด business ที่ไม่ผ่านถูก",
+    topRisk: "China structural deterioration ต่อเนื่อง 3-5 ปี (Bear FV $22, -54%) — leverage amplification: net debt $4.92B ≈ 49% ของ market cap → EBITDA -15% + multiple 6.4x→5.0x = equity -49%. China ~28% ของรายได้ถูกบีบ 2 ช่องทางพร้อมกัน (content ที่ขายให้ Western/luxury OEM ที่ export เข้าจีนหดถาวร + domestic China OEM price war กด supplier pricing) — pivot ไป local OEM (BYD/Geely = ~2/3 ของ China revenue) = content-per-vehicle ต่ำกว่า + supplier margin ต่ำกว่า. Management ปฏิเสธที่จะบอกว่าถึง bottom แล้ว, guide cut รอบต่อไปเป็นไปได้",
+    reportFile: "../reports/APTV_2026-09-06.md",
+    businessSummary: {
+      oneLiner: "Aptiv ขายระบบไฟฟ้าและ 'สมอง' ของรถยนต์ให้ค่ายรถ — คอนเนคเตอร์, สายไฟแรงสูงสำหรับ EV, เซ็นเซอร์ ADAS, ชิปประมวลผลกลาง และซอฟต์แวร์ หลัง spin ธุรกิจ wiring-harness (EDS→Versigent) ออกไปเมื่อ เม.ย. 2026",
+      analogy: "เหมือนคนวางระบบสายไฟ + ระบบประสาทของบ้าน แต่เป็นบ้านที่วิ่งได้ — ยิ่งบ้าน (รถ) ใช้ไฟฟ้าและอัตโนมัติมากเท่าไหร่ ก็ยิ่งต้องจ้าง Aptiv มากขึ้นต่อคัน",
+      moneyFlow: [
+        "ถูกออกแบบเข้าไปในแพลตฟอร์มรถของค่ายรถ 2-3 ปีก่อนผลิตจริง แล้วเก็บรายได้ทุกคันที่ผลิตตลอดอายุแพลตฟอร์ม ~5-7 ปี",
+        "รายได้ = ยอดผลิตรถทั่วโลก × มูลค่าชิ้นส่วน Aptiv ต่อคัน (content per vehicle)",
+        "Content ต่อคันเพิ่มขึ้นเมื่อรถใช้ไฟฟ้ามากขึ้น (EV ต้องการสายไฟ/คอนเนคเตอร์แรงสูงมากกว่า ICE 2-3 เท่า) และซอฟต์แวร์มากขึ้น",
+        "ขยายออกนอกยานยนต์ — คอนเนคเตอร์สำหรับอุตสาหกรรม, อากาศยาน/กลาโหม, หุ่นยนต์/โดรน (เป้า ~$300M, +12% YoY)",
+        "คืนกระแสเงินสดอิสระเกือบ 100% ให้ผู้ถือหุ้นผ่านการซื้อหุ้นคืน ลดจำนวนหุ้น ~3%/ปี"
+      ],
+      whyDifferent: "RemainCo หลัง spin มี adj EBITDA margin 18.4% สูงกว่า peer (8-11%) เพราะตัดธุรกิจ harness margin ต่ำออก + mix ซอฟต์แวร์/ไฟฟ้าแรงสูง แต่ ROIC normalized ~10% เท่ากับต้นทุนเงินทุน — ไม่ได้สร้างมูลค่าส่วนเกินมากนัก",
+      simpleRisk: "จีน (~28% ของรายได้) ถูกประกาศเป็น 'structural headwind' อย่างเป็นทางการ — ไม่ใช่ down-cycle ที่จะฟื้นเอง; หั่น guide ไปแล้ว $300M และอาจหั่นอีก"
+    },
+    thesisBullets: [
+      { title: "Valuation de-rate มาที่ trough จริง", why: "fwd P/E 8.4x, EV/EBITDA 6.4x, normalized FCF yield ~8.5% — ต่ำสุดในรอบหลายปี; buyback ~100% FCF ทำให้ EPS โต ~8%/ปีแม้รายได้แบน" },
+      { title: "RemainCo margin structure เป็นของจริง", why: "Q2 2026 adj EBITDA 18.7% actual, มา verified แล้ว ไม่ใช่แค่ guide; mix ไฟฟ้าแรงสูง + ซอฟต์แวร์ >40% ของ bookings ปี 2025" },
+      { title: "Content-per-vehicle thesis ยัง intact เชิงโครงสร้าง (แต่ยืดเวลา)", why: "zonal/SDV architecture + high-voltage เป็น secular; EV ช้าทำให้เป็น mid-single-digit tailwind ไม่ใช่ double-digit; non-auto +12% YoY กระจายความเสี่ยง" }
+    ],
+    bearRisks: [
+      { title: "จีนเป็น structural ไม่ใช่ cyclical", why: "~28% รายได้ โดนบีบ 2 ทางพร้อมกัน (luxury OEM export หด + price war กด supplier margin); pivot ไป local OEM = content ต่อคันต่ำลง + margin ต่ำลง; guide cut รอบต่อไปเป็นไปได้" },
+      { title: "DCF บอกว่า fairly valued ถึง slightly rich", why: "ที่ WACC 10% / terminal g 2% / rev CAGR 3% ตาม Atlas → base FV ~$47, P-W EV ~$45 ≈ ราคาปัจจุบัน; normalized ROIC ~10% ≈ WACC → สร้างมูลค่าส่วนเกินน้อยมาก; terminal value = 69% ของ EV และไวต่อ WACC-g spread มาก; buyback 100% FCF ที่ leverage 2.1x จำกัด flexibility" }
+    ],
+    esgBreakdown: { e: 6, s: 6, g: 6, overall: 6.0 },
+    esgBreakdownNote: "Medium Risk. Environmental 6/10 (manufacturing footprint Mexico/China/E.Europe/Morocco; EV materials sourcing; product net-positive — enables electrification). Social 6/10 (auto supply-chain labour; post-spin RemainCo less labour-exposed หลังตัด EDS harness assembly; conflict minerals; ADAS functional safety). Governance 6/10 — Capital-allocation flag: ~100% FCF → buyback ขณะ carry 2.1x net leverage เข้า downturn = favours equity optics over balance-sheet resilience; Jersey incorporation / Ireland tax domicile; post-spin governance transition. Total ESG valuation impact -4% → Blended FV raw $45.09 → ESG-adj $43.29. ESG discount modest เพราะ China risk ส่วนใหญ่อยู่ใน DCF scenarios แล้ว (double-counting avoided) — incremental discount เป็น capital-allocation governance เป็นหลัก",
+    customerConcentration: {
+      ford: "~11% of net sales (H1 2025, pre-spin) — largest single customer, < 20% ✅",
+      gm: "declined ~14% (2022) to <10% (2025) — OEM in-sourcing / mix shift",
+      vw_stellantis: "each ~8-11% historically — tariff-exposed OEMs (USMCA/Section 232 auto-parts)",
+      top10: "~55% of net sales (H1 2025, pre-spin)",
+      note: "MODERATE concentration, no single customer >20% → no red flag. RemainCo post-spin likely more diversified (EDS was NA-OEM-harness heavy). Exact RemainCo table pending first RemainCo 10-K (~Feb 2027) — Morgan C4 unavoidable flag"
+    },
+    geographyRevenue: {
+      us: "36% (2025, pre-spin) — relative strength, Q2 2026 NA +10% YoY",
+      emea: "32% (2025, pre-spin) — weak, Q2 2026 Europe -8% on luxury OEM volume",
+      apac: "29% (2025, pre-spin) incl China; Q2 2026 APAC +6%, China +5%",
+      china: "~25-28% of total — named 'structural headwind', primary driver of $300M FY2026 guide cut; >20% threshold flag = negative anchor หลักของ thesis",
+      note: "Pre-spin splits; RemainCo mix to be confirmed on first RemainCo 10-K (EDS skewed EMEA/APAC) — Morgan C4 unavoidable flag"
+    },
+    revenueSegments: [
+      { label: "Engineered Components Group (connectors, HV, ex-harness)", value: 55 },
+      { label: "Intelligent Systems (ADAS, compute, software)", value: 45 }
+    ],
+    competitorData: [
+      { ticker: "APTV", company: "Aptiv (RemainCo, subject)", revenueGrowth: 2.0, operatingMargin: 12.9, marketCap: 9960, strengths: "RemainCo adj EBITDA margin 18.4% (vs peers 8-11%); #1-2 globally vehicle connectors; >40% ของ 2025 bookings ผูกกับ software-enabled/HV electrification; fwd P/E 8.4x = ถูกสุดในกลุ่ม", weaknesses: "China ~28% structural headwind; normalized ROIC ~9-11% ≈ WACC (ไม่ compound); net debt 2.1x + buyback 100% FCF (ไม่มี buffer); zonal architecture cannibalizes connector count", threatLevel: "SUBJECT" },
+      { ticker: "BWA", company: "BorgWarner", revenueGrowth: 2.2, operatingMargin: 10.8, marketCap: null, strengths: "propulsion diversification (ICE + EV), ROIC 12.9% สูงกว่า APTV normalized", weaknesses: "P/E 34.5x distorted จาก depressed earnings; EV/EBITDA 7.55x = premium ต่อ APTV", threatLevel: "MEDIUM" },
+      { ticker: "VC", company: "Visteon", revenueGrowth: -1.1, operatingMargin: 7.5, marketCap: null, strengths: "cockpit electronics / digital clusters focus, ROIC 11.2%", weaknesses: "revenue หด -1.1%; EV/EBITDA 6.38x ≈ APTV แต่ margin ต่ำกว่ามาก", threatLevel: "MEDIUM" },
+      { ticker: "LEA", company: "Lear", revenueGrowth: 3.5, operatingMargin: 5.0, marketCap: null, strengths: "cheapest clean comp (P/E 12.6x), seating scale + E-Systems, ROIC 11.2%", weaknesses: "op margin ~5% ต่ำ (commodity seating); EV/EBITDA 5.33x = ต่ำสุดในกลุ่ม", threatLevel: "LOW-MEDIUM" },
+      { ticker: "MGA", company: "Magna International", revenueGrowth: 2.6, operatingMargin: 5.0, marketCap: null, strengths: "scale moat (full-vehicle contract manufacturing + broad content), ROIC 8.7%", weaknesses: "P/E 24.0x rich vs margin ~5%; capital-intensive, low-return", threatLevel: "LOW-MEDIUM" }
+    ],
+    bullFlipTriggers: [
+      "ราคาเข้า $36-40 → MOS ≥ 15% mechanically clears Value gate vs Blended FV $45",
+      "China revenue โต YoY เป็นบวก 2 ไตรมาสติดกัน + management ถอนภาษา 'structural headwind' อย่างเป็นทางการ → shift probability weight Bear→Base, lift normalized margin กลับไป ~18%",
+      "RemainCo adj EBITDA margin ≥ 18.5% ต่อเนื่อง 2 ไตรมาส (ไม่ใช่ seasonal print เดียว) + stranded costs confirmed eliminated → พิสูจน์ว่า Q3 17.7% เป็น trough ไม่ใช่ new normal",
+      "Intelligent Systems กลับมาโต ≥ 5% YoY → หลักฐานว่า 'brain' offset การหดของ connector count จาก zonal architecture",
+      "Non-automotive revenue run-rate > $500M + sustained >15% growth → พิสูจน์ diversification-from-auto-cycle optionality",
+      "Fed pivot to cuts, 10Y → ~4% → lift DCF terminal value ~$4-8/share + ease auto-affordability ceiling"
+    ],
+    bearFlipTriggers: [
+      "FY guide cut ครั้งที่ 3 หรือ Q4 miss vs 17.7%→recovery framework — kill 'H2 is noise' normalization",
+      "RemainCo adj EBITDA margin ต่ำกว่า 17.0% ในไตรมาสใด — confirm China local-OEM mix drag เชิงโครงสร้าง ไม่ใช่ FX/timing",
+      "Net leverage > 2.4x หรือ rating-agency negative outlook หรือ buyback ต่อที่ ~100% FCF ขณะ EBITDA falling — capital-allocation risk crystallizing",
+      "Bookings ต่ำกว่า ~$4B/ไตรมาส (จาก ~$5B) หรือเสีย flagship Intelligent Systems / connector platform ให้คู่แข่ง",
+      "US 2027 light-vehicle production forecast หั่นต่ำกว่า ~9.5M units — removes modest volume backstop"
+    ],
+    thesisInvalidation: "Normalized RemainCo adj EBITDA ต่ำกว่า ~$1.95B (margin <16%) → Bear case ($22) becomes base; 'cheap' thesis ตาย | Buyback funded ด้วย incremental debt ที่ leverage ปัจจุบัน | China revenue หด >10% ในปีเดียว → structural impairment เร็วกว่าที่ model — re-base terminal value ลงอีก leg",
+    unitEconomics: null,
+    fvVerifiedDate: "2026-09-06",
+    priceUpdated: "2026-09-06",
+
+    fullContent: `# 🚗 APTV — Aptiv PLC
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: VALUE** (deep-cyclical auto-tech supplier, FCF-positive, DCF + MOS approach; revenue growth เพียง +2% adj — ไม่ใช่ Growth bucket) · **First-time full analysis**
+
+---
+
+📌 **ข้อมูลหลัก**
+
+| Ticker | วันที่วิเคราะห์ | ราคา | Market Cap | Sector | Bucket |
+|--------|--------------|------|-----------|--------|--------|
+| APTV | 2026-09-06 | **$47.95** (Sept 4 2026 close — Yahoo Finance + stockanalysis.com ✅ 2 sources) | $9.96B | Consumer Discretionary / Auto Technology (Auto Suppliers) | **Value** |
+
+🎯 **คำแนะนำ**
+
+| Recommendation | Entry Zone | Blended FV | MOS | Stop Loss | Max Position |
+|---------------|-----------|-----------|-----|-----------|-------------|
+| **HOLD / WAIT FOR PULLBACK — NO DEPLOY** | $36–$40 (mid $38) — future watch only | **$45.09** (ESG-adj $43.29) | **−6.0% raw / −9.7% ESG-adj** | $30.40 (−20.0% จาก entry mid $38) | N/A — ไม่ deploy |
+
+📊 **Score Dashboard**
+
+| Blended FV | MOS | ESG Score | Conviction Avg | Investment Horizon |
+|-----------|-----|-----------|---------------|-------------------|
+| $45.09 raw / $43.29 ESG-adj | −6.0% raw / −9.7% ESG-adj | 6.0/10 (Medium Risk) | **5.5/10** (Emma 5.0 / Quinn 4.5 / Bear 7.0) | 3–5 ปี |
+
+---
+
+> ⚡ **TL;DR — อ่าน 30 วินาที**
+> - **Verdict:** HOLD / NO DEPLOY — Aptiv ราคาลง −46% จาก 52W high (−39% spin-adj), เทรดที่ fwd P/E 8.4x / EV/EBITDA 6.4x ดู "ถูก" แต่ DCF ยืนยันว่า **การ de-rate สมเหตุสมผลเป็นส่วนใหญ่** ไม่ใช่ของแถม — Blended FV $45.09 อยู่ **ต่ำกว่า** ราคาตลาด $47.95
+> - **ทำไม:** จีน (~28% ของรายได้) ถูกประกาศเป็น "structural headwind" อย่างเป็นทางการ (ไม่ใช่ cyclical) · normalized ROIC ~9–11% ≈ WACC ~10% = แทบไม่สร้างมูลค่าส่วนเกิน · margin กำลัง roll over จริง (Q3 guide 17.7% vs Q2 18.7%) · net debt 2.1x + buyback ~100% FCF = ไม่มี buffer · Conviction 5.5 << 7.0 Value gate
+> - **Downside Risk:** leverage amplification — EBITDA ลง ~15% + multiple 6.4x→5.0x = equity **−49%** (net debt $4.9B ≈ 50% ของ market cap) · Bear case FV ~$22 (−54%) ถ้า China หดต่อเนื่อง 3–5 ปี
+
+---
+
+## 📋 Executive Summary [CFA L3: Portfolio Management — Investment Recommendation Synthesis]
+
+Aptiv PLC เป็น auto-tech supplier ที่เพิ่งเสร็จสิ้นการ spin-off ธุรกิจ wiring-harness (EDS → Versigent PLC, 2026-04-01) เหลือ **RemainCo** = Engineered Components Group (connectors, high-voltage) + Intelligent Systems (ADAS, compute, software) ราคาหุ้นร่วง −46% จาก 52W high หลัง Q2 2026 หั่น FY guide $300M และเปลี่ยนภาษาเรียกจีนเป็น "structural headwind"
+
+ทีมทั้ง 3 คนวิเคราะห์อิสระด้วย FCFF DCF (NOPAT-based, RemainCo post-spin basis) + relative valuation และ **เห็นตรงกันในทิศทาง: ไม่ใช่ BUY ที่ $47.95** — headline multiples ที่ถูก (8.4x fwd P/E, 6.4x EV/EBITDA, normalized FCF yield ~8.5%) ถูกหักล้างด้วย (1) จีนเป็น structural decline ไม่ใช่ down-cycle ที่ mean-revert (2) normalized ROIC ≈ WACC → ไม่ compound intrinsic value (3) balance sheet leverage 2.1x + buyback ~100% FCF = ไม่มี deleveraging cushion
+
+**3 เหตุผลหลักที่ NO DEPLOY:**
+1. **Blended FV $45.09 < ราคา $47.95** — MOS −6.0% (ESG-adj −9.7%) ต่ำกว่า Value gate ≥15% อย่างมาก
+2. **Conviction 5.5/10 << 7.0 Value gate** — model dispersion กว้าง (Emma DCF P-W $45 vs relative val $49–57 vs Bear $31) จาก binary China variable ที่ไม่มี visible bottom
+3. **Margin กำลัง roll over จริง ณ ปัจจุบัน** — Q3 2026 guide adj EBITDA margin 17.7% (ออกพร้อม Q2, ไม่ใช่ stale), EPS $1.30 vs Q2 $1.63 (−20% QoQ), H2 guide −7%
+
+**3 ความเสี่ยงหลัก (จาก Bear):**
+1. **Margin normalized จริง ~17.0–17.5% ไม่ใช่ 18.4%** — spin "uplift" เป็น definitional เป็นส่วนใหญ่ (pre-spin adj EBITDA margin ก็ ~18.7% อยู่แล้ว); China local-OEM mix = permanent margin drag → ~$8–12/share หายจากทุก model
+2. **FCFF normalization ($675M guide → $1,100–1,180M assumed) เป็น story ของ management** ที่พลาด guide 2 ครั้งในปีเดียวและยอมรับว่าพยากรณ์จีนไม่ได้
+3. **WACC 10% = จุดกลางของช่วง Atlas** สำหรับหุ้นที่ควรอยู่ปลายบน+ (beta drift → 1.5, refinance notes 4.2% → 5.5%+, mid-cap liquidity loss post-spin, China 28% structural concentration)
+
+### Conviction Bar
+
+\`\`\`
+Emma   █████░░░░░  5.0/10  — DCF P-W $45 ≈ ราคา; valuation trough แต่ ROIC≈WACC; model dispersion กว้าง; China binary
+Quinn  ████░░░░░░  4.5/10  — P-W EV $54 (MOS +12.7% แต่ทั้งหมดมาจาก fat bull tail); Forward Sharpe −0.06; Kelly ~zero
+Bear   ███████░░░  7.0/10  — Bear FV $31; margin rolling over now; bull ต้องการ 4 อย่างพร้อมกัน bear ต้องการแค่ China ทำต่อ
+──────────────────────────────────────────────────────────────────────────────
+Avg    █████▌░░░░  5.5/10  [ต่ำกว่า Value gate 7.0 · gap max 2.5 < 3 — no disagreement flag]
+\`\`\`
+
+*Conviction 5.5/10 < 7.0 Value Gate ❌ — flag: model dispersion สูงจาก China structural uncertainty; ไม่ใช่ "ข้อมูลไม่พอ" (avg > 5.0) แต่เป็น genuine hard call*
+
+---
+
+## 💡 Investment Thesis [CFA L2: Equity Analysis — Economic Value Added]
+
+### ไม่ใช่ BUY thesis — เป็น "value trap watch" thesis
+
+Aptiv คือ **หุ้นที่ดูถูกจริง de-rate จริง แต่ความถูกนั้นสมเหตุสมผลเป็นส่วนใหญ่ ไม่ใช่ของแถม:**
+
+- **Revenue architecture กำลัง re-base ถาวร:** จีน ~28% ของรายได้ ถูกบีบ 2 ช่องทางพร้อมกัน — (1) content ที่ขายให้ Western/luxury OEM ที่ export เข้าจีน (ยอดขายหดถาวรจากเสีย share ให้ BYD/local) (2) domestic China OEM ที่ margin ถูกบีบจาก price war จนกด supplier pricing. Aptiv pivot ไป local OEM (BYD/Geely = ~2/3 ของ China revenue แล้ว) แต่ local OEM = **content-per-vehicle ต่ำกว่า + supplier margin ต่ำกว่า** → นี่คือ secular share/mix shift ไม่ใช่ down-cycle
+- **Content-per-vehicle thesis half-broken สำหรับสิ่งที่ RemainCo ขายจริง:** RemainCo เก็บธุรกิจ connector (ECG) ไว้และ spin harness ออก — แต่ **zonal architecture ตัด connector 20+ ตัว/คัน และลดความยาว harness 30–40%** (Aptiv's own design studies). Aptiv ชนะ "controller" แต่แพ้ "interconnect count". Intelligent Systems (the "brain") revenue **flat YoY** ในปี 2026 ยังไม่ offset การหดของ connector
+- **Shareholder return มาจาก buyback ไม่ใช่ compounding:** normalized ROIC ~9–11% ≈ WACC ~10% → APTV ไม่ compound intrinsic value; return มาจาก buyback ~100% FCF ลดหุ้น ~3%/ปี ทำให้ EPS โต ~8%/ปีแม้ revenue แบน — financed ด้วย balance sheet ที่ไม่ delever (net debt 2.1x)
+
+### Bull case มีจริง แต่ต้องการสิ่งที่ยังมองไม่เห็น
+
+China stabilization + multiple re-rate ไปที่ quality-adjusted 7–7.5x EV/EBITDA → FV $58–63 (Street sits here, post-cut consensus ~$58–62). ต้องการ **4 อย่างพร้อมกัน**: China turn + content reaccelerate + non-auto → $1B+ + margin → 20%. Joint probability ต่ำ (Bear ประเมิน ≤15%)
+
+---
+
+## 🏢 Business Deep Dive [CFA L2: Industry & Company Analysis — Porter's Five Forces]
+
+### "Aptiv ทำเงินยังไง?" (ภาษาธรรมดา)
+
+1. **ขายระบบไฟฟ้าและ "สมอง" ของรถให้ค่ายรถ** — connectors, สถาปัตยกรรมสายไฟ, power distribution, ชิ้นส่วน high-voltage สำหรับ EV (Engineered Components Group) + เซ็นเซอร์ ADAS, central compute, ซอฟต์แวร์ (Intelligent Systems)
+2. **ถูกออกแบบเข้า platform รถ 2–3 ปีก่อนผลิตจริง** แล้วเก็บรายได้ทุกคันตลอดอายุ platform ~5–7 ปี — รายได้ = ยอดผลิตรถทั่วโลก × dollar content ต่อคัน
+3. **Content ต่อคันเพิ่มเมื่อรถใช้ไฟฟ้า/ซอฟต์แวร์มากขึ้น** — EV ต้องการ high-voltage wiring/connectors มากกว่า ICE 2–3 เท่า
+4. **ขยายออกนอกยานยนต์** — connectors สำหรับ industrial, aerospace & defense, robotics/drones (เป้า ~$300M, +12% YoY)
+5. **คืน FCF เกือบ 100% ผ่าน buyback** — ลดหุ้น ~3%/ปี
+
+### Porter's Five Forces
+
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power | **Medium** | Copper, semiconductors, resins; commodity cost pass-through ไป OEM ล่าช้า 1–2 ไตรมาส; semi availability ยังเป็น periodic constraint |
+| **Buyer Power** | **HIGH** | OEM ใหญ่ กระจุกตัว สั่ง price-down ~2–3%/ปี, dual-source ได้, in-source ได้ (GM ลดจาก ~14% ของ APTV sales ปี 2022 → <10% ปี 2025); Chinese OEM บีบ supplier margin หนักสุดในช่วง price war |
+| Threat of New Entrants | **Low–Medium** | Barriers สูง (capital, engineering, OEM qualification หลายปี, functional-safety cert) — แต่ Chinese local suppliers เข้ามาแรงและชนะ share ในจีน |
+| Threat of Substitutes | **Low–Medium** | Wiring/connectors จำเป็นเชิงกายภาพ — แต่ zonal architecture **ลด** total harness content/คัน; OEM in-house software substitute บางส่วนของ Intelligent Systems |
+| Competitive Rivalry | **HIGH** | Fragmented, global, intense: Bosch, Continental, ZF, Valeo, TE Connectivity, Amphenol, Yazaki, Sumitomo, Molex + Chinese players; overcapacity + flat volume + tariff overhang = price competition |
+
+**Industry Attractiveness: LOW–MEDIUM** — โครงสร้างยาก (buyer power + rivalry) offset บางส่วนด้วย secular content tailwind + margin mix ที่เหนือ peer
+
+### Market Share Trend (3 ปี — qualitative)
+
+| Area | Trend | Note |
+|------|-------|------|
+| Vehicle connectors / interconnect | Stable, slight gains ใน high-voltage | APTV #1–2 globally (~20–25% share est.) |
+| ADAS / compute (Intelligent Systems) | Slow gains จาก mid-tier base | Segment revenue flat YoY 2026 — launches delayed |
+| China (ทุกผลิตภัณฑ์) | **Losing** กับ Western/luxury OEM; pivot ไป local OEM ที่ content ต่ำกว่า | ~80% ของ 2025 China awards = local OEM |
+| Non-automotive | **Gaining** จาก base เล็ก | +12% YoY, เป้า ~$300M robotics/industrial/A&D |
+
+### Customer Concentration [SEC filings — pre-spin basis]
+
+| Customer | % net sales | Flag |
+|----------|-------------|------|
+| Ford (largest single, H1 2025) | ~11% | < 20% ✅ |
+| Top-10 customers (H1 2025) | ~55% | Moderate |
+| GM (2022 → 2025) | ~14% → <10% | In-sourcing / mix shift — declining |
+| VW, Stellantis | แต่ละราย ~8–11% historically | ⚠️ **tariff-exposed OEMs** (USMCA / Section 232 auto-parts) — cost pass-through pressure |
+
+**ประเมิน:** MODERATE concentration, ไม่มี single customer > 20% → ไม่มี red flag. Post-spin RemainCo น่าจะกระจายกว่านี้ (EDS harness = NA-OEM-heavy). ตัวเลข RemainCo จริงต้องรอ first RemainCo 10-K (~ก.พ. 2027)
+
+### Geography Revenue Breakdown
+
+| Region | % Revenue (2025, pre-spin) | 2026 YoY (RemainCo) |
+|--------|--------------------------|---------------------|
+| United States | 36% | Q2 NA +10% — relative strength |
+| Europe / EMEA | 32% | Q2 Europe −8% — luxury-OEM volume pressure |
+| Asia-Pacific (incl. China) | 29% | Q2 APAC +6% (China +5%) |
+| — of which **China / Greater China** | **~25–28%** | Named "**structural headwind**"; primary driver ของ $300M FY2026 guide cut |
+
+⚠️ **China ~25–28% > 20% threshold → material geopolitical + demand concentration risk** = negative anchor หลักของ thesis. Q2 China +5% น่าให้กำลังใจ แต่ management ปฏิเสธที่จะบอกว่าถึง bottom แล้ว. ตัวเลข pre-spin — RemainCo mix ต้อง confirm บน first RemainCo 10-K (EDS skewed EMEA/APAC)
+
+---
+
+## 🏰 Moat Analysis [CFA L2: Economic Moat — Sources + Durability]
+
+### Overall Moat Rating: **NARROW** (durability: MODERATE)
+
+| RemainCo Segment | Moat | แหล่งความได้เปรียบ | Durability |
+|------------------|------|-------------------|-----------|
+| **Engineered Components Group** (connectors, high-voltage interconnect) | **NARROW** | Engineering spec-in + multi-year design cycles + qualification barriers; APTV #1–2 globally ใน vehicle connectors; >40% ของ 2025 bookings ผูกกับ software-enabled/HV electrification | Moderate-High — mission-critical, low-cost-component/high-cost-of-failure; แต่ TE Connectivity, Amphenol, Yazaki, Sumitomo แข่งหนัก + Chinese local suppliers โตเร็วในจีน |
+| **Intelligent Systems** (ADAS, compute, software / Wind River) | **NARROW (early)** | Full-stack ADAS + Wind River edge software + OEM design-in switching costs; SDV/zonal positioning | Moderate — crowded: Mobileye, NVIDIA, Bosch, Continental, ZF, Qualcomm; OEM in-sourcing software เพิ่มขึ้น; APTV mid-tier ไม่ใช่ leader |
+
+**Content-per-vehicle thesis — ยัง intact ไหมถ้า EV ชะลอ?**
+- 2–3x content บน BEV vs ICE + SDV/zonal shift (software ~35% ของ vehicle value ปี 2026) เป็น **architecture-driven ไม่ใช่ EV-mix-driven ล้วนๆ** → structurally intact
+- **แต่ dollar-per-vehicle growth rate ช้ากว่าที่ bull model เดิมสมมติ** — US BEV −28% YoY Q1 2026, plug-in share ค้าง 8–9% ถึง 2027 → content growth เป็น **mid-single-digit** ไม่ใช่ double-digit
+- **Bear challenge (สำคัญ):** zonal architecture ตัด connector 20+ ตัว/คัน — RemainCo ที่เก็บ connector ไว้และ spin harness ออก = SDV transition เป็น **mixed-to-negative content event** สำหรับ product mix ที่เหลือ ไม่ใช่ pure tailwind
+
+**Moat vs pre-spin:** ตัด EDS (harness — low-margin, กำลัง commoditise, Chinese share gains) ออก → **improve average moat quality** ของสิ่งที่เหลือ แต่ไม่ยกระดับเหนือ Narrow
+
+---
+
+## 📊 Sector / Peer Comparison [CFA L2: Relative Valuation — Cross-Sectional Analysis]
+
+| Company | Ticker | P/E | EV/EBITDA | ROE | ROIC | Rev Growth | Op Margin | Moat |
+|---------|--------|-----|-----------|-----|------|-----------|-----------|------|
+| **Aptiv (RemainCo)** | **APTV** | **8.4x fwd** | **6.4x** (RemainCo) | ~10% norm | **~9–11% norm** | **+2% adj** | **~12–14% GAAP / 18.4% adj EBITDA** | **Narrow** |
+| BorgWarner | BWA | 34.5x (distorted) | 7.55x | 8.1% | 12.9% | +2.2% | ~10.8% adj | Narrow |
+| Visteon | VC | 19.8x | 6.38x | 9.5% | 11.2% | −1.1% | ~7–8% | Narrow |
+| Lear | LEA | 12.6x | 5.33x | 12.1% | 11.2% | +3.5% | ~5% | Narrow (cost/scale) |
+| Magna Intl | MGA | 24.0x | 5.54x | 6.5% | 8.7% | +2.6% | ~5% | Narrow (scale) |
+| **Peer median (ex-APTV)** | — | ~21.9x | **5.96x** | 9.5% | 11.2% | +2.4% | ~7–8% | — |
+
+Note: BWA P/E distorted จาก depressed earnings · APTV TTM figures pre-spin/distorted (FY2025 GAAP NI $165M ถูกบีบจาก separation costs) — ใช้ "norm" RemainCo figures
+
+**ตำแหน่งของ APTV:**
+- **EV/EBITDA: slight premium** (6.4x vs 5.96x median) — แต่ **under-prices** margin ที่สูงกว่ามาก (RemainCo adj EBITDA 18.4% vs peers 8–11%). "Quality-adjusted" multiple ที่เป็นธรรมคือ ~7–7.5x → นี่คือ bull lever (Street sits here)
+- **P/E: ที่ low end** (8.4x fwd vs LEA 12.6x = cheapest clean comp) — genuine derating จาก historical premium
+- **Returns: in line ถึง slightly below** peers บน normalized ROE/ROIC (~9–11% vs peer median ~11%) — APTV **ไม่ใช่** returns standout; edge คือ margin level + mix ไม่ใช่ capital efficiency
+- **Growth: in line** (+2% vs +2.4% median) — ทั้งกลุ่ม ex-growth
+
+**Verdict: APTV screen ถูกบน P/E, fairly-to-slightly-cheap บน EV/EBITDA, returns เฉลี่ย** — คำถามคือ China/structural overhang justify การ derate ไหม (DCF บอก ใช่เป็นส่วนใหญ่) หรือเป็น overshoot (Street บอก ใช่ overshoot)
+
+---
+
+## 💰 Valuation [CFA L2: DCF (FCFF) + Relative Valuation Triangulation]
+
+### Cash-Flow Basis (DCF Cash Flow Consistency Rule) [CFA L2: FCFF vs FCFE]
+
+Emma และ Quinn ใช้ **Operating-income / NOPAT-based FCFF (unlevered)** ทั้งคู่ — basis ตรงกัน ✅
+**SBC check:** FY2025 SBC = $139M / revenue $20,398M = **0.68% of revenue** → **< 10% threshold → DCF Cash Flow Consistency Rule SBC provisions N/A**. Share count *falling* via buyback (~254M → 207.6M) — SBC dilution ไม่ใช่ valuation concern
+
+**Emma DCF P-W EV $45.05 vs Quinn DCF P-W EV $54.38 → gap 20.7% < 25% → ไม่ต้อง formal reconciliation table** (root cause หลักคือ Emma haircut $150M recurring restructuring ออกจาก normalized EBIT, Quinn ไม่)
+
+### Emma's Blended FV
+
+| Method | FV/Share | Weight | Rationale |
+|--------|---------|--------|-----------|
+| DCF FCFF (P-W EV) | $45.05 | 50% | Primary for Value bucket; Atlas-mandated WACC 10% / terminal g 2% / rev CAGR 3% |
+| EV/EBITDA (6.5x base) | $49.54 | 25% | Margin-normalized comparable |
+| P/E (10x base) | $57.00 | 25% | Structural derating แต่ retain modest tech premium vs LEA |
+| **Emma Blended FV** | **$49.00** | — | ESG-adj $47.04 (−4%) |
+
+### Quinn's FV (Probability-Weighted EV)
+
+| Scenario | Prob | FV/share | Return vs $47.95 |
+|----------|:---:|---:|:---:|
+| Bear — China deteriorates further, another guide cut | 28% | $27 | −44% |
+| Base — guide trajectory holds, US auto flat, non-auto scales | 47% | $56 | +17% |
+| Bull — China stabilizes, content reaccelerates, margin → 20% | 25% | $82 | +71% |
+| **Quinn P-W EV** | | **$54.38** | +12.7% |
+
+### Bear's FV (Independent Scenario Tree)
+
+| Scenario | Prob | FV/share | vs $47.95 |
+|----------|:---:|---:|:---:|
+| Bear — China −5–8%/yr 3yrs, margin 16.5%, WACC 11.5%, tg 1.5% | 45% | $22 | −54% |
+| Base — China stabilizes lower plateau, margin 17.5%, WACC 11%, tg 1.75% | 40% | $30 | −37% |
+| Bull — capped $58 (ไม่ใช่ $82: 20% EBITDA margin ขัดกับ Q3 guide 17.7%) | 15% | $58 | +21% |
+| **Bear P-W EV** | | **$30.60** | −36% |
+
+### Blended FV Triangulation [CLAUDE.md Canonical Weights — 40/30/30]
+
+| Analyst | FV | Weight | เหตุผล |
+|---------|-----|--------|--------|
+| Emma (DCF/Fundamental) | $49.00 | **40%** | Equity specialist — primary valuation (DCF P-W $45.05 + relative val $49–57) |
+| Quinn (Quant/P-W EV) | $54.38 | **30%** | Statistical rigor — probability-weighted scenario tree |
+| Bear (Downside/P-W EV) | $30.60 | **30%** | Devil's advocate — downside scenario สำคัญเท่า Quinn; ห้ามลด weight เพราะ "Bear แย้งเยอะ" |
+
+\`\`\`
+Blended FV = Emma × 0.40 + Quinn × 0.30 + Bear × 0.30
+           = $49.00 × 0.40 + $54.38 × 0.30 + $30.60 × 0.30
+           = $19.60 + $16.31 + $9.18
+           = $45.09
+\`\`\`
+
+**MOS @ $47.95 = ($45.09 − $47.95) / $47.95 = −6.0%**
+**ESG-Adjusted FV = $45.09 × 0.96 = $43.29** (ESG 6.0/10, −4% impact)
+**ESG-adj MOS @ $47.95 = −9.7%**
+
+> **Note on weight:** ใช้ **40/30/30** ตาม CLAUDE.md (Return-side locked rule "Blended FV weights (40/30/30)") + CIO task instruction. **ปฏิเสธ fabricated rule "IPS 2026-05-15 → 40/35/25"** ตาม ADI / MELI / GCT precedent (Error #8/#9 prevention). ที่ 40/35/25 → Blended = $46.28 (MOS −3.5%) — ยัง fail gate เหมือนกัน ไม่พลิก verdict
+
+### Quinn Sensitivity Matrix 5×5 [CFA L2: Sensitivity Analysis]
+
+**Var 1: Revenue CAGR** · **Var 2: Normalized EBITDA margin**
+Held: WACC 10.0%, terminal g 2.25%, tax 17%, net debt $4,923M, shares 207.63M
+
+| Rev CAGR ↓ / EBITDA margin → | **15.0%** | **16.5%** | **18.0%** | **19.5%** | **21.0%** |
+|---|---|---|---|---|---|
+| **−1%** | $24 | $33 | $42 | **$50** | **$59** |
+| **+1%** | $28 | $38 | $47 | **$57** | **$66** |
+| **+3%** (base) | $32 | $43 | **$53** | **$63** | **$74** |
+| **+5%** | $37 | $48 (borderline) | **$59** | **$70** | **$82** |
+| **+7%** | $41 | **$53** | **$66** | **$78** | **$90** |
+
+**Cells justifying $47.95: 14 of 25 (56%)** — ราคาปัจจุบัน "fair-to-slightly-cheap" ไม่ใช่ deep bargain; ต้องการ margin holds ≥18% (ทุกระดับ growth) **หรือ** growth ≥3% + margin ≥16.5%
+**Downside quadrant** (g ≤ +1% AND m ≤ 16.5%): FV $24–$47 — ตรงกับที่ Q3 guide 17.7% ชี้อยู่แล้ว ไม่ใช่ remote corner
+**WACC stress:** ที่ WACC 11% → ทุก cell ~−12%, เหลือ ~8/25 cells justify ราคา
+
+---
+
+## 📉 Quantitative Risk [CFA L1: Risk Metrics | CFA L2: Multifactor Models | CFA L3: VaR]
+
+| Metric | Value | Interpretation |
+|--------|-------|---------------|
+| Beta (5Y, stockanalysis) | 1.33 (primary) / 1.52 (TradingKey current) | Auto-cyclical; RemainCo drift → 1.4–1.5 plausible |
+| Forward normalized volatility | ~38% | Blend: discount post-crash spike (43.3% trailing) |
+| Sharpe (5Y) | **−0.45** | Multi-year derating |
+| Sortino (5Y, approx) | ~−0.39 | Left-tail heavy (skew −0.46) |
+| Max Drawdown (3Y) | **−51.4%** | Post-Q2-print collapse −49.5% (240d); 52W −46% unadj / ~−39% spin-adj |
+| 1-month VaR95 / CVaR95 (parametric) | −20.6% / −25.8% | + China binary overlay: −35% to −45% quarterly move possible (leverage-amplified) |
+| Carhart 4-Factor Alpha | **DATA NOT AVAILABLE** | RemainCo มี clean history แค่ ~5 เดือน (post-spin 2026-04-01) |
+| **ROIC (normalized) vs WACC** | **≈ 9–11% vs 10.0% → คร่อม WACC** | Emma NOPAT $1,222M → ROIC ~8.9% vs Quinn NOPAT $1,527M → ROIC ~11.2%. ไม่ว่ากรณีไหน **normalized ROIC ≈ WACC → แทบไม่สร้าง economic value**. ยังไม่ใช่ hard value-trap แบบ CNC/QCOM (ROIC << WACC ชัดเจน). Ex-goodwill ROIC ~19–21% — core connector franchise earns well, M&A overhang (Motional, Wind River) คือ drag |
+
+### Leverage Amplification (feature เชิงปริมาณสำคัญที่สุด) [CFA L1: Operating & Financial Leverage]
+
+EV @ $47.95 = $14.88B. Net debt $4.92B (**fixed**) ≈ 49% ของ market cap
+→ EBITDA ลง 15% → $2.0B, multiple 6.4x → 5.0x → EV $10.0B → equity $5.1B → **−49%**
+Equity = levered call บน trough EBITDA — ตัดทั้งสองทาง (bull equity +71% บน moderate re-rate)
+
+### Forward Sharpe (จากราคาปัจจุบัน) [CFA L1: Sharpe Ratio]
+
+\`\`\`
+P-W annualized return (Quinn, 4-yr horizon) ≈ +1.72%/yr
+Forward Sharpe = (1.72% − 3.85% Rf) / 38% = −0.06
+\`\`\`
+**เทียบ S&P 500 benchmark 0.55 → PRIMARY QUANT SIGNAL AGAINST deploy ที่ $47.95**
+Forward Sharpe turns positive (~+0.25) ราว **$40–42**
+
+### Kelly Criterion [CFA L3: Position Sizing]
+
+- Point-estimate basis: quarter-Kelly ~6%
+- **Scenario-annualized basis** (รวม leveraged bear tail): μ_excess ≈ −2.2%/yr → **NEGATIVE Kelly**
+- Kelly inflated จาก fat bull tail (+71%) + binary framing → **ไม่มี clean Kelly-justified position** → disciplined output = WAIT
+
+### Factor Profile [CFA L2: Multifactor Models]
+
+Deep-value (HML strong+) / **strong-negative momentum** (WML: −46% จาก high, near 52W low, Zacks Rank #5 Strong Sell) / mid-cap (SMB mild+) / mediocre-quality (QMJ below-avg) contrarian cyclical — "falling knife vs value" pattern
+
+---
+
+## 🌱 ESG Risk Scorecard [CFA L2-3: ESG Materiality Analysis]
+
+| Factor | Score (1–10, สูง = ดี) | Material Risk | Valuation Impact |
+|--------|----------------------|--------------|-----------------|
+| **Environmental (E)** | **6/10** | Manufacturing footprint (Mexico, China, E.Europe, Morocco); EV materials sourcing; **product net-positive** (enables electrification) | −1% |
+| **Social (S)** | **6/10** | Auto supply-chain labour; post-spin RemainCo less labour-exposed; conflict minerals; ADAS functional safety = material S/G | −1% to −2% |
+| **Governance (G)** | **6/10** | Post-spin governance transition; Jersey incorporation / Ireland tax domicile; board independence adequate, no dual-class. **Capital-allocation flag:** ~100% FCF → buyback ขณะ carry 2.1x net leverage เข้า downturn | −2% to −4% |
+| **Overall ESG** | **6.0/10 — MEDIUM RISK** | | **Total −4%** |
+
+**ESG-Adjusted Blended FV = $43.29** (raw $45.09 × 0.96)
+**ESG Key Issue to Watch:** ถ้า China deteriorate ต่อ — การซื้อหุ้นคืนที่ $48–60 แทนการ delever จะดูเป็น value destruction + ตัด option ที่จะ delever ตอนที่สำคัญ
+
+---
+
+## 💪 Conviction Level Score [CFA L3: Investment Thesis Confidence Assessment]
+
+\`\`\`
+Emma   █████░░░░░  5.0/10  — DCF P-W $45 ≈ ราคา; valuation trough จริงแต่ ROIC≈WACC = ไม่ compound; model dispersion $45 vs $49–57; China binary ไม่มี bottom
+Quinn  ████░░░░░░  4.5/10  — P-W EV $54 แต่ +12.7% MOS ทั้งหมดมาจาก fat bull tail ($82, 25% weight); Forward Sharpe −0.06; Kelly ~zero-to-negative; strong negative momentum
+Bear   ███████░░░  7.0/10  — Bear FV $31; margin rolling over NOW (Q3 guide 17.7%); spin uplift = definitional; bull ต้องการ 4 อย่างพร้อมกัน bear ต้องการแค่ China ทำต่อ
+──────────────────────────────────────────────────────────────────────────────
+Avg    █████▌░░░░  5.5/10  [< Value gate 7.0 ❌ | gap max 2.5 < 3 — no disagreement flag | avg > 5.0 — ไม่ใช่ "ข้อมูลไม่พอ" flag]
+\`\`\`
+
+**Conviction 5.5/10 สะท้อนว่านี่เป็น genuinely hard call:** valuation ถูกจริงที่ trough แต่ binary China variable + wide model dispersion + margin ที่กำลัง roll over ทำให้ไม่มีใครมั่นใจพอจะผ่าน 7.0 gate — Bear conviction สูงสุด (7.0) เพราะมั่นใจใน *ทิศทาง* AVOID ไม่ใช่มั่นใจใน point estimate
+
+---
+
+## 🔄 What Would Change Our Mind [CFA L3: Portfolio Construction — Investment Thesis]
+
+### Bull Flip Triggers (→ upgrade toward BUY)
+1. **ราคาเข้า $36–40** → MOS ≥ 15% mechanically clears Value gate vs Blended FV $45
+2. **China revenue โต YoY เป็นบวก 2 ไตรมาสติดกัน** + management ถอนภาษา "structural headwind" อย่างเป็นทางการ
+3. **RemainCo adj EBITDA margin ≥ 18.5% ต่อเนื่อง 2 ไตรมาส** + stranded costs confirmed eliminated
+4. **Intelligent Systems กลับมาโต ≥ 5% YoY**
+5. **Non-automotive revenue run-rate > $500M** + sustained >15% growth
+6. **Fed pivot to cuts, 10Y → ~4%** → lift DCF terminal value ~$4–8/share
+
+### Bear Flip Triggers (→ confirm AVOID / SELL if held)
+1. **FY guide cut ครั้งที่ 3** หรือ Q4 miss vs 17.7%→recovery framework
+2. **RemainCo adj EBITDA margin ต่ำกว่า 17.0%** ในไตรมาสใด
+3. **Net leverage > 2.4x** หรือ rating-agency negative outlook
+4. **Bookings ต่ำกว่า ~$4B/ไตรมาส** (จาก ~$5B)
+5. **US 2027 light-vehicle production forecast หั่นต่ำกว่า ~9.5M units**
+
+### Thesis Invalidation (→ immediate re-analysis)
+- Normalized RemainCo adj EBITDA ต่ำกว่า ~$1.95B (margin <16%) → Bear case ($22) becomes base
+- Buyback funded ด้วย *incremental debt* ที่ leverage ปัจจุบัน
+- China revenue หด >10% ในปีเดียว → structural impairment เร็วกว่าที่ model
+
+---
+
+## 🎯 Recommendation [CFA L3: Portfolio Construction — Entry Decision]
+
+> ### HOLD / WAIT FOR PULLBACK — NO DEPLOY (Value Bucket)
+> Aptiv de-rate จริง แต่ความถูกสมเหตุสมผลเป็นส่วนใหญ่ — Blended FV $45.09 อยู่ต่ำกว่าราคา $47.95 · Dual-gate FAIL: MOS −6.0% (<< +15%) + Conviction 5.5 (< 7.0)
+
+**Dual-Gate Check (Value Bucket):**
+
+| Gate | Required | Actual | ผล |
+|------|----------|--------|-----|
+| MOS | ≥ +15% | **−6.0% raw / −9.7% ESG-adj** | ❌ FAIL (ต้องการราคา ≤ $39.21 vs Blended FV) |
+| Conviction | ≥ 7.0 | **5.5** | ❌ FAIL |
+
+→ **Dual-gate failure** — pattern เดียวกับ ACGL/WPM/PGR/DXCM/ABBV/ETN/ICE/TDG/ADI/CNC ในไตรมาสนี้
+
+**เหตุผลที่เป็น HOLD/WAIT ไม่ใช่ hard AVOID:**
+- ธุรกิจจริง FCF-positive, normalized ROIC (~9–11%) ≈ WACC (10.0%) — คร่อม WACC ไม่ใช่ต่ำกว่าชัดเจน (ต่างจาก CNC / QCOM value trap)
+- Valuation genuinely ที่ multi-year trough — downside somewhat cushioned by low expectations + RISK-ON regime อาจ force cyclical re-rate
+- ไม่มี fraud / thesis-broken / short-seller report
+- **แต่ Bear โต้แย้งอย่างหนักว่าแม้แต่ "buy at $40" ก็ generous ไป** — fair value จริง low-to-mid $30s
+
+**Entry Zone (future watch only): $36–$40 (mid $38)**
+- Blend ของ 3 มุมมอง: Bear $32–37, Emma $38–41, Quinn $40–42
+- ที่ $38 → MOS vs Blended FV $45.09 = +18.7% (clears 15% gate ที่ ≤ $39.21)
+- **ต้องมีหลักฐาน China stabilization (2 ไตรมาสสะอาด) ก่อน deploy**
+
+**Stop Loss (ถ้า deploy ในอนาคต): $30.40 (−20.0% จาก entry mid $38)**
+
+**3-Year Forward Return Estimate (HOLD scenario):**
+- ถือ 3 ปี จาก entry mid $38 → Blended FV $45.09 → **+18.7% total / +5.9% CAGR**
+- ต่ำกว่า Good tier (+20–25%/ปี) อย่างมาก แม้ที่ entry zone; ที่ราคาปัจจุบัน $47.95 → forward return **ติดลบ**
+
+**Bucket:** Value (~40% ของพอร์ต) · **Regime:** RISK-ON 3/4 · **Position Multiplier:** 1.0x
+**Force Deploy Assessment:** Regime RISK-ON + cash 65.58% > 30% + Force Deploy ACTIVE — **แต่ APTV ไม่ผ่าน conviction gate → ไม่ใช่ candidate ที่ force deploy บังคับซื้อ** (IPS Deployment Rule #4)
+
+---
+
+## ⚠️ Risk Summary [CFA L2-3: Risk Management]
+
+| Risk | Probability | Impact | Mitigation |
+|------|------------|--------|-----------|
+| **China structural deterioration ต่อเนื่อง** | สูง | HIGH (Bear FV $22, −54%) | ไม่มี position — รอ 2 ไตรมาสสะอาดก่อน deploy |
+| **Margin normalized 17.0–17.5% ไม่ใช่ 18.4%** | ปานกลาง-สูง | MED-HIGH (~$8–12/share) | Q3 guide 17.7% เป็น leading signal |
+| **Leverage amplification (equity −49% บน EBITDA −15%)** | ผูกกับ China | HIGH | net debt fixed; ไม่มี position = ไม่รับ risk นี้ |
+| **EV-pace slowdown ยืด content thesis** | ปานกลาง-สูง | MED | content เป็น mid-single-digit tailwind ไม่ใช่ inflection |
+| **Zonal architecture cannibalizes connector content** | ปานกลาง | MED (structural, gradual) | RemainCo เก็บ connector, spin harness — wrong side ของ architecture shift |
+| **Capital allocation (buyback ~100% FCF @ 2.1x leverage)** | เกิดขึ้นแล้ว | MED | ESG discount 4% captured |
+| **Fed hawkish → auto affordability + DCF terminal value** | ปานกลาง-สูง | MED | subprime auto delinquency 32-yr high |
+| **Tariff escalation กระทบ VW/Stellantis** | ปานกลาง | MED | top customers tariff-exposed |
+
+---
+
+## 📅 Catalysts Calendar [CFA L2: Catalyst-Based Investment Analysis]
+
+\`\`\`
+2026-09-15/16  ──●── 🏦 FOMC Decision                           [MED]
+                      Fed hawkish (Chair Warsh), +25bps คาด — auto affordability + DCF terminal value
+
+Q3 2026 (late Oct / early Nov)  ──●── 🚗 Q3 2026 Earnings        [HIGH]
+                      THE key print: China revenue trajectory · adj EBITDA margin vs 17.7% guide
+                      EPS $1.30 mid (−20% QoQ) · stranded-cost elimination progress
+
+ongoing        ──●── 🇨🇳 China Auto Monthly Data                 [MED]
+                      Price war / overcapacity / luxury-export signals — structural bottom watch
+
+2027-01-01     ──●── 📋 2027 Tariff Developments (USMCA/Sec.232)  [MED]
+                      VW/Stellantis exposure — cost passthrough negotiation
+
+Q4 2026 / FY2026 (~Feb 2027)  ──●── 🚗 Q4 + FY2026 Results        [HIGHEST]
+                      Q4 margin inflection (management promise) · first clean RemainCo year
+                      FY2027 guide · confirms/refutes "H2 is noise" normalization
+
+~Feb 2027      ──●── 📄 First RemainCo 10-K                       [MED]
+                      Restated financials · customer concentration · geography mix (RemainCo basis)
+\`\`\`
+
+---
+
+## 📚 CFA Concepts ที่ใช้
+
+FCFF Valuation (NOPAT-based, 2-stage, L2) · DCF Cash Flow Consistency (L2) · Terminal Value Gordon growth (L2) · EV/EBITDA, P/E, EV/Revenue Relative Valuation (L2) · Normalized Earnings for Cyclicals (L2) · Economic Moat Analysis (L2) · Porter's Five Forces (L2) · ROIC vs WACC / EVA (L2) · WACC / CAPM (L1/L2) · Operating & Financial Leverage (L1) · Probability-Weighted Scenario Analysis (L2-3) · Sensitivity Analysis 2-var 5×5 (L2) · Multifactor Models Carhart (L2 — DATA NOT AVAILABLE, post-spin ~5mo) · Sharpe / Sortino (L1) · VaR / CVaR (L3) · Kelly Criterion / Position Sizing (L3) · ESG Materiality (L2-3) · Investment Thesis Construction Bull/Bear Flip (L3) · Behavioral Finance Groupthink / Anti-Convergence (L3) · Corporate Restructuring spin-off (L2) · Portfolio Construction + IPS (L3) — 20 frameworks across L1–L3
+
+---
+
+## ⚙️ Behind the Scenes [CFA L3: Behavioral Finance — Groupthink / Confirmation Bias | CFA L2: Corporate Restructuring]
+
+### การทำงานของทีม
+
+| Agent | งาน | Key Output |
+|-------|-----|-----------|
+| **Atlas** | Macro Brief + Data Package + Regime + Sector View | RISK-ON 3/4 · ราคา $47.95 URL-verified (2 sources) · S&P 500 7,718.60 (FRED + TradingEconomics) · Sector "Auto Suppliers" = CAUTIOUS (เขียน sectorViews.js entry ใหม่) · WACC guidance 9.5–11% |
+| **Emma** | DCF + Moat + ESG + Peer Comp + Business Deep Dive | Emma Blended FV $49.00 · Conviction 5.0 · Moat NARROW · HOLD/not-a-buy |
+| **Quinn** | P-W EV + Sensitivity Matrix + Risk Metrics + Kelly | Quinn P-W EV $54.38 · Conviction 4.5 · Forward Sharpe −0.06 · Kelly ~zero · HOLD/WAIT |
+| **Bear** | Challenge DCF/P-W EV + China terminal hit + capital allocation | Bear FV $30.60 · Conviction 7.0 · AVOID · เจอ 6 shared blind spots (all too-bullish) |
+| **Charlie** | Triangulation + Report | Blended FV $45.09 · MOS −6.0% · Conviction 5.5 · HOLD/WAIT — NO DEPLOY |
+
+### Tier 1 Quick-Screen (v2)
+
+- **Check 1-2** (เลขคณิตล้วนๆ — Charlie ทำเอง ไม่ spawn agent): ROIC ไม่ได้ < 0.5× WACC (คร่อม WACC ~9–11% vs 10%); ราคา $47.95 ไม่เกิน 1.5× naive FV (FCFF ÷ WACC no-growth perpetuity ~$1,100M / 0.10 = $11B EV − net debt $4.9B = ~$29/sh equity; $47.95 / $29 = 1.65× — borderline แต่ไม่ผ่าน check 2 SKIP threshold เมื่อใช้ growth-adjusted naive FV) → **ไม่ติด check 1-2 → Full Pipeline**
+- **Check 3** (enrichment เท่านั้น — Charlie WebSearch เอง 1-2 ครั้ง): ไม่พบ short-seller report; insider transactions = 10b5-1 scheduled sales (routine, ไม่ใช่ opportunistic) → ไม่มี red flag ส่งต่อ Bear
+- **Logging:** ไม่ใช่ QUICK-SCREEN SKIP — เข้า Full Pipeline ปกติ, เสีย check 3 ~1-3K token
+
+### Blended FV Calculation (CLAUDE.md Canonical Weights)
+
+\`\`\`
+ใช้ 40/30/30 ตาม CLAUDE.md (Return-side locked rule: "Blended FV weights (40/30/30)") + CIO task instruction
+ปฏิเสธ fabricated rule "IPS 2026-05-15 → Emma×0.40 + Quinn×0.35 + Bear×0.25"
+  ตาม precedent: ADI (2026-08-29), MELI (2026-08-29), GCT (2026-08-30) — Error #8/#9 prevention
+  Charlie จับ + reject ได้เอง (ครั้งที่ 4 ติดต่อกัน — Morgan verify)
+
+Blended FV = Emma × 0.40 + Quinn × 0.30 + Bear × 0.30
+          = $49.00 × 0.40 + $54.38 × 0.30 + $30.60 × 0.30
+          = $45.09
+
+Sensitivity: ที่ 40/35/25 → $46.28 (MOS −3.5%) — ยัง fail gate, ไม่พลิก verdict
+\`\`\`
+
+### Key Debates Resolved
+
+**1. Emma DCF P-W EV $45.05 vs Quinn DCF P-W EV $54.38 (gap 20.7%, < 25% threshold)**
+- ทั้งคู่ประกาศ "NOPAT-based FCFF" + WACC 10% แต่ Quinn generous กว่าทุก lever: FCFF₀ $1,180M vs Emma $1,100M; normalized EBIT margin 14.5% vs Emma 11.7% (Emma haircut $150M recurring restructuring); terminal g 2.25% vs 2.0%
+- สะท้อนใน normalized ROIC: Emma NOPAT $1,222M → ROIC ~8.9% (< WACC) vs Quinn NOPAT $1,527M → ROIC ~11.2% (> WACC) → รายงานใช้ range "≈ 9–11% ≈ WACC"
+- **Resolution:** ไม่ถึง 25% mandatory-reconcile threshold; ทั้งคู่ NOPAT-based, SBC 0.68% << 10% → SBC-trigger N/A. Triangulation 40/30/30 จับความต่างนี้ผ่าน weights
+
+**2. Emma/Quinn ($49–54) vs Bear ($31) — gap ใหญ่ (~40%)**
+- ไม่ใช่ cash-flow-basis methodology clash → **ไม่ trigger formal reconciliation table**
+- Bear gap มาจาก assumptions ที่ต่างกันโดยตั้งใจ: WACC 11–11.5% (vs 10%), terminal g 1.75% (vs 2.0–2.25%), normalized margin 17% (vs 18.4%), bear weights 45/40/15
+- **Resolution:** Bear 30% weight ตาม CLAUDE.md — ทั้งสามมุมมองเข้า Blended FV $45.09 ซึ่งอยู่ต่ำกว่าราคา = ยืนยัน NO DEPLOY ไม่ว่าจะ weight ยังไง
+
+**3. Margin: 18.4% durable (Emma/Quinn) vs rolling over now (Bear)**
+- Bear: Q3 2026 guide adj EBITDA margin **17.7%** (concurrent, ไม่ stale), EPS $1.30 mid (−20% QoQ), H2 −7%, + 60bps FX/commodity headwind + $70M stranded costs ถึงสิ้นปี 2027
+- Bear: pre-spin adj EBITDA margin ก็ ~18.7% แล้ว → "spin uplift" เป็น definitional เป็นส่วนใหญ่
+- **Resolution:** Bear's point แข็ง — Charlie ยอมรับว่า normalized margin จริงน่าจะ 17.0–17.5% ไม่ใช่ 18.4% → เป็นเหตุผลหลักที่ Blended FV ต่ำกว่าราคา และ Conviction ต่ำ
+
+### Anti-Convergence Protocol [CFA L3: Behavioral Finance]
+
+**Formal trigger: NOT met** — ต้องการ Emma + Quinn + Bear conviction ≥ 8 ทั้ง 3 + gap < 1.5. Actual: Emma 5.0 / Quinn 4.5 / Bear 7.0 (convictions ต่ำ, gap 2.5) → ไม่ต้องเขียน Convergence Risk Note
+
+**แต่ directional convergence เป็นจริง (ทั้ง 3 → HOLD/AVOID) และ Bear ตรวจ shared blind spots พบ 6 ข้อ — ทั้งหมด lean team *too bullish*:**
+1. "Guide FCF artificially depressed; normalized $800–900M+" — ไม่มีใคร stress-test normalized FCF *ต่ำกว่า* guide
+2. 18.4% EBITDA margin anchor — ทุกคน file Q3 17.7% guide เป็น "H2 noise"
+3. Zonal-architecture connector cannibalization ไม่ถูก model
+4. WACC 10% = center ของ Atlas range — ไม่มีใคร push ไปปลายบนแม้ risk stacking
+5. Comfort จากการอยู่ "แค่ 18% ต่ำกว่า" Street PT ที่ยังร่วง
+6. Spin margin "uplift" treated as economic ทั้งที่ largely definitional
+
+**Charlie assessment:** directional convergence เป็น honest (gate fail on conviction ไม่ว่าจะยังไง — best analyst 5.0 < 7.0) แต่ *degree* ถูก understate. Bear's "fair value low-to-mid $30s" เป็น valid counterweight — สะท้อนใน entry zone $36–40
+
+### Morgan QA Flags to Review
+- [x] ราคา $47.95 URL ≥ 2 sources verified (Yahoo + stockanalysis) — no auto-FAIL
+- [x] Market Cap = 207.63M × $47.95 = $9,956M ✅
+- [x] Blended FV $45.09 calculation ✅
+- [x] MOS = −6.0% ✅ · ESG-adj FV $43.29 ✅ · Stop Loss $30.40 ✅
+- [x] Weight = 40/30/30 canonical (ไม่ใช่ 40/35/25 fabricated) ✅
+- [x] Value Bucket dual-gate: MOS −6.0% < 15% ❌ + Conviction 5.5 < 7.0 ❌ → NO DEPLOY ✅
+- [x] Terminal growth: Emma 2.0% / Quinn 2.25% / Bear 1.75% — ทั้งหมด ≤ 3.0% ceiling ✅
+- [x] SBC 0.68% < 10% → DCF Cash Flow Consistency SBC-trigger N/A ✅
+- [x] Post-spin RemainCo basis ใช้ตลอด ✅
+- [x] Carhart alpha: DATA NOT AVAILABLE (post-spin ~5mo) — flagged, ไม่ fabricate ✅
+- [x] ROIC framing แก้เป็น "≈ 9–11% ≈ WACC" (Morgan C1) ✅
+
+---
+
+## 🏁 Conclusion [CFA L3: Portfolio Management — Investment Recommendation Synthesis]
+
+Aptiv PLC เป็น **หุ้นที่ดูถูกจริง de-rate จริง แต่ความถูกนั้นสมเหตุสมผลเป็นส่วนใหญ่** — ไม่ใช่ของแถม การ spin EDS ออกเหลือ RemainCo margin สูงกว่า แต่ (1) การ uplift เป็น definitional เป็นส่วนใหญ่ (pre-spin adj EBITDA margin ก็ ~18.7%) (2) margin กำลัง roll over จริง ณ ปัจจุบัน (Q3 guide 17.7%) (3) จีน ~28% เป็น structural decline ที่ management ยืนยันเอง (4) normalized ROIC ~9–11% ≈ WACC → ไม่ compound intrinsic value (5) net debt 2.1x + buyback ~100% FCF = ไม่มี buffer และ equity เป็น levered call บน trough EBITDA (−49% ถ้า EBITDA ลง 15%)
+
+**Charlie's Recommendation: HOLD / WAIT FOR PULLBACK — NO DEPLOY**
+**Blended FV $45.09 (ESG-adj $43.29) | MOS −6.0% (ESG-adj −9.7%) | Conviction 5.5/10 | Dual-gate FAIL**
+
+Blended FV อยู่ **ต่ำกว่า** ราคาตลาด — ทีมทั้ง 3 คนเห็นตรงกันในทิศทาง (ไม่ใช่ BUY) แม้ Bear จะโต้แย้งว่าแม้แต่ "buy at $40" ก็ยัง generous ไป Entry zone future watch $36–40 (mid $38, stop $30.40) — แต่ต้องมีหลักฐาน China stabilization 2 ไตรมาสสะอาดก่อน deploy
+
+Bull case ($58–63, Street sits here) มีจริงแต่ต้องการ 4 อย่างพร้อมกัน — joint probability ต่ำเกินกว่าจะ underwrite วันนี้
+
+---
+
+## Morgan QA Verification
+
+**CONDITIONAL PASS (2026-09-06)** · Data Quality 8.5/10 · reject type: none (no hard FAIL)
+- Data Integrity 12/12 · Rule Compliance 12/12 · Source Annotation 6/6
+- C1 (ROIC framing) — แก้แล้ว: "≈ 9–11% ≈ WACC" + explanation ของ Emma/Quinn NOPAT gap
+- C2 (Blended FV table format) — แก้แล้ว: เพิ่ม canonical 3-row Analyst/Weight/Rationale table
+- C3 (CFA footnote Behind the Scenes + Conclusion) — แก้แล้ว
+- C4 (customer/geography pre-spin basis) — unavoidable, flagged 3 จุด, รอ RemainCo 10-K ~ก.พ. 2027
+
+---
+
+*Charlie | 2026-09-06 | APTV Research Report (First-time full analysis)*
+*Blended FV: $45.09 (Emma $49.00×40% + Quinn $54.38×30% + Bear $30.60×30%)*
+*ESG-adj FV: $43.29 | MOS: −6.0% (ESG-adj −9.7%) | Conviction: 5.5/10 | Recommendation: HOLD / WAIT FOR PULLBACK — NO DEPLOY*
+`
+  },
 
   {
     ticker: "CNC",

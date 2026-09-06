@@ -941,3 +941,34 @@ Quinn/Bear ทั้งคู่ flag ว่าตัวเลขรอบนี
 **Session note:** งานนี้ถูก interrupt ด้วย API session limit ระหว่างขั้นตอนบันทึกของ Leo, resumed สำเร็จตาม Session Interruption/Resume Protocol — ดู `session_logs/2026-09-05_1600_QCOM.md` และ `agent_notes/leo/2026-09-05_QCOM.md` สำหรับรายละเอียดเต็ม
 
 *อัปเดตล่าสุด: 2026-09-05 — QCOM Re-Analysis HOLD/WAIT → AVOID (ราคาร่วงไม่การันตี MOS ดีขึ้น เมื่อ fundamentals แย่ลงเร็วกว่า)*
+
+---
+
+## APTV Full Analysis 2026-09-06 — VALUE-FIRST Screen First Valid Test (HOLD / NO DEPLOY)
+
+APTV (Aptiv PLC) = **first genuine VALUE-FIRST scout candidate ที่ scout price ถูกต้องจริง** ผ่าน full pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA CONDITIONAL PASS 8.5/10→Leo). ต่างจาก ZETA (2026-09-01, +31% scout price error) และ CNC (2026-09-04, +55.7% error) ที่ premise scout ผิดตั้งแต่ต้น — APTV scout price $46.53 (Sept 3) vs Atlas verify $47.95 (Sept 4 close) = การเคลื่อนไหว 1 วัน ไม่ใช่ error. **นี่คือ n=1 ที่ valid สำหรับประเมิน VALUE-FIRST screen.**
+
+| Field | ค่า |
+|-------|-----|
+| Rating | **HOLD / WAIT FOR PULLBACK — NO DEPLOY** (VALUE bucket) |
+| Price | $47.95 (Sept 4 close, Yahoo + stockanalysis.com ✅) |
+| Blended FV | $45.09 raw / $43.29 ESG-adj (Emma $49.00×0.40 + Quinn $54.38×0.30 + Bear $30.60×0.30) |
+| MOS | **-6.0% raw / -9.7% ESG-adj** (<< +15% Value gate) |
+| Conviction | **5.5/10** (Emma 5.0 / Quinn 4.5 / Bear 7.0) — Bear outlier ด้านสูง (มั่นใจใน AVOID) |
+| Gate | **Value dual-gate FAIL** — MOS -6.0% + Conviction 5.5 < 7.0 |
+| Regime | RISK-ON (Atlas 09-05) + Force Deploy ACTIVE — แต่ไม่ช่วย (gate อิสระจาก regime) |
+
+**บทเรียนหลัก — screen ทำงานถูก, gate ทำงานถูก:**
+1. **VALUE-FIRST screen คัด beaten-down ได้จริง** — APTV ผ่าน Filter A (-46% จาก 52W high / -39% spin-adj), Filter B (FCF yield ~7% guide / ~8.5% normalized), Filter C (normalized ROIC ~9-11% คร่อม WACC ~10%). Screen ไม่ใช่ปัญหา — deep-value candidate ที่ผ่าน A+B+C หาได้จริงในตลาด near-ATH (แค่ต้องรอ sector rotation ที่ถูกกด — auto value chain โดน China demand + ADAS-claims-shift พร้อมกัน).
+2. **Gate คัด business ที่ไม่ compound value ได้ถูก** — China ~28% ของรายได้ถูก management ประกาศเป็น "structural headwind" เอง (ไม่ใช่ cyclical down-cycle ที่ mean-revert); normalized ROIC ≈ WACC = ไม่สร้าง economic profit; margin กำลัง roll over จริง (Q3 guide adj EBITDA 17.7% vs Q2 18.7%); net debt 2.1x + buyback ~100% FCF = ไม่มี deleveraging buffer, equity = levered call บน trough EBITDA. หุ้น de-rate จริงแต่ **ราคาถูกลงสมเหตุสมผลเป็นส่วนใหญ่** (Blended FV $45.09 < price $47.95).
+3. **"beaten-down + cheap-looking" ไม่ใช่ MOS** — เหมือน CNC ที่ headline P/E ถูกเป็นภาพลวงตาจาก one-time item, APTV headline fwd P/E 8.4x ดูถูกมาก แต่ DCF บอก fairly-valued-to-slightly-rich เพราะ business ไม่ compound. MOS ต้องมาจาก intrinsic value gap ไม่ใช่ multiple ที่ต่ำ.
+4. **Post-spin data hygiene** — stockanalysis.com financials ไม่ restate หลัง EDS→Versigent spin (2026-04-01). Verified Data Package flag "ใช้ RemainCo basis $12.7B rev ไม่ใช่ TTM $20.5B" ทำงาน ป้องกัน valuation ผิด basis. Pattern จะเจอซ้ำกับ spin-off อื่น.
+5. **ไม่ deploy ≠ ไม่มี opportunity, และ ไม่ทุก NO-DEPLOY เข้า buy_list** — Regime RISK-ON + cash 65.58% + Force Deploy ACTIVE แต่ APTV ไม่ผ่าน conviction gate → IPS Deployment Rule #4 (ถือ cash ต่อได้). ไม่เพิ่มเข้า buy_list.md เพราะ forward return ที่ entry zone future $38 เพียง ~+5.9% CAGR — ต่ำกว่า Good tier แม้ MOS clear (precedent CNC).
+
+**Tier 1/2/3 test (CIO objective):** ทั้ง 3 tier ทำงานถูก — Tier 1 route APTV ไป Full Pipeline (ไม่ SKIP, ต่างจาก GEV EV/EBITDA 71x ที่ SKIP check 2); Tier 2 Bear challenge หนัก (conviction 7.0 ใน AVOID); Tier 3 Max SKIPPED เพราะ dual-gate FAIL แม้ regime เอื้อ.
+
+**Session note:** งานถูก interrupt ด้วย API session limit ระหว่าง Leo/Vera phase (data.js + decisions.md row เสร็จก่อน interruption), resumed 2026-09-06 same day ตาม Session Interruption/Resume Protocol (**7th instance**) — 0 duplicates, dated files verified complete. ดู `session_logs/2026-09-06_0600_APTV.md` + `agent_notes/leo/2026-09-06_APTV.md`
+
+**Action:** APTV → watchlist Pending Analysis ยัง live (ไม่ archive ตาม Superseded — วิเคราะห์เสร็จแล้ว) — *แก้: archive per De-list Rule #3 Superseded* | deployment_log SKIPPED | ไม่เข้า buy_list.md | ไม่ trigger Max Consultation Rule (SKIPPED, ไม่มี capital action, fresh pipeline)
+
+*อัปเดตล่าสุด: 2026-09-06 — APTV VALUE-FIRST screen first valid test: screen คัด beaten-down ถูก, gate คัด business-ที่-ไม่-compound-value ถูก, HOLD/NO DEPLOY*
