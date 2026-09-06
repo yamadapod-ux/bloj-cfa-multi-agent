@@ -2465,3 +2465,52 @@ Cross-ref `portfolio/decisions.md` + `portfolio/deployment_log.md` + `reports/` 
 **Target analysis date:** APTV 2026-09-11 · LKQ 2026-09-12 (RISK-ON + CIO learning objective → fast-track, ภายใน 5 วันตาม Scout→Analysis SLA)
 
 *Max — 2026-09-06 | Scout Round 28 (Consumer Discretionary / Autos mandate) — 2 candidates: APTV (top pick, -40.7% from high, clean A+B) + LKQ (FCF yield 11.4%, -33.4%). PYPL near-miss (watch). Regime RISK-ON — Scout Pause basis resolved by Atlas 09-05 re-call.*
+
+---
+
+## Scout Report — 2026-09-07 (Max Scout Mode — Round 29) — 🟥 ZERO QUALIFYING CANDIDATES
+
+**Trigger:** CIO "ลองเลย" — รอบ scout แรกที่รันภายใต้ **Funnel Redesign ใหม่** (Filter D + E + A-redefinition + Tier 1.5 lanes, encoded 2026-09-06 `TRIAL`)
+
+**Regime:** RISK-ON (Atlas `2026-09-05_regime.md`, 2 วัน — fresh). Force Deploy ACTIVE, cash floor 10%, 1.0x. Portfolio 7 positions ทั้งหมด software/IT-services/biotech, cash 65.58%.
+
+**Sector mandate Round 29 = Healthcare (Large-cap Pharma + Medtech — patent-cliff / spin-off "value")**
+เลือกเพราะ: Round 27 = solar + managed care · Round 28 = autos/consumer-discretionary — pharma majors + medtech ยังไม่เคยทำเป็น dedicated round, และเป็นที่ที่ "value" มักถูกพูดถึงในปี 2026 (COVID revenue cliff, patent cliffs 2026-2030, IRA drug pricing)
+
+### Screening Table — 9 ตัว scan, **0 ผ่าน Filter A**
+
+| Ticker | ราคา (src) | 52W high | % จาก high | Filter A | หมายเหตุ |
+|--------|-----------|----------|-----------|----------|----------|
+| PFE | $28.44 (09-06, stockanalysis + 247WallSt) | $29.21 (แตะ $29.02 เมื่อ 09-02) | **-2.6%** | ❌ | Re-rated — แตะ 52W high สัปดาห์ก่อน. FCF yield 13.9% แต่ payout >100%, dividend-cut risk (Motley Fool). ROIC 10.2% |
+| BMY | $66.94 (09-03, stockanalysis) | $68.64 | **-2.5%** | ❌ | +43% YoY, แตะ 52W high $68.10. ROIC 21.7%, FCF yield 10.4% — quality ดีแต่ราคาไม่ beaten แล้ว |
+| MRK | $150.33 (09-04) | $156.92 (08-25) | **-4.2%** | ❌ | +45% YTD, +19% ใน 1 เดือน. Keytruda LOE 2028 CEO เรียก "hill not cliff". FCF yield ร่วงเหลือ 3.8% |
+| GILD | $149.65 (stockanalysis) | $157.29 | **-4.9%** | ❌ | Re-rated. ROIC 20-24% แต่ราคาใกล้ 52W high |
+| BDX | $184.74 (09-06) | $193.07 | **-4.3%** | ❌ | ฟื้นหลัง spin BioSciences/Diagnostics → Waters (ก.พ. 2026). FCF yield ~4%, ROIC 4.7-10% |
+| SOLV | $93.99 (แตะ high $93.60) | $93.60 | **+0.4% (ที่ high)** | ❌ | อยู่ที่ 52W high พอดี. FCF **ติดลบ** TTM (-$203M, separation costs). ROIC 5.6% |
+| BAX | ~$26.27 (09-01) | $30.00 | **-12.4%** | ❌ | **Dividend cut 94%** (พ.ย. 2025, $0.17→$0.01) = distress/impairment signal. ROIC 6.8% < WACC. FCF yield ~4.5%. แม้ผ่าน A ก็ fail B+C + Filter A "permanent impairment" flag |
+| VZ | $50.39 (09-02) | $51.68 | **-2.5%** | ❌ | Re-rated. FCF yield 10.8% สวย แต่ ROIC 6.2% < WACC + telecom secular pressure. ราคาไม่ beaten |
+| UPS | $103.50 (09-early) | $122.41 | **-15.5%** | ❌ | **Amazon ตัด volume >50% ภายในกลางปี 2026 (management-confirmed)** = structural volume decline → Filter A "permanent impairment" + Filter E overhang. Dividend coverage tightening (yield 6.4%). ROIC 16% ดีแต่ A + coverage fail |
+
+**ไม่มีตัวไหนไปถึง Filter B/C/D/E — ตายที่ Filter A ทั้งหมด** (ทุกตัว % จาก 52W high < 30%, หรือติด "permanent impairment" redefinition)
+
+### สรุป — Null result เป็น data point ที่ valid
+
+**Healthcare (pharma majors + medtech) ไม่มี beaten-down value ที่ชัดเจน ณ 2026-09-07** — 8/9 ตัว re-rate ไปใกล้ 52W high แล้ว (ตลาด near-ATH bid ทั้ง sector; "pharma is cheap" trade เล่นจบไปแล้วในปี 2026), ตัวที่ 9 (BAX) เป็น genuine distress (dividend cut 94% + ROIC < WACC).
+
+**นี่คือรอบที่ 3 ติดต่อกันที่ให้ผลแบบเดียวกัน:**
+- Round 28 (autos): เหลือแค่ APTV/LKQ ผ่าน A+B borderline · APTV → full analysis → **dual-gate FAIL**
+- Round 29 (pharma/medtech): **0 ผ่าน Filter A**
+
+→ ยืนยัน thesis ของ Funnel Redesign proposal (2026-09-06): ในตลาด near-ATH + Fed-hawkish การมี fast-track candidate = 0 **ไม่ใช่ screen พัง แต่เป็นสภาพตลาดจริง** — universe ของ "beaten-down + quality + cheap" หดตัวจนแทบไม่เหลือ. Filter D/E ยังไม่ได้ถูกทดสอบจริงรอบนี้ (ทุกตัวตายก่อนถึง D) แต่ funnel ทำงานถูก — คัด 9 ตัวออกด้วยต้นทุน ~9 WebSearch (~15K token) แทนที่จะเสีย full pipeline
+
+### แนะนำ (Max)
+1. **หยุด scout cross-sector value ชั่วคราว** จนกว่า (a) Sept FOMC 16-17 ก.ย. เปลี่ยน regime/sentiment หรือ (b) ตลาด pullback ≥5-10% เปิด universe ใหม่ — การ scan sector ต่อไปเรื่อยๆ ในตลาดนี้ = ผล null ซ้ำ
+2. **โฟกัส buy_list.md** — ชื่อที่วิเคราะห์แล้ว (ADI/GCT/MELI/ZETA/CHYM/OSCR/FSLR/QCOM/CNC) มี entry zone รอ pullback — นี่คือ ready-state ที่ถูกต้องสำหรับตลาดนี้
+3. **Backlog un-freeze** — regime = RISK-ON แล้ว (ตั้งแต่ 09-05), Scout Pause basis resolved → Charlie ควร un-freeze + re-stagger target dates ของ Pending Analysis ~31 tickers; MSFT/PG chronic (7th SLA reset, target 09-05 blown) — CIO ต้องตัดสิน: pipeline จริง หรือ archive ถาวร
+
+### Prune Pass Round 13 (Step 0)
+Round 12 (2026-09-06, APTV) เพิ่ง full cross-ref เมื่อวาน — **ไม่มี de-list ใหม่** (ไม่มี full analysis ใหม่ระหว่าง 09-06 → 09-07). LKQ (Round 28, target 2026-09-12) ยัง live. Round 29 ไม่เพิ่ม candidate → Pending Analysis คงเดิม. ไม่ทำ 31-ticker live re-price (Round 12 เพิ่งทำ, นอกขอบเขต).
+
+**Target analysis date:** N/A — ไม่มี candidate ใหม่
+
+*Max — 2026-09-07 | Scout Round 29 (Healthcare/Pharma mandate) — ZERO qualifying candidates (0/9 ผ่าน Filter A). รอบแรกภายใต้ Funnel Redesign — funnel คัดถูก, ต้นทุน ~15K แทน full pipeline. Null result ยืนยัน near-ATH tape ไม่มี fat pitch — แนะนำหยุด scout จน FOMC/pullback, โฟกัส buy_list.*
