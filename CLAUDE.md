@@ -185,10 +185,29 @@ CIO → "Max หาหุ้นใหม่"
 
 > **ที่มา:** ~2.5 เดือน (มิ.ย.–ก.ย. 2026) วิเคราะห์เต็ม ~20 ตัว, deploy 0. Root cause = scout screen เดิม (growth >20% + momentum) คัดแต่หุ้นที่เทรด premium multiple → gate ปฏิเสธ 20/20 อย่างถูกต้อง เพราะไม่มี MOS. **MOS มีได้เฉพาะในหุ้นที่ตลาดเกลียด/ทิ้งไปแล้ว ไม่ใช่หุ้นที่ตลาดรัก** (ดู `agent_notes/charlie/2026-09-01_strategic_note.md`). Scout screen นี้**ไม่ใช่ Return-side locked rule** — เปลี่ยนได้ (ไม่แตะ MOS threshold / conviction gate ที่ยังล็อกเหมือนเดิม)
 
-**Primary filter (บังคับ — candidate ต้องผ่านทั้ง A + B + C):**
-- **A. Beaten-down:** ราคาปัจจุบัน **ลง ≥ 30% จาก 52-week high** (บังคับ — นี่คือ filter ที่สำคัญที่สุด; ห้าม scout หุ้นที่อยู่ใน 10% ของ 52W high เว้นแต่ CIO สั่งตรง)
+**Primary filter (บังคับ — candidate ต้องผ่านทั้ง A + B + C + D + E) — D/E เพิ่ม `(TRIAL — review 2026-12-31)`:**
+
+> **ที่มา D/E/A-redef (2026-09-06):** deploy ล่าสุด ADSK 14 มิ.ย. → 25 full analyses + 6 re-analyses ใน 12 สัปดาห์ · deploy 0 · ~200-255K token/เคส. Root cause = scout คัด "beaten-down + ดูถูก + เป็นธุรกิจจริง" แต่ไม่ได้คัดสิ่งที่ gate เช็คจริง = (1) credible valuation gap และ (2) credible path ถึง conviction. Back-test 30 เคส: 26 reject ที่ scout · 3 learning-queue · 0 fast-track. ดู `agent_notes/charlie/2026-09-06_funnel_redesign_proposal.md`. **Trial 3 rounds (Round 28-30, post-FOMC → สิ้นปี), review 2026-12-31.** ยังไม่แตะ Return-side locked rules (MOS/conviction/40-30-30 ล็อกเหมือนเดิม)
+
+- **A. Beaten-down ด้วยเหตุผลที่ถูกต้อง (บังคับ — แก้นิยาม 2026-09-06):** ราคาปัจจุบัน **ลง ≥ 30% จาก 52-week high** (ยืนยันด้วย WebSearch ≥2 sources — ห้ามใช้ scout price จากแหล่งเดียว, ดู Price Verification block ด้านล่าง) **และ** Max ต้องระบุ **"beaten-down reason"** เป็นข้อความสั้นๆ จัดประเภทเป็น 1 ใน 2:
+  - ✅ **Cyclical / sentiment / temporary dislocation** — cycle trough, rate-driven overreaction, sector-wide selloff ที่ไม่แยกแยะ, one-time charge ที่จบแล้ว, litigation ที่มี precedent เอียงไปทาง resolve → **ผ่าน Filter A**
+  - ❌ **Permanent earnings-power impairment** — structural demand loss ที่ management ยืนยัน (เช่น APTV China, QCOM Apple modem), secular decline, regulatory regime change ที่ยังไม่ resolve และ default outcome = bearish (เช่น CNC/OSCR ACA), competitive moat erosion ที่ยืนยันด้วยตัวเลข market share → **deprioritize / reject ที่ scout** (ห้าม fast-track; ส่ง learning-queue ได้ถ้า CIO ต้องการ data point)
+  - ถ้า Max ไม่แน่ใจว่าจัดกลุ่มไหน → เขียนทั้ง 2 มุมใน scout note และ default เป็น learning-queue lane
+  - ห้าม scout หุ้นที่อยู่ใน 10% ของ 52W high เว้นแต่ CIO สั่งตรง
 - **B. Cheap on cash/asset:** FCF yield > 6% **หรือ** EV/EBITDA อยู่ bottom-third ของ 5-year history ตัวเอง **หรือ** P/B ต่ำกว่า 5Y median (สำหรับ financials/insurers)
 - **C. Still a real business:** ROIC > WACC (ล่าสุด TTM หรือ through-cycle) — กันไม่ให้เป็น value trap; ไม่ใช่ industry ที่ secular structural decline (เช่น linear TV, coal thermal, legacy retail)
+- **D. Credible valuation gap (บังคับ — เพิ่ม 2026-09-06 `TRIAL`):** ก่อนส่ง candidate เข้า pipeline Max ต้องทำ naive FV 1 รอบและยืนยันว่ามี **gap ≥ 20% ระหว่างราคาปัจจุบันกับ conservative FV**:
+  - **Naive FV = normalized/mid-cycle FCF ÷ WACC** (no-growth perpetuity) — ใช้ **through-cycle FCF ไม่ใช่ TTM peak** (ถ้าธุรกิจ cyclical: เฉลี่ย 5 ปี หรือ mid-cycle margin × normalized revenue). WACC ใช้ค่าประมาณ sector (7–9% mega-cap / 10–13% mid-cap / 13–16% small-cap หรือ EM)
+  - **Cross-check:** analyst consensus PT range (WebSearch ≥2 แหล่ง) — ถ้า Street PT median **ต่ำกว่า** ราคาปัจจุบัน = สัญญาณเตือน (candidate ตกรอบ). ถ้า Street PT สูงกว่ามาก (>25%) แต่ naive FV ต่ำกว่าราคา = ใช้ naive FV เป็นเกณฑ์ตัดสิน (Street อาจ extrapolate peak)
+  - **เกณฑ์ผ่าน (fast-track):** ราคาปัจจุบัน ≤ 0.80 × naive FV (มี MOS อย่างน้อย ~20% ก่อนเข้า pipeline)
+  - **เกณฑ์ก้ำกึ่ง (learning-queue):** ราคาปัจจุบัน 0.80–0.90 × naive FV
+  - **เกณฑ์ตกรอบ:** ราคาปัจจุบัน > 0.90 × naive FV **หรือ** ราคาอยู่ในช่วง ±10% ของ naive FV (ไม่มีที่ว่างให้ MOS 15% clear หลัง DCF เต็ม) → deprioritize
+  - Multiple-based cross-check: EV/EBITDA หรือ EV/Revenue ต้องอยู่ **bottom-third ของ 5Y history ตัวเอง** — ถ้าอยู่ >70th percentile ทั้งที่ราคา "ลง 30% จาก high" = high เดิมเป็น bubble, ตกรอบ
+- **E. Conviction viability (บังคับ — เพิ่ม 2026-09-06 `TRIAL` — soft-score):** candidate ต้องผ่าน **≥ 2 ใน 3** sub-criteria (ผ่านแค่ 1 → learning-queue lane; ผ่าน 0 → ตกรอบ):
+  1. **Moat กว้างพอ** — Wide หรือ Narrow+ ที่มีหลักฐานชัด (pricing power / switching cost / network effect / cost advantage ถาวร). Narrow ที่ margin ต่ำสุดใน peer group = ไม่ผ่าน sub-criterion นี้
+  2. **Through-cycle ROIC ชัดเจนเหนือ WACC** — spread ≥ +3pp ใน trailing 5Y average (ไม่ใช่แค่ TTM peak). ROIC ที่ **คร่อม** WACC (±2pp — เช่น APTV ~9–11% ≈ WACC 10%, MELI 14.2% ≈ 13%, peak-anchored, หรือ CNC/OSCR 4–8% < 8%) = ไม่ผ่าน
+  3. **ไม่มี unresolved structural / regulatory / governance / accounting overhang** — เช่น legislative binary ที่ยังไม่ resolve (ACA ePTC; right-to-repair NDAA), structural demand headwind ที่ management ยืนยันเอง (China), dual-class super-voting + insider selling pattern, active securities litigation past MTD / short-seller report ที่ยังไม่ถูก rebut, un-audited operational KPIs ที่เป็นแกน thesis
+  - **หมายเหตุ:** overhang ที่ **quantifiable + asymmetric payoff** (เช่น regulatory case ที่มี strong precedent for dismissal, probability-weighted) ยังส่ง learning-queue ได้ — ไม่ auto-reject
 
 **Price Verification ที่ scout stage (บังคับ — เพิ่ม 2026-09-04 หลัง ZETA +31% error 09-01 และ CNC +55.7% error 09-04 สองครั้งติดกัน):**
 - ราคาที่ใช้คำนวณ Filter A (% ลงจาก 52W high) และ Filter B (FCF yield/EV-EBITDA/P-B) ต้อง **WebSearch ≥2 sources cross-check ตั้งแต่ตอน scout scan** — ห้ามใช้ตัวเลขจาก source เดียว (เช่น stockanalysis.com อย่างเดียว) หรือจากบทความ/headline เก่าที่ไม่ระบุวันที่ชัดเจนมาคำนวณ % ลงจาก high
@@ -227,14 +246,17 @@ CIO → "Max หาหุ้นใหม่"
 - Check 1-2 (เลขคณิตล้วนๆ จากตัวเลขที่ scout มีอยู่แล้ว) → **Charlie ทำเอง ไม่ spawn agent** เป็น routing decision ไม่ใช่ investment judgment (ไม่ขัดกับ "ไม่วิเคราะห์เองเด็ดขาด") **นี่คือตัวกรองจริงตัวเดียวที่ SKIP ได้** — ติดข้อไหนข้อหนึ่ง = SKIP ทันที ต้นทุนเกือบ 0
 - Check 3 (red-flag search) → **Charlie ทำเอง ไม่ spawn Bear-lite แล้ว** (เดิม spawn subagent ใช้ ~43K token/ครั้งจาก agent framework overhead — พบจาก live test QCOM 2026-09-05 ว่าแพงเกินคุ้ม เพราะเคสส่วนใหญ่ไม่ติด check 1-2 อยู่แล้วต้องเข้า check 3 ทุกที ทำให้เสีย 43K ทุกตัวโดยไม่ได้กรองอะไรออกเพิ่ม) **check 3 ไม่ใช่ gate อีกต่อไป — เป็นแค่ context flag ส่งต่อให้ Bear ใน Full Pipeline** ไม่ตัดสิน SKIP เอง (เหตุผลเสริม: red flag แบบ GCT — insider selling/governance — ควรได้ Bear ประเมินเต็มรูปแบบ ไม่ใช่ Charlie ตัดสินเองว่าน่าเชื่อถือพอจะ SKIP หรือไม่ ตรงกับ CIO's learning-goal ที่อยากได้ analysis เต็มสำหรับเคสก้ำกึ่ง)
 
-**เกณฑ์ SKIP (รันตามลำดับ — ติดข้อไหนข้อหนึ่ง = SKIP ทันที, ไม่ติดสักข้อ = ไป Full Pipeline พร้อม flag จาก check 3 ถ้ามี):**
+**เกณฑ์ SKIP (รันตามลำดับ — ติดข้อไหนข้อหนึ่ง = REJECT/SKIP ทันที [`QUICK-SCREEN SKIP`], ไม่ติดสักข้อ = ไป Tier 1.5 Lane Assignment ด้านล่าง [ไม่ใช่ Full Pipeline ตรงๆ อีกต่อไป]):**
 
 | # | เช็ค | ข้อมูลจาก | เกณฑ์ SKIP | ถ้าไม่ถึงเกณฑ์ |
 |---|---|---|---|---|
-| 1 | ROIC แย่แค่ไหน | Scout Filter C | ROIC < 0.5× WACC **และ** แย่ลงต่อเนื่อง 2 ปี+ | → เช็ค 2 |
-| 2 | ราคาแพงเวอร์แค่ไหน | Scout Filter B → แปลงเป็น naive FV (ไม่ใช้ DCF เต็ม เช่น FCF÷WACC แบบ no-growth perpetuity) | ราคาปัจจุบัน > 1.5× naive FV | → **Full Pipeline** (ไม่ติด — ไป check 3 เป็น enrichment ไม่ใช่ gate) |
+| 1 | ROIC แย่แค่ไหน | Scout Filter C | ROIC < 0.5× WACC **และ** แย่ลงต่อเนื่อง 2 ปี+ | → เช็ค 2a |
+| 2a | ราคาแพงเวอร์แค่ไหน | Scout Filter B/D → naive FV (FCF÷WACC no-growth perpetuity, normalized FCF) | ราคาปัจจุบัน **> 1.5× naive FV** | → เช็ค 2b |
+| 2b | ราคาไม่มีที่ว่างให้ MOS เลยไหม (bidirectional — เพิ่ม 2026-09-06 `TRIAL`) | Scout Filter D naive FV | ราคาปัจจุบัน **อยู่ภายใน ±10% ของ naive FV** (Value bucket: ไม่มีทาง clear MOS ≥15% หลัง DCF เต็ม) **หรือ** ราคา > 0.95× naive FV สำหรับ Growth bucket | → ไม่ติดข้อไหนเลย → **Tier 1.5 Lane Assignment** |
 
-**Check 3 (enrichment เท่านั้น ไม่ gate):** Charlie WebSearch เอง 1-2 ครั้ง "[TICKER] short seller report" / "insider selling 2026" — ถ้าเจออะไร ใส่เป็น note แนบไปกับ dispatch ให้ Bear ตอน Full Pipeline (ให้ Bear เริ่มต้นได้เร็วขึ้น) **ไม่ว่าจะเจอหรือไม่เจอ ก็ยังส่งเข้า Full Pipeline เหมือนกัน** — ไม่มีทางที่ check 3 จะทำให้ SKIP อีกต่อไป
+**Check 2 bidirectional (เพิ่ม 2026-09-06 `TRIAL`):** เดิม SKIP เฉพาะขาแพงเวอร์ (>1.5×). เพิ่มขา SKIP กลาง — ราคาที่ "ไม่แพงจนเวอร์ แต่ก็ไม่มีที่ว่างให้ MOS clear" (±10% ของ naive FV). Charlie ทำเองเป็น arithmetic routing ไม่ spawn agent. Calibration: PGR ($205.90 vs naive FV ~$200 = +2.9%) / DXCM (+0.4%) / ABBV (+0.06%) / APTV (−6%) / ICE (+8.4%) ติดขา 2b ทุกตัว — SKIP ฟรี แทนที่จะเสีย ~200K/ตัว
+
+**Check 3 (enrichment เท่านั้น ไม่ gate):** Charlie WebSearch เอง 1-2 ครั้ง "[TICKER] short seller report" / "insider selling 2026" — ถ้าเจออะไร ใส่เป็น note แนบไปกับ dispatch ให้ Bear (fast-track full pipeline) หรือ Bear-lite (learning-queue) **ไม่ว่าจะเจอหรือไม่เจอ ก็ยังส่งเข้า Tier 1.5 Lane Assignment เหมือนกัน** — check 3 ไม่ทำให้ SKIP และไม่ตัดสิน lane (lane มาจาก Filter D+E) แต่ red flag แบบ governance/insider-selling อาจดึง candidate ที่ก้ำกึ่งลง learning-queue แทน fast-track
 
 **Token cost (v2, calibrated จาก live test QCOM 2026-09-05):** check 1-2 ≈ 0 · check 3 ≈ 1-3K (Charlie WebSearch ตรงๆ ไม่ spawn agent, ถูกกว่า Bear-lite เดิม ~15-40 เท่า) → SKIP ที่ check 1-2 ใช้ ~0-3K รวม, ผ่านไป Full Pipeline เสียแค่ ~1-3K เพิ่มจากเดิม (ไม่ใช่ 43K แบบ v1)
 
@@ -243,6 +265,24 @@ CIO → "Max หาหุ้นใหม่"
 **คาดหวังตามจริง:** ประหยัดเฉพาะเคสแพงเวอร์ชัดเจนที่ติด check 1-2 เท่านั้น (~20-22% ของ candidate ในอดีต, ~200K/เคส) — เคสที่เหลือเสีย overhead แค่ ~1-3K ไม่ใช่ 43K แล้ว ทำให้ไม่มีต้นทุนแฝงที่กัดกินกำไรสุทธิเหมือน v1
 
 **Logging:** บันทึกใน `portfolio/deployment_log.md` เป็น tag แยก **`QUICK-SCREEN SKIP`** ไม่ปนกับ `SKIPPED` ปกติ (ที่มาจาก full pipeline fail gate) เพื่อไม่ให้ Vera's Funnel Health tracking สับสนระหว่าง "กรองถูกตั้งแต่ต้น" กับ "ผ่าน full pipeline แล้ว fail gate"
+
+### Tier 1.5 — Lane Assignment (เพิ่ม 2026-09-06 `TRIAL — review 2026-12-31` — respect CIO learning objective)
+
+หลัง candidate ผ่าน Tier 1 (ไม่ SKIP) Charlie จัด lane จาก Scout Filter D + E:
+
+| Lane | เงื่อนไข | Pipeline | Token budget |
+|------|---------|----------|--------------|
+| **Fast-track** | ผ่าน Filter D ชัด (ราคา ≤ 0.80× naive FV) **และ** Filter E ครบ 3/3 | Full pipeline ปกติ (Atlas → Emma∥Quinn → Bear → Charlie → Morgan QA → Leo → Vera → Max) | ~200–255K |
+| **Learning-queue** | ก้ำกึ่ง — ผ่าน A+B+C แต่ Filter D อยู่ 0.80–0.90× **หรือ** Filter E ผ่านแค่ 2/3 **หรือ** beaten-down reason จัดกลุ่มไม่ชัด | **Tier 1.5 lightweight เท่านั้น:** Emma standalone FV (DCF + moat + 1 peer table) + Bear-lite challenge (5 risks + 3 bear-flip) — **ไม่มี Atlas Data Package เต็ม / ไม่มี Quinn / ไม่มี Morgan QA / ไม่ update dashboard REPORTS** | ~30–50K |
+| **Reject** | ไม่ผ่าน A/B/C **หรือ** Filter D > 0.90× **หรือ** Filter E 0–1/3 **หรือ** beaten-down reason = permanent impairment | บันทึก `QUICK-SCREEN SKIP` ใน deployment_log.md | ~0–3K |
+
+**Learning-queue output:** journal เข้า `agent_notes/charlie/learning_queue_YYYY-MM.md` (ไฟล์เดียวต่อเดือน, append) — ระบุ ticker / lightweight FV / conviction estimate / ทำไมไม่ fast-track / 6-month price checkpoint date. **ไม่เข้า `portfolio/decisions.md` เป็น formal recommendation** เว้นแต่ CIO สั่งยกระดับ
+
+**CIO override (บังคับมีทางออก):** CIO สั่ง fast-track candidate ใดก็ได้ตรงๆ — bypass lane assignment ทั้งหมด (precedent FSLR 2026-09-03)
+
+**ยกระดับ learning-queue → fast-track เมื่อ:** (a) Emma lightweight FV พบ MOS ≥ 25% (Filter D miscalibrated ทางอนุรักษ์เกิน) **หรือ** (b) overhang ที่กด Filter E resolve จริง (litigation dismissed, legislation passed, China stabilizes) **หรือ** (c) ราคา pull back ≥ 15% เพิ่มจากตอน scout
+
+**Logging tag ใหม่:** `LEARNING-QUEUE` ใน `portfolio/deployment_log.md` (แยกจาก `SKIPPED` / `QUICK-SCREEN SKIP`) — Vera แยกออกจาก Funnel Health denominator
 
 **ไม่ใช้กับ:** OPEN-position re-verify (มี lightweight tier แยกอยู่แล้วตาม Re-Analysis Trigger Rule — ไม่เกี่ยวกัน ไม่แตะ)
 
@@ -607,11 +647,18 @@ Leo เพิ่ม object เข้า `REPORTS` array — รวม `fullConte
    - Trades ที่ Bear challenge หนัก (≥2 bear flips triggered) → outcome
    - Force Deploy trades → outcome
 5. **Tier Verdict:** Pass / Good (ตาม 3-Tier Return Target — ห้าม judge ด้วย Stretch)
-6. **Funnel Health / Deploy-Rate Check (เพิ่ม 2026-09-01):**
-   - **Deploy rate** = # DEPLOYED ÷ # full analyses (จาก `portfolio/deployment_log.md`) รายไตรมาส
-   - **Baseline expectation:** RISK-ON regime → ~20–30% | TRANSITIONAL-CAUTIOUS → ~5–15% | RISK-OFF → ~0–5% (Force Deploy suspended)
-   - **Near-miss log:** ทุก analysis ที่ conviction 6.0–6.4 (Growth) หรือ 6.5–6.9 (Value) **พร้อม MOS ผ่าน** → Vera บันทึกแยก + track 6-month realized outcome (หุ้นขึ้นหรือลง) — สะสมข้อมูลว่า conviction gate ตึงเกินไปไหม สำหรับ rolling-8Q review
-   - **Funnel Diagnostic Trigger:** deploy rate < 10% ใน RISK-ON **ติดกัน 2 ไตรมาส** → mandatory diagnostic: (a) ตลาดแพงจริง? [เทียบ S&P fwd P/E percentile] (b) scout screen คัดผิด? [กี่ % ของ analyses ที่ราคาอยู่ใน 20% ของ 52W high] (c) gate ตึงเกิน? [near-miss realized outcomes] → flag ให้ Charlie + CIO พร้อมข้อมูล 3 ข้อนี้ ไม่ใช่แค่ "นานแล้วไม่ได้ซื้อ"
+6. **Funnel Health — 3-stage (แก้ 2026-09-06 `TRIAL — review 2026-12-31`; เดิม single deploy-rate เพิ่ม 2026-09-01):**
+
+   | Stage | นิยาม | Baseline คาดหวัง (RISK-ON) |
+   |-------|-------|---------------------------|
+   | **Scout → Fast-track rate** | # fast-track ÷ # candidates ที่ผ่าน A+B+C | ~15–30% (ต่ำกว่านี้ต่อเนื่อง = universe ยังผิด หรือ Filter D/E เข้มเกิน) |
+   | **Fast-track → Deploy rate** | # DEPLOYED ÷ # fast-track full analyses | ~40–60% (metric ที่สะท้อน gate calibration จริง — fast-track = ทีมเชื่อว่าน่าจะผ่าน) |
+   | **Learning-queue realized outcome** | 6-month price move ของ Tier 1.5 names (แยก track, **ไม่อยู่ใน deploy-rate denominator**) | informational — ป้อน rolling-8Q gate review |
+
+   - **Overall conversion** (scout → deploy) ยัง track ต่อเป็น context แต่**ไม่ใช่ judge metric หลักอีกต่อไป** (Filter D/E ตั้งใจตัด universe ก่อนถึง pipeline)
+   - **Near-miss log (คงเดิม):** ทุก analysis ที่ conviction 6.0–6.4 (Growth) หรือ 6.5–6.9 (Value) **พร้อม MOS ผ่าน** → Vera บันทึกแยก + track 6-month realized outcome สำหรับ rolling-8Q review
+   - **Funnel Diagnostic Trigger (แก้):** **Fast-track → Deploy rate < 20%** ใน RISK-ON **ติดกัน 2 ไตรมาส** (เดิมใช้ overall deploy rate < 10%) → mandatory diagnostic: (a) ตลาดแพงจริง? [S&P fwd P/E percentile] (b) scout screen คัดผิด? [% ของ fast-track ที่ราคาอยู่ใน 20% ของ 52W high] (c) gate ตึงเกิน? [near-miss + learning-queue realized outcomes] → flag ให้ Charlie + CIO พร้อมข้อมูล 3 ข้อนี้
+   - **Trial review 2026-12-31:** Vera + Charlie ทบทวน (a) fast-track → deploy rate (b) learning-queue names ที่ "น่าจะ fast-track" กี่ตัว (c) false-negative จริงกี่ตัว → ตัดสิน lock / modify / revert Filter D/E
 
 ### Pre-Commitment Trigger Check (อัตโนมัติ — ทุกรายไตรมาส)
 - Rolling 4Q alpha < 0 → flag review ให้ Charlie + CIO ทันที

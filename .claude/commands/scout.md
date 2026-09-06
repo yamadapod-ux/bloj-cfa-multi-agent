@@ -84,10 +84,12 @@ WebSearch: "[sector] stocks trading below book value / historical multiple 2026 
 
 ### Step 4 — Filter ตาม Scout Filter Rules VALUE-FIRST (CLAUDE.md — ใช้เกณฑ์นี้เท่านั้น)
 
-**Primary — candidate ต้องผ่านทั้ง A + B + C:**
-- **A. Beaten-down (บังคับ):** ราคาปัจจุบัน **ลง ≥ 30% จาก 52-week high** — ถ้าอยู่ใน 10% ของ 52W high ให้ตกรอบทันที (เว้นแต่ CIO สั่งตรง)
+**Primary — candidate ต้องผ่านทั้ง A + B + C + D + E** (D/E `TRIAL — review 2026-12-31`, ดู CLAUDE.md § Scout Filter Rules สำหรับ exact text):
+- **A. Beaten-down ด้วยเหตุผลที่ถูกต้อง (บังคับ):** ราคาลง **≥ 30% จาก 52W high** (WebSearch ≥2 sources) **+ ระบุ "beaten-down reason"**: ✅ cyclical/sentiment/temporary → ผ่าน · ❌ permanent earnings-power impairment (structural demand loss ที่ mgmt ยืนยัน / secular decline / regulatory regime change default-bearish / moat erosion วัดได้) → deprioritize/reject · ไม่ชัด → 2 มุม + default learning-queue
 - **B. Cheap:** FCF yield > 6% **หรือ** EV/EBITDA bottom-third ของ 5Y history **หรือ** P/B < 5Y median (financials)
-- **C. Real business:** ROIC > WACC + ไม่ใช่ secular structural decline industry (linear TV, thermal coal, legacy retail ฯลฯ)
+- **C. Real business:** ROIC > WACC + ไม่ใช่ secular structural decline industry
+- **D. Credible valuation gap:** naive FV = **normalized/mid-cycle FCF ÷ WACC** (no-growth perpetuity). Street PT cross-check ≥2 แหล่ง. **fast-track:** ราคา ≤ 0.80× naive FV · **learning-queue:** 0.80–0.90× · **ตกรอบ:** > 0.90× หรือ ±10% ของ naive FV
+- **E. Conviction viability (soft-score, ≥2/3):** (1) moat Wide/Narrow+ มีหลักฐาน (2) through-cycle ROIC spread ≥ +3pp เหนือ WACC (5Y avg; คร่อม = ไม่ผ่าน) (3) ไม่มี unresolved structural/regulatory/governance/accounting overhang · ผ่าน 1/3 → learning-queue · 0/3 → reject
 
 **Secondary (bonus ไม่ใช่ gate):** revenue growth, catalyst ที่มองเห็น (earnings inflection / spin-off / activist / cycle turn / regulatory resolution), insider buying / buyback ที่ราคานี้
 
@@ -95,9 +97,9 @@ WebSearch: "[sector] stocks trading below book value / historical multiple 2026 
 - ห้ามซ้ำกับที่ถืออยู่ (`dashboard/portfolio.js`), เคยวิเคราะห์ไปแล้ว, หรืออยู่ใน watchlist ปัจจุบัน (live table + Archive)
 - Sector ซ้ำได้ แต่ **ต้องหมุน mandate** (ห้ามกระจุก sector เดียวหลาย round ติด)
 
-**ทุก candidate ที่ผ่าน → ต้องกำหนด entry zone (price range) + stop ตั้งแต่ scout** (Scout → Analysis SLA — CLAUDE.md)
+**ทุก candidate ที่ผ่าน → ต้องกำหนด entry zone (price range) + stop ตั้งแต่ scout** (Scout → Analysis SLA — CLAUDE.md) **+ lane ที่แนะนำ** (fast-track / learning-queue จาก Filter D+E — Charlie จัด lane สุดท้ายที่ Tier 1)
 
-เลือก 3–6 ตัวที่ผ่าน A+B+C ชัดเจน — ถ้าหาไม่ครบ 3 ตัวที่ผ่าน A+B+C จริง **ให้รายงานว่า "sector นี้ยังไม่มี value ที่ชัดเจน" ดีกว่าฝืนใส่ตัวที่ไม่ผ่าน A**
+เลือก 3–6 ตัวที่ผ่าน A+B+C+D+E ชัดเจน — ถ้าหาไม่ครบ 3 ตัว **ให้รายงานว่า "sector นี้ยังไม่มี value ที่ชัดเจน" ดีกว่าฝืนใส่ตัวที่ไม่ผ่าน A/D**
 
 ---
 

@@ -972,3 +972,31 @@ APTV (Aptiv PLC) = **first genuine VALUE-FIRST scout candidate ที่ scout p
 **Action:** APTV → watchlist Pending Analysis ยัง live (ไม่ archive ตาม Superseded — วิเคราะห์เสร็จแล้ว) — *แก้: archive per De-list Rule #3 Superseded* | deployment_log SKIPPED | ไม่เข้า buy_list.md | ไม่ trigger Max Consultation Rule (SKIPPED, ไม่มี capital action, fresh pipeline)
 
 *อัปเดตล่าสุด: 2026-09-06 — APTV VALUE-FIRST screen first valid test: screen คัด beaten-down ถูก, gate คัด business-ที่-ไม่-compound-value ถูก, HOLD/NO DEPLOY*
+
+---
+
+## Scout Funnel Redesign — ENCODED 2026-09-06 (TRIAL, review 2026-12-31)
+
+**Trigger:** CIO ถาม "gate ดีขึ้นไหม / ควรปรับปรุงยังไง — ที่ต้องการคือ scout หุ้นดีๆ แล้ววิเคราะห์เฉพาะตัวที่มีแนวโน้มผ่าน". Charlie proposal `agent_notes/charlie/2026-09-06_funnel_redesign_proposal.md` → CIO อนุมัติ "encode เป็น trial ตามที่ Charlie เสนอ".
+
+**Diagnosis:** deploy ล่าสุด ADSK 14 มิ.ย. → 25 full analyses + 6 re-analyses ใน 12 สัปดาห์, deploy 0, ~200-255K token/เคส. **Gate ตัดสินถูก 30/30 เคส** (alpha +0.42% ยังบวก → Return-side locked, ห้ามแตะ). ปัญหา = scout ป้อน universe ที่ไม่มีทางผ่าน gate.
+
+**Encoded (resource-triage layer เท่านั้น — ไม่แตะ MOS/conviction/40-30-30):**
+1. **Scout Filter D** — credible valuation gap: naive FV = normalized/mid-cycle FCF ÷ WACC. fast-track ≤0.80× · learning-queue 0.80-0.90× · reject >0.90× หรือ ±10%
+2. **Scout Filter E** — conviction pre-screen (soft-score ≥2/3): moat / through-cycle ROIC spread ≥+3pp / no unresolved overhang
+3. **Filter A redefinition** — "beaten-down reason" ต้องเป็น cyclical/temporary dislocation ไม่ใช่ permanent earnings-power impairment (APTV China / CNC ACA = reject)
+4. **Tier 1 check 2 bidirectional** — เพิ่มขา SKIP กลาง (ราคา ±10% ของ naive FV = ไม่มีที่ว่างให้ MOS)
+5. **Tier 1.5 Lane Assignment** — fast-track (full pipeline ~200K) / learning-queue (Emma FV + Bear-lite ~40K, journal เข้า `agent_notes/charlie/learning_queue_YYYY-MM.md`) / reject (~0-3K). CIO override ได้ทุกเมื่อ
+6. **Vera Funnel Health 3-stage** — Scout→Fast-track rate / Fast-track→Deploy rate (metric ใหม่ที่สะท้อน gate calibration) / Learning-queue realized outcome (แยก denominator). Diagnostic trigger: Fast-track→Deploy < 20% RISK-ON 2Q ติด
+
+**Back-test 30 เคส:** 26 reject ที่ scout · 3 learning-queue (ACGL v1, TOST, GCT) · **0 fast-track** — สะท้อนว่าตลาด near-ATH ไม่มี fat pitch จริง ไม่ใช่ screen พัง. ประหยัด ~4-5.5M token/ไตรมาส
+
+**บทเรียน:**
+1. **"beaten-down + ดูถูก" ≠ "จะผ่าน gate"** — VALUE-FIRST pivot (2026-09-01) แก้ทิศทางถูกแต่ไม่พอ: หุ้นที่ผ่าน A+B+C แต่ fail gate = ราคาลงเพราะ permanent impairment ไม่ใช่ temporary dislocation, หรือ ROIC ≈ WACC ไม่ compound
+2. **Gate discipline ไม่ใช่ปัญหา — funnel efficiency ต่างหาก** — pre-commitment rule ป้องกันการแก้ gate เพราะหงุดหงิด (สถานการณ์ที่ rule ออกแบบมาพอดี). สิ่งที่แก้ได้คือ "อะไรควรได้ full pipeline"
+3. **2-lane รักษา learning objective** — ไม่คัดแรงจนไม่ได้เรียนรู้ ([[feedback_learning_over_returns]] + [[feedback_cio_selection_gate]])
+4. **ไม่การันตี deploy เพิ่ม** — deploy-0 ส่วนใหญ่เป็นเรื่องตลาด (CLAUDE.md Regime-adaptive note). redesign แก้ token waste ต่อการยืนยัน no-deploy
+
+**Review 2026-12-31:** Vera + Charlie ทบทวน fast-track→deploy rate + learning-queue "น่าจะ fast-track" กี่ตัว + false-negative จริง → lock / modify / revert
+
+*อัปเดตล่าสุด: 2026-09-06 — Scout Funnel Redesign encoded (Filter D/E/A-redef + Tier 1 2b + Tier 1.5 lanes + Vera 3-stage), TRIAL review 2026-12-31*

@@ -388,15 +388,17 @@ WebFetch overview: `https://stockanalysis.com/stocks/[ticker]/` — ดึง **
 
 **Step 4 — Filter ตาม Scout Filter Rules VALUE-FIRST (CLAUDE.md เท่านั้น — ป้องกันไฟล์ drift)**
 
-Primary — ต้องผ่านทั้ง A + B + C:
-- **A. Beaten-down (บังคับ):** ราคาลง **≥ 30% จาก 52W high** — ถ้าอยู่ใน 10% ของ 52W high → ตกรอบ (เว้นแต่ CIO สั่งตรง)
+Primary — ต้องผ่านทั้ง **A + B + C + D + E** (D/E `TRIAL — review 2026-12-31`):
+- **A. Beaten-down ด้วยเหตุผลที่ถูกต้อง (บังคับ):** ราคาลง **≥ 30% จาก 52W high** (WebSearch ≥2 sources) **+ ระบุ "beaten-down reason"**: ✅ cyclical/sentiment/temporary dislocation → ผ่าน · ❌ permanent earnings-power impairment (structural demand loss ที่ mgmt ยืนยัน / secular decline / regulatory regime change ที่ default = bearish / moat erosion วัดได้) → deprioritize/reject. ไม่ชัด → เขียน 2 มุม + default learning-queue
 - **B. Cheap:** FCF yield > 6% **หรือ** EV/EBITDA bottom-third ของ 5Y history **หรือ** P/B < 5Y median (financials)
 - **C. Real business:** ROIC > WACC + ไม่ใช่ secular-decline industry
+- **D. Credible valuation gap:** naive FV = **normalized/mid-cycle FCF ÷ WACC** (no-growth perpetuity, ไม่ใช่ TTM peak). WACC ~7-9% mega / 10-13% mid / 13-16% small/EM. Cross-check Street PT (≥2 แหล่ง — ถ้า median < ราคา = ตกรอบ). **ผ่าน (fast-track):** ราคา ≤ 0.80× naive FV · **ก้ำกึ่ง (learning-queue):** 0.80–0.90× · **ตกรอบ:** > 0.90× หรือ ±10% ของ naive FV. + EV/EBITDA หรือ EV/Rev ต้อง bottom-third ของ 5Y ตัวเอง
+- **E. Conviction viability (soft-score, ผ่าน ≥2/3):** (1) moat Wide/Narrow+ มีหลักฐาน (Narrow margin ต่ำสุด peer = ไม่ผ่าน) (2) through-cycle ROIC spread ≥ +3pp เหนือ WACC ใน 5Y avg (คร่อม ±2pp = ไม่ผ่าน) (3) ไม่มี unresolved structural/regulatory/governance/accounting overhang. ผ่าน 1/3 → learning-queue · 0/3 → reject
 
 Secondary (bonus): revenue growth, catalyst มองเห็น, insider buying/buyback
 Hard exclusions: ซ้ำ position/analyzed/watchlist(live+archive); ต้องหมุน sector mandate
-ทุก candidate ที่ผ่าน → กำหนด **entry zone + stop ตั้งแต่ scout** (Scout → Analysis SLA)
-ถ้าหา 3 ตัวที่ผ่าน A+B+C จริงไม่ได้ → รายงาน "sector นี้ยังไม่มี value ชัดเจน" ดีกว่าฝืน
+ทุก candidate ที่ผ่าน → กำหนด **entry zone + stop ตั้งแต่ scout** (Scout → Analysis SLA) + ระบุ **lane ที่แนะนำ** (fast-track / learning-queue) จาก Filter D+E
+ถ้าหา 3 ตัวที่ผ่าน A+B+C+D+E จริงไม่ได้ → รายงาน "sector นี้ยังไม่มี value ชัดเจน" ดีกว่าฝืน (Charlie จัด lane สุดท้ายที่ Tier 1)
 
 **Step 5 — เขียน Scout Report**
 

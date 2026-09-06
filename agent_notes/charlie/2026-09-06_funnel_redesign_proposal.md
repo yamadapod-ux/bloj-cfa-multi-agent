@@ -1,6 +1,6 @@
 # Charlie Funnel Redesign Proposal — 2026-09-06
 
-**สถานะ:** DRAFT — เสนอ CIO review เท่านั้น · **ยังไม่ encode** เข้า `CLAUDE.md` / `.claude/agents/max.md`
+**สถานะ:** ✅ **APPROVED + ENCODED 2026-09-06** — CIO อนุมัติ "Encode เป็น trial ตามที่ Charlie เสนอ". Encoded เข้า `CLAUDE.md` (§ Scout Filter Rules Filter D+E+A-redef · § Tier 1 check 2b + Tier 1.5 Lane Assignment · § Vera Funnel Health 3-stage) + `.claude/agents/max.md` (Mode 1 Step 4) + `.claude/commands/scout.md` (Step 4) ด้วย tag `(TRIAL — review 2026-12-31)`. Trial: Scout Round 28–30 (post-FOMC → สิ้นปี). **ยังไม่ใช้กับ Return-side locked rules.**
 **Trigger:** CIO ถาม (2026-09-06) — "gate ดีขึ้นไหม หรือควรปรับปรุง — ที่ต้องการคือ scout หุ้นดีๆ แล้วค่อยวิเคราะห์หุ้นที่มีแนวโน้มจะผ่าน บลจ. เรา"
 **Precedent:** `agent_notes/charlie/2026-09-01_strategic_note.md` (scout re-orientation VALUE-FIRST + gate hold) · `feedback_learning_over_returns.md` · `feedback_cio_selection_gate.md`
 **ขอบเขต:** แก้เฉพาะ **resource-triage layer** (scout screen + Tier 1) — **ไม่แตะ Return-side locked rules** (ยืนยันในข้อ 2)
