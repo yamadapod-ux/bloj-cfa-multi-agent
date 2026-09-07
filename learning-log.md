@@ -1000,3 +1000,23 @@ APTV (Aptiv PLC) = **first genuine VALUE-FIRST scout candidate ที่ scout p
 **Review 2026-12-31:** Vera + Charlie ทบทวน fast-track→deploy rate + learning-queue "น่าจะ fast-track" กี่ตัว + false-negative จริง → lock / modify / revert
 
 *อัปเดตล่าสุด: 2026-09-06 — Scout Funnel Redesign encoded (Filter D/E/A-redef + Tier 1 2b + Tier 1.5 lanes + Vera 3-stage), TRIAL review 2026-12-31*
+
+---
+
+## LKQ Full Analysis 2026-09-08 — Learning-Queue Lane First Real Run (HOLD/WATCH, single-gate FAIL)
+
+**Trigger:** CIO "scout เลย เราแค่อยากรู้ว่า tier 1 2 3 ทำงานเป็นยังไง" → LKQ (Scout Round 28 secondary) ใช้เป็น demo. Tier 1 ไม่ SKIP → Tier 1.5 lane = **learning-queue** (Filter E 2/3) → lightweight (Emma-lite FV $37/MOS +31% → escalate trigger; Bear-lite $17.50) → escalate → full pipeline.
+
+**ผล full pipeline:** Blended FV **$32.13** (Emma $40×0.40 + Quinn $35.78×0.30 + Bear $18×0.30) → **MOS +20.5% PASS** ≥15% Value gate — **แต่ Conviction 6.33 < 7.0 → single-gate FAIL** (pattern APTV/TOST/GCT). **HOLD / WATCH — NO DEPLOY.** Max SKIPPED. ไม่เพิ่ม buy_list.md (Bear objection).
+
+**บทเรียนหลัก:**
+1. **CIO เห็นกลไก tier ครบ 3 เส้นทางแล้ว:** fast-track (APTV — full pipeline → dual-gate FAIL) · learning-queue → escalate (LKQ — lightweight → escalate → full → single-gate FAIL) · reject ที่ scout (Round 29 — 9 ตัว, ~15K token)
+2. **🔴 learning-queue lane cost calibration (สำคัญ — Vera trial review 2026-12-31):** lightweight จริง = **142K** (Emma 84K + Bear 58K) สูงกว่าประเมิน ~30-50K ถึง **3-4×**. เคสนี้ escalate → + full ~200K = **342K > direct fast-track ~200K**. **ถ้า learning-queue เคสส่วนใหญ่จบด้วย escalate → lane นี้เพิ่มต้นทุนสุทธิ ไม่ลด.** ต้อง track % escalate vs journal-only; ถ้า >50% escalate → escalate-by-default เมื่อ Filter D ≤ 0.80×
+3. **Filter E sub-2 (through-cycle ROIC spread ≥+3pp) เข้มเกินสำหรับ goodwill-heavy business** — LKQ tangible ROIC ~14% แต่ reported ~6.4% (goodwill 83% ของ equity). Filter E ตัด LKQ ลง learning-queue เพราะ reported spread ~+2pp — แต่ full pipeline พบ MOS +20.5% ผ่าน gate จริง (conviction fail เท่านั้น). Sub-2 ควรพิจารณา tangible ROIC เป็น alternative test
+4. **Filter D single-point naive FV ซ่อน dispersion** — scout naive $35 ≈ Emma full $40 (ถูกทิศ) แต่ Bear $18 = gap 2.2× เมื่อ TV > 75% ของ EV. Filter D ควรมี "high-uncertainty flag" สำหรับ levered + TV-heavy business
+5. **lightweight ผลตรงกับ full เชิงทิศทาง** — Emma $37→$40, Bear $17.50→$18, escalate-lean → HOLD/WATCH. lightweight ไม่ได้ให้ข้อมูลผิด แค่ไม่ได้ประหยัดต้นทุนในเคสนี้
+6. **MOS ที่เปราะ ≠ MOS ที่แข็ง** — LKQ MOS +20.5% ผ่าน gate แต่หายเหลือ +1% ถ้า margin −75bps + WACC +50bps (Bear มี verified evidence ทั้งคู่). CFA discipline: MOS ที่พึ่ง assumption ที่ challenge ได้ ไม่ควร override conviction gap. Conviction gate ทำงานถูก — จับ "FV band กว้างเกิน" ที่ MOS point-estimate ไม่จับ
+
+**Session note:** งานถูก interrupt หลัง Morgan QA (session limit resets 3am Bangkok), resumed same session ตาม Session Interruption/Resume Protocol (**8th instance**) — 0 duplicates, dated files verified. ดู `session_logs/2026-09-08_LKQ.md` + `agent_notes/charlie/learning_queue_2026-09.md`
+
+*อัปเดตล่าสุด: 2026-09-08 — LKQ learning-queue lane first real run: escalate → full → single-gate FAIL (conviction). Lane cost 142K > estimate 3-4×; Filter E sub-2 อาจเข้มเกินสำหรับ goodwill-heavy names — flagged for Vera 2026-12-31.*

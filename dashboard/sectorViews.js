@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-09-06 17:00";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-09-08 14:30";
 
 const SECTOR_VIEWS = [
   {
@@ -441,5 +441,47 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-09-06",
     author: "Atlas",
     trigger: "Byproduct of APTV Phase 1 Macro Brief — first sector-level view on auto suppliers / auto tech (no volume tailwind + China structural shift + EV-adoption slowdown + tariff 2-directional overhang, vs near-trough valuation + intact content-per-vehicle thesis), applies beyond APTV to BWA/LEA/MGA/VC",
+  },
+  {
+    sector: "Auto Aftermarket / Collision-Repair Parts Distribution",
+    slug: "auto-aftermarket-collision-parts",
+    stance: "CAUTIOUS",
+    cyclePosition: "Late-cycle defensive (maintenance demand non-discretionary) — but collision sub-segment in structural volume deflation",
+    headline: "Aging-fleet secular tailwind ของจริงและหนุนทั้ง demand pool — แต่ collision-parts sub-segment เจอ claims-frequency deflation + total-loss mix shift + ADAS displacement พร้อมกัน; retail names (ORLY/AZO) แข็งแต่จ่าย premium multiple, distribution/collision names (LKQ/GPC/AAP) ถูกแต่ ROIC เสื่อมเข้าใกล้ WACC — selective, ไม่ broad-buy",
+    thesis: "การวิเคราะห์ LKQ (2026-09-08) เปิดเผยมุมมองระดับ sub-sector ที่แยกจาก entry 'Auto Suppliers / Auto Tech' (OEM-supply) เดิม — auto aftermarket / collision-repair parts distribution (LKQ, GPC, DORM ฝั่ง distribution/supplier; ORLY, AZO, AAP ฝั่ง retail store) เจอ dynamic ที่ต่างจาก OEM supply chain สิ้นเชิง: demand ไม่ผูกกับ new-vehicle production แต่ผูกกับ (ก) car parc + vehicle age, (ข) miles driven, (ค) collision claim frequency, (ง) insurer parts-mix policy. **แรงหนุนเชิงโครงสร้าง (บวกทั้ง sub-sector):** avg US vehicle age ทำสถิติ 12.8 ปี (passenger cars 14.5 ปี), scrappage นิ่ง 4.5%, new-vehicle affordability แย่ลงจาก Fed hawkish (ATP สูง + auto-loan rate สูง) → เจ้าของยืดอายุรถ → demand pool ของ out-of-warranty aftermarket/recycled parts โตต่อเนื่อง; รถอายุ >7 ปี = 45% ของ repairable claims ปี 2025 (+9 pts vs 2019) และเป็นกลุ่มที่ ADAS calibration ยังแตะไม่ถึง; repair/maintenance cost +45% ใน 5 ปี ทำให้ insurers มี incentive spec alternative (non-OEM) parts เพื่อคุม claim severity. **แรงกดดันเชิงโครงสร้าง (เฉพาะ collision sub-segment — LKQ/GPC collision exposure):** repairable collision claims หดตัว −10%+ ในปี 2025 และคาดหดต่อปี 2026 (safer cars + ADAS ป้องกันการชน + miles/driver ยังต่ำกว่า pre-2019 marginally); total-loss frequency ทำสถิติ 23.1% ของ claims ทั้งหมด (รถ total = ไม่ซื้ออะไหล่ซ่อม); ADAS calibration ปรากฏบน 28.3% ของ repairable appraisals (จาก 21.8%, +30% YoY) — รถใหม่ที่มี ADAS ต้องใช้ OEM parts + calibration ไม่ใช่ recycled/aftermarket; collision severity −2.5% YoY H1 2026. **แรงต่างระหว่าง retail vs distribution:** retail auto-parts (ORLY op margin 20%, ROIC ~23%; AZO op margin 19%, ROIC ~28%) demand เป็น maintenance/DIY/DIFM ที่ non-discretionary และ non-collision → resilient, gross margin ~52%, pricing power สูง — แต่เทรด premium (ORLY EV/EBITDA ~25x, AZO ~15x) ราคา price-in tailwind หมดแล้ว. Distribution/collision (LKQ EV/EBITDA 8.2x / fwd P/E 8.5x / FCF yield 9.7%; GPC EV/EBITDA ~12.8x; AAP distressed ROIC ~0%) ถูกกว่ามาก แต่ margin กำลังถูกบีบ (LKQ operating margin 11.3%→7.2% ใน 4 ปี, ROIC 11.4%→6.4% เข้าใกล้ WACC ~6.5–7%) — cheap อาจ justified บางส่วนถ้า normalized margin กู้ไม่กลับ. **Cyclical swing factor ปี 2027:** auto insurance premium hikes moderating (จาก double-digit ปี 2023–24 เหลือ +1% H1 2026) → sticker shock ลด → miles driven / claim frequency อาจฟื้นในปี 2027; European collision/mechanical demand อ่อน (consumer weak, German recession) + FX (USD แข็งจาก Fed hawkish กด reported สำหรับ names ที่มี Europe exposure เช่น LKQ 46% ของ revenue). ทีมให้ stance **CAUTIOUS** (ไม่ NEGATIVE เพราะ aging-fleet demand pool โตจริง + collision repair เป็น non-deferrable + valuation base ของ distribution names ถูกจริง; ไม่ POSITIVE เพราะ collision-volume deflation เชิงโครงสร้าง + retail names แพง + Fed hawkish กด levered/dividend-value names + Europe demand/FX headwind) — selective เฉพาะชื่อที่มี real MOS บน normalized (ไม่ใช่ through-cycle-peak) margin/ROIC และ ROIC-recovery ที่ credible.",
+    keyPoints: [
+      "Demand pool secular tailwind (บวกทั้ง sub-sector): avg US vehicle age 12.8 ปี record (passenger cars 14.5), affordability squeeze จาก Fed hawkish → ยืดอายุรถ; รถ >7 ปี = 45% ของ repairable claims (+9 pts vs 2019) และ ADAS แตะไม่ถึง",
+      "Collision sub-segment structural pressure (LKQ/GPC): repairable claims −10%+ ปี 2025 คาดหดต่อ 2026; total-loss frequency record 23.1% (totaled = ไม่ซื้ออะไหล่ซ่อม); ADAS calibration บน 28.3% ของ appraisals (+30% YoY) = รถใหม่ใช้ OEM ไม่ใช่ recycled/aftermarket",
+      "Retail vs distribution split: ORLY/AZO (op margin 19–20%, ROIC 23–28%, GM ~52%, non-collision maintenance demand resilient) แต่เทรด premium (ORLY EV/EBITDA ~25x, AZO ~15x); LKQ/GPC/AAP ถูกกว่ามาก (LKQ EV/EBITDA 8.2x, FCF yield 9.7%) แต่ margin/ROIC ถูกบีบ",
+      "LKQ-specific: operating margin 11.3%→7.2% ใน 4 ปี, ROIC 11.4%→6.4% เข้าใกล้ WACC ~6.5–7% = value-trap flag; + Germany ERP self-inflicted disruption Q2 2026 (−$140M revenue / −$50M EBITDA) + FY2026 EPS guide cut เป็น $2.60–2.90; NA organic +0.5% Q2 2026 = first growth since 2023 (tentative inflection)",
+      "Cyclical swing 2027: insurance premium hikes moderating (+1% H1 2026 vs double-digit 2023–24) → sticker shock ลด → miles/claims อาจฟื้น; แต่ Europe demand อ่อน + USD แข็ง (Fed hawkish) กด names ที่มี Europe exposure (LKQ 46% ของ revenue)",
+      "Insurer parts-mix = key dependency: repair cost +45%/5 ปี → insurers มี incentive spec alternative (non-OEM) parts; regulatory right-to-repair momentum หนุน aftermarket — แต่ downside ถ้า jurisdiction ใดจำกัด non-OEM crash parts",
+    ],
+    metrics: [
+      { label: "Avg US vehicle age 2025 (years, record)", value: 12.8 },
+      { label: "Repairable collision claims YoY 2025 (%)", value: -10 },
+      { label: "Total-loss frequency 2025 (% of all claims, record)", value: 23.1 },
+      { label: "ADAS calibration penetration 2025 (% of repairable appraisals)", value: 28.3 },
+      { label: "LKQ EV/EBITDA (x, deep-value end)", value: 8.2 },
+      { label: "ORLY EV/EBITDA (x, premium end)", value: 25 },
+    ],
+    relatedTickers: ["LKQ", "GPC", "DORM", "ORLY", "AZO", "AAP"],
+    sources: [
+      { title: "CCC Intelligent Solutions — Crash Course 2026 Report: Higher Severity and Record Total Loss Frequency (repairable claims −10%+, total-loss 23.1%, ADAS calibration 28.3%, vehicles >7yr = 45% of claims)", url: "https://ir.cccis.com/news-releases/news-release-details/ccc-crash-course-2026-report-finds-higher-severity-and-record" },
+      { title: "S&P Global Mobility — Average age of vehicles in the US rises to 12.8 years in 2025", url: "https://aftermarketinsight.spglobal.com/news/4375/average-age-of-vehicles-in-the-us-rises-to-128-years-in-2025" },
+      { title: "Repairer Driven News — Average passenger car age now 14.5 years, nearly 13 years overall", url: "https://www.repairerdrivennews.com/2025/05/28/average-passenger-car-age-now-14-5-years-nearly-13-years-overall/" },
+      { title: "Autobody News — 2025 Data Points to Fewer Claims, More Collision Repair Complexity in 2026", url: "https://www.autobodynews.com/news/2025-data-points-to-fewer-claims-more-collision-repair-complexity-in-2026" },
+      { title: "InsureMojo — Record 23.1% of Auto Claims Are Total Losses in 2025", url: "https://www.insuremojo.com/total-loss-rate-record-auto-repair-costs-2026/" },
+      { title: "CarInsurance.com — State of Auto Insurance in 2026 (collision severity −2.5% YoY H1 2026, repair cost +45% over 5 years)", url: "https://www.carinsurance.com/state-of-auto-insurance/" },
+      { title: "Insurify — Car Insurance Costs Climb in the First Half of 2026 (full-coverage premium +1% H1 2026, moderating)", url: "https://insurify.com/car-insurance/report/" },
+      { title: "PartsTrader — Predicting Claims Volume in 2026: Key Factors to Watch", url: "https://www.partstrader.com/predicting-claims-volume-in-2026-key-factors-to-watch/" },
+      { title: "Yahoo Finance — LKQ Q2 Earnings Miss Estimates on Europe ERP Disruption (guidance cut, NA organic +0.5% first since 2023)", url: "https://finance.yahoo.com/markets/stocks/articles/lkq-q2-earnings-miss-estimates-161200750.html" },
+      { title: "StockAnalysis.com — LKQ ratios (EV/EBITDA 8.2x, ROIC 6.35%, operating margin trend)", url: "https://stockanalysis.com/stocks/LKQ/financials/ratios/" },
+      { title: "GuruFocus — O'Reilly Automotive ROIC (~23%) / AutoZone EV/EBITDA (~15x)", url: "https://www.gurufocus.com/term/roic/ORLY" },
+      { title: "Macrotrends — O'Reilly Automotive EBITDA Margin (retail model ~22%)", url: "https://www.macrotrends.net/stocks/charts/ORLY/oreilly-automotive/ebitda-margin" },
+    ],
+    lastUpdated: "2026-09-08",
+    author: "Atlas",
+    trigger: "Byproduct of LKQ Phase 1 Macro Brief — first sector-level view on auto aftermarket / collision-repair parts distribution (aging-fleet demand tailwind vs claims-frequency deflation + total-loss mix shift + ADAS displacement; retail resilient-but-premium vs distribution cheap-but-margin-pressured), distinct from the OEM-supply 'Auto Suppliers / Auto Tech' entry; applies beyond LKQ to GPC/DORM/ORLY/AZO/AAP",
   },
 ];

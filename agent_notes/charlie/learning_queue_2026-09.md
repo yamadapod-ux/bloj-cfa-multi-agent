@@ -4,7 +4,15 @@
 
 ---
 
-## LKQ — Corporation (2026-09-07) — 🔺 ESCALATE → FAST-TRACK FULL PIPELINE
+## LKQ — Corporation (2026-09-07) — 🔺 ESCALATE → FAST-TRACK FULL PIPELINE → ✅ COMPLETE 2026-09-08
+
+> **UPDATE 2026-09-08 — Full pipeline complete:** Atlas→Emma∥Quinn→Bear→Charlie→Morgan CONDITIONAL PASS 7.5/10 (interrupted at Leo/Vera/Max by session limit, resumed same session). **Result: HOLD / WATCH — negative bias — NO DEPLOY.** Blended FV **$32.13** (Emma $40.00×0.40 + Quinn $35.78×0.30 + Bear $18.00×0.30) → **MOS +20.5% PASS** ≥15% Value gate — **แต่ Conviction 6.33 < 7.0 → single-gate FAIL** (Emma 6.5 / Quinn 5.5 / Bear 7.0). MOS เปราะ: Bear assumption-corrected (margin 7.5% + WACC 8.75%) → Blended ~$26 → MOS +1%. FV pivot = op margin normalized 8.5% (Emma: COVID-peak unwind + ERP temporary) vs 6.75% (Bear: structural ADAS/claims). Emma/Quinn NOPAT-aligned (gap 1.4%); Emma/Bear gap >50% (reconciliation table ใน report). Max = SKIPPED. **ไม่เพิ่ม buy_list.md** (Bear objection) → WATCH item + Bull Flip Triggers ใน decisions.md. ดู `reports/LKQ_2026-09-08.md`.
+>
+> **📊 Learning-queue lane calibration (first real run — สำหรับ Vera trial review 2026-12-31):**
+> 1. **Token cost:** lightweight 142K (Emma 84K + Bear 58K) — **สูงกว่าประเมิน ~30-50K ถึง 3-4×**. + full pipeline ~200K = **342K รวม > direct fast-track ~200K**. → ถ้า learning-queue เคสส่วนใหญ่จบด้วย escalate, lane นี้**เพิ่ม**ต้นทุนสุทธิ ไม่ลด. Vera ต้อง track: % ของ learning-queue ที่ escalate vs journal-only — ถ้า >50% escalate → ปรับกฎ: escalate-by-default เมื่อ Filter D ≤ 0.80× (ข้าม lightweight)
+> 2. **Filter E sub-2 (through-cycle ROIC spread ≥+3pp) เข้มเกินสำหรับ goodwill-heavy names:** LKQ tangible ROIC ~14% แต่ reported ~6.4% (goodwill $5.4B = 83% equity). Filter E ตัด LKQ ลง learning-queue เพราะ reported spread ~+2pp — แต่ full pipeline พบว่า MOS +20.5% ผ่าน gate จริง (แค่ conviction fail). Sub-2 ควรพิจารณา tangible ROIC เป็น alternative test สำหรับ acquisition-built business
+> 3. **Filter D ทำงานถูกทิศ:** scout naive FV ~$35 vs Emma full DCF base $40 (mildly conservative) — **แต่** Bear FV $18 แสดงว่า single-point naive FV ซ่อน dispersion 2.2× เมื่อ TV > 75% ของ EV. Filter D ควรมี "high-uncertainty flag" เมื่อ business เป็น levered + TV-heavy → auto-route learning-queue (ซึ่งก็เกิดขึ้นจริงผ่าน Filter E ในเคสนี้ แต่โดยบังเอิญ)
+> 4. **ผลลัพธ์ตรงกับ lightweight เชิงทิศทาง:** lightweight Emma $37 / Bear $17.50 → full Emma $40 / Bear $18 · lightweight escalate-lean → full HOLD/WATCH (MOS ผ่าน conviction fail). Lightweight **ไม่ได้ให้ข้อมูลผิด** — แค่ไม่ได้ประหยัดต้นทุน
 
 **ที่มา:** Scout Round 28 (2026-09-06) top-secondary pick. CIO "scout เลย เราแค่อยากรู้ว่า tier 1 2 3 ทำงานเป็นยังไง" → ใช้ LKQ เป็น demo ของ learning-queue lane (lane นี้ไม่เคยรันจริงมาก่อน)
 
