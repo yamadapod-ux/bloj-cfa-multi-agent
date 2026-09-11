@@ -1020,3 +1020,23 @@ APTV (Aptiv PLC) = **first genuine VALUE-FIRST scout candidate ที่ scout p
 **Session note:** งานถูก interrupt หลัง Morgan QA (session limit resets 3am Bangkok), resumed same session ตาม Session Interruption/Resume Protocol (**8th instance**) — 0 duplicates, dated files verified. ดู `session_logs/2026-09-08_LKQ.md` + `agent_notes/charlie/learning_queue_2026-09.md`
 
 *อัปเดตล่าสุด: 2026-09-08 — LKQ learning-queue lane first real run: escalate → full → single-gate FAIL (conviction). Lane cost 142K > estimate 3-4×; Filter E sub-2 อาจเข้มเกินสำหรับ goodwill-heavy names — flagged for Vera 2026-12-31.*
+
+---
+
+## ACN Full Exit + REGN Artifact Resolved — 2026-09-11 (10-day-overdue FV batch finally cleared)
+
+Emma FV re-verify batch (commissioned 2026-09-01) sat untouched for 10 days across 6/7 OPEN positions. CIO pushed ("แล้วนายจะทำอะไรต่อ") → resumed with the 2 clearest, opposite-direction signals first.
+
+**ACN — SOLD (Full Exit), Risk Rule 3 thesis-change:** Blended FV $252.35→$199.51, Conviction 7.17→5.17, Moat WIDE→NARROW. CEO Julie Sweet publicly admitted "declining demand for conventional consulting" — directly contradicting the thesis the position was built on. Thesis Invalidation strictly 0/3 (quantitative checklist not complete) but the qualitative break was clear enough that waiting for the checklist would be "moving the goalposts" (Bear's words, and correct). Max×Charlie reconciled: full exit over partial trim, because a second trim on an already-trimmed 2.44%-weight position leaves a meaningless stub — clean exit is simpler and the discipline (Risk Rule 3: exit on thesis change, don't wait for recovery) points the same direction anyway.
+
+**REGN — confirmed hypothesis: negative MOS was a stale-FV artifact.** Q2 EPS +36% surprise had sat un-modeled for 5+ sessions while the team watched "STRONG SELL territory" deepen on a FV that was simply wrong. Real DCF re-run: FV $792→$889, MOS -4.5%→+11.8%. Nothing was actually overvalued.
+
+**บทเรียน:**
+1. **Two positions, same root cause (stale FV), opposite conclusions** — this is exactly why the Re-Analysis Trigger Rule exists. Without re-verifying, REGN would have kept looking like a sell candidate and ACN would have kept looking fine. Both were wrong in the same direction (trusting an old number) but the market moved in opposite directions under them.
+2. **Thesis Invalidation checklists are a floor, not a ceiling** — ACN never hit the formal 0/3→3/3 trigger, but a CEO publicly contradicting the bull thesis on record is a stronger signal than any lagging quantitative checklist. Risk Rule 3 (qualitative thesis-change, exit immediately) exists for exactly this gap.
+3. **10-day backlog is too long for a rule this important** — the batch was commissioned 2026-09-01 and only 2/6 were done by 09-11. Re-Analysis Trigger Rule needs a hard SLA, not just a priority queue that can sit.
+4. **Session Interruption/Resume Protocol worked cleanly for the 9th time** — full pipeline (Atlas→Emma∥Quinn→Bear, Morgan embedded) survived the interruption intact; only the Leo/Vera/Max sync layer needed resuming, no rework, no duplicates.
+
+**Outstanding:** CRM/ADBE/GOOGL/ADSK still need the batch re-verify. ADBE reported Q3 FY26 the night before this session (2026-09-10) — result not yet confirmed, weight 10.4%, options priced ±8% move. Check next session.
+
+*อัปเดตล่าสุด: 2026-09-11 — ACN full exit (Risk Rule 3) + REGN artifact resolved. Alpha -0.71%→-0.37% (still negative, still noise).*

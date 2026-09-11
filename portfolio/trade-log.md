@@ -58,5 +58,8 @@
 | NOW (TRIM 50%) | 2026-05-11 | 2026-09-01 | $89.47 | $147.99 | 1 | **+$58.52** | **+65.40%** | 113 |
 | RDDT (TRIM 33%) | 2026-05-30 | 2026-09-01 | $175.94 | $147.81 | 1 | **-$28.13** | **-15.99%** | 94 |
 | RDDT (SELL — FULL EXIT) | 2026-05-30 | 2026-09-03 | $175.94 | $158.10 | 2 | **-$35.68** | **-10.14%** | 96 |
+| ACN (SELL — FULL EXIT) | 2026-06-05 | 2026-09-11 | $178.16 | $177.76 | 1.4 | **-$0.57** | **-0.23%** | 98 |
+
+**ACN lifetime cumulative** (2.8sh original, cost basis $498.85): TRIM 50% (-$70.25) + FULL EXIT (-$0.57) = **-$70.82 realized**. Position CLOSED 2026-09-11 — thesis-change exit (Risk Rule 3), not stop-driven. See `reports/ACN_2026-06-05.md` § Update Log 2026-09-11 for full re-analysis.
 
 ---

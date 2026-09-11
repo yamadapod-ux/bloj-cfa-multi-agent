@@ -225,6 +225,51 @@ Layered on top: price itself popped **+9.31% in a single day (Sept 2)** on **S&P
 
 ---
 
+## ACN Full Exit + REGN FV Re-Verify — 2026-09-11 (Re-Analysis Trigger Rule batch, Max×Charlie reconciled)
+
+**Trigger:** CIO "แล้วนายจะทำอะไรต่อ" → resumed Emma FV re-verify batch (commissioned 2026-09-01, 10 days overdue). ACN + REGN prioritized as clearest opposite-direction signals.
+
+### ACN — SELL, Full Exit (Risk Rule 3, thesis-change)
+| Field | ค่า |
+|-------|-----|
+| Recommendation | BUY-HOLD (TRIMMED 50%) → **SELL — Full Exit remaining 1.4sh** |
+| Trigger | #1 earnings-driven (Q3 FY26 06-18 rev miss + guide cut never modeled) + #5 Street PT divergence (~$150-170 vs FV $252.35, 27% gap) → lightweight found FV -15.4% + conviction collapse → escalated to full pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS) |
+| Price | $177.76 (Sept 10 close — stockanalysis.com $177.76 + Yahoo $177.87, 0.06% diff, 2-source) |
+| Blended FV | $252.35 → **$199.51** (Emma $210×0.40 + Quinn $215.03×0.30 + Bear $170×0.30), ESG-adj ~$185.50 |
+| MOS | +12.2% (< 15% Value gate — FAIL) |
+| Conviction | 7.17 → **5.17** (Emma 4.5 / Quinn 5.0 / Bear 6.0, all < 7.0 gate) |
+| Moat | WIDE → **NARROW** (first formal downgrade) |
+| Bear Flip | 1/5 firing (revenue growth <5% LC, 2 quarters) |
+| Thesis Invalidation | strictly 0/3 (bookings decline 1Q not 3; layoffs 1.4% not >10%; no major client exit) — **but qualitative thesis break**: CEO Julie Sweet publicly admitted "declining demand for conventional consulting," directly contradicting the original bull thesis ("AI accelerates ACN") |
+| Team split | Emma TRIM~50% (conv 4.5) · Quinn HOLD/no-add (conv 5.0, self-contradictory per Charlie) · Bear FULL EXIT (conv 6.0) |
+| **Max×Charlie reconciled** | **SELL — full exit.** Position already trimmed once to 2.44% weight — a second partial trim leaves a <1.5% meaningless stub; Risk Rule 3 says exit now, don't wait. Not panic: downside has real support (net cash $1.78B, FCF yield ~10%, fwd P/E 12x cheapest in 10Y, ROIC 27%) |
+| Realized P&L | This tranche -$0.57 (-0.23%, essentially flat on price). Lifetime cumulative: TRIM 50% (-$70.25) + this SELL (-$0.57) = **-$70.82** |
+| Morgan QA | PASS — full checklist (data integrity, rule compliance, source annotation) all ✅ |
+| Re-entry watch | Added to `buy_list.md`: zone $150-170 (mid $160), trigger = Q4 FY26 (2026-10-01) organic rev ≥+4% LC AND bookings YoY ≥flat AND FY27 guide ≥+5% LC, ½ position size on re-entry |
+
+### REGN — HOLD, STRONG SELL territory RESOLVED (stale-FV artifact confirmed)
+| Field | ค่า |
+|-------|-----|
+| Trigger | #1+#2+#4 (Q2 earnings 07-30 unmodeled: EPS $14.29 vs $10.53 est +36% surprise; FV age 93-100d ≥90 + MOS≤0 confirmed) |
+| Price | $795.00 (Sept 10 close, per Emma lightweight re-verify) |
+| Blended FV | $792 → **$889** (Emma $1,061×0.40 + Quinn $880×0.30 + Bear $670×0.30), ESG-adj ~$827 |
+| MOS | -4.5%/-6.5% (seen 2026-08-09 → 09-04, 5 consecutive sessions) → **+11.8% team / +33.5% Emma-alone** |
+| Conviction | 7.5/10 (Emma) |
+| Bear Flip / Invalidation | 0/5 / 0/3 — thesis fully intact |
+| **Conclusion** | Negative MOS confirmed as a **stale-FV artifact, not real overvaluation** — exactly as hypothesized 2026-09-01/04. HOLD 0.42sh unchanged, no capital action, no Max Consultation Rule trigger (no trade) |
+
+### Regime re-call (Atlas, 2026-09-11)
+**TRANSITIONAL-CAUTIOUS confirmed** (majority 3/4 RISK-ON indicators, but judgment override on: Fed hike odds surging 30%→>73% in 5 weeks, oil shock [Brent >$100, US struck 3 Iranian tankers, Hormuz flows disrupted, Goldman flags $120 risk = stagflationary], twin binary events [Aug CPI 09-11 + FOMC 09-16], S&P down 4 consecutive sessions [Sept 4 7,718.60 → Sept 9 7,636.4, -1.06%]). Force Deploy SUSPENDED, Cash Floor 25%, Multiplier 0.75x — risk-management exits (ACN) still permitted.
+
+### Portfolio impact
+Cash $6,894.47 → **$7,143.33** (69.5%). Positions 7 → **6**. Total value ~$10,283.78 (+2.84%), S&P +3.21%, **Alpha -0.37%** (narrowed from -0.71% — still negative, still noise per Pre-commitment Rule; ADBE/NOW/GOOGL/CRM/ADSK prices not re-verified this session, still Sept 8 close).
+
+**Session note:** Session Interruption/Resume Protocol **9th instance** — pipeline หลุดหลัง Atlas/Emma/Quinn/Bear (ACN full pipeline) + Emma (REGN lightweight) + Atlas regime re-call เสร็จ แต่ก่อน Morgan-final/Leo/Vera/Max sync. Resumed same session: dated files verified complete, 0 duplicates, portfolio.js/decisions.md/deployment_log.md/trade-log.md/data.js/buy_list.md/positions.md ทั้งหมด sync ครบโดย main session (acting as Leo+Vera+Max resume).
+
+*Logged by Vera — 2026-09-11 | ACN full exit + REGN artifact resolution + regime re-call, same session as Leo per iron rule*
+
+---
+
 ## APTV Watchlist Entry (2026-09-06) — NEW
 
 | Field | ค่า |

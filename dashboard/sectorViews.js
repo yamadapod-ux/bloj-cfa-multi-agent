@@ -4,7 +4,7 @@
 // กฎการเขียน: ห้ามแก้/ลบ entry เดิม — push entry ใหม่เข้า array เท่านั้น (append-only)
 // เหตุผล: entry เก่าคือ audit trail ว่าทีมเคยคิดอะไรมาก่อน ณ วันไหน — การแก้ทับจะทำลายหลักฐานนั้น
 
-const SECTOR_VIEWS_LAST_UPDATED = "2026-09-08 14:30";
+const SECTOR_VIEWS_LAST_UPDATED = "2026-09-11 10:30";
 
 const SECTOR_VIEWS = [
   {
@@ -483,5 +483,105 @@ const SECTOR_VIEWS = [
     lastUpdated: "2026-09-08",
     author: "Atlas",
     trigger: "Byproduct of LKQ Phase 1 Macro Brief — first sector-level view on auto aftermarket / collision-repair parts distribution (aging-fleet demand tailwind vs claims-frequency deflation + total-loss mix shift + ADAS displacement; retail resilient-but-premium vs distribution cheap-but-margin-pressured), distinct from the OEM-supply 'Auto Suppliers / Auto Tech' entry; applies beyond LKQ to GPC/DORM/ORLY/AZO/AAP",
+  },
+  {
+    sector: "Energy",
+    slug: "energy",
+    stance: "NEGATIVE",
+    cyclePosition: "Late-cycle",
+    headline: "War premium ยกระดับสู่ของจริง — Brent ทะลุ $100 ครั้งแรกตั้งแต่ ก.ค. หลังสหรัฐฯ จมเรือน้ำมันอิหร่าน 3-5 ลำ, Hormuz flows <2M bpd; XLE/majors วิ่งแล้ว +33-38% YTD — เข้าซื้อตอนนี้ = จ่ายที่ war-premium peak, NEGATIVE คงเดิม (เข้มขึ้น)",
+    thesis: "อัปเดตต่อยอด Energy entry เดิม (31 ก.ค. 2026 Brent ~$89-90, NEGATIVE) จาก Atlas Macro Regime re-call 2026-09-11 — สถานการณ์ยกระดับชัดเจนจนต้องบันทึกแยก: US-Iran conflict เข้าเดือนที่ 7 และ escalate แรง สหรัฐฯ ใช้กำลังทหารทำลายเรือบรรทุกน้ำมันดิบอิหร่าน 3-5 ลำ (8-10 ก.ย.) ตอบโต้การโจมตีเรือรบสหรัฐฯ + กลุ่มฮูตีโจมตีโรงงานพลังงานซาอุฯ ต่อเนื่อง → crude flows ผ่าน Strait of Hormuz ร่วงต่ำกว่า 2 ล้านบาร์เรล/วัน (จาก ~8-9 ล้านก่อนสงคราม), floating storage ถูกดึงออก ~190 ล้านบาร์เรลตั้งแต่กลาง ก.ค. Brent (Nov contract) ทะลุ **$100-102/bbl ครั้งแรกตั้งแต่ ก.ค.**, WTI ~$96-101 นักวิเคราะห์แห่ขึ้น forecast — Morgan Stanley คาด Brent เฉลี่ย $100 ใน Q4, Goldman/BofA/HSBC ปรับขึ้นทั้งหมด, Goldman เตือน risk >$120 ถ้าการโจมตีเรือขนส่งรุนแรงขึ้น. **แต่ stance ยังคง NEGATIVE และเข้มขึ้น** ไม่ใช่พลิกบวก — เพราะ thesis เดิมยังจริงและตอนนี้จริงกว่าเดิม: (1) ราคาปัจจุบันขับเคลื่อนด้วย geopolitical risk premium ล้วนๆ ไม่ใช่ structural scarcity — EIA ยังคาด oversupply ~2.2 mb/d ปี 2026, การ de-escalate จริงจังจะทำให้ premium ก้อนนี้ collapse เร็วและแรง (2) equity ในกลุ่มวิ่งไปมากแล้ว — XLE +7.6% ใน 30 วัน, XOM +33% / CVX +38% YTD 2026 — valuation ตึงและ price-in war premium ไปพอสมควร (3) earnings pattern peak-then-decline ที่ FactSet เคย verify (Q2 2026 Energy +122.9% YoY ลดหลั่นจนพลิกลบ -26.3% Q2 2027) ยังเป็น consensus — การซื้อตอนนี้ = จ่ายที่ earnings peak + valuation แพง + war premium สูงสุด พร้อมกันสามชั้น สำหรับ time horizon 3-5 ปีของกองทุน. เพิ่มเติม: Fed hawkish (>73% hike priced Sept FOMC post-PPI) + regime = TRANSITIONAL-CAUTIOUS → ไม่ใช่ทั้งจังหวะและไม่ใช่ทั้ง sector สำหรับเงินทุนใหม่. ถ้าจำเป็นต้องมี exposure จริง: integrated majors (XOM/CVX) หรือ midstream/pipeline ที่ FCF นิ่งกว่า ดีกว่า pure-play E&P ที่จะโดนแรงสุดถ้า cycle หัน.",
+    keyPoints: [
+      "Brent ทะลุ $100-102/bbl (10 ก.ย. 2026) ครั้งแรกตั้งแต่ ก.ค. — สหรัฐฯ จมเรือน้ำมันอิหร่าน 3-5 ลำ, ฮูตีโจมตีโรงงานซาอุฯ, Hormuz crude flows <2M bpd (จาก ~8-9M)",
+      "นักวิเคราะห์ปรับขึ้น forecast พร้อมกัน: MS Brent avg $100 Q4, Goldman/BofA/HSBC ขึ้นทั้งหมด, Goldman เตือน >$120 risk — แต่เป็น risk-premium driven ไม่ใช่ scarcity (EIA ยังคา oversupply ~2.2 mb/d 2026)",
+      "Energy equity วิ่งไปแล้ว: XLE +7.6% 30d, XOM +33% / CVX +38% YTD 2026 — valuation ตึง, war premium price-in ไปมาก, downside แรงถ้า de-escalate",
+      "Earnings peak-then-decline ยัง consensus (FactSet: Energy +122.9% YoY Q2'26 → -26.3% Q2'27) — ซื้อตอนนี้ = จ่ายที่ earnings peak + valuation แพง + war premium สูงสุด สามชั้นพร้อมกัน",
+      "Regime TRANSITIONAL-CAUTIOUS + Fed hawkish (>73% Sept hike) — ไม่ใช่จังหวะเพิ่มทุนใหม่เข้า sector ใดๆ โดยเฉพาะ sector ที่ราคาพึ่ง geopolitical premium",
+      "ถ้าต้อง exposure: integrated majors (XOM/CVX) / midstream ดีกว่า pure-play E&P ที่ leverage ต่อ cycle turn สูงสุด",
+    ],
+    metrics: [
+      { label: "Brent crude ปัจจุบัน (10 ก.ย. 2026, USD/bbl)", value: 101 },
+      { label: "Hormuz crude flows ปัจจุบัน (M bpd, จาก ~8-9M)", value: 2 },
+      { label: "XOM YTD return 2026 (%)", value: 33 },
+      { label: "CVX YTD return 2026 (%)", value: 38 },
+      { label: "S&P 500 Energy earnings growth Q2 2027F (YoY %)", value: -26.3 },
+    ],
+    relatedTickers: ["XLE", "XOM", "CVX"],
+    sources: [
+      { title: "CNBC — Oil extends gains, Brent above $101 after U.S. destroys Iranian oil tankers", url: "https://www.cnbc.com/2026/09/10/iran-us-oil-hormuz-supply-trump-military-brent-wti.html" },
+      { title: "Benzinga — Brent Crude Oil Price Tops $100 as Morgan Stanley Rings the Alarm Bell", url: "https://www.benzinga.com/markets/prediction-markets/26/09/61686144/brent-100-morgan-stanley-stock-risks" },
+      { title: "24/7 Wall St — Oil Just Blew Past $100 a Barrel and These 5 Energy Stocks Are in the Line of Fire (XLE +7.6% 30d, XOM +33%, CVX +38% YTD, Hormuz flows <2M bpd, Goldman >$120 risk)", url: "https://247wallst.com/investing/2026/09/10/oil-just-blew-past-100-a-barrel-and-these-5-energy-stocks-are-in-the-line-of-fire/" },
+      { title: "OilPrice.com — Oil Breaks $100 and This Rally Has Legs", url: "https://oilprice.com/Energy/Crude-Oil/Oil-Breaks-100and-This-Rally-Has-Legs.html" },
+      { title: "FactSet Insight — S&P 500 Energy Sector Earnings Preview: Q2 2026 (quarterly YoY growth, peak-then-decline)", url: "https://insight.factset.com/sp-500-energy-sector-earnings-preview-q2-2026" },
+      { title: "Global News — EIA raises oil output forecast, says oversupply will weigh on prices in 2026", url: "https://globalnews.ca/news/11523165/eia-oil-price-forecast-oversupply-2026/" },
+    ],
+    lastUpdated: "2026-09-11",
+    author: "Atlas",
+    trigger: "Regime re-call 2026-09-11 — US-Iran military escalation pushed Brent >$100 (first since July), materially changes the facts underlying the 2026-07-31 Energy entry (Brent $89); stance NEGATIVE unchanged but reinforced (war-premium peak, not a scarcity story)",
+  },
+  {
+    sector: "Software / AI",
+    slug: "software-ai",
+    stance: "CAUTIOUS",
+    cyclePosition: "Mid-cycle",
+    headline: "Secular growth ยังของจริง แต่ตอนนี้เจอ double whammy — ROI-realization overhang เดิม + rate-repricing shock ใหม่ (Fed >73% hike priced, 10Y highest since 2023, oil-driven inflation); ยัง selective ไม่ broad-avoid แต่ downgrade-lean",
+    thesis: "อัปเดต Software/AI entry เดิม (30 ก.ค. 2026, CAUTIOUS) จาก Atlas Macro Regime re-call 2026-09-11 — thesis หลักไม่เปลี่ยน (AI capex ยังโตแรง, backlog/cloud growth ยังเป็นหลักฐาน ROI จริงสำหรับผู้ชนะที่ชัดเจน, แต่ช่องว่าง capex-vs-ROI ยังเป็น bull/bear pivot) — สิ่งที่เปลี่ยนคือ **macro overlay กดดันขึ้นชัดเจน**: (1) Fed hawkish ยืนยันแล้ว ไม่ใช่แค่ความเสี่ยง — post-PPI (10 ก.ย.) CME FedWatch แสดง >73% odds ของ 25bps hike ที่ FOMC 15-16 ก.ย., zero cuts priced เข้าไปถึง 2028, UBS/BofA/Deutsche ย้าย forecast เป็น hike ทั้ง Sept และ Dec (2) 10Y Treasury yield แตะ ~4.85% สูงสุดตั้งแต่ พ.ย. 2023 — discount rate ที่ใช้ตีมูลค่า long-duration software cash flow ขยับขึ้นจริง (3) oil shock (Brent >$100) = inflation re-acceleration risk ที่ทำให้ Fed มีเหตุผล higher-for-longer นานขึ้น. high-multiple software เป็น cohort ที่ sensitive ที่สุดต่อ 3 แรงนี้พร้อมกัน — และหลักฐานเชิงประจักษ์จากพอร์ตเราเองยืนยัน: S&P 500 ร่วง 4 วันติด (4-9 ก.ย.) นำโดย tech, Nasdaq underperform, ADBE/NOW/CRM/GOOGL ทั้งหมดโดน sell-the-news ซ้ำๆ ทุกครั้งที่มีข่าว capex หรือ rate แม้ fundamentals จริงจะแข็งขึ้นต่อเนื่อง. ทีมยัง CAUTIOUS ไม่ยกเป็น NEGATIVE เพราะ (ก) demand จริง — Technology sector Q2 2026 earnings +64.6% YoY เร่งขึ้น, cloud growth ของผู้นำ (GOOGL Cloud +82%) ยังเป็นหลักฐาน ROI ที่จับต้องได้ (ข) valuation กลุ่ม software/services ร่วงกลับมาใกล้ระดับ 'peak uncertainty' ที่ Morgan Stanley เคยเรียก = downside บางส่วน price-in แล้ว — แต่ downgrade-lean: regime TRANSITIONAL-CAUTIOUS + rate repricing ยังไม่จบ + CPI/FOMC binary สัปดาห์นี้ → ไม่ใช่จังหวะเพิ่มทุนใหม่เข้ากลุ่ม, selective เฉพาะผู้ชนะที่มี real cloud/backlog ROI + margin ที่ทน rate ได้.",
+    keyPoints: [
+      "Double whammy: ROI-realization overhang เดิม + rate-repricing shock ใหม่ — Fed >73% hike priced (post-PPI 10 ก.ย.), zero cuts เข้า 2028, UBS/BofA/Deutsche ย้ายเป็น Sept+Dec hike",
+      "10Y Treasury ~4.85% สูงสุดตั้งแต่ พ.ย. 2023 — discount rate สำหรับ long-duration software cash flow ขยับขึ้นจริง; oil >$100 = inflation re-accel risk → higher-for-longer นานขึ้น",
+      "หลักฐานตลาด: S&P 500 ร่วง 4 วันติด (4-9 ก.ย.) นำโดย tech, Nasdaq underperform; ADBE/NOW/CRM/GOOGL โดน sell-the-news ซ้ำทุกข่าว capex/rate",
+      "ยัง CAUTIOUS ไม่ NEGATIVE: demand จริง (Tech Q2'26 earnings +64.6% YoY เร่งขึ้น, GOOGL Cloud +82%), valuation กลุ่มร่วงมาใกล้ 'peak uncertainty' ระดับที่ MS เคยเรียก = downside บางส่วน price-in",
+      "Downgrade-lean: regime TRANSITIONAL-CAUTIOUS + rate repricing ยังไม่จบ + CPI/FOMC binary สัปดาห์นี้ — ไม่ใช่จังหวะเพิ่มทุนใหม่, selective เฉพาะผู้ชนะที่ ROI จับต้องได้ + margin ทน rate",
+    ],
+    metrics: [
+      { label: "CME FedWatch Sept hike odds post-PPI (%)", value: 73 },
+      { label: "10Y Treasury yield ปัจจุบัน (%)", value: 4.85 },
+      { label: "S&P 500 consecutive down sessions (4-9 ก.ย.)", value: 4 },
+      { label: "Technology sector Q2 2026 earnings growth YoY (%)", value: 64.6 },
+    ],
+    relatedTickers: ["ADBE", "NOW", "GOOGL", "CRM", "ADSK"],
+    sources: [
+      { title: "24/7 Wall St — Tomorrow's CPI Report Could Send Rate-Hike Odds Even Higher (>73% post-PPI CME FedWatch)", url: "https://247wallst.com/investing/2026/09/10/tomorrows-cpi-report-could-send-rate-hike-odds-even-higher/" },
+      { title: "CNBC — 10-year Treasury yield touches highest since 2023 despite Bessent's $6 billion bond buyback plan", url: "https://www.cnbc.com/2026/09/09/treasury-yields-oil-inflation.html" },
+      { title: "TheStreet — Stock Market Today Sept 9 2026 (Dow/Russell fall, Brent >$101, yields new 52wk highs, 3rd consecutive session down)", url: "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026" },
+      { title: "Chase — September 2026 rate hike now expected amid energy shocks", url: "https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks" },
+      { title: "Forbes — S&P 500 Earnings Outlook Hinges On Tech, Energy And The Fed", url: "https://www.forbes.com/sites/bill_stone/2026/07/05/sp-500-earnings-outlook-hinges-on-tech-energy-and-the-fed/" },
+    ],
+    lastUpdated: "2026-09-11",
+    author: "Atlas",
+    trigger: "Regime re-call 2026-09-11 — Fed-hawkish confirmed (>73% Sept hike post-PPI) + 10Y at 2023-highs + oil-driven inflation stack an acute rate-repricing headwind on top of the existing ROI-realization overhang; core thesis unchanged, stance CAUTIOUS held with downgrade-lean",
+  },
+  {
+    sector: "IT Services / Consulting",
+    slug: "it-services-consulting",
+    stance: "NEGATIVE",
+    cyclePosition: "Structural disruption + cyclical demand trough",
+    headline: "AI กำลังเปลี่ยน economics ของ consulting เร็วกว่าที่ incumbent ปรับตัวได้ + Middle East war กด discretionary spend โดยตรง — ACN bookings -2% YoY, guide 3-4% local currency; NEGATIVE สำหรับเงินทุนใหม่",
+    thesis: "First sector-level view สำหรับ IT services / consulting (ACN, IBM consulting, INFY/WIT/CTSH offshore, และ Big 4 advisory ในเชิง analog) — byproduct ของ Atlas Macro Regime re-call 2026-09-11 ที่พบ direct macro-to-sector linkage: การวิเคราะห์ demand consulting พบว่า Middle East war (US-Iran เดือนที่ 7, Brent >$100) กำลังกด discretionary IT/consulting spend โดยตรง — Accenture CEO Julie Sweet บอก analyst บน Q3 FY2026 call ตรงๆ ว่า 'lower discretionary spend impacts consulting work' และ new bookings ร่วง ~2% YoY ($19.3B vs $19.7B ปีก่อน) พร้อมกับ FY2026 revenue guide แค่ 3-4% local currency (6% USD). ปัญหาใหญ่กว่า cyclical คือ **structural AI disruption**: ตลาดสรุปแล้วว่า generative AI เป็น net-negative ต่อ services firms — time-and-materials billing model (ขายชั่วโมงคน) โดนกระทบตรงจุดเมื่อ AI ทำให้ deliverable เดิมใช้คนน้อยลง; key risk ตามที่ analyst หลายสำนักระบุคือ 'AI เปลี่ยน economics ของ consulting เร็วกว่าที่ Accenture ปรับตัวได้'. 66% ของ enterprise buyer ใช้ platform-first strategy (ซื้อ software platform แทนจ้าง integrator), 67% รัน GenAI ใน production แล้ว, 75% วางแผนเพิ่ม AI budget — แต่เม็ดเงินไหลไป platform/software vendor ไม่ใช่ labor-arbitrage consulting. เชื่อมโยงพอร์ตโดยตรง: ACN เป็น position ที่ถูก trim 50% ไปแล้ว (stop breach มิ.ย. 2026, Q3 FY26 rev miss + guide cut) — sector call นี้ยืนยันว่าปัญหา ACN ไม่ใช่ company-specific ล้วนๆ แต่เป็น sector-wide structural + cyclical พร้อมกัน. Indian IT (INFY/WIT/TCS) ก็ร่วงตาม ACN outlook ('weak Accenture outlook revives fears of AI-led disruption, IT stocks reel'). ทีมให้ stance **NEGATIVE** (ไม่ใช่ CAUTIOUS) สำหรับเงินทุนใหม่เข้า sub-sector นี้ เพราะ demand driver อ่อนทั้ง cyclical (war/discretionary) และ structural (AI disruption + platform-first) พร้อมกัน + regime TRANSITIONAL-CAUTIOUS + ไม่มี visible catalyst ที่จะ reverse — ยกเว้น: ถ้า AI กลายเป็น tailwind จริง (consulting ช่วย enterprise deploy AI ในสเกลใหญ่) + war de-escalate + valuation washed out พอ อาจ re-rate ได้ แต่ยังไม่เห็นสัญญาณนั้น. company-specific execution แยกจาก sector call — ผู้ที่ pivot ไป outcome-based/managed-service + AI-delivery เร็วที่สุดจะรอด แต่ต้องพิสูจน์ก่อน ไม่ใช่ซื้อล่วงหน้า.",
+    keyPoints: [
+      "Middle East war กด discretionary spend โดยตรง — ACN CEO Julie Sweet ยืนยันบน Q3 FY26 call; new bookings -2% YoY ($19.3B vs $19.7B), FY26 guide แค่ 3-4% local currency",
+      "Structural AI disruption: ตลาดสรุปว่า GenAI = net-negative ต่อ services firms; time-and-materials (ขายชั่วโมงคน) โดนตรงจุด; key risk = 'AI เปลี่ยน economics เร็วกว่าที่ Accenture ปรับตัวได้'",
+      "Platform-first shift: 66% ของ enterprise buyer ซื้อ software platform แทนจ้าง integrator; 67% รัน GenAI production แล้ว; เม็ดเงิน AI budget ไหลไป vendor ไม่ใช่ consulting labor arbitrage",
+      "Sector-wide ไม่ใช่ ACN-only: Indian IT (INFY/WIT/TCS/CTSH) ร่วงตาม ACN outlook — 'weak Accenture outlook revives fears of AI-led disruption, IT stocks reel'",
+      "เชื่อมพอร์ต: ACN ถูก trim 50% แล้ว (stop breach มิ.ย. 2026, Q3 rev miss + guide cut) — sector call ยืนยันปัญหาเป็น structural + cyclical พร้อมกัน ไม่ใช่ company-specific",
+      "NEGATIVE สำหรับเงินทุนใหม่: demand อ่อนทั้ง cyclical + structural, regime TRANSITIONAL-CAUTIOUS, ไม่มี visible catalyst reverse — re-rate ได้ถ้า AI พลิกเป็น tailwind + war de-escalate + valuation washed out (ยังไม่เห็นสัญญาณ)",
+    ],
+    metrics: [
+      { label: "ACN new bookings YoY change Q3 FY2026 (%)", value: -2 },
+      { label: "ACN FY2026 revenue guide (local currency, midpoint %)", value: 3.5 },
+      { label: "Enterprise buyers following platform-first strategy (%)", value: 66 },
+      { label: "Organizations running GenAI in production (%)", value: 67 },
+    ],
+    relatedTickers: ["ACN", "IBM", "INFY", "CTSH", "WIT"],
+    sources: [
+      { title: "Futurum Group — Can Accenture's Federal Wins Keep Pace with AI-Driven Consulting Disruption?", url: "https://futurumgroup.com/insights/accenture-federal-services-2/" },
+      { title: "Staffing Industry Analysts — Accenture's new bookings down 2% on AI disruptions", url: "https://www.staffingindustry.com/news/global-daily-news/accentures-new-bookings-down-2-on-ai-disruptions" },
+      { title: "Futunn News — 'AI Disrupts Everything' Sweeps Through IT Consulting and Outsourcing; Accenture Earnings Outlook Falls Short", url: "https://news.futunn.com/en/post/74797797/ai-disrupts-everything-sweeps-through-it-consulting-and-outsourcing-accenture" },
+      { title: "Press Insider — Weak Accenture outlook revives fears of AI-led disruption, IT stocks reel", url: "https://pressinsider.com/business/indian-it-stocks-reel-after-accenture-outlook-revives-fears-of-ai-led-disruption/" },
+      { title: "Simply Wall St — ACN: High-quality global services company facing an AI-driven valuation reset", url: "https://simplywall.st/community/narratives/us/software/nyse-acn/accenture/7ddmqnto-high-quality-global-services-company-facing-an-ai-driven-valuation-reset-5xnk" },
+    ],
+    lastUpdated: "2026-09-11",
+    author: "Atlas",
+    trigger: "Byproduct of Regime re-call 2026-09-11 — direct macro-to-sector linkage discovered (Middle East war → discretionary spend cut → consulting demand), compounding the structural AI-disruption thesis; first dedicated IT Services / Consulting entry, applies beyond ACN to IBM/INFY/CTSH/WIT",
   },
 ];
