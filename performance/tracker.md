@@ -225,6 +225,31 @@ Layered on top: price itself popped **+9.31% in a single day (Sept 2)** on **S&P
 
 ---
 
+## ADBE Lightweight Re-Analysis + Q3 FY26 Confirmed — 2026-09-11 (batch 4th of 6 — HOLD confirmed)
+
+**Trigger:** #1 earnings-driven (Q2 FY26 06-11 beat never modeled, FV 125 days old — oldest in book). ADBE reported Q3 FY2026 after close 2026-09-10; main session's own WebSearch (3 attempts, morning of 09-11) could not find the actual result — news wasn't indexed yet. Emma's re-verify ~36h later found it cleanly (2-source).
+
+| Field | ค่า |
+|-------|-----|
+| Q3 FY26 actual | Revenue $6.76B (+13% YoY, beat $6.70B) · Non-GAAP EPS $6.13 (+15%, beat $6.09) · **AI-first ARR $650M (+150%+ YoY) — exceeded Bull Flip Trigger #1 ($500M) early** · Total ARR $27.5B (+11.2%) · FY26 guide raised (Rev $26.576-26.626B, GAAP EPS $18.12-18.17) |
+| Watch item (new) | RPO growth decelerated to +8% YoY |
+| 🔴 Surprise | CEO succession announced 2026-09-03 — Anil Chakravarthy becomes President & CEO effective 2026-12-01, Shantanu Narayen → Executive Chair. Orderly (not Bear Flip #5) but stock sold **-4.45% after-hours despite the beat** |
+| Price | $249.35 (2-source) — down 6.5% from Sept 8 close $266.66 |
+| Blended FV | $311.70 (stale) → **$369** (Emma lightweight — barely moved from Emma's own prior $363 despite tighter WACC/TGR, thesis robust to methodology tightening) |
+| MOS | +14.4% (stale) → **+32.4%** |
+| Conviction | 7.3 → 7.5 (Emma) |
+| Weight | 10.36% → **9.78%** (back under 10% IPS band on the pullback — no trim needed) |
+| **Recommendation** | **HOLD.** Emma recommends escalating to full pipeline next round (not urgent — 0 Bear Flip, 0 Thesis Invalidation) so Bear can give a fresh read on the CEO transition and Quinn can quant the RPO deceleration |
+| Max Consultation | Not triggered — routine HOLD, no capital action |
+
+**⚠️ Operational note:** Two full subagent dispatch attempts for this ticker failed on API session-limit errors before the third succeeded — reflects heavy cumulative session load today (ACN full pipeline + CRM full pipeline + this). A `dashboard/portfolio.js` write attempt also hit a Python Unicode-escape bug mid-session that truncated the file to 0 bytes; caught immediately, restored via `git checkout`, redone with the safer read-modify-write-to-tmp-then-validate-then-swap pattern (now standard practice for the rest of this batch).
+
+**Portfolio impact:** mark-to-market only (ADBE mv $1,066.64→$997.40 on the post-earnings pullback + fresh FV). Cash unchanged $7,143.33. Total ~$10,196.18 (+1.96%), Alpha **-1.25%** (still negative, still noise — batch not complete, ADBE's own price drop drives most of this session's widening).
+
+*Logged by Vera — 2026-09-11 | ADBE lightweight re-analysis, same session as Leo per iron rule*
+
+---
+
 ## CRM Full Re-Analysis — 2026-09-11 (Re-Analysis Trigger Rule batch, 3rd of 6 — HOLD confirmed)
 
 **Trigger:** #1+#4 (Q2 FY27 earnings 2026-08-26 unmodeled + price +34% divergence). Emma lightweight found FV +34% move → escalated full pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA CONDITIONAL PASS 8.2/10).

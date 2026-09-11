@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-09 10:30";
+const NEWS_LAST_UPDATED = "2026-09-11 12:00";
 
 const NEWS = [
+
+  // ── 2026-09-11 ──────────────────────────────
+  {
+    date: "2026-09-11", category: "EARNINGS",
+    headline: "🔴🟢 ADBE Q3 FY26 beat ทุกตัวเลข แต่หุ้นร่วง -4.45% AH — CEO succession surprise (Chakravarthy รับช่วง ธ.ค. 2026)",
+    summary: "Adobe รายงาน Q3 FY2026 (หลังปิดตลาด 10 ก.ย.): Revenue $6.76B (+13% YoY, beat consensus $6.70B), Non-GAAP EPS $6.13 (+15%, beat $6.09). AI-first ARR พุ่งเป็น $650M (+150%+ YoY) — เกิน Bull Flip Trigger ของทีม ($500M) ไปแล้ว. Total ARR $27.5B (+11.2%). FY26 guide ปรับขึ้น: Revenue $26.576-26.626B, GAAP EPS $18.12-18.17. แต่ประกาศพร้อมกัน (จริงๆ ประกาศไปแล้ว 3 ก.ย.): CEO succession — Anil Chakravarthy ขึ้นเป็น President & CEO มีผล 1 ธ.ค. 2026, Shantanu Narayen (CEO มา 15+ ปี) ขึ้นเป็น Executive Chair. หุ้นร่วง -4.45% after-hours ทั้งที่ beat ทุกตัวเลข — ตลาดกังวล transition risk มากกว่าจะยินดีกับผลประกอบการ. RPO growth ชะลอเหลือ +8% YoY (จาก double-digit เดิม) เป็น watch item ใหม่. นัยพอร์ต: เราถือ ADBE 4sh weight ~10% — Emma lightweight FV re-verify (2026-09-11): FV $311.70(stale)→$369, MOS +14.4%→+32.4%, Conviction 7.3→7.5. HOLD, แนะนำ escalate full pipeline รอบหน้าเพื่อให้ Bear ประเมิน CEO transition สดใหม่ (ไม่เร่งด่วน — ไม่มี Bear Flip/Invalidation ยิง).",
+    impact: "MIXED", tickers: ["ADBE"],
+    url: "https://www.tipranks.com/news/adobe-stock-could-swing-8-after-q3-results-heres-what-to-expect",
+  },
 
   // ── 2026-09-09 ──────────────────────────────
   {
