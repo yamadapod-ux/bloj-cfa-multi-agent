@@ -225,6 +225,31 @@ Layered on top: price itself popped **+9.31% in a single day (Sept 2)** on **S&P
 
 ---
 
+## CRM Full Re-Analysis — 2026-09-11 (Re-Analysis Trigger Rule batch, 3rd of 6 — HOLD confirmed)
+
+**Trigger:** #1+#4 (Q2 FY27 earnings 2026-08-26 unmodeled + price +34% divergence). Emma lightweight found FV +34% move → escalated full pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA CONDITIONAL PASS 8.2/10).
+
+| Field | ค่า |
+|-------|-----|
+| Price | $243.00 (2-source: stockanalysis.com + Google/Yahoo Finance) |
+| Blended FV | $279 (stale) → **$345.77** (Emma $365.13×0.40 + Quinn $370.75×0.30 + Bear $294.97×0.30) |
+| MOS | +10.71% (stale) → **+29.72%** (Bear's own stress case alone: +21.4% — no scenario found negative) |
+| Conviction | 7.0 → **6.8** (Emma 7.5 / Quinn 6.8 / Bear 6.0) — below 7.0 fresh-BUY gate, but gate governs new capital not exit; Bear Flip 0/5, Thesis Invalidation 0/2 |
+| **Recommendation** | **HOLD** — no trim, no add |
+| Key finding (bull) | Net debt swing to -$30.97B (Informatica deal + $25B ASR buyback, Atlas cross-verified real, not an extraction error) — FV impact smaller than feared (-2.8% only). ROIC 10.96% > WACC (EVA positive) |
+| Key finding (bear) | **cRPO growth flat +14% both Q1+Q2 FY27 — NOT accelerating with Agentforce ARR +205%** — genuine monetization-lag signal, flagged for next review |
+| **🔴 Data correction** | `dashboard/news.js` entry 2026-09-09 claiming a CRM analyst-downgrade wave (Wells Fargo/MS/KeyBanc/Guggenheim, PT as low as $185) was **wrong** — sourced from a stale/mis-dated WebSearch result. Atlas full-pipeline re-verify found the opposite: MS PT actually $315, Wells Fargo raised to $230, consensus 27 Buy/15 Hold/3 Sell, avg PT $266.50. news.js corrected same session. |
+| Risk flagged | Beta staleness post-re-leverage (trailing 1.20 vs Hamada re-lever ~1.40 → WACC stress 10.61%) — re-verify next quarter |
+| Quinn calibration flag | DCF terminal-value dominance across nearly every sensitivity cell — possible **systematic overvaluation bias in team's SaaS DCF methodology**, not CRM-specific. Track for rolling-8Q gate review. |
+| Morgan QA | CONDITIONAL PASS, DQ 8.2/10, 2 MEDIUM non-blocking (stop-loss label rounding, TGR re-citation) |
+| Max Consultation | Not triggered — routine HOLD, no capital action |
+
+**Portfolio impact:** mark-to-market only (CRM mv $747.36→$729.00 on repriced FV/position). Cash unchanged $7,143.33. Total ~$10,265.42 (+2.65%), Alpha **-0.56%** (still negative/noise, batch not complete — ADBE/GOOGL/ADSK remain).
+
+*Logged by Vera — 2026-09-11 | CRM full re-analysis, same session as Leo per iron rule*
+
+---
+
 ## ACN Full Exit + REGN FV Re-Verify — 2026-09-11 (Re-Analysis Trigger Rule batch, Max×Charlie reconciled)
 
 **Trigger:** CIO "แล้วนายจะทำอะไรต่อ" → resumed Emma FV re-verify batch (commissioned 2026-09-01, 10 days overdue). ACN + REGN prioritized as clearest opposite-direction signals.

@@ -252,3 +252,9 @@
 - Re-entry watch เพิ่มเข้า `buy_list.md`: zone $150-170, trigger Q4 FY26 (2026-10-01) organic rev ≥+4% LC AND bookings YoY ≥flat AND FY27 guide ≥+5% LC, position size ½ ปกติถ้า re-enter (thesis rebuild)
 
 *Max — 2026-09-11 | ACN Full Exit (Max×Charlie reconciled, Risk Rule 3 thesis-change) + REGN STRONG SELL artifact resolved (no action). Cash $6,894.47→$7,143.33 (69.46%). Positions 7→6. Total $10,283.78 (other 5 tickers' prices unchanged from Sept 8 close — not a full re-mark, only ACN/REGN refreshed for this action).*
+
+---
+
+| 2026-09-11 | CRM | **HOLD (routine — no capital action)** | **Conviction 6.8 < 7.0 fresh-BUY gate (existing position — gate governs new capital, ไม่ใช่ exit rule) — Bear Flip 0/5, Thesis Invalidation 0/2, MOS +29.72%** | $0 change | — | **Full Re-Analysis (3rd ในคิว batch หลัง ACN/REGN, CIO "เอาทีละตัว") — Re-Analysis Trigger #1+#4 resolved.** Blended FV $279(stale)→$345.77 (Emma $365.13×0.40 + Quinn $370.75×0.30 + Bear $294.97×0.30). ราคา re-verify $243.00. MOS +10.71%(stale)→+29.72%. Net debt swing -$30.97B จริง (Informatica + $25B ASR buyback) กระทบ FV น้อยกว่ากลัว (-2.8%). cRPO stagnant +14% 2 ไตรมาสติด = monetization-lag signal ต้องจับตา. **Data correction สำคัญ:** news.js CRM "downgrade wave" (09-09) ผิด — แก้เป็น upgrade-leaning (MS PT จริง $315, WF $230, consensus 27B/15H/3S) จาก stale search source. Morgan CONDITIONAL PASS (DQ 8.2/10, 2 MEDIUM non-blocking). ไม่เข้าเงื่อนไข Max Consultation Rule — routine HOLD ไม่มี capital action. | ยังไม่มี — ไม่ใช่ SKIP, HOLD ต่อ position เดิม |
+
+*Max — 2026-09-11 | CRM Full Re-Analysis (batch item 3/6: ACN✅ REGN✅ CRM✅ → ADBE/GOOGL/ADSK เหลือ) — HOLD confirmed, Blended FV +23.9% จาก stale, MOS +29.72%. ไม่มีการ trade — cash/positions ไม่เปลี่ยน จาก CRM action นี้เอง (ตัวเลขพอร์ตรวมขยับเล็กน้อยจาก mark-to-market ของ CRM position เท่านั้น).*
