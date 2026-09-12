@@ -225,6 +225,38 @@ Layered on top: price itself popped **+9.31% in a single day (Sept 2)** on **S&P
 
 ---
 
+## GOOGL Full Exit — 2026-09-12 (Re-Analysis Trigger Rule batch, 5th of 6 — pre-committed Thesis Invalidation FIRED)
+
+**Trigger:** #1 earnings-driven (Q2 2026 Cloud +81.9% beat never modeled). Emma lightweight found FV -42.8% → escalated full pipeline. Morgan QA Round 1 FAILED (TGR ceiling violation + missing Catalysts Calendar) → fixed → Round 2 PASS, which deepened the MOS further rather than reversing it.
+
+| Field | ค่า |
+|-------|-----|
+| Recommendation | BUY → **SELL — Full Exit remaining 1sh** |
+| Price | $339.81 (2-source: stockanalysis.com + Google Finance, Sept 11 close) |
+| Blended FV | $414 → **$163 raw / $148 ESG-adj** (-60.6%) — Emma $228×0.40 + Quinn $78×0.30 + Bear $161×0.30 |
+| MOS | +19.0% → **-52.0% raw / -56.4% ESG-adj** — deepest negative MOS in portfolio history (deeper than RDDT's -34.5% full exit) |
+| **Trigger fired** | **Pre-committed Thesis Invalidation criterion: CapEx >$100B/yr** (set 2026-05-21, before the outcome was known) — FY2026 capex guidance came in at $195-205B, ~2x the threshold, with zero FY2027 taper guidance |
+| Also fired | Bear Flip Trigger #3 (CapEx >$85B + no taper guidance) — independent confirmation of the same signal |
+| Quant signals | Reverse DCF decisive FAIL for both Emma and Quinn independently (price above every cell in Quinn's 25-scenario grid); Kelly 0% at every fraction; Forward Sharpe -2.44 |
+| NOT fired | Bear Flip only 1/5, Thesis Invalidation only 1/4 overall — Cloud +81.9%, Search +19%, Cloud backlog $514B (SEC-verified) all remain strong. This is a capex/FCF valuation thesis break, not a business-quality collapse |
+| Morgan QA | Round 1 **FAIL** (2 HIGH: TGR 3.5% > 3% ceiling; Catalysts Calendar section missing) → fixed → Round 2 **PASS**, DQ 9.0/10, 0 HIGH/MEDIUM remaining |
+| **Max×Charlie reconciled** | **SELL — full exit.** IPS Risk Rule 3: exit immediately on a fired pre-committed criterion, don't wait for price recovery or defer to Street consensus ($428 PT, deeply at odds with the new FV) because the business still looks strong. Position small (1sh, 3.3% weight) — P&L cost of the discipline is minor |
+| Realized P&L | -$49.10 (-12.63%) |
+| Re-entry | **Not** added to buy_list.md — capex/margin-recovery timeline has zero management guidance beyond FY2026; watch for FY2027 capex guidance (~Jan/Feb 2027 with Q4/FY2026 earnings) before re-scouting |
+| Data correction | `dashboard/news.js` 2026-09-09 item stated Cloud backlog $155B — wrong, actual (SEC 10-Q verified) is **$514B**. Corrected same session. |
+
+### Portfolio impact
+Cash $7,143.33 → **$7,483.14** (73.4%). Positions 6 → **5**. Total value ~$10,200.61 (+2.01%), S&P +3.21%, **Alpha -1.20%** (still negative — batch not complete, one item [ADSK] remains; GOOGL's own price weakness this round contributed relatively little since the position was tiny, most of the alpha drag this week has come from ADBE's post-earnings pullback and the general software selloff Sept 8).
+
+### Calibration note (for rolling-8Q gate review)
+This is now the **2nd full exit this batch** (after ACN) driven by IPS Risk Rule 3 rather than a stop breach — both were positions where a pre-committed, objective criterion fired and the team chose to honor it rather than rationalize around still-strong headline business metrics. This is exactly the discipline the Pre-commitment Rules and Thesis Invalidation framework were designed to produce. **Also notable:** the batch commissioned 2026-09-01 took 12 days to clear (ACN/REGN/CRM/ADBE/GOOGL done, ADSK remains) and uncovered the two largest FV corrections in the portfolio's history (ACN -20.9%, GOOGL -60.6%) plus one major false-alarm resolution (REGN). This is a strong argument for a harder SLA on the Re-Analysis Trigger Rule rather than a soft priority queue — flag for the next process review alongside the CRM DCF terminal-value-dominance flag from earlier this batch.
+
+**Session note:** Session Interruption/Resume Protocol **10th instance** — pipeline hit an API session-limit failure mid-Quinn (per the failure notification), but on resume all of Atlas/Emma/Quinn/Bear/Morgan Round 1 had actually completed (the notification undersold progress); a second dispatch fixed the Morgan Round 1 FAIL (TGR + Catalysts Calendar) cleanly to Round 2 PASS with no further interruption. Also encountered and safely handled: a Unicode-escape bug in a portfolio.js patch script during the ADBE round that briefly truncated the file (see 2026-09-11 ADBE session note) — the safer tmp-file write/validate/swap pattern adopted after that incident was used for all of this GOOGL sync work with no issues.
+
+*Logged by Vera — 2026-09-12 | GOOGL full exit, same session as Leo per iron rule*
+
+---
+
 ## ADBE Lightweight Re-Analysis + Q3 FY26 Confirmed — 2026-09-11 (batch 4th of 6 — HOLD confirmed)
 
 **Trigger:** #1 earnings-driven (Q2 FY26 06-11 beat never modeled, FV 125 days old — oldest in book). ADBE reported Q3 FY2026 after close 2026-09-10; main session's own WebSearch (3 attempts, morning of 09-11) could not find the actual result — news wasn't indexed yet. Emma's re-verify ~36h later found it cleanly (2-source).

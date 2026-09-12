@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-09-11";
+const LAST_UPDATED = "2026-09-12";
 
 const REPORTS = [
 
@@ -16769,34 +16769,34 @@ FICO คือหนึ่งในธุรกิจที่ดีที่ส
   {
     ticker: "GOOGL",
     company: "Alphabet Inc.",
-    date: "2026-05-21",
+    date: "2026-09-12",
     version: "v4 (Full Re-Analysis — Price Corrected)",
     sector: "Communication Services / Technology",
-    price: 388.00,
-    recommendation: "BUY",
-    blendedFV: 414.00,
-    esgFV: 377.00,
-    mosPct: 6.7,
+    price: 339.81,
+    recommendation: "SOLD — FULL EXIT (was BUY) — position CLOSED 2026-09-12 (pre-committed Thesis Invalidation criterion fired)",
+    blendedFV: 163.00,
+    esgFV: 148.00,
+    mosPct: -52.0,
     stopLoss: 310.00,
     targetBull: 520.00,
     targetBase: 465.00,
-    convictionEmma: 7.5,
-    convictionQuinn: 7.0,
+    convictionEmma: 5.5,
+    convictionQuinn: 6.5,
     convictionBear: 7.0,
-    convictionAvg: 7.2,
+    convictionAvg: 6.3,
     pwEV: 414.00,
     beta: 1.06,
     sharpe1Y: 0.24,
     maxDrawdown: -0.44,
-    moat: "Wide",
+    moat: "WIDE (unchanged, business quality intact) but thesis broken on capex/FCF discipline -- not a moat downgrade, a capital-discipline exit",
     esgRating: "Medium-High",
     esgScore: 5.3,
-    keyThesis: "Google Cloud $20B Q1 2026 (+63% YoY) กำลัง materialize เป็น revenue engine ที่ 3; Op margin 36.1% structural expansion; Revenue +22% Q1 2026; AI Search overhaul (Google I/O 2026); Growth MOS ผ่านทั้ง 2 tests",
-    topRisk: "DOJ structural separation ruling (FV $185–233); CapEx $75–85B FCF yield 0.9% < risk-free; Bear P-W EV = $388 (ไม่มี MOS จาก Bear view)",
+    keyThesis: "SOLD 2026-09-12 (Max x Charlie reconciled, IPS Risk Rule 3). A Thesis Invalidation criterion the team pre-committed to in May 2026 -- CapEx > $100B/yr -- fired: FY2026 capex guidance came in at $195-205B, ~2x the threshold, with zero FY2027 taper guidance. Bear Flip Trigger #3 (capex >$85B + no taper guidance) fired independently, confirming the same signal. Full pipeline found the deepest negative MOS in the portfolio's history: Blended FV $414 -> $163 raw / $148 ESG-adj (-60.6%), MOS +19.0% -> -52.0% / -56.4%. Reverse DCF failed decisively for both Emma and Quinn independently (price above every cell in Quinn's 25-scenario sensitivity grid); Kelly 0% at every fraction. This was NOT a business-quality collapse -- Cloud grew +81.9% YoY, Search +19%, Cloud backlog $514B (SEC-verified) -- it was specifically a capex/FCF valuation thesis break, and the team's own pre-commitment discipline (set before the outcome was known, precisely to prevent post-hoc rationalization) said to exit immediately rather than wait for price recovery or defer to Street consensus ($428 PT, deeply at odds with the new FV). Position was small (1 share, 3.3% weight) so the P&L cost of the discipline was minor (-$49.10, -12.63%). See reports/GOOGL_2026-05-21.md Update Log 2026-09-11/12 for the full re-analysis.",
+    topRisk: "RESOLVED via full exit 2026-09-12. Re-scout watch: FY2027 capex guidance (expected with Q4/FY2026 earnings, ~Jan/Feb 2027) -- if management gives a credible taper path, this becomes a re-entry candidate; until then the margin-recovery timeline has zero guidance and is too speculative to pre-set a buy_list entry zone.",
     entryZone: "$370–$400",
-    positionSize: "8% max (RISK-ON 1.0x, T1 4%)",
+    positionSize: "N/A — position closed. Realized -$49.10 (-12.63%) on the single tranche. Not added to buy_list.md pending FY2027 capex guidance clarity.",
     spSRef: "~5,308 est.",
-    morganQA: "CONDITIONAL PASS",
+    morganQA: "Round 1 FAIL (2 HIGH: Terminal Growth Rate 3.5% exceeded the 3% ceiling; Catalysts Calendar section missing) -> fixed -> Round 2 PASS, Data Quality 9.0/10, 0 HIGH/MEDIUM remaining (2 LOW non-blocking). TGR fix deepened MOS further (as Morgan predicted) rather than reversing the SELL direction.",
     priceV3: 165.44,
     priceError: "+134% from knowledge cutoff",
     bullFlipTriggers: [

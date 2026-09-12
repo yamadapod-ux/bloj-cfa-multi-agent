@@ -63,3 +63,8 @@
 **ACN lifetime cumulative** (2.8sh original, cost basis $498.85): TRIM 50% (-$70.25) + FULL EXIT (-$0.57) = **-$70.82 realized**. Position CLOSED 2026-09-11 — thesis-change exit (Risk Rule 3), not stop-driven. See `reports/ACN_2026-06-05.md` § Update Log 2026-09-11 for full re-analysis.
 
 ---
+| GOOGL (SELL — FULL EXIT) | 2026-05-21 | 2026-09-12 | $388.91 | $339.81 | 1 | **-$49.10** | **-12.63%** | 114 |
+
+**GOOGL exit note:** Thesis Invalidation criterion (CapEx >$100B/yr, pre-committed 2026-05-21) fired — FY2026 capex guide $195-205B. Deepest negative Blended MOS in portfolio history (-52.0% raw / -56.4% ESG-adj). Not a business-quality issue (Cloud +81.9%, Search +19%, backlog $514B) — a valuation/capex-FCF thesis break under IPS Risk Rule 3. See `reports/GOOGL_2026-05-21.md` § Update Log 2026-09-11/12 for full re-analysis.
+
+---
