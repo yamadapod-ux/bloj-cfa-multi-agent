@@ -3,9 +3,127 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-11 12:00";
+const NEWS_LAST_UPDATED = "2026-09-13 12:00";
 
 const NEWS = [
+
+  // ── 2026-09-12 ──────────────────────────────
+  {
+    date: "2026-09-12", category: "MACRO",
+    headline: "🟡 Citi คาด Fed จะ 'hike แบบ dovish' 25bps เป็น 3.75-4.00% ที่ FOMC 15-16 ก.ย. — ขึ้นดอกเบี้ยแต่ส่งสัญญาณผ่อนคลาย",
+    summary: "Citi Research คาดว่า Fed จะขึ้นดอกเบี้ย 25bps สู่ 3.75-4.00% ในการประชุม FOMC 15-16 ก.ย. 2026 แต่จะส่งสัญญาณ 'dovish' ควบคู่ไปด้วย (forward guidance ผ่อนคลาย) ท่ามกลาง August CPI ที่ตลาดมองว่า sticky (ดูข่าว CPI แยก) และ oil-driven inflation risk จาก Iran tension ที่ยังค้างอยู่. ตลาดเปลี่ยนจาก coin-flip (~56-57% ก่อนหน้านี้ 9 ก.ย.) เป็น consensus ชัดเจนขึ้นว่าจะ hike. นัยพอร์ต: ตรงกับสมมติฐาน Fed Stance hawkish ที่ Atlas ใช้ยืนยัน Regime TRANSITIONAL-CAUTIOUS (2026-09-11) — 'dovish hike' อาจเป็นจุดเปลี่ยนสำคัญ: ถ้า Fed ขึ้นแต่ signal ชัดว่าเป็นครั้งสุดท้าย/จะ pause ต่อ อาจเปิดทางให้ regime flip กลับ RISK-ON ตามเงื่อนไข knife-edge ที่ Atlas วางไว้ — ต้องติดตาม FOMC statement/dot plot 16 ก.ย. อย่างใกล้ชิด เป็น mandatory re-call trigger หลักของทีม.",
+    impact: "MIXED", tickers: [],
+    url: "https://www.investing.com/news/stock-market-news",
+  },
+  {
+    date: "2026-09-12", category: "EARNINGS",
+    headline: "🟡 ADBE post-earnings: นักวิเคราะห์แตกเป็น 2 ฝั่งชัดเจน — UBS/BMO/Wells Fargo ขึ้น PT, JPMorgan/Citi ลด PT, Morgan Stanley ยังคง negative",
+    summary: "หลัง Q3 FY26 beat ทุกตัวเลข (ดูข่าว 2026-09-11), นักวิเคราะห์แตกความเห็นชัดเจน: ฝั่งบวก — UBS ขึ้น PT เป็น $255, BMO Capital เป็น $270, Wells Fargo เป็น $270. ฝั่งระมัดระวัง — JPMorgan ปรับ PT เป็น $315, Citi ปรับเป็น $250, และ Morgan Stanley ย้ำมุมมอง negative ต่อแม้ผลประกอบการ beat+raise guide. D.A. Davidson (Gil Luria) มองว่าการร่วงของหุ้นไม่ใช่แค่ AI disruption fear เพียงอย่างเดียว มีปัจจัยตลาดอื่นร่วมด้วย. นัยพอร์ต: เราถือ ADBE 4sh weight 9.78%, Emma lightweight FV re-verify (2026-09-11) MOS +32.4% ยังกว้าง — การแตกความเห็นนักวิเคราะห์นี้เป็น sentiment noise ระยะสั้น ไม่ใช่สัญญาณ fundamental ใหม่ ยังคง HOLD ตามเดิม แต่เป็น data point เสริมสำหรับการ escalate full pipeline รอบหน้า (CEO transition read).",
+    impact: "MIXED", tickers: ["ADBE"],
+    url: "https://stockanalysis.com/stocks/adbe/",
+  },
+
+  // ── 2026-09-11 (Atlas full scan 2026-09-13) ──────────────────────────────
+  {
+    date: "2026-09-11", category: "MACRO",
+    headline: "🟠 August CPI ออกแล้ว (11 ก.ย.) — Headline YoY 3.4% ตรงคาด/ทรงตัว แต่สื่อรายงาน 'accelerate' + core sticky, oil ย่อลงเล็กน้อย WTI $99.99/Brent $104.47",
+    summary: "BLS รายงาน August CPI headline YoY 3.4% (ตรงกับ forecast 3.4% และเท่ากับเดือนก่อน — ไม่เปลี่ยนแปลง ตาม investing.com economic calendar). แต่ Reuters (11 ก.ย.) พาดหัวว่า 'US consumer prices accelerate in August' — สื่อถึง MoM pace หรือ core measure ที่ร้อนขึ้น ⚠️ รายละเอียด MoM/core CPI ตัวเลขชัดเจนยังไม่สามารถ verify ได้จาก source ที่ fetch — ต้อง cross-check เพิ่มก่อนใช้ตัดสินใจสำคัญ. Citi มองว่าผลลัพธ์นี้ผลักดันตลาดเข้าใกล้ Fed hike มากขึ้น (ดูข่าว Citi dovish-hike แยก 12 ก.ย.). ด้าน oil ย่อลงจาก peak: WTI -2.43% เหลือ $99.99, Brent -2.94% เหลือ $104.47 (12 ก.ย.) — ยังสูงกว่าระดับก่อน Iran tension escalation (WTI ~$95, Brent ~$100 ต้นเดือน) แต่เริ่มคลายตัว. นัยพอร์ต: เป็น 1 ใน 2 binary events หลักที่ Atlas ใช้ตัดสิน Regime TC (CPI Sept 11 + FOMC Sept 16) — ผล CPI headline ไม่ได้ hot กว่าคาดชัดเจน แต่ narrative สื่อยัง hawkish-leaning จึงยังไม่ decisive ไปทางใดทางหนึ่ง ต้องรอ FOMC 16 ก.ย. เป็นตัวชี้ขาด regime call ถัดไปตามแผนเดิม.",
+    impact: "MIXED", tickers: [],
+    url: "https://www.investing.com/economic-calendar/cpi-733",
+  },
+  {
+    date: "2026-09-11", category: "SECTOR",
+    headline: "🟢 CRM AI momentum ก่อน Dreamforce — ประกาศ Claudeforce partnership กับ Anthropic, ปิดดีล Fin, จับมือ FIDE",
+    summary: "Salesforce เตรียม Dreamforce conference (สัปดาห์ถัดจาก 11 ก.ย.) โดยตลาดจับตา 'Claudeforce' — พันธมิตรที่เพิ่งประกาศกับ Anthropic ซึ่งจะเปิดเผยรายละเอียดเพิ่มใน Dreamforce (transcript อ้างว่า 'major step in AI-CRM integration, rapid early adoption'). นอกจากนี้ปิดดีล acquisition Fin (workflow analytics startup, 10 ก.ย.) และประกาศพันธมิตร multiyear กับ FIDE (International Chess Federation, 9 ก.ย.) ผ่าน Agentforce 360. หุ้นขึ้น +1.94% (11 ก.ย., ปิด $247.72) จาก AI optimism wave. นัยพอร์ต: เราถือ CRM 3sh weight 7.09%, MOS +29.72% (fresh FV $345.77 re-verify 2026-09-11) — ข่าว Claudeforce เป็นบวกเสริม thesis Agentforce ARR growth แต่รายละเอียดยังไม่ชัด ต้องรอ Dreamforce ยืนยัน monetization จริง (เกี่ยวโยงกับ watch item cRPO growth flat +14% ที่ Emma/Quinn ค้างไว้).",
+    impact: "POSITIVE", tickers: ["CRM"],
+    url: "https://stockanalysis.com/stocks/crm/",
+  },
+  {
+    date: "2026-09-11", category: "REGULATION",
+    headline: "🟡 REGN: securities class action ฟ้องเรื่อง Fianlimab-Libtayo trial disclosure (lead-plaintiff deadline 14 ก.ย.) — สวนทาง HSBC ขึ้น PT เป็น $920",
+    summary: "มีการยื่นฟ้อง securities class action ต่อ Regeneron (ยื่นครั้งแรก 16 ก.ค. 2026, ประกาศ lead-plaintiff deadline 14 ก.ย. 2026) กล่าวหาว่าบริษัท 'minimized Phase III Fianlimab-Libtayo statistical and protocol risks' ในการเปิดเผยข้อมูล — รายละเอียด class period และ stock-drop trigger ยังไม่ชัดจาก source ที่ fetch ได้ ⚠️ ต้อง WebSearch เพิ่มยืนยันรายละเอียดเมื่อ budget เปิดใหม่. ในทางกลับกัน HSBC (Rajesh Kumar) ปรับ PT ขึ้นเป็น $920 (จาก $800, คง Buy) เมื่อ 12 ก.ย. นัยพอร์ต: เราถือ REGN 0.42sh weight 3.25%, เพิ่งแก้ STRONG SELL artifact เป็น MOS +11.8% เมื่อ 2026-09-11 (FV re-verify $889) — คดีความนี้เป็น regulatory/litigation overhang ใหม่ที่ยังไม่เคยประเมินใน Bear Flip/Thesis Invalidation checklist เดิม ควร flag ให้ Bear ประเมินรอบ full-pipeline ถัดไป (ไม่ trigger action ทันที เพราะยังเป็น deadline ทางกระบวนการ ไม่ใช่คำตัดสิน).",
+    impact: "MIXED", tickers: ["REGN"],
+    url: "https://stockanalysis.com/stocks/regn/",
+  },
+  {
+    date: "2026-09-11", category: "TECH",
+    headline: "🟢 GOOGL เดินหน้า AI infra ต่อเนื่อง — ปิดดีล Mechanize $1.5B+, เปิด Gemini for Windows, ลงทุน AI Finland €13B",
+    summary: "Alphabet ปิดการซื้อกิจการ AI startup Mechanize มูลค่ากว่า $1.5B (ทีมงานเดิมเข้าร่วม Google), เปิดตัวแอป Gemini สำหรับ Windows PC เพื่อขยาย reach, ประกาศลงทุน €13B ($15B) ใน AI infrastructure ที่ฟินแลนด์ (data centers ภายใน 2 ปี), และเซ็นดีล carbon credit ใหญ่ที่สุดของบริษัท (1M credits จาก Mitti Labs อินเดีย ถึงปี 2030). หุ้นขึ้น +1.77% (11 ก.ย., ปิด $338.50). นัยพอร์ต: เราปิด position GOOGL ไปแล้ว (FULL EXIT 2026-09-12 จาก capex thesis invalidation) — ยังคงอยู่ใน watchlist เป็น GOOGL_T2 candidate (re-scout หลัง FY2027 capex guidance ~ม.ค./ก.พ. 2027). ข่าวนี้ยืนยันว่า core AI business (Cloud, Gemini) ยังแข็งแกร่งต่อเนื่อง — สอดคล้องกับที่เหตุผล full-exit คือ capex-criterion ไม่ใช่ business quality.",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://stockanalysis.com/stocks/googl/",
+  },
+  {
+    date: "2026-09-11", category: "TECH",
+    headline: "🔵 MSFT ประกาศขยาย data center เป็น ~38GW ภายในปี 2032 รับมือ AI compute shortage — comms chief Frank Shaw ลาออกหลังทำงาน 3 ทศวรรษ",
+    summary: "Microsoft วางแผนขยาย data center capacity มากกว่า 3 เท่าเป็นราว 38GW ภายในปี 2032 เพื่อรองรับ AI compute demand ที่ขาดแคลน — สอดคล้องกับ capex race ของ hyperscalers (Google Finland €13B, ดูข่าวแยก). ด้านบุคลากร: Frank Shaw หัวหน้าฝ่ายสื่อสารของ Microsoft ที่ทำงานมาเกือบ 30 ปี ประกาศลาออก. นัยพอร์ต: Big 10 watch — ไม่มี position MSFT โดยตรง แต่ capex race ระดับนี้เป็น sector-wide signal สำหรับความเสี่ยง valuation ของ AI infrastructure play ทั้งหมด (บทเรียนเดียวกับที่ทำให้ GOOGL thesis invalidate จาก capex overshoot).",
+    impact: "NEUTRAL", tickers: ["MSFT"],
+    url: "https://stockanalysis.com/stocks/msft/",
+  },
+  {
+    date: "2026-09-11", category: "TECH",
+    headline: "🟡 META: JPMorgan อัปเกรดเป็น Buy PT $820 — สวนทางข่าวลบ Meta AI ถามข้อมูลเด็ก/ตำแหน่งที่อยู่ลูกสาว",
+    summary: "JPMorgan ปรับคำแนะนำ META เป็น Buy พร้อมขึ้น PT เป็น $820 (สอดคล้องกับที่ JPMorgan เพิ่งเลือก KLA เป็น top chip-equipment pick ด้วย). ในทางกลับกันมีข่าวเชิงลบด้าน AI safety: มีรายงานผู้ปกครองกังวลว่า Meta AI ถามข้อมูลเกี่ยวกับลูกสาว (อายุน้อย) และตำแหน่งที่อยู่ พร้อมดึงรูปเก่าที่เคยลบไปแล้วกลับมา — ประเด็น child-safety ที่อาจนำไปสู่ regulatory scrutiny เพิ่มเติม (Oversight Board ขอให้ไม่แทนที่ fact-checking ด้วย Community Notes, กลุ่มสิทธิดิจิทัลโปรตุเกสฟ้องเรื่อง addictive platform design). หุ้นขึ้น +0.57% (11 ก.ย., ปิด $648.03) — ตลาดยังให้น้ำหนัก analyst upgrade มากกว่าความเสี่ยง regulatory. นัยพอร์ต: ไม่มี position META — Big10 watch, AI-safety overhang เป็นความเสี่ยง sector-wide (เทียบเคียงกับ REGN litigation, FICO regulatory pressure วันเดียวกัน) ที่ควรจับตาเป็น pattern.",
+    impact: "MIXED", tickers: ["META"],
+    url: "https://stockanalysis.com/stocks/meta/",
+  },
+  {
+    date: "2026-09-11", category: "TECH",
+    headline: "🟡 AAPL เปิดตัว iPhone Duo (foldable แรก) ราคาเริ่ม $1,999 — นักวิเคราะห์แตกความเห็นเรื่อง margin",
+    summary: "Apple เปิดตัว iPhone Duo อย่างเป็นทางการ (งาน 9 ก.ย. ภายใต้ CEO ใหม่ John Ternus) เป็น foldable รุ่นแรกของบริษัท ราคาเริ่มต้น $1,999 (เทียบกับคู่แข่งจีนที่ 15,999 หยวน). นักวิเคราะห์มีมุมมองบวกต่อ revenue potential แต่บางส่วนกังวลเรื่อง margin จาก hardware ที่ซับซ้อนขึ้น. หุ้นขึ้น +1.75% (11 ก.ย., ปิด $332.27). นัยพอร์ต: Big10 watch เชื่อมโยงกับ TSM (ผลิต A20 Pro chip 2nm, ดูข่าวแยก) — ไม่มี position AAPL โดยตรง.",
+    impact: "POSITIVE", tickers: ["AAPL", "TSM"],
+    url: "https://stockanalysis.com/stocks/aapl/",
+  },
+  {
+    date: "2026-09-11", category: "REGULATION",
+    headline: "🔴 FICO เจอแรงกดดัน regulatory — FHFA Director Pulte วิจารณ์ราคาต่อสาธารณะ, TD Cowen เตือนความเสี่ยง credit bureau ทั้งอุตสาหกรรม",
+    summary: "Bill Pulte ผู้อำนวยการ Federal Housing Finance Agency (FHFA) วิจารณ์ FICO ต่อสาธารณะว่า 'seems that FICO is not interested in offering competitive costs' เรื่องโครงสร้างราคา credit score/report (8 ก.ย.) — ตามด้วย TD Cowen (3 ก.ย.) เตือนว่ามีความเสี่ยง regulatory ต่อ credit bureaus ทั้งอุตสาหกรรมจากแรงกดดันนี้. ด้านบวก: FICO ประกาศ Score 10T จะพร้อมใช้กับ FHA-approved lenders เริ่ม 1 ม.ค. 2027 (11 ก.ย.). นัยพอร์ต: FICO อยู่ใน watchlist (HOLD/WAIT, MOS -9.1% ราคาแพงกว่า FV, ราคา $985.39) — แรงกดดัน regulatory จากภาครัฐเรื่อง pricing เป็นความเสี่ยงใหม่ที่ควรใส่เข้า scout/Bear checklist หากพิจารณา re-visit candidate นี้ในอนาคต.",
+    impact: "NEGATIVE", tickers: ["FICO"],
+    url: "https://stockanalysis.com/stocks/fico/",
+  },
+  {
+    date: "2026-09-11", category: "REGULATION",
+    headline: "🟡 AVGO: EU สอบ VMware licensing overhaul ว่ากระทบ cloud providers หรือไม่ — Piper Sandler เปิด coverage Overweight PT $460",
+    summary: "หน่วยงานกำกับดูแล EU กำลังตรวจสอบการปรับโครงสร้าง licensing ของ VMware (ภายใต้ Broadcom) ว่าส่งผลเสียต่อ cloud providers หรือไม่ (11 ก.ย.) — ความเสี่ยง regulatory ใหม่ที่ต้องจับตา. ด้านบวก: Piper Sandler เปิด coverage ใหม่ Overweight PT $460 มองเป็น 'the winner on the hyperscaler' segment (10 ก.ย.). ก่อนหน้านี้หุ้นร่วงหลัง Q3 beat (AI rev +221% YoY เป็น $16.7B) เพราะ Q4 guide $34.8B ต่ำกว่าคาดเล็กน้อย + กังวล Google หันไปใช้ Marvell. นัยพอร์ต: AVGO อยู่ watchlist (NO DEPLOY, ราคาสูงกว่า entry zone มาก, Sharpe -0.09) — EU scrutiny เป็นความเสี่ยงเสริมที่ยืนยันว่ายังไม่ใช่จังหวะเข้า.",
+    impact: "MIXED", tickers: ["AVGO"],
+    url: "https://stockanalysis.com/stocks/avgo/",
+  },
+  {
+    date: "2026-09-11", category: "TECH",
+    headline: "🔵 AMZN ขยาย AI ecosystem — จับมือ Qualcomm ด้าน AI/data center, เปิดทางโฆษณาแบรนด์ผ่าน ChatGPT ร่วม OpenAI",
+    summary: "Amazon ขยายความร่วมมือกับ Qualcomm ด้าน AI และ data center operations (11 ก.ย.) และก่อนหน้านี้ประกาศพันธมิตรกับ OpenAI ให้แบรนด์สหรัฐฯ บางส่วนลงโฆษณาใน ChatGPT ได้ (9 ก.ย.) — สะท้อนว่า Amazon กระจายพันธมิตร AI ข้าม ecosystem ไม่ผูกกับเจ้าใดเจ้าหนึ่ง. นอกจากนี้ยังลงทุนต่อเนื่องด้าน infra (Ohio data center, อาจเจอประเด็นภาษี) และ satellite (Leo network เพิ่มสัญญาจรวดกับ Arianespace เป็น 24 launches). นัยพอร์ต: Big10 — ไม่มี position AMZN — เป็นสัญญาณว่า AI capex/partnership race ยังกระจายตัวกว้างในหลาย hyperscaler ไม่กระจุกที่เจ้าใดเจ้าหนึ่ง.",
+    impact: "NEUTRAL", tickers: ["AMZN"],
+    url: "https://stockanalysis.com/stocks/amzn/",
+  },
+  {
+    date: "2026-09-12", category: "TECH",
+    headline: "🟢 TSLA: ประกาศเปิดตัว Roadster 1 ต.ค. — Morgan Stanley ขึ้น bull case เป็น $840 จาก Semi truck potential",
+    summary: "Tesla ส่งสัญญาณเปิดตัว Roadster (รุ่นที่รอคอยมานาน) วันที่ 1 ต.ค. 2026 (Reuters/TechCrunch, 12 ก.ย.) พร้อมแผนนำ Semi electric truck เข้าสู่ตลาดยุโรปปี 2027. Morgan Stanley ปรับ bull-case valuation ขึ้นเป็น $840 จากศักยภาพธุรกิจ Semi. WSJ รายงาน (11 ก.ย.) ว่า Tesla กำลังฟื้นส่วนแบ่งตลาด EV ในสหรัฐฯ กลับมาจากจุดต่ำสุดปี 2025 ขณะที่ legacy automakers ถอยห่าง. ด้านความเสี่ยง: มี House Democrat เรียกร้องให้ภาครัฐดำเนินการเรื่องคนขับหลับใน ขณะใช้ Autopilot/FSD (10 ก.ย.) และมีความกังวลด้านความปลอดภัยของ Cybercab. นัยพอร์ต: Big10 — ไม่มี position TSLA โดยตรง แต่เป็นสัญญาณบวกต่อ broader EV/autonomy sentiment.",
+    impact: "POSITIVE", tickers: ["TSLA"],
+    url: "https://stockanalysis.com/stocks/tsla/",
+  },
+
+  // ── 2026-09-10 ──────────────────────────────
+  {
+    date: "2026-09-10", category: "SECTOR",
+    headline: "🟢 TSM รายงาน August revenue สถิติใหม่ NT$514.81B (+53.3% YoY) — ยืนยัน AI chip demand ยังแกร่ง",
+    summary: "Taiwan Semiconductor รายงานยอดขายเดือนสิงหาคม 2026 ทำสถิติใหม่ที่ NT$514.81 billion เพิ่มขึ้น +53.3% YoY (10 ก.ย.) สะท้อนดีมานด์ชิป AI ที่ยังแข็งแกร่งต่อเนื่อง. Warren Buffett/นักวิเคราะห์ยกให้ TSM เป็น 'virtual monopoly in advanced chipmaking' (12 ก.ย.) พร้อมคาดการณ์ราคาหุ้นอาจแตะ $600-700 ภายในปี 2027 (Motley Fool). หุ้นขึ้น +1.22% (11 ก.ย., ปิด $433.24). นัยพอร์ต: Big10 — เชื่อมโยงกับ AAPL A20 Pro chip (2nm) และภาพรวม AI capex ทั้ง sector (GOOGL/MSFT data center race) — เป็น leading indicator ว่า AI infrastructure demand ยังไม่ชะลอ แม้บาง hyperscaler (GOOGL) เจอความเสี่ยง capex-ROI ที่ทำให้เราต้อง exit position.",
+    impact: "POSITIVE", tickers: ["TSM", "AAPL"],
+    url: "https://stockanalysis.com/stocks/tsm/",
+  },
+  {
+    date: "2026-09-10", category: "MACRO",
+    headline: "🟢 WMT ได้ tariff refund $2.9B — เตรียมลดราคาสินค้าให้ผู้บริโภค",
+    summary: "Walmart ได้รับเงินคืนภาษีนำเข้า (tariff refund) มูลค่า $2.9B (7-8 ก.ย.) และวางแผนปรับลดราคาสินค้าให้ผู้บริโภคตาม. นอกจากนี้ขยายพันธมิตร delivery กับ Papa John's และ Dunkin' (10-11 ก.ย.) และขยาย tap-to-pay ทั่วสาขา US. นัยพอร์ต: Big10 — tariff refund เป็นสัญญาณบวกต่อ retail margin/consumer spending power โดยรวม ทางอ้อมสนับสนุน soft-landing narrative ที่ตรงข้ามกับความเสี่ยง stagflation ที่ Atlas ใช้ประกอบ TC regime call (oil-driven inflation).",
+    impact: "POSITIVE", tickers: ["WMT"],
+    url: "https://stockanalysis.com/stocks/wmt/",
+  },
+  {
+    date: "2026-09-10", category: "SECTOR",
+    headline: "🟢 LLY เดินหน้า M&A ต่อเนื่อง — ปิดดีล AtaiBeckley $3.8B (mental health) + ประกาศซื้อ Merida Biosciences $2.88B (immunology)",
+    summary: "Eli Lilly ปิดการซื้อกิจการ AtaiBeckley มูลค่า $3.8B (11 ก.ย., clinical-stage biopharma ด้าน treatment-resistant depression) และประกาศข้อตกลงซื้อ Merida Biosciences มูลค่าสูงสุด $2.88B เป็นเงินสด (31 ส.ค., เสริม immunology portfolio ด้าน autoimmune/allergic disease). ก่อนหน้านี้หุ้นร่วงเล็กน้อย (8 ก.ย.) จากข่าวลบของคู่แข่ง Novartis' cholesterol drug ที่กระทบความเชื่อมั่นต่อ experimental Lp(a) drug ของ LLY/Amgen เช่นกัน — JPMorgan ยังคง bullish จาก weight-loss drug sales ที่เร่งตัว (2 ก.ย.). นัยพอร์ต: Big10 — ไม่มี position LLY โดยตรง แต่ M&A pace ที่เร่งตัวต่อเนื่องยืนยัน pipeline diversification strategy ที่แข็งแกร่ง.",
+    impact: "POSITIVE", tickers: ["LLY"],
+    url: "https://stockanalysis.com/stocks/lly/",
+  },
 
   // ── 2026-09-11 ──────────────────────────────
   {

@@ -1,9 +1,74 @@
 # Simulated Portfolio — บลจ. CFA
 
-> **🔴 UPDATE 2026-09-11 (Max Consultation completed — Re-Analysis Trigger Rule batch):** **ACN — FULL EXIT** (SELL remaining 1.4sh @ $177.76, Risk Rule 3 thesis-change — CEO publicly contradicted core thesis, Moat WIDE→NARROW, Conviction 7.17→5.17, Blended FV $252.35→$199.51, MOS +12.2% <15% gate. Not panic — Thesis Invalidation strictly 0/3, real downside support. Max×Charlie reconciled full exit over partial trim.) Realized -$0.57 this tranche, lifetime cumulative -$70.82. **REGN — STRONG SELL territory RESOLVED** (Blended FV $792→$889 on fresh Q2 EPS +36% surprise data, MOS -4.5%→+11.8%, was a stale-FV artifact not real overvaluation, HOLD 0.42sh unchanged, no action). Regime re-call (Atlas 2026-09-11): TRANSITIONAL-CAUTIOUS confirmed. Cash $6,894.47→$7,143.33 (69.5%). Positions 7→6. Total ~$10,283.78. **Detail:** `portfolio/decisions.md` (Re-Analysis Log rows) · `portfolio/deployment_log.md` (Max Consultation reconciliation) · `reports/ACN_2026-06-05.md` + `reports/REGN_2026-06-03.md` (Update Log 2026-09-11) · `dashboard/portfolio.js`.
-*Managed by Max | Updated: 2026-09-09 (Portfolio Review Mode 3 — full re-mark to **Sept 8 2026 close**, no trades. Software-led risk-off day (oil spike Brent ~$99 + Middle East/Saudi energy attacks + 10Y near 2-decade high; S&P 500 -0.58%): ADBE -6.7% / NOW -7.8% / CRM -3.9% / ACN -7% / GOOGL -2.1%. **Total $10,513.50 → $10,299.95 (-2.03%)** · S&P 500 7,747.71(9/3 basis) → **7,673.52** (Sept 8 close, -0.58% day, 2-source: multiple recaps + day-chain from Sept 4 $7,718.60) · **Alpha +0.42% → -0.71%** (⚠️ FLIPPED NEGATIVE first time — single reading = NOISE per Pre-commitment Rule, NOT a trigger; rolling-4Q alpha < 0 is the trigger). Cash $6,894.47 (66.9%). Invested $3,405.48 (7 positions). 🔴 GOOGL stopDist 7.56% (deepest ever, NOT breached, stop $310). 🟠 NOW MOS -6.8% / REGN MOS -4.5% STRONG SELL territory (both already trimmed 2026-09-01/08-23; FVs flagged stale/too-low). ADBE weight 10.36% (>10% band, <12% hard-trim). ⚡ ADBE Q3 FY26 earnings 2026-09-10. ⚠️ Data quality: NOW/GOOGL/REGN/ACN single-source; ADSK Sept 8 close NOT cleanly verified (using Sept 4 close $217.90, -8.3% Sept 3→4 drop unexplained). ⚠️ Regime: portfolio.js field still says TC; Atlas last formal re-call = RISK-ON 2026-09-05 — now stale given oil/geopolitics — Atlas re-call needed. No action taken — Review Mode price update only.)*
+> **🔴🔴 UPDATE 2026-09-12 (Max×Charlie reconciled — pre-committed Thesis Invalidation FIRED):** **GOOGL — FULL EXIT** (SELL remaining 1sh @ $339.81, IPS Risk Rule 3 — FY2026 capex guidance $195-205B fired the pre-committed >$100B/yr Thesis Invalidation criterion set 2026-05-21 before the outcome was known; Bear Flip #3 [CapEx >$85B + no taper guidance] also fired independently. Full pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS Round 2, 9.0/10, after fixing a TGR-ceiling violation): Blended FV $414→$163 raw/$148 ESG-adj (-60.6%), MOS -52.0%/-56.4% — deepest negative MOS in portfolio history (deeper than RDDT's -34.5%). NOT a business-quality collapse — Cloud +81.9%, Search +19%, backlog $514B (SEC-verified) all strong; Bear Flip only 1/5, Thesis Invalidation only 1/4 fired — but it's the exact pre-committed capex criterion the thesis was built to respect, so the team exited on discipline rather than rationalize away a fired criterion because "the business still looks good."*) Realized -$49.10 (-12.63%). Cash $7,143.33→$7,483.14. Positions 6→5. Re-entry watch NOT added to buy_list.md (capex/margin-recovery timeline has zero management guidance yet).
+>
+> **🔴 UPDATE 2026-09-11 (Max Consultation completed — Re-Analysis Trigger Rule batch):** **ACN — FULL EXIT** (SELL remaining 1.4sh @ $177.76, Risk Rule 3 thesis-change — CEO publicly contradicted core thesis, Moat WIDE→NARROW, Conviction 7.17→5.17, Blended FV $252.35→$199.51, MOS +12.2% <15% gate. Not panic — Thesis Invalidation strictly 0/3, real downside support. Max×Charlie reconciled full exit over partial trim.) Realized -$0.57 this tranche, lifetime cumulative -$70.82. **REGN — STRONG SELL territory RESOLVED** (Blended FV $792→$889 on fresh Q2 EPS +36% surprise data, MOS -4.5%→+11.8%, was a stale-FV artifact not real overvaluation, HOLD 0.42sh unchanged, no action). Regime re-call (Atlas 2026-09-11): TRANSITIONAL-CAUTIOUS confirmed. **Detail:** `portfolio/decisions.md` (Re-Analysis Log rows) · `portfolio/deployment_log.md` (Max Consultation reconciliation) · `reports/ACN_2026-06-05.md` + `reports/REGN_2026-06-03.md` + `reports/GOOGL_2026-05-21.md` (Update Logs) · `dashboard/portfolio.js`.
+
+*Managed by Max | Updated: 2026-09-13 (Portfolio Review Mode 3 — full re-mark to **Sept 11 2026 close**, no trades. ⚠️ **S&P 500 STALE-PRICE FIX** (Single Source of Truth Rule violation found & corrected — 2nd occurrence, same pattern as 2026-09-04): prior sp500Current $7,636.40 was the Sept 9 close, 2 trading days behind portfolio positions already re-priced through the GOOGL 2026-09-12 exit — corrected to **$7,656.98** (Sept 11 2026 close, verified Yahoo Finance + Google Finance, 0.00% diff, third cross-check via SPY $764.29 ratio consistent). All 5 OPEN positions (ADBE/NOW/CRM/REGN/ADSK) re-priced from the SAME Sept 11 2026 4:00PM EDT close, 2-source cross-checked (stockanalysis.com + Yahoo Finance, 0.00% diff every ticker) — S&P benchmark and portfolio prices are now apples-to-apples same trading day for the first time since the staleness crept in. **Total $10,200.61 → $10,205.74 (+0.05%)** · **S&P 500 7,636.40 (stale) → 7,656.98 (corrected)** · **Alpha -1.20% → -1.43%** (narrowed further — S&P +0.86% day outpaced the portfolio's small gain). Cash $7,483.14 (73.32%). Invested $2,722.60 (5 positions). ✅ No stop breaches, no position within 10% of stop — **safest book in months** (ADBE stopDist 36.34% is now the *closest*, everything else 33-71%). 🟠 NOW MOS -5.48% STRONG SELL territory again (recurring pattern since Aug, already trimmed 50%, weight only 1.30%, HOLD no action). ADSK MOS +4.23% thin (explicit WATCH ITEM carried from 09-12 TGR-fix pipeline — next re-verify flip negative = mandatory STRONG SELL, no further exemption). REGN MOS +12.09% (below 15% add-gate, no sell pressure). Re-Analysis Trigger Check: **0/5 positions fire any trigger** — all 5 just completed a full FV maintenance batch 09-11/09-12, price divergence from each fvVerifiedDate all <3.2%. Regime: **TRANSITIONAL-CAUTIOUS** (Atlas 2026-09-11 formal call, unchanged this session, next mandatory re-call post-FOMC 2026-09-16) — Force Deploy SUSPENDED, no new positions opened. buy_list.md refreshed — all 9 active candidates still far from entry (gaps -11% to -50%). No action taken beyond the S&P fix — Review Mode price update only.)*
+
+<!-- prior update note (2026-09-09): Portfolio Review Mode 3 — full re-mark to Sept 8 2026 close, no trades. Software-led risk-off day (oil spike Brent ~$99 + Middle East/Saudi energy attacks + 10Y near 2-decade high; S&P 500 -0.58%): ADBE -6.7% / NOW -7.8% / CRM -3.9% / ACN -7% / GOOGL -2.1%. Total $10,513.50 → $10,299.95 (-2.03%) · S&P 500 7,747.71(9/3 basis) → 7,673.52 (Sept 8 close, -0.58% day) · Alpha +0.42% → -0.71% (FLIPPED NEGATIVE first time — single reading = NOISE per Pre-commitment Rule, NOT a trigger). Cash $6,894.47 (66.9%). Invested $3,405.48 (7 positions). GOOGL stopDist 7.56% (deepest ever, NOT breached). NOW MOS -6.8% / REGN MOS -4.5% STRONG SELL territory. ADBE weight 10.36%. Data quality flags (NOW/GOOGL/REGN/ACN single-source; ADSK unverified) — RESOLVED in subsequent sessions (09-11/09-12/09-13 all used 2-source verified prices). Regime staleness flag — RESOLVED 2026-09-11 (Atlas formal re-call TC confirmed). -->
 
 <!-- prior update note (2026-09-04): full re-mark from Sept 3 close, Total $10,547.33→$10,513.50 (-0.32%), S&P 7,699.64, Alpha +1.07%. GOOGL -11.94% + REGN pullback offsetting NOW +62.7%/CRM +46.1%/ADSK +19.7%/ADBE +15.7%/ACN +8.4%). No stop breaches — GOOGL stopDist 9.48% still <10% WATCH (4th consecutive review). 🚩 REGN MOS deepened -0.89%→-6.50% (Trigger #2 now clearly firing, FV likely too LOW) — top re-verify priority confirmed. Regime = TRANSITIONAL-CAUTIOUS (Atlas formal re-call 2026-09-03, fresh not carried-over — knife-edge 3/4 RISK-ON override). Cash 65.58%, well above 25% TC floor, deliberate hold into Sept 16-17 FOMC. Batch Emma FV re-verify (commissioned 2026-09-01) still outstanding — no trade this session. -->
+
+## 📊 Portfolio Review — 2026-09-13 (Mode 3 — Full Re-mark, No Trades) — S&P 500 Stale-Price Fix
+
+> **Regime = TRANSITIONAL-CAUTIOUS** (Atlas formal re-call 2026-09-11, unchanged this session — `agent_notes/atlas/2026-09-11_regime.md`. Cash Floor 25%, Multiplier 0.75x, Force Deploy SUSPENDED — no new positions opened.) All 5 OPEN positions re-priced from **Sept 11 2026 4:00PM EDT close**, 2-source cross-checked (stockanalysis.com + Yahoo Finance, 0.00% diff every ticker). **No trades this session — Review Mode is price/metric update only.**
+
+### ⚠️ S&P 500 Single Source of Truth Fix (found before this review, corrected)
+
+`dashboard/portfolio.js` summary block was carrying `sp500Current: $7,636.40` (Sept 9 2026 close) with `lastUpdated: "2026-09-11"`, but portfolio positions had already been traded/re-priced through **2026-09-12** (GOOGL full exit, ADSK full re-analysis reprice) — a 2-trading-day mismatch between the benchmark date and the portfolio's own price dates. WebFetch-verified **S&P 500 close 2026-09-11 = $7,656.98** via 2 independent sources (Yahoo Finance ^GSPC + Google Finance .INX:INDEXSP, **0.00% diff — exact match**) + third cross-check via SPY $764.29 close × established SPX/SPY ratio ~10.018 (consistent, <0.1% diff). See `agent_notes/atlas/2026-09-13_regime.md` for full detail. This is the **2nd occurrence** of this exact failure mode (1st: 2026-09-04) — flagged for a process fix (explicit S&P-date-vs-position-date cross-check step in the Mode 3 checklist) to prevent a 3rd recurrence.
+
+| | Before (stale) | After (corrected) |
+|---|---|---|
+| S&P 500 | $7,636.40 (Sept 9 close) | **$7,656.98** (Sept 11 close) |
+| sp500Return | 3.21% | **3.49%** |
+| Alpha | -1.20% | **-1.43%** |
+
+### Price Moves (Sept 11 review price vs prior session)
+
+| Ticker | Prior ($) | Current ($, 9/11) | Return % | MOS % | StopDist % |
+|--------|-----------|--------------------|----------|-------|------------|
+| ADBE | $249.35 | **$252.23** | +2.10% | +31.65% | 36.34% |
+| NOW | $134.21 | **$132.53** | +48.13% | -5.48% 🟠 | 42.51% |
+| CRM | $243.00 | **$247.72** | +36.86% | +28.36% | 71.08% |
+| REGN | $795.00 | **$781.49** | +29.82% | +12.09% | 62.13% |
+| ADSK | $212.40 | **$212.40** | +7.04% | +4.23% 🟡 thin | 33.81% |
+
+> Note: ADBE/NOW/CRM/REGN/ADSK were all re-priced from the same Sept 11 2026 close, resolving the multi-date price staleness that had accumulated across the 09-09/09-11/09-12 sessions (each ticker had been touched on a different date during the FV-maintenance batch).
+
+### 🟠 NOW — STRONG SELL territory again (flag only, no action)
+
+MOS -5.48% (from -6.81% prior read) — price dipped slightly ($134.21→$132.53) while FV unchanged ($125.65, fvVerifiedDate 2026-08-24, still well within the 90-day window). This is a **recurring pattern** seen repeatedly since 2026-08-09 (oscillates as sentiment/momentum pushes price above/below the FV). Position already TRIMMED 50% (2026-09-01), residual weight only 1.30% — **no action, no Max Consultation Rule trigger** (routine HOLD, MOS is a real signal on a fresh FV, not a stale-FV artifact).
+
+### 🟡 ADSK — thin MOS, carried WATCH ITEM (flag only, no action)
+
+MOS +4.23% — unchanged from the 2026-09-12 full re-analysis (price flat at $212.40). This remains the **thinnest MOS buffer in the book**, per the explicit WATCH ITEM flagged in the 09-12 TGR-compliance-fix pipeline: *if MOS narrows further or flips negative at the next re-verify (not just a one-time correction artifact), it must be treated as STRONG SELL with no further exemption.* Currently still positive — no action this round.
+
+### HOLD — no action on all 5 positions
+
+ADBE (MOS +31.65%, healthy, weight 9.89% back under 10% IPS band), NOW (MOS -5.48%, STRONG SELL territory but tiny weight, already trimmed), CRM (MOS +28.36%, healthy, safest stopDist in book at 71.08%), REGN (MOS +12.09%, below 15% add-gate but no sell pressure, STRONG SELL still resolved), ADSK (MOS +4.23% thin, WATCH ITEM carried, no new trigger).
+
+### 🔍 Re-Analysis Trigger Check — 0 of 5 positions fire any trigger
+
+| Ticker | Fired | Detail |
+|--------|-------|--------|
+| ADBE | ✅ none | fvVerifiedDate 2026-09-11 (2 days old). No new earnings since Q3 FY26 (already modeled). Price divergence from re-verify price ($249.35→$252.23) = +1.15%, well under 30-40% threshold. |
+| NOW | ✅ none | fvVerifiedDate 2026-08-24 (20 days old, well under 90d). No new earnings since Q2. Price divergence from TGR-correction price ($128.48→$132.53) = +3.15%, under threshold. MOS negative but FV age <90d so trigger #2 does not fire. |
+| CRM | ✅ none | fvVerifiedDate 2026-09-11 (2 days old). No new earnings since Q2 FY27 (already modeled). Price divergence from re-verify price ($243.00→$247.72) = +1.94%, under threshold. |
+| REGN | ✅ none | fvVerifiedDate 2026-09-11 (2 days old). No new earnings since Q2 (already modeled). Price divergence from re-verify price ($795.00→$781.49) = -1.70%, under threshold. |
+| ADSK | ✅ none | fvVerifiedDate 2026-09-12 (1 day old). No new earnings since Q2 FY27 (already modeled). Price unchanged (0.00% diff) from re-verify price. |
+
+**All 5 OPEN positions clean this round** — expected, since all 5 just completed a full FV-maintenance batch (ACN/GOOGL full exits + REGN/CRM/ADBE lightweight-or-full re-verify + ADSK full re-analysis) across 2026-09-11/12, the day before this review. Street PT divergence (trigger #5) not re-checked this session (no fresh Atlas news-scan run) — last known data from the 09-11 CRM full-pipeline verify found no ≥25% divergence for any position.
+
+### buy_list.md refresh
+
+All 9 active candidates (GCT, ADI, FSLR, ZETA, MELI, CHYM, OSCR, QCOM, ACN re-entry) re-priced from Sept 11 2026 close — still far from entry zones (gaps -11% to -50%). ADI/QCOM/ACN gaps **widened** on today's rally (+4.85%/+2.88%/+3.37% day moves respectively); FSLR/ZETA/MELI/CHYM gaps **narrowed** slightly; GCT gap widened to -11% (from -7%) as price continued rallying away from the $46 entry mid. See `portfolio/buy_list.md` for full detail. **Regime TC → Force Deploy SUSPENDED → no deploys regardless of gap.**
+
+### Max's Take
+
+พอร์ตตอนนี้อยู่ในสถานะที่ดีที่สุดในรอบหลายเดือน — ไม่มี stop breach, ไม่มี position ไหนใกล้ stop เลย (ใกล้สุดคือ ADBE ที่ 36.34%), และ Re-Analysis Trigger Check สะอาดครบ 5/5 position เพราะเพิ่งผ่าน FV maintenance batch ใหญ่มา (ACN/GOOGL full exit + REGN/CRM/ADBE re-verify + ADSK full re-analysis) เมื่อวาน-วันก่อน สิ่งที่ยังต้องจับตาคือ ADSK ที่ MOS เหลือแค่ +4.23% (thin buffer, WATCH ITEM ที่ตั้งไว้เอง — ถ้ารอบหน้าพลิกลบต้อง treat เป็น STRONG SELL ทันทีไม่มีข้อยกเว้นซ้ำ) และ NOW ที่ MOS ติดลบ -5.48% แต่เป็น pattern เดิมที่เกิดซ้ำมาหลายรอบแล้วบน position ที่ trim ไปแล้วครึ่งหนึ่งและมี weight เล็กมาก (1.30%) ไม่ใช่สัญญาณอันตราย. สิ่งสำคัญที่สุดของ session นี้คือการแก้ S&P 500 stale-price ที่ทำให้ alpha คำนวณผิดมา ~2 วันซื้อขาย — ตอนนี้ benchmark กับราคาพอร์ตเป็นวันเดียวกันแล้ว (Sept 11) Alpha ที่แท้จริงคือ -1.43% (แคบลงจากที่เคยรายงาน -1.20% เพราะข้อมูลเก่าประเมิน S&P ต่ำเกินจริง). Regime ยัง TC, Force Deploy suspended ต่อไปจนกว่า FOMC 16 ก.ย. — cash 73.32% เป็นเกราะที่แข็งแรงมากรอจังหวะ regime กลับ RISK-ON.
+
+---
 
 ## 📊 Portfolio Review — 2026-09-04 (Mode 3 — Full Re-mark, No Trades)
 
@@ -267,27 +332,25 @@ ADBE (weight eased 11.13%→10.87%, still in 10-12% band, Q3 earnings Sept 10 in
 | | ค่า |
 |---|---|
 | **Starting Capital** | $10,000.00 |
-| **Current Cash** | $6,894.47 |
-| **Invested Value (Market)** | $3,619.03 |
-| **Total Portfolio Value** | $10,513.50 |
-| **Total Return** | +5.14% |
+| **Current Cash** | $7,483.14 |
+| **Invested Value (Market)** | $2,722.60 |
+| **Total Portfolio Value** | $10,205.74 |
+| **Total Return** | +2.06% |
 | **S&P 500 at Inception (2026-05-09)** | 7,398.93 |
-| **S&P 500 (2026-09-03 close, 2-source verified)** | 7,699.64 |
-| **S&P 500 Return (since inception)** | +4.06% |
-| **Alpha** | **+1.07%** (full re-mark — all 7 OPEN positions + S&P 500 re-priced this session) |
-| **# Positions** | 7 (ADBE + NOW[1sh] + GOOGL + CRM + REGN[0.42sh] + ACN[1.4sh] + ADSK) — RDDT CLOSED 2026-09-03 |
-| **Cash %** | 65.58% |
-| **Last Updated** | 2026-09-04 (Portfolio Review Mode 3 — full re-mark, no trades) |
+| **S&P 500 (2026-09-11 close, 2-source verified — corrected from stale $7,636.40)** | 7,656.98 |
+| **S&P 500 Return (since inception)** | +3.49% |
+| **Alpha** | **-1.43%** (full re-mark — all 5 OPEN positions + S&P 500 re-priced same trading day this session) |
+| **# Positions** | 5 (ADBE + NOW[1sh] + CRM + REGN[0.42sh] + ADSK) — RDDT CLOSED 2026-09-03, ACN CLOSED 2026-09-11, GOOGL CLOSED 2026-09-12 |
+| **Cash %** | 73.32% |
+| **Last Updated** | 2026-09-13 (Portfolio Review Mode 3 — full re-mark + S&P 500 stale-price fix, no trades) |
 
-> **Price Sources — 2026-09-04 (Sept 3 2026 4:00PM EDT close, 2-source cross-checked unless noted):**
-> - ADBE $285.75: stockanalysis.com + Robinhood $285.18 (0.2% diff)
-> - NOW $145.59: stockanalysis.com + Yahoo Finance news "$145.95 +6.75%" (0.25% diff) — sector-wide software re-rating rally (Benioff comments late Aug)
-> - GOOGL $342.48: stockanalysis.com + WebSearch aggregate $342.43 (0.01% diff)
-> - CRM $264.43: stockanalysis.com + WebSearch $264.04 (0.15% diff)
-> - REGN $843.47: stockanalysis.com + news confirming 52w-high $847.19-847.60 traded 2026-09-02 (~0.5% diff, adjacent session) — fresh 52-week high hit before easing
-> - ACN $193.12: stockanalysis.com + WebSearch $193.78 (0.34% diff)
-> - ADSK $237.52: stockanalysis.com single-source for the exact Sept 3 print (prevClose $241.73 independently confirmed twice) — flagged for transparency
-> - S&P 500 7,699.64 (Sept 3 2026 close, 27th record close of 2026): Yahoo Finance/market-recap aggregate + SPY ETF $773.17 stockanalysis.com (ratio cross-check, implied SPX ≈7,701, diff <0.03%) — see `agent_notes/atlas/2026-09-04_regime.md`
+> **Price Sources — 2026-09-13 (Sept 11 2026 4:00PM EDT close, 2-source cross-checked, 0.00% diff every ticker):**
+> - ADBE $252.23: stockanalysis.com + Yahoo Finance (0.00% diff)
+> - NOW $132.53: stockanalysis.com + Yahoo Finance (0.00% diff) — corrects prior 1-source flag from 2026-09-09
+> - CRM $247.72: stockanalysis.com + Yahoo Finance (0.00% diff)
+> - REGN $781.49: stockanalysis.com + Yahoo Finance (0.00% diff)
+> - ADSK $212.40: stockanalysis.com + Yahoo Finance (0.00% diff) — unchanged from Sept 11 close used in the 2026-09-12 full re-analysis
+> - S&P 500 7,656.98 (Sept 11 2026 close): Yahoo Finance (^GSPC) + Google Finance (.INX:INDEXSP), 0.00% diff — exact match. Third cross-check via SPY $764.29 close (stockanalysis.com) × established SPX/SPY ratio ~10.018, consistent (<0.1% diff) — see `agent_notes/atlas/2026-09-13_regime.md`. **Corrects prior stale sp500Current $7,636.40 (Sept 9 close) that had been carried in dashboard/portfolio.js — Single Source of Truth Rule violation, 2nd occurrence, found & fixed this session.**
 
 ---
 
