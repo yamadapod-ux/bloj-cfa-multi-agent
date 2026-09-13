@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-09-12";
+const LAST_UPDATED = "2026-09-13";
 
 const REPORTS = [
 
@@ -18550,20 +18550,20 @@ Report ผ่านการตรวจ QA แล้ว — Leo สามาร
   {
     ticker: "ADSK",
     company: "Autodesk, Inc.",
-    date: "2026-06-09",
-    version: "v1",
+    date: "2026-09-12",
+    version: "v2 (Full Re-Analysis + TGR Compliance Fix, Morgan QA PASS 8.5/10)",
     sector: "Technology / Design Software / AEC",
-    price: 229.00,
-    recommendation: "BUY",
-    blendedFV: 290.00,
+    price: 212.40,
+    recommendation: "HOLD (Downgrade from BUY)",
+    blendedFV: 221.79,
     targetBull: 400.00,
     targetBase: 310.00,
     stopLoss: 183.00,
-    convictionEmma: 7.5,
-    convictionQuinn: 7.0,
+    convictionEmma: 6.5,
+    convictionQuinn: 5.0,
     convictionBear: 6.5,
-    convictionAvg: 7.0,
-    mosPct: 26.6,
+    convictionAvg: 6.0,
+    mosPct: 4.42,
     pwEV: 264.00,
     beta: 1.02,
     sharpe1Y: 0.70,
@@ -18571,8 +18571,8 @@ Report ผ่านการตรวจ QA แล้ว — Leo สามาร
     moat: "Wide",
     esgRating: "Good",
     esgScore: 6.7,
-    keyThesis: "ADSK = ADBE 2022-2023 FCF inflection pattern. Subscription transition complete. DWG/Revit 40-year moat. ROIC 49.15%. Q1 FY27 revenue +18% YoY. Blended FV 90 = MOS 26.6%.",
-    topRisk: "AEC construction cyclicality (30% near-term); AI disruption (25% 3-5yr); ROIC inflation methodology",
+    keyThesis: "TGR Compliance Fix (2026-09-12, 2nd instance after GOOGL precedent) — Full Re-Analysis Pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA PASS 8.5/10) escalated from lightweight re-verify (FV moved -21.6%). Terminal Growth Rate ceiling 3.0% applied — Emma DCF $238.09→$214.29, Quinn P-W EV $212.73→$196.91, Bear P-W EV $233→$216.20. Blended FV $290(stale)→$236.52(pre-fix)→$221.79(final). MOS +26.6%(stale)→+11.35%(pre-fix)→+4.42%(final) — thinnest MOS buffer in the portfolio, barely positive. Bear's key finding: Current RPO +12% YoY (not the Total RPO +2% headline Emma/Atlas used initially) softens the deceleration concern but does not fully resolve it. Growth MOS PASS both methods. 0/5 Bear Flip + 0/5 Thesis Invalidation fired. Downgrade to HOLD — no trim/add on existing 2.4sh position.",
+    topRisk: "RPO deceleration not fully resolved (Current RPO +12% YoY vs Total RPO +2% — mixed signal); Q3 FY27 print (Nov 2026) is the key catalyst to watch. MOS +4.42% is razor-thin — if it narrows further or flips negative on next re-verify, must be treated as STRONG SELL with no further Max Consultation Rule exemption (per MOS Compliance-Fix Precedent watch-item flag).",
     entryZone: "T1: $220-235 | T2: $200-218",
     positionSize: "8% max (T1: 4%, T2: 3%, T3: 1%)",
     businessSummary: {

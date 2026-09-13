@@ -1040,3 +1040,20 @@ Emma FV re-verify batch (commissioned 2026-09-01) sat untouched for 10 days acro
 **Outstanding:** CRM/ADBE/GOOGL/ADSK still need the batch re-verify. ADBE reported Q3 FY26 the night before this session (2026-09-10) — result not yet confirmed, weight 10.4%, options priced ±8% move. Check next session.
 
 *อัปเดตล่าสุด: 2026-09-11 — ACN full exit (Risk Rule 3) + REGN artifact resolved. Alpha -0.71%→-0.37% (still negative, still noise).*
+
+
+## ADSK Full Re-Analysis + TGR Compliance Fix — 2026-09-12/13 (6/6 batch closure)
+
+Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 Re-Analysis Trigger) closes with ADSK, the last of six: REGN (HOLD, stale-FV artifact resolved) -> ACN (SELL, thesis-change) -> CRM (HOLD, thesis intact) -> ADBE (HOLD, lightweight only) -> GOOGL (SELL, pre-committed Thesis Invalidation fired) -> ADSK (HOLD, downgrade from BUY).
+
+**What happened:** Emma lightweight re-verify found FV -21.6% ($290 stale -> $257) on unmodeled Q2 FY27 earnings + RPO deceleration signal -> escalated to full pipeline. Pre-TGR-fix synthesis: Blended FV $236.52, MOS +11.35%, Conviction 6.0/10 -> HOLD (Downgrade). While preparing the formal Morgan QA submission, Charlie caught Terminal Growth Rate 4.0% exceeding the ≤3.0% compliance ceiling -- the **2nd instance in 3 weeks** of this exact failure mode (GOOGL was the 1st, 2026-09-11/12). Emma/Quinn/Bear recomputed with TGR=3.0%: final Blended FV $221.79, MOS +4.42% (thin but still positive), Conviction unchanged 6.0/10. Bear's key finding during the rebuild: Current RPO (+12% YoY) is not the same figure as Total RPO (+2% YoY) that Emma/Atlas had been using -- this softened (but did not fully resolve) the deceleration concern; Q3 FY27 print (Nov 2026) is the decisive catalyst. 0/5 Bear Flip Triggers and 0/5 Thesis Invalidation criteria fired. Morgan QA PASS 8.5/10.
+
+**บทเรียนหลัก:**
+1. **TGR ceiling compliance ควรเป็น pre-check ตั้งแต่ Emma/Quinn เริ่มสร้าง DCF ไม่ใช่รอ Charlie/Morgan จับทีหลัง** -- ทั้ง GOOGL และ ADSK ถูกจับได้ก่อนส่ง Morgan formal ทั้งคู่ (ไม่ใช่ Morgan reject) แต่การ recompute cascade ทั้งชุด (Emma→Quinn→Bear→Charlie re-synthesis) มีต้นทุน token/เวลาที่หลีกเลี่ยงได้ถ้ามี TGR≤3.0% เป็น hard check ที่ Emma/Quinn รันเองก่อนส่งงานต่อ แม้จะเกิดขึ้นแค่ 2 ครั้งในรอบ 3 สัปดาห์ ก็นับเป็น pattern ที่ควร fix ที่ต้นทาง ไม่ใช่ปล่อยให้เกิดครั้งที่ 3
+2. **TGR fix ไม่ได้บังคับผลลัพธ์ไปทางเดียวเสมอ** -- GOOGL: MOS ดิ่งลึกจน full exit (-52%) ADSK: MOS แคบลงแต่ยังไม่ติดลบ (+11.35%→+4.42%) -- สองเคสใกล้กันให้ผลตรงข้ามกันโดยสิ้นเชิง ยืนยันว่านี่คือ methodology correction ที่เป็นกลาง ไม่ใช่การ "ปั้นตัวเลข" ให้ออกทางใดทางหนึ่ง
+3. **MOS ที่เปราะบาง (+4.42%) ต้องแยกออกจาก thesis ที่พัง** -- ทีมยึด MOS Compliance-Fix Precedent (2026-08-24, NOW case) อย่างถูกต้อง: ไม่ trigger Max Consultation Rule ทันทีเพราะสาเหตุคือ compliance fix ไม่ใช่ business data ใหม่ + 0 flip triggers + ไม่มี action จริง แต่ flag เป็น WATCH ITEM ชัดเจนว่าถ้า MOS แคบต่อ/พลิกลบรอบหน้าจริง (ไม่ใช่แค่ correction artifact) ต้อง treat เป็น STRONG SELL ทันทีไม่มีข้อยกเว้นซ้ำ
+4. **Session Interruption/Resume Protocol ทำงานได้อีกครั้ง** -- session ถูกตัดกลางคันหลายรอบจาก API session limit ตลอดการทำ full pipeline + Leo sync แต่ resumed โดยเช็คไฟล์ dated ที่มีอยู่ก่อนเริ่มทุกครั้ง (Step 0) ไม่มีการทำงานซ้ำ ไม่มี entry ซ้อน
+
+**Outstanding:** Street PT ($315.37 consensus) vs Team Blended FV ($221.79 post-fix) = +42% gap ยังไม่ถูก re-flag ในรายงานหลัง TGR fix (Morgan MEDIUM finding) — ต้อง reconcile รอบหน้า. Q3 FY27 earnings (พ.ย. 2026, current-RPO print) คือ catalyst ตัดสินว่า RPO concern resolve จริงหรือไม่
+
+*อัปเดตล่าสุด: 2026-09-13 — ADSK ปิด batch 6/6 (ACN SELL / REGN HOLD / CRM HOLD / ADBE HOLD / GOOGL SELL / ADSK HOLD-downgrade). TGR compliance-check pattern บันทึกไว้เป็นครั้งที่ 2 (หลัง GOOGL) — ควร pre-check ที่ Emma/Quinn ไม่ใช่รอ Charlie/Morgan จับทีหลัง.*
