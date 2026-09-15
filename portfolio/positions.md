@@ -4,11 +4,65 @@
 >
 > **🔴 UPDATE 2026-09-11 (Max Consultation completed — Re-Analysis Trigger Rule batch):** **ACN — FULL EXIT** (SELL remaining 1.4sh @ $177.76, Risk Rule 3 thesis-change — CEO publicly contradicted core thesis, Moat WIDE→NARROW, Conviction 7.17→5.17, Blended FV $252.35→$199.51, MOS +12.2% <15% gate. Not panic — Thesis Invalidation strictly 0/3, real downside support. Max×Charlie reconciled full exit over partial trim.) Realized -$0.57 this tranche, lifetime cumulative -$70.82. **REGN — STRONG SELL territory RESOLVED** (Blended FV $792→$889 on fresh Q2 EPS +36% surprise data, MOS -4.5%→+11.8%, was a stale-FV artifact not real overvaluation, HOLD 0.42sh unchanged, no action). Regime re-call (Atlas 2026-09-11): TRANSITIONAL-CAUTIOUS confirmed. **Detail:** `portfolio/decisions.md` (Re-Analysis Log rows) · `portfolio/deployment_log.md` (Max Consultation reconciliation) · `reports/ACN_2026-06-05.md` + `reports/REGN_2026-06-03.md` + `reports/GOOGL_2026-05-21.md` (Update Logs) · `dashboard/portfolio.js`.
 
-*Managed by Max | Updated: 2026-09-13 (Portfolio Review Mode 3 — full re-mark to **Sept 11 2026 close**, no trades. ⚠️ **S&P 500 STALE-PRICE FIX** (Single Source of Truth Rule violation found & corrected — 2nd occurrence, same pattern as 2026-09-04): prior sp500Current $7,636.40 was the Sept 9 close, 2 trading days behind portfolio positions already re-priced through the GOOGL 2026-09-12 exit — corrected to **$7,656.98** (Sept 11 2026 close, verified Yahoo Finance + Google Finance, 0.00% diff, third cross-check via SPY $764.29 ratio consistent). All 5 OPEN positions (ADBE/NOW/CRM/REGN/ADSK) re-priced from the SAME Sept 11 2026 4:00PM EDT close, 2-source cross-checked (stockanalysis.com + Yahoo Finance, 0.00% diff every ticker) — S&P benchmark and portfolio prices are now apples-to-apples same trading day for the first time since the staleness crept in. **Total $10,200.61 → $10,205.74 (+0.05%)** · **S&P 500 7,636.40 (stale) → 7,656.98 (corrected)** · **Alpha -1.20% → -1.43%** (narrowed further — S&P +0.86% day outpaced the portfolio's small gain). Cash $7,483.14 (73.32%). Invested $2,722.60 (5 positions). ✅ No stop breaches, no position within 10% of stop — **safest book in months** (ADBE stopDist 36.34% is now the *closest*, everything else 33-71%). 🟠 NOW MOS -5.48% STRONG SELL territory again (recurring pattern since Aug, already trimmed 50%, weight only 1.30%, HOLD no action). ADSK MOS +4.23% thin (explicit WATCH ITEM carried from 09-12 TGR-fix pipeline — next re-verify flip negative = mandatory STRONG SELL, no further exemption). REGN MOS +12.09% (below 15% add-gate, no sell pressure). Re-Analysis Trigger Check: **0/5 positions fire any trigger** — all 5 just completed a full FV maintenance batch 09-11/09-12, price divergence from each fvVerifiedDate all <3.2%. Regime: **TRANSITIONAL-CAUTIOUS** (Atlas 2026-09-11 formal call, unchanged this session, next mandatory re-call post-FOMC 2026-09-16) — Force Deploy SUSPENDED, no new positions opened. buy_list.md refreshed — all 9 active candidates still far from entry (gaps -11% to -50%). No action taken beyond the S&P fix — Review Mode price update only.)*
+*Managed by Max | Updated: 2026-09-15 (Portfolio Review Mode 3 — full re-mark to **Sept 14 2026 close**, no trades. Enterprise-software sector-rotation day: Anthropic (Amodei) + Microsoft (Nadella) AI-safety-slowdown call hit semis/AI-hardware [Nasdaq -0.56%, Philly Semi Index -5.9%] while capital rotated INTO software — all 5 OPEN positions rallied hard: ADBE +5.30% $265.60, NOW +7.41% $142.35, CRM +4.73% $259.43, REGN +1.57% $793.74, ADSK +7.78% $228.93 (2-source cross-checked, diffs <0.3% every ticker). S&P 500 fell -0.48% to **$7,619.98** (Sept 14 close, WSJ + Yahoo Finance, cross-verified via SPY ratio). **Total $10,205.74 → $10,348.98 (+1.40%)** · **Alpha -1.43% → +0.50% (FLIPPED POSITIVE)** — portfolio's software tilt gained directly from the same rotation that dragged the index down via semis. Cash $7,483.14 (72.31%, unchanged $ — price-only session). 🔴 **ADSK MOS FLIPPED NEGATIVE -3.22%** (from +4.23%) — the explicit no-further-exemption WATCH ITEM set 2026-09-12 fires: this is a pure price move (FV unchanged $221.79, 3 days old), NOT a compliance-fix artifact, so flagged for **mandatory Max Consultation Rule** before any trim/sell decision — no trade executed this Review Mode session. 🟠 NOW MOS -13.29% STRONG SELL territory deepens (already trimmed 50%, weight 1.37%, recurring pattern, no action). ADBE weight 10.27% back over the 10% IPS soft band (price-driven, WATCH only, below 12% hard-trim threshold). No stop breaches — every stopDist ≥30%. Re-Analysis Trigger Check: **0/5 fire**. Regime: **TRANSITIONAL-CAUTIOUS** (unchanged, next mandatory re-call within 1 session of tomorrow's FOMC outcome 2026-09-16).)*
 
 <!-- prior update note (2026-09-09): Portfolio Review Mode 3 — full re-mark to Sept 8 2026 close, no trades. Software-led risk-off day (oil spike Brent ~$99 + Middle East/Saudi energy attacks + 10Y near 2-decade high; S&P 500 -0.58%): ADBE -6.7% / NOW -7.8% / CRM -3.9% / ACN -7% / GOOGL -2.1%. Total $10,513.50 → $10,299.95 (-2.03%) · S&P 500 7,747.71(9/3 basis) → 7,673.52 (Sept 8 close, -0.58% day) · Alpha +0.42% → -0.71% (FLIPPED NEGATIVE first time — single reading = NOISE per Pre-commitment Rule, NOT a trigger). Cash $6,894.47 (66.9%). Invested $3,405.48 (7 positions). GOOGL stopDist 7.56% (deepest ever, NOT breached). NOW MOS -6.8% / REGN MOS -4.5% STRONG SELL territory. ADBE weight 10.36%. Data quality flags (NOW/GOOGL/REGN/ACN single-source; ADSK unverified) — RESOLVED in subsequent sessions (09-11/09-12/09-13 all used 2-source verified prices). Regime staleness flag — RESOLVED 2026-09-11 (Atlas formal re-call TC confirmed). -->
 
 <!-- prior update note (2026-09-04): full re-mark from Sept 3 close, Total $10,547.33→$10,513.50 (-0.32%), S&P 7,699.64, Alpha +1.07%. GOOGL -11.94% + REGN pullback offsetting NOW +62.7%/CRM +46.1%/ADSK +19.7%/ADBE +15.7%/ACN +8.4%). No stop breaches — GOOGL stopDist 9.48% still <10% WATCH (4th consecutive review). 🚩 REGN MOS deepened -0.89%→-6.50% (Trigger #2 now clearly firing, FV likely too LOW) — top re-verify priority confirmed. Regime = TRANSITIONAL-CAUTIOUS (Atlas formal re-call 2026-09-03, fresh not carried-over — knife-edge 3/4 RISK-ON override). Cash 65.58%, well above 25% TC floor, deliberate hold into Sept 16-17 FOMC. Batch Emma FV re-verify (commissioned 2026-09-01) still outstanding — no trade this session. -->
+
+## 📊 Portfolio Review — 2026-09-15 (Mode 3 — Full Re-mark, No Trades) — ADSK MOS Flips Negative (Consultation Flagged)
+
+> **Regime = TRANSITIONAL-CAUTIOUS** (unchanged, Atlas 2026-09-11 formal call — next mandatory re-call within 1 session of tomorrow's FOMC outcome 2026-09-16). All 5 OPEN positions re-priced from **Sept 14 2026 4:00PM EDT close**, 2-source cross-checked (stockanalysis.com + independent WebSearch aggregate, diffs <0.3% every ticker). **No trades this session — Review Mode is price/metric update only.**
+
+### 🔄 What moved: enterprise-software sector rotation
+
+Anthropic CEO Dario Amodei (backed by Microsoft's Satya Nadella) called for a slowdown in AI capability development on 2026-09-14/15 — the market rotated OUT of semis/AI-hardware (Nasdaq -0.56% to 26,186.41, Philadelphia Semiconductor Index -5.9%, NVDA -3.4%, INTC -5.6%) and INTO enterprise software names, including all 5 of our OPEN positions.
+
+| Ticker | Prior ($, 9/11) | Current ($, 9/14) | Day Move | Return % | MOS % | StopDist % |
+|--------|-----------------|--------------------|----------|----------|-------|------------|
+| ADBE | $252.23 | **$265.60** | +5.30% | +7.52% | +28.02% | 30.35% |
+| NOW | $132.53 | **$142.35** | +7.41% | +59.10% | -13.29% 🟠 | 34.67% |
+| CRM | $247.72 | **$259.43** | +4.73% | +43.33% | +24.97% | 44.19% |
+| REGN | $781.49 | **$793.74** | +1.57% | +31.85% | +10.71% | 39.27% |
+| ADSK | $212.40 | **$228.93** | +7.78% | +15.37% | **-3.22%** 🔴 | 30.66% |
+
+S&P 500 fell -0.48% to $7,619.98 (Sept 14 close, WSJ + Yahoo Finance) — the opposite direction of our software-heavy book, which is why alpha flipped positive.
+
+### 🔴 ADSK — MOS flipped negative, no-further-exemption case (flagged, not actioned)
+
+MOS +4.23% → **-3.22%** — this is exactly the scenario the team pre-committed to on 2026-09-12: *"if MOS narrows further or flips negative at the next re-verify (not just a one-time correction artifact), it must be treated as STRONG SELL with no further exemption."* Blended FV is unchanged ($221.79, fvVerifiedDate 2026-09-12, only 3 days old) — the move is 100% price-driven (the sector-rotation rally, +7.78% in one day), not a new compliance/methodology fix, so the **MOS Compliance-Fix Precedent exemption used on 09-12 does NOT apply here**. Stop not breached (stopDist 30.66%, comfortable), 0 Bear Flip / 0 Thesis Invalidation fired — thesis is not broken, this is a valuation-discipline signal.
+
+**Action:** No trade this session (Review Mode). Flagging for **mandatory Max Consultation Rule** — Max must consult Charlie before any trim/sell decision on ADSK. Recommend the consultation weigh: lock in gain on part of the position (return +15.37%) vs HOLD given thesis intact and FOMC decision tomorrow (2026-09-16) could move price materially either direction first.
+
+### 🟠 NOW — STRONG SELL territory deepens (flag only, no action)
+
+MOS -5.48% → **-13.29%** on the same rotation-driven price move (FV unchanged $125.65). Recurring pattern since Aug — already trimmed 50%, residual weight only 1.37%, no Max Consultation Rule trigger (weight too small to matter).
+
+### 🟡 ADBE — weight back over 10% IPS soft band (flag only, no action)
+
+Weight 9.89%/9.78% → **10.27%** on price appreciation alone (no new shares). Still well below the 12% hard-trim threshold — WATCH only, no forced action.
+
+### HOLD — no action on all 5 positions
+
+ADBE (MOS +28.02%, healthy, weight 10.27% WATCH-only), NOW (MOS -13.29% STRONG SELL but tiny weight, already trimmed), CRM (MOS +24.97%, healthy, stopDist 44.19%), REGN (MOS +10.71%, below 15% add-gate but no sell pressure, HSBC PT raised to $920 Buy), ADSK (MOS -3.22% STRONG SELL, no-exemption case — flagged for Max Consultation Rule, no trade yet).
+
+### 🔍 Re-Analysis Trigger Check — 0 of 5 positions fire any trigger
+
+| Ticker | Fired | Detail |
+|--------|-------|--------|
+| ADBE | ✅ none | fvVerifiedDate 2026-09-11 (4 days old). No new earnings. Price divergence from re-verify price = +5.30%, well under threshold. |
+| NOW | ✅ none | fvVerifiedDate 2026-08-24 (22 days old, well under 90d). No new earnings. MOS negative but FV age <90d so trigger #2 does not fire. |
+| CRM | ✅ none | fvVerifiedDate 2026-09-11 (4 days old). No new earnings. Price divergence +4.73%, under threshold. |
+| REGN | ✅ none | fvVerifiedDate 2026-09-11 (4 days old). No new earnings. Price divergence +1.57%, under threshold. |
+| ADSK | ✅ none | fvVerifiedDate 2026-09-12 (3 days old). No new earnings. Price divergence +7.78%, well under 30-40% threshold — MOS negative but FV age far from 90d, so formal trigger #2 does not fire (this is handled instead by the separate 09-12 no-exemption WATCH ITEM, not the Re-Analysis Trigger Rule). |
+
+**Note:** the ADSK MOS flip is governed by the explicit Exit-Rule WATCH ITEM set 2026-09-12 (Max Consultation Rule), which is a distinct mechanism from the 5 formal Re-Analysis triggers above — both are correctly tracked separately here so Vera's funnel/trigger health metrics don't conflate them.
+
+### Max's Take
+
+วันนี้เป็นวัน sector rotation ที่ค่อนข้างพิเศษ — ตลาด AI-safety-slowdown headline (Amodei + Nadella) ทุบ semis/AI-hardware แต่ดันเงินไหลเข้า enterprise software แทน ซึ่งพอร์ตเราถือ software ล้วน 5 ตัว เลยได้ประโยชน์เต็มๆ — alpha พลิกบวกครั้งแรกในรอบหลายสัปดาห์ (+0.50%) เป็นเรื่องดี แต่ไม่ควรดีใจเกินเหตุเพราะเป็น sentiment/rotation ไม่ใช่ fundamental ที่เปลี่ยนจริง (พรุ่งนี้ FOMC อาจพลิกกลับได้ง่ายๆ). สิ่งที่ต้องจัดการจริงจังคือ ADSK — MOS พลิกลบตามเงื่อนไขที่ทีมตั้งกฎเองไว้เมื่อ 12 ก.ย. ว่าจะไม่มีข้อยกเว้นซ้ำ ครั้งนี้ต่างจากรอบก่อนตรงที่สาเหตุคือราคาวิ่งจาก rotation ไม่ใช่การแก้ compliance parameter เหมือนครั้งที่แล้ว จึงไม่เข้าเงื่อนไขยกเว้น — ต้องเปิด Max Consultation Rule กับ Charlie ก่อนตัดสินใจใดๆ (ยังไม่ trade วันนี้เพราะเป็น Review Mode). NOW ยังเป็น pattern เดิม ไม่น่ากังวล weight เล็กเกินไป. Regime ยัง TC รอ FOMC พรุ่งนี้เป็นตัวชี้ขาด — cash 72.31% เป็นเกราะไว้รอความชัดเจน.
+
+---
 
 ## 📊 Portfolio Review — 2026-09-13 (Mode 3 — Full Re-mark, No Trades) — S&P 500 Stale-Price Fix
 

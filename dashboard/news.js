@@ -3,9 +3,60 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-13 12:00";
+const NEWS_LAST_UPDATED = "2026-09-15 12:00";
 
 const NEWS = [
+
+  // ── 2026-09-14/15 (Atlas scan 2026-09-15, pre-FOMC) ──────────────────────────────
+  {
+    date: "2026-09-15", category: "MACRO",
+    headline: "🔴 AI-safety slowdown call จาก Anthropic CEO Amodei ลาม Nadella (Microsoft) — Nasdaq/semis ร่วงต่อเนื่อง 2 วันก่อน FOMC",
+    summary: "Dario Amodei (CEO Anthropic) เรียกร้องให้ชะลอการพัฒนา AI capabilities ลง โดยมีผู้บริหารเทคโนโลยีรายใหญ่อีกหลายคนสนับสนุนแนวคิดนี้ (รวมถึง Satya Nadella ของ Microsoft ที่ออกมาสนับสนุนการพัฒนา AI แบบช้าลงและกำลังพิจารณาตั้ง limit ให้โมเดล AI รุ่นถัดไป). ตลาดตีความเป็นความเสี่ยงต่อ AI capex/monetization narrative — วันที่ 14 ก.ย. Dow -152 จุด (-0.29%), S&P 500 -0.5%, Nasdaq -0.6%; วันที่ 15 ก.ย. (เช้า) ต่อเนื่องแรงขึ้น: S&P 500 ปิด -0.48% ที่ 7,619.98, Nasdaq Composite -0.56% ที่ 26,186.41. Philadelphia Semiconductor Index ร่วง -5.9%, NVDA -3.4%, Intel -5.6%. TSM ร่วง pre-market -3.0% สู่ ~$420.21 (ไม่มีข่าวเฉพาะตัวบริษัท เป็นแรงกดดันจากกลุ่ม semis ทั้งกลุ่ม). นัยพอร์ต: portfolio ไม่มี direct semis holding แต่ sentiment แบบนี้กระทบ risk appetite รวมของตลาดโดยตรง 1 วันก่อน FOMC decision (16 ก.ย.) — เพิ่มความเสี่ยง volatility รอบ event นี้.",
+    impact: "NEGATIVE", tickers: ["TSM"],
+    url: "https://www.bloomberg.com/news/articles/2026-09-14/asian-stocks-to-fall-on-ai-key-us-yield-tops-5-markets-wrap",
+  },
+  {
+    date: "2026-09-14", category: "MACRO",
+    headline: "🟠 10-Year Treasury yield แตะระดับสูงสุดตั้งแต่ปี 2023 ก่อน FOMC",
+    summary: "อัตราผลตอบแทนพันธบัตรรัฐบาลสหรัฐฯ อายุ 10 ปี ปรับตัวขึ้นแตะระดับสูงสุดนับตั้งแต่ปี 2023 ในวันที่ 14 ก.ย. เป็นหนึ่งในปัจจัยกดดันตลาดหุ้นร่วมกับ AI-safety sell-off และราคาน้ำมันที่ยังทรงตัวสูง. เกิดขึ้น 2 วันก่อน FOMC decision (16 ก.ย.) ซึ่งตลาดคาด hike 25bps เป็นหลัก — yield ที่สูงขึ้นสะท้อนตลาดกำลัง price-in แนวโน้ม hawkish มากขึ้น สอดคล้องกับ Fed Stance indicator ที่ Atlas ใช้ยืนยัน regime TRANSITIONAL-CAUTIOUS (2026-09-11).",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-14-2026",
+  },
+  {
+    date: "2026-09-14", category: "MACRO",
+    headline: "🟡 CME FedWatch: odds การ hike 25bps ที่ FOMC 16 ก.ย. ~56% — ต่ำกว่าตัวเลข >73% ที่ Atlas ใช้ยืนยัน Regime เมื่อ 11 ก.ย. (ต้อง cross-check ก่อน re-call)",
+    summary: "Yahoo Finance รายงาน CME FedWatch tool ให้ probability การขึ้นดอกเบี้ย 25bps ที่ FOMC 16 ก.ย. อยู่ที่เกือบ 56% (futures ราคาบ่งชี้ fed funds ขึ้นไปราว 4.1% ภายในธ.ค. และ ~4.6% ภายในก.ย. 2027) — effective fed funds rate ปัจจุบัน 3.63%. ตัวเลขนี้ต่ำกว่า '>73% hike priced' ที่ Atlas ใช้เป็นหนึ่งใน majority-vote indicators ยืนยัน Regime TRANSITIONAL-CAUTIOUS เมื่อ 2026-09-11 อย่างมีนัยสำคัญ — ⚠️ อาจเป็นเพราะ snapshot คนละเวลา (ข่าวนี้ไม่ระบุวันที่ชัดเจน) ไม่ใช่ signal ที่ยืนยันได้ 100% ว่า probability เปลี่ยนจริง ต้อง WebSearch cross-check สดอีกครั้งก่อนใช้ตัดสินใจ. นัยพอร์ต: Fed Stance เป็น 1 ใน 4 indicators หลักของ Regime Gate — ถ้า probability ลดลงจริงเป็นสัญญาณ dovish-lean มากขึ้น อาจเปิดทางให้ regime flip กลับ RISK-ON ตามเงื่อนไข knife-edge ที่ Atlas วางไว้ (mandatory re-call ภายใน 1 session หลัง FOMC outcome 16 ก.ย. อยู่แล้ว).",
+    impact: "MIXED", tickers: [],
+    url: "https://finance.yahoo.com/economy/policy/articles/fomc-september-2026-odds-rate-201618784.html",
+  },
+  {
+    date: "2026-09-14", category: "SECTOR",
+    headline: "🔴 GE Vernova (GEV) โดน Sell rating หายาก จาก GLJ Research, PT $470 (ต่ำกว่าราคาปิดก่อนหน้า -51%) — หุ้นร่วง -9% intraday",
+    summary: "GLJ Research เริ่ม coverage GE Vernova วันที่ 14 ก.ย. ด้วยเรตติ้ง 'Sell' price target $470 (ต่ำกว่าราคาปิดก่อนหน้าถึง -51%) มองว่า GEV เป็น cyclical industrial manufacturer ที่เทรดที่ valuation multiple แบบ secular-growth compounder ซึ่งไม่สมเหตุสมผล — หุ้นร่วงทันที >9% intraday สู่ช่วง $868-919. อย่างไรก็ตาม sentiment ยังผสม — Bernstein ให้ Buy rating เข้ามาในช่วงใกล้เคียงกัน. นัยพอร์ต: GEV อยู่ใน watchlist (HOLD/WAIT — RE-ANALYSIS, MOS -307.9% ลึกมาก, ราคาห่างจาก entry zone $320-380 มหาศาล) — ข่าวนี้ตอกย้ำว่า valuation ยังตึงเกินไปสำหรับ scout screen แบบ VALUE-FIRST ปัจจุบัน ไม่กระทบ decision ที่มีอยู่.",
+    impact: "NEGATIVE", tickers: ["GEV"],
+    url: "https://www.tradingkey.com/news/market-movers/262166894-market-movers-gev-20260914",
+  },
+  {
+    date: "2026-09-14", category: "REGULATION",
+    headline: "🟡 REGN — Lead plaintiff deadline (14 ก.ย.) คดี securities class action จากกรณี Fianlimab Phase 3 trial fail (เปิดเผยปี 2025-2026) + HSBC ขึ้น PT เป็น $920 (Buy) รับ Dupixent patent upside",
+    summary: "วันที่ 14 ก.ย. เป็น lead plaintiff deadline สำหรับคดี securities class action ต่อ Regeneron ที่ครอบคลุมช่วงถือหุ้น 1 ส.ค. 2025 – 15 พ.ค. 2026 เกี่ยวกับความเห็นในแง่ดีของบริษัทต่อผล Phase 3 trial ของ Fianlimab ร่วมกับ Libtayo ในการรักษา melanoma ที่สุดท้าย trial ล้มเหลว (ราคาหุ้นเคยร่วงแรงตอนเปิดเผย ทำให้ market cap หาย ~$11B ช่วงนั้น) — เป็น litigation deadline event ไม่ใช่ catalyst ใหม่ต่อธุรกิจปัจจุบัน. ด้านบวก HSBC ปรับ PT ขึ้นเป็น $920 (Buy) ชูประเด็น Dupixent patent upside. ราคาปิด 11 ก.ย. ที่ $781.49 (-8.9% จาก 52-week high $859.34). นัยพอร์ต: เราถือ REGN 0.42sh weight ~3.4%, MOS +12.09% (ต่ำกว่า 15% Value add-gate, no sell pressure) — คดี class action นี้เป็นเรื่องเก่าที่ตลาดรับรู้ไปแล้วตอนราคาร่วงปีที่แล้ว ไม่ใช่ thesis-changing event ใหม่ แต่ควร track ผลคดีต่อเนื่องเพื่อประเมิน tail risk.",
+    impact: "MIXED", tickers: ["REGN"],
+    url: "https://www.globenewswire.com/news-release/2026/09/12/3360600/32716/en/regn-2-day-deadline-alert-regeneron-pharmaceuticals-inc-investors-alerted-to-september-14-2026-lead-plaintiff-deadline-in-class-action-lawsuit.html",
+  },
+  {
+    date: "2026-09-14", category: "TECH",
+    headline: "🟢 GOOGL — Waymo เริ่มให้บริการ paid robotaxi ใน Las Vegas อย่างเป็นทางการ (ขยายจาก markets เดิม)",
+    summary: "Waymo (หน่วยธุรกิจ self-driving ของ Alphabet) เริ่มเปิดให้บริการ robotaxi แบบเก็บค่าโดยสารจริงใน Las Vegas ตั้งแต่วันจันทร์ที่ 14 ก.ย. ขยายจาก commercial service เดิม — หุ้น GOOGL ขึ้น >2% ตอบรับข่าวนี้ระหว่างวันซื้อขาย 15 ก.ย. ประกอบกับข่าว Google ประกาศลงทุน AI infrastructure $15B เพิ่มเติมใน 'Texas of Europe'. นัยพอร์ต: เราถือ GOOGL ผ่านโพซิชันที่ full-exit ไปแล้ว 2026-09-12 (Thesis Invalidation ยิงจาก capex guidance) — ข่าว Waymo positive นี้เป็น business-quality confirmation ต่อเนื่อง (สอดคล้องกับที่ Charlie ระบุตอน exit ว่า 'ไม่ใช่ business-quality collapse') แต่ไม่เปลี่ยนกฎ pre-committed exit ที่ทำไปแล้ว — เป็น data point สำหรับการพิจารณา re-scout ในอนาคต (หลัง FY2027 capex guidance ~ม.ค./ก.พ. 2027).",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://www.google.com/finance/quote/GOOG:NASDAQ",
+  },
+  {
+    date: "2026-09-14", category: "TECH",
+    headline: "🟡 MSFT — Nadella หนุนแนวคิดชะลอ AI development + วางแผนขยาย data center capacity เกิน 3 เท่า",
+    summary: "CEO Satya Nadella ออกมาสนับสนุนแนวคิดชะลอความเร็วการพัฒนา AI capabilities (สอดคล้องกับ call ของ Amodei/Anthropic) และ Microsoft กำลังพิจารณาตั้ง limit ให้โมเดล AI รุ่นถัดไป — เป็นส่วนหนึ่งของ sentiment ที่กดดันหุ้นกลุ่มเทคโนโลยี/AI ทั้งกลุ่มวันที่ 14-15 ก.ย. ในทางกลับกัน Microsoft ยังคงเดินหน้าขยาย data center capacity มากกว่า 3 เท่า เพื่อแก้ปัญหา compute shortage ที่ทำให้ต้องปฏิเสธลูกค้า AI/cloud บางส่วน — สะท้อนว่า 'ชะลอ' หมายถึงเรื่อง capability/safety ไม่ใช่ capex/infrastructure investment. นัยพอร์ต: ไม่มี MSFT ใน positions ปัจจุบัน (อยู่ใน watchlist เดิม 'Pending Analysis' ตั้งแต่ 2026-05-19, ราคาขยับจาก $406 เป็น ~$505 แล้ว) — ข่าวนี้เป็น sentiment/macro context มากกว่า trade signal โดยตรง.",
+    impact: "MIXED", tickers: ["MSFT"],
+    url: "https://www.investing.com/equities/microsoft-corp",
+  },
 
   // ── 2026-09-12 ──────────────────────────────
   {
