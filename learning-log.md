@@ -1057,3 +1057,22 @@ Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 
 **Outstanding:** Street PT ($315.37 consensus) vs Team Blended FV ($221.79 post-fix) = +42% gap ยังไม่ถูก re-flag ในรายงานหลัง TGR fix (Morgan MEDIUM finding) — ต้อง reconcile รอบหน้า. Q3 FY27 earnings (พ.ย. 2026, current-RPO print) คือ catalyst ตัดสินว่า RPO concern resolve จริงหรือไม่
 
 *อัปเดตล่าสุด: 2026-09-13 — ADSK ปิด batch 6/6 (ACN SELL / REGN HOLD / CRM HOLD / ADBE HOLD / GOOGL SELL / ADSK HOLD-downgrade). TGR compliance-check pattern บันทึกไว้เป็นครั้งที่ 2 (หลัง GOOGL) — ควร pre-check ที่ Emma/Quinn ไม่ใช่รอ Charlie/Morgan จับทีหลัง.*
+
+---
+
+## LVS Full Analysis 2026-09-20 — Dual-Gate Near-Miss, No Cherry-Picking (WATCH, first Gaming/Leisure/Travel entry)
+
+**Trigger:** Max Scout Round 30 (sector rotation mandate → Gaming/Leisure/Travel, sector ใหม่ในพอร์ต) คัดเลือก LVS เป็น TOP PICK ผ่าน Scout Filter A+B+C+E ชัดเจน → fast-track full pipeline (Atlas→Emma∥Quinn→Bear→Charlie→Morgan QA)
+
+**ผล:** Blended FV **$47.58** (Emma DCF $54.55×0.40 + Quinn P-W EV $47.17×0.30 + Bear downside P-W EV $38.68×0.30) → MOS headline **16.0%** (ผ่านเกณฑ์ 15% Value bucket แบบเฉียดฉิว) แต่ **Conviction เฉลี่ย 6.33/10 (Emma 7/Quinn 6/Bear 6) ต่ำกว่าเกณฑ์ ≥7.0** และ **Regime TRANSITIONAL-CAUTIOUS suspend Force Deploy/open positions ทั้งหมด** → **WATCH ไม่ BUY**. Morgan QA CONDITIONAL PASS (8.2/10, 0 HIGH, 2 MEDIUM).
+
+**บทเรียนหลัก:**
+1. **MOS ที่ผ่านเกณฑ์ไม่ได้แปลว่า thesis แข็งแรงเสมอไป — ต้องดู sensitivity ของ assumption ที่ MOS พึ่งพา** Bear พิสูจน์ผ่าน stress table ว่า MOS ทั้งหมดพึ่งพา multiple re-rating assumption เดียว (EV/EBITDA 8.21x ปัจจุบัน → 9.0x base case) ที่ไม่มี hard catalyst ยืนยัน — ที่ multiple ปัจจุบันจริง MOS มีแค่ +3.0% เท่านั้น (Quinn's stress table). No-rerating scenario ทำให้ Blended FV ตกเหลือ ~$40.69 (MOS ~1.75%, FAIL gate เด็ดขาด) เทียบกับ full re-rate scenario ที่ MOS ขึ้นไป ~21.8% — headline "PASS" หนึ่งตัวเลขซ่อน range ที่กว้างมากไว้
+2. **Dual/triple-condition block ที่เป็นอิสระต่อกันคือสัญญาณที่แข็งแรงกว่าเกณฑ์เดียว** LVS ติด 3 เงื่อนไขพร้อมกันที่ไม่ได้ผูกกัน: (a) MOS fragile/conditional-pass, (b) Conviction FAIL อิสระจาก MOS, (c) Regime BLOCKED อิสระจากทั้งสองอย่าง — เมื่อสัญญาณอิสระหลายตัวชี้ทางเดียวกัน ความมั่นใจในผลลัพธ์ (ไม่ deploy) สูงกว่าการอาศัยแค่ gate เดียว pattern นี้คล้ายกับ QCOM/LKQ (MOS ผ่านแต่ conviction fail) แต่ LVS เพิ่ม regime gate เป็นชั้นที่ 3
+3. **ทีมไม่ cherry-pick ตัวเลขเพื่อดัน BUY แม้ headline number เอื้อ** — Morgan ระบุชัดเจนว่านี่คือวินัยที่ดี ตรงกับ motto "No source, no fact. No fact, no report." Emma/Quinn ทั้งคู่ independently distrust "58% discount to 5Y avg EV/EBITDA" stat (น่าจะ COVID-distorted) และไม่นำมาใช้จริงในการคำนวณ แม้จะเป็น stat ที่ scout เดิมใช้เป็นเหตุผล Filter B
+4. **Moat rating ต้องสอดคล้องกับ Porter's Five Forces ของตัวเอง** — Emma ให้ "Wide Moat" แต่ Porter's Five Forces ของ Emma เองระบุ Rivalry = Medium-High (Macau เป็น 6-operator oligopoly ที่แข่งขัน amenity arms race ต่อเนื่อง) — Bear ชี้ inconsistency นี้และ Charlie เห็นด้วย ปรับเป็น Narrow-to-Wide ในรายงานสุดท้าย บทเรียน: license/regulatory scarcity ป้องกัน "คู่แข่งใหม่" ได้ แต่ไม่ได้ป้องกัน "market share loss ให้คู่แข่งเดิมในตลาด oligopoly" — สองอย่างนี้ต้องแยกกันตอนให้ moat rating
+5. **First Gaming/Leisure/Travel sector ในพอร์ต** — sector นี้ไม่ fit กรอบ US business-cycle มาตรฐาน (LVS growth driver หลักคือ Macau/Singapore structural recovery ไม่ใช่ US cycle) — Quinn ยืนยันเชิงสถิติด้วย implied correlation ต่ำ (~0.48 เทียบ S&P 500) เป็น diversification benefit เชิงทฤษฎี แต่ single-name country/political risk (100% revenue จาก Macau+Singapore, 74.8% China-linked visitor) ยังสูงมาก — diversification เชิง portfolio-beta ไม่ได้แปลว่า idiosyncratic risk ต่ำ
+
+**Action:** เก็บเข้า `portfolio/buy_list.md` (Charlie/Max ดูแล) — re-verify FV ทันทีหลัง Q3 earnings (21 ต.ค. 2026, Re-Analysis Trigger #1). ถ้า Atlas re-call regime เป็น RISK-ON ก่อนหน้านั้น + conviction ขยับผ่าน 7.0 จาก catalyst ใหม่ → fast-track กลับมาพิจารณา BUY ทันที
+
+*อัปเดตล่าสุด: 2026-09-20 — LVS WATCH, dual-gate near-miss ที่มีวินัยดี (ไม่ cherry-pick), first Gaming/Leisure/Travel sector entry. Moat downgrade Wide→Narrow-to-Wide หลัง Bear challenge Porter's consistency.*

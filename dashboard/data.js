@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-09-13";
+const LAST_UPDATED = "2026-09-20";
 
 const REPORTS = [
 
@@ -21272,6 +21272,442 @@ FSLR เป็นตัวอย่างชัดเจนของ "great busi
 ---
 
 *Charlie — 2026-09-03 | FSLR Research Report | Sources: ดู agent_notes/atlas, emma, quinn, bear ทั้งหมดสำหรับ full citation list*
+`
+  },
+
+  {
+    ticker: "LVS",
+    company: "Las Vegas Sands Corp.",
+    date: "2026-09-20",
+    version: "v1",
+    sector: "Gaming/Leisure/Travel (Casino & Integrated Resorts)",
+    bucket: "Value",
+    price: 39.98,
+    recommendation: "WATCH",
+    blendedFV: 47.58,
+    mosPct: 16.0,
+    conviction: 6.33,
+    convictionEmma: 7,
+    convictionQuinn: 6,
+    convictionBear: 6,
+    convictionAvg: 6.33,
+    targetBull: 54.55,
+    targetBase: 47.58,
+    stopLoss: 31.60,
+    pwEV: 47.17,
+    beta: 0.82,
+    sharpe1Y: 0.137,
+    maxDrawdown: -0.432,
+    moat: "Narrow-Wide",
+    esgRating: "Medium",
+    esgScore: 5.0,
+    macroRegime: "TRANSITIONAL-CAUTIOUS",
+    sp500Reference: 7650.50,
+    sp500ReferenceNote: "7,650.50 (2026-09-18 close — Yahoo Finance + TheStreet ✅ 2 sources cross-check per Single Source of Truth Rule; verified by Atlas 2026-09-20)",
+    revenueGrowthYoY: 18.1,
+    revenueGrowthNote: "Revenue TTM +18.1% YoY — เร็วสุดใน peer group (MGM +3.2% / WYNN +6.4% / MLCO +6.0%) แต่ยังจัดเป็น Value bucket (DCF/FCFF-based, mature FCF-positive business) ไม่ใช่ Growth bucket ตาม CLAUDE.md",
+    entryZone: "$38.00–$41.00 (mid $39.50) — future watch only, ไม่ deploy ที่ราคาปัจจุบัน",
+    positionSize: "0% ตอนนี้ (Conviction 6.33 < 7.0 gate + Regime TC suspends Force Deploy) — ถ้า gate ผ่านในอนาคต: 3-5% pre-multiplier × 0.75x TC ≈ 2.25-3.75%",
+    keyThesis: "LVS เทรดที่ discount ~20% เทียบ peer median ทั้ง P/E และ EV/EBITDA ทั้งที่ growth (+18.1%)/margin (23.3%)/ROIC (19.8%) สูงสุดในกลุ่ม — Wide-ish regulatory-scarcity moat (Macau 6-concession cap ถึง 2033, Singapore duopoly) แต่ MOS หัวข่าว 16.0% พึ่งพาสมมติฐานเดียว (EV/EBITDA multiple re-rate 8.21x→9.0x ที่ไม่มี catalyst ยืนยัน) — ถ้าไม่ re-rate MOS จริงเหลือ ~1.75%. Conviction เฉลี่ย 6.33/10 ไม่ถึงเกณฑ์ Value bucket gate (≥7.0) และ Regime TRANSITIONAL-CAUTIOUS ห้าม open new positions — WATCH ไม่ BUY, เก็บเข้า buy_list รอ Q3 earnings (21 ต.ค. 2026) เป็นตัวยืนยัน",
+    topRisk: "Multiple re-rating dependency (MOS ทั้งหมดพึ่งพา 8.21x→9.0x assumption ที่ไม่มี hard catalyst) | 100% geography concentration ใน Macau+Singapore, 74.8% China-linked visitor | China outbound-investment rules (ก.ค. 2026) ที่ CLSA เตือนว่าเป็น persistent sentiment risk | MBS $8B expansion มีประวัติ overrun +142% และเลื่อนมาแล้ว 1 ครั้ง (2029→2031)",
+    reportFile: "../reports/LVS_2026-09-20.md",
+    businessSummary: {
+      oneLiner: "Las Vegas Sands เป็นเจ้าของและผู้ดำเนินการ integrated resort ขนาดใหญ่ที่สุดในมาเก๊าและสิงคโปร์ ทำเงินจาก casino gaming, โรงแรม, MICE/convention, retail และ F&B",
+      analogy: "เหมือนเป็นเจ้าของ 'เมืองในเมือง' สำหรับนักท่องเที่ยว — คาสิโน + โรงแรมหรู + ห้างสรรพสินค้า + ศูนย์ประชุมรวมอยู่ในที่เดียว ดึงคนมาใช้จ่ายทุกอย่างในที่เดียวกัน",
+      moneyFlow: [
+        "นักท่องเที่ยว (ส่วนใหญ่จากจีนแผ่นดินใหญ่) เดินทางมามาเก๊า/สิงคโปร์",
+        "ใช้จ่ายใน casino gaming (VIP rolling + mass market) เป็นรายได้หลัก",
+        "บวกรายได้เสริมจากโรงแรม, retail mall, MICE/convention, F&B ที่ cross-sell กันในระบบนิเวศเดียว",
+        "กำไรถูกจำกัดคู่แข่งด้วยใบอนุญาตที่รัฐบาลควบคุม (Macau 6 ราย, Singapore 2 ราย) ทำให้ margin สูงกว่าธุรกิจทั่วไป"
+      ],
+      whyDifferent: "รัฐบาลมาเก๊าและสิงคโปร์จำกัดจำนวนใบอนุญาต casino ตามกฎหมาย (Macau 6 concessions ถึง 2033, Singapore duopoly 2 ราย) — คู่แข่งใหม่เข้าตลาดแทบเป็นไปไม่ได้ ต่างจาก moat แบบ brand/switching cost ทั่วไปที่ยังพอแข่งขันได้",
+      simpleRisk: "รายได้ 100% ผูกกับมาเก๊า+สิงคโปร์และนักท่องเที่ยวจีน — ถ้าจีนคุมเข้มการเดินทางออกนอกประเทศหรือกฎระเบียบมาเก๊าเปลี่ยน จะกระทบบริษัททั้งหมดโดยตรง ไม่มีตลาดอื่นมาช่วยกระจายความเสี่ยง"
+    },
+    thesisBullets: [
+      { title: "Wide-ish Moat จาก Regulatory Scarcity", why: "Macau concession ล็อกถึง 2033 + Singapore duopoly (2 ใบอนุญาตเท่านั้น) — government-controlled barrier ที่แข็งแกร่งกว่า brand moat ทั่วไป แต่ Bear challenge ให้เป็น Narrow-to-Wide เพราะ Macau เป็น 6-operator oligopoly ที่แข่งขัน amenity arms race ต่อเนื่อง" },
+      { title: "Valuation Mismatch ชัดเจน", why: "เทรดที่ discount ~20% เทียบ P/E และ EV/EBITDA ของ peer median ทั้งที่ growth/margin/ROIC สูงสุดในกลุ่มทุกตัว" },
+      { title: "Beaten-down เพราะ Cyclical ไม่ใช่ Structural (แต่ Bear ตั้งคำถาม)", why: "Macau VIP hold softness + World Cup 2026 ดึง visitation ชั่วคราว, market share ยังเพิ่มขึ้นต่อเนื่อง (24.5%→26.2%) — แต่ Bear ชี้ว่า 'temporary' narrative ยังไม่ verify อิสระ อาจเป็น credit-tightening structural ก็ได้" },
+      { title: "MOS 16.0% headline แต่ fragile", why: "Blended FV $47.58 vs ราคา $39.98 — MOS ผ่านเกณฑ์ 15% แบบเฉียดฉิว แต่พึ่งพา multiple re-rating assumption เดียว (8.21x→9.0x); no-rerate scenario เหลือ MOS ~1.75% เท่านั้น" },
+      { title: "China/Geography Concentration เป็นความเสี่ยงหลัก", why: "100% revenue จาก Macau+Singapore, 74.8% visitor mix เป็นจีนแผ่นดินใหญ่ — ไม่มี diversification buffer ถ้า China policy เปลี่ยน" }
+    ],
+    bearRisks: [
+      { title: "Multiple re-rating คือ MOS ทั้งหมด", why: "ที่ multiple ปัจจุบัน 8.21x MOS แท้จริงมีแค่ +3.0% — headline 16.0%/15.24% ทั้งหมดคือการ bet ว่าตลาด re-rate กลับ 9.0x ซึ่งไม่มี hard catalyst; UBS เองใช้ blended multiple ใกล้ราคาตลาดปัจจุบัน ไม่ใช่ 9.0x+" },
+      { title: "MBS $8B expansion มีประวัติ slip", why: "Budget เดิม $3.3B (2019) → $8.0B ปัจจุบัน (+142% overrun) และเลื่อนมาแล้ว 1 ครั้ง (2029→2031) — Emma's terminal value assume clean landing 2031 ซึ่งขัดกับ track record ของ project เอง" }
+    ],
+    esgBreakdown: { e: 6, s: 5, g: 4, overall: 5.0 },
+    esgBreakdownNote: "Medium Risk (Sustainalytics 20.7). ค่านี้คือค่าที่ปรับแล้วหลัง Bear challenge (Governance 5→4 จาก insider selling ~$174.5M ใน 90 วันต้นปี 2026 รวม former CEO 1.2M หุ้น; Overall 5.3→5.0) — Morgan QA caveat: ใช้ค่านี้ไม่ใช่ Emma's raw structured-data block (g:5, overall:5.3)",
+    customerConcentration: {
+      sandsChina: "~56.5% (Macau properties, Q2 2026)",
+      marinaBaySands: "~43.5% (Singapore, Q2 2026)",
+      top2Combined: "~100% (no US operations remaining — Las Vegas properties divested 2021-2022)"
+    },
+    geographyRevenue: {
+      unitedStates: 0,
+      international: 100,
+      macau: 56.5,
+      singapore: 43.5,
+      chinaExposure: "74.8% ของ Macau visitor arrivals เป็น mainland China (Q1 2026)"
+    },
+    revenueSegments: [
+      { label: "Macau (Sands China)", value: 56.5 },
+      { label: "Singapore (Marina Bay Sands)", value: 43.5 },
+      { label: "US/Other", value: 0 }
+    ],
+    competitorData: [
+      { ticker: "LVS", company: "Las Vegas Sands", revenueGrowth: 18.1, operatingMargin: 23.3, marketCap: 25895 },
+      { ticker: "MGM", company: "MGM Resorts", revenueGrowth: 3.2, operatingMargin: 6.5, marketCap: 9510 },
+      { ticker: "WYNN", company: "Wynn Resorts", revenueGrowth: 6.4, operatingMargin: 16.0, marketCap: 8290 },
+      { ticker: "MLCO", company: "Melco Resorts", revenueGrowth: 6.0, operatingMargin: 13.4, marketCap: 1760 }
+    ],
+    bullFlipTriggers: [
+      "EV/EBITDA multiple re-rate จริงถึง ≥9.0x บน verified market data (ไม่ใช่แค่ consensus PT) ภายใน 1-2 ไตรมาส",
+      "Q3 2026 earnings (21 ต.ค.) ยืนยัน VIP hold normalize กลับสู่ค่าเฉลี่ย + Macau market share รักษา ≥26%",
+      "China ออกคำชี้แจง/carve-out ยืนยันว่ากฎ outbound-investment (ก.ค. 2026) ไม่กระทบ gaming-related travel spend",
+      "MBS expansion ยืนยัน completion date 2031 ไม่มี budget revision เพิ่มเติมอีก ≥2 ไตรมาสติด"
+    ],
+    bearFlipTriggers: [
+      "Multiple ค้างที่ ≤8.21x ผ่าน Q1 2027 (อีก 2 ไตรมาส) โดยไม่มี re-rating catalyst",
+      "China capital-control action ที่กระทบ GGR จริง (ไม่ใช่แค่ sentiment)",
+      "MBS expansion ประกาศเลื่อนเพิ่มเติม (เกิน 2031) หรือ cost revision เกิน $8.0B",
+      "Macau market share หลุดต่ำกว่า 25% สองไตรมาสติด",
+      "Insider selling เร่งขึ้นหลัง CEO transition settle แล้ว"
+    ],
+    thesisInvalidation: "Macau/Singapore government เปลี่ยนจำนวน concession/license ในทางที่ทำลาย regulatory-scarcity moat หรือ ยืนยัน GGR-level impact (ไม่ใช่แค่ sentiment) จาก China capital controls ต่อ outbound gaming spend",
+    fullContent: `# 🎰 LVS — Las Vegas Sands Corp.
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: Value** | **Sector: Gaming/Leisure/Travel (Casino & Integrated Resorts)** | **Regime: TRANSITIONAL-CAUTIOUS**
+
+## 📌 ข้อมูลหลัก
+| Ticker | Date | Price | Market Cap | Sector |
+|--------|------|-------|-----------|--------|
+| LVS | 2026-09-20 | $39.98 (close 9/18, 2-source verified) | $25.895B | Gaming/Leisure/Travel |
+
+## 🎯 คำแนะนำ
+| Recommendation | Entry Zone | Blended FV | MOS | Stop Loss | Max Position |
+|---|---|---|---|---|---|
+| **WATCH — ไม่ BUY ตอนนี้** | $38.00–$41.00 (mid $39.50) | $47.58 | 16.0% (headline) / ~1.75% (conservative) | $31.60 (-20% จาก entry $39.50) | 0% ตอนนี้ — ถ้า gate ผ่านในอนาคต: 3-5% pre-multiplier × 0.75x TC ≈ 2.25-3.75% |
+
+## 📊 Score Dashboard
+| Blended FV | MOS | ESG | Conviction | Horizon |
+|---|---|---|---|---|
+| $47.58 | 16.0% (fragile) | 5.0/10 (Medium Risk) | 6.3/10 | 3-5 ปี |
+
+> ⚡ **TL;DR — อ่าน 30 วินาที**
+> - **Verdict: WATCH, ไม่ BUY** — LVS เป็นธุรกิจคุณภาพดี (Wide-ish moat, ROIC 19.8% vs WACC 9%, เทรด discount ~20% เทียบ peer) แต่ conviction เฉลี่ย 6.3/10 ไม่ถึงเกณฑ์ Value bucket gate (≥7.0) และ regime TRANSITIONAL-CAUTIOUS ห้าม open position ใหม่อยู่แล้ว
+> - **ทำไม:** MOS หัวข่าว 16.0% พึ่งพาสมมติฐานเดียว — ตลาด re-rate EV/EBITDA multiple จาก 8.21x ปัจจุบันกลับไป 9.0x ซึ่งยังไม่มี catalyst ยืนยัน ถ้าไม่ re-rate MOS จริงเหลือแค่ ~1.75%
+> - **Downside Risk:** 100% revenue concentration ใน Macau+Singapore (74.8% China-linked visitor), China outbound-capital-control overhang ที่ยังไม่ resolve, MBS $8B expansion มีประวัติ overrun (+142%) และเลื่อนมาแล้วครั้งหนึ่ง
+
+---
+
+## 📋 Executive Summary \`[CFA L3: Portfolio Construction — Investment Thesis Summary]\`
+
+LVS มาจาก Max Scout Round 30 (Gaming/Leisure/Travel — sector ใหม่) ผ่าน Scout Filter A+B+C+E ชัดเจน ราคาปัจจุบัน $39.98 อยู่ใกล้ 52-week low ($39.73, -43.2% จาก high $70.45) ธุรกิจยังเติบโตแข็งแกร่ง (Revenue TTM +18.1%, Op margin 23.3% สูงสุดใน peer group) และเทรดที่ discount ~20% เทียบ peer median ทั้ง P/E และ EV/EBITDA
+
+ทีมวิเคราะห์ 3 มุม (Emma DCF $54.55 / Quinn P-W EV $47.17 / Bear downside P-W EV $38.68) ได้ **Blended FV $47.58, MOS 16.0%** — ผ่านเกณฑ์ MOS หัวข่าวแบบเฉียดฉิว แต่ Bear พิสูจน์ให้เห็นว่า MOS ทั้งหมดพึ่งพา multiple re-rating assumption เดียว (8.21x→9.0x) ที่ไม่มี catalyst ชัดเจนรองรับ — ถ้าไม่ re-rate เลย Blended FV ตกเหลือ ~$40.69 (MOS ~1.75%, FAIL gate)
+
+**Conviction เฉลี่ย 6.33/10 ต่ำกว่าเกณฑ์ Value bucket (≥7.0)** และ Regime ปัจจุบัน TRANSITIONAL-CAUTIOUS ตาม IPS Macro Regime Gate ระบุชัดเจนว่าห้าม open new positions ทั้งหมด — ทั้งสามเงื่อนไข (conviction, MOS fragility, regime) ชี้ไปทางเดียวกันคือ **ยังไม่ควร deploy ตอนนี้**
+
+---
+
+## 💡 Investment Thesis \`[CFA L3: Investment Thesis Formulation]\`
+
+**Bull case:** Wide-ish regulatory-scarcity moat (Macau 6-concession cap ถึง 2033, Singapore duopoly) + ธุรกิจกำลังฟื้นตัวแข็งแกร่ง (market share gaining 24.5%→26.2%) + เทรดที่ discount เทียบ peer ทั้งที่ fundamental ดีกว่า = valuation mismatch ที่ตลาดน่าจะแก้ไขเมื่อ Q3 earnings ยืนยัน VIP hold normalize
+
+**Bear case:** Multiple discount (8.21x) อาจเป็น persistent risk premium ไม่ใช่ temporary sentiment gap — CLSA เตือนว่า China outbound-investment rules (มีผล 1 ก.ค. 2026) "weigh more on sentiment than GGR" ซึ่งเป็น overhang ที่ยังไม่ resolve, UBS เองใช้ blended multiple ใกล้เคียงราคาตลาดปัจจุบันไม่ใช่ 9.0x+ ที่ Emma/Quinn ใช้เป็น base
+
+**สรุป:** thesis มีเหตุผลรองรับทั้งสองทาง — เก็บไว้ใน buy_list รอ Q3 earnings (21 ต.ค. 2026) เป็นตัวยืนยัน ไม่ใช่ AVOID เด็ดขาดแต่ยังไม่ใช่ BUY ที่ robust พอ
+
+---
+
+## 🏢 Business Deep Dive \`[CFA L2: Industry and Competitive Analysis]\`
+
+**How does LVS make money?**
+- เจ้าของ/ผู้ดำเนินการ integrated resort ในมาเก๊า (Sands China: Venetian, Londoner, Parisian, Plaza, Four Seasons) และสิงคโปร์ (Marina Bay Sands)
+- รายได้หลักจาก casino gaming (VIP rolling + mass market), เสริมด้วยโรงแรม, retail mall, MICE/convention, F&B
+- MICE ecosystem คือกลยุทธ์หลัก — ดึง corporate traffic ที่ cross-sell ทั้งระบบนิเวศ
+- พึ่งพา China outbound tourism สูงมาก (mainland China = 74.8% ของ arrivals มาเก๊า)
+
+**Porter's Five Forces:**
+| Force | ระดับ | เหตุผล |
+|-------|-------|--------|
+| Supplier Power | Low-Medium | Construction/labor cost inflation เสี่ยงต่อ MBS expansion แต่ supplier มีทางเลือกหลายราย |
+| Buyer Power | Low-Medium | Individual gambler อำนาจต่อรองต่ำ, VIP junket มี leverage บ้าง |
+| New Entrants | **Low (แข็งแกร่งสุด)** | Macau จำกัด 6 concessions, Singapore จำกัด 2 licenses โดยกฎหมาย |
+| Substitutes | Medium | Online gambling, ภูมิภาคคู่แข่ง (Japan IR, Korea, Philippines) |
+| Rivalry | **Medium-High** | 6 concessionaires แข่งขัน amenity arms race ต่อเนื่องใน Macau |
+
+**Market Share Trend (Sands China, Macau GGR):** Gaining — 24.5% (2024) → 26.2% (Q1 2026, two-year high), driven โดย The Londoner Macao
+
+**Geography Revenue Breakdown:**
+| ภูมิภาค | % Revenue (Q2 2026) |
+|---------|---------------------|
+| Macau (Sands China) | ~56.5% |
+| Singapore (Marina Bay Sands) | ~43.5% |
+| US/Other | ~0% (ขาย Las Vegas properties 2021-2022) |
+
+**⚠️ Concentration Risk:** 100% ของ revenue มาจาก 2 jurisdictions ที่ผูกกับ China economic/political cycle โดยตรง — ไม่มี geographic diversification เลย
+
+---
+
+## 🏰 Moat Analysis \`[CFA L2: Equity — Economic Moat]\`
+
+**Emma: Wide Moat | Bear challenge: Narrow-to-Wide (ไม่ใช่ clean Wide)**
+
+แหล่งที่มา: Macau 6-concession regulatory cap (ถึง 2033), Singapore 2-license duopoly, capital scale barrier ($8B MBS expansion), MICE network effect
+
+**Bear's counter:** Macau เป็น 6-operator oligopoly ที่แข่งขัน amenity arms race ต่อเนื่อง (Porter's Rivalry: Medium-High ของ Emma เอง) — license scarcity ≠ pricing power/share stability ภายใน oligopoly Charlie เห็นด้วยกับ Bear ว่าควร treat เป็น **Narrow-to-Wide** ไม่ใช่ Wide เต็มรูปแบบ — moat ทนทานเรื่อง "จำนวนคู่แข่งใหม่" แต่ไม่ป้องกัน "market share loss ให้คู่แข่งเดิม"
+
+---
+
+## 📊 Sector/Peer Comparison \`[CFA L2: Relative Valuation]\`
+
+| Company | Ticker | P/E | EV/EBITDA | ROE | ROIC | Rev Growth TTM | Gross Margin | Moat |
+|---------|--------|-----|-----------|-----|------|-----------|-------------|------|
+| **Las Vegas Sands** | **LVS** | **15.5x** | **8.15x** | 122.9%* | **19.80%** | **+18.1%** | **79.33%** | Narrow-Wide |
+| MGM Resorts | MGM | 23.66x | 16.50x | 18.93% | 3.64% | +3.2% | 44.16% | Narrow |
+| Wynn Resorts | WYNN | 19.59x | 10.24x | N/A | 9.41% | +6.4% | 68.30% | Narrow-Wide |
+| Melco Resorts | MLCO | 7.76x | 6.56x | N/A | 11.40% | +6.0% | 38.19% | Narrow |
+| **Sector Median** | — | 19.59x | 10.24x | — | 9.41% | +6.0% | 44.16% | — |
+| **LVS vs Median** | — | **Discount 20.9%** | **Discount 20.4%** | — | **Premium +10.4pp** | **Premium +12.1pp** | **Premium +35.2pp** | — |
+
+*ROE 122.9% เป็น artifact ของ book equity ต่ำผิดปกติ ($581M หลัง buyback $1.53B + dividend $400M H1 2026) — ใช้ ROIC (19.80%) เป็นตัวชี้วัดหลักแทน ซึ่งสูงกว่า WACC (9.0%) ถึง +10.8pp
+
+**สรุป:** LVS trade ที่ discount ~20% ทั้ง P/E/EV-EBITDA ทั้งที่ growth/margin/ROIC สูงสุดในกลุ่มทุกตัว — valuation mismatch จริง แต่คำถามคือตลาดจะแก้ไข mismatch นี้เมื่อไหร่/อย่างไร (ดู Quant section)
+
+---
+
+## 💰 Valuation \`[CFA L2: Equity Valuation — FCFF/EV-EBITDA/Scenario]\`
+
+| Analyst | Methodology | FV/share | Basis |
+|---------|-------------|----------|-------|
+| Emma | 2-stage FCFF/NOPAT DCF (WACC 9.0%, TGR 2.5%) | **$54.55** | Operating-income/NOPAT framework — TV=74.7% ของ EV |
+| Quinn | P-W EV, 5-scenario, EV/EBITDA multiple-based (base 9.0x) | **$47.17** | Multiple re-rating assumption — sensitive สูงต่อ multiple มากกว่า fundamental |
+| Bear | P-W EV downside-weighted (multiple stress table, 30% status-quo 8.21x) | **$38.68** | No-rerating tilted scenario |
+
+**Methodology gap:** Emma ใช้ DCF (gap เทียบ Quinn = (54.55−47.17)/54.55 = 13.5% < 25% threshold — ไม่เข้าเกณฑ์ DCF Cash Flow Consistency Rule reconciliation table บังคับ ซึ่งตาม CLAUDE.md ผูกกับคู่ Emma↔Quinn โดยเฉพาะ). Quinn/Bear ใช้ EV/EBITDA multiple-based เพราะ data package ไม่มี maintenance/growth capex breakdown แยก — เป็น data-gap-driven choice ไม่ใช่ inconsistency ที่ต้องแก้ *(Morgan note: gap Emma↔Bear = (54.55−38.68)/54.55 = 29.1% ก็เกิน 25% เช่นกัน — แต่ Bear's FV ใช้ methodology เดียวกับ Quinn (EV/EBITDA multiple-based, ไม่ใช่ independent DCF basis) จึงไม่ถือเป็น "คนละ cash-flow basis" ตามเจตนาของกฎ ซึ่งพูดถึง Emma↔Quinn คู่เดียว — ควรระบุเหตุผลนี้ให้ชัดในรายงานฉบับถัดไปแทนการละไว้)*
+
+**Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30 = $54.55×0.40 + $47.17×0.30 + $38.68×0.30 = $47.58**
+
+**MOS = ($47.58 − $39.98) / $47.58 = 16.0%**
+
+### Critical Sensitivity — Multiple Re-rating Dependency
+| Scenario | Blended FV | MOS |
+|---|---|---|
+| No re-rating (multiple stays 8.21x permanently) | ~$40.69 | ~1.75% — **FAILS 15% gate** |
+| **Current base case (headline)** | **$47.58** | **16.0% — passes, fragile** |
+| Full re-rate to 9-11x (Q3 beat + China stabilizes) | ~$51.15 | ~21.8% |
+
+---
+
+## 📉 Quantitative Risk \`[CFA L1: Portfolio Management — Risk-Adjusted Performance]\`
+
+- Beta: 0.82 | Implied correlation to S&P 500: ~0.48 (ต่ำกว่าค่าเฉลี่ยหุ้น S&P ~0.6-0.8) — diversification benefit เชิงสถิติจริง
+- Sharpe (CAPM ex-ante): 0.137 (ต่ำ, beta ต่ำกดเพดาน required return) | Sharpe (consensus-PT bull scenario): 1.757 (upper-bound สมมติ)
+- Realized volatility (30D/90D avg): 25.36% — สูงกว่าที่ beta อย่างเดียวบ่งชี้ เพราะ idiosyncratic risk สูง (China policy, VIP hold variance)
+- Net Debt $11.908B ใน hiking-cycle backdrop (Fed hike 9/16, dot plot 4.1-4.4% ปลายปี) — refinancing/interest expense sensitivity, ไม่มี debt maturity schedule ใน data package (data gap)
+- Options market: IV 31-33% vs realized 25.4% (earnings premium ก่อน Q3), Put/Call ~7.9:1 bullish tilt (อาจเป็น crowded bottom-fishing speculation มากกว่า informed positioning)
+
+### Sensitivity Matrix 5×5 [CFA L2: Sensitivity Analysis]
+**Variable 1: Macau GGR Growth (0%→10%) | Variable 2: Singapore MBS EBITDA Growth (−10%→+20%)** — multiple คงที่ 9.0x ทุก cell
+
+| Macau\\SG | −10% | −5% | 0% | +10% | +20% |
+|---------|------|-----|-----|------|------|
+| **0.0%** | $41.87 | $43.73 | $45.59 | $49.31 | $53.03 |
+| **2.5%** | $42.54 | $44.40 | $46.26 | $49.98 | $53.70 |
+| **5.0%** | $43.21 | $45.07 | **$46.93** | $50.65 | $54.37 |
+| **7.5%** | $43.88 | $45.74 | $47.60 | $51.32 | $55.04 |
+| **10.0%** | $44.55 | $46.41 | $48.27 | $51.99 | $55.71 |
+
+**Insight:** Singapore EBITDA growth มี swing สูงกว่า Macau GGR growth เกือบ 2 เท่า (MBS มี EBITDA share 58% vs Macau 42% ใน H1 2026) — ตัวแปรที่ตลาดพูดถึงบ่อย (Macau GGR) ไม่ใช่ตัวแปรที่มีผลใหญ่สุดจริง อีกทั้ง**multiple assumption เองมีผลใหญ่กว่าทั้งสองตัวแปรนี้รวมกัน** (ดู Valuation section)
+
+---
+
+## 🌱 ESG Risk Scorecard \`[CFA L2-3: ESG Investing]\`
+
+| Dimension | Score (1-10) | Key Issues |
+|-----------|-------------|-----------|
+| Environmental | 6/10 | Water-stressed operating locations (>20% revenue จาก water-stress area ตาม MSCI); energy-intensive resort complex |
+| Social | 5/10 | Responsible gambling risk; labor practices Macau/Singapore; China-linked customer concentration |
+| Governance | **4/10** *(ปรับลดจาก Emma 5/10 ตาม Bear challenge)* | Controlling family shareholder + ~$174.5M insider selling ใน 90 วันต้นปี 2026 (รวม former CEO Goldstein 1.2M หุ้น) ช่วง CEO transition — plausibly routine liquidity แต่ควร monitor ชัดเจน ไม่ fold เป็น vague compliance line |
+| **Overall ESG** | **5.0/10** | Sustainalytics = 20.7 (Medium Risk) |
+
+**Material ESG Risks (Valuation Impact):**
+1. China/Macau regulatory-political concentration: **−10% ถึง −20%** *(ขยายจาก Emma −10%~−15% ตาม Bear — CLSA "sentiment risk not GGR risk" framing อาจเป็น persistent discount)*
+2. Responsible gambling regulation tightening: −3% ถึง −5%
+3. Water stress/ESG operating cost inflation: −1% ถึง −2%
+
+---
+
+## 💪 Conviction Level Score \`[CFA L3: Investment Thesis & Portfolio Construction — Analyst Conviction]\`
+
+\`\`\`
+Emma   ███████░░░  7/10  — DCF cross-checks สอดคล้องหลายมุม แต่ TV=74.7% ของ EV + 100% geography concentration กดคะแนน
+Quinn  ██████░░░░  6/10  — MOS borderline (+15.24%) พึ่งพา multiple re-rate 8.21x→9.0x ที่ไม่มี hard catalyst
+Bear   ██████░░░░  6/10  — Downside risks (multiple compression, MBS overrun, China overhang) จริงมีหลักฐาน แต่ genuine two-way uncertainty
+──────────────────────────────────────────
+Avg    ██████░░░░  6.3/10  ⚠️ ต่ำกว่าเกณฑ์ Value bucket gate (≥7.0) — ข้อมูลยังไม่พอผ่าน gate เต็มรูปแบบ
+\`\`\`
+
+---
+
+## 🔄 What Would Change Our Mind \`[CFA L3: Investment Thesis & Portfolio Construction]\`
+
+**Bull Flip Triggers (→ BUY เต็มรูปแบบ):**
+1. EV/EBITDA multiple re-rate จริงถึง ≥9.0x บน verified market data (ไม่ใช่แค่ consensus PT) ภายใน 1-2 ไตรมาส
+2. Q3 2026 earnings (21 ต.ค.) ยืนยัน VIP hold normalize กลับสู่ค่าเฉลี่ย + Macau market share รักษา ≥26%
+3. China ออกคำชี้แจง/carve-out ยืนยันว่ากฎ outbound-investment (ก.ค. 2026) ไม่กระทบ gaming-related travel spend
+4. MBS expansion ยืนยัน completion date 2031 ไม่มี budget revision เพิ่มเติมอีก ≥2 ไตรมาสติด
+
+**Bear Flip Triggers (→ SELL/AVOID):**
+1. Multiple ค้างที่ ≤8.21x ผ่าน Q1 2027 (อีก 2 ไตรมาส) โดยไม่มี re-rating catalyst
+2. China capital-control action ที่กระทบ GGR จริง (ไม่ใช่แค่ sentiment)
+3. MBS expansion ประกาศเลื่อนเพิ่มเติม (เกิน 2031) หรือ cost revision เกิน $8.0B
+4. Macau market share หลุดต่ำกว่า 25% สองไตรมาสติด
+5. Insider selling เร่งขึ้นหลัง CEO transition settle แล้ว
+
+**Thesis Invalidation:**
+- Macau/Singapore government เปลี่ยนจำนวน concession/license ในทางที่ทำลาย regulatory-scarcity moat
+- ยืนยัน GGR-level impact (ไม่ใช่แค่ sentiment) จาก China capital controls ต่อ outbound gaming spend
+
+---
+
+## 🎯 Recommendation
+
+> ### WATCH — ยังไม่ BUY, เก็บเข้า buy_list รอ Q3 earnings (21 ต.ค.) เป็นตัวยืนยัน
+> Conviction 6.3/10 ไม่ถึงเกณฑ์ Value bucket gate (≥7.0), MOS 16.0% fragile (พึ่งพา multiple re-rating assumption เดียว), และ Regime TRANSITIONAL-CAUTIOUS ห้าม open new positions ตาม IPS — สามเงื่อนไขชี้ไปทางเดียวกัน
+
+**Gate Check:**
+| เงื่อนไข | เกณฑ์ | ผล | Status |
+|---|---|---|---|
+| MOS | ≥15% (Value) | 16.0% headline / ~1.75% conservative | ⚠️ PASS แต่ fragile |
+| Conviction | ≥7.0 (Value) | 6.33 | ❌ FAIL |
+| Regime | ต้องไม่ suspend new positions | TRANSITIONAL-CAUTIOUS = suspend | ❌ BLOCKED |
+
+**Forward Return Estimate (Fix #6 — HOLD/WATCH ต้องมี):**
+ถือ 3 ปี จาก entry zone mid $39.50 → หาก Blended FV $47.58 เกิดขึ้นจริง = **20.5% total return (6.4% CAGR)** — คำนวณ: ((47.58/39.50)^(1/3)−1)×100
+
+**Action สำหรับ Max/Charlie:**
+1. บันทึกเข้า \`portfolio/buy_list.md\` — entry zone $38-$41, stop $31.60 (-20%), triggers ตามด้านบน
+2. Re-verify ทันทีหลัง Q3 earnings (21 ต.ค. 2026) — ตรงกับ Re-Analysis Trigger #1 (earnings-driven)
+3. ถ้า Atlas re-call regime เป็น RISK-ON ก่อนหน้านั้น + conviction ขยับผ่าน 7.0 จาก catalyst ใหม่ → fast-track กลับมาพิจารณา BUY ทันที ไม่ต้องรอรอบ analysis ใหม่ทั้งหมด
+
+---
+
+## ⚠️ Risk Summary
+
+1. **Multiple re-rating dependency** — ทั้ง MOS ของ Emma/Quinn พึ่งพาสมมติฐาน 8.21x→9.0x ที่ไม่มี catalyst ชัดเจน
+2. **100% geography concentration** — Macau+Singapore, 74.8% China-linked visitor, ไม่มี diversification buffer
+3. **China policy overhang ยังไม่ resolve** — outbound-investment rules (ก.ค. 2026) ที่ CLSA เตือนว่ากระทบ sentiment ต่อเนื่อง
+4. **MBS $8B expansion execution risk** — ประวัติ overrun +142% (จาก $3.3B) + เลื่อนมาแล้ว 1 ครั้ง (2029→2031)
+5. **Net Debt $11.9B ใน hiking cycle** — Fed hike ครั้งแรกใน 3+ ปี, 16/18 officials ส่งสัญญาณขึ้นอีก
+6. **Terminal Value = 74.7% ของ EV** (Emma's DCF) — model sensitivity สูง
+
+---
+
+## 📅 Catalysts Calendar
+
+\`\`\`
+2026-10-21  ──●── 📊 Q3 2026 Earnings (EPS est. $0.77)    MAJOR
+                    Re-Analysis Trigger #1 — ต้อง re-verify FV ทันที; ตัดสิน VIP hold normalize จริงหรือไม่
+
+Ongoing     ──●── 🇨🇳 China outbound-investment rules monitoring    HIGH
+                    มีผล 1 ก.ค. 2026 — ยังไม่มีข้อมูล GGR-level impact ที่ชัดเจน
+
+TBD         ──●── 🌡️ Atlas Regime Re-call    MEDIUM
+                    ภายใน 1 session หลัง Oct jobs report/CPI print — อาจปลด TRANSITIONAL-CAUTIOUS
+\`\`\`
+
+---
+
+## 📚 CFA Concepts
+
+- FCFF/NOPAT DCF Model \`[CFA L2: Equity Valuation]\` | Economic Moat & Efficient Scale \`[CFA L2: Equity]\` | Porter's Five Forces \`[CFA L2: Industry Analysis]\` | Relative Valuation \`[CFA L2]\` | ESG Integration \`[CFA L2-3]\` | CAPM/Sharpe/Treynor \`[CFA L1: Portfolio Management]\` | Probability-Weighted EV \`[CFA L3: Investment Thesis]\` | Behavioral Biases (confirmation, narrative fallacy, anchoring) \`[CFA L3: Behavioral Finance]\` | Systematic/Unsystematic/Country Risk \`[CFA L1: Portfolio Management]\`
+
+---
+
+## ⚙️ Behind the Scenes
+
+- Bear weight = 30% (เท่า Quinn) ตาม CLAUDE.md IPS Blended FV Triangulation Weights (อนุมัติ 2026-05-15) — **Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30** — ห้ามลด Bear weight ด้วยเหตุผลว่า "Bear แย้งเยอะ"
+- Anti-Convergence Protocol: ไม่ trigger (Emma 7, Quinn 6, Bear 6 — ไม่มีคู่ใด ≥8 พร้อม gap <1.5)
+- Atlas regime override: majority vote 3/4 ชี้ RISK-ON แต่ Atlas เลือก judgment override เป็น TRANSITIONAL-CAUTIOUS เพราะ Fed hawkish surprise (hike ครั้งแรกใน 3+ ปี + guidance ขึ้นอีก) ยังไม่ผ่านการทดสอบเต็มรอบ แม้ VIX/credit/curve จะสงบ
+- Data gaps ที่ Atlas ไม่มีใน package: EBITDA absolute, ROE/ROIC equity-based figures, peer P/E/EV-EBITDA, debt maturity schedule — Emma/Quinn เติมเองด้วย WebSearch พร้อม URL source ทุกจุด
+- DCF Cash Flow Consistency Rule: Emma FV ($54.55) vs Quinn/Bear (EV/EBITDA multiple-based, $47.17/$38.68) — gap Emma-Quinn 13.5% < 25% threshold ไม่เข้าเกณฑ์ reconciliation table บังคับ
+
+---
+
+## 🏁 Conclusion
+
+LVS เป็นธุรกิจคุณภาพดีที่เทรดถูกกว่าที่ fundamental สมควรได้รับ (discount ~20% เทียบ peer ทั้งที่ growth/margin/ROIC สูงสุดในกลุ่ม) — เรื่องนี้ทีมเห็นตรงกันทั้ง 3 agent แต่ **สาเหตุที่ยังไม่ BUY ไม่ใช่เพราะ business ไม่ดี แต่เพราะ margin of safety ที่คำนวณได้ยังพึ่งพาสมมติฐานเดียว (multiple re-rating) ที่ยังไม่มี catalyst ยืนยัน** ประกอบกับ conviction เฉลี่ย 6.3/10 ไม่ถึงเกณฑ์ gate และ regime ปัจจุบันห้าม open position ใหม่อยู่แล้ว
+
+**คำแนะนำ: WATCH — เก็บเข้า buy_list, รอ Q3 earnings 21 ต.ค. 2026 เป็นตัวยืนยัน หรือ Atlas regime re-call เป็น RISK-ON**
+
+---
+
+## Morgan QA Verification
+
+**Reviewed by:** Morgan (QA Analyst) | **Date:** 2026-09-20
+**Status:** ✅ **CONDITIONAL PASS**
+
+### Data Integrity
+- [x] Stock price verified from ≥2 sources — Atlas package: Yahoo Finance + Stockanalysis.com ($39.98, 9/18 close, match exactly). Morgan independent WebSearch cross-check: $40.67 (9/17 close, ad-hoc-news.de) — diff 1.73%, well within 5% tolerance. **PASS**
+- [x] Market cap = shares × price — 647.67M × $39.98 = $25.894B ≈ $25.895B stated (±0.02%). **PASS**
+- [x] FV/Price → MOS calculation correct — Recomputed independently: ($47.58−$39.98)/$47.58 = 15.97% ≈ 16.0% stated. **PASS**
+- [x] All financial ratios within plausible range — ROE 122.9% correctly flagged as book-equity artifact (not used as primary metric); ROIC 19.80% used instead, plausible and consistent with Op margin 23.3%. **PASS**
+- [x] No data older than 30 days without explicit flag — TTM figures (Q2 2026, ended Jun 30) are ~82 days old but explicitly labeled "TTM Q2 2026" throughout; this is normal quarterly-reporting lag (Q3 not yet released), not stale/unflagged data. **PASS**
+- [x] Morgan independent WebSearch — LVS TTM revenue $13.72B (+18.11% YoY) confirmed via stockanalysis.com/macrotrends summary, matches Atlas/Emma figures exactly. **PASS**
+
+### Rule Compliance
+- [x] Recommendation aligns with MOS/Conviction gate — Value bucket requires MOS≥15% + Conviction≥7.0 (Morgan QA Protocol threshold). MOS passes headline (16.0%) but Conviction 6.33 < 7.0 FAILS → correctly resulted in **WATCH not BUY**. **PASS**
+- [x] Macro Regime check — TRANSITIONAL-CAUTIOUS, cash floor 25%, position multiplier 0.75x, Force Deploy suspended — matches Atlas regime record (\`agent_notes/atlas/2026-09-20_regime.md\`) exactly, and report correctly cites TC as blocking new-position deployment per IPS Macro Regime Gate. **PASS**
+- [x] Stop loss within IPS bounds (-20%) — $31.60 = $39.50 × 0.80, format compliant (\`$XX (-X% จาก entry $XX)\`). **PASS**
+- [x] Position size guidance — no live deploy (WATCH); forward guidance (3-5% pre-multiplier × 0.75x TC ≈ 2.25-3.75%) correctly labeled as hypothetical/future-only. **PASS**
+- [x] Blended FV weight — recomputed: $54.55×0.40+$47.17×0.30+$38.68×0.30=$47.575≈$47.58. Weight (40/30/30) verified fresh against CLAUDE.md § Blended FV Triangulation Weights and § Return-side locked rules table — matches current locked value exactly. **PASS**
+- [x] Bucket correctness — Value bucket declared; TTM Revenue Growth +18.1% (< 20% Growth-bucket threshold) — no conflict with Value designation. **PASS**
+- [x] Anti-Convergence Protocol — Emma 7 / Quinn 6 / Bear 6, no pair ≥8 with gap<1.5 → correctly not triggered. **PASS**
+- [x] Bear HIGH-severity challenges addressed — Fix #3 (sensitivity: no-rerate MOS ~1.75%), Fix #4 (paired bull/bear scenarios ×3) both present and directly drive the WATCH conclusion, not just acknowledged. **PASS**
+
+### Source Annotation
+- [x] Financial data has source citations — Atlas Data Package + Emma/Quinn/Bear notes all carry URL-level citations (SEC 8-K/10-Q, Stockanalysis.com, Yahoo Finance, Sustainalytics, MSCI, etc). **PASS**
+- [x] No unflagged "ประมาณ X" — approximations (D&A TTM 2×H1 proxy, ΔNWC≈0) explicitly labeled as assumptions with rationale. **PASS**
+- [x] Atlas Macro Brief + Regime record referenced explicitly in report — cited in ⚙️ Behind the Scenes and throughout Recommendation/Risk sections. **PASS**
+- [x] Shares outstanding verified — 647.67M cross-checks against market cap/price (see Data Integrity above). **PASS**
+
+### Issues Found (MEDIUM — do not block, action required before/alongside Leo's dashboard embed)
+
+| # | Issue | Location | Severity | Action Required |
+|---|-------|----------|----------|------------------|
+| 1 | Emma's \`esgBreakdown\` structured-data block (g:5, overall:5.3) is **stale/pre-Bear-adjustment** — final report ESG Scorecard shows Governance adjusted to 4/10 and Overall to 5.0/10 after Bear's challenge, but the STRUCTURED DATA BLOCK at the bottom of \`agent_notes/emma/2026-09-20_LVS.md\` was never updated to match | Emma's Notes § STRUCTURED DATA BLOCK vs Report § 🌱 ESG Risk Scorecard | MEDIUM | Leo: when embedding into \`dashboard/data.js\`, use the **report's final adjusted values (e:6, s:5, g:4, overall:5.0)**, not Emma's raw block. Emma: correct the block for future consistency. |
+| 2 | Quinn's Equity Risk Premium input (4.23%, Damodaran "start-of-2026" reading) is ~8-9 months old, exceeding the 6-month freshness threshold for DCF/WACC inputs | Quinn's Notes § CAPM/Cost of Equity | MEDIUM | Flagged by Quinn himself as a caveat; log as watch-item — refresh Damodaran ERP reading at next re-analysis (Q3 earnings trigger, 21 ต.ค.) |
+
+### Minor / LOW (noted, not blocking)
+- Valuation section "Methodology gap" paragraph originally contained a typo ("25.55" for "54.55") and did not explicitly address the Emma↔Bear FV gap (29.1%, also >25%) alongside the Emma↔Quinn gap (13.5%) — corrected/clarified in this QA pass with an inline Morgan note explaining why the Emma↔Bear gap doesn't independently trigger the DCF Cash Flow Consistency Rule (Bear uses the same EV/EBITDA multiple-based approach as Quinn, not an independent DCF basis).
+- 💪 Conviction Level Score heading was missing its \`[CFA Lx: ...]\` footnote tag — added in this QA pass for completeness.
+
+### 📋 Independent Verification (Morgan WebSearch, 2026-09-20)
+| ตัวเลข | ใน Report | Morgan หาได้ | ต่างกัน | ผล |
+|--------|----------|-------------|--------|-----|
+| ราคา | $39.98 (9/18 close) | $40.67 (9/17 close, ad-hoc-news.de) | 1.73% | ✅ |
+| Revenue (TTM) | $13.72B (+18.1%) | $13.72B (+18.11%) — stockanalysis.com/macrotrends | 0% | ✅ |
+| Market Cap arithmetic | $25.895B | 647.67M × $39.98 = $25.894B | 0.02% | ✅ |
+
+### 📊 Data Quality Score: 8.2/10
+
+| มิติ | คะแนน | หมายเหตุ |
+|------|-------|---------|
+| Source Quality (Tier) | 9/10 | ส่วนใหญ่ Tier 1-2 (SEC 8-K/10-Q, Stockanalysis, Yahoo Finance, Sustainalytics, MSCI, Damodaran) |
+| Data Freshness | 7/10 | Price/revenue fresh; Quinn's ERP >6mo stale (MEDIUM flag above) |
+| DCF Assumptions | 9/10 | WACC 9.0% และ TGR 2.5% อยู่ในกรอบปกติ (7-13%/1-3%), revenue growth conservative เทียบ TTM |
+| Cross-agent Consistency | 7/10 | Weight/MOS/Blended FV คำนวณถูกต้องทั้งหมด; ESG structured-data block mismatch (MEDIUM) |
+| Atlas Integration | 9/10 | Regime, rate-sensitivity, FX-sensitivity, sector-cycle context สะท้อนครบใน Emma/Quinn/Bear |
+| **Overall** | **8.2/10** | สูงกว่าเกณฑ์ 6/10 ชัดเจน |
+
+### Decision
+**✅ CONDITIONAL PASS** — ส่งต่อ Leo ได้ แต่ต้องปฏิบัติตาม caveat #1 (ใช้ ESG values ที่ปรับแล้วจาก report ไม่ใช่ Emma's raw block) เมื่อ embed \`dashboard/data.js\` ไม่มี HIGH severity issue, MEDIUM issues = 2 (ภายในเกณฑ์ ≤2), Data Quality Score 8.2/10 (>6) — Report มีคุณภาพสูง การวิเคราะห์ตรงไปตรงมา (WATCH ไม่ BUY ทั้งที่ headline MOS ผ่านเกณฑ์ เพราะ conviction/regime gate ไม่ผ่าน) สะท้อนวินัยที่ดีของทีม ไม่ cherry-pick ตัวเลขเพื่อดัน BUY
+
+---
+
+*Charlie — 2026-09-20 | LVS Research Report | บลจ. CFA*
 `
   }
 
