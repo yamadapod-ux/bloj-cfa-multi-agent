@@ -44,3 +44,8 @@ CLAUDE.md         The house rules every agent operates under
 ## Status
 
 Simulated portfolio, paper trading only — not investment advice. Built as an exploration of multi-agent orchestration, rule-based guardrails, and auditability in an LLM-driven research workflow.
+
+## Built by
+
+Songwuth Puttisathian (Tow) — IC Complex 1 licensed, CFA candidate.
+**[Résumé & more of my work →](https://claude.ai/artifact/RA3jFnwc7Uvpm4QrxMXG7M)**
