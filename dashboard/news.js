@@ -3,9 +3,130 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-15 12:00";
+const NEWS_LAST_UPDATED = "2026-09-22 12:00";
 
 const NEWS = [
+
+  // ── 2026-09-16/22 (Atlas scan 2026-09-22, post-FOMC) ──────────────────────────────
+  {
+    date: "2026-09-22", category: "TECH",
+    headline: "🟢 Korean chip stocks + global AI-rally ต่อเนื่อง — Meta Muse AI agent จุดกระแส AI capex เชื่อมั่นกลับมา",
+    summary: "Bloomberg รายงาน (22 ก.ย.) หุ้นชิปเกาหลี (Samsung, SK Hynix) ปรับตัวขึ้นตามแรงส่งจากความสำเร็จของ Meta's Muse AI agent ที่จุดกระแสความเชื่อมั่นด้าน AI chip demand กลับมาทั่วโลก ต่อเนื่องจาก rally ใหญ่วันที่ 21 ก.ย. ในสหรัฐฯ. นัยพอร์ต: ยืนยันว่า AI-safety-slowdown sell-off (14-15 ก.ย.) เป็นความกังวลระยะสั้น ไม่ใช่ structural demand destruction — sentiment พลิกกลับเร็วภายในสัปดาห์เดียว.",
+    impact: "POSITIVE", tickers: ["META"],
+    url: "https://www.bloomberg.com/news/articles/2026-09-22/korean-chip-stocks-gain-as-meta-s-muse-ai-agent-spurs-enthusiasm",
+  },
+  {
+    date: "2026-09-21", category: "MACRO",
+    headline: "🟢 Nasdaq ปิดสถิติใหม่ครั้งแรกตั้งแต่มิ.ย. — S&P 500 +1.49%, Nasdaq +2.26% วันเดียว หลัง AI sentiment พลิกบวกแรง",
+    summary: "S&P 500 ปิดที่ 7,764.70 (+1.49%) และ Nasdaq Composite ปิดสถิติใหม่ 27,122.09 (+2.26%) วันที่ 21 ก.ย. — วันที่ดีที่สุดนับตั้งแต่ต้นเดือนส.ค. Dow +366.19 จุด (+0.71%) ปิด 52,048.83. แรงหนุนหลักคือหุ้นชิป/AI ที่พลิกกลับจาก sell-off สัปดาห์ก่อน (Meta's Muse AI agent early-success sparked enthusiasm — AMD ทะลุ market cap $1 ล้านล้าน, Intel/AMD/Qualcomm บวกแรง) ประกอบกับราคาน้ำมันร่วงจากความหวัง diplomatic effort ยุติสงคราม Iran. นัยพอร์ต: การ AI-safety-driven rotation ที่เคยหนุน portfolio (enterprise software) วันที่ 14-15 ก.ย. อาจย้อนกลับบางส่วนเมื่อ AI-hardware sentiment ฟื้น — ต้องติดตามว่า capital rotation กลับเข้า semis จะดึงความสนใจออกจาก software positions (ADBE/NOW/CRM/ADSK) หรือไม่.",
+    impact: "POSITIVE", tickers: [],
+    url: "https://www.bloomberg.com/news/articles/2026-09-21/stock-market-today-dow-s-p-live-updates",
+  },
+  {
+    date: "2026-09-21", category: "TECH",
+    headline: "🟢 META +11.43% วันเดียว — Muse AI agent ประสบความสำเร็จเกินคาด ขึ้นอันดับ 1 App Store",
+    summary: "Meta Platforms ปิดที่ $741.25 (+11.43%) วันที่ 21 ก.ย. — บวกสะสม ~25% ใน 30 วันหลังเปิดตัว Muse (autonomous AI agent ที่ shop online/book flights/organize calendars ได้เอง) เมื่อ 8 ก.ย. Muse ขึ้นอันดับ 1 บน Apple US App Store. Wells Fargo ปรับ PT ขึ้นเป็น $796. Morgan Stanley ประเมิน Muse อาจสร้างรายได้ถึง $1.3B/ปีภายในปี 2028 หากทำ user scale ได้ตามเป้า. ตลาดยังจับตา Meta Connect 2026 (23-24 ก.ย.) ต่อเนื่อง. นัยพอร์ต: META อยู่ใน Big 10 fixed watch list ไม่ใช่ position — เป็น sentiment driver สำคัญของ broad AI-rally ที่กระทบทิศทาง capital rotation ทั้งตลาด.",
+    impact: "POSITIVE", tickers: ["META"],
+    url: "https://www.fool.com/coverage/stock-market-today/2026/09/21/stock-market-today-sept-21-meta-surges-on-excitement-over-muse-personal-ai-agent/",
+  },
+  {
+    date: "2026-09-18", category: "MACRO",
+    headline: "🔴 Warren Buffett ก้าวลงจากตำแหน่งประธาน Berkshire Hathaway — Greg Abel รับช่วง CEO, Howard Buffett เป็น Board Chair",
+    summary: "Warren Buffett ประกาศ (18 ก.ย.) ก้าวลงจากบทบาทเชิงรุกใน Berkshire Hathaway อย่างเป็นทางการ เปลี่ยนสถานะเป็น Chairman Emeritus — Greg Abel รับตำแหน่ง CEO ต่อ (ตามแผนสืบทอดที่ประกาศไว้ก่อนหน้า) ส่วน Howard Buffett (บุตรชาย) ขึ้นเป็นประธานคณะกรรมการบริษัทคนใหม่. หุ้น BRK.B เทรดช่วง $502-510.50 (มูลค่าตลาด ~$1.07 ล้านล้าน) ณ 21 ก.ย. นักลงทุนเริ่มตั้งคำถามเรื่องกลยุทธ์ภายใต้ผู้บริหารชุดใหม่. นัยพอร์ต: BRK.B อยู่ใน Big 10 fixed watch list — leadership transition ครั้งประวัติศาสตร์นี้เป็น structural/governance event ที่ควรติดตาม แต่ยังไม่ใช่สัญญาณ fundamental change ของ business model.",
+    impact: "MIXED", tickers: ["BRK.B"],
+    url: "https://www.morningstar.com/stocks/xnys/brk.b/quote",
+  },
+  {
+    date: "2026-09-16", category: "MACRO",
+    headline: "🔴 FOMC ขึ้นดอกเบี้ย 25bps เป็น 3.75-4% — ครั้งแรกนับตั้งแต่ปี 2023, ตลาดคาดขึ้นต่ออีกใน 2026",
+    summary: "FOMC มีมติ 12-0 ปรับขึ้นอัตราดอกเบี้ยนโยบาย 25bps สู่กรอบ 3.75-4% เมื่อ 16 ก.ย. — เป็นการขึ้นดอกเบี้ยครั้งแรกนับตั้งแต่ปี 2023 เหตุผลหลักคือเงินเฟ้อจากราคาน้ำมันที่พุ่งสูงต่อเนื่อง ขณะที่เศรษฐกิจยังขยายตัวแข็งแกร่ง (domestic spending resilient, productivity growth สูง). Dot plot ล่าสุดชี้ตลาดคาดขึ้นดอกเบี้ยอีก 25bps ภายในปี 2026 (16/18 คณะกรรมการเห็นด้วยกับการขึ้นเพิ่ม, 4 คนเห็นควรขึ้น 2 ครั้ง) ต่อเนื่องเข้าปี 2027. นี่คือ Fed Stance ที่ 'hawkish กว่าคาด' ตรงข้ามกับ CME FedWatch ~56% hike-odds ที่ Atlas ตั้งข้อสังเกตไว้ 14 ก.ย. ว่าอาจต่ำกว่าตัวเลขที่ใช้ยืนยัน Regime — ผลจริงคือ Fed เดินหน้าขึ้นดอกเบี้ยจริง ยืนยัน Fed Stance indicator เอียง hawkish ชัดเจนขึ้น สอดคล้องกับทิศทาง Regime TRANSITIONAL-CAUTIOUS/RISK-OFF มากกว่า dovish-lean. นัยพอร์ต: Atlas ต้อง re-call Regime ใหม่ทันทีในรอบ Portfolio Review ถัดไป — indicator นี้เปลี่ยนทิศทางจากที่เคย assume ไว้ก่อน FOMC.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+  },
+  {
+    date: "2026-09-16", category: "EARNINGS",
+    headline: "🟢 Salesforce ตั้งเป้ารายได้ปีงบ 2030 ทะลุ $63B ที่งาน Dreamforce — เหนือ consensus $59.2B",
+    summary: "Salesforce แถลงที่งาน Dreamforce (16 ก.ย.) ตั้งเป้ารายได้ปีงบการเงิน 2030 ทะลุ $63 พันล้าน สูงกว่า consensus นักวิเคราะห์ $59.2 พันล้านอย่างมีนัยสำคัญ พร้อมเปิดตัว 'Claudeforce' (เครื่องมือให้ธุรกิจทำงานกับข้อมูล Salesforce ผ่าน Anthropic's Claude โดยตรง) และ 'Koa' (AI reasoning model บน Nvidia technology). นัยพอร์ต: ยืนยัน long-term growth narrative ของ CRM position (weight 7.52% หลัง full re-analysis 11 ก.ย. FV $345.77) — เป็น catalyst เชิงบวกเพิ่มเติมหลังทีมเพิ่งยืนยัน HOLD conviction 6.8 ไปเมื่อสัปดาห์ก่อน ไม่กระทบ Blended FV โดยตรง (เป็น long-term target ไม่ใช่ near-term earnings revision) แต่เสริม thesis ด้าน AI monetization.",
+    impact: "POSITIVE", tickers: ["CRM"],
+    url: "https://www.cnbc.com/2026/09/16/salesforce-issues-revenue-target-of-63-billion-for-fiscal-2030.html",
+  },
+  {
+    date: "2026-09-21", category: "EARNINGS",
+    headline: "🟢 ServiceNow — Cantor Fitzgerald ปรับ PT ขึ้นเป็น $174 จาก $141 อ้างดีมานด์ agentic-AI/workflow",
+    summary: "Cantor Fitzgerald ปรับราคาเป้าหมาย ServiceNow (NOW) ขึ้นเป็น $174 จาก $141 เมื่อ 21 ก.ย. โดยอ้างดีมานด์ที่แข็งแกร่งต่อ AI-related workflow และ automation solutions ของบริษัท. หุ้นปิดที่ $137.68 (+1.63% วันเดียว). ก่อนหน้านี้ Needham ก็ปรับ PT ขึ้นเป็น $155 จาก $115 เมื่อ 11 ก.ย. นัยพอร์ต: ตำแหน่ง NOW residual 1sh (weight 1.37%, TRIMMED 50% แล้ว) ยังอยู่ใน STRONG SELL territory ตาม Blended FV internal $125.65 (MOS -13.29%) — Street sentiment (PT $174) สวนทางกับ internal valuation อย่างมาก ต้องจับตาว่าเป็น analyst momentum-chasing หรือ internal FV ล้าสมัยจริง (fvVerifiedDate 2026-08-24, อายุ 29 วัน ยังไม่ถึงเกณฑ์ 90 วัน re-verify).",
+    impact: "MIXED", tickers: ["NOW"],
+    url: "https://www.ad-hoc-news.de/boerse/news/nebenwerte/servicenow-stock-gains-after-cantor-fitzgerald-lifts-target/70148259",
+  },
+  {
+    date: "2026-09-21", category: "SECTOR",
+    headline: "🟡 Regeneron ชนะคดี securities class action บางส่วน — แต่มีคดีใหม่เรื่อง Fianlimab trial disclosure ยื่นเพิ่มใน ก.ย.",
+    summary: "ศาลตัดสิน (21 ก.ย.) ว่านักลงทุนไม่สามารถอ้างอิงคดี False Claims Act แยกต่างหากมาสนับสนุนข้อกล่าวหาเรื่อง share losses เดิมได้ — Regeneron และผู้บริหารชนะคดีบางส่วน หุ้นปิดที่ $797.99 (+1.7%). อย่างไรก็ตาม มีการยื่นฟ้อง securities class action ใหม่ในเดือนก.ย. กล่าวหาว่าบริษัทเปิดเผยข้อมูลไม่ครบถ้วนเกี่ยวกับ Phase III Fianlimab (Libtayo oncology trial) design assumptions และ clinical prospects. นัยพอร์ต: REGN position (0.42sh, weight 3.22%, MOS +10.71% หลัง FV re-verify 11 ก.ย. เป็น $889) — คดีเก่าที่ชนะเป็นบวกเล็กน้อย แต่คดีใหม่เรื่อง Fianlimab เป็นความเสี่ยงที่ยังไม่เคย model ไว้ใน Bear Flip/Thesis Invalidation ต้องติดตามความคืบหน้า.",
+    impact: "MIXED", tickers: ["REGN"],
+    url: "https://www.ad-hoc-news.de/boerse/news/corporate-news/regeneron-stock-heads-into-the-open-after-a-1-7-percent-gain/70148860",
+  },
+  {
+    date: "2026-09-18", category: "SECTOR",
+    headline: "🟠 Autodesk — Cantor เปิด coverage Neutral, Wells Fargo คง Buy แต่ราคาร่วงต่อเนื่องจาก $228.93 (14 ก.ย.) เหลือ ~$218.90",
+    summary: "Cantor Fitzgerald เปิด coverage Autodesk (ADSK) ด้วยเรตติ้ง Neutral ขณะที่ Wells Fargo ยังคงเรตติ้ง Buy ไว้ (18 ก.ย.). ราคาหุ้นซื้อขายช่วง $213-219.70 (21 ก.ย.) ลดลงจาก $228.93 ปิด 14 ก.ย. (-ประมาณ 4.4%) แม้ตลาดกว้างจะ rally แรง — สวนทางกับ sector rotation ที่เคยหนุน ADSK เมื่อสัปดาห์ก่อน. นัยพอร์ต: ADSK อยู่ใน 🔴 STRONG SELL TERRITORY ตาม dataIntegrityLog 2026-09-15 (MOS -3.22% บน FV $221.79 คงที่, ราคาที่ร่วงต่อจะทำให้ MOS แย่ลงอีก) — Max Consultation Rule ที่ flag ไว้ยังรอ Charlie consultation ราคาที่อ่อนตัวต่อเนื่องเพิ่มความเร่งด่วนของการตัดสินใจนี้.",
+    impact: "NEGATIVE", tickers: ["ADSK"],
+    url: "https://www.trefis.com/stock/adsk/articles/615697/how-far-could-autodesk-stock-rebound-from-here/2026-09-17",
+  },
+  {
+    date: "2026-09-18", category: "EARNINGS",
+    headline: "🟢 Veeva Systems — CFRA ปรับเป็น Buy, Amgen ใช้ Veeva Vault CRM ทั่วโลก, เปิดตัว Falcon Router",
+    summary: "CFRA ปรับเรตติ้ง Veeva Systems (VEEV) เป็น Buy เมื่อ 18 ก.ย. (Morgan Stanley ให้ Hold วันเดียวกัน). ก่อนหน้านั้น Amgen ประกาศ (15 ก.ย.) จะใช้ Veeva Vault CRM ทั่วทั้งองค์กรทั่วโลก และ Veeva เปิดตัว 'Falcon Router' (21 ก.ย. — AI agent สำหรับระบุ/routing safety adverse-event reports) ต่อจาก 'Falcon Safety' ที่เปิดตัว 1 ก.ย. บริษัทปรับเป้ารายได้ปีงบ 2027 ขึ้นเป็น $3.682-3.687B (Q2 โต +17.6% YoY). นัยพอร์ต: VEEV อยู่ใน watchlist (conviction upgrade watch 6.7, entry zone $148-158, ราคาปัจจุบัน ~$183 เกิน zone) — ข่าวบวกต่อเนื่องสนับสนุน conviction upgrade thesis ที่ตั้งไว้ตั้งแต่มิ.ย. แต่ราคายังไม่ pullback เข้า entry zone.",
+    impact: "POSITIVE", tickers: ["VEEV"],
+    url: "https://finance.yahoo.com/news/veeva-systems-inc-veev-launches-173623607.html",
+  },
+  {
+    date: "2026-09-18", category: "REGULATION",
+    headline: "🔴 FICO ร่วงต่อเนื่อง -17.4% ใน 30 วัน หลัง FHFA เปิดทาง VantageScore 4.0 — บริษัทตอบโต้ด้วย FICO Score 10T ฟรีสำหรับ FHA lenders",
+    summary: "หุ้น Fair Isaac (FICO) ยังคงอ่อนตัวต่อเนื่องจากการปรับตัวลง -17.8% เมื่อ 4 ก.ย. (วันที่ FHFA สั่งให้ Fannie Mae/Freddie Mac เปิดทางให้ lender ทุกรายใช้ VantageScore 4.0 แข่งกับ FICO) — ราคาร่วงสะสม -17.4% ใน 30 วัน เหลือ ~$949.68 (18 ก.ย.) และ $924.52 (21 ก.ย., -2.65% วันเดียว). บริษัทตอบโต้ด้วยการประกาศว่า FICO Score 10T (รวม trended + rental data) ได้รับอนุมัติให้ FHA lenders ใช้ได้ฟรีคู่กับ Classic FICO ตั้งแต่ 1 ม.ค. 2027. Fair value ถูกปรับลดจาก $1,512.25 เป็น $1,440.16 โดยนักวิเคราะห์บางราย. นัยพอร์ต: FICO อยู่ใน watchlist (HOLD/WAIT, MOS -9.1% เดิม) — การแข่งขันจาก VantageScore เป็นความเสี่ยงเชิงโครงสร้างต่อ moat ของ FICO ในตลาด mortgage scoring ควร re-assess conviction/MOS หากพิจารณา deploy ในอนาคต.",
+    impact: "NEGATIVE", tickers: [],
+    url: "https://finance.yahoo.com/markets/stocks/articles/fair-isaac-fico-stock-gets-191213738.html",
+  },
+  {
+    date: "2026-09-18", category: "TECH",
+    headline: "🟢 Alphabet — Tigress ปรับ PT ขึ้นเป็น Street-high $485 (Strong Buy) หนุนโดย AI product momentum",
+    summary: "Tigress ปรับราคาเป้าหมาย Alphabet (GOOGL) ขึ้นเป็น $485 (สูงสุดใน Street) พร้อมเรตติ้ง Strong Buy เมื่อ 18 ก.ย. อ้างอิง AI product momentum ที่แข็งแกร่งต่อเนื่อง รวมถึง Gemini 3.8 Live/Extended Thinking ที่มี enterprise partner เริ่มใช้แล้ว (Salesforce, Genspark, Lumeris) และแผนลงทุน Cloud/AI data center เพิ่มเติมในยุโรป. ราคาหุ้น GOOGL ปัจจุบัน ~$354.97 (22 ก.ย.) — ต่ำกว่า Street-high PT มาก. นัยพอร์ต: GOOGL อยู่ใน Big 10 fixed watch list (ไม่มี position หลัง FULL EXIT 12 ก.ย. จาก Thesis Invalidation CapEx >$100B) — PT ที่สูงขึ้นสะท้อนว่า Street มองข้าม capex concern ที่ทีมใช้เป็นเหตุผล exit ไปแล้ว เป็น data point สำหรับ Vera ใช้ประเมิน calibration ของ exit decision นี้ในอนาคต.",
+    impact: "POSITIVE", tickers: ["GOOGL"],
+    url: "https://www.timothysykes.com/news/alphabet-inc-googl-news-2026_09_18-2/",
+  },
+  {
+    date: "2026-09-18", category: "MACRO",
+    headline: "🟡 Microsoft's Suleyman เรียก OpenAI's ล่าสุดว่าเป็น 'serious situation' — ต่อเนื่องจาก AI-safety-slowdown narrative",
+    summary: "Mustafa Suleyman (Microsoft AI chief) แสดงความเห็นเมื่อ 18 ก.ย. ว่าเหตุการณ์ล่าสุดของ OpenAI เป็น 'serious situation' — ต่อเนื่องจากที่ Microsoft ประกาศ (14 ก.ย.) ว่าจะตั้ง limit ให้โมเดล AI รุ่นถัดไปตามแนวทาง 'ชะลอการพัฒนา AI' ที่ Anthropic CEO Amodei เริ่มจุดกระแส. นัยพอร์ต: เป็นส่วนหนึ่งของ AI-safety-slowdown narrative ที่ทำให้เกิด sector rotation จาก semis เข้า enterprise software เมื่อ 14-15 ก.ย. (หนุน ADBE/NOW/CRM/ADSK) — narrative นี้ยังดำเนินต่อเนื่อง ควรติดตามว่าจะกระทบ AI capex/monetization ของ MSFT (Big 10 watch) และ software positions ในพอร์ตอย่างไรต่อ.",
+    impact: "MIXED", tickers: ["MSFT"],
+    url: "https://www.forbes.com/sites/investor-hub/article/microsoft-msft-stock-outlook-2026/",
+  },
+  {
+    date: "2026-09-19", category: "SECTOR",
+    headline: "🟢 Visa — Bernstein และ RBC ยืนยัน Buy rating, PT $450/$466 หลังผลประกอบการแข็งแกร่ง",
+    summary: "นักวิเคราะห์จาก Bernstein และ RBC ยืนยันเรตติ้ง Buy สำหรับ Visa (V) เมื่อ 19 ก.ย. ด้วยราคาเป้าหมาย $450 และ $466 ตามลำดับ ชี้ upside มีนัยสำคัญจากระดับราคาปัจจุบัน ($369.56 ปิด 21 ก.ย., บวก 6% YTD 2026). ไตรมาสล่าสุด (30 มิ.ย.) รายได้โต +14.4% เป็น $11.63B, กำไรสุทธิ +6.8%. ความเสี่ยงหลักยังเป็น DOJ scrutiny เรื่อง debit network practices และการแข่งขันจาก fintech/stablecoin rails. นัยพอร์ต: V อยู่ใน watchlist (HOLD/WAIT, MOS -13.3% ราคาแพงกว่า FV เดิม $286) — PT ใหม่ที่สูงกว่าราคาตลาดมากอาจเป็นสัญญาณให้พิจารณา re-verify FV หากต้องการ deploy ในอนาคต.",
+    impact: "POSITIVE", tickers: ["V"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/visa-quietly-gained-6-2026-153820474.html",
+  },
+  {
+    date: "2026-09-16", category: "SECTOR",
+    headline: "🟢 GE Vernova +5% หลัง conference — ยืนยัน 'demand แข็งแกร่งและยั่งยืน', backlog มุ่งสู่ $200B ต้นปี 2027",
+    summary: "หุ้น GE Vernova (GEV) ปรับขึ้น +5% เมื่อ 16 ก.ย. หลัง CEO กล่าวใน conference presentation ยืนยัน 'very strong and durable demand' ต่อเนื่อง — บริษัทมี backlog คาดว่าจะแตะ $200 พันล้านภายในต้นปี 2027 หนุนโดยดีมานด์ power generation/electrification ที่แข็งแกร่ง รวมถึงโปรเจกต์ hybrid natural gas-nuclear ในเท็กซัส นักวิเคราะห์ 30 รายแนะนำซื้อทั้งหมด PT เฉลี่ย $1,237-1,350. ราคาปิด $955.90 (21 ก.ย.). นัยพอร์ต: GEV อยู่ใน watchlist (HOLD/WAIT — RE-ANALYSIS, MOS -307.9% เดิมจากราคาที่วิ่งไปไกลจาก FV $263) — เป็นตัวอย่างชัดเจนของ FV ที่ stale มากเมื่อเทียบกับราคาตลาดปัจจุบัน ควร re-analyze เต็มรูปแบบหากยังสนใจติดตามต่อ หรือพิจารณา de-list ตาม De-list Rules (thesis dead — ราคา > 2× entry zone upper bound).",
+    impact: "POSITIVE", tickers: ["GEV"],
+    url: "https://www.fool.com/investing/2026/09/17/why-ge-vernova-stock-bumped-higher-today/",
+  },
+  {
+    date: "2026-09-21", category: "EARNINGS",
+    headline: "🟢 Eli Lilly — Foundayo (oral GLP-1) ครองส่วนแบ่ง 1 ใน 3 ของผู้ป่วยใหม่, Guggenheim ปรับ PT ขึ้นเป็น $1,284",
+    summary: "CEO Dave Ricks ประกาศ (21 ก.ย.) ว่า Foundayo (ยา GLP-1 ชนิดรับประทาน) ครองส่วนแบ่งตลาดผู้ป่วยใหม่ราว 1 ใน 3 แล้ว — สะท้อนความสำเร็จในการไล่ตาม Novo Nordisk ในตลาด oral medication พร้อมแผนขยายตลาดต่างประเทศเพิ่มเติม. Guggenheim ปรับราคาเป้าหมายขึ้นเป็น $1,284 อ้างอิง tirzepatide และ Foundayo trends ที่ดีขึ้น. หุ้นปิดที่ $1,164.89 (21 ก.ย.). Lilly ยังมีดีล M&A ต่อเนื่อง (Merida Biosciences ปลายส.ค., AtaiBeckley ปิดดีลก.ย.) แต่เผชิญคดีความเรื่อง GLP-1 vision-loss risk ร่วมกับ Novo. นัยพอร์ต: LLY อยู่ใน Big 10 fixed watch list (ไม่มี position) — momentum เชิงบวกต่อเนื่องของ GLP-1 franchise เป็น data point สำหรับพิจารณาหากมี scout candidate ในกลุ่ม pharma/GLP-1 อนาคต.",
+    impact: "POSITIVE", tickers: ["LLY"],
+    url: "https://www.gurufocus.com/news/9090309/eli-lilly-lly-expands-market-share-with-foundayo-amid-growing-demand",
+  },
+  {
+    date: "2026-09-18", category: "EARNINGS",
+    headline: "🟡 Progressive — ข้อมูล underwriting เดือนส.ค.: premium +6% YoY แต่กำไรสุทธิ -22% จาก combined ratio สูงขึ้น",
+    summary: "Progressive Corporation (PGR) รายงาน (18 ก.ย.) ข้อมูลเดือนส.ค. 2026: net premiums written +6% YoY เป็น $7.61B (หนุนจาก policies in force +7%, direct auto policies +9%) แต่ net income ลดลง -22% YoY เหลือ $951M สะท้อน combined ratio ที่สูงขึ้นเป็น 89.3% (ต้นทุน underwriting เพิ่มขึ้น). Insider ขายหุ้นสุทธิ $32.7M ใน 12 เดือนที่ผ่านมา ไม่มีการซื้อ. นัยพอร์ต: PGR อยู่ใน watchlist เดิม (SKIPPED 2026-06-14 — scout candidate ที่ยังไม่ผ่าน Charlie pipeline) — top-line growth ยังดีแต่ margin กำลังถูกกดดัน เป็นข้อมูลเพิ่มเติมหากพิจารณาส่งเข้า pipeline วิเคราะห์เต็มในอนาคต.",
+    impact: "MIXED", tickers: ["PGR"],
+    url: "https://www.gurufocus.com/news/9088108/pgr-looks-224-undervalued-on-gf-value-as-dividend-remains-attractive",
+  },
 
   // ── 2026-09-14/15 (Atlas scan 2026-09-15, pre-FOMC) ──────────────────────────────
   {

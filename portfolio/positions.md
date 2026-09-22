@@ -4,11 +4,67 @@
 >
 > **🔴 UPDATE 2026-09-11 (Max Consultation completed — Re-Analysis Trigger Rule batch):** **ACN — FULL EXIT** (SELL remaining 1.4sh @ $177.76, Risk Rule 3 thesis-change — CEO publicly contradicted core thesis, Moat WIDE→NARROW, Conviction 7.17→5.17, Blended FV $252.35→$199.51, MOS +12.2% <15% gate. Not panic — Thesis Invalidation strictly 0/3, real downside support. Max×Charlie reconciled full exit over partial trim.) Realized -$0.57 this tranche, lifetime cumulative -$70.82. **REGN — STRONG SELL territory RESOLVED** (Blended FV $792→$889 on fresh Q2 EPS +36% surprise data, MOS -4.5%→+11.8%, was a stale-FV artifact not real overvaluation, HOLD 0.42sh unchanged, no action). Regime re-call (Atlas 2026-09-11): TRANSITIONAL-CAUTIOUS confirmed. **Detail:** `portfolio/decisions.md` (Re-Analysis Log rows) · `portfolio/deployment_log.md` (Max Consultation reconciliation) · `reports/ACN_2026-06-05.md` + `reports/REGN_2026-06-03.md` + `reports/GOOGL_2026-05-21.md` (Update Logs) · `dashboard/portfolio.js`.
 
-*Managed by Max | Updated: 2026-09-15 (Portfolio Review Mode 3 — full re-mark to **Sept 14 2026 close**, no trades. Enterprise-software sector-rotation day: Anthropic (Amodei) + Microsoft (Nadella) AI-safety-slowdown call hit semis/AI-hardware [Nasdaq -0.56%, Philly Semi Index -5.9%] while capital rotated INTO software — all 5 OPEN positions rallied hard: ADBE +5.30% $265.60, NOW +7.41% $142.35, CRM +4.73% $259.43, REGN +1.57% $793.74, ADSK +7.78% $228.93 (2-source cross-checked, diffs <0.3% every ticker). S&P 500 fell -0.48% to **$7,619.98** (Sept 14 close, WSJ + Yahoo Finance, cross-verified via SPY ratio). **Total $10,205.74 → $10,348.98 (+1.40%)** · **Alpha -1.43% → +0.50% (FLIPPED POSITIVE)** — portfolio's software tilt gained directly from the same rotation that dragged the index down via semis. Cash $7,483.14 (72.31%, unchanged $ — price-only session). 🔴 **ADSK MOS FLIPPED NEGATIVE -3.22%** (from +4.23%) — the explicit no-further-exemption WATCH ITEM set 2026-09-12 fires: this is a pure price move (FV unchanged $221.79, 3 days old), NOT a compliance-fix artifact, so flagged for **mandatory Max Consultation Rule** before any trim/sell decision — no trade executed this Review Mode session. 🟠 NOW MOS -13.29% STRONG SELL territory deepens (already trimmed 50%, weight 1.37%, recurring pattern, no action). ADBE weight 10.27% back over the 10% IPS soft band (price-driven, WATCH only, below 12% hard-trim threshold). No stop breaches — every stopDist ≥30%. Re-Analysis Trigger Check: **0/5 fire**. Regime: **TRANSITIONAL-CAUTIOUS** (unchanged, next mandatory re-call within 1 session of tomorrow's FOMC outcome 2026-09-16).)*
+*Managed by Max | Updated: 2026-09-22 (Portfolio Review Mode 3 — full re-mark to **Sept 21 2026 close**, no trades. Sector rotation REVERSED from 09-15: Meta's Muse AI agent success [stock +11.43% 9/21, AMD >$1T mkt cap] reignited AI-hardware sentiment — capital rotated back OUT of enterprise software: ADBE -6.05% $249.52, NOW -3.28% $137.68, CRM -7.72% $239.40, ADSK -4.38% $218.90; only REGN gained +0.54% $797.99 (2 independent WebSearch queries per ticker, converged, no reconciliation needed). S&P 500 rose +1.49% to **$7,764.70** (Sept 21 close, Nasdaq record close +2.26%, Bloomberg + CNBC + aggregators converge). **Total $10,348.98 → $10,197.62 (-1.46%)** · **Alpha +0.50% → -2.97% (REVERSED)** — mirror image of 09-15, portfolio has zero direct AI-hardware exposure so it missed the same rally that lifted the index; single-session reading, NOISE per Pre-commitment Rule. Cash $7,483.14 (73.38%, unchanged $ — price-only session). 🟢 **ADSK MOS RESOLVED +1.30%** (from -3.22%) as price fell back below unchanged FV $221.79 — the 09-15 no-further-exemption STRONG SELL flag is moot, Max Consultation Rule item closed with no trade. 🟠 NOW MOS -9.57% STRONG SELL territory continues, narrowing (already trimmed 50%, weight 1.35%, recurring pattern, no action; Cantor PT $174 vs internal FV $125.65 — 38% gap noted for next re-verify). ADBE weight eased to 9.79% (back under 10% IPS band). No stop breaches — every stopDist ≥25%. Re-Analysis Trigger Check: **0/5 fire**. ⚠️ FOMC hiked 25bps to 3.75-4% on 2026-09-16 (first hike since 2023, hawkish surprise) — mandatory Atlas regime re-call overdue, not yet logged as of this review.)*
+
+<!-- prior update note (2026-09-15): Portfolio Review Mode 3 — full re-mark to Sept 14 2026 close, no trades. Enterprise-software sector-rotation day (Anthropic/Microsoft AI-safety-slowdown call hit semis, capital rotated INTO software): ADBE +5.30% $265.60, NOW +7.41% $142.35, CRM +4.73% $259.43, REGN +1.57% $793.74, ADSK +7.78% $228.93. Total $10,205.74→$10,348.98 (+1.40%). S&P 500 $7,619.98 (-0.48%). Alpha -1.43%→+0.50% FLIPPED POSITIVE. ADSK MOS flipped negative -3.22% (no-further-exemption WATCH ITEM fired, flagged for Max Consultation Rule — subsequently RESOLVED 09-22 on price pullback). NOW MOS -13.29% STRONG SELL (already trimmed, no action). ADBE weight 10.27% WATCH-only. No stop breaches. Re-Analysis Trigger Check 0/5 fire. -->
 
 <!-- prior update note (2026-09-09): Portfolio Review Mode 3 — full re-mark to Sept 8 2026 close, no trades. Software-led risk-off day (oil spike Brent ~$99 + Middle East/Saudi energy attacks + 10Y near 2-decade high; S&P 500 -0.58%): ADBE -6.7% / NOW -7.8% / CRM -3.9% / ACN -7% / GOOGL -2.1%. Total $10,513.50 → $10,299.95 (-2.03%) · S&P 500 7,747.71(9/3 basis) → 7,673.52 (Sept 8 close, -0.58% day) · Alpha +0.42% → -0.71% (FLIPPED NEGATIVE first time — single reading = NOISE per Pre-commitment Rule, NOT a trigger). Cash $6,894.47 (66.9%). Invested $3,405.48 (7 positions). GOOGL stopDist 7.56% (deepest ever, NOT breached). NOW MOS -6.8% / REGN MOS -4.5% STRONG SELL territory. ADBE weight 10.36%. Data quality flags (NOW/GOOGL/REGN/ACN single-source; ADSK unverified) — RESOLVED in subsequent sessions (09-11/09-12/09-13 all used 2-source verified prices). Regime staleness flag — RESOLVED 2026-09-11 (Atlas formal re-call TC confirmed). -->
 
 <!-- prior update note (2026-09-04): full re-mark from Sept 3 close, Total $10,547.33→$10,513.50 (-0.32%), S&P 7,699.64, Alpha +1.07%. GOOGL -11.94% + REGN pullback offsetting NOW +62.7%/CRM +46.1%/ADSK +19.7%/ADBE +15.7%/ACN +8.4%). No stop breaches — GOOGL stopDist 9.48% still <10% WATCH (4th consecutive review). 🚩 REGN MOS deepened -0.89%→-6.50% (Trigger #2 now clearly firing, FV likely too LOW) — top re-verify priority confirmed. Regime = TRANSITIONAL-CAUTIOUS (Atlas formal re-call 2026-09-03, fresh not carried-over — knife-edge 3/4 RISK-ON override). Cash 65.58%, well above 25% TC floor, deliberate hold into Sept 16-17 FOMC. Batch Emma FV re-verify (commissioned 2026-09-01) still outstanding — no trade this session. -->
+
+## 📊 Portfolio Review — 2026-09-22 (Mode 3 — Full Re-mark, No Trades) — Rotation Reverses, ADSK Flag Resolved, Alpha Swings Negative
+
+> **Regime = TRANSITIONAL-CAUTIOUS** (unchanged, Atlas 2026-09-11 formal call — **overdue for re-call**: FOMC outcome 2026-09-16 has passed and the mandatory "within 1 session" re-call has not yet been logged in `agent_notes/atlas/`). All 5 OPEN positions re-priced from **Sept 21 2026 close**, 2 independent WebSearch queries per ticker converged on identical closes (no reconciliation needed). **No trades this session — Review Mode is price/metric update only.**
+
+### 🔄 What moved: AI-hardware rally reverses the 09-15 software rotation
+
+Meta's Muse AI agent (launched 9/8) showed early success — stock +11.43% on 9/21 to $741.25, #1 on the App Store, AMD crossed $1 trillion market cap — reigniting global AI-hardware sentiment and pulling the Nasdaq to a record close (+2.26%). Capital rotated back OUT of the enterprise-software names that had just rallied on 09-15's AI-safety-slowdown call, and back toward chips — the mirror image of last review.
+
+| Ticker | Prior ($, 9/14) | Current ($, 9/21) | Day Move | Return % | MOS % | StopDist % |
+|--------|-----------------|--------------------|----------|----------|-------|------------|
+| ADBE | $265.60 | **$249.52** | -6.05% | +1.01% | +32.38% | 25.86% |
+| NOW | $142.35 | **$137.68** | -3.28% | +53.88% | -9.57% 🟠 | 32.45% |
+| CRM | $259.43 | **$239.40** | -7.72% | +32.27% | +30.76% | 39.52% |
+| REGN | $793.74 | **$797.99** | +0.54% | +32.56% | +10.24% | 39.60% |
+| ADSK | $228.93 | **$218.90** | -4.38% | +10.32% | **+1.30%** 🟢 | 27.48% |
+
+S&P 500 rose +1.49% to $7,764.70 (Sept 21 close, Nasdaq record close) — the opposite direction of our software-heavy book, which is why alpha swung sharply negative this round.
+
+### 🟢 ADSK — MOS flip RESOLVED, Max Consultation Rule item closed
+
+MOS -3.22% → **+1.30%** — the price simply fell back below the unchanged FV ($221.79, fvVerifiedDate 2026-09-12) as the sector rotation reversed. The 09-15 "no-further-exemption STRONG SELL" flag never got acted on (no consultation ran in the 7 days it was open), and the market resolved the valuation question on its own. Buffer is still thin (+1.30%) — worth another look if price runs back up without a fresh fundamental catalyst, but no action needed today.
+
+### 🟠 NOW — STRONG SELL territory continues, narrowing (flag only, no action)
+
+MOS -13.29% → **-9.57%** on the same reversal (FV unchanged $125.65). Recurring pattern since Aug — already trimmed 50%, residual weight only 1.35%, no Max Consultation Rule trigger. Note: Cantor Fitzgerald raised its PT to $174 (9/21, single-analyst) vs our internal FV $125.65 — a 38% gap worth folding into the next lightweight re-verify, not urgent given the tiny weight.
+
+### 🟡 ADBE — weight eased back under 10% IPS band (flag only, no action)
+
+Weight 10.27% → **9.79%** on price pullback alone (no shares sold). Back inside the soft band — no longer a WATCH item.
+
+### HOLD — no action on all 5 positions
+
+ADBE (MOS +32.38%, healthy, weight back under 10%), NOW (MOS -9.57% STRONG SELL but tiny weight, already trimmed), CRM (MOS +30.76%, healthy, stopDist 39.52%, Dreamforce $63B FY2030 guide reaffirms long-term thesis), REGN (MOS +10.24%, below 15% add-gate but no sell pressure, only position to gain this period, favorable court ruling 9/21), ADSK (MOS +1.30%, flag resolved, T2/T3 still paused pending Nov RPO print).
+
+### 🔍 Re-Analysis Trigger Check — 0 of 5 positions fire any trigger
+
+| Ticker | Fired | Detail |
+|--------|-------|--------|
+| ADBE | ✅ none | fvVerifiedDate 2026-09-11 (11 days old). No new earnings. Price divergence from re-verify price ~-1%, well under threshold. |
+| NOW | ✅ none | fvVerifiedDate 2026-08-24 (29 days old, well under 90d). No new earnings. MOS negative but FV age <90d so trigger #2 does not fire. |
+| CRM | ✅ none | fvVerifiedDate 2026-09-11 (11 days old). Dreamforce (9/16) was a guidance/analyst event, not an earnings report — does not count as trigger #1. Price divergence ~-3.4%, under threshold. |
+| REGN | ✅ none | fvVerifiedDate 2026-09-11 (11 days old). No new earnings. Price divergence ~+2%, under threshold. |
+| ADSK | ✅ none | fvVerifiedDate 2026-09-12 (10 days old). No new earnings. Price divergence minimal — MOS now positive so the separate 09-15 Exit-Rule WATCH ITEM is also moot (see above). |
+
+### ⚠️ Atlas regime re-call overdue
+
+The FOMC delivered a hawkish surprise on 2026-09-16 — a 25bps hike to 3.75-4%, the first hike since 2023 — which cuts against the dovish-lean the 09-11 regime call partially weighted (CME FedWatch odds that looked "only ~56%" on 09-14 turned out understated). The 09-11 regime record explicitly required "next mandatory re-call within 1 session of Sept 16 FOMC outcome" — that has not yet happened as of this review. Flagging for Atlas/Charlie; until re-called, Regime stays TRANSITIONAL-CAUTIOUS per the CLAUDE.md default-to-TC-if-not-recorded rule.
+
+### Max's Take
+
+รอบนี้เป็นภาพสลับกับสัปดาห์ก่อนพอดี — Meta's Muse AI agent ดันความเชื่อมั่น AI-hardware กลับมา เงินไหลออกจาก enterprise software ที่พอร์ตเราถือทั้ง 5 ตัว กลับเข้า chip stocks ที่เราไม่ได้ถือเลย ทำให้ alpha พลิกลบแรง (-2.97%) — เป็น sector-rotation noise ไม่ใช่สัญญาณว่า thesis เสีย (ทุกตัวยัง MOS บวก ยกเว้น NOW ที่เป็น pattern เดิม, ไม่มี stop breach, ไม่มี Bear Flip/Invalidation ใหม่). ข่าวดีคือ ADSK ที่ค้าง Max Consultation Rule จากสัปดาห์ก่อนได้ข้อสรุปแบบ "ตลาดแก้ปัญหาให้เอง" — MOS กลับมาบวกจากราคาที่ปรับตัวลง ไม่ต้องเปิด consultation จริง สิ่งที่ต้องติดตามคือ FOMC ขึ้นดอกเบี้ยจริง (25bps, ครั้งแรกตั้งแต่ 2023) ซึ่งเป็น hawkish surprise — Atlas ยังไม่ re-call regime ตามที่ตั้งกฎไว้ ควรเร่งทำรอบหน้าเพราะอาจกระทบ cash floor/force-deploy settings ที่ใช้กำกับพอร์ตอยู่ตอนนี้.
+
+---
 
 ## 📊 Portfolio Review — 2026-09-15 (Mode 3 — Full Re-mark, No Trades) — ADSK MOS Flips Negative (Consultation Flagged)
 

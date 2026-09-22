@@ -13,6 +13,7 @@
   <script src="news.js"></script>
   <script src="sectorViews.js"></script>
   <script src="thesisWatch.js"></script>
+  <script src="research.js"></script>
   <script src="todoList.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&family=Prompt:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -399,6 +400,7 @@
       <button class="nav-tab" onclick="showPage('news')">News</button>
       <button class="nav-tab" onclick="showPage('sectorviews')">Sector Views</button>
       <button class="nav-tab" onclick="showPage('thesiswatch')">Thesis Watch</button>
+      <button class="nav-tab" onclick="showPage('research')">🔍 Research</button>
     </div>
     <div class="nav-divider"></div>
     <div class="nav-group">
@@ -697,11 +699,24 @@
 </div>
 
 <!-- ══════════════════════════════════════════ -->
+<!-- PAGE: Research (thematic/macro notes)     -->
+<!-- ══════════════════════════════════════════ -->
+<div id="page-research" class="page">
+  <div style="margin-bottom:1.25rem;">
+    <div class="page-kicker">10 / Intelligence</div>
+    <h1 class="page-title">🔍 <span class="script">Research</span></h1>
+    <div class="page-sub">Thematic/macro research notes — ไม่ผูกกับ ticker เดียว เขียนแบบ ad-hoc โดย Charlie เมื่อ CIO ขอ ไม่ใช่ scheduled job</div>
+  </div>
+  <div class="stat-grid" id="research-stat-grid"></div>
+  <div id="research-list"></div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
 <!-- PAGE: Todo / Ideas                        -->
 <!-- ══════════════════════════════════════════ -->
 <div id="page-todo" class="page">
   <div style="margin-bottom:1.25rem;">
-    <div class="page-kicker">10 / Notes</div>
+    <div class="page-kicker">11 / Notes</div>
     <h1 class="page-title">💡 Todo <span class="script">/ Ideas</span></h1>
     <div class="page-sub">ที่จดไอเดียส่วนตัว — ไม่เกี่ยวกับการตัดสินใจลงทุนของพอร์ต เก็บไว้ที่นี่เพราะเปิด dashboard ค้างไว้ตลอด</div>
   </div>
@@ -714,7 +729,7 @@
 <div id="page-glossary" class="page">
   <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:.75rem;flex-wrap:wrap;gap:.75rem;">
     <div>
-      <div class="page-kicker">11 / Notes</div>
+      <div class="page-kicker">12 / Notes</div>
       <h1 class="page-title">📖 Glossary <span class="script">— ศัพท์ที่ใช้บ่อย</span></h1>
       <div class="page-sub">คำย่อ/ศัพท์เฉพาะที่เจอในรายงานและ Trade Log ทั้งหมด อธิบายเป็นภาษาที่เข้าใจง่าย — สำหรับคนอื่นที่ไม่คุ้นกับระบบนี้</div>
     </div>
@@ -739,7 +754,7 @@
 <!-- ══════════════════════════════════════════ -->
 <div id="page-methodology" class="page">
   <div style="margin-bottom:1.5rem;">
-    <div class="page-kicker">12 / Notes</div>
+    <div class="page-kicker">13 / Notes</div>
     <h1 class="page-title">⚙️ How We <span class="script">Work</span></h1>
     <div class="page-sub">เปิดเผยกระบวนการทั้งหมด — ใครทำอะไร ข้อมูลมาจากไหน คำนวณยังไง สำหรับคนนอกที่อยากรู้ว่าทีมนี้ทำงานกันจริงจังแค่ไหน</div>
   </div>
@@ -2139,6 +2154,82 @@ function buildCycleTrack(allGroups) {
   }
 }
 
+// ─── PAGE: RESEARCH (thematic/macro notes) ──────────────────
+function researchStaleTier(dateStr) {
+  const days = Math.floor((new Date() - new Date(dateStr + 'T00:00:00')) / 86400000);
+  if (days >= 90) return { tier: 'critical', days };
+  if (days >= 45) return { tier: 'warn', days };
+  return { tier: 'ok', days };
+}
+
+function openFullResearch(slug) {
+  const r = (typeof RESEARCH !== 'undefined' ? RESEARCH : []).find(x => x.slug === slug);
+  if (!r) return;
+  const body = document.getElementById('frm-body');
+  if (r.fullContent) {
+    if (typeof marked !== 'undefined') {
+      try { body.innerHTML = marked.parse(r.fullContent); }
+      catch (e) { body.innerHTML = '<pre style="white-space:pre-wrap;color:#F0E6D2;font-family:JetBrains Mono,monospace;font-size:.8rem;">' + escapeHTML(r.fullContent) + '</pre>'; }
+    } else {
+      body.innerHTML = '<pre style="white-space:pre-wrap;color:#F0E6D2;font-family:JetBrains Mono,monospace;font-size:.8rem;">' + escapeHTML(r.fullContent) + '</pre>';
+    }
+  } else {
+    body.innerHTML = `<h1>${esc(r.title)}</h1><p style="color:#E0A040;">⚠ No fullContent embedded. Open ${esc(r.reportFile || '')} directly.</p>`;
+  }
+  document.getElementById('full-report-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function buildResearch() {
+  const list = (typeof RESEARCH !== 'undefined' ? RESEARCH : []).slice().sort((a, b) => b.date.localeCompare(a.date));
+  const grid = document.getElementById('research-stat-grid');
+  if (grid) {
+    const avgConv = list.length ? (list.reduce((s, r) => s + (r.convictionAvg || 0), 0) / list.length).toFixed(1) : '—';
+    grid.innerHTML = `
+      <div class="stat-card"><div class="stat-label">Research Notes</div><div class="stat-value">${list.length}</div></div>
+      <div class="stat-card"><div class="stat-label">Avg Team Conviction</div><div class="stat-value">${avgConv}/10</div></div>`;
+  }
+  const container = document.getElementById('research-list');
+  if (!container) return;
+  if (!list.length) {
+    container.innerHTML = `<div class="news-empty"><div style="font-size:2rem;margin-bottom:.75rem;">📭</div><div>No research notes yet</div></div>`;
+    return;
+  }
+  container.innerHTML = list.map(r => {
+    const s = researchStaleTier(r.date);
+    const staleLabel = s.tier === 'critical'
+      ? `<span class="sector-stale-critical">${s.days}d ago</span>`
+      : s.tier === 'warn' ? `<span class="sector-stale-warn">${s.days}d ago</span>` : `<span class="sector-stale-ok">${s.days}d ago</span>`;
+    const convBars = r.convictionScores ? Object.entries(r.convictionScores).map(([name, score]) =>
+      `<div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;margin:.15rem 0;">
+        <span style="width:44px;color:#B8A88A;">${esc(name)}</span>
+        <div style="flex:1;height:6px;background:#332C24;border-radius:3px;overflow:hidden;"><div style="width:${score*10}%;height:100%;background:#E0824E;"></div></div>
+        <span style="color:#F0E6D2;width:28px;text-align:right;">${score}/10</span>
+      </div>`).join('') : '';
+    return `
+      <div class="sector-card" id="research-card-${r.slug}">
+        <div class="sector-card-header">
+          <span class="sector-name">${esc(r.title)}</span>
+          <span class="sector-stance sector-stance-NEUTRAL">${esc(r.category || 'Research')}</span>
+        </div>
+        <div style="font-size:.92rem;font-weight:600;color:#F0E6D2;">${esc(r.headline || '')}</div>
+        ${r.tldr && r.tldr.length ? `<ul class="sector-keypoints">${r.tldr.map(k => `<li>${esc(k)}</li>`).join('')}</ul>` : ''}
+        ${convBars ? `<div style="margin:.6rem 0;padding:.6rem;background:#241F19;border-radius:6px;">
+          <div style="font-size:.72rem;color:#8C7F63;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem;">Conviction — ทีมควรกังวลแค่ไหน</div>
+          ${convBars}
+          <div style="font-size:.76rem;color:#C7A354;margin-top:.3rem;font-weight:700;">Average ${r.convictionAvg}/10</div>
+        </div>` : ''}
+        <div class="sector-meta-row">
+          ${staleLabel}
+          <div>${(r.relatedTickers || []).map(t => `<span class="news-ticker-tag">${esc(t)}</span>`).join('')}</div>
+          <div>${(r.sources || []).slice(0, 4).map(src => `<a class="sector-source-link" href="${src.url}" target="_blank" rel="noopener">${esc(src.title)} -></a>`).join(' &nbsp;')}</div>
+          <span style="margin-left:auto;color:#8C7F63;">${esc(r.author || '')} · ${r.date}${r.trigger ? ' · ' + esc(r.trigger) : ''}</span>
+        </div>
+        <button class="btn-primary" style="width:100%;margin-top:.75rem;" onclick="openFullResearch('${r.slug}')">📄 View Full Research Note</button>
+      </div>`;
+  }).join('');
+}
+
 function scrollToSectorCard(slug) {
   const el = document.getElementById('sector-card-' + slug);
   if (!el) return;
@@ -2797,6 +2888,7 @@ buildTradeLog();
 buildNews();
 buildSectorViews();
 buildThesisWatch();
+buildResearch();
 buildTodoList();
 buildGlossary();
 buildMethodology();
