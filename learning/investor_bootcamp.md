@@ -212,6 +212,23 @@ Journal นี้คือ deliverable ที่สำคัญที่สุ�
 - **Exercise (45 นาที):** ทำตาราง comp 3–5 peers ของหุ้น 1 ตัวในพอร์ต (P/E, EV/EBITDA, ROE, Revenue Growth) เหมือน section 📊 ในรายงานจริง
 - `[CFA L2: Equity Valuation — Market-Based Valuation]`
 
+> #### 📎 Real Example — EV/EBITDA แบบละเอียด (จาก Scout Round 32, 2026-09-23)
+> **สูตร:**
+> ```
+> EV (Enterprise Value) = Market Cap + หนี้สินรวม − เงินสดในมือ
+> EBITDA = กำไรจากการดำเนินงาน + Depreciation + Amortization
+> ```
+> - **ทำไม EV ต้อง +หนี้ −เงินสด:** ถ้าซื้อบริษัททั้งบริษัท ต้องรับหนี้ต่อ (ภาระเพิ่ม) แต่ได้เงินสดในบัญชีมาด้วย (ใช้โปะหนี้ได้ทันที) — เป็น "ราคาซื้อกิจการจริง" ต่างจาก market cap เฉยๆ
+> - **ทำไมบวก D&A กลับ:** ค่าเสื่อม/ค่าตัดจำหน่ายเป็นค่าใช้จ่ายทางบัญชีที่ไม่มีเงินสดไหลออกจริง ตัดออกเพื่อเห็น "เครื่องจักรทำเงิน" ของธุรกิจโดยไม่ปนกับนโยบายบัญชีหรือโครงสร้างทุน
+> - **ทำไมใช้แทน P/E ได้ในบางกรณี:** P/E ใช้ Net Income (หลังหักดอกเบี้ย+ภาษี+D&A) ทำให้บริษัทที่กู้เงินเยอะ/น้อยต่างกันเทียบกันตรงๆ ไม่ยุติธรรม ส่วน EV/EBITDA ตัดผลของหนี้/ภาษีออกไปแล้ว เทียบข้ามบริษัทที่ capital structure ต่างกันได้แม่นกว่า
+>
+> **ตัวอย่างจริง — CAT (Caterpillar) ตอนตกรอบ Filter B:**
+> - Market Cap ≈ $150,000M, หนี้สินรวม ≈ $40,000M, เงินสด ≈ $10,000M → EV = 150,000+40,000−10,000 = **$180,000M**
+> - EV/EBITDA ปัจจุบัน = 25.4x → EBITDA ≈ 180,000÷25.4 = **$7,087M**
+> - เทียบกับ 5-year history ของ CAT เอง (ไม่ใช่เทียบ peer): 25.4x นี้อยู่ **93.9th percentile** — แพงกว่าเกือบทุกช่วงเวลาในรอบ 5 ปีที่ผ่านมา
+> - **บทเรียน:** CAT ราคาลง -24.8% จาก 52W high จริง (ผ่าน Filter A) แต่ multiple ยังแพงกว่าที่มันเคยเทรดมาตลอด เพราะ high เดิมคือจุดพีคของ AI-capex bubble ไม่ใช่ fair value — "ลงจาก high" ≠ "ถูกแล้ว" เสมอไป ต้องเช็คว่าถูกเทียบกับ**ประวัติตัวเอง**ด้วย ไม่ใช่แค่เทียบกับจุดสูงสุดเดิม
+> - Filter B เต็มรูปแบบ: ต้องผ่าน ≥1 ใน 3 — (1) FCF Yield >6%, (2) EV/EBITDA อยู่ bottom-third (ล่างสุด 1 ใน 3) ของ 5Y history ตัวเอง, (3) P/B ต่ำกว่า 5Y median (เฉพาะ financials/insurers)
+
 ### Week 22 — Growth Valuation: EV/Revenue & Rule of 40
 - **Concept:** ทำไมหุ้น growth ห้ามใช้ P/E (ยังไม่มีกำไร) / EV/Revenue multiple percentile เทียบ 5-year range / Rule of 40 (growth% + margin% ≥ 40) คืออะไร
 - **หาข้อมูลจริงที่ไหน:** macrotrends.net (ดู EV/Revenue 5 ปีย้อนหลัง) 
@@ -304,6 +321,20 @@ Journal นี้คือ deliverable ที่สำคัญที่สุ�
 - **หาข้อมูลจริงที่ไหน:** ตาราง Macro Regime Gate ใน CLAUDE.md ของกองทุนเราเอง + `agent_notes/atlas/` ล่าสุด
 - **Exercise (30 นาที):** เช็ค regime ปัจจุบันของกองทุน แล้วคำนวณว่า cash floor ตอนนี้ควรเป็นเท่าไหร่ เทียบกับ cash จริงในพอร์ต
 - `[CFA L3: Portfolio Management — Asset Allocation]`
+
+> #### 📎 Real Example — Scout Filter Funnel เต็มรูปแบบ (จาก Round 31–32, 2026-09-23)
+> ระบบคัด candidate ก่อนเข้า full pipeline ด้วย 5 filter เรียงกัน ต้องผ่าน**ทุกข้อ** ถึงจะ fast-track ได้:
+> | Filter | เช็คอะไร | เกณฑ์ | ตัวอย่างจริงที่ตกรอบ |
+> |---|---|---|---|
+> | **A** | ลงจาก high มากพอไหม | ≥20% จาก 52W high + reason ต้องเป็น cyclical/temporary ไม่ใช่ permanent impairment | DHI ลงแค่ -18.2% (พลาดไป 1.8 จุด) → reject |
+> | **B** | ถูกเทียบกับตัวเองในอดีตจริงไหม | FCF yield >6% หรือ EV/EBITDA bottom-third ของ 5Y history ตัวเอง | CAT/VRT/GNRC ลงจาก high จริงแต่ multiple ยังอยู่ 93-95th percentile → reject |
+> | **C** | ยังเป็นธุรกิจดีอยู่ไหม | ROIC ≥80% ของ WACC (หรือ trend ดีขึ้นต่อเนื่อง) | BLDR/KBH ROIC ต่ำกว่า WACC มากและไม่มี trend ดีขึ้น → reject |
+> | **D** | มี margin of safety จริงไหม | ราคา ≤0.80× naive FV (no-growth perpetuity) | **NVR — ROIC สูงสุดเท่าที่เคย scout มา (41.88%) แต่ราคาแพงกว่า naive FV 1.3-1.5 เท่า → reject แม้เป็นธุรกิจดีมาก** |
+> | **E** | conviction พอไหม | ผ่าน ≥2/3 (moat / ROIC-WACC spread / ไม่มี unresolved overhang) | ใช้ตัดสินตัวที่ก้ำกึ่งหลัง D |
+>
+> **บทเรียนสำคัญที่สุดจากตัวอย่าง NVR:** "ธุรกิจดี" กับ "ราคาที่มี margin of safety" เป็นคนละเรื่องกัน — Filter C ผ่านง่ายกว่า Filter D มาก เพราะตลาดมักรู้อยู่แล้วว่าบริษัทไหนดี แล้วให้ราคาแพงตามไปด้วย (ROIC สูงไม่ได้แปลว่าราคาถูก) นี่คือเหตุผลที่กองทุนนี้เพิ่งเจ็บมาจากการ deploy 0 ตัวจาก 20 analyses ก่อนหน้า — เพราะ screen เดิมกรองแค่ Filter A-C ไม่มี D
+>
+> **Exercise เพิ่ม (30 นาที):** เลือกหุ้น 1 ตัวที่คุณคิดว่า "เป็นธุรกิจดี" (เช่น Apple, Nvidia) ลองเช็คว่าราคาตอนนี้ผ่าน Filter D ไหม (เทียบกับ naive no-growth FV ของตัวเอง) — ส่วนใหญ่จะไม่ผ่าน เพราะตลาดรู้แล้วว่าดี
 
 **🏁 Milestone Phase 7:** อธิบายได้ว่าทำไมกองทุนเรากำหนด position size สูงสุด 8–10% และ cash floor แบบ regime-based — ไม่ใช่ตัวเลขสุ่ม
 

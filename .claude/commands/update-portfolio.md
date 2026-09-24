@@ -63,10 +63,20 @@ mosPct          = (blendedFV - currentPrice) / blendedFV × 100     ← MOS (FV-
 stopDistancePct = (currentPrice - stopLoss) / currentPrice × 100
 ```
 
+**Cash Yield Rule (บังคับ — เพิ่ม 2026-09-24, ดู CLAUDE.md § Cash Yield Rule):**
+ก่อนคำนวณ totalValue ให้ accrue ดอกเบี้ยเข้า `currentCash` ก่อนเสมอ (cash ไม่ใช่ 0% เฉยๆ อีกต่อไป):
+```
+days           = วันนี้ - lastUpdated (รอบ review ก่อนหน้า)
+rate           = WebSearch "effective Fed funds rate" ตาม Training Knowledge Ban (proxy money-market yield, ลบ spread เล็กน้อย ~0-20bps)
+cashInterest   = currentCash(เดิม) × (rate/365) × days
+currentCash    = currentCash(เดิม) + cashInterest        ← accrue ก่อน ไม่ใช่ "ไม่เปลี่ยน" อีกต่อไป
+```
+ถ้า cashInterest คำนวณได้ (>$0.01) → บันทึกลง `dataIntegrityLog[]` สั้นๆ (rate ที่ใช้ + จำนวนวัน + ดอกเบี้ยที่ได้)
+
 ระดับ portfolio:
 ```
 investedValue   = Σ marketValue (ทุก OPEN position)
-totalValue      = currentCash + investedValue          ← currentCash ไม่เปลี่ยน (ไม่มี trade ใน review)
+totalValue      = currentCash(หลัง accrue yield) + investedValue
 totalReturnPct  = (totalValue - startingCapital) / startingCapital × 100
 sp500Return     = (sp500Current - sp500AtInception) / sp500AtInception × 100
 alpha           = totalReturnPct - sp500Return
@@ -102,7 +112,7 @@ weightPct       = marketValue / totalValue × 100   (ต่อ position)
 
 **5.1 — `dashboard/portfolio.js`:**
 - แก้แต่ละ OPEN position: `currentPrice`, `marketValue`, `returnPct`, `weightPct`, `mosPct`, `stopDistancePct`, `priceUpdated`, `priceSource`
-- แก้ `summary`: `currentCash`(คงเดิม), `investedValue`, `totalValue`, `totalReturnPct`, `sp500Current`, `sp500Return`, `alpha`, `cashPct`, `lastUpdated`, `priceSourceNote`
+- แก้ `summary`: `currentCash`(หลัง accrue Cash Yield), `investedValue`, `totalValue`, `totalReturnPct`, `sp500Current`, `sp500Return`, `alpha`, `cashPct`, `lastUpdated`, `priceSourceNote`
 - แก้ `PORTFOLIO_LAST_UPDATED` ด้านบนไฟล์ = วันนี้ + note สั้น
 - append 1 entry เข้า `performanceHistory[]`: `{ date, portfolioValue, sp500Level, returnPct, sp500ReturnPct, cashPct, positionCount, note }`
 - ถ้า stop/thesis เปลี่ยน → append `dataIntegrityLog[]` ด้วย

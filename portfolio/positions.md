@@ -4,7 +4,9 @@
 >
 > **🔴 UPDATE 2026-09-11 (Max Consultation completed — Re-Analysis Trigger Rule batch):** **ACN — FULL EXIT** (SELL remaining 1.4sh @ $177.76, Risk Rule 3 thesis-change — CEO publicly contradicted core thesis, Moat WIDE→NARROW, Conviction 7.17→5.17, Blended FV $252.35→$199.51, MOS +12.2% <15% gate. Not panic — Thesis Invalidation strictly 0/3, real downside support. Max×Charlie reconciled full exit over partial trim.) Realized -$0.57 this tranche, lifetime cumulative -$70.82. **REGN — STRONG SELL territory RESOLVED** (Blended FV $792→$889 on fresh Q2 EPS +36% surprise data, MOS -4.5%→+11.8%, was a stale-FV artifact not real overvaluation, HOLD 0.42sh unchanged, no action). Regime re-call (Atlas 2026-09-11): TRANSITIONAL-CAUTIOUS confirmed. **Detail:** `portfolio/decisions.md` (Re-Analysis Log rows) · `portfolio/deployment_log.md` (Max Consultation reconciliation) · `reports/ACN_2026-06-05.md` + `reports/REGN_2026-06-03.md` + `reports/GOOGL_2026-05-21.md` (Update Logs) · `dashboard/portfolio.js`.
 
-*Managed by Max | Updated: 2026-09-22 (Portfolio Review Mode 3 — full re-mark to **Sept 21 2026 close**, no trades. Sector rotation REVERSED from 09-15: Meta's Muse AI agent success [stock +11.43% 9/21, AMD >$1T mkt cap] reignited AI-hardware sentiment — capital rotated back OUT of enterprise software: ADBE -6.05% $249.52, NOW -3.28% $137.68, CRM -7.72% $239.40, ADSK -4.38% $218.90; only REGN gained +0.54% $797.99 (2 independent WebSearch queries per ticker, converged, no reconciliation needed). S&P 500 rose +1.49% to **$7,764.70** (Sept 21 close, Nasdaq record close +2.26%, Bloomberg + CNBC + aggregators converge). **Total $10,348.98 → $10,197.62 (-1.46%)** · **Alpha +0.50% → -2.97% (REVERSED)** — mirror image of 09-15, portfolio has zero direct AI-hardware exposure so it missed the same rally that lifted the index; single-session reading, NOISE per Pre-commitment Rule. Cash $7,483.14 (73.38%, unchanged $ — price-only session). 🟢 **ADSK MOS RESOLVED +1.30%** (from -3.22%) as price fell back below unchanged FV $221.79 — the 09-15 no-further-exemption STRONG SELL flag is moot, Max Consultation Rule item closed with no trade. 🟠 NOW MOS -9.57% STRONG SELL territory continues, narrowing (already trimmed 50%, weight 1.35%, recurring pattern, no action; Cantor PT $174 vs internal FV $125.65 — 38% gap noted for next re-verify). ADBE weight eased to 9.79% (back under 10% IPS band). No stop breaches — every stopDist ≥25%. Re-Analysis Trigger Check: **0/5 fire**. ⚠️ FOMC hiked 25bps to 3.75-4% on 2026-09-16 (first hike since 2023, hawkish surprise) — mandatory Atlas regime re-call overdue, not yet logged as of this review.)*
+*Managed by Max | Updated: 2026-09-24 (Cash Yield Rule added to CLAUDE.md, CIO-approved — no price re-mark, S&P/positions unchanged from 09-22 review below. Cash ที่ไม่ deploy คิดผลตอบแทนแบบ money-market/T-bill proxy [Fed funds proxy 3.6% พ.ค.–15 ก.ย. → 3.8% หลัง FOMC hike 16 ก.ย.] แทน 0% เดิม. **Retroactive one-time catch-up จาก inception (2026-05-09) = +$89.87.** Cash $7,483.14 → **$7,573.01** (73.38% → 73.61%), Total $10,197.62 → **$10,287.49**, Total Return 1.98% → **2.87%**, **Alpha -2.97% → -2.07%** [ดีขึ้นแต่ยังติดลบ — ยืนยันว่า underperformance มาจาก equity positions ไม่ใช่ cash idle]. **ไม่ใช่การถือ bond จริง** — CIO ปฏิเสธถือ bond เพราะทุนน้อย ต้องการ concentrate risk แทน diversify [2026-09-24 discussion]. Max คำนวณสะสมทุก Portfolio Review ต่อจากนี้ตามกฎใหม่. Detail: `dashboard/portfolio.js` dataIntegrityLog + `CLAUDE.md` § Cash Yield Rule.)*
+
+<!-- prior update note (2026-09-22): Portfolio Review Mode 3 — full re-mark to Sept 21 2026 close, no trades. Sector rotation REVERSED from 09-15: Meta's Muse AI agent success (stock +11.43% 9/21, AMD >$1T mkt cap) reignited AI-hardware sentiment — capital rotated back OUT of enterprise software: ADBE -6.05% $249.52, NOW -3.28% $137.68, CRM -7.72% $239.40, ADSK -4.38% $218.90; only REGN gained +0.54% $797.99. S&P 500 rose +1.49% to $7,764.70. Total $10,348.98 → $10,197.62 (-1.46%). Alpha +0.50% → -2.97% (REVERSED). Cash $7,483.14 (73.38%). ADSK MOS resolved +1.30%. NOW MOS -9.57% STRONG SELL continues. No stop breaches, every stopDist ≥25%. Re-Analysis Trigger Check 0/5 fire. FOMC hiked 25bps to 3.75-4% on 9/16 — regime re-call overdue. -->
 
 <!-- prior update note (2026-09-15): Portfolio Review Mode 3 — full re-mark to Sept 14 2026 close, no trades. Enterprise-software sector-rotation day (Anthropic/Microsoft AI-safety-slowdown call hit semis, capital rotated INTO software): ADBE +5.30% $265.60, NOW +7.41% $142.35, CRM +4.73% $259.43, REGN +1.57% $793.74, ADSK +7.78% $228.93. Total $10,205.74→$10,348.98 (+1.40%). S&P 500 $7,619.98 (-0.48%). Alpha -1.43%→+0.50% FLIPPED POSITIVE. ADSK MOS flipped negative -3.22% (no-further-exemption WATCH ITEM fired, flagged for Max Consultation Rule — subsequently RESOLVED 09-22 on price pullback). NOW MOS -13.29% STRONG SELL (already trimmed, no action). ADBE weight 10.27% WATCH-only. No stop breaches. Re-Analysis Trigger Check 0/5 fire. -->
 
@@ -442,17 +444,17 @@ ADBE (weight eased 11.13%→10.87%, still in 10-12% band, Q3 earnings Sept 10 in
 | | ค่า |
 |---|---|
 | **Starting Capital** | $10,000.00 |
-| **Current Cash** | $7,483.14 |
-| **Invested Value (Market)** | $2,722.60 |
-| **Total Portfolio Value** | $10,205.74 |
-| **Total Return** | +2.06% |
+| **Current Cash** | $7,573.01 (includes +$89.87 Cash Yield Rule retroactive catch-up, 2026-09-24) |
+| **Invested Value (Market)** | $2,714.48 |
+| **Total Portfolio Value** | $10,287.49 |
+| **Total Return** | +2.87% |
 | **S&P 500 at Inception (2026-05-09)** | 7,398.93 |
-| **S&P 500 (2026-09-11 close, 2-source verified — corrected from stale $7,636.40)** | 7,656.98 |
-| **S&P 500 Return (since inception)** | +3.49% |
-| **Alpha** | **-1.43%** (full re-mark — all 5 OPEN positions + S&P 500 re-priced same trading day this session) |
+| **S&P 500 (2026-09-21 close, 2-source verified)** | 7,764.70 |
+| **S&P 500 Return (since inception)** | +4.94% |
+| **Alpha** | **-2.07%** (equity positions underperformed S&P; cash-yield catch-up narrowed alpha from -2.97% but did not flip it positive) |
 | **# Positions** | 5 (ADBE + NOW[1sh] + CRM + REGN[0.42sh] + ADSK) — RDDT CLOSED 2026-09-03, ACN CLOSED 2026-09-11, GOOGL CLOSED 2026-09-12 |
-| **Cash %** | 73.32% |
-| **Last Updated** | 2026-09-13 (Portfolio Review Mode 3 — full re-mark + S&P 500 stale-price fix, no trades) |
+| **Cash %** | 73.61% |
+| **Last Updated** | 2026-09-24 (Cash Yield Rule added, no price re-mark — see update note at top of file + `dashboard/portfolio.js` dataIntegrityLog) |
 
 > **Price Sources — 2026-09-13 (Sept 11 2026 4:00PM EDT close, 2-source cross-checked, 0.00% diff every ticker):**
 > - ADBE $252.23: stockanalysis.com + Yahoo Finance (0.00% diff)

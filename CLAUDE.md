@@ -108,6 +108,30 @@ Atlas ต้องบันทึก Regime call ใน `agent_notes/atlas/YYYY-
 - Override note (ถ้ามี): เหตุผลที่ judgment override majority vote
 ถ้า Atlas ไม่บันทึก → Max ถือว่า Regime ยัง TRANSITIONAL-CAUTIOUS จนกว่าจะมี record
 
+### Macro Scenario Stress Test (เพิ่ม 2026-09-24 — CIO อนุมัติ, Atlas ดูแล)
+
+**ที่มา:** CIO ถามว่าถ้าเกิดเหตุการณ์ X แล้ว S&P 500/หุ้นจะเหลือเท่าไหร่ ระบบเดิมมีแค่ Quinn's Sensitivity Matrix (per-ticker) กับ Bear Flip Triggers (qualitative) แต่ไม่มีใครทำ macro-level scenario ว่า "ถ้าเกิดเหตุการณ์ X, yield/S&P จะขยับไปทางไหน" — ช่องว่างนี้กระทบ WACC/DCF ของทุกหุ้นเพราะ risk-free rate เป็น input หลัก
+
+**กลไก:** Atlas ทำ scenario stress test แบบ rates/yield-based ประกอบ **ทุกครั้งที่ re-call regime** (ไม่บังคับทุก session ปกติ) — เลือก 1-2 scenario ที่เกี่ยวข้องที่สุดกับบริบทตอนนั้น ไม่ต้องทำครบทั้ง 5:
+1. **Fed hike เพิ่ม** — yield 10Y ขยับ +Xbps → กระทบ WACC/FV ของหุ้นในพอร์ต/watchlist ยังไง
+2. **Recession อย่างเป็นทางการ** — yield ลง (flight to safety) แต่ earnings estimate หด — net effect ต่อ FV
+3. **Credit event / spread widening** — HY spread ขยับเกิน 600bps → กระทบ cost of capital บริษัทที่มีหนี้เยอะเป็นพิเศษ
+4. **Soft landing / status quo** — baseline ต่อเนื่อง ใช้เทียบ scenario อื่น
+5. **Inflation surprise ขึ้น** — Fed ต้อง hawkish กว่าที่ตลาด price-in ไว้
+
+**ขอบเขต (สำคัญ — ห้ามตีความเกิน):** นี่คือ **analytical input เท่านั้น** ป้อนเข้า WACC/DCF sensitivity ของ Emma/Quinn — **ไม่ใช่การเริ่มถือ bond จริงหรือขยาย asset class** กองทุนยังคง US equities-only ตาม IPS เดิม (CIO ตัดสินใจ 2026-09-24: ทุนเล็ก ต้องการ concentrate risk ไม่ diversify เข้า fixed income — ดู Cash Yield Rule ด้านล่างสำหรับกลไกที่ใกล้เคียง "ถือ bond" ที่สุดที่กองทุนยอมรับ)
+
+### Cash Yield Rule (เพิ่ม 2026-09-24 — CIO อนุมัติ)
+
+**ที่มา:** เดิม cash ที่ไม่ deploy นับเป็น 0% return เฉยๆ ทั้งที่ brokerage account จริงมี sweep เข้า money-market ได้ดอกเบี้ย — จำลองย้อนหลังพบว่าตั้งแต่ inception (2026-05-09) cash เฉลี่ย 60-73% ของพอร์ตไม่เคยได้ผลตอบแทนเลย เสีย opportunity cost ที่คำนวณได้จริง
+
+**กลไก:**
+- Cash ที่ถืออยู่ (ไม่รวม invested value) คิดผลตอบแทนแบบ **money-market/T-bill proxy** = Effective Fed Funds Rate (WebSearch ตาม Training Knowledge Ban) ลบ spread เล็กน้อย (~0-20bps)
+- Max คำนวณสะสมทุกครั้งที่ทำ Portfolio Review (Mode 3): ใช้ cash balance เฉลี่ยระหว่าง 2 รอบ review × (yield/365) × จำนวนวันที่ผ่านมา แล้วบวกเข้า `summary.currentCash`
+- **Retroactive baseline (ทำครั้งเดียว 2026-09-24):** คำนวณย้อนหลังจาก inception ถึงวันนี้ ได้ดอกเบี้ยสะสม **$89.87** (rate assumption 3.6% ตลอดช่วง พ.ค.-15 ก.ย., ขยับเป็น 3.8% หลัง FOMC hike 16 ก.ย. — อิง Fed funds 3.50-3.75%→3.75-4.00%) — บวกเข้า `currentCash`/`totalValue` ครั้งเดียวเป็น one-time catch-up
+- **ไม่ใช่การถือ bond** — เป็นแค่การจำลองผลตอบแทนของ cash ให้สมจริงขึ้น ไม่นับเป็น asset class ใหม่ ไม่ต้องมี fixed-income specialist role (ดู discussion 2026-09-24: CIO ปฏิเสธถือ bond จริงเพราะทุนน้อย ต้องการ concentrate risk)
+- บันทึกทุกครั้งที่คำนวณใน `dataIntegrityLog[]` พร้อม rate assumption + source ที่ใช้
+
 ### Sector Views Protocol (Atlas ดูแล — ad-hoc, ไม่ใช่ scheduled job)
 
 CIO ต้องการเห็น "ทีมคิดยังไงกับทั้ง sector" ไม่ใช่แค่ ticker เดี่ยวๆ หรือข่าว — เพราะ dashboard
