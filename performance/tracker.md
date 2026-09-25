@@ -1262,6 +1262,17 @@ Cash $6,894.47 → **$7,143.33** (69.5%). Positions 7 → **6**. Total value ~$1
 
 ---
 
+## DECK Watchlist Entry (2026-09-25, Vera log)
+- **DECK (Deckers Brands)** analyzed 2026-09-24/25 — Value Bucket — full 9-agent-equivalent pipeline (Atlas/Emma/Quinn/Bear/Morgan as isolated subagents)
+- **HOLD/WAIT — Conviction gate fail** (6.67/10 < 7.0 Value gate), despite MOS clearing easily (+25.0%)
+- Blended FV $104.80 (Emma $130×0.40 DCF-based + Quinn $98×0.35 P-W EV + Bear $74×0.25 independent bear case) vs price $78.59
+- **Pattern match:** same dual-gate-failure pattern as ACGL, WPM, PGR, DXCM, ABBV — MOS passing alone is not sufficient
+- No position taken — thesis tracking only, alpha PENDING until conviction improves or price moves
+- Key risk flagged by Bear: HOKA growth deceleration is structural (On Running gaining run-specialty channel share +112% vs HOKA +41%), not cyclical — re-analysis trigger: watch for HOKA 2-quarter re-acceleration or margin recovery on non-buyback basis
+- See `reports/DECK_2026-09-24.md` (v1) and `reports/DECK_2026-09-25_v2_full_pipeline.md` (v2, full rigor) for detail
+
+---
+
 ## Weekly Reports
 
 > ⚠️ **Cadence Gap Flag (updated 2026-08-21, PARTIALLY RESOLVED 2026-09-04 — see Week 2026-W36 entry below):** Week 2026-W24 (Jun 9-15) ยังคงสถานะ "IN PROGRESS" และไม่มี weekly report ถูกสร้างสำหรับ W25-W34 (Jun 16 – Aug 21) แม้จะมี analysis ใหม่เกิดขึ้นต่อเนื่อง (TOST 2026-06-17, CRDO 2026-07-06, WPM 2026-07-12, PGR 2026-07-22, DXCM 2026-07-29, ABBV 2026-08-02, ETN 2026-08-05, VRT 2026-08-05, ICE 2026-08-10, NET 2026-08-10, ACGL re-analysis 2026-08-18, TDG 2026-08-18, VEEV re-analysis 2026-08-20, **SHOP 2026-08-21**) — เป็นหลายสัปดาห์ที่ไม่มี weekly output ตาม Vera Protocol บังคับ ("ห้าม run experiment โดยไม่มี Vera output") ควร escalate ให้ Charlie/CIO ทราบและพิจารณาให้ Vera ออก catch-up weekly/quarterly report ครอบคลุมช่วง Jun 16 – Aug 21 ในรอบถัดไป (นอกขอบเขต session นี้ — บันทึกเฉพาะ SHOP entry สำหรับตอนนี้). **เพิ่มเติม:** RDDT stop loss breach ครั้งแรก (2026-08-01, resolved 2026-08-04), NOW STRONG SELL territory ครั้งแรก (2026-08-09, resolved 2026-08-18), GOOGL stopDist หลุดต่ำกว่า 10% ครั้งแรก (2026-08-18), REGN + RDDT STRONG SELL territory (2026-08-18) ยังไม่มี weekly report ครอบคลุมด้วยเช่นกัน — สมควรมีความสำคัญสูงในรอบ catch-up ถัดไป
