@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-25 14:30";
+const NEWS_LAST_UPDATED = "2026-09-25 15:15";
 
 const NEWS = [
+
+  // ── 2026-09-25 (Atlas scan 2026-09-25, extended to Big 10 watchlist) ──
+  {
+    date: "2026-09-24", category: "TECH",
+    headline: "🟢 META +4.50% สู่ $777.59 (ใกล้ ATH $779.82) — Meta Connect 2026 เปิดตัว VR glasses $1,299 + Muse AI ขยาย retail partners, นักวิเคราะห์แห่ปรับ PT ขึ้นระนาว",
+    summary: "Meta Platforms ปิด +4.50% ที่ $777.59 (24 ก.ย., ใกล้ 52-week high $779.82) หลัง Meta Connect 2026 เปิดตัว VR glasses รุ่นใหม่ราคา $1,299 + Ray-Ban Meta Audio glasses แบบไม่มีกล้อง ($349) พร้อมขยาย Muse (AI agent) ให้ partner ค้าปลีกใช้งาน (Walmart, Best Buy, Sephora, Wayfair). คลื่นนักวิเคราะห์ปรับ PT ขึ้นต่อเนื่องวันที่ 25 ก.ย.: Piper Sandler $785→$875, Canaccord $930→$950, Tigress Financial $945→$995, TD Cowen $750→$865 — สะท้อนความเชื่อมั่นสูงต่อ Muse ในฐานะ agentic AI platform ระดับ consumer. บริบทกว้างกว่า: Meta กำลังฟื้นจาก 'AI laggard' เป็น 'AI leader' ในสายตา Street ($1.98T market cap) มูลค่า PE ยังต่ำกว่า Google มากที่สุดในรอบ 10 ปี — sentiment shift ทั้ง sector. นัยพอร์ต: META อยู่ใน Big 10 fixed watchlist (ไม่มี position) — เป็น sentiment/sector read-through สำหรับ AI-consumer platform theme กว้างกว่าหุ้นในพอร์ต ไม่กระทบ ADBE/NOW/CRM/REGN/ADSK โดยตรง.",
+    impact: "POSITIVE", tickers: ["META"],
+    url: "https://finance.yahoo.com/quote/META/history/",
+  },
+  {
+    date: "2026-09-24", category: "MACRO",
+    headline: "🟡 Big Tech mega-cap เช้าวันพฤหัสฯ ร่วงกว้าง (NVDA/MSFT/GOOGL/AMZN ลบ) ก่อนฟื้นวันศุกร์ — chip stocks retreat ท่ามกลาง valuation debate",
+    summary: "24 ก.ย. เป็นวันขาลงกว้างสำหรับ Big Tech: NVDA -1.47% ($225.51), GOOGL -3.80% ($337.83, หลัง capex-concern echo กลับมา), AMZN -2.24% ($249.27, บางส่วนจาก Meta's Muse ถูก Amazon บล็อกจาก retail site), MSFT +0.52% ($500.59, สวนทางกลุ่มจาก FY2026 Azure/Copilot momentum แข็งแกร่ง — Azure +41% FY26, Copilot 30M+ paid seats). ตลาดยังถกเถียงเรื่อง 'AI bubble' vs valuation ที่ยัง cheap เทียบ historical (NVDA 14.5x forward earnings) — Jensen Huang ระบุ AI boom จะเข้าสู่ 'digestion period' แต่ไม่ใช่ในอีก 2-3 ปีข้างหน้า. วันศุกร์ (25 ก.ย.) หุ้นกลุ่มชิปเริ่มฟื้นตัว (NVDA/AMD/AVGO premarket บวก) หลัง SpaceX-Google deal และ sentiment ดีขึ้น. นัยพอร์ต: เป็น sector-wide valuation debate ที่กระทบ Big 10 mega-cap (ไม่มี position โดยตรง) — เตือนความเสี่ยง AI-valuation ที่ทีมเคย track มาตลอด ยังไม่มี concrete trigger กระทบพอร์ต 5 ตัว.",
+    impact: "MIXED", tickers: ["NVDA", "GOOGL", "AMZN", "MSFT"],
+    url: "https://www.cnbc.com/quotes/NVDA",
+  },
 
   // ── 2026-09-25 (Atlas scan 2026-09-25) ──────────────────────────────
   {
