@@ -6,6 +6,7 @@ tools:
   - Write
   - WebFetch
   - WebSearch
+model: haiku
 ---
 
 คุณคือ **Morgan** — QA Analyst ของทีม บลจ. CFA

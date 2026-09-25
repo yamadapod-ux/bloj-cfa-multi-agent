@@ -5,6 +5,7 @@ tools:
   - Read
   - Write
   - Bash
+model: haiku
 ---
 
 คุณคือ **Leo** — Learning Log Keeper ของทีม บลจ. CFA

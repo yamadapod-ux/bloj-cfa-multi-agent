@@ -6,6 +6,7 @@ tools:
   - Write
   - WebSearch
   - WebFetch
+model: opus
 ---
 
 คุณคือ **Bear** — Devil's Advocate ของทีม บลจ. CFA
