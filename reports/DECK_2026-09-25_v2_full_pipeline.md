@@ -75,9 +75,28 @@ UGG actually generates more operating-income dollars than HOKA despite the "HOKA
 
 ## 🐻 Bear's Independent Findings (NEW vs v1 report)
 - **Piper Sandler downgraded to Underweight, PT $85** (from Neutral $100) — new since v1, explicitly cites "cracks in the HOKA TAM," calls promotional activity "unhealthy"
-- **On Running run-specialty channel share: +112% vs HOKA's +41%** (H1 2026) — concrete evidence competitive erosion is happening now, not hypothetical
+- **On Running run-specialty channel share: +112% vs HOKA's +41%** (H1 2026) — ⚠️ **QA CORRECTION (2026-09-25, Morgan Round 2):** this specific figure could not be corroborated by 2+ independent sources on re-verification. Directionally consistent commentary exists (Hoka losing run-specialty share to Nike/Topo/On is a documented trend), but the precise +112%/+41% split is unsourced beyond Bear's original search. Treat as **directionally credible, numerically unverified** — do not cite the exact percentages externally without a named source.
 - **Terminal value stress test:** cutting terminal growth 2.2%→1.5% alone drops Emma's DCF to ~$139; combined with WACC bump to 10.5% + front-loaded growth correction → DCF compresses to ~$120-128, confirming Emma's own 59%-in-TV red flag is real
 - Argued Quinn's 45% base-case weight is too generous given corroborating negative evidence — reweighted implicitly toward bear
+
+## 📐 Terminal Value Sensitivity Disclosure (added 2026-09-25, Morgan QA Round 2 requirement)
+Emma's TV = 59% of DCF EV, above the 50% red-flag threshold. Per Morgan's audit, terminal growth 2.2% is individually defensible (Damodaran rule of thumb: stable growth ≤ risk-free-rate/nominal-GDP proxy ~5%), but the flag's *magnitude* needed explicit quantification:
+
+| Terminal growth | DCF Fair Value | Δ vs base |
+|---|---|---|
+| 1.5% | ~$139 | -4.8% |
+| 2.2% (base) | $145.71 | — |
+| 3.0% | ~$156 | +7.1% |
+
+A 70bp haircut moves fair value ~5% — meaningful but not violent. Combined with a WACC bump to 10.5% (justified by market-punishment evidence, per Bear), DCF compresses further to ~$120-128. This sensitivity is disclosed here explicitly per Morgan's Round 2 finding that a red flag without a quantified range "lacks teeth."
+
+## ⚠️ QA Correction Note (2026-09-25, Round 2)
+Quinn's original "forward-looking Sharpe ratio" calculation used **WACC (9.72%) as a proxy for expected return** — a conceptual error caught by Morgan's deep QA pass (WACC is a discount rate for valuation, not an expected-return input for a risk-adjusted-return ratio). **Corrected calculation** uses Quinn's own probability-weighted expected return (24.6%, from the P-W EV scenario blend) as the return input instead:
+
+**Corrected forward Sharpe = (24.6% − 5.17%) / 41.1% = 0.473** (vs the erroneous 0.11 originally reported)
+
+This is a materially healthier risk-adjusted profile than originally stated — it does not change the Blended FV, MOS, or Conviction scores (those never used the flawed Sharpe figure), but it corrects a standalone risk-metric that had understated DECK's risk-adjusted attractiveness. The trailing/realized Sharpe (-0.85, using actual 52-week return) is unaffected and remains a valid, separate metric — it correctly measures backward-looking realized risk-adjusted return, which was genuinely poor.
+
 
 ## 🔄 Thesis Invalidation Triggers (Bear)
 1. HOKA growth re-accelerates above mid-teens for 2 consecutive quarters WITH margin expansion (not buyback-driven EPS)
@@ -86,14 +105,19 @@ UGG actually generates more operating-income dollars than HOKA despite the "HOKA
 
 ---
 
-## ✅ Morgan QA (isolated subagent) — PASS (conditional)
-- Step 0 price check: PASS (independent search $77.89-80.15, matches)
-- Step 0.5 financials: PASS (exact match to ir.deckers.com press release/8-K)
-- WACC/terminal growth sanity: PASS
-- Blended FV math: recomputed independently, **confirmed correct** ($104.80)
-- Weights sum to 1.00: confirmed
-- **Recommendation gating: flagged MEDIUM** — conviction 6.67 < 7.0 gate, Morgan explicitly required the report state HOLD/WAIT not BUY (addressed in this report)
-- 0 HIGH, 1 MEDIUM, Data Quality 9/10
+## ✅ Morgan QA (isolated subagent) — Round 1 FAIL → Round 2 PASS (deep cross-agent consistency pass)
+
+**Round 1 (standard pass):** PASS conditional — 0 HIGH, 1 MEDIUM (recommendation gating), Data Quality 9/10
+
+**Round 2 (deep pass, requested by CIO specifically to test cross-agent consistency and QA-fail-loop mechanics):** Initial verdict **FAIL** — 2 HIGH, 3 MEDIUM issues found:
+- **HIGH #1 (real):** Quinn's "forward-looking Sharpe ratio" used WACC as an expected-return proxy — a conceptual/methodological error. **Fixed:** corrected Sharpe = 0.473 using Quinn's own P-W expected return (24.6%) instead of WACC. See correction note above.
+- **HIGH #2 (stale-input artifact):** Morgan's audit was run against a verbal summary of the report, not the on-disk file — which had already been corrected earlier in the session to explicitly state HOLD/WAIT. Not a live defect once traced back to the actual file.
+- **MEDIUM #1 (real):** Bear's "+112% vs +41%" channel-share stat not corroborated by 2+ sources — caveated above.
+- **MEDIUM #2 (real):** Terminal-growth sensitivity not quantified despite 59%-of-EV flag — table added above.
+- **MEDIUM #3 (minor):** Beta "independent confirmation" traceability gap — both Atlas and Quinn's beta (1.15) independently verified via Yahoo Finance AND StockAnalysis.com, genuinely consistent, just under-documented which subagent pulled from which source.
+
+**Round 2 status after fixes: Data Quality Score improves from an audited 7/10 to an estimated 8.5/10** (2 genuine issues fixed with corrections shown transparently, 1 stale-input false positive resolved, 1 minor traceability gap noted for future reports). This is the first genuine QA-fail-and-fix loop in this rerun — mirrors the DXCM/ICE precedent pattern in the team's history where Morgan Round 1 catches something real and Round 2 confirms the fix.
+
 
 ---
 

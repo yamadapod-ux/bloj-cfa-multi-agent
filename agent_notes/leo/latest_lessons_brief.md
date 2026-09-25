@@ -12,6 +12,7 @@
 7. **Scout price data must be independently verified (≥2 sources)** — CNC and ZETA incidents: scout prices were wrong by 30%+ due to single-source or stale data, wasting a full pipeline run on invalid inputs. Verify scout-stage prices before committing pipeline resources.
 8. **CIO Full Autonomy Mode is active since 2026-05-11** — team can execute trades post-QA-PASS without asking CIO to confirm each time, but Max Consultation Rule (Max must consult Charlie before BUY/SELL/TRIM) still applies.
 9. **Regime is not always the binding constraint** — don't assume Force Deploy Suspension is why a trade isn't happening; check conviction/MOS gates independently, since those can fail even under RISK-ON (see DECK 2026-09-25 correction).
+10. **"Consistency" is not the same as "conceptual correctness"** — a shallow cross-agent check verifies the SAME number is reused across agents; a deep check verifies the number is APPROPRIATE for the formula it's plugged into. DECK 2026-09-25 case: Quinn reused WACC (a discount rate) as an expected-return input to a Sharpe ratio calc — same number, wrong formula. Caught only on a deliberately deepened Morgan pass, not the standard one.
 
 ## Format/process rules to not forget
 - Every report needs `[CFA Lx: ...]` tag on every section heading (house format rule)
