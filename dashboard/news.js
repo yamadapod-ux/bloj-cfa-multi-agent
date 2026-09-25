@@ -3,9 +3,39 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-22 12:00";
+const NEWS_LAST_UPDATED = "2026-09-25 14:30";
 
 const NEWS = [
+
+  // ── 2026-09-25 (Atlas scan 2026-09-25) ──────────────────────────────
+  {
+    date: "2026-09-25", category: "TECH",
+    headline: "🟡 ADSK Autodesk — Guggenheim reiterate rating หลัง investor conference + Morgan Stanley คง Buy PT $315 ไม่เปลี่ยน",
+    summary: "Guggenheim ออกบทวิเคราะห์ยืนยัน rating เดิมของ Autodesk หลังเข้าร่วม investor conference (25 ก.ย.) — ไม่มีการเปลี่ยนแปลงมุมมองใหม่. แยกกัน Morgan Stanley (Elizabeth Porter) คง Buy rating + PT $315 ไม่เปลี่ยน โดยอ้างอิง agentic AI roadmap ของ Autodesk เป็นจุดแข็ง (21 ก.ย.) — ตรงข้ามกับ Cantor Fitzgerald ที่เพิ่ง initiate Neutral PT $215 (19 ก.ย., บันทึกไปแล้วก่อนหน้า) เพราะกังวล AI disruption เสี่ยงต่อ design-software business model ระยะกลาง. นัยพอร์ต: มุมมอง Street แตกเป็น 2 ฝั่งชัดเจน (Bull: MS $315 vs Bear: Cantor $215, ห่างกัน 46%) — สะท้อน uncertainty เดียวกับที่ Bear เคยยกในรายงาน ADSK ปี 2026-09-12 เรื่อง AI disruption risk ต่อ design software. ADSK current FV $221.79 อยู่ตรงกลางระหว่าง 2 มุมมองนี้พอดี.",
+    impact: "MIXED", tickers: ["ADSK"],
+    url: "https://www.tipranks.com/news/ratings/autodesk-maintained-at-buy-as-analyst-highlights-agentic-ai-roadmap-and-keeps-315-price-target-unchanged-ratings-news",
+  },
+  {
+    date: "2026-09-24", category: "TECH",
+    headline: "🟡 REGN Regeneron — ประกาศวันแถลงผล Q3 2026 = 30 ต.ค. (conference call 8:30 AM ET) — ยืนยัน catalyst date สำหรับพอร์ต",
+    summary: "Regeneron ประกาศอย่างเป็นทางการ (24 ก.ย., GlobeNewswire) ว่าจะแถลงผลประกอบการไตรมาส 3 ปี 2026 วันที่ 30 ตุลาคม 2026 พร้อม conference call/webcast เวลา 8:30 AM ET — เป็นการยืนยัน earnings date ที่ทีมใช้ในการประเมิน Re-Analysis trigger (fvVerifiedDate 2026-09-11, no new earnings จนถึงวันนี้). แยกกันมีรายงานจาก StockTitan เรื่อง securities class-action lawsuits ใหม่จาก shareholders กรณี cancer-drug (Fianlimab) trial disclosure — เป็นคดีที่ต่างจาก melanoma lawsuit เดิมที่ court dismiss ไปแล้ว (21 ก.ย., บันทึกในรอบก่อน). นัยพอร์ต: ไม่กระทบ FV/MOS ทันที (ยังไม่ใช่ Bear Flip/Thesis Invalidation input ตาม Morgan's กรอบเดิม) แต่เป็น legal overhang ที่สะสมขึ้นเรื่อยๆ ต้องติดตามต่อ, ตลาดจับตา Q3 30 ต.ค. เป็น catalyst ถัดไป.",
+    impact: "NEUTRAL", tickers: ["REGN"],
+    url: "https://markets.businessinsider.com/news/stocks/regeneron-to-report-third-quarter-2026-financial-and-operating-results-and-host-conference-call-and-webcast-on-october-30-2026-1036572576",
+  },
+  {
+    date: "2026-09-21/22", category: "TECH",
+    headline: "🟠 ADBE Adobe — CEO Shantanu Narayen ขาย stock $31.3M (~125,000 หุ้น @ เฉลี่ย $250.76) — จับตา insider signal ท่ามกลาง CEO transition",
+    summary: "Adobe เปิดเผย (SEC filing, รายงานโดย Nasdaq/Fool 21-22 ก.ย.) ว่า CEO Shantanu Narayen ขายหุ้น Adobe มูลค่ารวม $31.3 ล้าน (~125,000 หุ้น ที่ราคาเฉลี่ย weighted $250.76/หุ้น) — เกิดขึ้นในช่วงเดียวกับที่ Narayen กำลังจะเปลี่ยนบทบาทเป็น Executive Chairman (Anil Chakravarthy รับช่วง CEO เต็มตัว 1 ธ.ค. 2026, ประกาศไปแล้ว 3 ก.ย.). แยกกัน William Blair (Arjun Bhatia) คง Hold rating เมื่อ 18 ก.ย. โดยให้เหตุผลว่า Adobe's freemium AI strategy + CEO transition สร้าง 'balanced risk-reward' ที่ยัง justify Hold ไม่ใช่ Buy. บทความ 24/7 Wall St (22 ก.ย.) ตั้งคำถามตรงๆ ว่า ADBE ที่ร่วง -32% YTD เป็น 'dead money หรือรอ bounce'. นัยพอร์ต: การขายหุ้นของ CEO ที่กำลังจะลดบทบาทเป็นเรื่องปกติของ pre-planned transition (ไม่ใช่ signal ฉุกเฉิน) แต่ผสมกับราคาที่ร่วงต่อเนื่อง (-4.24% รอบนี้, -32% YTD) และ Street ที่ split ความเห็น (59% Buy/Hold แบ่งเกือบเท่ากัน ตาม Robinhood aggregator) — ยังไม่ใช่ Bear Flip แต่เป็นจุดที่ Emma ควรพิจารณาในการ escalate ไป full pipeline ตามที่เคย recommend ไว้ตั้งแต่ 2026-09-11.",
+    impact: "MIXED", tickers: ["ADBE"],
+    url: "https://www.nasdaq.com/articles/adobe-ceo-shantanu-narayen-sells-313-million-stock",
+  },
+  {
+    date: "2026-09-21", category: "TECH",
+    headline: "🟢 CRM Salesforce — Wells Fargo ปรับ PT ขึ้น $230→$250 + ยัง Equal Weight — ตามหลัง Dreamforce FY2030 $63B+ revenue target",
+    summary: "Wells Fargo (Michael Turrin) ปรับ price target ของ Salesforce ขึ้นจาก $230 เป็น $250 (21 ก.ย., ยังคง Equal Weight ไม่ upgrade) — ตามหลัง Dreamforce keynote (16 ก.ย.) ที่ Salesforce ตั้งเป้า FY2030 revenue เกิน $63 พันล้าน + เปิดตัว AIforce (AI-centric CRM integration push) พร้อม Koa เป็น underlying AI engine. แยกกัน Marc Benioff เปิดเผยแผนจะ 'cash in' หุ้น Anthropic ที่ Salesforce ถืออยู่ ซึ่งมีมูลค่าประเมิน 'tens of billions' (Benzinga รายงาน) โดยตั้งใจนำเงินไปโปะหนี้ — สะท้อนว่า Anthropic stake (ลงทุนไว้ก่อนหน้า) เป็นการลงทุนที่ทำกำไรมากที่สุดของ Salesforce เท่าที่เคยมีมา. Benioff ยังออกมาเตือนว่า AI ไม่ควรกลายเป็น 'Social Media 2.0' (เชิงจริยธรรม). นัยพอร์ต: PT ใหม่ $250 (Wells Fargo) ยังต่ำกว่า internal Blended FV $345.77 มาก — สอดคล้องกับที่ Bear เคย flag ว่า Street ยัง conservative กว่าทีม แต่ momentum ข่าวเชิงบวกต่อเนื่อง (AIforce launch, FY2030 target, Anthropic stake) หนุน thesis ระยะยาว ไม่กระทบ FV ทันที.",
+    impact: "POSITIVE", tickers: ["CRM"],
+    url: "https://www.tipranks.com/news/the-fly/salesforce-price-target-raised-to-250-from-230-at-wells-fargo-thefly-news",
+  },
 
   // ── 2026-09-16/22 (Atlas scan 2026-09-22, post-FOMC) ──────────────────────────────
   {
