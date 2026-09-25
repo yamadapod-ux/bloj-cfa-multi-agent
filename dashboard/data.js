@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-09-20";
+const LAST_UPDATED = "2026-09-25";
 
 const REPORTS = [
 
@@ -21708,6 +21708,108 @@ LVS เป็นธุรกิจคุณภาพดีที่เทรด�
 ---
 
 *Charlie — 2026-09-20 | LVS Research Report | บลจ. CFA*
+`
+  },
+  {
+    ticker: "DECK",
+    company: "Deckers Brands",
+    date: "2026-09-25",
+    version: "v2 (Full 5-subagent isolated pipeline rerun of 2026-09-24 v1 — Atlas/Emma/Quinn/Bear/Morgan each fresh context; Morgan ran 3 rounds, 2 real fail-and-fix cycles)",
+    sector: "Consumer Discretionary / Footwear (HOKA + UGG)",
+    bucket: "Value",
+    price: 78.59,
+    recommendation: "HOLD/WAIT",
+    blendedFV: 105.45,
+    mosPct: 34.2,
+    conviction: 6.67,
+    convictionEmma: 6,
+    convictionQuinn: 7,
+    convictionBear: 7,
+    convictionAvg: 6.67,
+    targetBull: 134.63,
+    targetBase: 105.45,
+    stopLoss: 65,
+    pwEV: 98,
+    beta: 1.15,
+    sharpe1Y: -0.85,
+    forwardSharpe: 0.473,
+    maxDrawdown: -0.35,
+    moat: "Narrow",
+    esgRating: "Low Risk",
+    esgScore: 12.24,
+    macroRegime: "RISK-ON (3/4 majority, re-called 2026-09-25)",
+    sp500Reference: null,
+    sp500ReferenceNote: "Not independently re-verified this session — see agent_notes/atlas/2026-09-25_regime.md for regime-level indicators (VIX, curve, HY OAS, Fed stance)",
+    revenueGrowthYoY: 5.7,
+    revenueGrowthNote: "Q1 FY2027 revenue +5.7% YoY ($1.02B) — Value bucket (mature FCF-positive business, DCF/FCFF-based), not Growth bucket. Operating income fell 6.04% YoY ($165.3M→$155.3M) despite revenue growth; EPS still rose (+1.1%) only via buyback-driven share count reduction (-7.4%), not operating leverage.",
+    entryZone: "N/A — HOLD/WAIT, no current deploy. Conviction gate fails despite MOS clearing easily.",
+    positionSize: "0% — Conviction 6.67 < 7.0 Value bucket gate FAILS. MOS +34.2% passes easily but dual-gate rule requires BOTH to pass for Value bucket BUY.",
+    keyThesis: "DECK screens genuinely cheap vs peers (P/E fwd 10.7x vs NKE 21.0x/SKX 14.4x; EV/EBITDA 7.08-7.3x vs NKE 11.3x/SKX 9.6x; ROE 42.6% highest in peer set) and Emma's 8-year FCFF DCF (WACC 9.72%, terminal growth 2.2%) reconciles to $134.63/share pure-DCF. But Bear (isolated subagent) surfaced real, NEW deterioration evidence not present in the 2026-09-24 v1 run: a fresh Piper Sandler downgrade to Underweight (PT $85, citing 'cracks in the HOKA TAM'), and On Running accelerating past HOKA in the run-specialty channel — corroborating that HOKA's growth deceleration may be structural competitive erosion, not just cyclical normalization. Same dual-gate-failure pattern as WPM/PGR/DXCM/ABBV/LKQ: MOS passes comfortably, Conviction (6.67) fails the 7.0 Value gate.",
+    topRisk: "HOKA growth durability — Quinn's Sensitivity Matrix shows fair value ranging from $33 (WACC 11.5%/HOKA LT growth 2%) to $365+ (WACC 8.5%/growth 14%), highly convex to HOKA's long-term growth assumption specifically, more than to the discount rate. Emma's Terminal Value = 59% of DCF EV, above the 50% red-flag threshold — a 70bp terminal-growth haircut (2.2%→1.5%) alone moves fair value ~5%. Buyback-masked EPS growth (real operating income declining -6% YoY while EPS still rose via -7.4% share count reduction) means headline earnings beats may not reflect genuine operating improvement.",
+    reportFile: "../reports/DECK_2026-09-25_v2_full_pipeline.md",
+    businessSummary: {
+      oneLiner: "Deckers Brands เป็นเจ้าของแบรนด์รองเท้า HOKA (running/performance) และ UGG (lifestyle/casual) — สองแบรนด์ที่มีอัตรากำไรสูงและ brand loyalty แข็งแกร่ง",
+      analogy: "เหมือนบริษัทที่มี 2 แบรนด์รองเท้าคนละกลุ่มลูกค้า — HOKA สำหรับนักวิ่ง/นักกีฬาที่ยอมจ่ายแพงเพื่อ performance, UGG สำหรับลูกค้าทั่วไปที่ซื้อเพราะความสบาย/แฟชั่น — กระจายความเสี่ยงระหว่าง performance-wear กับ lifestyle-wear",
+      moneyFlow: [
+        "HOKA ขายผ่านทั้ง DTC (direct-to-consumer, margin สูง) และ wholesale (run-specialty stores, margin ต่ำกว่าแต่ reach กว้าง)",
+        "UGG ขายตามฤดูกาล (peak ฤดูหนาว) ผ่าน DTC + department stores + wholesale",
+        "กำไรหลักมาจาก brand premium pricing — ต้นทุนผลิต (Vietnam/Asia contract manufacturing) ต่ำกว่าราคาขายปลีกมาก",
+        "UGG จริงๆ สร้าง operating income มากกว่า HOKA (38.2% margin vs HOKA 35.2%) แม้ narrative ตลาดจะโฟกัสที่ HOKA growth story"
+      ],
+      whyDifferent: "Brand-intangible-asset moat (Narrow, confirmed Morningstar) — ไม่ใช่ cost advantage หรือ network effect แต่เป็น brand loyalty + performance credibility (HOKA ในกลุ่มนักวิ่ง) ที่ยังไม่แข็งแกร่งพอจะกัน fast-follower อย่าง On Running/Nike ที่กำลังแย่งส่วนแบ่งตลาดในช่อง run-specialty",
+      simpleRisk: "HOKA คือ growth story หลักที่ตลาดจ่ายพรีเมียมให้ — ถ้าการเติบโตชะลอตัวแบบถาวร (ไม่ใช่แค่ normalize ตามฤดูกาล) เพราะ On Running และคู่แข่งอื่นแย่งส่วนแบ่งตลาดจริง จะกระทบ valuation ทั้งบริษัทเพราะ Terminal Value ผูกกับสมมติฐานการเติบโตของ HOKA เป็นหลัก"
+    },
+    thesisBullets: [
+      { title: "Genuinely cheap vs peers on every key multiple", why: "P/E fwd 10.7x vs NKE 21.0x/SKX 14.4x; EV/EBITDA 7.08-7.3x vs NKE 11.3x/SKX 9.6x; ROE 42.6% highest in peer set — DECK is cheap despite superior, not inferior, business quality metrics" },
+      { title: "UGG under-appreciated — generates more op-income $ than HOKA", why: "UGG $2.739B net sales/38.2% margin vs HOKA $2.587B/35.2% margin — market narrative over-indexes on HOKA growth story while UGG is the higher-margin, more mature cash generator" },
+      { title: "Full 8-year FCFF DCF reconciles to $134.63/share", why: "WACC 9.72% (CAPM build-up, beta 1.15, Rf 5.17%), terminal growth 2.2% (within CFA 1-3% band) — Sum PV explicit FCF $7.54B + PV terminal $11.05B = $145.71/share pure-DCF, blended 60/40 with $118 peer-relative" },
+      { title: "MOS clears easily at +34.2%", why: "Blended FV $105.45 vs price $78.59 — the MOS gate is not the binding constraint here" }
+    ],
+    bearRisks: [
+      { title: "NEW: Piper Sandler downgrade to Underweight, PT $85", why: "Cites 'cracks in the HOKA TAM', calls promotional activity 'unhealthy' — a fresh negative data point not present in the 2026-09-24 v1 analysis" },
+      { title: "On Running accelerating past HOKA in run-specialty channel", why: "Directionally credible competitive-erosion evidence (specific +112%/+41% split flagged by Morgan QA as numerically unverified beyond 1 source, but the broader trend of HOKA losing run-specialty share to On/Nike/Topo is documented)" },
+      { title: "Buyback-masked EPS growth", why: "Q1 FY2027: operating income -6.04% YoY ($165.3M→$155.3M) while EPS still rose +1.1% ($0.93→$0.94) purely via -7.4% share count reduction from a $338M buyback, not genuine operating leverage" },
+      { title: "Terminal Value = 59% of DCF EV — convex to HOKA growth durability", why: "Quinn's 5x5 sensitivity matrix ranges $33-$365+ depending primarily on HOKA long-term growth assumption; a 70bp terminal-growth haircut alone moves fair value ~5%" }
+    ],
+    esgBreakdown: { e: 3.2, s: 5.77, g: 3.27, overall: 12.24 },
+    esgBreakdownNote: "Sustainalytics Overall ESG Risk Score 12.24 = Low Risk (scale runs 0-40+, Low Risk is <20). Historically a Sustainalytics 'Top-Rated ESG Company' per 2023 annual report. No FV adjustment warranted — ESG is a mild positive, not a thesis-moving factor either way for DECK.",
+    competitorData: [
+      { ticker: "DECK", company: "Deckers Brands", revenueGrowth: 5.7, operatingMargin: 20, marketCap: 11000 },
+      { ticker: "NKE", company: "Nike Inc.", revenueGrowth: null, operatingMargin: null, marketCap: null },
+      { ticker: "SKX", company: "Skechers", revenueGrowth: null, operatingMargin: 10, marketCap: null }
+    ],
+    bullFlipTriggers: [
+      "HOKA growth re-accelerates above mid-teens for 2 consecutive quarters WITH margin expansion (not buyback-driven EPS)",
+      "FY27 operating margin guided back to 22%+ on genuine operating leverage",
+      "Tariff resolution removes the unhedged Vietnam-sourcing cost headwind"
+    ],
+    thesisInvalidation: "HOKA revenue growth deceleration proves structural (continued share loss to On Running/Nike in run-specialty channel over 2+ quarters) rather than cyclical/seasonal normalization",
+    fullContent: `# 👟 DECK — Deckers Brands — FULL 9-Agent Pipeline Run (v2, isolated subagents)
+### Equity Research Report · บลจ. CFA Multi-Strategy Aggressive Growth
+
+**Bucket: VALUE** · Re-run 2026-09-25 using isolated subagents for ALL 9 roles (Atlas/Emma/Quinn/Bear/Morgan), to compare rigor against the v1 report (2026-09-24)
+
+Full report with complete DCF model, Sensitivity Matrix 5×5, Peer Comparison, ESG Scorecard, Catalysts Calendar, Anti-Convergence Check, and 3 rounds of Morgan QA (2 real fail-and-fix cycles — Sharpe/WACC conceptual error caught Round 2; Emma's FV-blend reconciliation gap caught Round 3 reading the actual on-disk file) is available at reports/DECK_2026-09-25_v2_full_pipeline.md.
+
+## 🎯 คำแนะนำ
+| Recommendation | Blended FV | MOS | Conviction |
+|---|---|---|---|
+| **HOLD/WAIT — MOS gate PASSES, Conviction gate FAILS** | $105.45 | +34.2% | 6.67/10 (< 7.0 gate) |
+
+## 📊 Score Dashboard
+| Analyst | Fair Value | Conviction |
+|---|---|---|
+| Emma (8-yr FCFF DCF) | $134.63 | 6/10 |
+| Quinn (3-scenario P-W EV) | $98 | 7/10 |
+| Bear (independent, TV stress test) | $74 | 7/10 |
+| **Blended (40/30/30)** | **$105.45** | **6.67 (avg)** |
+
+## 🏁 Conclusion
+DECK remains a HOLD/WAIT — MOS clears easily (+34.2%) but conviction (6.67) fails the Value bucket gate (≥7.0), consistent with the recurring dual-gate-failure pattern (WPM/PGR/DXCM/ABBV/LKQ). Went through 3 QA rounds and 2 real fail-and-fix cycles, surfacing genuinely new evidence (Piper Sandler downgrade, On Running channel-share data) that v1 (2026-09-24) did not have.
+
+**Status: HOLD/WAIT — logged to watchlist, not deployed.**
+
+*Charlie — 2026-09-25 | DECK v2 Full Pipeline Research Report | บลจ. CFA*
 `
   }
 
