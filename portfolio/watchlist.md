@@ -1855,7 +1855,7 @@ ADBE, NOW, GOOGL, CRM, RDDT, REGN, ACN, ADSK, BAH, MCO, EOG, PGR, DVN, NEM, GD, 
 | Ticker | Sector | เหตุผลที่ตกรอบ | ปัญหาหลัก |
 |--------|--------|---------------|-----------|
 | **WING** (Wingstop) | Restaurant Franchise | Rev growth จริงแค่ +6.4% Q2 2026 (+7.4% Q1) << 20% Growth threshold แม้ analyst คาด forward 16.2%; ราคาอยู่ใกล้ 52w high (+7.48% ใน 52 สัปดาห์ ไม่มี pullback) | Growth ไม่ถึงเกณฑ์ + ไม่มี MOS ด้าน price |
-| **DECK** (Deckers Brands / HOKA) | Apparel / Footwear | Rev growth เพียง +10% FY26 (HOKA +16%, UGG +8%) << 20% Growth threshold; ไม่ได้ down มากพอสำหรับ deep-value Value-bucket case (เทรดที่ P/E 13.9x ซึ่งไม่แพงแต่ก็ไม่ใช่ deep pullback ชัดเจนแบบ NKE) | Growth ไม่ถึงเกณฑ์ Growth bucket, ไม่ deep-value พอสำหรับ Value bucket |
+| **DECK** (Deckers Brands / HOKA) | Apparel / Footwear | Rev growth เพียง +10% FY26 (HOKA +16%, UGG +8%) << 20% Growth threshold; ไม่ได้ down มากพอสำหรับ deep-value Value-bucket case (เทรดที่ P/E 13.9x ซึ่งไม่แพงแต่ก็ไม่ใช่ deep pullback ชัดเจนแบบ NKE) | Growth ไม่ถึงเกณฑ์ Growth bucket, ไม่ deep-value พอสำหรับ Value bucket — **SUPERSEDED 2026-09-25: full Value-bucket pipeline (8yr FCFF DCF) รันจริง ไม่ได้ผ่าน scout screen นี้ — ผล HOLD/WAIT, MOS +34.2% ผ่าน, Conviction 6.67<7.0 ไม่ผ่าน gate — ดู `buy_list.md` + `reports/DECK_2026-09-25_v2_full_pipeline.md`** |
 
 ### Sector Coverage Update (2026-07-30)
 
