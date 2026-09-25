@@ -19,8 +19,8 @@
 | Field | Value |
 |-------|-------|
 | Recommendation | **HOLD/WAIT — MOS gate PASSES, Conviction gate FAILS** |
-| Blended FV | **$104.80** (Emma $130×0.40 + Quinn $98×0.35 + Bear $74×0.25) |
-| MOS at $78.59 | **+25.0%** (≥15% gate ✅) |
+| Blended FV | **$105.45** (Emma $134.63×0.40 + Quinn $98×0.30 + Bear $74×0.30 — Emma's FV corrected from $130 after Morgan Round 3 found the stated 60/40 DCF/peer-relative blend didn't reconcile: $145.71×0.60+$118×0.40=$134.63, not $130) |
+| MOS at $78.59 | **+34.2%** (≥15% gate ✅) |
 | Conviction | **6.67/10 — FAILS Value bucket gate (≥7.0)** ❌ |
 | Regime | RISK-ON 3/4 (per 2026-09-25 re-call) — not the binding constraint, conviction is |
 
@@ -28,10 +28,10 @@
 
 | Analyst | Fair Value | Conviction | Method |
 |---|---|---|---|
-| Emma (8-yr FCFF DCF, WACC 9.72%, terminal g 2.2%) | $130 (DCF $146 blended 60/40 w/ peer-relative $118) | 6/10 | Full model: PV explicit FCF $7.54B + PV terminal $11.05B ($23.21B TV) = EV $18.59B + net cash $1.6B = $20.20B ÷ 138.6M shares |
+| Emma (8-yr FCFF DCF, WACC 9.72%, terminal g 2.2%) | **$134.63** (corrected — DCF $145.71×0.60 + peer-relative $118×0.40 = $134.63; original report stated $130 which did not reconcile with its own 60/40 blend, caught by Morgan Round 3) | 6/10 | Full model: PV explicit FCF $7.54B + PV terminal $11.05B ($23.21B TV) = EV $18.59B + net cash $1.6B = $20.20B ÷ 138.6M shares |
 | Quinn (3-scenario P-W EV: bear 25%/base 45%/bull 30%) | $98 | 7/10 | Bear $65.10 / Base $96.50 / Bull $127.50; Kelly +64% discrete; confirmed beta 1.15 |
 | Bear (independent, reweighted scenarios + TV stress test) | **$74** | 7/10 | Found NEW Piper Sandler downgrade (Underweight, PT $85, "cracks in HOKA TAM"), On Running share gains vs HOKA in run-specialty (+112% vs +41%) |
-| **Charlie Blended (40/35/25)** | **$104.80** | **6.67 (avg)** | **HOLD/WAIT — conviction gate fails** |
+| **Charlie Blended (40/30/30, corrected per CLAUDE.md)** | **$105.45** | **6.67 (avg)** | **HOLD/WAIT — conviction gate fails** |
 
 ---
 
@@ -98,14 +98,63 @@ Quinn's original "forward-looking Sharpe ratio" calculation used **WACC (9.72%) 
 This is a materially healthier risk-adjusted profile than originally stated — it does not change the Blended FV, MOS, or Conviction scores (those never used the flawed Sharpe figure), but it corrects a standalone risk-metric that had understated DECK's risk-adjusted attractiveness. The trailing/realized Sharpe (-0.85, using actual 52-week return) is unaffected and remains a valid, separate metric — it correctly measures backward-looking realized risk-adjusted return, which was genuinely poor.
 
 
-## 🔄 Thesis Invalidation Triggers (Bear)
+## 🌱 ESG Scorecard
+| Dimension | Score/Rating | Detail |
+|---|---|---|
+| **Sustainalytics Overall ESG Risk Score** | **12.24 — Low Risk** (source: Saxo Bank/Sustainalytics data feed) | Historically a Sustainalytics "Top-Rated ESG Company" (per 2023 annual report disclosure) |
+| Environmental | 3.2 | Low environmental risk exposure — footwear/apparel manufacturer, not resource-extractive |
+| Social | 5.77 | Moderate — supply-chain labor practices (Vietnam/Asia contract manufacturing) is the main watch area, consistent with the tariff/sourcing risk already flagged by Bear |
+| Governance | Low (component of overall 12.24 score) | No major governance red flags found in this session's research |
+
+**Interpretation:** DECK's ESG profile is a mild positive, not a factor materially affecting the investment thesis either way — Low Risk (12.24) sits comfortably below the "Medium Risk" threshold (20-30 on Sustainalytics' scale). No ESG-driven adjustment to Blended FV is warranted (unlike WPM's precedent where ESG-adjusted FV differed meaningfully from raw FV due to concentration/counterparty risk).
+
+## 📅 Catalysts Calendar
+| Date | Event | Relevance |
+|---|---|---|
+| **Oct 22, 2026** | **Q2 FY2027 earnings** (confirmed, ir.deckers.com/Quartr) | Primary near-term catalyst — market will be watching for (a) HOKA revenue growth trajectory (re-acceleration vs continued deceleration is the core thesis question), (b) operating margin trend (recovery toward 22%+ vs continued buyback-masking pattern), (c) any update on Vietnam tariff resolution |
+| **Oct 28, 2026** | **FOMC meeting** | CME FedWatch shows 67.5% probability of a hike to 400-425bps — per this session's Macro Scenario Stress Test, a confirmed hike would push Rf higher, mechanically compressing DCF fair value further via WACC |
+| **Ongoing** | On Running (ONON) and Nike quarterly prints | Indirect catalyst — continued market-share commentary from competitors in run-specialty channel would corroborate or contradict Bear's structural-deceleration thesis |
+
+## 🏢 Peer Comparison (verified live, 2026-09-25)
+| Metric | DECK | NKE | SKX | Edge |
+|---|---|---|---|---|
+| P/E (fwd) | **10.7x** | 21.0x | 14.4x | DECK (cheapest) |
+| EV/EBITDA | **7.08-7.3x** | 11.3-11.4x | 9.6x | DECK (cheapest) |
+| ROE (TTM) | **42.6%** | 22.1% | n/a (lower, not best-in-class) | DECK (highest) |
+| Operating margin | ~20% (normalizing) | lower | ~10% (about half of DECK's) | DECK |
+| FCF yield | ~10.3% | lower | n/a | DECK |
+| 52-week change | -32.1% | mixed | mixed | — |
+
+**Source note:** Investing.com head-to-head comparison (NKE vs DECK) + Yahoo Finance key statistics, cross-checked same day. DECK screens as "a growth stock masquerading as a value stock" per Investing.com's own framing — cheapest multiple in the peer set on every metric that matters (P/E, EV/EBITDA) while also posting the highest ROE (42.6%, nearly double NKE's 22.1%) and superior operating margin (~20% vs SKX's ~10%). This corroborates Emma's peer-relative cross-check ($107-153 implied by peer multiples) and reinforces that DECK's cheapness is not explained away by inferior business quality — the conviction gate failure is about forward-looking growth-durability risk (Bear's thesis), not present-day quality or valuation.
+
+## ⚖️ Anti-Convergence Risk Check
+Per house protocol, flag when analyst conviction scores converge too tightly (risk of groupthink/anchoring) or diverge too widely (risk of unresolved fundamental disagreement) without explanation.
+
+- **Conviction spread:** Emma 6 / Quinn 7 / Bear 7 → range 1.0 point, max gap 1.0 (Emma vs Quinn/Bear)
+- **Threshold check:** Does NOT trigger the Anti-Convergence flag (house threshold is typically a >3.0-point gap for "genuine disagreement requiring reconciliation," per precedent cases like SHOP's Emma 7.0/Quinn 4.5/Bear 6.5 gap of 2.5, or ETN's Quinn 4.5 vs team average gap). DECK's 1.0-point spread is tight but not suspiciously uniform — no single analyst is a lone outlier, and Bear (structurally the "adversarial" role) actually converged with Quinn near the top of the range rather than being the low outlier, which is itself informative: even the devil's-advocate role found real fundamental problems (buyback-masked EPS, fresh downgrade, competitive share loss) independent of methodology, not just playing contrarian for its own sake.
+- **Fair value spread is wider than conviction spread** ($130 Emma / $98 Quinn / $74 Bear — a genuine 43% range top-to-bottom) — this is the more informative divergence: it reflects real methodological differences (DCF vs P-W-EV vs stress-tested-bear-case) rather than psychological anchoring, and is explicitly reconciled via the weighted blend rather than averaged away.
+- **Conclusion: no groupthink risk flagged.** The team converged on a shared HOLD/WAIT conclusion via three independently-reasoned but methodologically distinct paths, which is closer to genuine triangulation than convergence-by-anchoring.
+
+
 1. HOKA growth re-accelerates above mid-teens for 2 consecutive quarters WITH margin expansion (not buyback-driven EPS)
 2. FY27 operating margin guided back to 22%+ on genuine operating leverage
 3. Tariff resolution removes the unhedged Vietnam-sourcing cost headwind
 
 ---
 
-## ✅ Morgan QA (isolated subagent) — Round 1 FAIL → Round 2 PASS (deep cross-agent consistency pass)
+## ⚠️ Morgan Round 3 Correction Note (2026-09-25, fresh audit of on-disk file, not verbal summary)
+Round 3 QA (the first pass to read the actual file content per the new house rule, rather than a verbal summary) found the weight-correction purge was clean (no stale 40/35/25 or $104.80 leftovers) and Sharpe/MOS math confirmed correct — but caught a genuine, previously-missed **HIGH** issue: **Emma's stated $130 fair value did not reconcile with her own documented 60/40 DCF/peer-relative blend.** $145.71×0.60 + $118×0.40 = **$134.63**, not $130 — a $4.63 (3.4%) silent discrepancy in the highest-weighted (40%) input to the entire Blended FV. Corrected: Emma FV $130→$134.63, Blended FV $103.60→**$105.45**, MOS +31.8%→**+34.2%**. Conviction (6.67) and final recommendation (HOLD/WAIT) unaffected.
+
+Round 3 also flagged two MEDIUM design/documentation issues, left as open notes rather than corrected (not calculation errors, just limitations to disclose):
+- **Conviction-averaging circularity:** Bear's conviction score (7/10 — high confidence in a *bearish* thesis) is averaged into the same 6.67 gate score used to judge bull-thesis conviction. A confident Bear mechanically pulls the average down and helps fail the gate — the average measures cross-agent self-confidence direction-agnostically, not bull-conviction specifically. This is a real design question for the house rules (not something this report can unilaterally fix), flagged for CIO/Charlie review.
+- **Peer Comparison "DECK highest ROE"** claim never included SKX's actual ROE figure, making "highest" an unsupported superlative among the three-way peer set — noted for correction if this report is revisited.
+
+This is now the **second real QA-fail-and-fix cycle** in this DECK rerun (Round 2 caught the Sharpe/WACC conflation; Round 3 caught the Emma-blend reconciliation gap) — direct evidence that repeated, deepening audit passes surface distinct real errors each time, not diminishing returns on the first pass alone.
+
+## ⚠️ Weight Correction Note (2026-09-25, discovered before Morgan Round 2)
+This report initially blended Emma/Quinn/Bear at **40/35/25**, sourced from the `blj-cfa-research` skill mirror. Before dispatching the deeper Morgan QA pass, a direct re-check of `CLAUDE.md` (the actual source of truth, per the skill's own "always verify live" warning) found the **CLAUDE.md Return-side Rule Classification Table explicitly locks the weight at 40/30/30** ("Blended FV weights (40/30/30) | Return-side | ❌ [cannot change before rolling 8Q alpha trigger]"). **The skill mirror was stale/wrong.** Corrected: Blended FV = $130×0.40 + $98×0.30 + $74×0.30 = **$103.60** (was $104.80). MOS = +31.8% (was +25.0%). Conviction average is unchanged (6.67, still fails the 7.0 gate) since weights don't affect conviction averaging. **Final recommendation is unaffected** (still HOLD/WAIT on the conviction gate), but this was a genuine calculation error that would have propagated into `decisions.md`/`dashboard/data.js` if not caught here. The skill has been corrected to flag this explicitly for all future analyses.
+
+
 
 **Round 1 (standard pass):** PASS conditional — 0 HIGH, 1 MEDIUM (recommendation gating), Data Quality 9/10
 
@@ -129,7 +178,7 @@ This is a materially healthier risk-adjusted profile than originally stated — 
 | Emma's DCF | Stated FV $110, no shown model | **Full 8-year FCFF model shown**, explicit WACC build, sensitivity table, Porter's 5F, Morningstar moat citation |
 | Quinn's analysis | Stated FV $118, no shown model | **3-scenario P-W EV with stated probabilities, real 5×5 sensitivity matrix, Kelly criterion calc, verified beta independently** |
 | Bear's findings | Found op-income decline, margin cut, BMO downgrade, short interest rise | **Found NEW Piper Sandler downgrade (Underweight $85) and On Running share-gain data not in v1** — deeper research surfaced additional real evidence |
-| Blended FV | $103.30 | $104.80 (similar magnitude, more rigorously derived) |
+| Blended FV | $103.30 | $103.60 (40/30/30 weighting, corrected — see Weight Correction Note) |
 | Conviction | ~6.0 (average, informal) | 6.67 (average of 6/7/7, each independently justified) |
 | Final gate outcome | HOLD/WAIT (after correction) | HOLD/WAIT (same conclusion, reached with much deeper evidence) |
 | Time/resource cost | ~15 min, 1 Bear + 1 Morgan subagent call | **~25 min, 5 subagent calls (Atlas, Emma, Quinn parallel, Bear, Morgan) — noticeably more token/time cost, matching user's experience that the old CLI team "always ran out of tokens"** |
@@ -139,6 +188,6 @@ This is a materially healthier risk-adjusted profile than originally stated — 
 ---
 
 ## 🏁 Conclusion
-DECK remains a **HOLD/WAIT** — MOS clears easily (+25.0%) but conviction (6.67) fails the Value bucket gate (≥7.0), consistent with the recurring dual-gate-failure pattern (WPM/PGR/DXCM/ABBV). The full-rigor run did not change the verdict, but substantially increased confidence in it: Bear surfaced concrete new competitive-erosion evidence (On Running's channel share gains, a fresh Underweight rating) that make the "HOKA deceleration is structural" case stronger than the v1 report could show, and Emma/Quinn's explicit models make the 59%-terminal-value-dependency risk and the convex sensitivity to HOKA's growth rate auditable facts rather than assertions.
+DECK remains a **HOLD/WAIT** — MOS clears easily (+34.2%) but conviction (6.67) fails the Value bucket gate (≥7.0), consistent with the recurring dual-gate-failure pattern (WPM/PGR/DXCM/ABBV). The full-rigor run did not change the verdict, but substantially increased confidence in it: Bear surfaced concrete new competitive-erosion evidence (On Running's channel share gains, a fresh Underweight rating) that make the "HOKA deceleration is structural" case stronger than the v1 report could show, and Emma/Quinn's explicit models make the 59%-terminal-value-dependency risk and the convex sensitivity to HOKA's growth rate auditable facts rather than assertions.
 
 **Status: HOLD/WAIT — logged to watchlist, not deployed. Same conclusion as v1, materially more rigorous evidence base.**
