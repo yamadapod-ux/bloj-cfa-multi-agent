@@ -4,7 +4,7 @@
 >
 > **🔴 UPDATE 2026-09-11 (Max Consultation completed — Re-Analysis Trigger Rule batch):** **ACN — FULL EXIT** (SELL remaining 1.4sh @ $177.76, Risk Rule 3 thesis-change — CEO publicly contradicted core thesis, Moat WIDE→NARROW, Conviction 7.17→5.17, Blended FV $252.35→$199.51, MOS +12.2% <15% gate. Not panic — Thesis Invalidation strictly 0/3, real downside support. Max×Charlie reconciled full exit over partial trim.) Realized -$0.57 this tranche, lifetime cumulative -$70.82. **REGN — STRONG SELL territory RESOLVED** (Blended FV $792→$889 on fresh Q2 EPS +36% surprise data, MOS -4.5%→+11.8%, was a stale-FV artifact not real overvaluation, HOLD 0.42sh unchanged, no action). Regime re-call (Atlas 2026-09-11): TRANSITIONAL-CAUTIOUS confirmed. **Detail:** `portfolio/decisions.md` (Re-Analysis Log rows) · `portfolio/deployment_log.md` (Max Consultation reconciliation) · `reports/ACN_2026-06-05.md` + `reports/REGN_2026-06-03.md` + `reports/GOOGL_2026-05-21.md` (Update Logs) · `dashboard/portfolio.js`.
 
-*Managed by Max | Updated: 2026-09-25 (Portfolio Review Mode 3 — full re-mark to Sept 24 2026 close, no trades. 2-source cross-checked all 5 tickers. Cash accrued 1 day @ 3.8% Cash Yield Rule: $7,573.01 → **$7,573.80**. Invested $2,650.78 (5 positions). Total $10,287.49 → **$10,224.58** (-0.61%). S&P 500 $7,764.70 → **$7,704.13** (-0.78%). Total Return 2.87% → **2.25%**. sp500Return 4.99% → **4.13%**. Alpha -2.07% → **-1.88%** [ดีขึ้นเล็กน้อย, พอร์ตย่อช้ากว่า S&P รอบนี้ ไม่ใช่สัญญาณบวกมีนัยสำคัญ]. ไม่มี stop breach, ไม่มี Re-Analysis trigger, ⚠️ Atlas regime re-call ค้างมา 9 วันแล้วตั้งแต่ FOMC 9/16 — escalated. Detail: `dashboard/portfolio.js` dataIntegrityLog + Portfolio Review section below.)*
+*Managed by Max | Updated: 2026-09-26 (Portfolio Review Mode 3 — full re-mark to Sept 25 2026 close, no trades. 2-source cross-checked all 5 tickers, all 0.00% diff. Cash accrued 1 day @ 3.8% Cash Yield Rule: $7,573.80 → **$7,574.59**. Invested $2,613.22 (5 positions). Total $10,224.58 → **$10,187.81** (-0.36%). S&P 500 $7,704.13 → **$7,743.41** (+0.51%). Total Return 2.25% → **1.88%**. sp500Return 4.13% → **4.66%**. Alpha -1.88% → **-2.78%** [แย่ลง — พอร์ตย่อทุกตัวพร้อมกัน ~1-1.8% ขณะ S&P บวก, sector rotation ไม่ใช่สัญญาณ thesis เปลี่ยน]. ไม่มี stop breach, ไม่มี Re-Analysis trigger. ⚠️ Atlas regime re-call ปิดแล้ว 2026-09-25 (RISK-ON) — ดู update ด้านล่าง. Detail: `dashboard/portfolio.js` dataIntegrityLog + Portfolio Review section below.)*
 
 <!-- prior update note (2026-09-22): Portfolio Review Mode 3 — full re-mark to Sept 21 2026 close, no trades. Sector rotation REVERSED from 09-15: Meta's Muse AI agent success (stock +11.43% 9/21, AMD >$1T mkt cap) reignited AI-hardware sentiment — capital rotated back OUT of enterprise software: ADBE -6.05% $249.52, NOW -3.28% $137.68, CRM -7.72% $239.40, ADSK -4.38% $218.90; only REGN gained +0.54% $797.99. S&P 500 rose +1.49% to $7,764.70. Total $10,348.98 → $10,197.62 (-1.46%). Alpha +0.50% → -2.97% (REVERSED). Cash $7,483.14 (73.38%). ADSK MOS resolved +1.30%. NOW MOS -9.57% STRONG SELL continues. No stop breaches, every stopDist ≥25%. Re-Analysis Trigger Check 0/5 fire. FOMC hiked 25bps to 3.75-4% on 9/16 — regime re-call overdue. -->
 
@@ -13,6 +13,54 @@
 <!-- prior update note (2026-09-09): Portfolio Review Mode 3 — full re-mark to Sept 8 2026 close, no trades. Software-led risk-off day (oil spike Brent ~$99 + Middle East/Saudi energy attacks + 10Y near 2-decade high; S&P 500 -0.58%): ADBE -6.7% / NOW -7.8% / CRM -3.9% / ACN -7% / GOOGL -2.1%. Total $10,513.50 → $10,299.95 (-2.03%) · S&P 500 7,747.71(9/3 basis) → 7,673.52 (Sept 8 close, -0.58% day) · Alpha +0.42% → -0.71% (FLIPPED NEGATIVE first time — single reading = NOISE per Pre-commitment Rule, NOT a trigger). Cash $6,894.47 (66.9%). Invested $3,405.48 (7 positions). GOOGL stopDist 7.56% (deepest ever, NOT breached). NOW MOS -6.8% / REGN MOS -4.5% STRONG SELL territory. ADBE weight 10.36%. Data quality flags (NOW/GOOGL/REGN/ACN single-source; ADSK unverified) — RESOLVED in subsequent sessions (09-11/09-12/09-13 all used 2-source verified prices). Regime staleness flag — RESOLVED 2026-09-11 (Atlas formal re-call TC confirmed). -->
 
 <!-- prior update note (2026-09-04): full re-mark from Sept 3 close, Total $10,547.33→$10,513.50 (-0.32%), S&P 7,699.64, Alpha +1.07%. GOOGL -11.94% + REGN pullback offsetting NOW +62.7%/CRM +46.1%/ADSK +19.7%/ADBE +15.7%/ACN +8.4%). No stop breaches — GOOGL stopDist 9.48% still <10% WATCH (4th consecutive review). 🚩 REGN MOS deepened -0.89%→-6.50% (Trigger #2 now clearly firing, FV likely too LOW) — top re-verify priority confirmed. Regime = TRANSITIONAL-CAUTIOUS (Atlas formal re-call 2026-09-03, fresh not carried-over — knife-edge 3/4 RISK-ON override). Cash 65.58%, well above 25% TC floor, deliberate hold into Sept 16-17 FOMC. Batch Emma FV re-verify (commissioned 2026-09-01) still outstanding — no trade this session. -->
+
+## 📊 Portfolio Review — 2026-09-26 (Mode 3 — Full Re-mark, No Trades) — Regime Now RISK-ON, Software Continues to Cool, Alpha Widens
+
+> **Regime = 🟢 RISK-ON** (Atlas formal re-call 2026-09-25 — `agent_notes/atlas/2026-09-25_regime.md`. 3/4 majority: VIX 15.46 🟢, Yield Curve +0.31% 🟢, HY OAS 273bps 🟢, vs Fed Stance 🔴 hiking cycle active. Cash Floor 10%, Position Multiplier 1.0x, Force Deploy ACTIVE.) All 5 OPEN positions re-priced from **Sept 25 2026 close**, 2-source cross-checked (Yahoo Finance/stockanalysis.com/TradingEconomics/Investing.com — every ticker 0.00% diff across ≥2 sources, tightest verification round to date). **No trades this session — Review Mode is price/metric update only.**
+
+| Ticker | Prior ($, 9/24) | Current ($, 9/25) | Day Move | Return % | MOS % | StopDist % |
+|--------|-----------------|--------------------|----------|----------|-------|------------|
+| ADBE | $238.93 | **$235.47** | -1.45% | -4.68% | +36.19% | 27.28% |
+| NOW | $137.78 | **$135.62** | -1.57% | +51.58% | -7.93% 🟠 | 45.83% |
+| CRM | $238.22 | **$234.02** | -1.76% | +29.29% | +32.32% | 61.62% |
+| REGN | $796.02 | **$788.04** | -1.00% | +30.90% | +11.36% | 63.50% |
+| ADSK | $211.79 | **$209.40** | -1.13% | +5.53% | +5.59% | 31.92% |
+
+S&P 500 closed **$7,743.41** (Sept 25 2026, Yahoo Finance historical + Investing.com, 0.00%-0.01% diff) — up +0.51% from Sept 24's $7,704.13, a strong Friday close (weekly win, Dow/Nasdaq also up). All 5 OPEN positions fell in unison (-1.0% to -1.8%) on the same day the benchmark rose — a broad software-sector cooldown (Invezz/TradingView coverage this week explicitly flags Adobe/Salesforce/ServiceNow/Atlassian "crashing" on slowing growth-momentum concerns, tied to the same theme flagged in recent news.js entries) with no single-name catalyst found for any of the 5. This is why alpha widened negative this round.
+
+### 🟠 NOW — STRONG SELL territory persists (flag only, no action)
+
+MOS -8.80%→**-7.93%**, essentially flat (price $137.78→$135.62, FV unchanged $125.65, fvVerifiedDate 2026-08-24, now 32 days old — still well under 90-day threshold). Same recurring pattern since August — already TRIMMED 50%, residual weight only 1.28%, no Max Consultation Rule trigger (weight too immaterial).
+
+### HOLD — no action on all 5 positions
+
+ADBE (MOS +36.19%, still very healthy despite the pullback, weight eased to 9.15%), NOW (MOS -7.93% STRONG SELL but tiny weight, already trimmed, recurring non-issue), CRM (MOS +32.32%, healthy, stopDist 61.62% safest in book), REGN (MOS +11.36%, below 15% add-gate but no sell pressure), ADSK (MOS +5.59%, thin but positive, still tightest buffer in book).
+
+### 🔍 Re-Analysis Trigger Check — 0 of 5 positions fire any trigger
+
+| Ticker | Fired | Detail |
+|--------|-------|--------|
+| ADBE | ✅ none | fvVerifiedDate 2026-09-11 (15 days old). No new earnings since. Price divergence from re-verify price well under threshold. |
+| NOW | ✅ none | fvVerifiedDate 2026-08-24 (32 days old, well under 90d). No new earnings (next est. Oct 28, 2026). MOS negative but FV age <90d so trigger #2 does not fire. |
+| CRM | ✅ none | fvVerifiedDate 2026-09-11 (15 days old). No new earnings since Q2 FY27 (already modeled). Price divergence minor. |
+| REGN | ✅ none | fvVerifiedDate 2026-09-11 (15 days old). Q3 2026 earnings date confirmed for Oct 30 (not yet reported) — no new earnings trigger yet. Price divergence minor. |
+| ADSK | ✅ none | fvVerifiedDate 2026-09-12 (14 days old). No new earnings (next current-RPO print expected Nov 2026, Q3 FY27). Price divergence minor. |
+
+ทั้ง 5 positions ผ่านเกณฑ์ ไม่มี trigger
+
+### ✅ Atlas regime re-call gap closed — Regime now RISK-ON
+
+The 9-day-overdue regime re-call flagged in the last 3 reviews (09-22, 09-24, 09-25) was closed same-day 2026-09-25 — see `agent_notes/atlas/2026-09-25_regime.md`. Regime is now **RISK-ON** (cash floor 10%, multiplier 1.0x, Force Deploy ACTIVE). Cash 74.35% is well above the 30% Force Deploy trigger — Max/Charlie should evaluate `watchlist.md` Pending Analysis candidates (CLS, NET, LITE, GLW) against conviction gates next session; this Review does not itself trigger any trade.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,573.80 accrues at the money-market/T-bill proxy rate (3.8%) for the 1 day since the last review (2026-09-25→2026-09-26): $7,573.80 × 3.8%/365 × 1 = **+$0.79**. Cash $7,573.80→**$7,574.59**.
+
+### Max's Take
+
+รอบนี้ราคาทั้ง 5 ตัวย่อพร้อมกันแบบไม่มาก (-1.0% ถึง -1.8%) ในวันที่ S&P 500 กลับบวก (+0.51%) — เป็น broad enterprise-software cooldown ตามที่สื่อหลายสำนักรายงานสัปดาห์นี้ (Adobe/Salesforce/ServiceNow ถูกจับตาเรื่อง growth-momentum ชะลอตัว) ไม่ใช่สัญญาณเฉพาะตัวหุ้นไหนเลย — ไม่มี stop breach (ADBE stopDist แคบสุดที่ 27.28% ยังปลอดภัยมาก), ไม่มี Re-Analysis trigger ใหม่. ข่าวดีของ session นี้คือ Atlas ปิด gap regime re-call ที่ค้างมา 9 วันได้แล้วเมื่อวาน (2026-09-25) — Regime เปลี่ยนเป็น RISK-ON อย่างเป็นทางการ, cash floor ลดเหลือ 10%, Force Deploy กลับมา active. Cash ตอนนี้ 74.35% เกิน 30% trigger มาก — ควรให้ Charlie ประเมิน watchlist candidates (CLS/NET/LITE/GLW) กับ conviction gate ในรอบถัดไป. Alpha กว้างขึ้นเป็น -2.78% (จาก -1.88%) แต่เป็น sector-rotation noise รอบเดียว ไม่ใช่ trend — ตาม Pre-commitment Rule ต้องรอ rolling 4Q ถึงจะเป็น trigger จริง.
+
+---
 
 ## 📊 Portfolio Review — 2026-09-25 (Mode 3 — Full Re-mark, No Trades) — Software Rally Continues, Alpha Improves But Still Negative
 
