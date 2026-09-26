@@ -144,4 +144,54 @@ Tier 1.5 Learning-Queue (Filter D ambiguous 0.75-0.90× depending on debt treatm
 
 **Checkpoint date:** Target the lightweight analysis within 1-2 sessions (not a 6-month generic checkpoint — this is a live routing decision awaiting the standard Tier 1.5 process, not a park-and-wait item).
 
-*Max — 2026-09-26 | BBWI routed to Tier 1.5 Learning-Queue from Scout Round 36 (Specialty Retail). Lightweight Emma+Bear-lite analysis PENDING — flagged for Charlie to action. Not a formal recommendation yet — no `portfolio/decisions.md` / `dashboard/data.js` entry until lightweight completes per CLAUDE.md § Tier 1.5.*
+*Max — 2026-09-26 | BBWI routed to Tier 1.5 Learning-Queue from Scout Round 36 (Specialty Retail). Lightweight Emma+Bear-lite analysis PENDING — flagged for Charlie to action. Not a formal recommendation yet — no `portfolio/decisions.md` / `dashboard/data.js` entry until lightweight completes per CLAUDE.md § Tier 1.5.
+
+---
+
+## TMUS — T-Mobile US (2026-09-26) — 🚫 CONFIRM REJECT (moved to Archive)
+
+**ที่มา:** Scout Round 34 (Telecom + Regulated Utilities, 2026-09-26). Filter A-D PASS ชัดเจน (beaten-down -31.7% จาก 52W high, FCF yield 10.37%, ROIC improving trend). Filter E ผ่านแค่ 1/3 — moat PASS เท่านั้น, ROIC-spread FAIL, overhang (Starlink direct-to-cell + Deutsche Telekom stake/buyout rumor) unresolved FAIL. CIO ขอ follow-up analysis คืนนี้เพื่อดูว่า overhang resolve หรือยัง.
+
+### Charlie follow-up (2026-09-26) — fresh WebSearch on the 2 open questions
+
+1. **Deutsche Telekom stake/buyout overhang — did it resolve? NO, it escalated.** Fresh search finds: DT/TMUS in early talks for a mega-merger where DT (already owning ~53%) would buy out the remaining public float (Reuters, dated 2026-04-22 — this was already "in motion" before the original scout, not new). What IS new/escalating: activist Elliott Management has built a sizeable stake in Deutsche Telekom specifically to oppose/kill the merger (Bloomberg + FT, 2026-09-02) — both DT and TMUS shares reportedly slipped on the merger-talk headlines. This is a **live, contested, unresolved M&A situation** — the opposite of "resolved." Per CLAUDE.md Tier 1.5 escalation condition (b) "overhang ที่กด Filter E resolve จริง" — this condition is explicitly NOT met.
+2. **Starlink/T-Satellite direct-to-cell competitive threat — did it resolve? Reframed, not resolved either way.** Fresh search shows T-Satellite (T-Mobile's branded Starlink partnership) is scaling as T-Mobile's OWN product/service (not a rival threat displacing T-Mobile) and — notably — now opening the beta to customers of ALL US carriers at $20/mo. This slightly *reduces* T-Mobile's exclusive-access edge (it's becoming closer to a industry-wide utility than a TMUS-only moat feature) but doesn't create a new negative catalyst either. Net: this specific sub-issue is closer to neutral/mixed, not a clean resolution in either direction.
+3. **ROIC-spread sub-criterion (Filter E #2):** Still structurally FAIL on re-check — 5Y average ROIC ~6.96% vs WACC ~7.5-8% (telecom), spread near-zero-to-negative on a 5-year-average basis. The current-quarter print (8.93%) is the best in the improving trend but a single strong quarter doesn't clear the 5-year-average +3pp bar the rule specifies.
+
+### Charlie decision → **CONFIRM REJECT**
+
+- Filter E is still 1/3 after the fresh look — no escalation trigger (a/b/c) from CLAUDE.md Tier 1.5 is met: (a) no lightweight FV was run showing MOS≥25% (naive Filter D was already fast-track-lean, but Filter E is the actual blocker here, not D); (b) overhang did NOT resolve — it escalated into a contested mega-merger; (c) price hasn't pulled back an additional ≥15% since scout (still near the same 52W-low level noted at scout).
+- Given the overhang is now a genuinely bigger unknown (an activist-opposed control transaction with no timeline) rather than a smaller one, spending Tier 1.5 lightweight budget (Emma+Bear-lite, ~140-165K tokens per LKQ/NVR/BSX precedent) on this name now would very likely just re-confirm the same conclusion — not escalating straight to lightweight, going straight to CONFIRM REJECT is the more disciplined resource call here (this is a routing judgment, consistent with Charlie's Tier 1 role of not spawning unnecessary agent work).
+- **Not promoted to full pipeline. No BUY.** Moved to Archive with reasoning (see `portfolio/watchlist.md` § Archive).
+
+*Charlie — 2026-09-26 | TMUS Learning-Queue → CONFIRM REJECT. Filter E overhang (DT buyout contest + Starlink reframe) re-checked live, found to have escalated not resolved; ROIC-spread still structurally FAIL on 5Y-avg basis. No escalation trigger met — moved to Archive without running Tier 1.5 lightweight (judged low-value given overhang got MORE uncertain, not less).*
+
+---
+
+## BBWI — Bath & Body Works (2026-09-26) — 🚫 CONFIRM REJECT (CIO-directed balance-sheet override)
+
+**ที่มา:** Continues from the pending entry above. Before running the Tier 1.5 lightweight (Emma+Bear-lite), the CIO intervened directly: manually reviewed BBWI's financial statements and flagged real balance-sheet concerns — specifically that BBWI is known to carry negative or near-zero stockholders' equity from its leveraged 2021 L Brands spin-off/dividend-recap history, and that the screen's "cheap" read (FCF yield ~24.8%, EV/EBITDA well below 5Y avg) might be a leverage/accounting artifact rather than genuine value. CIO instructed: do a rigorous, skeptical balance-sheet check before promoting to full pipeline; if the balance sheet is as weak as suspected, CONFIRM REJECT regardless of how the Filter E overhang/moat question resolves.
+
+### Charlie balance-sheet re-check (2026-09-26, fresh WebSearch — 2+ sources each)
+
+| Metric | Finding | Source |
+|---|---|---|
+| Stockholders' Equity | **NEGATIVE, ~-$1.1B** | Simply Wall St balance-sheet health page, corroborated by 10-K/10-Q line items literally titled "Total Liabilities and Equity (Deficit)" |
+| Total Assets | ~$5.16B (Q2 FY26) / $5.07B (FY25 10-K) | SEC 8-K Q2 2026 earnings release / SEC 10-K FY25 |
+| Total Debt (current + LT) | ~$3.6-3.86B (current debt $248-280M + long-term debt $3.37-3.61B across recent quarters) | SEC 8-K Q2 2026 + 10-K FY25, TradingEconomics ($3.61B Q2 close) |
+| Debt/EBITDA | ~3.2x, "near median" of BBWI's own 10Y median (~3.29x) | GuruFocus |
+| Interest Coverage | ~4.2-4.4x average | finbox + SimplyWallSt |
+| Interest Expense | $63M (Q2 FY26) / $132M (H1 FY26) | SEC 8-K Q2 2026 |
+
+**Interpretation — this confirms the CIO's suspicion:** BBWI's capital structure has essentially NO equity cushion. Total debt (~$3.6-3.86B) is comparable in magnitude to Total Assets (~$5.1-5.2B) net of a large lease/goodwill/intangible base, leaving equity at zero or negative. The Debt/EBITDA "near own median" framing that looks reassuring on the surface is actually a red flag in context — it means BBWI has ALWAYS run near this leverage level since the spin-off, so "in line with history" is not evidence of safety, it's confirmation of a structurally over-levered business model. The FCF-yield-based Filter B/D "cheap" signal is a genuine artifact of this leverage: high levered-equity FCF yield is mechanically what you get when a stable-cash-flow business is financed almost entirely with debt — small swings in EBITDA (holiday-season miss, tariff costs, promotional intensity to defend traffic) disproportionately swing the (already-thin-to-negative) equity value, because there is no equity buffer to absorb the variance. Interest coverage 4.2-4.4x is workable in a stable-rate environment but leaves little room in a downturn for a highly seasonal, mall-traffic-dependent, discretionary-spending retailer.
+
+This resolves the exact open question flagged in the original pending note ("is this leverage-as-usual, priced in, or a genuine structural risk that should weigh on Filter E's overhang sub-criterion?") — **it is a genuine structural risk**, not merely "leverage as usual." Negative book equity is qualitatively different from "thin but positive" leverage.
+
+### Charlie decision → **CONFIRM REJECT** (balance-sheet veto overrides Filter A-D technical PASS)
+
+- Per CIO direction, this finding overrides the technical Filter A-D PASS on relative multiples. A stock cannot be "cheap on cash/asset" (Filter B) or clear a credible valuation gap (Filter D) in any meaningful sense when the equity being valued has a negative book base and the "cheapness" is mechanically produced by leverage, not genuine mispricing of a sound balance sheet.
+- Filter E's moat/overhang ambiguity (narrow-but-real brand loyalty — BBWI is a Morning Consult "Most Trusted Brand" 2026 winner in Cosmetics & Beauty — vs. mall-traffic dependence and promotional intensity) becomes moot: even a wide moat doesn't rescue a name where the balance sheet itself is the primary risk.
+- **Skipped the Tier 1.5 lightweight entirely** (no Emma/Bear-lite run) — the CIO's balance-sheet finding is dispositive and running a DCF/FV lightweight on a negative-equity capital structure would require a fundamentally different (leveraged-equity / distressed-debt-style) framework the team doesn't currently have, not the standard DCF the lightweight tier assumes. Not a good use of the ~140-165K token budget the lightweight tier typically costs.
+- **Not promoted to full pipeline. No BUY, no force-deploy.** Moved to Archive with full balance-sheet reasoning (see `portfolio/watchlist.md` § Archive).
+
+*Charlie — 2026-09-26 | BBWI Learning-Queue → CONFIRM REJECT (CIO-directed balance-sheet re-check). Stockholders' equity confirmed NEGATIVE ~-$1.1B against ~$3.6-3.86B total debt — leverage/accounting artifact behind the "cheap" screen result, not genuine value. Overrides technical Filter A-D PASS per CIO direction. Moved to Archive without running Tier 1.5 lightweight.*
