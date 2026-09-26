@@ -125,3 +125,23 @@ Tier 1.5 Learning-Queue (Filter D REJECT, beaten-down reason ไม่ชัด�
 4. **Token cost:** Emma 99K + Bear-lite ~66K (ประเมินจาก duration/tool-use, ใกล้เคียง NVR) = **~165K** — สอดคล้อง pattern เดิมว่า lightweight เกิน 3× ของ proposal estimate
 
 *Charlie — 2026-09-23 | BSX Learning-Queue → WATCH, raise bar (avg conviction 6.0/10; Emma+Bear เห็นตรงกันว่า 2 unknowns ใหญ่ยังไม่ resolve). Checkpoint = BSX Q3 2026 earnings ~2026-11-05 (event-driven, ไม่ใช่ generic 6-month).*
+
+---
+
+## BBWI — Bath & Body Works (2026-09-26) — ⏳ ROUTED TO LEARNING-QUEUE, LIGHTWEIGHT PENDING
+
+**ที่มา:** Scout Round 36 (Specialty Retail, 2026-09-26) — 10 candidates scanned, 0 fast-track. Max flag BBWI: Filter A PASS (-37.7% to -38.3% off 52W high) + Filter B PASS (FCF yield ~24.8%, EV/EBITDA well below 5Y avg) + Filter C PASS (ROIC comfortably above WACC across measurement methods) but **Filter D lands genuinely ambiguous** — 0.75-0.90× naive FV depending on exactly how BBWI's ~$2.5-3B net debt is treated in the no-growth-perpetuity equity adjustment (EV-basis alone would show undervaluation, but debt-adjustment pulls it into/near the 0.80-0.90× learning-queue band). Filter E also ambiguous (~1.5-2/3 — moat narrow/borderline, ROIC spread clearly passes, overhang mixed/not binary). Per CLAUDE.md Tier 1.5 Lane Assignment rule ("ก้ำกึ่ง — Filter D อยู่ 0.80-0.90× หรือ Filter E ผ่านแค่ 2/3") this routes to **learning-queue**, not REJECT.
+
+### Lane routing
+Tier 1.5 Learning-Queue (Filter D ambiguous 0.75-0.90× depending on debt treatment, Filter E ambiguous ~1.5-2/3) — see full Filter A-E workings in `portfolio/watchlist.md` § Scout Report Round 36.
+
+### ผล Tier 1.5 lightweight (Emma ∥ Bear-lite)
+
+**PENDING — not yet run.** Max routed this candidate at end-of-session (2026-09-26, budget-constrained) — flagging here per the Tier 1.5 protocol for Charlie to action the lightweight Emma standalone FV + Bear-lite challenge next session. Key open questions for the lightweight pass:
+1. Resolve the debt-adjustment ambiguity in Filter D — is the correct net-debt figure closer to the EV/EBITDA-implied ~$2.5B or the WSJ debt/EBITDA-implied ~$3.6B (2.76x × $1.32B EBITDA)? This alone swings Price/FV between ~0.75× (clears toward fast-track-worthy) and ~0.90× (barely inside learning-queue).
+2. BBWI's post-spin-off (from L Brands, 2021) capital structure is inherently leveraged by design (spin-off dividend recap) — is this "leverage as usual" (priced in, not a fresh overhang) or a genuine structural risk that should weigh on Filter E's overhang sub-criterion?
+3. Category check: is body-care/home-fragrance retail (highly promotional, loyalty-program-driven) showing any signs of the same private-label/value-erosion dynamic that sank CLX's Filter E this session (Round 35a follow-up), or is BBWI's moat more defensible than CLX's?
+
+**Checkpoint date:** Target the lightweight analysis within 1-2 sessions (not a 6-month generic checkpoint — this is a live routing decision awaiting the standard Tier 1.5 process, not a park-and-wait item).
+
+*Max — 2026-09-26 | BBWI routed to Tier 1.5 Learning-Queue from Scout Round 36 (Specialty Retail). Lightweight Emma+Bear-lite analysis PENDING — flagged for Charlie to action. Not a formal recommendation yet — no `portfolio/decisions.md` / `dashboard/data.js` entry until lightweight completes per CLAUDE.md § Tier 1.5.*
