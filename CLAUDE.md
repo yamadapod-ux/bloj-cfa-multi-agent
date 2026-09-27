@@ -220,7 +220,12 @@ CIO → "Max หาหุ้นใหม่"
   - ห้าม scout หุ้นที่อยู่ใน 10% ของ 52W high เว้นแต่ CIO สั่งตรง
 - **B. Cheap on cash/asset — แยกตาม Bucket (แก้ 2026-09-26, เพิ่ม Growth lane B-V1 — ดู `agent_notes/charlie/2026-09-26_growth_lane_proposal.md`):**
   - **B-Legacy (Value bucket — ไม่เปลี่ยน):** FCF yield > 6% **หรือ** EV/EBITDA อยู่ bottom-third ของ 5-year history ตัวเอง **หรือ** P/B ต่ำกว่า 5Y median (สำหรับ financials/insurers)
-  - **B-V1 (Growth bucket `TRIAL` — ใช้เมื่อ revenue growth >15% YoY หรือชัดเจนว่าอยู่ใน reinvestment phase ที่ capex/R&D หนักกดดัน FCF โดยตั้งใจ — Max classify bucket ก่อนเลือก lane):** EV/Revenue ปัจจุบันอยู่ **bottom-third ของ 5-year history ตัวเอง** — ถ้าไม่มี 5Y history (recent IPO) ใช้ EV/Revenue เทียบ peer group ที่โต growth rate ใกล้เคียงกัน อยู่ต่ำกว่า median
+  - **B-V1 (Growth bucket `TRIAL` — แก้ 2026-09-27 เป็น OR-logic 3 วิธี หลัง Round 37 พบว่า self-history เดี่ยวๆ mis-calibrate กับ sector ที่ re-rate ถาวร เช่น AI/semis supercycle — ดู `agent_notes/charlie/2026-09-27_bv1_dv1_orlogic.md`. ใช้เมื่อ revenue growth >15% YoY หรือชัดเจนว่าอยู่ใน reinvestment phase ที่ capex/R&D หนักกดดัน FCF โดยตั้งใจ — Max classify bucket ก่อนเลือก lane):** คำนวณทุกวิธีที่ทำได้จริง (ไม่ใช่แค่วิธีเดียวที่สวยที่สุด) — **ผ่านถ้าเข้าเงื่อนไขอย่างน้อย 1 ใน 3 วิธี:**
+    1. **Self-history:** EV/Revenue ปัจจุบันอยู่ bottom-third ของ 5-year history ตัวเอง
+    2. **Peer-median:** EV/Revenue ปัจจุบันต่ำกว่า median ของ peer group ที่ growth rate ใกล้เคียงกัน (±10pp) ณ ปัจจุบัน
+    3. **Sector-average:** EV/Revenue ปัจจุบันต่ำกว่าค่าเฉลี่ยของ sector โดยรวม ณ ปัจจุบัน — ใช้เมื่อไม่มีทั้ง history ที่เชื่อถือได้ (เช่น recent IPO) และ peer ที่เทียบตรงๆ ได้
+    - **บันทึกบังคับ:** ต้องโชว์ผลคำนวณทุกวิธีที่ทำได้ (แม้ผ่านแค่วิธีเดียว) ลง watchlist.md เพื่อความโปร่งใสและกัน cherry-picking — ถ้ามีแค่ 1 วิธีผ่านชัดเจนและอีก 2 วิธีตกชัดเจน (ไม่ใช่แค่ทำไม่ได้เพราะขาดข้อมูล) ให้ flag เป็น "เห็นต่างกันเอง" ส่ง learning-queue แทน fast-track ทันที
+    - **Exclude:** ห้ามใช้ self-history ถ้ามีเหตุการณ์ผิดปกติปนเปื้อนข้อมูล (เช่น governance scandal, spin-off, M&A ใหญ่ที่บิดเบือน multiple) — ใช้วิธี 2 หรือ 3 แทน
 - **C. Still a real business (บังคับ — แก้ threshold 2026-09-13):** ROIC ≥ 80% ของ WACC (ล่าสุด TTM หรือ through-cycle) **และ** ถ้า ROIC < WACC ต้องมี **trend ดีขึ้นต่อเนื่อง ≥2 ไตรมาสติด** (ตัวเลข ROIC จริงขยับขึ้นเทียบไตรมาสก่อนหน้า ไม่ใช่แค่ guidance/narrative) — เดิมบังคับ ROIC > WACC เป๊ะ, ผ่อนให้รับ candidate borderline ที่กำลังฟื้นตัวได้ (เช่น APTV ROIC ~9-11% vs WACC 10%) แต่ยังกันไม่ให้เป็น value trap ที่ ROIC ต่ำกว่า WACC มากและ/หรือแย่ลงต่อเนื่อง (เช่น CNC/OSCR 4-8% vs WACC 8%+, WHR/ALB ที่แย่ลงเรื่อยๆ) — ไม่ใช่ industry ที่ secular structural decline (เช่น linear TV, coal thermal, legacy retail)
 - **D. Credible valuation gap — แยกตาม Bucket (แก้ 2026-09-26, เพิ่ม Growth lane D-V1 — ดู `agent_notes/charlie/2026-09-26_growth_lane_proposal.md`; D-Legacy ยังบังคับสำหรับ Value bucket เหมือนเดิม):**
   - **D-Legacy (Value bucket — ไม่เปลี่ยน):** ก่อนส่ง candidate เข้า pipeline Max ต้องทำ naive FV 1 รอบและยืนยันว่ามี **gap ≥ 20% ระหว่างราคาปัจจุบันกับ conservative FV**:
@@ -230,12 +235,13 @@ CIO → "Max หาหุ้นใหม่"
     - **เกณฑ์ก้ำกึ่ง (learning-queue):** ราคาปัจจุบัน 0.80–0.90 × naive FV
     - **เกณฑ์ตกรอบ:** ราคาปัจจุบัน > 0.90 × naive FV **หรือ** ราคาอยู่ในช่วง ±10% ของ naive FV (ไม่มีที่ว่างให้ MOS 15% clear หลัง DCF เต็ม) → deprioritize
     - Multiple-based cross-check: EV/EBITDA หรือ EV/Revenue ต้องอยู่ **bottom-third ของ 5Y history ตัวเอง** — ถ้าอยู่ >70th percentile ทั้งที่ราคา "ลง 30% จาก high" = high เดิมเป็น bubble, ตกรอบ
-  - **D-V1 (Growth bucket `TRIAL` — ใช้เมื่อ candidate เข้า B-V1 lane ด้วย, เช่น AI/semis/high-growth tech ที่ no-growth DCF ประเมินต่ำเกินจริงเพราะมูลค่าหลักมาจากการเติบโตในอนาคต ไม่ใช่ FCF ปัจจุบัน):**
-    - **Naive FV proxy = relative EV/Revenue compression** แทน no-growth DCF — เทียบ **EV/Revenue ปัจจุบัน** กับ **EV/Revenue เฉลี่ยของตัวเองช่วง 3-5 ปีที่ผ่านมาตอนโตอัตราใกล้เคียงกัน** (revenue growth ±5pp ของช่วงนั้น, ใช้ historical regression revenue growth vs EV/Revenue ของตัวเอง) — ถ้าโตช้าลงจริง (deceleration ยืนยันด้วยตัวเลข ≥2 ไตรมาสติด) ต้อง discount multiple เป้าหมายลงตามสัดส่วน
-    - **เกณฑ์ผ่าน (fast-track):** EV/Revenue ปัจจุบัน ≤ 0.75× ของ multiple เฉลี่ยที่ growth rate ปัจจุบันควรได้
-    - **เกณฑ์ก้ำกึ่ง (learning-queue):** 0.75–0.90×
-    - **เกณฑ์ตกรอบ:** > 0.90×
-    - **Cross-check บังคับเหมือนเดิม:** analyst consensus PT median (WebSearch ≥2 แหล่ง) — ถ้าต่ำกว่าราคาปัจจุบัน = สัญญาณเตือน
+  - **D-V1 (Growth bucket `TRIAL` — แก้ 2026-09-27 เป็น OR-logic 3 วิธี, เหตุผลเดียวกับ B-V1 — ดู `agent_notes/charlie/2026-09-27_bv1_dv1_orlogic.md`. ใช้เมื่อ candidate เข้า B-V1 lane ด้วย, เช่น AI/semis/high-growth tech ที่ no-growth DCF ประเมินต่ำเกินจริงเพราะมูลค่าหลักมาจากการเติบโตในอนาคต ไม่ใช่ FCF ปัจจุบัน):** คำนวณทุกวิธีที่ทำได้จริง — **ผ่านถ้าเข้าเงื่อนไขอย่างน้อย 1 ใน 3 วิธี (fast-track ที่ ≤0.75× ของค่าที่ควรเป็นตามวิธีนั้น):**
+    1. **Self-regression:** เทียบ EV/Revenue ปัจจุบัน กับค่าที่ historical regression (growth rate ในอดีตของตัวเอง vs EV/Revenue ตอนนั้น) ทำนายที่ growth rate ปัจจุบัน — **ใช้ได้เฉพาะเมื่อมี ≥5 ปีข้อมูลสะอาด และไม่มีเหตุการณ์ผิดปกติปนเปื้อน** (governance scandal, spin-off, M&A ใหญ่) — ถ้ามีสิ่งเหล่านี้ ห้ามใช้วิธีนี้เด็ดขาด
+    2. **Peer-regression:** เลือก peer 4-6 บริษัทใน sector เดียวกัน ณ ปัจจุบัน ที่ growth rate กระจายกัน → สร้างเส้นเทรนด์ growth rate vs EV/Revenue ของกลุ่ม ณ ปัจจุบัน → ดูว่า candidate อยู่ใต้เส้นนั้นแค่ไหน (นี่คือวิธีหลักที่ควรใช้กับ sector ที่เพิ่ง re-rate ทั้งกลุ่ม เช่น AI/semis)
+    3. **Analyst-PT gap:** Street consensus PT median (WebSearch ≥2 แหล่ง) สูงกว่าราคาปัจจุบัน ≥20% — ใช้เป็น fallback เมื่อวิธี 1-2 ทำไม่ได้จริง (เช่น sector เล็กเกินไปหา peer ไม่พอ)
+    - **เกณฑ์ก้ำกึ่ง (learning-queue):** 0.75–0.90× ในทุกวิธีที่ผ่านได้ดีที่สุด
+    - **เกณฑ์ตกรอบ:** ไม่มีวิธีไหนผ่านเกณฑ์เลย (ทุกวิธี > 0.90×)
+    - **บันทึกบังคับ:** ต้องโชว์ผลคำนวณทุกวิธีที่ทำได้ลง watchlist.md — ถ้ามีแค่ 1 วิธีผ่านชัดเจนและอีกวิธีตกชัดเจน ให้ flag เป็น "เห็นต่างกันเอง" ส่ง learning-queue แทน fast-track
     - **หมายเหตุ:** D-V1 เป็น proxy ทดลอง ไม่ใช่ DCF เต็มรูปแบบ — ถ้า candidate fast-track จาก D-V1 เข้า Full Pipeline ปกติ Emma ยังต้องทำ DCF/DDM เต็มตามมาตรฐานเดิม (D-V1 คัดกรองที่ scout stage เท่านั้น ไม่แทนที่ analysis เต็ม)
 - **E. Conviction viability (บังคับ — เพิ่ม 2026-09-06 `TRIAL` — soft-score):** candidate ต้องผ่าน **≥ 2 ใน 3** sub-criteria (ผ่านแค่ 1 → learning-queue lane; ผ่าน 0 → ตกรอบ):
   1. **Moat กว้างพอ** — Wide หรือ Narrow+ ที่มีหลักฐานชัด (pricing power / switching cost / network effect / cost advantage ถาวร). Narrow ที่ margin ต่ำสุดใน peer group = ไม่ผ่าน sub-criterion นี้
