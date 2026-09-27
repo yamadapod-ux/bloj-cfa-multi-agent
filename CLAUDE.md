@@ -218,15 +218,25 @@ CIO → "Max หาหุ้นใหม่"
   - ❌ **Permanent earnings-power impairment** — structural demand loss ที่ management ยืนยัน (เช่น APTV China, QCOM Apple modem), secular decline, regulatory regime change ที่ยังไม่ resolve และ default outcome = bearish (เช่น CNC/OSCR ACA), competitive moat erosion ที่ยืนยันด้วยตัวเลข market share → **deprioritize / reject ที่ scout** (ห้าม fast-track; ส่ง learning-queue ได้ถ้า CIO ต้องการ data point)
   - ถ้า Max ไม่แน่ใจว่าจัดกลุ่มไหน → เขียนทั้ง 2 มุมใน scout note และ default เป็น learning-queue lane
   - ห้าม scout หุ้นที่อยู่ใน 10% ของ 52W high เว้นแต่ CIO สั่งตรง
-- **B. Cheap on cash/asset:** FCF yield > 6% **หรือ** EV/EBITDA อยู่ bottom-third ของ 5-year history ตัวเอง **หรือ** P/B ต่ำกว่า 5Y median (สำหรับ financials/insurers)
+- **B. Cheap on cash/asset — แยกตาม Bucket (แก้ 2026-09-26, เพิ่ม Growth lane B-V1 — ดู `agent_notes/charlie/2026-09-26_growth_lane_proposal.md`):**
+  - **B-Legacy (Value bucket — ไม่เปลี่ยน):** FCF yield > 6% **หรือ** EV/EBITDA อยู่ bottom-third ของ 5-year history ตัวเอง **หรือ** P/B ต่ำกว่า 5Y median (สำหรับ financials/insurers)
+  - **B-V1 (Growth bucket `TRIAL` — ใช้เมื่อ revenue growth >15% YoY หรือชัดเจนว่าอยู่ใน reinvestment phase ที่ capex/R&D หนักกดดัน FCF โดยตั้งใจ — Max classify bucket ก่อนเลือก lane):** EV/Revenue ปัจจุบันอยู่ **bottom-third ของ 5-year history ตัวเอง** — ถ้าไม่มี 5Y history (recent IPO) ใช้ EV/Revenue เทียบ peer group ที่โต growth rate ใกล้เคียงกัน อยู่ต่ำกว่า median
 - **C. Still a real business (บังคับ — แก้ threshold 2026-09-13):** ROIC ≥ 80% ของ WACC (ล่าสุด TTM หรือ through-cycle) **และ** ถ้า ROIC < WACC ต้องมี **trend ดีขึ้นต่อเนื่อง ≥2 ไตรมาสติด** (ตัวเลข ROIC จริงขยับขึ้นเทียบไตรมาสก่อนหน้า ไม่ใช่แค่ guidance/narrative) — เดิมบังคับ ROIC > WACC เป๊ะ, ผ่อนให้รับ candidate borderline ที่กำลังฟื้นตัวได้ (เช่น APTV ROIC ~9-11% vs WACC 10%) แต่ยังกันไม่ให้เป็น value trap ที่ ROIC ต่ำกว่า WACC มากและ/หรือแย่ลงต่อเนื่อง (เช่น CNC/OSCR 4-8% vs WACC 8%+, WHR/ALB ที่แย่ลงเรื่อยๆ) — ไม่ใช่ industry ที่ secular structural decline (เช่น linear TV, coal thermal, legacy retail)
-- **D. Credible valuation gap (บังคับ — เพิ่ม 2026-09-06 `TRIAL`):** ก่อนส่ง candidate เข้า pipeline Max ต้องทำ naive FV 1 รอบและยืนยันว่ามี **gap ≥ 20% ระหว่างราคาปัจจุบันกับ conservative FV**:
-  - **Naive FV = normalized/mid-cycle FCF ÷ WACC** (no-growth perpetuity) — ใช้ **through-cycle FCF ไม่ใช่ TTM peak** (ถ้าธุรกิจ cyclical: เฉลี่ย 5 ปี หรือ mid-cycle margin × normalized revenue). WACC ใช้ค่าประมาณ sector (7–9% mega-cap / 10–13% mid-cap / 13–16% small-cap หรือ EM)
-  - **Cross-check:** analyst consensus PT range (WebSearch ≥2 แหล่ง) — ถ้า Street PT median **ต่ำกว่า** ราคาปัจจุบัน = สัญญาณเตือน (candidate ตกรอบ). ถ้า Street PT สูงกว่ามาก (>25%) แต่ naive FV ต่ำกว่าราคา = ใช้ naive FV เป็นเกณฑ์ตัดสิน (Street อาจ extrapolate peak)
-  - **เกณฑ์ผ่าน (fast-track):** ราคาปัจจุบัน ≤ 0.80 × naive FV (มี MOS อย่างน้อย ~20% ก่อนเข้า pipeline)
-  - **เกณฑ์ก้ำกึ่ง (learning-queue):** ราคาปัจจุบัน 0.80–0.90 × naive FV
-  - **เกณฑ์ตกรอบ:** ราคาปัจจุบัน > 0.90 × naive FV **หรือ** ราคาอยู่ในช่วง ±10% ของ naive FV (ไม่มีที่ว่างให้ MOS 15% clear หลัง DCF เต็ม) → deprioritize
-  - Multiple-based cross-check: EV/EBITDA หรือ EV/Revenue ต้องอยู่ **bottom-third ของ 5Y history ตัวเอง** — ถ้าอยู่ >70th percentile ทั้งที่ราคา "ลง 30% จาก high" = high เดิมเป็น bubble, ตกรอบ
+- **D. Credible valuation gap — แยกตาม Bucket (แก้ 2026-09-26, เพิ่ม Growth lane D-V1 — ดู `agent_notes/charlie/2026-09-26_growth_lane_proposal.md`; D-Legacy ยังบังคับสำหรับ Value bucket เหมือนเดิม):**
+  - **D-Legacy (Value bucket — ไม่เปลี่ยน):** ก่อนส่ง candidate เข้า pipeline Max ต้องทำ naive FV 1 รอบและยืนยันว่ามี **gap ≥ 20% ระหว่างราคาปัจจุบันกับ conservative FV**:
+    - **Naive FV = normalized/mid-cycle FCF ÷ WACC** (no-growth perpetuity) — ใช้ **through-cycle FCF ไม่ใช่ TTM peak** (ถ้าธุรกิจ cyclical: เฉลี่ย 5 ปี หรือ mid-cycle margin × normalized revenue). WACC ใช้ค่าประมาณ sector (7–9% mega-cap / 10–13% mid-cap / 13–16% small-cap หรือ EM)
+    - **Cross-check:** analyst consensus PT range (WebSearch ≥2 แหล่ง) — ถ้า Street PT median **ต่ำกว่า** ราคาปัจจุบัน = สัญญาณเตือน (candidate ตกรอบ). ถ้า Street PT สูงกว่ามาก (>25%) แต่ naive FV ต่ำกว่าราคา = ใช้ naive FV เป็นเกณฑ์ตัดสิน (Street อาจ extrapolate peak)
+    - **เกณฑ์ผ่าน (fast-track):** ราคาปัจจุบัน ≤ 0.80 × naive FV (มี MOS อย่างน้อย ~20% ก่อนเข้า pipeline)
+    - **เกณฑ์ก้ำกึ่ง (learning-queue):** ราคาปัจจุบัน 0.80–0.90 × naive FV
+    - **เกณฑ์ตกรอบ:** ราคาปัจจุบัน > 0.90 × naive FV **หรือ** ราคาอยู่ในช่วง ±10% ของ naive FV (ไม่มีที่ว่างให้ MOS 15% clear หลัง DCF เต็ม) → deprioritize
+    - Multiple-based cross-check: EV/EBITDA หรือ EV/Revenue ต้องอยู่ **bottom-third ของ 5Y history ตัวเอง** — ถ้าอยู่ >70th percentile ทั้งที่ราคา "ลง 30% จาก high" = high เดิมเป็น bubble, ตกรอบ
+  - **D-V1 (Growth bucket `TRIAL` — ใช้เมื่อ candidate เข้า B-V1 lane ด้วย, เช่น AI/semis/high-growth tech ที่ no-growth DCF ประเมินต่ำเกินจริงเพราะมูลค่าหลักมาจากการเติบโตในอนาคต ไม่ใช่ FCF ปัจจุบัน):**
+    - **Naive FV proxy = relative EV/Revenue compression** แทน no-growth DCF — เทียบ **EV/Revenue ปัจจุบัน** กับ **EV/Revenue เฉลี่ยของตัวเองช่วง 3-5 ปีที่ผ่านมาตอนโตอัตราใกล้เคียงกัน** (revenue growth ±5pp ของช่วงนั้น, ใช้ historical regression revenue growth vs EV/Revenue ของตัวเอง) — ถ้าโตช้าลงจริง (deceleration ยืนยันด้วยตัวเลข ≥2 ไตรมาสติด) ต้อง discount multiple เป้าหมายลงตามสัดส่วน
+    - **เกณฑ์ผ่าน (fast-track):** EV/Revenue ปัจจุบัน ≤ 0.75× ของ multiple เฉลี่ยที่ growth rate ปัจจุบันควรได้
+    - **เกณฑ์ก้ำกึ่ง (learning-queue):** 0.75–0.90×
+    - **เกณฑ์ตกรอบ:** > 0.90×
+    - **Cross-check บังคับเหมือนเดิม:** analyst consensus PT median (WebSearch ≥2 แหล่ง) — ถ้าต่ำกว่าราคาปัจจุบัน = สัญญาณเตือน
+    - **หมายเหตุ:** D-V1 เป็น proxy ทดลอง ไม่ใช่ DCF เต็มรูปแบบ — ถ้า candidate fast-track จาก D-V1 เข้า Full Pipeline ปกติ Emma ยังต้องทำ DCF/DDM เต็มตามมาตรฐานเดิม (D-V1 คัดกรองที่ scout stage เท่านั้น ไม่แทนที่ analysis เต็ม)
 - **E. Conviction viability (บังคับ — เพิ่ม 2026-09-06 `TRIAL` — soft-score):** candidate ต้องผ่าน **≥ 2 ใน 3** sub-criteria (ผ่านแค่ 1 → learning-queue lane; ผ่าน 0 → ตกรอบ):
   1. **Moat กว้างพอ** — Wide หรือ Narrow+ ที่มีหลักฐานชัด (pricing power / switching cost / network effect / cost advantage ถาวร). Narrow ที่ margin ต่ำสุดใน peer group = ไม่ผ่าน sub-criterion นี้
   2. **Through-cycle ROIC ชัดเจนเหนือ WACC** — spread ≥ +3pp ใน trailing 5Y average (ไม่ใช่แค่ TTM peak). ROIC ที่ **คร่อม** WACC (±2pp — เช่น APTV ~9–11% ≈ WACC 10%, MELI 14.2% ≈ 13%, peak-anchored, หรือ CNC/OSCR 4–8% < 8%) = ไม่ผ่าน
