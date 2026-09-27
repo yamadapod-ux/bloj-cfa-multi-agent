@@ -47,6 +47,20 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
+## Scout-Stage Learning-Queue Watch (ยังไม่ full pipeline — B-V1/D-V1 OR-logic disagreement flag, Round 38, 2026-09-27)
+
+*ไม่ผ่าน rule 1 ของ list นี้ (ต้องมี full pipeline report ก่อน) — เก็บไว้ตรงนี้แยกจาก "Active" list ด้านบนเพื่อไม่ปนกับตัวที่วิเคราะห์เต็มแล้ว. ทั้ง 3 ตัวผ่าน Filter A+C (reused from Round 37) + B-V1/D-V1 ผ่านทาง OR-logic เฉพาะ analyst-PT-gap/peer-median method เดียว (2 ใน 3 methods disagree — mandatory safeguard บังคับ learning-queue ไม่ fast-track) + Filter E ผ่าน 2-3/3. ดู `portfolio/watchlist.md` § Scout Report Round 38 สำหรับรายละเอียดเต็มทุก method.*
+
+| Ticker | Bucket | B-V1/D-V1 pass method | Price (2026-09-27) | Street PT (avg) | Implied entry zone (rough, pending Emma lightweight) | Watch trigger |
+|--------|--------|------------------------|---------------------|-------------------|--------------------------------------------------------|----------------|
+| **AVGO** | Growth | PT-gap only (+45-47%); self-history + peer-median both FAIL | $352.81-357.61 | $519-527 | Not yet computed — needs Emma reverse-DCF-implied-growth cross-check on the Street PT assumption before an entry zone can be trusted (per Round 38 recommendation to CIO) | If a future scout pass shows self-history OR peer-median flip to PASS too (i.e. 2/3 agree) → escalate to fast-track full pipeline |
+| **WDC** | Growth | Peer-median only (narrow PASS); self-history FAIL by the most extreme margin in the round (+872% vs median); PT-gap borderline/mixed | $463.06-473.69 | $534.56-641.83 (wide dispersion across sources) | Not yet computed — same caveat as AVGO, plus WDC's self-history divergence is the most extreme seen this round, warranting extra skepticism before treating the peer-median PASS as reliable | Watch for a 2nd consecutive quarter of AI-storage-demand-driven margin/multiple stability — reduces risk that WDC's current peer-median cheapness is itself a peer-basket (STX/SNDK) artifact rather than genuine mispricing |
+| **MPWR** | Growth | PT-gap only (+27.7-33.8%); self-history + peer-median (vs ADI) both FAIL — MPWR trades ~30-45% above its closest growth-matched peer | $1,275.70-1,335.55 | $1,706.40-1,731.42 | Not yet computed — same Emma reverse-DCF caveat as AVGO | Self-regression (D-V1 method 1) already confirmed mechanically unworkable in Round 37 — this ticker's PASS rests entirely on the Street being right about forward growth; watch for analyst PT revisions (up or down) as the highest-signal update |
+
+**Not a BUY recommendation.** These 3 names cleared B-V1/D-V1 via the OR-logic fix but were explicitly NOT fast-tracked because the mandatory disagreement safeguard fired (2 of 3 methods disagree in each case — see Round 38 Scout Report for full detail). Added here as scout-stage watch items only, pending either (a) a Tier 1.5 lightweight Emma reverse-DCF cross-check of the Street PT assumption, or (b) a future scout re-test showing method agreement improve. **Superseded/removed from this section, not "Active," if promoted to a real full-pipeline analysis.**
+
+---
+
 ## Removed / Graduated
 
 | Ticker | Date | เหตุผล |
@@ -55,6 +69,6 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
-*Charlie + Max | Last updated: 2026-09-25 (เพิ่ม DECK หลัง full v2 pipeline re-run — same pattern as LVS: Conditional HOLD/WAIT, MOS +34.2% passes easily, blocked only by Conviction gate 6.67<7.0. Superseded the stale 2026-09-01 Round 16 scout note that had excluded DECK as a Growth-bucket reject — this was a Value-bucket full analysis instead.) — 11 Active*
+*Charlie + Max | Last updated: 2026-09-27 (เพิ่ม Scout-Stage Learning-Queue Watch section — AVGO/WDC/MPWR จาก Scout Round 38 B-V1/D-V1 OR-logic retest, ยังไม่ full pipeline, ดู watchlist.md § Round 38 สำหรับรายละเอียด) — 11 Active + 3 Scout-Stage Watch*
 
 **Note (2026-09-09):** APTV (2026-09-06, dual-gate FAIL) และ LKQ (2026-09-08, single-gate FAIL conviction) — full analysis เสร็จแล้วทั้งคู่ แต่ **ไม่เพิ่มเข้า buy_list** (APTV: forward return ~5.9% CAGR ที่ entry zone ต่ำเกิน; LKQ: Bear objection — entry zone แคบ = false green-light) → track เป็น WATCH item ใน decisions.md + Bull Flip Triggers แทน. CNC (2026-09-04, AVOID) ก็ไม่เข้า (forward return ต่ำ).

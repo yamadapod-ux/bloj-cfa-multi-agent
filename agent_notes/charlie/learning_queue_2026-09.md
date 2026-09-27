@@ -195,3 +195,23 @@ This resolves the exact open question flagged in the original pending note ("is 
 - **Not promoted to full pipeline. No BUY, no force-deploy.** Moved to Archive with full balance-sheet reasoning (see `portfolio/watchlist.md` § Archive).
 
 *Charlie — 2026-09-26 | BBWI Learning-Queue → CONFIRM REJECT (CIO-directed balance-sheet re-check). Stockholders' equity confirmed NEGATIVE ~-$1.1B against ~$3.6-3.86B total debt — leverage/accounting artifact behind the "cheap" screen result, not genuine value. Overrides technical Filter A-D PASS per CIO direction. Moved to Archive without running Tier 1.5 lightweight.*
+
+---
+
+## AVGO / WDC / MPWR — B-V1/D-V1 OR-logic retest survivors (2026-09-27) — ⏳ ROUTED TO LEARNING-QUEUE, LIGHTWEIGHT PENDING
+
+**ที่มา:** Scout Round 38 (2026-09-27) — first live retest of the OR-logic B-V1/D-V1 fix (commit `b287cb9`) on the exact 5 tickers Round 37 rejected under the old single-method rule (AVGO/SMCI/ARM/WDC/MPWR). Full detail in `portfolio/watchlist.md` § Scout Report Round 38. Summary: ARM confirmed clean REJECT (all 3 methods fail/N-A, unchanged from Round 37). SMCI technically clears B-V1 via peer-median but hard-REJECTs at Filter E (2024 accounting/governance scandal = live overhang, independent of the B-V1 self-history exclusion). **AVGO, WDC, MPWR all flip from Round 37's clean B-V1 REJECT to a technical PASS via exactly 1 of 3 methods (analyst-PT-gap for AVGO/MPWR, peer-median for WDC)** — but in each case the other 1-2 methods disagree clearly (self-history and/or peer-median say "expensive," only the forward-looking Street-consensus or single-peer-comp method says "cheap"). Per CLAUDE.md's mandatory disagreement safeguard ("มีแค่ 1 วิธีผ่านชัดเจนและอีก 2 วิธีตกชัดเจน → ส่ง learning-queue แทน fast-track"), all 3 route to learning-queue, not fast-track, despite clearing Filter E (2-3/3 each).
+
+### Lane routing
+Tier 1.5 Learning-Queue (B-V1/D-V1 pass via single-method OR-logic only, disagreement safeguard triggered per CLAUDE.md) — Filter A+C reused from Round 37 (unchanged, prices re-verified stable), Filter E computed fresh this session (see watchlist.md § Round 38 for full table).
+
+### ผล Tier 1.5 lightweight (Emma ∥ Bear-lite)
+
+**PENDING — not yet run.** Max flagged all 3 at end-of-session (2026-09-27, task scope was the scout-stage retest, not the lightweight tier) — per CLAUDE.md § Tier 1.5, next step is Charlie actioning Emma standalone FV + Bear-lite for each, with the specific open question being: **is the Street consensus PT (the one method that passes for all 3) itself defensible, or is it pricing in AI-capex-supercycle growth assumptions that a reverse-DCF would show as unrealistic** (same diagnostic that caught NVR's cherry-picked Gordon-growth scenario in this same journal, 2026-09-23)? Key open questions for the lightweight pass:
+1. **AVGO:** Street PT $519-527 (+45-47% gap) — what growth rate does this imply via reverse-DCF, and is it consistent with AVGO's own guided AI-semis growth trajectory (Q3 FY26 guide +84% QoQ per Round 37 notes) or does it require sustained hypergrowth well beyond the guided near-term numbers?
+2. **WDC:** the self-history B-V1 result (+872% above 10Y median) is the single most extreme divergence found in Round 38 — worth an explicit sanity check on whether WDC's peer basket (STX/SNDK, n=2) is itself distorted (SNDK's growth figure is merger-inflated per the Round 38 notes) before trusting the peer-median PASS at face value.
+3. **MPWR:** self-regression already confirmed mechanically unworkable (Round 37 finding), peer-regression (vs ADI) says FAIL — the entire B-V1/D-V1 case rests on the Street being right about forward growth; Emma's reverse-DCF cross-check is the single highest-value lightweight step here.
+
+**Checkpoint date:** Target the lightweight analysis within 1-2 sessions, same cadence as the BBWI precedent above — this is a live routing decision awaiting the standard Tier 1.5 process, not a park-and-wait item.
+
+*Max — 2026-09-27 | AVGO/WDC/MPWR routed to Tier 1.5 Learning-Queue from Scout Round 38 (B-V1/D-V1 OR-logic retest of Round 37's 5 rejects). Lightweight Emma+Bear-lite analysis PENDING for all 3 — flagged for Charlie to action, with Emma's reverse-DCF-implied-growth cross-check identified as the highest-value single step given all 3 names' B-V1/D-V1 pass rests entirely on the Street-consensus-PT method. Not a formal recommendation yet — no `portfolio/decisions.md` / `dashboard/data.js` entry until lightweight completes per CLAUDE.md § Tier 1.5. SMCI and ARM confirmed REJECT this round, not routed to learning-queue (SMCI: Filter E hard-fail on governance overhang; ARM: clean 0/3 B-V1 reject, unchanged from Round 37).
