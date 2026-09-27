@@ -357,3 +357,22 @@
 | 2026-09-27 | ARM | **QUICK-SCREEN SKIP (B-V1 clean reject, all methods fail/N-A)** | Filter A+C ✓ (reused Round 37), B-V1 0/3 — self-history N/A (insufficient IPO-2023 history), peer-median FAIL (ARM trades 3-4x even its closest growth-matched peer basket), analyst-PT-gap FAIL (Street PT is BELOW current price, -7% to -26%) | $0 | N/A | Scout Round 38 confirms Round 37's B-V1 REJECT unchanged — the OR-logic fix does not flip ARM because none of the 3 methods pass, unlike AVGO/WDC/MPWR where exactly 1 method passes. This is itself a useful diagnostic data point: OR-logic correctly distinguishes "genuinely never cheap by any method" (ARM) from "cheap by forward-metric only" (AVGO/WDC/MPWR). Not promoted to learning-queue or full pipeline. | Price $310.32-320.77 (2026-09-27). Re-list trigger: a future scout pass where the peer-median basket includes a true growth-matched royalty-model comp showing ARM inside range, or Street PT median rises materially above current price. |
 
 *Max — 2026-09-27 | Scout Round 38 (B-V1/D-V1 OR-logic RETEST of Round 37's 5 rejects). Net result: OR-logic fix works as designed — distinguishes genuinely-never-cheap (ARM, still REJECT) from cheap-by-forward-metric-only (AVGO/WDC/MPWR, routed to LEARNING-QUEUE via the mandatory disagreement safeguard, not fast-tracked) from cheap-but-disqualified-elsewhere (SMCI, Filter E governance REJECT). No fast-track, no Full Pipeline, no trade this round despite RISK-ON Force Deploy ACTIVE + cash ~74% — no candidate cleared the full gate with method agreement. See `portfolio/watchlist.md` § Scout Report Round 38 for full detail.*
+
+---
+
+**2026-09-27 — SCOUT FILTER A REJECT (×10) — Scout Round 39, Energy sector**
+
+| Ticker | Action | Gate Status | Rationale |
+|--------|--------|--------------|-----------|
+| XOM | SKIPPED (Scout Filter A REJECT) | -9.4% off 52W high, need ≥20% | Integrated major, near ATH |
+| CVX | SKIPPED (Scout Filter A REJECT) | -2.0% to -5.6% off 52W high | Essentially at 52-week high |
+| COP | SKIPPED (Scout Filter A REJECT) | -10.0% off 52W high | E&P, insufficient pullback |
+| EOG | SKIPPED (Scout Filter A REJECT) | -8.8% off 52W high | E&P, insufficient pullback |
+| OXY | SKIPPED (Scout Filter A REJECT) | -12.8% off 52W high | Closest of the 10, still short of 20% |
+| SLB | SKIPPED (Scout Filter A REJECT) | -10.3% to -14.7% off 52W high | Oilfield services, insufficient pullback |
+| MPC | SKIPPED (Scout Filter A REJECT) | -11.9% off 52W high | Refiner, insufficient pullback |
+| VLO | SKIPPED (Scout Filter A REJECT) | -10.2% off 52W high | Refiner, insufficient pullback |
+| WMB | SKIPPED (Scout Filter A REJECT) | -10.2% off 52W high | Midstream, insufficient pullback |
+| KMI | SKIPPED (Scout Filter A REJECT) | -11.1% off 52W high | Midstream, insufficient pullback |
+
+**Rationale (all 10):** Regime RISK-ON, Force Deploy ACTIVE, cash ~74% of NAV — a full-pipeline-cleared candidate would have been live-eligible for a real BUY this round, but 0/10 tickers passed Filter A (2-source WebSearch price + 52-week-high cross-check, all converging tightly). Energy/XLE has been the best-performing S&P sector of 2026 (Iran-war oil premium) — confirms the Round 32 (2026-09-23) index-level finding at the individual-ticker level across every energy sub-sector (majors/E&P/midstream/refiners/services). No bucket classification, Filter B/C/D/E, Tier 1.5, Full Pipeline, or trade — screen stopped cleanly at Filter A for all 10. No `buy_list.md` entry (no near-miss qualifies — OXY closest at -12.8%, still 7+pp short of the 20% floor). Counter-factual: N/A (no position taken, no candidate cleared to compare against). See `portfolio/watchlist.md` § Scout Report Round 39 for full detail.
