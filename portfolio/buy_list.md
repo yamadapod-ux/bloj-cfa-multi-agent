@@ -69,6 +69,6 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
-*Charlie + Max | Last updated: 2026-09-27 (เพิ่ม Scout-Stage Learning-Queue Watch section — AVGO/WDC/MPWR จาก Scout Round 38 B-V1/D-V1 OR-logic retest, ยังไม่ full pipeline, ดู watchlist.md § Round 38 สำหรับรายละเอียด) — 11 Active + 3 Scout-Stage Watch*
+*Charlie + Max | Last updated: 2026-09-27 (เพิ่ม UPS จาก Scout Round 40 Industrials — sole near-miss ที่ผ่าน Filter A+B+C แต่ตายที่ D, ดู watchlist.md § Round 40 สำหรับรายละเอียด) — 12 Active + 3 Scout-Stage Watch*
 
 **Note (2026-09-09):** APTV (2026-09-06, dual-gate FAIL) และ LKQ (2026-09-08, single-gate FAIL conviction) — full analysis เสร็จแล้วทั้งคู่ แต่ **ไม่เพิ่มเข้า buy_list** (APTV: forward return ~5.9% CAGR ที่ entry zone ต่ำเกิน; LKQ: Bear objection — entry zone แคบ = false green-light) → track เป็น WATCH item ใน decisions.md + Bull Flip Triggers แทน. CNC (2026-09-04, AVOID) ก็ไม่เข้า (forward return ต่ำ).
