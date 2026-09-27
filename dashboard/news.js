@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-25 15:15";
+const NEWS_LAST_UPDATED = "2026-09-27 08:15";
 
 const NEWS = [
+
+  // ── 2026-09-27 (Atlas scan 2026-09-27, manual catch-up run replacing failed 07:00 cron) ──
+  {
+    date: "2026-09-26", category: "LEGAL",
+    headline: "🔴 AAPL Apple — แพ้คดี patent haptics ต่อ Taction Technology มูลค่า $5.7 พันล้าน (verdict ใหญ่สุดในประวัติศาสตร์คดี patent ประเภทนี้)",
+    summary: "คณะลูกขุนศาลรัฐบาลกลาง San Diego ตัดสิน (26 ก.ย.) ว่า Apple ละเมิด patent haptics 2 ฉบับของ Taction Technology (US Patent Nos. 10,659,885 และ 10,820,117 เกี่ยวกับ tactile transducer/vibration technology) ผ่านการใช้ 'Taptic Engine' ใน iPhone และ Apple Watch — สั่งจ่ายค่าเสียหาย 5,700 ล้านดอลลาร์ (verdict สูงสุดในประวัติศาสตร์คดี patent ลักษณะนี้). Taction ฟ้อง Apple ตั้งแต่ปี 2021, คดีเคยแพ้ summary judgment ปี 2023 แต่ US Court of Appeals for the Federal Circuit สั่งกลับให้พิจารณาใหม่ (ส.ค. 2025) หลังพบว่าศาลชั้นต้นตัดสินผิดพลาดเรื่อง expert testimony + การตีความ patent claim. คณะลูกขุนตัดสินว่าการละเมิดไม่ใช่เจตนา (not willful) ซึ่งจำกัดโอกาสที่ Taction จะได้ enhanced damages. Apple ประกาศจะอุทธรณ์ทันที ('Apple's Taptic Engine is fundamentally different from Taction's technology... Apple does not use Taction's technology, and we will appeal') หุ้น AAPL ปิดวันศุกร์ (25 ก.ย., ก่อนข่าว) ที่ $341.07 (+1.53%) และมี after-hours เพิ่มขึ้นเล็กน้อย — ตลาดยังไม่สะท้อนความเสี่ยง legal overhang เต็มที่ ณ เวลาบันทึกข่าวนี้. นัยพอร์ต: AAPL อยู่ใน Big 10 fixed watchlist (ไม่มี position) — เป็น legal/regulatory tail-risk event ขนาดใหญ่ที่สุดครั้งหนึ่งของปีต่อ Big Tech (ไม่กระทบ ADBE/NOW/CRM/REGN/ADSK โดยตรง) แต่ elevated ด้วยขนาดค่าเสียหาย ($5.7B) และคดีจะอุทธรณ์ต่อ ยังไม่ final.",
+    impact: "NEGATIVE", tickers: ["AAPL"],
+    url: "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
+  },
 
   // ── 2026-09-25 (Atlas scan 2026-09-25, extended to Big 10 watchlist) ──
   {
