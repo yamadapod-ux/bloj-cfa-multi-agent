@@ -1076,3 +1076,21 @@ Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 
 **Action:** เก็บเข้า `portfolio/buy_list.md` (Charlie/Max ดูแล) — re-verify FV ทันทีหลัง Q3 earnings (21 ต.ค. 2026, Re-Analysis Trigger #1). ถ้า Atlas re-call regime เป็น RISK-ON ก่อนหน้านั้น + conviction ขยับผ่าน 7.0 จาก catalyst ใหม่ → fast-track กลับมาพิจารณา BUY ทันที
 
 *อัปเดตล่าสุด: 2026-09-20 — LVS WATCH, dual-gate near-miss ที่มีวินัยดี (ไม่ cherry-pick), first Gaming/Leisure/Travel sector entry. Moat downgrade Wide→Narrow-to-Wide หลัง Bear challenge Porter's consistency.*
+
+---
+
+## Catch-up 2026-09-22→09-27 (Hermes sessions, backfilled — format kept short per CIO feedback, see git log for full detail)
+
+**New rules:** Cash Yield Rule + Macro Scenario Stress Test (09-24, no bond holdings — [[project_no_bonds_concentrate_risk]]) · Growth-bucket B-V1/D-V1 lanes added then fixed to OR-logic across 3 methods after Round 37 showed self-history mis-calibrates for permanently re-rated sectors like AI/semis · Filter B-Zero balance-sheet sanity check added after BBWI negative-equity near-miss · Agent models pinned (Bear=opus, Leo/Morgan=haiku).
+
+**⚠️ Morgan QA — verbal-summary audits are unreliable, now banned:** DECK re-run needed 3 QA rounds before it was actually clean — Round 1 (verbal-summary) missed a Sharpe-ratio formula error (used WACC as expected return) AND Emma's own DCF/peer blend not reconciling with her stated FV (silent $4.63/3.4% error in the 40%-weighted input). Both only surfaced once Morgan read the file on disk directly. **Rule: Morgan QA must read the actual on-disk report, never audit from a verbal/chat summary.**
+
+**Dashboard sync still gets dropped under pressure:** DECK's corrected numbers weren't synced to dashboard/data.js through 2 full report rewrites + 2 pushes — CIO caught it, not the process. Reinforces [[feedback_dashboard_sync]] needs to survive multi-round QA loops, not just single-pass analyses.
+
+**Regime:** Atlas flipped TRANSITIONAL-CAUTIOUS → RISK-ON on 09-25 (3/4 indicators; Fed hawkish stance is the lone dissent), 9 days after it was due. Force Deploy reactivated (cash was 74%).
+
+**DECK (Value bucket):** MOS ended strong (+34.2% post-correction) but Conviction 6.67 < 7.0 gate → HOLD/WATCH, added to buy_list.md. Same dual-gate pattern as LVS/QCOM/LKQ ([[project_scout_funnel_redesign]]).
+
+**Scout Rounds 33-40:** ~70 candidates across Chemicals, Regional Banks, Telecom/Utilities, Consumer Staples, Managed Care, Rail, Specialty Retail, AI/Semis, Energy, Industrials — 0 fast-track (regime still near-ATH, no fat pitch). Learning-queue/near-miss: TMUS, BBWI (later confirmed reject under new B-Zero), UPS. AI/Semis Round 37→38 validated the OR-logic fix: correctly separated genuinely-never-cheap (ARM) from cheap-by-one-metric-only (AVGO/WDC/MPWR → learning-queue, methods disagreed so no fast-track) from cheap-but-disqualified-elsewhere (SMCI — governance overhang overrides a technical B-V1 pass).
+
+*อัปเดตล่าสุด: 2026-09-27 — backfilled Hermes work from access outage. Going forward: keep entries this length (bullets, not full narrative) — Leo re-reads this whole file before every analysis and length was burning tokens.*
