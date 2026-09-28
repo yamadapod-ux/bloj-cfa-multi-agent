@@ -3242,6 +3242,114 @@ ROIC 10.53-16.59% (GuruFocus TTM 10.53% / stockanalysis 16.59%, source variance)
 
 ---
 
+## Scout Report § Round 41 (Healthcare/Pharma/Biotech sector — pharma majors, biotech, medtech, life sciences tools)
+
+**Date:** 2026-09-28 | **Max Scout Mode** | Regime RISK-ON (Atlas 2026-09-25 re-call, Force Deploy ACTIVE), cash ~74% of NAV — a full-pipeline-cleared candidate this round would have been live-eligible for a real BUY.
+
+**Prune Pass (Step 0):** Confirmed none of the 10 candidates below are OPEN positions in `dashboard/portfolio.js` (current OPEN book: ADBE, NOW, CRM, REGN, ADSK only — grep clean; REGN in particular pre-excluded from this list per task instruction since it's already held). None are duplicate watchlist/Archive entries requiring de-list action (ABBV has a prior Superseded Archive entry from 2026-08-02 full analysis — re-scouted fresh here per CLAUDE.md re-list allowance since situation may have changed; VRTX has prior WATCH-only history from June 2026, no formal decision — both re-screened clean, not blocked duplicates). No de-list actions needed this session (Round 40 pruned two sessions prior, Round 42 the prior session, both cross-referenced clean).
+
+**10 tickers scanned** (diversified sub-sector — large-cap pharma majors: PFE, MRK, ABBV, BMY, GILD; biotech: VRTX, AMGN; medtech/robotics: ISRG; life sciences tools/diagnostics: TMO, DHR — managed care insurers explicitly excluded per task instruction, already covered in Round 35b) — all verified real, liquid, large-cap NYSE/NASDAQ names via WebSearch 2-source price cross-check before committing; none needed substitution for illiquidity or OPEN-position conflict.
+
+### Filter A — Beaten-down ≥20% off 52-week high (2-source WebSearch cross-check, 2026-09-24/26 closes)
+
+| Ticker | Price (2-source verified) | 52W High (2-source) | % off high | Filter A |
+|--------|---------------------------|----------------------|------------|----------|
+| **PFE** | $27.72 (Morningstar) + $27.69 (Robinhood high-today), 0.1% diff, 2026-09-25/26 | $29.21 (Yahoo Finance + Robinhood + Macrotrends, exact match) | -5.1% | ❌ REJECT |
+| **MRK** | $150.91 (CNBC) + $148.78 (Merck IR stock-info page), ~1.4% diff, 2026-09-25/27 | $156.92 (CNBC + Yahoo Finance + Robinhood, exact match, 08/25/26) | -3.8% to -5.2% | ❌ REJECT |
+| **ABBV** | $265.12 (Morningstar, 2026-09-25 close) + $264.34 (Macrotrends, 2026-09-25 close), 0.3% diff | $269.39 (Yahoo Finance + AbbVie IR + Robinhood, exact match) | -1.6% to -1.9% | ❌ REJECT (near ATH) |
+| **BMY** | $61.50 (Morningstar) + $63.02 (Robinhood), ~2.4% diff, 2026-09-19/24 | $68.64 (Robinhood + BMS IR stock-info, exact match) | -8.2% to -10.4% | ❌ REJECT |
+| **GILD** | $143.50-145.99 (Gilead IR stock-info page range) + $143.93 (Businessinsider), <1% diff | $157.25-157.29 (Businessinsider + Macrotrends, 0.03% diff) | -7.2% to -8.7% | ❌ REJECT |
+| **VRTX** | $526.19 (Yahoo Finance + Vertex IR, exact match, 2026-09-25 close) | $560.25 (Robinhood + Macrotrends, exact match) | -6.1% | ❌ REJECT |
+| **AMGN** | $410.24 (Yahoo Finance + CNBC, exact match) | $447.01-447.03 (CNBC + Google Finance, 0.00% diff, 08/25/26) | -8.2% | ❌ REJECT |
+| **ISRG** | $405.18 (stockanalysis.com, 2026-09-25 close) + $405.06 (stockanalysis.com after-hours) / cross-check Robinhood $406.39 intraday high 2026-09-26, <0.5% diff | $603.88 (Macrotrends + Robinhood, exact match) | **-32.9%** | ✅ **PASS** |
+| **TMO** | $678.39 (Morningstar) + $677.94 (Robinhood high-today), 0.07% diff | $682.98 (Macrotrends + Robinhood, exact match) | -0.7% to -1.2% | ❌ REJECT (near ATH) |
+| **DHR** | $213.43 (Robinhood, current) + $212.31 (Robinhood, 2026-09-22 open, same week), <1% diff | $242.80 (Macrotrends + Robinhood + Public.com, exact match) | -12.1% to -12.6% | ❌ REJECT |
+
+**Filter A result: 1/10 PASS.** Only **ISRG** clears the ≥20% beaten-down floor, and clears it decisively (-32.9%). This is a consistent repeat finding for the sector — prior scout rounds (Round 26, Round 29, Round 32/BDX-precedent notes) already flagged that large-cap pharma majors (PFE/MRK/ABBV/BMY/GILD) re-rated hard through 2026 and now sit within single-digit percent of 52-week highs; today's fresh 2-source verification confirms that pattern is still fully in force, not stale. TMO/ABBV are essentially at all-time highs (<2% off). DHR is the next-closest miss at -12.1 to -12.6%.
+
+### Beaten-down reason classification (Filter A survivor: ISRG only)
+
+| Ticker | Reason | Classification |
+|--------|--------|-----------------|
+| **ISRG** | Stock is down from its Feb-2026 all-time-high area primarily on **procedure-growth-deceleration sentiment**, not a moat or demand-destruction problem. Q2 2026 (reported ~July 2026) beat on revenue (+18.5-19% YoY, $2.89-2.92B) and procedures (total procedures +16%, da Vinci +15%, Ion +36%), installed base +12% YoY to 11,710 systems — yet management held full-year da Vinci procedure-growth guidance at the **midpoint** of its already-issued 13.5-15.5% range rather than raising it after the beat, which the market read as an implicit signal of H2 deceleration (U.S. da Vinci procedure growth stepped down from ~14% in Q1 to ~12% in Q2). A second, smaller overhang is **China reimbursement/new-charge-code uncertainty**, with no clarity expected until 2027, keeping China procedure growth below the corporate average. Neither issue is a demonstrated loss of competitive position — global installed base and Ion (flexible endoscopy) continue to compound at double-digit rates, gross margin and ROIC remain best-in-class, and management's own guidance range (13.5-15.5%) still implies durable double-digit growth, just not accelerating further from an already-high base. This reads as **market extrapolating a soft guidance signal into a growth-story-is-over narrative**, not a fundamental impairment — consistent with the team's own prior June-2026 pass call on ISRG at a similarly beaten-down price ($402.80, -27.24%) citing the same "fear vs. accelerating fundamentals" dynamic. | ✅ Cyclical/sentiment (temporary) |
+
+ISRG classified cyclical/temporary, not permanent impairment — proceeds to Filter B-Zero.
+
+### Filter B-Zero — Balance Sheet Sanity Check (ISRG only)
+
+| Check | Finding | Flag |
+|-------|---------|------|
+| Total Stockholders' Equity | **$18.30B** (2026-06-30 10-Q, up from $17.94B Dec-2025 and $17.47B Mar-2026 — steadily growing every quarter) | ✅ No flag — clean, growing, no impairment/recap pattern whatsoever |
+| Net Debt/EBITDA (proxy: net cash position) | ISRG carries **essentially no funded debt** — total liabilities only $2.58B against $20.88B total assets, and stockanalysis.com's Net Debt/FCF ratio is consistently **negative** (-1.62x current, -2.31x FY2025, -2.97x FY2024) confirming a large **net cash** position, not net debt | ✅ No flag — opposite of the BBWI/leveraged-recap pattern this filter was built to catch; ISRG has one of the strongest balance sheets scouted to date |
+
+**B-Zero result: CLEAN — no negative equity, no leverage concern, net-cash balance sheet.** Proceeds to bucket classification and Filter B/D-V1 without any leverage-artifact caveat.
+
+### Bucket classification (Value vs Growth)
+
+| Ticker | Revenue growth | Reinvestment intensity | Bucket | Reasoning |
+|--------|------------------|---------------------------|--------|-----------|
+| **ISRG** | TTM revenue +20.66% (macrotrends, trailing 12mo to Jun-2026), Q2 2026 +18.5-19% YoY, Q1 2026 +23% YoY — **clearly exceeds the 15% B-V1/D-V1 trigger** | Heavy, deliberate reinvestment: da Vinci 5 upgrade-cycle capex/R&D, Ion platform build-out, ongoing international regulatory/commercial expansion (India/Italy/Taiwan/UK growth +20% ex-US) — this genuinely compresses near-term FCF yield (2.29% current, historically sub-2.5% every year 2021-2025) relative to what a mature no-growth business would show, the exact profile B-V1/D-V1's Growth-bucket carve-out is designed for | **Growth** | Checked honestly per task instruction rather than defaulting to "mature pharma = Value" — ISRG is **not** a mature, low-growth pharma balance-sheet story; it's a genuine double-digit-growth, reinvestment-heavy medtech/robotics platform business. This is the correct classification call the team made in the original June-2026 scout entry too (bucket: Growth, wide moat, da Vinci installed-base + razor-blade model) — reconfirmed here with fresher Q2 2026 data |
+
+**ISRG classified Growth bucket** → B-V1/D-V1 OR-logic applies (not Legacy B/D).
+
+### Filter B-V1 (Growth bucket, OR-logic — 3 methods, all computed and logged per CLAUDE.md mandate)
+
+| Method | Computation | Result |
+|--------|-------------|--------|
+| **1. Self-history** | Current EV/Revenue **12.28-12.75x** (stockanalysis.com, 2026-09-23/25) vs ISRG's own 5-year EV/Sales history: 2021 21.76x, 2022 14.39x, 2023 15.78x, 2024 21.76x, 2025 19.47x. Current multiple sits **below every single year in the 5-year range**, not just bottom-third. | ✅ **PASS** — clean, unambiguous |
+| **2. Peer-median** | Peers with growth rate within ±10pp of ISRG's ~20%: **Boston Scientific (BSX)** TTM revenue growth 13.52%, EV/Sales 3.61-3.66x; **Edwards Lifesciences (EW)** TTM revenue growth 14.55%, EV/Sales 7.09-7.40x. Stryker (SYK) excluded — growth only 8.48% TTM, ~12pp below ISRG, outside the ±10pp peer band. Peer median EV/Sales (BSX + EW, n=2) ≈ **5.35x**. ISRG's actual 12.28x is **~2.3x the peer median** — the opposite of cheap. | ❌ **FAIL** — clearly, ISRG trades at a large premium to growth-matched medtech peers on this metric |
+| **3. Sector-average** | Broad healthcare-equipment/medtech sector average EV/Revenue multiples run materially lower than ISRG's — NYU Stern's "Healthcare Products" sector average is ~4.36x, "Equipment" ~6.1x (Damodaran dataset, most recent published run). ISRG's 12.28x sits well above even the higher end of these broad sector benchmarks. | ❌ **FAIL** — clearly, well above sector-average norms too |
+
+**B-V1 result: only 1 of 3 methods (self-history) clears; peer-median and sector-average both FAIL clearly** (not just "couldn't be computed" — both produced confident FAIL reads). Per CLAUDE.md's mandatory disagreement safeguard: *"ถ้ามีแค่ 1 วิธีผ่านชัดเจนและอีก 2 วิธีตกชัดเจน... ให้ flag เป็น 'เห็นต่างกันเอง' ส่ง learning-queue แทน fast-track ทันที"* — **this triggers immediately.** Self-history alone is not sufficient because ISRG's own 5-year history is itself elevated in absolute terms (14.39-21.76x) relative to any peer or sector benchmark — being "cheap relative to its own historically-expensive self" is a materially weaker signal than being cheap on an external cross-check, exactly the failure mode B-V1's 2026-09-27 OR-logic redesign (commit `b287cb9`) was built to catch (same pattern as AVGO/WDC/MPWR in Round 38).
+
+**→ Routes to LEARNING-QUEUE, not fast-track**, regardless of Filter C/D-V1/E results below (computed anyway for completeness and full logging per protocol).
+
+### Filter C — ROIC ≥80% of WACC
+
+- **ROIC:** 21.89% (stockanalysis.com current) / 20.20% (GuruFocus TTM) — tight 2-source cluster ~20-22%
+- **WACC:** 7.7-12.31% (ValueInvesting.io 7.7%, GuruFocus 12.31% — wide dispersion; using GuruFocus's own framing "23% above median" suggests 12.31% is on the high side, but even at this most-conservative WACC estimate the ratio still clears)
+- **ROIC/WACC ratio:** even at the most conservative pairing (ROIC 20.20% ÷ WACC 12.31%) = **164%** — comfortably clears the 80% threshold by a wide margin on every combination of sourced inputs
+
+✅ **PASS — ROIC decisively exceeds WACC**
+
+### Filter D-V1 (Growth bucket, OR-logic — 3 methods, all computed and logged; routing already decided by B-V1 above, computed for completeness)
+
+| Method | Computation | Result |
+|--------|-------------|--------|
+| **1. Self-regression** | ISRG's own growth-rate-vs-EV/Sales history shows elevated multiples (~20-22x) both at very high growth (2021, ~31% YoY) and at moderate growth (2024-2025, ~17% YoY) — the historical pattern doesn't show a clean linear relationship but consistently prices ISRG's growth premium in the high-teens-to-20s multiple range whenever growth is in the double digits. Regressing ISRG's current ~19-20% growth against this pattern implies a "should-be" multiple materially above the current 12.28x. | ✅ **PASS** (ratio actual/predicted ≈0.55-0.6×, clears the ≤0.75× fast-track bar) — but this uses ISRG's own historically-rich multiples as the benchmark, the same weakness flagged in B-V1's self-history method above |
+| **2. Peer-regression** | Using BSX (13.52% growth, 3.61x EV/S) and EW (14.55% growth, 7.09x EV/S) as the only 2 clean peer data points, the implied slope (~3.4x EV/S per 1pp growth) extrapolated out to ISRG's ~20% growth rate implies a "should-be" multiple of roughly 25x — well above ISRG's actual 12.28x. | ⚠️ **Numerically PASSES but LOW-CONFIDENCE** — n=2 peer sample, and ISRG's growth rate (20%) sits 5.5pp beyond the peer data range (13.5-14.6%), meaning this is an extrapolation outside the fitted range, not an interpolation — same "thin peer basket" caveat the team flagged for WDC in Round 38 |
+| **3. Analyst-PT gap** | Street consensus price targets range widely by source: stockanalysis.com $476.34 (+17.6%), Chartmill $490.39 (+21.0%), MarketBeat $508.68 (+25.5%) — all vs current price ~$405.18. Average across sources ≈ **+21.4%**, straddling the 20% threshold depending on which source is used. | ⚠️ **BORDERLINE** — not a clean, unambiguous ≥20% pass across all sources; some sources clear it, one (stockanalysis.com) falls just short |
+
+**D-V1 summary: mixed picture** — self-regression and peer-regression both numerically clear the fast-track bar, but one relies on ISRG's own historically-rich multiples (weak benchmark, same B-V1 flaw) and the other is a thin (n=2) extrapolation beyond the peer data range; analyst-PT is genuinely borderline across sources. This reinforces rather than overrides the B-V1 disagreement-safeguard routing decision — **learning-queue, not fast-track, is the correct call by both B-V1 and (independently) the qualitative read of D-V1.**
+
+### Filter E — Conviction viability (≥2/3 sub-criteria)
+
+| # | Sub-criterion | Assessment | Result |
+|---|----------------|-------------|--------|
+| 1 | **Moat** | Wide — da Vinci installed base (11,710 systems, +12% YoY) + high switching costs (surgeon training/certification investment, hospital capital-equipment lock-in) + razor-blade instruments/accessories model (54-56% of revenue) + regulatory approval moat (FDA/CE-mark barriers to new entrants, though Medtronic Hugo and other challengers exist at the margin) | ✅ PASS |
+2 | **Through-cycle ROIC spread ≥3pp** | 5-year average ROIC ≈21.26% (2021 26.69%, 2022 18.03%, 2023 21.35%, 2024 19.63%, 2025 20.60%) vs WACC ~9-10% (mid-range of the 7.7-12.31% source dispersion) → spread of **~11-12pp**, far exceeding the +3pp bar every year in the look-back, not just on a TTM-peak basis | ✅ PASS |
+| 3 | **No unresolved structural/regulatory overhang** | Two live, quantified, not-yet-resolved overhangs: (a) H2 2026 da Vinci procedure-growth deceleration signal (U.S. growth stepped down 14%→12% QoQ, management guiding to guidance-range midpoint rather than raising after a beat) — a genuine open question about whether growth stabilizes or continues decelerating; (b) China reimbursement/new-charge-code clarity **not expected until 2027** — an explicit, dated, unresolved regulatory overhang per management's own commentary | ❌ FAIL — both overhangs are real, quantified, and explicitly not yet resolved (not resolved-with-asymmetric-payoff, genuinely open) |
+
+**Filter E: 2/3 PASS** (moat + ROIC spread clear; overhang sub-criterion fails on two concrete, dated, unresolved items) — clears the ≥2/3 bar.
+
+### Tier 1.5 Lane Assignment
+
+Per CLAUDE.md's Lane Assignment table: ISRG passes A + B-Zero(clean) + B-V1(via disagreement-safeguard-triggered single-method-only) + C + Filter E (2/3) — this is explicitly the **learning-queue** profile ("ก้ำกึ่ง — ผ่าน A+B+C แต่... Filter E ผ่านแค่ 2/3 **หรือ** [methods disagree]"), not fast-track (which requires Filter D/D-V1 clean pass **and** Filter E 3/3). The B-V1 disagreement safeguard is the binding constraint here — even though D-V1 and Filter E individually look reasonably constructive, CLAUDE.md's explicit instruction is that a 1-of-3-methods B-V1 pass with the other 2 clearly failing **routes to learning-queue immediately**, overriding any temptation to fast-track on the strength of the other filters.
+
+**→ ISRG routed to Tier 1.5 Learning-Queue.** Flagged to `agent_notes/charlie/learning_queue_2026-09.md` for the standard Emma-standalone-FV + Bear-lite lightweight pass, per the AVGO/WDC/MPWR (Round 38) and BBWI (Round 36) precedent — not a formal recommendation, no `portfolio/decisions.md` entry until the lightweight tier runs.
+
+### Overall Result: 0/10 fast-track, 1/10 learning-queue (ISRG), 9/10 REJECT at Filter A
+
+**Funnel:** PFE/MRK/ABBV/BMY/GILD/VRTX/AMGN/TMO/DHR (9/10) REJECT at Filter A (insufficient pullback, -0.7% to -12.6% off 52W high — none reach the 20% floor; large-cap pharma majors in particular are essentially at or near all-time highs, confirming the sector-wide re-rating pattern already flagged in Rounds 26/29/32). **ISRG (1/10) PASS Filter A** (-32.9%) → **PASS B-Zero** (clean, net-cash balance sheet) → **classified Growth bucket** (TTM revenue +20.66%, reinvestment-heavy) → **B-V1: only 1/3 methods clear (self-history), peer-median and sector-average both FAIL clearly → mandatory disagreement safeguard fires** → **PASS Filter C** (ROIC 20-22% vs WACC 7.7-12.31%, clears even worst-case) → **D-V1: mixed** (2/3 methods numerically clear but low-confidence/borderline) → **Filter E: 2/3 PASS** (moat + ROIC-spread clear, overhang sub-criterion fails on 2 concrete unresolved items). **Net routing: Tier 1.5 LEARNING-QUEUE, not fast-track** — no Full Pipeline run this round, no `reports/ISRG_2026-09-28.md`, no trade executed, no `dashboard/portfolio.js`/`trade-log.md`/`positions.md` changes.
+
+**Near-miss / learning-queue candidate for `buy_list.md`:** ISRG is the sole survivor past Filter A this round and clears more of the funnel than most learning-queue entries (A + B-Zero + B-V1[1/3] + C + E[2/3]) — logged to `buy_list.md`'s Scout-Stage Learning-Queue Watch section below, alongside AVGO/WDC/MPWR from Round 38.
+
+**Sector-level observation for CIO/Charlie:** This is now the **fifth consecutive sector-rotation round** (Energy Round 39, Industrials Round 40, Financials Round 42, and now Healthcare/Pharma/Biotech Round 41 — note Round 41/42 ran slightly out of numeric sequence but both post-date Round 40) to confirm the same structural pattern: broad 2026 market strength in the current RISK-ON regime has left very few genuinely beaten-down large-cap sectors. Large-cap pharma specifically (PFE/MRK/ABBV/BMY/GILD) has fully re-rated off its earlier-2026 lows — every single name sits within 11% of its 52-week high, a materially tighter cluster than Industrials (7/10 within 20%) or Financials (9/10 within 20%) saw. The one survivor, ISRG, is not a pharma name at all but a **growth-bucket medtech/robotics platform** whose pullback is sentiment/guidance-driven rather than valuation-cycle-driven — a different animal from the mature-pharma hunting-ground thesis this round nominally targeted. This reinforces that healthcare/pharma-specific mandates should probably bias toward biotech/medtech/life-sciences-tools sub-sectors (where genuine growth-story sentiment swings create dislocations) rather than mega-cap pharma majors (which behave more like bond-proxy/defensive value names that have already re-rated) in future rounds.
+
+*Max — 2026-09-28 | Scout Round 41 (Healthcare/Pharma/Biotech sector — pharma majors PFE/MRK/ABBV/BMY/GILD, biotech VRTX/AMGN, medtech-robotics ISRG, life-sciences-tools TMO/DHR; REGN excluded, already held). Filter A: 1/10 PASS (ISRG -32.9%), 9/10 REJECT (-0.7% TMO to -12.6% DHR, none reaching the 20% floor — large-cap pharma majors PFE/MRK/ABBV/BMY/GILD all within 11% of 52W highs, confirming the Round 26/29/32 sector-re-rating pattern still holds). ISRG classified cyclical/sentiment (procedure-growth-deceleration-guidance fear on still-accelerating fundamentals, not moat erosion) and Growth bucket (TTM revenue +20.66%, reinvestment-heavy — correctly NOT defaulted to Value despite being a "pharma/medtech" name, per task instruction to check each ticker's actual growth honestly). B-Zero: CLEAN (equity $18.30B and growing every quarter, net-cash balance sheet, no leverage flag whatsoever — one of the strongest balance sheets scouted to date). B-V1: only 1/3 methods clear (self-history PASS; peer-median FAIL — ISRG trades ~2.3x the BSX/EW peer-median EV/Sales; sector-average FAIL — well above NYU Stern medtech/healthcare-equipment benchmarks) → **mandatory disagreement safeguard fires, routes to learning-queue not fast-track**. Filter C: PASS (ROIC 20-22% vs WACC 7.7-12.31%, clears even worst-case pairing at 164%). D-V1: mixed (self-regression + peer-regression numerically clear but low-confidence — n=2 peer extrapolation beyond data range for peer-regression, ISRG's own historically-rich multiples as benchmark for self-regression; analyst-PT borderline +17.6% to +25.5% depending on source). Filter E: 2/3 PASS (moat Wide + ROIC-WACC spread ~11-12pp through-cycle both clear; overhang sub-criterion FAILS on two concrete, dated, unresolved items — H2 procedure-growth-deceleration signal + China reimbursement clarity not expected until 2027). **Net: Tier 1.5 LEARNING-QUEUE routing (B-V1 disagreement safeguard is the binding constraint) — no Full Pipeline, no trade this round** despite ISRG clearing more of the funnel than a typical reject. Routed to `agent_notes/charlie/learning_queue_2026-09.md` for standard Emma+Bear-lite lightweight pass (pending, per AVGO/WDC/MPWR/BBWI precedent) and logged to `buy_list.md` Scout-Stage Learning-Queue Watch section. **Sector-level flag:** fifth consecutive sector-rotation round confirming broad 2026 market strength; large-cap pharma majors specifically have fully re-rated (all within 11% of 52W highs) — future healthcare mandates should bias toward biotech/medtech/life-sciences-tools sub-sectors where genuine sentiment-driven dislocations (like ISRG's) still occur, rather than re-testing mega-cap pharma majors. ดู deployment_log.md for the formal SKIPPED/LEARNING-QUEUE log.*
+
+---
+
 ## Scout Report § Round 42 (Financials sector — money-center/investment banks, capital markets, insurance)
 
 **Date:** 2026-09-28 | **Max Scout Mode** | Regime RISK-ON (Atlas 2026-09-25 re-call, Force Deploy ACTIVE), cash ~74% of NAV — a full-pipeline-cleared candidate this round would have been live-eligible for a real BUY.

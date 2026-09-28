@@ -69,6 +69,18 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
+## Scout Round 41 Learning-Queue (Healthcare/Pharma/Biotech sector, 2026-09-28)
+
+*ไม่ผ่าน rule 1 ของ list นี้ (ต้องมี full pipeline report ก่อน) — เก็บไว้ตรงนี้แยกจาก "Active" list ด้านบน. ISRG ผ่าน Filter A + B-Zero(clean) + B-V1(1/3 methods, self-history only — peer-median + sector-average ทั้งคู่ FAIL ชัดเจน → mandatory disagreement safeguard บังคับ learning-queue ไม่ fast-track) + Filter C + Filter E(2/3). ดู `portfolio/watchlist.md` § Scout Report Round 41 สำหรับรายละเอียดเต็มทุก method.*
+
+| Ticker | Bucket | B-V1/D-V1 pass method | Price (2026-09-25/26) | Street PT (avg) | Implied entry zone (rough, pending Emma lightweight) | Watch trigger |
+|--------|--------|------------------------|-------------------------|-------------------|--------------------------------------------------------|----------------|
+| **ISRG** | Growth | Self-history only (EV/Sales 12.28-12.75x below every year of its own 5Y range 14.39-21.76x); peer-median FAIL (~2.3x BSX/EW peer-median EV/Sales); sector-average FAIL (well above NYU Stern medtech/healthcare-equipment benchmarks) | $405.06-406.39 | $476.34-508.68 (+17.6% to +25.5%, source-dependent, borderline vs 20% D-V1 threshold) | Not yet computed — needs Emma reverse-DCF-implied-growth cross-check on whether the ~20% growth rate justifies re-rating back toward peer/sector-median multiples, before an entry zone can be trusted (same caveat pattern as AVGO/WDC/MPWR Round 38) | Watch for (a) H2 2026 da Vinci U.S. procedure growth stabilizing/reaccelerating off the 12% Q2 print (currently the core overhang), or (b) any China reimbursement/new-charge-code clarity arriving earlier than the 2027 guidance (second overhang) — either would materially firm up the Filter E overhang sub-criterion from FAIL toward PASS |
+
+**Not a BUY recommendation.** ISRG cleared more of the funnel than any other Round 41 candidate (Filter A -32.9% off high, B-Zero clean net-cash balance sheet, Filter C ROIC 20-22% vs WACC comfortably clears) but was explicitly NOT fast-tracked because the mandatory B-V1 disagreement safeguard fired (2 of 3 methods — peer-median and sector-average — disagree clearly with the self-history pass) and Filter E's overhang sub-criterion failed on two concrete, dated, unresolved items (H2 procedure-growth-deceleration signal, China reimbursement clarity not expected until 2027). Added here as a scout-stage watch item only, pending a Tier 1.5 lightweight Emma reverse-DCF cross-check. **Superseded/removed from this section, not "Active," if promoted to a real full-pipeline analysis.**
+
+---
+
 ## Scout Round 42 Near-Miss (Financials sector, 2026-09-28)
 
 | Ticker | Bucket | Furthest gate reached | Died at | Price (2026-09-25/28) | Naive FV | Street PT (avg) | Implied entry zone | Watch trigger |
