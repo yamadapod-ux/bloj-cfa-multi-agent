@@ -3239,3 +3239,120 @@ ROIC 10.53-16.59% (GuruFocus TTM 10.53% / stockanalysis 16.59%, source variance)
 **Sector-level observation for CIO/Charlie:** Industrials as a sector has broadly recovered off the Q3-2026-laggard lows that motivated the original Round 32 sector-rotation rationale (XLI was -7.1% to -7.4% QTD at that time, "worst-performing S&P sector," led by CAT + GE Aerospace). 7/10 names here are now within 20% of 52-week highs (HON at -18.4% is the closest miss), confirming this sector has substantially re-rated upward since late September — a similar dynamic to what happened with Energy (Round 39) and AI/Semis (Round 37/38), i.e., **sectors flagged as "laggard/de-rated" in one scout round can re-rate quickly and stop being fertile hunting ground within weeks**, reinforcing the value of the mandatory sector-rotation-every-round rule rather than returning to a stale thesis.
 
 *Max — 2026-09-27 | Scout Round 40 (Industrials sector — Aerospace/Defense, Machinery, Electrical/Diversified Industrial, Transports/Logistics) — 10 tickers scanned (BA/GE/HON/CAT/DE/ETN/EMR/PH/FDX/UPS). Filter A: 3/10 PASS (BA -22.08%, CAT -23.46% to -25.0%, UPS -23.24%), 7/10 REJECT (GE/HON/DE/ETN/EMR/PH/FDX all inside the 20% floor — HON closest miss at -18.4%). All 3 survivors classified cyclical/temporary (not permanent impairment) and Value bucket (CAT's >15% growth trigger explicitly overridden by economic-character judgment, consistent with Round 32's prior CAT classification). Filter B: BA/CAT REJECT (FCF yield <6% + EV/EBITDA/P-B both above own 5Y range for CAT; BA's earnings base too erratic/thin for a meaningful EV/EBITDA read), UPS PASS via FCF-yield leg (6.83%). Filter C: UPS PASS (ROIC 10.5-16.6% > WACC 8.1-9.0%). Filter D: UPS REJECT — naive FV ~$66/share (3Y-avg FCF/share $5.94 ÷ WACC 9%) vs price $93.96 = price 42% ABOVE naive FV, no MOS; Street PT ($115.81-117.41) diverges the other way but per CLAUDE.md tie-break rule naive FV governs. **0/10 pass full A-E — no Tier 1/1.5, no Full Pipeline, no trade this round** (valid expected outcome). UPS logged to `buy_list.md` as the sole near-miss (furthest through funnel, PASS A+B+C). Sector-level flag: Industrials has broadly re-rated since Round 32's "Q3 laggard" thesis — 7/10 names now inside the 20%-off-high floor, reinforcing that scout hunting-grounds go stale fast and mandatory sector rotation is doing its job. ดู deployment_log.md for the formal SKIPPED log.*
+
+---
+
+## Scout Report § Round 42 (Financials sector — money-center/investment banks, capital markets, insurance)
+
+**Date:** 2026-09-28 | **Max Scout Mode** | Regime RISK-ON (Atlas 2026-09-25 re-call, Force Deploy ACTIVE), cash ~74% of NAV — a full-pipeline-cleared candidate this round would have been live-eligible for a real BUY.
+
+**Prune Pass (Step 0):** Confirmed none of the 10 candidates below are OPEN positions in `dashboard/portfolio.js` (current OPEN book: ADBE, NOW, CRM, REGN, ADSK only — grep clean). None are duplicate watchlist/Archive entries. No de-list actions needed this session (Round 40 pruned the prior session).
+
+**10 tickers scanned** (diversified sub-sector — money-center/universal banks: BAC, WFC, C; investment banks/capital markets: GS, MS; card network/consumer-finance hybrid: AXP; asset management: BLK; life/multiline insurance: MET, PRU, AIG) — all verified real, liquid, large-cap NYSE names via WebSearch 2-source price cross-check before committing; none needed substitution for illiquidity or OPEN-position conflict.
+
+### Filter A — Beaten-down ≥20% off 52-week high (2-source WebSearch cross-check, 2026-09-25/27)
+
+| Ticker | Price (2-source verified) | 52W High (2-source) | % off high | Filter A |
+|--------|---------------------------|----------------------|------------|----------|
+| **BAC** | $56.70 (Bank of America IR historical lookup + CNBC, exact match, 2026-09-25 close) | $65.23 (CNBC + Yahoo Finance, exact match, 08/17/26) | -13.08% | ❌ REJECT |
+| **WFC** | $82.97 (Macrotrends + Wells Fargo IR stock page, exact match, 2026-09-25 close) | $97.76 (CNBC + Yahoo Finance, exact match, 01/05/26) | -15.13% | ❌ REJECT |
+| **GS** | $935.45 (CNBC + Macrotrends + Investing.com, exact match, 2026-09-25 close) | $1,153.99 (CNBC + Macrotrends + Robinhood, exact match, 07/15/26) | -18.94% | ❌ REJECT (closest miss of the bank/capital-markets group) |
+| **MS** | $196.31 (Macrotrends + CNBC + Morningstar, exact match, 2026-09-25 close) | $232.25 (CNBC + Macrotrends + Robinhood, exact match, 07/15/26) | -15.48% | ❌ REJECT |
+| **C** | $134.28 (Macrotrends + WSJ, exact match, 2026-09-25 close) | $147.96 (CNBC + Macrotrends + public.com, exact match, 06/18/26) | -9.25% | ❌ REJECT |
+| **AXP** | $308.89 (WSJ close + ir.americanexpress.com "AXP Price 308.89", exact match, 2026-09-25 close) | $387.49 (WSJ + Macrotrends + Robinhood, exact match) | **-20.29%** | ✅ **PASS** |
+| **BLK** | $1,086.31 (BlackRock IR stock quote + Yahoo Finance history, exact match, 2026-09-25 close) | $1,219.94 (CNBC + Robinhood, exact match, 10/15/25) | -10.96% | ❌ REJECT |
+| **MET** | $97.70 (MetLife IR historical lookup + Yahoo Finance, exact match, 2026-09-25 close) | $100.93 (Macrotrends + public.com + Robinhood, exact match) | -3.20% | ❌ REJECT (near ATH) |
+| **PRU** | $119.45 (Macrotrends + Yahoo Finance, exact match, 2026-09-25 close) | $127.72 (public.com + Robinhood, exact match) | -6.48% | ❌ REJECT |
+| **AIG** | $74.17-75.03 (AIG IR "Sep 25, 2026 4:10 PM EDT" $74.17 + WSJ $75.03 intraday-adjacent, ~1.2% spread) | $87.29 (Robinhood + NYSE.com, exact match, 12/24/25) | -14.02% to -15.06% | ❌ REJECT |
+
+**Filter A result: 1/10 PASS.** Only **AXP** clears the ≥20% beaten-down floor, and only barely (-20.29%, right at the threshold). The other 9 — spanning money-center banks (BAC/WFC/C), investment banks (GS/MS), asset management (BLK), and insurance (MET/PRU/AIG) — all sit between -3.2% (MET, essentially at ATH) and -18.94% (GS, the closest miss). This is consistent with the broader 2026 financials sector having rallied hard (rate-cut-friendly RISK-ON backdrop, strong capital-markets/trading revenue, resilient consumer credit) — money-center banks and insurers in particular show almost no dislocation (MET/PRU under -7%).
+
+### Beaten-down reason classification (Filter A survivor: AXP only)
+
+| Ticker | Reason | Classification |
+|--------|--------|-----------------|
+| **AXP** | Stock pulled back from its Feb-2026 high on a combination of (a) elevated VCE (variable customer engagement) expense ratio 44-45% FY26 guide — Q1 2026 print showed shares "plummeting" on higher card-member marketing/rewards costs even as the company beat on revenue/EPS and raised guidance (Q1 2026: EPS $4.28 +18% YoY, Card Member spend +10% FX-adj, "highest quarterly growth in three years"); (b) general high-multiple-financial de-rating amid 2026 rate-path uncertainty; (c) normal profit-taking after a strong 2025-early-2026 run (52-week high $387.49 was set well above the stock's own 52-week average $337.40). Fundamentals are **not deteriorating** — FY2026 guidance reaffirmed/raised (9-10% revenue growth, EPS $17.30-17.90), credit performance "excellent" with net write-off rate stable ~2.0% and delinquency rate *declining* to 1.1-1.2% (Q2 2026, well below the 2.69-2.85% industry-wide FRED/WalletHub average — AXP's premium-card book is holding up better than the broader card industry). This is a **sentiment/expense-ratio-driven pullback on accelerating, not decelerating, underlying business momentum** — not a credit-cycle or moat problem. | ✅ Cyclical/sentiment (temporary) |
+
+AXP classified cyclical/temporary, not permanent impairment — proceeds to Filter B-Zero.
+
+### Filter B-Zero — Balance Sheet Sanity Check (AXP only, financials-adapted methodology)
+
+**Methodology note (financials-adapted per task judgment call):** Net Debt/EBITDA is not a meaningful metric for a bank/card-lender — AXP's balance sheet is dominated by customer deposits ($156.97B), a revolving/lending loan book, and Tier-1/Tier-2 regulatory capital, not a conventional operating-company debt stack. Substituted checks: (1) Total Stockholders' Equity trend (growing vs shrinking/impaired), and (2) regulatory capital-adequacy ratios (CET1, Tier 1, Total Capital, Tier 1 Leverage) vs regulatory minimums, as the bank/insurer-appropriate leverage-sanity proxy called for in the B-Zero rule's spirit.
+
+| Check | Finding | Flag |
+|-------|---------|------|
+| Total Stockholders' Equity | **$34.28B** (2026-06-30, up from $33.995B Q1-2026 and $33.474B Dec-2025) — positive and growing QoQ | ✅ No flag — clean, growing equity base, no impairment/recap pattern |
+| Regulatory capital adequacy (AmEx Co. level, Q2 2026 10-Q, SEC EDGAR) | CET1 10.4% vs 7.0% regulatory minimum · Tier 1 11.0% vs 8.5% min · Total Capital 13.1% vs 10.5% min · Tier 1 Leverage 9.6% vs 4.0% min | ✅ No flag — comfortably above every regulatory minimum by 2.5-5.6pp, no capital-adequacy stress signal |
+
+**B-Zero result: CLEAN — no negative equity, no leverage/capital-adequacy concern.** Proceeds to bucket classification and Filter B without any FCF-yield discount/leverage-artifact caveat (unlike the BBWI precedent this filter was built from).
+
+### Bucket classification (Value vs Growth)
+
+| Ticker | Revenue growth | Reinvestment intensity | Bucket | Reasoning |
+|--------|------------------|---------------------------|--------|-----------|
+| **AXP** | Q1 2026 revenue +10% FX-adj (raised guide), FY2026 guide 9-10% — technically brushes the 15% B-V1 trigger threshold from below but does not clear it | Marketing/VCE spend elevated but this is normal opex (customer acquisition/loyalty cost), not a deliberate growth-phase capex/R&D reinvestment sacrificing FCF the way B-V1's carve-out is designed for | **Value** | Mature, FCF-positive (7.28% yield), dividend-paying premium-card network with a 170-year operating history — textbook Value bucket per CLAUDE.md's own framing ("financials/insurers" explicitly named as the Value-bucket P/B use case). Growth is real (accelerating, in fact) but well under the 15% trigger and not reinvestment-phase in character — no ambiguity here, unlike Round 40's CAT judgment call. |
+
+**Confirms task expectation: the sole survivor is Value bucket** — Legacy Filter B/D lanes apply (no B-V1/D-V1 OR-logic needed this round, consistent with financials' mature/dividend-paying profile).
+
+### Filter B (Legacy, Value bucket) — FCF yield >6% OR EV/EBITDA bottom-third-5Y OR P/B below 5Y median
+
+**Methodology note:** Per CLAUDE.md, P/B vs 5Y median is the explicitly preferred metric "for financials/insurers" — computed as primary alongside FCF yield.
+
+| Metric | Value | vs threshold | Result |
+|--------|-------|---------------|--------|
+| FCF yield | **7.28%** (GuruFocus, 2026-09-26, TTM FCF $15.19B ÷ market cap) | >6% required | ✅ **PASS** |
+| P/B ratio | Current 6.08-6.39x (Macrotrends 6.08x as of 09/27; GuruFocus/Macroaxis converge 6.1-6.4x) vs 10Y average 4.36x, 10Y median ~4.64x | Below 5Y/10Y median required | ❌ **FAIL** — current P/B sits ~31-38% ABOVE its own long-run median, not below it |
+
+**Filter B: PASS via the FCF-yield leg (OR-logic — only 1 of 3 legs needs to clear).** Flagged transparently: the P/B leg — the metric CLAUDE.md calls out as *preferred* for financials — actively disagrees and says AXP is rich on a book-value basis, not cheap. This tension carries forward into Filter D.
+
+### Filter C — ROE/ROIC ≥80% of WACC (financials-adapted: ROE used as primary per task judgment)
+
+**Methodology note:** Standard ROIC methodology (NOPAT ÷ invested capital) is structurally distorted for a card-issuer/lender because "invested capital" calculations typically net out or mishandle the large customer-deposit/loan-book funding base that is core to the business model, not a source of enterprise leverage the way it would be for a non-financial. GuruFocus's headline ROIC of **5.31%** for AXP is a clear example of this distortion — it would fail the 80%-of-WACC bar outright (5.31% vs even the low WACC estimate 7.72% = only 69% of WACC) despite AXP being an obviously highly profitable, well-capitalized franchise. Per task's explicit allowance, **ROE is used as the primary quality metric for this bank/card-lender**, consistent with standard sell-side/CFA practice for financials (ROIC is a NOPAT/invested-capital construct designed for non-financial operating companies; ROE is the standard capital-productivity metric where equity capital adequacy, not enterprise capital structure, is the binding constraint).
+
+- **ROE:** 32.36-36.45% (ValueInvesting.io 32.36% as of 09/26, Macrotrends 33.72% Q2-2026 annualized, GuruFocus 36.45%, Yahoo Finance TTM 34.38% — 4-source cluster, all in the low-to-mid-30s%)
+- **WACC:** 7.72-10.38% (Alphaspread 7.72%, Macroaxis 10.22%, GuruFocus 10.38% — wide dispersion typical of financials WACC models; using a representative **~9%** mid-point per CLAUDE.md's mega-cap sector-estimate guidance)
+- **ROE/WACC ratio:** ~34% ÷ 9% ≈ **378%** — clears the 80% threshold by an overwhelming margin on every combination of sourced inputs (even worst-case low-ROE/high-WACC pairing of 32.36%/10.38% = 312%)
+
+✅ **PASS — ROE decisively exceeds WACC** (the raw ROIC read is flagged as a financials-methodology artifact, not a genuine quality concern, and documented here rather than silently substituted per the Source Annotation / transparency rules)
+
+### Filter D — Credible valuation gap (financials-adapted: naive FCF/WACC Legacy + P/B-based cross-check, methodology explicitly disclosed)
+
+**Methodology choice (disclosed per task instruction):** D-Legacy (naive FCF/WACC no-growth perpetuity) remains the mandatory primary test per CLAUDE.md's unchanged Value-bucket rule text. A P/B-based residual-income/justified-multiple cross-check is added as the financials-adapted secondary lens the task calls for (dividend-discount-style reasoning via ROE/COE/g, standard for bank/insurer valuation), reconciled explicitly below rather than cherry-picked.
+
+**Method 1 — Naive FV = FCF ÷ WACC (D-Legacy, mandatory):**
+- FCF yield 7.28% (Filter B input) ÷ WACC 9% = 0.809 → **naive FV ≈ 0.809 × current price ≈ $249.90/share**
+- Current price $308.89 is **~23.6% ABOVE this naive FV** — the opposite of a discount
+- Per D-Legacy criteria ("current price > 0.90 × naive FV → deprioritize"): price/FV = 1.236 → **clean FAIL**, well outside even the learning-queue 0.80-0.90x band
+
+**Method 2 — Justified P/B (residual-income / Gordon-growth-on-equity, financials-adapted cross-check):**
+- Justified P/B = (ROE − g) ÷ (Cost of Equity − g)
+- Using ROE 33% (mid-point), COE ≈9% (WACC proxy), g = 5% (conservative long-run nominal growth for a mature global payments network): Justified P/B = (0.33−0.05)/(0.09−0.05) = **7.0x** vs current P/B 6.08-6.39x → suggests **~9-13% undervaluation**, short of the 20% MOS bar
+- Sensitivity: at g=4%, Justified P/B = (0.33−0.04)/(0.09−0.04) = 5.8x vs current 6.24x → flips to **overvalued** by ~7%
+- **This method is highly sensitive to the terminal-growth assumption and does not independently establish a confident ≥20% discount at any defensible g** — best case ~11-13% MOS, worst case negative
+
+**Analyst PT cross-check (mandatory, 2-source):** Street consensus $373.50-$375.96 (public.com $373.50, Investing.com $375.96, Marketbeat $373.05 — tight 3-source cluster) vs price $308.89 = **+20.9% to +21.7% upside**. Per CLAUDE.md's tie-break rule, this only overrides naive FV when Street diverges by **>25%** in the opposite direction — at 20.9-21.7% it falls just short of that override bar, so naive FV continues to govern per the letter of the rule, though the closeness is noted as a genuine judgment-call tension.
+
+**Reconciliation:** All 3 signals disagree — naive FCF/WACC says richly overvalued (+23.6% above FV), the P/B/justified-multiple cross-check is inconclusive/assumption-sensitive (ranges from +13% undervalued to -7% overvalued depending on terminal growth), and Street PT suggests +21% upside but doesn't clear the override threshold. This is the same "methods disagree, no confident consensus discount" pattern the B-V1/D-V1 disagreement safeguard was designed to catch in the Growth bucket — applying that same spirit here (even though D-Legacy is technically unchanged for Value bucket), **AXP does not earn a fast-track-quality valuation gap.**
+
+❌ **Filter D REJECT** — naive FV (the mandatory primary method) shows price is 23.6% above fair value; neither the financials-adapted P/B cross-check nor the Street-PT signal is strong/consistent enough to override that conclusion under CLAUDE.md's stated tie-break threshold.
+
+**AXP dies at Filter D.** No candidate reaches Filter E this round.
+
+### Tier 1.5 Lane Assignment
+
+**Not applicable** — AXP (the only Filter A survivor) died at Filter D, so no candidate is routed to fast-track or learning-queue lane assignment this round.
+
+### Overall Result: 0/10 pass full A-E
+
+**Funnel:** BAC/WFC/GS/MS/C/BLK/MET/PRU/AIG (9/10) REJECT at Filter A (insufficient pullback, -3.2% to -18.94% off 52W high — none reach the 20% floor). **AXP (1/10) PASS Filter A** (-20.29%, right at the threshold) → **PASS B-Zero** (clean balance sheet, no equity/capital-adequacy flag) → **PASS Filter B** (FCF yield 7.28%, though the financials-preferred P/B leg disagrees) → **PASS Filter C** (ROE ~34% vs WACC ~9%, ~378% of WACC — ROIC substituted for ROE per task's financials-judgment allowance, with the raw ROIC distortion explicitly documented) → **REJECT Filter D** (naive FV ~$249.90/share vs price $308.89 = price 23.6% above FV; P/B cross-check inconclusive; Street PT +20.9-21.7% falls just short of the >25% override bar). No Tier 1/1.5, no Full Pipeline, no trade this round.
+
+**Near-miss for `buy_list.md`:** AXP is the furthest-through-funnel candidate this round (PASS A + B-Zero + B + C, died only at D) — logged below with a naive-FV-derived entry zone, the same "clean signal but valuation-gap miss" pattern as UPS in Round 40.
+
+**Sector-level observation for CIO/Charlie:** Financials as a sector is broadly near all-time highs in the current RISK-ON regime — money-center banks (BAC/WFC/C), investment banks (GS/MS), asset management (BLK), and especially insurance (MET/PRU/AIG, all under -15.1%, MET essentially at ATH) show almost no dislocation. This is now the **fourth consecutive sector-rotation round** (after Energy Round 39, Industrials Round 40, and now Financials Round 42) to surface the same structural pattern: **broad market strength in the current regime has left very few sectors genuinely beaten-down** — only 1-3 tickers per 10-ticker scan clear Filter A, and even those that do frequently die at Filter B or D on valuation-gap grounds rather than lacking a beaten-down narrative. This reinforces (a) that the VALUE-FIRST screen redesign (2026-09-01 era) is working as intended — it is *supposed* to reject expensive markets rather than manufacture false-positive candidates — and (b) that the team should continue rotating sectors every round per the mandatory rule rather than re-testing stale hunting grounds, while recognizing candidate scarcity itself is informationally valid given the regime.
+
+**Methodology judgment calls this round (summary for CIO):**
+1. **Filter B-Zero for a bank/lender:** substituted CET1/Tier-1/Total-Capital/Tier-1-Leverage ratios vs regulatory minimums for the non-applicable Net Debt/EBITDA metric — a direct, defensible analog to the "leverage sanity" spirit of the rule for a deposit-funded institution.
+2. **Filter C for a card-issuer:** used ROE (~34%) instead of the distorted headline ROIC (5.31%, which would have failed the gate despite AXP's obviously strong capital productivity) — documented the distortion explicitly rather than silently substituting.
+3. **Filter D for a financial:** ran D-Legacy (mandatory, unchanged) as primary and added a justified-P/B/residual-income cross-check as the financials-adapted secondary lens per task instruction — both concluded no confident ≥20% MOS exists, reconciled transparently rather than cherry-picking the more favorable read.
+
+*Max — 2026-09-28 | Scout Round 42 (Financials sector — money-center/universal banks BAC/WFC/C, investment banks/capital markets GS/MS, card network AXP, asset manager BLK, insurers MET/PRU/AIG). Filter A: 1/10 PASS (AXP -20.29%, right at the threshold), 9/10 REJECT (-3.2% MET to -18.94% GS, none reaching the 20% floor). AXP classified cyclical/sentiment (VCE-expense-driven pullback on accelerating fundamentals, not credit deterioration) and Value bucket (mature dividend-payer, growth real but sub-15%-trigger). B-Zero: CLEAN (equity $34.28B growing, all regulatory capital ratios 2.5-5.6pp above minimums — Net Debt/EBITDA substituted with CET1/Tier-1/Leverage ratios per financials-adapted judgment). Filter B: PASS via FCF-yield leg (7.28%), though the financials-preferred P/B leg disagrees (current P/B 31-38% above 10Y median). Filter C: PASS via ROE (~34% vs WACC ~9%, ~378% of WACC) — ROE substituted for the distorted headline ROIC (5.31%) per task's financials-judgment allowance, distortion explicitly documented. Filter D: REJECT — naive FV ~$249.90/share (FCF-yield 7.28% ÷ WACC 9%) vs price $308.89 = price 23.6% above FV; justified-P/B cross-check inconclusive (+13% to -7% depending on terminal-growth assumption); Street PT +20.9-21.7% falls just short of the CLAUDE.md >25% override bar. **0/10 pass full A-E — no Tier 1/1.5, no Full Pipeline, no trade this round** (valid expected outcome, consistent with the Round 39/40 pattern of a broadly-strong RISK-ON market leaving few genuinely cheap candidates). AXP logged to `buy_list.md` as the sole near-miss (furthest through funnel, PASS A+B-Zero+B+C). Sector-level flag: fourth consecutive sector-rotation round (Energy/Industrials/Financials) confirming broad 2026 market strength has left few beaten-down sectors — informationally valid scarcity, not a scan failure. ดู deployment_log.md for the formal SKIPPED/REJECT log.*

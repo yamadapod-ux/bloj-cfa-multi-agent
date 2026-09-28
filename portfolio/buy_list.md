@@ -69,6 +69,16 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
-*Charlie + Max | Last updated: 2026-09-27 (เพิ่ม UPS จาก Scout Round 40 Industrials — sole near-miss ที่ผ่าน Filter A+B+C แต่ตายที่ D, ดู watchlist.md § Round 40 สำหรับรายละเอียด) — 12 Active + 3 Scout-Stage Watch*
+## Scout Round 42 Near-Miss (Financials sector, 2026-09-28)
+
+| Ticker | Bucket | Furthest gate reached | Died at | Price (2026-09-25/28) | Naive FV | Street PT (avg) | Implied entry zone | Watch trigger |
+|--------|--------|------------------------|---------|-------------------------|----------|-------------------|----------------------|----------------|
+| **AXP** | Value | Filter A → B-Zero → B → C all PASS | Filter D (naive FV gap) | $308.89 | ~$249.90/share (FCF yield 7.28% ÷ WACC 9%) | $373.50-375.96 | ~$200-250 (naive-FV-derived zone; would need ~19-24% further pullback from current price, or a normalized-FCF-yield re-basing above ~9%, to clear the D-Legacy ≤0.80× fast-track bar) | Re-verify if AXP pulls back further toward the $250-270 zone (narrows gap to naive FV), OR if Q3 2026 earnings (mid-Oct) show VCE expense ratio moderating (would lift normalized FCF yield and lower the implied naive-FV denominator's conservatism), OR if Street PT median rises further (>25% above price would trigger the CLAUDE.md tie-break override in AXP's favor regardless of naive FV) |
+
+**Not a BUY recommendation.** AXP cleared Filter A (barely, -20.29%), B-Zero (clean balance sheet), Filter B (FCF-yield leg), and Filter C (ROE ~378% of WACC) — the cleanest quality/balance-sheet profile of any Financials-sector candidate scanned this round — but died at Filter D on a naive-FCF/WACC valuation-gap basis (price 23.6% above naive FV) despite a bullish but insufficient Street PT divergence (+20.9-21.7%, short of the >25% override bar) and an inconclusive P/B-based cross-check. See `watchlist.md` § Scout Report Round 42 for full detail and methodology disclosure (ROE substituted for distorted ROIC; CET1/Tier-1 ratios substituted for Net Debt/EBITDA).
+
+---
+
+*Charlie + Max | Last updated: 2026-09-28 (เพิ่ม AXP จาก Scout Round 42 Financials — sole near-miss ที่ผ่าน Filter A+B-Zero+B+C แต่ตายที่ D, ดู watchlist.md § Round 42 สำหรับรายละเอียด) — 12 Active + 3 Scout-Stage Watch + 1 Round 42 Near-Miss*
 
 **Note (2026-09-09):** APTV (2026-09-06, dual-gate FAIL) และ LKQ (2026-09-08, single-gate FAIL conviction) — full analysis เสร็จแล้วทั้งคู่ แต่ **ไม่เพิ่มเข้า buy_list** (APTV: forward return ~5.9% CAGR ที่ entry zone ต่ำเกิน; LKQ: Bear objection — entry zone แคบ = false green-light) → track เป็น WATCH item ใน decisions.md + Bull Flip Triggers แทน. CNC (2026-09-04, AVOID) ก็ไม่เข้า (forward return ต่ำ).
