@@ -223,6 +223,12 @@ CIO → "Max หาหุ้นใหม่"
   - **B-V1 (Growth bucket `TRIAL` — แก้ 2026-09-27 เป็น OR-logic 3 วิธี หลัง Round 37 พบว่า self-history เดี่ยวๆ mis-calibrate กับ sector ที่ re-rate ถาวร เช่น AI/semis supercycle — ดู `agent_notes/charlie/2026-09-27_bv1_dv1_orlogic.md`. ใช้เมื่อ revenue growth >15% YoY หรือชัดเจนว่าอยู่ใน reinvestment phase ที่ capex/R&D หนักกดดัน FCF โดยตั้งใจ — Max classify bucket ก่อนเลือก lane):** คำนวณทุกวิธีที่ทำได้จริง (ไม่ใช่แค่วิธีเดียวที่สวยที่สุด) — **ผ่านถ้าเข้าเงื่อนไขอย่างน้อย 1 ใน 3 วิธี:**
     1. **Self-history:** EV/Revenue ปัจจุบันอยู่ bottom-third ของ 5-year history ตัวเอง
     2. **Peer-median:** EV/Revenue ปัจจุบันต่ำกว่า median ของ peer group ที่ growth rate ใกล้เคียงกัน (±10pp) ณ ปัจจุบัน
+       - **Peer-selection guideline (เพิ่ม 2026-09-28 — กัน cherry-pick peer ที่เอื้อผลลัพธ์):**
+         1. **ต้องเลือกก่อนดูผลลัพธ์** — เขียนรายชื่อ peer candidate (3-6 ตัว) + เหตุผลที่เลือกแต่ละตัวใน watchlist.md **ก่อน**คำนวณ EV/Revenue เทียบ เพื่อไม่ให้ Max เลือกเฉพาะ peer ที่บังเอิญแพงกว่าจนทำให้ candidate ดูถูก
+         2. **เกณฑ์คัด peer ที่ยอมรับได้ (ต้องผ่านอย่างน้อย 2 ใน 3):** (ก) จัดอยู่ GICS sub-industry เดียวกันหรือใกล้เคียงที่สุด (ข) revenue growth rate ห่างกันไม่เกิน ±10pp จาก candidate (ค) market cap อยู่ในช่วง 0.2x-5x ของ candidate (กัน mega-cap เทียบกับ micro-cap)
+         3. **ห้าม** เลือก peer จากบริษัทที่มี special situation บิดเบือน multiple ของตัวเอง (เช่น กำลังถูก M&A, เพิ่ง IPO <1 ปี, มี governance scandal, หรืออยู่ระหว่าง spin-off/restructuring) เว้นแต่ไม่มีทางเลือกอื่นจริงๆ — ถ้าจำเป็นต้องใช้ ต้อง flag ชัดเจนใน watchlist note
+         4. **ขั้นต่ำ 3 peer** ถึงจะถือว่า median มีความหมายทางสถิติ — ถ้าหา peer ที่ผ่านเกณฑ์ข้อ 2 ได้น้อยกว่า 3 ตัว ให้ fallback ไปใช้วิธี Sector-average (วิธีที่ 3) แทน ไม่ใช่ฝืนคำนวณ median จาก peer 1-2 ตัว
+         5. **บันทึกบังคับ:** peer list ที่เลือก + เหตุผล + EV/Revenue ของแต่ละตัว ต้องลง watchlist.md ทั้งหมด (ไม่ใช่แค่ median สุดท้าย) เพื่อให้ตรวจสอบย้อนหลังได้ว่า Max ไม่ได้เลือก peer หลัง-เห็นผลลัพธ์
     3. **Sector-average:** EV/Revenue ปัจจุบันต่ำกว่าค่าเฉลี่ยของ sector โดยรวม ณ ปัจจุบัน — ใช้เมื่อไม่มีทั้ง history ที่เชื่อถือได้ (เช่น recent IPO) และ peer ที่เทียบตรงๆ ได้
     - **บันทึกบังคับ:** ต้องโชว์ผลคำนวณทุกวิธีที่ทำได้ (แม้ผ่านแค่วิธีเดียว) ลง watchlist.md เพื่อความโปร่งใสและกัน cherry-picking — ถ้ามีแค่ 1 วิธีผ่านชัดเจนและอีก 2 วิธีตกชัดเจน (ไม่ใช่แค่ทำไม่ได้เพราะขาดข้อมูล) ให้ flag เป็น "เห็นต่างกันเอง" ส่ง learning-queue แทน fast-track ทันที
     - **Exclude:** ห้ามใช้ self-history ถ้ามีเหตุการณ์ผิดปกติปนเปื้อนข้อมูล (เช่น governance scandal, spin-off, M&A ใหญ่ที่บิดเบือน multiple) — ใช้วิธี 2 หรือ 3 แทน
@@ -652,7 +658,7 @@ Leo เพิ่ม object เข้า `REPORTS` array — รวม `fullConte
 - `performance/weekly_YYYY-WW.md` — Vera weekly output (Vera ดูแล)
 - `performance/quarterly_YYYY-Q.md` — Vera quarterly output + conviction calibration (Vera ดูแล)
 - `session_logs/lessons_YYYY-MM.md` — Leo monthly lessons + pattern extraction (Leo ดูแล)
-- `dashboard/index.html` — Investment Dashboard (เปิดด้วย file://) | **Sector Views tab: built** — แสดง team qualitative view ต่อ sector พร้อม staleness indicator | **Macro Dashboard tab: ยังไม่ได้สร้าง (Priority 4 feature)** — 4 regime indicators + regime history timeline (คนละเรื่องกับ Sector Views — อันนี้คือ quantitative regime data ไม่ใช่ per-sector thesis)
+- `dashboard/index.html` — Investment Dashboard (เปิดด้วย file://) | **Sector Views tab: built** — แสดง team qualitative view ต่อ sector พร้อม staleness indicator | **Macro Dashboard tab: built (2026-09-27, commit `7cad7ed`)** — 4 regime indicators (VIX/Yield Curve/HY Spread/Fed Stance) + regime-call history timeline จาก `agent_notes/atlas/*_regime.md`, 30-day staleness banner — data ใน `dashboard/macroRegime.js` (คนละเรื่องกับ Sector Views — อันนี้คือ quantitative regime data ไม่ใช่ per-sector thesis)
 - `dashboard/sectorViews.js` — ทีม view ระดับ sector (ไม่ใช่ ticker) — Energy, Software/AI, Healthcare ฯลฯ (Atlas ดูแล, **ad-hoc — ไม่ใช่ daily job เหมือน news.js**)
 - `dashboard/data.js` — Auto-managed by Leo (อย่าแก้มือ)
 - `.claude/agents/` — agent system prompts
