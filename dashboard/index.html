@@ -12,6 +12,7 @@
   <script src="portfolio.js"></script>
   <script src="news.js"></script>
   <script src="sectorViews.js"></script>
+  <script src="macroRegime.js"></script>
   <script src="thesisWatch.js"></script>
   <script src="research.js"></script>
   <script src="todoList.js"></script>
@@ -287,6 +288,16 @@
     .sector-stale-critical { color:#E2795F; font-weight:700; }
     .sector-card.stale-critical { border-left-color:#E2725A; background:#3A241E; }
 
+    /* MACRO DASHBOARD */
+    .regime-badge { display:inline-block; padding:.2rem .65rem; border-radius:20px; font-size:.72rem; font-weight:600; letter-spacing:.5px; }
+    .regime-badge-RISK-ON { background:#22321F; color:#7FCB86; border:1px solid #4C8F52; }
+    .regime-badge-TRANSITIONAL-CAUTIOUS { background:#362B18; color:#E8B454; border:1px solid #B8863A; }
+    .regime-badge-RISK-OFF { background:#3A241E; color:#E2795F; border:1px solid #B85B45; }
+    .regime-badge-UNKNOWN { background:#4A4032; color:#F0E6D2; border:1px solid #8C7F63; }
+    .macro-indicator-value { font-size:1.1rem; font-weight:700; font-family:'JetBrains Mono','Prompt',sans-serif; color:#F0E6D2; margin:.35rem 0; line-height:1.3; }
+    .macro-stale-banner { background:#362B18; border:1px solid #B8863A; color:#E8B454; border-radius:8px; padding:.75rem 1rem; margin-bottom:1.25rem; font-size:.85rem; font-weight:600; }
+    .macro-stale-banner.critical { background:#3A241E; border-color:#B85B45; color:#E2795F; }
+
     /* CYCLE WHEEL */
     .cycle-wheel-wrap { display:flex; justify-content:center; padding:.5rem 0; }
     #cycle-wheel { width:100%; max-width:460px; display:block; }
@@ -399,6 +410,7 @@
     <div class="nav-group">
       <button class="nav-tab" onclick="showPage('news')">News</button>
       <button class="nav-tab" onclick="showPage('sectorviews')">Sector Views</button>
+      <button class="nav-tab" onclick="showPage('macro')">🌡️ Macro</button>
       <button class="nav-tab" onclick="showPage('thesiswatch')">Thesis Watch</button>
       <button class="nav-tab" onclick="showPage('research')">🔍 Research</button>
     </div>
@@ -678,12 +690,37 @@
 </div>
 
 <!-- ══════════════════════════════════════════ -->
+<!-- PAGE: Macro Dashboard                     -->
+<!-- ══════════════════════════════════════════ -->
+<div id="page-macro" class="page">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;flex-wrap:wrap;gap:.75rem;">
+    <div>
+      <div class="page-kicker">09 / Intelligence</div>
+      <h1 class="page-title">Macro <span class="script">Dashboard</span></h1>
+      <div class="page-sub">4-indicator Macro Regime Gate (VIX / Yield Curve / HY Credit Spreads / Fed Stance) + regime-call history — ดูแลโดย Atlas ตาม CLAUDE.md § Macro Regime Gate</div>
+    </div>
+  </div>
+  <div id="macro-staleness-banner"></div>
+  <div class="stat-grid" id="macro-indicator-grid"></div>
+  <div class="card" style="margin-bottom:1.25rem;">
+    <div class="section-title">Latest Majority Vote &amp; Regime Call</div>
+    <div id="macro-latest-call"></div>
+  </div>
+  <div class="card">
+    <div class="section-title">Regime Call History <span style="text-transform:none;letter-spacing:0;color:#8C7F63;">(newest first)</span></div>
+    <div style="overflow-x:auto;">
+      <table class="tbl" id="macro-history-table"></table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
 <!-- PAGE: Thesis Watch                        -->
 <!-- ══════════════════════════════════════════ -->
 <div id="page-thesiswatch" class="page">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;flex-wrap:wrap;gap:.75rem;">
     <div>
-      <div class="page-kicker">09 / Intelligence</div>
+      <div class="page-kicker">10 / Intelligence</div>
       <h1 class="page-title">Thesis <span class="script">Watch</span></h1>
       <div class="page-sub">Thesis health-check ของทุก OPEN position — Bear Flip Triggers + Thesis Invalidation status ล่าสุด</div>
     </div>
@@ -703,7 +740,7 @@
 <!-- ══════════════════════════════════════════ -->
 <div id="page-research" class="page">
   <div style="margin-bottom:1.25rem;">
-    <div class="page-kicker">10 / Intelligence</div>
+    <div class="page-kicker">11 / Intelligence</div>
     <h1 class="page-title">🔍 <span class="script">Research</span></h1>
     <div class="page-sub">Thematic/macro research notes — ไม่ผูกกับ ticker เดียว เขียนแบบ ad-hoc โดย Charlie เมื่อ CIO ขอ ไม่ใช่ scheduled job</div>
   </div>
@@ -716,7 +753,7 @@
 <!-- ══════════════════════════════════════════ -->
 <div id="page-todo" class="page">
   <div style="margin-bottom:1.25rem;">
-    <div class="page-kicker">11 / Notes</div>
+    <div class="page-kicker">12 / Notes</div>
     <h1 class="page-title">💡 Todo <span class="script">/ Ideas</span></h1>
     <div class="page-sub">ที่จดไอเดียส่วนตัว — ไม่เกี่ยวกับการตัดสินใจลงทุนของพอร์ต เก็บไว้ที่นี่เพราะเปิด dashboard ค้างไว้ตลอด</div>
   </div>
@@ -729,7 +766,7 @@
 <div id="page-glossary" class="page">
   <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:.75rem;flex-wrap:wrap;gap:.75rem;">
     <div>
-      <div class="page-kicker">12 / Notes</div>
+      <div class="page-kicker">13 / Notes</div>
       <h1 class="page-title">📖 Glossary <span class="script">— ศัพท์ที่ใช้บ่อย</span></h1>
       <div class="page-sub">คำย่อ/ศัพท์เฉพาะที่เจอในรายงานและ Trade Log ทั้งหมด อธิบายเป็นภาษาที่เข้าใจง่าย — สำหรับคนอื่นที่ไม่คุ้นกับระบบนี้</div>
     </div>
@@ -754,7 +791,7 @@
 <!-- ══════════════════════════════════════════ -->
 <div id="page-methodology" class="page">
   <div style="margin-bottom:1.5rem;">
-    <div class="page-kicker">13 / Notes</div>
+    <div class="page-kicker">14 / Notes</div>
     <h1 class="page-title">⚙️ How We <span class="script">Work</span></h1>
     <div class="page-sub">เปิดเผยกระบวนการทั้งหมด — ใครทำอะไร ข้อมูลมาจากไหน คำนวณยังไง สำหรับคนนอกที่อยากรู้ว่าทีมนี้ทำงานกันจริงจังแค่ไหน</div>
   </div>
@@ -858,6 +895,7 @@ function showPage(id) {
   if (id === 'portfolio') buildPortfolio();
   if (id === 'tradelog') buildTradeLog();
   if (id === 'overview') buildOverview();
+  if (id === 'macro') buildMacroDashboard();
 }
 
 // ─── DETAIL PANEL ────────────────────────────────────────
@@ -2349,6 +2387,83 @@ function buildSectorViews() {
   });
 }
 
+// ─── PAGE: MACRO DASHBOARD ────────────────────────────────
+const MACRO_STALE_DAYS_WARN = 30; // more frequent than Sector Views' 60-day threshold — macro regime should be checked more often
+
+function macroClassBadgeClass(classification) {
+  if (!classification) return 'regime-badge-UNKNOWN';
+  return 'regime-badge-' + classification;
+}
+
+function buildMacroDashboard() {
+  if (typeof MACRO_REGIME_HISTORY === 'undefined' || !MACRO_REGIME_HISTORY.length) {
+    document.getElementById('macro-indicator-grid').innerHTML = `<div class="stat-card">No macro regime data available</div>`;
+    return;
+  }
+  const sorted = MACRO_REGIME_HISTORY.slice().sort((a, b) => b.date.localeCompare(a.date));
+  const latest = sorted[0];
+  const days = Math.floor((new Date() - new Date(latest.date + 'T00:00')) / 86400000);
+  const isStale = days >= MACRO_STALE_DAYS_WARN;
+
+  // Staleness banner
+  const bannerEl = document.getElementById('macro-staleness-banner');
+  if (isStale) {
+    bannerEl.innerHTML = `<div class="macro-stale-banner${days >= 60 ? ' critical' : ''}">⚠ Latest regime call (${latest.date}) is ${days} days old — Atlas ควร re-call regime (threshold: ${MACRO_STALE_DAYS_WARN} วัน, เข้มกว่า Sector Views 60 วัน เพราะ macro regime กระทบ deployment gate ทุก position โดยตรง)</div>`;
+  } else {
+    bannerEl.innerHTML = '';
+  }
+
+  // 4 indicator cards from latest call that actually has indicator data
+  const withIndicators = sorted.find(h => h.indicators) || latest;
+  const ind = withIndicators.indicators || {};
+  const indicatorDefs = [
+    { key: 'vix', label: 'VIX' },
+    { key: 'yieldCurve', label: 'Yield Curve (10Y–2Y)' },
+    { key: 'hySpread', label: 'HY Credit Spreads' },
+    { key: 'fedStance', label: 'Fed Stance' },
+  ];
+  document.getElementById('macro-indicator-grid').innerHTML = indicatorDefs.map(d => {
+    const i = ind[d.key] || {};
+    return `
+      <div class="stat-card">
+        <div class="stat-label">${d.label}</div>
+        <div class="macro-indicator-value">${i.value || 'N/A'}</div>
+        <span class="regime-badge ${macroClassBadgeClass(i.classification)}">${i.classification || 'UNKNOWN'}</span>
+      </div>`;
+  }).join('') + `
+      <div class="stat-card">
+        <div class="stat-label">Current Regime</div>
+        <div class="macro-indicator-value">${latest.regime}</div>
+        <span class="regime-badge ${macroClassBadgeClass(latest.regime === 'RISK-ON' ? 'RISK-ON' : latest.regime === 'RISK-OFF' ? 'RISK-OFF' : 'TRANSITIONAL-CAUTIOUS')}">${latest.vote}</span>
+      </div>`;
+
+  // Latest call detail block
+  document.getElementById('macro-latest-call').innerHTML = `
+    <div style="display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:.6rem;">
+      <span style="color:#8C7F63;font-size:.78rem;">${latest.date}</span>
+      <span class="regime-badge ${macroClassBadgeClass(latest.regime === 'RISK-ON' ? 'RISK-ON' : latest.regime === 'RISK-OFF' ? 'RISK-OFF' : 'TRANSITIONAL-CAUTIOUS')}">${latest.regime}</span>
+      <span style="color:#B8A88A;font-size:.78rem;">Majority Vote: ${latest.vote}</span>
+    </div>
+    ${latest.override ? `<div style="font-size:.85rem;color:#E8B454;margin-bottom:.5rem;"><b>Override:</b> ${latest.override}</div>` : ''}
+    ${latest.note ? `<div style="font-size:.85rem;color:#C7B99C;margin-bottom:.5rem;">${latest.note}</div>` : ''}
+    <div style="font-size:.72rem;color:#8C7F63;">Source: ${latest.source}</div>`;
+
+  // History table (newest first)
+  const rows = sorted.map(h => {
+    const badgeClass = macroClassBadgeClass(h.regime === 'RISK-ON' ? 'RISK-ON' : h.regime === 'RISK-OFF' ? 'RISK-OFF' : 'TRANSITIONAL-CAUTIOUS');
+    return `
+      <tr>
+        <td>${h.date}</td>
+        <td><span class="regime-badge ${badgeClass}">${h.regime}</span></td>
+        <td>${h.vote}</td>
+        <td style="max-width:420px;font-size:.82rem;color:#C7B99C;">${h.note || (h.override || '')}</td>
+      </tr>`;
+  }).join('');
+  document.getElementById('macro-history-table').innerHTML = `
+    <thead><tr><th>Date</th><th>Regime</th><th>Majority Vote</th><th>Note / Override</th></tr></thead>
+    <tbody>${rows}</tbody>`;
+}
+
 function filterThesisWatch(f, btn) {
   currentThesisFilter = f;
   document.querySelectorAll('#thesis-filter-btns .nav-tab').forEach(b => b.classList.remove('active'));
@@ -2887,6 +3002,7 @@ buildPortfolio();
 buildTradeLog();
 buildNews();
 buildSectorViews();
+buildMacroDashboard();
 buildThesisWatch();
 buildResearch();
 buildTodoList();
