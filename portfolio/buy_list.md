@@ -141,17 +141,27 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
-## Scout Round 47 Near-Miss (Technology Hardware/Semicap sector, 2026-09-29)
+## Scout Round 47 Near-Miss → Full Pipeline Refined Entry (Technology Hardware/Semicap sector — updated 2026-09-29)
 
-| Ticker | Bucket | Furthest gate reached | Died at | Price (current) | Current EV/Sales | Peer-median EV/Sales | Sector-avg EV/Sales | Watch trigger |
-|--------|--------|------------------------|---------|-------------------|-------------------|------------------------|------------------------|----------------|
-| **LRCX** | Growth (B-V1 lane) | Filter A → B-Zero PASS, classified Growth | Filter B-V1 (0/3 OR-logic methods) | $314.47-$316.34 | 16.51x | 16.38x (AMAT/ASML/KLAC pre-selected peers) — **0.8% above**, closest miss of any B-V1 candidate scanned this project | 15.62x — 5.7% above | Re-verify if LRCX pulls back further (~1-2% more would flip the peer-median leg) OR if the AI-capex-durability sentiment shakeout intensifies further compressing EV/Sales toward its own 5Y bottom-third (needs ~9.2x, a much larger move) — the peer-median leg is the closest of the three methods to flipping, worth a quick re-check next quarter without needing a major price move |
+**UPDATE 2026-09-29:** CIO directed a full 5-agent pipeline (Atlas→Emma→Quinn→Bear→Morgan) on LRCX despite the B-V1 scout-stage near-miss, per Scout Pipeline norms allowing CIO judgment calls on any name. Full workup confirms and sharpens the scout-stage rejection — see `reports/LRCX_2026-09-29.md` for complete analysis. This entry replaces the cruder scout-stage near-miss note below with the refined full-pipeline entry zone and thesis.
 
-**Not a BUY recommendation.** LRCX cleared Filter A decisively (-27.6% to -27.9% off 52W high, broad AI-capex-durability/chip-equipment sector selloff — not company-specific, Lam's own FY2026 results showed record revenue +24-30% YoY and record EPS) and B-Zero (net-cash balance sheet, equity solidly positive, Net Debt/EBITDA -0.17x). Classified Growth bucket (TTM revenue growth +26.02%, clearing the 15% B-V1 trigger cleanly). Died at Filter B-V1: **0 of 3 OR-logic methods pass**, but unlike Round 38's AVGO/WDC/MPWR (methods disagreed, triggering learning-queue), here all three methods agree cleanly — self-history (16.51x vs bottom-third cutoff <=9.23x), peer-median (16.51x vs 16.38x median, 0.8% over), and sector-average (16.51x vs 15.62x mean, 5.7% over) all independently confirm the stock is not yet statistically cheap on an EV/Sales basis despite the real 27-28% price pullback. LRCX is the closest B-V1 near-miss of any Growth-bucket candidate scanned to date (0.8% over on its best leg) — a small further price move or a peer-multiple compression could flip the peer-median leg. KLAC (this round's other Filter-A survivor, -38.1% to -38.9% off high) missed by a wider margin on all three methods (10.2%/19.5%/8-13pp over) and is not logged here as a comparable near-miss. See `watchlist.md` § Scout Report Round 47 for full detail (AAPL/HPQ/DELL all confirmed clean Filter A REJECT, near highs on AI-PC/AI-server strength; AAPL specifically confirmed un-screenable at -1.24% off ATH per the 10%-ban rule, closing out the task's open question about the never-before-screened Big-10 name).
+| Ticker | Bucket | Blended FV | MOS | Conviction | Gate | Entry Zone | Re-check trigger |
+|--------|--------|------------|-----|------------|------|------------|-------------------|
+| **LRCX** | Growth | **$251.06** (40% Emma comps-FV $298.77 / 30% Quinn PW-EV $329.61 / 30% Bear stress-FV $108.90) | **-25.55%** (price $315.21 vs FV $251.06) | **5.0/10** | Revenue growth 26.02%>20% PASS, Conviction 5.0<6.5 FAIL → **GATE NOT CLEARED** | **$200-213** (MOS≥15% off Blended FV) | Q1/Q2 FY2027 earnings, any Bear Flip Trigger firing, or price entering $200-213 zone |
+
+**Thesis:** LRCX is a genuinely excellent business (ROIC ~70%, net-cash balance sheet, +26% TTM revenue growth, real AI-datacenter/advanced-packaging capex tailwind) trading at a rich valuation with no margin of safety. Full DCF (base case $77.06/share, QA-capped Yr1 growth at 2× historical CAGR = 19.4%) sits far below the comps-implied fair value ($298.77), confirming this is a **multiple/re-rating story, not a cash-flow story** — the market has structurally re-rated the entire semicap-equipment value chain (same conclusion as Rounds 37-38 for fabless/GPU-adjacent AI/Semis names). Both Growth-bucket MOS cross-checks fail (Reverse-DCF implied growth 52.8% = 2.0x consensus, exceeds 1.2x ceiling; EV/Revenue at 79th percentile of 5Y self-history, exceeds 70th-percentile ceiling). Bear case is well-supported (semicap-cycle-timing risk — could be near a capex peak not trough; customer concentration; two-sided China export-control policy risk; ASML/AMAT/Chinese-domestic competitive overlap) with a stress-case FV of $108.90, implying ~65% downside in a coherent bear scenario.
+
+**Not a BUY.** Conviction Gate requires ≥6.5 AND >20% revenue growth (AND logic) — revenue growth clears (26.02%) but conviction (5.0) does not. No trade executed.
 
 ---
 
-*Charlie + Max | Last updated: 2026-09-29 (เพิ่ม LRCX จาก Scout Round 47 Technology Hardware/Semicap sector — furthest-through-funnel near-miss, PASS A+B-Zero, classified Growth bucket, died at B-V1 on peer-median EV/Sales 0.8% over the closest miss of any B-V1 candidate to date — ดู watchlist.md § Round 47 สำหรับรายละเอียด) — 12 Active + 3 Scout-Stage Watch + 6 Near-Misses (Round 42 AXP, Round 43 CBRE, Round 44b CCL, Round 45 MOS, Round 47 LRCX, Round 48 EL)*
+### Original Scout-Stage Near-Miss Note (superseded by full-pipeline analysis above — retained for audit trail)
+
+| Ticker | Bucket | Furthest gate reached | Died at | Price (current) | Current EV/Sales | Peer-median EV/Sales | Sector-avg EV/Sales | Watch trigger |
+|--------|--------|------------------------|---------|-------------------|-------------------|------------------------|------------------------|----------------|
+| **LRCX** | Growth (B-V1 lane) | Filter A → B-Zero PASS, classified Growth | Filter B-V1 (0/3 OR-logic methods) | $314.47-$316.34 | 16.51x | 16.38x (AMAT/ASML/KLAC pre-selected peers) — **0.8% above**, closest miss of any B-V1 candidate scanned this project | 15.62x — 5.7% above | ~~Re-verify if LRCX pulls back further~~ — **superseded, see full-pipeline analysis above (2026-09-29)** |
+
+*Charlie + Max | Last updated: 2026-09-29 (full pipeline analysis completed on CIO directive — Atlas/Emma/Quinn/Bear/Morgan, no trade, see `reports/LRCX_2026-09-29.md`) — 12 Active + 3 Scout-Stage Watch + 6 Near-Misses (Round 42 AXP, Round 43 CBRE, Round 44b CCL, Round 45 MOS, Round 47 LRCX [full-pipeline, no-trade], Round 48 EL)*
 
 ---
 
