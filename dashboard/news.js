@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-27 08:15";
+const NEWS_LAST_UPDATED = "2026-09-29 07:30";
 
 const NEWS = [
+
+  // ── 2026-09-29 (Atlas scan 2026-09-29, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-09-28", category: "TECH",
+    headline: "🔴 META ร่วง ~5% เหลือ $715.62 — Meta ดึง CEO MongoDB CJ Desai มาคุม Enterprise Platform ใหม่, หุ้น MongoDB ร่วงแรงตาม",
+    summary: "Meta Platforms ประกาศ (28 ก.ย.) ดึงตัว CJ Desai ซีอีโอ MongoDB มารับตำแหน่ง Chief Enterprise Platform Officer รายงานตรงต่อ Mark Zuckerberg เป็นส่วนหนึ่งของการปั้น 'Meta Enterprise Platform' ใหม่ที่เปิดตัววันเดียวกัน — สะท้อนการขยายธุรกิจ AI เข้าสู่ตลาด enterprise เต็มรูปแบบ Desai ยอมสละ pay package + severance ที่ MongoDB เพื่อย้ายมา บอร์ด MongoDB แต่งตั้ง Dev Ittycheria เป็น interim President/CEO ทันที หุ้น META ปิดวันที่ $715.62 (เปิด $750.04, high $750.58, low $713.19, -4.6% intraday จาก open, CNBC รายงานร่วง ~5%) ขณะที่ MongoDB (MDB) ร่วงหนักกว่าในวันเดียวกันจากความไม่แน่นอนเรื่อง leadership transition ครั้งที่ 2 ในรอบไม่ถึงปี บริบทเดียวกัน: Nvidia ประกาศเพิ่ม buyback authorization $150 พันล้าน (สูงสุดในประวัติศาสตร์บริษัท รวมเป็น $235B) และเปิดตัว AI-agent safety platform ใหม่วันเดียวกัน กดดัน sentiment กลุ่ม AI/big tech ทั้งกลุ่มบวกกับ oil spike + rising yields (ตาม WSJ/Investopedia) ที่ฉุดตลาดกว้างลง -0.77% (S&P 500) วันเดียวกัน นัยพอร์ต: META อยู่ใน Big 10 fixed watchlist (ไม่มี position) — single-day move >4% บน real corporate news (CEO poaching + enterprise pivot) เข้าเกณฑ์ HIGH-IMPACT ไม่กระทบ ADBE/NOW/CRM/REGN/ADSK โดยตรง แต่เป็นสัญญาณ competition-for-AI-enterprise-talent ที่ต้องติดตาม (ADBE/CRM/NOW ก็แข่งใน enterprise AI platform เดียวกัน).",
+    impact: "NEGATIVE", tickers: ["META"],
+    url: "https://www.cnbc.com/2026/09/28/mongodb-meta-cj-desai.html",
+  },
 
   // ── 2026-09-27 (Atlas scan 2026-09-27, manual catch-up run replacing failed 07:00 cron) ──
   {
