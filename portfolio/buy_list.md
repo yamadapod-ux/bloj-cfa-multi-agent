@@ -111,6 +111,18 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
-*Charlie + Max | Last updated: 2026-09-29 (เพิ่ม CCL จาก Scout Round 44b Consumer Discretionary Cruise/Travel/Lodging — furthest-through-funnel near-miss, PASS A+B-Zero+B, died at C on ROIC/WACC ratio — ดู watchlist.md § Round 44b สำหรับรายละเอียด) — 12 Active + 3 Scout-Stage Watch + 3 Near-Misses (Round 42 AXP, Round 43 CBRE, Round 44b CCL)*
+---
+
+## Scout Round 45 Near-Miss (Materials sector, 2026-09-29)
+
+| Ticker | Bucket | Furthest gate reached | Died at | Price (current) | EV/EBITDA (current) | EV/EBITDA 10Y median | FCF yield | Watch trigger |
+|--------|--------|------------------------|---------|-------------------|----------------------|------------------------|-----------|----------------|
+| **MOS** | Value | Filter A → B-Zero PASS | Filter B (FCF yield + EV/EBITDA, 2/3 legs) | $22.25-$23.00 | 12.00x (GuruFocus) | 7.36x (63% above) | -12.95% (stockanalysis.com) | Potash/phosphate price-cycle turn — re-verify if management commentary signals pricing stabilization, or if a confirmed EBITDA re-acceleration compresses the current 12.00x multiple back toward/below its 7.36x median |
+
+**Not a BUY recommendation.** MOS cleared Filter A decisively (-36.1% to -38.2% off 52W high, the deepest pullback of any Materials name scanned this round — genuine potash/phosphate commodity price down-cycle, not a structural franchise problem: Q2 2026 net loss $272.8M, FY2026 phosphate guidance withdrawn, capex cut $1.5B→$1.25B as rational capital discipline) and B-Zero (equity $11.464B solidly positive; Debt/Equity 0.52x elevated 27% vs its own 10-year median with thin 1.83x interest coverage flagged for Filter E relevance, but below the >4-5x hard Net-Debt/EBITDA reject threshold). Died at Filter B on 2 of 3 legs: FCF yield -12.95% (deeply negative, net-loss-driven) and EV/EBITDA 12.00x sitting **63% above**, not below, its own 10-year median of 7.36x — the multiple *expanded* despite the deep price drawdown because TTM EBITDA collapsed faster than the price fell. This is the same "price fell but earnings fell faster" value-trap pattern seen with F/LEN in Round 44a — a real, identifiable commodity-price-cycle dislocation that nonetheless fails Filter B's statistical-cheapness test. See `watchlist.md` § Scout Report Round 45 for full detail (FCX/NUE/LIN/CTVA all rejected at Filter A, 7-15% off their highs amid genuinely resilient 2026 copper/steel/industrial-gases/ag-chem pricing — not logged as near-misses).
+
+---
+
+*Charlie + Max | Last updated: 2026-09-29 (เพิ่ม MOS จาก Scout Round 45 Materials sector — furthest-through-funnel near-miss, PASS A+B-Zero, died at B on FCF yield + EV/EBITDA value-trap pattern — ดู watchlist.md § Round 45 สำหรับรายละเอียด) — 12 Active + 3 Scout-Stage Watch + 4 Near-Misses (Round 42 AXP, Round 43 CBRE, Round 44b CCL, Round 45 MOS)*
 
 **Note (2026-09-09):** APTV (2026-09-06, dual-gate FAIL) และ LKQ (2026-09-08, single-gate FAIL conviction) — full analysis เสร็จแล้วทั้งคู่ แต่ **ไม่เพิ่มเข้า buy_list** (APTV: forward return ~5.9% CAGR ที่ entry zone ต่ำเกิน; LKQ: Bear objection — entry zone แคบ = false green-light) → track เป็น WATCH item ใน decisions.md + Bull Flip Triggers แทน. CNC (2026-09-04, AVOID) ก็ไม่เข้า (forward return ต่ำ).
