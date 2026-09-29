@@ -176,6 +176,17 @@ Candidate ที่น่าสนใจจาก analyses ที่ผ่าน
 
 ---
 
+## Scout Round 50 Near-Misses (Industrials/Aerospace-Defense sector, 2026-09-29/30)
+
+| Ticker | Bucket | Furthest gate reached | Died at | Price (2026-09-29/30) | Near-miss detail | Watch trigger |
+|--------|--------|------------------------|---------|-------------------------|-------------------|----------------|
+| **LMT** | Value | Filter A → B-Zero → B → C all PASS | Filter D (FCF-yield-implied naive FV ~9% below price) | $518.10-519.69 | **Street PT consensus +22.83-23% upside vs the 25% bullish-divergence override threshold — only ~2pp short.** ROIC 27.4-30.3% (improving trend) and record $230.4B backlog (+19% YoY) are the strongest fundamentals of any candidate this round; FCF yield 7.30% clears Filter B outright. Furthest-through-funnel candidate of the round (4/5 gates cleared). | Re-verify if (a) a broader/fresher analyst-PT dataset pushes consensus upside past 25%, (b) price pulls back further (would mechanically move naive FV closer to/above price), or (c) Q3 2026 earnings (due ~Oct 2026) show continued Aeronautics-segment improvement confirming the recovery trend |
+| **TXT** | Value | Filter A → B-Zero PASS | Filter B (FCF yield 5.70-5.75% narrowly <6%; EV/EBITDA ~10-15% below own median but not bottom-third) | $76.30 | FCF yield fails narrowly and source-dependently (2 of 3 sources converge just below 6%, one outlier source reads 7.65%); EV/EBITDA shows a real discount to its own 10Y median (9.57-10.15x vs 11.24x) that falls just short of a clean bottom-third read. Disclosed government-funding-uncertainty risk ($0.20-0.30 EPS / $150-250M cash-flow guided impact) is a genuine, quantified, temporary CR/appropriations-timing risk, not a structural impairment. | Re-verify on (a) resolution of the government-funding/CR uncertainty flagged in Q2 2026 guidance, (b) a further modest price pullback or EBITDA compression that would move EV/EBITDA into bottom-third territory, or (c) confirmation of the FCF-yield read from a 4th independent source to resolve the 2-vs-1 source discrepancy |
+
+**Not a BUY recommendation for either.** Both cleared Filter A on genuine, well-documented cyclical/temporary dislocations (LMT: F-16/Aeronautics program stumble already showing a 2-quarter improving trend into a Q2 2026 beat-and-raise; TXT: Q2 2026 Bell/Aviation program-mix miss plus a disclosed, quantified government-funding-uncertainty risk) and both passed B-Zero clean. LMT is this round's standout near-miss — it cleared Filter B (FCF yield 7.30%) and Filter C (ROIC ~3.4-3.8x an 8% mega-cap WACC, improving trend) decisively, reaching Filter D where it died only on the strict no-growth-perpetuity naive-FV proxy, with the Street-PT override check landing within ~2pp of the 25% tie-break threshold — the closest "one methodology input away from a fast-track" case logged this round. TXT is a secondary, shallower near-miss at Filter B with a genuine source-discrepancy flag on its FCF yield. NOC and RTX/GD are not logged as near-misses (NOC failed Filter B decisively on both computed legs; RTX/GD never cleared Filter A, both short of the 20% floor). See `watchlist.md` § Scout Report § Round 50 for full detail.
+
+---
+
 ## Scout Round 46 Value-Trap Watch Item (Communication Services sector, 2026-09-29)
 
 | Ticker | Bucket | Furthest gate reached | Died at | Price (2026-09-28) | EV/EBITDA (current vs 5Y range) | FCF yield | Street PT (avg) | Watch trigger |
