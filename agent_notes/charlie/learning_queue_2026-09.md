@@ -255,3 +255,38 @@ Filter D landed in the **learning-queue band** (price/naive-FV = 0.860×, within
 **Checkpoint date:** Target the lightweight analysis within 1-2 sessions, same cadence as the ISRG/AVGO/WDC/MPWR precedents above. Natural event checkpoint: BKNG's next earnings report and any further clarity on AI-agent-driven booking-flow impacts (or lack thereof) on room-night/gross-bookings growth would directly inform the Filter E overhang re-check.
 
 *Max — 2026-09-29 | BKNG routed to Tier 1.5 Learning-Queue from Scout Round 44b (Consumer Discretionary: Cruise/Travel/Lodging sector). Lightweight Emma+Bear-lite analysis PENDING — flagged for Charlie to action, with a full DCF vs. naive-FV reconciliation against the +45.6% Street PT gap identified as the highest-value single step. Not a formal recommendation yet — no `portfolio/decisions.md` / `dashboard/data.js` entry until lightweight completes per CLAUDE.md § Tier 1.5. RCL (Filter B REJECT) and CCL (Filter C REJECT) not routed to learning-queue — CCL logged instead to `buy_list.md` as the round's furthest-through-funnel near-miss-reject (see below). MAR/HLT confirmed clean Filter A REJECT (near-ATH, resilient lodging demand).
+
+---
+
+## PEP + KMB — Filter D/E lane-routing to Learning-Queue (2026-09-29) — ⏳ ROUTED TO LEARNING-QUEUE, LIGHTWEIGHT PENDING
+
+**ที่มา:** Scout Round 48 (2026-09-29, Consumer Staples sector, second pass — Beverage/Household/Personal Care). Full detail in `portfolio/watchlist.md` § Scout Report Round 48. Summary of both:
+
+**PEP (PepsiCo):** Cleared Filter A (-25.0% off 52W high — Q2 2026 penny-EPS-miss overreaction + soft North America volumes + GLP-1/health-trend demand fear). B-Zero clean (equity $22.27B, leverage unremarkable at 2.86x Debt/EBITDA, near own median). Value bucket. Filter B PASS (EV/EBITDA 12.33x, 25% below own 10Y median 16.52x, corroborated by EV/FCF and P/FCF reads both also ~30-37% below own medians — FCF yield 4.92% itself misses the absolute 6% bar but is 48% above PEP's own median). Filter C PASS overwhelmingly (ROIC ~12.9-14.0% vs WACC ~5.2-5.4% ≈ 240% of WACC).
+
+**KMB (Kimberly-Clark):** Cleared Filter A (-21.8% to -22.0% off 52W high, conservative read using the lower of two 52W-high source figures — market skepticism around the pending $48.7B Kenvue acquisition, a leverage-increasing, integration-risk M&A deal expected to close H2 2026). B-Zero: equity thin-but-positive ($1.63B, a long-standing buyback-driven low-equity-base characteristic, not new distress), pending Kenvue-deal leverage increase flagged forward. Value bucket. Filter B PASS (EV/EBITDA 11.96x, 18% below own 10Y median 14.62x, corroborated by P/E 22% below own median — FCF yield 5.59% narrowly misses the absolute 6% bar but is 10% above KMB's own median). Filter C PASS (ROIC 10.94% vs WACC 6.25% ≈ 175% of WACC).
+
+### Lane routing
+**PEP:** Filter D methods materially **disagree** — D-Legacy FCF/WACC naive perpetuity gives price/FV ≈ 0.914× (reject-boundary), while an EV/EBITDA mean-reversion cross-check gives ≈ 0.746× (fast-track-quality). Per CLAUDE.md's explicit "methods disagree → learning-queue not fast-track" instruction, this internal conflict routes PEP to learning-queue rather than resolving in the favorable direction. Street PT ($155.20 consensus, MarketBeat 20 analysts + Investing.com 22 analysts, tight match) implies +20.6-20.8% upside, supportive but short of the >25% override bar. Filter E scored **2/3** (moat Wide + ROIC-WACC spread +7.5pp both PASS; overhang sub-criterion FAILS — GLP-1/health-trend demand risk for snacks/soda is an unresolved, market-moving structural question, and North America volume softness has not been confirmed resolved with 2+ consecutive quarters of re-acceleration).
+
+**KMB:** Filter D methods **converge** but both land short of fast-track — D-Legacy FCF/WACC gives 0.894× and the EV/EBITDA mean-reversion cross-check gives 0.818×, both in the 0.80-0.90× learning-queue band. Street PT is the weakest of the round (public.com $114.54, 13 analysts, ~10.2% implied upside; MarketBeat implies ~18.8% — still short of the >20% credible-gap bar on the lower read). Filter E scored **2/3** (moat Narrow-with-clear-evidence + ROIC-WACC spread +4.7pp both PASS; overhang sub-criterion FAILS — the pending $48.7B Kenvue acquisition is a large, unresolved integration/leverage-risk M&A transaction, exactly the kind of unresolved structural overhang CLAUDE.md's Filter E is designed to catch).
+
+Since Fast-track requires BOTH Filter D ≤0.80× AND Filter E 3/3, and neither PEP nor KMB clears either condition independently, the routing to Learning-queue is unambiguous for both.
+
+### ผล Tier 1.5 lightweight (Emma ∥ Bear-lite)
+
+**PENDING — not yet run.** Max flagged at end-of-session (2026-09-29, task scope was the scout-stage screen, not the lightweight tier) — per CLAUDE.md § Tier 1.5, next step is Charlie actioning Emma standalone FV + Bear-lite for both, with the specific open questions:
+
+**PEP:**
+1. Does a full DCF resolve the 0.914× vs 0.746× internal disagreement between the naive FCF/WACC method and the EV/EBITDA mean-reversion cross-check? Which method better reflects PEP's true normalized FCF-generation capacity given the transient North America volume softness?
+2. How should Bear weigh the GLP-1/health-trend demand risk concretely — is there evidence of actual volume impact specific to GLP-1 adoption in PEP's snacks/beverage categories, or is this still a narrative-level sentiment risk not yet showing up in the numbers (Q2 volume softness was framed by sell-side as a miss/overreaction, not a GLP-1-driven structural break)?
+3. Is the North America volume softness a 1-quarter blip or the start of a trend? Needs 1-2 more quarters of data to resolve — natural checkpoint at PEP's next earnings (~Oct 2026).
+
+**KMB:**
+1. Full DCF reconciliation of the 0.894× (FCF/WACC) vs 0.818× (EV/EBITDA-reversion) methods — both converge directionally but neither clears fast-track; does a proper multi-stage DCF change the picture?
+2. Bear should stress-test the Kenvue deal specifically: base case for synergy realization, leverage trajectory post-close (H2 2026), and integration execution risk given the scale of the transaction ($48.7B vs KMB's own ~$32.7B pre-deal market cap) — is this a value-accretive scale play or an overreach that materially increases balance-sheet risk?
+3. Weakest Street-PT support of any Round 48 candidate (~10-19% upside) — worth checking whether this reflects analyst skepticism specifically about the Kenvue deal terms, which would be a more negative signal than typical scout-stage PT dispersion.
+
+**Checkpoint date:** Target the lightweight analysis within 1-2 sessions, same cadence as the ISRG/BKNG/AVGO/WDC/MPWR precedents above. Natural event checkpoints: PEP's next earnings (~Oct 2026) for volume-trend confirmation; KMB's Kenvue-deal close (expected H2 2026) for concrete synergy/leverage guidance.
+
+*Max — 2026-09-29 | PEP and KMB both routed to Tier 1.5 Learning-Queue from Scout Round 48 (Consumer Staples sector, second pass). Lightweight Emma+Bear-lite analysis PENDING for both — flagged for Charlie to action. Not a formal recommendation yet — no `portfolio/decisions.md` / `dashboard/data.js` entry until lightweight completes per CLAUDE.md § Tier 1.5. KO/CL confirmed clean Filter A REJECT (near-ATH, no dislocation). EL cleared Filter A (genuine judgment call, weakest of the three "cyclical" classifications) but died decisively at Filter B (0/2 legs — value-trap pattern, depressed turnaround-era earnings base kept the valuation multiple elevated despite the price pullback) — not routed to learning-queue, logged to `buy_list.md` instead per that file's near-miss-reject purpose.
