@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-09-29 07:30";
+const NEWS_LAST_UPDATED = "2026-10-02 10:30";
 
 const NEWS = [
+
+  // ── 2026-10-02 (Atlas scan 2026-10-02, manual catch-up run replacing failed 07:00 cron — web_search backend outage, same failure mode as 2026-10-01, CIO-confirmed fallback-routing root cause) ──
+  {
+    date: "2026-10-01", category: "DEAL",
+    headline: "🟢 REGN Regeneron — ขยาย alliance กับ Sanofi เพิ่ม 4 แอนติบอดี immunology ใหม่ มูลค่า upfront $1B + milestone สูงสุด $7B",
+    summary: "Sanofi และ Regeneron ประกาศ (1 ต.ค.) ขยายความร่วมมือ immunology ที่ดำเนินมากว่า 20 ปี (เดิมเป็นเจ้าของ Dupixent ร่วมกัน) โดย Regeneron จะนำแอนติบอดีระยะยาว (long-acting) ใหม่ 4 ตัวเข้าร่วม alliance ได้แก่ anti-IL-13, anti-IL-4×IL-13 bispecific, anti-IL-4 และ anti-IL-4Rα — ครอบคลุม pathway เดียวกับ Dupixent แต่เป็นโมเลกุลใหม่ที่ Regeneron คิดค้นเอง Regeneron ได้รับ upfront payment $1 พันล้าน บวก milestone payments สูงสุดรวม $7 พันล้าน พร้อมโครงสร้างแบ่งกำไร/ขาดทุน 50:50 แบบเดียวกับ Dupixent เดิม (เงื่อนไข Dupixent ปัจจุบันไม่เปลี่ยนแปลง) ดีลนี้ขยายรายได้ potential ระยะยาวของพอร์ต immunology REGN อย่างมีนัยสำคัญโดยไม่ต้องลงทุน R&D เต็มจำนวนเอง — ถือเป็นข่าวเชิงบวกต่อ pipeline/optionality ระยะยาว อย่างไรก็ตาม หุ้น REGN กลับร่วง -3.09% ปิดที่ $734.81 ในวันเดียวกัน (จาก $758.27) ซึ่งน่าจะเป็น deal-day profit-taking/digestion มากกว่าการตีความดีลในแง่ลบ (ไม่มี catalyst เชิงลบอื่นพบจาก 2-source cross-check). นัยพอร์ต: REGN เป็น 1 ใน 5 OPEN positions (ถือ 0.42sh, weight 3.02%) — ดีลนี้เข้าเกณฑ์ HIGH-IMPACT ในฐานะ major strategic alliance-expansion transaction บน OPEN position โดยตรง แต่ไม่เข้าเกณฑ์ Re-Analysis Trigger #1 (เป็น licensing/R&D collaboration ไม่ใช่ earnings release) — thesis และ Blended FV $889 ไม่เปลี่ยนแปลง, MOS ยังเป็นบวกแข็งแกร่งที่ +17.34% แม้ราคาจะปรับตัวลง.",
+    impact: "POSITIVE", tickers: ["REGN"],
+    url: "https://www.sanofi.com/en/media-room",
+  },
 
   // ── 2026-09-29 (Atlas scan 2026-09-29, Portfolio Review Mode 3 cron cycle) ──
   {
