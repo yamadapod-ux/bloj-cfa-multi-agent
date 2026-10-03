@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-02 10:30";
+const NEWS_LAST_UPDATED = "2026-10-03 11:30";
 
 const NEWS = [
+
+  // ── 2026-10-03 (Atlas scan 2026-10-03, manual re-run replacing failed 07:00 cron) ──
+  {
+    date: "2026-10-02", category: "EARNINGS",
+    headline: "🟢 TSLA Tesla +5.5% สู่ $373.55 — ส่งมอบรถ Q3 2026 ทะลุคาด 486,532 คัน (beat ~24,600 คันจาก consensus)",
+    summary: "Tesla รายงาน (2 ต.ค.) ยอดส่งมอบรถ Q3 2026 ที่ 486,532 คัน เทียบกับ consensus analyst ที่ 24 สำนักคาดไว้เฉลี่ยราว 461,100-462,000 คัน (beat ~24,600 คัน) ขณะที่ production อยู่ที่ 464,391 คัน (หมายความว่า Tesla ส่งมอบรถที่ผลิตไว้ก่อนหน้าออกไปจาก inventory ราว 22,000 คัน) Model 3/Y ครองสัดส่วนหลักที่ 478,237 คัน (เกินคาด 450,712) ส่วนรุ่นอื่น (รวม Cybertruck) ทำได้เพียง 8,295 คัน (ต่ำกว่าคาด 11,285 และเกือบครึ่งของปีก่อน 15,933 คัน) Energy storage deployment 13.7 GWh (เพิ่มจาก 12.5 GWh ปีก่อน แต่ต่ำกว่าคาด 15.9 GWh) ยอดส่งมอบรวมลดลง ~2% YoY จาก 497,099 คัน (ปีก่อนมีแรงซื้อพิเศษจาก EV tax credit $7,500 ที่หมดอายุ 30 ก.ย. 2025) หุ้น TSLA ตอบรับบวกทันที +5.5% สู่ $373.55 กลางเช้าวันศุกร์ (ตาม Yahoo Finance) — เป็น single-day move >4% บน real catalyst (delivery beat) ตามเกณฑ์ HIGH-IMPACT แม้จะไม่ใช่ full earnings report เต็มรูปแบบ Tesla เตือนว่าตัวเลข delivery ไม่สะท้อน margin/profitability — ตัวเลขจริงจะออกพร้อม Q3 earnings เต็มรูปแบบวันที่ 21 ต.ค. (หลังตลาดปิด) ซึ่งเป็น real test ว่าจะ back up delivery beat นี้ได้หรือไม่ Tesla ต้องส่งมอบอย่างน้อย 311,448 คันใน Q4 เพื่อเลี่ยงยอดขายรายปีลดลงเป็นปีที่ 3 ติดต่อกัน (ตาม Reuters) นัยพอร์ต: TSLA อยู่ใน Big 10 fixed watchlist (ไม่มี position) — ไม่กระทบ ADBE/NOW/CRM/REGN/ADSK โดยตรง แต่เป็น catalyst สำคัญก่อน earnings จริงวันที่ 21 ต.ค.\",",
+    impact: "POSITIVE", tickers: ["TSLA"],
+    url: "https://fool.com/investing/2026/10/02/tesla-delivered-486532-vehicles-in-q3-heres-why-the-real-test-could-come-on-oct-21",
+  },
 
   // ── 2026-10-02 (Atlas scan 2026-10-02, manual catch-up run replacing failed 07:00 cron — web_search backend outage, same failure mode as 2026-10-01, CIO-confirmed fallback-routing root cause) ──
   {
