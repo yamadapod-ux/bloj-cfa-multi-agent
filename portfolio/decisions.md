@@ -13,6 +13,7 @@
 | 2026-04-24 | CCJ | Cameco Corporation | **HOLD/WAIT** | $52.50 | 6.0/10 | $44 | Uranium nuclear renaissance thesis แข็ง แต่ MOS -1.4% รอ entry $40-45 | $35 |
 | 2026-04-24 | HIMS | Hims & Hers Health | **AVOID** | $16.50 | 5.5/10 | $11.40 | FDA GLP-1 disruption ยังไม่ resolve Kelly=0% รอ evidence pivot สำเร็จ | $7.50 |
 | 2026-04-24 | TMDX | TransMedics Group | **AVOID** | $40.00 | 4.5/10 | $22.50 | OCS technology first-mover แต่ DOJ/SEC investigation existential risk รอ resolution | $15 |
+| 2026-10-03 | NFLX | Netflix, Inc. | **AVOID** | $67.06 | 4.83/10 | $57.88 | Full pipeline (Atlas→Emma→Quinn→Bear→Morgan) on Round 58's first full Filter A-E survivor — revenue growth decelerated to 11.7-14% YoY (company FY26 guidance), decisively below Growth bucket's >20% gate; Blended FV $57.88 implies MOS -13.7%, fails Value gate too. Disclosure cuts (annual-only engagement from 2027) + failed WBD bid + ad-tier underdelivery cited by Bear. No trade; buy_list.md updated with $42-48 entry zone, re-check at Q3 earnings Oct 20 2026. | n/a (no position) |
 | 2026-04-25 v1 | AVGO | Broadcom Inc. | ~~BUY (Staged, Defensive)~~ | ~~$172.40~~ | ~~7.2/10~~ | ~~$220~~ | **SUPERSEDED BY v2 — 2026-05-16** | ~~$130~~ |
 | **2026-05-16 v2** | **AVGO** | **Broadcom Inc.** | ~~HOLD (Existing 5%) / ADD on Pullback~~ | ~~$228~~ | ~~6.7/10~~ | ~~$219~~ | **SUPERSEDED BY v3b — 2026-05-16** | ~~$190~~ |
 | **2026-05-16 v3b** | **AVGO** | **Broadcom Inc.** | ~~HOLD (Existing 5%) / ADD on Pullback~~ | ~~$228~~ | ~~6.7/10~~ | ~~$212~~ | **SUPERSEDED BY v3 — 2026-05-18** | ~~$190~~ |
