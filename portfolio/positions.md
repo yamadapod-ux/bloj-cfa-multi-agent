@@ -17,6 +17,48 @@
 
 <!-- prior update note (2026-09-04): full re-mark from Sept 3 close, Total $10,547.33→$10,513.50 (-0.32%), S&P 7,699.64, Alpha +1.07%. GOOGL -11.94% + REGN pullback offsetting NOW +62.7%/CRM +46.1%/ADSK +19.7%/ADBE +15.7%/ACN +8.4%). No stop breaches — GOOGL stopDist 9.48% still <10% WATCH (4th consecutive review). 🚩 REGN MOS deepened -0.89%→-6.50% (Trigger #2 now clearly firing, FV likely too LOW) — top re-verify priority confirmed. Regime = TRANSITIONAL-CAUTIOUS (Atlas formal re-call 2026-09-03, fresh not carried-over — knife-edge 3/4 RISK-ON override). Cash 65.58%, well above 25% TC floor, deliberate hold into Sept 16-17 FOMC. Batch Emma FV re-verify (commissioned 2026-09-01) still outstanding — no trade this session. -->
 
+## 📊 Portfolio Review — 2026-10-04 (Mode 3 — Weekend, No New Close, Cash Accrual Only)
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, 9 days old, not overdue). 2026-10-03 (Sat) and 2026-10-04 (Sun) are non-trading days — Oct 2 2026 close remains the latest print. All 5 OPEN positions re-verified UNCHANGED at Oct 2 2026 close (web_search backend degraded — Nous Tool Gateway unreachable all queries this run, keyless fallback via exa/parallel/keenable returned usable data on most queries but found no newer trading-day print for any ticker or for the S&P 500, consistent with the calendar — no re-marking needed). **No trades this session.**
+
+| Ticker | Price (unchanged, Oct 2 close) | Return % | MOS % | StopDist % |
+|--------|-----------------------------------|----------|-------|------------|
+| ADBE | $237.67 | -3.79% | +35.57% | 22.16% |
+| NOW | $134.38 | +50.17% | -6.95% 🟠 | 30.78% |
+| CRM | $234.69 | +29.66% | +32.14% | 38.30% |
+| REGN | $735.20 | +22.13% | +17.30% | 34.43% |
+| ADSK | $212.00 | +6.84% | +4.41% | 25.12% |
+
+S&P 500 unchanged at **$7,722.72** (Oct 2 2026 close — no new trading day since). All position-level metrics are therefore mathematically identical to the 2026-10-03 review; only cash accrual and portfolio totals move.
+
+**Stop Loss check:** No breaches. ADSK narrowest at 25.12% (comfortable, well above the 10% WATCH threshold).
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-11 | FV 23d old, MOS +35.57% (positive) — no fire | No | Under 30% | Not re-checked this session | 0/5 |
+| NOW | No new earnings | FV 41d old, MOS -6.95% (negative) but 41d << 90d — no fire | No | Under 30% | Cantor PT $174 vs FV $125.65 gap carried, not re-verified | 0/5 (carried watch item) |
+| CRM | No new earnings | FV 23d old, MOS +32.14% — no fire | No | Under 30% | Not re-checked | 0/5 |
+| REGN | No new earnings; Q3 confirmed Oct 30 | FV 23d old, MOS +17.30% (positive) — no fire | No | Under 30% | Not re-checked | 0/5 |
+| ADSK | No new earnings; next current-RPO print Nov 2026 (Q3 FY27) | FV 22d old, MOS +4.41% (thin but positive) — no fire | No | Under 30% | Not re-checked | 0/5 |
+
+**Result: 0/5 triggers fire on any OPEN position.** ADSK's thin MOS buffer (+4.41%) remains the explicit WATCH ITEM carried from the 09-12 TGR-compliance fix — no further exemption if it flips negative next re-verify.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 remains current (9 days old) — not overdue.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-03 11:30) — **0 NEW HIGH-IMPACT items.** NVDA coverage this weekend was all routine (fresh ATH $237.88 continuation already logged 10-03, Cantor Fitzgerald PT reiteration $350, institutional 13F filing commentary, Morgan Stanley top-pick reiteration — no new catalyst beyond what's already in news.js). No earnings, M&A, management change, 8-K, or >4% single-day move found for any Big 10 or OPEN-position ticker this weekend (expected — no new trading day). `dashboard/news.js` **unchanged**, NEWS_LAST_UPDATED stays "2026-10-03 11:30".
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,580.12 accrues at the money-market/T-bill proxy rate (3.8%) for 1 day (10-03→10-04): $7,580.12 × 3.8%/365 × 1 = **+$0.79**. Cash $7,580.12→**$7,580.91**. Total $10,186.81→**$10,187.60** (+0.01%, cash-accrual only — no equity price movement, no new S&P print). Total Return 1.87%→**1.88%**. sp500Return unchanged 4.38%. Alpha -2.51%→**-2.50%** (negligible, both sides flat).
+
+### Max's Take
+
+ไม่มี trading session ใหม่ปิดตัวในช่วงสุดสัปดาห์ (3-4 ต.ค. เสาร์-อาทิตย์) — รอบนี้เป็นแค่ cash accrual ปกติตาม Cash Yield Rule ($0.79) ไม่มีการเปลี่ยนแปลงราคาใดๆ บน 5 positions หรือ S&P 500 ยืนยันด้วย 2-3 search attempts/ticker (web_search ติด Nous Tool Gateway outage ต่อเนื่องแต่ fallback บางส่วนทำงาน — ไม่พบราคาใหม่เพราะไม่มี trading day ใหม่จริงๆ ตามปฏิทิน ไม่ใช่เพราะ search ล้มเหลว). ไม่มี stop breach, ไม่มี Re-Analysis trigger (0/5), ไม่มี regime re-call ค้าง (9 วันจากการ re-call ล่าสุด 2026-09-25, ยังไม่ overdue). Atlas news scan ครอบคลุมทั้ง 5 OPEN positions + Big 10 watchlist ไม่พบ HIGH-IMPACT item ใหม่รอบนี้ (NVDA ยัง ATH ต่อเนื่องแต่เป็นข่าวเดิมที่ log ไปแล้ว 10-03) — news.js ไม่มีการแก้ไข.
+
+---
+
 ## 📊 Portfolio Review — 2026-10-03 (Mode 3 — Manual Re-run, Full Re-Mark, Oct 2 2026 Close) — Replaces Failed 07:00 Cron
 
 > **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, 8 days old, not overdue). **Manual re-run, user-directed**, replacing today's failed 07:00 cron execution that hit the pre-fix search-looping bug. This run used the corrected fallback-acceptance protocol: any response with `success: true` + real data accepted on first try, hard cap 2-3 search attempts per ticker, zero loops, zero wasted calls. First new US trading-day close since Oct 1/2. All 5 OPEN positions **re-priced** — 3/5 (ADBE, CRM, REGN) 2-source cross-checked; **NOW and ADSK each came back SINGLE-SOURCE ONLY** (fiscal.ai) within the attempt cap, explicitly flagged per Single Source of Truth Rule, not presented as clean cross-checks. **Broad software-sector lag vs a tech/AI-led market rally** (Nasdaq record close +1.19%, NVDA fresh ATH on a record $150B buyback). **No trades this session.**
