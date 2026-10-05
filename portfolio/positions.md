@@ -1111,3 +1111,48 @@ ADBE (weight eased 11.13%→10.87%, still in 10-12% band, Q3 earnings Sept 10 in
 10. **Next checkpoint: Sept 16-17 FOMC** → Atlas regime re-call → if RISK-ON → Charlie unfreezes scout, re-oriented to de-rated sectors (managed care CNC/MOH/ELV, beaten-down healthcare, energy) with '≥-30% from 52W high' filter.
 
 > **Regime = TRANSITIONAL-CAUTIOUS (Atlas formal call 2026-09-01)** — **ข้อสรุป review นี้:** พอร์ต outperform S&P ชัดเจน (Alpha พลิกบวกครั้งแรกเป็น +1.36%) — NOW/CRM ดันแรงหลัง Q2 beats. เก็บกำไร NOW +65% (trim แล้ว). จุดอ่อนที่สุด: (1) portfolio FVs เก่าทั้งยก — ตัดสินใจหลายอย่างอิง MOS ที่อาจ stale (REGN/CRM/ADBE FV น่าจะสูงกว่าที่บันทึก, ACN น่าจะต่ำกว่า) → batch re-verify คือ action สำคัญที่สุดของรอบนี้ (2) RDDT เปราะที่สุด — EU VLOP + Google renewal + citation collapse กองกันเข้ามา; trim 33% เป็น defensive ไม่ใช่ thesis exit (3) TC regime → ถือ cash 62% เข้า Sept FOMC ตามแผน Charlie. **Max's overall read: พอร์ตแข็งแรงขึ้นจริง (alpha บวก, 2 STRONG SELL จัดการแล้ว) — จุดอ่อนเดียวคือ discipline ของ FV maintenance ที่ตกหล่นมา 3 เดือน — batch re-verify จะปิดช่องว่างนั้น.**
+
+---
+
+## P&L Summary — 2026-10-05 (Portfolio Review Mode 3 — Monday pre-market, no new trading day, Oct 2 close carried)
+
+| Ticker | Shares | Cost Basis | Current Price | Market Value | Unrealized P&L | Return % | Weight % |
+|--------|--------|-----------|---------------|---------------|-----------------|----------|---------|
+| ADBE | 4 | $988.10 | $237.67 | $950.68 | -$37.42 | -3.79% | 9.33% |
+| NOW | 1 | $89.47 | $134.38 | $134.38 | +$44.91 | +50.17% | 1.32% |
+| CRM | 3 | $543.00 | $234.69 | $704.07 | +$161.07 | +29.66% | 6.91% |
+| REGN | 0.42 | $252.84 | $735.20 | $308.78 | +$55.94 | +22.13% | 3.03% |
+| ADSK | 2.4 | $476.23 | $212.00 | $508.80 | +$32.57 | +6.84% | 4.99% |
+| **Invested (5 OPEN)** | | **$2,349.64** | | **$2,606.71** | **+$257.07** | | **25.59%** |
+| Cash | | | | $7,581.70 | | | 74.41% |
+| **Portfolio Total** | | $10,000.00 | | **$10,188.39** | **+$188.39** | **+1.88%** | 100% |
+
+S&P 500: 7,722.72 (Oct 2 2026 close, unchanged — no new US trading session closed yet as of Monday 07:00 Bangkok). sp500Return +4.38%. **Alpha = -2.50%** (unchanged, negligible).
+
+No trades this session. Cash accrual only: $7,580.91 × 3.8%/365 × 1 day = +$0.79 → $7,581.70.
+
+### Stop Loss Check
+| Ticker | Price | Stop | stopDist % | Status |
+|--------|-------|------|-----------|--------|
+| ADBE | $237.67 | $185.00 | 22.16% | ✅ Safe |
+| NOW | $134.38 | $93.00 | 30.78% | ✅ Safe |
+| CRM | $234.69 | $144.80 | 38.30% | ✅ Safe |
+| REGN | $735.20 | $482.00 | 34.43% | ✅ Safe |
+| ADSK | $212.00 | $158.74 | 25.12% | ✅ Safe (tightest) |
+
+No stop breach. No position within 10% of stop.
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | fvVerifiedDate | Age (days) | #1 Earnings-driven | #2 Staleness+Price (90d+MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------|-----------|---------------------|-------------------------------|------------------------------|-------------------------------|-------------------------------|--------|
+| ADBE | 2026-09-11 | 24 | No new earnings | No (24d<90, MOS +35.57%) | No | No (price -3.79% vs verify date) | Not re-checked this session | 0/5 |
+| NOW | 2026-08-24 | 42 | No new earnings | No (42d<90, but MOS -6.95% negative — watch, recurring pattern, already trimmed) | No | No | Not re-checked | 0/5 (flag only, no action per CIO precedent — residual position) |
+| CRM | 2026-09-11 | 24 | No new earnings | No (24d<90, MOS +32.14%) | No | No | Not re-checked | 0/5 |
+| REGN | 2026-09-11 | 24 | No new earnings (Sanofi deal is licensing, not earnings) | No (24d<90, MOS +17.30%) | No | No | Not re-checked | 0/5 |
+| ADSK | 2026-09-12 | 23 | No new earnings | No (23d<90, MOS +4.41% thin but positive) | No | No | Not re-checked | 0/5 |
+
+**0/5 positions fire any trigger.** Atlas regime re-call (2026-09-25, RISK-ON) is 10 days old — not overdue.
+
+No trade this session. Max Consultation Rule not triggered (no BUY/SELL/TRIM proposed).
+
+*Max — 2026-10-05 | Portfolio Review Mode 3*
