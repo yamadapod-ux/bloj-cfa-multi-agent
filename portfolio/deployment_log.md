@@ -898,3 +898,15 @@
 **0/5 fast-track — no TRIAL-rule survivor. No Full Pipeline, no Morgan QA, no Conviction Gate, no Max Consultation, no trade this round.** See `watchlist.md` § Scout Report Round 68 for full per-filter detail and sourcing.
 
 *Max — 2026-10-05 | Round 68.*
+
+---
+
+## NXT Full Pipeline Result (Round 73 fast-track flag resolved) — 2026-10-06
+
+| Date | Ticker | Action | Gate Status | Position Size | Tranche | Rationale |
+|------|--------|--------|--------------|----------------|---------|-----------|
+| 2026-10-06 | NXT | **NO BUY / WATCH** (Full 5-agent pipeline: Atlas→Emma→Quinn→Bear[opus]→Morgan QA 2-round PASS) | Growth Conviction Gate: Revenue Growth 20.28% (FY26 trailing) **PASS** (narrowly — FY27 guidance midpoint 19.4% is actually below 20%) / Conviction 4.67/10 **FAIL** (<6.5 threshold) — AND-logic gate does NOT clear. Value Gate also FAIL (Conviction 4.67<7.0, MOS -10.1%<<+15%). Blended FV $75.81 (Emma $82.90 / Quinn $76.62 / Bear $65.53, 40/30/30) vs price $84.30 = **MOS -10.1%**. | n/a | n/a | Round 73's TRIAL-rule fast-track flag (full A-E Scout survivor) resolved via full pipeline. Business is genuinely clean (zero LT debt, $1.2B net cash, #1 global tracker share, 44% ROIC) but disciplined guidance-anchored DCF puts fair value below current price. Bear's challenge (opus model, per task instruction) on the persistent multi-year CEO insider-selling pattern (>$25M sold since mid-2025 under repeatedly-renewed 10b5-1 plans) and tariff-dependent margin quality (37% Q1 FY27 gross margin vs. mgmt's own "low-30s" organic target, explicitly tariff-recovery-driven, a policy-reversible earnings-quality risk) drove team conviction down to 4.67/10, below the Growth gate's 6.5 threshold. No Max Consultation Rule trigger — gate fails cleanly before any BUY decision point. Logged to `buy_list.md` with refined $64-70 entry zone, re-check keyed to Q2 FY2027 earnings (Oct 22, 2026). See `reports/NXT_2026-10-06.md` for full report. |
+
+**Counter-factual tracking:** n/a yet (no SKIP — full pipeline run; re-check at Oct 22, 2026 earnings for whether conviction/MOS improve, worsen, or the Growth-bucket eligibility itself breaks if trailing growth drops below 20%).
+
+*Charlie — 2026-10-06 | NXT Full Pipeline complete, Round 73 fast-track flag resolved to NO BUY/WATCH.*
