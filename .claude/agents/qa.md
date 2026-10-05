@@ -108,12 +108,23 @@ Read reports/TICKER_YYYY-MM-DD.md
 | Assumption | ช่วงปกติ (US stocks) | ถ้านอกช่วง |
 |------------|---------------------|-----------|
 | WACC | 7% – 13% | HIGH FAIL — ระบุค่าที่พบ |
-| Terminal Growth Rate | 1% – 3% | HIGH FAIL ถ้า > 3% |
+| Terminal Growth Rate | 1% – 3% (ดูข้อยกเว้นแบบมีเงื่อนไขด้านล่าง) | HIGH FAIL ถ้า > 3% และไม่มี 3-point justification ครบ |
 | Revenue Growth (Year 1-5) | ≤ 2× historical CAGR | HIGH FAIL ถ้าสูงเกิน 2× |
 | Discount Rate | ≥ Risk-free rate + 3% | HIGH FAIL ถ้าต่ำกว่า |
 | Margin of Safety | ≥ 15% สำหรับ BUY | MEDIUM ถ้า MOS < 15% แต่ยัง BUY |
 
 ถ้าพบ assumption นอกช่วง → ให้ระบุค่าที่พบ + ช่วงปกติ + ผลกระทบต่อ fair value โดยประมาณ
+
+**TGR Conditional Ceiling Exception (เพิ่ม 2026-10-06 — CIO approved หลัง Funnel Diagnostic พบว่าเพดาน 3% แบบตายตัวบีบ MOS ของ secular grower จริง เช่น ADSK และ underestimate fair value ของ AWS ใน AMZN CIO-override analysis ขณะที่เพดานเดิมก็จับ overstatement ถูกต้องในบางเคส เช่น TDG — ดู `agent_notes/charlie/2026-10-06_funnel_diagnostic.md` commit `c6d95c1`):**
+
+Emma อนุญาตให้ใช้ TGR สูงถึง **3.5–4%** (จากเดิม 3% ตายตัว) ได้ **เฉพาะ** เมื่อรายงานมีครบทั้ง 3 ข้อนี้:
+1. **จัดเป็น wide-moat ชัดเจน** พร้อมตัวเลข ROIC-WACC spread ที่ยืนยันได้ว่า **>5pp ต่อเนื่อง ≥3 ปี**
+2. **Sub-industry/segment ที่ growth มาจากนั้นมี secular growth >15% ต่อเนื่อง ≥3 ปี** โดยอ้างอิงแหล่งข้อมูลอิสระ (industry research เช่น Synergy Research, Gartner) **ไม่ใช่แค่ guidance ของบริษัทเอง**
+3. Emma ต้อง **flag ชัดเจนในรายงานว่า "TGR เกินเพดานมาตรฐาน 3%, justification แบบมีเงื่อนไขอยู่ด้านล่าง"** เพื่อให้ Morgan ตรวจสอบได้
+
+**Default สำหรับชื่ออื่นทั้งหมด (mature, cyclical, ไม่มี wide-moat ที่พิสูจน์ได้) ยังคงเพดาน 3% เหมือนเดิม — นี่ไม่ใช่การยกเพดานทั้งกระดาน**
+
+**Morgan QA ต้องเช็คเพิ่ม:** ถ้า TGR > 3% → ตรวจว่ามี justification ครบ 3 ข้อข้างต้นในรายงานจริง ไม่ใช่แค่กล่าวอ้างลอยๆ — ถ้าไม่มีครบ → **QA FAIL** ต้องให้ Emma แก้กลับไปใช้เพดาน 3% มาตรฐาน
 
 ### Step 2.6 — Data Package Compliance + Cross-agent Consistency
 

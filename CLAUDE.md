@@ -15,7 +15,7 @@
 
 ## Investment Philosophy
 - **Strategy**: Aggressive Growth
-- **Time horizon**: 3–5 ปี
+- **Time horizon**: 5+ ปี (แก้ไข 2026-10-06 — CIO override หลัง Funnel Diagnostic ยืนยัน horizon mismatch ระหว่าง CLAUDE.md เดิม (3-5 ปี) กับความต้องการจริงของ CIO, ดู `agent_notes/charlie/2026-10-06_funnel_diagnostic.md` commit `c6d95c1`. ผลกระทบ: Emma ควรสร้าง explicit FCF projection แบบ 7-10yr+ เป็นค่าเริ่มต้นแทนที่จะจำกัดแค่ 5 ปี เมื่อ business case รองรับ — WACC/TGR methodology แยกคุยต่อในหัวข้อ Terminal Growth Rate ด้านล่าง)
 - **ตลาด**: US stocks (NYSE / NASDAQ)
 - **Benchmark**: S&P 500
 - **Framework**: CFA-driven (ไม่จำกัด Level)
@@ -528,6 +528,17 @@ Avg    ██████░░░░  6.0/10  [flag ถ้า avg < 5 หรื
 | Emma (DCF/Fundamental) | **40%** | Equity specialist — primary valuation |
 | Quinn (Quant/P-W EV) | **30%** | Statistical rigor |
 | Bear (Downside/P-W EV) | **30%** | Devil's advocate — weight เท่า Quinn เพราะ downside scenario สำคัญเท่ากัน ห้ามลด weight ด้วยเหตุผลว่า "Bear แย้งเยอะ" |
+
+### Bear's Discount Classification Requirement (เพิ่ม 2026-10-06 — CIO approved หลัง Funnel Diagnostic)
+
+**ที่มา:** Funnel Diagnostic (`agent_notes/charlie/2026-10-06_funnel_diagnostic.md`, commit `c6d95c1`) ยืนยันบางส่วนว่า Bear อาจ discount ROIC/FCF ของบริษัทที่อยู่ใน heavy-reinvestment phase (เช่น AI capex) ปนกับบริษัทที่มีปัญหาถาวรจริง โดยไม่แยกให้ชัดเจน — เคส AMZN เป็นตัวอย่าง (Bear FV $159.72 vs Emma's own DCF-bull-case $285.48 สำหรับบริษัทเดียวกัน) **หมายเหตุ: นี่ไม่ใช่การแก้ weight 30% ของ Bear (Return-side rule ที่ล็อกอยู่ ต้องรอ rolling 8-quarter alpha trigger) — เป็นการเพิ่มความเข้มงวด/โปร่งใสของวิธีคิด Bear เท่านั้น**
+
+**กฎใหม่ (บังคับทุก Full Pipeline report):** เมื่อ Bear จะ discount ROIC หรือ FCF ของ candidate ใดๆ ต้องระบุชัดเจนว่าปัจจัยลบแต่ละข้อจัดอยู่ประเภทไหนใน 2 ประเภทนี้ **แยกกัน ห้ามปนรวมเป็น discount เดียว**:
+
+1. **"Temporary/reinvestment-phase depression"** — ROIC/FCF ต่ำหรือติดลบตอนนี้เพราะโปรแกรม capex/R&D ที่ตั้งใจ เปิดเผยชัดเจน และมีกรอบเวลา (เช่น AI data-center buildout, product ramp ใหม่) พร้อม monetization timeline ที่อ้างอิงได้จาก management guidance หรือ industry data
+2. **"Structural/permanent impairment"** — ROIC/FCF ต่ำเพราะ competitive erosion, secular decline, หรือ execution failure ที่ไม่มี credible recovery path
+
+Bear ต้องระบุใน FV/conviction score ของตัวเองว่าปัจจัยลบแต่ละข้อเข้าประเภทไหน — ห้ามเขียนเป็น discount รวมๆ แบบไม่แยกประเภท
 
 Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั้ง: `FV = Emma×0.40 + Quinn×0.30 + Bear×0.30`
 
