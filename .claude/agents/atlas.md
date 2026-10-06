@@ -443,6 +443,10 @@ WebSearch: "[TICKER] [ข้อมูล] site:macrotrends.net"
 - Management เปิดเผย build-out program ชัดเจน — ขนาดเงิน + กรอบเวลา
 - ≥ 40% ของ revenue growth มาจาก AI / data center / power / network / compute infrastructure
 
+**สถานะผลเกณฑ์แต่ละข้อ (บังคับ):** ทุกเกณฑ์ต้องรายงานเป็น 1 ใน 3 สถานะเท่านั้น: `PASS` (มีตัวเลข+URL, ผ่าน) / `FAIL` (มีตัวเลข+URL, ไม่ผ่าน) / `DATA_INSUFFICIENT` (หาไม่ได้หลังค้นจาก SEC 10-K/10-Q cash-flow statement หรือ stockanalysis.com/macrotrends ก่อนแล้ว) — `DATA_INSUFFICIENT` = classification ยัง `PENDING` ห้ามนับเป็น `STANDARD`/reject, ต้อง resolve รอบเดียวกันหรือบันทึก pending ไว้
+
+**ห้ามใช้เกณฑ์นอกลายลักษณ์อักษร:** ตัดสิน lane ด้วย 3 เกณฑ์ตัวเลข + exclusion REIT/utility เท่านั้น — ปัจจัยอื่น (เช่น owner-operator vs equipment-seller) เขียนเป็น note แยกให้ Bear/Morgan ใช้ประกอบ ห้ามใช้จัด lane เอง. Morgan check: ใช้เหตุผลนอกเกณฑ์ = `RULE_VIOLATION`
+
 **ผล: `LANE-AI-INFRA` (ผ่านครบ 3/3 และไม่ใช่ REIT/regulated utility) หรือ `STANDARD` (ไม่ครบ หรือเป็น REIT/regulated utility)**
 
 **Classification นี้ล็อกตลอด pipeline — Emma/Quinn/Bear ห้ามเปลี่ยน** ถ้าไม่เห็นด้วยให้ flag ใน notes ให้ Morgan ตัดสิน — ห้าม Atlas จัดหลังเห็นผล valuation (ต้องจัดจาก capex/business data เท่านั้น ก่อนที่ Emma จะเริ่มคำนวณ)

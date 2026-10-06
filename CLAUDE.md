@@ -346,6 +346,19 @@ CIO → "Max หาหุ้นใหม่"
 
 ไม่ผ่านครบ → ใช้ Filter เดิม. Morgan ตรวจ classification ซ้ำ — ถ้าเข้าเกณฑ์ไม่ครบ = `RULE_VIOLATION`
 
+**สถานะผลเกณฑ์แต่ละข้อ (บังคับ — เพิ่ม 2026-10-06):** ทุกเกณฑ์ต้องรายงานเป็น 1 ใน 3 สถานะเท่านั้น:
+- `PASS` — มีตัวเลข + URL และผ่าน
+- `FAIL` — มีตัวเลข + URL และไม่ผ่าน
+- `DATA_INSUFFICIENT` — หาตัวเลขไม่ได้ **หลังจาก**ค้นจากแหล่งบังคับแล้ว
+
+**แหล่งบังคับก่อนจะใช้ `DATA_INSUFFICIENT` ได้:** Capex และ Revenue มีอยู่ในงบการเงินของบริษัทจดทะเบียนทุกแห่ง → ต้องค้นจาก **SEC 10-K/10-Q (cash flow statement: "Purchases of property and equipment")** หรือ stockanalysis.com / macrotrends cash-flow page ก่อน — ห้ามใช้ `DATA_INSUFFICIENT` กับ capex/revenue ถ้ายังไม่ได้ลองแหล่งเหล่านี้
+
+**ผลของ `DATA_INSUFFICIENT`:** classification ยังไม่สรุป (`PENDING`) — ห้ามนับเป็น `STANDARD` หรือ reject. ต้อง resolve ภายใน scout รอบเดียวกัน หรือบันทึกเป็น pending ใน watchlist.md พร้อมระบุว่าขาดข้อมูลอะไร
+
+**ห้ามใช้เกณฑ์นอกลายลักษณ์อักษร:** การตัดสิน lane ใช้เฉพาะ 3 เกณฑ์ตัวเลข + exclusion REIT/utility เท่านั้น. ถ้า Atlas/Max เห็นว่ามีปัจจัยอื่นควรพิจารณา (เช่น owner-operator vs equipment-seller) → เขียนเป็น **note แยก** ให้ Bear/Morgan ใช้ประกอบ ห้ามใช้เป็นเหตุผลจัด lane
+
+**Morgan check:** ถ้า classification ใช้เหตุผลที่ไม่อยู่ใน 3 เกณฑ์ + exclusion = `RULE_VIOLATION`
+
 **ไม่รวม (exclusion, เพิ่ม 2026-10-06 หลัง Vera calibration `faa04d2` พบว่า 3/10 ที่เข้า lane ล้วนเป็น REIT):** REIT และ regulated utilities ไม่เข้า lane นี้แม้ผ่านครบ 3 ข้อ — ธุรกิจเหล่านี้ capex หนักโดยโครงสร้างและมีวิธีวัดเฉพาะของตัวเอง (REIT: P/AFFO, NAV · Utilities: DDM, rate base growth, allowed ROE) → ใช้ Filter เดิมไปก่อนจนกว่าจะมี lane ของตัวเอง
 
 **2. Scout filters ที่แทนของเดิม (เฉพาะ lane นี้)**
