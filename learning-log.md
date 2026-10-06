@@ -1094,3 +1094,25 @@ Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 
 **Scout Rounds 33-40:** ~70 candidates across Chemicals, Regional Banks, Telecom/Utilities, Consumer Staples, Managed Care, Rail, Specialty Retail, AI/Semis, Energy, Industrials — 0 fast-track (regime still near-ATH, no fat pitch). Learning-queue/near-miss: TMUS, BBWI (later confirmed reject under new B-Zero), UPS. AI/Semis Round 37→38 validated the OR-logic fix: correctly separated genuinely-never-cheap (ARM) from cheap-by-one-metric-only (AVGO/WDC/MPWR → learning-queue, methods disagreed so no fast-track) from cheap-but-disqualified-elsewhere (SMCI — governance overhang overrides a technical B-V1 pass).
 
 *อัปเดตล่าสุด: 2026-09-27 — backfilled Hermes work from access outage. Going forward: keep entries this length (bullets, not full narrative) — Leo re-reads this whole file before every analysis and length was burning tokens.*
+
+---
+
+### 2026-10-07 — AMZN v3 Learning Run (เครื่องมือแบบไหนเปลี่ยนผลแค่ไหน — ไม่นับ LANE-AI-INFRA trial)
+
+**คำถามที่ v3 ทดสอบ:** ถ้าใช้เครื่องมือที่ถูกกับธุรกิจประเภท capex-heavy build-out (in-service ROIC, incremental ROIC, SOTP, explicit capex-path DCF) แทนเครื่องมือทั่วไป (trailing consolidated ROIC, smoothed-FCF DCF) ผลต่างจาก v1/v2 ($201.22/$200.18 Blended) แค่ไหน?
+
+**ผล: Blended FV ร่วงจาก ~$200 → $101.71 (-49%)** — **ตรงข้ามกับที่ CIO ตั้งสมมติฐานไว้** (คิดว่าเครื่องมือที่ถูกต้องกว่าจะทำให้ FV สูงขึ้นใกล้ $200+ สมเหตุสมผลกว่าเดิม) ทีมรายงานตามจริงตาม anti-goal-seeking rule
+
+**บทเรียนหลัก — เครื่องมือ 2 ประเภทให้ผลคนละทิศทาง:**
+1. **เครื่องมือที่แยก "คุณภาพ capital allocation" ออกจาก "FCF ปัจจุบัน" (in-service/incremental ROIC)** → ทำให้ AWS **ดูดีขึ้น** (ROIC 19.3%→25.7% หลังหัก build-out capital) — ยืนยันว่า capex ไม่ destructive
+2. **เครื่องมือที่ model capex-timing อย่างตรงไปตรงมา (explicit year-by-year capex-path DCF แทน smoothed-FCF)** → ทำให้ FV **ต่ำลงมาก** เพราะ near-term FCF ติดลบจริงจาก capex $142B/yr ที่ยังไม่ normalize — นี่คือ driver หลัก (~80%) ของ Δ ทั้งหมด ไม่ใช่ WACC (เปลี่ยนแค่ -0.13pp) หรือ Bear reclassification (~15%)
+
+**กฎที่ validate ซ้ำ:** "เครื่องมือแม่นยำขึ้น ≠ FV สูงขึ้นหรือ thesis แข็งขึ้นเสมอ" — ความแม่นยำบางครั้งเผยด้าน downside ที่ smoothed-model ซ่อนไว้ (ตรงข้ามกับ CRM v1→v2/DXCM/NOW ที่ data correction ยืนยัน thesis เดิม — รอบนี้ data correction **เปลี่ยนทิศทางความแข็งแรงของ thesis อย่างมีนัยสำคัญแม้ verdict ไม่เปลี่ยน (NO BUY ทั้งคู่)**
+
+**Segment capex sourcing:** ได้จริงจาก 10-K Note 10 (PP&E net + net additions by segment ทุกปี) — **CIP by segment = DATA_INSUFFICIENT ยืนยันแล้ว** (10-K มี CIP แบบ consolidated เท่านั้น ไม่แยก segment) — Atlas ใช้ proxy ESTIMATE (capex/D&A ratio gap) แทน พร้อม label ชัดเจน, Emma ทำ SOTP ทั้ง 2 แบบ (มี/ไม่มี Ads-ESTIMATE) ตามกฎ — ผลต่าง SOTP จาก Ads carve-out เล็กมาก (+5.1%) ไม่ material
+
+**WACC ยังอยู่นอกกรอบ 7-9% (11.07%)** — ครั้งนี้ Emma อธิบายเหตุผลเชิงธุรกิจชัดเจน (beta 1.44-1.49 จาก 3 แหล่งตรงกันดี, สูงจาก thin-margin retail + capex supercycle) ไม่ใช่แค่รายงานตัวเลข — ตัวอย่างที่ดีของการทำตามกฎ "อธิบายทำไม ไม่ใช่แค่รายงาน"
+
+**Web-search ใช้จริง 22 calls** (Atlas ~20, Bear 2, Emma/Quinn/Morgan 0 — reuse data package) — ต่ำกว่า budget 40-50 มาก เพราะ pipeline แบบ sequential-reuse มีประสิทธิภาพสูง — แต่ทำให้ peer EV/EBIT multiples ของ SOTP ยังไม่ verify-live (Morgan flag เป็น LOW/MEDIUM gap สำหรับรอบหน้า)
+
+**CIO flag:** AMZN เป็น CIO-override ticker — v3 ไม่ deploy อัตโนมัติไม่ว่า gate ผ่านหรือไม่ (gate ไม่ผ่านรอบนี้อยู่แล้ว, MOS -60.3%) — ผลลัพธ์สำคัญที่ต้องรายงาน CIO คือ **เครื่องมือที่ "ถูกกับธุรกิจ" มากขึ้น ทำให้ thesis อ่อนลง ไม่ใช่แข็งขึ้น** — ธุรกิจยังดี (in-service/incremental ROIC >> WACC) แต่ ไม่ cheap ที่ราคานี้ด้วยการคำนวณที่ระมัดระวังกว่า
