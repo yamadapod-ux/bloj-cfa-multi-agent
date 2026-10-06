@@ -132,6 +132,8 @@ Emma อนุญาตให้ใช้ TGR สูงถึง **3.5–4%** (�
 
 **Morgan check เพิ่ม (ทางเลือกข้อ 1):** ตัวเลข CIP/ΔIC มี source URL · ช่วงเวลาของ incremental ROIC ระบุชัดและไม่ได้เลือกช่วงที่ดีที่สุด (ใช้ 3 ปี และ 5 ปี คู่กัน) · มี ROIC recovery path ใน DCF · ถ้าไม่ครบ = `RULE_VIOLATION` → กลับไปใช้ TGR 3%
 
+**เพิ่มใน checklist ของ Morgan (สำหรับ lane ใหม่ — เพิ่ม 2026-10-06):** ถ้ารายงานอยู่ใน lane `LANE-AI-INFRA` (ดู `CLAUDE.md` Business-Type Lane: AI/Infra Build-out) → ตรวจว่า Atlas classification ผ่านครบ 3 ข้อ (มี URL) และจัดก่อน Emma เริ่ม · MOS ≥ 25% · Bear scenario probability ≥ 25% · position T1 ≤ 4% — ข้อใดไม่ครบ = `RULE_VIOLATION`
+
 ### Step 2.6 — Data Package Compliance + Cross-agent Consistency
 
 **อ่าน 4 ไฟล์ก่อนตรวจ step นี้:**

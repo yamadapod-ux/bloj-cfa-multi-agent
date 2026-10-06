@@ -333,6 +333,45 @@ CIO → "Max หาหุ้นใหม่"
 
 **ยกระดับ learning-queue → fast-track เมื่อ:** (a) Emma lightweight FV พบ MOS ≥ 25% (Filter D miscalibrated ทางอนุรักษ์เกิน) **หรือ** (b) overhang ที่กด Filter E resolve จริง (litigation dismissed, legislation passed, China stabilizes) **หรือ** (c) ราคา pull back ≥ 15% เพิ่มจากตอน scout
 
+### Business-Type Lane: AI/Infra Build-out (`TRIAL` — เพิ่ม 2026-10-06, review 2026-12-31)
+
+**ที่มา:** Filter A/C/D-Legacy/E2 calibrate มาสำหรับ mature business → คัดทิ้งบริษัทที่อยู่ระหว่าง build-out ทั้งกลุ่มโดยโครงสร้าง (0/155 fast-track). หลักการ CFA: valuation method ต้องเหมาะกับประเภทธุรกิจ. TRIAL lane เดียวก่อน — lane อื่นยังใช้ Filter เดิมทั้งหมด. **ไม่แตะ Return-side locked rules** (conviction gate / Growth MOS reverse-DCF ≤1.2× / 40-30-30 คงเดิม — lane นี้ *เพิ่ม* เกณฑ์ ไม่ได้ลด) — ดู `agent_notes/charlie/2026-10-06_lane_ai_infra_draft.md` (ร่างโดย Opus, CIO approved)
+
+**1. Classification — Atlas เป็นผู้จัด (ไม่ใช่ Emma) โดยต้องจัดให้เสร็จก่อนที่ Emma จะเห็น Data Package และเมื่อจัดแล้วห้ามเปลี่ยนระหว่าง pipeline**
+
+เข้า lane นี้ได้ต้องผ่าน **ครบ 3 ข้อ** (ตัวเลขพร้อม URL):
+- Capex/Revenue ≥ 15% (TTM) **หรือ** capex โต ≥ 30% YoY
+- Management เปิดเผย build-out program ชัดเจน — ขนาดเงิน + กรอบเวลา
+- ≥ 40% ของ revenue growth มาจาก AI / data center / power / network / compute infrastructure
+
+ไม่ผ่านครบ → ใช้ Filter เดิม. Morgan ตรวจ classification ซ้ำ — ถ้าเข้าเกณฑ์ไม่ครบ = `RULE_VIOLATION`
+
+**2. Scout filters ที่แทนของเดิม (เฉพาะ lane นี้)**
+
+| เดิม | แทนด้วย |
+|---|---|
+| Filter A (ลง ≥20% จาก high) | **ยกเว้น** — แต่ Growth MOS (reverse DCF ≤1.2×) ยังบังคับ |
+| Filter C (ROIC ≥ 80% WACC) | **ROIC on in-service capital (หัก CIP) > WACC** **หรือ** **incremental ROIC 3 ปี และ 5 ปี (แสดงทั้งคู่) > WACC** |
+| Filter D-Legacy (naive no-growth FV) | ไม่ใช้ — ใช้ข้อ 3 ด้านล่าง |
+| Filter E2 (through-cycle ROIC +3pp) | **Runway:** เงินสด + committed financing ≥ 24 เดือนของ net capex burn **หรือ** core business FCF-positive ครอบ capex ได้ · **Dilution** ≤ 3%/ปี (เฉลี่ย 3 ปี) |
+| B-Zero, E1 (moat), E3 (overhang) | **คงเดิม — ใช้เหมือน lane ปกติทุกประการ** |
+
+**3. Valuation + MOS (ตัวเลขบังคับ)**
+- Quinn ทำ P-W EV 3 scenario พร้อม probability ชัดเจน — **Bear scenario ต้องมี probability ≥ 25%** และต้องรวมกรณี "capex ไม่ได้ผลตอบแทน" (write-down / ROIC ไม่ฟื้น)
+- **MOS ≥ 25% เทียบ Blended FV** (สูงกว่า Value 15% เพราะความไม่แน่นอนสูงกว่า) **และ** reverse DCF ≤ 1.2× (เดิม)
+- Emma DCF ต้องแสดง **ROIC recovery path รายปี** ในช่วง explicit forecast — TGR ใช้ข้อยกเว้น 3.5–4% ได้ตาม qa.md ทางเลือก capex-cycle เท่านั้น
+
+**4. Position sizing**
+- T1 ≤ 4% (ไม่ใช่ 8–10%)
+- T2/T3 เพิ่มได้เฉพาะเมื่อ **milestone ที่ระบุไว้ตอน T1 เกิดขึ้นจริงแล้ว** (เช่น capex เริ่มสร้าง revenue ตามที่ guide, margin ขึ้นตาม path)
+- Bear ต้องเขียน **Thesis Invalidation ผูก milestone + วันที่** (เช่น "ถ้า Q4 2027 AI revenue < $X → exit")
+
+**5. TRIAL measurement (Vera, review 2026-12-31)**
+- บันทึก tag `LANE-AI-INFRA` ใน `portfolio/deployment_log.md`
+- Track: จำนวนที่เข้า lane / ผ่านแต่ละด่าน / deploy / 6-month outcome เทียบกับ Filter เดิม
+- **ห้ามนับ ticker ที่วิเคราะห์ไปแล้วก่อนวันนี้ (รวมถึง AMZN v1 และ v2) เป็น trial data** — ต้องเป็น scout ใหม่เท่านั้น
+- **Calibration ก่อนใช้จริง (แนะนำ):** Vera ลองรันเกณฑ์ข้อ 1–3 ย้อนกับหุ้น AI/infra ที่เคย scout แล้วประมาณ 10 ตัว ดูว่ามีกี่ตัวที่เข้า lane และกี่ตัวที่ผ่าน — ต้องไม่หลวมจนผ่านหมด และไม่ตึงจนไม่มีตัวไหนผ่าน (ผลนี้เป็น calibration เท่านั้น ไม่นับเป็น trial data)
+
 **Logging tag ใหม่:** `LEARNING-QUEUE` ใน `portfolio/deployment_log.md` (แยกจาก `SKIPPED` / `QUICK-SCREEN SKIP`) — Vera แยกออกจาก Funnel Health denominator
 
 **ไม่ใช้กับ:** OPEN-position re-verify (มี lightweight tier แยกอยู่แล้วตาม Re-Analysis Trigger Rule — ไม่เกี่ยวกัน ไม่แตะ)

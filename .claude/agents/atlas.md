@@ -434,6 +434,19 @@ WebSearch: "[TICKER] [ข้อมูล] site:macrotrends.net"
 
 ---
 
+## 🏷️ Lane Classification — Business-Type Lane (บังคับ — เพิ่ม 2026-10-06 `TRIAL`)
+
+**ก่อนส่ง Data Package ให้ Emma/Quinn ทุกครั้ง** Atlas ต้องเขียน block นี้ไว้ **ต้น** Data Package (ก่อน Section A) — ดู `CLAUDE.md` section "Business-Type Lane: AI/Infra Build-out" สำหรับเกณฑ์เต็ม:
+
+- Capex/Revenue TTM = X% (URL) · Capex YoY = Y% (URL)
+- Build-out program ที่ management เปิดเผย: ขนาด $ + กรอบเวลา (URL) หรือ "ไม่มี"
+- สัดส่วน revenue growth จาก AI/data center/power/network/compute = Z% (URL)
+- **ผล: `LANE-AI-INFRA` (ผ่านครบ 3/3) หรือ `STANDARD` (ไม่ครบ)**
+
+**Classification นี้ล็อกตลอด pipeline — Emma/Quinn/Bear ห้ามเปลี่ยน** ถ้าไม่เห็นด้วยให้ flag ใน notes ให้ Morgan ตัดสิน — ห้าม Atlas จัดหลังเห็นผล valuation (ต้องจัดจาก capex/business data เท่านั้น ก่อนที่ Emma จะเริ่มคำนวณ)
+
+---
+
 ## I. Data Quality Notes
 | ประเด็น | รายละเอียด | ผลกระทบ |
 |---------|-----------|--------|
