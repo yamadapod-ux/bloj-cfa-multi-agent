@@ -78,4 +78,18 @@
 
 ---
 
+## Open Questions for 2026-12-31 review
+
+- **Segment-level vs consolidated-level (เกณฑ์ข้อ 3):** บริษัทหลาย segment (เช่น AMZN: AWS ~33.5% ของ revenue growth) ไม่ถึง 40% ที่ระดับบริษัท. **ไม่แก้เกณฑ์ตอนนี้** เพราะ AMZN คือ ticker ต้นเรื่อง — แก้เพื่อให้มันเข้า lane = goal-seeking. ทางที่ถูกหลักคือ **SOTP** (segment build-out วัดด้วยเครื่องมือ lane นี้, segment อื่นวัดแบบมาตรฐาน, รวม FV) ไม่ใช่ลดเกณฑ์ทั้งบริษัท. **พิจารณาเพิ่มกฎ SOTP เฉพาะเมื่อ scout รอบใหม่เจอบริษัทหลาย segment ที่ไม่ใช่ AMZN ≥ 2 ตัว** ที่ติดเกณฑ์ข้อ 3 แบบเดียวกัน (patch2, Opus, 2026-10-06)
+
+---
+
+## Patch 2 (2026-10-06, หลัง calibration นี้) — อัปเดตใน CLAUDE.md/atlas.md แล้ว
+
+หลัง review calibration นี้ CIO/Opus อนุมัติ 2 แก้ไข (ดู `agent_notes/charlie/2026-10-06_lane_ai_infra_patch2.md`):
+1. Capex/Revenue ≥15% **หรือ** (capex growth ≥30% YoY **และ** Capex/Revenue ≥8% TTM) — ปิดช่องโหว่ loophole ข้อ 2 ด้านบน
+2. REIT และ regulated utilities ไม่เข้า lane นี้แม้ผ่านครบ 3 ข้อ (แก้ปัญหา EQIX/DLR/IRM ทั้งหมดเป็น REIT)
+
+**ผลกระทบต่อ calibration set นี้:** EQIX/DLR/IRM กลายเป็น `STANDARD` ตาม exclusion ใหม่ — lane ใน set นี้เหลือ **0/10 เข้า** ซึ่งถือว่าคาดได้ (set นี้ไม่ได้คัดมาสำหรับ lane นี้โดยเฉพาะ — ตัววัดจริงคือ scout รอบใหม่ใน lane)
+
 *Vera — 2026-10-06 | Calibration run, not trial data*

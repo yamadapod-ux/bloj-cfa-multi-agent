@@ -340,11 +340,13 @@ CIO → "Max หาหุ้นใหม่"
 **1. Classification — Atlas เป็นผู้จัด (ไม่ใช่ Emma) โดยต้องจัดให้เสร็จก่อนที่ Emma จะเห็น Data Package และเมื่อจัดแล้วห้ามเปลี่ยนระหว่าง pipeline**
 
 เข้า lane นี้ได้ต้องผ่าน **ครบ 3 ข้อ** (ตัวเลขพร้อม URL):
-- Capex/Revenue ≥ 15% (TTM) **หรือ** capex โต ≥ 30% YoY
+- Capex/Revenue ≥ 15% (TTM) **หรือ** (capex โต ≥ 30% YoY **และ** Capex/Revenue ≥ 8% TTM)
 - Management เปิดเผย build-out program ชัดเจน — ขนาดเงิน + กรอบเวลา
 - ≥ 40% ของ revenue growth มาจาก AI / data center / power / network / compute infrastructure
 
 ไม่ผ่านครบ → ใช้ Filter เดิม. Morgan ตรวจ classification ซ้ำ — ถ้าเข้าเกณฑ์ไม่ครบ = `RULE_VIOLATION`
+
+**ไม่รวม (exclusion, เพิ่ม 2026-10-06 หลัง Vera calibration `faa04d2` พบว่า 3/10 ที่เข้า lane ล้วนเป็น REIT):** REIT และ regulated utilities ไม่เข้า lane นี้แม้ผ่านครบ 3 ข้อ — ธุรกิจเหล่านี้ capex หนักโดยโครงสร้างและมีวิธีวัดเฉพาะของตัวเอง (REIT: P/AFFO, NAV · Utilities: DDM, rate base growth, allowed ROE) → ใช้ Filter เดิมไปก่อนจนกว่าจะมี lane ของตัวเอง
 
 **2. Scout filters ที่แทนของเดิม (เฉพาะ lane นี้)**
 
