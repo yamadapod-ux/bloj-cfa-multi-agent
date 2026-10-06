@@ -119,12 +119,18 @@ Read reports/TICKER_YYYY-MM-DD.md
 
 Emma อนุญาตให้ใช้ TGR สูงถึง **3.5–4%** (จากเดิม 3% ตายตัว) ได้ **เฉพาะ** เมื่อรายงานมีครบทั้ง 3 ข้อนี้:
 1. **จัดเป็น wide-moat ชัดเจน** พร้อมตัวเลข ROIC-WACC spread ที่ยืนยันได้ว่า **>5pp ต่อเนื่อง ≥3 ปี**
+   - **ทางเลือก (เพิ่ม 2026-10-06) — สำหรับบริษัทใน heavy-capex/reinvestment cycle:** ถ้า ROIC ปัจจุบันถูกกดจาก capex ที่ยังไม่ mature (J-curve) ให้พิสูจน์ข้อ 1 ด้วย **อย่างน้อย 1 ใน 2 วิธี** แทนได้ — ทั้งสองวิธีใช้ข้อมูลปัจจุบัน ห้ามใช้ ROIC ของปีในอดีตแทน:
+     - **(a) ROIC on in-service capital:** invested capital **หัก** Construction-in-Progress / assets not yet placed in service (ตัวเลขจาก 10-K/10-Q ล่าสุด พร้อม URL) → spread ต้อง **>5pp**
+     - **(b) Incremental ROIC 3–5 ปี:** ΔNOPAT ÷ ΔInvested Capital ช่วงเดียวกัน → ต้อง **> WACC +5pp**
+   - **เงื่อนไขบังคับของทางเลือกนี้:** (i) capex cycle ต้องเปิดเผยชัดเจนโดย management พร้อมขนาดเงินและกรอบเวลา (ii) DCF ช่วง explicit forecast ต้องแสดง **ROIC recovery path รายปี** ให้เห็นว่าฟื้นถึงระดับไหนเมื่อไหร่ — TGR สะท้อน steady state หลัง cycle จบ ไม่ใช่ใช้ TGR สูงชดเชยช่วงลงทุน (iii) Bear ต้องแยก ROIC gap เป็นส่วน temporary (capex) vs structural — **ใช้ทางเลือกนี้ได้เฉพาะส่วน temporary**
 2. **Sub-industry/segment ที่ growth มาจากนั้นมี secular growth >15% ต่อเนื่อง ≥3 ปี** โดยอ้างอิงแหล่งข้อมูลอิสระ (industry research เช่น Synergy Research, Gartner) **ไม่ใช่แค่ guidance ของบริษัทเอง**
-3. Emma ต้อง **flag ชัดเจนในรายงานว่า "TGR เกินเพดานมาตรฐาน 3%, justification แบบมีเงื่อนไขอยู่ด้านล่าง"** เพื่อให้ Morgan ตรวจสอบได้
+3. Emma ต้อง **flag ชัดเจนในรายงานว่า "TGR เกินเพดานมาตรฐาน 3%, justification แบบมีเงื่อนไขอยู่ด้านล่าง"** เพื่อให้ Morgan ตรวจสอบได้ — **ถ้าใช้ทางเลือกข้อ 1 ต้อง flag เพิ่ม "ใช้ capex-cycle alternative วิธี (a)/(b)" + แสดงตัวเลขทั้งสองวิธีที่คำนวณได้ (ไม่ใช่แค่วิธีที่ผ่าน) + ROIC แบบปกติ (TTM) คู่กันเสมอ**
 
 **Default สำหรับชื่ออื่นทั้งหมด (mature, cyclical, ไม่มี wide-moat ที่พิสูจน์ได้) ยังคงเพดาน 3% เหมือนเดิม — นี่ไม่ใช่การยกเพดานทั้งกระดาน**
 
 **Morgan QA ต้องเช็คเพิ่ม:** ถ้า TGR > 3% → ตรวจว่ามี justification ครบ 3 ข้อข้างต้นในรายงานจริง ไม่ใช่แค่กล่าวอ้างลอยๆ — ถ้าไม่มีครบ → **QA FAIL** ต้องให้ Emma แก้กลับไปใช้เพดาน 3% มาตรฐาน
+
+**Morgan check เพิ่ม (ทางเลือกข้อ 1):** ตัวเลข CIP/ΔIC มี source URL · ช่วงเวลาของ incremental ROIC ระบุชัดและไม่ได้เลือกช่วงที่ดีที่สุด (ใช้ 3 ปี และ 5 ปี คู่กัน) · มี ROIC recovery path ใน DCF · ถ้าไม่ครบ = `RULE_VIOLATION` → กลับไปใช้ TGR 3%
 
 ### Step 2.6 — Data Package Compliance + Cross-agent Consistency
 
