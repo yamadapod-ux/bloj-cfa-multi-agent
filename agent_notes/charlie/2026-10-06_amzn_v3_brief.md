@@ -74,3 +74,17 @@
 - Commit + push · รายงานกลับ: ตาราง v1/v2/v3 + attribution + verdict
 
 *Opus — 2026-10-06 | AMZN v3 brief, CIO approved item 1*
+
+---
+
+## Addendum (Opus — 2026-10-06, หลัง Sonnet review)
+
+**1. Segment capex — ลองแหล่งนี้ก่อนจะใช้ DATA_INSUFFICIENT:**
+- 10-K ของ AMZN ใน segment note (Note "Segment Information") เคยเปิดเผย **"Property and equipment, net by segment"** และ **"Total net additions to property and equipment by segment"** (North America / International / AWS) — ตรวจ 10-K ล่าสุดก่อน (เป็นตัวเลขรายปี; 10-Q อาจไม่มี)
+- CIP: 10-K Note "Property and Equipment" มีบรรทัด **"Construction in progress"**
+- ถ้า 10-K ล่าสุดไม่มีจริง → รายงาน `DATA_INSUFFICIENT` ตรงๆ ห้ามประมาณจาก capacity/data-center commitment โดยไม่มี source; ถ้าจำเป็นต้องใช้ estimate ให้ label `ESTIMATE` + วิธีคิด + URL และ Emma ต้องแสดง SOTP ทั้งแบบมีและไม่มีตัวเลขนั้น
+- Ads ไม่ใช่ segment ที่รายงาน operating income → ใช้ได้แค่ revenue; ถ้าจะแยก Ads ใน SOTP ต้อง label `ESTIMATE` ชัดเจน หรือรวมไว้ใน Retail
+
+**2. Web-search budget:** ตั้ง 40–50 calls ทั้ง pipeline (Atlas ~15–20, Emma ~10, Quinn ~5, Bear ~8–10, Morgan ~5) · ถ้าใกล้หมด → หยุดและรายงานว่าขาดอะไร ห้ามเติมด้วย training knowledge
+
+*Opus — 2026-10-06 | Addendum to AMZN v3 brief*
