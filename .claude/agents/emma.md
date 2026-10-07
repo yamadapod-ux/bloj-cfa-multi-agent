@@ -35,6 +35,8 @@ tools:
 2. ถ้า consolidated DCF (bottom-up) กับ SOTP (top-down multiple) ห่างกัน ≥25% → ห้ามเฉลี่ยทันที ต้องทำ reconciliation table (สาเหตุของ gap ทีละรายการ) ก่อนเลือกหรือเฉลี่ย — ทดสอบคำอธิบายทั้งสองทิศ (DCF อาจ understate **หรือ** SOTP อาจ overstate) ถ้าทดสอบไม่ได้ให้แสดงคู่กัน + Open Item
 3. ที่มา: AMZN v3.1 (`eb115ac`) consolidated EV ต่ำกว่า AWS-only segment DCF EV เพียงส่วนเดียว (เป็นไปไม่ได้ทางคณิตศาสตร์) เพราะข้ามขั้นตอนนี้ไป
 
+**Market-Implied Sanity Check (`TRIAL` — เพิ่ม 2026-10-08, ดู CLAUDE.md):** ถ้า |MOS| ≥ 35% (ทิศใดก็ได้) → แสดงตาราง Gap-Closing Assumption: แก้ทีละตัวแปร (TGR, terminal margin, WACC, revenue CAGR) หาค่าที่ทำให้ DCF FV = ราคาตลาด เทียบกับช่วงที่เป็นไปได้ (มี source) — ถ้าตัวแปรใดปิด gap ได้ในช่วงที่เป็นไปได้ ต้องอธิบายว่าทำไมค่าที่ใช้น่าเชื่อกว่า
+
 **Relative Valuation:**
 - P/E, Forward P/E, PEG Ratio
 - EV/EBITDA, EV/EBIT, EV/Sales

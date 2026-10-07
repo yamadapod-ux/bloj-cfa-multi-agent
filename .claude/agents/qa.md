@@ -167,6 +167,7 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
   - consolidated DCF vs SOTP ห่าง ≥25% → มี reconciliation table ก่อนเฉลี่ย/เลือก — ไม่มี = `RULE_VIOLATION` · table ทดสอบคำอธิบาย gap แค่ทิศเดียว (A overstate โดยไม่ทดสอบว่า B understate) แล้วเลือกตัวใดตัวหนึ่ง = `RULE_VIOLATION` — ทดสอบไม่ได้ต้องแสดงคู่กัน + Open Item
   - Quinn/Bear FV เป็น valuation ของตัวเอง ไม่ใช่ FV ของ analyst อื่นที่ใช้เป็น scenario ตรงๆ — ไม่ครบ = `RULE_VIOLATION`
   - FV ต่ำกว่า no-growth value (NOPAT÷WACC) ต้องสอดคล้องกับ Bear Discount Classification ของตัวเอง — ไม่ครบ = `RULE_VIOLATION`
+- [ ] **Market-Implied Sanity Check** (`TRIAL`, ดู CLAUDE.md § Market-Implied Sanity Check): ถ้า |MOS| ≥ 35% และไม่มี fraud/going-concern/regulatory-shutdown risk → มีตาราง Gap-Closing Assumption (TGR / terminal margin / WACC / revenue CAGR) พร้อมช่วงที่เป็นไปได้ที่มี source และการตีความสอดคล้องกับตาราง — ไม่ครบ = `RULE_VIOLATION`
 
 **2.6C — Atlas Macro Integration:**
 - [ ] Atlas บอก market regime อะไร? Emma/Quinn สะท้อนใน scenario assumption ไหม?

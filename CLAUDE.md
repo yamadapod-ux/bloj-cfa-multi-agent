@@ -632,6 +632,30 @@ Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั�
 
 **Morgan reject type:** ข้อ 1–2 ไม่ผ่าน = `SANITY_FAIL` · ข้อ 3–5 ไม่ผ่าน = `RULE_VIOLATION` — ดู Morgan QA Protocol § Cross-agent Consistency สำหรับ checklist
 
+### Market-Implied Sanity Check (`TRIAL` — เพิ่ม 2026-10-08, review 2026-12-31, ไม่ใช่ Return-side rule)
+
+**ที่มา:** AMZN v3.2 — Blended FV $125.66 vs ราคา ~$256 (MOS −51%) — CIO ตั้งคำถามว่า gap ขนาดนี้คือ "ตลาดแพงจริง" หรือ "โมเดล conservative เกินจริง" และไม่มีกฎใดบังคับให้แยกสองกรณี · ไม่แตะ MOS threshold / conviction gate / 40-30-30 — เป็นขั้น "ต้องอธิบายให้ผ่าน" ก่อน Morgan QA PASS เท่านั้น (โครงเดียวกับ Multi-Segment ข้อ 5)
+
+**Trigger:** |MOS| ≥ 35% เทียบ Blended FV (ทั้งทิศบวกและลบ) **และ** ไม่มี fraud / going-concern / regulatory-shutdown risk ที่ระบุชัดใน report
+
+**Emma ต้องแสดงตาราง "Gap-Closing Assumption"** — แก้ทีละตัวแปร (ตัวอื่นคงเดิม) แล้วรายงานค่าที่ทำให้ Emma DCF FV = ราคาตลาด:
+
+| ตัวแปร | ค่าที่ใช้ | ค่าที่ปิด gap | ช่วงที่เป็นไปได้ (history / peer / consensus + source) | อยู่ในช่วง? |
+|--------|----------|--------------|------------------------------------------------------|-----------|
+| TGR | | | | |
+| Terminal EBIT/FCF margin | | | | |
+| WACC | | | | |
+| Revenue CAGR (explicit period) | | | | |
+
+**ตีความ:**
+- มีตัวแปรใดปิด gap ได้ **ภายในช่วงที่เป็นไปได้** → โมเดลเปราะต่อตัวแปรนั้น — report ต้องอธิบายว่าทำไมค่าที่ใช้น่าเชื่อกว่าค่าที่ปิด gap (ห้ามอธิบายด้านเดียว — หลักเดียวกับ Multi-Segment ข้อ 3)
+- ทุกตัวแปรต้องขยับ **เกินช่วงที่เป็นไปได้** → ยืนยันว่าตลาด mispriced จริง (ทิศลบ = ตลาดแพง · ทิศบวก = ต้องระบุว่าทำไมตลาดถึงพลาด)
+- **ไม่เปลี่ยน recommendation อัตโนมัติ** · historical drawdown ใส่เป็น context ได้ แต่ไม่ใช่เกณฑ์ตัดสิน
+
+**Morgan:** เข้า trigger แต่ไม่มีตาราง / ช่วงที่เป็นไปได้ไม่มี source / ตีความขัดกับตาราง = `RULE_VIOLATION`
+
+**Vera (trial review 2026-12-31):** นับจำนวนครั้งที่ trigger, กี่ครั้งที่ "โมเดลเปราะ" vs "ตลาด mispriced", และมีกรณีใดที่ตารางนำไปสู่การแก้ assumption จริง
+
 ### MOS Threshold แยกตาม Bucket (บังคับ — ใช้แทนกฎ MOS 20% เดิม)
 | Bucket | เกณฑ์ BUY | เหตุผล |
 |--------|-----------|--------|
