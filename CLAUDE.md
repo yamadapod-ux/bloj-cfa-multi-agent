@@ -619,6 +619,19 @@ Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั�
 5. **ห้ามเปลี่ยน Blended FV weighting (40/30/30)** เพื่อ "แก้" ปัญหานี้ — นี่คือ Return-side locked rule (ดู Pre-commitment Rules) การ reconcile methodology ไม่ใช่เหตุผลให้แก้ weight
 6. **Morgan QA** ต้องตรวจว่ามี reconciliation table เมื่อเข้าเงื่อนไขข้อ 4 — ดู Morgan QA Protocol § Cross-agent Consistency
 
+### Multi-Segment / SOTP Consistency Rule (บังคับ — เพิ่ม 2026-10-07, ไม่ใช่ Return-side rule)
+
+**ที่มา:** AMZN v3.1 (`eb115ac`) — consolidated DCF ให้ EV $669.7B < AWS-only segment DCF EV $1,247.8B → implied retail+ads NOPAT ติดลบ (เป็นไปไม่ได้ทางคณิตศาสตร์) เพราะ consolidated margin ถูกตั้งเป็น input อิสระ ไม่ได้มาจากผลรวมของ segment จริง — แก้ใน v3.2 (`20c3a3f`) ด้วยหลักการด้านล่าง ข้อผิดประเภทนี้เกิดซ้ำได้กับทุกบริษัทหลายธุรกิจ (AMZN, GOOGL, MSFT, conglomerates) **ไม่แตะ 40/30/30, MOS threshold, conviction gate — เป็น QA/methodology consistency เท่านั้น**
+
+**กฎ (บังคับ — เมื่อ report มี SOTP, segment DCF, หรือ segment model ใดๆ ร่วมกับ consolidated DCF):**
+1. **Bottom-up ก่อน:** ถ้ามี segment model อยู่ใน report → consolidated DCF ต้องสร้างจากผลรวมของ segment (revenue, EBIT, capex, D&A) ทุกปีของ forecast — consolidated margin เป็น **ผลลัพธ์** ไม่ใช่ input อิสระที่ตั้งเอง
+2. **Sanity:** ห้ามมี segment ที่ implied NOPAT/EBIT ติดลบใน forecast โดยไม่มีเหตุผล + source · consolidated EV ต้องไม่ต่ำกว่า segment ใดๆ เพียงส่วนเดียว เว้นแต่ส่วนอื่นมีมูลค่าติดลบที่อธิบายได้
+3. **ห้ามเฉลี่ยก่อน reconcile:** ถ้า 2 วิธีของ analyst คนเดียวกัน (เช่น consolidated DCF vs SOTP) ห่าง ≥25% → reconciliation table (สาเหตุของ gap ทีละรายการ) ก่อนเฉลี่ยหรือเลือก — ขยายหลักเดียวกับ DCF Cash Flow Consistency Rule ข้อ 4 (ครอบคลุม Emma vs Quinn) มาใช้กับ DCF vs SOTP ของ analyst คนเดียวกัน
+4. **Independence ของ Blended FV:** Quinn's P-W EV scenario และ Bear FV ต้องเป็น valuation ของผู้นั้นเอง (assumption ระบุชัด) — ห้ามใช้ FV สุดท้ายของ analyst อื่นเป็น scenario โดยตรง เพราะทำให้ตัวเลขเดียวกันถูกนับซ้ำใน 40/30/30
+5. **Bear floor sanity:** ถ้า FV ใดต่ำกว่า no-growth value (NOPAT ปัจจุบัน ÷ WACC) → ต้องอธิบายว่า assumption ไหนทำให้การลงทุนใหม่ได้ RONIC < WACC และต้องสอดคล้องกับ Bear Discount Classification (Temporary vs Structural) ของรายงานเดียวกัน
+
+**Morgan reject type:** ข้อ 1–2 ไม่ผ่าน = `SANITY_FAIL` · ข้อ 3–5 ไม่ผ่าน = `RULE_VIOLATION` — ดู Morgan QA Protocol § Cross-agent Consistency สำหรับ checklist
+
 ### MOS Threshold แยกตาม Bucket (บังคับ — ใช้แทนกฎ MOS 20% เดิม)
 | Bucket | เกณฑ์ BUY | เหตุผล |
 |--------|-----------|--------|

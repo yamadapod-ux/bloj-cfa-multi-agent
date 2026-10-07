@@ -161,6 +161,12 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 - [ ] Beta ที่ Quinn ใช้ ✓ สอดคล้องกับ WACC ที่ Emma คำนวณ?
 - [ ] Conviction scores ของทั้งสองต่างกัน ≥ 3 จุดหรือเปล่า? (ถ้าใช่ → MEDIUM — Charlie ต้องอธิบาย)
 - [ ] **DCF Cash Flow Consistency** (ที่มา: VEEV 2026-08-20, ดู CLAUDE.md § DCF Cash Flow Consistency Rule) — ถ้า Emma's DCF FV กับ Quinn's DCF/independent-model FV ต่างกัน **≥25%**: ต้องมี **reconciliation table** ระบุ cash-flow basis ของแต่ละฝั่ง (Operating-Income/NOPAT-based vs reported-FCF-based) + สาเหตุหลักของ gap ถ้าไม่มี reconciliation table → **MEDIUM** (ยกระดับเป็น **HIGH** ถ้า SBC > 10% ของ Revenue และไม่มีฝั่งไหน disclose cash-flow basis ที่ใช้เลย)
+- [ ] **Multi-Segment / SOTP Consistency** (ที่มา: AMZN v3.1 `eb115ac`, ดู CLAUDE.md § Multi-Segment / SOTP Consistency Rule — ใช้เมื่อ report มี SOTP/segment DCF ร่วมกับ consolidated DCF):
+  - consolidated DCF สร้างจากผลรวมของ segment จริงทุกปี (ไม่ใช่ margin ตั้งเอง) — ไม่ครบ = `SANITY_FAIL`
+  - ไม่มี segment NOPAT/EBIT ติดลบโดยไม่มีเหตุผล · consolidated EV ≥ segment ใดๆ เพียงส่วนเดียว — ไม่ครบ = `SANITY_FAIL`
+  - consolidated DCF vs SOTP ห่าง ≥25% → มี reconciliation table ก่อนเฉลี่ย/เลือก — ไม่มี = `RULE_VIOLATION`
+  - Quinn/Bear FV เป็น valuation ของตัวเอง ไม่ใช่ FV ของ analyst อื่นที่ใช้เป็น scenario ตรงๆ — ไม่ครบ = `RULE_VIOLATION`
+  - FV ต่ำกว่า no-growth value (NOPAT÷WACC) ต้องสอดคล้องกับ Bear Discount Classification ของตัวเอง — ไม่ครบ = `RULE_VIOLATION`
 
 **2.6C — Atlas Macro Integration:**
 - [ ] Atlas บอก market regime อะไร? Emma/Quinn สะท้อนใน scenario assumption ไหม?
