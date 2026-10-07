@@ -88,3 +88,73 @@
 **2. Web-search budget:** ตั้ง 40–50 calls ทั้ง pipeline (Atlas ~15–20, Emma ~10, Quinn ~5, Bear ~8–10, Morgan ~5) · ถ้าใกล้หมด → หยุดและรายงานว่าขาดอะไร ห้ามเติมด้วย training knowledge
 
 *Opus — 2026-10-06 | Addendum to AMZN v3 brief*
+
+---
+
+## v3.1 — Correction Run (Opus review of `ccf547e`, CIO approved 2026-10-07)
+
+> Sonnet อ่านจากไฟล์นี้โดยตรง · **แก้เฉพาะจุดที่ผิดกฎ/brief** — ทุกข้อด้านล่างอ้างกฎที่เขียนไว้แล้ว ไม่ได้แก้เพราะไม่ชอบผล
+> **Anti-goal-seeking ยังบังคับ:** ถ้า v3.1 ยังได้ FV ต่ำกว่าราคา → รายงานตามจริง · ห้ามแก้อะไรนอกรายการนี้
+> Re-analysis file rule: append Update Log ใน `reports/AMZN_2026-10-07_v3.md` + append agent_notes เดิม (ห้ามสร้างไฟล์ v3.1 ใหม่) · data.js แทนที่ object เดิม
+
+### สิ่งที่ v3 ทำถูก — คงไว้ ห้ามแตะ
+Segment net sales / op income (ตรง 10-K, 2 sources) · CIP by segment = DATA_INSUFFICIENT · in-service ROIC AWS 25.7% / consolidated 21.76% · incremental ROIC 3yr 31.4% · Beta 3 แหล่ง · WACC arithmetic
+
+### ข้อผิดพลาดที่ต้องแก้
+
+**E1. Attribution ผิด (Charlie)** — v3 อ้างว่า Δ ~80% มาจาก "smoothed-FCF → explicit capex-path" แต่ v2 Emma ก็เป็น explicit path อยู่แล้ว (10yr, revenue 16%→5%, FCF margin 0%→15%). สิ่งที่เปลี่ยนจริงคือ horizon 10→5 ปี และ Yr1 growth 16%→11%. **แก้:** ทำ attribution ใหม่ทีละตัวแปรจากตัวเลขจริง
+
+**E2. Horizon ผิดกฎ (Emma)** — CLAUDE.md (แก้ 2026-10-06): Emma ใช้ explicit 7–10yr+ เป็นค่าเริ่มต้นเมื่อ business case รองรับ. v3 ใช้ 5 ปี แล้วตัดจาก growth 7% (2030) ลง TGR 3% ทันที. **แก้:** explicit **10 ปี (2026–2035)** ให้ growth / capex-to-revenue / margin ค่อยๆ เข้าสู่ steady state ก่อน terminal year (terminal year: growth ใกล้ TGR, reinvestment rate = g ÷ RONIC)
+
+**E3. Yr1 growth ไม่มีที่มา (Emma)** — 11% ไม่มี source. **แก้:** ใช้ consensus revenue growth FY2026/FY2027 (≥2 sources + URL) หรือ build-up จาก segment (AWS / NA / Intl แยก growth) — แสดงที่มา
+
+**E4. DCF ขัดกับ incremental ROIC ของตัวเอง (Emma)** — net investment 2026–29 ≈ $260B สร้าง NOPAT เพิ่มแค่ ≈ $44B (implied ~17%) ขณะที่วัดได้ 31.4%. **แก้:** แสดงบรรทัด **implied RONIC รายปี** ในตาราง DCF (ΔNOPAT(t+1) ÷ net investment(t)) และ reconcile กับ incremental ROIC ที่วัดได้ — ถ้าตั้งใจให้ต่ำกว่า ต้องให้เหตุผลพร้อมหลักฐาน (เช่น AI capex return ต่ำกว่าอดีต — อ้าง source) ไม่ใช่ปล่อยเป็นผลข้างเคียงของ margin path ที่ตั้งเอง. Terminal: reinvestment rate ต้องสอดคล้องกับ g และ RONIC ที่ระบุ
+
+**E5. SOTP multiples ไม่มี source (Emma) — ผิด Training Knowledge Ban + brief** — 15x (NA/Intl) และ 18x (Ads) "ไม่ verify". **แก้:**
+- **เลือก peer ก่อนคำนวณ** ตาม B-V1 peer-selection guideline (เขียน list + เหตุผลก่อนดู multiple): retail/logistics peer 3–5 ตัว, cloud/infra peer 3–5 ตัว, digital-ads peer 3–5 ตัว
+- EV/EBIT (หรือ EV/EBITDA) ของทุก peer พร้อม URL → ใช้ median; แสดงตารางทุกตัว
+- AWS: ทำทั้ง standalone DCF (10yr) **และ** peer EV/EBIT cross-check — ถ้าต่างกัน ≥25% ต้องมี reconciliation table
+- Ads: ถ้าหา revenue + URL ได้ → ใช้; margin ยังเป็น ESTIMATE ได้แต่ต้องมีที่มา
+
+**E6. Budget ใช้ไม่ถึงครึ่ง แต่อ้าง DATA_INSUFFICIENT "เพราะเกิน budget" — ผิด patch3** — Emma/Quinn search 0 calls, ทั้ง pipeline 22/40–50. **แก้ (budget v3.1 = 30 calls เพิ่ม):**
+- Incremental ROIC 5yr (2020→2025): ดึง op income + PP&E net FY2020 จาก 10-K (SEC / stockanalysis / macrotrends) — ห้าม DATA_INSUFFICIENT ถ้ายังไม่ลองแหล่งบังคับ
+- Risk-free: 10Y Treasury ล่าสุด (same-week, ≥2 sources) · ERP: Damodaran ปัจจุบัน + URL
+- PP&E / net additions by segment: cross-check source ที่ 2 (SEC filing ตรง)
+
+**E7. ตัวเลข capex ไม่ตรงกันระหว่างรอบ (Atlas)** — v2 ใช้ ~$220B/ปี, v3 ใช้ ~$143B (2026). **แก้:** ยืนยัน (a) capex FY2025 actual จาก cash-flow statement (b) management capex guidance FY2026 — ≥2 sources + URL; ระบุว่า v2 หรือ v3 ผิด และ DCF ใช้ตัวที่ยืนยันแล้ว
+
+**E8. Bear 20% haircut — classification ผิดนิยาม + double-count (Bear)**
+- CLAUDE.md นิยาม Structural = "competitive erosion ... ที่**ไม่มี credible recovery path**". AWS share 30%→28% ขณะที่ AWS growth เร่งขึ้น (สูงสุดใน 18 ไตรมาส) + backlog $496B → Bear ต้องอธิบายด้วยหลักฐานว่าทำไมเข้านิยาม structural; ถ้าอธิบายไม่ได้ → จัดเป็น competitive risk (ไม่ใช่ impairment)
+- Share-loss risk อยู่ใน Quinn Bear scenario แล้ว → **ห้าม haircut ซ้ำ** บน SOTP
+- **Bear FV ต้องเป็น valuation ของ Bear เอง** (เช่น DCF ด้วย bear assumptions ที่ระบุ: AWS growth / margin / capex return ต่ำ) ไม่ใช่ % ลดจากตัวเลขของ Emma
+- Bear ยังต้องแย้งจริง — ถ้ามีหลักฐาน structural ที่หนักแน่นก็ใช้ได้
+
+**E9. Thesis Invalidation #3 ใช้ตัวเลขผิดระดับ (Bear)** — "consolidated capex/revenue < 60%" แต่ consolidated อยู่ ~18–20%; 75% คือ AWS. **แก้:** ระบุให้ถูกระดับ (AWS capex/revenue หรือ consolidated) พร้อม threshold ที่สอดคล้องกับ DCF path
+
+**E10. Quinn** — sensitivity / P-W EV / forward value path ต้องรันใหม่บน DCF ที่แก้แล้ว · Bear scenario ≥25% และต้องเป็น DCF ที่มี assumption ชัด (ไม่ใช่ตัวเลขกลม) · Reverse DCF: แสดง implied (growth, margin, RONIC) ที่ราคาปัจจุบัน ไม่ใช่แค่ implied WACC
+
+**E11. Morgan ควร FAIL ไม่ใช่ CONDITIONAL PASS** — multiples ไม่มี source = `SOURCE_MISSING`, horizon ผิดกฎ = `RULE_VIOLATION`, DATA_INSUFFICIENT โดยไม่ลองแหล่งบังคับ = `RULE_VIOLATION`. **แก้:** Morgan QA v3.1 ตรวจ E1–E10 ครบทุกข้อ (checklist ✅/❌ ต่อข้อ) + anti-goal-seeking (วิธี/peer ล็อกก่อนเห็นผล — peer list ต้องมี timestamp ก่อนตาราง multiple) · บันทึก self-correction ว่า v3 QA ควรเป็น FAIL พร้อม reject types
+
+### Charlie — ตารางบังคับ v2 / v3 / v3.1
+| | v2 | v3 | v3.1 | Δ v3.1 vs v3 | สาเหตุ (ข้อ E#) |
+|---|---|---|---|---|---|
+| Emma DCF FV | | | | | |
+| Emma SOTP FV | — | | | | |
+| Emma FV (final) | $230.63 | | | | |
+| Quinn P-W EV | $203.50 | $100.00 | | | |
+| Bear FV | $156.27 | $96.72 | | | |
+| Blended FV | $200.18 | $101.71 | | | |
+| MOS | -21.4% | -60.3% | | | |
+| WACC | 11.2% | 11.07% | | | |
+| Explicit horizon | 10yr | 5yr | 10yr | | E2 |
+| Implied RONIC (avg forecast) | | ~17% | | | E4 |
+| Capex FY2026 used | ~$220B? | ~$143B | | | E7 |
+| Verdict | NO BUY | NO BUY | | | |
+
++ attribution ทีละ E# (เปลี่ยนทีละข้อ วัด Δ FV) · + forward value path 2027/2029/2031 ใหม่
+
+### เมื่อเสร็จ
+- Leo: แก้ lesson ใน learning-log.md ที่บันทึกจาก v3 ("เครื่องมือถูกต้อง → thesis อ่อนลง") ให้สะท้อนผล v3.1 จริง — เขียนสั้น (ตาม Learning Log Conciseness)
+- Commit + push ข้อความอ้าง `AMZN v3.1` · รายงานกลับ: ตาราง v2/v3/v3.1 + attribution ต่อ E# + Morgan verdict + web-search ที่ใช้จริงต่อ agent
+
+*Opus — 2026-10-07 | AMZN v3.1 correction brief, CIO approved*
