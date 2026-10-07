@@ -207,3 +207,38 @@ Consolidated < AWS ส่วนเดียว → implied retail+ads NOPAT 2035
 - Commit + push อ้าง `AMZN v3.2` · รายงานกลับ: ตาราง + attribution + Morgan verdict
 
 *Opus — 2026-10-07 | AMZN v3.2 brief, CIO approved*
+
+---
+
+## v3.2 Review — Closing Notes (Opus review of `20c3a3f` + `5039362`, CIO approved 2026-10-07)
+
+> Sonnet อ่านจากไฟล์นี้โดยตรง · **ไม่รัน pipeline ใหม่ ไม่เปลี่ยน FV/MOS/verdict ใดๆ** — AMZN learning run ปิดที่ v3.2 (Blended $125.66, NO BUY) ตามเดิม · แก้แค่ข้อความ + note + rule clarification
+
+**ที่ทำถูก (ไม่ต้องแตะ):** bottom-up consolidated EV $1,628B > AWS-only $1,248B · retail+ads NOPAT 2035 +$74B · Bear $89.13 > no-growth $53.87 · Quinn scenario อิสระ · กฎ Multi-Segment Consistency ลง 3 ไฟล์ครบ 5 ข้อ
+
+### C1. Robustness note (Charlie — append ใน report § Update Log v3.2)
+เพิ่มบรรทัด: "NO BUY robust ต่อ retail method — ถ้าใช้ retail SOTP ($938.3B) แทน retail DCF ($380.3B): consolidated EV ≈ $2,186B → Emma ≈ $199.7 → Blended ≈ 0.4×199.7 + 0.3×131.69 + 0.3×89.13 ≈ $146.1 → MOS ≈ −43% → ยัง NO BUY" (ตรวจ arithmetic ซ้ำก่อนใส่)
+
+### C2. Open item — Retail gap 146.7% ยังไม่ reconcile จริง (Charlie note + Morgan self-note)
+- คำอธิบายใน report มีด้านเดียว ("peer multiple สูงเกิน growth-profile ของ AMZN retail"). คำอธิบายอีกด้านที่ยังไม่ได้ทดสอบ: **NA/Intl segment มี Ads (โตเร็ว, margin สูง) ฝังอยู่** แต่ retail DCF ใช้ terminal growth 4% ทั้งก้อน → DCF อาจ understate
+- บันทึกใน report เป็น **Open Item** (ไม่ resolve รอบนี้ — run ปิดแล้ว) และใน Morgan notes ว่า v3.2 QA ควร flag ข้อนี้ภายใต้กฎข้อ 3 (เลือกวิธีโดยทดสอบคำอธิบายด้านเดียว)
+
+### C3. Open item — Quinn Bear scenario $14.17 < no-growth $53.87 (Morgan self-note)
+- เข้าเงื่อนไขกฎ Multi-Segment ข้อ 5 แต่ v3.2 QA ไม่ได้ flag. คำอธิบายที่มี ("capex ไม่ได้ผลตอบแทน") ต้องระบุชัดว่า scenario นี้สมมติ RONIC บน capex ใหม่ ≈ เท่าไหร่ และ capex/revenue ไม่ normalize ถึงปีไหน
+- ผลต่อ Blended ≈ $3 → ไม่เปลี่ยน verdict · บันทึกเป็น Morgan self-correction (`RULE_VIOLATION` ข้อ 5, ไม่ย้อนแก้ตัวเลข)
+
+### C4. แก้ย่อหน้าสรุปบทเรียนใน report (Charlie — แก้ในย่อหน้าสรุป § Update Log v3.2 เท่านั้น)
+ย่อหน้าปัจจุบันขัดกันเอง: (a) บอก v1/v2 "Blended FV สูงเทียม (~$200) ด้วย smoothed-FCF" — แต่ E1 (v3.1) พิสูจน์แล้วว่า v2 เป็น explicit path ไม่ใช่ smoothed (b) อีกประโยคบอก "v1–v3.1 undervalue อย่างเป็นระบบ". **แก้เป็น (สั้น):**
+- v1/v2 ใช้ trailing consolidated ROIC (ลงโทษ capex) แต่ DCF 10 ปีของ v2 ไม่ได้มี bug เชิงโครงสร้างแบบ v3/v3.1
+- v3 (horizon 5 ปี + multiple ไม่มี source) และ v3.1 (consolidated ไม่ reconcile กับ segment) **กดตัวเลขลงเทียม** → v3.2 แก้แล้วได้ $126 (หรือ ~$146 ถ้าใช้ retail SOTP)
+- ตัวเลข v1/v2 (~$200) กับ v3.2 (~$126–146) ใช้ framework ต่างกัน — **ห้ามสรุปว่าอันไหน "ถูก" จากการเทียบตรงๆ**
+- บทเรียนหลัก (คงไว้): โมเดลซับซ้อนขึ้น = จุดที่ internal consistency พังได้มากขึ้น · QA ต้องมี cross-model sanity check · fundamentals (in-service/incremental ROIC >> WACC) ไม่เปลี่ยนตลอด 5 รอบ · verdict NO BUY คงที่ เพราะราคา $256 price-in มากกว่าที่ทุก variant ให้
+
+### C5. Rule clarification (เล็ก — ไม่เปลี่ยนสาระกฎ, เพิ่มประโยคเดียวต่อท้ายข้อ 3 ใน CLAUDE.md § Multi-Segment / SOTP Consistency Rule และใน qa.md checklist บรรทัดเดียวกัน)
+> "reconciliation table ต้องทดสอบคำอธิบายของ gap **ทั้งสองทิศ** (วิธี A อาจ overstate **หรือ** วิธี B อาจ understate) ก่อนเลือก — ถ้าทดสอบไม่ได้ในรอบนั้น ให้แสดงผลทั้งสองวิธีคู่กันและบันทึกเป็น Open Item ห้ามเลือกตัวที่ต่ำกว่า/สูงกว่าโดยอ้างคำอธิบายด้านเดียว"
+
+### เมื่อเสร็จ
+- Commit + push อ้าง `AMZN v3.2 closing notes` · ไม่แตะ dashboard/data.js (ตัวเลขไม่เปลี่ยน) เว้นแต่ field ข้อความสรุปที่อ้างย่อหน้า C4
+- รายงานกลับ: list จุดที่แก้ (file:line) + ผล arithmetic ของ C1
+
+*Opus — 2026-10-07 | AMZN v3.2 closing notes — learning run closed*
