@@ -1131,3 +1131,19 @@ Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 
 6. **Bear lesson:** v3's Bear FV = SOTP×0.80 (mechanical % off Emma) ซ้ำซ้อนกับ Quinn's Bear scenario ที่มี share-loss risk อยู่แล้ว — v3.1 แก้เป็น Bear's own-scenario DCF ($47.81, ไม่ผ่าน % off) — AWS share-loss ถูก reclassify จาก "Structural" (หลักฐานแค่ 1 data point) เป็น "Competitive Risk" (5-quarter AWS re-acceleration ต่อเนื่องขัดกับนิยาม structural "ไม่มี credible recovery path")
 
 **บทเรียนที่แก้ไข:** "Explicit modeling แม่นยำขึ้น" **ไม่ใช่สาเหตุที่ v3's FV ต่ำ** อย่างที่เคยสรุป — สาเหตุจริงคือ **unsourced estimate (SOTP multiple) ที่ผิด Training Knowledge Ban** ทำให้ FV ต่ำกว่าที่ควร และการแก้ไขให้ครบตามกฎไม่ได้แปลว่า thesis จะแข็งขึ้นหรืออ่อนลงเสมอ — ขึ้นกับว่า bug แต่ละตัวดึง FV ไปทางไหน — **verdict ยังเป็น NO BUY ทั้ง v3 และ v3.1** (MOS -59.2% ยังติดลบรุนแรง, CIO's hypothesis $200+ ไม่ confirm) — AMZN ยัง CIO-override ticker ต้อง flag เสมอ
+
+---
+
+### ⚠️ 2026-10-07 — v3.2 (รอบสุดท้าย): v3.1's consolidated DCF ไม่สอดคล้องกับ segment model ของตัวเอง — แก้แล้ว Blended FV ขึ้น +20% โดยไม่ได้ตั้งใจ
+
+**ปัญหาที่พบ:** v3.1's consolidated DCF (top-down, margin ตั้งเอง 11.5%→15%) ให้ EV $669.7B **ต่ำกว่า** AWS-only standalone DCF EV $1,247.8B — เป็นไปไม่ได้ทางคณิตศาสตร์ (implied retail+ads NOPAT 2035 ≈ −$39B ขณะที่ retail ปัจจุบัน EBIT +$34.4B) เพราะ consolidated margin ไม่ได้ derive จาก AWS standalone margin (35.4%→42%) ที่ Emma ใช้คู่กันเอง เป็น top-down input อิสระ — ปัญหาเดียวกันลาม Bear (FV $47.81 < no-growth value $54, ขัดกับ Bear เองจัด capex เป็น Temporary) และ Quinn (ใช้ Emma/Bear FV ตรงๆ เป็น scenario = double-count risk)
+
+**แก้ (F1-F4):** สร้าง consolidated DCF **bottom-up** จาก Σ(AWS segment + Retail segment) จริง — Σrevenue/capex ต้องตรง consolidated ทุกปี, margin เป็นผลลัพธ์ไม่ใช่ input — Bear ใช้ framework เดียวกันด้วย assumption harsher ของตัวเอง — Quinn สร้าง 3 scenario เองจาก assumption ของตัวเอง ไม่ยืม FV ของ Emma/Bear
+
+**ผล:** Blended FV v3.1 $104.60 → v3.2 **$125.66 (+20.1%)**, MOS -59.2% → **-51.0%** (ยัง NO BUY). Consolidated DCF ($1,628.2B) > AWS-only ($1,248.0B) แล้ว ✅ แก้ปัญหาหลักสำเร็จ. Bear FV $89.13 > no-growth value $53.87 ✅ สอดคล้องกับ Temporary classification แล้ว. Quinn 3 scenario อิสระ ($244.06/$134.27/$14.17) ไม่ตรงกับ Emma/Bear FV ใดเลย ✅
+
+**บทเรียนหลัก (ซ้ำกับ v3's E11 Morgan lesson):** Morgan's v3.1 QA เคย PASS (1 MEDIUM) ทั้งที่ consolidated<AWS-only เป็น sanity-fail ที่ควรจับได้ตั้งแต่ตอนนั้น — ตรวจ checklist E1-E10 ที่เขียนไว้ครบ แต่ไม่ทำ **cross-model sanity check** (segment sum ≤/≥ consolidated, Bear FV ≥ no-growth value ถ้า capex=Temporary) — นี่คือ pattern เดิมที่เกิดซ้ำ 2 รอบติด (v3's CONDITIONAL PASS ควร FAIL จาก SOURCE_MISSING/RULE_VIOLATION, v3.1's PASS ควร FAIL จาก SANITY_FAIL) — **QA checklist ที่ตรงตามกฎไม่พอ ต้องมี cross-model consistency check แยกเป็นข้อบังคับเสมอสำหรับ multi-method valuation (DCF+SOTP, segment+consolidated)**
+
+**สรุปบทเรียนรวม 4 รอบ (v1→v2→v3→v3.1→v3.2):** ดูย่อหน้าสรุปเต็มใน `reports/AMZN_2026-10-07_v3.md` § Update Log v3.2 — โดยสรุป: FV แกว่งจาก $200→$102→$105→$126 ตลอด 5 รัน ขณะที่ underlying fundamentals (in-service/incremental ROIC >> WACC) ไม่เปลี่ยนเลย — แสดงว่า valuation ของ capex-heavy business เปราะบางต่อ methodology/internal-consistency มากกว่าต่อ business quality เอง — **verdict คงที่ NO BUY ทั้ง 5 รอบ, AMZN ยัง CIO-override ticker ต้อง flag เสมอ**
+
+**🔒 ปิด AMZN learning run — v3.2 เป็นรอบสุดท้าย ห้ามมี v3.3 เว้นแต่ CIO สั่งเพิ่มชัดเจน**
