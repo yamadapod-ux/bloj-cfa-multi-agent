@@ -1273,6 +1273,17 @@ Cash $6,894.47 → **$7,143.33** (69.5%). Positions 7 → **6**. Total value ~$1
 
 ---
 
+## AMZN Watchlist Entry (2026-10-08, Vera log — `VS2`)
+- **AMZN (Amazon.com)** — CIO-override ticker · v3.4 = **first report under Valuation Standard v2 (`VS2`)** · Value bucket for gate (consensus revenue growth 14.5–15.6% < 20% → Growth gate unreachable)
+- **NO BUY / WATCH** — Blended FV **$201.47** (Emma $218.29 / Quinn P-W $241.12 / Bear $139.38) vs $259.92 → MOS **−22.5%** · Conviction 5.67 (not re-scored)
+- **S&P 500 reference: 7,801.73** (2026-10-07 close — investing.com; SPY −0.24% vs index −0.22% cross-check) — matches `portfolio/decisions.md` AMZN v3.4 row ✅
+- **VS2 1.4 Forward Value:** Blended FV₅ (end-2030) **$292.84** → expected **+2.4%/yr** if bought today vs **S&P expected 9.5%/yr** (Rf 5.30% + Damodaran implied ERP 4.20%) · at entry zone mid $166 → +12.0%/yr
+- **v1 → VS2 comparison (input for 2026-12-31 VS2 review):** v3.2 (v1 standard) $125.66 → v3.4 (VS2) $201.47 (+60%) · drivers: WACC +$40.6, Ads split +$36.0, non-op bridge +$17.6, layer-1.3 fade/RONIC/capex −$17.8, net debt/lease −$2.1, Quinn Bear RONIC +$0.6 · **VS2 layer 2 trigger count: 0** (PV(TV)/EV 61.1% — would be 1 if fade counted as TV: Open Item) · vs Street PT avg $331.53 (low $230): gap −39% (v3.2: −62%)
+- Entry zone $161–171 (Value MOS 15–20%) · stop $133 if entered at $166 · Morgan CONDITIONAL PASS
+- No position — alpha PENDING (tracking only). See `reports/AMZN_2026-10-07_v3.md` § 🔄 Update Log — v3.4 (VS2)
+
+---
+
 ## Weekly Reports
 
 > ⚠️ **Cadence Gap Flag (updated 2026-08-21, PARTIALLY RESOLVED 2026-09-04 — see Week 2026-W36 entry below):** Week 2026-W24 (Jun 9-15) ยังคงสถานะ "IN PROGRESS" และไม่มี weekly report ถูกสร้างสำหรับ W25-W34 (Jun 16 – Aug 21) แม้จะมี analysis ใหม่เกิดขึ้นต่อเนื่อง (TOST 2026-06-17, CRDO 2026-07-06, WPM 2026-07-12, PGR 2026-07-22, DXCM 2026-07-29, ABBV 2026-08-02, ETN 2026-08-05, VRT 2026-08-05, ICE 2026-08-10, NET 2026-08-10, ACGL re-analysis 2026-08-18, TDG 2026-08-18, VEEV re-analysis 2026-08-20, **SHOP 2026-08-21**) — เป็นหลายสัปดาห์ที่ไม่มี weekly output ตาม Vera Protocol บังคับ ("ห้าม run experiment โดยไม่มี Vera output") ควร escalate ให้ Charlie/CIO ทราบและพิจารณาให้ Vera ออก catch-up weekly/quarterly report ครอบคลุมช่วง Jun 16 – Aug 21 ในรอบถัดไป (นอกขอบเขต session นี้ — บันทึกเฉพาะ SHOP entry สำหรับตอนนี้). **เพิ่มเติม:** RDDT stop loss breach ครั้งแรก (2026-08-01, resolved 2026-08-04), NOW STRONG SELL territory ครั้งแรก (2026-08-09, resolved 2026-08-18), GOOGL stopDist หลุดต่ำกว่า 10% ครั้งแรก (2026-08-18), REGN + RDDT STRONG SELL territory (2026-08-18) ยังไม่มี weekly report ครอบคลุมด้วยเช่นกัน — สมควรมีความสำคัญสูงในรอบ catch-up ถัดไป

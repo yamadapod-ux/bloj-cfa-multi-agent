@@ -1147,3 +1147,10 @@ Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 
 **สรุปบทเรียนรวม 4 รอบ (v1→v2→v3→v3.1→v3.2):** ดูย่อหน้าสรุปเต็มใน `reports/AMZN_2026-10-07_v3.md` § Update Log v3.2 — โดยสรุป: FV แกว่งจาก $200→$102→$105→$126 ตลอด 5 รัน ขณะที่ underlying fundamentals (in-service/incremental ROIC >> WACC) ไม่เปลี่ยนเลย — แสดงว่า valuation ของ capex-heavy business เปราะบางต่อ methodology/internal-consistency มากกว่าต่อ business quality เอง — **verdict คงที่ NO BUY ทั้ง 5 รอบ, AMZN ยัง CIO-override ticker ต้อง flag เสมอ**
 
 **🔒 ปิด AMZN learning run — v3.2 เป็นรอบสุดท้าย ห้ามมี v3.3 เว้นแต่ CIO สั่งเพิ่มชัดเจน**
+
+---
+
+### 2026-10-08 — AMZN v3.4: VS2 first run
+- VS2 (WACC ล็อก+เทียบภายนอก, non-op bridge, fade/RONIC, net debt ครบ, แยก Ads) → Blended $125.66 → **$201.47** (MOS −22.5%), ยัง NO BUY · FV₅ $292.84 = +2.4%/ปี vs S&P 9.5%
+- แก้สองทิศจริง: WACC/Ads/bridge ขึ้น · fade/RONIC/capex 2027/net debt ลง
+- Commit model script ทุกรอบ (rebuild v3.2 ต่างได้ถึง +65%) · กฎกำกวม (fade = TV?) → ส่งผู้เขียนกฎชี้ขาด

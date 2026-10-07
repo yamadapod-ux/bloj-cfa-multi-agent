@@ -265,6 +265,8 @@ Expected Return ของ candidate ใหม่
 
 Max เป็นเจ้าของการเช็คนี้แต่ผู้เดียว — เช็คทั้ง 5 ข้อทุก position ทุกรอบ ก่อนเสนอ sell/trim ใดๆ บน FV ที่อาจ stale:
 
+**VS2 (ตั้งแต่ 2026-10-08):** ตั้งแต่ 2026-10-08 ทุก re-verify ใช้ VS2 — ก่อนเสนอผล แจ้ง CIO ว่า FV อาจขึ้นหรือลงจากการเปลี่ยนมาตรฐาน (ไม่ใช่ข้อมูลธุรกิจใหม่) · MOS พลิกลบจาก VS2 → compliance-fix precedent
+
 | # | เงื่อนไข | Source | Action ถ้า trigger |
 |---|---------|--------|-------------------|
 | 1 | Earnings ใหม่ออกของ position ที่ถือ | `dashboard/news.js` (Atlas scan) | Flag re-verify FV ก่อนรอบ review ถัดไป |
