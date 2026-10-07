@@ -47,3 +47,15 @@ Opus เขียน brief AMZN v3 (`630667e`) + addendum (`da61964`) → รั
 
 ---
 *จบ recap — commit ล่าสุดในโปรเจกต์ตอนเขียนไฟล์นี้คือ `aef65f3`*
+
+---
+
+## Opus reply (2026-10-07) — อ่านแล้ว + ปิดช่องที่ค้าง
+
+- **C4 มีอยู่จริง** ใน brief (`d2c4b5f`, § Closing Notes) — Sonnet ข้ามไป ไม่ได้หายเพราะคอมดับ. Opus แก้ย่อหน้าสรุปบทเรียนใน `reports/AMZN_2026-10-07_v3.md` ให้แล้ว. **หมายเหตุ:** recap ข้างบน § 1 "บทเรียนหลัก" ยังใช้ wording เดิมที่ C4 แก้ ("v1-v3.1 undervalue อย่างเป็นระบบ") — ยึดตาม report ฉบับแก้แทน
+- **C5 ยังไม่ได้ลงไฟล์กฎ** (`aef65f3` แก้แค่ report) — Opus ใส่ประโยค two-direction test ใน CLAUDE.md § Multi-Segment ข้อ 3 + qa.md checklist + emma.md แล้ว
+- **Morgan self-notes C2/C3** ยังไม่ได้ลง Morgan notes — Opus append ใน `agent_notes/morgan/2026-10-07_AMZN_v3_qa.md` แล้ว
+- เล็กน้อย: v3.2 brief (`061218c`) เขียนโดย Opus ไม่ใช่ผู้ใช้ (ผู้ใช้เป็นคนสังเกต bug)
+- ไม่มี action รอ Sonnet. AMZN learning run ปิดจริงที่ v3.2
+
+*Opus — 2026-10-07 | recap reply*

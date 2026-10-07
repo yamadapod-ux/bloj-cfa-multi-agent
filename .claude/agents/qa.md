@@ -164,7 +164,7 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 - [ ] **Multi-Segment / SOTP Consistency** (ที่มา: AMZN v3.1 `eb115ac`, ดู CLAUDE.md § Multi-Segment / SOTP Consistency Rule — ใช้เมื่อ report มี SOTP/segment DCF ร่วมกับ consolidated DCF):
   - consolidated DCF สร้างจากผลรวมของ segment จริงทุกปี (ไม่ใช่ margin ตั้งเอง) — ไม่ครบ = `SANITY_FAIL`
   - ไม่มี segment NOPAT/EBIT ติดลบโดยไม่มีเหตุผล · consolidated EV ≥ segment ใดๆ เพียงส่วนเดียว — ไม่ครบ = `SANITY_FAIL`
-  - consolidated DCF vs SOTP ห่าง ≥25% → มี reconciliation table ก่อนเฉลี่ย/เลือก — ไม่มี = `RULE_VIOLATION`
+  - consolidated DCF vs SOTP ห่าง ≥25% → มี reconciliation table ก่อนเฉลี่ย/เลือก — ไม่มี = `RULE_VIOLATION` · table ทดสอบคำอธิบาย gap แค่ทิศเดียว (A overstate โดยไม่ทดสอบว่า B understate) แล้วเลือกตัวใดตัวหนึ่ง = `RULE_VIOLATION` — ทดสอบไม่ได้ต้องแสดงคู่กัน + Open Item
   - Quinn/Bear FV เป็น valuation ของตัวเอง ไม่ใช่ FV ของ analyst อื่นที่ใช้เป็น scenario ตรงๆ — ไม่ครบ = `RULE_VIOLATION`
   - FV ต่ำกว่า no-growth value (NOPAT÷WACC) ต้องสอดคล้องกับ Bear Discount Classification ของตัวเอง — ไม่ครบ = `RULE_VIOLATION`
 

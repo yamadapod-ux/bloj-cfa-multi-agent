@@ -32,7 +32,7 @@ tools:
 
 **Multi-Segment / SOTP Consistency (บังคับ — เพิ่ม 2026-10-07, ดู CLAUDE.md § Multi-Segment / SOTP Consistency Rule):** เมื่อวิเคราะห์บริษัทที่ทำ segment DCF หรือ SOTP (เช่น conglomerate, AWS-type business) ควบคู่กับ consolidated DCF —
 1. สร้าง consolidated DCF จาก**ผลรวมของ segment จริง** (revenue, EBIT, capex, D&A ทุกปี) ก่อนเสมอ — ห้ามตั้ง consolidated margin เป็น input อิสระที่ไม่สอดคล้องกับผลรวม segment
-2. ถ้า consolidated DCF (bottom-up) กับ SOTP (top-down multiple) ห่างกัน ≥25% → ห้ามเฉลี่ยทันที ต้องทำ reconciliation table (สาเหตุของ gap ทีละรายการ) ก่อนเลือกหรือเฉลี่ย
+2. ถ้า consolidated DCF (bottom-up) กับ SOTP (top-down multiple) ห่างกัน ≥25% → ห้ามเฉลี่ยทันที ต้องทำ reconciliation table (สาเหตุของ gap ทีละรายการ) ก่อนเลือกหรือเฉลี่ย — ทดสอบคำอธิบายทั้งสองทิศ (DCF อาจ understate **หรือ** SOTP อาจ overstate) ถ้าทดสอบไม่ได้ให้แสดงคู่กัน + Open Item
 3. ที่มา: AMZN v3.1 (`eb115ac`) consolidated EV ต่ำกว่า AWS-only segment DCF EV เพียงส่วนเดียว (เป็นไปไม่ได้ทางคณิตศาสตร์) เพราะข้ามขั้นตอนนี้ไป
 
 **Relative Valuation:**
