@@ -158,3 +158,52 @@ Segment net sales / op income (ตรง 10-K, 2 sources) · CIP by segment = DA
 - Commit + push ข้อความอ้าง `AMZN v3.1` · รายงานกลับ: ตาราง v2/v3/v3.1 + attribution ต่อ E# + Morgan verdict + web-search ที่ใช้จริงต่อ agent
 
 *Opus — 2026-10-07 | AMZN v3.1 correction brief, CIO approved*
+
+---
+
+## v3.2 — Segment-Consistency Fix (Opus review of `eb115ac`, CIO approved 2026-10-07) — รอบสุดท้าย
+
+> Sonnet อ่านจากไฟล์นี้โดยตรง · แก้ **จุดเดียว** (internal consistency) + ผลที่ตามมา — ห้ามแตะอย่างอื่น
+> คงไว้: segment data, in-service/incremental ROIC, WACC 10.95%, TGR 3%, capex FY2026 $220B, SOTP peer lists + multiples + URLs, AWS standalone DCF, Bear reclassification
+> Anti-goal-seeking ยังบังคับ — ผลออกมาเท่าไหร่รายงานตามนั้น · append Update Log ใน `reports/AMZN_2026-10-07_v3.md` + agent_notes เดิม · data.js แทนที่ object เดิม
+> **หลังรอบนี้ปิด AMZN learning run** — ไม่มี v3.3 เว้นแต่ CIO สั่ง
+
+### ปัญหาที่พบใน v3.1
+| | Consolidated DCF | AWS-only DCF |
+|---|---|---|
+| EV | $669.7B | $1,247.8B |
+| NOPAT 2035 | $168.8B | $207.7B |
+
+Consolidated < AWS ส่วนเดียว → implied retail+ads NOPAT 2035 ≈ **−$39B** (ปัจจุบัน NA+Intl EBIT +$34.4B) = เป็นไปไม่ได้. สาเหตุ: consolidated op margin ตั้งเอง 11.5%→15% ไม่สะท้อน mix shift ที่ AWS model ของ Emma เอง implies (AWS ~44% ของ revenue ที่ margin 42% ปี 2035 → consolidated margin ควรราว ~22%). ผลตาม: implied RONIC 6.5% ต่ำเทียม · Bear DCF ($47.81) สร้างบน framework เดียวกัน (และต่ำกว่า no-growth value ≈ $54) · Emma เฉลี่ย DCF $68 กับ SOTP $191 (ห่าง ~2.8x) โดยไม่ reconcile · Quinn P-W EV = re-weight ตัวเลข Emma/Bear (ไม่ independent, นับซ้ำใน Blended)
+
+### F1. Emma — Consolidated DCF แบบ bottom-up (แทน consolidated top-down ของ v3.1)
+- Consolidated FCFF(t) = **AWS FCFF(t)** (ใช้ AWS standalone path v3.1 ตามเดิม) **+ Retail FCFF(t)** (NA+Intl) **+ Ads** (ถ้าแยก — ถ้าไม่แยก รวมใน Retail) − corporate/unallocated (ถ้ามีใน 10-K)
+- Retail model ใหม่ (10yr): revenue growth จาก consensus/segment trend (มี source), EBIT margin จาก NA/Intl ปัจจุบัน (6.95% / 2.93%, 10-K) → path ที่มีเหตุผล + source, capex = consolidated capex $220B − AWS capex $154.1B ใน 2026 แล้ว normalize
+- **ตรวจบังคับ:** Σ segment revenue = consolidated revenue · Σ segment capex = consolidated capex ($220B ปี 2026) · consolidated margin ที่ได้ = ผลรวม ไม่ใช่ input
+- แสดง implied RONIC รายปีใหม่ (บน consolidated bottom-up)
+- **Emma FV:** ถ้า DCF bottom-up กับ SOTP ห่าง < 25% → ใช้ค่าเฉลี่ยได้ · ถ้า ≥ 25% → reconciliation table (สาเหตุของ gap ทีละรายการ) ก่อน แล้วเลือกตัวที่ reconcile แล้วพร้อมเหตุผล — **ห้ามเฉลี่ยก่อน reconcile**
+
+### F2. Bear — Bear DCF บน framework bottom-up
+- ใช้โครงเดียวกับ F1 แต่ assumption ของ Bear ระบุรายตัว (AWS growth / AWS margin / AWS capex normalization / retail margin) ให้ชัดว่าต่างจาก Emma ตรงไหน
+- **Sanity:** ถ้า Bear FV < no-growth value (NOPAT FY2025 ÷ WACC ÷ shares ≈ $54) → ต้องอธิบายว่า assumption ไหนทำให้ capex ใหม่ได้ RONIC < WACC และสอดคล้องกับการที่ Bear จัด capex เป็น Temporary หรือไม่ — ถ้าขัดกัน แก้อย่างใดอย่างหนึ่ง
+
+### F3. Quinn — scenario ของตัวเอง (independent)
+- Bull / Base / Bear = Quinn รัน bottom-up DCF เองด้วย assumption ของ Quinn ที่ระบุชัด (เช่น Bull: AWS growth ตาม backlog conversion + margin 42%+; Bear: AWS growth ตกเร็ว + capex ไม่ลด) — **ห้ามใช้ FV สุดท้ายของ Emma หรือ Bear เป็น scenario โดยตรง** (กันนับซ้ำใน Blended)
+- Bear scenario ≥ 25% · Sensitivity 5×5 WACC × AWS growth บน bottom-up framework · Reverse DCF: implied AWS growth + margin ที่ราคาปัจจุบัน · forward value path 2027/2029/2031
+- ใช้ web-search ได้ ≤ 5 calls ถ้าต้องการ consensus สำหรับ scenario
+
+### F4. Morgan — ตรวจ consistency (ใหม่)
+- ✅/❌ Σ segment = consolidated (revenue, capex, EBIT) ในทุกปี forecast ของ Emma และ Bear
+- ✅/❌ Consolidated EV ≥ ผลรวมที่สมเหตุสมผลของ segment (ไม่มี segment ใดได้ NOPAT ติดลบโดยไม่มีเหตุผล)
+- ✅/❌ ไม่มีการเฉลี่ยวิธีที่ห่าง ≥25% โดยไม่ reconcile
+- ✅/❌ Quinn scenario ไม่ใช่ FV สุดท้ายของ Emma/Bear
+- บันทึก self-correction: v3.1 QA PASS ควรเป็น FAIL (`SANITY_FAIL`: consolidated < segment)
+
+### Charlie — ตาราง v2 / v3 / v3.1 / v3.2 + attribution ของ F1–F3
+และ **สรุป learning run ทั้งหมด 1 ย่อหน้า:** เครื่องมือ build-out บอกอะไรเกี่ยวกับ AMZN (capex quality vs ราคา) และอะไรที่ผิดซ้ำๆ ใน 4 รอบ
+
+### เมื่อเสร็จ
+- Leo แก้ lesson ใน learning-log.md ให้ตรงผล v3.2 (สั้น)
+- Commit + push อ้าง `AMZN v3.2` · รายงานกลับ: ตาราง + attribution + Morgan verdict
+
+*Opus — 2026-10-07 | AMZN v3.2 brief, CIO approved*
