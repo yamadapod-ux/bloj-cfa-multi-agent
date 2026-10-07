@@ -2710,9 +2710,10 @@ function buildMethodology() {
   ];
 
   const WACC_INPUTS = [
-    ['Risk-free Rate', 'ผลตอบแทนพันธบัตรรัฐบาลสหรัฐ 10 ปี ล่าสุด — จาก treasury.gov'],
-    ['Beta', 'ความผันผวนของหุ้นเทียบตลาด — จากข้อมูลการเงินจริงของหุ้นนั้น'],
-    ['Equity Risk Premium', 'ผลตอบแทนส่วนเพิ่มที่นักลงทุนหุ้นคาดหวังเหนือพันธบัตร (~4–5% เป็นค่าอ้างอิงมาตรฐาน)'],
+    ['Risk-free Rate', 'ผลตอบแทนพันธบัตรรัฐบาลสหรัฐ 10 ปี ณ วันวิเคราะห์ (≥2 แหล่ง) — ห้ามใช้ค่าเก่า'],
+    ['Beta', 'คำนวณ 2 วิธีแล้วเฉลี่ย: (1) Blume-adjusted = 0.67×beta จริง + 0.33 (2) Bottom-up = beta เฉลี่ยของอุตสาหกรรม (Damodaran) ปรับตามหนี้ของบริษัท'],
+    ['Equity Risk Premium', 'ใช้ค่า implied ERP ล่าสุดของ Damodaran (มี URL)'],
+    ['เทียบกับข้างนอก', 'เทียบ WACC กับแหล่งภายนอก ≥3 แหล่ง — ถ้าต่างเกิน 1% ต้องอธิบายในรายงาน'],
   ];
 
   const FORMULA_GROUPS = [
@@ -2754,6 +2755,26 @@ function buildMethodology() {
     ['ROIC vs WACC', 'ถ้าผลตอบแทนจากเงินลงทุน (ROIC) สูงกว่าต้นทุนเงินทุน (WACC) แปลว่าธุรกิจสร้างมูลค่าเพิ่มจริง ไม่ใช่แค่โตแต่เผาเงินทิ้ง'],
     ['Economic Moat (5 แหล่ง)', 'Network Effect, Switching Cost, Intangible Assets (แบรนด์/สิทธิบัตร), Cost Advantage, Efficient Scale — ยิ่งมีหลายข้อ ยิ่งป้องกันคู่แข่งได้นาน'],
     ['Terminal Growth Rate (g)', 'อัตราเติบโตระยะยาวหลังพ้นช่วงคาดการณ์ปกติ — ต้องมีเหตุผลรองรับ ปกติไม่เกินอัตราเติบโตเศรษฐกิจโลกระยะยาว ป้องกันไม่ให้ประเมินมูลค่าสูงเกินจริง'],
+  ];
+
+  const VALUATION_METHODS = [
+    ['ธุรกิจทั่วไปที่มีกำไร/เงินสดสม่ำเสมอ', 'DCF (คิดลดกระแสเงินสดอนาคต) → ตรวจซ้ำด้วย P/E, EV/EBITDA เทียบคู่แข่ง', 'ACN, DECK, NXT'],
+    ['หุ้นลงทุนหนัก (เงินสดอิสระติดลบ/ต่ำเพราะกำลังลงทุน)', 'DCF + เทียบ multiples (forward EV/EBIT, P/E ที่ไม่รวมกำไรจากเงินลงทุนในบริษัทอื่น) ถ่วงน้ำหนักตามว่า DCF พึ่งปีท้ายมากแค่ไหน', 'AMZN, MSFT, GOOGL, META'],
+    ['Software / SaaS โตเร็ว', 'DCF ที่หักค่าตอบแทนเป็นหุ้น (SBC) อย่างถูกต้อง — มักเข้าสูตรหุ้นลงทุนหนักด้วย · ตรวจด้วย Rule of 40 และ EV/Revenue เทียบคู่แข่ง', 'NOW, CRM, ADSK, ADBE'],
+    ['AI / Infra build-out (ผ่านเกณฑ์ lane)', 'DCF + เส้นทางผลตอบแทนเงินลงทุน (ROIC) ฟื้นรายปี + 3 สถานการณ์ถ่วงความน่าจะเป็น (สถานการณ์ร้าย ≥25%)', 'IREN, APLD'],
+    ['Cyclical (semis, วัตถุดิบ, อุตสาหกรรม)', 'DCF จากกำไร "กลางวัฏจักร" ไม่ใช่ปีที่ดีที่สุด · ตรวจด้วย EV/EBITDA เทียบประวัติ 5 ปีของตัวเอง', 'ADI, QCOM, MCHP'],
+    ['ธนาคาร / ประกัน', 'P/B เทียบ ROE, Residual Income, ปันผลคิดลด — ใช้ต้นทุนส่วนทุน (cost of equity) แทน WACC', 'OSCR'],
+    ['REIT', 'P/AFFO (ราคาต่อเงินสดจากค่าเช่า) และมูลค่าสินทรัพย์สุทธิ (NAV) · ตรวจด้วย dividend yield เทียบคู่แข่ง', '—'],
+    ['Utility (ไฟฟ้า/น้ำ ที่รัฐกำกับ)', 'ปันผลคิดลด (DDM), การเติบโตของ rate base × ผลตอบแทนที่รัฐอนุญาต', '—'],
+    ['Biotech / pharma', 'DCF ส่วนที่มีกำไรแล้ว + rNPV ของยาที่กำลังพัฒนา (มูลค่า × โอกาสผ่านการทดลองแต่ละขั้น)', 'REGN'],
+    ['Holding / conglomerate', 'แยกประเมินทีละธุรกิจแล้วรวม (SOTP / NAV) · ตรวจด้วยส่วนลดจาก NAV เทียบประวัติ', '—'],
+  ];
+
+  const VS2_LAYERS = [
+    ['ชั้น 1 — กฎพื้นฐาน (ทุกหุ้น)', 'WACC ชุดเดียวทั้งทีมและเทียบกับแหล่งภายนอก · บวกเงินลงทุนในบริษัทอื่น (เช่นหุ้น Anthropic ของ AMZN) · DCF มีช่วงชะลอการเติบโต ไม่กระโดด · หนี้/lease/จำนวนหุ้นชุดเดียว'],
+    ['มูลค่าปีที่ 5', 'ทุกหุ้นแสดง FV วันนี้ + FV อีก 5 ปี + ผลตอบแทนคาดต่อปีถ้าซื้อวันนี้ เทียบ S&P 500 — เพราะกองทุนถือ 5 ปีขึ้นไป'],
+    ['ชั้น 2 — สูตรหุ้นลงทุนหนัก (ทดลองถึง 31 ธ.ค. 2026)', 'ใช้เมื่อมูลค่ากว่า 70% มาจากปีท้ายๆ → ผสม DCF กับ multiples'],
+    ['ชั้น 3 — กฎเฉพาะกลุ่ม AI/Infra', 'MOS ≥25%, เข้าซื้อครั้งแรก ≤4%'],
   ];
 
   const QA_GATES = [
@@ -2839,6 +2860,10 @@ function buildMethodology() {
   const waccInputsHTML = WACC_INPUTS.map(([n, d]) => `<div class="card-sm"><div style="font-weight:700;color:#E0824E;font-size:.8rem;margin-bottom:.2rem;">${n}</div><div style="font-size:.74rem;color:#8C7F63;line-height:1.5;">${d}</div></div>`).join('');
 
   const valuationChecksHTML = VALUATION_CHECKS.map(([n, d]) => `<div class="card-sm"><div style="font-weight:700;color:#F0E6D2;font-size:.8rem;margin-bottom:.25rem;">${n}</div><div style="font-size:.75rem;color:#8C7F63;line-height:1.5;">${d}</div></div>`).join('');
+
+  const valuationMethodsHTML = VALUATION_METHODS.map(([t, m, ex]) => `<div class="card-sm"><div style="font-weight:700;color:#F0E6D2;font-size:.8rem;margin-bottom:.25rem;">${t}</div><div style="font-size:.75rem;color:#C7B99C;line-height:1.5;margin-bottom:.3rem;">${m}</div><div style="font-size:.7rem;color:#8C7F63;">ตัวอย่าง: ${ex}</div></div>`).join('');
+
+  const vs2LayersHTML = VS2_LAYERS.map(([n, d]) => `<div class="card-sm"><div style="font-weight:700;color:#E0824E;font-size:.8rem;margin-bottom:.25rem;">${n}</div><div style="font-size:.75rem;color:#8C7F63;line-height:1.5;">${d}</div></div>`).join('');
 
   const formulaGroupsHTML = FORMULA_GROUPS.map(group => `
     <div style="margin-bottom:1rem;">
@@ -2943,6 +2968,17 @@ function buildMethodology() {
       </div>
       <div style="font-size:.74rem;color:#8C7F63;margin-bottom:.4rem;">เช็คเพิ่มเติมก่อนสรุปมูลค่า:</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.5rem;">${valuationChecksHTML}</div>`
+    ) +
+    methCard(
+      '📐 วิธีคำนวณตามประเภทหุ้น',
+      'หุ้นแต่ละแบบใช้ไม้บรรทัดคนละอัน — Atlas จัดประเภทก่อน Emma เห็นข้อมูล และห้ามเปลี่ยนกลางทาง',
+      `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.5rem;">${valuationMethodsHTML}</div>
+      <div style="font-size:.74rem;color:#8C7F63;margin-top:.6rem;">ทุกประเภทต้องแสดง FV วันนี้ + FV ปีที่ 5 + ผลตอบแทนคาดต่อปี · หุ้นที่เข้าได้หลายประเภท ใช้ประเภทที่เป็นแหล่งมูลค่าหลัก (&gt;50%)</div>`
+    ) +
+    methCard(
+      '🧱 มาตรฐานประเมินมูลค่า ฉบับ 2 (VS2)',
+      'ใช้กับทุกรายงานตั้งแต่ 8 ต.ค. 2026 — ไม่แตะเกณฑ์ซื้อ (MOS / Conviction / 40-30-30)',
+      `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.5rem;">${vs2LayersHTML}</div>`
     ) +
     methCard(
       '📐 สูตรคำนวณจริงที่ใช้ในทีม',
