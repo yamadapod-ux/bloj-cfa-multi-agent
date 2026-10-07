@@ -1116,3 +1116,18 @@ Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 
 **Web-search ใช้จริง 22 calls** (Atlas ~20, Bear 2, Emma/Quinn/Morgan 0 — reuse data package) — ต่ำกว่า budget 40-50 มาก เพราะ pipeline แบบ sequential-reuse มีประสิทธิภาพสูง — แต่ทำให้ peer EV/EBIT multiples ของ SOTP ยังไม่ verify-live (Morgan flag เป็น LOW/MEDIUM gap สำหรับรอบหน้า)
 
 **CIO flag:** AMZN เป็น CIO-override ticker — v3 ไม่ deploy อัตโนมัติไม่ว่า gate ผ่านหรือไม่ (gate ไม่ผ่านรอบนี้อยู่แล้ว, MOS -60.3%) — ผลลัพธ์สำคัญที่ต้องรายงาน CIO คือ **เครื่องมือที่ "ถูกกับธุรกิจ" มากขึ้น ทำให้ thesis อ่อนลง ไม่ใช่แข็งขึ้น** — ธุรกิจยังดี (in-service/incremental ROIC >> WACC) แต่ ไม่ cheap ที่ราคานี้ด้วยการคำนวณที่ระมัดระวังกว่า
+
+---
+
+### ⚠️ 2026-10-07 — แก้ lesson ด้านบน: v3.1 correction พบว่า "แก้ไม่ตรงจุด" ไม่ใช่ "เครื่องมือที่ถูกกับธุรกิจเผย downside จริง"
+
+**v3's lesson เดิม (ด้านบน) สรุปผิด** — v3.1 (Opus review ของ ccf547e, แก้ methodology bug 11 ข้อ E1-E11 ตาม `agent_notes/charlie/2026-10-06_amzn_v3_brief.md` § v3.1) พบว่า:
+
+1. **v3's "~80% ของ Δ มาจาก explicit capex-path DCF" เป็น attribution ที่ผิด** — v2 ก็ explicit อยู่แล้ว สิ่งที่ v3 เปลี่ยนจริงคือ (a) horizon 10yr→5yr ตัดสั้นผิดกฎ CLAUDE.md (b) **SOTP peer-multiple 15x/18x ไม่มี source เลย** (SOURCE_MISSING, ผิด Training Knowledge Ban) ที่ดึง Emma FV ลงมาก — **ไม่ใช่การ model capex ตรงไปตรงมาที่เผย downside จริงตามที่ v3 อ้าง แต่เป็น unverified-input-bias ที่ดันผลไปทางเดียว**
+2. **แก้ peer-sourcing จริง (WMT/COST/TGT median 27.3x retail, MSFT/GOOGL/ORCL median 19.9x cloud) → SOTP FV ขึ้นจาก $120.9-127.1 เป็น $179.29-203.68 (+$58 ถึง +$77/share)** — เพียงจากการ verify multiple ที่ถูกกฎ Training Knowledge Ban ตั้งแต่ต้น
+3. **แก้ capex Yr1 ให้ตรง (confirmed $220B guidance FY2026, ไม่ใช่ $142B ของปีที่แล้ว) → DCF-only FV ลดลง** (horizon ยาวขึ้นแต่ capex จริงสูงกว่าที่ v3 สมมติมาก) — ผลหักกลบกับ SOTP correction พอดี
+4. **Blended FV v3.1 ($104.60) ≈ v3 ($101.71, +2.8%)** — **แทบไม่เปลี่ยนแม้แก้ 11 bugs** — นี่คือบทเรียนที่แท้จริง: การแก้ methodology bug หลายข้อพร้อมกันไม่จำเป็นต้องเปลี่ยนผลสุทธิไปทางเดียว (บาง bug ดัน FV ขึ้น บางอันดันลง) — **"ผลลัพธ์ไม่เปลี่ยนมาก" ไม่ได้แปลว่า "ไม่มี bug ต้องแก้"** (Morgan's v3 QA เคย treat แบบนี้ผิด — ดู lesson ถัดไป)
+5. **Morgan QA lesson:** v3's CONDITIONAL PASS ควรเป็น FAIL จริง (SOURCE_MISSING ×1 + RULE_VIOLATION ×2) — Morgan เดิม treat เป็น LOW/MEDIUM เพราะ "ไม่กระทบ verdict (NO BUY ทั้งคู่)" ซึ่งผิดหลักการ: **QA ตรวจกระบวนการ ไม่ใช่แค่ว่าผลลัพธ์บังเอิญไม่เปลี่ยน** — "verdict เดิมอยู่ดี" ไม่ใช่เหตุผลให้ลดระดับ reject-type
+6. **Bear lesson:** v3's Bear FV = SOTP×0.80 (mechanical % off Emma) ซ้ำซ้อนกับ Quinn's Bear scenario ที่มี share-loss risk อยู่แล้ว — v3.1 แก้เป็น Bear's own-scenario DCF ($47.81, ไม่ผ่าน % off) — AWS share-loss ถูก reclassify จาก "Structural" (หลักฐานแค่ 1 data point) เป็น "Competitive Risk" (5-quarter AWS re-acceleration ต่อเนื่องขัดกับนิยาม structural "ไม่มี credible recovery path")
+
+**บทเรียนที่แก้ไข:** "Explicit modeling แม่นยำขึ้น" **ไม่ใช่สาเหตุที่ v3's FV ต่ำ** อย่างที่เคยสรุป — สาเหตุจริงคือ **unsourced estimate (SOTP multiple) ที่ผิด Training Knowledge Ban** ทำให้ FV ต่ำกว่าที่ควร และการแก้ไขให้ครบตามกฎไม่ได้แปลว่า thesis จะแข็งขึ้นหรืออ่อนลงเสมอ — ขึ้นกับว่า bug แต่ละตัวดึง FV ไปทางไหน — **verdict ยังเป็น NO BUY ทั้ง v3 และ v3.1** (MOS -59.2% ยังติดลบรุนแรง, CIO's hypothesis $200+ ไม่ confirm) — AMZN ยัง CIO-override ticker ต้อง flag เสมอ
