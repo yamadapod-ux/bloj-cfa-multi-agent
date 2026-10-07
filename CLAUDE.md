@@ -656,6 +656,90 @@ Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั�
 
 **Vera (trial review 2026-12-31):** นับจำนวนครั้งที่ trigger, กี่ครั้งที่ "โมเดลเปราะ" vs "ตลาด mispriced", และมีกรณีใดที่ตารางนำไปสู่การแก้ assumption จริง
 
+### มาตรฐานประเมินมูลค่า ฉบับ 2 (`VS2`) (บังคับ — เพิ่ม 2026-10-08, ไม่ใช่ Return-side rule)
+
+**ที่มา:** AMZN v3.2 ($125.66) ต่ำกว่า Street PT ต่ำสุด ~42% — review พบข้อบกพร่องเชิงระบบ (WACC ไม่เทียบภายนอก, ไม่นับ non-operating assets, DCF ไม่มี fade, net debt/lease/share count ไม่สอดคล้อง, ไม่มีวิธีรับมือ DCF เปราะ) ดู `agent_notes/charlie/2026-10-08_vs2_amzn_v3.4_brief.md` · **ไม่แตะ** 40/30/30, MOS threshold, conviction gate, TGR ceiling · ทุกรายงานหลัง 2026-10-08 ติด tag `VS2` (รายงานก่อนหน้านี้ = v1)
+
+#### ชั้น 1 — กฎพื้นฐาน (ใช้กับทุกหุ้น)
+
+**1.1 WACC ชุดเดียวทั้งทีม (Atlas คำนวณ ล็อกก่อน Emma/Quinn/Bear เริ่ม)**
+- Rf = 10Y UST ณ วันวิเคราะห์ (≥2 sources) · ERP = Damodaran implied ERP ล่าสุด (URL) — ห้าม carry forward จากรายงานเก่า
+- Beta 2 วิธี [CFA L2: Equity — Return Concepts]: (ก) **Blume-adjusted** = 0.67×raw + 0.33 (raw ≥2 sources) (ข) **Bottom-up** = unlevered beta เฉลี่ยของอุตสาหกรรม (Damodaran dataset, URL) relever ด้วย D/E ของบริษัท — บริษัทหลาย segment ใช้ค่าเฉลี่ยถ่วงตาม revenue/EV ของ segment
+- **Base WACC = ค่าเฉลี่ยของ WACC จาก 2 วิธี** · ถ้า 2 วิธีห่างกัน >150bps → reconciliation table (ทดสอบทั้งสองทิศ) ก่อน แล้วเลือกด้วยเหตุผลหรือใช้ค่าเฉลี่ย พร้อมอธิบาย
+- External cross-check: WACC/cost of equity จากแหล่งภายนอก ≥3 แหล่ง (URL) · **แหล่งที่ไม่ระบุ Rf หรือใช้ Rf ต่างจากปัจจุบัน >75bps = ติด `stale-rate` ไม่นับใน median** · base ห่าง median (ที่ไม่ stale) >100bps → อธิบายใน report
+- ธนาคาร/ประกัน: ใช้ cost of equity แทน WACC ตามหลักเดียวกัน
+
+**1.2 Non-Operating Asset Bridge**
+- Equity = EV (operating) + non-operating assets − debt − lease liabilities ที่ไม่อยู่ใน FCF − minority interest − preferred
+- Non-operating assets = หุ้น/เงินลงทุนในบริษัทอื่น, excess cash, marketable securities ที่ income ไม่อยู่ใน operating FCF · ใช้ fair/carrying value จาก 10-Q/10-K ล่าสุด (ระบุ line item + filing, ≥2 sources)
+- ภาษี: หัก DTL ที่เปิดเผย · ถ้าไม่เปิดเผย ใช้ 21% × (fair value − cost basis) และ flag
+- กำไร/ขาดทุนจากการตีราคา non-operating assets ต้อง**ตัดออก**จาก NOPAT/EPS ที่ใช้ทำ DCF และ multiples — นับมูลค่าครั้งเดียวผ่าน bridge เท่านั้น
+- เป็นข้อเท็จจริงร่วม — Atlas ใส่ใน Data Package, Emma/Quinn/Bear ใช้ค่าเดียวกัน
+
+**1.3 มาตรฐานการสร้าง DCF**
+- FCFF = NOPAT − (capex − D&A) − ΔNWC · ถ้ามี segment model ให้สร้างระดับ segment แล้วรวม (Multi-Segment Rule)
+- Capex path ต้องมี source (guidance / backlog / consensus) สำหรับปีที่ 1–2 · ปีหลังจากนั้นระบุเหตุผลการ normalize
+- **Fade:** ถ้าการเติบโตปีสุดท้ายของ explicit period > TGR + 3pp → ต้องเพิ่มช่วง fade ลดลงเชิงเส้นสู่ TGR (ไม่เกิน 10 ปีเพิ่ม) · reinvestment ในช่วง fade = g ÷ RONIC (ห้ามโตฟรี)
+- Terminal: ระบุ terminal RONIC ชัดเจน · reinvestment rate ปีสุดท้าย = TGR ÷ terminal RONIC · terminal RONIC < WACC ต้องสอดคล้องกับ Bear Discount Classification
+- **Lease:** ระบุว่า lease ถูกนับใน FCF หรือใน net debt — ห้ามหายและห้ามนับซ้ำ
+- **Net debt + share count:** วันที่เดียวกับงบล่าสุด, diluted shares แหล่งเดียว ใช้ทั้งทีม
+
+**1.4 มูลค่าปีที่ 5 (Forward Value 5Y) — แสดงคู่กับ FV วันนี้ทุกรายงาน (ตาม horizon 5+ ปีของกองทุน)**
+- Emma / Quinn / Bear แต่ละคนคำนวณ **FV ต่อหุ้น ณ สิ้นปีที่ 5** จากโมเดลเดียวกับ FV วันนี้ (ไม่ใช่โมเดลใหม่):
+  - Equity₅ = PV ณ ปีที่ 5 ของ FCFF ปีที่ 6 เป็นต้นไป (รวม fade + terminal) + non-operating assets (คงมูลค่าปัจจุบัน — flag) − net debt ปีที่ 5 (= net debt วันนี้ − FCFF สะสม 5 ปีหลังดอกเบี้ยหลังภาษี + เงินที่จ่ายปันผล/ซื้อหุ้นคืนตามที่สมมติ)
+  - หุ้นปีที่ 5 = diluted shares วันนี้ × (1 + net dilution/ปี)⁵ (SBC − buyback ตามข้อมูลจริง 3 ปีล่าสุด)
+  - **Consistency check:** Equity₅ ≈ Equity₀ × (1+cost of equity)⁵ − ปันผล/buyback สะสม — ห่าง >10% ต้องอธิบาย
+- **Blended FV₅ = 40/30/30** ของ FV₅ ทั้ง 3 คน
+- **ผลตอบแทนคาดต่อปี** = (Blended FV₅ ÷ ราคาวันนี้)^(1/5) − 1 — แสดงคู่กับ expected return ของ S&P 500 (มี source)
+- แสดงใน Score Dashboard + buy_list · **เป็นข้อมูลประกอบ ไม่ใช่ gate** — gate ยังเป็น MOS บน FV วันนี้ (Return-side lock จนกว่า rolling 8Q alpha trigger)
+
+#### ชั้น 2 — สูตรหุ้นลงทุนหนัก (FCF ติดลบ/ต่ำ) (`TRIAL` — review 2026-12-31)
+
+**ใช้เมื่อ:** PV ของ terminal value > 70% ของ EV ใน Emma DCF base case (คำนวณอัตโนมัติ ไม่ต้องเลือก) — ไม่ขึ้นกับ lane
+**ใช้กับ:** Emma FV เท่านั้น (Quinn/Bear คงเป็น DCF/scenario ของตัวเอง)
+
+1. Emma ทำ multiples valuation: **forward EV/EBIT (NTM)** และ **core P/E (NTM, ไม่รวมกำไรจาก non-operating assets)** → FV ต่อหุ้น + บวก non-operating bridge ครั้งเดียว
+2. Peer 3–6 ตัว **เลือกและบันทึกเหตุผลก่อนดู multiple** (เกณฑ์เดียวกับ B-V1 peer-selection guideline) · เทียบกับ 5Y history ของบริษัทเองด้วย
+3. ถ้า capex/D&A > 2× → ต้องปรับ EBIT ด้วย D&A ที่คาดในปีที่ 2 (ไม่ใช่ D&A ปัจจุบัน) หรือ flag ว่า multiples อาจสูงเกินจริง
+4. น้ำหนัก Emma FV:
+
+| TV ÷ EV | DCF | Multiples |
+|---|---|---|
+| ≤ 70% | 100% | cross-check เท่านั้น |
+| 70–85% | 75% | 25% |
+| > 85% | 60% | 40% |
+
+5. DCF กับ multiples ห่าง ≥25% → reconciliation table ทดสอบทั้งสองทิศ **ก่อน** ถ่วงน้ำหนัก (หลักเดียวกับ Multi-Segment ข้อ 3)
+
+#### ชั้น 3 — กฎเฉพาะ lane
+Lane AI/Infra Build-out ใช้กฎเดิมของ lane ต่อ (MOS ≥25%, T1 ≤4%, ฯลฯ) **บน**ชั้น 1+2 — ไม่เปลี่ยน
+
+#### การใช้กับหุ้นที่ถืออยู่
+- ใช้ VS2 เมื่อถึงรอบ re-verify ตาม Re-Analysis Trigger Rule ปกติ — ไม่ต้องรันพร้อมกันทั้งพอร์ต
+- ถ้า MOS พลิกลบเพราะเปลี่ยนจาก v1 → VS2 (ไม่ใช่ข้อมูลธุรกิจใหม่) → ใช้ precedent compliance-fix (watch item, ไม่ trigger Max Consultation ทันที — แต่ถ้ายังลบรอบถัดไป = STRONG SELL จริง)
+
+**Morgan:** ข้อใดในชั้น 1 ไม่ครบ = `RULE_VIOLATION` · non-operating asset ≥5% market cap ไม่ถูกนับ = `DATA_ERROR` · ชั้น 2 ควร trigger แต่ไม่ทำ / peer เลือกหลังเห็นผล / ไม่ reconcile ก่อนถ่วง = `RULE_VIOLATION`
+**Vera (2026-12-31):** เทียบ FV v1 vs VS2 ทุกตัวที่ทำแล้ว · ชั้น 2 trigger กี่ครั้ง · FV vs Street PT และราคาจริง → ตัดสิน lock/ปรับ/ยกเลิกชั้น 2
+
+#### วิธีคำนวณตามประเภทหุ้น (Atlas จัดประเภทใน Data Package — ก่อน Emma เห็นข้อมูล, ห้ามเปลี่ยนระหว่าง pipeline)
+
+| ประเภทหุ้น | วิธีหลัก | ตัวตรวจ (cross-check) | ใช้ VS2 ชั้นไหน | ตัวอย่าง |
+|---|---|---|---|---|
+| ธุรกิจทั่วไปที่มีกำไร/FCF สม่ำเสมอ | DCF (FCFF) | P/E, EV/EBITDA เทียบ peer | ชั้น 1 | ACN, DECK, NXT |
+| หุ้นลงทุนหนัก / FCF ติดลบหรือต่ำ (PV(TV)/EV > 70%) | DCF (FCFF) + forward EV/EBIT, core P/E ถ่วงน้ำหนักตาม TV% | Market-Implied Sanity Check | ชั้น 1 + 2 | AMZN, MSFT, GOOGL, META |
+| Software / SaaS โตเร็ว | DCF (FCFF, SBC ตาม DCF Cash Flow Consistency Rule) — มักเข้าชั้น 2 | Rule of 40, EV/Revenue เทียบ peer | ชั้น 1 (+2 ถ้า TV% > 70%) | NOW, CRM, ADSK, ADBE |
+| AI / Infra build-out (ผ่านเกณฑ์ lane) | DCF + ROIC recovery path + P-W EV (Bear ≥25%) | กฎ lane เดิม | ชั้น 1 + 2 + 3 | IREN, APLD |
+| Cyclical (semis, วัตถุดิบ, อุตสาหกรรม) | DCF จาก **mid-cycle** FCF/margin | EV/EBITDA เทียบ 5Y history (ห้ามใช้ peak) | ชั้น 1 | ADI, QCOM, MCHP |
+| ธนาคาร / ประกัน | P/B เทียบ ROE, Residual Income, DDM (ใช้ cost of equity ไม่ใช่ WACC) | P/E เทียบ peer | ชั้น 1 (ข้อ 1.1, 1.2, 1.4 เท่านั้น) | OSCR |
+| REIT | P/AFFO, NAV | Dividend yield vs peer | ชั้น 1 (1.1, 1.2, 1.4) | — |
+| Utility (regulated) | DDM, rate base growth × allowed ROE | P/E เทียบ peer | ชั้น 1 (1.1, 1.2, 1.4) | — |
+| Biotech / pharma | DCF ส่วนที่มีกำไรแล้ว + **rNPV** สำหรับยาใน pipeline (มูลค่า × โอกาสผ่านแต่ละ phase) | EV/Sales เทียบ peer | ชั้น 1 | REGN |
+| Holding / conglomerate | SOTP / NAV (Multi-Segment Rule) | discount-to-NAV เทียบประวัติ | ชั้น 1 | — |
+
+- ทุกประเภทต้องแสดง **FV วันนี้ + FV ปีที่ 5 + ผลตอบแทนคาด/ปี** (ข้อ 1.4)
+- หุ้นเข้าได้หลายประเภท → ใช้ประเภทที่ตรงกับแหล่งมูลค่าหลัก (>50% ของ EV) และระบุประเภทรองใน note
+- **Morgan:** ไม่มีการจัดประเภท / ใช้วิธีหลักไม่ตรงประเภทโดยไม่อธิบาย = `RULE_VIOLATION`
+
 ### MOS Threshold แยกตาม Bucket (บังคับ — ใช้แทนกฎ MOS 20% เดิม)
 | Bucket | เกณฑ์ BUY | เหตุผล |
 |--------|-----------|--------|

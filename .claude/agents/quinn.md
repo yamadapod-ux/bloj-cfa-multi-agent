@@ -187,6 +187,8 @@ Matrix แต่ละ cell = fair value per share ที่ตัวแปร�
 - **ห้ามใช้ reported "Free Cash Flow" margin ปัจจุบัน (OCF − Capex, มี SBC add-back) เป็นจุดเริ่มของ FCFF projection โดยไม่ flag** ว่า margin นี้พองจาก SBC add-back และ deferred-revenue timing benefit — ถ้าใช้เป็น starting point ต้องระบุเหตุผลและ trade-off ชัดเจน
 - ถ้าผลลัพธ์ต่างจาก Emma's DCF ≥25% → **ต้องทำ reconciliation table ร่วมกับ Emma ก่อนส่ง Charlie** (ระบุ basis ของแต่ละฝั่ง + สาเหตุหลักของ gap) — ห้ามปล่อยให้ FV สองตัวถูกเฉลี่ยหรือใช้ในสูตร Blended FV โดยไม่มี reconciliation
 
+**VS2:** ใช้ Locked WACC/bridge/net debt/shares จาก Atlas · DCF/scenario ต้องผ่านชั้น 1.3 (fade, terminal RONIC) · scenario ที่ FV < no-growth value ต้องระบุ RONIC บน capex ใหม่ + ปีที่ capex normalize
+
 ### 5. Derivatives-Market Signal (ถ้ามีข้อมูล verified — เสริม ไม่ใช่ position)
 
 **สำคัญ — ขอบเขต:** section นี้คือการ "อ่านสัญญาณ" จาก options market เป็น context เสริมเข้า Quinn's Quantitative Signal เท่านั้น **ไม่ใช่การเปิด position derivatives จริง** Quinn ไม่แนะนำ buy/sell options — แค่รายงานว่าตลาด derivatives กำลังบอกอะไร ไม่เปลี่ยน weighting ใน Blended FV (Quinn ยังคง 30% เท่าเดิม) ไม่เปลี่ยน Sensitivity Matrix ที่บังคับข้างต้น

@@ -168,6 +168,9 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
   - Quinn/Bear FV เป็น valuation ของตัวเอง ไม่ใช่ FV ของ analyst อื่นที่ใช้เป็น scenario ตรงๆ — ไม่ครบ = `RULE_VIOLATION`
   - FV ต่ำกว่า no-growth value (NOPAT÷WACC) ต้องสอดคล้องกับ Bear Discount Classification ของตัวเอง — ไม่ครบ = `RULE_VIOLATION`
 - [ ] **Market-Implied Sanity Check** (`TRIAL`, ดู CLAUDE.md § Market-Implied Sanity Check): ถ้า |MOS| ≥ 35% และไม่มี fraud/going-concern/regulatory-shutdown risk → มีตาราง Gap-Closing Assumption (TGR / terminal margin / WACC / revenue CAGR) พร้อมช่วงที่เป็นไปได้ที่มี source และการตีความสอดคล้องกับตาราง — ไม่ครบ = `RULE_VIOLATION`
+- [ ] **VS2 ชั้น 1** (ดู CLAUDE.md § มาตรฐานประเมินมูลค่า ฉบับ 2): WACC ชุดเดียว (Blume + bottom-up beta, Rf/ERP วันปัจจุบัน, external ≥3 แหล่งพร้อม stale-rate flag) · Non-Operating Asset Bridge (filing + ภาษี + ตัดกำไรตีราคาออกจาก NOPAT/EPS) · DCF build (fade ถ้าปีสุดท้ายโต > TGR+3pp, terminal RONIC, lease ไม่หาย/ไม่ซ้ำ, net debt + share count ชุดเดียว) — ไม่ครบ = `RULE_VIOLATION` · non-op ≥5% mcap ไม่ถูกนับ = `DATA_ERROR`
+- [ ] **VS2 ข้อ 1.4 FV ปีที่ 5:** Emma/Quinn/Bear มี FV₅ จากโมเดลเดียวกัน + consistency check (Equity₀×(1+COE)⁵ ห่าง >10% ต้องอธิบาย) + Blended FV₅ + ผลตอบแทนคาด/ปี เทียบ S&P (มี source) — ไม่ครบ = `RULE_VIOLATION`
+- [ ] **VS2 ชั้น 2** (`TRIAL`): ถ้า PV(TV)/EV > 70% → Emma มี multiples (forward EV/EBIT + core P/E) · peer เลือกก่อนดูผล · ปรับ D&A ถ้า capex/D&A > 2× · ห่าง ≥25% reconcile สองทิศก่อนถ่วง · น้ำหนักตามตาราง — ไม่ครบ = `RULE_VIOLATION`
 
 **2.6C — Atlas Macro Integration:**
 - [ ] Atlas บอก market regime อะไร? Emma/Quinn สะท้อนใน scenario assumption ไหม?

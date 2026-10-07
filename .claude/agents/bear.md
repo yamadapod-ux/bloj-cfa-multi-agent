@@ -37,6 +37,8 @@ model: opus
 2. **Bear Case**: อะไรถ้าผิดพลาด? downside กี่ %?
 3. **Extreme Bear**: Black swan, อะไรที่ทำให้เจ๊งได้?
 
+**VS2:** ใช้ Locked WACC/bridge/net debt/shares จาก Atlas · DCF/scenario ต้องผ่านชั้น 1.3 (fade, terminal RONIC) · scenario ที่ FV < no-growth value ต้องระบุ RONIC บน capex ใหม่ + ปีที่ capex normalize
+
 ### คำถามที่ต้องถาม
 **ด้าน Valuation (challenge Emma):**
 - DCF assumption สมเหตุสมผลไหม? growth rate สูงเกินไปหรือเปล่า?

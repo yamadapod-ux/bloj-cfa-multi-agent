@@ -451,6 +451,8 @@ WebSearch: "[TICKER] [ข้อมูล] site:macrotrends.net"
 
 **Classification นี้ล็อกตลอด pipeline — Emma/Quinn/Bear ห้ามเปลี่ยน** ถ้าไม่เห็นด้วยให้ flag ใน notes ให้ Morgan ตัดสิน — ห้าม Atlas จัดหลังเห็นผล valuation (ต้องจัดจาก capex/business data เท่านั้น ก่อนที่ Emma จะเริ่มคำนวณ)
 
+**VS2 Data Package (บังคับ):** WACC package (Rf, raw beta ≥2 sources, Blume, bottom-up beta + Damodaran URL, ERP, D/E, external WACC ≥3 แหล่ง + stale-rate flag) → Locked base WACC · Non-Operating Asset table · net debt + lease + diluted shares (วันเดียวกับงบล่าสุด) · segment revenue ที่เป็นตัวเลขรายงานจริง (ห้าม ESTIMATE)
+
 ---
 
 ## I. Data Quality Notes

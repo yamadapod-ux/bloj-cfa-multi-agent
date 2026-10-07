@@ -37,6 +37,8 @@ tools:
 
 **Market-Implied Sanity Check (`TRIAL` — เพิ่ม 2026-10-08, ดู CLAUDE.md):** ถ้า |MOS| ≥ 35% (ทิศใดก็ได้) → แสดงตาราง Gap-Closing Assumption: แก้ทีละตัวแปร (TGR, terminal margin, WACC, revenue CAGR) หาค่าที่ทำให้ DCF FV = ราคาตลาด เทียบกับช่วงที่เป็นไปได้ (มี source) — ถ้าตัวแปรใดปิด gap ได้ในช่วงที่เป็นไปได้ ต้องอธิบายว่าทำไมค่าที่ใช้น่าเชื่อกว่า
 
+**VS2:** ใช้ Locked WACC/bridge/net debt/shares จาก Atlas เท่านั้น · DCF ตามชั้น 1.3 (fade, terminal RONIC, lease) · ถ้า PV(TV)/EV > 70% ทำชั้น 2 (multiples + น้ำหนัก) ดู CLAUDE.md
+
 **Relative Valuation:**
 - P/E, Forward P/E, PEG Ratio
 - EV/EBITDA, EV/EBIT, EV/Sales
