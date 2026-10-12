@@ -628,7 +628,7 @@ Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั�
 2. **Sanity:** ห้ามมี segment ที่ implied NOPAT/EBIT ติดลบใน forecast โดยไม่มีเหตุผล + source · consolidated EV ต้องไม่ต่ำกว่า segment ใดๆ เพียงส่วนเดียว เว้นแต่ส่วนอื่นมีมูลค่าติดลบที่อธิบายได้
 3. **ห้ามเฉลี่ยก่อน reconcile:** ถ้า 2 วิธีของ analyst คนเดียวกัน (เช่น consolidated DCF vs SOTP) ห่าง ≥25% → reconciliation table (สาเหตุของ gap ทีละรายการ) ก่อนเฉลี่ยหรือเลือก — ขยายหลักเดียวกับ DCF Cash Flow Consistency Rule ข้อ 4 (ครอบคลุม Emma vs Quinn) มาใช้กับ DCF vs SOTP ของ analyst คนเดียวกัน — **ต้องทดสอบคำอธิบายของ gap ทั้งสองทิศ** (วิธี A อาจ overstate **หรือ** วิธี B อาจ understate) ก่อนเลือก — ถ้าทดสอบไม่ได้ในรอบนั้น ให้แสดงผลทั้งสองวิธีคู่กันและบันทึกเป็น Open Item ห้ามเลือกตัวที่ต่ำกว่า/สูงกว่าโดยอ้างคำอธิบายด้านเดียว (เพิ่ม 2026-10-07, AMZN v3.2 closing note C5)
 4. **Independence ของ Blended FV:** Quinn's P-W EV scenario และ Bear FV ต้องเป็น valuation ของผู้นั้นเอง (assumption ระบุชัด) — ห้ามใช้ FV สุดท้ายของ analyst อื่นเป็น scenario โดยตรง เพราะทำให้ตัวเลขเดียวกันถูกนับซ้ำใน 40/30/30
-5. **Bear floor sanity:** ถ้า FV ใดต่ำกว่า no-growth value (NOPAT ปัจจุบัน ÷ WACC) → ต้องอธิบายว่า assumption ไหนทำให้การลงทุนใหม่ได้ RONIC < WACC และต้องสอดคล้องกับ Bear Discount Classification (Temporary vs Structural) ของรายงานเดียวกัน
+5. **No-growth floor sanity (FV ของทุกคน):** ถ้า FV ใดต่ำกว่า no-growth value (NOPAT ปัจจุบัน ÷ WACC) → ต้องอธิบายว่า assumption ไหนทำให้การลงทุนใหม่ได้ RONIC < WACC และต้องสอดคล้องกับ Bear Discount Classification (Temporary vs Structural) ของรายงานเดียวกัน
 
 **Morgan reject type:** ข้อ 1–2 ไม่ผ่าน = `SANITY_FAIL` · ข้อ 3–5 ไม่ผ่าน = `RULE_VIOLATION` — ดู Morgan QA Protocol § Cross-agent Consistency สำหรับ checklist
 
@@ -693,6 +693,36 @@ Charlie ใช้ weight นี้คำนวณ Blended FV ทุกครั�
 - **ผลตอบแทนคาดต่อปี** = (Blended FV₅ ÷ ราคาวันนี้)^(1/5) − 1 — แสดงคู่กับ expected return ของ S&P 500 (มี source)
 - แสดงใน Score Dashboard + buy_list · **เป็นข้อมูลประกอบ ไม่ใช่ gate** — gate ยังเป็น MOS บน FV วันนี้ (Return-side lock จนกว่า rolling 8Q alpha trigger)
 
+**1.5 ล็อกจุดดุลยพินิจล่วงหน้า (Pre-registration) (`TRIAL` — review 2026-12-31)**
+- Atlas ล็อกค่าของจุดดุลยพินิจต่อไปนี้ใน Data Package **ก่อน** Emma/Quinn/Bear เห็นตัวเลข valuation ใดๆ:
+  - WACC: รายชื่อแหล่งภายนอกที่จะนับ · เกณฑ์ `stale-rate` · วิธีเลือกเมื่อ beta 2 วิธีห่าง >150bps
+  - Peer list (ตามเกณฑ์ B-V1 peer-selection guideline)
+  - ประเภทธุรกิจ (ตามตาราง "วิธีคำนวณตามประเภทหุ้น")
+  - ความยาว explicit forecast + มี fade หรือไม่
+- เปลี่ยนค่าที่ล็อกได้ **แต่** report ต้องบันทึก: เปลี่ยนอะไร · เปลี่ยนก่อนหรือหลังเห็นผล · FV ก่อน/หลังเปลี่ยน
+- เหตุผล: AMZN v3.4 — judgment call (เช่น stale-rate 75bps, ตัดแหล่ง WACC ภายนอก 4/6) ถูกเลือกหลังรู้ทิศทางผล · การล็อกล่วงหน้าแก้ที่ต้นเหตุ แทนการ flag หลังผลออก
+- **Morgan:** จุดดุลยพินิจที่ไม่ได้ล็อกล่วงหน้า และไม่ได้บันทึกการเปลี่ยน = `RULE_VIOLATION`
+
+**1.6 ตาราง Judgment-Call Sensitivity (`TRIAL` — review 2026-12-31)**
+Emma ทำทุกรายงาน — เปลี่ยนทีละจุด (ตัวอื่นคงเดิม):
+
+| # | Judgment call | ค่าที่ใช้ | ทางเลือกที่สมเหตุสมผลอีกทาง | FV ถ้าเลือกทางนั้น | Δ% ของ Blended FV | Source รองรับค่าที่ใช้ |
+|---|---|---|---|---|---|---|
+
+- ขั้นต่ำ: ทุกจุดที่ล็อกไว้ใน 1.5 + จุดอื่นที่ Emma เห็นว่ากระทบ
+- จุดใดกระทบ **>15% ของ Blended FV** → ค่าที่ใช้ต้องมี source ≥2 รองรับ + ระบุใน ⚙️ Behind the Scenes
+- ต่างจาก Market-Implied Sanity Check: อันนั้นถาม "ต้องขยับแค่ไหนถึงปิด gap กับราคาตลาด" · อันนี้ถาม "ทางเลือกที่สมเหตุสมผลเท่ากันทำให้ FV แกว่งแค่ไหน" — ใช้คู่กัน
+- **ไม่ใช่ gate** — ไม่เปลี่ยน recommendation อัตโนมัติ
+- **Morgan:** ไม่มีตาราง / จุดกระทบ >15% มี source <2 = `RULE_VIOLATION`
+
+**1.7 Blind Re-derivation (`TRIAL` — review 2026-12-31)**
+- **Trigger (เฉพาะ):** (ก) ก่อน Max execute BUY จริง (ข) หุ้นที่ถืออยู่ซึ่ง re-verify แล้ว MOS พลิกเครื่องหมาย (ค) CIO สั่ง — **ไม่ทำ** กับ learning-queue / SKIP
+- Charlie dispatch Emma instance ใหม่ที่ได้ **raw data เท่านั้น** (งบการเงิน, Rf, ERP, raw beta, ราคา, shares) — **ห้าม**ส่ง WACC/peer list ที่ Atlas ตัดสินแล้ว, report เดิม, brief, Street PT หรือตัวเลขที่ทีม/CIO เคยพูด
+- Instance ใหม่คำนวณ WACC + FV เองทั้งหมด (เหตุผล: bias อาจฝังอยู่ใน Data Package ตั้งแต่ขั้น Atlas — blind ที่ใช้ Data Package เดิมจึงไม่ช่วย)
+- ผล: ห่างจาก Emma FV เดิม ≤10% = ผ่าน · >10% = หา root cause ทีละจุดโดยเทียบกับตาราง 1.6 ก่อน Max execute
+- ต้นทุน ~1 Emma run (~30–50K token) ต่อเคส
+- **Max:** trigger (ก) เข้าแต่ยังไม่มีผล 1.7 → ห้าม execute
+
 #### ชั้น 2 — สูตรหุ้นลงทุนหนัก (FCF ติดลบ/ต่ำ) (`TRIAL` — review 2026-12-31)
 
 **ใช้เมื่อ:** PV ของ terminal value > 70% ของ EV ใน Emma DCF base case (คำนวณอัตโนมัติ ไม่ต้องเลือก) — ไม่ขึ้นกับ lane
@@ -738,7 +768,28 @@ Lane AI/Infra Build-out ใช้กฎเดิมของ lane ต่อ (MOS
 
 - ทุกประเภทต้องแสดง **FV วันนี้ + FV ปีที่ 5 + ผลตอบแทนคาด/ปี** (ข้อ 1.4)
 - หุ้นเข้าได้หลายประเภท → ใช้ประเภทที่ตรงกับแหล่งมูลค่าหลัก (>50% ของ EV) และระบุประเภทรองใน note
+- วิธีหลักกับตัวตรวจ (cross-check) ห่าง ≥25% → reconciliation table ทดสอบทั้งสองทิศ **ก่อน**สรุปผล (หลักเดียวกับ Multi-Segment ข้อ 3) — ตัวตรวจต้องรายงานเป็นตัวเลขทุกรายงาน ไม่ใช่แค่ระบุชื่อวิธี
 - **Morgan:** ไม่มีการจัดประเภท / ใช้วิธีหลักไม่ตรงประเภทโดยไม่อธิบาย = `RULE_VIOLATION`
+
+**เกณฑ์จัดประเภท + เหตุผลของวิธี (`TRIAL` — review 2026-12-31)**
+Atlas จัดประเภทด้วย GICS ก่อน แล้วใช้เกณฑ์ตัวเลขเมื่อ GICS แยกไม่ออก — บันทึกตัวเลข + URL ใน Data Package
+
+| ประเภท | ตัวกรองแรก | เกณฑ์ตัวเลข | ทำไมวิธีหลักเหมาะ |
+|---|---|---|---|
+| ธนาคาร / ประกัน | GICS Banks, Insurance | — | หนี้คือวัตถุดิบของธุรกิจ ไม่ใช่ financing → FCFF/WACC ไม่มีความหมาย · book value ผูกกับ regulatory capital |
+| REIT | GICS REITs | — | ต้องจ่าย ≥90% ของกำไร · ค่าเสื่อมทางบัญชีไม่สะท้อนมูลค่าอสังหา → AFFO/NAV ตรงกว่า |
+| Utility (regulated) | GICS Utilities | ≥50% revenue จาก rate-regulated operations | ผลตอบแทนถูกกำหนดโดย regulator (allowed ROE × rate base) → การเติบโตคาดได้จาก rate base |
+| หุ้นลงทุนหนัก | — | PV(TV)/EV > 70% (มีอยู่แล้ว) | มูลค่าส่วนใหญ่อยู่ใน terminal → DCF เปราะต่อ TGR/margin → ต้องมี multiples ถ่วง |
+| Software / SaaS โตเร็ว | GICS Software | recurring/subscription ≥60% revenue **และ** growth >15% YoY | SBC + deferred revenue บิด FCF → ต้องคุม cash-flow definition (DCF Cash Flow Consistency Rule) |
+| Cyclical | GICS Semis, Materials, Industrials, Energy, Autos | EBIT peak→trough ร่วง ≥30% ในวัฏจักรล่าสุด (≤10 ปี) **หรือ** CV ของ EBIT margin 10 ปี ≥0.3 | ปีเดียวไม่แทน earnings power → ต้องใช้ mid-cycle |
+| Biotech / pharma | GICS Biotech, Pharma | rNPV pipeline (ยังไม่อนุมัติ) >50% ของ EV → rNPV เป็นหลัก · <50% → DCF ส่วนที่มีกำไรเป็นหลัก | กระแสเงินขึ้นกับผลทดลองแบบ binary → ต้องคูณด้วยโอกาสผ่านแต่ละ phase |
+| Holding / conglomerate | — | ≥3 segment ไม่เกี่ยวข้องกัน แต่ละ ≥15% ของ revenue หรือ EV | แต่ละธุรกิจมี risk/growth ต่างกัน → WACC/multiple เดียวบิดมูลค่า |
+| AI / Infra build-out | — | เกณฑ์ lane เดิม 3 ข้อ | (ตาม lane) |
+| ธุรกิจทั่วไป | — | ไม่เข้าประเภทใดข้างบน (default) | FCF สม่ำเสมอ → DCF ตรงที่สุด |
+
+- **ตัวเลขเกณฑ์เป็นค่าตั้งต้น ยังไม่ calibrate** — ก่อนใช้จริง Vera รันย้อนกับหุ้นที่วิเคราะห์เต็มแล้ว (แบบ lane AI/Infra calibration `faa04d2`) ดูว่าไม่มีหุ้นเข้า 0 ประเภทหรือ ≥3 ประเภทผิดปกติ · ผล calibration ไม่นับเป็น trial data
+- แต่ละรายงานไม่ต้องเขียนเหตุผลระดับประเภทซ้ำ — ตอบแค่ "หุ้นนี้เข้าเกณฑ์ประเภทนั้นจริงไหม" (ตัวเลข + URL)
+- **Morgan:** จัดประเภทโดยไม่มีตัวเลขตามเกณฑ์ = `RULE_VIOLATION`
 
 ### MOS Threshold แยกตาม Bucket (บังคับ — ใช้แทนกฎ MOS 20% เดิม)
 | Bucket | เกณฑ์ BUY | เหตุผล |
@@ -896,6 +947,19 @@ Leo เพิ่ม object เข้า `REPORTS` array — รวม `fullConte
    - **Near-miss log (คงเดิม):** ทุก analysis ที่ conviction 6.0–6.4 (Growth) หรือ 6.5–6.9 (Value) **พร้อม MOS ผ่าน** → Vera บันทึกแยก + track 6-month realized outcome สำหรับ rolling-8Q review
    - **Funnel Diagnostic Trigger (แก้):** **Fast-track → Deploy rate < 20%** ใน RISK-ON **ติดกัน 2 ไตรมาส** (เดิมใช้ overall deploy rate < 10%) → mandatory diagnostic: (a) ตลาดแพงจริง? [S&P fwd P/E percentile] (b) scout screen คัดผิด? [% ของ fast-track ที่ราคาอยู่ใน 20% ของ 52W high] (c) gate ตึงเกิน? [near-miss + learning-queue realized outcomes] → flag ให้ Charlie + CIO พร้อมข้อมูล 3 ข้อนี้
    - **Trial review 2026-12-31:** Vera + Charlie ทบทวน (a) fast-track → deploy rate (b) learning-queue names ที่ "น่าจะ fast-track" กี่ตัว (c) false-negative จริงกี่ตัว → ตัดสิน lock / modify / revert Filter D/E
+
+7. **Method-Level Calibration (`TRIAL` — review 2026-12-31, log-only):**
+
+   | กลุ่มวิธี | # Analyses | FV drift (FV re-verify ถัดไป vs FV เดิม) | % ที่ FV ตกนอก Street PT range (ทิศไหน) | Realized price vs FV (6mo / 12mo) |
+   |---|---|---|---|---|
+   | DCF ล้วน | | | | |
+   | DCF + multiples (VS2 ชั้น 2) | | | | |
+   | วิธีอื่น (P/B, rNPV, DDM, SOTP, AFFO) | | | | |
+
+   - รวม 3 กลุ่ม (ไม่แยก 10 ประเภท — sample ปัจจุบัน ~30 analyses แบ่ง 10 ประเภทเหลือ 2–3/กลุ่ม ใช้สรุปไม่ได้)
+   - **ห้ามใช้ตัดสินเปลี่ยนวิธี** จนกว่าแต่ละกลุ่มมี **n ≥ 10 ที่ผ่าน 12 เดือนแล้ว**
+   - หลัง n ≥ 10: กลุ่มใด error สูงกว่าค่าเฉลี่ยติดกัน 4 ไตรมาส → review วิธีของกลุ่มนั้น (ไม่ต้องรอ 8Q เพราะเป็น methodology ไม่ใช่ gate)
+   - Realized price เป็นสัญญาณประกอบเท่านั้น — ตลาดตั้งราคาผิดได้นานเกิน 12 เดือน · FV drift + Street-range เป็นตัวชี้วัดที่ไม่ขึ้นกับตลาด
 
 ### Pre-Commitment Trigger Check (อัตโนมัติ — ทุกรายไตรมาส)
 - Rolling 4Q alpha < 0 → flag review ให้ Charlie + CIO ทันที
