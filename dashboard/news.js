@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-03 11:30";
+const NEWS_LAST_UPDATED = "2026-10-12 07:30";
 
 const NEWS = [
+
+  // ── 2026-10-12 (Atlas scan 2026-10-12, Portfolio Review Mode 3 cron cycle — scan covers 2026-10-03 to 2026-10-12) ──
+  {
+    date: "2026-10-05", category: "DEAL",
+    headline: "🟢 ADSK Autodesk +3.6% premarket (continued rally +10.5% ใน 7 วัน) — Schneider Electric ซื้อ PTC (คู่แข่งตรง) มูลค่า $22.6B พรีเมียม 42.3%, ตลาด re-rate ทั้งกลุ่ม engineering/industrial software",
+    summary: "Schneider Electric ประกาศ (5 ต.ค.) เข้าซื้อ PTC Inc. (คู่แข่งตรงของ Autodesk ในตลาด engineering/PLM software) แบบ all-cash มูลค่า $22.6 พันล้าน ที่ราคาพรีเมียม 42.3% เหนือราคาตลาดก่อนประกาศ — ดีลขนาดใหญ่ระดับนี้ในกลุ่ม engineering/industrial software ทำให้นักลงทุนกลับมา re-rate มูลค่าของ Autodesk ในฐานะ comparable asset ทันที หุ้น ADSK ปรับขึ้น +3.6% ในช่วง premarket วันเดียวกัน และต่อเนื่องเป็น momentum รวม 7 วันที่ +10.55% ต่อเนื่องถึง 9 ต.ค. (ปิดที่ $235.35). บริบทเสริม: Autodesk ประกาศ (6 ต.ค.) แต่งตั้ง Diana Colella (ผู้บริหารในองค์กรมานาน) เป็นหัวหน้าธุรกิจ architecture/engineering/construction (AEC) คนใหม่ เพื่อผลักดัน Forma industry cloud + AI strategy ต่อเนื่อง — เป็น business-unit leadership change ไม่ใช่ CEO/CFO exit จึงไม่เข้าเกณฑ์ Bear Flip #5 (management exit) แต่เสริม narrative ว่า ADSK กำลังพยายามปรับ AI story จาก experimentation สู่ core strategy. Simply Wall St ประเมิน 12 นักลงทุนมองว่า ADSK undervalued ~37% (fair value framework $370 เทียบราคาปัจจุบัน) — สอดคล้องกับทิศทางบวกของ PTC-deal-driven re-rating. นัยพอร์ต: ADSK เป็น 1 ใน 5 OPEN positions (ถือ 2.4sh, weight ~5.5%) และกำลังมี Max Consultation Rule flag ค้างอยู่ (MOS ติดลบต่อเนื่องหลายรอบตั้งแต่ 10-07) — การรีราคาครั้งนี้เป็นสาเหตุหลักที่ดันราคา ADSK ขึ้นต่อเนื่องจน MOS ยิ่งติดลบลึกขึ้น (ราคาวิ่งขึ้นเร็วกว่า FV ที่ยังไม่เปลี่ยน) ไม่ใช่ fundamental deterioration ของ ADSK เอง แต่เป็น sector re-rating จาก M&A ของคู่แข่ง — ข้อมูลสำคัญสำหรับ Charlie consultation รอบถัดไป.",
+    impact: "POSITIVE", tickers: ["ADSK"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/autodesk-adsk-stock-know-222700933.html",
+  },
 
   // ── 2026-10-03 (Atlas scan 2026-10-03, manual re-run replacing failed 07:00 cron) ──
   {

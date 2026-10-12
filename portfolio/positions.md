@@ -1297,3 +1297,62 @@ No stop breach. No position within 10% of stop.
 No trade this session. Max Consultation Rule not triggered (no BUY/SELL/TRIM proposed).
 
 *Max — 2026-10-05 | Portfolio Review Mode 3*
+
+## 📊 Portfolio Review — 2026-10-12 (Mode 3, cron)
+
+**Full re-mark to Oct 9 2026 close (Friday)** — first new trading-day print since 10-07/10-08 (weekend Oct10/11 non-trading), no trades executed.
+
+### Prices (multi-source cross-checked, tight convergence every ticker)
+| Ticker | Price | Sources | Day Move |
+|---|---|---|---|
+| ADBE | $242.27 | Yahoo Finance + Forbes + MarketBeat (exact match) | +0.51% |
+| NOW  | $140.86 | Yahoo Finance ×3 pages (exact match) | +0.79% |
+| CRM  | $229.13 | Yahoo Finance + CNBC + CNN (exact match; MarketBeat $228.95, 0.08% diff, majority used) | +0.58% |
+| REGN | $746.54 | Yahoo Finance + Forbes + Morningstar (exact match) | +0.94% |
+| ADSK | $235.35 | Yahoo Finance + Forbes + stockanalysis.com (exact match) | +0.75% |
+| S&P 500 | 7,811.54 | Yahoo Finance ^GSPC (cross-check: AP/Dow Jones recap "S&P added 46 points to finish near 7,812") | +0.59% |
+
+Broad Friday relief rally recovering Thursday's (10/8) AI-stock-led selloff — all 5 OPEN positions and the S&P 500 gained together, no idiosyncratic single-name catalyst beyond the already-identified ADSK/PTC-deal re-rating momentum (see below).
+
+### P&L / MOS / Weight
+| Ticker | Shares | Cost Basis | Mkt Value | Return% | Blended FV | MOS% | Stop | StopDist% | Weight% |
+|---|---|---|---|---|---|---|---|---|---|
+| ADBE | 4 | $988.10 | $969.08 | -1.93% | $369.00 | +34.35% | $185.00 | 23.64% | 9.44% |
+| NOW | 1 | $89.47 | $140.86 | +57.42% | $125.65 | -12.10% | $93.00 | 33.98% | 1.37% |
+| CRM | 3 | $543.00 | $687.39 | +26.60% | $345.77 | +33.74% | $144.80 | 36.81% | 6.70% |
+| REGN | 0.42 | $252.84 | $313.55 | +24.01% | $889.00 | +16.03% | $482.00 | 35.43% | 3.06% |
+| ADSK | 2.4 | $476.23 | $564.84 | +18.61% | $221.79 | -6.12% | $158.74 | 32.55% | 5.50% |
+
+**Totals:** Invested $2,675.72 · Cash $7,587.23 (73.93%) · Total Value **$10,262.95** · Total Return **+2.63%** · S&P 500 Return **+5.58%** (7,398.93 → 7,811.54) · **Alpha -2.95%** (narrowed slightly from -3.41% 10-08).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,584.07 × 3.8%/365 × 4 days (10-08→10-12, includes weekend) = +$3.16 → $7,587.23.
+
+### 🛑 Stop Loss Check
+No breaches. ADBE narrowest stopDist at 23.64%, still comfortable. All other positions ≥32%.
+
+### 🟠 Max Consultation Rule — ADSK STRONG SELL, now overdue
+ADSK MOS deepened further negative to **-6.12%** (from -6.10% on 10-08) — this is the 3rd-4th consecutive session with negative MOS, continuing the explicit no-further-exemption STRONG SELL condition that first fired 2026-10-07. **The Max×Charlie consultation required by CLAUDE.md's Max Consultation Rule has still not actually taken place across 3 Review Mode sessions (10-07, 10-08, 10-12)** — this review mode itself takes no trade action by design, but the consultation is now materially overdue and should happen before being carried again.
+
+New context found this session: **Schneider Electric's $22.6B acquisition of PTC** (ADSK's direct peer in engineering/PLM software, 42.3% premium, announced 2026-10-05) triggered a sector-wide re-rating that is a concrete, non-fundamental explanation for ADSK's recent price strength pushing MOS further negative — not a deterioration in ADSK's own fundamentals. Thesis intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation criteria fired. Stop not at risk (stopDist 32.55%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 31d, not stale | N/A | -3.9% vs $252.23 (09-11) | Not re-checked this session, no new PT data | 0/5 |
+| NOW | No new earnings | FV 49d, not stale (<90d) | N/A | small vs 08-24 reference | Not re-checked, no new PT data | 0/5 |
+| CRM | No new earnings | FV 31d, not stale | N/A | -7.5% vs $247.72 (09-11) | Not re-checked, no new PT data | 0/5 |
+| REGN | No new earnings | FV 31d, not stale | N/A | -4.5% vs $781.49 (09-11) | Not re-checked, no new PT data | 0/5 |
+| ADSK | No new earnings | FV 30d, not stale | N/A | +10.8% vs $212.40 (09-12) | Not re-checked, no new PT data | 0/5 |
+
+**0/5 formal triggers fire this session.** All FVs are 28-49 days old, well under the 90-day threshold.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime RISK-ON (Atlas 2026-09-25 re-call) is now **17 days old**. Not formally overdue by any fixed calendar rule, but getting dated relative to the ~2-3 week cadence seen earlier this quarter — flagged for Atlas to consider a fresh re-call soon. Does not block this update.
+
+### 📰 Atlas News Scan (2026-10-03 → 2026-10-12, all 5 OPEN tickers + Big 10 watchlist)
+**1 NEW HIGH-IMPACT item** written to `dashboard/news.js`:
+- **ADSK** — Schneider Electric's $22.6B acquisition of PTC (ADSK's direct peer, 42.3% premium, announced 10-05) triggered a sector-wide re-rating; ADSK +3.6% premarket, +10.55% over 7 days. Directly relevant to the ADSK MOS/Max Consultation item above.
+
+Assessed ROUTINE (not written to news.js): ADBE CEO transition/NHL partnership (already logged), CRM Dreamforce/Listen Labs AI announcements (strategic-fit, not material vs CRM scale — consistent with prior 09-29 assessment), REGN ubamatamab Phase 1/2 ovarian cancer data (early-stage pipeline readout, not FDA approval), NOW Q3 2026 earnings date set for Oct 28 (future catalyst, not news itself), Big 10 mega-cap moves (NVDA approaching $6T, OpenAI-revenue-shortfall-driven Oct 8 AI selloff already reflected in broad market price action, Constellation Energy–Google PPA moved CEG not GOOGL).
+
+---
