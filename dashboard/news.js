@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-12 07:30";
+const NEWS_LAST_UPDATED = "2026-10-13 07:30";
 
 const NEWS = [
+
+  // ── 2026-10-13 (Atlas scan 2026-10-13, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-12", category: "ANALYST",
+    headline: "🔴 ADBE Adobe -1.70% $238.14 — Wells Fargo DOUBLE DOWNGRADE (Overweight→Underweight), PT cut $270→$225 (-16.7%)",
+    summary: "Wells Fargo analyst Michael Turrin downgraded Adobe two notches from Overweight to Underweight on 2026-10-12, cutting the price target 17% to $225 from $270. The firm's model estimates organic Net New ARR (NNARR) declined more than 40% in Q3, and argues current guidance implies Q4 net-new must nearly double to hit full-year numbers — a bar the firm views as especially difficult given recent management commentary deferring any core-creative price increase to prioritize a freemium push in an increasingly competitive environment. Wells Fargo also flagged the ongoing CEO transition (Anil Chakravarthy becomes President & CEO effective 2026-12-01) and CFO vacancy as execution risk, and cut its FY2027 ARR growth estimate to ~7% (below the Street's >8% consensus). Adobe carries a consensus Hold rating (6 Buy / 13 Hold / 5 Sell over 3 months), average Street PT $263.59 (+8.8% upside from current levels) — this downgrade is a clear outlier on the bear side. Stock reaction was modest (-1.70% day) relative to the size of the rating/PT move. นัยพอร์ต: ADBE เป็น 1 ใน 5 OPEN positions (ถือ 4sh, weight ~9.3%) — นี่คือ Street divergence ที่มีนัยสำคัญกับ Blended FV ภายในทีม ($369, MOS +35.46%) แม้ยังไม่มี Bear Flip/Thesis Invalidation ใดๆ ยิง ควรพิจารณาเป็น input สำหรับรอบ FV re-verify ถัดไป ไม่ใช่สัญญาณ sell ทันที.",
+    impact: "NEGATIVE", tickers: ["ADBE"],
+    url: "https://markets.businessinsider.com/news/stocks/time-to-sell-says-wells-fargo-as-it-downgrades-adobe-stock-and-cuts-price-target-by-17-1036618127",
+  },
+  {
+    date: "2026-10-12", category: "ANALYST",
+    headline: "🟢 CRM Salesforce +2.09% $233.92 — Bank of America DOUBLE UPGRADE (Underperform→Buy), PT raised $160→$285 (+78%); same day acquires AI startup Loops",
+    summary: "Bank of America analyst Tal Liani upgraded Salesforce two notches from Underperform to Buy on 2026-10-12, raising the price target 78% to $285 from $160 — reversing BofA's bearish view held since May 2026. The thesis flip: Liani now argues AI is more likely to deepen enterprise reliance on CRM's platform (autonomous agents still need accurate corporate data, permissions, and workflow context that CRM houses) rather than disrupt or disintermediate it, citing improving net-new annual order value growth and accelerating Slack performance supporting a return to faster growth. Separately and same day, Salesforce announced a definitive agreement to acquire AI-powered analytics startup Loops, to be integrated into Tableau to help customers identify performance drivers — expected to close early November 2026 (undisclosed deal size). Of 51 analysts covering CRM, 36 now have a Buy/Strong Buy rating. นัยพอร์ต: CRM เป็น 1 ใน 5 OPEN positions (ถือ 3sh, weight ~6.8%) — ข่าวบวกสองต่อ (major upgrade + M&A bolt-on) เสริม thesis ที่ทีมถืออยู่แล้ว (MOS +32.35% บน Blended FV $345.77), ไม่กระทบ recommendation ที่เป็น HOLD อยู่แล้ว.",
+    impact: "POSITIVE", tickers: ["CRM"],
+    url: "https://www.cnbc.com/2026/10/12/salesforce-to-punch-into-the-green-on-ai-pivot-bank-of-america-says-.html",
+  },
 
   // ── 2026-10-12 (Atlas scan 2026-10-12, Portfolio Review Mode 3 cron cycle — scan covers 2026-10-03 to 2026-10-12) ──
   {
