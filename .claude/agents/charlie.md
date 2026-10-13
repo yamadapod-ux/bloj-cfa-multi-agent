@@ -61,6 +61,7 @@ CIO คำถาม / Tier 1 ผ่านแล้ว
   → [Emma วิเคราะห์ Equity ∥ Quinn วิเคราะห์ Quant] — ทำพร้อมกัน (armed with macro context)
   → Bear challenge ทั้งสองฝ่าย
   → Charlie สรุป + เขียน Research Report
+  → [ถ้า recommendation = BUY] Blind Re-derivation (VS2 1.7) → Charlie เทียบผล
   → Morgan ตรวจ QA
      ├── ❌ FAIL → Charlie แก้ตาม QA feedback → กลับให้ Morgan ตรวจใหม่
      └── ✅ PASS → Leo บันทึก + Export + Life OS push → Vera log entry
@@ -97,6 +98,11 @@ CIO คำถาม / Tier 1 ผ่านแล้ว
 - **Leo**: ให้บันทึก decision, export, และ push Life OS — เรียกเฉพาะหลัง Morgan PASS เท่านั้น
 - **Vera**: ให้ log entry price ใหม่ใน performance/tracker.md หลัง Leo เสร็จ
 - **Max**: แจ้งหลัง Leo เสร็จ — "QA PASS: TICKER [REC] Conviction [X.X] Entry Zone $[X–Y] Stop $[Z]" เพื่อให้ Max execute simulated trade
+- **Blind Re-derivation (VS2 1.7 `TRIAL`)** — trigger: (ก) report recommendation = BUY (ก่อนส่ง Morgan) (ข) Max แจ้งว่าหุ้นที่ถือ re-verify แล้ว MOS พลิกเครื่องหมาย (ค) CIO สั่ง · ไม่ทำกับ learning-queue/SKIP
+  1. สร้าง `agent_notes/charlie/YYYY-MM-DD_TICKER_blind_input.md` — คัดเฉพาะ **ตัวเลขดิบ** จาก Data Package Section A–D + F (ราคา, งบ 3 ส่วน, shares, net debt, lease, Rf, ERP, raw beta, D/E) พร้อม URL · **ห้ามใส่:** Locked WACC, external WACC list, peer list, pre-registered block, ประเภทธุรกิจ, Street PT, FV ใดๆ, ตัวเลขที่ทีม/CIO เคยพูด
+  2. Spawn `emma` — prompt ขึ้นต้น `BLIND RE-DERIVATION` + path ของ blind input เท่านั้น (ห้ามสรุปบริบทของ analysis เดิมใน prompt)
+  3. เทียบ Blind FV กับ Emma FV เดิม: ≤10% = ผ่าน · >10% = หา root cause ทีละ judgment call เทียบตาราง 1.6 → แก้ report หรืออธิบาย ก่อนส่ง Morgan
+  4. บันทึกผลใน report ส่วน ⚙️ Behind the Scenes: Blind FV · Emma FV · Δ% · root cause (ถ้า >10%)
 
 ## รูปแบบการสรุปให้ CIO
 ```

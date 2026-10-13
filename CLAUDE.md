@@ -842,6 +842,7 @@ Atlas จัดประเภทด้วย GICS ก่อน แล้วใ�
 - [ ] Macro Regime check: current regime + position size multiplier applied correctly
 - [ ] Stop loss within IPS bounds (-20% per position rule)
 - [ ] Position size ≤ 10%, ≥ 3% (ถ้า deploy)
+- [ ] VS2 validation (`TRIAL`): ประเภทธุรกิจ + pre-registration (1.5) + judgment-call sensitivity (1.6) + blind re-derivation (1.7, เฉพาะ BUY) — รายละเอียดใน `.claude/agents/qa.md` Step 2.6
 
 ### Source Annotation (ต้อง PASS)
 - [ ] Every financial number has source citation (URL หรือ "SEC 10-Q YYYY-MM")

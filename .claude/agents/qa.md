@@ -171,6 +171,10 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 - [ ] **VS2 ชั้น 1** (ดู CLAUDE.md § มาตรฐานประเมินมูลค่า ฉบับ 2): WACC ชุดเดียว (Blume + bottom-up beta, Rf/ERP วันปัจจุบัน, external ≥3 แหล่งพร้อม stale-rate flag) · Non-Operating Asset Bridge (filing + ภาษี + ตัดกำไรตีราคาออกจาก NOPAT/EPS) · DCF build (fade ถ้าปีสุดท้ายโต > TGR+3pp, terminal RONIC, lease ไม่หาย/ไม่ซ้ำ, net debt + share count ชุดเดียว) — ไม่ครบ = `RULE_VIOLATION` · non-op ≥5% mcap ไม่ถูกนับ = `DATA_ERROR`
 - [ ] **VS2 ข้อ 1.4 FV ปีที่ 5:** Emma/Quinn/Bear มี FV₅ จากโมเดลเดียวกัน + consistency check (Equity₀×(1+COE)⁵ ห่าง >10% ต้องอธิบาย) + Blended FV₅ + ผลตอบแทนคาด/ปี เทียบ S&P (มี source) — ไม่ครบ = `RULE_VIOLATION`
 - [ ] **VS2 ชั้น 2** (`TRIAL`): ถ้า PV(TV)/EV > 70% → Emma มี multiples (forward EV/EBIT + core P/E) · peer เลือกก่อนดูผล · ปรับ D&A ถ้า capex/D&A > 2× · ห่าง ≥25% reconcile สองทิศก่อนถ่วง · น้ำหนักตามตาราง — ไม่ครบ = `RULE_VIOLATION`
+- [ ] **VS2 ประเภทธุรกิจ** (`TRIAL`): Atlas จัดประเภทด้วย GICS + เกณฑ์ตัวเลข (มี URL) ก่อน Emma เริ่ม · วิธีหลักตรงประเภท · ตัวตรวจรายงานเป็นตัวเลข · วิธีหลัก vs ตัวตรวจห่าง ≥25% มี reconcile สองทิศ — ไม่ครบ = `RULE_VIOLATION`
+- [ ] **VS2 ข้อ 1.5 Pre-registration** (`TRIAL`): Data Package มี block `🔒 Pre-registered Judgment Calls` · ค่าที่ใช้จริงตรงกับที่ล็อก หรือมีบันทึกการเปลี่ยน (อะไร / ก่อน-หลังเห็นผล / FV ก่อน-หลัง) — ไม่ครบ = `RULE_VIOLATION`
+- [ ] **VS2 ข้อ 1.6 Judgment-Call Sensitivity** (`TRIAL`): Emma มีตาราง · ครอบคลุมทุกจุดที่ pre-register · จุดที่กระทบ >15% มี source ≥2 — ไม่ครบ = `RULE_VIOLATION`
+- [ ] **VS2 ข้อ 1.7 Blind Re-derivation** (`TRIAL` — เฉพาะ report ที่ recommendation = BUY): มีไฟล์ `agent_notes/emma/*_TICKER_blind.md` ที่ปิดท้ายครบ · blind input ไม่มี Locked WACC/peer/FV/Street PT ปน · Δ ≤10% หรือมี root cause ใน ⚙️ Behind the Scenes — ไม่มี = `RULE_VIOLATION` · blind input ปนข้อมูลต้องห้าม = `RULE_VIOLATION` (ต้องรันใหม่)
 
 **2.6C — Atlas Macro Integration:**
 - [ ] Atlas บอก market regime อะไร? Emma/Quinn สะท้อนใน scenario assumption ไหม?

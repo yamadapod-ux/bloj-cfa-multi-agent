@@ -453,6 +453,26 @@ WebSearch: "[TICKER] [ข้อมูล] site:macrotrends.net"
 
 **VS2 Data Package (บังคับ):** WACC package (Rf, raw beta ≥2 sources, Blume, bottom-up beta + Damodaran URL, ERP, D/E, external WACC ≥3 แหล่ง + stale-rate flag) → Locked base WACC · Non-Operating Asset table · net debt + lease + diluted shares (วันเดียวกับงบล่าสุด) · segment revenue ที่เป็นตัวเลขรายงานจริง (ห้าม ESTIMATE)
 
+**VS2 Business-Type Classification (บังคับ `TRIAL` — ดู CLAUDE.md § เกณฑ์จัดประเภท + เหตุผลของวิธี):** เขียนไว้ต้น Data Package ถัดจาก Lane Classification
+- จัดด้วย GICS ก่อน → ใช้เกณฑ์ตัวเลขเมื่อ GICS แยกไม่ออก (SaaS: recurring ≥60% + growth >15% · Cyclical: EBIT peak→trough ≥30% หรือ CV margin ≥0.3 · Biotech: rNPV pipeline >50% EV · Holding: ≥3 segment ≥15% · Utility: regulated ≥50%) — ทุกตัวเลขมี URL
+- ระบุ: ประเภทหลัก · ประเภทรอง (ถ้ามี) · วิธีหลัก + ตัวตรวจ ตามตาราง "วิธีคำนวณตามประเภทหุ้น"
+- จัดจาก business/financial data เท่านั้น ก่อน Emma เริ่ม — ล็อกตลอด pipeline (หลักเดียวกับ Lane Classification)
+- ข้อมูลไม่พอจัด → `PENDING` + ระบุว่าขาดอะไร (ห้ามเดา)
+
+**VS2 Pre-registration (บังคับ `TRIAL` — ดู CLAUDE.md ข้อ 1.5):** block `🔒 Pre-registered Judgment Calls` ใน Data Package — ล็อกก่อนส่งให้ Emma/Quinn/Bear:
+
+| Judgment call | ค่าที่ล็อก | เหตุผล/source |
+|---|---|---|
+| แหล่ง WACC ภายนอกที่นับ (รายชื่อ) | | |
+| เกณฑ์ stale-rate (bps) | | |
+| วิธีเลือกเมื่อ beta 2 วิธีห่าง >150bps | | |
+| Peer list (เลือกก่อนดู multiple ตาม B-V1 guideline) | | |
+| ประเภทธุรกิจ | | |
+| ความยาว explicit forecast + มี fade หรือไม่ | | |
+
+- Atlas ห้ามคำนวณ/ดู FV ใดๆ ก่อนกรอก block นี้เสร็จ
+- **Raw-data completeness (สำหรับ 1.7):** Section A–D + F ต้องมีตัวเลขดิบครบพอให้คนอื่นคำนวณ WACC + DCF ใหม่เองได้โดยไม่ต้องเห็น Locked WACC/peer list (Rf, ERP + URL, raw beta, D/E, งบ 3 ส่วน, shares, net debt, lease)
+
 ---
 
 ## I. Data Quality Notes

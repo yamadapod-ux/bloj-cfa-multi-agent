@@ -281,6 +281,18 @@ Calibration Error per Analyst:
 
 ---
 
+## 🧪 Method-Level Calibration (`TRIAL` — log-only, ดู CLAUDE.md Quarterly Output ข้อ 7)
+| กลุ่มวิธี | # Analyses | FV drift (FV re-verify ถัดไป vs FV เดิม) | % FV ตกนอก Street PT range (ทิศ) | Realized vs FV (6mo / 12mo) |
+|---|---|---|---|---|
+| DCF ล้วน | | | | |
+| DCF + multiples (VS2 ชั้น 2) | | | | |
+| วิธีอื่น (P/B, rNPV, DDM, SOTP, AFFO) | | | | |
+- จัดกลุ่มจาก report: ชั้น 2 trigger ไหม + ประเภทธุรกิจที่ Atlas จัด · FV drift ดึงจาก Re-Analysis Log ใน `portfolio/decisions.md`
+- **ห้ามสรุปว่าวิธีไหนดี/แย่** จนกว่าแต่ละกลุ่ม n ≥ 10 ที่ผ่าน 12 เดือน — ก่อนนั้นเขียน "n = X — ยังไม่มีนัยสำคัญ"
+- Blind Re-derivation log: # ครั้ง · Δ% แต่ละครั้ง · กี่ครั้ง >10% + root cause
+
+---
+
 ## 📚 Lessons for Next Quarter
 1. [บทเรียน 1 — ข้อควรปรับ]
 2. [บทเรียน 2]

@@ -267,6 +267,8 @@ Max เป็นเจ้าของการเช็คนี้แต่ผ�
 
 **VS2 (ตั้งแต่ 2026-10-08):** ตั้งแต่ 2026-10-08 ทุก re-verify ใช้ VS2 — ก่อนเสนอผล แจ้ง CIO ว่า FV อาจขึ้นหรือลงจากการเปลี่ยนมาตรฐาน (ไม่ใช่ข้อมูลธุรกิจใหม่) · MOS พลิกลบจาก VS2 → compliance-fix precedent
 
+**VS2 1.7 (`TRIAL`):** re-verify แล้ว MOS **พลิกเครื่องหมาย** (บวก↔ลบ) → แจ้ง Charlie dispatch Blind Re-derivation **ก่อน**เสนอ sell/trim/add ใดๆ — ระบุสถานะใน 🔍 Re-Analysis Trigger Check block (`1.7 pending` / `1.7 done Δ X%`)
+
 | # | เงื่อนไข | Source | Action ถ้า trigger |
 |---|---------|--------|-------------------|
 | 1 | Earnings ใหม่ออกของ position ที่ถือ | `dashboard/news.js` (Atlas scan) | Flag re-verify FV ก่อนรอบ review ถัดไป |
@@ -453,6 +455,7 @@ WebFetch: https://finance.yahoo.com/quote/[TICKER]/
 
 ```
 ตรวจตามลำดับ:
+0. VS2 1.7 Blind Re-derivation มีผลใน report (Δ ≤10% หรือมี root cause)?  → ถ้าไม่มี: NO BUY — แจ้ง Charlie
 1. Conviction ≥ 6.0?       → ถ้าไม่: NO BUY
 2. Cash ≥ 10%?             → ถ้าไม่: NO BUY
 3. Sector ≤ 25%?           → ถ้าไม่: NO BUY
