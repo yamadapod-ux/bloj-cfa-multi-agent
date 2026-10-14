@@ -1,5 +1,53 @@
 # Simulated Portfolio — บลจ. CFA
 
+> **🟡 UPDATE 2026-10-14 (Portfolio Review Mode 3):** Full re-mark to Oct 13 2026 close (bank-earnings day). All 5 positions 2-source cross-checked (some diffs slightly >0.5%, averaged and both noted per protocol). Total $10,263.54→$10,260.38 (-0.03%). Alpha -2.86%→-2.81%. No stop breach, 0/5 Re-Analysis triggers. ADSK MOS improved to -4.20% (from -5.30%) but still negative — STRONG SELL/Max Consultation Rule item now 5 consecutive sessions overdue (10-07, 10-08, 10-12, 10-13, 10-14), no action taken by Review Mode (design). 1 HIGH-IMPACT news item: JPM Q3 earnings miss (Big 10 watchlist, no OPEN position). Full detail below.
+
+## 📊 Portfolio Review — 2026-10-14 (Mode 3 — Full Re-Mark, Oct 13 2026 Close) — Bank-Earnings Day / Chip-Sector Selloff Spillover
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, 19 days old — getting dated, worth a fresh re-call soon, not yet overdue by the 30-day backstop). First new US trading-day close since Oct 12 (Columbus Day). All 5 OPEN positions **re-priced** — all 5 2-source cross-checked (NOW/CRM/REGN diffs 0.02-0.49%, ADSK diff 0.58% slightly over the 0.5% threshold, averaged and both sources noted per protocol). **Session dominated by a broad chip-sector selloff** (AI-infrastructure-financing-cost worries after Broadcom/Intel commentary comparing AI capex funding to a "casino," plus China's CXMT memory-chip advance) weighing on the Nasdaq, while Q3 bank-earnings day (JPM, GS, WFC, C) drove a parallel financials-vs-tech rotation. Our software/healthcare book was mostly softer except CRM, which extended its 10-12 Bank of America-upgrade rally. **No trades this session.**
+
+| Ticker | Price (Oct 13 close) | Change vs Oct 12 | Return % | MOS % | StopDist % | Source |
+|--------|------------------------|--------|----------|-------|------------|--------|
+| ADBE | $236.28 | -0.78% | -4.35% | +35.98% | 21.70% | Forbes + stockanalysis.com, exact match |
+| NOW | $138.60 | -1.23% | +54.90% | -10.31% 🟠 | 32.90% | Yahoo Finance $138.61 + Markets Insider/BTT $138.58, 0.02% diff, avg |
+| CRM | $238.71 | +2.05% | +31.88% | +30.96% | 39.33% | Yahoo Finance $238.16 + stockanalysis.com $239.26, 0.46% diff, avg |
+| REGN | $754.96 | -1.03% | +25.42% | +15.08% | 36.16% | Yahoo Finance $756.80 + CNN $753.12, 0.49% diff, avg |
+| ADSK | $231.10 | -1.04% | +16.46% | -4.20% 🔴🔴 | 31.32% | Perplexity Finance $231.77 + MarketBeat $230.43, 0.58% diff (slightly >0.5% threshold, both noted), avg |
+
+S&P 500 fell -0.09% to **$7,799.30** (avg of Yahoo Finance history $7,804.37 + TradingEconomics US500 $7,794.24, 0.13% diff — broad chip-sector selloff on AI-financing-cost worries weighed on the Nasdaq while bank-earnings-day rotation supported financials; both sources describe a modestly softer session overall). Total Value $10,263.54 → **$10,260.38** (-0.03%). Cash $7,588.02 → **$7,588.81** (+$0.79 Cash Yield Rule accrual, 1 day 10-13→10-14). Total Return 2.64% → **2.60%**. sp500Return 5.50%→5.41%. Alpha -2.86% → **-2.81%** (both sides softer this session, not a meaningful signal on its own).
+
+**Stop Loss check:** No breaches. ADBE narrowest at 21.70% (still comfortable, well above the 10% WATCH threshold).
+
+### 🔴🔴 ADSK — MOS improves but stays negative, Max Consultation Rule item now 5 sessions overdue (no new action)
+
+MOS -5.30% → **-4.20%** — price fell -1.04% to $231.10 as the broad chip-sector selloff (AI-financing-cost worries) spilled into software names generally, no idiosyncratic ADSK catalyst found this session. FV unchanged ($221.79, fvVerifiedDate 2026-09-12, 32 days old — still fresh, not a Re-Analysis Trigger issue). This continues the carried item first flagged 2026-10-07 — now **5 consecutive Review Mode sessions (10-07, 10-08, 10-12, 10-13, 10-14)** without an actual Max×Charlie consultation taking place, despite the Max Consultation Rule requiring consult before any trim/sell decision. Thesis otherwise intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation, stopDist 31.32% comfortable (not a stop-loss issue), T2/T3 staged adds remain paused pending the Q3 FY27 current-RPO print (Nov 2026). **This process-discipline gap should be closed before the next review cycle** — Review Mode 3 itself cannot execute the consultation (that requires a dedicated Max×Charlie session).
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-11; Big 10 bank-earnings news not relevant | FV 33d old, MOS +35.98% (positive) — no fire | No | Under 30% | Wells Fargo PT $225 gap carried from 10-12, not re-verified | 0/5 (carried watch item for next FV re-verify) |
+| NOW | No new earnings | FV 51d old, MOS -10.31% (negative) but 51d << 90d — no fire | No | Under 30% | Cantor PT $174 vs FV $125.65 gap carried, not re-verified | 0/5 (carried watch item) |
+| CRM | No new earnings; BofA upgrade momentum continuation, not an earnings report | FV 33d old, MOS +30.96% — no fire | No | Under 30% | BofA PT $285 vs internal FV $345.77 gap carried, not re-verified | 0/5 |
+| REGN | No new earnings; Q3 confirmed Oct 30 | FV 33d old, MOS +15.08% (positive) — no fire | No | Under 30% | Not re-checked | 0/5 |
+| ADSK | No new earnings; next current-RPO print Nov 2026 (Q3 FY27) | FV 32d old (<<90d), MOS -4.20% negative but age well under 90d threshold — formal Trigger #2 does NOT fire on age alone | No | Under 30% | Not re-checked | 0/5 (but see STRONG SELL/Max Consultation flag above — a separate, non-Re-Analysis-Rule trigger, carried from 10-07) |
+
+**Result: 0/5 formal Re-Analysis triggers fire on any OPEN position.** ADSK's STRONG SELL / Max Consultation Rule item remains outside the formal Re-Analysis Trigger Rule (FV is fresh, 32 days old) but is now the portfolio's most overdue process-discipline item, 5 sessions running.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 remains current (19 days old) — getting dated, a fresh re-call would be reasonable soon but is not yet overdue.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-13 07:30) — **1 NEW HIGH-IMPACT item found and written to `dashboard/news.js`:** JPMorgan Chase (JPM, Big 10 watchlist, no OPEN position) Q3 2026 earnings MISS — EPS $5.57 ($5.75 ex-securities-loss) vs ~$5.90-5.94 consensus, revenue $50.2-50.9B vs ~$51.2B consensus, Dimon cut buyback pace and flagged "economic forces shifting under the surface." Other coverage this session assessed ROUTINE: broad chip-sector selloff (NVDA/AMD/semis, AI-financing-cost worries + China CXMT memory competition) — a sector-wide sentiment move, not a single-name >4% idiosyncratic catalyst for any Big 10 or OPEN-position ticker (NVDA itself moved <1%); Goldman Sachs blowout Q3 beat and Wells Fargo/Citigroup softer results (Big 10 does not include GS/WFC/C); AAPL hitting a fresh all-time high (~$346, >$5T market cap) on a product-launch/sentiment basis, not an earnings/M&A/management event; Berkshire Hathaway Q2 13F recap (stale, already-known holdings data recirculating). No earnings, confirmed M&A, management change, 8-K, or Bear-Flip/Thesis-Invalidation-level event found for any of the 5 OPEN tickers this session.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,588.02 accrues at the money-market/T-bill proxy rate (3.8%) for 1 day (10-13→10-14): $7,588.02 × 3.8%/365 × 1 = **+$0.79**. Cash $7,588.02→**$7,588.81**. Total $10,263.54→**$10,260.38** (-0.03%). Total Return 2.64%→**2.60%**. sp500Return 5.50%→5.41%. Alpha -2.86%→**-2.81%**.
+
+### Max's Take
+
+วันนี้ตลาดเจอ broad chip-sector selloff (AI-financing-cost worries หลัง Broadcom/Intel เตือนเรื่อง capital constraint + China CXMT memory advance) กดดัน Nasdaq ขณะที่ bank-earnings day (JPM/GS/WFC/C) ดึง rotation เข้า financials — พอร์ตเราอ่อนลงเล็กน้อยตามบรรยากาศ (-0.03%) ยกเว้น CRM ที่ยังวิ่งต่อจาก BofA upgrade เมื่อวาน (+2.05%). Alpha แคบลงนิดหน่อยเป็น -2.81% — ทั้งสองฝั่งอ่อนตัวพร้อมกัน ไม่มีนัยสำคัญ. **สิ่งที่ยังต้องจัดการจริงจังที่สุดคือ ADSK — MOS ดีขึ้นเล็กน้อยเป็น -4.20% (จาก -5.30%) แต่ยังติดลบ** นี่คือ Review Mode ครั้งที่ 5 ติดต่อกัน (10-07, 10-08, 10-12, 10-13, 10-14) ที่ STRONG SELL / Max Consultation Rule item ถูก carry ต่อโดยไม่มี consultation จริงเกิดขึ้น — thesis ยัง intact (0 Bear Flip/Invalidation) ไม่ใช่เรื่องเร่งด่วนด้าน capital แต่เป็น process discipline ที่ยิ่งค้างยิ่งควรปิด. ข่าวเด่นวันนี้คือ JPM Q3 miss (EPS $5.57 vs ~$5.90 คาด, Dimon ลด buyback pace) — อยู่ใน Big 10 watchlist เท่านั้น ไม่กระทบ 5 positions ของเราโดยตรง.
+
+---
+
 > **🔴🔴 UPDATE 2026-10-13 (Portfolio Review Mode 3):** Full re-mark to Oct 12 2026 close (Columbus Day — equities open, bond market closed). All 5 positions 2-3 source cross-checked. Total $10,262.95→$10,263.54 (+0.01%). Alpha -2.95%→-2.86%. No stop breach, 0/5 Re-Analysis triggers. ADSK MOS still negative -5.30% — STRONG SELL/Max Consultation Rule item now overdue across multiple sessions (10-07, 10-08, 10-12, 10-13), no action taken by Review Mode (design). 2 HIGH-IMPACT news items: ADBE Wells Fargo double downgrade (PT -16.7%), CRM BofA double upgrade (PT +78%) + Loops AI acquisition. Full detail below.
 
 ## 📊 Portfolio Review — 2026-10-13 (Mode 3 — Full Re-Mark, Oct 12 2026 Close) — First New Trading Day Since Oct 9 (Columbus Day, Equities Open)

@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-13 07:30";
+const NEWS_LAST_UPDATED = "2026-10-14 07:30";
 
 const NEWS = [
+
+  // ── 2026-10-14 (Atlas scan 2026-10-14, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-13", category: "EARNINGS",
+    headline: "🔴 JPM JPMorgan Chase -0.86% $331.43 — Q3 2026 EPS $5.57 MISS vs $5.90-5.94 consensus, Dimon cuts buyback pace, flags 'economic forces shifting under the surface'",
+    summary: "JPMorgan Chase kicked off Q3 2026 bank-earnings season (2026-10-13) with a rare headline miss: EPS $5.57 reported ($5.75 excluding $658M of pretax investment-securities losses from the quarter's bond-market rout) vs ~$5.90-5.94 analyst consensus; net revenue $50.2-50.9B (+8% YoY) came in below the ~$51.2-51.3B consensus. Net income was $15.3B (+6% YoY), ROTCE 20%. Trading revenue rose 15% to $10.3B (slightly short of estimates) and dealmaking fees climbed 14%, but both core Wall Street divisions fell from Q2's record bar; fixed-income trading posted its first YoY decline in over two years. CFO Jeremy Barnum raised full-year 2026 net interest income guidance to ~$106.2B (from $105.5B) and gave a preliminary 2027 NII-ex-markets outlook near $107B, while flagging a sharply reduced share buyback pace this quarter and becoming more selective on credit underwriting. CEO Jamie Dimon warned that economic forces are 'shifting under the surface' even as current loan performance stays clean. Stock whipsawed intraday — down ~3-4% premarket, briefly up to $344 after the open, before fading to close -0.86% at $331.43 (after-hours flat) — the market largely read the miss as a one-off securities loss plus a capital-return signal (buyback cut) rather than core operating deterioration. Peers diverged same day: Goldman Sachs posted a blowout beat (EPS $17.01 vs $13.02 consensus), while Wells Fargo and Citigroup results were softer — a mixed start to bank earnings week (Morgan Stanley reports Wed 10/14). นัยพอร์ต: JPM อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี position ใน ADBE/NOW/CRM/REGN/ADSK) — ไม่กระทบพอร์ตโดยตรง แต่เป็น earnings miss ที่มีนัยสำคัญบน Big 10 name ตาม HIGH-IMPACT classification (earnings beat/miss).",
+    impact: "NEGATIVE", tickers: ["JPM"],
+    url: "https://www.cnbc.com/2026/10/13/bank-earnings-live-updates.html",
+  },
 
   // ── 2026-10-13 (Atlas scan 2026-10-13, Portfolio Review Mode 3 cron cycle) ──
   {
