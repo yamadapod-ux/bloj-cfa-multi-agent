@@ -98,15 +98,8 @@ tools:
 [ระบุ model และ level]
 ```
 
-## 🙈 Blind Re-derivation Mode (`TRIAL` — ดู CLAUDE.md ข้อ 1.7 · ใช้เมื่อ prompt จาก Charlie ขึ้นต้นด้วย `BLIND RE-DERIVATION`)
-
-โหมดนี้ **override** กฎ Data Package ด้านล่าง:
-- อ่าน **เฉพาะ** ไฟล์ blind input ที่ Charlie ระบุ (`agent_notes/charlie/YYYY-MM-DD_TICKER_blind_input.md`)
-- **ห้ามอ่าน:** `reports/`, `agent_notes/*/` ไฟล์อื่นของ ticker นี้, Data Package ของ Atlas, `portfolio/`, `dashboard/`, `learning-log.md`
-- **ห้าม WebSearch:** analyst price target, consensus FV, บทความ valuation, รายงานของทีม — WebSearch ได้เฉพาะข้อมูลดิบที่ input ขาด (เช่น Damodaran unlevered beta ของอุตสาหกรรม) พร้อม URL
-- คำนวณ WACC เอง (Blume + bottom-up beta ตาม VS2 1.1) · เลือก peer เอง · ทำ DCF ตาม VS2 1.3 (+ ชั้น 2 ถ้า PV(TV)/EV > 70%)
-- Output: `agent_notes/emma/YYYY-MM-DD_TICKER_blind.md` — WACC, FV ต่อหุ้น, ทุก judgment call ที่เลือก + เหตุผล · ปิดท้าย `*Emma (Blind) — YYYY-MM-DD | TICKER*`
-- ไม่ให้ conviction, ไม่ให้ recommendation
+## 🙈 Blind Re-derivation (VS2 1.7)
+ไม่ทำใน agent นี้ — รันเป็น process แยกนอก repo ผ่าน `scripts/blind/run_blind.sh` (subagent ทุกตัวเห็น CLAUDE.md จึงไม่ blind จริง — 2026-10-13) · ถ้า prompt ขึ้นต้นด้วย `BLIND RE-DERIVATION` → ตอบว่า "ต้องรันผ่าน scripts/blind/run_blind.sh" แล้วหยุด ห้ามทำงาน
 
 ## Data Package (บังคับ — อ่านก่อนวิเคราะห์ทุกครั้ง)
 

@@ -99,10 +99,16 @@ CIO คำถาม / Tier 1 ผ่านแล้ว
 - **Vera**: ให้ log entry price ใหม่ใน performance/tracker.md หลัง Leo เสร็จ
 - **Max**: แจ้งหลัง Leo เสร็จ — "QA PASS: TICKER [REC] Conviction [X.X] Entry Zone $[X–Y] Stop $[Z]" เพื่อให้ Max execute simulated trade
 - **Blind Re-derivation (VS2 1.7 `TRIAL`)** — trigger: (ก) report recommendation = BUY (ก่อนส่ง Morgan) (ข) Max แจ้งว่าหุ้นที่ถือ re-verify แล้ว MOS พลิกเครื่องหมาย (ค) CIO สั่ง · ไม่ทำกับ learning-queue/SKIP
-  1. สร้าง `agent_notes/charlie/YYYY-MM-DD_TICKER_blind_input.md` — คัดเฉพาะ **ตัวเลขดิบ** จาก Data Package Section A–D + F (ราคา, งบ 3 ส่วน, shares, net debt, lease, Rf, ERP, raw beta, D/E) พร้อม URL · **ห้ามใส่:** Locked WACC, external WACC list, peer list, pre-registered block, ประเภทธุรกิจ, Street PT, FV ใดๆ, ตัวเลขที่ทีม/CIO เคยพูด
-  2. Spawn `emma` — prompt ขึ้นต้น `BLIND RE-DERIVATION` + path ของ blind input เท่านั้น (ห้ามสรุปบริบทของ analysis เดิมใน prompt)
-  3. เทียบ Blind FV กับ Emma FV เดิม: ≤10% = ผ่าน · >10% = หา root cause ทีละ judgment call เทียบตาราง 1.6 → แก้ report หรืออธิบาย ก่อนส่ง Morgan
-  4. บันทึกผลใน report ส่วน ⚙️ Behind the Scenes: Blind FV · Emma FV · Δ% · root cause (ถ้า >10%)
+  1. เขียน `agent_notes/charlie/YYYY-MM-DD_TICKER_blind_prompt.md` = **prompt ทั้งหมดที่จะส่ง** (คำต่อคำ) ประกอบด้วย:
+     - บรรทัดแรก `BLIND RE-DERIVATION — TICKER — YYYY-MM-DD`
+     - ตัวเลขดิบจาก Data Package Section A–D + F พร้อม URL: ราคา, งบ 3 ส่วน (≥3 ปี), diluted shares, debt, lease, cash, non-operating assets (filing line item), minority/preferred, Rf (10Y), ERP (Damodaran), raw beta (≥2 sources), D/E, effective tax rate, management guidance ที่เป็นตัวเลข (capex/revenue)
+     - ตาราง Damodaran unlevered beta **≥5 industry ที่เกี่ยวข้อง** (ให้ emma-blind เลือกเอง — ห้ามระบุว่าทีมใช้ industry ไหน)
+     - **ห้ามใส่:** Locked WACC, external WACC list, peer list, `🔒 Pre-registered` block, ประเภทธุรกิจ, Street PT/consensus, FV ใดๆ ของทีม, ตัวเลขที่ทีม/CIO เคยพูด, คำว่า "ถูก/แพง" หรือทิศทางที่คาด, PV(TV)/EV ของ Emma
+  2. ส่ง Morgan ตรวจไฟล์ prompt ข้อ 1 **ก่อนรัน** (อ่านทั้งไฟล์ หารายการต้องห้าม) — ไม่ผ่าน = แก้แล้วส่งตรวจใหม่
+  3. Spawn `quinn` — "BLIND RUN ONLY: รัน `bash scripts/blind/run_blind.sh agent_notes/charlie/YYYY-MM-DD_TICKER_blind_prompt.md agent_notes/emma/YYYY-MM-DD_TICKER_blind.md` ห้ามแก้ไฟล์ prompt ห้ามแก้ output ห้ามรันซ้ำเพื่อเลือกผล — ถ้า error รายงาน error คำต่อคำแล้วหยุด" · **ห้ามใช้ Agent tool เรียก Emma หรือ agent ใดๆ มาทำ blind** (subagent เห็น CLAUDE.md)
+  4. Spawn `quinn` — "ARITHMETIC CHECK ONLY: คำนวณซ้ำด้วย Bash จาก assumption + ตาราง FCFF ในไฟล์ `agent_notes/emma/..._blind.md` ห้ามเปลี่ยน assumption ใดๆ รายงาน FV ที่คำนวณได้ + จุดที่เลขไม่ตรง" → append ผลท้ายไฟล์ blind เป็น section `## Arithmetic Check (Quinn)` · ถ้า FV ต่างเกิน 1% → ใช้ตัวเลขของ Quinn และ flag
+  5. เทียบ Blind DCF FV (หลัง arithmetic check) กับ **Emma DCF base (ก่อนถ่วง multiples ชั้น 2)**: ≤10% = ผ่าน · >10% = หา root cause ทีละ judgment call เทียบตาราง 1.6 → แก้ report หรืออธิบาย ก่อนส่ง Morgan
+  6. บันทึกใน report ⚙️ Behind the Scenes: Blind DCF FV · Emma DCF base · Δ% · root cause (ถ้า >10%) · link ไฟล์ prompt + blind
 
 ## รูปแบบการสรุปให้ CIO
 ```

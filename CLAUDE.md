@@ -717,9 +717,9 @@ Emma ทำทุกรายงาน — เปลี่ยนทีละจ�
 
 **1.7 Blind Re-derivation (`TRIAL` — review 2026-12-31)**
 - **Trigger (เฉพาะ):** (ก) ก่อน Max execute BUY จริง (ข) หุ้นที่ถืออยู่ซึ่ง re-verify แล้ว MOS พลิกเครื่องหมาย (ค) CIO สั่ง — **ไม่ทำ** กับ learning-queue / SKIP
-- Charlie dispatch Emma instance ใหม่ที่ได้ **raw data เท่านั้น** (งบการเงิน, Rf, ERP, raw beta, ราคา, shares) — **ห้าม**ส่ง WACC/peer list ที่ Atlas ตัดสินแล้ว, report เดิม, brief, Street PT หรือตัวเลขที่ทีม/CIO เคยพูด
+- รันเป็น **process `claude -p` แยก ใน temp dir นอก repo** ผ่าน `scripts/blind/run_blind.sh` (ไม่มี tool · ไม่โหลด CLAUDE.md/memory — subagent ปกติเห็น CLAUDE.md เสมอจึงใช้ไม่ได้) โดยส่ง **raw data ทั้งหมดใน prompt** (งบการเงิน, Rf, ERP, raw beta, Damodaran industry betas ≥5 แถว, ราคา, shares) — **ห้าม**ใส่ WACC/peer list ที่ Atlas ตัดสินแล้ว, report เดิม, brief, Street PT หรือตัวเลขที่ทีม/CIO เคยพูด · prompt ต้องบันทึกเป็นไฟล์และผ่าน Morgan ตรวจก่อนรัน · Quinn ตรวจเลขคณิตซ้ำ (ห้ามแก้ assumption)
 - Instance ใหม่คำนวณ WACC + FV เองทั้งหมด (เหตุผล: bias อาจฝังอยู่ใน Data Package ตั้งแต่ขั้น Atlas — blind ที่ใช้ Data Package เดิมจึงไม่ช่วย)
-- ผล: ห่างจาก Emma FV เดิม ≤10% = ผ่าน · >10% = หา root cause ทีละจุดโดยเทียบกับตาราง 1.6 ก่อน Max execute
+- ผล: Blind DCF FV ห่างจาก **Emma DCF base (ก่อนถ่วง multiples ชั้น 2)** ≤10% = ผ่าน · >10% = หา root cause ทีละจุดโดยเทียบกับตาราง 1.6 ก่อน Max execute
 - ต้นทุน ~1 Emma run (~30–50K token) ต่อเคส
 - **Max:** trigger (ก) เข้าแต่ยังไม่มีผล 1.7 → ห้าม execute
 
