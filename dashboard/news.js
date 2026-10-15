@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-14 07:30";
+const NEWS_LAST_UPDATED = "2026-10-15 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-15 (Atlas scan 2026-10-15, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-14", category: "ANALYST",
+    headline: "🔴 ADBE Adobe — HSBC downgrades (Buy→Hold), PT cut $310→$267 (-13.9%), cites open-source AI-disruption risk from ArtCraft",
+    summary: "HSBC analyst Stephen Bersey downgraded Adobe one notch from Buy to Hold on 2026-10-14, cutting the price target 13.9% to $267 from $310. The trigger was a report that ArtCraft, a small developer, reportedly released free, open-source alternatives to several core Adobe apps (Photoshop, Illustrator, Premiere, Lightroom, Acrobat, After Effects, InDesign) and reportedly aims to match Adobe's feature set within a month; Bersey also flagged security and legal risk around the open-source tools. HSBC frames this as a new structural competitive-moat question for a Wide Moat Creative Software thesis — the actual near-term business impact is called uncertain, but the report explicitly could pull in price-sensitive users. Market reaction was muted — ADBE stock actually closed UP +1.86% at $240.68 the same day (broad software strength, Nasdaq megacap names outperforming amid a hot-CPI/rate-hike-bets selloff elsewhere), consistent with investors not yet pricing this as an immediate threat. นัยพอร์ต: ADBE เป็น 1 ใน 5 OPEN positions (ถือ 4sh, weight ~9.4%) — นี่คือสัญญาณใหม่ที่ตรงกับ \"moat erosion\" risk category ซึ่งเป็นหนึ่งใน Bear Flip Trigger watch-items ของ ADBE (Wide Moat Creative Software thesis) แม้ยังไม่มี Bear Flip/Thesis Invalidation ยิงจริง และราคาตลาดไม่ได้ตอบรับเชิงลบวันนี้ — ควรนำเข้า Bear's next full/lightweight re-verify เป็น data point ใหม่ ไม่ใช่สัญญาณ sell ทันที (PT cut -13.9% ต่ำกว่าเกณฑ์ >15% ของ HIGH-IMPACT classification แต่รวมกับลักษณะ moat-threat ใหม่ จึงถูกบันทึกไว้เพื่อความโปร่งใส).",
+    impact: "NEGATIVE", tickers: ["ADBE"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/hsbc-downgrades-adobe-stock-over-084555225.html",
+  },
+  {
+    date: "2026-10-14", category: "ANALYST",
+    headline: "🟢 META Meta Platforms +2.63% $762.50 — Pivotal Research hikes PT $790→$930 (+17.7%), maintains Buy",
+    summary: "Pivotal Research sharply raised its Meta Platforms price target on 2026-10-14 to $930 from $790 (+17.7%, exceeding the >15% HIGH-IMPACT threshold) while maintaining a Buy rating, implying roughly 25% upside from current levels — the firm's note cited strong returns from Meta's AI investment. Stock rose +2.63% to $762.50 the same session even as the broader market (S&P 500 -1.08%, Nasdaq -1.88%) sold off on a hotter-than-expected September CPI print lifting Treasury yields and reviving rate-hike bets — Meta notably decoupled from the risk-off tape. นัยพอร์ต: META อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position ใน ADBE/NOW/CRM/REGN/ADSK) — ไม่กระทบพอร์ตโดยตรง แต่เป็น analyst PT change ที่เกินเกณฑ์ >15% บน Big 10 name ตาม HIGH-IMPACT classification.",
+    impact: "POSITIVE", tickers: ["META"],
+    url: "https://www.tradingkey.com/analysis/stocks/us-stocks/262214836-us-stock-market-close-earnings-season-anthropic-q3-tech-tradingkey",
+  },
 
   // ── 2026-10-14 (Atlas scan 2026-10-14, Portfolio Review Mode 3 cron cycle) ──
   {
