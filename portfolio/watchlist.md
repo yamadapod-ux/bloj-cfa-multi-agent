@@ -1,6 +1,8 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด: Scout Round 75 (2026-10-16, Max — **IT Services + Data/Information Services** sector, never scouted before: EPAM/CTSH/GLOB/IT/EFX/TRU/VRSK + payroll sidebar). Regime re-called by Atlas 2026-10-16 → **RISK-ON 3/4** (Fed lone dissent). **Prune Step 0: de-listed 16** (5 superseded: LDOS/ELV/GD/KR/LKQ · 11 stale >60d: FTAI/NKE/ZTS/CPRT/PODD/ONON/GEHC/BR/CLS/LITE/GLW), SLA re-fixed 16 remaining → target 2026-10-23. **Scan result: Filter A 6/7 PASS (TRU −16.8% fails) → 0 fast-track, 0 learning-queue.** Rejects: EPAM (D 1.15×), CTSH (D 1.00× ±10% band), IT (D 1.18×), VRSK (D 1.96× → Tier-1 2a), GLOB (C: ROIC 7.5% < 80% × 13% WACC), EFX (A: FHFA bi-merge regulatory regime change + D 2.97×). Lesson: the AI-disruption de-rating of IT services is real (−20% to −46%) but with Rf 5.19% the stocks now trade at ≈ no-growth FCF value, not below it. See § Round 75 at end of file.)*
+*ล่าสุด: CIO-directed re-scout (2026-10-16, Max — 3-ticker re-scout of **PODD, ZTS, NKE** at CIO's explicit request, full VALUE-FIRST Filter A-E [the current A≥20%/B/C/D/E criteria were never run on these 3 in full — Round 75 only flagged them for staleness-prune and suggested the re-scout]. Live price re-verified ≥2 sources for all 3 [PODD $138.77-138.83 diff 0.04% / ZTS $78.18-78.42 diff 0.3% / NKE $37.11-37.18 diff 0.19%, all 2026-10-15 close], 52W-high confirmed 4-5 sources each. **Filter A: 2/3 PASS** (PODD -60.9% cyclical/execution-miss + litigation overhang; ZTS -47.1% mixed cyclical+structural-pocket reason, flagged both ways), **1/3 REJECT** (NKE -47.3% — JPMorgan/Euromonitor/Morgan Stanley data confirm **structural, not cyclical**: global footwear share 22.9%/2025 = 3rd consecutive annual decline, China share -590bps since 2019, 5 consecutive years losing brand-preference survey share — textbook permanent-moat-erosion-confirmed-by-market-share-numbers reject). **PODD clears A+B+C+D but Filter E = 2/3 only** (unresolved securities-fraud class action + 2 manufacturing-defect device corrections in 2026 fail overhang sub-criterion) → **Learning-queue, not fast-track**. **ZTS REJECTS at Filter D** — naive FV/share $68-79 (FCF/WACC) vs price $78.42 = 0.99-1.15× (no MOS; Street-PT +21% upside misses the >25%-override bar) — price fell but FCF/earnings fell too (2 guidance cuts in 2026), classic cheap-stock/cheap-earnings trap. **NKE REJECTS independently at A, D (naive FV $18.3/sh → price = 2.03× FV, would also fail Tier-1 Quick-Screen check 2a) and E (0/3)**. **0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE).** No full pipeline dispatched this round (re-scout only, per task scope). See § Round 76 at end of file.)*
+
+*ก่อนหน้า: Scout Round 75 (2026-10-16, Max — **IT Services + Data/Information Services** sector, never scouted before: EPAM/CTSH/GLOB/IT/EFX/TRU/VRSK + payroll sidebar). Regime re-called by Atlas 2026-10-16 → **RISK-ON 3/4** (Fed lone dissent). **Prune Step 0: de-listed 16** (5 superseded: LDOS/ELV/GD/KR/LKQ · 11 stale >60d: FTAI/NKE/ZTS/CPRT/PODD/ONON/GEHC/BR/CLS/LITE/GLW), SLA re-fixed 16 remaining → target 2026-10-23. **Scan result: Filter A 6/7 PASS (TRU −16.8% fails) → 0 fast-track, 0 learning-queue.** Rejects: EPAM (D 1.15×), CTSH (D 1.00× ±10% band), IT (D 1.18×), VRSK (D 1.96× → Tier-1 2a), GLOB (C: ROIC 7.5% < 80% × 13% WACC), EFX (A: FHFA bi-merge regulatory regime change + D 2.97×). Lesson: the AI-disruption de-rating of IT services is real (−20% to −46%) but with Rf 5.19% the stocks now trade at ≈ no-growth FCF value, not below it. See § Round 75 at end of file.)*
 
 *ก่อนหน้า: Scout Round 71 (2026-10-05, Max — Traditional Oil & Gas/Refining sector, task-requested COP/OXY/MPC/PSX/VLO. No overlap with XOM/CVX/DVN/EOG/LNG excluded universe — no substitution needed. **Filter A: 0/5 PASS** — COP -10.1% to -10.6%, OXY -11.6% to -13.5% (closest, outside 5pp near-miss band), MPC -2.0% to -2.5% (near-ATH), PSX ≈-4.5% (near-ATH), VLO -2.0% to -3.1% (near-ATH). 3rd consecutive confirmation (Round 32 index-level → Round 39 ticker-level → Round 71) that this energy sub-sector has not de-rated this cycle — strong crack spreads/crude support keep prices near 52W highs. No B-E computed (sequential-gate convention, no survivor). No fast-track, no near-miss logged, no trade. web_search backend degraded (Nous/Firecrawl unavailable, ~14 calls all rescued via keyless fallback, 2-retry cap honored). See § Round 71 full detail.)*
 
@@ -6890,3 +6892,87 @@ These are not entry zones (no candidate passed); they are re-screen alerts. A 25
 **Target analysis date:** none (0 candidates). **Next round mandate suggestion:** re-scout the deeply de-rated names just archived on staleness (PODD −61%, ZTS −47%, NKE −47%, FTAI −48%, LDOS −41%) under the current A-E rules. They were never screened under VALUE-FIRST D/E, and several now satisfy Filter A by a wide margin.
 
 *Max — 2026-10-16 | Scout Round 75 — IT Services + Data/Info Services: 0/7 pass A-E; prune 16 de-listed / 16 SLA-fixed; regime RISK-ON 3/4 (Atlas re-call same day).*
+
+---
+
+## § Round 76 — CIO-directed re-scout: PODD / ZTS / NKE (2026-10-16)
+
+**Trigger:** CIO reviewed Round 75's archive of 11 stale (>60d) candidates and specifically asked for a full VALUE-FIRST Filter A-E re-run on 3 of them — PODD (-61% off 52W high), ZTS (-47%), NKE (-47%) — since these 3 were originally scouted *before* the current D/E criteria existed and were never screened against the full current gate. **Scope: re-scout only** — no Atlas→Emma→Quinn→Bear full pipeline dispatched this round; any fast-track candidate is handed to the CIO to decide whether to dispatch Charlie's full pipeline.
+
+### Price Verification (≥2 sources, mandatory before Filter A)
+
+| Ticker | Price (source 1) | Price (source 2) | Diff | 52W High (sources) | 52W Low | % off high |
+|---|---|---|---|---|---|---|
+| PODD | $138.77 (Morningstar, close 2026-10-15) | $138.83 (MarketBeat) / $138.77 (Seeking Alpha, Yahoo) | 0.04% | $354.88 (Morningstar/MarketBeat/SeekingAlpha/Robinhood/Yahoo — 5-source exact match) | $126.40 | **-60.9%** |
+| ZTS | $78.42 (Morningstar, close 2026-10-15) | $78.18 (MarketBeat) | 0.3% | $148.30 (Morningstar/MarketBeat/Robinhood/WSJ — 4-source exact match) | $68.77 | **-47.1%** |
+| NKE | $37.11 (Robinhood, current) | $37.18 (MarketWatch, close 2026-10-15) | 0.19% | $70.44 (CNBC/MarketWatch/Yahoo/Robinhood — 4-source exact match) | $31.97 | **-47.3%** |
+
+No source pair diverged >2% — no 3rd source needed per Price Verification rule.
+
+### Filter A — Beaten-down ≥20% + reason classification
+
+| Ticker | % off high | Reason researched | Classification |
+|---|---|---|---|
+| **PODD** | -60.9% | Mgmt (CFO/CEO at Wells Fargo conf. 2026-09-09) explicitly frames the guidance cut as **"execution challenge, nothing to do with structural... attraction of the market"** — driven 2/3 by T2D attrition/utilization miss, 1/3 by softer new-customer starts + pricing. Diabetes-device TAM still growing, FY26 guided constant-currency exit growth 12-17%. Separately: 2 voluntary Omnipod manufacturing-defect corrections (Mar/May 2026, tubing tear → insulin under/over-delivery) triggered an active securities-fraud class action — idiosyncratic litigation/quality overhang, not a market-wide demand problem. | ✅ **Cyclical/sentiment (operational execution miss)** — PASS. Litigation/safety overhang carried forward to Filter E, not conflated with the growth-reason classification. |
+| **ZTS** | -47.1% | 2 guidance resets in 2026 (May -21.5% single-day drop, Aug). Causes cited: (a) **macro-driven** US pet-owner trade-down/price sensitivity (cyclical), (b) **generic competition** on Convenia/Cerenia (permanent loss of those specific products' pricing power — structural for that slice), (c) competitive/safety-related pressure on dermatology franchise (Librela/Solensia). International + livestock segments still growing; only the US companion-animal franchise is the structurally-challenged piece. Bear case (SimplyWall.st) explicitly calls "US companion-animal dependence a structural weakness." | ⚠️ **Mixed/ambiguous — written both ways per Max's own default rule.** Leans cyclical-with-a-structural-pocket (global diversified moat intact ex-US companion-animal). **PASS A** but flagged, not a clean cyclical case. |
+| **NKE** | -47.3% | JPMorgan (2026-08-19): decline is **"structural, not cyclical."** Confirmed by hard multi-year market-share data: global footwear share 22.9% in 2025 = **3rd consecutive annual decline** (Euromonitor); China share -590bps since 2019 (18.5%→12.9%, JPM); **5 consecutive years** losing brand-preference survey share to On/Hoka (Morgan Stanley intern survey); **8 consecutive quarters** of declining Greater China revenue (-17% ccy, latest qtr); brand-equity erosion with Gen-Z Chinese consumers (Guochao nationalist-brand trend). DTC overcorrection under prior CEO also permanently ceded wholesale shelf space to Hoka/On. | ❌ **Permanent earnings-power impairment — competitive moat erosion confirmed by market-share numbers.** This is the exact reject archetype named in CLAUDE.md Filter A. **FAIL A** → deprioritize at scout stage. |
+
+### Filter B-Zero — Balance Sheet Sanity
+
+| Ticker | Stockholders' Equity | Net Debt/EBITDA | Verdict |
+|---|---|---|---|
+| PODD | +$1,302.6M–$1,515.2M (positive, Q1 2026/FY2025) | ~0.4-1.1x (trending down) | PASS — no flag |
+| ZTS | Positive (~$4.1B implied from ROE 64.9%/NI $2.67B; book equity shrunk by buybacks, not negative) | ~2.2x (2025A), D/E 2.65-2.72x elevated | PASS — equity positive, leverage flagged as moderate (buyback-driven, not distress) |
+| NKE | Positive, D/E ~0.4-0.75x (low) | ~0.4-0.9x, net debt modest ($1-2.8B depending on quarter) | PASS — no flag |
+
+### Filter B — Cheap (bucket-dependent)
+
+| Ticker | Bucket (rev growth) | Method(s) computed | Result |
+|---|---|---|---|
+| **PODD** | **Growth** (TTM revenue +31.9% YoY, >>15% B-V1 trigger) | B-V1 self-history: EV/Revenue compressed 9.35x (Q4-2023) → 3.59x (Q2-2026), current reading is the series minimum | ✅ **PASS** via self-history bottom-of-range (⚠️ only ~2.5yr of clean quarterly data available this session, not full 5Y — flag as partial-history proxy) |
+| **ZTS** | **Value** (TTM revenue growth cut to -1% to -3% organic for 2026) | B-Legacy FCF yield: FCF $2.3B ÷ mkt cap $32.98B = **6.97%** (>6%); EV/EBITDA compressed 17.41x (mid-2025) → 9.25x (mid-2026), consistent cheap signal | ✅ **PASS** via FCF yield, corroborated by EV/EBITDA compression |
+| **NKE** | **Value** (TTM revenue flat +0.2%) | B-Legacy FCF yield: ~$2.1B FCF ÷ ~$57B mkt cap ≈ **3.7%** (<6%, FAIL leg); EV/EBITDA ~11-14x vs historical premium 25-30x multiples — likely bottom-third of own 5Y history (compression real) | ⚠️ **Mixed — 1 of 2 legs pass** (EV/EBITDA leg only). Flagged, not a clean B pass. |
+
+### Filter C — Real business (ROIC > WACC)
+
+| Ticker | ROIC (TTM, multi-source) | WACC (estimate) | Spread | Verdict |
+|---|---|---|---|---|
+| PODD | 16-21% (GeminIQ 21.2%, BusinessQuant 16.9%, MarketBeat FY25 20.4%) | ~8.5-9% (QW Research computed 8.5%) | +7.5 to +12.5pp, **trending up 3 consecutive years** (+10.89pp over 5Y per BusinessQuant) | ✅ **PASS decisively** |
+| ZTS | 23-28% (stockanalysis 27.3%, roic.ai 23.5%, moatscan 25-27%, Flash 24.3% — 4 sources converge) | ~7-8% (stockanalysis computed WACC 6.93%; used 7-8% sector-reasonable band) | +15 to +20pp | ✅ **PASS decisively** |
+| NKE | 11.8-13.8% (GuruFocus TTM 13.82%, roic.ai TTM 11.83%, stockanalysis current 18.86% — wide spread, flag data variance) | 7.77% (GuruFocus) | +4 to +11pp nominally positive, **but sharply declining trend** (stockanalysis FY22 44.92% → FY26 ~18.9%; roic.ai FY17 26.56% → TTM 11.83%) | ⚠️ **Nominal PASS, but trend is the Filter-E-disqualifying kind of "peak-anchored decline," not a clean pass** — carried to Filter E #2 |
+
+### Filter D — Credible valuation gap
+
+| Ticker | Method | Naive FV / fallback | Price vs FV | Verdict |
+|---|---|---|---|---|
+| **PODD** | D-V1 (Growth bucket) — self/peer-regression not computed this session (data/time budget); **Analyst-PT gap fallback used** per D-V1 rule #3 | Consensus PT $240.25 (25 analysts, Strong Buy) | Price $138.77 = **0.577×** PT (+73.1% upside) — well inside the ≤0.75× fast-track bar | ✅ **PASS fast-track** (⚠️ fallback method only, self/peer-regression not independently cross-checked this round — flag for Charlie to redo properly if dispatched) |
+| **ZTS** | D-Legacy (Value bucket) — naive FV = normalized FCF ÷ WACC | FCF/share $5.47 ÷ WACC 6.93-8% = **$68.4-78.9/share** | Price $78.42 = **0.99-1.15×** naive FV — no MOS on any reading. Street PT ~$94.86 (+21% upside) does not clear the >25% override bar → naive FV governs | ❌ **REJECT** (>0.90× band — "deprioritize," not even learning-queue) |
+| **NKE** | D-Legacy (Value bucket) | FCF/share $1.42 ÷ WACC 7.77% = **$18.3/share** | Price $37.11 = **2.03×** naive FV | ❌ **REJECT decisively** — would also have failed Tier-1 Quick-Screen check 2a (price >1.5× naive FV = automatic SKIP before even reaching the full Filter A-E gate) |
+
+### Filter E — Conviction viability (need ≥2/3 to pass gate; need 3/3 for fast-track lane)
+
+| Ticker | 1. Moat evidence | 2. ROIC-WACC spread ≥3pp (5Y avg) | 3. No unresolved overhang | Score |
+|---|---|---|---|---|
+| **PODD** | ✅ PASS — patent-protected tubeless Omnipod platform, high patient switching cost once onboarded, 71% gross margin evidencing pricing power | ✅ PASS — 5Y avg ROIC ≈15.5% (MarketBeat FY21-25 series) vs WACC ~8.5-9% = +6.5-7pp | ❌ **FAIL** — active securities-fraud class action (2026, unresolved) + 2 manufacturing-defect device corrections in the same year | **2/3** |
+| **ZTS** | ✅ PASS — global diversified animal-health leader, broad portfolio, high margins (72.7% gross) | ✅ PASS — 5Y avg ROIC ≈21.5% (roic.ai 2021-25) vs WACC ~7-8% = +14pp | ❌ **FAIL** — active securities-fraud investigation (Levi & Korsinsky, 2026) after 2 guidance resets in one year + ongoing generic-competition erosion in US companion-animal franchise, unresolved | **2/3** |
+| **NKE** | ❌ **FAIL** — moat erosion is *quantified*, not just alleged (global share -3 consecutive years, China -590bps since 2019, 5-year brand-preference-survey decline) — this directly fails the "evidence of moat" test, it's evidence of moat *loss* | ❌ **FAIL** — ROIC is "peak-anchored declining" (FY22 ~45% → TTM ~12-19%), exactly the disqualifying pattern named in the sub-criterion, not a stable spread | ❌ **FAIL** — explicit, well-documented, unresolved China/brand-erosion structural overhang; JPMorgan's own framing is "stabilization not recovery by FY2028" | **0/3** |
+
+### Tier 1.5 Lane Assignment / Result
+
+| Lane | Ticker | Reasoning |
+|---|---|---|
+| **Fast-track** | **none** | PODD clears A+B+C+D at fast-track grade but Filter E=2/3 (not 3/3) caps it at learning-queue per the Lane Assignment table |
+| **Learning-queue** | **PODD** | A/B/C/D all pass (D at fast-track-grade, 0.577× PT), but unresolved litigation + manufacturing-defect overhang (Filter E #3) blocks full 3/3 — genuinely the closest of the 3 to investable, contingent on the class-action/quality issues resolving or being independently assessed as immaterial |
+| **Reject / deprioritize** | **ZTS** | Fails Filter D decisively — the -47% price decline was matched by a comparable deterioration in FCF/earnings (2 guidance cuts), so no real margin of safety opened up. Classic "cheap stock, cheap earnings" trap, not a value opportunity. |
+| **Reject / deprioritize** | **NKE** | Fails on 3 independent grounds — Filter A (confirmed structural moat erosion, not cyclical), Filter D (price = 2.03× naive FV, would have failed Tier-1 Quick-Screen on its own), and Filter E (0/3). Re-scouting under the current VALUE-FIRST gate confirms this is not a "stale but promising" name — it's a clean reject once screened properly, consistent with the structural (not cyclical) framing the market itself has converged on. |
+
+**Overall: 0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE).**
+
+### What this tells the team
+- Re-scouting under the current A-E (vs. the pre-2026-09-06 criteria these 3 were last touched under, if at all) materially changes the read on all 3 — none of them is a clean fast-track, which is a useful calibration check that the VALUE-FIRST gate is not just rubber-stamping anything "beaten down 20%+."
+- PODD is the one genuinely worth CIO attention: it clears every quantitative filter (A/B/C/D) convincingly, and the only thing blocking fast-track is a qualitative, resolvable-in-principle overhang (litigation + 2 device corrections) rather than a valuation or business-quality problem. If the CIO wants a data point despite the overhang, Charlie's full pipeline (with Bear specifically tasked to stress-test the litigation/safety thesis) is the appropriate next step — **not dispatched this round, CIO's call.**
+- ZTS and NKE both illustrate the same lesson from a different angle: a large price decline alone is not evidence of a value opportunity if the business's own economics (FCF, moat, market share) deteriorated by a comparable or larger amount. Filter D and Filter A/E exist precisely to catch this.
+
+**Target analysis date:** CIO decision pending — no ticker auto-queued for Charlie's pipeline this round (re-scout scope only, per task instruction).
+
+*Max — 2026-10-16 | CIO-directed re-scout — PODD/ZTS/NKE: 0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE); no full pipeline dispatched.*
