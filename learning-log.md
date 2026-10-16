@@ -1154,3 +1154,12 @@ Batch Emma FV re-verify (commissioned 2026-09-01, 7/8 OPEN positions firing >=1 
 - VS2 (WACC ล็อก+เทียบภายนอก, non-op bridge, fade/RONIC, net debt ครบ, แยก Ads) → Blended $125.66 → **$201.47** (MOS −22.5%), ยัง NO BUY · FV₅ $292.84 = +2.4%/ปี vs S&P 9.5%
 - แก้สองทิศจริง: WACC/Ads/bridge ขึ้น · fade/RONIC/capex 2027/net debt ลง
 - Commit model script ทุกรอบ (rebuild v3.2 ต่างได้ถึง +65%) · กฎกำกวม (fade = TV?) → ส่งผู้เขียนกฎชี้ขาด
+
+---
+
+### 2026-10-16 — SLM full pipeline (VS2, first Banks/lender type)
+- Lender → RI/P-B-ROE on **CoE** (not WACC) · Blended **$26.56**, MOS **+18.9%**, Conv **6.17** → **WAIT** (conviction gate only) · FV₅ $36.88 = 10.6%/yr vs S&P 9.30%
+- **Morgan R2 lesson:** relevering Damodaran βU needs **market D/E**, not book (book D/E inflated β 0.92 vs 0.68 → CoE 9.11% vs 8.60%). This correction moved MOS across the 15% gate (13.0% → 18.9%) → disclosed (MOS 15% at CoE 8.93%)
+- RI is very sensitive to ω (Emma +24% at 0.95). Emma–Quinn gap +59% = ω-decay vs perpetual ROE → Open Item
+- CLAUDE.md inconsistency: Value BUY "Conv ≥ 6" (MOS table) vs "≥ 7.0" (Deployment Rule 1) → CIO to decide · charlie.md/bear.md still cite weights 40/35/25 (drift)
+- Re-verify after Q3 print 2026-10-22

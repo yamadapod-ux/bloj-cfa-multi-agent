@@ -971,3 +971,20 @@
 - **Funnel:** 33 pass A → 10 pass B/C → 2 pass D → **1 fast-track (SLM) · 1 learning-queue (ALLY) · 35 reject.**
 
 *Max — 2026-10-16 | Scout Round 77 — fast-track 1 (SLM), learning-queue 1 (ALLY); no trade. Detail: `portfolio/watchlist.md` § Round 77.*
+
+---
+
+## SLM Full Pipeline — Max Deployment Assessment (PROPOSAL ONLY — no trade) — 2026-10-16
+
+| Date | Ticker | Action | Gate Status | Position Size | Tranche | Rationale | Counter-factual |
+|------|--------|--------|--------------|----------------|---------|-----------|------------------|
+| 2026-10-16 | SLM | **WAITED — NO BUY (proposal to CIO)** | Value bucket (CLAUDE.md Deployment Rule 1): **Conv 6.17 < 7.0 ❌** · **MOS +18.9% ≥ 15% ✅** · Regime RISK-ON 3/4 (mult 1.0×) ✅ | $0 (0%) | — | Conviction gate fails → T1 not allowed. Rules 2/3/4 (≤5% above zone / Price-Audit half-size / Force Deploy) all require the conviction gate to pass → N/A. Force Deploy (cash ~73.8%, RISK-ON) does not apply: no candidate passes the gate | Price 30d later (≈ 2026-11-15) → Vera fills in |
+
+**Max proposal for CIO:**
+- **Recommendation: NO BUY now → buy_list (entry zone $20.50–23.00, stop $17.50).** Price $22.33 is already inside the zone, and MOS passes. **The only blocker is conviction.**
+- **Action plan:** after the Q3 print (2026-10-22 AMC) → Emma lightweight re-verify + re-score conviction · if conviction ≥ 7.0 **and** Bull Flip #1 fires (NCO ≤ $95M, DQ ≤ 3.6%) → run **VS2 1.7 Blind Re-derivation** (required before BUY) → Max proposes **T1 ≈ 7% (conviction 7.0 × 1.0 RISK-ON; ≤ 8%)** ≈ $700 on a $10K base · consult Charlie per the Max Consultation Rule before executing
+- **Risk if MOS is used alone:** MOS crosses 15% at CoE 8.93%. If CoE is computed Blume-only (9.24%) → MOS 11.6%. This should be read together with conviction, not on its own.
+- **Charlie's view (recorded per the Max Consultation Rule, although no trade happens):** agrees with WAIT · adds that CLAUDE.md is internally inconsistent (MOS table: Value Conv ≥ 6 vs Deployment Rule 1: ≥ 7.0) — **CIO should decide which governs.** Under ≥ 6, SLM would be BUY-eligible today.
+- **No trade has been executed** (CIO task = proposal only). portfolio.js / positions.md / trade-log.md not touched.
+
+*Max — 2026-10-16 | SLM full-pipeline deployment assessment (proposal only)*

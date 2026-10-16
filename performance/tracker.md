@@ -1284,6 +1284,19 @@ Cash $6,894.47 → **$7,143.33** (69.5%). Positions 7 → **6**. Total value ~$1
 
 ---
 
+## SLM Watchlist Entry (2026-10-16, Vera log — `VS2`, first Banks/lender type)
+- **SLM (SLM Corporation / Sallie Mae)** — Scout R77 fast-track → Full pipeline · **Value bucket** · VS2 type **Banks/lender** (RI + P/B-ROE on CoE 8.60%, not WACC)
+- **WAIT (NO BUY)** — Blended FV **$26.56** (Emma RI $24.11 / Quinn P-W $38.29 / Bear $18.09, 40/30/30) vs **entry-reference price $22.33** → MOS **+18.9%** ✅ · Conviction **6.17** ❌ (< 7.0 Value gate) → dual-gate fail on conviction only (same pattern as DECK/LVS)
+- **Entry-reference price $22.33** (2026-10-16 ~10:24 ET: stockanalysis $22.37 + finviz $22.30; Morgan independent Yahoo $22.30 @10:42) · prev close 10-15 $22.22
+- **S&P 500 reference: 7,744.06** (2026-10-15 close — 2 sources, `agent_notes/atlas/2026-10-16_regime.md`) — matches `portfolio/decisions.md` SLM row ✅
+- **VS2 1.4:** Blended FV₅ **$36.88** → **+10.6%/yr** price-only (+2.3% dividend ≈ 12.9%/yr) vs S&P expected **9.30%/yr** (Rf 5.10% + Damodaran ERP 4.20%)
+- **Calibration flags (for 2026-12-31 VS2 + Method-Level review):** method group = "Other (P/B, RI)" · MOS crosses the 15% gate at CoE **8.93%** (Blume-only 9.24% → MOS 11.6%) · Emma–Quinn gap +59% (persistence ω vs perpetual ROE_s) = Open Item → check FY26–27 ROE · Street PT $28.36 (11 analysts) vs Blended $26.56 = −6% (inside Street range $22–35) · VS2 layer 2 trigger: 0 (N/A — bank type)
+- **Morgan reject types this session:** DATA_ERROR 1 (β book vs market D/E) · RULE_VIOLATION 1 · SOURCE_MISSING 3 · SANITY_FAIL 1 · FORMAT 1 → FORMAT share 14% (no gaming)
+- Entry zone $20.50–23.00 · stop $17.50 (−19.5% from mid $21.75) · **Re-verify trigger: Q3-26 earnings 2026-10-22** (Bull Flip #1 NCO ≤ $95M + DQ ≤ 3.6%)
+- No position — alpha PENDING (thesis tracking only). See `reports/SLM_2026-10-16.md`
+
+---
+
 ## Weekly Reports
 
 > ⚠️ **Cadence Gap Flag (updated 2026-08-21, PARTIALLY RESOLVED 2026-09-04 — see Week 2026-W36 entry below):** Week 2026-W24 (Jun 9-15) ยังคงสถานะ "IN PROGRESS" และไม่มี weekly report ถูกสร้างสำหรับ W25-W34 (Jun 16 – Aug 21) แม้จะมี analysis ใหม่เกิดขึ้นต่อเนื่อง (TOST 2026-06-17, CRDO 2026-07-06, WPM 2026-07-12, PGR 2026-07-22, DXCM 2026-07-29, ABBV 2026-08-02, ETN 2026-08-05, VRT 2026-08-05, ICE 2026-08-10, NET 2026-08-10, ACGL re-analysis 2026-08-18, TDG 2026-08-18, VEEV re-analysis 2026-08-20, **SHOP 2026-08-21**) — เป็นหลายสัปดาห์ที่ไม่มี weekly output ตาม Vera Protocol บังคับ ("ห้าม run experiment โดยไม่มี Vera output") ควร escalate ให้ Charlie/CIO ทราบและพิจารณาให้ Vera ออก catch-up weekly/quarterly report ครอบคลุมช่วง Jun 16 – Aug 21 ในรอบถัดไป (นอกขอบเขต session นี้ — บันทึกเฉพาะ SHOP entry สำหรับตอนนี้). **เพิ่มเติม:** RDDT stop loss breach ครั้งแรก (2026-08-01, resolved 2026-08-04), NOW STRONG SELL territory ครั้งแรก (2026-08-09, resolved 2026-08-18), GOOGL stopDist หลุดต่ำกว่า 10% ครั้งแรก (2026-08-18), REGN + RDDT STRONG SELL territory (2026-08-18) ยังไม่มี weekly report ครอบคลุมด้วยเช่นกัน — สมควรมีความสำคัญสูงในรอบ catch-up ถัดไป
