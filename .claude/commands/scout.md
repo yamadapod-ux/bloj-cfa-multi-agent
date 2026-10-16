@@ -72,7 +72,7 @@ Read portfolio/positions.md                 ← sector ไหน over-weight แ
 ### Step 3 — WebSearch สแกน candidates (value-oriented queries)
 
 ```
-WebSearch: "[sector] stocks down 30% 40% from 52-week high 2026 undervalued"
+WebSearch: "[sector] stocks down 20% 30% 40% from 52-week high 2026 undervalued"
 WebSearch: "[sector] stocks high free cash flow yield low EV/EBITDA 2026"
 WebSearch: "beaten down [sector] stocks 2026 insider buying buyback"
 WebSearch: "[sector] stocks trading below book value / historical multiple 2026 quality"
@@ -85,7 +85,7 @@ WebSearch: "[sector] stocks trading below book value / historical multiple 2026 
 ### Step 4 — Filter ตาม Scout Filter Rules VALUE-FIRST (CLAUDE.md — ใช้เกณฑ์นี้เท่านั้น)
 
 **Primary — candidate ต้องผ่านทั้ง A + B + C + D + E** (D/E `TRIAL — review 2026-12-31`, ดู CLAUDE.md § Scout Filter Rules สำหรับ exact text):
-- **A. Beaten-down ด้วยเหตุผลที่ถูกต้อง (บังคับ):** ราคาลง **≥ 30% จาก 52W high** (WebSearch ≥2 sources) **+ ระบุ "beaten-down reason"**: ✅ cyclical/sentiment/temporary → ผ่าน · ❌ permanent earnings-power impairment (structural demand loss ที่ mgmt ยืนยัน / secular decline / regulatory regime change default-bearish / moat erosion วัดได้) → deprioritize/reject · ไม่ชัด → 2 มุม + default learning-queue
+- **A. Beaten-down ด้วยเหตุผลที่ถูกต้อง (บังคับ):** ราคาลง **≥ 20% จาก 52W high** (แก้ 2026-09-13 จากเดิม ≥30% — ดู CLAUDE.md § Scout Filter Rules) (WebSearch ≥2 sources) **+ ระบุ "beaten-down reason"**: ✅ cyclical/sentiment/temporary → ผ่าน · ❌ permanent earnings-power impairment (structural demand loss ที่ mgmt ยืนยัน / secular decline / regulatory regime change default-bearish / moat erosion วัดได้) → deprioritize/reject · ไม่ชัด → 2 มุม + default learning-queue
 - **B. Cheap:** FCF yield > 6% **หรือ** EV/EBITDA bottom-third ของ 5Y history **หรือ** P/B < 5Y median (financials)
 - **C. Real business:** ROIC > WACC + ไม่ใช่ secular structural decline industry
 - **D. Credible valuation gap:** naive FV = **normalized/mid-cycle FCF ÷ WACC** (no-growth perpetuity). Street PT cross-check ≥2 แหล่ง. **fast-track:** ราคา ≤ 0.80× naive FV · **learning-queue:** 0.80–0.90× · **ตกรอบ:** > 0.90× หรือ ±10% ของ naive FV
