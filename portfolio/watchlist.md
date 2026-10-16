@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด: CIO-directed re-scout (2026-10-16, Max — 3-ticker re-scout of **PODD, ZTS, NKE** at CIO's explicit request, full VALUE-FIRST Filter A-E [the current A≥20%/B/C/D/E criteria were never run on these 3 in full — Round 75 only flagged them for staleness-prune and suggested the re-scout]. Live price re-verified ≥2 sources for all 3 [PODD $138.77-138.83 diff 0.04% / ZTS $78.18-78.42 diff 0.3% / NKE $37.11-37.18 diff 0.19%, all 2026-10-15 close], 52W-high confirmed 4-5 sources each. **Filter A: 2/3 PASS** (PODD -60.9% cyclical/execution-miss + litigation overhang; ZTS -47.1% mixed cyclical+structural-pocket reason, flagged both ways), **1/3 REJECT** (NKE -47.3% — JPMorgan/Euromonitor/Morgan Stanley data confirm **structural, not cyclical**: global footwear share 22.9%/2025 = 3rd consecutive annual decline, China share -590bps since 2019, 5 consecutive years losing brand-preference survey share — textbook permanent-moat-erosion-confirmed-by-market-share-numbers reject). **PODD clears A+B+C+D but Filter E = 2/3 only** (unresolved securities-fraud class action + 2 manufacturing-defect device corrections in 2026 fail overhang sub-criterion) → **Learning-queue, not fast-track**. **ZTS REJECTS at Filter D** — naive FV/share $68-79 (FCF/WACC) vs price $78.42 = 0.99-1.15× (no MOS; Street-PT +21% upside misses the >25%-override bar) — price fell but FCF/earnings fell too (2 guidance cuts in 2026), classic cheap-stock/cheap-earnings trap. **NKE REJECTS independently at A, D (naive FV $18.3/sh → price = 2.03× FV, would also fail Tier-1 Quick-Screen check 2a) and E (0/3)**. **0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE).** No full pipeline dispatched this round (re-scout only, per task scope). See § Round 76 at end of file.)*
+*ล่าสุด: Scout Round 77 (2026-10-16, Max — multi-sector VALUE-FIRST sweep across 7 de-rated groups: regional banks/consumer finance, homebuilders/building products, commodity chemicals, packaging, tariff-hit consumer discretionary, autos/auto parts, specialty pharma. 107 pre-screened, **37 two-source verified** (finviz + stockanalysis, Oct 15 close; 3rd source for NAVI/OMF). Filter A 33/37 → B-Zero/B/C 10 → D 2. **🟢 Fast-track: SLM** (A −28.5%, D 0.705×, E 3/3; wait for Q3 print Oct 22). **🟡 Learning-queue: ALLY** (D 0.77–0.90×, E 1/3). Reject 35 (near-misses: WAL D 0.906×, OMF B, SON/LEVI/JAZZ A). Prune: 0 de-listed (Round 75 pruned this morning). No full pipeline dispatched (scout-only CIO task).)*
+*ก่อนหน้า: CIO-directed re-scout (2026-10-16, Max — 3-ticker re-scout of **PODD, ZTS, NKE** at CIO's explicit request, full VALUE-FIRST Filter A-E [the current A≥20%/B/C/D/E criteria were never run on these 3 in full — Round 75 only flagged them for staleness-prune and suggested the re-scout]. Live price re-verified ≥2 sources for all 3 [PODD $138.77-138.83 diff 0.04% / ZTS $78.18-78.42 diff 0.3% / NKE $37.11-37.18 diff 0.19%, all 2026-10-15 close], 52W-high confirmed 4-5 sources each. **Filter A: 2/3 PASS** (PODD -60.9% cyclical/execution-miss + litigation overhang; ZTS -47.1% mixed cyclical+structural-pocket reason, flagged both ways), **1/3 REJECT** (NKE -47.3% — JPMorgan/Euromonitor/Morgan Stanley data confirm **structural, not cyclical**: global footwear share 22.9%/2025 = 3rd consecutive annual decline, China share -590bps since 2019, 5 consecutive years losing brand-preference survey share — textbook permanent-moat-erosion-confirmed-by-market-share-numbers reject). **PODD clears A+B+C+D but Filter E = 2/3 only** (unresolved securities-fraud class action + 2 manufacturing-defect device corrections in 2026 fail overhang sub-criterion) → **Learning-queue, not fast-track**. **ZTS REJECTS at Filter D** — naive FV/share $68-79 (FCF/WACC) vs price $78.42 = 0.99-1.15× (no MOS; Street-PT +21% upside misses the >25%-override bar) — price fell but FCF/earnings fell too (2 guidance cuts in 2026), classic cheap-stock/cheap-earnings trap. **NKE REJECTS independently at A, D (naive FV $18.3/sh → price = 2.03× FV, would also fail Tier-1 Quick-Screen check 2a) and E (0/3)**. **0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE).** No full pipeline dispatched this round (re-scout only, per task scope). See § Round 76 at end of file.)*
 
 *ก่อนหน้า: Scout Round 75 (2026-10-16, Max — **IT Services + Data/Information Services** sector, never scouted before: EPAM/CTSH/GLOB/IT/EFX/TRU/VRSK + payroll sidebar). Regime re-called by Atlas 2026-10-16 → **RISK-ON 3/4** (Fed lone dissent). **Prune Step 0: de-listed 16** (5 superseded: LDOS/ELV/GD/KR/LKQ · 11 stale >60d: FTAI/NKE/ZTS/CPRT/PODD/ONON/GEHC/BR/CLS/LITE/GLW), SLA re-fixed 16 remaining → target 2026-10-23. **Scan result: Filter A 6/7 PASS (TRU −16.8% fails) → 0 fast-track, 0 learning-queue.** Rejects: EPAM (D 1.15×), CTSH (D 1.00× ±10% band), IT (D 1.18×), VRSK (D 1.96× → Tier-1 2a), GLOB (C: ROIC 7.5% < 80% × 13% WACC), EFX (A: FHFA bi-merge regulatory regime change + D 2.97×). Lesson: the AI-disruption de-rating of IT services is real (−20% to −46%) but with Rf 5.19% the stocks now trade at ≈ no-growth FCF value, not below it. See § Round 75 at end of file.)*
 
@@ -420,6 +421,8 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 | VMD | Viemed Healthcare, Inc. | Healthcare / Home Respiratory & Sleep Care Services | 2026-08-31 | $8.85 (2026-08-28, mkt cap ~$336M — micro-cap; flag re-verify >=2 clean sources) | +OCF $15.9M Q2 / $24M H1 2026 (net cash — cash > total debt) | +23.9% YoY Q2 2026 ($78.1M record; FY26 rev guide raised $314-320M) | ยังไม่ verify (adj EBITDA $13.7M Q2 **-4.0% YoY** — margin compression; FY26 adj EBITDA guide trimmed $64-68M) | **NEW — Growth bucket pass on revenue (+23.9% > 20%)** — home non-invasive ventilation + sleep + oxygen สำหรับผู้ป่วยโรคปอดเรื้อรัง; patient growth record, net cash + FCF-positive + buyback @ avg $9.65. Sector ใหม่ (home respiratory — ต่างจาก REGN pharma / PODD-DXCM device). ⚠️ CAUTION: adj EBITDA ติดลบ YoY = margin pressure (reimbursement + labor), micro-cap liquidity/volatility, stock -17% post-earnings; bucket borderline (revenue ผ่านแต่ EBITDA momentum ลบ) | **NEW — CAUTION (EBITDA margin compression) — รอ Analysis เฉพาะถ้า CIO สนใจ small-cap healthcare — Target date 2026-09-16** **SLA re-fix 2026-10-16 (Round 75 prune): Target 2026-10-23 — re-run Tier 1 Quick-Screen ภายใต้ Filter A-E ปัจจุบัน (scout เดิมใช้เกณฑ์ก่อน VALUE-FIRST/D-E) — ถ้าไม่ผ่าน A → archive รอบถัดไป** |
 | WYNN | Wynn Resorts, Limited | Consumer Discretionary / Casino & Gaming — Macau + Las Vegas + Boston + UAE (pipeline) | 2026-09-20 | $81.83 avg (2026-09-18 close, 2 sources: Google Finance $81.97 + ad-hoc-news.de $81.68, 0.35% diff — fresh 52-week low ณ วันที่ verify) | ~9.3% (FCF $791.87M TTM ÷ mkt cap ~$8.51B) | N/A | ROIC 9.81% (≈WACC ~10%, ผ่าน 0.8×WACC threshold แต่ไม่ผ่าน spread ≥3pp) | **LEARNING-QUEUE — Filter A+B ผ่านชัด, C ผ่านแบบ borderline (0.8x clause เท่านั้น), E เพียง 1/3.** Filter A: -39.4% จาก 52W high $134.72 (deepest ในกลุ่ม gaming ที่ scan รอบนี้, ทำ 52W low ใหม่ 2026-09-18). เหตุผล beaten-down: Macau GGR deceleration (ยังโตแต่ช้าลง +2.4% guide ปีหน้า) + UAE Ras Al Khaimah resort delay (regulatory/timeline, ไม่ใช่ project ล้ม) + exposure ต่อ Iran war regional risk (conflict ต่อเนื่อง 7 เดือน, ยังไม่ resolve) — ส่วนใหญ่ cyclical/sentiment แต่มี genuine unresolved geopolitical overhang. Filter C: ROIC 9.81% ผ่าน 0.8×WACC threshold แต่ไม่ผ่าน spread ≥3pp ที่ Filter E sub-criterion #2 ต้องการ. Filter E: 1/3 เท่านั้น (moat PASS — Macau+Vegas license scarcity; ROIC-spread FAIL; overhang UAE+Iran war FAIL) → **learning-queue lane ตาม Tier 1.5 rule** (ผ่าน 1/3 = learning-queue). ⚠️ Correlated กับ LVS (ทั้งคู่ Macau-exposed) — ถ้า CIO สนใจ gaming sector แนะนำเลือกตัวเดียวจากคู่นี้ไม่ใช่ทั้งคู่พร้อมกัน (concentration risk). Entry zone $77-85, Stop $65.46 (-20%). | **NEW — CAUTION (geopolitical overhang unresolved, correlated กับ LVS) — รอ Analysis เฉพาะถ้า CIO สนใจ learning-queue lightweight — Target date 2026-09-25** **SLA re-fix 2026-10-16 (Round 75 prune): Target 2026-10-23 — re-run Tier 1 Quick-Screen ภายใต้ Filter A-E ปัจจุบัน (scout เดิมใช้เกณฑ์ก่อน VALUE-FIRST/D-E) — ถ้าไม่ผ่าน A → archive รอบถัดไป** |
 | VICI | VICI Properties Inc. | Real Estate / Gaming & Experiential Triple-Net REIT | 2026-09-20 | $23.72 (2026-09-18 close, WallStreetZen — ⚠️ single-source, flag re-verify ≥2 sources ก่อน full analysis) | AFFO yield ~10.5% (AFFO $0.62/qtr ×4 ÷ $23.72) — ไม่ใช่ FCF yield มาตรฐาน (REIT) | N/A | N/A — ROIC framework ไม่ fit REIT โดยตรง ต้องใช้ cap-rate/cost-of-capital spread แทน | **CONDITIONAL — REIT ตัวแรกที่ scout เจอ, ต้อง Charlie/Emma ปรับ framework ก่อนตัดสิน Filter C/D จริง.** Filter A: -29.9% จาก 52W high (2-source variance $33.00-34.03, ยัง PASS ≥20% ทุกกรณี). เหตุผล beaten-down: broad rate-sensitive REIT sector rotation + gaming-tenant sentiment concern (ไม่ใช่ company-specific — AFFO ยังโต +4.6% YoY, dividend yield 7.63% coverage ~74% payout, ดูปลอดภัย). Moat = triple-net lease ให้ casino operator (MGM/Caesars) บน Vegas Strip real estate หายาก + escalator clauses ระยะยาว ~30 ปี — wide-ish moat เชิง real estate แต่ต้องเช็ค top-tenant concentration % ตอน full analysis (risk คล้าย single-tenant dependency). Entry zone $22-26, Stop $18.98 (-20%). | **NEW — CAUTION (ต้อง REIT-adapted framework, single-source price ต้อง re-verify) — รอ Analysis เฉพาะถ้า CIO สนใจ REIT diversifier — Target date 2026-09-27** **SLA re-fix 2026-10-16 (Round 75 prune): Target 2026-10-23 — re-run Tier 1 Quick-Screen ภายใต้ Filter A-E ปัจจุบัน (scout เดิมใช้เกณฑ์ก่อน VALUE-FIRST/D-E) — ถ้าไม่ผ่าน A → archive รอบถัดไป** |
+| SLM | SLM Corporation (Sallie Mae) | Financials / Consumer Finance — Private Student Lending (Value bucket) | 2026-10-16 (Round 77) | $22.22 (Oct 15 close, stockanalysis + finviz exact) · 52W high $31.06 = **−28.5%** | n/a (lender) — P/E 6.2 TTM / 7.2 fwd · P/B 1.88 (< 5Y median ~2.1-2.2) · buyback yield 6.7% | FY26 originations guide +12-14%; FY26 EPS guide $3.10-3.20 | ROE 30.3% (5Y avg ~27% vs CoE ~10%) | **🟢 FAST-TRACK candidate — only clean A-E pass in Round 77.** #1 private student lender (share >52%); federal PLUS reform = origination tailwind. Naive FV $31.50 (EPS $3.15 ÷ CoE 10%) → price 0.705× (0.776× at 11% CoE); Street PT $28-29.80 (+26-34%). E 3/3. ⚠️ Sep-26 −13% leg without a stock-specific catalyst (coincides with the 09-16 FOMC hike) → verify on the Q3 print. **Entry zone $20.50–23.00 · Stop $17.50** (below 52W low $17.77) | **Pending CIO decision — NOT dispatched (scout-only task).** If dispatched: wait for Q3 earnings **Oct 22**, target analysis **2026-10-23** |
+| ALLY | Ally Financial Inc. | Financials / Consumer Finance — Auto Lending + Digital Bank (Value bucket) | 2026-10-16 (Round 77) | $37.73 (Oct 15 close, stockanalysis; finviz $37.59, 0.4%) · 52W high $47.29 = **−20.2%** (borderline) | n/a (lender) — P/E 8.9 TTM / 6.65 fwd · P/TBV 0.85 | EPS +32% this year (finviz) | ROE 9.7% TTM (5Y avg ~10.5% vs CoE 10.1%) | **🟡 LEARNING-QUEUE (Filter E 1/3).** D 0.77× normalized / 0.90× TTM-only; Street PT $48.78 (+29%, single source). Moat ❌ (weakest ROE among the lenders screened), ROE spread ❌ +0.4pp, overhang ✅. **Entry zone $34–38 · Stop $29.50** | **LEARNING-QUEUE — Tier 1.5 lightweight only on CIO request; target 2026-10-23** (after the Q3 print Oct 20). Upgrade trigger: ROE trend ≥13% |
 
 ---
 
@@ -6976,3 +6979,199 @@ No source pair diverged >2% — no 3rd source needed per Price Verification rule
 **Target analysis date:** CIO decision pending — no ticker auto-queued for Charlie's pipeline this round (re-scout scope only, per task instruction).
 
 *Max — 2026-10-16 | CIO-directed re-scout — PODD/ZTS/NKE: 0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE); no full pipeline dispatched.*
+
+---
+
+## Scout Report § Round 77 (Multi-sector VALUE-FIRST sweep — Regional Banks/Consumer Finance · Homebuilders/Building Products · Commodity Chemicals · Packaging · Tariff-hit Consumer Discretionary · Autos/Auto Parts · Specialty Pharma) — 2026-10-16
+
+**Trigger:** CIO task 2026-10-16 — "scout ≥30 new candidates", full `.claude/commands/scout.md` Step 0-6, **scout/screen only — no full pipeline dispatch** (even for fast-track).
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK — 4/5 software, zero Financials/Industrials/Materials exposure). Cash ~73.8% of NAV. Force Deploy ACTIVE in principle (RISK-ON, cash >30% >2 weeks) — applies only to a candidate that clears the conviction gate after a full pipeline.
+**Regime:** Atlas re-call **2026-10-16 → RISK-ON 3/4** (`agent_notes/atlas/2026-10-16_regime.md`, same day — no re-call needed per CIO). Rf (10Y) **5.19%** · Fed hikes priced (lone RISK-OFF dissent). High Rf mechanically compresses every no-growth naive FV this round.
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | fixed SLA **0** | live **16** → **18** after this round (+SLM, +ALLY).
+All 16 live Pending tickers (SOFI, ETON, EVLV, ACMR, VEL, KALU, HG, IBKR, URI, EME, INDI, ANIP, BKSY, VMD, WYNN, VICI) were re-checked and SLA-reset to **target 2026-10-23** in this morning's Round 75 prune. None newly meets De-list Rules #1-3: none became a position, there is no new AVOID/SKIP in `decisions.md`, and none can be stale-timeout since this morning. No "thesis dead" archive was attempted, so the prune needed no live-price re-check.
+
+### Sector mandate rotation check
+Recent rounds: R69 DC REITs · R70 Electrical/Grid · R71 Oil & Gas/Refining · R72 Nuclear/SMR · R73 Solar · R74 AI/Infra lane · R75 IT Services + Data/Info · R76 PODD/ZTS/NKE re-scout. **This round uses none of those sectors.** It sweeps 7 de-rated 2026 groups from the scout.md Step 2 list. Homebuilders (R66) and chemicals (R33/R65) were last touched 11+ rounds ago with **different tickers**, so every ticker below is fresh.
+**Hard-exclusion check:** every candidate was grepped against `watchlist.md` (live + Archive + all scout history), `decisions.md`, `deployment_log.md`, `buy_list.md` and `dashboard/portfolio.js` → **0 overlaps**. Excluded before scanning: KEY, ZION, CMA, CFR, DHI, TOL, KBH, NVR, BLDR, MHK, CC, MOS, CF, CTVA, ALB, EW, BAX, BDX, STE, ALGN, MDT, SYK, RL, BBY, GM, MET, PRU, IP, SW, COF, MKTX, plus the 2026-10-16 archive list (FTAI, NKE, ZTS, CPRT, PODD, ONON, GEHC, BR, CLS, LITE, GLW).
+
+### Method (Price Verification block)
+- **Source 1:** finviz screener batch pages: technical view `v=171` (% from 52W high), valuation `v=121`, financial `v=161`. Batches: [1](https://finviz.com/screener.ashx?v=171&t=CFG,HBAN,FITB,TFC,FHN,WAL,EWBC,SNV,TPH,TMHC,MHO,CCS,LGIH,MAS,FBIN,OC,TREX,LPX,HUN,OLN), [2](https://finviz.com/screener.ashx?v=171&t=WLK,TROX,ASH,AVNT,FMC,ZBH,TFX,BIIB,VTRS,OGN,TEVA,JAZZ,PRGO,HAS,MAT,POOL,CROX,VFC,PVH,TPR), [3](https://finviz.com/screener.ashx?v=171&t=LEVI,COLM,UAA,TSCO,WSM,RH,AAP,LEA,BWA,GT,ALV,MGA,STLA,LNC,AFL,CRBG,EQH,GL,UNM,BEN), [4](https://finviz.com/screener.ashx?v=171&t=IVZ,TROW,AMG,OMC,CAH,MCK,HSIC,LH,DGX,IQV,CRL,SKX,EXEL,USB,PNC,MTB,AZO,ORLY,GPC,SCCO), [banks](https://finviz.com/screener.ashx?v=171&t=BOKF,WBS,PNFP,ONB,COLB,BPOP,FNB,VLY,WTFC,SSB,UMBF,ASB,BKU,FLG,OZK,HWC,TCBI,ALLY,SYF,OMF), [packaging/lenders](https://finviz.com/screener.ashx?v=171&t=PKG,SEE,BALL,AMCR,SON,GPK,CCK,SLGN,OI,AVY,CACC,SLM,NAVI).
+- **Source 2:** `stockanalysis.com/stocks/[ticker]/`, Oct 15 2026 4:00 PM EDT close + 52W range, fetched per ticker this session.
+- **Total pre-screened: 107 tickers.** **37 tickers are 2-source verified** (every Filter A pass and every near-miss within 2pp); they are in the table below. The other **70 were single-source finviz pre-screen fails at least 2.5pp short of −20%**. They are listed at the end and not counted as "verified". SNV, TPH, TMHC, SKX and SEE returned no finviz row (merged, acquired or delisted) and are not counted.
+- Where the 2 sources differed by >2%, a 3rd source was checked:
+  - **NAVI:** finviz $10.30 vs stockanalysis $9.56 (7.7% apart). The 3rd source, [trade-ideas](https://www.trade-ideas.com/stock-info/NAVI/) at ~$9.42, confirms the $9.5 area, so the finviz print is treated as an outlier.
+  - **OMF:** finviz $58.19 vs stockanalysis $55.79 (4.3% apart). The [stockanalysis history Oct 9 close of $56.07](https://stockanalysis.com/stocks/omf/history/) and [digrin's Oct MTD $56.02](https://www.digrin.com/stocks/detail/OMF/price) both support ~$56. That puts Filter A at −22.1% to −22.4%, but the finviz-only reading would be −19.1%, so OMF is **flagged as borderline**.
+  - **STLA:** finviz $4.48 (pre-market) vs close $4.35 (3.0% apart). Both readings are far past −20%, so the gap is immaterial.
+
+### Filter A — ≥20% below 52W high (2-source, Oct 15 2026 close)
+
+| # | Ticker | Sector | Price (SA close) | 52W High (SA) | % from high (SA) | finviz % | A |
+|---|---|---|---|---|---|---|---|
+| 1 | WAL | Regional bank | $74.35 | $97.23 | −23.5% | −23.6% | ✅ |
+| 2 | HBAN | Regional bank | $15.35 | $19.46 | −21.1% | −21.1% | ✅ |
+| 3 | ALLY | Consumer finance / digital bank | $37.73 | $47.29 | −20.2% | −20.5% | ✅ (borderline) |
+| 4 | SLM | Consumer finance (private student loans) | $22.22 | $31.06 | −28.5% | −28.5% | ✅ |
+| 5 | OMF | Consumer finance (non-prime installment) | $55.79 | $71.93 | −22.4% | −19.1% | ⚠️ borderline (3-source ~$56) |
+| 6 | FLG | Regional bank (ex-NYCB) | $11.25 | $15.44 | −27.1% | −26.8% | ✅ |
+| 7 | NAVI | Student-loan servicer/runoff | $9.56 | $13.48 | −29.1% | −23.6% | ✅ (3-source) |
+| 8 | CCS | Homebuilder | $55.55 | $76.00 | −26.9% | −26.9% | ✅ |
+| 9 | LGIH | Homebuilder | $44.08 | $66.25 | −33.5% | −33.5% | ✅ |
+| 10 | MHO | Homebuilder | $126.02 | $163.66 | −23.0% | −23.0% | ✅ |
+| 11 | FBIN | Building products | $39.96 | $64.84 | −38.4% | −38.4% | ✅ |
+| 12 | OC | Building products | $113.69 | $159.91 | −28.9% | −28.9% | ✅ |
+| 13 | LPX | Building products (OSB/siding) | $69.39 | $100.34 | −30.8% | −30.9% | ✅ |
+| 14 | HUN | Commodity chemicals | $8.56 | $16.09 | −46.8% | −46.8% | ✅ |
+| 15 | OLN | Chlor-alkali | $15.55 | $30.46 | −48.9% | −49.0% | ✅ |
+| 16 | WLK | PVC/olefins | $63.61 | $124.23 | −48.8% | −48.8% | ✅ |
+| 17 | TROX | TiO2 | $3.54 | $10.59 | −66.6% | −66.6% | ✅ |
+| 18 | FMC | Ag chemicals | $5.62 | $31.30 | −82.0% | −81.8% | ✅ |
+| 19 | GPK | Paperboard packaging | $8.73 | $18.25 | −52.2% | −52.0% | ✅ |
+| 20 | OI | Glass containers | $5.92 | $16.91 | −65.0% | −65.1% | ✅ |
+| 21 | SLGN | Rigid packaging | $37.47 | $49.55 | −24.4% | −23.8% | ✅ |
+| 22 | SON | Packaging | $49.66 | $60.67 | −18.1% | −18.2% | ❌ near-miss |
+| 23 | MAT | Toys (tariff) | $17.32 | $22.48 | −23.0% | −22.8% | ✅ |
+| 24 | TPR | Accessible luxury (tariff) | $119.75 | $164.80 | −27.3% | −27.3% | ✅ |
+| 25 | VFC | Apparel | $17.00 | $22.27 | −23.7% | −23.1% | ✅ |
+| 26 | UAA | Apparel | $4.88 | $8.15 | −40.1% | −40.0% | ✅ |
+| 27 | LEVI | Apparel | $20.65 | $25.70 | −19.6% | −19.8% | ❌ near-miss |
+| 28 | POOL | Leisure distribution | $169.12 | $305.63 | −44.7% | −44.7% | ✅ |
+| 29 | RH | Home furnishings | $117.87 | $239.40 | −50.8% | −50.6% | ✅ |
+| 30 | TSCO | Rural retail | $33.37 | $58.21 | −42.7% | −42.7% | ✅ |
+| 31 | BWA | Auto parts | $58.67 | $78.82 | −25.6% | −25.6% | ✅ |
+| 32 | GT | Tires | $4.42 | $10.62 | −58.4% | −58.0% | ✅ |
+| 33 | STLA | Autos | $4.35 | $12.22 | −64.4% | −63.3% | ✅ |
+| 34 | AAP | Auto parts retail | $43.92 | $65.20 | −32.6% | −32.7% | ✅ |
+| 35 | AZO | Auto parts retail | $3,059.62 | $4,076.34 | −24.9% | −24.3% | ✅ |
+| 36 | PRGO | Consumer health / generics | $16.48 | $22.02 | −25.2% | −25.5% | ✅ |
+| 37 | JAZZ | Specialty pharma | $214.42 | $266.38 | −19.5% | −19.4% | ❌ near-miss |
+
+Sources: the "SA" columns come from `https://stockanalysis.com/stocks/[ticker]/` per row (e.g. [SLM](https://stockanalysis.com/stocks/slm/), [ALLY](https://stockanalysis.com/stocks/ally/), [WAL](https://stockanalysis.com/stocks/wal/)). The finviz % comes from the batch pages above. **Filter A numeric: 33/37 pass.** SON, LEVI and JAZZ are near-misses (0.4–1.9pp short), and OMF is a borderline pass.
+
+### B-Zero / B / C — fundamentals
+Data comes from the finviz [valuation](https://finviz.com/screener.ashx?v=121&t=CCS,FBIN,HBAN,HUN,LGIH,LPX,MHO,OC,OLN,WAL,FMC,MAT,POOL,PRGO,TPR,TROX,VFC,WLK,AAP,BWA,GT,RH,STLA,TSCO,UAA,AZO,JAZZ,LEVI) and [financial](https://finviz.com/screener.ashx?v=161&t=CCS,FBIN,HBAN,HUN,LGIH,LPX,MHO,OC,OLN,WAL,FMC,MAT,POOL,PRGO,TPR,TROX,VFC,WLK,AAP,BWA,GT,RH,STLA,TSCO,UAA,AZO,JAZZ,LEVI) views, the [lenders/packaging](https://finviz.com/screener.ashx?v=161&t=ALLY,FLG,GPK,NAVI,OI,SLGN,SLM,OMF,SON) view, and the bank stats on stockanalysis `/statistics/`.
+
+**WACC/CoE convention this round:** CAPM CoE = Rf 5.19% + β × ERP 4.5%. The 4.5% ERP is an assumption inside Damodaran's ~4-5% range, and CoE is floored at the CLAUDE.md mid-cap band (≥10%). Non-financial WACC proxies are 8.5–10% depending on size and cyclicality. The Filter C bar is ROIC ≥ 80% of WACC (~7–8%); lenders use ROE vs CoE instead.
+
+| Ticker | Key metrics (TTM) | B-Zero | B | C | Beaten-down reason (A-gate) | Exit point |
+|---|---|---|---|---|---|---|
+| CCS | ROIC 3.3%, P/FCF 39, P/B 0.62 | ✅ | ✅ P/B | ❌ 3.3% ≪ ~8% | Rate-driven housing slowdown (cyclical) | **C** |
+| LGIH | ROIC 1.8%, P/B 0.48 | ✅ | ✅ P/B | ❌ | Entry-level buyer affordability (cyclical) | **C** |
+| MHO | ROIC 7.9% vs WACC ~10.5% (β 1.67) = 75% | ✅ | ✅ P/B 0.99 | ❌ (75% < 80%) | Cyclical (rates) | **C** (near) |
+| FBIN | ROIC 2.9% (GAAP), P/FCF 11.9 | ✅ | ✅ FCF 8.4% | ❌ | Repair/remodel slump + tariffs (cyclical) | **C** |
+| OC | ROIC −8.0% (GAAP loss), operating margin 14.9%, P/FCF 10.0 | ✅ | ✅ FCF 10.0% | ❌ GAAP | Cyclical + impairment; D would also fail (10.0% ÷ 10% = 1.00×) | **C** |
+| LPX | ROIC 2.6%, no FCF | ✅ | ❌ | ❌ | OSB price trough (cyclical) | **B/C** |
+| HUN / OLN / WLK / TROX | ROIC −3.6% / −2.8% / −8.5% / −12.4% | TROX D/E 3.0 ⚠️ | ❌ no FCF (OLN P/FCF 17.6) | ❌ ROIC < 0.5× WACC and falling | Chemicals trough + China oversupply; TROX/HUN lean structural (multi-year) | **C** (Tier-1 check 1 SKIP grade) |
+| FMC | ROIC −48.5%, profit margin −85% | ⚠️ | ✅ P/B 0.43 | ❌ | ❌ **Permanent:** generic diamide erosion of the core franchise, −82% | **A-reason** |
+| GPK | ROIC 2.3%, FCF 7.3% | ✅ | ✅ | ❌ | Volume declines + new-capacity oversupply (unclear, structural lean) | **C** |
+| OI | ROIC −22.3%, D/E 13.0 | ❌ near-zero equity from operating losses | — | — | Secular glass-volume decline + leverage | **B-Zero** |
+| SLGN | ROIC 4.5% (50% of WACC), FCF 8.6% | ✅ | ✅ | ❌ | Volume softness (cyclical) | **C** |
+| MAT | ROIC 9.2% vs ~9.5% (96%), FCF 8.8% | ✅ | ✅ FCF > 6% | ✅ | Tariff cost shock (temporary) | → **D** |
+| TPR | ROIC 35.2%, FCF 7.6%, P/B 34.7 | ⚠️ thin equity (buyback artifact, not operating loss) | ✅ | ✅ | Tariffs + luxury slowdown (cyclical) | → **D** |
+| VFC | ROIC 4.7% (49%), D/E 2.8 | ⚠️ | ✅ FCF 9.2% | ❌ | Turnaround, brand erosion (Vans), unclear | **C** |
+| UAA | ROIC −18.6% | ✅ | ❌ | ❌ | Operating losses | **C** |
+| POOL | ROIC 14.1%, FCF 4.9%, fwd P/E 14.4 | ✅ | ✅ multiple leg (fwd P/E low vs its own history) | ✅ | Pool-construction slump (cyclical) | → **D** |
+| RH | ROIC 2.7%, D/E 34.1 | ❌ equity ≈ 0 (leverage) | — | ❌ | Housing-turnover slump + leverage | **B-Zero/C** |
+| TSCO | ROIC 11.6%, FCF 1.8%, fwd P/E 16.3 | ✅ | ✅ multiple leg only | ✅ | Rural-consumer slowdown (cyclical) | → **D** |
+| BWA | ROIC 4.3% (GAAP, impairments), FCF 10.2% | ✅ | ✅ | ❌ borderline: 10.2% operating margin implies a higher adjusted ROIC, but D decides it anyway | EV transition + tariffs (unclear) | → **D** (for completeness) |
+| GT / STLA / AAP | ROIC −26.9% / −23.3% / 1.1% | ⚠️ | — | ❌ | Operating losses / turnaround | **C** |
+| AZO | ROIC 25.9%, FCF 3.3%, negative equity (buybacks) | ⚠️ negative equity = buyback artifact (BBWI branch) | ✅ fwd P/E 17.9 vs its own ~20s history (multiple leg) | ✅ | Consumer slowdown + tariffs (cyclical) | → **D** |
+| PRGO | ROIC −29.2% (impairment), 7% dividend yield | ⚠️ | — | ❌ | Impairment-driven, unclear | **C** |
+| FLG | ROE 0.6% | ✅ | ✅ P/B 0.62 | ❌ (0.6% ≪ CoE) | CRE/multifamily turnaround | **C** |
+| NAVI | ROE −2.0%, D/E 18.5 | ⚠️ | ✅ P/B 0.40 | ❌ | ❌ **Permanent:** FFELP portfolio runoff = secular decline | **A-reason/C** |
+| HBAN | ROE 9.0% vs CoE 10% (90%) · P/B 1.04 | ✅ | ✅ P/B ≈ 1.0, low end of its range (median not retrieved) | ✅ | Rate-driven bank selloff after the 09-16 FOMC hike (cyclical) | → **D** |
+| WAL | ROE 13.0% vs CoE 11.6% (β 1.42) · P/B 1.06 · P/TBV 1.16 | ✅ | ✅ P/B ~1.06 | ✅ | Rates + deposit-concentration sensitivity. **No 2026-specific catalyst found** (search returned only the Oct 2025 borrower-fraud episode), so the reason is unclear and written both ways | → **D** |
+| ALLY | ROE 9.7% vs CoE 10.1% (β 1.10) = 96% · **P/B 0.85 = P/TBV 0.85** | ✅ | ✅ P/TBV < 1.0 (5Y median not retrieved — flag) | ✅ (EPS +32% this year, improving) | Auto-credit/subprime sentiment + rate hikes (cyclical) | → **D** |
+| OMF | ROE 23.3% vs CoE 10.6% · P/B 1.90 · P/TBV 3.94 | ✅ | ❌ **not demonstrated:** P/B ≈ its own recent ~1.9-2.0 range, and P/E 8.4 is not below history | ✅ | Consumer-credit cycle (cyclical) | **B** (near-miss) |
+| SLM | ROE 30.3% vs CoE 10.0% (β 0.98) · P/B 1.88 · P/E 6.2 · buyback yield 6.7% | ✅ | ✅ **P/B 1.88 < 5Y median** (~2.1-2.2). P/B ran 1.56-2.82 over 2023-25 and 2.6-2.8 in 1H25 ([macrotrends via search](https://macrotrends.net/stocks/charts/SLM/slm/price-book), [opencapital](https://www.opencapital.sh/stocks/slm/metrics/ratios)) | ✅ | ✅ Temporary/sentiment (detail below the table) | → **D** |
+
+**SLM beaten-down reason, in detail:**
+- **Dec 2025:** a −16% day on analyst downgrades over the 2026-27 expense ramp ([Barchart](https://www.barchart.com/story/news/36532967/why-sallie-mae-slm-stock-is-trading-lower-today)).
+- **Q2-26:** an EPS miss ($0.29 vs ~$0.45), with FY26 guidance **held** at $3.10-3.20 ([MarketBeat](https://www.marketbeat.com/instant-alerts/slm-nasdaqslm-shares-gap-down-on-disappointing-earnings-2026-07-24/), [Webull/Barchart](https://www.webull.ca/news-detail/15278662372631552)).
+- **Sep 2026 leg (⚠️ unexplained):** the stock went from $26.09 on Sep 9 to $22.63 on Sep 30 with **no stock-specific catalyst found**. The bullish read is that it was rate-driven, since it coincides with the 09-16 FOMC hike (cyclical). The bearish read is credit-quality deterioration that has not yet been disclosed. The Q3 print on **Oct 22** resolves it.
+
+### Filter D — naive FV gap (survivors of A/B/C)
+
+- **Non-financials:** naive FV = normalized FCF ÷ WACC (no-growth). TTM P/FCF from finviz is used as the normalized-FCF proxy (disclosed); none of these companies is at peak FCF.
+- **Lenders:** naive FV = normalized EPS ÷ CoE. Normalized EPS = average(TTM, NTM), unless company guidance is available.
+
+| Ticker | Normalized cash/earnings yield | WACC/CoE | Naive FV ÷ price | **Price ÷ naive FV** | Street PT | D |
+|---|---|---|---|---|---|---|
+| MAT | FCF 8.78% | 9.5% | 0.92 | **1.08×** (±10% band) | — | ❌ Tier-1 2b |
+| TPR | FCF 7.63% | 9.5% | 0.80 | **1.25×** | — | ❌ |
+| POOL | FCF 4.90% | 9.0% | 0.54 | **1.84×** | — | ❌ Tier-1 2a |
+| TSCO | FCF 1.77% | 8.5% | 0.21 | **4.8×** | — | ❌ Tier-1 2a |
+| AZO | FCF 3.26% | 8.5% | 0.38 | **2.6×** | — | ❌ Tier-1 2a |
+| BWA | FCF 10.15% | 10.0% | 1.02 | **0.99×** (±10% band) | — | ❌ Tier-1 2b |
+| HBAN | EPS avg($1.28 TTM, $1.62 NTM) = $1.45 | 10.0% (CAPM 9.65% → floor) | 0.94 | **1.06×** | — | ❌ |
+| WAL | EPS avg($8.87, $10.14) = $9.51 | 11.6% | 1.10 | **0.906×** | $90.81 (+22%, 16 analysts, [SA](https://stockanalysis.com/stocks/wal/statistics/)) | ❌ **near-miss** (0.6pp over 0.90; TTM-only = 0.97×) |
+| OMF | EPS avg($6.63, $7.51) = $7.07 | 10.6% | 1.19 | 0.84× | $67.43 (+21%, [SA](https://stockanalysis.com/stocks/omf/statistics/)) | (learning-queue grade, but already out at B) |
+| **ALLY** | EPS avg($4.24 TTM, $5.67 NTM) = $4.96 | 10.1% | 1.30 | **0.77×** (TTM-only $41.8 → **0.90×**) | $48.78 (+29%, 18 analysts, [SA](https://stockanalysis.com/stocks/ally/statistics/)) | 🟡 **range 0.77–0.90× → learning-queue grade** (fast-track on the normalized basis, but sensitive to NTM delivery) |
+| **SLM** | EPS = FY26 guide midpoint **$3.15** (below TTM $3.59, which includes lumpy loan-sale gains) | 10.0% (CAPM 9.6% → floor) | 1.42 | **0.705×** (CoE 11% → $28.64 → **0.776×**) | $28.36 (11, [SA](https://stockanalysis.com/stocks/slm/statistics/)) · $29.80 (12, [MarketBeat 07-30](https://www.marketbeat.com/instant-alerts/slm-corporation-nasdaqslm-given-consensus-rating-of-hold-by-brokerages-2026-07-30/)) · $28 (11, [Benzinga](https://www.benzinga.com/quote/SLM/price-targets)) → **+26–34%** | ✅ **fast-track grade**: stays ≤0.80× up to a CoE of 11.3%, and the Street PT points the same way (no tie-break conflict) |
+
+### Filter E — conviction viability (ALLY, SLM)
+
+| Ticker | 1. Moat (evidence) | 2. Through-cycle ROE − CoE ≥ +3pp | 3. No unresolved structural/regulatory/governance overhang | Score |
+|---|---|---|---|---|
+| **SLM** | ✅ #1 US private student lender. The company deck says Private Education share rose from 52% ([Q1-26 deck](https://www.salliemae.com/content/dam/slm/writtencontent/Reports/investors/SLM-Corp_Q1-2026_Sallie-Mae-Earnings-Presentation.pdf)); third-party estimates are 57-64%. School-channel relationships + bank-deposit funding = Narrow+ | ✅ ROE 2022 25% (company, [Q4-22 release](https://www.salliemae.com/content/dam/slm/writtencontent/Reports/investors/Fourth-Quarter-2022-Earnings-Release.pdf)); macrotrends 2023 23.1% / 2024 33.1%; TTM 30.3% → **~27% avg vs CoE ~10% = +17pp** | ✅ Federal **PLUS reform is a tailwind, not an overhang**: the CEO cites "+$4.5-5B potential annual originations" ([Cobalt](https://newsletter.cobaltintelligence.com/p/sallie-mae-targets-5-billion-a-year-as-washington-exits-graduate-lending)), and the FY26 originations guide is +12-14%. Watch items (not unresolved structural): expense ramp, credit quality into Q3 | **3/3** |
+| **ALLY** | ❌ Narrow at best. It has scale in dealer auto finance and digital deposits, but the **lowest ROE among the lenders screened**, which fails the "Narrow with weakest returns" test | ❌ ROE 2021 17.95% / 2022 13.3% / 2023 7.0% / 2024 4.8% ([stockalarm/valueinvesting.io via search](https://valueinvesting.io/ALLY/metric/roe), [macrotrends](https://m.macrotrends.net/stocks/charts/ALLY/ally-financial/roe)) / TTM 9.7% → **avg ~10.5% vs CoE 10.1% ≈ +0.4pp** | ✅ No legislative or legal binary found; auto-credit risk is cyclical | **1/3** |
+
+### Tier 1.5 Lane Assignment (Max recommendation — Charlie makes the final lane call at Tier 1)
+
+| Lane | Ticker | Why |
+|---|---|---|
+| 🟢 **Fast-track** | **SLM** (Financials — consumer finance, **Value bucket**) | Only clean A-E pass of the 37 verified (detail below the table) |
+| 🟡 **Learning-queue** | **ALLY** (Financials — consumer finance/digital bank, **Value bucket**) | D 0.77–0.90× and E only 1/3 (detail below the table) |
+| 🔴 **Reject** | 35 others | See the exit points per row above. Near-misses are listed below the table |
+
+**SLM (fast-track) — filter results:**
+- A ✅ −28.5% (temporary/sentiment) · B-Zero ✅ · B ✅ P/B 1.88 < 5Y median, P/E 6.2 · C ✅ ROE 30% ≫ CoE.
+- **D ✅ 0.705×** (0.776× at an 11% CoE); Street PT +26-34%.
+- **E 3/3.**
+
+**SLM — pre-dispatch condition for Charlie:** wait for Q3-26 earnings on **Oct 22** (6 days). The print either confirms the Sep leg was rate-driven (keep fast-track) or reveals credit deterioration (downgrade to learning-queue).
+
+**SLM — notes for Bear:** TTM EPS includes loan-sale gains, so use guidance-based EPS. The expense ramp is a "reinvestment-phase" item under the Bear Discount Classification rule.
+
+**ALLY (learning-queue) — filter results:**
+- A ✅ −20.2% (borderline) · B ✅ P/TBV 0.85 · C ✅ 96% of CoE and rising.
+- D 0.77–0.90× (sensitive to NTM EPS).
+- **E 1/3:** moat ❌, ROE spread ❌ (+0.4pp), overhang ✅.
+
+**ALLY — next step:** Tier 1.5 lightweight (Emma FV + Bear-lite) only if the CIO wants the data point. Upgrade path: the Q3 print on **Oct 20** shows ROE trending to ≥13% (spread ≥3pp) and the stock stays ≤$38.
+
+**Near-misses worth a re-check if prices fall:**
+- **WAL:** D 0.906×. Re-screen at ≤ $73.9 (= 0.90×) or ≤ $65.7 (= 0.80×); earnings Oct 19.
+- **OMF:** B not demonstrated; A borderline.
+- **MHO:** C at 75%.
+- **SON / LEVI / JAZZ:** A short by 1.9 / 0.4 / 0.5pp.
+- **BWA / MAT:** D within ±10%.
+
+**Funnel:** 37 verified → 33 pass A → 10 pass B-Zero/B/C → 2 pass D (SLM clean, ALLY on a range) → E: SLM 3/3, ALLY 1/3.
+**Result: Fast-track 1 (SLM) · Learning-queue 1 (ALLY) · Reject 35.**
+
+### Single-source finviz pre-screen fails (70 — not counted as verified; all ≥2.5pp short of −20% except BKU)
+- **Banks/finance:** CFG −15.2, FITB −15.4, TFC −16.4, FHN −13.9, EWBC −8.2, USB −14.7, PNC −17.0, MTB −13.3, ASB −10.3, BKU −18.2 (1.8pp — closest), BOKF −14.0, BPOP −12.2, COLB −13.9, FNB −11.3, HWC −9.4, ONB −7.7, OZK −14.1, PNFP −14.5, SSB −9.7, SYF −16.6, TCBI −16.7, UMBF −13.2, VLY −16.1, WTFC −14.2, CACC −17.8
+- **Insurance/asset managers:** AFL −9.4, CRBG −2.8, EQH −3.1, GL −12.5, LNC −16.1, UNM −4.5, BEN −13.5, IVZ −14.4, TROW −16.9, AMG −3.0
+- **Building/home:** MAS −12.6, TREX −12.2, WSM −1.1
+- **Chemicals/materials:** ASH −8.5, AVNT −16.4, SCCO −7.8
+- **Packaging:** AMCR −15.1, AVY −11.7, BALL −7.7, CCK −6.7, PKG −10.5
+- **Consumer:** CROX −11.7, HAS −7.4, PVH −15.2, COLM −11.9
+- **Autos:** ALV −10.7, LEA −17.9, MGA −8.6, GPC −12.3, ORLY −13.9
+- **Healthcare:** BIIB −1.9, OGN −0.8, TEVA −0.9, VTRS −0.8, TFX −11.6, ZBH −11.7, EXEL −0.1, CAH −1.3, MCK −1.1, HSIC −5.6, LH −4.4, DGX −1.8, IQV −2.1, CRL −7.4
+- **Media:** OMC −9.9
+
+BKU is the only one inside 2pp of the threshold; it would still need a 2nd source if re-checked.
+
+### What this round tells the team
+- With Rf at 5.19%, the "cheap" non-financial names almost never clear D: a no-growth FV needs an FCF yield of at least ~11-12% for fast-track. **Value is showing up in lenders trading at 6-7× earnings**, where the earnings yield exceeds CoE. This is the first clean 3/3 Filter E fast-track in Financials since the VALUE-FIRST pivot.
+- Most of the deepest drawdowns (chemicals −47% to −82%, packaging −52% to −65%, autos −58% to −64%) come with **negative TTM ROIC**. These are "cheap stock, broken earnings" cases, and C/B-Zero correctly stops them before D.
+- Portfolio fit: SLM would be the first Financials holding (the current book is 4/5 software). That is a diversification bonus, not a gate.
+
+**Target analysis date:**
+- **SLM:** CIO decision. If dispatched, target **2026-10-23**, after the Oct 22 Q3 print and within the 5-day Scout→Analysis SLA.
+- **ALLY:** learning-queue only on CIO request; target 2026-10-23, after the Oct 20 print.
+- **No full pipeline was dispatched this round, per the CIO task.**
+
+*Max — 2026-10-16 | Scout Round 77 — multi-sector VALUE-FIRST sweep (7 groups). 107 pre-screened / 37 two-source verified; A 33 · fast-track 1 (SLM) · learning-queue 1 (ALLY) · reject 35; no full pipeline dispatched.*

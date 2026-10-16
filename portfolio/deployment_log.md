@@ -946,3 +946,28 @@
 **Rationale (all 7):** Regime RISK-ON 3/4 (Atlas re-call 2026-10-16), Force Deploy ACTIVE, cash ~73.8%. A candidate that cleared the full pipeline would have been deploy-eligible. The sector (never scouted before) was chosen to rotate away from six straight AI-power/infra rounds (R69–74). **0/7 pass A-E · 0 fast-track · 0 learning-queue.** With Rf at 5.19%, the de-rated IT services names trade at about their no-growth FCF value, not 20% below it. Payroll/HCM sidebar (PAYX/ADP/PAYC/PCTY) was pre-scanned and dropped (not beaten-down; FCF yield < 6%). Step 0 prune: 16 de-listed (5 superseded + 11 stale), 16 SLA-fixed → 2026-10-23.
 
 *Max — 2026-10-16 | Scout Round 75 — 0/7 pass A-E; no trade. Detail: `portfolio/watchlist.md` § Round 75.*
+
+---
+
+## Scout Round 77 — Multi-sector VALUE-FIRST sweep (Banks/Consumer Finance · Homebuilders/Building Products · Chemicals · Packaging · Consumer Discretionary · Autos · Pharma) — 2026-10-16
+
+| Date | Ticker | Action | Gate Status | Position Size | Tranche | Rationale | Counter-factual |
+|------|--------|--------|--------------|----------------|---------|-----------|------------------|
+| 2026-10-16 | SLM | PENDING ANALYSIS — fast-track candidate (not dispatched, per CIO task) | A ✅ −28.5% (SA + finviz, exact) · B-Zero ✅ · B ✅ P/B 1.88 < 5Y median · C ✅ ROE 30.3% · **D ✅ 0.705×** (EPS $3.15 guide ÷ CoE 10%; 0.776× at 11%) · **E 3/3** | $0 | — | Only clean A-E pass. Wait for the Q3 print on Oct 22 before Charlie dispatches | Entry zone $20.50–23.00 |
+| 2026-10-16 | ALLY | LEARNING-QUEUE (Filter E 1/3) | A ✅ −20.2% · B ✅ P/TBV 0.85 · C ✅ 96% of CoE · D 0.77–0.90× · E 1/3 (moat ❌, ROE spread +0.4pp ❌) | $0 | — | Cheap on book, but weak through-cycle returns | Upgrade if ROE trends ≥13% |
+| 2026-10-16 | WAL | QUICK-SCREEN SKIP (Filter D REJECT — near-miss) | A ✅ −23.5% · C ✅ ROE 13.0% vs CoE 11.6% · **D 0.906×** (EPS avg $9.51 ÷ 11.6%) | $0 | — | 0.6pp over the 0.90 line; beaten-down reason unclear | Re-screen ≤ $73.9 |
+| 2026-10-16 | HBAN | QUICK-SCREEN SKIP (Filter D REJECT) | A ✅ −21.1% · C ✅ · **D 1.06×** | $0 | — | Fair at no-growth value | Re-screen ≤ $13.0 |
+| 2026-10-16 | OMF | QUICK-SCREEN SKIP (Filter B REJECT — near-miss) | A ⚠️ −22.4% (3-source ~$56; finviz −19.1%) · B ❌ P/B 1.90 ≈ its own range · C ✅ ROE 23% · D 0.84× | $0 | — | Not cheap vs its own history | — |
+| 2026-10-16 | MAT / BWA | QUICK-SCREEN SKIP (Filter D — ±10% band, Tier-1 2b) | D 1.08× / 0.99× | $0 | — | No room for MOS ≥15% | — |
+| 2026-10-16 | TPR / POOL / AZO / TSCO | QUICK-SCREEN SKIP (Filter D REJECT; POOL/AZO/TSCO >1.5× = Tier-1 2a) | D 1.25× / 1.84× / 2.6× / 4.8× | $0 | — | FCF yield too low vs a 5.19% Rf | — |
+| 2026-10-16 | CCS, LGIH, MHO, FBIN, OC, LPX, HUN, OLN, WLK, TROX, GPK, SLGN, VFC, UAA, GT, STLA, AAP, PRGO, FLG | QUICK-SCREEN SKIP (Filter C REJECT) | ROIC/ROE < 80% of WACC/CoE (most negative TTM) | $0 | — | Cheap stock, broken earnings | — |
+| 2026-10-16 | FMC, NAVI | QUICK-SCREEN SKIP (Filter A REJECT — permanent impairment reason) | −82% / −29% | $0 | — | Generic erosion / FFELP runoff | — |
+| 2026-10-16 | OI, RH | QUICK-SCREEN SKIP (B-Zero REJECT) | Near-zero equity from operating losses/leverage | $0 | — | — | — |
+| 2026-10-16 | SON, LEVI, JAZZ | QUICK-SCREEN SKIP (Filter A REJECT — near-miss) | −18.1% / −19.6% / −19.5% | $0 | — | — | — |
+
+**Rationale (all 37 verified):**
+- **Regime:** RISK-ON 3/4 (Atlas 2026-10-16). Force Deploy is ACTIVE but needs a conviction-gate pass from a full pipeline, and none was dispatched per the CIO task.
+- **Scope:** 107 pre-screened, of which 37 were 2-source verified. The other 70 are single-source fails ≥2.5pp short (BKU 1.8pp), listed in `watchlist.md` § Round 77.
+- **Funnel:** 33 pass A → 10 pass B/C → 2 pass D → **1 fast-track (SLM) · 1 learning-queue (ALLY) · 35 reject.**
+
+*Max — 2026-10-16 | Scout Round 77 — fast-track 1 (SLM), learning-queue 1 (ALLY); no trade. Detail: `portfolio/watchlist.md` § Round 77.*
