@@ -74,7 +74,7 @@
 ### Deployment Rules (บังคับ — Max รับผิดชอบ)
 1. **Conviction Gate แยกตาม Bucket:**
    - **Growth bucket**: Conviction ≥ 6.5 + Revenue Growth >20% → deploy T1 ทันที
-   - **Value bucket**: Conviction ≥ 7.0 + MOS ≥ 15% → deploy T1 ทันที
+   - **Value bucket**: Conviction ≥ 6 + MOS ≥ 15% → deploy T1 ทันที
 2. **Entry zone ไม่มา แต่ thesis ยังแข็ง** → เข้าได้ที่ราคาตลาด ≤ 5% เกิน zone
 3. **Price Audit Fail — ตัด Re-analysis Loop:** ถ้า thesis ไม่เปลี่ยน + conviction ผ่าน gate → Max เข้าได้ทันที ไม่ต้อง re-analyze | Position size = ½ ของปกติ | บันทึก "thesis-valid entry, no MOS" ใน trade-log
 4. **Cash เกิน 30% เกิน 2 สัปดาห์ และ Regime = RISK-ON เท่านั้น และมี candidate ผ่าน conviction gate** → force deploy อย่างน้อย 1 position | ถ้าไม่มี candidate ผ่าน gate → ถือ cash ต่อได้ ไม่บังคับซื้อของแพง | TRANSITIONAL-CAUTIOUS/RISK-OFF → suspend rule นี้ทั้งหมด
@@ -838,7 +838,7 @@ Atlas จัดประเภทด้วย GICS ก่อน แล้วใ�
 
 ### Rule Compliance (ต้อง PASS ทุกข้อ)
 - [ ] Recommendation aligns with MOS threshold (BUY → MOS ≥ 15% Value, Reverse DCF pass Growth)
-- [ ] Conviction gate match (BUY → Conv ≥ 6.5 Growth / ≥ 7.0 Value)
+- [ ] Conviction gate match (BUY → Conv ≥ 6.5 Growth / ≥ 6 Value)
 - [ ] Macro Regime check: current regime + position size multiplier applied correctly
 - [ ] Stop loss within IPS bounds (-20% per position rule)
 - [ ] Position size ≤ 10%, ≥ 3% (ถ้า deploy)
