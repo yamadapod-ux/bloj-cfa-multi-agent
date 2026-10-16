@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-15 07:00";
+const NEWS_LAST_UPDATED = "2026-10-16 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-16 (Atlas scan 2026-10-16, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-15", category: "DEAL",
+    headline: "🟢 ADBE Adobe +4.57% $251.67 — expands NVIDIA partnership (RTX Spark optimization for Photoshop, Premiere, Substance 3D, Frame.io, Brand Concierge)",
+    summary: "Adobe and NVIDIA announced on 2026-10-15 an expansion of their strategic partnership (first announced March 2026) to optimize Adobe's flagship creative tools for NVIDIA's new RTX Spark superchip (launching 2026-10-16). Photoshop, Premiere and Substance 3D are rearchitected around GPU-accelerated compositing/rendering to deliver up to 2x faster AI processing for tasks like generative fill, background removal, color/effects and texturing; Frame.io gets accelerated media ingestion and search; Brand Concierge will run on NVIDIA's open Nemotron models, and NVIDIA itself is adopting Brand Concierge for conversations on NVIDIA.com. More integrations expected at Adobe MAX (Nov 10-12). The announcement landed the same session a hot September PPI print and AI-infrastructure-debt-financing worries (CoreWeave bond-yield spike, chip/neocloud selloff) triggered a broad rotation OUT of AI-infra/semis and INTO enterprise software — ADBE, CRM, NOW and ADSK all rose 3-6%+ in sympathy. ADBE's +4.57% move combines this sector rotation with its own idiosyncratic catalyst. นัยพอร์ต: ADBE เป็น 1 ใน 5 OPEN positions (ถือ 4sh, weight ~9.7%) — พันธมิตร NVIDIA ใหม่เสริม AI-integration narrative ของ Wide Moat Creative Software thesis โดยตรง เป็นข้อมูลเชิงบวกใหม่ ไม่ใช่สัญญาณ sell และไม่กระทบ recommendation HOLD ที่มีอยู่ (MOS +31.80% ยัง comfortable แม้ FV ยังไม่เปลี่ยน).",
+    impact: "POSITIVE", tickers: ["ADBE"],
+    url: "https://news.adobe.com/news/2026/10/adobe-and-nvidia-expand-collaboration-to-speed-agentic-creation",
+  },
+  {
+    date: "2026-10-15", category: "ANALYST",
+    headline: "🟢 NOW ServiceNow +6.24% $148.72 — 3 analyst PT hikes same day (TD Cowen +17.9%, Mizuho +21.4%, Citi +10.4%), 2 exceed the >15% HIGH-IMPACT threshold",
+    summary: "ServiceNow received three analyst price-target increases on 2026-10-15, all maintaining Buy ratings: TD Cowen (Derrick Wood) raised its target 17.9% to $165 from $140; Mizuho Securities (Gregg Moskowitz) raised its target 21.4% to $170 from $140; Citi (Tyler Radke) raised its target 10.4% to $170 from $154 (dated 10-14). The stock itself surged +6.24% to $148.72 the same session, part of a broad rotation out of debt-heavy AI-infrastructure/chip names (hot September PPI print, AI-financing-cost worries hitting Nvidia/AMD/CoreWeave) and into enterprise software — ADBE, CRM and ADSK all posted similar 4-6%+ gains the same day with no single-name catalyst beyond the sector-wide rotation and, for NOW specifically, the added lift from the PT hikes. นัยพอร์ต: NOW เป็น 1 ใน 5 OPEN positions แต่ถือเหลือเพียง 1sh หลัง TRIMMED 50% (2026-09-01) น้ำหนักพอร์ตเพียง ~1.43% — ราคาวิ่งขึ้นเร็วกว่า FV ภายในทีม ($125.65, ยังไม่ re-verify) ทำให้ MOS ติดลบลึกขึ้นเป็น -18.36% (จาก -11.36%) แต่ position เล็กเกินกว่าจะ trigger Max Consultation Rule เพิ่ม — recurring pattern เดิม ไม่มี action.",
+    impact: "POSITIVE", tickers: ["NOW"],
+    url: "https://stockanalysis.com/stocks/now/ratings/",
+  },
 
   // ── 2026-10-15 (Atlas scan 2026-10-15, Portfolio Review Mode 3 cron cycle) ──
   {
