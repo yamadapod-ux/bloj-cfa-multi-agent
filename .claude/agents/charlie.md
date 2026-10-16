@@ -102,7 +102,7 @@ CIO คำถาม / Tier 1 ผ่านแล้ว
   1. เขียน `agent_notes/charlie/YYYY-MM-DD_TICKER_blind_prompt.md` = **prompt ทั้งหมดที่จะส่ง** (คำต่อคำ) ประกอบด้วย:
      - บรรทัดแรก `BLIND RE-DERIVATION — TICKER — YYYY-MM-DD`
      - ตัวเลขดิบจาก Data Package Section A–D + F พร้อม URL: ราคา, งบ 3 ส่วน (≥3 ปี), diluted shares, debt, lease, cash, non-operating assets (filing line item), minority/preferred, Rf (10Y), ERP (Damodaran), raw beta (≥2 sources), D/E, effective tax rate, management guidance ที่เป็นตัวเลข (capex/revenue)
-     - ตาราง Damodaran unlevered beta **≥5 industry ที่เกี่ยวข้อง** (ให้ emma-blind เลือกเอง — ห้ามระบุว่าทีมใช้ industry ไหน)
+     - ตาราง Damodaran unlevered beta **≥5 industry ที่เกี่ยวข้อง** (ให้ blind run เลือกเอง — ห้ามระบุว่าทีมใช้ industry ไหน)
      - **ห้ามใส่:** Locked WACC, external WACC list, peer list, `🔒 Pre-registered` block, ประเภทธุรกิจ, Street PT/consensus, FV ใดๆ ของทีม, ตัวเลขที่ทีม/CIO เคยพูด, คำว่า "ถูก/แพง" หรือทิศทางที่คาด, PV(TV)/EV ของ Emma
   2. ส่ง Morgan ตรวจไฟล์ prompt ข้อ 1 **ก่อนรัน** (อ่านทั้งไฟล์ หารายการต้องห้าม) — ไม่ผ่าน = แก้แล้วส่งตรวจใหม่
   3. Spawn `quinn` — "BLIND RUN ONLY: รัน `bash scripts/blind/run_blind.sh agent_notes/charlie/YYYY-MM-DD_TICKER_blind_prompt.md agent_notes/emma/YYYY-MM-DD_TICKER_blind.md` ห้ามแก้ไฟล์ prompt ห้ามแก้ output ห้ามรันซ้ำเพื่อเลือกผล — ถ้า error รายงาน error คำต่อคำแล้วหยุด" · **ห้ามใช้ Agent tool เรียก Emma หรือ agent ใดๆ มาทำ blind** (subagent เห็น CLAUDE.md)
