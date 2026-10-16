@@ -6,7 +6,7 @@
 // เหตุผล: entry เก่าคือ audit trail ว่า Atlas เคย call regime อะไรไว้ ณ วันไหน
 // Source ทุก entry: agent_notes/atlas/YYYY-MM-DD_regime.md (ตัวจริงในโค้ดฐาน)
 
-const MACRO_LAST_UPDATED = "2026-09-25";
+const MACRO_LAST_UPDATED = "2026-10-16";
 
 // เรียงตามลำดับเวลา (เก่า -> ใหม่) — dashboard จะ sort ใหม่ (ใหม่ -> เก่า) เอง
 const MACRO_REGIME_HISTORY = [
@@ -468,5 +468,19 @@ const MACRO_REGIME_HISTORY = [
     override: null,
     note: "Re-call requested by CIO before executing DECK BUY signal — supersedes stale TC/Force-Deploy-Suspended record; \"RISK-ON 3/4 with defensive/hedge tilt\" due to hawkish Fed dissent (same pattern as 2026-07-12)",
     source: "agent_notes/atlas/2026-09-25_regime.md",
+  },
+  {
+    date: "2026-10-16",
+    indicators: {
+      vix: { value: "16.87 (FRED close Oct 14; ~16.5-16.9 Oct 15)", classification: "RISK-ON" },
+      yieldCurve: { value: "+0.33 (Oct 15)", classification: "RISK-ON" },
+      hySpread: { value: "3.25% / 325 bps (Oct 14, widened from ~270)", classification: "RISK-ON" },
+      fedStance: { value: "3.75-4.00%; Oct 28 hike 20.7%, Dec cumulative ~86%, no cuts priced", classification: "RISK-OFF" },
+    },
+    vote: "3/4 RISK-ON",
+    regime: "RISK-ON",
+    override: null,
+    note: "Re-call for Max Scout Round 75 (prior record 21 days old). Same pattern as 09-25: hawkish Fed lone dissent. Watch: HY OAS widening after AI-infra debt selloff.",
+    source: "agent_notes/atlas/2026-10-16_regime.md",
   },
 ];
