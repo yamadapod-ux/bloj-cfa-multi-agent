@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-16 07:00";
+const NEWS_LAST_UPDATED = "2026-10-17 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-17 (Atlas scan 2026-10-17, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-16", category: "ANALYST",
+    headline: "🔴 NOW ServiceNow -4.61% $141.86 — sharpest single-day move in the book, sector-rotation reversal + federal-demand-weakness channel check",
+    summary: "ServiceNow fell -4.61% to $141.86 on 2026-10-16 (the deepest single-day move of any OPEN position this session) as capital rotated back OUT of enterprise software — reversing most of the 10-15/10-16 rotation-in gain — amid a broad deepening of AI-infrastructure-financing-cost worries (OpenAI's reported $50B revenue run rate came in below the ~$68B level investors expected, erasing roughly $200B from NVDA alone; Nasdaq fell -2.1%, its worst week since June). The move was compounded by profit-taking after NOW's own sharp 10-15/10-16 rally and new analyst channel-check commentary flagging US federal demand weakness — reports cited federal procurement commitments down roughly 16% YoY to ~$424M, below the historical seasonal average, as government agencies rationalize software seats and tighten IT budgets. No confirmed company-specific negative disclosure or operational headwind was found — Piper Sandler's price-target raise to $175 (from $140) and the recent AI Passport control-layer launch were insufficient to offset the broader risk-off tone and sector-wide selling in high-multiple enterprise software names (ServiceNow declined alongside Palantir and Salesforce). นัยพอร์ต: NOW เป็น 1 ใน 5 OPEN positions แต่ถือเหลือเพียง 1sh หลัง TRIMMED 50% (2026-09-01) น้ำหนักพอร์ตเพียง ~1.37% — การร่วงของราคาทำให้ MOS กลับดีขึ้นเป็น -12.90% (จาก -18.36%) เพราะเป็นการ mean-revert หลังราคาวิ่งเร็วเกินไปวันก่อน ไม่ใช่สัญญาณลบใหม่ของธุรกิจ — position เล็กเกินกว่าจะ trigger Max Consultation Rule เพิ่ม ไม่มี action.",
+    impact: "NEGATIVE", tickers: ["NOW"],
+    url: "https://www.marketbeat.com/stocks/NYSE/NOW/news/",
+  },
 
   // ── 2026-10-16 (Atlas scan 2026-10-16, Portfolio Review Mode 3 cron cycle) ──
   {
