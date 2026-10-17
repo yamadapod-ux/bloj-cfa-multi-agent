@@ -988,3 +988,25 @@
 - **No trade has been executed** (CIO task = proposal only). portfolio.js / positions.md / trade-log.md not touched.
 
 *Max — 2026-10-16 | SLM full-pipeline deployment assessment (proposal only)*
+
+---
+
+## Scout Round 78 — Multi-sector VALUE-FIRST sweep (Healthcare Services/Hospitals · Insurance Brokers · Staffing/HR · Restaurants · Gov/Business Services · Education · Medtech · Local Media) — 2026-10-17
+
+| Date | Ticker | Action | Gate Status | Position Size | Tranche | Rationale | Counter-factual |
+|------|--------|--------|--------------|----------------|---------|-----------|------------------|
+| 2026-10-17 | MMS | LEARNING-QUEUE (Filter D 0.805× + Filter E 1/3) | A ✅ −38.5% (finviz + SA exact; 52W high $100 2 sources) · B ✅ FCF 13.5%, EV/EBITDA 7.07× vs 5Y 10.6–14.3× · C ✅ ROIC 13.3% · **D 0.805×** (normalized FCF $400M ÷ CoE 10%; 0.72–0.95× by basis) · E 1/3 (moat ✅, 5Y ROIC spread +2–2.7pp ❌, federal/AI overhang ❌) | $0 | — | VA MDE incentive pause is temporary but the ROIC spread is thin; Tier 1.5 lightweight only on CIO request | Entry $55–61 · stop $48 · re-check after Nov 19 print |
+| 2026-10-17 | UHS | QUICK-SCREEN SKIP (Filter D REJECT) | A ✅ −24.9% · B ✅ EV/EBITDA 5.94× · C ✅ ROIC 12.4% · **D 1.29×** (TTM FCF $845M; owner-earnings basis 0.75× not used) | $0 | — | Growth capex depresses FCF; Medicaid supplemental-payment overhang (E3 ❌) | Re-screen if FCF ≥$1.1B or price ≤$145 |
+| 2026-10-17 | DVA | QUICK-SCREEN SKIP (Filter D REJECT) | A ✅ −24.3% · B ⚠️ leverage artifact (BVPS negative) · C ✅ 12.3% · **D 1.06×** (FY26 FCF guide mid $1.125B) | $0 | — | Fair at no-growth value on guided FCF | Re-screen ≤ $160 |
+| 2026-10-17 | G / FCN / BRO / ALHC | QUICK-SCREEN SKIP (Filter D REJECT) | D 1.09× / 1.12× / 1.36× / ≥1.02× | $0 | — | FCF yield too low vs CoE at 5.19% Rf (ALHC FCF = MA float timing) | — |
+| 2026-10-17 | LOPE, TXRH, RYAN, ERIE, PZZA | QUICK-SCREEN SKIP (Filter B REJECT) | FCF yield < 6% and EV/EBITDA not bottom-third | $0 | — | Quality but not cheap (PZZA also negative equity from recap) | — |
+| 2026-10-17 | COO, BLMN, NXST, PSN, MAN, RHI, PRVA, ASTH, SHAK, VSEC, AGL, JACK | QUICK-SCREEN SKIP (Filter C REJECT; NXST linear-TV secular; JACK also B-Zero flag) | ROIC < 80% of WACC or negative FCF | $0 | — | Cheap stock, weak returns | — |
+| 2026-10-17 | CYH, BKD | QUICK-SCREEN SKIP (B-Zero REJECT) | Negative equity from operating losses + Debt/EBITDA 6.4× / 8.4× | $0 | — | — | — |
+| 2026-10-17 | EAT, KBR, TTEK, DIN, ENSG, KMX | QUICK-SCREEN SKIP (Filter A REJECT — near-miss) | −19.9% / −19.8% / −19.5% / −19.3% / −19.0% / −18.3% (finviz) | $0 | — | — | — |
+
+**Rationale:**
+- **Regime:** RISK-ON 3/4 (Atlas 2026-10-16, 1 day old). Force Deploy is ACTIVE but needs a conviction-gate pass from a full pipeline. None was dispatched (scout-only CIO task).
+- **Funnel:** 89 pre-screened with data → 26 pass A (2-source) → 8 reach D → **0 fast-track · 1 learning-queue (MMS) · 25 reject.**
+- **Prune:** SLM archived from watchlist Pending (Rule #3; it lives in buy_list). Flag: with the Value gate corrected to ≥6 (`6964aa3`), SLM's Conv 6.17 + MOS +18.9% is now deployment-eligible. That is a Max × Charlie consultation item, not part of this scout.
+
+*Max — 2026-10-17 | Scout Round 78 — fast-track 0, learning-queue 1 (MMS); no trade. Detail: `portfolio/watchlist.md` § Round 78.*
