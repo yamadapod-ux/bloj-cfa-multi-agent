@@ -1,5 +1,53 @@
 # Simulated Portfolio — บลจ. CFA
 
+> **🟡 UPDATE 2026-10-18 (Portfolio Review Mode 3):** Weekend, no new trading day (Oct 17 Sat / Oct 18 Sun non-trading) — Oct 16 2026 close remains latest print, re-verified UNCHANGED (2 sources: Investing.com + Yahoo Finance, both $7,659.44, 0.00% diff). All 5 OPEN positions UNCHANGED at Oct 16 close. Only cash accrual moves this session: +$0.79 → $7,591.97. Total $10,344.56→$10,345.35 (+0.01%). Alpha -0.07% unchanged (negligible, both sides flat). No stop breach, 0/5 Re-Analysis triggers. ADSK MOS still -8.17% STRONG SELL territory — now **9 consecutive Review Mode sessions** (10-07, 10-08, 10-12, 10-13, 10-14, 10-15, 10-16, 10-17, 10-18) with Max Consultation Rule item unresolved. 0 HIGH-IMPACT news items this weekend (ADBE-NVIDIA partnership and NOW -4.61% move were already logged 10-16/10-17; weekend coverage was routine Tesla Roadster reveal, Apple HomeView launch, Amazon Bee devices, Nvidia CEO AI-market commentary — none earnings/M&A/management/8-K/>15% PT/>4% move for the 5 OPEN tickers or Big 10). Full detail below.
+
+## 📊 Portfolio Review — 2026-10-18 (Mode 3 — Weekend, No New Close, Cash Accrual Only)
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, 23 days old — getting dated, worth a fresh re-call soon, not yet overdue by the 30-day backstop). 2026-10-17 (Sat) and 2026-10-18 (Sun) are non-trading days — Oct 16 2026 close remains the latest print. All 5 OPEN positions re-verified UNCHANGED at Oct 16 2026 close (2-source re-check: Investing.com + Yahoo Finance, both $7,659.44 for S&P 500, 0.00% diff — no newer trading-day print exists for any ticker or the index, consistent with the calendar). **No trades this session.**
+
+| Ticker | Price (unchanged, Oct 16 close) | Return % | MOS % | StopDist % |
+|--------|-----------------------------------|----------|-------|------------|
+| ADBE | $245.20 | -0.74% | +33.55% | 24.55% |
+| NOW | $141.86 | +58.57% | -12.90% 🟠 | 34.44% |
+| CRM | $240.95 | +33.12% | +30.31% | 39.92% |
+| REGN | $790.74 | +31.35% | +11.05% | 39.04% |
+| ADSK | $239.90 | +20.90% | -8.17% 🔴🔴 | 33.83% |
+
+S&P 500 unchanged at **$7,659.44** (Oct 16 2026 close — no new trading day since; Investing.com + Yahoo Finance, 0.00% diff). All position-level metrics are therefore mathematically identical to the 2026-10-17 review; only cash accrual and portfolio totals move.
+
+**Stop Loss check:** No breaches. ADBE narrowest at 24.55% (still comfortable, well above the 10% WATCH threshold).
+
+### 🔴🔴 ADSK — MOS unchanged, Max Consultation Rule item now 9 sessions overdue (no new action, no new trading day)
+
+MOS unchanged at **-8.17%** (price and FV both unchanged — no new trading day). This continues the carried item first flagged 2026-10-07 — now **9 consecutive Review Mode sessions (10-07, 10-08, 10-12, 10-13, 10-14, 10-15, 10-16, 10-17, 10-18)** without an actual Max×Charlie consultation taking place. Thesis otherwise intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation, stopDist 33.83% comfortable (not a stop-loss issue), T2/T3 staged adds remain paused pending the Q3 FY27 current-RPO print (Nov 2026). **This process-discipline gap has now lengthened to 9 sessions** — Review Mode 3 itself cannot execute the consultation.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-11 | FV 37d old, MOS +33.55% (positive) — no fire | No | Under 30% | HSBC PT $267 vs internal FV $369 = -27.6% gap carried, not re-verified | 0/5 (carried watch item) |
+| NOW | No new earnings | FV 55d old, MOS -12.90% (negative) but 55d << 90d — no fire | No | Under 30% | Mizuho PT $170 vs FV $125.65 = +35% gap carried, not re-verified | 0/5 (carried watch item) |
+| CRM | No new earnings | FV 37d old, MOS +30.31% — no fire | No | Under 30% | BofA PT $285 vs internal FV $345.77 gap carried, not re-verified | 0/5 |
+| REGN | No new earnings; Q3 confirmed Oct 30 | FV 37d old, MOS +11.05% (positive) — no fire | No | Under 30% | Not re-checked | 0/5 |
+| ADSK | No new earnings; next current-RPO print Nov 2026 (Q3 FY27) | FV 36d old (<<90d), MOS -8.17% negative but age well under 90d threshold — formal Trigger #2 does NOT fire on age alone | No | Under 30% | Not re-checked | 0/5 (but see STRONG SELL/Max Consultation flag above, carried from 10-07, now 9 sessions) |
+
+**Result: 0/5 formal Re-Analysis triggers fire on any OPEN position.** ADSK's STRONG SELL / Max Consultation Rule item remains outside the formal Re-Analysis Trigger Rule (FV is fresh, 36 days old) but is now the portfolio's most overdue process-discipline item, 9 sessions running.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 remains current (23 days old) — getting dated, worth a fresh re-call soon, not yet overdue by the 30-day backstop.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-17 07:00) — **0 NEW HIGH-IMPACT items.** Weekend coverage was routine: Tesla's live Roadster reveal (SpaceX-thruster flying-car demo, $250K deposits, product-launch event not earnings/M&A), Apple's $299 HomeView smart-home display unveil (product launch, AAPL closed above $5T market cap already logged), Amazon's Bee Frontier/Bee Eclipse wearable launches (product launch, AMZN earnings not until Oct 29), Nvidia CEO Jensen Huang's "this is going to pass" comments on the AI-market selloff (sentiment/PR, not a confirmed catalyst), and recycled coverage of the already-logged ADBE-NVIDIA partnership and NOW -4.61% move (both logged 10-16/10-17). No earnings, confirmed M&A, management change, SEC 8-K, or Bear-Flip/Thesis-Invalidation-level event found for any of the 5 OPEN tickers or Big 10 watchlist this weekend. `dashboard/news.js` **unchanged**, NEWS_LAST_UPDATED stays "2026-10-17 07:00".
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,591.18 accrues at the money-market/T-bill proxy rate (3.8%) for 1 day (10-17→10-18): $7,591.18 × 3.8%/365 × 1 = **+$0.79**. Cash $7,591.18→**$7,591.97**. Total $10,344.56→**$10,345.35** (+0.01%, cash-accrual only — no equity price movement, no new S&P print). Total Return 3.45%→**3.45%** (rounds same). sp500Return unchanged 3.52%. Alpha -0.07%→**-0.07%** (negligible, both sides flat).
+
+### Max's Take
+
+วันนี้เป็นวันหยุดสุดสัปดาห์ (เสาร์-อาทิตย์ 17-18 ต.ค.) ไม่มี trading session ใหม่ปิดตัว — รอบนี้เป็นแค่ cash accrual ปกติตาม Cash Yield Rule ($0.79) ไม่มีการเปลี่ยนแปลงราคาใดๆ บน 5 positions หรือ S&P 500 ยืนยันด้วย 2-source cross-check (Investing.com + Yahoo Finance ทั้งคู่ $7,659.44 ตรงกันเป๊ะ). ไม่มี stop breach, ไม่มี Re-Analysis trigger (0/5), ไม่มี regime re-call ค้าง (23 วันจากการ re-call ล่าสุด 2026-09-25, ยังไม่ overdue แต่เริ่มเก่า). **สิ่งที่ยังต้องจัดการเร่งด่วนที่สุดต่อเนื่องคือ ADSK — MOS ยังคงลบที่ -8.17%** (ไม่เปลี่ยนแปลงเพราะไม่มี trading day ใหม่) — นี่คือ Review Mode ครั้งที่ 9 ติดต่อกัน (10-07 ถึง 10-18) ที่ STRONG SELL / Max Consultation Rule item ยังไม่ได้ consult จริงกับ Charlie — thesis ยัง intact (0 Bear Flip/Invalidation) แต่ระยะเวลาที่ค้างยาวนานขึ้นต่อเนื่องทำให้นี่เป็น priority ที่ควรปิดจริงจังโดยเร็ว ข่าวช่วงสุดสัปดาห์ไม่มีรายการ HIGH-IMPACT ใหม่ — Tesla Roadster reveal, Apple HomeView launch, Amazon Bee devices เป็น product launches ปกติ ไม่กระทบ 5 positions หรือ Big 10 watchlist โดยตรง.
+
+---
+
 > **🔴🔴 UPDATE 2026-10-16 (Portfolio Review Mode 3):** Full re-mark to Oct 15 2026 close (broad AI-infra/chip-debt-financing selloff drove a sharp rotation INTO enterprise software — ADBE +4.57%, NOW +6.24%, CRM +3.17%, REGN +2.31%, ADSK +6.10%, all 5 OPEN positions up). Total $10,282.02→$10,399.01 (+1.14%). Alpha -1.52%→-0.67% (narrowed — software book outran the broader S&P's modest +0.33% day). No stop breach, 0/5 Re-Analysis triggers. **🔴🔴 ADSK MOS deepened sharply to -10.56% (from -4.22%) — worst reading yet, now 7 consecutive sessions STRONG SELL / Max Consultation Rule carried unresolved (10-07, 10-08, 10-12, 10-13, 10-14, 10-15, 10-16).** 2 HIGH-IMPACT news items: ADBE expanded NVIDIA RTX Spark partnership + NOW 3 analyst PT hikes (TD Cowen +17.9%, Mizuho +21.4%). Full detail below.
 
 ## 📊 Portfolio Review — 2026-10-17 (Mode 3 — Full Re-Mark, Oct 16 2026 Close) — Chip/AI-Infra Selloff Deepens, Software Gives Back Prior-Day Gains
