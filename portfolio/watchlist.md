@@ -378,6 +378,12 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-10-19 (Mode 1 Step 0 — Round 80):** Reviewed all 20 live Pending tickers (SOFI…VICI, ALLY, MMS, CRI, NBIX) against De-list Rules #1-3. **De-listed 0.**
+- Rule #1: every row has an explicit target that has not yet passed (16 legacy rows + ALLY → 2026-10-23; NBIX → 11-03; CRI → 11-06; MMS → 11-20). No stale timeout.
+- Rule #3: no commits since R79 (`de888a0`). `dashboard/portfolio.js` OPEN is still ADBE/NOW/CRM/REGN/ADSK, and `decisions.md` has no new formal AVOID/SKIP.
+- Rule #2: no thesis-dead archive was attempted, so no live-price re-check was needed.
+- SLA fixed 0. Live after round: 20 → **21** (+BYD).
+- Note: the earlier attempt at Round 80 failed in a provider outage and wrote nothing. This is the first Round 80 entry.
 **Prune Pass 2026-10-18 (Mode 1 Step 0 — Round 79):** Reviewed 18 live Pending tickers (SOFI…VICI, ALLY, MMS) vs De-list Rules #1-3. **De-listed 0.** Rule #1: every row carries an explicit target (16 legacy + ALLY → 2026-10-23; MMS → 2026-11-20) → no stale timeout. Rule #3: no new position in `dashboard/portfolio.js` (OPEN = ADBE/NOW/CRM/REGN/ADSK) and no formal decision in `decisions.md` (only incidental mentions of SOFI/EVLV inside other rows) — commits since R78 are a Portfolio Review re-mark and the Value-gate revert (`0ea228b`) only. Rule #2: no thesis-dead archive attempted → no live-price re-check needed. SLA fixed 0. Live after round: 18 → **20** (+CRI, +NBIX).
 **Prune Pass 2026-10-17 (Mode 1 Step 0 — Round 78):** Reviewed 18 live Pending tickers vs De-list Rules #1-3. **De-listed 1 → Archive: SLM** (Rule #3 Superseded — full `VS2` pipeline 2026-10-16, formal WAIT → buy_list). Other 17 keep explicit target dates (16 legacy rows → 2026-10-23 from R75 prune; ALLY 10-23) — no Rule #1/#2 hits, no new positions/decisions. Live after round: 18 (+MMS).
 **Prune Pass 2026-10-16 (Mode 1 Step 0 — Round 75):** Reviewed all 32 live tickers in Pending Analysis against De-list Rules #1-3, cross-referenced against `portfolio/decisions.md`, `portfolio/deployment_log.md`, `reports/`, and `dashboard/portfolio.js` (OPEN: ADBE/NOW/CRM/REGN/ADSK — no overlap). **De-listed 16 → Archive:** **Superseded (Rule #3) ×5:** LDOS (full analysis 05-14 HOLD/WAIT), LKQ (full analysis 09-08 SKIPPED), ELV (rejected again in Round 35b scout), GD (QUICK-SCREEN SKIP Round 50), KR (SKIPPED Filter D in staples round). **Stale timeout (Rule #1) ×11:** FTAI, NKE, ZTS, CPRT, PODD, ONON, GEHC, BR, CLS, LITE, GLW — all scouted ≥ 60 days ago (07-05 → 08-10), **no action from CIO or Charlie ever**, and the last target dates (08-29 → 09-03) blown by 43–48 days with no further reset. ⚠️ **Interpretation flag for CIO:** Rule #1 says "no target analysis date". These rows *had* target dates, but only through repeated Max-only SLA resets (up to 5×) that have themselves gone stale. I'm treating a target date blown by more than 40 days with no CIO/Charlie action as "no valid target date". Precedent: MSFT/PG, 2026-09-13 (chronic SLA resets → archived). CIO can re-list any of them. **No Rule #2 (thesis dead) de-lists.** Every archived ticker was price-checked live first (finviz, 2026-10-16). Notable: many archived names are now deeply beaten down (PODD −61%, GLW −49%, FTAI −48%, ZTS −47%, NKE −47%, LDOS −41%, LKQ −40%), so they are **eligible for a fresh re-scout under Filter A-E**. Archive ≠ dead. **SLA fixed: 16 remaining** (SOFI/ETON/EVLV/ACMR/VEL/KALU/HG/IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI) → new target 2026-10-23 for a Tier 1 re-screen. Most were scouted under pre-VALUE-FIRST growth rules and must re-qualify on A-E or be archived next round. **Live after prune: 16.**
@@ -427,6 +433,7 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 | MMS | Maximus, Inc. | Industrials / Government Services — Medicaid enrollment, CMS contact centers, VA Medical Disability Exams (Value bucket) | 2026-10-17 (Round 78) | $61.47 (Oct 16 close, finviz + stockanalysis exact) · 52W $51.04–100.00 = **−38.5%** | 13.46% TTM ($433M) · normalized $400M = 12.4% · EV/EBITDA 7.07× vs 5Y 10.6–14.3× | FY26 rev guide $5.20–5.35B (unchanged); EPS guide cut to $7.90–8.20 | ROE 21.1% · ROIC 13.3% TTM (5Y avg 10.95% vs WACC ~8.3–9%) | VA MDE incentive pause 7/1–12/31/26 (temporary, quantified ~$0.35 EPS) → D 0.805× naive FV (CoE 10%; range 0.72–0.95× by FCF basis) · E 1/3 (moat ✅, ROIC spread +2–2.7pp ❌, federal/AI overhang ❌) · Street PT $92.50 (2 analysts) · **Entry $55–61 · Stop $48** | **LEARNING-QUEUE — Tier 1.5 lightweight on CIO request; target 2026-11-20** (after Nov 19 FY26 Q4 print). Upgrade: VA incentives resume 1/1/27, or price ≤$52, or FY26 FCF ≥$450M |
 | CRI | Carter's, Inc. | Consumer Discretionary / Children's Apparel — Carter's + OshKosh brands, US retail + wholesale (Value bucket) | 2026-10-18 (Round 79) | $31.45 (Oct 16 close, finviz + stockanalysis exact) · 52W $27.86–44.44 (finviz-implied + SA) = **−29.2%** | **25.4% TTM** ($293M — inflated by WC) · 5Y avg FY21–25 $212M = 18.4% · EV/EBITDA **4.91×** vs FY21–25 8.29–10.96× | FY26 guide: sales +LSD–MSD, adj EPS −low-double-digit to mid-teens | ROE 20.7% · ROIC 14.2% TTM (5Y avg 16.1%) | **🟡 LEARNING-QUEUE (Round 79 top pick)** — Filter D **0.71×** naive FV at CoE 13% (small-cap band) on 5Y-avg FCF $212M (0.74× on FY24–TTM avg; **0.87× at CoE 16%**). E **1/3** (E2 ✅ 5Y ROIC +6pp but falling trend · E1 ❓ moat evidence not verified this session · E3 ❌ tariff cost + EPS-down guide + birth-rate demand question). Beaten-down reason is ambiguous (tariff/margin = temporary vs birth-rate/wholesale = structural), written both ways → default learning-queue. **Entry zone $28.00–32.50 · Stop $26.00** (below 52W low $27.86). Street PT $40.57 (SA, 8 analysts) / $40.67 (Investing.com, May) | **Target: Tier 1.5 lightweight after the Q3 FY26 print (date not verified this session — expected late Oct / early Nov 2026); fallback 2026-11-06** |
 | NBIX | Neurocrine Biosciences, Inc. | Healthcare / Large-cap Biotech — Ingrezza (VMAT2, tardive dyskinesia), Crenessity (CAH), Vykat XR (Prader-Willi, via Soleno) (Growth bucket — rev +34.4% TTM) | 2026-10-18 (Round 79) | $135.77 (Oct 16 close, SA; finviz $135.71, 0.04%) · 52W $122.14–186.12 (SA) = **−27.1%** (finviz −27.08%) | 6.31% TTM ($870M) · EV/Sales **4.11×** vs FY21–25 4.72–7.37× (below every year) | +34.4% TTM revenue ($3.37B) | ROE 22.1% · ROIC 20.6% (5Y avg 20.75%) | **🟡 LEARNING-QUEUE** — B-V1 ✅ (self-history bottom-third; ⚠️ Soleno M&A may contaminate the series) · C ✅ · D-V1: only method 3 (Analyst-PT) computed → **0.66× (SA $206.81) to 0.77× (TipRanks $176.67)**; methods 1–2 not computed this round; D-Legacy no-growth cross-check 1.43× → "methods disagree" flag → learning-queue, not fast-track. E **2/3** (E1 ✅ VMAT2 franchise · E2 ✅ +11–12pp · E3 ❌ IRA Medicare price pressure 2027–29 unquantified + Vykat XR safety concerns). **Entry zone $122–135 · Stop $108** | **Target: Tier 1.5 lightweight 2026-11-03** (day after the Q3 print on Nov 2, per SA news) |
+| BYD | Boyd Gaming Corporation | Consumer Discretionary / Regional Casinos — Midwest & South, Las Vegas Locals, Downtown LV, online (Value bucket) | 2026-10-19 (Round 80) | $70.04 (Oct 16 close; finviz + stockanalysis exact) · 52W $65.00–91.41 (SA) = **−23.4%** (finviz −23.38%) | TTM 0.69% ($35M — depressed by ~$591M capex + cash tax on the 2025 FanDuel-stake gain) · 5Y avg FY21–25 $601M = 11.8% · EV/EBITDA **6.84×** vs FY21–25 7.32–9.40× (below every year) | Q1'26 revenue flat YoY ($997M); Midwest & South rev +4% | ROE 93% (distorted by the FanDuel gain) · ROIC 12.5% TTM (5Y avg 14.45% vs WACC ~9%) | **🟡 LEARNING-QUEUE (Round 80 only survivor)** — D **0.87×** naive FV on the 5Y-avg FCF at CoE 10.3% ($80/share), but **1.06× on the FY23–25 avg** (capex step-up) → range straddles the band. E **2/3** (E2 ✅ +5.4pp · E3 ✅ no structural/regulatory overhang found · E1 ❓ license-barrier moat not evidenced this session). Street PT $93.94 (SA, 19) / $94.75 (Investing.com) — 4 PT cuts in Oct. **Entry $63–70 · Stop $56** | **Target: Tier 1.5 lightweight 2026-10-23** (day after the Q3 print Oct 22). Upgrade: Q3 shows LV-locals stabilization + FY26 capex guide → normalized FCF ≥$550M (D ≤0.80×), or price ≤$60 |
 
 ---
 
@@ -7463,3 +7470,227 @@ The 37 Round-79 tickers below have **0 overlaps**. IONS appeared earlier only as
 - Either can run sooner on CIO request.
 
 *Max — 2026-10-18 | Scout Round 79*
+
+
+---
+
+## Scout Report § Round 80 (Multi-sector VALUE-FIRST sweep — Energy E&P/Oilfield Services/Refiners/Midstream · Gaming & Lodging/Timeshare · Insurance Carriers (P&C/Life) · Tobacco & Media/Publishing · Paper & Forest Products · Tankers/Dry-bulk Shipping · Coal & Gold Mining) — 2026-10-19
+
+**Trigger:** CIO-directed "Max Scout Pipeline — Round 80" (2026-10-19, Monday). Full `.claude/commands/scout.md` Step 0-6. **Scout/screen only — no full pipeline dispatch.** An earlier Round 80 attempt died in an Anthropic provider outage and wrote nothing to this file, so this is the real Round 80.
+
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK). Cash is ~74% of NAV (Max weekend re-mark 10-18, `92d0e73`).
+
+**Regime:** latest record is Atlas **2026-10-16 → RISK-ON 3/4** (`agent_notes/atlas/2026-10-16_regime.md`).
+- It is 3 days old, inside the CIO's 7-day freshness threshold. There was **no re-call and no new Atlas file**.
+- Carried inputs: VIX 16.87, 10Y−2Y +33bps, HY OAS 325bps, Fed hikes priced (the lone dissent), Rf (10Y) **5.19%**.
+- Force Deploy is ACTIVE in principle, but it still requires a conviction-gate pass after a full pipeline.
+
+**Gates in force:** Value ≥7.0 (`0ea228b`) / Growth ≥6.5.
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **0** | live **20 → 21** (+BYD). See the Prune Pass 2026-10-19 note above the Pending table.
+
+### Sector mandate rotation check
+**Excluded (CIO list for R71-79):**
+- AI/power/infra (×6), IT services/data
+- Regional banks/consumer credit, homebuilders, chemicals, packaging, tariff-hit consumer discretionary, autos/parts
+- Specialty pharma, hospitals, insurance brokers, staffing/HR, restaurants, gov/business services, education, medtech, local TV
+- Ag equipment/inputs, satcom/fiber, base metals/steel/aluminum/rare earths, office & life-science REITs, back-end semicap, large-cap biotech, cyber/SaaS, apparel/beauty, cruise, aerospace suppliers, renewables/yieldcos
+
+**Round 80 groups (none of them in the R71-79 list):**
+- Energy: mid-cap E&P, gas, oilfield services/offshore drillers, refiners, midstream
+- Gaming & lodging/timeshare
+- Insurance **carriers** (P&C/life, not brokers)
+- Tobacco, media/publishing
+- Paper & forest products
+- Tankers/dry-bulk shipping
+- Coal/gold mining
+
+**Hard-exclusion check:** every candidate was grepped (`grep -w`) against `watchlist.md` (live, Archive and all Scout History), `decisions.md`, `deployment_log.md`, `buy_list.md` and `dashboard/portfolio.js`. This ran **before** the screen was fetched. Previously covered tickers were removed from the universe:
+- **Energy round:** XOM / CVX / COP / EOG / OXY / SLB / MPC / VLO / WMB / KMI, plus PSX / DVN / CNX
+- **Lodging/gaming round:** MAR / HLT / H / MGM / LVS / CZR, plus WYNN / VICI (live rows)
+- **Insurers:** PGR / ACGL / ALL / TRV / CB / AIG / HIG / WRB / RNR / MET / PRU / L, plus R77's LNC / AFL / CRBG / GL / UNM
+- **Mining/uranium:** NEM / AEM / GOLD / CCJ / UEC / LEU
+- **Media/other:** DIS / WBD / PSKY / LYV / PM / IP / LPX
+- **R78 pre-screen:** FOXA / ZIM / MATX / KEX
+- **CIO-banned:** PODD / ZTS / NKE / MMS / SLM / CRI / NBIX — none of them is in this universe
+- **False positives, kept:** EQT (mentioned only as a PE firm name), and PR / ET / AR (matched only as ordinary words)
+
+Result: the 31 Round-80 Filter-A passes below have **0 overlaps**.
+
+### Method (Price Verification block)
+**Source 1:** finviz screener, technical view `v=171`, Oct 16 2026 close (latest trading day; Oct 17-18 was a weekend). Batches:
+- [1](https://finviz.com/screener.ashx?v=171&t=APA,OVV,FANG,CTRA,EQT,AR,RRC,CHRD,MTDR,PR,SM,CIVI,MUR,PBF,DK,DINO,CVI,HAL,BKR,NOV)
+- [2](https://finviz.com/screener.ashx?v=171&t=HP,PTEN,WFRD,LBRT,RIG,VAL,OII,OKE,ET,EPD,TRGP,PAA,WES,MPLX,TALO,KOS,VTLE,NOG,MGY,CRGY)
+- [3](https://finviz.com/screener.ashx?v=171&t=GPOR,WHD,TDW,HLX,CRC,BRY,PARR,PENN,BYD,RRR,CHDN,DKNG,WH,CHH,VAC,TNL,HGV,CINF,MKL,AFG)
+- [4](https://finviz.com/screener.ashx?v=171&t=ORI,KMPR,SIGI,PFG,BHF,EG,THG,MO,BTI,TPB,NWSA,NYT,ROKU,SIRI,WY,PCH,RYN,UFPI,SLVM,CLW)
+- [5](https://finviz.com/screener.ashx?v=171&t=INSW,STNG,FRO,DHT,TNK,GNK,SBLK,BTU,HCC,AMR,CNR,KGC,AXS,ALL,MCY,HMN,PRI,AIZ,ESGR,UVE)
+
+**Source 2:** `stockanalysis.com/stocks/[ticker]/statistics/` (Oct 16 2026 close plus valuation/return metrics), fetched this session for **all 31 Filter-A passes**.
+
+**Price agreement:** 29/31 match to the cent. The two exceptions are UFPI ($78.37 vs $78.42, 0.06%) and PENN ($14.94 vs $14.93, 0.07%). No 3rd source was needed.
+
+**52W high, second source:** done for the names that reach the lane decision.
+- **BYD:** high $91.41 / low $65.00 ([SA](https://stockanalysis.com/stocks/byd/)) → −23.4%, vs finviz −23.38%.
+- **BHF:** high $66.80 / low $44.51 ([SA](https://stockanalysis.com/stocks/bhf/)) → −28.5%, vs finviz −28.49%.
+- For the other rejects, the 52W high is **finviz-only**. That is disclosed and does not change any verdict.
+
+**Pre-screen funnel:**
+- 100 tickers requested → **93 rows returned**.
+- CTRA, CIVI, VTLE, HLX, BRY, PCH and ESGR returned no row and are not counted.
+- ALL returned a row but is previously covered (−10.6%).
+- **31 rows sit at ≥−20%, all fresh and 2-source verified.**
+- The other 61 fresh rows are short of −20%. They are single-source and not counted as verified.
+
+**What did NOT de-rate:**
+- Large/mid oil E&P and refiners are at or near 52W highs. APA (+1.1%) and OVV (+2.7%) are *above* the prior high. CHRD is −1.6%, CVI −3.3%, DINO −3.2%, PBF −8.6%.
+- Insurance carriers sit within 0–17% of their highs: AFG +0.3%, THG −1.3%, EG −3.0%, UVE −1.2%.
+- MO is −2.5%, ROKU −3.4%, and tankers −9 to −15%.
+- **Only gas, oilfield services, regional gaming, timber/wood and coal/gold de-rated.**
+
+**WACC/CoE convention (same as R77-R79):**
+- CAPM CoE = Rf 5.19% + β × ERP 4.5%.
+- Mid-caps are floored at 10%. Small-caps (<$2B) use the CLAUDE.md D-Legacy band of 13–16%.
+- Large caps use CAPM: HAL 9.0%, EQT 8.5% (7–9% band), KGC 12.0% (β 1.52).
+- Filter C bar = ROIC ≥ 80% of WACC.
+- **Naive FV = normalized levered FCF (5Y avg FY21–25) ÷ CoE.** TTM is shown as a cross-check only.
+
+### Filter A + B-Zero + B + C — 31 fresh Filter-A passes (Oct 16 2026 close, 2 sources)
+
+| # | Ticker | Group | Price | % from 52W high | FCF yield (TTM) | EV/EBITDA | ROIC (TTM) | Equity / Debt-EBITDA | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | **BYD** Boyd Gaming | Regional casinos | $70.04 | **−23.4%** | 0.69% TTM (capex + FanDuel-gain cash tax) · FY21–25 FCF yield 5.8–12.4% | **6.84** (FY21–25 7.32–9.40 → below every year) | 12.5% (5Y avg 14.45%) | +$2.50B / 2.44× | ✅ A/B (EV/EBITDA bottom-third)/C → D |
+| 2 | **BHF** Brighthouse | Life/annuity carrier | $47.77 | **−28.5%** | n/a (insurer) | n/a · **P/B 0.42** vs FY21–25 median 0.57 | ROE 13.5% TTM (5Y avg ~7.9%) | +$6.62B | ✅ A/B (P/B < 5Y median)/C (TTM ROE > CoE 10%) → D — ⚠️ pending-M&A special situation |
+| 3 | HAL Halliburton | Oilfield services | $33.50 | −23.2% | 6.18% | 8.23 | 13.5% | +$11.05B / 1.81× | ✅ A/B/C → D |
+| 4 | EQT | Appalachian gas | $54.30 | −20.4% | 11.07% | 5.65 | 9.70% (~114% of ~8.5%) | +$28.86B / 0.80× | ✅ A/B/C → D |
+| 5 | MGY Magnolia | E&P | $25.35 | −22.6% | 9.08% | 5.96 | 19.8% | +$2.15B / 0.37× | ✅ A/B/C → D |
+| 6 | WFRD Weatherford | Oilfield services | $76.19 | −32.7% | 9.63% | 6.44 | 23.3% | +$1.79B / 1.40× | ✅ A/B/C → D |
+| 7 | GPOR Gulfport | Gas E&P | $166.00 | −26.5% | 8.52% | 3.83 | 20.3% | +$1.83B / 0.88× | ✅ A/B/C → D |
+| 8 | TDW Tidewater | Offshore vessels | $79.50 | −21.7% | 6.86% | 10.03 | 17.1% | +$1.39B / 1.62× | ✅ A/B/C → D |
+| 9 | CHDN Churchill Downs | Racing/gaming | $81.70 | −31.0% | 9.97% | 10.45 | 9.13% (~100% of ~9%) | +$1.39B / **4.75×** ⚠️ | ✅ A/B/C (leverage flag) → D |
+| 10 | KGC Kinross | Gold miner | $24.02 | −38.6% | 10.73% | 4.96 | 39.9% (peak gold) | +$9.77B / 0.14× | ✅ A/B/C → D |
+| 11 | UFPI UFP Industries | Wood products | $78.42 | −33.6% | 6.19% | 8.52 | 8.31% (~78% of CoE 10.7%; net cash) | +$3.06B / 0.77× | ⚠️ C borderline (TTM; through-cycle not verified) → D for the record |
+| 12 | TNL Travel + Leisure | Timeshare | $64.59 | −20.3% | 11.17% | 10.22 | 10.3% (~97%) | **−$1.02B** / 6.07× ⚠️ | ⚠️ B-Zero flag (cause not verified) → D for the record (rejected at D regardless) |
+| 13 | BKR Baker Hughes | Oilfield equipment | $55.70 | −20.9% | 5.66% | 11.27 (FY21–25 9.66–10.98 → **at the 5Y high**) | 16.2% | +$20.08B / 2.87× | ❌ B |
+| 14 | HP Helmerich & Payne | Land drilling | $37.43 | −22.3% | 8.43% | 6.49 | 2.26% | +$2.67B / 2.25× | ❌ C |
+| 15 | LBRT Liberty Energy | Frac services | $16.60 | −51.9% | −11.7% | 7.10 | 1.58% | +$1.96B / 2.80× | ❌ B/C |
+| 16 | RIG Transocean | Offshore drilling | $5.62 | −26.6% | 14.4% | 6.94 | 7.43% (~71% of ~10.5%) | +$8.37B / 3.21× | ❌ C (ROE −18.7%) |
+| 17 | VAL Valaris | Offshore drilling | $85.32 | −25.2% | −0.41% | 15.42 | 6.86% | +$3.22B / 2.29× | ❌ B/C (Street PT $68.29 < price) |
+| 18 | CRC California Resources | E&P | $54.33 | −24.5% | 7.98% | 11.26 | 0.60% | +$3.40B / 1.79× | ❌ C |
+| 19 | DKNG DraftKings | Online betting | $18.90 | −48.9% | 6.94% | 84.0 | −11.2% | +$0.57B / 13.1× | ❌ C |
+| 20 | HGV Hilton Grand Vacations | Timeshare | $35.44 | −36.0% | 15.0% | 11.08 | 5.25% (~48%) | +$1.26B / **8.04×** | ❌ C |
+| 21 | PENN Entertainment | Regional casinos | $14.94 | −33.2% | 5.05% | 13.84 | 3.37% | +$1.85B / 6.73× | ❌ B/C |
+| 22 | RRR Red Rock Resorts | LV locals casinos | $49.28 | −27.7% | 3.93% | 10.65 | 13.4% | +$0.29B / 4.43× | ❌ B |
+| 23 | KMPR Kemper | P&C (auto) carrier | $29.27 | −41.2% | 23.0% (float — not meaningful) · P/B 0.79 | 26.75 | ROE −19.7% / ROIC 1.1% | +$2.18B | ❌ C |
+| 24 | TPB Turning Point Brands | Tobacco/nicotine | $62.65 | −57.4% | 1.56% | 17.07 | 11.5% | +$0.45B / 3.94× | ❌ B |
+| 25 | NYT New York Times | Publishing | $67.78 | −22.2% | 5.70% | 17.43 (FY21–25 14.92–22.25; bottom-third ≤17.36) | 27.1% | +$2.05B / no debt | ❌ B (marginal miss on both legs) |
+| 26 | RYN Rayonier | Timber REIT | $18.99 | −23.5% | 3.85% | 21.03 | 2.11% | +$5.25B / 5.48× | ❌ B/C |
+| 27 | SLVM Sylvamo | Uncoated paper | $32.77 | −42.3% | −0.84% | 5.98 | 5.60% | +$0.96B / 2.41× | ❌ B/C |
+| 28 | WY Weyerhaeuser | Timber REIT | $19.61 | −29.3% | −3.16% | 27.70 | 1.20% | +$9.46B / 7.64× | ❌ B/C |
+| 29 | AMR Alpha Metallurgical | Met coal | $166.73 | −34.3% | −0.07% | 13.09 | −4.38% | +$1.50B | ❌ B/C |
+| 30 | BTU Peabody | Coal | $23.89 | −41.9% | −5.89% | 10.14 | −4.15% | +$3.30B | ❌ B/C |
+| 31 | CNR Core Natural Resources | Coal | $90.35 | −21.3% | 5.79% | 8.09 | −2.49% | +$3.72B | ❌ B/C |
+
+**Sources (stockanalysis statistics, row order):** [BYD](https://stockanalysis.com/stocks/byd/statistics/) · [BHF](https://stockanalysis.com/stocks/bhf/statistics/) · [HAL](https://stockanalysis.com/stocks/hal/statistics/) · [EQT](https://stockanalysis.com/stocks/eqt/statistics/) · [MGY](https://stockanalysis.com/stocks/mgy/statistics/) · [WFRD](https://stockanalysis.com/stocks/wfrd/statistics/) · [GPOR](https://stockanalysis.com/stocks/gpor/statistics/) · [TDW](https://stockanalysis.com/stocks/tdw/statistics/) · [CHDN](https://stockanalysis.com/stocks/chdn/statistics/) · [KGC](https://stockanalysis.com/stocks/kgc/statistics/) · [UFPI](https://stockanalysis.com/stocks/ufpi/statistics/) · [TNL](https://stockanalysis.com/stocks/tnl/statistics/) · [BKR](https://stockanalysis.com/stocks/bkr/statistics/) · [HP](https://stockanalysis.com/stocks/hp/statistics/) · [LBRT](https://stockanalysis.com/stocks/lbrt/statistics/) · [RIG](https://stockanalysis.com/stocks/rig/statistics/) · [VAL](https://stockanalysis.com/stocks/val/statistics/) · [CRC](https://stockanalysis.com/stocks/crc/statistics/) · [DKNG](https://stockanalysis.com/stocks/dkng/statistics/) · [HGV](https://stockanalysis.com/stocks/hgv/statistics/) · [PENN](https://stockanalysis.com/stocks/penn/statistics/) · [RRR](https://stockanalysis.com/stocks/rrr/statistics/) · [KMPR](https://stockanalysis.com/stocks/kmpr/statistics/) · [TPB](https://stockanalysis.com/stocks/tpb/statistics/) · [NYT](https://stockanalysis.com/stocks/nyt/statistics/) · [RYN](https://stockanalysis.com/stocks/ryn/statistics/) · [SLVM](https://stockanalysis.com/stocks/slvm/statistics/) · [WY](https://stockanalysis.com/stocks/wy/statistics/) · [AMR](https://stockanalysis.com/stocks/amr/statistics/) · [BTU](https://stockanalysis.com/stocks/btu/statistics/) · [CNR](https://stockanalysis.com/stocks/cnr/statistics/).
+
+**History:**
+- Ratios: [BYD](https://stockanalysis.com/stocks/byd/financials/ratios/) · [BHF](https://stockanalysis.com/stocks/bhf/financials/ratios/) · [BKR](https://stockanalysis.com/stocks/bkr/financials/ratios/) · [NYT](https://stockanalysis.com/stocks/nyt/financials/ratios/)
+- Cash flow: [BYD](https://stockanalysis.com/stocks/byd/financials/cash-flow-statement/) · [HAL](https://stockanalysis.com/stocks/hal/financials/cash-flow-statement/) · [EQT](https://stockanalysis.com/stocks/eqt/financials/cash-flow-statement/) · [MGY](https://stockanalysis.com/stocks/mgy/financials/cash-flow-statement/) · [WFRD](https://stockanalysis.com/stocks/wfrd/financials/cash-flow-statement/) · [GPOR](https://stockanalysis.com/stocks/gpor/financials/cash-flow-statement/) · [TDW](https://stockanalysis.com/stocks/tdw/financials/cash-flow-statement/) · [CHDN](https://stockanalysis.com/stocks/chdn/financials/cash-flow-statement/) · [KGC](https://stockanalysis.com/stocks/kgc/financials/cash-flow-statement/) · [UFPI](https://stockanalysis.com/stocks/ufpi/financials/cash-flow-statement/) · [TNL](https://stockanalysis.com/stocks/tnl/financials/cash-flow-statement/)
+
+**Beaten-down reasons:**
+
+**BYD — ✅ cyclical/temporary.** The decline traces to a soft quarter in Las Vegas, not to the core regional book.
+- **Q1'26 print (Apr 24):** adj EPS $1.60 vs $1.71 expected. Revenue was flat at $997M, and operating margin fell to 16.4% from 20.2%.
+- **Management's explanation:** soft Las Vegas destination traffic (−$5–6M EBITDA, expected to ease in H2) and Suncoast construction disruption (−$1.5M).
+- **Core is growing:** Midwest & South revenue +4%, EBITDA +5%.
+- **October analyst actions:** four PT cuts (Goldman $93→80, Citi $90→78, Barclays $87→85, Mizuho $104→102), partly offset by a Deutsche Bank upgrade to Buy.
+- Sources: [Yahoo/StockStory](https://finance.yahoo.com/markets/stocks/articles/why-boyd-gaming-byd-stock-163723430.html) · [TIKR](https://www.tikr.com/blog/boyd-gaming-nyse-stock-drops-6-after-q1-earnings-miss-analyst-estimates) · [SA news](https://stockanalysis.com/stocks/byd/)
+
+**BHF — ❓ event-driven, not a value dislocation.** The −28.5% is a deal-break probability, not a cheap business.
+- **Deal:** Aquarian offered $70/share cash (Nov 2025), and shareholders approved it in Feb 2026.
+- **Blocker:** the deal is stuck on insurance-regulator approvals in Delaware, NY and MA. Delaware has questioned Aquarian's capital sources.
+- **Deadline:** the outside date is now **Dec 6 2026**. Break fees are $226M (Aquarian) / $143M (BHF).
+- **Fallback:** Talcott/Sixth Street remains a fallback bidder.
+- **Ratings/analysts:** AM Best has the rating under review with negative implications. JPMorgan upgraded to Neutral ($55 PT) but called the fundamental outlook negative.
+- Sources: [Bloomberg 09-10](https://www.bloomberg.com/news/articles/2026-09-10/brighthouse-s-4-1-billion-takeover-drags-as-regulators-dig-in) · [Seeking Alpha](https://seekingalpha.com/news/4641800-aquarian-purchase-of-brighthouse-financial-delayed-by-regulators-report) · [Investing.com](https://www.investing.com/news/analyst-ratings/jpmorgan-upgrades-brighthouse-financial-stock-rating-to-neutral-93CH-4950756) · [SA](https://stockanalysis.com/stocks/bhf/)
+
+**All other rows:** Max's preliminary read only, not verified per ticker:
+- OFS/gas: E&P capex discipline plus a gas-strip pullback
+- Coal/gold: commodity retracement
+- Timber/wood: housing trough
+
+These reasons do not drive any verdict, because those rows fail on the B-Zero/B/C/D numbers.
+
+### Filter D — naive FV gap (survivors of A/B/C)
+
+| Ticker | Normalized FCF (5Y avg FY21–25, $M) | CoE | Price ÷ naive FV (base) | TTM cross-check | Street PT | D |
+|---|---|---|---|---|---|---|
+| **BYD** | **600.7** (811 / 707 / 541 / 557 / 388) · alt FY23–25 avg **495.2** (capex stepped up from $199M FY21 to $591M TTM) · TTM $35M not used (FanDuel-gain cash tax + capex) | **10.3%** (β 1.13 → CAPM) | **0.87×** (naive FV $5.83B = **$80.26/share** on 72.7M shares) · **1.06× on the FY23–25 basis** | n/a (TTM distorted) | $93.94 SA (19, Buy) · $94.75 Investing.com (Oct 14; range $87–106) · MarketBeat Hold, $87–110 → +34% | 🟡 **learning band at base**, ❌ reject band on the recent-capex basis — both reported, friendliest basis not picked |
+| **BHF** (insurer: book × normalized ROE ÷ CoE) | Book $6.62B × 5Y avg ROE ~7.9% (9.6 / 35.6 / −20.9 / 7.8 / 7.4) ÷ CoE 10% = $5.23B | 10% (β 0.83 → 8.9% → mid-cap floor) | **0.53×** · price = **0.68×** of the $70 deal | — | $61.67 SA (7, Hold); KBW $55, JPM $55 | numerically ✅ — but see E (special situation) |
+| HAL | 1,703 | 9.0% | **1.47×** | 1.46× | $43.40 | ❌ REJECT |
+| EQT | 1,449 | 8.5% | **1.99×** | 0.77× (TTM is near the gas-strip high; D-Legacy forbids the peak basis) | $66.52 | ❌ REJECT |
+| MGY | 532 | 10% | **1.13×** | 1.10× | $32.88 | ❌ REJECT |
+| WFRD | 404 | 10% | **1.35×** | 1.04× | $115.25 (Street extrapolates; naive FV overrides) | ❌ REJECT |
+| GPOR | 218 | 10% | **1.35×** | 1.18× | $213.00 | ❌ REJECT |
+| TDW | 142 | 10% | **2.79×** | 1.46× | $94.88 | ❌ REJECT |
+| CHDN | 201 (FY23 −$71M on growth capex) | 10% | **2.83×** | **1.00×** (inside ±10%) | $127.67 | ❌ REJECT |
+| KGC | 945 | 12.0% | **3.62×** | 1.12× (peak gold) | $31.21 | ❌ REJECT |
+| UFPI | 497 | 10.68% | **0.93×** (0.87× at a 10% floor) | 1.72× | $102.60 | ❌ REJECT (>0.90×, plus C borderline) — **near-miss** |
+| TNL | 417 | 10.63% | **1.01×** (inside ±10%) | 0.95× | $87.31 | ❌ REJECT |
+
+### Filter E — conviction viability (BYD, BHF)
+
+| Ticker | E1 Moat | E2 Through-cycle ROIC spread | E3 Overhang | Score |
+|---|---|---|---|---|
+| **BYD** | ❓ **not credited.** Limited-license regional jurisdictions are a plausible regulatory barrier, but no market-share or license-scarcity evidence was verified this session. Max does not credit it from memory | ✅ ROIC FY21–25 13.20 / 14.85 / 15.72 / 14.42 / 14.05% → **avg 14.45%** vs WACC ~9% = **+5.4pp** (TTM 12.5%, still above) | ✅ This session's searches found no structural, regulatory, governance or accounting overhang. The LV-locals softness and Suncoast build are temporary and quantified by management | **2/3 → learning-queue** |
+| **BHF** | ❌ Annuity/life carrier with no moat evidence; AM Best review is negative | ❌ 5Y avg ROE ~7.9% < CoE 10%. The TTM 13.5% is one good year | ❌ Unresolved regulatory binary on the deal by Dec 6 2026. It is quantifiable ($70 deal vs ~$45–55 stand-alone per KBW/JPM PTs), but under the Filter E text that only rescues E3, not E1/E2 | **0/3 → REJECT** (logged as an event-driven special situation, outside VALUE-FIRST scope) |
+
+### Tier 1.5 Lane recommendation (Charlie makes the final call at Tier 1)
+
+**BYD → 🟡 LEARNING-QUEUE (the only survivor this round)**
+
+What makes it interesting:
+- EV/EBITDA of 6.84× is the lowest in its 5Y history.
+- ROIC has been 13–16% in each of the last 5 years.
+- Leverage is 2.44×.
+- It bought back $155M in Q1 at ~$84 and added $500M of new authorization.
+
+Why it is not fast-track:
+- **D straddles the band:** 0.87× on the 5Y-avg FCF, but 1.06× on FY23–25. Capex stepped up from $199M (FY21) to $591M (TTM), so the old FCF base may overstate the run-rate. This session did not verify whether the extra capex is growth (new builds) or maintenance.
+- **E is 2/3:** the moat was not evidenced.
+
+Entry zone **$63–70** · Stop **$56** (below the 52W low of $65.00; ~20% under the current price).
+
+Upgrade triggers (any one):
+- (a) The Q3 print (**Oct 22**) plus the FY26/27 capex guide show normalized FCF ≥ $550M → D ≤0.80× at CoE 10.3%.
+- (b) Verified license-scarcity or regional-share data supports E1.
+- (c) Price falls to ≤$60 (−15%) → D reaches ≈0.90× even on the FY23–25 basis.
+
+**Fast-track: 0.** No candidate clears both D ≤0.80× and E 3/3 on an honest basis.
+
+**buy_list.md: not updated.** That list is for fully analyzed names, and BYD has not had a full pipeline.
+
+### Candidates that failed + reason (summary)
+- **D reject (no gap vs no-growth value on through-cycle FCF):** HAL 1.47×, EQT 1.99×, MGY 1.13×, WFRD 1.35×, GPOR 1.35×, TDW 2.79×, CHDN 2.83× (TTM 1.00×), KGC 3.62×, UFPI 0.93× (near-miss), TNL 1.01×.
+- **E reject:** BHF 0/3 (pending-M&A regulatory binary).
+- **C reject (ROIC < 80% WACC):** HP, RIG, CRC, DKNG, HGV, KMPR. Double B/C fails: LBRT, VAL, PENN, RYN, SLVM, WY, AMR, BTU, CNR.
+- **B reject (not cheap on cash):** BKR (EV/EBITDA at its 5Y high), RRR, TPB, NYT (marginal).
+- **Short of Filter A (−20%):** 61 fresh rows. Mid/large oil E&P, refiners, midstream, insurance carriers, tobacco (MO/BTI), tankers and dry bulk all sit within 0–19% of their highs — the market has not de-rated these groups.
+
+### What this round tells the team
+1. **Energy split in two.**
+   - Oil-weighted E&P and refiners trade at or above 52W highs, so there is no Filter-A entry.
+   - What did fall (gas: EQT/GPOR; OFS: HAL/WFRD/TDW) still fails D badly on through-cycle FCF.
+   - The TTM view looks cheap (EQT 0.77×, WFRD 1.04×) only because it sits near the peak. This is the same trap R79 found in metals (AA/CMC), and D-Legacy's "through-cycle, not TTM" clause caught it again.
+2. **Insurance carriers are not cheap.** Most are within 0–17% of their highs. The two that de-rated are a merger-arb situation (BHF) and a loss-making auto carrier (KMPR). Max flags the carrier universe as not de-rated in Oct 2026 and sees no reason to re-scan it before the next P&C pricing-cycle turn.
+3. **Gaming de-rated on two different stories.**
+   - Regional/locals casinos (BYD, RRR, PENN) fell on margin and visitation softness. Only BYD has the ROIC record (5 straight years ≥13%) to pass C.
+   - Online betting (DKNG −49%) fell on loss-making economics.
+   - Leverage in the space is high: CHDN 4.75×, RRR 4.43×, PENN 6.73×, HGV 8.04×.
+4. **Capex step-ups distort 5Y-avg FCF in both directions.** For BYD and CHDN, the choice of "normalized FCF" basis moves D by ≥0.2×. The real decider is the maintenance-vs-growth capex split, which needs a Tier 1.5 read of the 10-K. This is the same open question R78 raised on hospital growth capex, and it is logged for the 2026-12-31 trial review.
+5. **Funnel:** 93 pre-screened → 31 at ≥−20% (all fresh) → 12 reach D (including UFPI/TNL for the record) → 2 reach E → **0 fast-track · 1 learning-queue (BYD) · 30 reject.**
+
+**Target analysis date:**
+- **BYD:** Tier 1.5 lightweight on **2026-10-23**, the day after the Q3 print (Oct 22). Sooner on CIO request.
+
+*Max — 2026-10-19 | Scout Round 80*
