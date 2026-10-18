@@ -1010,3 +1010,23 @@
 - **Prune:** SLM archived from watchlist Pending (Rule #3; it lives in buy_list). Flag: with the Value gate corrected to ≥6 (`6964aa3`), SLM's Conv 6.17 + MOS +18.9% is now deployment-eligible. That is a Max × Charlie consultation item, not part of this scout.
 
 *Max — 2026-10-17 | Scout Round 78 — fast-track 0, learning-queue 1 (MMS); no trade. Detail: `portfolio/watchlist.md` § Round 78.*
+
+---
+
+## Scout Round 79 — Multi-sector VALUE-FIRST sweep (Ag · Satcom/Fiber · Metals · Office/Life-sci REITs · Back-end Semicap · Large-cap Biotech · Cyber/SaaS · Apparel/Beauty · Cruise · Aero Suppliers · Renewables) — 2026-10-18
+
+| Date | Ticker | Action | Gate Status | Position Size | Tranche | Rationale | Counter-factual |
+|------|--------|--------|--------------|----------------|---------|-----------|------------------|
+| 2026-10-18 | CRI | LEARNING-QUEUE (Filter D 0.71–0.87× + Filter E 1/3) | A ✅ −29.2% (52W high $44.44, 2 sources) · B ✅ FCF 25.4% TTM, EV/EBITDA 4.91× vs 5Y 8.3–11.0× · C ✅ ROIC 14.2% · **D 0.71×** (5Y-avg FCF $212M ÷ CoE 13%; 0.87× at 16%) · E 1/3 | $0 | — | The selloff is either a tariff/EPS-guide reset or a structural birth-rate decline — ambiguous → learning-queue. Zone $28–32.50, stop $26 | Re-check at Q3 print |
+| 2026-10-18 | NBIX | LEARNING-QUEUE (D-V1 PT-fallback 0.66–0.77× + Filter E 2/3) | A ✅ −27.1% (2 sources) · B-V1 ✅ EV/Sales 4.11× below FY21–25 range · C ✅ ROIC 20.6% · D-V1 method 3 only; D-Legacy 1.43× disagrees · E 2/3 (IRA + Vykat XR overhang) | $0 | — | Zone $122–135, stop $108 | Re-check after Nov 2 print |
+| 2026-10-18 | AA / CMC / AEO / IRDM / NCLH | QUICK-SCREEN SKIP (Filter D REJECT) | D ~6.8× / 1.84× / 1.55× / 1.45× / n/a (negative FCF) | $0 | — | Through-cycle FCF too low vs CoE at 5.19% Rf | — |
+| 2026-10-18 | ARE, BXP, VNO, KRC, SLG, DEI, CLF, MP, IONS, SRPT, RPD, VRNS, BILL, MNDY, PCOR, COTY, BEP, ORA, XIFR | QUICK-SCREEN SKIP (Filter C REJECT) | ROIC < 80% of WACC, no improving trend (REIT-lens caveat logged) | $0 | — | — | — |
+| 2026-10-18 | CENX, AGCO, LNN, ANDE, ATI, COHU, FORM, KLIC, WWD | QUICK-SCREEN SKIP (Filter B REJECT) | FCF yield < 6% and EV/EBITDA not shown bottom-third | $0 | — | — | — |
+| 2026-10-18 | CCOI, SMG | QUICK-SCREEN SKIP (B-Zero) | CCOI: negative equity from losses at 11.2× leverage. SMG: negative equity, cause unverified | $0 | — | SMG: re-check the B-Zero cause next round | — |
+
+**Rationale:**
+- **Regime:** RISK-ON 3/4 (Atlas 2026-10-16, 2 days old). No full pipeline was dispatched (scout-only CIO task).
+- **Value gate:** reverted to 7.0 (`0ea228b`) → the R78 SLM eligibility flag is withdrawn.
+- **Funnel:** 153 pre-screened → 37 fresh 2-source Filter-A passes → **0 fast-track · 2 learning-queue (CRI, NBIX) · 35 reject.**
+
+*Max — 2026-10-18 | Scout Round 79 — fast-track 0, learning-queue 2 (CRI, NBIX); no trade. Detail: `portfolio/watchlist.md` § Round 79.*

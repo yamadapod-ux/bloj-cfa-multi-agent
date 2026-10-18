@@ -378,6 +378,7 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-10-18 (Mode 1 Step 0 — Round 79):** Reviewed 18 live Pending tickers (SOFI…VICI, ALLY, MMS) vs De-list Rules #1-3. **De-listed 0.** Rule #1: every row carries an explicit target (16 legacy + ALLY → 2026-10-23; MMS → 2026-11-20) → no stale timeout. Rule #3: no new position in `dashboard/portfolio.js` (OPEN = ADBE/NOW/CRM/REGN/ADSK) and no formal decision in `decisions.md` (only incidental mentions of SOFI/EVLV inside other rows) — commits since R78 are a Portfolio Review re-mark and the Value-gate revert (`0ea228b`) only. Rule #2: no thesis-dead archive attempted → no live-price re-check needed. SLA fixed 0. Live after round: 18 → **20** (+CRI, +NBIX).
 **Prune Pass 2026-10-17 (Mode 1 Step 0 — Round 78):** Reviewed 18 live Pending tickers vs De-list Rules #1-3. **De-listed 1 → Archive: SLM** (Rule #3 Superseded — full `VS2` pipeline 2026-10-16, formal WAIT → buy_list). Other 17 keep explicit target dates (16 legacy rows → 2026-10-23 from R75 prune; ALLY 10-23) — no Rule #1/#2 hits, no new positions/decisions. Live after round: 18 (+MMS).
 **Prune Pass 2026-10-16 (Mode 1 Step 0 — Round 75):** Reviewed all 32 live tickers in Pending Analysis against De-list Rules #1-3, cross-referenced against `portfolio/decisions.md`, `portfolio/deployment_log.md`, `reports/`, and `dashboard/portfolio.js` (OPEN: ADBE/NOW/CRM/REGN/ADSK — no overlap). **De-listed 16 → Archive:** **Superseded (Rule #3) ×5:** LDOS (full analysis 05-14 HOLD/WAIT), LKQ (full analysis 09-08 SKIPPED), ELV (rejected again in Round 35b scout), GD (QUICK-SCREEN SKIP Round 50), KR (SKIPPED Filter D in staples round). **Stale timeout (Rule #1) ×11:** FTAI, NKE, ZTS, CPRT, PODD, ONON, GEHC, BR, CLS, LITE, GLW — all scouted ≥ 60 days ago (07-05 → 08-10), **no action from CIO or Charlie ever**, and the last target dates (08-29 → 09-03) blown by 43–48 days with no further reset. ⚠️ **Interpretation flag for CIO:** Rule #1 says "no target analysis date". These rows *had* target dates, but only through repeated Max-only SLA resets (up to 5×) that have themselves gone stale. I'm treating a target date blown by more than 40 days with no CIO/Charlie action as "no valid target date". Precedent: MSFT/PG, 2026-09-13 (chronic SLA resets → archived). CIO can re-list any of them. **No Rule #2 (thesis dead) de-lists.** Every archived ticker was price-checked live first (finviz, 2026-10-16). Notable: many archived names are now deeply beaten down (PODD −61%, GLW −49%, FTAI −48%, ZTS −47%, NKE −47%, LDOS −41%, LKQ −40%), so they are **eligible for a fresh re-scout under Filter A-E**. Archive ≠ dead. **SLA fixed: 16 remaining** (SOFI/ETON/EVLV/ACMR/VEL/KALU/HG/IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI) → new target 2026-10-23 for a Tier 1 re-screen. Most were scouted under pre-VALUE-FIRST growth rules and must re-qualify on A-E or be archived next round. **Live after prune: 16.**
 **Prune Pass 2026-08-18 (Mode 1 Step 0 — Round 6, ช่วงบ่ายวันเดียวกับ Round 5):** Reviewed 23 live tickers (หลัง Round 5 + KR ที่เพิ่งเพิ่ม) ตาม De-list Rules #1-3. **พบ oversight ทันที: ACGL ผ่าน full analysis ครบวงจร (Charlie→Atlas→Emma/Quinn→Bear→Morgan→Leo→Vera→Max) เสร็จช่วงเช้าวันนี้เอง พร้อม Max deployment SKIPPED แล้ว แต่ยังไม่ได้ archive ออกจาก Pending Analysis** — เป็น pattern เดียวกับ ICE/NET ใน Round 5 ทุกประการ (วิเคราะห์เสร็จแล้วแต่ไม่ได้ sync กลับมาที่ watchlist.md ทันที) — **De-listed 1 ticker**: **ACGL** (Rule #3 — Superseded, dual Value-gate FAIL: MOS -6.08% ESG-adj -12.66% << 15%, Conviction 5.5 < 6.0 — เดิม conviction ตอน scout เคยดูดีแต่ full analysis พบ revenue growth พลิกลบ 2 ไตรมาสติด + TRV ROE แซงหน้า). **บทเรียนสำหรับรอบถัดไป:** ควร sync watchlist.md ทันทีหลัง Max deployment decision ทุกครั้ง ไม่ใช่รอ prune pass รอบถัดไปมาจับ. ไม่มี ticker อื่นเข้าเงื่อนไข Rule #1/#2 รอบนี้ (ราคา/target date ยังไม่เปลี่ยนจาก Round 5 เมื่อไม่กี่ชั่วโมงก่อน). เหลือ live Pending Analysis: 22 tickers ก่อน scout, 23 tickers หลังเพิ่ม candidate ใหม่จาก Scout Round 21 (1 ตัว: SOFI) — ดู Scout Report ด้านล่าง.
@@ -424,6 +425,8 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 | VICI | VICI Properties Inc. | Real Estate / Gaming & Experiential Triple-Net REIT | 2026-09-20 | $23.72 (2026-09-18 close, WallStreetZen — ⚠️ single-source, flag re-verify ≥2 sources ก่อน full analysis) | AFFO yield ~10.5% (AFFO $0.62/qtr ×4 ÷ $23.72) — ไม่ใช่ FCF yield มาตรฐาน (REIT) | N/A | N/A — ROIC framework ไม่ fit REIT โดยตรง ต้องใช้ cap-rate/cost-of-capital spread แทน | **CONDITIONAL — REIT ตัวแรกที่ scout เจอ, ต้อง Charlie/Emma ปรับ framework ก่อนตัดสิน Filter C/D จริง.** Filter A: -29.9% จาก 52W high (2-source variance $33.00-34.03, ยัง PASS ≥20% ทุกกรณี). เหตุผล beaten-down: broad rate-sensitive REIT sector rotation + gaming-tenant sentiment concern (ไม่ใช่ company-specific — AFFO ยังโต +4.6% YoY, dividend yield 7.63% coverage ~74% payout, ดูปลอดภัย). Moat = triple-net lease ให้ casino operator (MGM/Caesars) บน Vegas Strip real estate หายาก + escalator clauses ระยะยาว ~30 ปี — wide-ish moat เชิง real estate แต่ต้องเช็ค top-tenant concentration % ตอน full analysis (risk คล้าย single-tenant dependency). Entry zone $22-26, Stop $18.98 (-20%). | **NEW — CAUTION (ต้อง REIT-adapted framework, single-source price ต้อง re-verify) — รอ Analysis เฉพาะถ้า CIO สนใจ REIT diversifier — Target date 2026-09-27** **SLA re-fix 2026-10-16 (Round 75 prune): Target 2026-10-23 — re-run Tier 1 Quick-Screen ภายใต้ Filter A-E ปัจจุบัน (scout เดิมใช้เกณฑ์ก่อน VALUE-FIRST/D-E) — ถ้าไม่ผ่าน A → archive รอบถัดไป** |
 | ALLY | Ally Financial Inc. | Financials / Consumer Finance — Auto Lending + Digital Bank (Value bucket) | 2026-10-16 (Round 77) | $37.73 (Oct 15 close, stockanalysis; finviz $37.59, 0.4%) · 52W high $47.29 = **−20.2%** (borderline) | n/a (lender) — P/E 8.9 TTM / 6.65 fwd · P/TBV 0.85 | EPS +32% this year (finviz) | ROE 9.7% TTM (5Y avg ~10.5% vs CoE 10.1%) | **🟡 LEARNING-QUEUE (Filter E 1/3).** D 0.77× normalized / 0.90× TTM-only; Street PT $48.78 (+29%, single source). Moat ❌ (weakest ROE among the lenders screened), ROE spread ❌ +0.4pp, overhang ✅. **Entry zone $34–38 · Stop $29.50** | **LEARNING-QUEUE — Tier 1.5 lightweight only on CIO request; target 2026-10-23** (after the Q3 print Oct 20). Upgrade trigger: ROE trend ≥13% |
 | MMS | Maximus, Inc. | Industrials / Government Services — Medicaid enrollment, CMS contact centers, VA Medical Disability Exams (Value bucket) | 2026-10-17 (Round 78) | $61.47 (Oct 16 close, finviz + stockanalysis exact) · 52W $51.04–100.00 = **−38.5%** | 13.46% TTM ($433M) · normalized $400M = 12.4% · EV/EBITDA 7.07× vs 5Y 10.6–14.3× | FY26 rev guide $5.20–5.35B (unchanged); EPS guide cut to $7.90–8.20 | ROE 21.1% · ROIC 13.3% TTM (5Y avg 10.95% vs WACC ~8.3–9%) | VA MDE incentive pause 7/1–12/31/26 (temporary, quantified ~$0.35 EPS) → D 0.805× naive FV (CoE 10%; range 0.72–0.95× by FCF basis) · E 1/3 (moat ✅, ROIC spread +2–2.7pp ❌, federal/AI overhang ❌) · Street PT $92.50 (2 analysts) · **Entry $55–61 · Stop $48** | **LEARNING-QUEUE — Tier 1.5 lightweight on CIO request; target 2026-11-20** (after Nov 19 FY26 Q4 print). Upgrade: VA incentives resume 1/1/27, or price ≤$52, or FY26 FCF ≥$450M |
+| CRI | Carter's, Inc. | Consumer Discretionary / Children's Apparel — Carter's + OshKosh brands, US retail + wholesale (Value bucket) | 2026-10-18 (Round 79) | $31.45 (Oct 16 close, finviz + stockanalysis exact) · 52W $27.86–44.44 (finviz-implied + SA) = **−29.2%** | **25.4% TTM** ($293M — inflated by WC) · 5Y avg FY21–25 $212M = 18.4% · EV/EBITDA **4.91×** vs FY21–25 8.29–10.96× | FY26 guide: sales +LSD–MSD, adj EPS −low-double-digit to mid-teens | ROE 20.7% · ROIC 14.2% TTM (5Y avg 16.1%) | **🟡 LEARNING-QUEUE (Round 79 top pick)** — Filter D **0.71×** naive FV at CoE 13% (small-cap band) on 5Y-avg FCF $212M (0.74× on FY24–TTM avg; **0.87× at CoE 16%**). E **1/3** (E2 ✅ 5Y ROIC +6pp but falling trend · E1 ❓ moat evidence not verified this session · E3 ❌ tariff cost + EPS-down guide + birth-rate demand question). Beaten-down reason is ambiguous (tariff/margin = temporary vs birth-rate/wholesale = structural), written both ways → default learning-queue. **Entry zone $28.00–32.50 · Stop $26.00** (below 52W low $27.86). Street PT $40.57 (SA, 8 analysts) / $40.67 (Investing.com, May) | **Target: Tier 1.5 lightweight after the Q3 FY26 print (date not verified this session — expected late Oct / early Nov 2026); fallback 2026-11-06** |
+| NBIX | Neurocrine Biosciences, Inc. | Healthcare / Large-cap Biotech — Ingrezza (VMAT2, tardive dyskinesia), Crenessity (CAH), Vykat XR (Prader-Willi, via Soleno) (Growth bucket — rev +34.4% TTM) | 2026-10-18 (Round 79) | $135.77 (Oct 16 close, SA; finviz $135.71, 0.04%) · 52W $122.14–186.12 (SA) = **−27.1%** (finviz −27.08%) | 6.31% TTM ($870M) · EV/Sales **4.11×** vs FY21–25 4.72–7.37× (below every year) | +34.4% TTM revenue ($3.37B) | ROE 22.1% · ROIC 20.6% (5Y avg 20.75%) | **🟡 LEARNING-QUEUE** — B-V1 ✅ (self-history bottom-third; ⚠️ Soleno M&A may contaminate the series) · C ✅ · D-V1: only method 3 (Analyst-PT) computed → **0.66× (SA $206.81) to 0.77× (TipRanks $176.67)**; methods 1–2 not computed this round; D-Legacy no-growth cross-check 1.43× → "methods disagree" flag → learning-queue, not fast-track. E **2/3** (E1 ✅ VMAT2 franchise · E2 ✅ +11–12pp · E3 ❌ IRA Medicare price pressure 2027–29 unquantified + Vykat XR safety concerns). **Entry zone $122–135 · Stop $108** | **Target: Tier 1.5 lightweight 2026-11-03** (day after the Q3 print on Nov 2, per SA news) |
 
 ---
 
@@ -7281,3 +7284,182 @@ Sources (row order): stockanalysis statistics pages [MMS](https://stockanalysis.
 **Target analysis date:** MMS — Tier 1.5 lightweight 2026-11-20 (post Nov 19 print), or 2026-10-23 on CIO request. **SLM (archived from Pending → buy_list): Max/Charlie to re-check deployment eligibility under the corrected Value gate (≥6) — recommended at the next Portfolio Review.**
 
 *Max — 2026-10-17 | Scout Round 78*
+
+---
+
+## Scout Report § Round 79 (Multi-sector VALUE-FIRST sweep — Ag Equipment/Inputs · Satcom/Fiber Telecom · Base Metals/Steel/Aluminum · Office & Life-Science REITs · Semicap Back-end (non-AI-chip) · Large-cap Biotech · Cyber/SaaS · Apparel/Beauty · Cruise · Aerospace Suppliers · Renewables/Yieldcos) — 2026-10-18
+
+**Trigger:** CIO-directed "Max Scout Pipeline — Round 79" (2026-10-18, Sunday). Full `.claude/commands/scout.md` Step 0-6. **Scout/screen only — no full pipeline dispatch.**
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK). Cash ~74% of NAV (Max weekend re-mark 10-18, `92d0e73`).
+**Regime:** Atlas **2026-10-16 → RISK-ON 3/4** (`agent_notes/atlas/2026-10-16_regime.md`). It is 2 days old and no newer regime file exists → **no re-call**. Rf (10Y) **5.19%**. Fed hikes priced is the lone dissent. Force Deploy is ACTIVE in principle but needs a conviction-gate pass after a full pipeline.
+**Gate note:** Commit `0ea228b` reverted the Value conviction gate back to **7.0**. The R78 flag that "SLM 6.17 now clears ≥6" **no longer applies**: SLM 6.17 < 7.0, so it stays WAIT in buy_list.
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **0** | live **18 → 20** (+CRI, +NBIX). See the Prune Pass 2026-10-18 note above the Pending table.
+
+### Sector mandate rotation check
+Excluded per the CIO list for R71-78: AI/power/infra, IT services/data, regional banks/consumer credit, homebuilders/building products, chemicals, packaging, tariff-hit consumer discretionary, autos/parts, specialty pharma, hospitals/healthcare services, insurance brokers, staffing/HR, restaurants, gov/business services, education, medtech, and local TV.
+
+**Round 79 groups:** ag equipment & ag inputs, satcom/fiber telecom, base metals/steel/aluminum/rare earths, office & life-science REITs, back-end semicap (test/probe/bonding — not AI-chip), large-cap biotech, cybersecurity/SaaS, apparel & beauty, cruise, aerospace suppliers, and renewables/yieldcos.
+
+**Hard-exclusion check:** every Filter-A pass was grepped (`grep -w`) against `watchlist.md` (live, Archive and all Scout History), `decisions.md`, `deployment_log.md`, `buy_list.md` and `dashboard/portfolio.js`. **42 Filter-A passes were excluded as previously covered:**
+- **Telecom:** T / TMUS / LUMN (R64)
+- **Prior full coverage:** MOS
+- **Staples/protein rounds:** BG / CAG / CPB / GIS / HRL / TSN
+- **Semicap:** AMAT / ENTG / KLAC / LRCX / MKSI / ONTO / TER (R47/R68)
+- **Biotech:** ALNY / BMRN (R54)
+- **Cruise round:** CCL / RCL
+- **Chemicals:** DOW (R33/R65)
+- **Semis:** MCHP / ON (R37/38/55)
+- **Early cyber/SaaS scouts:** CRWD / ZS / OKTA / PANW / HUBS / CHKP / WDAY
+- **Retail round:** GAP / LULU
+- **Earlier rejects:** VIK / HWM / TXT
+- **R77:** FMC / LEVI
+- **Solar/renewables round:** CWEN / ENPH / RUN / SEDG
+
+The 37 Round-79 tickers below have **0 overlaps**. IONS appeared earlier only as an un-sourced peer name and was never scouted.
+
+### Method (Price Verification block)
+- **Source 1:** finviz screener, technical view `v=171`, Oct 16 2026 close. Batches: [1](https://finviz.com/screener.ashx?v=171&t=T,VZ,TMUS,LUMN,FYBR,IRDM,CCOI,DE,AGCO,CNH,CF,MOS,NTR,FMC,CTVA,ADM,BG,LNN,TITN,USM), [2](https://finviz.com/screener.ashx?v=171&t=FCX,SCCO,AA,NUE,STLD,CLF,MP,RS,CMC,TECK,O,PLD,BXP,VNO,KIM,REG,SPG,FRT,ARE,STAG), [3](https://finviz.com/screener.ashx?v=171&t=EGP,HIW,CUZ,NNN,ADC,AMAT,LRCX,KLAC,TER,ONTO,ENTG,MKSI,FORM,COHU,KLIC,AMGN,GILD,BIIB,VRTX,MRNA), [4](https://finviz.com/screener.ashx?v=171&t=BMRN,INCY,EXEL,ALNY,NBIX,UTHR,CRWD,PANW,FTNT,ZS,OKTA,S,CHKP,TENB,RPD,QLYS,VRNS,DOCU,WDAY,HUBS), [5](https://finviz.com/screener.ashx?v=171&t=TEAM,DDOG,ZM,BOX,LULU,ANF,AEO,GAP,URBN,VSCO,ELF,ULTA,COTY,SBH,IPAR,CCL,RCL,NCLH,VIK,HXL), [6](https://finviz.com/screener.ashx?v=171&t=SPR,TXT,WWD,HWM,DOW,BALL,ON,MCHP,TXN,SWKS,QRVO,CAG,GIS,CPB,HRL,KHC,SJM,TSN,PFE,BMY), [7](https://finviz.com/screener.ashx?v=171&t=KRC,SLG,DEI,PK,HST,REXR,FR,MAC,BRX,SKT,ATI,CENX,SMG,ANDE,PVH,RL,HBI,COLM,LEVI,CRI), [8](https://finviz.com/screener.ashx?v=171&t=AES,ENPH,RUN,SEDG,XIFR,BEP,CWEN,ORA,EXAS,HALO,IONS,SRPT,DT,PCOR,MNDY,GTLB,ESTC,CFLT,BILL,FIVN).
+- **Source 2:** `stockanalysis.com/stocks/[ticker]/statistics/` (Oct 16 2026 close plus valuation/return metrics). It was fetched this session for **all 37 fresh Filter-A passes**.
+- **Price agreement:** 35/37 match to the cent. NBIX is $135.77 vs $135.71 (0.04%) and WWD is $328.47 vs $328.48. No 3rd source was needed.
+- **52W high, 2nd source:** done for the survivors that reach the lane decision.
+  - **CRI:** high $44.44 / low $27.86 ([SA](https://stockanalysis.com/stocks/cri/)), the same as the finviz-implied $44.44.
+  - **NBIX:** high $186.12 / low $122.14 ([SA](https://stockanalysis.com/stocks/nbix/)), giving −27.1% vs finviz −27.08%.
+  - For the B/C/B-Zero/D rejects, the 52W high is **finviz-only**. That is disclosed and does not change any verdict.
+- **Pre-screened:** 160 tickers requested → **153 rows returned**. FYBR, USM, VSCO, SPR, HBI, EXAS and CFLT returned no row and are not counted. **79 sit at ≥−20%.** 42 of those were excluded as previously covered, which leaves **37 fresh, 2-source-verified Filter-A passes**. The other 74 are short of −20% (single-source, not counted as verified).
+
+**WACC/CoE convention (same as R77/R78):**
+- CAPM CoE = Rf 5.19% + β × ERP 4.5%.
+- Mid-caps are floored at 10%. Small-caps (<$2B) use the CLAUDE.md D-Legacy band of 13–16%.
+- Non-financial WACC proxies are 8.5–10.5%. Filter C bar = ROIC ≥ 80% of WACC.
+- **Naive FV = normalized levered FCF ÷ CoE.**
+
+### Filter A + B-Zero + B + C — 37 fresh Filter-A passes (Oct 16 2026 close, 2 sources)
+
+| # | Ticker | Group | Price | % from 52W high | FCF yield (TTM) | EV/EBITDA | ROIC (TTM) | Equity / Debt-EBITDA | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | **CRI** Carter's | Apparel | $31.45 | **−29.2%** | **25.38%** | **4.91** (FY21–25 8.29–10.96) | 14.2% | +$1.03B / 1.98× | ✅ A/B/C → D |
+| 2 | **NBIX** Neurocrine | Biotech | $135.77 | **−27.1%** | 6.31% | 15.18 · EV/Sales 4.11 (FY21–25 4.72–7.37) | 20.6% | +$3.69B / 0.47× | ✅ A/B(-V1)/C → D-V1 |
+| 3 | AA Alcoa | Aluminum | $41.45 | −50.9% | 8.14% | 3.48 | 24.0% (peak) | +$8.25B / 1.62× | ✅ A/B/C → D |
+| 4 | CMC Commercial Metals | Steel | $64.98 | −23.4% | 6.70% | 7.89 | 10.6% (~100% of WACC ~10.5%) | +$4.70B / 2.68× | ✅ A/B/C → D |
+| 5 | AEO American Eagle | Apparel | $17.98 | −36.8% | 11.40% | 8.39 | 7.67% (~81% of ~9.5%) | +$1.76B / 1.70× | ✅ A/B, C borderline → D |
+| 6 | IRDM Iridium | Satcom | $43.76 | −23.5% | 6.22% | 14.74 | 7.53% (~88% of ~8.5%) | +$0.47B / **4.17×** ⚠️ | ✅ A/B/C (leverage flag) → D |
+| 7 | NCLH Norwegian | Cruise | $15.05 | −40.1% | **−17.2%** (ship capex) | 8.74 | 8.33% (~83%) | +$2.57B / **5.86×** ⚠️ | ⚠️ B unproven (EV/EBITDA history not verified) → D for the record |
+| 8 | CENX Century Aluminum | Aluminum | $35.03 | −50.3% | 4.36% | 7.52 | 24.2% (peak) | +$1.53B / 0.98× | ❌ B (FCF <6%; 5Y FCF avg negative — see D) |
+| 9 | ARE Alexandria | Life-sci REIT | $41.62 | −47.0% | −6.34% (dev capex) | 11.20 · **P/B 0.46** | 0.99% | +$19.2B / **7.25×** ⚠️ | ❌ C (ROIC 1%; same-property NOI guide −8.5% → no improving trend) — REIT note below |
+| 10 | AGCO | Farm equipment | $103.72 | −27.9% | 4.55% | 9.47 | 7.50% (~79% of ~9.5%) | +$4.37B / 2.63× | ❌ B (FCF <6%; EV/EBITDA history not verified) + C borderline-fail |
+| 11 | LNN Lindsay | Irrigation | $107.36 | −27.5% | 4.11% | 12.75 | 10.1% | +$0.50B / 1.53× | ❌ B |
+| 12 | ANDE Andersons | Ag trading | $64.93 | −20.9% | 2.60% | 9.98 | 5.96% (~70%) | +$1.36B / 2.59× | ❌ B/C |
+| 13 | SMG Scotts Miracle-Gro | Lawn/garden inputs | $54.57 | −27.6% | 8.29% | 10.55 | 13.8% | **−$209M** / 3.79× | ❌ **B-Zero stop** — cause of negative equity not identified this session (B-Zero requires the cause before proceeding) |
+| 14 | CCOI Cogent | Fiber telecom | $8.07 | −82.3% | −36.95% | 17.43 | −2.53% | **−$34M** / 11.2× | ❌ **B-Zero reject** (operating losses) + C |
+| 15 | CLF Cleveland-Cliffs | Steel | $12.12 | −27.4% | −12.4% | 28.3 | −4.07% | +$5.82B / 10.3× | ❌ C |
+| 16 | MP MP Materials | Rare earths | $40.17 | −56.3% | −7.05% | 164 | −4.12% | +$2.37B / 20.4× | ❌ C |
+| 17 | ATI | Specialty alloys | $185.59 | −23.8% (+123% 52W) | 2.08% | 29.1 | 18.4% | +$2.00B / 2.33× | ❌ B |
+| 18 | BXP | Office REIT | $59.20 | −21.0% | −0.95% | 16.3 | 1.76% | +$7.73B / 10.0× | ❌ C |
+| 19 | VNO Vornado | Office REIT | $32.93 | −20.8% | −6.22% | 18.4 | 1.31% | +$6.70B / 10.1× | ❌ C |
+| 20 | KRC Kilroy | Office REIT | $34.83 | −20.1% | −5.88% | 14.1 · P/B 0.78 | 1.65% | +$5.45B / 7.57× | ❌ C |
+| 21 | SLG SL Green | Office REIT | $47.00 | −21.8% | −29.1% | 27.3 | 0.49% | +$4.42B / 16.5× | ❌ C |
+| 22 | DEI Douglas Emmett | Office REIT | $9.76 | −29.6% | −9.46% | 12.6 · P/B 0.89 | 1.30% | +$3.52B / 9.81× | ❌ C |
+| 23 | COHU | Semicap test | $50.81 | −32.9% (+124% 52W) | 1.45% | 177 | −5.31% | +$0.77B | ❌ B/C |
+| 24 | FORM FormFactor | Probe cards | $105.01 | −34.5% (+146% 52W) | 1.66% | 42.2 | 16.5% | +$1.11B | ❌ B |
+| 25 | KLIC Kulicke & Soffa | Bonding | $78.63 | −42.1% (+96% 52W) | 1.00% | 22.7 | 27.4% | +$0.91B | ❌ B |
+| 26 | IONS Ionis | Biotech | $42.94 | −50.5% | −7.86% | n/a | −72% | +$0.44B | ❌ C |
+| 27 | SRPT Sarepta | Biotech | $17.10 | −30.7% | 4.53% | n/a | −3.36% | +$1.53B | ❌ B/C |
+| 28 | RPD Rapid7 | Cyber | $12.61 | −36.4% | 17.0% (SBC-inflated) | 19.1 | 2.56% | +$0.20B / 11.3× | ❌ C (Street PT $11.81 < price) |
+| 29 | VRNS Varonis | Cyber | $48.72 | −23.6% | 2.18% | n/a | −9.04% | +$0.44B | ❌ B/C |
+| 30 | BILL | Fintech SaaS | $45.60 | −20.3% | 10.6% (SBC-inflated) | 38.5 | 0.50% | +$3.53B | ❌ C |
+| 31 | MNDY monday.com | SaaS | $90.37 | −57.1% | 7.80% · EV/Sales 2.18 | 58.8 | 2.28% | +$0.62B | ❌ C (GAAP ROIC 2.3% vs ~10.5%) |
+| 32 | PCOR Procore | SaaS | $56.98 | −30.8% | 3.53% · EV/Sales 5.67 | 124 | −2.43% | +$1.28B | ❌ B/C |
+| 33 | COTY | Beauty | $3.20 | −26.3% | 12.4% | 7.49 | 4.71% (~55%) | +$3.38B / 3.65× | ❌ C (Street PT $2.66 < price) |
+| 34 | WWD Woodward | Aero supplier | $328.47 | −27.2% | 1.94% | 25.3 | 16.6% | +$2.47B | ❌ B |
+| 35 | BEP Brookfield Renewable | Renewables | $28.40 | −25.5% | −26.2% | 27.1 | 0.57% | +$35.9B / 12.6× | ❌ C |
+| 36 | ORA Ormat | Geothermal | $89.31 | −39.0% | −4.82% | 16.0 | 2.27% | +$2.74B / 6.26× | ❌ C |
+| 37 | XIFR XPLR Infra | Yieldco | $9.94 | −25.0% | −43.7% | 9.87 · P/B 0.29 | 0.01% | +$10.6B / 9.08× | ❌ C |
+
+**Sources (stockanalysis statistics, row order):** [CRI](https://stockanalysis.com/stocks/cri/statistics/) · [NBIX](https://stockanalysis.com/stocks/nbix/statistics/) · [AA](https://stockanalysis.com/stocks/aa/statistics/) · [CMC](https://stockanalysis.com/stocks/cmc/statistics/) · [AEO](https://stockanalysis.com/stocks/aeo/statistics/) · [IRDM](https://stockanalysis.com/stocks/irdm/statistics/) · [NCLH](https://stockanalysis.com/stocks/nclh/statistics/) · [CENX](https://stockanalysis.com/stocks/cenx/statistics/) · [ARE](https://stockanalysis.com/stocks/are/statistics/) · [AGCO](https://stockanalysis.com/stocks/agco/statistics/) · [LNN](https://stockanalysis.com/stocks/lnn/statistics/) · [ANDE](https://stockanalysis.com/stocks/ande/statistics/) · [SMG](https://stockanalysis.com/stocks/smg/statistics/) · [CCOI](https://stockanalysis.com/stocks/ccoi/statistics/) · [CLF](https://stockanalysis.com/stocks/clf/statistics/) · [MP](https://stockanalysis.com/stocks/mp/statistics/) · [ATI](https://stockanalysis.com/stocks/ati/statistics/) · [BXP](https://stockanalysis.com/stocks/bxp/statistics/) · [VNO](https://stockanalysis.com/stocks/vno/statistics/) · [KRC](https://stockanalysis.com/stocks/krc/statistics/) · [SLG](https://stockanalysis.com/stocks/slg/statistics/) · [DEI](https://stockanalysis.com/stocks/dei/statistics/) · [COHU](https://stockanalysis.com/stocks/cohu/statistics/) · [FORM](https://stockanalysis.com/stocks/form/statistics/) · [KLIC](https://stockanalysis.com/stocks/klic/statistics/) · [IONS](https://stockanalysis.com/stocks/ions/statistics/) · [SRPT](https://stockanalysis.com/stocks/srpt/statistics/) · [RPD](https://stockanalysis.com/stocks/rpd/statistics/) · [VRNS](https://stockanalysis.com/stocks/vrns/statistics/) · [BILL](https://stockanalysis.com/stocks/bill/statistics/) · [MNDY](https://stockanalysis.com/stocks/mndy/statistics/) · [PCOR](https://stockanalysis.com/stocks/pcor/statistics/) · [COTY](https://stockanalysis.com/stocks/coty/statistics/) · [WWD](https://stockanalysis.com/stocks/wwd/statistics/) · [BEP](https://stockanalysis.com/stocks/bep/statistics/) · [ORA](https://stockanalysis.com/stocks/ora/statistics/) · [XIFR](https://stockanalysis.com/stocks/xifr/statistics/).
+
+**History:** [CRI cash flow](https://stockanalysis.com/stocks/cri/financials/cash-flow-statement/) · [CRI ratios](https://stockanalysis.com/stocks/cri/financials/ratios/) · [NBIX cash flow](https://stockanalysis.com/stocks/nbix/financials/cash-flow-statement/) · [NBIX ratios](https://stockanalysis.com/stocks/nbix/financials/ratios/) · [AA cash flow](https://stockanalysis.com/stocks/aa/financials/cash-flow-statement/) · [CMC cash flow](https://stockanalysis.com/stocks/cmc/financials/cash-flow-statement/) · [AEO cash flow](https://stockanalysis.com/stocks/aeo/financials/cash-flow-statement/) · [CENX cash flow](https://stockanalysis.com/stocks/cenx/financials/cash-flow-statement/).
+
+**Beaten-down reasons:**
+- **CRI:** Feb 27 2026 Q4 print with a weak FY26 EPS guide (adj EPS down low-double-digit to mid-teens) plus tariff/product-cost margin pressure ([Nasdaq/Zacks](https://www.nasdaq.com/articles/carters-q4-earnings-beat-estimates-shares-fall-soft-eps-view), [Tickeron](https://tickeron.com/blogs/why-carter-s-cri-dropped-21-a-solid-holiday-quarter-buried-under-a-bleak-2026-eps-outlook-11784/), [Blockonomi](https://blockonomi.com/carters-cri-shares-plunge-on-margin-pressure-tariff-headwinds-and-weakening-cash-generation/)).
+- **NBIX:** Ingrezza guide reset (Feb), then Vykat XR safety concerns (Reuters, Aug 12) and Soleno deal costs. Management left 2027–29 IRA pricing unquantified ([Zacks](https://www.zacks.com/stock/news/2975712/nbix-stock-dips-12-in-a-month-time-to-buy-hold-or-sell), [Simply Wall St](https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-nbix/neurocrine-biosciences/news/neurocrine-biosciences-nbix-stock-slides-as-growth-spending), [Quiver](https://www.quiverquant.com/news/Why+Neurocrine+Biosciences+%28NBIX%29+Stock+Is+Down+Today)).
+- **ARE:** 45% dividend cut, 2026 FFO $6.35–6.45, same-property NOI −8.5% guide, $2.9B of dispositions ([Nasdaq](https://www.nasdaq.com/articles/alexandria-cuts-dividend-amid-deepening-life-science-strains), [Quartr Q2](https://quartr.com/events/alexandria-real-estate-equities-inc-are-q2-2026_oj4dzuOJ)).
+- **All other rows:** Max's preliminary read, not verified per ticker. These reasons do not drive any verdict, because those rows fail on the B-Zero/B/C/D numbers.
+
+### Filter D — naive FV gap (survivors of A/B/C)
+
+| Ticker | Normalized FCF (basis) | CoE | Price ÷ naive FV | Street PT (≥2 sources where it matters) | D |
+|---|---|---|---|---|---|
+| **CRI** | **5Y avg FY21–25 = $211.9M** (230.8 / 48.0 / 469.3 / 242.6 / 68.6). TTM $293M **not** used (working-capital release). Alt basis: FY24+FY25+TTM avg $201.4M | **13%** (small-cap $1.15B; CAPM 8.97% → D-Legacy small-cap band 13–16%) | **0.71×** (naive FV $1.63B = **$44.40/share** on 36.71M shares) · 0.74× on the alt basis · **0.87× at CoE 16%** ($36.07/share) | $40.57 SA (8 analysts, Buy) · $40.67 Investing.com (May 15, range $30–53) → +29% | 🟢 **fast-track band at base** (≤0.80×), 🟡 learning band at stress CoE. Max reports the range and does not pick the friendliest basis |
+| **NBIX** (Growth → **D-V1**) | Method 3 Analyst-PT (fallback): SA **$206.81** (Oct, 29 analysts) · MarketBeat **$199.50** (Jul 31) · TipRanks **$176.67** (undated) | — | **0.66× / 0.68× / 0.77×** of PT. Methods 1 (self-regression, ⚠️ Soleno M&A contamination) and 2 (peer-regression, 4–6 peers) **not computed** this round. D-Legacy no-growth cross-check: TTM FCF $870M ÷ 9% = $9.67B vs mcap $13.79B → **1.43×** | see left ([SA](https://stockanalysis.com/stocks/nbix/), [MarketBeat](https://www.marketbeat.com/instant-alerts/neurocrine-biosciences-nasdaqnbix-stock-price-expected-to-rise-royal-bank-of-canada-analyst-says-2026-07-31/), [TipRanks](https://www.tipranks.com/stocks/nbix/forecast)) | 🟡 **learning-queue** — only the fallback method was computed and it straddles 0.75×; the no-growth view disagrees → "methods disagree" flag |
+| AA | 5Y avg FY21–25 **$208M** (530 / 342 / −440 / 42 / 567); TTM $890M = peak aluminum | 13% (β 1.74 → CAPM 13.0%) | **~6.8×** (TTM basis still 1.6×) | $59.82 → +44% (Street extrapolates the peak) | ❌ REJECT (D-Legacy: naive FV overrides a bullish Street PT) |
+| CMC | 5Y avg FY22–26 **$471M** (250 / 737 / 575 / 312 / 479) | 12.1% (β 1.53) | **1.84×** | $79.27 → +22% | ❌ REJECT |
+| AEO | 5Y avg FY22–26 **$214M** (70 / 146 / 406 / 254 / 195); TTM $343M | 11% (β 1.26) | **1.55×** (TTM 0.96×) | $18.55 ≈ price | ❌ REJECT |
+| IRDM | TTM $288M (no normalization benefit) | 9.0% (β 0.85) | **1.45×** | **$42.00 < price** | ❌ REJECT |
+| NCLH | TTM FCF −$1.19B (ship-delivery capex); no positive normalized base verified | — | n/a | $19.44 → +29% | ❌ REJECT (D not demonstrable + B-Zero leverage 5.86×) |
+| CENX (B-fail, for the record) | 5Y avg FY21–25 **−$44M** | — | n/a | $60.20 | ❌ |
+
+### Filter E — conviction viability (CRI, NBIX)
+
+| Ticker | E1 Moat | E2 Through-cycle ROIC spread | E3 Overhang | Score |
+|---|---|---|---|---|
+| **CRI** | ❓ **not credited.** Leading US young-children's apparel brand pair (Carter's/OshKosh), but no market-share or pricing-power evidence was verified this session, so Max does not credit it from memory | ✅ ROIC FY21–25 25.1 / 18.7 / 15.1 / 14.5 / 7.3% → **5Y avg 16.1%** vs WACC ~10% = **+6pp** (⚠️ downward trend; TTM rebounded to 14.2%) | ❌ The tariff cost path and FY26 EPS-down guide are unresolved. The birth-rate/wholesale demand question is structural-ambiguous | **1/3 → learning-queue** (Filter E text; same treatment as R78 MMS) |
+| **NBIX** | ✅ Narrow+: Ingrezza VMAT2 franchise in TD/HD, plus Crenessity first-in-class in CAH | ✅ ROIC FY21–25 20.0 / 17.3 / 22.8 / 23.3 / 20.5% → **avg 20.75%** vs WACC ~9% = **+11.75pp** | ❌ IRA Medicare price pressure on Ingrezza 2027–29 is unquantified by management. Vykat XR safety concerns (Aug 2026) and Soleno integration remain open | **2/3 → learning-queue** |
+
+### Tier 1.5 Lane recommendation (Charlie makes the final call at Tier 1)
+
+**CRI → 🟡 LEARNING-QUEUE (Max's top pick this round)**
+- **Valuation:** The cheapest quality-ish name in several rounds. EV/EBITDA is 4.9× vs a 5Y range of 8.3–11.0×. P/E is 5.9× with 1.98× leverage. D clears fast-track at base CoE.
+- **Why not fast-track:** E is 1/3, and the beaten-down reason is genuinely two-sided:
+  - **Bull:** Tariff/margin pressure is temporary. UBS in April saw gross-margin relief from lower tariff rates, and a new brand refresh launched in Sep 2026.
+  - **Bear:** Structural birth-rate decline plus wholesale-channel erosion. FY25 FCF fell to $68.6M, and the dividend was already cut (FY24 paid $116M → FY25 $56M).
+- **Entry zone $28.00–32.50 · Stop $26.00.**
+- **Upgrade triggers:**
+  - (a) The Q3 FY26 print shows FY26 FCF tracking ≥$200M with gross margin up YoY → re-score E3.
+  - (b) Verified market-share data supports E1.
+  - (c) Price falls to ≤$27 (−15%) → D clears even at CoE 16%.
+
+**NBIX → 🟡 LEARNING-QUEUE**
+- **Profile:** Growth-bucket quality compounder (revenue +34%, ROIC ~21%) at the cheapest EV/Sales of its 5Y history.
+- **Why not fast-track:** D-V1 rests only on the Street-PT fallback, and the IRA/Vykat overhang keeps E3 open.
+- **Entry zone $122–135 · Stop $108.**
+- **Upgrade triggers:**
+  - (a) A Tier 1.5 peer-regression (method 2) shows ≤0.75×.
+  - (b) The Q3 print (Nov 2) brings Vykat XR safety clarity, or management quantifies the IRA impact.
+  - (c) Price falls to ≤$115.
+
+**Fast-track: 0.** No candidate clears D ≤0.80× **and** E 3/3 on an honest basis.
+
+**buy_list.md: not updated.** buy_list is for **fully analyzed** names, and neither candidate has had a full pipeline.
+
+### Candidates that failed + reason (summary)
+- **D reject (no gap vs no-growth value):** AA ~6.8× (peak-cycle FCF), CMC 1.84×, AEO 1.55×, IRDM 1.45× (Street PT below price), NCLH (negative FCF).
+- **C reject (ROIC < 80% WACC, no improving trend):**
+  - REITs: ARE, BXP, VNO, KRC, SLG, DEI
+  - Metals: CLF, MP
+  - Biotech: IONS, SRPT
+  - Software/cyber: RPD, VRNS, BILL, MNDY, PCOR
+  - Beauty: COTY
+  - Renewables: BEP, ORA, XIFR
+- **B reject (not cheap on cash):** CENX, AGCO, LNN, ANDE, ATI, COHU, FORM, KLIC, WWD.
+- **B-Zero:**
+  - CCOI: reject (negative equity from operating losses at 11.2× leverage).
+  - SMG: stopped at B-Zero. The cause of its −$209M equity was not verified. It would otherwise pass B/C (FCF 8.3% / ROIC 13.8%), so a B-Zero cause check is worthwhile next round.
+
+### What this round tells the team
+1. **Office and life-science REITs look "cheap" on P/B (ARE 0.46×, KRC 0.78×, DEI 0.89×) but Filter C/D cannot screen them.**
+   - GAAP ROIC (~1%) and levered FCF (development capex) are the wrong lens for REITs. VS2 already prescribes P/AFFO/NAV.
+   - ARE's naive FV on **FFO** ($6.40 ÷ 10.5% CoE ≈ $61 → 0.68×) would look like fast-track. But FFO ≠ AFFO for TI-heavy lab space, and same-property NOI is still falling, so Max **does not** use the friendlier metric.
+   - Logged as an open question for the 2026-12-31 trial review: we need a REIT-specific B/C/D variant (AFFO yield vs CoE, P/NAV). This is the same kind of D-Legacy blind spot R78 found for hospital growth capex.
+2. **Back-end semicap (COHU/FORM/KLIC) is down 33–42% from its highs but still up 96–146% over 52 weeks.** That is a post-spike pullback, not a value dislocation, and it fails B.
+3. **Metals pass A/B/C on peak TTM numbers but fail D badly on through-cycle FCF (AA, CMC).** This is exactly the trap that D-Legacy's "through-cycle, not TTM peak" clause exists to catch.
+4. **Beaten-down SaaS (MNDY −57%, RPD, BILL) shows SBC-inflated FCF yields.** GAAP ROIC is 0.5–2.6%, so Filter C correctly blocks them.
+5. **Funnel:** 153 pre-screened → 79 at ≥−20% → 42 previously covered → **37 fresh 2-source Filter-A passes** → 8 reach D (incl. NCLH/CENX for the record) → **0 fast-track · 2 learning-queue (CRI, NBIX) · 35 reject.**
+
+**Target analysis dates:**
+- **CRI:** Tier 1.5 lightweight after the Q3 FY26 print (date not verified this session); fallback **2026-11-06**.
+- **NBIX:** Tier 1.5 lightweight **2026-11-03** (Q3 print Nov 2).
+- Either can run sooner on CIO request.
+
+*Max — 2026-10-18 | Scout Round 79*
