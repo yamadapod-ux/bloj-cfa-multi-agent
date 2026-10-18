@@ -136,8 +136,8 @@ Emma ต้องระบุ bucket ของหุ้นในทุก analys
 
 | Bucket | เกณฑ์ BUY | ตัวอย่าง |
 |--------|-----------|---------|
-| **Value** | MOS ≥ 15% + Conviction ≥ 6 | ADBE, LDOS, NOK, V |
-| **Growth** | Conviction ≥ 7 + Revenue Growth > 20% → BUY ได้โดยไม่ต้อง MOS 15% | NOW, NVDA, MRVL |
+| **Value** | MOS ≥ 15% + Conviction ≥ 7.0 | ADBE, LDOS, NOK, V |
+| **Growth** | Conviction ≥ 6.5 + Revenue Growth > 20% → BUY ได้โดยไม่ต้อง MOS 15% | NOW, NVDA, MRVL |
 
 ระบุใน Emma's Analysis: `**Bucket: Value / Growth**`
 

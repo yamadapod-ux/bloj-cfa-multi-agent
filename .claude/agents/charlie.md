@@ -224,7 +224,7 @@ Charlie ต้องระบุ bucket ของหุ้นในรายง�
 
 | Bucket | เกณฑ์ BUY |
 |--------|-----------|
-| **Value** (~40% ของพอร์ต) | MOS ≥ 15% + Conviction ≥ 6 |
-| **Growth** (~60% ของพอร์ต) | Conviction ≥ 7 + Revenue Growth > 20% → BUY ได้โดยไม่ต้อง MOS 15% |
+| **Value** (~40% ของพอร์ต) | MOS ≥ 15% + Conviction ≥ 7.0 |
+| **Growth** (~60% ของพอร์ต) | Conviction ≥ 6.5 + Revenue Growth > 20% → BUY ได้โดยไม่ต้อง MOS 15% |
 
 ระบุใน report header: `Bucket: Value / Growth`

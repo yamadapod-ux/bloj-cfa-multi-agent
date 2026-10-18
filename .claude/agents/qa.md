@@ -268,7 +268,7 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 
 | Bucket | เกณฑ์ BUY (ตาม CLAUDE.md ปัจจุบัน — verify สดทุกครั้ง) | ถ้าไม่ผ่าน |
 |--------|-----------|-----------|
-| Value bucket | MOS ≥ 15% + Conviction ≥ 6 | MEDIUM — ระบุว่าทำไม BUY ทั้งที่ MOS ต่ำ |
+| Value bucket | MOS ≥ 15% + Conviction ≥ 7.0 | MEDIUM — ระบุว่าทำไม BUY ทั้งที่ MOS ต่ำ |
 | Growth bucket | **Conviction ≥ 6.5** + Rev Growth > 20% **+ ต้องผ่าน Growth MOS อย่างน้อย 1 ใน 2 วิธี** (ดูด้านล่าง) | HIGH FAIL ถ้า BUY โดยไม่ผ่าน Growth MOS ทั้ง 2 วิธี — ไม่ใช่แค่ MEDIUM เพราะเป็น gate บังคับ ไม่ใช่ optional |
 
 **Growth MOS — 2 วิธี (ต้องผ่านอย่างน้อย 1 วิธีก่อน BUY ได้):**
