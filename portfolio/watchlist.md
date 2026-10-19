@@ -378,6 +378,11 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-10-19 (Mode 1 Step 0, Round 81):** Reviewed all 21 live Pending tickers (SOFI…VICI, ALLY, MMS, CRI, NBIX, BYD) against De-list Rules #1-3. **De-listed 0.**
+- **Rule #1:** every row has a target date that has not passed yet. The 16 legacy rows, ALLY and BYD are due 2026-10-23, NBIX 11-03, CRI 11-06 and MMS 11-20.
+- **Rule #3:** no commits since R80 (`b4580d9`). `dashboard/portfolio.js` OPEN is still ADBE/NOW/CRM/REGN/ADSK, and `decisions.md` has no new formal AVOID/SKIP.
+- **Rule #2:** no thesis-dead archive was attempted, so no live-price re-check was needed.
+- **Result:** SLA fixed 0. Live after round: **21 → 21**. Round 81 added no new rows.
 **Prune Pass 2026-10-19 (Mode 1 Step 0 — Round 80):** Reviewed all 20 live Pending tickers (SOFI…VICI, ALLY, MMS, CRI, NBIX) against De-list Rules #1-3. **De-listed 0.**
 - Rule #1: every row has an explicit target that has not yet passed (16 legacy rows + ALLY → 2026-10-23; NBIX → 11-03; CRI → 11-06; MMS → 11-20). No stale timeout.
 - Rule #3: no commits since R79 (`de888a0`). `dashboard/portfolio.js` OPEN is still ADBE/NOW/CRM/REGN/ADSK, and `decisions.md` has no new formal AVOID/SKIP.
@@ -7694,3 +7699,196 @@ Upgrade triggers (any one):
 - **BYD:** Tier 1.5 lightweight on **2026-10-23**, the day after the Q3 print (Oct 22). Sooner on CIO request.
 
 *Max — 2026-10-19 | Scout Round 80*
+
+---
+
+## Scout Report § Round 81 (Multi-sector VALUE-FIRST sweep: Food/Beverage Processors · Household & Pet · Building Products/Materials & HVAC · Asset Managers/Alts/Exchanges · BDCs · Trucking/Logistics/Rail Equipment · Telecom Equipment · Front-end Semicap · Net-lease REIT · Water/Flow Equipment · Death Care · Distributors · Diversified Industrials), 2026-10-19
+
+**Trigger:** CIO-directed "Max Scout Pipeline, Round 81" (2026-10-19). Full `.claude/commands/scout.md` Step 0-6. **Scout/screen only. No full pipeline was dispatched**, and Emma/Quinn/Bear were not called.
+
+**Portfolio state:** 5 OPEN (ADBE/NOW/CRM/REGN/ADSK). Cash is **73.4%** of NAV (`dashboard/portfolio.js`, 10-17 re-mark).
+
+**Regime:** latest record is Atlas **2026-10-16 → RISK-ON 3/4** (`agent_notes/atlas/2026-10-16_regime.md`).
+- It is 3 days old, inside the 14-day staleness limit. No re-call was needed.
+- Carried inputs: VIX 16.87 · 10Y−2Y +33bps · HY OAS ~325bps · Fed hikes priced (the lone dissent) · Rf (10Y) **5.19%**.
+- Force Deploy is active in principle, but it still requires a full-pipeline gate pass.
+
+**Gates in force:** Value ≥7.0 (`0ea228b`) / Growth ≥6.5. No candidate got far enough to need a preliminary conviction score.
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **0** | live **21 → 21**. See the Prune Pass 2026-10-19 (Round 81) note above the Pending table.
+
+### Sector mandate rotation check
+**Excluded (CIO list R71-80):** AI/power/infra, IT services, regional banks/consumer credit, homebuilders, chemicals, packaging, tariff-hit consumer discretionary (furniture/bedding names were therefore **dropped** from the universe: LZB/TPX/SNBR/LEG/MLKN), autos/parts, specialty pharma, hospitals, insurance brokers, staffing, restaurants, gov services, education, medtech, local TV, ag inputs, satcom/fiber, base metals, office/life-science REITs, back-end semicap, large-cap biotech, cyber/SaaS, apparel/beauty, cruise, aero suppliers, renewables, energy, gaming/lodging, insurance carriers, tobacco/media, paper & forest, shipping, coal/gold.
+
+**Round 81 groups:**
+- Food & beverage processors (incl. beer, eggs, bakery, nutrition)
+- Household/personal + pet care
+- Building products, construction materials and HVAC
+- Asset managers, alternatives and exchanges
+- BDCs/specialty finance
+- Trucking, logistics, intermodal and rail equipment
+- Telecom/network equipment
+- **Front-end** semicap (process control, implant, masks, subsystems)
+- Net-lease retail REIT
+- Water/flow equipment and water utilities
+- Death care
+- Industrial distributors
+- Diversified industrials/machinery
+
+**Hard-exclusion check:** ran **before** any price fetch. Every ticker was checked with `grep -w` against `watchlist.md` (live, Archive and all Scout History), `decisions.md`, `deployment_log.md`, `buy_list.md` and `dashboard/portfolio.js`. Any match was dropped from the universe, even when it was likely a false positive.
+
+Names dropped as previously covered:
+- **Food/staples:** CAG/CPB/GIS/KHC/SJM/HRL/MKC/TSN/HSY/MDLZ/STZ/CELH/CLX/KMB/CL
+- **Building products/materials:** MAS/FBIN/OC/TREX/BLDR/MHK/MLM/VMC/EXP
+- **Asset managers/exchanges:** BEN/IVZ/TROW/AMG/KKR/APO/BLK/MKTX/TW
+- **Transports:** ODFL/JBHT/CHRW/UNP/NSC/CNI/FDX/UPS/R
+- **Semicap/telecom equipment:** AMAT/LRCX/KLAC/ASML/ONTO/AEIS/MKSI/ENTG/FORM/COHU/KLIC/CSCO/CIEN/NOK
+- **REITs:** SPG/MAC/SKT/KIM/REG/FRT/BRX/O/NNN/ADC
+- **Other:** AWK/SCI/FAST/POOL/MMM/HON/EMR/PH/ROK/SWK/ADM/BG/ANDE/CR/ATKR/CLW/EPC/WHR/HBI
+
+CIO-banned names (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD) were not in the universe. **The candidates below have 0 overlaps.**
+
+### Method (Price Verification block)
+**Source 1:** finviz screener `v=171`, fetched 2026-10-19, in 10 batches.
+- [1](https://finviz.com/screener.ashx?v=171&t=POST,FLO,LW,BGS,THS,CALM,KDP,TAP,SAM,CHD,SPB,ENR,HELE,REYN,CENT,WOOF,CHWY,FRPT,ELAN,AWI)
+- [2](https://finviz.com/screener.ashx?v=171&t=JELD,SSD,CRH,KNF,AAON,CSL,LII,CARR,TT,JCI,JHG,APAM,BX,ARES,OWL,CG,TPG,VCTR,CNS,VIRT)
+- [3](https://finviz.com/screener.ashx?v=171&t=CBOE,NDAQ,ARCC,MAIN,FSK,OBDC,BXSL,HTGC,GBDC,PSEC,OCSL,SAIA,XPO,KNX,WERN,EXPD,LSTR,HUBG,ARCB,SNDR)
+- [4](https://finviz.com/screener.ashx?v=171&t=CP,GXO,RXO,NVMI,UCTT,ICHR,PLAB,ERIC,CALX,ADTN,VIAV,COMM,HLIT,EXTR,NTGR,UI,KRG,EPRT,FCPT,WTRG)
+- [5](https://finviz.com/screener.ashx?v=171&t=CWT,AWR,HTO,MSEX,CSV,MATW,GWW,MSM,WCC,WSO,CNM,SITE,ITW,DOV,AME,IEX,XYL,PNR,SNA,TTC)
+- [6](https://finviz.com/screener.ashx?v=171&t=MIDD,JBTM,INGR,DAR,USFD,SYY,PFGC,CHEF,UNFI)
+- [7](https://finviz.com/screener.ashx?v=171&t=AB,FHI,WT,BSIG,VRTS,SEIC,HLNE,STEP,PX,GCMG,AZZ,MLI,ROCK,FELE,WMS,ZWS,USLM,TILE,APOG,AMWD)
+- [8](https://finviz.com/screener.ashx?v=171&t=MBC,CVLG,MRTN,HTLD,ULH,TRN,GBX,WAB,GTES,CW,ESAB,FLS,RRX,TKR,NDSN,GGG,LECO,KMT,WTS,MWA)
+- [9](https://finviz.com/screener.ashx?v=171&t=ITT,AOS,EPAC,HI,ALG,VECO,ACLS,NWL,SCS,HNI,IIIN,NX,GFF,JJSF,SMPL,UTZ,HAIN,NOMD,FIZZ,CCEP)
+- [10](https://finviz.com/screener.ashx?v=171&t=COKE,MNST,PRMB,VITL,NVMI,FLO)
+
+**Source 2:** `stockanalysis.com/stocks/[ticker]/statistics/` (and the overview page for names that reached D/E). Fetched this session for **every** candidate counted below.
+
+**⚠️ Timing caveat (new this round):** finviz served the **Oct 19 pre-market** quote, not the Oct 16 close. Oct 17-18 was a weekend and the fetch ran Monday morning.
+- Where stockanalysis printed a pre-market quote, it matched finviz exactly. Examples: SAM $180.82, TAP $40.00, PLAB $28.64, EPRT $25.30, NVMI $331, SMPL $11.11, HLNE $84.40, RRX $157.12, ACLS $112.77, VECO $44.25, TRN $25.51.
+- Where it did not, finviz equalled stockanalysis's Oct 16 close. Examples: POST, ROCK, USLM, VRTS, ESAB, KMT, ALG, EPAC, JJSF.
+- **Every counted price is therefore a 2-source match on the same timestamp.**
+- Valuation multiples below are stockanalysis Oct 16-close basis.
+
+**Unresolved >2% gaps:** three names had a gap between the finviz quote and the SA close, with no SA pre-market quote to reconcile it.
+- **CSL:** $314.59 vs $333.86 (−5.8%)
+- **WERN:** $36.00 vs $32.81 (+9.7%)
+- **JBTM:** $116.48 vs $104.24 (+11.7%)
+
+Per the Price Verification rule, they would need a 3rd source before going on the watchlist. All three fail on price-invariant grounds (CSL D ≥1.69× at either price; WERN and JBTM fail C on ROIC), so they are logged as rejects with the gap disclosed, and no 3rd fetch was spent.
+
+**52W-high second source:** for names reaching D/E, the 52W range came from the stockanalysis overview.
+- **SAM:** $158.68–264.46 → −31.6%
+- **TAP:** $35.52–54.82 → −27.0%
+- **PLAB:** $20.05–56.00 → −48.9%
+- **EPRT:** $24.62–34.73 → −27.2%
+- **NVMI:** $266.43–615.99 → −46.3% on pre-market
+- **SMPL:** $9.38–25.66 → −56.7%
+- **FLO:** $5.40–13.11 → −53.8%
+- **SPB:** $51.41–99.06 → −20.2%
+- **VRTS:** $120.18–192.00 → −36.0%
+
+For the other rejects the 52W high is finviz-only. This is disclosed and changes no verdict.
+
+**WACC proxies:** CLAUDE.md sector bands with Rf 5.19%.
+- Mega-cap ~8–8.5%
+- Mid-cap ~9–10%
+- Small-cap ~10–11%. Max used the low end of the 13–16% band only as a sensitivity check.
+- Low-beta staples get the low end of their band. That is an explicit judgment and is shown as a sensitivity where it decides D.
+
+### Pre-screen funnel
+- **~179 tickers requested** (2 universes). THS, JHG, COMM, BSIG, PX, AMWD, HI and SCS returned no row.
+- **90 rows at ≥−20%** from the 52W high, **88 of them 2-source verified**. HAIN ($0.25, −84.8%) and VITL (−80.3%) were not fetched; both are distressed and not counted.
+- **≥28 core names reached the B/C/D gates** (table below).
+
+**What did NOT de-rate (short of −20%):**
+- Water utilities: WTRG −5%, CWT −14%, AWR −16%, HTO −14%, MSEX −12%
+- Exchanges: CBOE −16%, NDAQ −8%
+- Most BDC majors: ARCC −11%, MAIN −16.5%, BXSL −15%, HTGC −12%
+- Quality industrials/distributors: ITW, DOV, AME, IEX, SNA, TTC, GWW, MSM (+5% *above* its prior high), WCC, NDSN, WAB, WTS, GGG, LECO
+- Food distributors: SYY, USFD, PFGC, CHEF
+- Household: CHD −2%, ENR −14%, REYN −16%
+- Beverages: KDP, COKE, MNST, CCEP, FIZZ
+- Rails: CP −10%
+- Net-lease peers: FCPT −18%, KRG −18%
+
+### Screening table — names that cleared Filter A (≥−20%) and were taken through B/C/D/E
+(Price = 2-source-matched quote; FCF/EV and multiples = stockanalysis TTM; "D" = price ÷ naive FV per share, shown as ×)
+
+| # | Ticker | Sector | Price | % from 52W high | FCF yield / EV/EBITDA / P/B | ROIC (TTM) | Gate result |
+|---|---|---|---|---|---|---|---|
+| 1 | **TAP** | Beer | $40.00 | −27.0% | **18.0%** / 5.81× / 0.73 | 9.54% | B ✅ C ✅ · **D ❌ near-miss**: 5Y-avg FCF FY21–25 $1,121M ÷ 8.0% − net debt $5.78B = $8.2B vs mcap $7.46B → **0.91×**; at 8.5% **1.01×** (inside ±10%). Beaten-down reason: US beer volume decline, ambiguous cyclical vs secular. Street cutting PTs (Barclays/BofA $36) |
+| 2 | **SAM** | Craft beer/seltzer | $180.82 | −31.6% | **11.3%** / 8.05× / 2.55 · net cash $0.23B | 21.2% | B ✅ C ✅ · **D ❌ near-miss**: FY21–25 avg FCF $121M (FY21 −$92M) → 1.26×; FY22–25 avg $175M ÷ 10% → **0.92×**; only TTM $206M ÷ 10% gives 0.85×, and TTM is not the D-Legacy basis. CEO says reversing sales trends "will take more than the World Cup" → A reason ambiguous (secular volume) |
+| 3 | **PLAB** | Photomasks (front-end) | $28.64 | −48.9% | 6.8% / **3.49×** / 1.25 · net cash ~$0.67B | 15.9% | B ✅ C ✅ · **D ❌ near-miss**: FY21–25 avg FCF $113M ÷ 10.5% + net cash = $1.75B vs mcap ~$1.69B → **0.96×**, before deducting the JV non-controlling interest. E3 ❌ active securities class action ("overstated customer demand") |
+| 4 | **SMPL** | Nutrition (Atkins/Quest/OWYN) | $11.11 | −56.7% | **12.1%** / 6.04× / 0.70 | 10.8% | B ✅ C ✅ · D straddles: FY21–25 avg FCF $152M − net debt $0.32B → **0.83× at 10% / 1.07× at 11%**. **E 0/3:** no evidenced moat; 5Y ROIC ≈ WACC; securities class action over the OWYN integration plus a Q3 sales/EBITDA decline of −6%/−22% → **REJECT** |
+| 5 | **FLO** | Packaged bread | $6.06 | −53.8% | **23.6%** / 6.68× / 0.98 | 7.0% | **A ❌ structural:** management attributes the misses to volume declines across the fresh packaged bread category, and FY26 guidance was cut. D on FY21–25 avg FCF $231M ÷ 8.5% − net debt $1.95B → **1.69×** (TTM-only 0.79× = peak trap) |
+| 6 | **SPB** | Household/pet | $79.01 | −20.2% | **16.0%** / 8.21× / 0.98 | 7.44% | **C ❌** (7.44% < 0.8×~9.5–10%). D on FY21–25 avg FCF −$12M (FY22–23 HHI-divestiture/inventory) → no positive naive FV |
+| 7 | **EPRT** | Net-lease REIT | $25.30 | −27.2% | AFFO yield 8.0% (2026 guide $2.01–2.05, [8-K](https://www.sec.gov/Archives/edgar/data/0001728951/000172895126000049/earningsreleaseex991-worki.htm)) / P/AFFO 12.5× | n/a (REIT) | A ✅ rate-driven (Scotiabank PT cut cites rates). B ✅. **D ❌:** AFFO $2.03 ÷ CoE ~9.0% = $22.6 → **1.12×** |
+| 8 | **VRTS** | Active asset manager | $122.93 | −36.0% | FCF n/m (consolidated CLOs) / 5.13× / 0.86 | 7.0% (ROE 10.7%) | B ✅ (P/B). AUM down for 3 straight months (Jul $148.9B → Sep $141.4B); consensus "Sell". **E 0/3:** no moat, E2 unverified, secular active→passive outflows → **REJECT** |
+| 9 | ERIC | Telecom equipment | $10.49 | −23.8% | 8.5% / 8.98× / 3.12 | 26.1% | D ❌ TTM FCF $2.96B ÷ 9% + net cash → **1.02×** (±10%); multi-year average lower → 1.29× |
+| 10 | AOS | Water heaters | $58.65 | −28.3% | 7.9% / 10.9× | 23.0% | D ❌ TTM $639M ÷ 9% − $0.49B → **1.22×** (5Y basis ~1.6×) |
+| 11 | PNR | Pool/water equipment | $54.15 | −51.6% | 7.9% / 9.86× | 14.0% | D ❌ TTM $673M ÷ 9.5% − $1.67B → **1.58×** |
+| 12 | INGR | Ingredients | $97.89 | −20.7% | 5.75% / 6.07× | 12.8% | D ❌ ~1.2–1.4× |
+| 13 | MIDD | Food-service equipment | $107.78 | −27.4% | 9.9% / 9.56× | 10.4% | D ❌ $482M ÷ 9.5% − $1.84B → **1.50×** |
+| 14 | CHWY | Pet e-commerce | $20.81 | −45.6% | 6.7% / 20.8× | 38.2% | D ❌ ~1.65× |
+| 15 | CNM | Waterworks distribution | $42.00 | −29.6% | 7.85% / 11.2× | 12.7% | D ❌ ~1.7–2.1× |
+| 16 | CSL | Roofing/building envelope | $314.59* | −27.3% | 6.55% / 12.7× | 20.7% | D ❌ ≥1.69× (*price gap, see above) |
+| 17 | LII | HVAC | $355.42 | −39.5% | 5.97% / 12.2× | 26.4% | D ❌ 2.0× |
+| 18 | CRH | Aggregates/cement | $83.99 | −36.2% | 5.0% / 9.37× | 9.8% | D ❌ ~3.5× |
+| 19 | WMS | Drainage pipe | $129.86 | −27.6% | 5.7% / 11.9× | 16.3% | D ❌ 2.1× |
+| 20 | AZZ | Galvanizing/coatings | $129.58 | −20.1% | 5.5% / 11.5× | 11.1% | D ❌ 2.3× |
+| 21 | MWA | Water infrastructure | $21.75 | −29.8% | 5.3% / 9.3× | 22.5% | D ❌ 1.76× |
+| 22 | TKR | Bearings | $113.83 | −23.2% | 5.0% / 10.35× | 9.85% | D ❌ 3.4× |
+| 23 | KMT | Tooling | $30.79 | −29.7% | FCF −$81M (FY26 inventory +$593M) / 4.86× | 17.1% | D ❌ FY22–26 avg FCF $91M → >3× |
+| 24 | ALG | Ag/infrastructure equipment | $150.66 | −31.5% | 7.4% / 9.35× | 8.5% | D ❌ 1.45× |
+| 25 | EPAC | Industrial tools | $35.17 | −20.0% | 6.2% / 12.0× | 21.1% | D ❌ 1.7× |
+| 26 | HLNE | Private-markets manager | $84.40 | −45.8% | 8.1% / 11.8× | 19.8% | D ❌ $367M ÷ CoE ~10.8% → **1.34×** |
+| 27 | AB | Active manager (LP units) | $34.75 | −21.2% | 9.7% / P/E 10.3 | ROE 19.4% | D ❌ **1.07×** (±10%), secular outflow overhang |
+| 28 | APAM | Active manager | $33.16 | −27.8% | 9.9% / 6.13× | 61.2% | D ❌ ~1.2× (normalized ~0.90×), secular outflows |
+| 29 | CSV | Death care | $36.22 | −30.5% | 6.5% / 9.12× | 8.5% | D ❌ naive EV < net debt $0.55B |
+| 30 | ESAB | Welding/cutting | $65.35 | −52.5% | 4.8% / 11.9× | 8.4% | D ❌ naive EV < net debt |
+| 31 | NVMI | Front-end metrology (Growth?) | $331.35 | −46.2% | 1.9% / 31.4× · EV/Sales 9.93× | 19.8% | Growth lane not available (TTM growth ~6% < 15%). B-V1 self-history fails anyway: 9.93× vs FY21–25 3.67–10.57× (top third). Legacy B ❌ |
+| 32 | FLS / RRX / USLM / CW / CARR / XYL | Flow control / motors / lime / defense / HVAC / water tech | — | −20% to −38% | FCF 3.0–4.6% | 5–17% | **B ❌** (FCF <6%, EV/EBITDA 12–23× not bottom-third). RRX also fails C (5.2%) |
+| 33 | SAIA / LSTR / KNX / WERN* / HUBG / ARCB / GXO / CVLG / MRTN / HTLD / ULH | Trucking/logistics | — | −20% to −50% | — | 0.8–9.5% | Freight-recession trough. **C ❌** for all except SAIA/LSTR, which fail **B** (FCF ≤3%) and D (SAIA ~2.5×) |
+| 34 | GBX / TRN | Railcar builders | — | −33% to −34% | FCF negative · debt/EBITDA 6–8× | 3.6–3.7% | **C ❌** · B-Zero leverage flag |
+| 35 | FSK / OBDC / PSEC / OWL / STEP / ARES / BX / CG / TPG | BDCs / alts | — | −25% to −48% | P/B 0.28–0.71 (BDCs) | ROE −6.6% to 3.9% (BDCs) | BDCs **C ❌** (ROE ≪ CoE; NAV/credit stress). OWL **C ❌** (7.75%). STEP/CG negative FCF. ARES/BX/TPG **B ❌** (FCF 2–5.6%, P/B 6–10) |
+| 36 | ADTN / NTGR / CALX / HLIT / EXTR / UI / VIAV | Telecom/network equipment | — | −23% to −68% | — | −20% to +106% | ADTN/NTGR/VIAV **C ❌**. CALX/HLIT/EXTR/UI **B ❌** (FCF 2.5–4.6%, EV/EBITDA 17–34×) |
+| 37 | UCTT / ICHR / ACLS / VECO | Semicap subsystems / implant / deposition | — | −41% to −63% | FCF −4.9% to 3.3% | −1.7% to 10.6% | **B ❌** (EV/EBITDA 20–50×) and UCTT/ICHR/VECO **C ❌** |
+| 38 | AAON / FRPT / CALM / KNF / LW / POST / JJSF / PRMB / MATW / SITE / ROCK / MBC / JELD / BGS / WOOF / IIIN / JBTM* | Misc. | — | −20% to −72% | — | 1–12.6% | AAON/FRPT/CALM/KNF/IIIN **B ❌**. POST/JJSF/PRMB/SITE/ROCK/MBC/WOOF/JBTM **C ❌**. LW **D ❌** (~2×, net debt $3.8B). MATW/JELD (negative equity)/BGS (9.2× debt) fail **B-Zero/C** |
+
+### Filter E — only names that reached E
+
+| Ticker | E1 Moat | E2 5Y ROIC spread ≥+3pp | E3 No overhang | Score |
+|---|---|---|---|---|
+| SMPL | ❓ not evidenced this session | ❌ ROIC ~10.8% ≈ WACC 10–11% | ❌ securities class action (OWYN integration disclosures, lead-plaintiff deadline 10-13) + Atkins decline | **0/3 → REJECT** |
+| VRTS | ❌ no moat (active manager) | ❓ not verified → not credited | ❌ secular active→passive outflows; AUM down 3 straight months | **0/3 → REJECT** |
+
+TAP/SAM/PLAB were stopped at D before E. For the record, E would have been ≤2/3 for each:
+- **TAP:** E2 is unverified, and E3 has the secular volume question.
+- **SAM:** same E3 issue as TAP.
+- **PLAB:** E3 fails on the class action.
+
+### Tier 1.5 lane recommendation
+**Fast-track: 0 · Learning-queue: 0 · Pending rows added: 0.** No candidate clears D ≤0.90× on a through-cycle basis together with an acceptable A reason and E ≥1/3. Following scout.md Step 4, Max reports "no clear value in these sectors" rather than forcing in a name that fails A or D.
+
+**Near-miss log (for Vera / the 2026-12-31 trial review):**
+- **TAP:** D is 0.91–1.01× at WACC 8–8.5%. A bottom-up WACC with beta 0.43 gives ~6–7% and would push D to ≈0.73×. The **WACC band choice decides the lane** here. Max flags this as a **VS2 §1.1 two-method-WACC case** if the CIO wants it run.
+- **SAM:** 0.92× on FY22–25 vs 1.26× on FY21–25. The FY21 −$92M Truly write-off year decides the verdict.
+- **PLAB:** 0.96× before the JV NCI deduction, plus class-action overhang.
+- **Re-scout trigger for all three:** price **−10% to −15% further**, which would bring D to ≤0.85×. **TAP Q3 print** (date per company webcast notice), **SAM Q3 print** (late Oct).
+
+**buy_list.md: not updated.** Nothing was fully analyzed.
+
+### What this round tells the team
+1. **The cheapest de-rated names this round are consumer staples with volume problems** (TAP 18% FCF yield, FLO 24%, SMPL 12%, SPB 16%). In every case the high TTM yield shrinks on a through-cycle basis or carries a secular or litigation tag. The market is pricing in volume erosion, not mispricing a cycle.
+2. **Building products and HVAC fell 25–50% (LII, CSL, CRH, WMS, AOS, PNR) but are still nowhere near no-growth value.**
+   - Their FCF yields of 5–8% mean D-Legacy needs a ~12%+ EV-FCF yield to fast-track.
+   - These are quality compounders de-rating from premium multiples, not value. If the CIO wants them, the route is the Growth/quality frame, not VALUE-FIRST.
+3. **Trucking is in a freight-recession trough.** ROIC is 1–5% across the asset-based carriers, so Filter C correctly blocks them. It is a cycle-turn watch, not a value buy. The ROIC improvement trend required by C has not started.
+4. **Private credit/BDCs trade at 0.3–0.7× book because ROE has collapsed** (FSK −6.6%, OBDC 3.9%). Filter C treats this as credit impairment, not cheapness.
+5. **Price-verification process note:** a Monday-morning finviz fetch returns **pre-market**, not the prior close. Future rounds should either fetch after the close or record both timestamps, as done here.
+6. **Funnel:** ~179 requested → 90 at ≥−20% (88 verified) → 28+ evaluated at B/C/D → 2 reached E → **0 fast-track · 0 learning-queue**.
+
+**Target analysis date:** none (no new Pending rows). Next re-scout check for TAP/SAM/PLAB is after their Q3 prints (by 2026-11-07).
+
+*Max — 2026-10-19 | Scout Round 81*
