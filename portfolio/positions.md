@@ -1,5 +1,53 @@
 # Simulated Portfolio — บลจ. CFA
 
+> **🟢 UPDATE 2026-10-20 (Portfolio Review Mode 3):** Full re-mark to Oct 19 2026 close (Mon, first new trading day since Oct 16 — Oct 17 Sat/Oct 18 Sun non-trading). Broad tech-led relief rally (Nasdaq +1.35%) as AI-linked names bounced after last week's rout; September CPI 3.7% YoY vs 3.6% consensus still the dominant macro backdrop keeping rate-hike bets alive. Book mostly flat-to-up: ADBE +0.77% $247.09, NOW +2.39% $145.36, CRM +0.62% $242.45, REGN -1.12% $781.91, ADSK -0.05% $239.77 (flat). Total $10,345.35→$10,358.47 (+0.13%). Alpha -0.07%→-0.56% (widened — S&P's tech-led bounce (+0.60%) outpaced the book's more modest software gains). No stop breach, 0/5 Re-Analysis triggers. ADSK MOS -8.11% (from -8.17%) — STRONG SELL/Max Consultation Rule item now **10th consecutive Review Mode session** (10-07 through 10-20) unresolved. 0 HIGH-IMPACT news items this session. Full detail below.
+
+## 📊 Portfolio Review — 2026-10-20 (Mode 3 — Full Re-Mark, Oct 19 2026 Close)
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, 25 days old — getting dated, worth a fresh re-call soon, not yet overdue by the 30-day backstop). First new US trading-day close since Oct 16 (Oct 17 Sat / Oct 18 Sun non-trading). All 5 OPEN positions **re-priced** to Oct 19 2026 close — ADBE 2-source exact match (Yahoo Finance + Perplexity Finance, both $247.09), NOW 2-source exact match (Yahoo Finance + stockanalysis.com, both $145.36), CRM 2-source exact match (stockanalysis.com + Yahoo Finance, both $242.45), REGN 2-source cross-checked (avg MarketBeat $782.04 + Markets Insider/BTT $781.77, 0.03% diff). ⚠️ ADSK 2-source cross-checked but diff slightly over the 0.5% threshold (avg Yahoo Finance $238.84 + stockanalysis.com $240.70, 0.78% diff — no 3rd source found within the search-attempt cap, both sources noted per Single Source of Truth Rule). A broad tech-led relief rally (Nasdaq +1.35%, AI-linked names bouncing after last week's AI-infra-financing-cost rout) lifted the market; our book moved more modestly in the same direction. **No trades this session.**
+
+| Ticker | Price (Oct 19 close) | Change vs Oct 16 | Return % | MOS % | StopDist % | Source |
+|--------|------------------------|--------|----------|-------|------------|--------|
+| ADBE | $247.09 | +0.77% | +0.02% | +33.04% | 25.14% | Yahoo Finance + Perplexity Finance, exact match (2-source) |
+| NOW | $145.36 | +2.47% | +62.47% | -15.69% 🟠 | 36.02% | Yahoo Finance + stockanalysis.com, exact match (2-source) |
+| CRM | $242.45 | +0.62% | +33.95% | +29.88% | 40.29% | stockanalysis.com + Yahoo Finance, exact match (2-source) |
+| REGN | $781.91 | -1.12% | +29.89% | +12.05% | 38.36% | avg MarketBeat $782.04 + Markets Insider/BTT $781.77, 0.03% diff |
+| ADSK | $239.77 | -0.05% | +20.84% | -8.11% 🔴🔴 | 33.79% | ⚠️ avg Yahoo Finance $238.84 + stockanalysis.com $240.70, 0.78% diff (>0.5% threshold, both noted) |
+
+S&P 500 rose +0.60% to **$7,705.64** (avg 247wallst.com $7,709.63 + Investing.com $7,701.65, 0.10% diff — a broad tech-led relief rally as Nasdaq gained +1.35% and AI-linked names bounced off last week's selloff lows; September CPI print 3.7% YoY vs 3.6% consensus continues to keep rate-hike bets alive as the dominant macro backdrop). Total Value $10,345.35 → **$10,358.47** (+0.13%). Cash $7,591.97 → **$7,593.55** (+$1.58, Cash Yield Rule accrual, 2 days 10-18→10-20). Total Return 3.45% → **3.58%**. sp500Return 3.52%→4.15%. Alpha -0.07% → **-0.56%** (widened — the S&P's tech-led bounce outpaced the book's more modest software gains this session).
+
+**Stop Loss check:** No breaches. ADBE narrowest at 25.14% (still comfortable, well above the 10% WATCH threshold).
+
+### 🔴🔴 ADSK — MOS essentially unchanged, Max Consultation Rule item now 10 sessions overdue (no new action)
+
+MOS -8.17% → **-8.11%** — price essentially flat (-0.05% day to $239.77, no idiosyncratic ADSK catalyst found, in line with the broad tech-led rally lifting most of the book). FV unchanged ($221.79, fvVerifiedDate 2026-09-12, 38 days old — still fresh, not a Re-Analysis Trigger issue). This continues the carried item first flagged 2026-10-07 — now **10 consecutive Review Mode sessions (10-07, 10-08, 10-12, 10-13, 10-14, 10-15, 10-16, 10-17, 10-18, 10-20)** without an actual Max×Charlie consultation taking place. Thesis otherwise intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation, stopDist 33.79% comfortable (not a stop-loss issue), T2/T3 staged adds remain paused pending the Q3 FY27 current-RPO print (Nov 2026). **This process-discipline gap has now reached double digits (10 sessions) and should be closed at the next real opportunity** — Review Mode 3 itself cannot execute the consultation.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-11 | FV 39d old, MOS +33.04% (positive) — no fire | No | Under 30% | HSBC PT $267 vs internal FV $369 = -27.6% gap carried, not re-verified | 0/5 (carried watch item) |
+| NOW | No new earnings | FV 57d old, MOS -15.69% (negative) but 57d << 90d — no fire | No | Under 30% | Mizuho PT $170 vs FV $125.65 = +35% gap carried, not re-verified | 0/5 (carried watch item) |
+| CRM | No new earnings | FV 39d old, MOS +29.88% — no fire | No | Under 30% | BofA PT $285 vs internal FV $345.77 gap carried, not re-verified | 0/5 |
+| REGN | No new earnings; Q3 confirmed Oct 30 | FV 39d old, MOS +12.05% (positive) — no fire | No | Under 30% | UBS PT $978 (10-19 pre-market note) vs internal FV $889 = +10% gap, not material | 0/5 |
+| ADSK | No new earnings; next current-RPO print Nov 2026 (Q3 FY27) | FV 38d old (<<90d), MOS -8.11% negative but age well under 90d threshold — formal Trigger #2 does NOT fire on age alone | No | Under 30% | Not re-checked | 0/5 (but see STRONG SELL/Max Consultation flag above, carried from 10-07, now 10 sessions) |
+
+**Result: 0/5 formal Re-Analysis triggers fire on any OPEN position.** ADSK's STRONG SELL / Max Consultation Rule item remains outside the formal Re-Analysis Trigger Rule (FV is fresh, 38 days old) but is now the portfolio's most overdue process-discipline item, 10 sessions running.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 remains current (25 days old) — getting dated, worth a fresh re-call soon, not yet overdue by the 30-day backstop.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-17 07:00) — **0 NEW HIGH-IMPACT items.** Coverage this session was dominated by the broad tech-led relief rally and recurring/routine items: GOOGL analyst commentary (Cloud/AI momentum, enterprise partnership expansions with Cognizant/Accenture, Supreme Court rejecting a Google patent-review challenge — all routine), NVDA $1B US-science pledge (PR/goodwill, not earnings/M&A), AMZN reported +5% on a Morgan Stanley "Top Pick" reiteration (Big 10, no OPEN position, single-analyst note under the >15% PT-change threshold), and a weekly macro recap (Sept CPI 3.7% YoY vs 3.6% consensus, 83% of early S&P 500 reporters beating EPS). No earnings, confirmed M&A, management change, SEC 8-K, or Bear-Flip/Thesis-Invalidation-level event found for any of the 5 OPEN tickers or Big 10 watchlist this session. Note: conflicting/unreliable earnings-calendar scrapes surfaced placeholder-looking data implying JPM/LLY/WMT reporting today — not corroborated by any primary source and JPM's Q3 report was already confirmed and logged on 10-13, so these were treated as unverified and excluded. `dashboard/news.js` **unchanged**, NEWS_LAST_UPDATED stays "2026-10-17 07:00".
+
+### 💡 Cash Yield Rule — routine accrual (2 days since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,591.97 accrues at the money-market/T-bill proxy rate (3.8%) for 2 days (10-18→10-20): $7,591.97 × 3.8%/365 × 2 = **+$1.58**. Cash $7,591.97→**$7,593.55**. Total $10,345.35→**$10,358.47** (+0.13%). Total Return 3.45%→**3.58%**. sp500Return 3.52%→4.15%. Alpha -0.07%→**-0.56%**.
+
+### Max's Take
+
+วันนี้ตลาดเจอ tech-led relief rally กว้าง (Nasdaq +1.35%) หลังหุ้นกลุ่ม AI เด้งกลับจากแรงขายสัปดาห์ก่อน — September CPI ที่สูงกว่าคาด (3.7% YoY vs 3.6%) ยังเป็น backdrop หลักที่กด rate-hike bets ให้ยังมีน้ำหนักอยู่ พอร์ตเราขยับขึ้นตามตลาดแต่เบากว่า (ADBE +0.77%, NOW +2.47%, CRM +0.62%, REGN -1.12%, ADSK แทบไม่ขยับ) ทำให้ alpha กว้างขึ้นเป็น -0.56% (จาก -0.07%) — เป็น single-session noise ไม่ใช่ trend ตาม Pre-commitment Rule ไม่มี stop breach, ไม่มี Re-Analysis trigger (0/5). **สิ่งที่ยังต้องจัดการเร่งด่วนที่สุดต่อเนื่องคือ ADSK — MOS ยังคงลบที่ -8.11%** (แทบไม่เปลี่ยนจาก -8.17%) — นี่คือ Review Mode ครั้งที่ 10 ติดต่อกัน (10-07 ถึง 10-20) ที่ STRONG SELL / Max Consultation Rule item ยังไม่ได้ consult จริงกับ Charlie — thesis ยัง intact (0 Bear Flip/Invalidation) แต่ระยะเวลาที่ค้างยาวนานขึ้นถึง 2 หลักแล้ว ทำให้นี่เป็น priority ที่ควรปิดจริงจังโดยเร็วที่สุด ข่าววันนี้ไม่มีรายการ HIGH-IMPACT ใหม่ — เป็น macro/analyst commentary ปกติที่ไม่กระทบ 5 positions หรือ Big 10 watchlist โดยตรง.
+
+---
+
 > **🟡 UPDATE 2026-10-18 (Portfolio Review Mode 3):** Weekend, no new trading day (Oct 17 Sat / Oct 18 Sun non-trading) — Oct 16 2026 close remains latest print, re-verified UNCHANGED (2 sources: Investing.com + Yahoo Finance, both $7,659.44, 0.00% diff). All 5 OPEN positions UNCHANGED at Oct 16 close. Only cash accrual moves this session: +$0.79 → $7,591.97. Total $10,344.56→$10,345.35 (+0.01%). Alpha -0.07% unchanged (negligible, both sides flat). No stop breach, 0/5 Re-Analysis triggers. ADSK MOS still -8.17% STRONG SELL territory — now **9 consecutive Review Mode sessions** (10-07, 10-08, 10-12, 10-13, 10-14, 10-15, 10-16, 10-17, 10-18) with Max Consultation Rule item unresolved. 0 HIGH-IMPACT news items this weekend (ADBE-NVIDIA partnership and NOW -4.61% move were already logged 10-16/10-17; weekend coverage was routine Tesla Roadster reveal, Apple HomeView launch, Amazon Bee devices, Nvidia CEO AI-market commentary — none earnings/M&A/management/8-K/>15% PT/>4% move for the 5 OPEN tickers or Big 10). Full detail below.
 
 ## 📊 Portfolio Review — 2026-10-18 (Mode 3 — Weekend, No New Close, Cash Accrual Only)
@@ -1284,16 +1332,16 @@ ADBE (weight eased 11.13%→10.87%, still in 10-12% band, Q3 earnings Sept 10 in
 | | ค่า |
 |---|---|
 | **Starting Capital** | $10,000.00 |
-| **Current Cash** | $7,573.01 (includes +$89.87 Cash Yield Rule retroactive catch-up, 2026-09-24) |
-| **Invested Value (Market)** | $2,714.48 |
-| **Total Portfolio Value** | $10,287.49 |
-| **Total Return** | +2.87% |
+| **Current Cash** | $7,593.55 (includes +$89.87 Cash Yield Rule retroactive catch-up, 2026-09-24, + routine ongoing accrual) |
+| **Invested Value (Market)** | $2,764.92 |
+| **Total Portfolio Value** | $10,358.47 |
+| **Total Return** | +3.58% |
 | **S&P 500 at Inception (2026-05-09)** | 7,398.93 |
-| **S&P 500 (2026-09-21 close, 2-source verified)** | 7,764.70 |
-| **S&P 500 Return (since inception)** | +4.94% |
-| **Alpha** | **-2.07%** (equity positions underperformed S&P; cash-yield catch-up narrowed alpha from -2.97% but did not flip it positive) |
+| **S&P 500 (2026-10-19 close, 2-source verified)** | 7,705.64 |
+| **S&P 500 Return (since inception)** | +4.15% |
+| **Alpha** | **-0.56%** (equity positions underperformed S&P this session; book is still modestly behind the index on a since-inception basis) |
 | **# Positions** | 5 (ADBE + NOW[1sh] + CRM + REGN[0.42sh] + ADSK) — RDDT CLOSED 2026-09-03, ACN CLOSED 2026-09-11, GOOGL CLOSED 2026-09-12 |
-| **Cash %** | 73.61% |
+| **Cash %** | 73.31% |
 | **Last Updated** | 2026-09-24 (Cash Yield Rule added, no price re-mark — see update note at top of file + `dashboard/portfolio.js` dataIntegrityLog) |
 
 > **Price Sources — 2026-09-13 (Sept 11 2026 4:00PM EDT close, 2-source cross-checked, 0.00% diff every ticker):**
