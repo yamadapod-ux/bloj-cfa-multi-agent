@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-17 07:00";
+const NEWS_LAST_UPDATED = "2026-10-21 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-21 (Atlas scan 2026-10-21, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-20", category: "DEAL",
+    headline: "🟢 CRM Salesforce signs definitive agreement to acquire Braze for ~$5.66B enterprise value",
+    summary: "Salesforce (NYSE: CRM) announced on 2026-10-20 (pre-market) a definitive agreement to acquire Braze (NASDAQ: BRZE), a customer engagement platform, for approximately $5.66 billion in enterprise value. Under the terms, Braze Class A common stock holders will receive $47.50 in cash per share. Braze serves approximately 2,770 customers; its real-time engagement and AI decisioning capabilities (BrazeAI) are expected to complement all four layers of Salesforce's architecture — Data 360, Customer 360, Agentforce and SIForce — strengthening Marketing Cloud's cross-channel personalization specifically. The transaction is expected to close in Salesforce's fiscal year 2028, subject to Braze shareholder approval and customary regulatory approvals. Salesforce stated there is no anticipated change to its FY27 guidance; the company has not issued FY28 guidance and is not updating long-term targets as a result of the deal. Market reaction was muted by the close — some outlets (MarketBeat) reported an intraday ~2% pullback in CRM shares on deal-cost/execution-risk concerns, but CRM finished essentially flat (-0.01% to $242.43) in a broad positive session where software peers ADBE/NOW also gained. นัยพอร์ต: CRM เป็น 1 ใน 5 OPEN positions (ถือ 3sh, weight ~6.98%) — ขนาดดีลเล็ก (~$5.66B) เทียบกับ market cap Salesforce (~$230B+) ไม่กระทบ FV/thesis อย่างมีนัยสำคัญในทันที แต่เป็น M&A event ที่ควรนำเข้า Bear's next re-verify เป็น data point ใหม่ (acquisition execution risk + integration cost) ไม่ใช่สัญญาณ sell — ไม่มี Bear Flip/Thesis Invalidation ยิง, HOLD recommendation ไม่เปลี่ยน.",
+    impact: "POSITIVE", tickers: ["CRM"],
+    url: "https://www.salesforce.com/news/press-releases/2026/10/20/salesforce-signs-definitive-agreement-to-acquire-braze/?bc=OTH",
+  },
 
   // ── 2026-10-17 (Atlas scan 2026-10-17, Portfolio Review Mode 3 cron cycle) ──
   {

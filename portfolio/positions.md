@@ -1706,3 +1706,60 @@ Regime RISK-ON (Atlas 2026-09-25 re-call) is now **17 days old**. Not formally o
 Assessed ROUTINE (not written to news.js): ADBE CEO transition/NHL partnership (already logged), CRM Dreamforce/Listen Labs AI announcements (strategic-fit, not material vs CRM scale — consistent with prior 09-29 assessment), REGN ubamatamab Phase 1/2 ovarian cancer data (early-stage pipeline readout, not FDA approval), NOW Q3 2026 earnings date set for Oct 28 (future catalyst, not news itself), Big 10 mega-cap moves (NVDA approaching $6T, OpenAI-revenue-shortfall-driven Oct 8 AI selloff already reflected in broad market price action, Constellation Energy–Google PPA moved CEG not GOOGL).
 
 ---
+
+## 📊 Portfolio Review — 2026-10-21 (Mode 3, cron)
+
+**Full re-mark to Oct 20 2026 close (Tue)** — first new trading-day print since Oct 19, no trades executed.
+
+### Prices (2-3 source cross-checked)
+| Ticker | Price | Sources | Day Move |
+|---|---|---|---|
+| ADBE | $256.73 | Yahoo Finance + MarketWatch (exact match) | +3.90% |
+| NOW  | $149.54 | MarketWatch + stockanalysis.com + Yahoo Finance (exact match, 3-source) | +2.88% |
+| CRM  | $242.43 | financialcontent.com + Yahoo Finance + stockanalysis.com (exact match, 3-source) | -0.01% |
+| REGN | $807.48 | barchart.com + CNN (exact match) | +3.25% |
+| ADSK | $245.58 | avg stockanalysis.com $245.58 + Markets Insider/BTT $245.57 (0.004% diff) | +2.03% |
+| S&P 500 | 7,717.46 | avg Investing.com $7,713.92 + Reuters-sourced recap "closed at 7,721" (0.09% diff) | +0.15% |
+
+Broad healthcare+software-led risk-on session (Dow +1.02%, S&P +0.15%) — all 5 OPEN positions gained in unison. No idiosyncratic negative catalysts; one M&A announcement on CRM (see below).
+
+### P&L / MOS / Weight
+| Ticker | Shares | Cost Basis | Mkt Value | Return% | Blended FV | MOS% | Stop | StopDist% | Weight% |
+|---|---|---|---|---|---|---|---|---|---|
+| ADBE | 4 | $988.10 | $1,026.92 | +3.93% | $369.00 | +30.43% | $185.00 | 27.94% | 9.85% |
+| NOW | 1 | $89.47 | $149.54 | +67.14% | $125.65 | -19.01% | $93.00 | 37.82% | 1.43% |
+| CRM | 3 | $543.00 | $727.29 | +33.94% | $345.77 | +29.89% | $144.80 | 40.28% | 6.98% |
+| REGN | 0.42 | $252.84 | $339.14 | +34.14% | $889.00 | +9.17% | $482.00 | 40.29% | 3.25% |
+| ADSK | 2.4 | $476.23 | $589.39 | +23.76% | $221.79 | -10.73% | $158.74 | 35.37% | 5.65% |
+
+**Totals:** Invested $2,832.28 · Cash $7,594.34 (72.84%) · Total Value **$10,426.62** · Total Return **+4.27%** · S&P 500 Return **+4.30%** (7,398.93 → 7,717.46) · **Alpha -0.03%** (narrowed from -0.56% 10-20, essentially flat).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,593.55 × 3.8%/365 × 1 day = +$0.79 → $7,594.34.
+
+### 🛑 Stop Loss Check
+No breaches. All 5 positions comfortably clear of stop: ADBE 27.94% (narrowest), NOW 37.82%, CRM 40.28%, REGN 40.29%, ADSK 35.37%.
+
+### 🔴🔴 Max Consultation Rule — ADSK STRONG SELL, now 11 consecutive sessions unresolved
+ADSK MOS deepened further negative to **-10.73%** (from -8.11% on 10-20) — purely price-driven (FV unchanged $221.79, fvVerifiedDate 2026-09-12, 39 days old, not stale). This is the 11th consecutive Review Mode session (10-07 through 10-21) carrying this item without an actual Max×Charlie consultation taking place. Thesis intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation criteria fired. Not a capital-risk issue — stopDist 35.37% comfortable. Flagging again per established pattern; Review Mode 3 itself executes no trade.
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 40d, not stale | N/A | small, no divergence flag | Not re-checked this session | 0/5 |
+| NOW | No new earnings | FV 58d, not stale (<90d) | N/A | small vs reference | Not re-checked this session | 0/5 |
+| CRM | M&A announced (Braze acquisition) — not earnings, does not meet #1's definition | FV 40d, not stale | N/A | small | Not re-checked this session | 0/5 |
+| REGN | No new earnings | FV 40d, not stale | N/A | small | Not re-checked this session | 0/5 |
+| ADSK | No new earnings | FV 39d, not stale | N/A | small | Not re-checked this session | 0/5 |
+
+**0/5 formal triggers fire this session.** All FVs 39-58 days old, well under the 90-day threshold.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime RISK-ON (Atlas 2026-09-25 re-call) is now **26 days old**. Getting dated relative to the ~2-3 week cadence seen earlier this quarter — flagged for Atlas to consider a fresh re-call soon. Does not block this update.
+
+### 📰 Atlas News Scan (2026-10-17 → 2026-10-21, all 5 OPEN tickers + Big 10 watchlist)
+**1 NEW HIGH-IMPACT item** written to `dashboard/news.js`:
+- **CRM** — Salesforce signed a definitive agreement to acquire Braze (NASDAQ: BRZE) for ~$5.66B enterprise value (announced 2026-10-20 pre-market), $47.50/share cash to Braze Class A holders. Folds into Marketing Cloud/Data 360/Customer 360/Agentforce/SIForce architecture. Expected to close Salesforce FY2028; no change to FY27 guidance. M&A on an OPEN position — written per HIGH-IMPACT classification. Price reaction muted (-0.01% by close despite some reported intraday -2% chatter).
+
+Assessed ROUTINE (not written to news.js): ADBE Wells Fargo Underweight rating (recycled mention of the already-logged 2026-10-12 double-downgrade, no new rating/PT change), ADBE "AI fears"/valuation commentary and NVIDIA-partnership follow-on coverage (no new facts), REGN UBS upgrade to Buy (10-17, before/at this scan's cutoff, no stated PT magnitude >15%) and Piper Sandler $865 PT (magnitude vs prior target not disclosed in coverage), REGN Q3 2026 earnings date set for Oct 30 (future catalyst, not news itself), ADSK exec-leadership note (Diana Colella to lead AEC business, Oct 6-7, not a CEO/CFO-level change, already outside this scan's fresh window) and continued PTC/Schneider Electric re-rating commentary (already logged 10-12), NOW Q3 2026 earnings date confirmed for Oct 28 (future catalyst), Big 10 mega-cap moves (META/TSLA report earnings after close today 10-21 — future event; AMZN Morgan Stanley "Top Pick" PT raise $335→$350, +4.5%, below the >15% threshold; JPM/other bank earnings already logged in prior scans).
+
+---
