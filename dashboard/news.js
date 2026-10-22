@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-21 07:00";
+const NEWS_LAST_UPDATED = "2026-10-22 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-22 (Atlas scan 2026-10-22, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-21", category: "EARNINGS",
+    headline: "🟡 META Meta Platforms Q3 2026 — revenue beats, GAAP EPS misses on $9.9B legal charge (ex-charge EPS beats), raises Q4 guide",
+    summary: "Meta Platforms reported Q3 2026 results after the close on 2026-10-21. Revenue was $64.60B, beating consensus of roughly $63.3-63.4B (+26% YoY), with advertising revenue of ~$63.1B also ahead of the ~$61.9B estimate. GAAP EPS of $3.83 missed consensus estimates that ranged $5.70-6.80 depending on source, but the shortfall was driven by a ~$9.9B legal charge tied to a state AG teen-mental-health settlement; excluding the charge, EPS would have been approximately $7.40, comfortably beating. Operating income of ~$13B fell well short of the ~$20.9B analysts had forecast (also charge-driven). Full-year expense guidance was raised by $10B to $175-179B to absorb the charge; capex range was narrowed to $135-145B. For Q4, Meta guided revenue of $73-76B, above the ~$73.6B consensus. Reality Labs revenue (~$440M) missed, with a narrower-than-expected operating loss (~$4.1B). Shares initially rose ~2-3% in after-hours trading as investors looked through the one-time legal charge to the underlying ad-revenue strength and raised guidance. นัยพอร์ต: META อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น earnings event ขนาดใหญ่บน Big 10 name ตามเกณฑ์ HIGH-IMPACT (earnings beat/miss).",
+    impact: "MIXED", tickers: ["META"],
+    url: "https://www.cnbc.com/2026/10/21/meta-earnings-q3-2026-live-updates.html",
+  },
+  {
+    date: "2026-10-21", category: "EARNINGS",
+    headline: "🟢 TSLA Tesla Q3 2026 — adjusted EPS beats, revenue roughly in-line, operating income/FCF beat sharply, record backlog",
+    summary: "Tesla reported Q3 2026 results after the close on 2026-10-21. Non-GAAP EPS came in at $0.48-0.50 (sources vary slightly), beating the ~$0.45 consensus by roughly 6-7%. Revenue was approximately $28.0-28.1B against a ~$28.34B estimate — essentially flat year-over-year (-0.2%). Operating income and operating margin beat sharply: operating income of ~$1.6B vs ~$721M expected, operating margin ~5.8% vs ~2.5% expected. Free cash flow of ~$4.0B also beat (vs an expected roughly -$4.5B). Capex continued to miss the company's $25B annual target as AI/compute spending ramps. Deliveries, already reported after quarter-end, were 486,532 vehicles (down 2.1% YoY but well above the ~462,000 consensus) — supply/battery availability, not demand, was cited as the binding constraint, with the company reporting its largest passenger-vehicle backlog in four years and record deliveries in Canada, Australia, Japan and Taiwan. นัยพอร์ต: TSLA อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น earnings event ที่ beat ชัดเจนบน Big 10 name ตามเกณฑ์ HIGH-IMPACT.",
+    impact: "POSITIVE", tickers: ["TSLA"],
+    url: "https://www.teslarati.com/tesla-tsla-q3-earnings-2026-what-to-expect/",
+  },
 
   // ── 2026-10-21 (Atlas scan 2026-10-21, Portfolio Review Mode 3 cron cycle) ──
   {
