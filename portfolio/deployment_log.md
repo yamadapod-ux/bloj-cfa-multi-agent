@@ -1030,3 +1030,19 @@
 - **Funnel:** 153 pre-screened → 37 fresh 2-source Filter-A passes → **0 fast-track · 2 learning-queue (CRI, NBIX) · 35 reject.**
 
 *Max — 2026-10-18 | Scout Round 79 — fast-track 0, learning-queue 2 (CRI, NBIX); no trade. Detail: `portfolio/watchlist.md` § Round 79.*
+
+---
+
+## Ad-hoc Sector Scout — RV & Marine Leisure / Powersports (WGO, PII, BC, MBUU) — 2026-10-24
+
+| Ticker | Action | Gate / Rationale |
+|--------|--------|------------------|
+| PII | `QUICK-SCREEN SKIP` (Tier 1 check 1) | Adjusted ROIC 18.0% → 7.8% → −1.6% (FY23→FY25, SEC XBRL), FY25 −0.19× WACC 8.5%; TTM Jun-26 ~0.00× (≈ −2.3% ex the $74M one-time tariff refund). Worsening for 2+ years and below 0.5× WACC. |
+| MBUU | `QUICK-SCREEN SKIP` (Tier 1 check 1) | Adjusted ROIC 4.7% → 3.8% → 3.0% (FY24→FY26), FY26 0.40× WACC 7.5%. Robust to the Saxdor IC effect (≈3.4% on pre-deal IC). |
+| BC | `QUICK-SCREEN SKIP` (Tier 1 check 2) | Naive FV on 9y-average FCF of $312M at WACC 8.06%: P/FV 1.10× on the repo convention (±10% band, check 2b) / 1.51× on EV basis net of $1.99B net debt+leases (check 2a). |
+| WGO | LEARNING-QUEUE (`LEARNING-QUEUE`) | Tier 1 pass (narrow). A −42.9% cyclical · B 18.6% normalized FCF yield · C split (5Y avg +4.3pp vs FY26 0.46× WACC with a falling TTM trend) · D 0.40× @ CAPM / 0.70–0.83× @13% · E 1/3. No pipeline dispatched. |
+
+- **Regime:** RISK-ON 3/4 (Atlas 2026-10-16). Scout-only CIO task; no trade.
+- **Data:** SEC EDGAR XBRL companyfacts plus 8-K ex-99.1. Prices from 2 sources (Yahoo + Nasdaq.com, 2026-10-23 close). Full tables: `portfolio/watchlist.md` § Scout History 2026-10-24.
+
+*Max + Charlie — 2026-10-24 | RV & Marine sector scout — 0 fast-track, 1 learning-queue (WGO), 3 QUICK-SCREEN SKIP; no trade.*
