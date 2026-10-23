@@ -1,5 +1,57 @@
 # Simulated Portfolio — บลจ. CFA
 
+> **🟢 UPDATE 2026-10-23 (Portfolio Review Mode 3):** Full re-mark to Oct 22 2026 close (Thu, first new trading day since Oct 21). Broad risk-off tech selloff (S&P -1.21%, Nasdaq -2.6%, Dow flat +0.02%) driven by Meta capex/spending-guidance worries post-earnings + an oil-price spike (NYT report of possible renewed US-Israel strikes on Iran after Nov 3 election). Beaten-down enterprise software decoupled and rallied instead (247wallst: "Adobe Jumps 5% as Beaten-Down Software Names Rebound Despite Risk-Off Day; Salesforce Rises 3%") — all 5 OPEN positions rose: ADBE +6.07% $270.55, NOW +2.53% $157.00, CRM +3.52% $250.29, REGN +1.67% $819.09, ADSK +4.13% $254.95 (⚠️ single-source-provider, flagged). Total $10,419.81→$10,541.89 (+1.17%). Alpha FLIPPED SHARPLY POSITIVE -0.64%→+1.84% (single-session sector-rotation effect, not a trend per Pre-commitment Rule — our software-heavy book decoupled from the broader AI-capex-driven selloff). No stop breach, 0/5 Re-Analysis triggers. ADSK MOS deepened sharply to -14.96% (from -10.39%) — STRONG SELL/Max Consultation Rule item now **13th consecutive Review Mode session** (10-07 through 10-23) unresolved. ADBE weight rose to 10.27% (above nominal 10% band, below 12% TRIM threshold — price-driven, no action). 0 HIGH-IMPACT news items this session. Full detail below.
+
+## 📊 Portfolio Review — 2026-10-23 (Mode 3 — Full Re-Mark, Oct 22 2026 Close) — Beaten-Down Software Rebounds Despite Broad Risk-Off Tech Selloff
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, 28 days old — getting dated, worth a fresh re-call soon, not yet overdue by the 30-day backstop). First new US trading-day close since Oct 21. All 5 OPEN positions **re-priced** to Oct 22 2026 close — ADBE 2-source exact match (MarketWatch + MarketBeat, both $270.55), NOW 2-source exact match (stockanalysis.com + Yahoo Finance, both $157.00), CRM 2-source exact match (stockanalysis.com + Yahoo Finance, both $250.29), REGN 2-source exact match (Barron's + MarketBeat, both $819.09; Yahoo Finance $821.17 noted, 0.25% diff, within threshold), ADSK ⚠️ SINGLE-SOURCE-PROVIDER (stockanalysis.com explicit "At close" badge $254.95; TradingEconomics returned a conflicting $251.85/+2.86% figure outside the 0.5% threshold, no clean independent 2nd source found within the search-attempt cap, flagged per Single Source of Truth Rule). A broad risk-off tech selloff (S&P -1.21%, Nasdaq -2.6%) driven by Meta's heavy AI-capex guidance (post-earnings reaction) plus an oil-price spike on renewed Iran-strike reports hit megacap tech hard — but beaten-down enterprise software names decoupled and rallied (247wallst headline: "Adobe Jumps 5% as Beaten-Down Software Names Rebound Despite Risk-Off Day; Salesforce Rises 3%"), lifting all 5 of our OPEN positions. **No trades this session.**
+
+| Ticker | Price (Oct 22 close) | Change vs Oct 21 | Return % | MOS % | StopDist % | Source |
+|--------|------------------------|--------|----------|-------|------------|--------|
+| ADBE | $270.55 | +6.07% | +9.52% | +26.68% | 31.62% | MarketWatch + MarketBeat, exact match (2-source) |
+| NOW | $157.00 | +2.53% | +75.48% | -24.95% 🟠 | 40.76% | stockanalysis.com + Yahoo Finance, exact match (2-source) |
+| CRM | $250.29 | +3.52% | +38.28% | +27.63% | 42.16% | stockanalysis.com + Yahoo Finance, exact match (2-source) |
+| REGN | $819.09 | +1.67% | +36.07% | +7.86% | 41.15% | Barron's + MarketBeat, exact match (2-source); Yahoo $821.17 0.25% diff noted |
+| ADSK | $254.95 | +4.13% | +28.49% | -14.96% 🔴🔴 | 37.74% | ⚠️ stockanalysis.com only — TradingEconomics conflicting $251.85, no 2nd source confirmed within attempt cap |
+
+S&P 500 fell -1.21% to **$7,663.43** (MarketWatch + Yahoo Finance, exact match, 2-source — a broad risk-off tech selloff on Meta capex/spending worries and an oil-price spike on renewed Iran-strike reports; Nasdaq fell -2.6%, Dow closed roughly flat +0.02%). Total Value $10,419.81 → **$10,541.89** (+1.17%). Cash $7,595.13 → **$7,595.92** (+$0.79, Cash Yield Rule accrual, 1 day 10-22→10-23). Total Return 4.20% → **5.42%**. sp500Return 4.84%→3.57%. Alpha -0.64% → **+1.84%** (flipped sharply positive — the book's software-heavy sector-rotation bounce outran the broader market's risk-off decline; this is single-session noise per the Pre-commitment Rule, not a confirmed trend, and does not change any Return-side rule).
+
+**Stop Loss check:** No breaches. ADBE narrowest stopDist 31.62% (still very comfortable, well above the 10% WATCH threshold).
+
+### 🔴🔴 ADSK — MOS deepens sharply, Max Consultation Rule item now 13 sessions overdue (no new action)
+
+MOS -10.39% → **-14.96%** — the deepest reading since 10-16's -10.56%, driven entirely by the sector-rotation price surge (+4.13% to $254.95, no idiosyncratic ADSK catalyst found, part of the same "beaten-down software rebound" that lifted ADBE/NOW/CRM/REGN too). FV unchanged ($221.79, fvVerifiedDate 2026-09-12, 41 days old — still fresh, not a Re-Analysis Trigger issue). This continues the carried item first flagged 2026-10-07 — now **13 consecutive Review Mode sessions (10-07, 10-08, 10-12 through 10-18, 10-20, 10-21, 10-22, and now 10-23)** without an actual Max×Charlie consultation taking place. Thesis otherwise intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation, stopDist 37.74% comfortable (not a stop-loss issue), T2/T3 staged adds remain paused pending the Q3 FY27 current-RPO print (Nov 2026). **This process-discipline gap has now reached 13 sessions and should be closed at the next real opportunity** — Review Mode 3 itself cannot execute the consultation.
+
+### 🟢 ADBE — weight rises to 10.27% on the sector-rotation rally (awareness only, no action)
+
+ADBE's +6.07% move (part of the broad "beaten-down software" rebound, no idiosyncratic ADBE-specific catalyst found beyond the general sector rotation) pushed its portfolio weight to 10.27%, above the nominal 8-10% IPS single-position band. This is price-appreciation-driven, not a new deployment, and is well below the 12% Exit-Rule TRIM threshold — no action required, noted for awareness and future tracking if the weight continues to climb.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-11 | FV 42d old, MOS +26.68% (positive) — no fire | No | Under 30% | HSBC PT $267 vs internal FV $369 = -27.6% gap carried, not re-verified | 0/5 (carried watch item) |
+| NOW | No new earnings; Q3 due Oct 28 | FV 60d old, MOS -24.95% (negative) but 60d << 90d — no fire | No | Under 30% | Bernstein Street-high PT $266 vs FV $125.65 = +111% gap carried, not re-verified | 0/5 (carried watch item) |
+| CRM | No new earnings | FV 42d old, MOS +27.63% — no fire | No | Under 30% | BofA PT $285 vs internal FV $345.77 gap carried, not re-verified | 0/5 |
+| REGN | No new earnings; Q3 confirmed Oct 30 | FV 42d old, MOS +7.86% (positive) — no fire | No | Under 30% | TD Cowen PT $980 / UBS $978 vs internal FV $889 = +10% gap, not material | 0/5 |
+| ADSK | No new earnings; next current-RPO print Nov 2026 (Q3 FY27) | FV 41d old (<<90d), MOS -14.96% negative but age well under 90d threshold — formal Trigger #2 does NOT fire on age alone | No | Under 30% | Not re-checked | 0/5 (but see STRONG SELL/Max Consultation flag above, carried from 10-07, now 13 sessions) |
+
+**Result: 0/5 formal Re-Analysis triggers fire on any OPEN position.** ADSK's STRONG SELL / Max Consultation Rule item remains outside the formal Re-Analysis Trigger Rule (FV is fresh, 41 days old) but is now the portfolio's most overdue process-discipline item, 13 sessions running, with its deepest MOS reading since 10-16.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 remains current (28 days old) — getting dated, worth a fresh re-call soon, not yet overdue by the 30-day backstop.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-22 07:00) — **0 NEW HIGH-IMPACT items.** Coverage this session was dominated by the broad Meta-capex/oil-driven selloff (macro-level, affecting megacap tech broadly — NVDA/AAPL/MSFT/GOOGL/AMZN all closed roughly flat to modestly down/up per Mag-7 recaps, none >4% idiosyncratic) and the enterprise-software sector rebound (sector-rotation, not idiosyncratic to any single OPEN-position ticker, consistent with prior sessions' classification of broad rotation days as ROUTINE for news.js even when material to MOS). JPM coverage was routine blockchain/tokenization PR (JPM Coin to Ethereum, tokenized money-market funds on Solana) and recycled Q3 earnings-miss commentary (already logged 10-14). TSLA saw a batch of routine analyst PT adjustments (BNP Paribas upgrade, several PT raises, none exceeding the >15% threshold off a known prior target within the search cap). No earnings, confirmed M&A, management change, SEC 8-K, or Bear-Flip/Thesis-Invalidation-level event found for any of the 5 OPEN tickers or Big 10 watchlist this session. `dashboard/news.js` **unchanged**, NEWS_LAST_UPDATED stays "2026-10-22 07:00".
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,595.13 accrues at the money-market/T-bill proxy rate (3.8%) for 1 day (10-22→10-23): $7,595.13 × 3.8%/365 × 1 = **+$0.79**. Cash $7,595.13→**$7,595.92**. Total $10,419.81→**$10,541.89** (+1.17%). Total Return 4.20%→**5.42%**. sp500Return 4.84%→3.57%. Alpha -0.64%→**+1.84%**.
+
+### Max's Take
+
+วันนี้ตลาดเจอ broad risk-off tech selloff (S&P -1.21%, Nasdaq -2.6%) จาก Meta เปิดเผย capex/spending guidance ที่หนักกว่าที่ตลาดคาด (หลังประกาศงบ Q3 คืนก่อน) ผสมกับราคาน้ำมันพุ่งจากข่าว NYT เรื่องสหรัฐ-อิสราเอลอาจโจมตีอิหร่านอีกครั้งหลังเลือกตั้ง 3 พ.ย. — แต่หุ้น enterprise software ที่ถูกเทขายมาก่อนหน้านี้กลับสวนตลาดขึ้นแรง (พาดหัว 247wallst: "Adobe Jumps 5%... Despite Risk-Off Day; Salesforce Rises 3%") ทำให้ทั้ง 5 positions ของเราขึ้นพร้อมกัน (ADBE +6.07%, NOW +2.53%, CRM +3.52%, REGN +1.67%, ADSK +4.13%) ผลคือ **alpha พลิกเป็นบวกแรงที่สุดนับตั้งแต่เริ่มพอร์ต เป็น +1.84%** (จาก -0.64%) — เป็น single-session sector-rotation effect ตาม Pre-commitment Rule ไม่ใช่ trend ที่ยืนยันแล้ว ไม่มี stop breach ไม่มี Re-Analysis trigger (0/5). **สิ่งที่ยังต้องจัดการเร่งด่วนที่สุดต่อเนื่องคือ ADSK — MOS ดิ่งลึกลงอย่างมีนัยสำคัญเป็น -14.96%** (จาก -10.39%) จาก sector rotation เดียวกันที่ดันราคาขึ้น — นี่คือ Review Mode ครั้งที่ 13 ติดต่อกัน (10-07 ถึง 10-23) ที่ STRONG SELL / Max Consultation Rule item ยังไม่ได้ consult จริงกับ Charlie — thesis ยัง intact (0 Bear Flip/Invalidation) แต่ระยะเวลาที่ค้างยาวนานขึ้นเรื่อยๆ ทำให้นี่เป็น priority ที่ควรปิดจริงจังโดยเร็วที่สุด เพิ่มเติม: ADBE weight ขึ้นเป็น 10.27% (เกิน nominal 10% band เล็กน้อยแต่ยังห่าง 12% TRIM threshold มาก, เป็นผลจากราคาขึ้นไม่ใช่การซื้อเพิ่ม ไม่ต้อง action) ข่าววันนี้ไม่มีรายการ HIGH-IMPACT ใหม่ — เป็น macro-level selloff + sector rotation ที่ไม่ specific กับ ticker ใดใน Big 10/OPEN positions.
+
+---
+
 > **🟡 UPDATE 2026-10-22 (Portfolio Review Mode 3):** Full re-mark to Oct 21 2026 close (Wed, first new trading day since Oct 20). Broad risk-on tech-rotation day (S&P +0.58%, third straight up day, XLK +1.5-1.7%). Book mixed-to-flat: ADBE -0.65% $255.06, NOW +2.38% $153.10 (ahead of Oct 28 earnings), CRM -0.27% $241.78, REGN -0.22% $805.67 (consolidating after Tue's healthcare rally), ADSK -0.30% $244.84. Total $10,426.62→$10,419.81 (-0.07%). Alpha -0.03%→-0.64% (widened — S&P's tech rotation outpaced the book's flat/mixed session). No stop breach, 0/5 Re-Analysis triggers. ADSK MOS -10.39% (from -10.73%) — essentially flat, STRONG SELL/Max Consultation Rule item now **12th consecutive Review Mode session** (10-07 through 10-22) unresolved. 2 HIGH-IMPACT news items (after close): META and TSLA Q3 2026 earnings (Big 10 watchlist, no OPEN position). Full detail below.
 
 ## 📊 Portfolio Review — 2026-10-22 (Mode 3 — Full Re-Mark, Oct 21 2026 Close)
@@ -1380,17 +1432,17 @@ ADBE (weight eased 11.13%→10.87%, still in 10-12% band, Q3 earnings Sept 10 in
 | | ค่า |
 |---|---|
 | **Starting Capital** | $10,000.00 |
-| **Current Cash** | $7,595.13 (includes +$89.87 Cash Yield Rule retroactive catch-up, 2026-09-24, + routine ongoing accrual) |
-| **Invested Value (Market)** | $2,824.68 |
-| **Total Portfolio Value** | $10,419.81 |
-| **Total Return** | +4.20% |
+| **Current Cash** | $7,595.92 (includes +$89.87 Cash Yield Rule retroactive catch-up, 2026-09-24, + routine ongoing accrual) |
+| **Invested Value (Market)** | $2,945.97 |
+| **Total Portfolio Value** | $10,541.89 |
+| **Total Return** | +5.42% |
 | **S&P 500 at Inception (2026-05-09)** | 7,398.93 |
-| **S&P 500 (2026-10-21 close, 2-source verified)** | 7,757.17 |
-| **S&P 500 Return (since inception)** | +4.84% |
-| **Alpha** | **-0.64%** (S&P's tech-rotation session outpaced the book's flat/mixed session; single-session noise, not a rolling-4Q trend) |
+| **S&P 500 (2026-10-22 close, 2-source verified)** | 7,663.43 |
+| **S&P 500 Return (since inception)** | +3.57% |
+| **Alpha** | **+1.84%** (flipped sharply positive — beaten-down software sector-rotation bounce outran the broader market's risk-off decline; single-session noise, not a rolling-4Q trend) |
 | **# Positions** | 5 (ADBE + NOW[1sh] + CRM + REGN[0.42sh] + ADSK) — RDDT CLOSED 2026-09-03, ACN CLOSED 2026-09-11, GOOGL CLOSED 2026-09-12 |
-| **Cash %** | 72.89% |
-| **Last Updated** | 2026-10-22 (Portfolio Review Mode 3 — full re-mark to Oct 21 2026 close, see update note at top of file + `dashboard/portfolio.js` dataIntegrityLog) |
+| **Cash %** | 72.05% |
+| **Last Updated** | 2026-10-23 (Portfolio Review Mode 3 — full re-mark to Oct 22 2026 close, see update note at top of file + `dashboard/portfolio.js` dataIntegrityLog) |
 
 > **Price Sources — 2026-09-13 (Sept 11 2026 4:00PM EDT close, 2-source cross-checked, 0.00% diff every ticker):**
 > - ADBE $252.23: stockanalysis.com + Yahoo Finance (0.00% diff)
