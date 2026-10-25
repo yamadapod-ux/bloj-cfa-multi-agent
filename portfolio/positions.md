@@ -1,5 +1,53 @@
 # Simulated Portfolio — บลจ. CFA
 
+> **🟢 UPDATE 2026-10-25 (Portfolio Review Mode 3):** Weekend, no new trading day (Oct 24 Sat / Oct 25 Sun non-trading). Oct 23 2026 close remains latest print for all 5 OPEN positions and S&P 500, re-verified UNCHANGED via fresh WebSearch (econotimes + moneycontrol + marketscreener + freemalaysiatoday all converging on S&P 500 $7,623.68-7,623.86, consistent with dashboard's $7,624.26 avg; Perplexity Finance live quotes confirm ADBE $263.82 and ADSK $252.20 both still showing as the Oct 23 close with "Market Closed" badge for Oct 24). Only cash accrual moves totals this session.
+
+## 📊 Portfolio Review — 2026-10-25 (Mode 3 — Weekend, No New Trading Day, Oct 23 2026 Close Carried Forward)
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, now **30 days old** — at the edge of the "getting dated" window flagged the last several sessions; a fresh re-call is now due soon, Atlas should prioritize this next session). Oct 24 (Sat) / Oct 25 (Sun) are non-trading days — no new US market close exists. All 5 OPEN positions re-verified **UNCHANGED** at Oct 23 2026 close via fresh WebSearch cross-check (S&P 500 recap articles + Perplexity Finance live quote pages explicitly showing "Market Closed" for Oct 24 with the Oct 23 print as the last trade). **No trades this session.**
+
+| Ticker | Price (Oct 23 close, unchanged) | Return % | MOS % | StopDist % |
+|--------|----------------------------------|----------|-------|------------|
+| ADBE | $263.82 | +6.80% | +28.50% | 29.87% |
+| NOW | $159.13 | +77.86% | -26.65% 🟠 | 41.56% |
+| CRM | $248.57 | +37.33% | +28.12% | 41.75% |
+| REGN | $805.02 | +33.72% | +9.45% | 40.12% |
+| ADSK | $252.20 | +27.10% | -13.72% 🔴🔴 | 37.06% |
+
+S&P 500 unchanged at **$7,624.26** (no new trading day — re-confirmed via fresh WebSearch, multiple sources converge on Oct 23's $7,623.68-7,623.86 print). Total Value $10,500.22 → **$10,501.01** (+0.01%, cash-accrual only). Cash $7,596.71 → **$7,597.50** (+$0.79, Cash Yield Rule accrual, 1 day 10-24→10-25). Total Return 5.00% → **5.01%**. sp500Return unchanged 3.05%. Alpha 1.95% → **1.96%** (negligible, cash-accrual only — no new trading day for either side).
+
+**Stop Loss check:** No breaches. ADBE narrowest stopDist 29.87% (unchanged, still comfortable, well above the 10% WATCH threshold).
+
+### 🔴🔴 ADSK — unchanged, Max Consultation Rule item now 15 sessions overdue (no new action)
+
+MOS unchanged at **-13.72%** (price unchanged, no new trading day). FV unchanged ($221.79, fvVerifiedDate 2026-09-12, 43 days old — still fresh, not a Re-Analysis Trigger issue). This continues the carried item first flagged 2026-10-07 — now **15 consecutive Review Mode sessions (10-07 through 10-25)** without an actual Max×Charlie consultation taking place. Thesis otherwise intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation, stopDist 37.06% comfortable (not a stop-loss issue), T2/T3 staged adds remain paused pending the Q3 FY27 current-RPO print (Nov 2026). **This process-discipline gap has now reached 15 sessions and should be closed at the next real opportunity.**
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-11 | FV 44d old, MOS +28.50% (positive) — no fire | No | Under 30% | HSBC PT $267 vs internal FV $369 gap carried, not re-verified | 0/5 (carried watch item) |
+| NOW | No new earnings; Q3 due Oct 28 | FV 62d old, MOS -26.65% (negative) but 62d << 90d — no fire | No | Under 30% | Bernstein Street-high PT $266 vs FV $125.65 gap carried, not re-verified | 0/5 (carried watch item) |
+| CRM | No new earnings | FV 44d old, MOS +28.12% — no fire | No | Under 30% | BofA PT $285 vs internal FV $345.77 gap carried, not re-verified | 0/5 |
+| REGN | No new earnings; Q3 confirmed Oct 30 | FV 44d old, MOS +9.45% (positive) — no fire | No | Under 30% | TD Cowen PT $980 / UBS $978 vs internal FV $889 gap, not material | 0/5 |
+| ADSK | No new earnings; next current-RPO print Nov 2026 (Q3 FY27) | FV 43d old (<<90d), MOS -13.72% negative but age well under 90d threshold — formal Trigger #2 does NOT fire on age alone | No | Under 30% | Not re-checked | 0/5 (but see STRONG SELL/Max Consultation flag above, carried from 10-07, now 15 sessions) |
+
+**Result: 0/5 formal Re-Analysis triggers fire on any OPEN position.** ADSK's STRONG SELL / Max Consultation Rule item remains outside the formal Re-Analysis Trigger Rule (FV is fresh, 43 days old) but is now the portfolio's most overdue process-discipline item, 15 sessions running.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 is now **30 days old** — getting dated, Atlas should prioritize a fresh re-call next session (next FOMC decision is 2026-10-28, a natural trigger point).
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-22 07:00) — **0 NEW HIGH-IMPACT items.** Weekend coverage was dominated by recap/wrap-up pieces on the already-known Oct 23 close and pre-earnings positioning commentary ahead of next week's Fed decision (Oct 28) and Alphabet/Microsoft/Amazon earnings (Oct 28-29) — nothing new on earnings/M&A/management/8-K/>15% PT change/>4% idiosyncratic move for any of the 5 OPEN tickers or Big 10 watchlist this weekend. `dashboard/news.js` **unchanged**, NEWS_LAST_UPDATED stays "2026-10-22 07:00".
+
+### 💡 Cash Yield Rule — routine weekend accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,596.71 accrues at the money-market/T-bill proxy rate (3.8%) for 1 day (10-24→10-25): $7,596.71 × 3.8%/365 × 1 = **+$0.79**. Cash $7,596.71→**$7,597.50**. Total $10,500.22→**$10,501.01** (+0.01%). Total Return 5.00%→**5.01%**. sp500Return unchanged 3.05%. Alpha 1.95%→**1.96%**.
+
+### Max's Take
+
+วันนี้เสาร์-อาทิตย์ ตลาดปิด ไม่มี trading day ใหม่ — ราคาทุก position ยังอยู่ที่ Oct 23 close เดิมทั้งหมด (re-verify แล้ว ยังตรง) มีแต่ cash accrual ขยับเล็กน้อย (+$0.79) **Alpha ขยับนิดเดียวเป็น +1.96%** (จาก +1.95%) ไม่มี stop breach ไม่มี Re-Analysis trigger (0/5) ไม่มีข่าว HIGH-IMPACT ใหม่สัปดาห์นี้ (ตลาดปิด + รอดู Fed decision 28 ต.ค. และ earnings ของ GOOGL/MSFT/AMZN สัปดาห์หน้า) **ADSK ยังเป็นตัวที่ต้องจัดการเร่งด่วนที่สุดต่อเนื่อง** — MOS -13.72% คงที่ (ราคาไม่เปลี่ยน) ยังอยู่ใน STRONG SELL territory ชัดเจน — นี้คือ Review Mode ครั้งที่ 15 ติดต่อกัน (10-07 ถึง 10-25) ที่ยังไม่ได้ consult จริงกับ Charlie — thesis ยัง intact (0 Bear Flip/Invalidation) แต่ระยะเวลาค้างยาวขึ้นต่อเนื่อง ควรปิด gap นี้โดยเร็ว. ข้อมูลเพิ่มเติม: Atlas regime re-call อายุครบ 30 วันแล้ว (ครั้งล่าสุด 2026-09-25) — ถึงเวลาที่ Atlas ควร re-call รอบใหม่ โดยเฉพาะก่อน FOMC 28 ต.ค. ที่จะมาถึง.
+
+---
+
 > **🟢 UPDATE 2026-10-24 (Portfolio Review Mode 3):** Full re-mark to Oct 23 2026 close (Fri), first new trading day since Oct 22. Broad old-economy-led selloff (Dow -1.23% to 52,215.16, S&P -0.52% to ~7,624, Nasdaq roughly flat -0.21%) on oil above $100/barrel amid renewed US-Iran tension fears, a day after Thursday's sharp AI-trade tech selloff. All 5 OPEN positions fell: ADBE -2.49% $263.82, NOW +1.36% $159.13, CRM -0.69% $248.57, REGN -1.72% $805.02, ADSK -1.08% $252.20. Total $10,541.89->$10,500.22 (-0.40%). Alpha 1.84%->1.95% (both sides fell this session, portfolio held up marginally better -- single-session noise, not a trend per Pre-commitment Rule). No stop breach, 0/5 Re-Analysis triggers. ADSK MOS improved slightly to -13.72% (from -14.96%) -- STRONG SELL/Max Consultation Rule item now **14th consecutive Review Mode session** (10-07 through 10-24) unresolved. 0 HIGH-IMPACT news items this session. Full detail below.
 
 ## 📊 Portfolio Review -- 2026-10-24 (Mode 3 -- Full Re-Mark, Oct 23 2026 Close) -- Broad Old-Economy Selloff on Oil Spike, Tech Roughly Flat
