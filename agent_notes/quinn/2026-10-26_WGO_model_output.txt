@@ -1,0 +1,164 @@
+Last month Yahoo: (2026, 10) (28.649999618530273, 28.649999618530273) | last FF month: (2026, 8) | last MOM: (2026, 8)
+
+======== 1. RISK STATS ========
+5Y monthly [(2021, 11)..(2026, 10)] n=60: CAGR -13.52% (S&P price 10.61%) | arith ann -7.64% | vol 37.29% | Sharpe -0.339 (S&P 0.408) | Sortino -0.470 | beta 1.237 corr 0.511 | down-cap 190.4% up-cap 65.8% (down months 25) | VaR95 1M hist -16.42% param -18.35% CVaR -19.04%
+10Y monthly [(2016, 11)..(2026, 10)] n=120: CAGR 2.06% (S&P price 13.62%) | arith ann 12.87% | vol 47.31% | Sharpe 0.166 (S&P 0.588) | Sortino 0.270 | beta 1.580 corr 0.512 | down-cap 199.1% up-cap 117.6% (down months 39) | VaR95 1M hist -16.86% param -21.39% CVaR -23.77%
+1Y monthly [(2025, 11)..(2026, 10)] n=12: CAGR -20.72% (S&P price 11.45%) | arith ann -15.76% | vol 38.86% | Sharpe -0.534 (S&P 0.504) | Sortino -0.671 | beta 1.072 corr 0.365 | down-cap 344.0% up-cap 27.4% (down months 7) | VaR95 1M hist -22.31% param -19.77% CVaR -22.31%
+MDD daily total-return 5Y: WGO -66.6% (peak 2023-12-19 -> trough 2026-10-19) | S&P -25.4% (2022-01-03 -> 2022-10-12) | daily vol 45.4%
+MDD daily total-return 10Y: WGO -70.2% (peak 2021-03-17 -> trough 2026-10-19) | S&P -33.9% (2020-02-19 -> 2020-03-23) | daily vol 48.9%
+Daily beta 5Y: 1.178 (n=1254) | daily param VaR95 1-day -4.72%
+MDD monthly-close total-return 2004-2026: -89.0%
+
+======== 2. FACTOR REGRESSIONS (Ken French, through 2026-08) ========
+CAPM 10Y: n=120 R2=0.282 adjR2=0.276 F=46.43 (p=0.0000) DW=2.18 BP-F=2.21 (p=0.140)
+   alpha    b=-0.0069 se=0.0110 t=-0.63 p=0.5288 | White se=0.0105 t=-0.66 p=0.5096  [annualized -8.31%/yr]
+   MKT      b=+1.5872 se=0.2329 t=+6.81 p=0.0000 | White se=0.3033 t=+5.23 p=0.0000
+Carhart 4F 10Y: n=120 R2=0.432 adjR2=0.412 F=21.85 (p=0.0000) DW=2.01 BP-F=1.09 (p=0.367)
+   alpha    b=+0.0006 se=0.0100 t=+0.06 p=0.9555 | White se=0.0095 t=+0.06 p=0.9530  [annualized 0.67%/yr]
+   MKT      b=+1.2145 se=0.2279 t=+5.33 p=0.0000 | White se=0.2618 t=+4.64 p=0.0000
+   SMB      b=+1.4634 se=0.3769 t=+3.88 p=0.0002 | White se=0.3371 t=+4.34 p=0.0000
+   HML      b=+0.5193 se=0.2579 t=+2.01 p=0.0464 | White se=0.2212 t=+2.35 p=0.0206
+   MOM      b=-0.4182 se=0.2657 t=-1.57 p=0.1183 | White se=0.1998 t=-2.09 p=0.0385
+2F MKT + d10Y(pp) 10Y: n=120 R2=0.291 adjR2=0.279 F=24.01 (p=0.0000) DW=2.15 BP-F=1.56 (p=0.215)
+   alpha    b=-0.0089 se=0.0111 t=-0.80 p=0.4243 | White se=0.0104 t=-0.85 p=0.3969  [annualized -10.64%/yr]
+   MKT      b=+1.6339 se=0.2358 t=+6.93 p=0.0000 | White se=0.3093 t=+5.28 p=0.0000
+   d10Y     b=+0.0538 se=0.0449 t=+1.20 p=0.2337 | White se=0.0439 t=+1.22 p=0.2232
+CAPM 5Y: n=60 R2=0.260 adjR2=0.247 F=20.37 (p=0.0000) DW=2.33 BP-F=0.83 (p=0.367)
+   alpha    b=-0.0179 se=0.0121 t=-1.48 p=0.1435 | White se=0.0116 t=-1.54 p=0.1283  [annualized -21.50%/yr]
+   MKT      b=+1.1707 se=0.2594 t=+4.51 p=0.0000 | White se=0.2524 t=+4.64 p=0.0000
+WGO on THO excess (industry co-movement) 10Y: n=120 R2=0.711 adjR2=0.708 F=289.78 (p=0.0000) DW=2.36 BP-F=0.48 (p=0.488)
+   alpha    b=+0.0035 se=0.0068 t=+0.52 p=0.6069 | White se=0.0067 t=+0.52 p=0.6010  [annualized 4.20%/yr]
+   THO      b=+0.8433 se=0.0495 t=+17.02 p=0.0000 | White se=0.0541 t=+15.60 p=0.0000
+
+======== 3. RV DOWNTURN EPISODES (monthly close) ========
+-- WGO
+GFC 2004-09: peak (2004, 12) adj 29.13 (px 39.06) -> trough (2009, 2) adj 3.22 (px 4.05) | TR drop -89.0% price drop -89.6% | 50 mo peak->trough | recover to peak (TR): (2017, 6) (100 mo) | +50% off trough: (2009, 4)
+2018-19 (pre-COVID): peak (2017, 12) adj 46.71 (px 55.60) -> trough (2018, 12) adj 20.53 (px 24.21) | TR drop -56.0% price drop -56.5% | 12 mo peak->trough | recover to peak (TR): (2020, 1) (13 mo) | +50% off trough: (2019, 6)
+2018-20 incl COVID: peak (2017, 12) adj 46.71 (px 55.60) -> trough (2018, 12) adj 20.53 (px 24.21) | TR drop -56.0% price drop -56.5% | 12 mo peak->trough | recover to peak (TR): (2020, 1) (13 mo) | +50% off trough: (2019, 6)
+2022-24: peak (2021, 4) adj 69.64 (px 79.95) -> trough (2022, 6) adj 42.88 (px 48.56) | TR drop -38.4% price drop -39.3% | 14 mo peak->trough | recover to peak (TR): None (not yet mo) | +50% off trough: (2023, 12)
+Current (2021 peak -> to date): peak (2021, 4) adj 69.64 (px 79.95) -> trough (2026, 9) adj 26.37 (px 26.37) | TR drop -62.1% price drop -67.0% | 65 mo peak->trough | recover to peak (TR): None (not yet mo) | +50% off trough: None
+-- THO
+GFC 2004-09: peak (2006, 3) adj 32.41 (px 53.36) -> trough (2009, 1) adj 7.09 (px 10.58) | TR drop -78.1% price drop -80.2% | 34 mo peak->trough | recover to peak (TR): (2013, 6) (53 mo) | +50% off trough: (2009, 4)
+2018-19 (pre-COVID): peak (2017, 11) adj 127.88 (px 153.55) -> trough (2019, 8) adj 39.63 (px 45.91) | TR drop -69.0% price drop -70.1% | 21 mo peak->trough | recover to peak (TR): None (not yet mo) | +50% off trough: (2019, 12)
+2018-20 incl COVID: peak (2017, 11) adj 127.88 (px 153.55) -> trough (2020, 3) adj 36.85 (px 42.18) | TR drop -71.2% price drop -72.5% | 28 mo peak->trough | recover to peak (TR): None (not yet mo) | +50% off trough: (2020, 4)
+2022-24: peak (2021, 4) adj 126.83 (px 141.59) -> trough (2022, 9) adj 64.14 (px 69.98) | TR drop -49.4% price drop -50.6% | 17 mo peak->trough | recover to peak (TR): None (not yet mo) | +50% off trough: (2023, 6)
+Current (2021 peak -> to date): peak (2021, 4) adj 126.83 (px 141.59) -> trough (2022, 9) adj 64.14 (px 69.98) | TR drop -49.4% price drop -50.6% | 17 mo peak->trough | recover to peak (TR): None (not yet mo) | +50% off trough: (2023, 6)
+-- S&P
+GFC 2004-09: peak (2007, 10) adj 1549.38 (px 1549.38) -> trough (2009, 2) adj 735.09 (px 735.09) | TR drop -52.6% price drop -52.6% | 16 mo peak->trough | recover to peak (TR): (2013, 3) (49 mo) | +50% off trough: (2009, 12)
+2018-19 (pre-COVID): peak (2018, 9) adj 2913.98 (px 2913.98) -> trough (2018, 12) adj 2506.85 (px 2506.85) | TR drop -14.0% price drop -14.0% | 3 mo peak->trough | recover to peak (TR): (2019, 4) (4 mo) | +50% off trough: (2021, 2)
+2018-20 incl COVID: peak (2018, 9) adj 2913.98 (px 2913.98) -> trough (2018, 12) adj 2506.85 (px 2506.85) | TR drop -14.0% price drop -14.0% | 3 mo peak->trough | recover to peak (TR): (2019, 4) (4 mo) | +50% off trough: (2021, 2)
+2022-24: peak (2021, 12) adj 4766.18 (px 4766.18) -> trough (2022, 9) adj 3585.62 (px 3585.62) | TR drop -24.8% price drop -24.8% | 9 mo peak->trough | recover to peak (TR): (2023, 12) (15 mo) | +50% off trough: (2024, 6)
+Current (2021 peak -> to date): peak (2026, 8) adj 7686.14 (px 7686.14) -> trough (2026, 10) adj 7623.68 (px 7623.68) | TR drop -0.8% price drop -0.8% | 2 mo peak->trough | recover to peak (TR): None (not yet mo) | +50% off trough: None
+Current drawdown from (2021, 4) TR peak: -58.9% | price vs 2021 price-peak -64.2%
+
+======== 3b. TROUGH-ZONE TEST: P/B monthly 2012-2026, EV/EBITDA & EV/Sales at FYE ========
+P/B monthly n=178: min 0.60 p10 0.91 p25 1.44 median 2.35 p75 2.80 max 5.06 | current 0.659 = percentile 1.1%
+   P/B (2012, 1): 2.44
+   P/B (2016, 1): 1.95
+   P/B (2018, 12): 1.45
+   P/B (2019, 1): 1.65
+   P/B (2020, 3): 1.19
+   P/B (2022, 6): 1.28
+   P/B (2022, 9): 1.34
+   P/B (2023, 10): 1.27
+   P/B (2024, 10): 1.27
+   P/B (2025, 4): 0.73
+   P/B (2025, 5): 0.78
+   P/B (2026, 4): 0.75
+   Lowest 6 P/B months: [((2026, 9), 0.6), ((2026, 10), 0.66), ((2025, 6), 0.67), ((2026, 5), 0.68), ((2025, 7), 0.69), ((2026, 8), 0.69)]
+FYE  price  mcap   debt  cash   EV     Rev    EBIT   D&A  EBITDA EV/EBITDA EV/Sales EBITmargin
+FY2013  22.27    621      0    64    557     803   44.4   4.8   49.2    11.32x    0.69x   5.53%
+FY2014  24.73    667      0    58    609     945   63.9   4.0   67.9     8.97x    0.64x   6.76%
+FY2015  20.48    553      0    70    482     977   59.4   4.5   63.9     7.54x    0.49x   6.08%
+FY2016  24.07    648      0    86    562     975   65.7   5.7   71.5     7.86x    0.58x   6.74%
+FY2017  36.15   1144    275    36   1382    1547  125.1  32.0  157.1     8.80x    0.89x   8.09%
+FY2018  36.95   1169    291     2   1458    2017  160.4  19.2  179.6     8.12x    0.72x   7.95%
+FY2019  32.02   1013    254    37   1230    1986  155.3  23.3  178.6     6.89x    0.62x   7.82%
+FY2020  53.98   1822    513   293   2042    2356  113.8  38.1  151.9    13.45x    0.87x   4.83%
+FY2021  69.62   2329    529   435   2423    3630  407.4  32.6  440.0     5.51x    0.67x  11.22%
+FY2022  57.58   1757    546   282   2020    4958  583.5  53.7  637.2     3.17x    0.41x  11.77%
+FY2023  64.85   1938    592   310   2221    3491  300.7  46.9  347.6     6.39x    0.64x   8.61%
+FY2024  59.66   1725    637   331   2031    2974  100.2  58.6  158.8    12.79x    0.68x   3.37%
+FY2025  35.98   1015    540   174   1381    2798   57.2  60.6  117.8    11.73x    0.49x   2.04%
+FY2026  30.09    856    443   181   1118    2704   66.2  60.0  126.2     8.86x    0.41x   2.45%
+Current EV 1089.8: EV/TTM adj EBITDA(125.0) 8.72x | EV/TTM GAAP EBITDA(126.2) 8.64x | EV/mid-cycle EBITDA (6.92%+1.49% x FY27 rev 2725 = 229.2) 4.76x | EV/Sales 0.403x
+FYE EV/EBITDA FY13-26 median 8.80x range 3.17-13.45 | EV/Sales median 0.644 min 0.408 | current EV/Sales percentile 0% of FYE points
+EV/normalized EBITDA (rev x 8.41%) history: median 7.66x min 4.85x | current 4.79x
+
+======== 4. INDEPENDENT FCFF DCF, P-W EV (Quinn own assumptions) ========
+FY27 GAAP EBIT margin implied by guide EPS: low 2.04% mid 2.39% high 2.73% | NWC% 14.21%
+RVIA avg 2018-25 ex-2021-22 (2022 not verified): 384.9K | incl 2021: 415.6K
+Litigation: base (50% x [1% x 55,887 x $46,275 + $5M legal]) = $15.4M | bear (3% x 55,887 x $46,275 + $15M) = $92.6M
+Margin-volume OLS all FY19-26: margin = -8.51% + 0.0370pp x units(K) | R2 0.784 t(units) 4.67 p 0.0034 n=8 | fitted @285K 2.05% @330K 3.72% @385K 5.76% @410K 6.68% | units for 6.92%: 416K
+Margin-volume OLS ex-COVID FY20: margin = -8.43% + 0.0377pp x units(K) | R2 0.840 t(units) 5.13 p 0.0037 n=7 | fitted @285K 2.31% @330K 4.00% @385K 6.07% @410K 7.01% | units for 6.92%: 407K
+Bear terminal margin = fit@330K 4.00% + 0.5pp savings = 4.50% | Base check: fit@385K 6.07% + 1.0pp savings = 7.07% vs locked 6.92%
+-- bull: FY  CYunits  Rev   EBIT%  EBIT  NOPAT  Reinv  FCFF  g
+   FY2027  295.0  2788.4  2.73%   76.1   59.1    3.9   55.2  3.12%
+   FY2028  352.5  3247.8  4.82%  156.7  121.8   67.2   54.5 16.48%
+   FY2029  410.0  3903.3  6.92%  270.1  209.9   95.5  114.4 20.18%
+   FY2030  410.0  4197.1  6.92%  290.4  225.7  141.5   84.1  7.53%
+   FY2031  410.0  4302.0  6.92%  297.7  231.3   48.2  183.1  2.50%
+   FY2032  410.0  4409.5  6.92%  305.1  237.1   49.4  187.7  2.50%
+   FY2033  410.0  4519.8  6.92%  312.8  243.0   50.6  192.4  2.50%
+   FY2034  410.0  4632.8  6.92%  320.6  249.1   51.9  197.2  2.50%
+   FY2035  410.0  4748.6  6.92%  328.6  255.3   53.2  202.1  2.50%
+   FY2036  410.0  4867.3  6.92%  336.8  261.7   54.5  207.2  2.50%
+   PV FCFF 914.0 | TV 3925.4 PV(TV) 1833.4 = 66.7% of EV | EV 2747.4 | -ND 274.9 +nonop 22.8 -PV(lit 0.0) 0.0 | Equity 2495.3 | FV0 $87.25
+   FV5: EV5 3469.5 ND5 61.9 Eq5 3430.3 FV5 $119.94 | consistency Eq0*(1+CoE)^5 - divs = 3688.0 -> gap -7.0% | 5y return from P0 33.16%/yr (+div yld ~5%)
+-- base: FY  CYunits  Rev   EBIT%  EBIT  NOPAT  Reinv  FCFF  g
+   FY2027  285.0  2725.0  2.39%   65.1   50.6   -4.9   55.5  0.78%
+   FY2028  318.3  2993.4  3.90%  116.7   90.7   39.9   50.8  9.85%
+   FY2029  351.7  3401.1  5.41%  184.0  143.0   60.0   83.0 13.62%
+   FY2030  385.0  3827.4  6.92%  264.9  205.8   62.8  142.9 12.53%
+   FY2031  385.0  4039.7  6.92%  279.5  217.2  121.6   95.6  5.55%
+   FY2032  385.0  4140.7  6.92%  286.5  222.6   56.2  166.5  2.50%
+   FY2033  385.0  4244.2  6.92%  293.7  228.2   57.6  170.6  2.50%
+   FY2034  385.0  4350.3  6.92%  301.0  233.9   59.0  174.9  2.50%
+   FY2035  385.0  4459.0  6.92%  308.6  239.8   60.5  179.3  2.50%
+   FY2036  385.0  4570.5  6.92%  316.3  245.7   62.0  183.8  2.50%
+   PV FCFF 808.7 | TV 3481.5 PV(TV) 1626.1 = 66.8% of EV | EV 2434.8 | -ND 274.9 +nonop 22.8 -PV(lit 15.4) 13.3 | Equity 2169.4 | FV0 $75.85
+   FV5: EV5 3077.1 ND5 144.2 Eq5 2955.7 FV5 $103.35 | consistency Eq0*(1+CoE)^5 - divs = 3172.0 -> gap -6.8% | 5y return from P0 29.25%/yr (+div yld ~5%)
+-- bear: FY  CYunits  Rev   EBIT%  EBIT  NOPAT  Reinv  FCFF  g
+   FY2027  275.0  2645.8  2.04%   54.0   42.0  -15.9   57.9 -2.15%
+   FY2028  275.0  2666.4  2.04%   54.4   42.3    4.5   37.8  0.78%
+   FY2029  288.8  2810.4  2.66%   74.7   58.0   22.1   35.9  5.40%
+   FY2030  302.5  3005.3  3.27%   98.3   76.4   29.5   46.9  6.94%
+   FY2031  316.2  3206.9  3.89%  124.6   96.8   30.6   66.3  6.71%
+   FY2032  330.0  3415.3  4.50%  153.7  119.5   31.7   87.8  6.50%
+   FY2033  330.0  3532.7  4.50%  159.0  123.6   53.7   69.9  3.44%
+   FY2034  330.0  3603.3  4.50%  162.2  126.0   31.9   94.2  2.00%
+   FY2035  330.0  3675.4  4.50%  165.5  128.6   32.5   96.1  2.00%
+   FY2036  330.0  3748.9  4.50%  168.8  131.1   33.2   98.0  2.00%
+   PV FCFF 436.6 | TV 1699.2 PV(TV) 793.7 = 64.5% of EV | EV 1230.2 | -ND 274.9 +nonop 22.8 -PV(lit 92.6) 79.5 | Equity 898.6 | FV0 $31.42
+   FV5: EV5 1515.4 ND5 427.0 Eq5 1111.3 FV5 $38.86 | consistency Eq0*(1+CoE)^5 - divs = 1159.5 -> gap -4.2% | 5y return from P0 6.28%/yr (+div yld ~5%)
+REVISION LOG: bear v1 (first run, 350K / 5.77% P10-alt-a) FV0 $45.16 FV5 $58.95 -> bear v2 (330K / regression 4.50%) FV0 $31.42
+   P-W v1 $68.93
+P-W FV0 $64.80 (MOS vs $28.65 +126.2%) | P-W FV5 $87.32 -> 24.97%/yr price + ~5% div yield
+Scenario dispersion sd $22.27; P(FV<P0) = 0.00
+No-growth value: current NOPAT 51.4/WACC -> EV 650 -> $13.92/sh | mid-cycle NOPAT 146.5/WACC -> EV 1852 -> $55.95/sh
+Market-implied (base path): mid-cycle margin 3.13% at WACC 7.91% | WACC 13.52% at margin 6.92%
+Bear probability that makes P-W = P0 (bull:base kept 2:5): 100.0%
+
+======== 5. SENSITIVITY MATRICES (base volume path) ========
+WACC \ mid-cycle EBIT margin: 5.00% 6.00% 6.92% 8.00% 9.00%
+   7.00%: $  65.67 $  80.88 $  94.87 $ 111.29 $ 126.49
+   7.91%: $  51.96 $  64.40 $  75.85 $  89.30 $ 101.74
+   9.00%: $  40.64 $  50.81 $  60.16 $  71.14 $  81.30
+  10.00%: $  33.20 $  41.86 $  49.83 $  59.18 $  67.84
+  11.00%: $  27.54 $  35.06 $  41.97 $  50.09 $  57.60
+Year mid-cycle reached (trough duration) \ margin: 5.00% 6.00% 6.92% 8.00% 9.00%
+  FY2029 (trough 2y): $  52.20 $  64.77 $  76.33 $  89.90 $ 102.46
+  FY2030 (trough 3y): $  51.96 $  64.40 $  75.85 $  89.30 $ 101.74
+  FY2031 (trough 4y): $  50.16 $  61.99 $  72.86 $  85.63 $  97.45
+  FY2032 (trough 5y): $  48.44 $  59.66 $  70.00 $  82.12 $  93.35
+  FY2033 (trough 6y): $  46.79 $  57.46 $  67.27 $  78.79 $  89.46
+TV% base: 66.8 | RONIC alt (base): =WACC 68.85 | 12% 80.68
+Base with zero litigation: 76.32 | base with bear litigation: 73.54
+Base price/mix 2.0%: 74.25 | Base mid units 350K: 69.9 | Base mid units 425K: 82.65
+Base WACC +25bp (Fed hike): 72.03
+WACC alt (10Y OLS beta 1.5872): CoE 11.67% WACC 9.22% -> base FV $57.60 | P-W FV $48.88
+WACC alt (5Y OLS beta 1.1707): 8.10%
+SWS discount 12.5% (stale-rate): base $33.20 | P-W $27.60
+Market-implied plateau industry units (regression margin, no savings, WACC 7.91%): 317K -> margin 3.51%
+Regression-consistent base (385K, fit+1.0pp): 77.76 | 385K fit no savings: 65.32 | 330K fit +0.5pp: 40.33 | 300K fit: 21.16
+P-W FV5 components: {'bull': 119.94, 'base': 103.35, 'bear': 38.86} | cons gaps {'bull': -7.0, 'base': -6.8, 'bear': -4.2}
