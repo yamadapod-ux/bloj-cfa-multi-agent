@@ -1046,3 +1046,22 @@
 - **Data:** SEC EDGAR XBRL companyfacts plus 8-K ex-99.1. Prices from 2 sources (Yahoo + Nasdaq.com, 2026-10-23 close). Full tables: `portfolio/watchlist.md` § Scout History 2026-10-24.
 
 *Max + Charlie — 2026-10-24 | RV & Marine sector scout — 0 fast-track, 1 learning-queue (WGO), 3 QUICK-SCREEN SKIP; no trade.*
+
+---
+
+## Ad-hoc Fresh-Sector Scout — IT Distribution/AIDC · Specialty Retail (DKS/BOOT/BURL/OLLI) · Payments (FISV/EEFT) — 2026-10-27
+
+| Ticker | Action | Gate / Rationale |
+|--------|--------|------------------|
+| TRMB | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | TTM FCF−SBC $617.8M (SEC 10-Q 2026-07-03). Naive FV P/FV 2.28× @8% band / 2.85× @9.6% CAPM. |
+| BURL | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | TTM NOPAT $761M (SEC 10-Q 2026-08-01). P/FV 1.83× @8% / 2.37× @10.0%. |
+| OLLI | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | TTM NOPAT $260M, net cash $119M. P/FV 1.84× @10% mid-cap band (1.38× on unreliable low-β CAPM → D fail anyway). |
+| BOOT | `QUICK-SCREEN SKIP` (Tier 1 check 2a/2b) | Growth bucket (FY26 rev +17.9%). TTM NOPAT $239M. P/FV 1.37× @10% / 1.53× @11.3% → Growth check 2b (>0.95×) and check 2a on CAPM. |
+| DKS | `QUICK-SCREEN SKIP` (Tier 1 check 2b) | 5Y-avg NOPAT $1,117M, net debt $993M. P/FV 1.01× @8% band (±10%) / 1.12× @8.8% CAPM (D fail). TTM FCF only $239M after Foot Locker capex. |
+| FISV | `QUICK-SCREEN SKIP` (Tier 1.5 Reject — Filter E 1/3) | Tier 1 pass. FCF−SBC yield 13.8%. C borderline (GAAP ROIC 10.0→8.7→6.8%). D 0.67–0.94× over WACC 6.6–8% (leveraged stub). E3 ❌ active securities class action (*Cypanga v. Fiserv*) plus a 2nd guidance cut (organic −1% to 0%). |
+| EEFT | `QUICK-SCREEN SKIP` (Tier 1.5 Reject — C/D/E) | Tier 1 pass (net-cash convention). ROIC 9.0% TTM < 10% band WACC and falling. D 1.18× @10%. E 0/3 (mgmt-confirmed US→Mexico remittance volume decline). |
+
+- **Regime:** RISK-ON 3/4 (Atlas 2026-10-26). Scout-only CIO task; no trade.
+- **Data:** SEC EDGAR XBRL companyfacts (10-K + latest 10-Q). Prices from 2 sources (Yahoo + Nasdaq.com, 2026-10-26 close, exact match). 9 IT-distribution names failed Filter A (near highs). Full tables: `portfolio/watchlist.md` § Scout History 2026-10-27.
+
+*Max + Charlie — 2026-10-27 | Fresh-sector scout — 0 fast-track, 0 learning-queue, 7 QUICK-SCREEN SKIP; no trade.*
