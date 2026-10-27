@@ -96,11 +96,11 @@ Risk/Reward ที่แท้จริง: [ประเมิน]
 
 ## น้ำหนักใน Blended FV (IPS 2026-05-15)
 
-Bear มี weight **25%** ในการคำนวณ Blended FV (ลดจาก 40% เดิม)
+Bear มี weight **30%** ในการคำนวณ Blended FV (ตรงกับ CLAUDE.md Return-side locked rule — ล็อกอยู่ เปลี่ยนได้เฉพาะผ่าน rolling-8Q-alpha process)
 ```
-Blended FV = Emma×0.40 + Quinn×0.35 + Bear×0.25
+Blended FV = Emma×0.40 + Quinn×0.30 + Bear×0.30
 ```
-เหตุผล: Bear weight 40% สร้าง HOLD bias เกินจำเป็น ทำให้ทีมไม่ deploy เงิน
+เหตุผล: 40/30/30 คือค่าที่ใช้จริงในทุก decision ที่บันทึกใน portfolio/decisions.md (ตรวจสอบแล้ว 2026-10-26) — เดิมไฟล์นี้เคยเขียนผิดเป็น 40/35/25 ซึ่งไม่ตรงกับของจริงที่ใช้มาตลอด
 **การลด weight ไม่ได้แปลว่า challenge น้อยลง** — Bear ยังต้อง challenge เต็มที่ แต่ไม่ dominate final FV
 
 ## กฎการทำงาน

@@ -794,7 +794,7 @@ Atlas จัดประเภทด้วย GICS ก่อน แล้วใ�
 ### MOS Threshold แยกตาม Bucket (บังคับ — ใช้แทนกฎ MOS 20% เดิม)
 | Bucket | เกณฑ์ BUY | เหตุผล |
 |--------|-----------|--------|
-| **Value bucket** (~40%) | MOS ≥ 15% + Conviction ≥ 6 | DCF-based, mature companies |
+| **Value bucket** (~40%) | MOS ≥ 15% + Conviction ≥ 7.0 | DCF-based, mature companies |
 | **Growth bucket** (~60%) | Conviction ≥ 6.5 + Revenue Growth >20% + **MOS แบบ Growth** (ดูด้านล่าง) | Multiple compression risk โหดกว่า earnings risk — ต้องมี MOS เสมอ แค่เปลี่ยนวิธีวัด |
 
 **Growth MOS — วัด 2 วิธี (ต้องผ่านอย่างน้อย 1 วิธี):**
