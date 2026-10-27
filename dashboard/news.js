@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-22 07:00";
+const NEWS_LAST_UPDATED = "2026-10-27 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-27 (Atlas scan 2026-10-27, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-26", category: "ANALYST",
+    headline: "🟢 TSLA Tesla +5.6% to ~$393 — Barclays double-upgrade to Overweight, PT $370→$450 (+21.6%), SpaceX-merger speculation",
+    summary: "Tesla shares jumped roughly 5.6-6.1% on 2026-10-26 after Barclays analyst Dan Levy upgraded the stock to Overweight from Equal Weight and raised his price target 21.6% to $450 from $370 — exceeding the >15% HIGH-IMPACT PT-change threshold. Levy's thesis centers on an operational turnaround (deliveries projected to return to growth after two years of declines, Full Self-Driving adoption now above 75% of North American deliveries vs ~55% in Q2, Shanghai export strength) plus a near-sold-out 2027 energy-storage order book on data-center demand. The note also flagged market speculation about a possible Tesla-SpaceX combination — separately, Yorkville analyst Dan Ives estimated an 80-90% probability of such a deal completing before end-2027, with a combined entity potentially valued above $500/share — though no formal transaction has been announced by either company. UBS ($425), Piper Sandler ($475) and Canaccord ($442) had already raised targets after Tesla's Oct 21 Q3 report (adjusted EPS $0.48-0.50 beat, revenue roughly in-line, operating income/FCF beat sharply — already logged 2026-10-21/22). นัยพอร์ต: TSLA อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่ PT change +21.6% เกินเกณฑ์ >15% HIGH-IMPACT บน Big 10 name.",
+    impact: "POSITIVE", tickers: ["TSLA"],
+    url: "https://stockstory.org/us/stocks/nasdaq/tsla/news/why-up-down/why-tesla-tsla-stock-is-trading-up-today-14",
+  },
+  {
+    date: "2026-10-24", category: "DEAL",
+    headline: "🟡 META Meta announces plan to raise up to $95B via equity sale + creates new Class C non-voting stock (effective 2-for-1 split)",
+    summary: "Following its Oct 21 2026 Q3 earnings report (revenue beat, GAAP EPS miss on a ~$9.9B legal charge — already logged 2026-10-22), Meta disclosed plans in the following days to raise up to $95 billion through a stock sale to help fund its AI infrastructure build-out, raising dilution/funding-need concerns among investors per Yahoo Finance coverage. Separately, Meta's board approved establishing a new class of non-voting Class C common stock, to be distributed via a one-time stock dividend to existing Class A/B holders (one Class C share per share held) once an amended certificate of incorporation takes effect — economically equivalent to a 2-for-1 stock split for Class A shares, though voting power is unchanged. Meta also entered a 'Founder Alignment Agreement' with Mark Zuckerberg governing his future sales of the new Class C shares. Record/payment dates for the stock dividend were not yet set as of this scan; full details will appear in a forthcoming Form 8-K and information statement. Free cash flow for Q3 came in negative (-$2.12B) for the first time in years, driven by a $33.9B capex quarter, underscoring the funding need behind the raise. นัยพอร์ต: META อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น material corporate-finance/capital-structure event (large equity raise + new share class) บน Big 10 name ตามเกณฑ์ HIGH-IMPACT.",
+    impact: "MIXED", tickers: ["META"],
+    url: "https://finance.yahoo.com/video/meta-looks-raise-95-billion-170442796.html",
+  },
 
   // ── 2026-10-22 (Atlas scan 2026-10-22, Portfolio Review Mode 3 cron cycle) ──
   {

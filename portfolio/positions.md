@@ -1,5 +1,53 @@
 # Simulated Portfolio — บลจ. CFA
 
+> **🟢 UPDATE 2026-10-27 (Portfolio Review Mode 3):** Full re-mark to Oct 26 2026 close (Mon), first new trading day since Oct 23 (Oct 24 Sat / Oct 25 Sun non-trading). AI-optimism rally on Anthropic's public IPO S-1 filing ($16.3B H1'26 revenue vs $4.6B all of 2025) lifted chips/tech (SMH +2.74%, NVDA +2.39%), ending a 2-week S&P losing streak — but enterprise software did not participate. ADBE -1.97% $258.62, NOW -0.49% $158.18, CRM -0.39% $247.61, REGN +0.33% $807.67, ADSK -1.09% $249.45. Total $10,501.01→$10,472.47 (-0.27%). Alpha 1.96%→0.97% (narrowed — S&P's AI-driven rally outpaced the book). No stop breach, 0/5 Re-Analysis triggers. ADSK MOS improved slightly to -12.47% (from -13.72%) — STRONG SELL/Max Consultation Rule item now **16th consecutive Review Mode session** (10-07 through 10-27) unresolved. 2 HIGH-IMPACT news items (both Big 10, no OPEN position): TSLA Barclays upgrade + PT +21.6% to $450 with SpaceX-merger speculation; META $95B equity-raise + new Class C non-voting share class disclosed post-earnings. Full detail below.
+
+## 📊 Portfolio Review — 2026-10-27 (Mode 3 — Full Re-Mark, Oct 26 2026 Close) — AI-Optimism Rally on Anthropic IPO Filing, Software Lags
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, now **32 days old** — increasingly overdue, especially with the Oct 28 FOMC decision landing tomorrow; Atlas should prioritize a fresh re-call next session). First new US trading-day close since Oct 23 (Oct 24 Sat / Oct 25 Sun non-trading). All 5 OPEN positions **re-priced** to Oct 26 2026 close — ADBE 2-source exact match (keenable + stockanalysis.com, both $258.62), NOW 3-source exact match (stockanalysis.com + barchart + financialcontent, all $158.18), CRM 3-source exact match (Yahoo Finance + exa.ai + nexqual, all $247.61), REGN 5-source exact match (exa.ai + Yahoo Finance + eoddata + stockscan + vcpscanner, all $807.67), ADSK 3-source exact match (Yahoo Finance + stockanalysis.com + Investing.com, all $249.45). Anthropic's public IPO S-1 filing (showing $16.3B revenue in H1 2026 vs $4.6B all of 2025) sparked a broad AI-optimism rally in chips/tech (SMH +2.74%, NVDA +2.39%, MSFT +1.54%), ending a 2-week S&P losing streak with the S&P +0.70% to a new session high — but enterprise software/healthcare (our book) largely did not participate, with 4 of 5 OPEN positions falling modestly. **No trades this session.**
+
+| Ticker | Price (Oct 26 close) | Change vs Oct 23 | Return % | MOS % | StopDist % | Source |
+|--------|------------------------|--------|----------|-------|------------|--------|
+| ADBE | $258.62 | -1.97% | +4.69% | +29.91% | 28.47% | keenable + stockanalysis.com, exact match (2-source) |
+| NOW | $158.18 | -0.49% | +76.79% | -25.89% 🟠 | 41.21% | stockanalysis.com + barchart + financialcontent, exact match (3-source) |
+| CRM | $247.61 | -0.39% | +36.80% | +28.39% | 41.53% | Yahoo Finance + exa.ai + nexqual, exact match (3-source) |
+| REGN | $807.67 | +0.33% | +34.16% | +9.15% | 40.33% | exa.ai + Yahoo Finance + eoddata + stockscan + vcpscanner, exact match (5-source) |
+| ADSK | $249.45 | -1.09% | +25.72% | -12.47% 🔴🔴 | 36.37% | Yahoo Finance + stockanalysis.com + Investing.com, exact match (3-source) |
+
+S&P 500 rose +0.70% to **$7,676.77** (AP News + CNBC + Reuters, exact match, 3-source — an AI-optimism rally on Anthropic's public IPO S-1 filing, chips/tech leading, ending a 2-week losing streak). Total Value $10,501.01 → **$10,472.47** (-0.27%). Cash $7,597.50 → **$7,599.08** (+$1.58, Cash Yield Rule accrual, 2 days 10-25→10-27). Total Return 5.01% → **4.72%**. sp500Return 3.05%→3.76%. Alpha 1.96% → **0.97%** (narrowed — the S&P's AI-driven rally outpaced the book's flat/mixed session; enterprise software did not join the rally).
+
+**Stop Loss check:** No breaches. ADBE narrowest stopDist 28.47% (still comfortable, well above the 10% WATCH threshold).
+
+### 🔴🔴 ADSK — MOS improves slightly on the price pullback, Max Consultation Rule item now 16 sessions overdue (no new action)
+
+MOS -13.72% → **-12.47%** — price fell -1.09% to $249.45 (no idiosyncratic ADSK catalyst found; the broad AI-optimism rally concentrated in chips/hardware, not enterprise software). FV unchanged ($221.79, fvVerifiedDate 2026-09-12, 45 days old — still fresh, not a Re-Analysis Trigger issue). This continues the carried item first flagged 2026-10-07 — now **16 consecutive Review Mode sessions (10-07 through 10-27)** without an actual Max×Charlie consultation taking place. Thesis otherwise intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation, stopDist 36.37% comfortable (not a stop-loss issue), T2/T3 staged adds remain paused pending the Q3 FY27 current-RPO print (Nov 2026). **This process-discipline gap has now reached 16 sessions and should be closed at the next real opportunity.**
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-11 | FV 46d old, MOS +29.91% (positive) — no fire | No | Under 30% | HSBC PT $267 vs internal FV $369 gap carried, not re-verified | 0/5 (carried watch item) |
+| NOW | No new earnings; Q3 due Oct 28 (tomorrow) | FV 64d old, MOS -25.89% (negative) but 64d << 90d — no fire | No | Under 30% | Bernstein Street-high PT $266 vs FV $125.65 gap carried, not re-verified | 0/5 (carried watch item) |
+| CRM | No new earnings | FV 46d old, MOS +28.39% — no fire | No | Under 30% | BofA PT $285 vs internal FV $345.77 gap carried, not re-verified | 0/5 |
+| REGN | No new earnings; Q3 due Oct 30 | FV 46d old, MOS +9.15% (positive) — no fire | No | Under 30% | TD Cowen PT $980 / UBS $978 vs internal FV $889 gap, not material | 0/5 |
+| ADSK | No new earnings; next current-RPO print Nov 2026 (Q3 FY27) | FV 45d old (<<90d), MOS -12.47% negative but age well under 90d threshold — formal Trigger #2 does NOT fire on age alone | No | Under 30% | Not re-checked | 0/5 (but see STRONG SELL/Max Consultation flag above, carried from 10-07, now 16 sessions) |
+
+**Result: 0/5 formal Re-Analysis triggers fire on any OPEN position.** ADSK's STRONG SELL / Max Consultation Rule item remains outside the formal Re-Analysis Trigger Rule (FV is fresh, 45 days old) but is now the portfolio's most overdue process-discipline item, 16 sessions running.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 is now **32 days old** — increasingly overdue, especially with the FOMC decision landing 2026-10-28 (tomorrow). Atlas should prioritize a fresh re-call next session.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-22 07:00) — **2 NEW HIGH-IMPACT items found and written to `dashboard/news.js`:** (1) TSLA Barclays double-upgrade to Overweight, PT $370→$450 (+21.6%, exceeds >15% threshold), with SpaceX-merger speculation (Big 10, no OPEN position); (2) META disclosed plans to raise up to $95B via equity sale to fund AI infrastructure build-out + board approved a new Class C non-voting share class (effective 2-for-1 split for Class A), following its Oct 21 Q3 report already logged 2026-10-22 (Big 10, no OPEN position). Other coverage this session assessed ROUTINE: AAPL M&A-head management change and OpenAI trade-secrets litigation developments (both predate this scan window, already stale), NVDA routine analyst PT reiterations (Morgan Stanley maintained $300, no change), LLY/BRK.B market-cap-crossover commentary (predates window), upcoming GOOGL/MSFT/AMZN earnings Oct 28-29 and the Oct 28 FOMC decision (calendar context, not events yet). No earnings, confirmed M&A, management change, SEC 8-K, or Bear-Flip/Thesis-Invalidation-level event found for any of the 5 OPEN tickers this session.
+
+### 💡 Cash Yield Rule — routine accrual (2 days since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,597.50 accrues at the money-market/T-bill proxy rate (3.8%) for 2 days (10-25→10-27): $7,597.50 × 3.8%/365 × 2 = **+$1.58**. Cash $7,597.50→**$7,599.08**. Total $10,501.01→**$10,472.47** (-0.27%). Total Return 5.01%→**4.72%**. sp500Return 3.05%→3.76%. Alpha 1.96%→**0.97%**.
+
+### Max's Take
+
+วันนี้ตลาดเจอ AI-optimism rally จากข่าว Anthropic ยื่น IPO S-1 เปิดเผยรายได้ H1 2026 ที่ $16.3B (เทียบ $4.6B ทั้งปี 2025) ทำให้หุ้นกลุ่ม chips/tech คึกคัก (SMH +2.74%, NVDA +2.39%) หยุดการร่วงต่อเนื่อง 2 สัปดาห์ของ S&P — แต่หุ้น enterprise software ที่พอร์ตเราถืออยู่ไม่ได้ไปด้วย 4 ใน 5 positions ลงเล็กน้อย (ADBE -1.97%, NOW -0.49%, CRM -0.39%, ADSK -1.09%) มี REGN ตัวเดียวที่ขึ้นเล็กน้อย +0.33% ผลคือ **alpha แคบลงเป็น +0.97%** (จาก +1.96%) เพราะ S&P วิ่งเร็วกว่าพอร์ต ไม่มี stop breach ไม่มี Re-Analysis trigger (0/5). **ADSK ยังเป็นตัวที่ต้องจัดการเร่งด่วนที่สุดต่อเนื่อง** — MOS ดีขึ้นเล็กน้อยเป็น -12.47% (จาก -13.72%) จากราคาที่ย่อลง แต่ยังอยู่ใน STRONG SELL territory ชัดเจน — นี่คือ Review Mode ครั้งที่ 16 ติดต่อกัน (10-07 ถึง 10-27) ที่ยังไม่ได้ consult จริงกับ Charlie — thesis ยัง intact (0 Bear Flip/Invalidation) แต่ระยะเวลาค้างยาวขึ้นต่อเนื่อง ควรปิด gap นี้โดยเร็ว. ข่าวเด่นวันนี้มี 2 รายการ (ทั้งคู่อยู่ Big 10 ไม่มี OPEN position): TSLA ได้ Barclays upgrade + PT ขึ้น +21.6% เป็น $450 พร้อมข่าวลือ SpaceX merger, และ META ประกาศแผนระดมทุน $95B ผ่าน equity sale เพื่อ AI build-out พร้อมสร้าง Class C share class ใหม่ (effectively 2-for-1 split). เพิ่มเติม: Atlas regime re-call อายุครบ 32 วันแล้ว (ครั้งล่าสุด 2026-09-25) — เกินเวลาที่ควร re-call มากขึ้นเรื่อยๆ โดยเฉพาะก่อน FOMC วันพรุ่งนี้ (28 ต.ค.) ควร re-call โดยเร็วที่สุด.
+
+---
+
 > **🟢 UPDATE 2026-10-25 (Portfolio Review Mode 3):** Weekend, no new trading day (Oct 24 Sat / Oct 25 Sun non-trading). Oct 23 2026 close remains latest print for all 5 OPEN positions and S&P 500, re-verified UNCHANGED via fresh WebSearch (econotimes + moneycontrol + marketscreener + freemalaysiatoday all converging on S&P 500 $7,623.68-7,623.86, consistent with dashboard's $7,624.26 avg; Perplexity Finance live quotes confirm ADBE $263.82 and ADSK $252.20 both still showing as the Oct 23 close with "Market Closed" badge for Oct 24). Only cash accrual moves totals this session.
 
 ## 📊 Portfolio Review — 2026-10-25 (Mode 3 — Weekend, No New Trading Day, Oct 23 2026 Close Carried Forward)
