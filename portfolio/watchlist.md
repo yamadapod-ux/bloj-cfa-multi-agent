@@ -378,6 +378,11 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-10-28 (Mode 1 Step 0 — ad-hoc CIO-directed Logistics/Trucking/Rail Equipment scout):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
+- **Rule #1 (stale):** every row got a target date in yesterday's prune (2026-10-27): IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI → 11-07, ALLY/BYD → 11-07, MMS 11-20, CRI 11-06, NBIX 11-03, WGO 12-19. No row is both >60 days without an update **and** missing a target date. The oldest scout date is 08-29, which is 60 days old, not over 60.
+- **Rule #2/#3:** no new position, AVOID or SKIP since 10-27 (`dashboard/portfolio.js` still shows 5 OPEN: ADBE/NOW/CRM/REGN/ADSK).
+- **Watch:** IBKR/URI/EME pass 60 days on 10-29. They are protected only by the 11-07 target. If that date passes without a Tier 1 re-run, archive them at the next prune.
+
 **Prune Pass 2026-10-27 (Mode 1 Step 0 — ad-hoc fresh-sector scout: IT Distribution/AIDC · Specialty Retail second pass · Payments second pass):** Reviewed all 22 live Pending tickers against De-list Rules #1-3. **De-listed 7 → Archive: SOFI, ETON, EVLV, ACMR, VEL, KALU, HG** (Rule #1 stale timeout).
 - **Rule #1:** the 16 legacy rows and ALLY/BYD all carried target **2026-10-23**, which has now passed without the promised Tier 1 re-screen. The 7 rows scouted 2026-08-18 to 08-27 are 61–70 days old with no CIO/Charlie update → archived. Live snapshots (Oct 26 close, Yahoo chart API) are in the Archive table. This was not a thesis-dead call, so no extra price-based judgement was needed.
 - **SLA fixed 11:** IBKR, URI, EME, INDI, ANIP, BKSY, VMD (57–59 days old), WYNN, VICI, ALLY, BYD → target **2026-11-07**. The legacy rows will hit Rule #1 next round if they are still not re-screened.
@@ -523,6 +528,99 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 ---
 
 ## Scout History
+
+### Ad-hoc CIO-Directed Sector Scout — Logistics / Trucking / Rail Equipment (SEC-EDGAR re-check) — 2026-10-28
+
+**Trigger:** the CIO directed a re-scout of the sector, named JBHT/WERN/SNDR/KNX/ODFL/HTLD/CVLG plus "USA Truck/DAT", and said to add anything else hit hard by the freight recession. **Scout/screen only. No full pipeline.** Emma/Quinn/Bear were not called.
+
+**Coverage check (done first):** this sector was screened twice recently.
+- **Round 59 (10-03):** ODFL/JBHT/CHRW/UNP/NSC. Rejected at Filter B.
+- **Round 81 (10-19):** SAIA/LSTR/KNX/WERN/HUBG/ARCB/GXO/CVLG/MRTN/HTLD/ULH/GBX/TRN. Rejected at C or B.
+
+Round 81's ROIC figures were **aggregator-based** (stockanalysis) and grouped into a single row. Under the CIO's new SEC-only rule (after the OWL/PII/BRP incidents), this round re-checks the named tickers plus SAIA/LSTR/ARCB/MRTN/TRN/GBX/WAB **from primary filings**. This follows the Round 76 precedent for a CIO-directed re-scout, so it is not a hard-exclusion breach. **SNDR** was in the R81 finviz batch but never appeared in a verdict row, so this is effectively its first screen.
+- **USA Truck:** not investable. It was acquired by DB Schenker (2022) and is no longer listed.
+- **DAT:** not investable. It is private (owned by Roper Technologies).
+
+**Regime:** RISK-ON 3/4 (`agent_notes/atlas/2026-10-27_regime.md`, 1 day old). Fed Stance flipped to RISK-OFF, with ~73-77% odds of a Dec 9 hike. Rf (10Y) **5.00%**. The ERP is Damodaran's implied **4.20%**, carried from the 10-27 round.
+- **WACC band used:** ~9.5% for large-cap carriers (Ke ≈ 5.00% + β~1.05×4.2% ≈ 9.4–9.6%; debt is light) and ~10.5–11% for small caps (WERN/HTLD/CVLG/MRTN/ARCB/SAIA).
+- **Not a VS2 §1.1 two-method WACC.** It is scout-level only. No verdict below is within 1pp of a WACC boundary except SAIA, which dies at B anyway.
+
+**Data sources (all primary):**
+- **SEC EDGAR XBRL companyfacts API** (`data.sec.gov/api/xbrl/companyfacts/CIK##########.json`), pulled 2026-10-28 for all 14 tickers. Concepts used: OperatingIncomeLoss, cash from operations, PaymentsToAcquirePPE (KNX: MachineryAndEquipment; TRN: plus EquipmentOnLease), proceeds from equipment sales, D&A, tax, StockholdersEquity, LongTermDebt and cash.
+- **TTM** = last 10-K FY + latest 10-Q YTD − prior-year YTD.
+- **Q3 2026 8-K Ex-99.1 earnings releases** from EDGAR:
+  - KNX `0001492691-26-000065` (10-21)
+  - HTLD `0000799233-26-000045` (10-20)
+  - WERN `0000793074-26-000165` (10-27, plus the 10-19 preliminary `…-000162`)
+- **Not yet reported:** ODFL's 10-22 8-K is a dividend notice only. SNDR/CVLG/SAIA/LSTR/ARCB/MRTN have no Q3 release on EDGAR yet. Their TTM runs through Q2 2026 (LSTR through Q1, because companyfacts lags the Q2 10-Q).
+- **KNX caveat:** the companyfacts API lags. It has only the Q1 10-Q, although the Q2 10-Q was filed 07-29. KNX TTM therefore uses the 8-K Q3 YTD table, and invested capital uses the 8-K's "$7.1B equity / $2.1B net debt (face, net of unrestricted cash), Sept 30 2026".
+- Aggregators were **not** used for any FCF/ROIC/WACC figure. stockanalysis was used only as a price source and for EV/EBITDA cross-reads, labelled where used.
+
+**Prices (2 sources):**
+- **Source 1:** Yahoo chart API `regularMarketPrice` with the 52W range (Oct 27 close, 20:00 UTC).
+- **Source 2:** finviz `v=171` (fetched 10-28; some quotes are pre-market) and stockanalysis statistics (Oct 27 close) for the B/C survivors.
+- All gaps are ≤1.6%: ODFL $187.03 vs finviz pre-market $184.00, and LSTR $168.78 vs $166.00. The rest match to the cent. **No >2% gap, so no 3rd source was needed.**
+
+#### Filter A + Tier 1 check 1 + Filter C (SEC-derived ROIC)
+
+ROIC = TTM operating income × (1 − effective tax) ÷ (equity + debt − cash), latest balance sheet.
+
+| Ticker | Close 10-27 | 52W high | Off high | A | TTM EBIT ($M, SEC) | Annual EBIT FY23→24→25 ($M) | ROIC TTM | vs WACC | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| JBHT | $231.95 | $299.76 | −22.6% | ✅ | 960 (Q3'26) | 993→831→865 | **15.2%** | ✅ >9.5% | → B |
+| ODFL | $187.03 | $252.03 | −25.8% | ✅ | 1,448 (Q2'26) | 1,641→1,544→1,361 | **25.4%** | ✅ | → B |
+| LSTR | $168.78 | $228.46 | −26.1% | ✅ | 165 (Q1'26) | 344→249→152 | **28%** (asset-light, IC $446M) | ✅ | → B |
+| SAIA | $340.86 | $494.71 | −31.1% | ✅ | 375 (Q2'26) | 460→482→352 | **10.3%** | ≈ WACC ~10.5% (≥80% ✅) | → B |
+| KNX | $63.02 | $82.86 | −23.9% | ✅ | **338.5** (Q3'26: FY25 216 − 9M'25 189.6 + 9M'26 312.1) | 338→243→216 | **2.8%** (Q3 run-rate 178.7×4 → 5.8%) | ❌ <7.6% (80%) | **C ❌.** Trend is improving (Q3 OR 91.9% vs 97.4%), so not a Tier-1 SKIP |
+| SNDR | $31.11 | $39.27 | −20.8% | ✅ (borderline) | 177 (Q2'26) | 296→165→169 | **4.2%** | ❌ | **C ❌.** Flat, not worsening, so not a Tier-1 SKIP |
+| WERN | $29.38 | $47.49 | −38.1% | ✅ | **~2.4** (FY25 12 − 9M'25 47.5 + 9M'26 37.9) | 176→66→12 | **~0%** | ❌ | **Tier-1 SKIP #1** (<0.5×WACC + worsening 2yr+). Q3 GAAP EBIT $17.0M vs −$13.0M, but the Q3'25 base includes a $21.4M litigation settlement, and 9M'26 is still below 9M'25 |
+| HTLD | $10.37 | $16.64 | −37.7% | ✅ | **−6.9** (FY25 −57 + 9M'25 34.6 + 9M'26 15.6) | 42→−20→−57 | **<0** | ❌ | **C ❌.** Tier-1 #1 is borderline: FY23→25 got worse, but TTM is turning (Q3 OR 98.7% vs 103.7%) |
+| CVLG | $29.93 | $49.88 | −40.0% | ✅ | −1 (Q2'26) | 59→45→3 | ~0% | ❌ | **Tier-1 SKIP #1** |
+| ARCB | $130.34 | $176.69 | −26.2% | ✅ | 29 (Q2'26) | 173→244→90 | 1.6% | ❌ | **Tier-1 SKIP #1** (244→90→29) |
+| MRTN | $12.02 | $18.48 | −35.0% | ✅ | 16 (Q2'26) | 90→33→23 | 1.8% | ❌ | **Tier-1 SKIP #1** |
+| TRN | $25.50 | $38.31 | −33.4% | ✅ | 755 reported / **~274 ex-gains** (H1'26 EBIT 300.9 includes $163.9M lease-portfolio sale gains) | 417→492→649 (gain-inflated) | 8.8% reported / **~3.2% recurring** | ❌ on recurring | **C ❌ + B-Zero flag** (debt $5.47B vs equity $1.14B; SA Debt/EBITDA 8.4×) |
+| GBX | $37.48 | $59.19 | −36.7% | ✅ | 144 (FY Aug-26) | 176→324→360→144 | 3.6% | ❌ | **C ❌.** FCF FY26 = 40 − 279 + 193 = **−$46M** |
+| WAB | $278.95 | $306.64 | −9.0% | ❌ | — | — | — | — | **A ❌** (not beaten down; EBIT TTM $2.1B and rising) |
+
+**Beaten-down reason (A survivors that reach B: JBHT/ODFL/LSTR/SAIA):** ✅ cyclical. This is the multi-year freight recession already documented in Round 59. Q3 prints now show **an early upcycle**: KNX revenue +14.2% with OR down 550bps, WERN calls it "the early stages of this freight upcycle", and HTLD cites "ongoing industry capacity reductions". It is not a permanent impairment.
+
+#### Filter B-Zero + B (Value bucket — no C survivor has revenue growth >15%; JBHT TTM +11% is cyclical recovery)
+
+| Ticker | Equity / leverage (SEC) | FCF TTM ($M, SEC: CFO − capex + equipment-sale proceeds) | FCF yield | EV/EBITDA | B |
+|---|---|---|---|---|---|
+| JBHT | Equity $3.63B · debt $1.12B · ND/EBITDA ~0.7× ✅ | 1,494 − 528 + 153 = **1,119** (SA shows $966.5M ex-proceeds) | **5.2%** (4.5% ex-proceeds) on $21.6B mkt cap | 13.7× (SA) vs 5Y median 12.5× / low 9.8× (R59 history): top half | ❌ (closest miss) |
+| ODFL | Equity $4.55B · net cash ✅ | 1,394 − 279 + 81 = **1,196** | **3.1%** on $38.8B | 21.5× (SA) vs 5Y avg 20.6× (R59) | ❌ |
+| LSTR | Equity $0.80B · net cash $353M ✅ | 247 − 14 + 4 = **237** (TTM Q1) | **4.1%** on $5.7B | ~26× on SEC TTM EBITDA $210M (SA 21.6×) | ❌ |
+| SAIA | Equity $2.73B · debt $0.10B ✅ | 606 − 351 + 25 = **280** | **3.1%** on $9.1B | 15.0× (SA), 5Y history not verified, so not credited | ❌ |
+
+#### Tier 1 check 2 / Filter D (naive FV = through-cycle FY21–25 average FCF ÷ WACC 9.5%, ± net cash/debt; SEC)
+
+| Ticker | FY21–25 FCF ($M) | Avg | Naive equity/share | Price ÷ naive FV | Result |
+|---|---|---|---|---|---|
+| JBHT | 347 / 345 / 145 / 809 / 1,103 | 550 | ($5.79B − $1.12B) ÷ 93.2M = **$50** (TTM basis $114) | **4.6×** (TTM 2.0×) | Tier-1 **2a SKIP** (>1.5×) |
+| ODFL | 683 / 939 / 861 / 908 / 1,004 | 879 | ($9.25B + $0.26B) ÷ 207.4M = **$46** | **4.0×** | Tier-1 **2a SKIP** |
+| SAIA | 105 / 108 / 141 / −457 / 51 | −10 | ≤ 0 (TTM basis ~$100) | n/m (TTM 3.4×) | Tier-1 **2a SKIP** |
+| LSTR | 257 / 602 / 376 / 266 / 222 | 345 | ($3.63B + $0.35B) ÷ 33.9M = **$117** | **1.44×** | Passes Tier-1 2a/2b but fails **D (>0.90×)**, already ❌ at B |
+
+**Filter E:** no candidate reached E.
+
+### Result: **0 fast-track · 0 learning-queue · 0 Pending rows added**
+- **Funnel:** 14 screened.
+  - **A:** 1 fail (WAB).
+  - **Tier-1 SKIP #1:** 4 (WERN/CVLG/ARCB/MRTN).
+  - **C:** 5 fail (KNX/SNDR/HTLD/TRN/GBX).
+  - **B:** 4 fail (JBHT/ODFL/LSTR/SAIA).
+  - JBHT/ODFL/SAIA also hit Tier-1 2a.
+- **Log tag:** `QUICK-SCREEN SKIP` (scout-level). **buy_list.md not updated.**
+
+### What this round tells the team
+1. **The SEC re-check confirms Round 81's direction.** The asset-based truckload names (KNX/SNDR/WERN/HTLD/CVLG/MRTN/ARCB) have trough ROIC of ~0–4%, so C is correctly blocking them. The SEC numbers are not more favourable than the aggregator ones. **One correction to the R81 table:** TRN shows 8.8% ROIC on reported EBIT because H1'26 includes $164M of lease-portfolio sale gains. On a recurring basis it is ~3%. This matches the aggregator only by accident, and the reported figure would have been a false pass.
+2. **There is a quality/value split here, like rails vs trucking in R59.** The names with a moat and ROIC well above WACC (ODFL 25%, LSTR 28%, JBHT 15%) still trade at 14–26× EV/EBITDA and a 3–5% FCF yield, even 22–26% off their highs. The market is already pricing the cycle turn. Only the low-ROIC names are cheap.
+3. **The upcycle is starting:** KNX Q3 EBIT +255% YoY, WERN TTS revenue +37%, HTLD OR −500bps. **Re-scout trigger for KNX/SNDR:** two consecutive quarters with TTM ROIC rising toward ≥7.6% (80% of WACC). KNX at its Q3 run-rate is ~5.8%, so one more strong quarter (Q4, late Jan 2027) could bring it close. SNDR's Q3 print is due ~10-30.
+4. **JBHT is the closest quality miss:** FCF yield 5.2% vs the 6% bar, but D-naive is 2.0× even at TTM. It is not a VALUE-FIRST name. If the CIO wants it, the route is Growth/quality, not this screen.
+5. **Process note:** the XBRL companyfacts API can lag a quarter (KNX/LSTR), so check the 10-Q list in `submissions/CIK…json` and fall back to the 8-K Ex-99.1 tables.
+
+*Max — 2026-10-28 | Ad-hoc Logistics/Trucking/Rail Equipment scout (SEC-EDGAR basis) — 14 screened, 0 fast-track, 0 learning-queue*
 
 ### Ad-hoc CIO-Directed Fresh-Sector Scout — IT Distribution/VARs & AIDC · Specialty Retail (untouched names) · Payments (names never run under VALUE-FIRST) — 2026-10-27
 
