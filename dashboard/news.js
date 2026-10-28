@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-27 07:00";
+const NEWS_LAST_UPDATED = "2026-10-28 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-28 (Atlas scan 2026-10-28, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-27", category: "DEAL",
+    headline: "🟡 META Nvidia confirms $3B + AMD confirms $1B investment in Meta's upsized $97.5B equity raise",
+    summary: "Following Meta's Oct 26 announcement of plans to raise up to $95B via equity sale (already logged 2026-10-24), on 2026-10-27 Nvidia announced it will invest $3 billion in Meta's equity offering, with AMD separately confirming a $1 billion investment — Meta had said Monday that Nvidia, AMD and Broadcom were interested in purchasing up to $5B in shares combined. Meta simultaneously upsized the offering: the Class A common stock portion grew to $25B (from $22.5B) priced at $625/share, plus 250 million convertible preferred depositary shares priced at $50 each (~$12.5B) — lifting the total planned raise from $95B to $97.5B, the largest equity fundraising in Meta's history. Nvidia's investment comes alongside a deepened partnership: Meta will expand its deployment of Nvidia's Vera Rubin systems and Vera CPUs, and the two companies will deepen collaboration on Muse, Meta's AI agent. The arrangement drew analyst commentary about an increasingly circular flow of capital in the AI industry, since chip suppliers are now helping finance the AI infrastructure buildout of one of their biggest customers. The stock offering priced at $625/share (Meta closed around $630.56 Monday, roughly flat to slightly down Tuesday). A separate $60B at-the-market share-sale program remains unscheduled, expected to begin only after Meta's new non-voting Class C shares begin trading in Q1 2027. นัยพอร์ต: META อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็นการยืนยันดีล/ขยายขนาด equity raise ที่มีนัยสำคัญมากกว่าแค่การประกาศแผนเดิม (upsized + ชื่อผู้ลงทุนยืนยันแล้ว) ตามเกณฑ์ HIGH-IMPACT (material corporate-finance event).",
+    impact: "MIXED", tickers: ["META", "NVDA", "AMD"],
+    url: "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
+  },
 
   // ── 2026-10-27 (Atlas scan 2026-10-27, Portfolio Review Mode 3 cron cycle) ──
   {
