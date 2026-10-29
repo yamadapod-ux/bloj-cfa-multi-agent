@@ -3,9 +3,32 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-28 07:00";
+const NEWS_LAST_UPDATED = "2026-10-29 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-29 (Atlas scan 2026-10-29, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-28", category: "EARNINGS",
+    headline: "🔴 NOW ServiceNow Q3 2026 — EPS misses by $0.02, revenue beats, but Q4 revenue guide + cRPO growth disappoint; stock -14-17% AH",
+    summary: "ServiceNow reported Q3 2026 results after the close on 2026-10-28. Non-GAAP EPS of $1.00 missed the $1.02 consensus estimate by $0.02 (a GAAP figure of $0.27/share was also reported separately). Revenue of $4.11B beat the $4.09B consensus (+20.5% YoY), with subscription revenue of $3.99B up 21% YoY (20.5% in constant currency). Current remaining performance obligations (cRPO) reached $13.65B (+20.5% YoY), while total RPO hit $29.7B (+22% YoY). The company raised its 2026 AI annual-contract-value target to $1.7B (+70% since the start of the year). Despite the beats on revenue/RPO, ServiceNow guided Q4 2026 revenue to $4.25-4.26B, below the ~$4.36B Street consensus, and guided Q4 cRPO growth to 18.5%, a deceleration from Q3's 20.5% actual — both read by investors as a disappointing outlook despite AI-deal momentum. The stock closed the regular Oct 28 session down -3.00% at $150.13 (ahead of the report) and then fell a further 14-17% in after-hours trading to roughly $124-127 as the market digested the EPS miss and the Q4 guide. นัยพอร์ต: NOW เป็น OPEN position (residual 1sh, weight 1.44% หลัง TRIM 50% เดิม) — เป็น earnings event ที่ fires Re-Analysis Trigger #1 (earnings-driven) ตาม Re-Analysis Trigger Rule, ต้อง Emma lightweight FV re-verify ก่อนรอบ review ถัดไป ตามเกณฑ์ HIGH-IMPACT (earnings beat/miss บน OPEN position).",
+    impact: "NEGATIVE", tickers: ["NOW"],
+    url: "https://pomegra.io/briefs/2026-10-28-servicenow-stock-falls-earnings-miss",
+  },
+  {
+    date: "2026-10-28", category: "EARNINGS",
+    headline: "🔴 GOOGL Alphabet Q3 2026 — revenue + EPS miss, first-ever negative free cash flow (-$9.07B) as AI capex accelerates; stock -8-10% AH",
+    summary: "Alphabet reported Q3 2026 results after the close on 2026-10-28. Total revenue was $127.6B, slightly below the ~$128.2B consensus (+24.7% YoY). Adjusted EPS of $2.67 (GAAP EPS $2.12) missed the $3.02 consensus, with the shortfall driven largely by an $8.7B loss on equity investments (attributed to Alphabet's SpaceX stake, down since SpaceX's June IPO) that cut roughly $0.55/share from earnings; even excluding that charge, EPS of ~$2.67 still missed. Core advertising revenue of $82.01B missed by roughly $1.4B, with Search revenue of $63.35-63.4B up 12% YoY but below the ~$64.96-65B estimate (decelerating from 17% growth the prior quarter) and YouTube ad revenue of $11.21B also missing estimates. Google Cloud was the standout, more than doubling revenue to $30.7B (vs $15.16B a year earlier, beating the ~$29.15B estimate) with an 11.1B operating income (~36% margin) — cloud revenue has now surpassed YouTube ad revenue. Net income fell 25% YoY to $26.17-26.2B. Most notably, Alphabet reported negative free cash flow of -$9.07B for the quarter (vs analyst expectations of roughly breakeven), an increase from the -$5.9B burn in Q2 which was itself the first negative FCF quarter in the company's 22-year history as a public company — driven by heavy AI/cloud-capacity and R&D spending. Shares fell 8-10% in after-hours trading. นัยพอร์ต: GOOGL อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position — เคย full-exit จาก Thesis Invalidation 2026-09-12) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น material earnings miss + first-ever negative FCF บน Big 10 name ตามเกณฑ์ HIGH-IMPACT.",
+    impact: "NEGATIVE", tickers: ["GOOGL"],
+    url: "https://www.reuters.com/business/alphabet-shares-fall-after-revenue-miss-cash-burn-worsens",
+  },
+  {
+    date: "2026-10-28", category: "EARNINGS",
+    headline: "🟢 MSFT Microsoft Q1 FY2027 — EPS + revenue beat on accelerating Azure growth; stock +2% AH",
+    summary: "Microsoft reported fiscal Q1 2027 results after the close on 2026-10-28. Adjusted EPS of $4.89 beat the $4.73 consensus; revenue of $92.28B beat the $90.69B consensus (+19% YoY) and landed $1.33B above the top of management's own $89.85-90.95B guidance range. GAAP EPS rose 32% YoY to $4.92, including a $207M net gain from Microsoft's OpenAI investment stake. Azure cloud revenue growth accelerated versus the prior quarter, the key driver of the beat. Free cash flow fell 27% YoY to $18.63B but remained solidly positive — a notable contrast to Alphabet's negative FCF reported the same evening. Shares rose roughly 2% in after-hours trading, coming into the report already up nearly 35% over the trailing three months. นัยพอร์ต: MSFT อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น earnings beat ที่ชัดเจนบน Big 10 name ตามเกณฑ์ HIGH-IMPACT (earnings beat/miss).",
+    impact: "POSITIVE", tickers: ["MSFT"],
+    url: "https://pro.thestreet.com/stock-market-today/2-year-treasury-shorts-at-risk",
+  },
 
   // ── 2026-10-28 (Atlas scan 2026-10-28, Portfolio Review Mode 3 cron cycle) ──
   {
