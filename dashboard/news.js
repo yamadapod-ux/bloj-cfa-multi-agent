@@ -3,9 +3,32 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-29 07:00";
+const NEWS_LAST_UPDATED = "2026-10-30 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-30 (Atlas scan 2026-10-30, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-29", category: "EARNINGS",
+    headline: "🔴🔴 NOW ServiceNow crashes -26.95% — biggest single-day drop in company history as Q3 earnings reaction fully materializes",
+    summary: "The Q3 FY2026 earnings reaction flagged 2026-10-28 (EPS $1.00 missed $1.02 est, Q4 revenue guide $4.25-4.26B below $4.36B consensus, cRPO growth guide decelerating to 18.5%) fully played out in the regular 2026-10-29 session: ServiceNow shares plunged as much as -27% intraday and closed at $109.67, down -26.95% ($40.46) from the prior close of $150.13 — the company's biggest-ever single-day drop, far exceeding the -14-17% after-hours estimate used for the 10-29 portfolio marking. Citi's Tyler Radke called the quarter 'uncharacteristic for ServiceNow standards' given the lack of upside. At least 12 brokerages cut price targets, with Raymond James flagging lagging subscription revenue and backlog growth while AI monetization initiatives (forward-deployed engineering team, net-new AI ACV +65%) remain unproven near-term. The drop reignited broader 'AI disruption/SaaSpocalypse' fears across enterprise software, dragging peer Fortinet down -26% the same day on its own guidance cut, and spilling into CRM (-4.63%) and ADSK (-0.27%). นัยพอร์ต: NOW เป็น OPEN position (residual 1sh, weight ~1.06% หลัง TRIM 50%) — MOS พลิกบวกแรง (+12.71%) เพราะ FV เดิม $125.65 (fvVerifiedDate 2026-08-24) ยังไม่ถูก re-verify กับงบนี้ ถือเป็น stale-FV artifact ไม่ใช่สัญญาณซื้อที่แท้จริง — Re-Analysis Trigger #1 (fired 10-29) ยิ่งเร่งด่วนขึ้นมาก ต้อง Emma lightweight FV re-verify โดยเร็ว stopDist แคบลงมากเป็น 15.20% (จาก 38.05%) แต่ยังไม่ breach (เหนือ stop $93).",
+    impact: "NEGATIVE", tickers: ["NOW"],
+    url: "https://www.cnbc.com/2026/10/29/servicenow-now-earnings-q3-2026.html",
+  },
+  {
+    date: "2026-10-29", category: "EARNINGS",
+    headline: "🔴🔴 GOOGL Alphabet has worst day ever — shares -12% to -12.6%, ~$480-500B market cap erased, drags S&P 500 to first loss in 4 sessions",
+    summary: "Following its Q3 2026 earnings miss and first-ever negative free cash flow (-$9.07B) reported 2026-10-28 after close (already logged), Alphabet's Class A/C shares fell -12% to -12.6% in the regular 2026-10-29 session — the stock's worst single day since it began trading over 20 years ago, and the second-largest single-day market-cap loss in US market history (~$480-500B erased, roughly $410-480B depending on the intraday snapshot). The decline was amplified by an $8.2B non-operating unrealized loss on Alphabet's SpaceX equity stake plus a $5.2B EU antitrust fine cash payment. Capex of $51.4B in the quarter (vs $24.0B a year earlier) drove the negative FCF; management held its $195-205B full-year capex guide steady and signaled 2027 capex will rise 'significantly.' The drop single-handedly dragged the S&P 500 to its first loss in four sessions (-0.30%) even though roughly 4 of 5 S&P constituents rose that day — underscoring how concentrated mega-cap AI-capex anxiety has become. นัยพอร์ต: GOOGL อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position — full-exit จาก Thesis Invalidation 2026-09-12) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น magnitude ที่ใหญ่กว่าตัวเลข AH เดิมที่เคย log ไว้ (-8-10% AH → -12-12.6% ใน regular session) ตามเกณฑ์ HIGH-IMPACT (single-day move >4% บน real news, ยืนยัน/ขยายความของเหตุการณ์ earnings miss เดิม).",
+    impact: "NEGATIVE", tickers: ["GOOGL"],
+    url: "https://fortune.com/2026/10/29/alphabet-stock-worst-day-sp-500-nasdaq-dow",
+  },
+  {
+    date: "2026-10-29", category: "EARNINGS",
+    headline: "🔴 AMZN Amazon Q3 2026 — EPS and revenue both miss consensus",
+    summary: "Amazon reported Q3 2026 results after the close on 2026-10-29: EPS of $1.89 missed the $1.97 consensus estimate, and revenue of $201.94B missed the $202.22B consensus by roughly $280M. นัยพอร์ต: AMZN อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น earnings miss ที่ชัดเจนบน Big 10 name ตามเกณฑ์ HIGH-IMPACT (earnings beat/miss). Detail on AWS/segment breakdown not yet fully captured within this scan's search-attempt cap — flagged for follow-up if material to future scans.",
+    impact: "NEGATIVE", tickers: ["AMZN"],
+    url: "https://www.marketbeat.com/earnings/reports/2026-10-29-amazoncom-inc-stock/",
+  },
 
   // ── 2026-10-29 (Atlas scan 2026-10-29, Portfolio Review Mode 3 cron cycle) ──
   {
