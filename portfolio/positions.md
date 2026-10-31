@@ -2103,6 +2103,66 @@ Assessed ROUTINE (not written to news.js): ADBE CEO transition/NHL partnership (
 
 ---
 
+## 📊 Portfolio Review — 2026-10-31 (Mode 3, cron)
+
+**Full re-mark to Oct 30 2026 close (Fri)** — first new trading-day print since Oct 29, no trades executed.
+
+### Prices (2-4 source cross-checked)
+| Ticker | Price | Sources | Day Move |
+|---|---|---|---|
+| ADBE | $250.23 | fiscal.ai + keenable (exact match, 2-source) | +0.85% |
+| NOW  | $105.12 | exa.ai + stockanalysis.com + Yahoo Finance + financialcontent.com (exact match, 4-source) | -4.15% |
+| CRM  | $229.17 | fiscal.ai + Perplexity Finance (exact match, 2-source) | -0.75% |
+| REGN | $927.89 | exa.ai + Yahoo Finance + stooq.pl (exact match, 3-source) | **+13.33%** (Q3 earnings beat) |
+| ADSK | $249.60 | stockanalysis.com $249.60 + keenable $249.61 (0.004% diff, 2-source) | +3.26% |
+| S&P 500 | 7,576.62 | avg Yahoo Finance $7,580.07 + metacap.si $7,573.16 (0.09% diff, within threshold) | -1.82% to -1.91% |
+
+Broad AI-capex-driven tech selloff deepened further (Nasdaq -2.86%, VIX +22.9% to 21.03 — first close above 20 in weeks) on Intel's historic -28.6% guidance crash (worst day since 1974, no OPEN/Big10 position) plus continued Amazon/Alphabet AI-capex cash-burn fallout (both already logged 10-29/10-30). Enterprise software book mixed against the broader tape: ADSK decoupled and gained, ADBE roughly flat-up, CRM/NOW modest-to-sharp declines. REGN's +13.33% earnings-beat pop was by far the largest move in the book this session.
+
+### P&L / MOS / Weight
+| Ticker | Shares | Cost Basis | Mkt Value | Return% | Blended FV | MOS% | Stop | StopDist% | Weight% |
+|---|---|---|---|---|---|---|---|---|---|
+| ADBE | 4 | $988.10 | $1,000.92 | +1.30% | $369.00 | +32.20% | $185.00 | 26.07% | 9.64% |
+| NOW | 1 | $89.47 | $105.12 | +17.48% | $125.65 | +16.34% | $93.00 | 11.53% | 1.01% |
+| CRM | 3 | $543.00 | $687.51 | +26.61% | $345.77 | +33.73% | $144.80 | 36.83% | 6.62% |
+| REGN | 0.42 | $252.84 | $389.71 | +54.13% | $889.00 | **-4.37%** 🟠 | $482.00 | 48.06% | 3.75% |
+| ADSK | 2.4 | $476.23 | $599.04 | +25.79% | $221.79 | -12.54% | $158.74 | 36.40% | 5.77% |
+
+**Totals:** Invested $2,782.30 · Cash $7,602.24 (73.23%) · Total Value **$10,384.54** · Total Return **+3.85%** · S&P 500 Return **+2.40%** (7,398.93 → 7,576.62) · **Alpha +1.45%** (flipped sharply positive from -1.14% 10-30 — REGN's earnings pop + ADSK's decoupling outweighed the broader market selloff; single-session move per Pre-commitment Rule, not a trend).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,601.45 × 3.8%/365 × 1 day = +$0.79 → $7,602.24.
+
+### 🛑 Stop Loss Check
+No breaches. **NOW is now the narrowest at 11.53%** (down from 15.20%) — still above the 10% WATCH threshold, no breach, but closest position in the book to a WATCH flag. Monitor closely next session. All other positions comfortable (26-48%).
+
+### 🟠 NEW — REGN Re-Analysis Trigger #1 fires on Q3 earnings beat, MOS flips negative
+REGN reported Q3 2026 earnings before market open 10-30: EPS $20.07 vs ~$16.1-16.4 consensus (+22-25% surprise), revenue $5.12B (+36% YoY). Stock surged +13.33% to a fresh 52-week high close of $927.89. This earnings event was never modeled into the current FV ($889, fvVerifiedDate 2026-09-11, 50 days old) — **Re-Analysis Trigger #1 fires**. MOS flips from +7.90% to **-4.37%**, nominally STRONG SELL territory, but this is almost certainly a stale-FV artifact (same pattern as REGN's 2026-09-04 episode and NOW's 2026-08-09 episode, both of which resolved with the FV moving *up* on re-verify, not down). **Recommend Emma lightweight FV re-verify be prioritized** before any sell/trim interpretation. Residual weight only 3.75% (already TRIMMED 30%) — not a capital-risk issue. No trade this Review Mode session; Max Consultation Rule not triggered (no action taken).
+
+### 🔴🔴 ADSK STRONG SELL, now 20 consecutive sessions unresolved
+ADSK MOS deepened further negative to **-12.54%** (from -8.99% on 10-30) — price-driven (+3.26% day, ADSK decoupled from the broader AI-capex selloff, no idiosyncratic catalyst found), FV unchanged $221.79 (fvVerifiedDate 2026-09-12, 49 days old, not stale). This is the 20th consecutive Review Mode session (10-07 through 10-31) carrying this item without an actual Max×Charlie consultation taking place. Thesis intact: 0/5 Bear Flip Triggers, 0/5 Thesis Invalidation criteria fired. Not a capital-risk issue — stopDist 36.40% comfortable.
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 50d, MOS +32.20% (positive) | N/A | small | Not re-checked this session | 0/5 |
+| NOW | No new earnings (Q3 already modeled trigger carried from 10-29) | FV 68d, MOS +16.34% (positive, stale-FV artifact) | N/A | large but FV<90d | Not re-checked | 0/5 formal (carried backlog item) |
+| CRM | No new earnings | FV 50d, MOS +33.73% (positive) | N/A | small | Not re-checked | 0/5 |
+| REGN | **Q3 earnings reported 10-30, never modeled** | FV 50d (<90d), MOS -4.37% (negative but FV fresh) | N/A | small | Not re-checked | **1/5 — #1 FIRES** |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 49d, MOS -12.54% negative but age <<90d | N/A | small | Not re-checked | 0/5 (but see STRONG SELL/Max Consultation flag above, 20 sessions) |
+
+**1/5 formal triggers fire this session (REGN, earnings-driven).** All other FVs are 50-68 days old, well under the 90-day threshold.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime RISK-ON (Atlas 2026-09-25 re-call) is now **36 days old** — materially overdue, especially with VIX closing above 20 for the first time in weeks (edging into the TRANSITIONAL-CAUTIOUS indicator range per CLAUDE.md's Macro Regime Gate criteria). Atlas should prioritize a fresh re-call next session. Does not block this update.
+
+### 📰 Atlas News Scan (2026-10-30 → 2026-10-31, all 5 OPEN tickers + Big 10 watchlist)
+**1 NEW HIGH-IMPACT item** written to `dashboard/news.js`:
+- **REGN** — Q3 2026 earnings beat sharply (EPS $20.07 vs ~$16.1-16.4 consensus, revenue $5.12B +36% YoY), stock +13.33% to $927.89. Directly relevant to the REGN Re-Analysis Trigger #1 item above.
+
+Assessed ROUTINE/already-logged (not written to news.js): Intel's historic -28.6% crash (worst day since 1974 — no OPEN/Big10 position), Amazon's continued post-earnings bleed -1.4% (the underlying earnings miss itself already logged 10-29/10-30), Alphabet's continued post-earnings bleed -1.4% (the historic -12% drop itself already logged 10-29), broad AI-capex-anxiety macro commentary (market-wide, not idiosyncratic to any single OPEN/Big10 ticker beyond what's already logged), ADSK-NVIDIA automotive engineering-feedback-loop partnership (announced 10-21, stale, predates this scan window), ServiceNow AI Passport/governance product announcements (product launch, not earnings/M&A/management/8-K), CRM's small Rune Technologies defense-tech acquisition (~$375M, immaterial relative to CRM's scale, noted for next FV re-verify but not independently HIGH-IMPACT).
+
+---
+
 ## 📊 Portfolio Review — 2026-10-21 (Mode 3, cron)
 
 **Full re-mark to Oct 20 2026 close (Tue)** — first new trading-day print since Oct 19, no trades executed.

@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-30 07:00";
+const NEWS_LAST_UPDATED = "2026-10-31 07:00";
 
 const NEWS = [
+
+  // ── 2026-10-31 (Atlas scan 2026-10-31, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-10-30", category: "EARNINGS",
+    headline: "🟢 REGN Regeneron surges +13.33% — Q3 2026 earnings beat sharply (EPS $20.07 vs ~$16.1-16.4 consensus, revenue $5.12B +36% YoY)",
+    summary: "Regeneron reported Q3 2026 results before market open on 2026-10-30: non-GAAP EPS of $20.07 beat the Zacks/MarketBeat consensus of $16.08-$16.42 by roughly 22-25%, and revenue of $5.12B beat consensus and grew 36% YoY (net income $1.95B vs $1.46B a year earlier). The stock hit a fresh 52-week high intraday ($935.34) before closing at $927.89, up +13.33% ($109.12) on the day — by far the largest single-day move on any OPEN position this session. นัยพอร์ต: REGN เป็น OPEN position (0.42sh residual, weight ~3.75% หลัง TRIM 30% ก.ค.) — fires Re-Analysis Trigger #1 (earnings-driven) ตาม Re-Analysis Trigger Rule เพราะ earnings นี้ยังไม่ถูก model เข้า FV ปัจจุบัน ($889, fvVerifiedDate 2026-09-11) — MOS พลิกลบเป็น -4.37% (จาก +7.90%) เข้า STRONG SELL territory แบบ price-driven ล้วนๆ บน earnings beat ที่ยังไม่ re-verify (pattern เดียวกับ REGN 2026-09-04/NOW 2026-08-09 ที่ท้ายสุด re-verify แล้ว FV ขึ้น ไม่ใช่ลง). Emma lightweight FV re-verify ควรเป็น priority ก่อนตัดสินใจใดๆ บน MOS นี้.",
+    impact: "POSITIVE", tickers: ["REGN"],
+    url: "https://www.zacks.com/stock/news/3019316/regeneron-regn-q3-earnings-and-revenues-beat-estimates",
+  },
 
   // ── 2026-10-30 (Atlas scan 2026-10-30, Portfolio Review Mode 3 cron cycle) ──
   {
