@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-10-31): **AI Selloff Watch -- Trigger Prices** (CIO-directed — Part A NVDA/META/GOOGL/MSFT/AMZN trigger prices · Part B contagion scout 68→21→5→0 fast-track/learning-queue)*
+*ล่าสุด (2026-10-31): **Quality Compounder Watchlist -- Expensive Wide-Moat** (CIO-directed 2026-10-28 — 26 screened → 16 listed across 11 sectors, trigger = MOS 15% on screen FV; closest: PAYX −29.7% / RMD −29.9% / ORLY −32.3%)*
+*ก่อนหน้า (2026-10-31): **AI Selloff Watch -- Trigger Prices** (CIO-directed — Part A NVDA/META/GOOGL/MSFT/AMZN trigger prices · Part B contagion scout 68→21→5→0 fast-track/learning-queue)*
 *ก่อนหน้า: Scout Round 77 (2026-10-16, Max — multi-sector VALUE-FIRST sweep across 7 de-rated groups: regional banks/consumer finance, homebuilders/building products, commodity chemicals, packaging, tariff-hit consumer discretionary, autos/auto parts, specialty pharma. 107 pre-screened, **37 two-source verified** (finviz + stockanalysis, Oct 15 close; 3rd source for NAVI/OMF). Filter A 33/37 → B-Zero/B/C 10 → D 2. **🟢 Fast-track: SLM** (A −28.5%, D 0.705×, E 3/3; wait for Q3 print Oct 22). **🟡 Learning-queue: ALLY** (D 0.77–0.90×, E 1/3). Reject 35 (near-misses: WAL D 0.906×, OMF B, SON/LEVI/JAZZ A). Prune: 0 de-listed (Round 75 pruned this morning). No full pipeline dispatched (scout-only CIO task).)*
 *ก่อนหน้า: CIO-directed re-scout (2026-10-16, Max — 3-ticker re-scout of **PODD, ZTS, NKE** at CIO's explicit request, full VALUE-FIRST Filter A-E [the current A≥20%/B/C/D/E criteria were never run on these 3 in full — Round 75 only flagged them for staleness-prune and suggested the re-scout]. Live price re-verified ≥2 sources for all 3 [PODD $138.77-138.83 diff 0.04% / ZTS $78.18-78.42 diff 0.3% / NKE $37.11-37.18 diff 0.19%, all 2026-10-15 close], 52W-high confirmed 4-5 sources each. **Filter A: 2/3 PASS** (PODD -60.9% cyclical/execution-miss + litigation overhang; ZTS -47.1% mixed cyclical+structural-pocket reason, flagged both ways), **1/3 REJECT** (NKE -47.3% — JPMorgan/Euromonitor/Morgan Stanley data confirm **structural, not cyclical**: global footwear share 22.9%/2025 = 3rd consecutive annual decline, China share -590bps since 2019, 5 consecutive years losing brand-preference survey share — textbook permanent-moat-erosion-confirmed-by-market-share-numbers reject). **PODD clears A+B+C+D but Filter E = 2/3 only** (unresolved securities-fraud class action + 2 manufacturing-defect device corrections in 2026 fail overhang sub-criterion) → **Learning-queue, not fast-track**. **ZTS REJECTS at Filter D** — naive FV/share $68-79 (FCF/WACC) vs price $78.42 = 0.99-1.15× (no MOS; Street-PT +21% upside misses the >25%-override bar) — price fell but FCF/earnings fell too (2 guidance cuts in 2026), classic cheap-stock/cheap-earnings trap. **NKE REJECTS independently at A, D (naive FV $18.3/sh → price = 2.03× FV, would also fail Tier-1 Quick-Screen check 2a) and E (0/3)**. **0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE).** No full pipeline dispatched this round (re-scout only, per task scope). See § Round 76 at end of file.)*
 
@@ -681,6 +682,113 @@ WACC band: ~9.5% for >$20B, 10.5% for $5–20B, 11.5% for <$5B (scout level; Rf 
 - **Suggested follow-up (not done this round, outside the brief):** names with revenue growth >15% and ROIC > WACC (PWR, MTZ, MYRG, IESC, NVT, BWXT, HUBB) should be screened in the **Growth lane B-V1/D-V1** or the AI/Infra lane (if Atlas classifies them) instead of the Value bucket. That is the methodologically correct lens for these businesses.
 
 *Max — 2026-10-31 | AI Selloff Watch (CIO-directed 2026-10-28) | Part A 5 trigger prices · Part B 68→21→5→0*
+
+---
+
+## Quality Compounder Watchlist -- Expensive Wide-Moat (2026-10-28)
+
+**Trigger:** CIO-directed (brief dated 2026-10-28; run 2026-10-31 on **Oct 30, 2026 close**). The mandate is the **opposite of VALUE-FIRST scout**: find businesses with very high moats that are **expensive right now** (P/FV > 1.15×), and set a trigger price to wait for. **Screen-level only.** Emma/Quinn/Bear were not called, there is no team Blended FV, and Max did not trade. Filter A/D (VALUE-FIRST) were deliberately not used, per the brief.
+
+**Universe and exclusions:**
+- **Screened 26 tickers** across 11 sectors (non-software/AI).
+- **Hard exclusions:** names already held or in `portfolio.js`, the brief's list (V/FICO/MCO/VEEV/AVGO/MSFT/META/NVDA/GOOGL/AMZN + PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL), and names already in `decisions.md` (MA, SPGI, MSCI, HEI, MTD, ICE, ACGL, TDG, COST).
+- **Also skipped:** names with a dedicated scout entry already (VRSK R75, CPRT/ISRG).
+- **IDXX:** appeared only in Round 11's rejection table ("great business, too expensive" — FCF yield < 3%). It was never fully analyzed, so it is included here, matching this mandate exactly.
+- **Exchanges/data:** CME (ROIC ~11%, Round 11), FDS (ROIC 15–21%, avg ~18%) and VRSK (already scouted) → **no new candidate in this group passes.**
+
+**Data sources (primary/exact cross-check — scripts in `scripts/scout/2026-10-31_quality_compounders/`, Morgan can re-run with `python screen.py <tickers>` + `python special.py`):**
+- **Fundamentals:** SEC EDGAR XBRL companyfacts (`data.sec.gov/api/xbrl/companyfacts/CIK##########.json`), pulled 2026-10-31. TTM = FY + YTD − prior YTD.
+  - ROIC = EBIT×(1−tax)/(equity + debt − cash & securities), FY year-end, 5 years.
+  - **Debt-concept fix:** WM/RSG/ECL report under `LongTermDebtAndCapitalLeaseObligations*`, which the old script (`ai_selloff/hist.py`) missed, reading debt = 0. CPRT keeps cash in HTM securities. Patched in this round's `hist.py` before computing.
+- **RACE** files a 20-F (IFRS, EUR): FY2025 data, diluted shares 178.3M (`AdjustedWeightedAverageShares`, because the dei cover count is stale from 2020). EUR/USD 1.117 (Yahoo `EURUSD=X`).
+- **KNSL** = insurer → residual-income model on book value (P/B–ROE), not EBIT-DCF.
+- **Prices (Oct 30 close), 2 sources:** Yahoo chart API (`query1.finance.yahoo.com/v8/finance/chart/TICKER`) and Nasdaq quote API (`api.nasdaq.com/api/quote/TICKER/info`) match **exactly (0.00% diff) for all 16 names**.
+- **Consensus revenue growth (FY+1/FY+2) + Street PT:** stockanalysis.com `/stocks/TICKER/forecast/` (S&P Global consensus, updated 10-05 → 10-30). **Single source** (consensus is not in SEC).
+- **Rf / ERP / beta:**
+  - Rf = 10Y UST **4.93%** (Yahoo ^TNX, Oct 30). ERP = Damodaran implied **4.20%**, carried from the 10-27 round.
+  - β = raw 5Y monthly vs ^GSPC (Yahoo adjclose) → Blume. Kd = (Rf + 80bps)×(1−21%). Market-value weights.
+  - **Not a VS2 §1.1 two-method WACC.**
+
+**FV method (screen-level, one model for every name so they're comparable):**
+- **NOPAT/reinvestment DCF:** FCFF = NOPAT × (1 − g/RONIC).
+  - EBIT margin held at TTM (SEC). Tax = TTM effective rate, bounded 15–27%.
+  - Growth = consensus FY+1/FY+2, fading linearly to TGR 3% by year 10.
+  - RONIC fades from TTM ROIC (cap 100%) to **20%** in year 10. Terminal value uses g/RONIC (no free growth).
+- **Leases excluded** (ORLY/ROL/CTAS have sizable leases → FV leans a little high for those). No VS2 §1.2 non-op bridge.
+- **KNSL:** ROE fades from TTM 27.8% to 15% by year 10. BV grows by min(consensus growth, ROE×95%). TV = (ROE−Ke)×BV/(Ke−g).
+- **Bucket:** **Value for all 16.** Consensus revenue growth FY+1 is ≤17.4% for every name, so the Growth gate (>20%) can't be reached. MNST's TTM is +20.4%, but consensus is 17.4% → 9.6%.
+  - → **Trigger = MOS 15% = 0.85 × Screen FV** (CLAUDE.md § MOS Threshold, Value bucket).
+- **Implied k** = the consensus-growth multiplier the current price implies (k = 1.0 means the price matches consensus exactly). It's the same idea as Growth reverse-DCF, kept for context.
+- **"Trigger @WACC−1pp"** = a looser bound. Use it if you believe the market should discount wide moats at a lower rate. **It is not an official gate.**
+
+| Ticker | Sector | Price Oct 30 | 5Y ROIC % (FY, SEC) | WACC/Ke | Screen FV | P/FV | **Trigger (MOS 15%)** | **% ต้องลง** | Trigger @WACC−1pp | Implied k | EV/Rev 5Y pctile | Street PT median (range) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **PAYX** | Payments/HR infra — payroll/HCM | $112.12 | ROIC 53/57/53/23/27 | 8.17% | **$92.76** | 1.21× | **$78.84** | **-29.7%** | $100.39 (-10.5%) | 1.64× | 10th | $112 (96–150) |
+| **RMD** | Healthcare equipment — sleep/respiratory | $229.94 | ROIC 21/17/20/26/26 | 8.43% | **$189.58** | 1.21× | **$161.14** | **-29.9%** | $197.74 (-14.0%) | 1.75× | 15th | $260 (213–320) |
+| **ORLY** | Consumer disc. — auto parts retail | $88.12 | ROIC 67/72/70/63/54 | 7.58% | **$70.15** | 1.26× | **$59.63** | **-32.3%** | $78.39 (-11.0%) | 1.58× | 53th | $110 (94–122) |
+| **ROL** | Consumer services — pest control | $34.66 | ROIC 33/31/41/30/29 | 8.20% | **$21.87** | 1.59× | **$18.59** | **-46.4%** | $23.52 (-32.1%) | 2.26× | 5th | $35 (26–45) |
+| **TT** | Industrials — HVAC/climate | $410.00 | ROIC 18/21/22/27/28 | 9.45% | **$250.82** | 1.63× | **$213.20** | **-48.0%** | $260.26 (-36.5%) | 2.13× | 55th | $550 (465–575) |
+| **MNST** | Consumer staples — energy drinks | $47.34 | ROIC 39/28/31/31/34 | 7.75% | **$28.50** | 1.66× | **$24.23** | **-48.8%** | $30.75 (-35.1%) | 2.06× | 95th | $50 (40–57) |
+| **KNSL** | Specialty insurance — E&S | $365.71 | ROE 24/22/34/32/29 | 8.63% | **$214.94** | 1.70× | **$182.70** | **-50.0%** | $213.63 (-41.6%) | n/m | P/B 4.3× | $350 (285–405) |
+| **ITW** | Industrials — diversified machinery | $278.55 | ROIC 29/30/31/31/28 | 8.45% | **$162.59** | 1.71× | **$138.20** | **-50.4%** | $175.30 (-37.1%) | 3.21× | 70th | $293 (255–310) |
+| **GWW** | Industrials — MRO distribution | $1,359.17 | ROIC 29/38/41/40/33 | 8.85% | **$736.67** | 1.85× | **$626.17** | **-53.9%** | $768.53 (-43.5%) | 2.68× | 95th | $1,350 (1100–1500) |
+| **FAST** | Industrials — fastener/MRO distribution | $51.91 | ROIC 29/31/34/32/33 | 8.18% | **$28.09** | 1.85× | **$23.87** | **-54.0%** | $29.98 (-42.2%) | 2.32× | 95th | $52 (46–60) |
+| **SHW** | Materials — paint/coatings | $332.61 | ROIC 22/20/24/24/21 | 8.68% | **$166.58** | 2.00× | **$141.60** | **-57.4%** | $181.59 (-45.4%) | 3.53× | 35th | $375 (329–420) |
+| **MSI** | Tech hardware (non-AI) — public-safety comms | $491.53 | ROIC 36/29/36/39/22 | 8.33% | **$238.61** | 2.06× | **$202.82** | **-58.7%** | $265.31 (-46.0%) | 2.56× | 85th | $530 (476–550) |
+| **RACE** | Luxury — sports cars | $395.99 | ROIC 25/24/29/30/31 | 8.67% | **$182.62** | 2.17× | **$155.23** | **-60.8%** | $192.21 (-51.5%) | 3.06× | n/a (20-F) | $449 (389.4–516.21) |
+| **CTAS** | Industrials — uniform/facility services | $219.82 | ROIC 22/23/26/28/29 | 8.62% | **$93.55** | 2.35× | **$79.52** | **-63.8%** | $98.78 (-55.1%) | 3.32× | 75th | $232 (181–250) |
+| **IDXX** | Healthcare diagnostics — veterinary | $551.21 | ROIC 55/56/51/47/58 | 10.58% | **$218.52** | 2.52× | **$185.74** | **-66.3%** | $215.63 (-60.9%) | 3.32× | 26th | $710 (627–805) |
+| **WST** | Healthcare — pharma packaging/injectables | $412.62 | ROIC 35/31/25/19/18 | 9.49% | **$136.61** | 3.02× | **$116.12** | **-71.9%** | $138.05 (-66.5%) | 4.83× | 65th | $480 (375–500) |
+
+*Sorted by % drop needed to reach the trigger (least first). All 16 have P/FV > 1.15× → "expensive" per the brief ✅. 5Y ROIC = FY2021→latest FY from SEC (KNSL = ROE, ORLY/GWW/IDXX/MNST latest SEC = Q2'26, CTAS/PAYX = FQ1'27 Aug, MSI = Q2'26 Jul).*
+
+**Moat evidence (why the moat is wide — not just a popular name):**
+> Morningstar moat rating **could not be verified per ticker this round.** WebSearch only returned Morningstar index docs; [one Morningstar index doc](https://indexes.morningstar.com/api/docs/694ab7c2f85146e3acf6ce8e) lists WST as wide moat. The evidence below = **5Y ROIC from SEC (quantitative proof of excess return) + structural mechanism (Morningstar 5-factor)**. Atlas/Emma must verify the moat source in any full analysis.
+
+| Ticker | Moat source | Quantitative evidence (SEC) | Flag |
+|---|---|---|---|
+| **PAYX** | Switching cost (payroll + tax filing + HR for SMBs — switching mid-year is very costly) + client-fund float | EBIT margin 39%; ROIC 53–57% before the Paycor acquisition | ROIC fell to 23–27% after the acquisition (goodwill). EV/Rev at the 10th pctile → de-rated a lot already |
+| **RMD** | Intangible (patents + brand for CPAP/masks) + switching cost (installed base + cloud-connected devices → resupply masks) | EBIT margin 33%; ROIC 17–26% | ⚠️ ROIC 17% in FY22 — 5Y avg ~22%, slightly below "consistently >20%". GLP-1 is the main bear thesis |
+| **ORLY** | Cost advantage (dense distribution network + hub stores; parts availability that competitors can't match) | ROIC 54–72% (highest on the list); EBIT 19.6% | ROIC trending down 72→54%. Leases not included → ROIC/FV overstated. 2025 split normalized via Yahoo split events |
+| **ROL** | Cost advantage (route density) + brand (Orkin) + recurring contracts | ROIC 29–41% | ⚠️ **Fell −47.6% from its 52W high** after the Q2 miss (7/22: EPS −5.9% vs consensus, op. margin 18.7% vs 19.8%) + Piper downgrade 9/23 ([Fool](https://www.fool.com/investing/2026/07/23/why-rollins-stock-is-plummeting-lower-today/), [Nasdaq](https://www.nasdaq.com/articles/why-rollins-stock-plummeting-lower-today)) + a law-firm investigation ([Glancy](https://www.glancylaw.com/cases/rollins-inc-1/)) → E3 overhang. Still 1.59× over FV despite the drop. EV/Rev at the 5th pctile |
+| **TT** | Intangible (brand + engineering in commercial HVAC) + installed base → services | ROIC 18→28% (rising) | ⚠️ ROIC 18% in FY21. Partly linked to data-center cooling (AI capex) |
+| **MNST** | Intangible (brand) + distribution moat via KO's bottling network | ROIC 28–39%; EBIT 29%; net cash $3.4B | EV/Rev at the 95th pctile → most expensive vs its own history |
+| **KNSL** | Cost advantage (E&S combined ratio below industry, thanks to its own tech platform + small-ticket underwriting) | ROE 22–34%; P/B 4.3× | Consensus revenue FY+1 +3.7% / FY+2 ~0% (E&S cycle softening). Implied k n/m — the price can't be explained by any growth path in this RI model. Model simplified |
+| **ITW** | Cost advantage + intangible (80/20 business model, niche leadership) | ROIC 28–31% (most stable); EBIT 26.6% | Slow growth (consensus 3.6–4.9%) |
+| **GWW** | Efficient scale + cost advantage (MRO logistics, KeepStock vending) | ROIC 29–41% | EV/Rev at the 95th pctile |
+| **FAST** | Switching cost (onsite + vending machines installed in customer plants) + cost advantage (local network) | ROIC 29–35% | EV/Rev at the 95th pctile; price ≈ Street PT median |
+| **SHW** | Intangible (brand) + cost advantage (company-owned stores reaching pro painters directly) | ROIC 20–24% | Net debt $11.5B; ROIC sits right at the edge of the 20% bar |
+| **MSI** | Switching cost + efficient scale (LMR radio networks for police/fire — government contracts, long lifecycle) | ROIC 22–39% | ROIC fell to 22% in the latest FY (acquisitions). EV/Rev at the 85th pctile. Not AI/software |
+| **RACE** | Intangible (brand + scarcity — controls supply, pricing power) | ROIC 24–31% (rising); EBIT 29.5% | Borrowings include captive-finance debt → ROIC/ND slightly distorted. FY2025 data (20-F) — no TTM |
+| **CTAS** | Cost advantage (route density, uniform-rental scale) + switching cost (multi-year contracts) | ROIC 22→29% (rising steadily) | EV/Rev at the 75th pctile; implied k 3.3× |
+| **IDXX** | Switching cost (in-clinic analyzer installed base → consumables recurring revenue) + intangible | ROIC 47–58% | WACC 10.6% (β 1.54, high for a quality name) → FV falls harshly. Was scout-rejected in Round 11 as "too expensive" |
+| **WST** | Switching cost + regulatory (components are written into the drug filings of pharma customers — changing supplier means re-filing) | ROIC 35→18% (falling) | ⚠️ ROIC trending down below 20% in the last 2 years. Highest P/FV on the list, 3.0×. Morningstar index lists it as wide moat |
+
+**Screened but did not qualify (10):**
+- **ROIC < 20% (not consistent high-return compounders):**
+  - WM 10–12% · RSG 9–11% · ECL 8–15% · AME 12–13% · ROP 5–6% · CHD 8–14% · FDS 15–21% · CPRT 15–34% (falling).
+  - WM/RSG/ECL looked like >20% on the first pass. The cause was missing debt (see the fix above). They fail after the fix.
+- **AZO — not expensive:** P/FV **0.76×** (FV $4,189 vs $3,170, EV/Rev 20th pctile, implied k 0.36×).
+  - This is a VALUE-FIRST candidate, not this mandate: −20.7% from 52W high, so Filter A passes.
+  - ⚠️ ROIC is falling 117→48%.
+  - → **Propose sending AZO to the regular scout pipeline** (Filter A–E + Tier 1) next round.
+- **WAT:** after the BD Biosciences merger, TTM data is distorted (EBIT margin 7%, ROIC 1.4%, consensus +104%) → can't compute a screen FV. Wait for 4 clean quarters.
+- **ADP:** companyfacts has no `OperatingIncomeLoss`, and client-fund assets/obligations distort net debt → couldn't compute in the same model. PAYX covers this group.
+
+**Max's assessment — what the CIO must know before using these trigger prices:**
+1. **Screen FV runs systematically below Street PT for every name** (Street PT median ≈ current price, while our FV = 0.33–0.83× price). Reasons:
+   - A Blume-β WACC of 7.6–10.6% plus terminal RONIC 20% is strict for wide moats, which the market discounts at a lower rate and expects to hold excess returns longer.
+   - This is the same issue as AMZN v3.2 (Market-Implied Sanity Check). Every name here has |MOS| ≥ 35% except ORLY/RMD/PAYX.
+   - The sensitivity to WACC is large: −1pp WACC raises FV by 15–45%. Use **"Trigger @WACC−1pp"** as an early-warning level → that's the point to send it to a full VS2 pipeline.
+2. **A 50–70% drop for wide-moat compounders is rare** (it usually needs a 2008/2020-style crash or a structural moat break). The names with realistic triggers: **PAYX / RMD / ORLY** (−30% to −32%; looser bound −10% to −14%).
+3. **The names closest to trigger have mostly already been de-rated vs their own history:**
+   - PAYX EV/Rev 10th pctile · RMD 15th · ORLY 53rd. ROL is at the 5th pctile but still 1.59× over FV.
+   - In other words, the market has already re-priced them partly, and the bear thesis is concrete: PAYX = SMB employment / Paycor integration; RMD = GLP-1; ROL = Q2 miss + investigation.
+4. **No Blended FV:** these triggers come from a single screen-level DCF, not 40/30/30. When a price hits trigger @WACC−1pp → Charlie dispatches the full VS2 pipeline (Atlas classification → Emma/Quinn/Bear → Morgan) before any deploy. **Don't buy at the screen trigger directly.**
+5. **Proposal to Charlie:** add all 16 as a "Quality Watch" lane with alerts at both levels, and Max checks them in every Portfolio Review (Mode 3).
+   - **Not added to `buy_list.md` yet**, because none of the 16 has been fully analyzed (buy_list = fully analyzed names only).
+
+*Max — 2026-10-31 | Quality Compounder Watchlist (CIO-directed 2026-10-28) | 26 screened → 16 listed · 0 trade*
 
 ---
 
