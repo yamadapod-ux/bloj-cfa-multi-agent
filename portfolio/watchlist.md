@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด: Scout Round 77 (2026-10-16, Max — multi-sector VALUE-FIRST sweep across 7 de-rated groups: regional banks/consumer finance, homebuilders/building products, commodity chemicals, packaging, tariff-hit consumer discretionary, autos/auto parts, specialty pharma. 107 pre-screened, **37 two-source verified** (finviz + stockanalysis, Oct 15 close; 3rd source for NAVI/OMF). Filter A 33/37 → B-Zero/B/C 10 → D 2. **🟢 Fast-track: SLM** (A −28.5%, D 0.705×, E 3/3; wait for Q3 print Oct 22). **🟡 Learning-queue: ALLY** (D 0.77–0.90×, E 1/3). Reject 35 (near-misses: WAL D 0.906×, OMF B, SON/LEVI/JAZZ A). Prune: 0 de-listed (Round 75 pruned this morning). No full pipeline dispatched (scout-only CIO task).)*
+*ล่าสุด (2026-10-31): **AI Selloff Watch -- Trigger Prices** (CIO-directed — Part A NVDA/META/GOOGL/MSFT/AMZN trigger prices · Part B contagion scout 68→21→5→0 fast-track/learning-queue)*
+*ก่อนหน้า: Scout Round 77 (2026-10-16, Max — multi-sector VALUE-FIRST sweep across 7 de-rated groups: regional banks/consumer finance, homebuilders/building products, commodity chemicals, packaging, tariff-hit consumer discretionary, autos/auto parts, specialty pharma. 107 pre-screened, **37 two-source verified** (finviz + stockanalysis, Oct 15 close; 3rd source for NAVI/OMF). Filter A 33/37 → B-Zero/B/C 10 → D 2. **🟢 Fast-track: SLM** (A −28.5%, D 0.705×, E 3/3; wait for Q3 print Oct 22). **🟡 Learning-queue: ALLY** (D 0.77–0.90×, E 1/3). Reject 35 (near-misses: WAL D 0.906×, OMF B, SON/LEVI/JAZZ A). Prune: 0 de-listed (Round 75 pruned this morning). No full pipeline dispatched (scout-only CIO task).)*
 *ก่อนหน้า: CIO-directed re-scout (2026-10-16, Max — 3-ticker re-scout of **PODD, ZTS, NKE** at CIO's explicit request, full VALUE-FIRST Filter A-E [the current A≥20%/B/C/D/E criteria were never run on these 3 in full — Round 75 only flagged them for staleness-prune and suggested the re-scout]. Live price re-verified ≥2 sources for all 3 [PODD $138.77-138.83 diff 0.04% / ZTS $78.18-78.42 diff 0.3% / NKE $37.11-37.18 diff 0.19%, all 2026-10-15 close], 52W-high confirmed 4-5 sources each. **Filter A: 2/3 PASS** (PODD -60.9% cyclical/execution-miss + litigation overhang; ZTS -47.1% mixed cyclical+structural-pocket reason, flagged both ways), **1/3 REJECT** (NKE -47.3% — JPMorgan/Euromonitor/Morgan Stanley data confirm **structural, not cyclical**: global footwear share 22.9%/2025 = 3rd consecutive annual decline, China share -590bps since 2019, 5 consecutive years losing brand-preference survey share — textbook permanent-moat-erosion-confirmed-by-market-share-numbers reject). **PODD clears A+B+C+D but Filter E = 2/3 only** (unresolved securities-fraud class action + 2 manufacturing-defect device corrections in 2026 fail overhang sub-criterion) → **Learning-queue, not fast-track**. **ZTS REJECTS at Filter D** — naive FV/share $68-79 (FCF/WACC) vs price $78.42 = 0.99-1.15× (no MOS; Street-PT +21% upside misses the >25%-override bar) — price fell but FCF/earnings fell too (2 guidance cuts in 2026), classic cheap-stock/cheap-earnings trap. **NKE REJECTS independently at A, D (naive FV $18.3/sh → price = 2.03× FV, would also fail Tier-1 Quick-Screen check 2a) and E (0/3)**. **0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE).** No full pipeline dispatched this round (re-scout only, per task scope). See § Round 76 at end of file.)*
 
 *ก่อนหน้า: Scout Round 75 (2026-10-16, Max — **IT Services + Data/Information Services** sector, never scouted before: EPAM/CTSH/GLOB/IT/EFX/TRU/VRSK + payroll sidebar). Regime re-called by Atlas 2026-10-16 → **RISK-ON 3/4** (Fed lone dissent). **Prune Step 0: de-listed 16** (5 superseded: LDOS/ELV/GD/KR/LKQ · 11 stale >60d: FTAI/NKE/ZTS/CPRT/PODD/ONON/GEHC/BR/CLS/LITE/GLW), SLA re-fixed 16 remaining → target 2026-10-23. **Scan result: Filter A 6/7 PASS (TRU −16.8% fails) → 0 fast-track, 0 learning-queue.** Rejects: EPAM (D 1.15×), CTSH (D 1.00× ±10% band), IT (D 1.18×), VRSK (D 1.96× → Tier-1 2a), GLOB (C: ROIC 7.5% < 80% × 13% WACC), EFX (A: FHFA bi-merge regulatory regime change + D 2.97×). Lesson: the AI-disruption de-rating of IT services is real (−20% to −46%) but with Rf 5.19% the stocks now trade at ≈ no-growth FCF value, not below it. See § Round 75 at end of file.)*
@@ -378,6 +379,10 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-10-31 (Mode 1 Step 0 — CIO-directed AI Selloff Watch):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
+- **Rule #1:** IBKR/URI/EME (scouted 08-29) are now 63 days old, but they still carry target **2026-11-07**, so they are not stale yet. **If 11-07 passes without a Tier 1 re-run, archive them at the next prune.** All other rows carry target dates that have not passed.
+- **Rule #2/#3:** since 10-28, only `dashboard/portfolio.js` changed (re-marks), and OPEN is still ADBE/NOW/CRM/REGN/ADSK. `decisions.md` has no new AVOID/SKIP for any live ticker.
+
 **Prune Pass 2026-10-28 (Mode 1 Step 0 — ad-hoc CIO-directed Logistics/Trucking/Rail Equipment scout):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
 - **Rule #1 (stale):** every row got a target date in yesterday's prune (2026-10-27): IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI → 11-07, ALLY/BYD → 11-07, MMS 11-20, CRI 11-06, NBIX 11-03, WGO 12-19. No row is both >60 days without an update **and** missing a target date. The oldest scout date is 08-29, which is 60 days old, not over 60.
 - **Rule #2/#3:** no new position, AVOID or SKIP since 10-27 (`dashboard/portfolio.js` still shows 5 OPEN: ADBE/NOW/CRM/REGN/ADSK).
@@ -524,6 +529,158 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 | VEL | Velocity Financial, Inc. | 2026-08-27 | 2026-10-27 | Stale timeout (Rule #1) — 61 days since scout with no CIO/Charlie price update or action, and the only target (2026-10-23 Tier 1 re-screen under current Filter A-E) passed without being run. Not a thesis-dead call. Re-list if the CIO wants it re-screened. | $15.41 (Oct 26 close, Yahoo) · 52W $14.18–21.40 |
 | KALU | Kaiser Aluminum Corporation | 2026-08-27 | 2026-10-27 | Stale timeout (Rule #1) — 61 days since scout with no CIO/Charlie price update or action, and the only target (2026-10-23 Tier 1 re-screen under current Filter A-E) passed without being run. Not a thesis-dead call. Re-list if the CIO wants it re-screened. | $105.47 (Oct 26 close, Yahoo) · 52W $87.89–199.89 |
 | HG | Hamilton Insurance Group, Ltd. | 2026-08-27 | 2026-10-27 | Stale timeout (Rule #1) — 61 days since scout with no CIO/Charlie price update or action, and the only target (2026-10-23 Tier 1 re-screen under current Filter A-E) passed without being run. Not a thesis-dead call. Re-list if the CIO wants it re-screened. | $36.30 (Oct 26 close, Yahoo) · 52W $22.66–37.31 |
+
+---
+
+## AI Selloff Watch -- Trigger Prices (2026-10-28)
+
+**Trigger:** CIO-directed (brief dated 2026-10-28; run 2026-10-31 on **Oct 30, 2026 close**). This is a pre-set watchlist of trigger prices, not a buy signal. **Screen level only.** Emma/Quinn/Bear were not called and no full equity analysis was run. Max did not trade.
+
+**Context:** META −7% on 10-22 (FCF turned negative, capex floor $135–145B). GOOGL −8.7% after-hours on 10-28 even though Cloud revenue nearly doubled. Money is rotating out of AI. Regime = **RISK-ON 3/4** (`agent_notes/atlas/2026-10-27_regime.md`, 4 days old). Fed Stance is already RISK-OFF (~73–77% odds of a Dec 9 hike).
+
+**Data sources (all primary or exact cross-checks):**
+- **Fundamentals:** SEC EDGAR XBRL companyfacts API (`data.sec.gov/api/xbrl/companyfacts/CIK##########.json`), pulled 2026-10-31. Concepts used: Revenues/RevenueFromContract…, NetCashProvidedByOperatingActivities, PaymentsToAcquirePPE, ShareBasedCompensation, OperatingIncomeLoss, D&A, IncomeTaxExpense, StockholdersEquity, LongTermDebt(Non)Current, Cash + MarketableSecurities, WeightedAverageDilutedShares. TTM = FY + YTD − prior YTD.
+- **Latest quarter in SEC data:** META/GOOGL/MSFT/AMZN = Q3 CY26 (09-30). NVDA = Q2 FY27 (2026-07-26; Q3 reports ~Nov 19).
+- **Prices (Oct 30 close):** Yahoo chart API and stockanalysis.com forecast pages match **exactly** for all 5 megacaps (NVDA $204.64 · META $614.99 · GOOGL $279.84 · MSFT $521.91 · AMZN $240.35).
+- **52W highs:** Yahoo and the Nasdaq.com quote API agree (CEG differs by 3%; see Part B).
+- **Consensus revenue growth and Street PT:** stockanalysis.com forecast pages (S&P Global consensus, updated 10-28). **Single source.** This is not SEC data, because SEC filings contain no consensus.
+- **Rf:** 10Y UST **4.93%** (Yahoo ^TNX, Oct 30). Atlas recorded 5.00% on 10-23 (gap 7bps).
+- **ERP:** Damodaran implied **4.20%**, carried from the 10-27 round.
+- **Beta:** raw 5Y monthly beta vs ^GSPC (Yahoo adjclose, n=59), Blume-adjusted. **Not a VS2 §1.1 two-method WACC.**
+- Scripts are kept in `scripts/scout/2026-10-31_ai_selloff/` so Morgan can re-run them.
+
+### Part A — AI Megacap Growth-bucket Trigger Prices
+
+**Method (Growth MOS, CLAUDE.md § MOS Threshold — the CIO asked for a price that passes both tests):**
+1. **Multiple Percentile:** EV/Revenue (TTM) today vs. 20 quarter-ends over 5Y (Q4'21–Q3'26).
+   - EV = price × diluted shares (split-normalized) + debt − cash/marketable securities. Leases are excluded (consistent across all periods).
+   - Pass if ≤70th percentile. Trigger = price at which EV/Rev = p70.
+2. **Reverse DCF:** FCFF = NOPAT × (1 − g/RONIC).
+   - EBIT margin held at TTM (SEC). Tax = effective TTM rate, bounded 15–25%.
+   - RONIC fades from TTM ROIC (cap 100%) to 20% in year 10. TGR 3%.
+   - Growth path = **k × consensus path**: FY+1 (and FY+2 if available) from consensus, fading linearly to TGR. Solve for k at today's price. Pass if k ≤ 1.2. Trigger = price at k = 1.2.
+   - **Base** = fade to TGR by year 10. **Stress** = fade to TGR by year 5 (because consensus beyond FY+2 doesn't exist).
+   - NOPAT/reinvestment is used instead of FCF because META/GOOGL/AMZN FCF is currently depressed or negative from capex. These are temporary (reinvestment-phase) effects, not structural.
+3. Non-operating equity stakes (e.g., GOOGL/AMZN AI-lab investments) are **excluded**, so the triggers lean conservative. VS2 §1.2 bridge required in a full analysis.
+
+| | **NVDA** | **META** | **GOOGL** | **MSFT** | **AMZN** |
+|---|---|---|---|---|---|
+| Price (Oct 30) / 52W high | $204.64 / $243.37 (−15.9%) | $614.99 / $779.82 (−21.1%) | $279.84 / $408.61 (−31.5%) | $521.91 / $551.15 (−5.3%) | $240.35 / $287.20 (−16.3%) |
+| Rev TTM (SEC) / YoY | $303.0B / **+83.4%** | $241.6B / **+27.5%** | $471.1B / **+22.2%** | $346.4B / **+17.9%** ❌ | $797.5B / **+15.4%** ❌ |
+| Consensus growth (FY+1 / FY+2) | FY27 +90.6% / FY28 +68.2% | FY27 +21.6% | FY27 +27.1% | FY27 +19.3% / FY28 +19.9% | FY27 +14.7% |
+| **Bucket gate** | Growth ✅ (>20%) | Growth ✅ | Growth ✅ | **Value** (Growth gate unreachable at any price) | **Value** (same, matches buy_list) |
+| CFO / Capex / SBC (TTM) | $134.4B / $7.4B / $7.2B | $133.1B / $104.4B / $26.9B | $179.6B / $159.8B / $30.4B | $195.9B / $135.9B / $12.6B | $168.3B / $215.2B / $19.9B |
+| (FCF − SBC) margin TTM | 39.5% | 0.7% | −2.3% | 13.7% | −8.4% |
+| Capex / Revenue | 2.4% | **43.2%** | **33.9%** | **39.2%** | **27.0%** |
+| EBIT margin / ROIC (TTM) | 65.2% / 86% | 32.9% / 25% | 33.3% / 24% | 47.1% / 30% | 13.1% / 12% |
+| β raw → Blume / WACC | 2.25 → 1.84 / 12.59% | 1.28 → 1.19 / 9.65% | 1.23 → 1.15 / 9.58% | 1.05 → 1.03 / 9.22% | 1.50 → 1.34 / 10.16% |
+| EV/Rev now · 5Y min/med/p70/max | 16.3× · 12.0/23.2/26.4/35.6 | 6.55× · 2.52/7.22/8.52/10.51 | 7.05× · 3.76/5.70/6.73/9.55 | 11.1× · 8.27/11.7/12.4/13.5 | 3.38× · 1.67/3.20/3.39/3.62 |
+| **① Multiple pctile** | **15th ✅** (trigger $331) | **45th ✅** ($800) | **75th ❌ → $267.47 (−4.4%)** | 45th ✅ ($580) | 60th ✅ ($242, at the p70 edge) |
+| **② Reverse DCF base:** implied k | **0.50× ✅** | **1.04× ✅** | **0.96× ✅** | **1.20× (on the line)** | 3.05× ❌ |
+| ② base trigger (k=1.2) | $1,038 | $687 | $344 | $524 (+0.4%) | $111 (−54%) |
+| **② Reverse DCF stress:** implied k | 0.81× ✅ | 1.69× ❌ | 1.62× ❌ | 1.83× ❌ | 5.0× ❌ |
+| ② stress trigger | $334 | **$501 (−18.5%)** | **$230 (−17.7%)** | $389 (−25.5%) | $94 (−61%) |
+| PV(TV)/EV (base) | 82% | 78% | 85% | 76% | 80% |
+| Street PT low / avg | $180 / $329 | $629 / $848 | $325 / $407 | $440 / $630 | $230 / $331 |
+
+**Trigger price summary (the price that passes both Growth MOS tests):**
+
+| Ticker | Price now | **Trigger (base)** | **Trigger (stress / conservative)** | Conviction gate | Notes |
+|---|---|---|---|---|---|
+| **NVDA** | $204.64 | **Already passes** (k 0.50×, pctile 15th) | **Already passes** (stress k 0.81×) | Growth **≥6.5** | Price is not the blocker. The blocker is conviction plus a methodology problem (below). |
+| **META** | $614.99 | **Already passes** (k 1.04×, 45th) | **$501 (−18.5%)** | Growth **≥6.5** | Possible AI/Infra lane (capex/rev 43%) → MOS ≥25% / T1 ≤4% |
+| **GOOGL** | $279.84 | **$267.47 (−4.4%)** (bound by the multiple test) | **$230 (−17.7%)** | Growth **≥6.5** | Possible AI/Infra lane (capex/rev 34%) |
+| **MSFT** | $521.91 | Growth n/a (rev +17.9% <20%). **Value proxy $383 (−27%)** = 0.85 × screen-DCF FV $451 | Value proxy **$300 (−43%)** = 0.85 × stress FV $353 | Value **≥7.0** | No team Blended FV exists. The proxy must be replaced by a full VS2 run before use. |
+| **AMZN** | $240.35 | **Value: $171.25 (−28.7%)** = MOS 15% on team VS2 Blended FV $201.47 (`reports/AMZN_2026-10-07_v3.md` v3.4) · zone $161–171 | Screen RDCF $94–111 (−54% to −61%) | Value **≥7.0** (last 5.67) | Team FV predates Q3 (Oct 29 miss). Re-verify per buy_list before use. |
+
+**Max's assessment — 5 things the CIO must know before using these numbers:**
+1. **NVDA "passes" on the screen, but for the wrong reason.** EV/Rev is at the 15th percentile only because revenue grew 11× in 5 years ($26.9B → $303B). The reverse DCF passes only because the FY27/FY28 consensus of +90%/+68% extrapolates hypergrowth.
+   - Under VS2, NVDA is **Cyclical (semis)** and must be valued on **mid-cycle** FCF/margin, not a 65% peak EBIT margin.
+   - Our last team view (v3, 2026-05-16) was **HOLD/WAIT** at FV $149, now stale for 5 months.
+   - Street PT low is $180 (−12%).
+   - → I recommend **fast-tracking NVDA to a full VS2 pipeline** before setting any entry zone. The screen trigger shouldn't be used as a buy price.
+2. **META/GOOGL: the reverse-DCF result swings heavily on how fast growth fades.** Base passes now; stress requires −18%. I'd set **META $501 / GOOGL $230** as conservative triggers. GOOGL's multiple test also binds at $267 (−4%).
+3. **MSFT/AMZN cannot enter the Growth bucket at any price** (revenue growth 15–18% < 20%). They must pass the Value gate (MOS ≥15% on Blended FV + conviction ≥7.0).
+   - AMZN already has a team zone ($161–171).
+   - MSFT needs a full analysis before its trigger can be trusted.
+4. **AI/Infra lane:** META/GOOGL/MSFT/AMZN all meet the capex/revenue ≥15% leg.
+   - The ≥40%-of-growth-from-AI leg needs Atlas classification.
+   - If they enter the lane: MOS ≥25% (not 15%), T1 ≤4%, and Bear-scenario probability ≥25%.
+   - Atlas classifies before Emma sees any data.
+5. **Concentration:** all 5 share the same AI-capex factor. A one-at-a-time sector-rotation strategy is needed. Don't buy them together when the triggers fire on the same day.
+
+### Part B — Contagion-victim Value-bucket Scout (VALUE-FIRST A-E + Tier 1)
+
+**Universe:** 68 tickers price-screened (power/IPP, regulated utilities, E&C/grid contractors, electrical equipment, nuclear, solar, DC REITs). Yahoo prices; 52W highs cross-checked with Nasdaq.com. Exclusions:
+- **Hard exclusion — decisions.md (8):** GEV, ETN, VRT, FIX, STRL, CCJ, NXT, FSLR.
+- **Outside the brief (genuinely AI-capex-dependent, so not "contagion"):**
+  - Optical/networking/semis: LITE, CIEN, COHR, ANET, GLW, CLS.
+  - DC cooling / fuel cells: MOD, BE.
+  - DC REITs: EQIX, DLR, PLD.
+  - Solar (policy-driven drawdowns): ENPH, ARRY, SHLS.
+  - Pre-revenue nuclear (fails C outright): OKLO, SMR, LEU.
+- **Note:** VST/PWR/CEG/NRG etc. were scout-rejected in earlier rounds (watchlist only, never in decisions.md). The CIO named VST/PWR directly, so they are re-screened under the Round 76 precedent.
+
+**Filter A (≥20% off 52W high):**
+- **Fail (<20%) — the key finding:** every true non-AI regulated utility fell less than 20%: NEE −15.2%, PEG −15.2%, SRE −14.8%, AES −16.0%, D −8.7%, EXC −8.9%, AEP −7.4%, ETR −7.0%, SO −5.9%, XEL −5.2%, DUK −5.3%. Also AYI −16.3%, FLR −19.7%, KBR −14.7%, WCC −11.7%, ROK −12.3%, TTEK, J, EMR, AME, LIN, APD.
+- **Pass (21):** VST −29.7% · CEG −32.5% (Nasdaq 52W high $400.98 → −34.6%) · NRG −49.4% · TLN −23.7% · PWR −21.3% · MTZ −57.9% · MYRG −43.9% · PRIM −64.6% · DY −59.8% · IESC −49.6% · AGX −57.3% · POWL −52.4% · HUBB −25.3% · NVT −31.8% · CMI −32.2% · GNRC −33.2% · BWXT −46.0% · ESAB −49.2% · ACM −53.3% · PCG −31.2% · EIX −28.0%.
+- **Contagion check (Yahoo daily):** only VST (−11.4%), NVT (−13.8%), IESC (−13.0%), HUBB (−8.3%), POWL (−8.3%) and CMI (−7.8%) fell meaningfully during 10/21→10/30. For most names, the bulk of the drawdown started at May–June 2026 highs. **The "AI-power trade" was already unwinding before the META event.** This is not a one-week contagion.
+
+**Filter B (Value — FCF yield >6% TTM, or EV/EBITDA in the bottom third of own 5Y quarterly history, SEC + Yahoo):**
+
+| Ticker | EV/EBITDA now | 5Y p33 / median | Percentile | FCF yield TTM | B | Price where B would pass (EV/EBITDA = p33) | C: ROIC vs WACC | Rev YoY |
+|---|---|---|---|---|---|---|---|---|
+| VST | 12.2× | 7.5 / 10.8 | 53 | 4.9% | ❌ | $64 (−54%) | 11.1% / 9.5% ✅ | +3.8% |
+| CEG | 14.3× | 11.3 / 12.7 | 72 | 0.3% | ❌ | $194 (−26%) | 6.3% / 9.5% (67%) ❌ | +26.0% (Calpine M&A) |
+| NRG | 11.8× | 5.2 / 7.2 | 71 | 1.7% | ❌ | n/m (ND/EBITDA 6.3×) | 5.5% (58%) ❌ | +12.8% |
+| TLN | 58.1× | 10.6 / 25.7 | 85 | 3.5% | ❌ | n/m | 0.7% ❌ | +60.8% (M&A) |
+| PWR | 30.8× | 20.8 / 23.0 | 76 | 3.4% | ❌ | $425 (−31%) | 23.8% ✅ | +37.1% |
+| MTZ | 11.5× | 10.2 / 12.1 | 48 | 2.7% | ❌ | $167 (−10%) | 15.7% ✅ | +25.7% |
+| MYRG | 13.6× | 12.1 / 13.6 | 48 | 3.1% | ❌ | $250 (−11%) | 20.2% ✅ | +22.8% |
+| PRIM | 14.3× | 7.3 / 8.0 | 85 | 2.2% | ❌ | $32 (−56%) | 7.5% (65%) ❌ | +5.1% |
+| IESC* | 14.4× | 8.3 / 9.4 | 75 | 2.8% | ❌ | $122 (−41%) | 45% ✅ | +22.7% |
+| POWL | 21.5× | 10.2 / 12.6 | 85 | 4.3% | ❌ | $83 (−47%) | very high ✅ | +7.0% |
+| HUBB | 17.0× | 16.6 / 17.8 | 38 | 4.2% | ❌ (just above) | $409 (−3%) | 11.2% ✅ | +16.0% |
+| NVT | 22.6× | 21.9 / 23.5 | 38 | 3.2% | ❌ (just above) | $122 (−4%) | 11.5% ✅ | +48.0% |
+| CMI | 13.1× | 8.5 / 9.3 | 70 | 4.9% | ❌ | $334 (−33%) | 32.3% ✅ | +2.9% |
+| GNRC | 20.1× | 15.5 / 16.1 | 70 | 3.2% | ❌ | $148 (−25%) | 8.4% (80%) borderline | +0.6% |
+| BWXT | 24.7× | 16.2 / 20.5 | 75 | 2.6% | ❌ | $80 (−39%) | 12.0% ✅ | +22.7% |
+| ESAB | 14.0× | 11.6 / 14.3 | 50 | 4.5% | ❌ | $52 (−26%) | 5.9% (51%) ❌ | +9.7% |
+| **PCG** | 18.1× | 21.9 / 31.4 | 0 | −12.1% | ✅ (EV/EBITDA) | — | 4.1% (43%) ❌ | — |
+| **EIX** | 7.0× | 10.9 / 12.3 | 10 | −0.6% | ✅ (EV/EBITDA) | — | 7.7% (81%) borderline | — |
+| **ACM** | 10.0× | 11.0 / 12.1 | 15 | 2.5% | ✅ (EV/EBITDA) | — | 41% ✅ | −4.2% |
+| **DY** | 11.8× | 11.2 / 14.3 | 35 | **6.8%** | ✅ (FCF, TTM) | — | 7.1% (68%) ❌ | +37.8% |
+| **AGX** | 23.4× | 8.9 / 12.7 | 75 | **11.3%** | ✅ (FCF, TTM) | — | net cash > equity, n/m | +29.0% |
+
+\*IESC split 2:1 on 2026-08-24, after its last SEC cover date. EV is computed with split-normalized shares. (An early naive pass gave 6.7×, which was wrong. Corrected.)
+WACC band: ~9.5% for >$20B, 10.5% for $5–20B, 11.5% for <$5B (scout level; Rf 4.93% + β~1.1 × 4.2%). EBIT for MTZ/DY/AGX comes from PTI + interest or a full-year fallback, because companyfacts lacks a clean TTM OperatingIncomeLoss.
+
+**Why the 5 Filter-B survivors still fail (A-reason / C / D / Tier 1):**
+- **PCG / EIX — not contagion.** The cause was California SB 492 (8/31), which omitted the wildfire-liability protections investors expected: EIX −23% in one day (its worst in 25 years), PCG −18–19% ([TIKR](https://www.tikr.com/blog/why-edison-international-stocks-23-crash-overshot-californias-wildfire-bill), [AskTraders](https://www.asktraders.com/analysis/edison-international-shares-plunge-as-california-wildfire-liability-bill-disappoints-investors/), [AAII PCG](https://www.aaii.com/investingideas/article/537742-why-pge-corporation8217s-pcg-stock-is-down-1840)). Jefferies downgraded EIX to Underperform on 10/2.
+  - Filter A reason = ❌ unresolved regulatory regime change with a bearish default. E3 ❌.
+  - PCG: ND/EBITDA 12.2× (B-Zero flag) and C ❌. FCF is negative for both (regulated capex). D cannot be computed (naive FV negative).
+  - → **REJECT**.
+- **ACM — not contagion.** Causes: a $337M project charge, claims rising to ~$680M, OCF −98% in the May quarter, and a strategic review of the CM business, plus a securities-litigation solicitation ([Zacks](https://www.zacks.com/stock/news/2883871/aecom-stock-plunges-297-in-6-months-should-you-buy-the-dip), [Glancy](https://www.glancylaw.com/cases/aecom/), [Yahoo/StockStory](https://finance.yahoo.com/markets/stocks/articles/why-aecom-acm-shares-falling-042055944.html)).
+  - D: naive FV = 5Y-avg FCF $0.63B ÷ 10.5% + net cash = **$54.21/share** → price **1.17×** naive FV = ❌ (>0.90×). E3 ❌ (litigation + claims).
+  - → **REJECT.** Watch only: D would pass at ≤$43 (−32%) if the claims resolve. Classify as a separate company-specific case, not part of this mandate.
+- **DY — not contagion.** Causes: Q3 guidance miss in late August and profit-taking after a +151% one-year run ([Nasdaq](https://www.nasdaq.com/articles/why-dycom-industries-stock-plummeting-week), [iTiger](https://www.itiger.com/news/1105864015)). Fiber builds for hyperscalers make it **AI-capex dependent**.
+  - C ❌ (ROIC ~7.1% vs 10.5% = 68% < 80%). TTM FCF of 6.8% is inflated vs a 5Y average of only $0.13B. D: naive FV negative after net debt.
+  - → **REJECT** (Tier 1 check 1/2a).
+- **AGX — not contagion.** Causes: backlog fell $2.9B → $2.5B and there were 31 insider sales and 0 buys in 6 months ([QuiverQuant](https://www.quiverquant.com/news/Why+Argan+%28AGX%29+Stock+Is+Down+Today), [Trefis](https://www.trefis.com/articles/594974/argan-stock-plummets-14-with-5-day-losing-streak/2026-03-27)). It builds gas plants for data-center power, so it is AI-linked.
+  - TTM FCF 11.3% is a customer-advance working-capital artifact; 5Y avg is $0.14B.
+  - D: naive FV **$122.11** → price **2.82×** → **Tier 1 check 2a SKIP** (>1.5×).
+  - → **REJECT.**
+
+**Part B result:** 68 price-screened → 21 pass A → **5 pass B → 0 fast-track · 0 learning-queue · 5 REJECT** (logged as `QUICK-SCREEN SKIP` under the Tier 1 definition: PCG/EIX/ACM/DY/AGX).
+
+**Max's take on Part B:** the brief's premise ("non-AI names dragged down by sentiment") **does not show up in the data**.
+- Truly non-AI regulated utilities fell less than 20% (NEE −15%, DUK −5%).
+- The names that fell 20–65% are **the AI-power trade itself**: IPPs with DC PPAs, grid/E&C contractors with DC backlog, and electrical equipment. Even after the drop, they still trade at the 48th–85th percentile of their own 5Y EV/EBITDA, because the 5Y window includes the pre-AI period.
+- Their value rests on future growth, not current FCF. D-Legacy (no-growth FV on 5Y-avg FCF) therefore fails for every one of them by a wide margin, even at the Filter-B watch prices.
+- **Watch prices (Filter B would pass — not a buy price, D still fails):** HUBB ≤$409 (−3%) · NVT ≤$122 (−4%) · MTZ ≤$167 (−10%) · MYRG ≤$250 (−11%) · PWR ≤$425 (−31%) · CMI ≤$334 (−33%).
+- **Suggested follow-up (not done this round, outside the brief):** names with revenue growth >15% and ROIC > WACC (PWR, MTZ, MYRG, IESC, NVT, BWXT, HUBB) should be screened in the **Growth lane B-V1/D-V1** or the AI/Infra lane (if Atlas classifies them) instead of the Value bucket. That is the methodologically correct lens for these businesses.
+
+*Max — 2026-10-31 | AI Selloff Watch (CIO-directed 2026-10-28) | Part A 5 trigger prices · Part B 68→21→5→0*
 
 ---
 

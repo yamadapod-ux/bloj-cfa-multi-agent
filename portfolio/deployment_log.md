@@ -1065,3 +1065,20 @@
 - **Data:** SEC EDGAR XBRL companyfacts (10-K + latest 10-Q). Prices from 2 sources (Yahoo + Nasdaq.com, 2026-10-26 close, exact match). 9 IT-distribution names failed Filter A (near highs). Full tables: `portfolio/watchlist.md` § Scout History 2026-10-27.
 
 *Max + Charlie — 2026-10-27 | Fresh-sector scout — 0 fast-track, 0 learning-queue, 7 QUICK-SCREEN SKIP; no trade.*
+
+---
+
+## CIO-Directed AI Selloff Watch — Part B Contagion-victim Value Scout — 2026-10-31
+
+| Ticker | Action | Gate / Rationale |
+|--------|--------|------------------|
+| PCG | `QUICK-SCREEN SKIP` (Filter A-reason ❌ / C ❌) | B pass on EV/EBITDA 18.1× (0th pctile 5Y). Drop driven by CA SB 492 wildfire liability (8/31), not AI contagion → unresolved regulatory overhang. ROIC 4.1% = 43% of WACC. ND/EBITDA 12.2×. FCF −$4.3B TTM. |
+| EIX | `QUICK-SCREEN SKIP` (Filter A-reason ❌ / E3 ❌) | B pass on EV/EBITDA 7.0× (10th pctile). Same SB 492 driver (−23% on 8/31). Naive FV negative (5Y-avg FCF −$2.3B). |
+| ACM | `QUICK-SCREEN SKIP` (Filter D ❌ / E3 ❌) | B pass on EV/EBITDA 10.0× (15th pctile). Company-specific: $337M project charge, claims ~$680M, strategic review. Naive FV $54.21 → P/FV 1.17×. Watch ≤$43. |
+| DY | `QUICK-SCREEN SKIP` (Tier 1 check 1/2a — C ❌) | B pass on TTM FCF yield 6.8% (5Y avg only $0.13B). ROIC 7.1% vs 10.5% = 68%. Naive FV negative after net debt. Guidance-driven drop; AI-fiber dependent. |
+| AGX | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | B pass on TTM FCF yield 11.3% (customer-advance WC artifact; 5Y avg $0.14B). Naive FV $122.11 → P/FV 2.82× (>1.5×). |
+
+- **Regime:** RISK-ON 3/4 (Atlas 2026-10-27). Scout-only CIO task; no trade. Part A (megacap trigger prices) is a watch list, not a deployment decision.
+- **Data:** SEC EDGAR XBRL companyfacts. Prices Yahoo (Oct 30 close); 52W highs cross-checked with Nasdaq.com. 68 price-screened, 21 passed A, 5 passed B. Full tables: `portfolio/watchlist.md` § AI Selloff Watch -- Trigger Prices (2026-10-28).
+
+*Max — 2026-10-31 | AI Selloff Watch Part B — 0 fast-track, 0 learning-queue, 5 QUICK-SCREEN SKIP; no trade.*
