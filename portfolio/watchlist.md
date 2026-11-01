@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-10-31): **Quality Compounder Watchlist -- Expensive Wide-Moat** (CIO-directed 2026-10-28 — 26 screened → 16 listed across 11 sectors, trigger = MOS 15% on screen FV; closest: PAYX −29.7% / RMD −29.9% / ORLY −32.3%)*
+*ล่าสุด (2026-11-01): **Scout Round 82 — Life Science Tools / Bioprocessing / Genomics / CROs** (never a dedicated round before; 26 attempted → 25 screened with SEC EDGAR companyfacts + Yahoo/Nasdaq Oct 30 close. Filter A 5/25 (QDEL/TXG/TWST/MYGN/ILMN) → C 1 (ILMN) → B/D 0 (ILMN P/naive FV 6.2× → Tier 1 Check 2a SKIP). **0 fast-track · 0 learning-queue · 25 reject**. Large caps TMO/DHR/A/MTD/IQV/CRL sit 0–7% off highs at 70th–100th-pct EV/EBITDA, so the 2023–25 de-rating is over. Prune: 0 de-listed.)*
+*ก่อนหน้า (2026-10-31): **Quality Compounder Watchlist -- Expensive Wide-Moat** (CIO-directed 2026-10-28 — 26 screened → 16 listed across 11 sectors, trigger = MOS 15% on screen FV; closest: PAYX −29.7% / RMD −29.9% / ORLY −32.3%)*
 *ก่อนหน้า (2026-10-31): **AI Selloff Watch -- Trigger Prices** (CIO-directed — Part A NVDA/META/GOOGL/MSFT/AMZN trigger prices · Part B contagion scout 68→21→5→0 fast-track/learning-queue)*
 *ก่อนหน้า: Scout Round 77 (2026-10-16, Max — multi-sector VALUE-FIRST sweep across 7 de-rated groups: regional banks/consumer finance, homebuilders/building products, commodity chemicals, packaging, tariff-hit consumer discretionary, autos/auto parts, specialty pharma. 107 pre-screened, **37 two-source verified** (finviz + stockanalysis, Oct 15 close; 3rd source for NAVI/OMF). Filter A 33/37 → B-Zero/B/C 10 → D 2. **🟢 Fast-track: SLM** (A −28.5%, D 0.705×, E 3/3; wait for Q3 print Oct 22). **🟡 Learning-queue: ALLY** (D 0.77–0.90×, E 1/3). Reject 35 (near-misses: WAL D 0.906×, OMF B, SON/LEVI/JAZZ A). Prune: 0 de-listed (Round 75 pruned this morning). No full pipeline dispatched (scout-only CIO task).)*
 *ก่อนหน้า: CIO-directed re-scout (2026-10-16, Max — 3-ticker re-scout of **PODD, ZTS, NKE** at CIO's explicit request, full VALUE-FIRST Filter A-E [the current A≥20%/B/C/D/E criteria were never run on these 3 in full — Round 75 only flagged them for staleness-prune and suggested the re-scout]. Live price re-verified ≥2 sources for all 3 [PODD $138.77-138.83 diff 0.04% / ZTS $78.18-78.42 diff 0.3% / NKE $37.11-37.18 diff 0.19%, all 2026-10-15 close], 52W-high confirmed 4-5 sources each. **Filter A: 2/3 PASS** (PODD -60.9% cyclical/execution-miss + litigation overhang; ZTS -47.1% mixed cyclical+structural-pocket reason, flagged both ways), **1/3 REJECT** (NKE -47.3% — JPMorgan/Euromonitor/Morgan Stanley data confirm **structural, not cyclical**: global footwear share 22.9%/2025 = 3rd consecutive annual decline, China share -590bps since 2019, 5 consecutive years losing brand-preference survey share — textbook permanent-moat-erosion-confirmed-by-market-share-numbers reject). **PODD clears A+B+C+D but Filter E = 2/3 only** (unresolved securities-fraud class action + 2 manufacturing-defect device corrections in 2026 fail overhang sub-criterion) → **Learning-queue, not fast-track**. **ZTS REJECTS at Filter D** — naive FV/share $68-79 (FCF/WACC) vs price $78.42 = 0.99-1.15× (no MOS; Street-PT +21% upside misses the >25%-override bar) — price fell but FCF/earnings fell too (2 guidance cuts in 2026), classic cheap-stock/cheap-earnings trap. **NKE REJECTS independently at A, D (naive FV $18.3/sh → price = 2.03× FV, would also fail Tier-1 Quick-Screen check 2a) and E (0/3)**. **0/3 fast-track, 1/3 learning-queue (PODD), 2/3 reject (ZTS, NKE).** No full pipeline dispatched this round (re-scout only, per task scope). See § Round 76 at end of file.)*
@@ -379,6 +380,10 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
+
+**Prune Pass 2026-11-01 (Mode 1 Step 0 — Round 82):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
+- **Rule #1:** every row still carries a target date that has not passed (NBIX 11-03, CRI 11-06, IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD 11-07, MMS 11-20, WGO 12-19). **IBKR/URI/EME (64 days old) must be archived at the first prune after 11-07 if there has been no Tier 1 re-run by then.**
+- **Rule #2/#3:** since the 10-31 prune, the only change is the `dashboard/portfolio.js` re-mark (`c1bc348`). OPEN is still ADBE/NOW/CRM/REGN/ADSK, and `decisions.md` is unchanged.
 
 **Prune Pass 2026-10-31 (Mode 1 Step 0 — CIO-directed AI Selloff Watch):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
 - **Rule #1:** IBKR/URI/EME (scouted 08-29) are now 63 days old, but they still carry target **2026-11-07**, so they are not stale yet. **If 11-07 passes without a Tier 1 re-run, archive them at the next prune.** All other rows carry target dates that have not passed.
@@ -8424,3 +8429,90 @@ TAP/SAM/PLAB were stopped at D before E. For the record, E would have been ≤2/
 **Target analysis date:** none (no new Pending rows). Next re-scout check for TAP/SAM/PLAB is after their Q3 prints (by 2026-11-07).
 
 *Max — 2026-10-19 | Scout Round 81*
+
+---
+
+## Scout Report § Round 82 (Life Science Tools / Bioprocessing / Genomics / CROs) — 2026-11-01
+
+**Trigger:** CIO-directed "Max — Scout Round (new sector, VALUE-FIRST screen)" (2026-11-01, Sunday). Full `.claude/commands/scout.md` Step 0-6. **Scout/screen only — no full pipeline dispatched; Emma/Quinn/Bear not called.**
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK) per `dashboard/portfolio.js` re-mark `c1bc348` (2026-11-01). Cash still well above 30%.
+**Regime:** RISK-ON (Atlas `agent_notes/atlas/2026-10-27_regime.md`, 5 days old — not stale; Atlas flagged the Dec 9 FOMC hike risk as a live watch item).
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **0** | live **15 → 15**. See the Prune Pass 2026-11-01 note above the Pending table.
+
+### Sector mandate — why Life Science Tools
+- **30-day lookback (since 2026-10-02), checked against the actual file, not the brief's list:** Rounds 55–81 plus the 10-24 RV/Marine, 10-27 IT-Distribution/Specialty-Retail/Payments, 10-28 Logistics, 10-31 AI-Selloff and 10-31 Quality-Compounder screens. **Correction to the brief's list:** Rounds 78–81 (10-17 → 10-19) also ran inside the window and already covered most of the brief's "fresh ground" ideas: Base Metals/Steel (R79), Paper & Forest (R80), Shipping/Tankers (R80), Water/Flow Equipment (R81), Apparel/Beauty (R79), Education (R78), Asset Managers (R81), Building Products (R81), Ag Equipment (R79), Medtech-consumables (R78), Death Care/Distributors (R81). Waste (WM/RSG) is in the 10-31 Quality Compounder list. So none of those were re-used.
+- **Life Science Tools & Services has never been a dedicated round.** It was only touched as 2 tickers (TMO/DHR) in the Round 41 pharma sweep (2026-09-28, >30 days, both Filter-A rejects) and in pre-VALUE-FIRST quality screens in June. IQV/CRL appeared only in R77's Filter-A side list. WAT (10-31 Quality Compounder list) and the CIO exclusions (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL) were excluded. No universe name is in `dashboard/portfolio.js`, `decisions.md`, `buy_list.md`, or the live/Archive watchlist tables.
+- **Hunting-ground logic:** tools/CROs were the classic 2023–25 de-rated group (post-COVID destock, biotech-funding drought, China, NIH cuts). The question for this round was whether any of that de-rating is still there.
+
+### Method (Price Verification + SEC data)
+- **Price + 52W high, 2 independent sources:** (1) Yahoo Finance chart API (`query1.finance.yahoo.com/v8/finance/chart/{T}?range=1y`, last price + max daily high), (2) Nasdaq.com quote API (`api.nasdaq.com/api/quote/{T}/info`, lastSalePrice + 52-week high-low). All 25 matched exactly at the **Oct 30 2026 close** (Nasdaq timestamp "Oct 30, 2026"). No >2% discrepancy, so no third source was needed.
+- **Fundamentals: SEC EDGAR XBRL companyfacts** (`data.sec.gov/api/xbrl/companyfacts/CIK##########.json`, 10-K/10-Q only). The column shows the latest period end in EDGAR. Several Q3 10-Qs are not filed yet, so June-quarter TTM is used for those. TTM = FY + YTD − prior YTD. FCF = CFO − capex. 5Y FCF/ROIC use the last 5 fiscal years. ROIC = EBIT×(1−eff. tax, clamp 15–27%) ÷ (equity + debt − cash/securities). If EBIT is not tagged (MTD and others), pre-tax income + interest expense is used.
+- **WACC:** Rf = 10Y UST **4.93%** (Yahoo ^TNX, Oct 30 close 4.929). ERP = Damodaran implied **4.20%** (carried from the 10-31 screen). β = raw 5Y monthly vs ^GSPC, Blume-adjusted. Kd = (Rf+80bps)×(1−21%). Market-value weights.
+- **Filter B:** FCF yield (TTM) and EV/EBITDA percentile vs own 5Y quarterly history (EV from EDGAR shares/net debt × Yahoo close at each quarter-end).
+- **Filter D-Legacy naive FV:** (5Y-avg FCF ÷ WACC − net debt) ÷ diluted shares, shown with a TTM variant. Street PT = stockanalysis.com forecast page (median).
+- Scripts: `scripts/scout/2026-11-01_lifesci/screen.py` (reuses `sec.py`/`hist.py` from the 10-31 screen). **STVN** (Stevanato, IFRS 20-F filer, no us-gaap companyfacts) was dropped as untestable: **25 screened**.
+
+### Screening results (sorted by % off 52W high)
+
+| Ticker | SEC period (latest 10-Q/10-K) | Price Yahoo / Nasdaq (Oct 30 close) | 52W high | % off high | Rev YoY (TTM) | Equity $B | ND/EBITDA | FCF yld (TTM) | EV/EBITDA (5Y pct) | ROIC TTM / 5Y avg | WACC | Naive FV norm / TTM | P/naive FV | Street PT median |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| QDEL | 2026-06-28 | $13.25 / $13.25 | $35.58 | **-62.8%** | -2.5% | 1.77 | n/m (EBITDA<0) | -23.3% | n/m | -14.3% / 5.9% | 5.49%¹ | $19.96 / $-96.88 | 0.66×¹ | $12.5 |
+| TXG | 2026-06-30 | $70.11 / $70.11 | $102.81 | **-31.8%** | -4.3% | 0.83 | n/m (EBITDA<0) | 1.3% | n/m | -21.6% / -33.9% | 12.03% | $0.96 / $11.63 | 73× | $70 |
+| TWST | 2026-06-30 | $152.78 / $152.78 | $219.71 | **-30.5%** | +19.2% | 0.45 | n/m (EBITDA<0) | -1.0% | n/m | -41.1% / -74.8% | 12.57% | neg / neg | n/m | $150 |
+| MYGN | 2026-06-30 | $6.35 / $6.35 | $8.38 | **-24.2%** | -3.2% | 0.30 | n/m (EBITDA<0) | -6.2% | n/m | -25.2% / -35.5% | 9.79% | neg / neg | n/m | $3.6 |
+| ILMN | 2026-09-27 | $235.99 / $235.99 | $309.35 | **-23.7%** | +5.9% | 3.15 | net cash | 2.9% | 28.4× (p56) | 44.9% / -18.1%² | 10.42% | $38.18 / $74.57 | **6.18× / 3.16×** | $275 |
+| FTRE | 2026-09-30 | $21.29 / $21.29 | $26.16 | -18.6% | -3.4% | 0.53 | **9.12×** | 7.8% | 32.7× (p62) | 0.7% / -9.1% | 9.31% | $5.02 / $9.69 | 4.24× | $26 |
+| AZTA | 2026-06-30 | $39.06 / $39.06 | $46.41 | -15.8% | +4.9% | 1.51 | n/m | 0.6% | n/m | -14.1% / -2.4% | 10.45% | neg / $13.76 | n/m | $35 |
+| BRKR | 2026-06-30 | $57.07 / $57.07 | $66.98 | -14.8% | +1.6% | 2.40 | 8.17× | 1.1% | 51.7× (p95) | -0.6% / 13.8% | 8.96% | $0.41 / neg | n/m | $60 |
+| QGEN | FY2025 | $50.22 / $50.22 | $57.82 | -13.1% | -7.2%³ | 3.78 | 0.84× | 4.1% | 17.5× (p60) | 9.1% / 8.6% | 7.46% | $25.68 / $25.21 | 1.96× | $51.95 |
+| RGEN | 2026-09-30 | $176.94 / $176.94 | $198.87 | -11.0% | +13.8% | 2.09 | net cash | 1.1% | 100.9× (p85) | 0.7% / 5.9% | 9.20% | $23.13 / $25.94 | 7.65× | $200 |
+| SHC | 2026-06-30 | $18.15 / $18.15 | $19.85 | -8.6% | +8.1% | 0.67 | 4.45× | 2.2% | 17.5× (p63) | 8.9% / 8.2% | 9.64% | neg / neg | n/m | $24 |
+| AVTR | 2026-09-30 | $16.05 / $16.05 | $17.45 | -8.0% | +0.9% | 5.84 | 3.55× | 4.0% | 15.6× (p35) | 4.6% / 5.5% | 7.86% | $8.21 / $3.47 | 1.96× | $17 |
+| RVTY | 2026-07-05 | $157.00 / $157.00 | $169.06 | -7.1% | +4.1% | 7.23 | 2.83× | 3.2% | 25.6× (p100) | 3.2% / 4.4% | 8.63% | $42.34 / $38.41 | 3.71× | $140 |
+| GH | 2026-06-30 | $178.80 / $178.80 | $191.05 | -6.4% | +42.7% | **-0.22** | n/m | -1.0% | n/m | n/m | 10.61% | neg / neg | n/m | $200 |
+| BIO | 2026-06-30 | $372.18 / $372.18 | $396.23 | -6.1% | +1.4% | 7.17 | net cash | 3.5% | 41.9× (p100) | 0.6% / 2.9% | 8.94% | $155.58 / $177.76 | 2.39× | $330 |
+| MEDP | 2026-09-30 | $652.01 / $652.01 | $693.97 | -6.0% | +20.4% | 0.58 | net cash | 3.6% | 28.1× (p80) | n/m / 106.5% | 9.44% | $191.96 / $274.21 | 3.40× | $673 |
+| IQV | 2026-09-30 | $267.33 / $267.33 | $284.50 | -6.0% | +8.8% | 6.66 | 3.97× | 4.7% | 17.0× (p55) | 9.1% / 8.8% | 8.25% | $56.90 / $69.12 | 4.70× | $310 |
+| CRL | 2026-06-27 | $359.41 / $359.41 | $379.63 | -5.3% | -0.7% | 2.84 | 6.27× | 2.1% | 50.8× (p100) | 1.4% / 6.3% | 9.35% | $47.87 / $31.86 | 7.51× | $330 |
+| NTRA | 2026-06-30 | $414.30 / $414.30 | $437.41 | -5.3% | +37.8% | 1.82 | n/m | 0.1% | n/m | n/m | 10.57% | $1.96 / $20.23 | n/m | $430 |
+| A | 2026-07-31 | $174.87 / $174.87 | $182.99 | -4.4% | +8.6% | 7.36 | 1.15× | 2.6% | 27.1× (p95) | 14.6% / 16.8% | 9.40% | $39.73 / $39.86 | 4.40× | $181 |
+| DHR | 2026-09-25 | $232.23 / $232.23 | $242.80 | -4.4% | +5.5% | 53.62 | 3.46× | 3.5% | 30.8× (p71) | 6.0% / 7.5% | 7.94% | $80.48 / $72.57 | 2.89× | $254 |
+| ICLR | FY2025 | $211.36 / $211.36 | $219.04 | -3.5% | n/m³ | 9.19 | 2.69× | 5.2% | 22.9× (p80) | 3.3% / 4.8% | 8.89% | $90.30 / $94.65 | 2.34× | $226 |
+| MTD | 2026-06-30 | $1,674.81 / $1,674.81 | $1,728.66 | -3.1% | +6.9% | ~0.01⁴ | 1.69× | 2.6% | 29.4× (p68) | 46.4% / 46.9% | 9.32% | $335.69 / $357.75 | 4.99× | $1,515 |
+| TMO | 2026-09-26 | $697.00 / $697.00 | $711.85 | -2.1% | +8.3% | 54.76 | 3.61× | 2.9% | 30.3× (p86) | 8.0% / 9.3% | 8.12% | $132.45 / $157.63 | 5.26× | $748 |
+| TECH | 2026-06-30 | $72.66 / $72.66 | $72.75 | -0.1% | -0.4% | 2.11 | net cash | 2.3% | 32.5× (p32) | 9.3% / 9.5% | 9.82% | $16.66 / $17.48 | 4.36× | $73 |
+
+¹ QDEL: WACC 5.49% is an artifact of debt ≈3× market cap at a model Kd of ~4.5%; distressed credit really costs more. The 5Y-avg FCF also includes the FY21–22 COVID-testing windfall, so it is not mid-cycle. The 0.66× "naive FV" is therefore not credible, and TTM FCF is negative (naive FV < 0). ² ILMN 5Y ROIC average is dragged down by GRAIL impairments (FY22–24). ³ QGEN/ICLR: EDGAR only has annual-tagged data. ICLR's YoY is an XBRL tag-mixing artifact. Neither matters, because both fail A. ⁴ MTD: equity is near zero from long-run buybacks (B-Zero red flag, buyback-driven, not operating losses). Moot at A.
+
+### Filter funnel
+| Stage | Pass | Names |
+|---|---|---|
+| **A (≥20% off 52W high, 2 sources)** | **5 / 25** | QDEL −62.8%, TXG −31.8%, TWST −30.5%, MYGN −24.2%, ILMN −23.7% |
+| A fail | 20 | Nearest misses: FTRE −18.6% (1.4pp short, and ND/EBITDA 9.1× plus negative 5Y ROIC would fail B-Zero/C anyway), AZTA −15.8%, BRKR −14.8%. The large caps (TMO/DHR/A/MTD/IQV/MEDP/CRL/BIO/RVTY/TECH/ICLR) are all within 0–7% of their 52W highs, and 6 of them sit at the **95th–100th percentile** of their own 5Y EV/EBITDA. |
+| B-Zero | 4 / 5 clean | GH (not an A pass) has negative equity. QDEL has positive equity but negative EBITDA, so leverage is unmeasurable (flagged). |
+| **C (ROIC ≥ 80% WACC, or improving)** | **1 / 5** | Only ILMN (TTM ROIC 44.9% vs WACC 10.4%). TWST/TXG/MYGN/QDEL have negative ROIC, far below 0.8×WACC. TWST is improving (−89% → −45% FY) but is still nowhere near 80% of WACC. |
+| **B (FCF yld > 6% or EV/EBITDA bottom-third)** | **0 / 5** | ILMN 2.9% / p56. The others have negative EBITDA/FCF. |
+| **D / Tier 1 Check 2a** | **0** | ILMN price/naive FV **6.18×** (normalized) / **3.16×** (TTM), both >1.5× → `QUICK-SCREEN SKIP`. The Street PT median $275 (+16.5%) does not override, because naive FV governs when Street > price but naive FV < price. |
+| E | not reached | — |
+
+### Per-name verdicts (Filter-A passers)
+- **ILMN — ❌ REJECT (B + D; Tier 1 Check 2a SKIP).** Beaten-down reason, written both ways because no dated October catalyst was found: (✅ sentiment) the whole genomics-tools group (ILMN/TWST/TXG/AZTA) peaked together on **2026-10-06** and fell 15–32% into the Oct 29 Q3 print, which looks like a sector de-rating rather than a company break. (❌ structural) 2026 guide is only +2–4% ex-China organic growth, Roche launched a lower-priced sequencer, Element Biosciences won a Munich patent ruling (July 2026), and Scotiabank downgraded ([rallies.ai](https://rallies.ai/news/illumina-drops-as-scotiabank-downgrade-flags-2026-outlook-risks-trims-target), [rallies.ai](https://rallies.ai/news/illumina-drops-5-as-cautious-2026-outlook-and-research-demand-worries-weigh), [AAII Oct 18: October high $309.35 / low $254](https://www.aaii.com/investingideas/article/543080-why-illumina-inc8217s-ilmn-stock-is-up-595)). Either way, at 28× EV/EBITDA and a 2.9% FCF yield, the price is still a multiple of no-growth value. Re-scout only at **≤ ~$75** (≈0.80× of the higher TTM naive FV), which is not a realistic level.
+- **TWST — ❌ REJECT (C).** Revenue is +19% (Growth bucket), but ROIC is −41% TTM and has been negative every FY. Filter C needs ≥0.8×WACC, so the B-V1/D-V1 lanes are not reached. A loss-making growth story, not a value situation.
+- **TXG — ❌ REJECT (C + B).** Revenue −4%, ROIC negative for 5 straight years, FCF yield 1.3%. The drop is the same 10-06 genomics de-rating.
+- **MYGN — ❌ REJECT (C + D).** Negative ROIC and FCF. The Street PT median of $3.6 is **below** the $6.35 price (a D warning sign).
+- **QDEL — ❌ REJECT (C; beaten-down reason leans permanent).** ROIC −14% TTM and FY24/25 −29%/−16% after impairments, TTM FCF −$0.21B. The respiratory/COVID-testing revenue decline is structural, not cyclical. The apparent 0.66× "naive FV" is an artifact (see footnote ¹).
+
+### Max's read
+The life-science-tools de-rating of 2023–25 is **fully over**. The big franchises (TMO/DHR/A/MTD/IQV/CRL/BIO/RVTY) have re-rated to 95th–100th-percentile EV/EBITDA within 0–7% of their highs. The only names down ≥20% are either a no-MOS ILMN or loss-making genomics names that fail Filter C. **This sector has no clear value right now.** I'm not forcing anything onto the list. If I ever revisit this group, the useful re-trigger is a broad tools selloff (an NIH-budget or China shock) that pushes TMO/DHR/A ≥20% off their highs. Those three are the only wide-moat compounders here with ROIC near or above WACC, and none of them currently clears Filter B or D even before price.
+
+### Final routing — Round 82
+- 🟢 **Fast-track: 0**
+- 🟡 **Learning-queue: 0**
+- ❌ **Reject: 25** (20 at A · 4 at C (TWST/TXG/MYGN/QDEL) · 1 at B/D = Tier 1 Check 2a `QUICK-SCREEN SKIP` (ILMN)). STVN was not testable (IFRS filer).
+- **Funnel:** 26 attempted → 25 with SEC data → 5 at ≥−20% → 1 past C → 0 past B/D → **0 fast-track · 0 learning-queue**.
+
+**Target analysis date:** none (no new Pending rows).
+
+*Max — 2026-11-01 | Scout Round 82*
