@@ -14,6 +14,7 @@
   <script src="sectorViews.js"></script>
   <script src="macroRegime.js"></script>
   <script src="thesisWatch.js"></script>
+  <script src="crashPlaybook.js"></script>
   <script src="research.js"></script>
   <script src="todoList.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&family=Prompt:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -412,6 +413,7 @@
       <button class="nav-tab" onclick="showPage('sectorviews')">Sector Views</button>
       <button class="nav-tab" onclick="showPage('macro')">🌡️ Macro</button>
       <button class="nav-tab" onclick="showPage('thesiswatch')">Thesis Watch</button>
+      <button class="nav-tab" onclick="showPage('crashplaybook')">Crash Playbook</button>
       <button class="nav-tab" onclick="showPage('research')">🔍 Research</button>
     </div>
     <div class="nav-divider"></div>
@@ -736,11 +738,24 @@
 </div>
 
 <!-- ══════════════════════════════════════════ -->
+<!-- PAGE: Crash Response Playbook             -->
+<!-- ══════════════════════════════════════════ -->
+<div id="page-crashplaybook" class="page">
+  <div style="margin-bottom:1.25rem;">
+    <div class="page-kicker">11 / Intelligence</div>
+    <h1 class="page-title">Crash <span class="script">Playbook</span></h1>
+    <div class="page-sub">แผนตอบสนองล่วงหน้าเมื่อตลาดย่อ / correction / crash — severity tier, sizing, priority ranking, non-AI scenarios (Max ดูแล · sizing guide เสริม ไม่แก้กฎเดิม)</div>
+  </div>
+  <div class="stat-grid" id="crash-stat-grid"></div>
+  <div id="crash-playbook-body"></div>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
 <!-- PAGE: Research (thematic/macro notes)     -->
 <!-- ══════════════════════════════════════════ -->
 <div id="page-research" class="page">
   <div style="margin-bottom:1.25rem;">
-    <div class="page-kicker">11 / Intelligence</div>
+    <div class="page-kicker">12 / Intelligence</div>
     <h1 class="page-title">🔍 <span class="script">Research</span></h1>
     <div class="page-sub">Thematic/macro research notes — ไม่ผูกกับ ticker เดียว เขียนแบบ ad-hoc โดย Charlie เมื่อ CIO ขอ ไม่ใช่ scheduled job</div>
   </div>
@@ -753,7 +768,7 @@
 <!-- ══════════════════════════════════════════ -->
 <div id="page-todo" class="page">
   <div style="margin-bottom:1.25rem;">
-    <div class="page-kicker">12 / Notes</div>
+    <div class="page-kicker">13 / Notes</div>
     <h1 class="page-title">💡 Todo <span class="script">/ Ideas</span></h1>
     <div class="page-sub">ที่จดไอเดียส่วนตัว — ไม่เกี่ยวกับการตัดสินใจลงทุนของพอร์ต เก็บไว้ที่นี่เพราะเปิด dashboard ค้างไว้ตลอด</div>
   </div>
@@ -766,7 +781,7 @@
 <div id="page-glossary" class="page">
   <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:.75rem;flex-wrap:wrap;gap:.75rem;">
     <div>
-      <div class="page-kicker">13 / Notes</div>
+      <div class="page-kicker">14 / Notes</div>
       <h1 class="page-title">📖 Glossary <span class="script">— ศัพท์ที่ใช้บ่อย</span></h1>
       <div class="page-sub">คำย่อ/ศัพท์เฉพาะที่เจอในรายงานและ Trade Log ทั้งหมด อธิบายเป็นภาษาที่เข้าใจง่าย — สำหรับคนอื่นที่ไม่คุ้นกับระบบนี้</div>
     </div>
@@ -791,7 +806,7 @@
 <!-- ══════════════════════════════════════════ -->
 <div id="page-methodology" class="page">
   <div style="margin-bottom:1.5rem;">
-    <div class="page-kicker">14 / Notes</div>
+    <div class="page-kicker">15 / Notes</div>
     <h1 class="page-title">⚙️ How We <span class="script">Work</span></h1>
     <div class="page-sub">เปิดเผยกระบวนการทั้งหมด — ใครทำอะไร ข้อมูลมาจากไหน คำนวณยังไง สำหรับคนนอกที่อยากรู้ว่าทีมนี้ทำงานกันจริงจังแค่ไหน</div>
   </div>
@@ -2535,6 +2550,119 @@ function buildThesisWatch() {
   }).join('');
 }
 
+function buildCrashPlaybook() {
+  if (typeof CRASH_PLAYBOOK === 'undefined') return;
+  const cp = CRASH_PLAYBOOK;
+  const sum = (typeof PORTFOLIO !== 'undefined' && PORTFOLIO.summary) ? PORTFOLIO.summary : null;
+  const money = v => '$' + Number(v).toLocaleString('en-US', { maximumFractionDigits: 0 });
+  const deployable = floorPct => sum ? Math.max(0, sum.currentCash - sum.totalValue * floorPct / 100) : null;
+  const riskOnDeploy = deployable(10);
+
+  // ── Summary stat grid (cash ดึงสดจาก PORTFOLIO.summary) ──
+  document.getElementById('crash-stat-grid').innerHTML = [
+    { label: 'Cash ตอนนี้', value: sum ? money(sum.currentCash) : '—', sub: sum ? `${sum.cashPct}% ของพอร์ต ${money(sum.totalValue)}` : 'portfolio.js ไม่โหลด', color: '#E0824E' },
+    { label: 'Deploy ได้ (RISK-ON floor 10%)', value: riskOnDeploy !== null ? money(riskOnDeploy) : '—', sub: 'cash เหนือ floor — เพดาน ไม่ใช่เป้า', color: '#6FCB78' },
+    { label: 'Regime record', value: 'RISK-ON 3/4', sub: '2026-10-27 · ต้อง re-call ก่อนใช้', color: '#E0A040' },
+    { label: 'พร้อม deploy ตอนนี้', value: cp.readyToDeploy, sub: 'ชื่อที่ผ่าน VS2 pipeline + Morgan PASS', color: '#E2725A' },
+  ].map(s => `
+    <div class="stat-card">
+      <div class="stat-label">${s.label}</div>
+      <div class="stat-value" style="color:${s.color};font-size:1.25rem;">${s.value}</div>
+      <div class="stat-sub">${s.sub}</div>
+    </div>`).join('');
+
+  const label = t => `<div class="thesis-section-label">${t}</div>`;
+  const list = arr => `<div class="thesis-trigger-list">${arr.map(a => `
+      <div class="thesis-trigger-row"><span class="thesis-trigger-dot WATCH"></span><span>${a}</span></div>`).join('')}</div>`;
+  const heading = t => `<div class="thesis-section-label" style="font-size:.85rem;margin-top:1.25rem;">${t}</div>`;
+
+  // ── Regime warning ──
+  const warning = `
+    <div class="thesis-card health-WATCH">
+      <div class="thesis-card-header"><span class="thesis-ticker">ก่อนใช้ playbook</span><span class="thesis-health-badge thesis-health-WATCH">Regime check</span></div>
+      <div class="thesis-verdict">${cp.regimeWarning}</div>
+      <div class="thesis-catalyst-box"><b>สถานะ:</b> ${cp.readyNote}</div>
+    </div>`;
+
+  // ── C. Severity tiers ──
+  const tierBudget = t => {
+    const pct = cp.tierBudgetPct[t];
+    return riskOnDeploy !== null ? `${pct}% ของ ${money(riskOnDeploy)} = <b>${money(riskOnDeploy * pct / 100)}</b> (ถ้า regime = RISK-ON)` : `${pct}%`;
+  };
+  const tiers = cp.severityTiers.map(t => `
+    <div class="thesis-card health-${t.health}">
+      <div class="thesis-card-header">
+        <span class="thesis-ticker">Tier ${t.tier} — ${t.name}</span>
+        <span class="thesis-health-badge thesis-health-${t.health}">${t.signal}</span>
+      </div>
+      <div class="thesis-verdict"><b>Regime ที่คาด:</b> ${t.expectedRegime}</div>
+      ${label('Budget')}<div class="thesis-verdict" style="margin:.25rem 0;">${t.deployBudget}<br>Budget สะสมคำนวณสด: ${tierBudget(t.tier)}</div>
+      ${label('Actions')}${list(t.actions)}
+    </div>`).join('');
+
+  // ── B. Sizing ──
+  const floorRows = cp.regimeFloors.map(r => {
+    const d = deployable(r.floorPct);
+    return `<tr><td>${r.regime}</td><td>${r.floorPct}%</td><td>${r.multiplier}x</td><td>${r.newPositions}</td><td>${d !== null ? money(d) : '—'}</td><td>${r.note}</td></tr>`;
+  }).join('');
+  const sizingRows = cp.sizing.map(z => {
+    const pct = (z.rule.match(/^(\d+)%/) || [])[1];
+    return `<tr><td>${z.item}</td><td>${z.rule}${pct && sum ? ` <span style="color:#8C7F63;">(≈ ${money(sum.totalValue * pct / 100)})</span>` : ''}</td><td style="color:#8C7F63;">${z.source}</td></tr>`;
+  }).join('');
+  const sizing = `
+    <div class="thesis-card">
+      <div class="thesis-card-header"><span class="thesis-ticker">Position Sizing</span></div>
+      ${label('Cash floor ตาม regime (Macro Regime Gate)')}
+      <div style="overflow-x:auto;"><table class="tbl" style="font-size:.78rem;"><thead><tr><th>Regime</th><th>Floor</th><th>Multiplier</th><th>Open ใหม่</th><th>Cash เหนือ floor (สด)</th><th>Note</th></tr></thead><tbody>${floorRows}</tbody></table></div>
+      ${label('Tranche + caps')}
+      <div style="overflow-x:auto;"><table class="tbl" style="font-size:.78rem;"><thead><tr><th>Item</th><th>Rule</th><th>อ้างอิง</th></tr></thead><tbody>${sizingRows}</tbody></table></div>
+    </div>`;
+
+  // ── A. Priority ranking ──
+  const scored = cp.priority.map(p => Object.assign({}, p, { score: p.R + 2 * p.M + p.G + p.T + p.D }))
+    .sort((a, b) => b.score - a.score || b.T - a.T);
+  const prRows = scored.map((p, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td><b>${p.ticker}</b><div style="font-size:.68rem;color:#8C7F63;">${p.group}</div></td>
+      <td><b>${p.score}</b>/18<div style="font-size:.68rem;color:#8C7F63;">R${p.R} M${p.M}×2 G${p.G} T${p.T} D${p.D}</div></td>
+      <td>${p.price}</td><td>${p.trigger}</td><td>${p.drop}</td>
+      <td style="font-size:.72rem;">${p.blocker}</td><td style="font-size:.72rem;">${p.fit}</td>
+    </tr>`).join('');
+  const priority = `
+    <div class="thesis-card">
+      <div class="thesis-card-header"><span class="thesis-ticker">Priority Ranking</span><span class="thesis-live-tag">Score = R + 2×M + G + T + D</span></div>
+      <div class="thesis-verdict">R = readiness (มี team FV แค่ไหน) · M = moat (ถ่วง 2 เท่า) · G = gate ที่ผ่านง่าย · T = ระยะถึง trigger · D = diversification จากพอร์ต software-heavy · คะแนนเท่ากัน → ชื่อที่ใกล้ trigger กว่าก่อน</div>
+      <div style="overflow-x:auto;"><table class="tbl" style="font-size:.76rem;"><thead><tr><th>#</th><th>Ticker</th><th>Score</th><th>ราคา</th><th>Trigger</th><th>ต้องลง</th><th>Blocker</th><th>Scenario fit</th></tr></thead><tbody>${prRows}</tbody></table></div>
+      <div class="thesis-catalyst-box">${cp.priorityNote}</div>
+    </div>`;
+
+  // ── D. Scenarios ──
+  const scenarios = cp.scenarios.map(sc => `
+    <div class="thesis-card health-${sc.health}">
+      <div class="thesis-card-header"><span class="thesis-ticker">${sc.name}</span></div>
+      ${label('สัญญาณเฝ้าดู')}<div class="thesis-verdict" style="margin:.25rem 0;">${sc.signals}</div>
+      ${label('กระทบใคร')}<div class="thesis-verdict" style="margin:.25rem 0;">${sc.hits}</div>
+      ${label('ตอบสนองต่างจาก baseline')}<div class="thesis-verdict" style="margin:.25rem 0;">${sc.response}</div>
+    </div>`).join('');
+
+  const guard = `
+    <div class="thesis-card health-FIRING">
+      <div class="thesis-card-header"><span class="thesis-ticker">Guardrails</span><span class="thesis-health-badge thesis-health-FIRING">ห้ามข้าม</span></div>
+      ${list(cp.guardrails)}
+      <div class="thesis-catalyst-box"><b>Open Decision (CIO):</b> ${cp.openDecision}</div>
+      <div class="thesis-meta-row"><span>As of: ${cp.asOf}</span><span>Updated: ${CRASH_PLAYBOOK_LAST_UPDATED}</span><span>Regime: ${cp.regimeRecord}</span></div>
+    </div>`;
+
+  document.getElementById('crash-playbook-body').innerHTML =
+    warning +
+    heading('C. Severity Tiers') + tiers +
+    heading('B. Position Sizing') + sizing +
+    heading('A. Priority Ranking') + priority +
+    heading('D. Scenarios — AI vs non-AI') + scenarios +
+    guard;
+}
+
 function buildTodoList() {
   if (typeof TODO_LIST === 'undefined') return;
   if (TODO_LIST.length === 0) {
@@ -3040,6 +3168,7 @@ buildNews();
 buildSectorViews();
 buildMacroDashboard();
 buildThesisWatch();
+buildCrashPlaybook();
 buildResearch();
 buildTodoList();
 buildGlossary();
