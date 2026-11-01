@@ -1,5 +1,17 @@
 # Simulated Portfolio — บลจ. CFA
 
+## Portfolio Action — 2026-11-01 (NOW/REGN FV Re-verify + ADSK Consultation, CIO-authorized) — no trade
+
+Prices (Oct 30 close, stockanalysis.com + financialcontent.com exact match): NOW $105.12 · REGN $927.89 · ADSK $249.61
+
+| Ticker | Blended FV เดิม → ใหม่ | MOS ใหม่ | Bear Flip / Invalidation | Decision |
+|---|---|---|---|---|
+| NOW | $125.65 → **$110.20** (A, official) · B $88.08 | **+4.61%** (A) · −19.35% (B) | BF5 FIRED (GAAP GM 70.5% < 74%) · TI 0/4 | HOLD, no trade · full pipeline by 2026-11-14; BF5 real or VS2 MOS ≤0% → consult → SELL 1sh |
+| REGN | $889 → **$994.20** (A, official) · B $1,109.10 | **+6.67%** (A) · +16.34% (B) | BF 0/5 · TI 0/3 | HOLD, no trade · full pipeline flagged (Emma FV +24.7%) |
+| ADSK | $221.79 (v1, unchanged) | −12.54% | BF 0/5 · TI 0/5 · Trigger #5 fires (Street median $302.50) | Max×Charlie consulted → HOLD-WATCH time-boxed: cRPO <8% → SELL all · VS2 MOS ≤0% → TRIM 50% · deadline 2026-12-05 |
+
+Notes: agent_notes/emma/2026-10-31_NOW.md · agent_notes/emma/2026-10-31_REGN.md · agent_notes/charlie/2026-10-31_adsk_consultation.md · Total Value $10,385.35 (ADSK $0.01 price correction).
+
 > **🔴🔴 UPDATE 2026-10-30 (Portfolio Review Mode 3):** Full re-mark to Oct 29 2026 close (Thu), first new trading day since Oct 28. A historic Alphabet-led selloff (Class A/C shares -12% to -12.6%, worst single day in its 20+ year trading history, ~$480-500B market cap erased on the Q3 earnings miss + first-ever negative FCF reported 10-28) dragged the S&P 500 to its first loss in 4 sessions (-0.30% to $7,720.39) even though roughly 4 of 5 S&P constituents rose. Separately, **NOW's Q3 earnings reaction fully materialized in the regular session**: shares plunged -26.95% to $109.67 — the biggest single-day drop in company history, far worse than the -14-17% after-hours estimate used for the 10-29 marking — dragging software peers CRM (-4.63% to $230.90) and ADSK (-0.27% to $241.73) lower too (peer Fortinet also crashed -26% same day on its own guidance cut). ADBE -0.66% to $248.12, REGN +0.68% to $818.77 (Q3 earnings due tomorrow Oct 30). Total $10,395.51→$10,320.33 (-0.72%). **Alpha widened further negative: -0.69%→-1.14%** (both sides fell but the book's software-heavy composition, especially NOW, fell much harder than the index; single-session, not a rolling-4Q trigger). No stop breach — NOW's stopDist narrowed sharply to 15.20% (from 38.05%), still above the 10% WATCH threshold but a large one-day compression worth tracking. **1/5 Re-Analysis triggers fire — NOW Trigger #1 carried from 10-29, now materially more urgent given the magnitude of the move; MOS flipped sharply positive (+12.71%) but this is a stale-FV artifact, not a real signal.** ADSK MOS -8.99% (from -9.28%, essentially flat) — STRONG SELL/Max Consultation Rule item now **19th consecutive Review Mode session** (10-07 through 10-30) unresolved. 3 HIGH-IMPACT news items: NOW's crash fully materializing (OPEN position); GOOGL's historic -12% to -12.6% drop (Big 10, no OPEN position, confirms/exceeds the -8-10% AH estimate logged 10-29); AMZN Q3 earnings miss (Big 10, no OPEN position). REGN single-source this session (keenable only — 2nd source not found within attempt cap, flagged). Atlas regime re-call (2026-09-25) now 35 days old — materially overdue. Full detail below.
 
 ## 📊 Portfolio Review — 2026-10-30 (Mode 3 — Full Re-Mark, Oct 29 2026 Close) — NOW's Earnings Crash Fully Materializes (-26.95%), GOOGL's Historic Drop Hits S&P 500
