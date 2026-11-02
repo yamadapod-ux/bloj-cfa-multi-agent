@@ -381,6 +381,10 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-11-02 (Mode 1 Step 0 — Round 83):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
+- **Rule #1:** every target date is still in the future (NBIX 11-03, CRI 11-06, IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD 11-07, MMS 11-20, WGO 12-19). The 11-01 warning stands: **IBKR/URI/EME must be archived at the first prune after 11-07 if Tier 1 has not been re-run by then.**
+- **Rule #2/#3:** `dashboard/portfolio.js` OPEN is still ADBE/NOW/CRM/REGN/ADSK (last re-mark `9d31ef4`, 2026-11-02 pre-market). `decisions.md` has 0 hits for any live ticker. No thesis-dead archive was attempted, so no live-price re-check was needed.
+
 **Prune Pass 2026-11-01 (Mode 1 Step 0 — Round 82):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
 - **Rule #1:** every row still carries a target date that has not passed (NBIX 11-03, CRI 11-06, IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD 11-07, MMS 11-20, WGO 12-19). **IBKR/URI/EME (64 days old) must be archived at the first prune after 11-07 if there has been no Tier 1 re-run by then.**
 - **Rule #2/#3:** since the 10-31 prune, the only change is the `dashboard/portfolio.js` re-mark (`c1bc348`). OPEN is still ADBE/NOW/CRM/REGN/ADSK, and `decisions.md` is unchanged.
@@ -8516,3 +8520,90 @@ The life-science-tools de-rating of 2023–25 is **fully over**. The big franchi
 **Target analysis date:** none (no new Pending rows).
 
 *Max — 2026-11-01 | Scout Round 82*
+
+---
+
+## Scout Report § Round 83 (Waste Management / Environmental Services — solid waste, hazardous waste, environmental testing/remediation, waste brokerage) — 2026-11-02
+
+**Trigger:** CIO-directed "Scout Round 83 — Waste Management / Environmental Services" (2026-11-02, Monday, before the US open). Full `.claude/commands/scout.md` Step 0-6. **Scout/screen only. No full pipeline was dispatched, and Emma/Quinn/Bear were not called.**
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK) per `dashboard/portfolio.js` (re-mark `9d31ef4`, 2026-11-02 pre-market). Cash is still well above 30%.
+**Regime:** RISK-ON (Atlas `agent_notes/atlas/2026-10-27_regime.md`, 3/4 indicators; 6 days old, so not stale under the 14-day rule). Atlas's flag still applies: about 73–77% odds of a Dec 9 FOMC hike. Force Deploy stays active, but it only matters if a candidate passes the gate.
+**Session note (Resume Protocol):** a previous attempt at this round (09:33–09:36 local) pulled data into `scripts/scout/2026-11-02_waste/` and died before writing anything to this file. Its cache was moved to `_prior_attempt_0933/` and **every price/fundamental below was re-fetched in this session** (09:37+). Nothing was built on the partial run.
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **0** | live **15 → 15**. See the Prune Pass 2026-11-02 (Round 83) note above the Pending table.
+
+### Sector mandate — why Waste / Environmental Services
+- **Never a dedicated round.** A full Scout History grep finds WM/RSG only as (a) a quality-filter line in the June 2026 pre-VALUE-FIRST screen ("VST/WM/RSG — ROIC < 12%") and (b) the **10-31 Quality Compounder screen**, where WM 10–12% / RSG 9–11% ROIC failed the ">20% ROIC" bar. That was a different mandate ("expensive wide-moat", Filter A/D deliberately not applied). WCN, CWST, CLH, GFL, ONT (ex-MEG), NVRI, PESI and QRHC have **0 prior hits** in `watchlist.md`, `decisions.md`, `buy_list.md`, `deployment_log.md` and `dashboard/portfolio.js`.
+- **Rotation:** R82 = Life Science Tools; R78–81 = multi-sector sweeps, none of which included waste/environmental services. The hard-exclusion list (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL) and the holdings (ADBE/NOW/CRM/REGN/ADSK) have no overlap with this universe.
+- **Universe (9 screened + 1 price-only):** the 5 task names (WM, RSG, WCN, CWST, CLH) plus 4 related US filers: **ONT** (Onterris, *formerly Montrose Environmental, MEG → ONT on 2026-05-04* — [BusinessWire](https://www.businesswire.com/news/home/20260420842892/en/Montrose-Environmental-Group-Is-Now-Onterris)), **NVRI** (New Enviri = Harsco Environmental + Rail, spun off when Clean Earth was sold to Veolia on 2026-06-01 — [SEC 8-K](https://www.sec.gov/Archives/edgar/data/0002104052/000119312526251752/d258410dex991.htm)), **PESI** (Perma-Fix, nuclear/mixed waste), **QRHC** (Quest Resource, waste brokerage). **GFL** files a 40-F (IFRS), so it was checked on price only.
+- **Not screened, because they are no longer public:** ECOL (US Ecology, acquired by RSG in 2022), SRCL (Stericycle, acquired by WM in 2024), HCCI (Heritage-Crystal Clean, taken private in 2023). None of them is in the SEC `company_tickers.json` pulled this session.
+
+### Method (same toolkit as R82)
+- **Price + 52W high, 2 independent sources:** (1) Yahoo Finance chart API (`query1.finance.yahoo.com/v8/finance/chart/{T}?range=1y`: last price and max daily high), (2) Nasdaq.com quote API (`api.nasdaq.com/api/quote/{T}/info`: lastSalePrice and 52-week range). All prices match exactly at the **Oct 30, 2026 close** (Nasdaq timestamp "Oct 30, 2026"; Nov 2 has not opened yet).
+  - The one 52W-high discrepancy is RSG: Nasdaq shows $243.22, below the $244.04 price, so its range is lagging, while Yahoo shows $249.37. RSG sits 0–2% off its high on either source, so the Filter A verdict does not depend on which is right, and no third source was needed.
+- **Fundamentals: SEC EDGAR XBRL companyfacts** (`data.sec.gov/api/xbrl/companyfacts/CIK##########.json`, 10-K/10-Q only). WM/RSG/WCN/CLH use the Sep-30 2026 10-Q. CWST/PESI/QRHC/ONT use June-quarter TTM because their Q3 10-Qs are not filed yet (CWST reports Nov 9).
+  - TTM = FY + YTD − prior YTD. FCF = CFO − capex.
+  - ROIC = EBIT×(1−eff. tax, clamped 15–27%) ÷ (equity + debt − cash).
+  - Debt uses the `LongTermDebtAndCapitalLeaseObligations*` fix from the 10-31 screen, so WM/RSG debt is not read as 0.
+- **WACC:** Rf = 10Y UST **4.93%** (Yahoo ^TNX 4.929, Oct 30). ERP = Damodaran implied **4.20%** (carried from R82). β = raw 5Y monthly vs ^GSPC, Blume-adjusted. Kd = (Rf+80bps)×(1−21%). Market-value weights. *This is a scout-level WACC, not the VS2 §1.1 two-method WACC.*
+- **Filter B:** TTM FCF yield, and EV/EBITDA percentile vs the stock's own quarterly history since Q4-2021.
+- **Filter D-Legacy naive FV:** (5Y-avg FCF ÷ WACC − net debt) ÷ diluted shares, with a TTM variant shown alongside. Street PT median from the stockanalysis.com forecast page.
+- **Scripts:** `scripts/scout/2026-11-02_waste/screen.py` (re-uses `sec.py`/`hist.py`). Morgan can re-run it with `python screen.py WM RSG WCN CWST CLH PESI QRHC ONT`.
+
+### Screening results (sorted by % off 52W high)
+
+| Ticker | Sub-industry | SEC period | Price Yahoo / Nasdaq (Oct 30) | 52W high (Yahoo / Nasdaq) | % off high | Rev YoY (TTM) | Equity $B | ND/EBITDA | FCF yld (TTM) | EV/EBITDA (pctile since Q4-21) | ROIC TTM / 5Y avg | WACC | Naive FV norm / TTM | P / naive FV (norm) | Street PT median |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| QRHC | Waste brokerage | 2026-06-30 | $1.09 / $1.09 | $2.41 / $2.41 | **−54.8%** | −8.4% | 0.03 | n/m (EBITDA≈0) | 48.2%¹ | n/m | −7.5% / −0.4% | 5.18%² | neg / $7.42 | n/m | $2.5 (1 analyst) |
+| ONT | Env. testing / remediation / emergency response | 2026-06-30 | $14.92 / $14.92 | $30.00 / $30.00 | **−50.3%** | −0.9% | 0.43 | **5.80×** | 9.0% (ex-SBC 2.6%) | 15.8× (p0) | 0.8% / −3.2% | 8.82% | $0.70 / $6.56 | **21.3×** | $18 |
+| PESI | Nuclear / mixed waste treatment | 2026-06-30 | $12.45 / $12.45 | $21.32 / $21.32 | **−41.6%** | n/m³ | 0.06 | n/m (EBITDA<0) | −8.8% | n/m | −25.0% / −12.3% | 7.93% | neg / neg | n/m | n/a |
+| NVRI | Mill services + rail (New Enviri) | carve-out⁴ | $18.42 / $18.42 | $24.20 / $24.20 (post-spin, 2026-08-05) | **−23.9%** | n/m⁴ | 0.64 | n/m | neg (H1 CFO −$275M) | n/m | Q2 op. loss −$244M / legacy 5Y avg **0.8%** | n/c | n/m | n/m | n/c |
+| CWST | Solid waste (Northeast) | 2026-06-30 | $93.33 / $93.33 | $107.96 / $107.96 | −13.6% | +13.6% | 1.58 | 3.39× | 1.8% | 18.6× (p5) | 1.7% / 4.0% | 7.60% | neg / $1.02 | n/m | $113 |
+| CLH | Hazardous waste / industrial services | 2026-09-30 | $302.12 / $302.12 | $335.94 / $335.94 | −10.1% | +10.1% | 3.12 | 1.79× | 3.1% | 13.8× (p75) | 11.6% / 10.7% | 8.09% | $33.91 / $72.14 | 8.91× | $370 |
+| WM | Solid waste (national) | 2026-09-30 | $233.45 / $233.45 | $248.13 / $248.13 | −5.9% | +5.2% | 9.87 | 2.98× | 4.0% | 15.0× (p25) | 11.5% / 11.1% | 6.82% | $24.24 / $79.42 | 9.63× | $261 |
+| GFL | Solid waste (Canada/US, 40-F) | — | $45.21 / $45.21 | $46.76 / $46.76 | −3.3% | — | — | — | — | — | — | — | — | — | — |
+| WCN | Solid waste (secondary/exclusive markets) | 2026-09-30 | $184.08 / $184.08 | $188.20 / $187.36 | −2.2% | +6.3% | 7.88 | 3.07× | 2.7% | 18.2× (p20) | 7.9% / 6.8% | 7.01% | $26.82 / $33.44 | 6.86× | $204 |
+| RSG | Solid waste (national) | 2026-09-30 | $244.04 / $244.04 | $249.37 / $243.22⁵ | −2.1% / +0.3% | +4.1% | 12.24 | 2.61× | 3.4% | 16.6× (p75) | 11.1% / 9.9% | 6.79% | $47.50 / $77.46 | 5.14× | $252 |
+
+¹ QRHC: the TTM FCF of ~$11M on a ~$22M market cap is a working-capital release, not earning power; 5Y-average FCF is negative. ² QRHC's 5.18% WACC is an artifact of debt larger than market cap at a model Kd of ~4.5%; distressed micro-cap credit really costs more. ³ PESI: a revenue-tag mix in XBRL produces a nonsense TTM. Q1 2026 sales fell 20.1% YoY ([Barchart](https://www.barchart.com/story/news/1738032/perma-fix-nasdaqpesi-misses-q1-cy2026-sales-expectations-stock-drops)). ROIC is negative in 4 of 5 FYs on any revenue basis. ⁴ NVRI: New Enviri (Enviri II Corp, CIK 2104052) has only carve-out 10-Q history since the 2026-06-01 Clean Earth sale. The 52W high is taken from the post-spin period only. The legacy Enviri (CIK 45876) SEC 5Y ROIC was 3.3 / −4.4 / 3.7 / 1.4 / 0.2%, with FCF negative in 4 of 5 years. Legacy figures include Clean Earth, the better business that was sold, so they flatter what remains. ⁵ The Nasdaq 52W range lags the price; see Method.
+
+### Filter funnel
+| Stage | Pass | Names |
+|---|---|---|
+| **A (≥20% off 52W high, 2 sources)** | **4 / 10** | QRHC −54.8%, ONT −50.3%, PESI −41.6%, NVRI −23.9% |
+| A fail | 6 | **All 5 task names plus GFL.** CWST −13.6% (nearest miss, 6.4pp short), CLH −10.1%, WM −5.9%, GFL −3.3%, WCN −2.2%, RSG −2.1%/+0.3%. The quality solid-waste franchises trade within 0–14% of their highs. |
+| B-Zero | 4 / 4 equity positive | ONT ND/EBITDA **5.80×** (flag). PESI/QRHC have EBITDA ≈0 or negative, so leverage cannot be measured (flag). NVRI was reset at the spin (ND/EBITDA ~2.0× at launch per the company). |
+| **C (ROIC ≥ 80% WACC, or improving ≥2Q)** | **0 / 4** | ONT TTM 0.8% (≈9% of WACC; the FY trend is improving, −5.7→+1.2%, but far below the 80% bar). PESI −25%. QRHC −7.5%, worsening. NVRI legacy 0.2–3.7% with a Q2 operating loss. |
+| B / D / E | not reached | — |
+
+### Per-name verdicts
+**Filter-A passers (all ❌ at C):**
+- **ONT (Onterris, ex-Montrose) — ❌ REJECT (C; B-Zero leverage flag; E3 overhang).**
+  - **Beaten-down reason, written both ways:**
+    - (✅ temporary) The Aug 5–6 crash (−33% to $15.09) came from a FY26 guidance cut to $740–790M from $840–900M. The cut was driven by about $45M less pass-through revenue, about $40M less emergency-response revenue, and about $20M from temporary regulatory waivers. Emergency response is lumpy by nature ([Insider Monkey](https://www.insidermonkey.com/blog/onterris-ont-slashes-guidance-launches-board-review-1834372/), [Tickeron](https://tickeron.com/blogs/why-is-onterris-ont-stock-down-36-19-today-15393/)).
+    - (❌ structural) BofA downgraded on **deregulation risk** to environmental testing/compliance demand. The company had reiterated the old guide on May 6, and securities-investigation notices followed ([Levi & Korsinsky](https://www.placera.se/pressmeddelanden/montrose-environmental-group-onterris-inc-ont-securities-investigation-notice-levi-korsinsky-20260819), [Glancy](https://www.glancylaw.com/cases/onterris-inc/)). The board also launched a strategic review and adopted a poison pill.
+  - **Why it fails anyway:** ROIC has been negative in 4 of 5 FYs and ex-SBC FCF yield is only 2.6%. The naive FV is $0.70 normalized / $6.56 TTM against a $14.92 price, and the Street median ($18) sits at Barclays' $15 neighbourhood. It is a re-rating story waiting on the strategic review, not a value situation. **Re-scout trigger:** the strategic-review outcome (a sale or break-up would make it a catalyst story), or two quarters of ROIC ≥ ~7%.
+- **NVRI (New Enviri) — ❌ REJECT (C; beaten-down reason leans structural).** After the Clean Earth sale, what remains is steel-mill services plus rail, a business whose legacy ROIC never cleared ~4%. Post-spin, the stock fell from $24.20 (Aug 5) to $18.42 on a carve-out Q2 operating loss of −$244M and negative H1 CFO. That is not a mispriced quality compounder, and it is only partly an environmental-services name.
+- **PESI (Perma-Fix) — ❌ REJECT (C).** Q1 sales fell 20% YoY, ROIC has been negative for 4 of 5 FYs, and DOE project delays (DFLAW) are the swing factor ([Trefis](https://www.trefis.com/data/companies/PESI)). This is binary government-project timing, not a cyclical trough in a profitable business.
+- **QRHC (Quest Resource) — ❌ REJECT (C).** A micro-cap (~$22M) with ROIC worsening for 3 years (+1.7% → −2.7% → −4.7% FY). Management talks of "early signs of recovery" ([briefglance](https://briefglance.com/articles/quest-resource-shows-recovery-signs-amid-difficult-market-wins-qsr-client)), but there is no verified ≥2-quarter ROIC uptrend.
+
+**Filter-A fails (B–E for the record only, not used to decide):**
+- **CWST — ❌ A (−13.6%).** It would also fail C (TTM ROIC 1.7%, falling from 6.8% in FY22 as acquisitions add capital faster than EBIT) and B (FCF yield 1.8%), even though EV/EBITDA is at the 5th percentile of its own history. Q3 is due Nov 9 ([finviz](https://finviz.com/news/402105/casella-waste-systems-inc-to-host-conference-call-on-its-third-quarter-2026-results)).
+- **CLH — ❌ A (−10.1%).** The best operating momentum in the group: Q3 2026 revenue +21% to $1.87B and adj. EBITDA +42%, with guidance raised ([SEC 8-K Q3 release](https://www.sec.gov/Archives/edgar/data/0000822818/000082281826000045/clh-q32026pressrelease.htm)). But it trades at a 3.1% FCF yield and the 75th-percentile EV/EBITDA.
+- **WM / RSG / WCN / GFL — ❌ A (−2% to −6%).** These are near ATH. WCN rose ~10% after its Q3 beat and second guidance raise ([Zacks](https://www.zacks.com/stock/news/3015158/wcn-stock-gains-11-after-reporting-q3-earnings-revenue-beat), [Waste360](https://www.waste360.com/industry-insights/waste-connections-raises-2026-outlook-again-after-q3-results)). The group is pricing landfill-pricing power plus 5–6% core price growth, while volumes are soft ([Waste Dive Q3 2026 roundup](https://www.wastedive.com/news/waste-recycling-earnings-results-q3-2026/873335/)). Naive FV is 5–10× below price for all of them: the market pays for stable growth, not for no-growth cash flow.
+
+### Max's read
+Waste is the **opposite of a de-rated sector** right now. The solid-waste oligopoly (WM/RSG/WCN/GFL) sits at or near ATH, and CLH is beating and raising. These are wide-moat landfill franchises with ROIC just above a low WACC (β ≈ 0.3–0.4 gives a WACC of ~6.8–7%), and they are priced for that. Everything that *is* down ≥20% is a small cap with negative or near-zero ROIC (ONT/PESI/QRHC/NVRI), which is exactly what Filter C is built to catch. **No clear value in this sector right now — I am not forcing anything onto the list.**
+- **Most useful re-trigger:** a broad defensive-rotation selloff that takes WM/RSG ≥20% off their highs. Even then, D-Legacy needs a **price ≤ 0.80× naive FV**, which is far away (WM TTM-basis naive FV is $79 vs the $233 price). The realistic path for these names is the Quality Watch lane, not VALUE-FIRST.
+- **Event to watch:** the **ONT strategic-review outcome**. If it ends in a sale or break-up at a premium, that is a catalyst story; Filter C still has to be reconsidered then.
+
+### Final routing — Round 83
+- 🟢 **Fast-track: 0**
+- 🟡 **Learning-queue: 0**
+- ❌ **Reject: 10** (6 at A: WM/RSG/WCN/CWST/CLH/GFL · 4 at C: ONT/NVRI/PESI/QRHC). ECOL/SRCL/HCCI are no longer public.
+- **Funnel:** 10 attempted → 4 at ≥−20% → 0 past C → **0 fast-track · 0 learning-queue**. No `buy_list.md` entry (regime RISK-ON, and no candidate with preliminary conviction > 6.5).
+
+**Target analysis date:** none (no new Pending rows).
+
+*Max — 2026-11-02 | Scout Round 83*
