@@ -1,5 +1,47 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-03 (Mode 3 — Full Re-Mark, Nov 2 2026 Close) — Enterprise Software Rebounds, Alpha Widens to +2.25%
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, now **39 days old**, materially overdue; VIX closed 21.15 on Nov 2, back above 20 and edging toward TRANSITIONAL-CAUTIOUS range). First new US trading day since Oct 30 (Oct 31 Sat/Nov 1 Sun non-trading). All 5 OPEN positions re-priced to Nov 2 close: ADBE $251.47 (keenable, 2 consistent captures, single-provider — flagged per Single Source of Truth Rule), NOW $106.02 (avg Yahoo Finance $106.01 + stockanalysis.com $106.04 + stockcharted.com $106.01, 3-source), CRM $226.16 (avg fiscal.ai $226.18 + chartexchange $226.11, confirmed by tradingview $226.18), REGN $961.26 (Yahoo Finance + fiscal.ai, exact match), ADSK $257.91 (fiscal.ai + public.com, exact match). S&P 500 re-confirmed **$7,541.84** (avg Reuters $7,542.27 + 3-source convergence valor.globo/marketscreener/straitstimes all $7,541.40). Broad enterprise-software rebound day even as the S&P fell -0.50/-0.51% on oil-price weakness (US-Iran peace-talk optimism) ahead of the Nov 3 midterm elections and AAPL's post-close earnings. **No trades this session.**
+
+| Ticker | Price | Change | Return % | MOS % | StopDist % | Source |
+|--------|-------|--------|----------|-------|------------|--------|
+| ADBE | $251.47 | +0.50% | +1.80% | +31.85% | 26.43% | keenable, 2 consistent captures, single-provider |
+| NOW | $106.02 | +0.85% | +18.49% | +3.79% | 12.28% | Yahoo Finance + stockanalysis.com + stockcharted.com, 3-source |
+| CRM | $226.16 | -1.03% | +24.95% | +34.60% | 35.98% | fiscal.ai + chartexchange + tradingview, 3-source |
+| REGN | $961.26 | +3.60% | +59.68% | +3.31% | 49.86% | Yahoo Finance + fiscal.ai, exact match |
+| ADSK | $257.91 | +3.33% | +29.98% | -16.29% | 38.45% | fiscal.ai + public.com, exact match |
+
+S&P 500 = **$7,541.84** (-0.50% day). Total Value $10,384.19 → **$10,417.70** (+0.32%). Cash $7,603.82 → **$7,604.61** (+$0.79, Cash Yield Rule, 1 day). Total Return 3.84% → **4.18%**. sp500Return 2.45% → **1.93%**. Alpha 1.39% → **2.25%** (software book rebounded while the index fell on oil/election positioning).
+
+**Stop Loss check:** No breaches. NOW narrowest stopDist 12.28% (narrowed from 11.53% — price rose, denominator effect), still above the 10% WATCH threshold.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-10 | FV 53d old, MOS +31.85% positive — no fire | No | Under 30% | Not re-checked this session | 0/5 |
+| NOW | No new earnings since Q3 (10-28) | FV fresh 3d old (re-verified 10-31), MOS +3.79% — no fire | No | Under 30% | Street PT median $156 vs Blended A — carried, ESCALATE TO FULL PIPELINE by 2026-11-14 (Bear Flip #5 fired) | **0/5 new fire — carried escalation item, not a new trigger** |
+| CRM | No new earnings | FV 53d old, MOS +34.60% — no fire | No | Under 30% | Not re-checked this session | 0/5 |
+| REGN | No new earnings since Q3 (10-30) | FV fresh 3d old (re-verified 10-31), MOS +3.31% — no fire | No | Under 30% | Carried — ESCALATE TO FULL PIPELINE recommended (Emma FV +24.7%) | **0/5 new fire — carried escalation item, not a new trigger** |
+| ADSK | No new earnings; Q3 FY27 call confirmed Nov 24 2026 | FV 52d old (<<90d), MOS -16.29% negative but age well under 90d — Trigger #2 does NOT fire | No | Under 30% | Carried (fired, already consulted 10-31 — HOLD-WATCH time-boxed) | 0/5 (pre-committed gate pending, not a new fire) |
+
+**Result: 0/5 formal Re-Analysis triggers fire this session.** NOW and REGN's MOS both narrowed (NOW +4.61%→+3.79%, REGN +6.67%→+3.31%) on the price rebound but stayed positive — no new flip, carried escalation-to-full-pipeline action items unchanged (NOW by 2026-11-14, REGN recommended). **ADSK remains in its pre-committed HOLD-WATCH time-box** from the 2026-10-31 Max×Charlie consultation (gate: Q3 FY27 print now confirmed scheduled Nov 24 2026, hard deadline 2026-12-05) — this is now the **23rd consecutive Review Mode session (10-07 through 11-03)** with that item open, but no new action is required before the pre-committed gate date fires.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 is now **39 days old** — materially overdue. VIX closed 21.15 on Nov 2 (back above the 20 TC-indicator threshold, edging toward TRANSITIONAL-CAUTIOUS).
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-10-31 07:00) — **2 NEW HIGH-IMPACT items found and written to `dashboard/news.js`:** (1) AAPL Q4 FY2026 earnings (EPS/revenue beat but weak Dec-quarter margin + services guide sent shares down -4% intraday during the call — Big 10, no OPEN position); (2) NVDA — Melius Research cut PT $420→$315 (-25%, exceeds >15% threshold), Big 10, no OPEN position. Other coverage assessed ROUTINE: TSLA routine commentary/annual-meeting-deadline notices, GOOGL/META/AMZN/WMT/JPM/LLY/BRK.B — no earnings/M&A/management/8-K/>15% PT/>4% idiosyncratic move found beyond the two items above.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,603.82 accrues at the money-market/T-bill proxy rate (3.8%) for 1 day (11-02→11-03): $7,603.82 × 3.8%/365 × 1 = **+$0.79**. Cash $7,603.82→**$7,604.61**. Total $10,384.19→**$10,417.70** (+0.32%). Total Return 3.84%→**4.18%**. sp500Return 2.45%→**1.93%**. Alpha 1.39%→**2.25%**.
+
+### Max's Take
+
+วันนี้พอร์ตเราฟื้นตัวดีทั้ง 5 positions (ADBE +0.50%, NOW +0.85%, CRM -1.03%, REGN +3.60%, ADSK +3.33%) สวนทางกับ S&P 500 ที่ร่วง -0.50% จากราคาน้ำมันที่ลงแรง (ความหวัง US-Iran peace talk) ก่อนการเลือกตั้งกลางเทอม 3 พ.ย. และรอผลประกอบการ AAPL หลังตลาดปิด ผลคือ **alpha กว้างขึ้นเป็น +2.25%** (จาก +1.39%) — พอร์ต software ของเราวิ่งดีกว่าดัชนีที่ร่วงลง ไม่มี stop breach, ไม่มี Re-Analysis trigger ใหม่ (0/5) NOW และ REGN ที่ MOS เคยบวกแรงแคบลงบ้าง (NOW +3.79% จาก +4.61%, REGN +3.31% จาก +6.67%) จากราคาที่ขึ้น แต่ยังเป็นบวกอยู่ ไม่ trigger ใหม่ **ADSK MOS ลึกลงเป็น -16.29%** (จาก -12.54%) จากราคาที่ขึ้นแรง +3.33% — ยังอยู่ใน pre-committed HOLD-WATCH time-box รอ Q3 FY27 earnings call ที่ยืนยันแล้วว่าจะจัดวันที่ 24 พ.ย. ไม่ต้องทำอะไรเพิ่มตอนนี้ ข่าวเด่นวันนี้มี 2 รายการ (ทั้งคู่ Big 10 ไม่มี OPEN position): AAPL ประกาศงบ Q4 beat ทั้ง EPS/revenue แต่ guide margin/services ไตรมาสหน้าอ่อนกว่าคาด ทำให้หุ้นร่วงระหว่าง call, และ NVDA ถูก Melius Research หั่น price target ลง -25% เพิ่มเติม: Atlas regime re-call อายุครบ 39 วันแล้ว และ VIX กลับขึ้นไปเหนือ 20 (21.15) — ใกล้เข้าเกณฑ์ TRANSITIONAL-CAUTIOUS มากขึ้น ควร re-call โดยเร็วในรอบถัดไป
+
+---
+
 ## 📊 Portfolio Review — 2026-11-02 (Mode 3 — Pre-Market Run, No New Trading Day, CRM Price Correction)
 
 > **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, now **38 days old**, materially overdue; VIX closed 19.42 Oct 30, back under 20). No new US trading session has closed yet as of this run — Oct 30 2026 (Fri) remains the latest close (Oct 31 Sat / Nov 1 Sun non-trading, Nov 2 Mon session not yet closed at cron run time). All 5 OPEN positions re-verified against the Oct 30 close: ADBE $250.23 (macrotrends explicit latest-close confirmation, unchanged), NOW $105.12 (investing.com + MarketBeat, unchanged), **CRM corrected $229.17→$228.52** (3 fresh sources — Yahoo Finance $228.52 + stockanalysis.com $228.60 + macrotrends $228.43, all within 0.07% — supersede the prior session's figure, a data-quality refinement not a market move), REGN $927.89 (carried forward, no newer independent source found within attempt cap, no price-moving news), ADSK $249.61 (carried forward). S&P 500 re-confirmed **$7,580.07** via 4+ source exact convergence (Yahoo Finance, CNBC .SPX, Markets Today recap, portfolio-terminal.com). **No trades this session.**

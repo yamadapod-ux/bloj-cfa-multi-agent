@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-10-31 07:00";
+const NEWS_LAST_UPDATED = "2026-11-03 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-03 (Atlas scan 2026-11-03, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-02", category: "EARNINGS",
+    headline: "🟡 AAPL Apple Q4 FY2026 beats EPS/revenue but weak Dec-quarter margin & services guide — shares fall on the call",
+    summary: "Apple reported fiscal Q4 2026 results after the close on 2026-11-02 (John Ternus's first earnings call as CEO, succeeding Tim Cook Sept 1): EPS $2.10 beat the $1.99 consensus by $0.11; revenue $114.48B beat the $113.39-113.40B consensus (+12% YoY), a fiscal-year revenue and EPS record. iPhone revenue $57.58B beat ($56.54B est, +17% YoY) and Mac revenue $10.79B beat ($9.61B est, +24% YoY), but iPad revenue $6.23B missed ($6.70B est, -10%+ YoY, the worst-performing category) and Wearables/Home/Accessories $31.57B roughly in-line. Gross margin was 47.9% (beat 47.5% est, boosted ~1pt by tariff refunds) but down sharply from 50.1% the prior quarter on rising memory-chip costs. Shares were little-changed in initial after-hours trading but fell as much as -4% during the earnings call after management guided December-quarter gross margin to 45-46% (below the 46.3% estimate, citing continued memory inflation) and services revenue growth of only 8-9% (well below the 10.7% Street estimate, citing FX/licensing/mobile-gaming/App Store headwinds) — even as the company guided total December-quarter revenue growth of 7-10%, above the 6.1% consensus, calling it on track to be Apple's best quarter ever. นัยพอร์ต: AAPL อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น earnings event ที่ beat ทั้ง EPS และ revenue ตามเกณฑ์ HIGH-IMPACT (earnings beat/miss) พร้อมปฏิกิริยาราคาระหว่าง call ที่ชัดเจนจาก margin/services guide ที่อ่อนกว่าคาด.",
+    impact: "MIXED", tickers: ["AAPL"],
+    url: "https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html",
+  },
+  {
+    date: "2026-11-02", category: "ANALYST",
+    headline: "🔴 NVDA Nvidia — Melius Research slashes price target $420→$315 (-25%), still rates Buy",
+    summary: "On 2026-11-02, Melius Research analyst Ben Reitzes cut his NVDA price target to $315 from $420 (-25%, exceeding the >15% HIGH-IMPACT PT-change threshold) while maintaining a Buy rating. The cut lands amid a broader pullback in the stock (NVDA trading around $204-208, well off its 52-week high of $243.37) and comes alongside continued Street debate over AI-infrastructure capex sustainability and circular financing arrangements across the sector (e.g. chipmakers funding customers' equity raises, as seen in the recent Meta deal). The Street consensus target remains $319-321 (55 analysts), with a high of $515 and a low of $210 — Melius's new target sits near the low end of the range. นัยพอร์ต: NVDA อยู่ใน Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่ PT change -25% เกินเกณฑ์ >15% HIGH-IMPACT บน Big 10 name ที่เป็น AI-capex bellwether สำคัญต่อ macro context ของพอร์ตโดยรวม.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/",
+  },
 
   // ── 2026-10-31 (Atlas scan 2026-10-31, Portfolio Review Mode 3 cron cycle) ──
   {
