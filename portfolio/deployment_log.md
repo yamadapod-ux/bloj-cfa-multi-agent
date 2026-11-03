@@ -1082,3 +1082,16 @@
 - **Data:** SEC EDGAR XBRL companyfacts. Prices Yahoo (Oct 30 close); 52W highs cross-checked with Nasdaq.com. 68 price-screened, 21 passed A, 5 passed B. Full tables: `portfolio/watchlist.md` § AI Selloff Watch -- Trigger Prices (2026-10-28).
 
 *Max — 2026-10-31 | AI Selloff Watch Part B — 0 fast-track, 0 learning-queue, 5 QUICK-SCREEN SKIP; no trade.*
+
+## Scout Round 84 — Marine Shipping ex-Tankers (containership lessors/liners, gas carriers/FLNG, shuttle tankers, small-cap dry bulk) — 2026-11-03
+
+| Ticker | Action | Gate / Rationale |
+|--------|--------|------------------|
+| NVGS | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | Owner FCF (CFO − D&A) TTM $61.8M → naive FV $6.25 vs $20.00 = 3.20× at computed WACC 7.57%. The 5Y-avg actual FCF basis gives 1.38×. The reported TTM FCF basis (0.58×) excludes the vessels-under-construction tag and is not through-cycle. |
+| CMRE | LEARNING-QUEUE (`LEARNING-QUEUE`) | Tier 1 pass. A −25.5% cyclical · B owner FCF 17.9% · C ROIC 9.8% ≥ WACC 7.45% · D straddles 0.65/0.84/1.21× (0/15/30% mid-cycle haircut) at computed WACC, fails at the 10% band · E 2/3. No pipeline dispatched; Tier 1.5 target 2026-11-17. |
+
+- **Other rejects** (watchlist only, not Tier-1 skips): GLNG/SHIP at B · KNOP/CMDB/DSX at C · HSHP at D · DLNG/CTRM at E 0/3 · TOPS at A (permanent).
+- **Regime:** RISK-ON 3/4 (Atlas 2026-10-27). Scout-only CIO task; no trade.
+- **Data:** SEC EDGAR XBRL companyfacts plus 6-K exhibits (CMRE Q3, NVGS/DLNG Q2). Prices from 2 sources (Yahoo + Nasdaq.com, 2026-11-02 close). Full tables: `portfolio/watchlist.md` § Scout Report Round 84.
+
+*Max — 2026-11-03 | Scout Round 84 — 0 fast-track, 1 learning-queue (CMRE), 1 QUICK-SCREEN SKIP; no trade.*
