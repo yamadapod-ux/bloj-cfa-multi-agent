@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-03 07:00";
+const NEWS_LAST_UPDATED = "2026-11-04 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-04 (Atlas scan 2026-11-04, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-03", category: "M&A",
+    headline: "🟢 CRM Salesforce signs definitive agreement to acquire Cresta (voice-AI), ~$2.7B per unconfirmed reporting",
+    summary: "Salesforce announced on 2026-11-03 it has signed a definitive agreement to acquire Cresta, a voice-first operating system for customer experience whose voice agents resolve complex customer calls end-to-end for brands including Marriott, Comcast and Alaska Airlines. Salesforce did not disclose financial terms; The Information reported the price at approximately $2.7B (unverified by other outlets). The deal is expected to close in Q1 of Salesforce's fiscal year 2028, subject to customary closing conditions and regulatory approval. Cresta will be combined with Salesforce's Service Cloud to link voice conversations, customer history and outcomes on one platform. This is CRM's 10th acquisition agreement of 2026, following Braze (~$5.66B, announced 10-20), Listen Labs ($2B), Fin/Intercom ($3.6B, closed 09-10), and Rune Technologies (announced late October) — continuing a rapid AI-agent-focused shopping spree. CRM shares fell -1.76% to $222.20 on the day. นัยพอร์ต: CRM เป็น OPEN position (3sh, weight ~6.4%) — M&A event บน OPEN position เข้าเกณฑ์ HIGH-IMPACT ตามนิยาม (ไม่ใช่ earnings/8-K แต่เป็น M&A บน ticker ที่ถือ) — deal เล็กเกินกว่าจะกระทบ Blended FV $345.77 อย่างมีนัยสำคัญ (ไม่มีการเปลี่ยน FY27 guidance) สอดคล้องกับการประเมิน Braze/Listen Labs/Fin ก่อนหน้า ไม่มี FV change ตอนนี้.",
+    impact: "NEUTRAL", tickers: ["CRM"],
+    url: "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta",
+  },
+  {
+    date: "2026-11-02", category: "ANALYST",
+    headline: "🟠 REGN Regeneron — multiple analysts raise price targets >15% post-Q3 beat (Leerink +19.4%, Truist +25.9%, Cantor +23.3%, Canaccord +27.4%)",
+    summary: "Following Regeneron's Q3 2026 earnings beat (EPS $20.07 vs ~$16.1-16.4 est, reported 10-30), a wave of analysts raised price targets sharply on 2026-11-02: Leerink Partners $835→$997 (+19.4%), Truist Securities $780→$982 (+25.9%), Cantor Fitzgerald $795→$980 (+23.3%), Canaccord Genuity $922→$1175 (+27.4%) — all exceeding the >15% HIGH-IMPACT threshold individually. Other firms also raised targets below the threshold: BMO $920→$1050 (+14.1%), Guggenheim $1030→$1100 (+6.8%), Wells Fargo to $925, Evercore ISI to $1075. The Street consensus PT range is now roughly $925-1175, well above REGN's internal Blended FV of $994.20. นัยพอร์ต: REGN เป็น OPEN position (0.42sh, weight ~3.9%) — Street PT ขยับขึ้นเร็วกว่า internal FV ทำให้ MOS บีบแคบลงต่อเนื่อง (+3.31%→+2.27% วันถัดมา) แม้ราคายังไม่ทะลุ FV — ยืนยัน recommendation เดิมที่ให้ ESCALATE TO FULL PIPELINE โดยเร็ว เพื่อ re-verify ว่า FV $994.20 ยัง conservative เกินไปหรือไม่เมื่อเทียบกับมุมมอง Street ที่ปรับขึ้นเร็ว.",
+    impact: "POSITIVE", tickers: ["REGN"],
+    url: "https://www.marketscreener.com/quote/stock/REGENERON-PHARMACEUTICALS-10649/consensus/",
+  },
 
   // ── 2026-11-03 (Atlas scan 2026-11-03, Portfolio Review Mode 3 cron cycle) ──
   {

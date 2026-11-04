@@ -1,5 +1,47 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-04 (Mode 3 — Full Re-Mark, Nov 3 2026 Close, Election Day) — Mixed Session, Alpha Narrows to +1.55%, CRM M&A + REGN Analyst PT Surge
+
+> **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, now **40 days old**, materially overdue). First new US trading day since Nov 2. S&P 500 snapped a 3-day losing streak, +0.36% to **$7,568.92** (WSJ + CNBC, exact match) as chip stocks rebounded ahead of midterm election results, even as the Dow fell -0.38% on AAPL's post-earnings margin-guide weakness (no OPEN position). All 5 OPEN positions re-priced to Nov 3 close: ADBE $246.09 (stockanalysis.com, single-provider this run — attempt-cap reached), NOW $109.16 (stockanalysis.com + keenable, exact match), CRM $222.20 (stockanalysis.com + keenable, exact match), REGN $971.60 (avg fiscal.ai $973.36 + Yahoo Finance $969.84, 0.36% diff), ADSK $254.81 (avg investing.com $257.29 + keenable $252.32, sources disagree 1.9% > 0.5% threshold, both noted and averaged per protocol). Book mixed: ADBE/CRM/ADSK fell, NOW/REGN rose. **No trades this session.**
+
+| Ticker | Price | Change | Return % | MOS % | StopDist % | Source |
+|--------|-------|--------|----------|-------|------------|--------|
+| ADBE | $246.09 | -2.14% | -0.38% | +33.31% | 24.83% | stockanalysis.com, single-provider (attempt-cap reached) |
+| NOW | $109.16 | +2.97% | +22.01% | +0.94% | 14.81% | stockanalysis.com + keenable, exact match |
+| CRM | $222.20 | -1.76% | +22.76% | +35.75% | 34.83% | stockanalysis.com + keenable, exact match — Cresta M&A announced same day |
+| REGN | $971.60 | +1.07% | +61.39% | +2.27% | 50.39% | avg fiscal.ai $973.36 + Yahoo Finance $969.84, 0.36% diff |
+| ADSK | $254.81 | -1.20% | +28.41% | -14.89% | 37.73% | avg investing.com $257.29 + keenable $252.32, sources disagree 1.9% |
+
+S&P 500 = **$7,568.92** (+0.36% day). Total Value $10,417.70 → **$10,385.13** (-0.31%). Cash $7,604.61 → **$7,605.40** (+$0.79, Cash Yield Rule, 1 day). Total Return 4.18% → **3.85%**. sp500Return 1.93% → **2.30%**. Alpha 2.25% → **1.55%** (narrowed — S&P's chip-led rebound outpaced the book's mixed session).
+
+**Stop Loss check:** No breaches. ADBE narrowest stopDist 24.83%, still comfortable, well above the 10% WATCH threshold.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (>90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings since 09-10 | FV 54d old, MOS +33.31% positive — no fire | No | Under 30% | Not re-checked this session | 0/5 |
+| NOW | No new earnings since Q3 (10-28) | FV fresh 4d old (re-verified 10-31), MOS +0.94% — no fire but narrowing sharply, flag for next review | No | Under 30% | Street PT median $156 vs Blended FV $110.20 — carried, ESCALATE TO FULL PIPELINE by 2026-11-14 | **0/5 new fire — MOS approaching zero, watch item** |
+| CRM | No new earnings; Cresta M&A announced 11-03 (not earnings) | FV 54d old, MOS +35.75% — no fire | No | Under 30% | Not re-checked this session | 0/5 |
+| REGN | No new earnings since Q3 (10-30) | FV fresh 4d old (re-verified 10-31), MOS +2.27% — no fire but narrowing sharply, flag for next review | No | Under 30% | Multiple analysts raised PT >15% this session — Street range now $925-1175 vs Blended FV $994.20 | **0/5 new fire — MOS approaching zero + Street PT diverging fast, watch item** |
+| ADSK | No new earnings; Q3 FY27 confirmed Nov 24 | FV 52d old (<<90d), MOS -14.89% negative but age well under 90d — Trigger #2 does NOT fire | No | Under 30% | Carried (fired, already consulted 10-31 — HOLD-WATCH time-boxed) | 0/5 (pre-committed gate pending, not a new fire) |
+
+**Result: 0/5 formal Re-Analysis triggers fire this session.** NOW and REGN's MOS both narrowed sharply toward zero (NOW +3.79%→+0.94%, REGN +3.31%→+2.27%) on the day's price moves and REGN's wave of >15% analyst PT hikes — neither flips negative yet, so no formal trigger fires, but both are flagged as approaching STRONG SELL territory and should be watched closely at the next review; REGN's ESCALATE TO FULL PIPELINE recommendation (2026-11-01) is now more urgent given how fast the Street is re-rating ahead of the team's own FV. **ADSK remains in its pre-committed HOLD-WATCH time-box** from the 2026-10-31 Max×Charlie consultation (gate: Q3 FY27 print Nov 24 2026, hard deadline 2026-12-05) — this is now the **24th consecutive Review Mode session (10-07 through 11-04)** with that item open, but no new action is required before the pre-committed gate date fires.
+
+**Atlas macro regime status:** RISK-ON re-call from 2026-09-25 is now **40 days old** — materially overdue, should be prioritized at the next opportunity.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist (NVDA, META, AAPL, MSFT, AMZN, GOOGL, JPM, LLY, WMT, TSLA, BRK.B) scanned since NEWS_LAST_UPDATED (2026-11-03 07:00) — **2 NEW HIGH-IMPACT items found and written to `dashboard/news.js`:** (1) CRM — Salesforce signed a definitive agreement to acquire Cresta (voice-AI), ~$2.7B per unconfirmed reporting — M&A on this OPEN position, CRM's 10th acquisition of 2026; (2) REGN — multiple analysts raised PT >15% post-Q3 beat (Leerink +19.4%, Truist +25.9%, Cantor +23.3%, Canaccord +27.4%) — OPEN position, Street PT range now well above internal FV. Other coverage assessed ROUTINE: AAPL's continued post-earnings margin-guide weakness (-2% intraday, already logged 11-03, no new development), TSLA closed -1.32% $398.50 with no specific catalyst found, AMD/other earnings outside the Big 10 fixed list, midterm-election positioning commentary (macro-level, not ticker-specific), continued GOOGL/MSFT/LLY post-earnings coverage (already logged in prior scans). No confirmed management change, SEC 8-K, or Bear-Flip/Thesis-Invalidation-level event found for any of the 5 OPEN tickers beyond the two items above.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+Per the Cash Yield Rule (CLAUDE.md), cash balance $7,604.61 accrues at the money-market/T-bill proxy rate (3.8%) for 1 day (11-03→11-04): $7,604.61 × 3.8%/365 × 1 = **+$0.79**. Cash $7,604.61→**$7,605.40**. Total $10,417.70→**$10,385.13** (-0.31%). Total Return 4.18%→**3.85%**. sp500Return 1.93%→**2.30%**. Alpha 2.25%→**1.55%**.
+
+### Max's Take
+
+วันนี้ (3 พ.ย., วันเลือกตั้งกลางเทอม) S&P 500 หยุดการร่วงต่อเนื่อง 3 วัน ขึ้น +0.36% จากหุ้นชิปที่ฟื้นตัวก่อนรอผลเลือกตั้ง แม้ Dow จะลงจาก AAPL ที่ guide margin อ่อนกว่าคาดต่อเนื่อง พอร์ตเราสวนทางแบบผสม — ADBE -2.14%, CRM -1.76%, ADSK -1.20% ลง สวนทางกับ NOW +2.97% และ REGN +1.07% ที่ขึ้น ผลคือ **alpha แคบลงเป็น +1.55%** (จาก +2.25%) เพราะดัชนีวิ่งเร็วกว่าพอร์ตที่ผลผสม ไม่มี stop breach, ไม่มี Re-Analysis trigger ใหม่ (0/5) แต่ **NOW และ REGN ที่ MOS เคยบวกกว้างกำลังบีบแคบลงเร็วมาก** (NOW +3.79%→+0.94%, REGN +3.31%→+2.27%) — ยังไม่ fire แต่ควรระวังรอบหน้า ข่าวเด่นวันนี้มี 2 รายการ ทั้งคู่เป็น OPEN position: **CRM ประกาศซื้อ Cresta** (voice-AI, ราว $2.7B ไม่ยืนยันทางการ) เป็น M&A ตัวที่ 10 ของปีนี้ ไม่กระทบ FV อย่างมีนัยสำคัญ และ **REGN ถูกนักวิเคราะห์หลายรายปรับ PT ขึ้นแรง >15%** (Leerink/Truist/Cantor/Canaccord) ทำให้ Street PT สูงกว่า internal FV มาก ยืนยันว่าควร escalate full pipeline โดยเร็ว เพิ่มเติม: Atlas regime re-call อายุครบ 40 วันแล้ว — ควร re-call โดยเร็วในรอบถัดไป
+
+---
+
 ## 📊 Portfolio Review — 2026-11-03 (Mode 3 — Full Re-Mark, Nov 2 2026 Close) — Enterprise Software Rebounds, Alpha Widens to +2.25%
 
 > **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, now **39 days old**, materially overdue; VIX closed 21.15 on Nov 2, back above 20 and edging toward TRANSITIONAL-CAUTIOUS range). First new US trading day since Oct 30 (Oct 31 Sat/Nov 1 Sun non-trading). All 5 OPEN positions re-priced to Nov 2 close: ADBE $251.47 (keenable, 2 consistent captures, single-provider — flagged per Single Source of Truth Rule), NOW $106.02 (avg Yahoo Finance $106.01 + stockanalysis.com $106.04 + stockcharted.com $106.01, 3-source), CRM $226.16 (avg fiscal.ai $226.18 + chartexchange $226.11, confirmed by tradingview $226.18), REGN $961.26 (Yahoo Finance + fiscal.ai, exact match), ADSK $257.91 (fiscal.ai + public.com, exact match). S&P 500 re-confirmed **$7,541.84** (avg Reuters $7,542.27 + 3-source convergence valor.globo/marketscreener/straitstimes all $7,541.40). Broad enterprise-software rebound day even as the S&P fell -0.50/-0.51% on oil-price weakness (US-Iran peace-talk optimism) ahead of the Nov 3 midterm elections and AAPL's post-close earnings. **No trades this session.**
