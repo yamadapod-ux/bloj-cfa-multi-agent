@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-11-01): **Scout Round 82 — Life Science Tools / Bioprocessing / Genomics / CROs** (never a dedicated round before; 26 attempted → 25 screened with SEC EDGAR companyfacts + Yahoo/Nasdaq Oct 30 close. Filter A 5/25 (QDEL/TXG/TWST/MYGN/ILMN) → C 1 (ILMN) → B/D 0 (ILMN P/naive FV 6.2× → Tier 1 Check 2a SKIP). **0 fast-track · 0 learning-queue · 25 reject**. Large caps TMO/DHR/A/MTD/IQV/CRL sit 0–7% off highs at 70th–100th-pct EV/EBITDA, so the 2023–25 de-rating is over. Prune: 0 de-listed.)*
+*ล่าสุด (2026-11-04): **Scout Round 85 — Staffing & Employment Services** (dedicated round แรก; R78 เคยแตะเป็นส่วนหนึ่งของ sweep — ดูเหตุผลใน report. 12 screened ด้วย SEC EDGAR + Yahoo/Nasdaq close 11-03. Filter A 5/12 (RGP/EFOR/MAN/BBSI/UPWK) → B 3 → C 2 → D 1 → E 0. **0 fast-track · 0 learning-queue · 12 reject**. กลุ่มเด้งแรงแล้ว: 10/14 ตัวขึ้น ≥+80% จาก low, RHI +31% ตั้งแต่ R78. ใกล้สุด UPWK: D 0.55–1.12× แต่ GSV −10% + E 0/3. Prune: 0 de-listed, NBIX SLA → 11-07. พบ R78 ระบุ ASGN ผิด — จริงคือเปลี่ยนชื่อเป็น EFOR. Regime TC.)*
+*ก่อนหน้า (2026-11-01): **Scout Round 82 — Life Science Tools / Bioprocessing / Genomics / CROs** (never a dedicated round before; 26 attempted → 25 screened with SEC EDGAR companyfacts + Yahoo/Nasdaq Oct 30 close. Filter A 5/25 (QDEL/TXG/TWST/MYGN/ILMN) → C 1 (ILMN) → B/D 0 (ILMN P/naive FV 6.2× → Tier 1 Check 2a SKIP). **0 fast-track · 0 learning-queue · 25 reject**. Large caps TMO/DHR/A/MTD/IQV/CRL sit 0–7% off highs at 70th–100th-pct EV/EBITDA, so the 2023–25 de-rating is over. Prune: 0 de-listed.)*
 *ก่อนหน้า (2026-10-31): **Quality Compounder Watchlist -- Expensive Wide-Moat** (CIO-directed 2026-10-28 — 26 screened → 16 listed across 11 sectors, trigger = MOS 15% on screen FV; closest: PAYX −29.7% / RMD −29.9% / ORLY −32.3%)*
 *ก่อนหน้า (2026-10-31): **AI Selloff Watch -- Trigger Prices** (CIO-directed — Part A NVDA/META/GOOGL/MSFT/AMZN trigger prices · Part B contagion scout 68→21→5→0 fast-track/learning-queue)*
 *ก่อนหน้า: Scout Round 77 (2026-10-16, Max — multi-sector VALUE-FIRST sweep across 7 de-rated groups: regional banks/consumer finance, homebuilders/building products, commodity chemicals, packaging, tariff-hit consumer discretionary, autos/auto parts, specialty pharma. 107 pre-screened, **37 two-source verified** (finviz + stockanalysis, Oct 15 close; 3rd source for NAVI/OMF). Filter A 33/37 → B-Zero/B/C 10 → D 2. **🟢 Fast-track: SLM** (A −28.5%, D 0.705×, E 3/3; wait for Q3 print Oct 22). **🟡 Learning-queue: ALLY** (D 0.77–0.90×, E 1/3). Reject 35 (near-misses: WAL D 0.906×, OMF B, SON/LEVI/JAZZ A). Prune: 0 de-listed (Round 75 pruned this morning). No full pipeline dispatched (scout-only CIO task).)*
@@ -381,6 +382,12 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-11-04 (Mode 1 Step 0 — Round 85):** ตรวจ live Pending ทั้ง 16 แถวตาม De-list Rules #1-3 พร้อมราคาสด 2 แหล่ง (Yahoo = Nasdaq ตรงกันทุกตัว, close 11-03). **De-listed 0 · SLA fixed 1 (NBIX)** · live 16.
+- **Rule #1:** NBIX เป็นตัวเดียวที่ target ผ่านไปแล้ว (11-03) แต่ scout เมื่อ 10-18 (17 วัน) จึงไม่เข้า stale >60 วัน → ตามกฎตั้ง target ใหม่ **2026-11-07** แทนการ archive. ที่เหลือ: CRI 11-06 · IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD 11-07 · CMRE 11-17 · MMS 11-20 · WGO 12-19.
+- **Rule #2:** ไม่มีตัวไหนราคา >2× ขอบบน entry zone (สูงสุดคือ NBIX $164.85 = 1.22× ของ $135 · MMS $65.46 = 1.07× · BYD $76.76 = 1.10× · WGO $31.56 = 1.09×) และไม่มี formal FV/MOS ให้วัด MOS < −30%.
+- **Rule #3:** `decisions.md` = 0 hits สำหรับทุก live ticker · OPEN ยังเป็น ADBE/NOW/CRM/REGN/ADSK.
+- **ธงรอบ 11-07 (ยังไม่ archive):** ไม่ผ่าน Filter A แล้ว = **URI −2.2%** · **NBIX −11.4%** (ขึ้นจาก $135.77 เมื่อ scout) · **BYD −16.0%** · **ALLY −19.8%** · WGO/MMS ราคาออกนอก zone ด้านบน · **INDI $1.50 = −72.7% อยู่ที่ 52W low** ควรเช็คเหตุผลก่อนตัดสิน.
+
 **Prune Pass 2026-11-03 (Mode 1 Step 0 — Round 84):** I checked all 15 live Pending rows against De-list Rules #1-3. **De-listed 0 · SLA fixed 0.**
 - **Rule #1:** no target date has passed yet. **NBIX = 11-03 (today)** must be re-run or archived at the next prune. Remaining dates: CRI 11-06, IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD 11-07, MMS 11-20, WGO 12-19. The 11-01 warning on IBKR/URI/EME (archive after 11-07 with no Tier 1 re-run) stands.
 - **Rule #2/#3:** `dashboard/portfolio.js` OPEN is still ADBE/NOW/CRM/REGN/ADSK (`b9e8815`, 11-02 close re-mark). `decisions.md` has 0 hits for any live ticker. Round 84 adds **CMRE** (learning-queue) → live 16.
@@ -460,7 +467,7 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 | ALLY | Ally Financial Inc. | Financials / Consumer Finance — Auto Lending + Digital Bank (Value bucket) | 2026-10-16 (Round 77) | $37.73 (Oct 15 close, stockanalysis; finviz $37.59, 0.4%) · 52W high $47.29 = **−20.2%** (borderline) | n/a (lender) — P/E 8.9 TTM / 6.65 fwd · P/TBV 0.85 | EPS +32% this year (finviz) | ROE 9.7% TTM (5Y avg ~10.5% vs CoE 10.1%) | **🟡 LEARNING-QUEUE (Filter E 1/3).** D 0.77× normalized / 0.90× TTM-only; Street PT $48.78 (+29%, single source). Moat ❌ (weakest ROE among the lenders screened), ROE spread ❌ +0.4pp, overhang ✅. **Entry zone $34–38 · Stop $29.50** | **LEARNING-QUEUE — Tier 1.5 lightweight only on CIO request; target 2026-10-23** (after the Q3 print Oct 20). Upgrade trigger: ROE trend ≥13% **SLA re-fix 2026-10-27: Target 2026-11-07** (10-23 target passed after the Q3 print; Tier 1.5 lightweight still only on CIO request). |
 | MMS | Maximus, Inc. | Industrials / Government Services — Medicaid enrollment, CMS contact centers, VA Medical Disability Exams (Value bucket) | 2026-10-17 (Round 78) | $61.47 (Oct 16 close, finviz + stockanalysis exact) · 52W $51.04–100.00 = **−38.5%** | 13.46% TTM ($433M) · normalized $400M = 12.4% · EV/EBITDA 7.07× vs 5Y 10.6–14.3× | FY26 rev guide $5.20–5.35B (unchanged); EPS guide cut to $7.90–8.20 | ROE 21.1% · ROIC 13.3% TTM (5Y avg 10.95% vs WACC ~8.3–9%) | VA MDE incentive pause 7/1–12/31/26 (temporary, quantified ~$0.35 EPS) → D 0.805× naive FV (CoE 10%; range 0.72–0.95× by FCF basis) · E 1/3 (moat ✅, ROIC spread +2–2.7pp ❌, federal/AI overhang ❌) · Street PT $92.50 (2 analysts) · **Entry $55–61 · Stop $48** | **LEARNING-QUEUE — Tier 1.5 lightweight on CIO request; target 2026-11-20** (after Nov 19 FY26 Q4 print). Upgrade: VA incentives resume 1/1/27, or price ≤$52, or FY26 FCF ≥$450M |
 | CRI | Carter's, Inc. | Consumer Discretionary / Children's Apparel — Carter's + OshKosh brands, US retail + wholesale (Value bucket) | 2026-10-18 (Round 79) | $31.45 (Oct 16 close, finviz + stockanalysis exact) · 52W $27.86–44.44 (finviz-implied + SA) = **−29.2%** | **25.4% TTM** ($293M — inflated by WC) · 5Y avg FY21–25 $212M = 18.4% · EV/EBITDA **4.91×** vs FY21–25 8.29–10.96× | FY26 guide: sales +LSD–MSD, adj EPS −low-double-digit to mid-teens | ROE 20.7% · ROIC 14.2% TTM (5Y avg 16.1%) | **🟡 LEARNING-QUEUE (Round 79 top pick)** — Filter D **0.71×** naive FV at CoE 13% (small-cap band) on 5Y-avg FCF $212M (0.74× on FY24–TTM avg; **0.87× at CoE 16%**). E **1/3** (E2 ✅ 5Y ROIC +6pp but falling trend · E1 ❓ moat evidence not verified this session · E3 ❌ tariff cost + EPS-down guide + birth-rate demand question). Beaten-down reason is ambiguous (tariff/margin = temporary vs birth-rate/wholesale = structural), written both ways → default learning-queue. **Entry zone $28.00–32.50 · Stop $26.00** (below 52W low $27.86). Street PT $40.57 (SA, 8 analysts) / $40.67 (Investing.com, May) | **Target: Tier 1.5 lightweight after the Q3 FY26 print (date not verified this session — expected late Oct / early Nov 2026); fallback 2026-11-06** |
-| NBIX | Neurocrine Biosciences, Inc. | Healthcare / Large-cap Biotech — Ingrezza (VMAT2, tardive dyskinesia), Crenessity (CAH), Vykat XR (Prader-Willi, via Soleno) (Growth bucket — rev +34.4% TTM) | 2026-10-18 (Round 79) | $135.77 (Oct 16 close, SA; finviz $135.71, 0.04%) · 52W $122.14–186.12 (SA) = **−27.1%** (finviz −27.08%) | 6.31% TTM ($870M) · EV/Sales **4.11×** vs FY21–25 4.72–7.37× (below every year) | +34.4% TTM revenue ($3.37B) | ROE 22.1% · ROIC 20.6% (5Y avg 20.75%) | **🟡 LEARNING-QUEUE** — B-V1 ✅ (self-history bottom-third; ⚠️ Soleno M&A may contaminate the series) · C ✅ · D-V1: only method 3 (Analyst-PT) computed → **0.66× (SA $206.81) to 0.77× (TipRanks $176.67)**; methods 1–2 not computed this round; D-Legacy no-growth cross-check 1.43× → "methods disagree" flag → learning-queue, not fast-track. E **2/3** (E1 ✅ VMAT2 franchise · E2 ✅ +11–12pp · E3 ❌ IRA Medicare price pressure 2027–29 unquantified + Vykat XR safety concerns). **Entry zone $122–135 · Stop $108** | **Target: Tier 1.5 lightweight 2026-11-03** (day after the Q3 print on Nov 2, per SA news) |
+| NBIX | Neurocrine Biosciences, Inc. | Healthcare / Large-cap Biotech — Ingrezza (VMAT2, tardive dyskinesia), Crenessity (CAH), Vykat XR (Prader-Willi, via Soleno) (Growth bucket — rev +34.4% TTM) | 2026-10-18 (Round 79) | $135.77 (Oct 16 close, SA; finviz $135.71, 0.04%) · 52W $122.14–186.12 (SA) = **−27.1%** (finviz −27.08%) | 6.31% TTM ($870M) · EV/Sales **4.11×** vs FY21–25 4.72–7.37× (below every year) | +34.4% TTM revenue ($3.37B) | ROE 22.1% · ROIC 20.6% (5Y avg 20.75%) | **🟡 LEARNING-QUEUE** — B-V1 ✅ (self-history bottom-third; ⚠️ Soleno M&A may contaminate the series) · C ✅ · D-V1: only method 3 (Analyst-PT) computed → **0.66× (SA $206.81) to 0.77× (TipRanks $176.67)**; methods 1–2 not computed this round; D-Legacy no-growth cross-check 1.43× → "methods disagree" flag → learning-queue, not fast-track. E **2/3** (E1 ✅ VMAT2 franchise · E2 ✅ +11–12pp · E3 ❌ IRA Medicare price pressure 2027–29 unquantified + Vykat XR safety concerns). **Entry zone $122–135 · Stop $108** | **Target: Tier 1.5 lightweight 2026-11-03** (day after the Q3 print on Nov 2, per SA news) **SLA re-fix 2026-11-04 (Round 85 prune): Target 2026-11-07** — lightweight ไม่ได้รัน. ราคา $164.85 (close 11-03, Yahoo = Nasdaq) = −11.4% จาก high ไม่ผ่าน Filter A แล้ว และสูงกว่าขอบบน zone 22% → re-screen 11-07 ถ้ายังไม่ถึง −20% เสนอ archive |
 | BYD | Boyd Gaming Corporation | Consumer Discretionary / Regional Casinos — Midwest & South, Las Vegas Locals, Downtown LV, online (Value bucket) | 2026-10-19 (Round 80) | $70.04 (Oct 16 close; finviz + stockanalysis exact) · 52W $65.00–91.41 (SA) = **−23.4%** (finviz −23.38%) | TTM 0.69% ($35M — depressed by ~$591M capex + cash tax on the 2025 FanDuel-stake gain) · 5Y avg FY21–25 $601M = 11.8% · EV/EBITDA **6.84×** vs FY21–25 7.32–9.40× (below every year) | Q1'26 revenue flat YoY ($997M); Midwest & South rev +4% | ROE 93% (distorted by the FanDuel gain) · ROIC 12.5% TTM (5Y avg 14.45% vs WACC ~9%) | **🟡 LEARNING-QUEUE (Round 80 only survivor)** — D **0.87×** naive FV on the 5Y-avg FCF at CoE 10.3% ($80/share), but **1.06× on the FY23–25 avg** (capex step-up) → range straddles the band. E **2/3** (E2 ✅ +5.4pp · E3 ✅ no structural/regulatory overhang found · E1 ❓ license-barrier moat not evidenced this session). Street PT $93.94 (SA, 19) / $94.75 (Investing.com) — 4 PT cuts in Oct. **Entry $63–70 · Stop $56** | **Target: Tier 1.5 lightweight 2026-10-23** (day after the Q3 print Oct 22). Upgrade: Q3 shows LV-locals stabilization + FY26 capex guide → normalized FCF ≥$550M (D ≤0.80×), or price ≤$60 **SLA re-fix 2026-10-27: Target 2026-11-07** (10-23 target passed after the Q3 print; Tier 1.5 lightweight still only on CIO request). |
 | WGO | Winnebago Industries, Inc. | Consumer Discretionary / Leisure Products — RV (Grand Design, Winnebago, Newmar) + Marine (Chris-Craft, Barletta) (Value bucket) | 2026-10-24 (ad-hoc RV & Marine sector scout) | $28.65 (Oct 23 close; Yahoo + Nasdaq.com exact, mkt cap $815M) · 52W $21.95–50.16 = **−42.9%** | **18.6% normalized** (10y avg OCF−capex $152M, SEC 10-K FY17–26) · FY26 $144.6M = 17.8% | FY26 rev −3.4% ($2,703.9M); FY27 guide $2.65–2.80B | ROIC adj 3.2% FY26 (0.46× WACC 6.9%) · 5y avg 11.6% vs WACC 7.3% | **🟡 LEARNING-QUEUE** — Tier 1 pass (narrow: ROIC <0.5× WACC but FY26 ticked up vs FY25). A ✅ cyclical (rates + fuel + dealer destock) · B-Zero ✅ ND/EBITDA 2.4× · B ✅ · **C ⚠️ split** (5Y avg passes; CLAUDE.md trend clause fails — TTM op income down last 2 quarters) · D ✅ 0.40× @ CAPM WACC 7.5% / 0.70–0.83× @13% small-cap band / 0.81–1.00× @15% · E 1/3 (E3 ❌ Grand Design frame class action + NHTSA PE unresolved). **Entry $25.00–29.00 · Stop $22.90** — detail: Scout History 2026-10-24 | **LEARNING-QUEUE — Tier 1.5 lightweight on CIO request; target 2026-12-19** (after the Q1 FY27 print, ~mid/late Dec). Upgrade: 2 consecutive quarters of TTM ROIC improvement, or frame litigation/NHTSA PE resolved |
 | CMRE | Costamare Inc. | Industrials / Marine Shipping — containership owner-lessor on long charters to top liners + Neptune Maritime Leasing platform (Value bucket) | 2026-11-03 (Round 84) | $13.45 (Nov 2 close; Yahoo + Nasdaq.com exact, mkt cap $1,626M) · 52W $11.92–18.06 (high 2026-04-09) = **−25.5%** | **17.9% owner FCF** (CFO $446M − D&A $134M − pref div $21M, TTM to Q3 6-K) · reported FCF negative (newbuild advances) · EV/EBITDA 5.7× | TTM rev −3% ($853M); $6.0B contracted backlog, 5.8y TEU-weighted duration | ROIC 9.8% TTM (@15% tax; 11.5% pre-tax) · 5Y avg 11.4% vs computed WACC 7.45% / band 10% | **🟡 LEARNING-QUEUE** — Tier 1 pass. A ✅ cyclical (Q1 miss + Suez-reopening capacity fear) · B-Zero ✅ ND/EBITDA 2.0×, equity +$2.29B · B ✅ · C ✅ · **D ⚠️ straddles** 0.65× (TTM) / **0.84× (15% mid-cycle haircut)** / 1.21× (30%) @7.45%, fails all cells @10% band · E 2/3 (E1 ❌ commodity asset; related-party manager flagged). P/B 0.71×, P/E ≈5×. **Entry $12.00–13.50 · Stop $10.70** — detail: § Scout Report Round 84 | **LEARNING-QUEUE — Tier 1.5 lightweight (Emma DCF on backlog + NAV/residual-value cross-check, Bear-lite on the 22-newbuild capex + post-2027 re-chartering); target 2026-11-17.** Upgrade: lightweight MOS ≥25%, or Q4 shows no re-charter rate erosion, or price −15% more |
@@ -8767,3 +8774,122 @@ I checked the CIO brief's 4 suggestions against the file with `grep -w` first:
 **Target analysis date:** CMRE 2026-11-17 (Tier 1.5 lightweight).
 
 *Max — 2026-11-03 | Scout Round 84 (Marine Shipping ex-Tankers — 27 screened, 0 fast-track / 1 learning-queue CMRE / 26 reject)*
+
+---
+
+## Scout Report § Round 85 (Staffing & Employment Services — temp/professional staffing, executive search, PEO/HR outsourcing, IT staffing, online talent marketplace) — 2026-11-04
+
+**Trigger:** CIO สั่ง "Scout Round 85 — Staffing & Employment Services" (2026-11-04) ทำครบ `.claude/commands/scout.md` Step 0-6 **เฉพาะ scout/screen ไม่ได้ dispatch full pipeline และไม่ได้เรียก Emma/Quinn/Bear**
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK) ตาม `dashboard/portfolio.js` (re-mark `d6c31a1`, close 11-03) · Cash $7,605 จาก $10,385 (~73%)
+**Regime:** **TRANSITIONAL-CAUTIOUS** (Atlas `agent_notes/atlas/2026-11-03_regime.md`, อายุ 1 วัน; judgment override เพราะไม่มี 3/4 majority) → Force Deploy suspended + ห้าม open position ใหม่ → รอบนี้ scout เพื่อเตรียม buy list เท่านั้น
+**Gates:** Value ≥7.0 / Growth ≥6.5 ไม่มีตัวไหนถึงขั้นให้ preliminary conviction
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **1** (NBIX) | live **16 → 16** ดู Prune Pass 2026-11-04 (Round 85) เหนือตาราง Pending
+
+### Sector mandate — ตรวจซ้ำ 30 วัน (⚠️ ขัดกับสมมติฐานในคำสั่ง — Max ตัดสินแล้ว บันทึกให้ CIO ตรวจได้)
+คำสั่งระบุว่า "ควรจะไม่ซ้ำเพราะยังไม่เคยมี dedicated round" และให้สลับไป Oil/Product Tankers ถ้าพบว่าทำไปแล้วจริง ผลตรวจ:
+- **Staffing:** **ไม่เคยมี dedicated round จริง** แต่ **R78 (2026-10-17, 18 วันก่อน)** มี "Staffing/HR" เป็น 1 ใน 8 กลุ่มของ multi-sector sweep และ R79 ถือเป็น excluded group
+  - มีคำตัดสินจริงแค่ **MAN, RHI** (❌ C, ใช้ข้อมูล aggregator)
+  - **KFY / KELYA / AMN / NSP / TNET** อยู่แค่ใน finviz batch URL ไม่มี 2-source verify และไม่มีตาราง B-E
+  - **ASGN** ถูกบันทึกผิดว่า "merged, acquired or delisted" (ดู Data integrity ด้านล่าง)
+  - **KFRC / RGP / TBI / BBSI / HQI / UPWK = 0 hits** ทุกไฟล์
+- **Fallback (FRO, STNG, INSW, TNK, DHT, SFL):** ซ้ำหนักกว่า — **R80 (2026-10-19)** pre-screen INSW/STNG/FRO/DHT/TNK (−9% ถึง −15%, fail A) และ **R84 (2026-11-03)** ตัด SFL ที่ A (−12.7%)
+- **→ คง Staffing:** ใช้ precedent เดียวกับ R84 (container shipping ที่อยู่แค่ใน batch URL ถือว่ายังไม่ถูก scan) แผนสำรองทั้ง 6 ตัวถูกคัดในช่วง 30 วันไปแล้ว จึงให้ข้อมูลใหม่น้อยกว่า **ถ้า CIO อ่านเงื่อนไขว่า R78 นับเป็น "ทำไปแล้ว" แจ้งได้ — tankers รันแยกได้ทันที**
+- **Universe (12 ตัว):** MAN, RHI, KFY, EFOR (ex-ASGN), KFRC, KELYA, TBI, RGP (staffing/search/consulting) · TNET, NSP, BBSI (PEO) · UPWK (talent marketplace)
+  - **ตรวจราคาเพิ่มแต่ไม่นับใน universe:** AMN −8.7% · HQI −19.8% (near-miss)
+  - **ใช้ไม่ได้:** HSII — take-private เสร็จ 2025-12-10 ที่ $59/หุ้น ([Hunt Scanlon](https://huntscanlon.com/heidrick-struggles-completes-take-private-transaction/)) · CCRN — Yahoo 404 และไม่มีใน Nasdaq/รายชื่อ SEC ที่ใช้ สถานะล่าสุด **ไม่ได้ยืนยัน** (ดีล Aya ถูกยกเลิกไปก่อนแล้ว [SIA](https://www.staffingindustry.com/news/global-daily-news/cross-country-q4-revenue-falls-236-as-it-moves-past-canceled-aya-deal))
+- **Hard-exclusion:** `grep -w` ทุก ticker เทียบ `decisions.md` / `buy_list.md` / `dashboard/portfolio.js` = 0 hits · MAN/RHI ถูกคัดซ้ำเพราะ CIO ระบุชื่อใน mandate และมีงบ Q3 ใหม่ · CIO bans (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL) ไม่อยู่ใน universe
+
+### Method
+- **ราคา + 52W high (2 sources):** Yahoo chart API + Nasdaq.com quote API ทั้ง 14 ตัว **ตรงกันเป๊ะ** ที่ close 2026-11-03 จึงไม่ต้องใช้แหล่งที่ 3 (52W high ต่างกันเฉพาะ RGP $5.37 vs $5.36)
+- **Fundamentals: SEC EDGAR เท่านั้น** (XBRL companyfacts `data.sec.gov/api/xbrl/companyfacts/`) TTM = FY + YTD − prior YTD · ล่าสุด: MAN/EFOR 10-Q ยื่น 10-30 · UPWK 10-Q ยื่น 11-02 · RGP 10-Q ยื่น 10-07 · **BBSI ยังเป็นงบ Q2 (ยื่น 08-06)** ไม่พบงบ Q3 ใน EDGAR ตอนรัน · Aggregator ใช้เฉพาะ Street PT (stockanalysis)
+- **WACC:** Rf **4.95%** (Yahoo ^TNX 4.952 close 11-03; [FRED DGS10](https://fred.stlouisfed.org/series/DGS10) 4.91% วันที่ 11-02) · ERP **4.41%** ([Damodaran implied, 2026-11-01](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm)) — **อัปเดตจาก 4.20% ที่ R82-84 ใช้ต่อกันมา** · β 5Y monthly vs ^GSPC, Blume-adjusted · แสดงคู่กับ CLAUDE.md sector band (10–13% mid-cap) และคำตัดสิน reject ต้องรอดฝั่งที่ใจดีกว่า
+- **Scripts:** `scripts/scout/2026-11-04_staffing/` (`screen.py`, `pxcheck.py`, `detail.py`, `extra.py`)
+
+### Filter A — % จาก 52W high (close 11-03, Yahoo = Nasdaq)
+| กลุ่ม | ≥ −20% (ผ่าน) | ไม่ถึง −20% (fail A) |
+|---|---|---|
+| Staffing / consulting / search | **RGP −50.8%** · **EFOR −37.7%** · **MAN −28.8%** | KFY −13.0 · TBI −13.1 · KELYA −7.8 · RHI −7.2 · KFRC −6.5 |
+| PEO / HR outsourcing | **BBSI −22.5%** | TNET −16.3 · NSP −10.6 |
+| Talent marketplace | **UPWK −56.5%** | — |
+
+**ผ่าน 5, ตก 7** (near-miss นอก universe: HQI −19.8%)
+
+**ประเด็นใหญ่ของรอบ: สมมติฐาน "กลุ่มที่ตลาดเกลียด" ของ R78 หมดอายุแล้ว** เมื่อเทียบ low 52 สัปดาห์กับราคาปัจจุบัน 10/14 ตัวเด้ง ≥ +80% (TBI +202% · AMN +203% · NSP +169% · KFRC +130% · HQI +126% · KELYA +105% · EFOR +103% · RHI +100% · TNET +91% · MAN +81%) และ **RHI ขึ้น +31.3% ตั้งแต่ R78** ($33.31 → $43.73) จน fail A ไปแล้ว (สาเหตุการเด้งไม่ได้ตรวจในรอบนี้)
+
+**Beaten-down reason:**
+- **MAN — ✅ cyclical/sentiment (AI เขียนสองด้าน)** Q3 revenue $4.84B ([8-K](https://www.sec.gov/Archives/edgar/data/0000871763/000119312526422291/man-ex99_1.htm)) ต่ำกว่า consensus $4.92B, guide Q4 ต่ำกว่าคาด + ประกาศเปลี่ยน CEO ([finviz](https://finviz.com/news/403159/manpowergroup-shares-fall-nearly-20-as-q3-revenue-misses-forecasts-and-q4-outlook-disappoints)) · ตัวเลขไม่สนับสนุนว่าโครงสร้างพัง: organic CC +6%, operating profit +23.7% · แต่ gross margin ลดจาก ~16.6% เป็น ~15.9% และ France −3.5% ส่วน 8-K ไม่พูดถึง AI เลย จึงยังไม่มีหลักฐานทั้งสองทาง
+- **EFOR — ⚠️ เขียนสองด้าน** ✅ IT spending/งบ federal เป็น cycle และ revenue Q3 ยังโต 2% เหนือ guidance ([Finviz PR](https://finviz.com/news/410545/everforth-reports-third-quarter-2026-results)) · ❌ TTM operating income ลดต่อเนื่อง 7 ไตรมาส ($280M → $182M, SEC), GM −110bps, guide Q4 $965–995M และราคาร่วง −21% ใน 7 sessions ($43.59 → $34.25) อยู่ในกลุ่มเดียวกับ AI-disruption ของ IT services (R75)
+- **UPWK — ⚠️ เอียงไปทาง structural** ❌ GSV เร่งลงจาก −4% (Q2) เป็น **−10.1%** (Q3), active clients **−10%** เหลือ 717K, revenue −8%, CEO ยอมรับเอง "lower-complexity work continues to shift toward automation" ([Q2 PR](https://www.sec.gov/Archives/edgar/data/0001627475/000162747526000046/upwork2q26-pressrelease.htm), [Q3 PR](https://www.sec.gov/Archives/edgar/data/0001627475/000162747526000053/upwork3q26-pressrelease_3q.htm)) · ✅ GSV จาก AI-skills +55%, Business Plus +132%, adj. EBITDA margin 34%, GSV/client +8%, revenue เหนือ guidance
+- **BBSI — ✅ cyclical** แรงกดดัน gross margin จาก workers' comp pricing + guide แคบลง ([Simply Wall St](https://simplywall.st/stocks/us/commercial-services/nasdaq-bbsi/barrett-business-services/news/barrett-business-services-bbsi-stock-price-sinks-as-margin-p/amp))
+- **RGP — ❌ เอียงไปทาง structural** consulting segment −32.5% YoY ใน Q3 FY26, adj. EBITDA ติดลบ, ต้องลดคนเพิ่ม ([Q3 FY26 PR](https://www.barchart.com/story/news/1206238/rgp-reports-financial-results-for-third-quarter-fiscal-2026))
+
+### Filter B-Zero / B / C — SEC (TTM ถึงงบล่าสุด; $M)
+| Ticker | งบล่าสุด | Equity | ND/EBITDA | FCF yield (ex-SBC) | EV/EBITDA (5Y pct; min/med/max) | ROIC TTM (5Y avg) | WACC computed / band | ผล |
+|---|---|---|---|---|---|---|---|---|
+| **MAN** | 09-30 | +2,140 | 2.3× | 0.3% (−0.9%) | 7.9× (**30th**; 5.1/8.9/14.4) | 7.4% (10.0%) | 7.26% / 10% | B ✅ เฉพาะ EV/EBITDA · C ⚠️ 102% ของ computed, 74% ของ band → ไป D |
+| **EFOR** | 09-30 | +1,844 | **4.1×** (flag; หลังซื้อ Quinnox) | 13.9% (10.2%) | 8.8× (**15th**; 6.5/10.4/16.0) | **4.3%** (9.1%) | 6.12% / 10% | B ✅ · **C ❌** 70% ของ computed, 43% ของ band |
+| **UPWK** | 09-30 | +654 | net cash $304M | **15.0%** (10.6%) | 6.1× (**18th**; 4.6/15.6/42.1) | 25.9% (**−9.2%**) | 9.46% / 10–13% | B ✅ · C ✅ → D |
+| **BBSI** | 06-30 | +204 | net cash $68M | 1.9% (0.6%) | 12.2× (63rd; 7.8/9.6/15.4) | 28.1% (54.0%) | 9.14% / 10% | **B ❌** ทั้งสองทาง |
+| **RGP** | 08-29 | +161 | net cash $61M (mcap $91M) | −11.6% | n/m (EBITDA −$39M) | **−34.4%** (−23.4%) | 8.02% / 13–16% | **B ❌** (FCF ติดลบ, EV/EBITDA n/m) + **C ❌** |
+
+- **MAN C ต้องอ่านอย่างระวัง:** TTM OI เด้ง $150M → $288M → $303M ดูเหมือน trend ดีขึ้น 2 ไตรมาส แต่การกระโดดใน Q2'26 เกิดในจังหวะที่ TTM OI ของ Q2'25 ร่วงจาก $268M เป็น $142M ซึ่งสอดคล้องกับ base effect จากไตรมาสเดิมที่ออกจาก TTM ไม่ใช่ trend ธุรกิจล้วนๆ (ไม่ได้แยก line item)
+- **EFOR sensitivity:** บวก amortization $65.9M กลับ → ROIC 6.33% = 103% ของ computed แต่ 63% ของ band · computed WACC 6.12% มาจาก raw β 0.43 ซึ่ง**ต่ำผิดปกติ**สำหรับบริษัท ND/EBITDA 4.1× จึงไม่ยอมให้ตัวเลขนี้พลิกคำตัดสิน · trend ROIC FY: 11.0 → 10.4 → 9.7 → 8.5 → 6.0 → TTM 4.3 คือแบบ value trap ที่ Filter C ถูกออกแบบมาคัด
+- **BBSI (PEO):** CFO ของ PEO แกว่งตาม workers' comp reserve จึงตรวจด้วย NOPAT: $41M ÷ 9.14% + net cash = $20.94/หุ้น → **1.56×** ยังไม่มี gap เช่นกัน
+
+### Filter D — naive FV (สูตร house: (normalized FCF ÷ WACC − net debt) ÷ diluted shares)
+**MAN** (ND $870M; 48.1M หุ้น; FCF FY21–25 = 581 / 348 / 270 / 258 / −161; TTM $8M):
+| ฐาน normalized FCF → | 5Y avg $259M | 5Y ex-SBC $227M | ตัด FY21: $179M | 3Y FY23–25 $122M |
+|---|---|---|---|---|
+| WACC 7.26% (computed) | $56.05 (**0.81×**) | $47.08 (0.97×) | $33.1 (1.37×) | $16.9 (2.68×) |
+| WACC 10% (band) | $35.8 (1.27×) | — | $19.1 (2.38×) | $7.3 (6.2×) |
+
+**ผ่านเพียง 1 ช่อง** (WACC ต่ำสุด + รวมปี FY21 ที่ FCF สูงผิดปกติ) ส่วน TTM FCF เกือบศูนย์ · Street median $50 (+10%), avg $53.39 ([SA](https://stockanalysis.com/stocks/man/forecast/), 11-03) → **❌ D** Max ไม่เลือกฐานที่เป็นมิตรที่สุด (E เพื่อบันทึก: 0/3 — E2 +2.7pp, CEO transition/AI เป็น overhang)
+
+**UPWK** (net cash $304M; 128.26M หุ้น; FCF FY21–25 = 10 / 10 / 52 / 150 / 242; TTM $192M; ใช้เงินสดจ่าย convert $361M แล้วใน Q3):
+| ฐาน → | TTM $192M | 3Y avg $148M | TTM ex-SBC $136M | 3Y ex-SBC $79M | 5Y avg $93M |
+|---|---|---|---|---|---|
+| WACC 9.46% | $18.16 (**0.55×**) | $14.57 (**0.68×**) | $13.58 (**0.73×**) | $8.88 (1.12×) | $10.03 (0.99×) |
+| WACC 13% | $13.88 (0.72×) | $11.25 (0.88×) | $10.50 (0.95×) | — | — |
+
+**⚠️ straddles** และทุกช่องตั้งอยู่บนสมมติฐาน no-decline ขณะที่ GSV −10%, Q3 FCF −22% YoY, Q4 guide adj. EBITDA $51–55M (Q3 $63.8M) · **Street median $10 (+0.7%), avg $9.75 ต่ำกว่าราคา** ([SA](https://stockanalysis.com/stocks/upwk/forecast/), 8 analysts, 11-03 — **แหล่งเดียว**: หา PT หลัง Q3 แหล่งที่ 2 ไม่ได้ ตัวเลข MarketBeat $15.50 เป็นของก่อน Q3 จึงไม่ใช้) = สัญญาณเตือนตาม D-Legacy
+
+**EFOR (เพื่อบันทึก ตกที่ C แล้ว):** FCF 159 / 270 / 417 / 365 / 288, TTM $196M · 5Y avg @10% = $42.7 (0.80×) · ex-SBC @10% = $31.2 (1.10×) · TTM @10% = $17.4 (1.97×) · @6.12% = 0.38–0.72× · Street median $41 (+20%), avg $34.17 ([SA](https://stockanalysis.com/stocks/efor/forecast/), 10-29)
+
+### Filter E — conviction viability (UPWK ตัวเดียวที่เหลือ)
+| Ticker | E1 Moat | E2 Through-cycle ROIC ≥ WACC +3pp | E3 No unresolved overhang | Score |
+|---|---|---|---|---|
+| **UPWK** | ❌ ตลาดสองฝั่งเป็น network effect จริง และ take rate ยังขึ้น (17.2% → 17.4%, คำนวณ) แต่ active clients −10% คือหลักฐานตัวเลขว่า network กำลังหด | ❌ 5Y avg −9.2% (FY24–25 ดีจริง 17.8/30.7% แต่เป็น 2 ปีหลังปรับโครงสร้าง ไม่ใช่ through-cycle) | ❌ automation ของงาน lower-complexity ยังไม่จบและกำลังเร่ง (GSV −4% → −10%) | **0/3 → reject** |
+
+### Final routing — Round 85
+- 🟢 **Fast-track: 0**
+- 🟡 **Learning-queue: 0** — ไม่เพิ่ม row ใน Pending Analysis
+- ❌ **Reject: 12**
+  - 7 ที่ A: RHI / KFY / TNET / KFRC / KELYA / TBI / NSP (ไม่ถูก de-rate แล้ว)
+  - 2 ที่ B: BBSI (`QUICK-SCREEN SKIP` check 2a — 3.10× บน FCF, 1.56× บน NOPAT) / RGP (ตก C ด้วย)
+  - 1 ที่ C: EFOR
+  - 1 ที่ D: MAN
+  - 1 ที่ E: UPWK (0/3)
+- **Funnel:** 12 → A 5 → B-Zero 5 → B 3 → C 2 → D 1 (UPWK, straddles) → E 0
+- **`buy_list.md`:** ไม่เพิ่ม ไม่มีตัวไหนมีทั้ง value ชัดและ preliminary conviction >6.5 · **"sector นี้ยังไม่มี value ที่ชัดเจน"**
+
+**Re-trigger (ไม่ใช่ entry zone เพราะไม่ใช่ candidate):**
+- **UPWK:** ทบทวนเมื่อ GSV YoY กลับมา ≥ 0 หรือ active clients หยุดลด 2 ไตรมาส — ตอนนั้น E1/E3 จะเปลี่ยน และ D ก็น่าสนใจอยู่แล้ว เป็นตัวที่ใกล้ที่สุดในเชิงราคา
+- **MAN:** ทบทวนเมื่อ TTM FCF ฟื้น ≥ $200M — ปัจจุบัน margin ฟื้นแต่ cash ยังไม่ตาม
+- **EFOR:** ทบทวนเมื่อ TTM OI กลับมาเพิ่ม 2 ไตรมาสติด และ ND/EBITDA <3×
+- **HQI (−19.8%):** ห่าง Filter A แค่ 0.2pp ควรคัดในรอบถัดไปถ้าลงต่อ
+
+### Data integrity — สิ่งที่พบรอบนี้
+1. **R78 ระบุ ASGN ผิด** ว่า "merged, acquired or delisted" ความจริงคือเปลี่ยนชื่อเป็น **Everforth / EFOR** เมื่อ 2026-04-24 และยัง listed อยู่ ([SEC 8-K](https://www.sec.gov/Archives/edgar/data/0000890564/000089056426000025/asgn-20260424.htm)) → R78 จึงไม่เคยคัดตัวนี้ **อีก 7 ตัวที่ R78 ติดป้ายเดียวกัน (MMC, AMED, HOLX, ATGE, SEM, TGNA, PINC) ไม่ได้ตรวจซ้ำ**
+2. **ERP 4.20% ใน R82–84 ค้างเก่า** ค่าจริงล่าสุด 4.41% ทำให้ WACC เพิ่ม ~0.1–0.2pp ไม่พลิกคำตัดสินของรอบนี้ แต่ไม่ได้ย้อนกลับไปตรวจ R82–84
+3. **Beaten-down reason บางส่วนมาจากแหล่งรอง** (finviz, Simply Wall St, SIA) ไม่ใช่ SEC ซึ่งตามคำสั่งใช้ SEC กับตัวเลขการเงินเท่านั้น · ตัวเลข "operating income −17%" ของ EFOR จาก aggregator ไม่นำมาใช้ ใช้ TTM OI จาก SEC แทน
+
+### What this round tells the team
+1. **Staffing กลับมาเป็น cyclical recovery trade แล้ว ไม่ใช่กลุ่มถูกเกลียด** MAN organic +6% และ OP +24% ขณะที่ส่วนใหญ่เด้ง ≥80% จาก low — ข้อสรุป R78 ที่ว่า "beaten-down reason leans structural" **ใช้ไม่ได้ทั้งกลุ่มแล้ว** ควรแยก: temp/professional ฟื้น (MAN, KFRC, RHI) กับ platform/consulting ที่ยังหด (UPWK, RGP)
+2. **ตัวที่ยังถูกจริงคือตัวที่ธุรกิจหดจริง** UPWK (FCF yield 15%) กับ EFOR (14%) ถูกเพราะ FCF/ลูกค้ากำลังลด ไม่ใช่เพราะตลาดตั้งราคาผิดชัดเจน — pattern เดียวกับ R75 IT services
+3. **Naive FV ฐานเดียวหลอกได้:** MAN ดูเป็น fast-track-ish ที่ 0.81× แต่พึ่ง FCF ปี FY21 ปีเดียว ตัดออกแล้วเป็น 1.37× ควรโชว์หลายฐานทุกครั้ง
+
+**Target analysis date:** ไม่มี (0 candidates)
+
+*Max — 2026-11-04 | Scout Round 85 (Staffing & Employment Services — 12 screened, 0 fast-track / 0 learning-queue / 12 reject)*

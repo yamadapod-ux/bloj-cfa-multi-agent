@@ -1095,3 +1095,15 @@
 - **Data:** SEC EDGAR XBRL companyfacts plus 6-K exhibits (CMRE Q3, NVGS/DLNG Q2). Prices from 2 sources (Yahoo + Nasdaq.com, 2026-11-02 close). Full tables: `portfolio/watchlist.md` § Scout Report Round 84.
 
 *Max — 2026-11-03 | Scout Round 84 — 0 fast-track, 1 learning-queue (CMRE), 1 QUICK-SCREEN SKIP; no trade.*
+
+## Scout Round 85 — Staffing & Employment Services (staffing, executive search, PEO/HR outsourcing, talent marketplace) — 2026-11-04
+
+| Ticker | Action | Gate / Rationale |
+|--------|--------|------------------|
+| BBSI | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | A −22.5% cyclical แต่ B ตก (FCF yield 1.9%, EV/EBITDA 63rd pct). Naive FV $10.54 vs $32.73 = 3.10× ที่ WACC 9.14% · ตรวจซ้ำด้วย NOPAT เพราะ FCF ของ PEO แกว่ง = 1.56×. ใช้งบ Q2 (Q3 ยังไม่อยู่ใน EDGAR ตอนรัน). |
+
+- **Other rejects** (watchlist only, ไม่ใช่ Tier-1 skip): RHI/KFY/TNET/KFRC/KELYA/TBI/NSP ที่ A · RGP ที่ B/C · EFOR ที่ C · MAN ที่ D (0.81× เฉพาะฐานรวม FY21; ตัด FY21 = 1.37×) · UPWK ที่ E 0/3 (D 0.55–1.12×).
+- **Regime:** TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03) ห้าม open position ใหม่. Scout-only CIO task; no trade.
+- **Data:** SEC EDGAR XBRL companyfacts. ราคา 2 แหล่ง (Yahoo + Nasdaq.com, close 2026-11-03). ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 85.
+
+*Max — 2026-11-04 | Scout Round 85 — 0 fast-track, 0 learning-queue, 1 QUICK-SCREEN SKIP; no trade.*
