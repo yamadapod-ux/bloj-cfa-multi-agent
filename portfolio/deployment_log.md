@@ -1107,3 +1107,12 @@
 - **Data:** SEC EDGAR XBRL companyfacts. ราคา 2 แหล่ง (Yahoo + Nasdaq.com, close 2026-11-03). ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 85.
 
 *Max — 2026-11-04 | Scout Round 85 — 0 fast-track, 0 learning-queue, 1 QUICK-SCREEN SKIP; no trade.*
+
+## Scout Round 86 — Residential/Apartment REITs + Single-Family Rental + Mortgage REITs — 2026-11-05
+
+- **ไม่มี Tier-1 skip** (ไม่มีตัวไหนถึงขั้น Quick-Screen) · **Rejects (watchlist only):** MAA/CPT/UDR/VMRK/INVH/ESS/AMH ที่ A (−7% ถึง −15%) · NLY ที่ B (P/B 1.06× vs มัธยฐาน 5Y 1.02×) · AGNC ที่ B (1.17–1.24× vs 1.04×) · STWD ที่ C (P/B 0.74× บน BV Q2 ผ่าน B แต่ DE ROE 9.1% < CoE 9.41% ไม่ดีขึ้น 2 ไตรมาสติด, E 0/3).
+- **Universe:** AVB + EQR ควบรวมเป็น VMRK (ปิด 2026-08-17) → 10 ตัว.
+- **Regime:** TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03) ห้าม open position ใหม่. Scout-only CIO task; no trade. STWD re-check หลังงบ Q3 2026-11-06.
+- **Data:** ราคา 2 แหล่ง (Yahoo + Nasdaq.com, close 2026-11-04) · press release Q3 + SEC XBRL. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 86.
+
+*Max — 2026-11-05 | Scout Round 86 — 0 fast-track, 0 learning-queue, 0 QUICK-SCREEN SKIP; no trade.*
