@@ -1,10 +1,10 @@
 # Scout Round 86 — STWD: GAAP ROE, leverage, share growth from SEC companyfacts. Also NLY/AGNC TTM econ-return inputs. Run: python -I stwdfund.py
-import json
+import json, datetime as dt
 f=json.load(open('data/cf_STWD.json'))['facts']['us-gaap']
 def fy(c,unit='USD'):
     o={}
     for x in f.get(c,{}).get('units',{}).get(unit,[]):
-        if x.get('form')=='10-K' and x.get('fp')=='FY' and 'start' in x and 350<=(int(x['end'][:4])*365+int(x['end'][5:7])*30-int(x['start'][:4])*365-int(x['start'][5:7])*30)<=380:
+        if 'start' in x and 350<=(dt.date.fromisoformat(x['end'])-dt.date.fromisoformat(x['start'])).days<=380:
             if x['end'] not in o or x['filed']>o[x['end']][1]: o[x['end']]=(x['val'],x['filed'])
     return {k:v[0] for k,v in o.items()}
 def inst(c,unit='USD'):
