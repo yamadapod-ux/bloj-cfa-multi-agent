@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-04 07:00";
+const NEWS_LAST_UPDATED = "2026-11-05 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-05 (Atlas scan 2026-11-05, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-04", category: "MACRO",
+    headline: "🟢🟢 Historic midterm-election rally — S&P +1.58%, Dow +3.03% (best post-midterm day since 1982); AMZN/MSFT surge +6-7% to record highs on AI-capex-slowdown read",
+    summary: "Democrats won majorities in both the House and Senate in the 2026 US midterm elections, and markets staged their best single session in roughly 18 months on 2026-11-04: the S&P 500 rose 119.70 points (+1.58-1.6%) to 7,688.62 (5-source convergence: Yahoo Finance, Quartz, TipRanks, The New York Times, WTTW — all independently report the same close), the Dow Jones Industrial Average surged 1,569.40 points (+3.03%) to 53,356.12 — its best day since April 2025 and its largest post-midterm single-day move since 1982 per CFRA Research data cited by CNN/CNBC — and the Nasdaq Composite gained 1.44% to 25,736.51, its biggest post-midterm one-day gain since 2018. Mega-cap cloud/hyperscaler names led: Amazon (AMZN) shares jumped roughly 6-7% (some intraday prints as high as +8.3%) and Microsoft (MSFT) rose roughly 6-7% to a fresh record high above $557, with Amazon and Microsoft adding a combined ~$445B in market value in a single morning per Crypto Briefing; Alphabet (GOOGL) rose a more modest ~3.1-3.2%. The rally's stated rationale (Bloomberg, citing Dakota Wealth Management's Robert Pavlik; Benzinga, citing analyst Dan Ives) is that a Democratic Congress could create political headwinds for further AI data-center buildout, and investors are betting that a slower capex pace would actually improve near-term margins and cash flow for companies like Amazon, Microsoft, Meta and Alphabet that have recently turned cash-flow-negative from heavy AI infrastructure spending (Alphabet reported FCF of -$9B last week, missing the +$2.7B consensus). Voters separately approved roughly 40 state/local ballot measures aimed at blocking or limiting AI data-center infrastructure projects (NYT). Nvidia (NVDA) rose a smaller +2.3% (under the >15%/>4% HIGH-IMPACT idiosyncratic-move threshold on its own, but part of the same broad rally). นัยพอร์ต: ทั้ง AMZN และ MSFT เป็น Big 10 fixed watchlist เท่านั้น (ไม่มี OPEN position) — ไม่กระทบ 5 positions ของพอร์ตโดยตรง แต่เป็น macro event สำคัญที่ Atlas ควรนำไปใช้ประกอบการ re-call Macro Regime ครั้งถัดไป (ซึ่งค้างมา 41 วันแล้ว) โดยเฉพาะมุมมองต่อ VIX/Fed stance ภายใต้ Congress แบบ divided/Democratic-controlled. ADSK (OPEN position) เองก็มี +7.04% day การเคลื่อนไหวครั้งนี้ แต่ประเมินว่าเป็นการไหลตามตลาด tech ที่ rally แรงวันนี้ (enterprise design software ไม่ใช่ตัวหลักของธีม AI-capex-slowdown) ไม่ใช่ catalyst เฉพาะตัว — ไม่เข้าเกณฑ์ HIGH-IMPACT แยก (เหมือน precedent 2026-10-07) ดู dataIntegrityLog ของ portfolio.js สำหรับรายละเอียด MOS impact.",
+    impact: "MIXED", tickers: ["AMZN", "MSFT", "GOOGL"],
+    url: "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-212456789.html",
+  },
 
   // ── 2026-11-04 (Atlas scan 2026-11-04, Portfolio Review Mode 3 cron cycle) ──
   {
