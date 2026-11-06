@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-11-05): **Scout Round 86 — Residential/Apartment REITs + Mortgage REITs** (ครั้งแรก; AVB+EQR ควบรวมเป็น VMRK แล้วจึงเหลือ 10 ตัว ใช้ AFFO/P-FFO กับ equity REIT และ P/B + economic return กับ mREIT, Yahoo/Nasdaq close 11-04). Filter A 3/10 (STWD/AGNC/NLY) → B 1 (STWD) → C 0. **0 fast-track · 0 learning-queue · 10 reject**. Equity REIT ลงแค่ −7% ถึง −15%; NLY/AGNC ราคาเหนือ book และ economic return 5 ปีติดลบ; STWD P/B 0.74× แต่ DE ครอบคลุมปันผล 83% และงบ Q3 ออก 11-06 → re-check. Prune: 0 de-listed. Flag: `positions.md` ระบุ regime RISK-ON ขัดกับ Atlas 11-03 (TC).*
+*ล่าสุด (2026-11-06): **Scout Round 87 — Niche/Specialty REITs** (ครั้งแรก; SUI/ELS/UMH · OUT/LAMR · CXW/GEO · OHI/NHI/LTC/SBRA/CTRE + เช็คซ้ำ WELL/VTR, Yahoo/Nasdaq close 11-05). Filter A 3/14 (GEO/CXW/NHI) → B 3 → C 3 → D 0. **0 fast-track · 0 learning-queue · 14 reject**. CXW/GEO ไม่ใช่ REIT ตั้งแต่ 2021 และผ่าน A เพราะการลงวันเดียว 11-05; naive FV through-cycle 0.99–1.62× และ E 0/3. NHI 1.09× งบ Q3 ออก 11-09 → re-check. Prune: 0 de-listed.*
+*ก่อนหน้า (2026-11-05): **Scout Round 86 — Residential/Apartment REITs + Mortgage REITs** (ครั้งแรก; AVB+EQR ควบรวมเป็น VMRK แล้วจึงเหลือ 10 ตัว ใช้ AFFO/P-FFO กับ equity REIT และ P/B + economic return กับ mREIT, Yahoo/Nasdaq close 11-04). Filter A 3/10 (STWD/AGNC/NLY) → B 1 (STWD) → C 0. **0 fast-track · 0 learning-queue · 10 reject**. Equity REIT ลงแค่ −7% ถึง −15%; NLY/AGNC ราคาเหนือ book และ economic return 5 ปีติดลบ; STWD P/B 0.74× แต่ DE ครอบคลุมปันผล 83% และงบ Q3 ออก 11-06 → re-check. Prune: 0 de-listed. Flag: `positions.md` ระบุ regime RISK-ON ขัดกับ Atlas 11-03 (TC).*
 *ก่อนหน้า (2026-11-04): **Scout Round 85 — Staffing & Employment Services** (dedicated round แรก; R78 เคยแตะเป็นส่วนหนึ่งของ sweep — ดูเหตุผลใน report. 12 screened ด้วย SEC EDGAR + Yahoo/Nasdaq close 11-03. Filter A 5/12 (RGP/EFOR/MAN/BBSI/UPWK) → B 3 → C 2 → D 1 → E 0. **0 fast-track · 0 learning-queue · 12 reject**. กลุ่มเด้งแรงแล้ว: 10/14 ตัวขึ้น ≥+80% จาก low, RHI +31% ตั้งแต่ R78. ใกล้สุด UPWK: D 0.55–1.12× แต่ GSV −10% + E 0/3. Prune: 0 de-listed, NBIX SLA → 11-07. พบ R78 ระบุ ASGN ผิด — จริงคือเปลี่ยนชื่อเป็น EFOR. Regime TC.)*
 *ก่อนหน้า (2026-11-01): **Scout Round 82 — Life Science Tools / Bioprocessing / Genomics / CROs** (never a dedicated round before; 26 attempted → 25 screened with SEC EDGAR companyfacts + Yahoo/Nasdaq Oct 30 close. Filter A 5/25 (QDEL/TXG/TWST/MYGN/ILMN) → C 1 (ILMN) → B/D 0 (ILMN P/naive FV 6.2× → Tier 1 Check 2a SKIP). **0 fast-track · 0 learning-queue · 25 reject**. Large caps TMO/DHR/A/MTD/IQV/CRL sit 0–7% off highs at 70th–100th-pct EV/EBITDA, so the 2023–25 de-rating is over. Prune: 0 de-listed.)*
 *ก่อนหน้า (2026-10-31): **Quality Compounder Watchlist -- Expensive Wide-Moat** (CIO-directed 2026-10-28 — 26 screened → 16 listed across 11 sectors, trigger = MOS 15% on screen FV; closest: PAYX −29.7% / RMD −29.9% / ORLY −32.3%)*
@@ -382,6 +383,13 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
+
+**Prune Pass 2026-11-06 (Mode 1 Step 0 — Round 87):** ตรวจ live Pending ทั้ง 16 แถวตาม De-list Rules #1-3 พร้อมราคาสด 2 แหล่ง (Yahoo = Nasdaq historical ตรงกันทุกตัว, close 11-05). **De-listed 0 · SLA fixed 0** · live 16.
+- **Rule #1:** ยังไม่มี target ผ่านกำหนด: **CRI 11-06 (วันนี้)** · IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD/NBIX 11-07 · CMRE 11-17 · MMS 11-20 · WGO 12-19. คำเตือนเดิมยังอยู่: IBKR/URI/EME (scout 08-29, 69 วัน) ต้อง archive ใน prune แรกหลัง 11-07 ถ้ายังไม่รัน Tier 1.
+- **Rule #2:** ไม่มีตัวไหนราคา >2× ขอบบน entry zone (สูงสุด NBIX $159.76 = 1.18× ของ $135 · WGO $33.17 = 1.14× · MMS $69.22 = 1.13× · BYD $77.07 = 1.10×) และไม่มี formal FV/MOS ให้วัด MOS < −30%. IBKR/URI/EME/INDI/ANIP/BKSY/VMD ไม่พบ zone ใน row จึงวัดข้อนี้ไม่ได้.
+- **Rule #3:** `decisions.md` = 0 hits ทุก live ticker · grep `deployment_log.md` ไม่พบแถว SKIPPED/AVOID/DEPLOYED ของ live ticker · OPEN ยังเป็น ADBE/NOW/CRM/REGN/ADSK.
+- **ธงรอบ 11-07 (ยังไม่ archive):** ไม่ผ่าน Filter A = **URI −13.2%** · **NBIX −14.2%** · **BYD −15.7%** · **ALLY −17.9%** · **VICI −18.2%**. **VMD กลับเข้า A แล้ว (−28.5%)**. **เข้า A แล้ว ควรรัน Tier 1 ก่อนตัดสิน archive = EME −37.5% · IBKR −26.3%.**
+- **ราคาแตะ entry zone (ต้องแจ้ง Charlie ตาม Scout → Analysis SLA; regime TC ยังห้าม open ใหม่):** CMRE $12.79 (zone $12.00–13.50) · WYNN $79.32 ($77–85) · VICI $25.21 ($22–26, แต่ไม่ผ่าน A).
 
 **Prune Pass 2026-11-05 (Mode 1 Step 0 — Round 86):** ตรวจ live Pending ทั้ง 16 แถวตาม De-list Rules #1-3 พร้อมราคาสด 2 แหล่ง (Yahoo = Nasdaq ตรงกันทุกตัว, close 11-04). **De-listed 0 · SLA fixed 0** · live 16.
 - **Rule #1:** ยังไม่มี target ผ่านกำหนด: CRI 11-06 · IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD/NBIX 11-07 · CMRE 11-17 · MMS 11-20 · WGO 12-19. คำเตือนเดิมยังอยู่: IBKR/URI/EME (scout 08-29, 68 วัน) ต้อง archive ใน prune แรกหลัง 11-07 ถ้ายังไม่รัน Tier 1.
@@ -9037,3 +9045,145 @@ CLAUDE.md ไม่มีแถว mREIT โดยตรง จึงใช้�
 **Target analysis date:** ไม่มี (0 candidates) · STWD re-check หลัง 2026-11-06
 
 *Max — 2026-11-05 | Scout Round 86 (Residential/Apartment REITs + Mortgage REITs — 10 screened, 0 fast-track / 0 learning-queue / 10 reject)*
+
+## Scout Report § Round 87 (Niche/Specialty REITs — Manufactured Housing, Outdoor Advertising, Corrections, Healthcare) — 2026-11-06
+
+**Trigger:** CIO สั่ง "Scout Round 87 — Niche/Specialty REITs" (2026-11-06) ทำครบ `.claude/commands/scout.md` Step 0-6 **เฉพาะ scout/screen ไม่ได้ dispatch full pipeline และไม่ได้เรียก Atlas/Emma/Quinn/Bear**
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK) ตาม `dashboard/portfolio.js` (re-mark `816b0a7`, close 11-05)
+**Regime:** **TRANSITIONAL-CAUTIOUS** (Atlas `agent_notes/atlas/2026-11-03_regime.md`, อายุ 3 วัน ไม่ stale) → Force Deploy suspended + ห้าม open position ใหม่ → รอบนี้ scout เพื่อเตรียม buy list เท่านั้น
+**Market:** S&P 500 −4.36% วันที่ 11-05 (`portfolio/positions.md` review 11-06) ราคาปิดทุกตัวในรอบนี้คือวันนั้น
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **0** | live **16 → 16** ดู Prune Pass 2026-11-06 (Round 87) เหนือตาราง Pending
+
+### Sector mandate + universe
+- **ไม่ซ้ำ:** `grep -w` SUI/ELS/UMH/CXW/LAMR/OHI/NHI/LTC/SBRA/CTRE ใน `portfolio/watchlist.md`, `portfolio/decisions.md`, `dashboard/portfolio.js` = 0 hits · **OUT** 4 hits ใน `portfolio.js` และ **GEO** ใน `agent_notes`/`data.js` เป็นคำทั่วไป ("rotated OUT", "GEO" = gold-equivalent ounces ของ WPM) ไม่ใช่ ticker · CIO bans ไม่อยู่ใน universe
+- **เพิ่มจากคำสั่ง:** LAMR (คู่เทียบตรงของ OUT) · OHI, NHI, LTC, SBRA, CTRE (Healthcare REIT ที่ไม่เคยสแกน)
+- **⚠️ แก้ข้อมูลในคำสั่ง 1:** WELL และ VTR **เคยสแกนพร้อมตัวเลขจริงแล้ว** ใน Round 43 (2 แหล่ง, reject ที่ Filter A) ไม่ใช่แค่ชื่อ category จึงเช็คซ้ำเฉพาะ A เพื่ออัปเดต
+- **⚠️ แก้ข้อมูลในคำสั่ง 2:** **CXW และ GEO ไม่ใช่ REIT แล้ว** CoreCivic ยกเลิกสถานะมีผล 2021-01-01 ([10-K FY2021](https://www.sec.gov/Archives/edgar/data/1070985/000156459022005663/cxw-10k_20211231.htm)) · GEO บอร์ดอนุมัติ 2021-12-02 มีผลตั้งแต่ปี 2021 ([10-K FY2021](https://www.sec.gov/Archives/edgar/data/923796/000156459022007652/geo-10k_20211231.htm)) ทั้งคู่จ่ายภาษีนิติบุคคล จึงใช้กรอบ **ธุรกิจทั่วไป (FCF/EV-EBITDA/ROIC)** ไม่ใช่ P/AFFO
+- **รวม 14 ตัว** (12 ตัวใหม่ + WELL/VTR เช็คซ้ำ)
+
+### Framework + method
+| กลุ่ม | Ticker | Framework |
+|---|---|---|
+| REIT | SUI, ELS, UMH, OUT, LAMR, OHI, NHI, LTC, SBRA, CTRE, WELL, VTR | FFO/AFFO/FAD yield, naive FV = FAD ÷ CoE (CLAUDE.md แถว REIT) · B-Zero ND/EBITDA 5–7× ถือว่าปกติ (R43) |
+| C-corp ขายบริการให้รัฐ | CXW, GEO | House formula R85: (normalized FCF ÷ WACC − net debt) ÷ shares · FCF ก่อนดอกเบี้ย |
+
+- **ราคา + 52W high:** Yahoo chart + Nasdaq.com historical **close 2026-11-05 ตรงกันทั้ง 14 ตัว** (`hist.py`, `px.py`) · 3 ตัวที่ผ่าน A ยืนยันเพิ่มด้วย StockAnalysis ที่ราคาเดียวกัน ([CXW](https://stockanalysis.com/stocks/cxw/forecast/), [GEO](https://stockanalysis.com/stocks/geo/forecast/), [NHI](https://stockanalysis.com/stocks/nhi/forecast/))
+- **⚠️ ไม่ตรงตัวอักษรกับ "WebSearch ≥2 sources":** WebSearch ไม่ได้ราคาปิด 11-05 ของ 11 ตัวที่ตก A จึงตัดสินด้วย API 2 แหล่งตามวิธี R82-86
+- **CoE:** Rf 4.84% (Yahoo ^TNX close 11-05, แหล่งเดียว) · ERP 4.41% (Damodaran 2026-11-01 **ใช้ต่อจาก R85-86 รอบนี้ fetch ยืนยันไม่ได้**) · β 5Y monthly vs ^GSPC, Blume
+- **Scripts:** `scripts/scout/2026-11-06_niche_reits/` (`px.py`, `hist.py`, `fund.py`, `calc.py`)
+
+### Filter A — % จาก 52W high (close 11-05, Yahoo = Nasdaq)
+| Ticker | กลุ่ม | ราคา | 52W high | % จาก high | ผล | ราคาที่จะเข้า A (0.80× high) | ต้องลงอีก |
+|---|---|---|---|---|---|---|---|
+| **GEO** | Corrections (C-corp) | $25.17 | $33.17 | **−24.1%** | ✅ | — | — |
+| **CXW** | Corrections (C-corp) | $28.23 | $36.55 | **−22.8%** | ✅ | — | — |
+| **NHI** | Healthcare REIT | $71.58 | $91.38 | **−21.7%** | ✅ | — | — |
+| CTRE | Healthcare REIT | $37.18 | $43.62 | −14.8% | ❌ | $34.90 | −6.1% |
+| VTR | Healthcare REIT | $89.04 | $101.60 | −12.4% | ❌ | $81.28 | −8.7% |
+| SUI | Manufactured Housing | $122.08 | $137.85 | −11.4% | ❌ | $110.28 | −9.7% |
+| UMH | Manufactured Housing | $15.13 | $16.77 | −9.8% | ❌ | $13.42 | −11.3% |
+| ELS | Manufactured Housing | $62.98 | $69.00 | −8.7% | ❌ | $55.20 | −12.4% |
+| OUT | Billboard | $32.00 | $34.96 | −8.5% | ❌ | $27.97 | −12.6% |
+| OHI | Healthcare REIT | $47.99 | $52.39 | −8.4% | ❌ | $41.91 | −12.7% |
+| SBRA | Healthcare REIT | $20.89 | $22.77 | −8.3% | ❌ | $18.22 | −12.8% |
+| LAMR | Billboard | $157.30 | $166.33 | −5.4% | ❌ | $133.06 | −15.4% |
+| WELL | Healthcare REIT | $245.43 | $255.20 | −3.8% | ❌ | $204.16 | −16.8% |
+| LTC | Healthcare REIT | $45.65 | $46.92 | −2.7% | ❌ | $37.54 | −17.8% |
+
+**ผ่าน 3, ตก 11** · **⚠️ CXW/GEO ผ่าน A เพราะการลงวันเดียว:** close 11-04 อยู่ที่ −16.5% / −17.0% ซึ่งไม่ผ่าน · High เพิ่งเกิด 09-18 / 10-05 และราคาปัจจุบันยังสูงกว่า 52W low +79% / +101% จึง **ไม่ใช่หุ้นที่ตลาดทิ้งมานาน**
+
+**Beaten-down reason:**
+- **CXW / GEO — ⚠️ เขียนสองด้าน, สาเหตุ 11-05 ยังไม่ยืนยัน** (ค้นแล้วไม่พบข่าวระบุ) ✅ วันเดียวกัน S&P −4.36% · ผลประกอบการดี: CXW Q3 Adj. EBITDA $117.8M (ปีก่อน $88.8M, งบ 11-04, call 11-05, [8-K](https://www.sec.gov/Archives/edgar/data/0001070985/000119312526447206/d165428dex991.htm)) · GEO $145.3M +21% และยกเป้าปี (งบ+call 11-05, [8-K](https://www.sec.gov/Archives/edgar/data/0000923796/000119312526448438/d311130dex991.htm)) · ❌ CXW เป้าปีบอกเป็นนัยว่า Q4 เหลือ ~$106.7M (ลดจาก Q3) · ICE ถือสิทธิ์ยกเลิกสัญญาได้ · ความเสี่ยงการเมือง/งบ DHS เคยกดราคาทั้งคู่มาแล้วต้นปี ([Bloomberg 01-30](https://www.bloomberg.com/news/articles/2026-01-30/prison-stocks-tumble-with-ice-backlash-stoking-business-angst), [Malay Mail 02-13](https://www.malaymail.com/news/money/2026/02/13/us-private-prison-shares-fall-as-profits-rise-amid-trump-immigration-policy-uncertainty/209056))
+- **NHI — ⚠️ เขียนสองด้าน** ✅ มีการปรับพอร์ต: ขายพอร์ต NHC 35 แห่ง $560M ปิด 07-01 · ❌ เป้า NFFO ถูกตัดจาก $4.94–4.99 เป็น $4.74–4.79 ([MarketBeat](https://www.marketbeat.com/earnings/reports/2026-11-9-national-health-investors-inc-stock/)) · same-store SHOP NOI Q2 $3.6M vs $3.8M (−6%, [8-K Q2](https://www.sec.gov/Archives/edgar/data/877860/000087786026000200/ex991-q22026earningsrelease.htm)) · ยังไม่ได้ยืนยันว่าการขายพอร์ตเป็นสาเหตุของการลดเป้า · **งบ Q3 ออก 11-09 รอบนี้ใช้ถึง Q2**
+
+### REIT ที่ตก A — ข้อมูลประกอบเท่านั้น ไม่ใช่เหตุผลตัดสิน
+| Ticker | ตัวเลข/หุ้น (FY26) | P/x | Yield | แหล่ง |
+|---|---|---|---|---|
+| OUT | AFFO ~$2.32 (Q3 $102.9M ×4 ÷ 177.6M หุ้น; **ประมาณคร่าวๆ** ไม่พบเป้าปี) | 13.8× | 7.2% | [8-K](https://www.sec.gov/Archives/edgar/data/0001579877/000157987726000047/ex9913q26earningsrelease.htm) |
+| OHI | AFFO $3.29 (เป้า $3.28–3.30) | 14.6× | 6.9% | [8-K](https://www.sec.gov/Archives/edgar/data/0000888491/000088849126000028/ohi-ex99d1.htm) |
+| UMH | Norm. FFO $1.01 (เป้า $0.99–1.03) | 15.0× | 6.7% | [PR](https://s205.q4cdn.com/229505774/files/doc_news/UMH-PROPERTIES-INC--REPORTS-RESULTS-FOR-THE-THIRD-QUARTER-ENDED-SEPTEMBER-30-2026-2026.pdf) |
+| SUI | Core FFO $7.01 (เป้า $6.97–7.05) | 17.4× | 5.7% | [finviz PR](https://finviz.com/news/408086/sun-communities-reports-results-for-the-third-quarter-of-2026) |
+| LAMR | AFFO $8.92 (เป้า $8.87–8.97) | 17.6× | 5.7% | [8-K](https://www.sec.gov/Archives/edgar/data/0001090425/000109042526000027/lamr8kexhibit9912026q3.htm) |
+| ELS | Norm. FFO $3.18 | 19.8× | 5.0% | [8-K](https://www.sec.gov/Archives/edgar/data/0000895417/000162828026066614/elsex9913q26.htm) |
+
+- ใช้ฐานต่างกัน (FFO vs AFFO) จึงเทียบข้ามแถวตรงๆ ไม่ได้ · ไม่ได้หา FFO ของ CTRE/VTR/SBRA/WELL/LTC และ NAV ของทุกตัว เพราะตกก่อนถึงขั้นนั้น
+- ⚠️ SUI และ UMH/ELS อ้างจากผลสรุปการค้นหา ไม่ได้เปิดเอกสารเต็ม · OUT/LAMR ประกาศงบ 11-05 ราคาปิดวันนั้นอาจยังไม่สะท้อนงบ
+
+### Filter B-Zero / B / C — 3 ตัวที่ผ่าน A
+| | CXW | GEO | NHI |
+|---|---|---|---|
+| Equity | +$2,278M (09-30) | +$1,516M (06-30) | +$1,571M (06-30) |
+| ND/EBITDA | **0.19×** ($82.4M ÷ เป้า $444M) ⚠️ release เขียน (0.1)x ยังกระทบยอดไม่ได้ | ~0.94× (ตาราง outlook, ไม่ระบุงวดชัด) | 4.1× (รายงานเอง, Q2) |
+| Market cap / EV | $2,442M / $2,524M (86.5M หุ้น) | $3,322M / ~$3,860M (~132M หุ้น) | $3,471M (48.5M หุ้น) |
+| B: yield | run-rate 11.1% ของ EV · **เฉลี่ย 5Y หลังดอกเบี้ย 5.5% ของ cap** | run-rate 9.2% ของ EV · **5Y 4.0%, ไม่รวม 2025 6.0%** | FAD 6.98% · NFFO 6.66% · ปันผล 5.25% |
+| B: multiple | EV/EBITDA 5.7× | EV/EBITDA 6.8× | P/FAD 14.3× |
+| **ผล B** | ✅ ⚠️ ผ่านเฉพาะฐาน run-rate | ✅ ⚠️ ผ่านเฉพาะฐาน run-rate | ✅ |
+| WACC (β Blume) | 7.43% (β 0.80, CoE 8.37%) | 8.47% (β 0.89, CoE 8.76%) | CoE 7.62% (β 0.63), WACC 6.87% |
+| ROIC ไตรมาส (annualized) | Q1 8.1% → Q2 8.1% → Q3 10.8% | Q1 8.6% → Q2 9.9% → Q3 ~9.9% (IC Q2) | FY25 7.4% (ใช้กำไรสุทธิ ยังไม่ได้ตัดกำไรขายสินทรัพย์) |
+| ROIC เฉลี่ย | FY25 6.5% | 5Y ~7.4% (บน IC FY25) | — |
+| **ผล C** | ✅ ก้ำกึ่ง: Q3 > WACC แต่กระโดดเพราะ IC ลดหลังขายสินทรัพย์ด้วย | ✅ ก้ำกึ่ง | ✅ ก้ำกึ่ง: spread ~0.5pp |
+
+**CXW:** ขาย 4 ศูนย์ 7,187 เตียงให้ DHS $2.2B (~$306K/เตียง) ปิด 07-02 และ 08-04 กำไร $1,770.7M สุทธิภาษี ~$1.6B · คืนหนี้ $608.5M + ASR $500M · **ASR ยังไม่ปิด:** ได้รับหุ้นแล้ว 12.4M ถ้าเหลือ ~3M หุ้นจะลดเหลือ ~83M ซึ่งเพิ่ม FV ~4% ไม่พลิกผล · ภาษีจากการขายน่าจะจ่ายแล้วเพราะ OCF Q3 ≈ −$413M (อนุมานจาก XBRL บริษัทไม่ได้ระบุ)
+**GEO:** ขาย Adelanto $950M ปิด 10-02 สุทธิ ~$705M และกำลังเจรจาขายศูนย์อื่นให้ ICE (ยังไม่มีสัญญา) · buyback คงเหลือ ~$1.07B
+
+### Filter D — naive FV · ราคา ÷ FV ในวงเล็บ
+**ฐานตัดสินตามกฎ:** through-cycle FCF เท่านั้น (ห้ามใช้ TTM peak) · WACC ตัวเองและ 10% (ขอบล่างของ mid-cap 10–13%)
+
+| ฐาน FCF ก่อนดอกเบี้ย | WACC ตัวเอง | 10% | 11.5% |
+|---|---|---|---|
+| **CXW through-cycle $189M** (5Y + ดอกเบี้ยหลังภาษี) | **$28.40 (0.99×)** | **$20.87 (1.35×)** | $18.02 (1.57×) |
+| CXW run-rate $281M (Q4 นัย ×4, ไม่ใช่ฐานตัดสิน) | $42.75 (0.66×) | $31.53 (0.90×) | $27.30 (1.03×) |
+| **GEO through-cycle 5Y $258M** | **$19.04 (1.32×)** | **$15.50 (1.62×)** | $12.95 (1.94×) |
+| GEO ไม่รวม 2025 $325M (ปีที่ capex $198M, สาเหตุยังไม่ตรวจ) | $25.02 (1.01×) | $20.57 (1.22×) | $17.36 (1.45×) |
+| GEO run-rate $354M (Q4 เป้า ×4, ไม่ใช่ฐานตัดสิน) | $27.58 (0.91×) | $22.74 (1.11×) | $19.24 (1.31×) |
+
+| NHI: FAD/หุ้น $4.99 ÷ CoE | 7.62% (ตัวเอง) | 8% | 9% | 10% |
+|---|---|---|---|---|
+| FV (ราคา ÷ FV) | **$65.57 (1.09×)** | $62.41 (1.15×) | $55.48 (1.29×) | $49.93 (1.43×) |
+
+- **CXW คือกรณีที่ไวต่อสมมติฐานที่สุด: 0.66×–1.57×** ถ้าเชื่อว่ารายได้ ICE ระดับปัจจุบันคือฐานใหม่ถาวรและใช้ β 0.80 หุ้นจะดูถูกมาก แต่ β 5 ปีไม่ได้วัดความเสี่ยงที่ลูกค้าหลักยกเลิกสัญญาได้ จึงตัดสินตามกฎที่ through-cycle **นี่คือการตัดสินใจเชิงดุลยพินิจ ไม่ใช่ข้อพิสูจน์ว่าหุ้นแพง**
+- **ข้อจำกัด:** ค่าเฉลี่ย 5Y ยังรวมศูนย์ที่ขายไปแล้ว และไม่นับศักยภาพขายศูนย์ที่เหลือ (ไม่พบจำนวนเตียงที่ CXW ยังถือ) · ภาษี CXW 26% เป็นค่าประมาณจาก Q1–Q2 · GEO 28% ตามเป้าบริษัท
+- **Street PT (ทั้งหมดก่อนงบ Q3):** CXW median $42 (+48.8%, 09-28) · GEO median $40 (+59%, 10-06; ฐานนักวิเคราะห์ 3-4 ราย) · NHI median $80 (+11.8%, 10-19) ([StockAnalysis](https://stockanalysis.com/stocks/cxw/forecast/); แหล่งเดียว) · CXW/GEO สูงกว่าราคา >25% ขณะ naive FV ฐานตัดสินไม่สูงกว่าราคา จึงใช้ naive FV ตัดสินตามกฎ
+
+### Filter E
+| Ticker | E1 Moat | E2 ROIC ≥ WACC +3pp (5Y) | E3 No unresolved overhang | Score |
+|---|---|---|---|---|
+| **CXW** | ❌ เตียงที่ได้รับอนุญาตหายาก (รัฐจ่าย ~$306K/เตียง) เป็นหลักฐานบางส่วน แต่ ICE ยกเลิกสัญญาได้ และรัฐบาลกลาง = 53% ของรายได้ Residential | ❌ FY25 6.5% | ❌ นโยบาย ICE, งบ DHS, การเมือง | 0/3 |
+| **GEO** | ❌ เหตุผลเดียวกัน (ไม่พบสัดส่วนรายได้จากรัฐในเอกสารที่อ่าน) | ❌ ~7.4% | ❌ เหตุผลเดียวกัน | 0/3 |
+| **NHI** | ❌ ไม่พบหลักฐานในรอบนี้ | ❌ spread ~0.5pp (FY25, ไม่ใช่ 5Y) | ❌ การเปลี่ยนไป SHOP + เป้าถูกตัด + งบ Q3 ยังไม่ออก · มี 8-K Item 5.02 สามฉบับใน ก.ค.–ส.ค. (**ยังไม่ได้อ่านเนื้อหา**) | 0/3 |
+
+ถ้าตัดสิน E1 ของ CXW/GEO เป็นผ่าน ก็ได้ 1/3 ซึ่งยัง reject ตามตาราง Tier 1.5
+
+### Final routing — Round 87
+- 🟢 **Fast-track: 0**
+- 🟡 **Learning-queue: 0** — ไม่เพิ่ม row ใน Pending Analysis
+- ❌ **Reject: 14**
+  - 11 ที่ A: CTRE / VTR / SUI / UMH / ELS / OUT / OHI / SBRA / LAMR / WELL / LTC (ลงแค่ −2.7% ถึง −14.8%)
+  - 3 ที่ D + E: GEO (1.32–1.62×) / CXW (0.99–1.35×) / NHI (1.09×; เข้า Tier 1 check 2b) — E 0/3 ทั้งสามตัว
+- **Funnel:** 14 → A 3 → B-Zero 3 → B 3 → C 3 → D 0
+- **`QUICK-SCREEN SKIP`:** CXW, GEO, NHI บันทึกใน `portfolio/deployment_log.md`
+- **`buy_list.md`:** ไม่เพิ่ม · **"sector นี้ยังไม่มี value ที่ชัดเจน"**
+
+**Re-trigger (ไม่ใช่ entry zone เพราะไม่ใช่ candidate):**
+- **NHI — ตรวจซ้ำหลังงบ Q3 วันที่ 2026-11-09** · ราคาที่เข้า 0.80× naive FV ≈ **$52.46** (ต่ำกว่า 52W low $63.51)
+- **CXW:** ≤ **$22.72** (0.80× ที่ WACC ตัวเอง) **หรือ** มีข้อมูลยืนยันว่า FCF ระดับ run-rate อยู่ต่อได้ตามสัญญาหลายปี แล้ว re-run D ด้วยฐานใหม่
+- **GEO:** ≤ **$15.23** (0.80× ที่ WACC ตัวเอง) **หรือ** ปิดดีลขายศูนย์ให้ ICE เพิ่มซึ่งเปลี่ยน net debt/จำนวนหุ้นอย่างมีนัยสำคัญ
+- **REIT ที่เหลือ:** ใช้ราคาในคอลัมน์ "ราคาที่จะเข้า A" · **CTRE ใกล้สุด ($34.90, −6.1%)** · SUI $110.28 ใกล้ 52W low $109.77 · ถ้าถึงเกณฑ์ต้องหา AFFO/NAV ก่อนตัดสิน
+
+### Data integrity — สิ่งที่พบรอบนี้
+1. **คำสั่งระบุ CXW/GEO เป็น REIT แต่ทั้งคู่เลิกสถานะแล้วตั้งแต่ปี 2021** (ดูด้านบน)
+2. **คำสั่งระบุ Healthcare REIT ยังไม่มีตัวเลข แต่ R43 มี WELL/VTR พร้อมตัวเลข** (ดูด้านบน)
+3. **ยังไม่ครบ:** สาเหตุการลง 11-05 ของ CXW/GEO · ND/EBITDA ของ CXW ไม่ตรงกับ release · งวดของ net debt GEO · GEO capex 2025 · NHI Q3 + 8-K Item 5.02 · ROIC 5Y ของ NHI · EV/EBITDA เทียบ 5Y history ของ CXW/GEO · NAV/AFFO ของ REIT ที่ตก A · ไม่มีข้อใดเปลี่ยนผลของรอบนี้ได้โดยลำพัง ยกเว้นข้อสมมติ through-cycle ของ CXW (ดู Filter D) ต้องหาให้ครบก่อนถ้าตัวใดเข้า pipeline
+4. **ระหว่างคำนวณพบบั๊กใน `calc.py`:** หน่วย cost of debt ผิดทำให้ WACC ต่ำเกินจริง (CXW 6.66% → 7.43%) แก้แล้วก่อนบันทึกผล
+
+### What this round tells the team
+1. **Niche REIT ไม่ได้ถูกเกลียด** แม้ S&P −4.36% ในวันเดียว แต่ 11 จาก 12 ตัวที่ยังเป็น REIT ลงไม่ถึง 20% · LTC/WELL อยู่ใกล้ high
+2. **CXW/GEO ไม่ใช่ value แบบที่ screen นี้หา แต่เป็นคำถามเรื่องความคงทนของกำไร:** ผลลัพธ์ขึ้นกับว่ารายได้ ICE คือฐานใหม่หรือจุดสูงของวัฏจักร Street PT สูงกว่าราคามากแต่ออกก่อนงบ Q3
+3. **รัฐซื้อศูนย์กักกันจากเอกชนโดยตรงเป็นเหตุการณ์ใหม่:** แปลงสินทรัพย์เป็นเงินสดและ buyback ได้จริง แต่ก็ลดความเป็นเจ้าของสินทรัพย์ ถ้าจะดูลึกต้องตอบข้อนี้ก่อน
+4. **Filter A ที่ผ่านเพราะวันเดียวควรถูกมองแยก:** CXW/GEO ไม่ผ่านเมื่อวันก่อน ควรเช็คซ้ำเมื่อตลาดสงบก่อนสรุปว่าเข้าเกณฑ์จริง
+
+**Target analysis date:** ไม่มี (0 candidates) · NHI re-check หลัง 2026-11-09
+
+*Max — 2026-11-06 | Scout Round 87 (Niche/Specialty REITs + Corrections — 14 screened, 0 fast-track / 0 learning-queue / 14 reject)*
