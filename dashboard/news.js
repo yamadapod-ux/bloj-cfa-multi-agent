@@ -3,9 +3,39 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-05 07:00";
+const NEWS_LAST_UPDATED = "2026-11-06 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-06 (Atlas scan 2026-11-06, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-05", category: "MACRO",
+    headline: "🔴🔴 S&P 500 -4.36% in worst day since April 2025 as AI-capex selloff erases the election rally; Nasdaq -5.52% into correction, NVDA -9.26%, VIX jumps to 28.18",
+    summary: "The S&P 500 fell 334.89 points (-4.36%) to 7,353.73 on 2026-11-05, its worst day since April 2025, a day after its best session in about 18 months. The Dow lost 1,833.06 points (-3.44%) to 51,523.06 and the Nasdaq Composite lost 1,421.52 points (-5.52%) to 24,315.00, entering correction territory. Investors sold AI-linked stocks on fears that Democratic midterm wins could bring data-center moratoriums and slow the AI buildout, alongside bubble concerns and borrowing costs for data-center construction. That reverses the 11-04 read, when a slower buildout was treated as good for hyperscaler margins. Nvidia fell 9.26% and was the heaviest drag on the index; the Magnificent Seven lost more than $1 trillion in market value and XLK fell 8.04% (CNBC). AMD fell 14%. VIX gained 11.57 points to 28.18, its biggest point gain since April 2025. The 10-year Treasury yield eased to 4.83% from 4.90%. นัยพอร์ต: พอร์ตลงเพียง -0.40% เพราะถือเงินสด 73% (alpha +4.49% ส่วนใหญ่มาจากเงินสด) ไม่มี OPEN position ถูก stop · VIX อยู่ใน TC band และ Crash Playbook Tier 2 (25-30) → ตาม Atlas regime TC 2026-11-03 ยังห้ามเปิด position ใหม่.",
+    impact: "NEGATIVE", tickers: ["NVDA","MSFT","META","AMZN","GOOGL","JPM"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/ai-data-center-concerns-trigger-205202808.html",
+  },
+  {
+    date: "2026-11-05", category: "TECH",
+    headline: "🟠 NOW ServiceNow -5.93% to $102.36 in software selling; new layoffs reported, stop distance narrows to 10%",
+    summary: "ServiceNow fell 5.93% to $102.36 on 2026-11-05 (low $101.80) during the market-wide rout. MarketBeat cites slower backlog growth flagged on the Q3 call, costs rising faster than AI adoption, and software fears that AI labs could build competing applications. Salesforce Ben reports further layoffs after Q3: the number is unconfirmed and partly based on Reddit posts, while the company says only that it is making \"necessary changes to how we are structured\". นัยพอร์ต: NOW เป็น OPEN position (1sh, weight ~1%) · MOS กว้างขึ้นเป็น +7.11% จากราคาที่ลง (FV $110.20 ไม่เปลี่ยน) · ระยะถึง stop $93 เหลือ 10.06% แคบสุดในพอร์ต · layoffs ไม่อยู่ในรายการ Thesis Invalidation · ยังคงต้องทำ full pipeline ภายใน 2026-11-14.",
+    impact: "NEGATIVE", tickers: ["NOW"],
+    url: "https://www.marketbeat.com/instant-alerts/price-servicenow-nyse-now-shares-down-6-should-you-sell-2026-11-05/",
+  },
+  {
+    date: "2026-11-05", category: "TECH",
+    headline: "🔴 TSLA Tesla -10.77% as Democratic sweep clouds SpaceX merger prospects and AI build-out",
+    summary: "Tesla fell 10.77% to $343.69 on 2026-11-05 after a 3.3% drop the previous day, with SpaceX also sliding below its $135 IPO price per some reports. Coverage ties the move to concern that Democratic gains could bring tougher scrutiny of Musk companies and slow data-center buildouts; analyst Dan Ives said a SpaceX/Tesla merger now faces a much tougher regulatory path to a 2027 deal. นัยพอร์ต: TSLA อยู่ใน Big 10 watchlist เท่านั้น ไม่กระทบ 5 positions โดยตรง.",
+    impact: "NEGATIVE", tickers: ["TSLA"],
+    url: "https://www.bloomberg.com/news/articles/2026-11-05/tesla-shares-tumble-again-in-deepening-post-election-slump",
+  },
+  {
+    date: "2026-11-04", category: "ANALYST",
+    headline: "🟠 ADBE Citi downgrades Adobe to Sell, cuts PT $250→$207 (-17.2%) on FY27 estimate risk",
+    summary: "Citi analyst Tyler Radke cut Adobe to Sell from Neutral on 2026-11-04 with a $207 price target, down from $250. Citi sees downside to FY27 growth estimates tied to changes in the Creative business under incoming CEO Anil Chakravarthy (starts 12-01) and rising AI and small-business competition, and lowered net new ARR estimates by $470M for FY27 and $500M for FY28. Shares rose on the day of the downgrade; the next catalyst is the FQ4 report on 12-09 with FY27 guidance. นัยพอร์ต: ADBE เป็น OPEN position ใหญ่สุด (4sh, weight ~9.5%) · Street median $260 ต่ำกว่า Blended FV $369 ถึง -29.5% → Re-Analysis Trigger #5 fires · แนะนำ Emma lightweight re-verify ก่อน 12-09 · ยังไม่ fire Bear Flip หรือ Thesis Invalidation และยังไม่เสนอขาย.",
+    impact: "NEGATIVE", tickers: ["ADBE"],
+    url: "https://www.tipranks.com/news/the-fly/citi-downgrades-adobe-to-sell-on-2027-estimate-risk-thefly-news",
+  },
 
   // ── 2026-11-05 (Atlas scan 2026-11-05, Portfolio Review Mode 3 cron cycle) ──
   {

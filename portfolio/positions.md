@@ -1,5 +1,51 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-06 (Mode 3 — Full Re-Mark, Nov 5 2026 Close) — S&P -4.36% AI-Capex Rout, Alpha Jumps to +4.49% on Cash Cushion; ADBE Trigger #5 Fires; Regime Field Corrected to TC
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, 3 days old, not overdue). First new US trading day since Nov 4. S&P 500 -4.36% to **$7,353.73** (Yahoo chart API + AP via Yahoo Finance, exact match, -334.89 pts; SPY $733.00-733.15 and VOO corroborate), worst day since April 2025. Dow -3.44% to 51,523.06, Nasdaq -5.52% to 24,315.00 (correction territory), VIX 16.61→28.18. Cause: AI-linked selling on data-center and capex fears after the Democratic midterm sweep, reversing the prior day's read. All 5 OPEN positions re-priced to Nov 5 close. **No trades this session.**
+
+| Ticker | Price | Change | Return % | MOS % | StopDist % | Weight % | Source |
+|--------|-------|--------|----------|-------|------------|----------|--------|
+| ADBE | $246.44 | -0.82% | -0.24% | +33.21% | 33.21% | 9.49% | avg stockanalysis.com $246.43 + Yahoo chart API $246.44, 0.00% diff |
+| NOW | $102.36 | -5.93% | +14.41% | +7.11% | 10.06% | 0.99% | avg stockanalysis.com $102.35 + Yahoo chart API $102.36, 0.01% diff |
+| CRM | $222.38 | -2.08% | +22.86% | +35.69% | 53.58% | 6.42% | avg stockanalysis.com $222.35 + Yahoo chart API $222.41, 0.03% diff |
+| REGN | $902.74 | -3.00% | +49.96% | +9.20% | 87.29% | 3.65% | avg stockanalysis.com $902.58 + Yahoo chart API $902.90, 0.04% diff |
+| ADSK | $269.26 | -0.31% | +35.70% | -21.40% | 69.62% | 6.22% | avg stockanalysis.com $269.36 + Yahoo chart API $269.16, 0.07% diff |
+
+S&P 500 = **$7,353.73**. Total Value $10,429.27 → **$10,387.61** (-0.40%). Invested $2,823.08 → **$2,780.63** (-1.50%). Cash $7,606.19 → **$7,606.98** (+$0.79, Cash Yield Rule, 1 day), 73.23% of book. Total Return 4.29% → **3.88%**. sp500Return 3.92% → **-0.61%**. Alpha 0.37% → **4.49%**.
+
+**Alpha read:** the +4.12pp swing is mostly the 73% cash balance absorbing a one-day index crash. The invested sleeve's -1.50% also beat the S&P, helped by software names not being the main target of this selloff, but one session says little about selection. Rolling 4Q/8Q triggers are unaffected.
+
+**Stop Loss check:** No breaches. **NOW is narrowest at 10.06%** ($102.36 vs $93), 0.06pp above the 10% WATCH line. Day low was $101.80. All others 33%+.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (≥90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% (S&P Global via stockanalysis.com) | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings; next print 12-09 | FV 56d, MOS +33.21% — no fire | No | -2.3% vs $252.23 (Sep 11) | **Median $260 vs FV $369 = -29.5% (avg $268.30 = -27.3%), updated 11-04 — FIRES** | **1/5 — NEW** |
+| NOW | No new earnings since Q3 (10-28, already re-verified) | FV 6d, MOS +7.11% — no fire | No | Under 30% vs fvVerifiedDate | Median $155 vs FV $110.20 = +40.7%, updated 10-30 — fires, carried | 1/5 carried, full pipeline by 2026-11-14 |
+| CRM | No new earnings | FV 56d, MOS +35.69% — no fire | No | -10.2% vs $247.72 (Sep 11) | Median $285 vs FV $345.77 = -17.6%, updated 10-26 — no fire | 0/5 |
+| REGN | No new earnings since Q3 (10-30, already re-verified) | FV 6d, MOS +9.20% — no fire | No | Under 30% vs fvVerifiedDate | Median $982 vs FV $994.20 = -1.2%, updated 11-03 — no fire | 0/5 |
+| ADSK | No new earnings; Q3 FY27 on Nov 24 | FV 55d (<90d), MOS -21.40% — no fire | No | +26.8% vs $212.40 (Sep 11; 09-12 was a non-trading day) — nearing 30% | Median $302.50 vs FV $221.79 = +36.4%, updated 10-23 — fires, carried (consulted 10-31) | 1/5 carried, HOLD-WATCH gate Nov 24, hard deadline 2026-12-05 |
+
+**Result: 1 NEW formal trigger (ADBE #5), 2 carried (NOW #5, ADSK #5).** ADBE's #5 had not been checked in recent reviews, so it may have crossed earlier than today. Its +33.21% MOS depends on an FV well above the Street: recommend Emma lightweight re-verify, ideally before the 12-09 print and FY27 guide. Current Street figures come from one aggregator. Bear Flip / Thesis Invalidation: no new event on any OPEN position (NOW Bear Flip #5 remains fired from 10-31). No sell or trim proposed, so Max Consultation Rule is not engaged.
+
+**⚠️ Regime Correction:** the 11-04 and 11-05 reviews reported RISK-ON from the 2026-09-25 re-call as 41 days overdue, and `summary.macroRegime`, `regimeMultiplier` and position regime fields carried the same. Atlas had re-called on 10-16, 10-26, 10-27 and **2026-11-03 (TRANSITIONAL-CAUTIOUS, judgment override, no 3/4 majority)**. Dashboard fields are now synced: multiplier 0.75x, cash floor 25%, no new positions, Force Deploy suspended. Prior sections are left as written (append-only). No trade was made on the stale reading.
+
+**Atlas macro regime status:** not overdue (next re-call due by about 11-10 per the 11-03 record). VIX 28.18 stays in the TC band but is close to the RISK-OFF line (>30), and sits in Crash Playbook Tier 2 (VIX 25-30), where the TC branch means prepare pipeline, 0 new names. An earlier Atlas re-call is warranted. `dashboard/macroRegime.js` (last entry 10-16) and `dashboard/crashPlaybook.js` (asOf 11-02) are stale; flagged, not edited in this run.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist scanned since NEWS_LAST_UPDATED (2026-11-05 07:00) — **4 NEW HIGH-IMPACT items written to `dashboard/news.js`:** (1) MACRO S&P -4.36% AI-capex rout, including NVDA -9.26%; (2) ADBE Citi downgrade to Sell, PT $250→$207, dated 11-04 and missed by the prior scan; (3) NOW -5.93% plus reported layoffs; (4) TSLA -10.77% on merger and data-center doubts. Assessed ROUTINE: JPM -4.19% (no idiosyncratic catalyst found, market-wide), META -3.96%, LLY -3.76% (no new catalyst found; Q3 beat was 10-29), MSFT -3.58%, REGN -3.00%, AMZN -2.19%, GOOGL -2.20%, CRM -2.08%, AAPL -1.53%, BRK.B -1.17%, WMT -1.12%, ADSK -0.31%. No Nov 5 catalyst was found for these within the attempt cap; a broad mega-cap query returned only old results, so single-name coverage for MSFT, META, AMZN, GOOGL, AAPL, WMT and BRK.B rests on price moves and market wraps.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+$7,606.19 × 3.8%/365 × 1 = **+$0.79** → **$7,606.98**. Rate basis: Fed funds 3.75-4.00%, held Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+
+วันนี้ S&P 500 ร่วง -4.36% แรงสุดตั้งแต่เม.ย. 2025 กลับทิศจาก rally เมื่อวาน ตลาดเปลี่ยนมากลัวว่า data-center/AI capex จะชะลอหลัง Dem ชนะเลือกตั้ง พอร์ตลงแค่ -0.40% เพราะถือเงินสด 73% **alpha เลยกระโดดเป็น +4.49% แต่ส่วนใหญ่มาจากเงินสด ไม่ใช่ฝีมือเลือกหุ้น** อย่าอ่านเกินจริง ไม่มี stop breach แต่ **NOW เหลือระยะถึง stop 10.06%** แคบสุดในพอร์ต รอ full pipeline ภายใน 14 พ.ย. เรื่องใหม่คือ **ADBE เข้า Trigger #5**: Street median $260 ต่ำกว่า FV $369 ถึง 29.5% และ Citi เพิ่งลดเป็น Sell ที่ PT $207 MOS +33% จึงต้องตรวจซ้ำ ควรให้ Emma re-verify ก่อนงบ 9 ธ.ค. ยังไม่เสนอขาย อีกเรื่องต้องแก้คือ review 2 รอบก่อนรายงาน regime ผิดว่า RISK-ON ทั้งที่ Atlas ประกาศ TRANSITIONAL-CAUTIOUS ตั้งแต่ 3 พ.ย. ตอนนี้ sync dashboard แล้ว ห้ามเปิด position ใหม่ และยังไม่มี trade ใดเกิดจากข้อมูลผิดนี้
+
+---
+
 ## 📊 Portfolio Review — 2026-11-05 (Mode 3 — Full Re-Mark, Nov 4 2026 Close) — Historic Midterm-Election Rally, Alpha Narrows Sharply to +0.37% as S&P Outruns the Book; ADSK +7.0% Decoupled Move, NOW MOS Hovers Near Zero
 
 > **Regime = 🟢 RISK-ON** (unchanged — Atlas formal re-call 2026-09-25, now **41 days old**, materially overdue). First new US trading day since Nov 3. Democrats swept both chambers of Congress in the midterm elections — markets staged their best single session in 18 months: S&P 500 +1.58% to **$7,688.62** (5-source convergence: Yahoo Finance, Quartz, TipRanks, NYT, WTTW, all report +119.70 pts/+1.58-1.6% to 7,688.62), Dow +3.03% (best post-midterm day since 1982), Nasdaq +1.44%. Big-cap cloud/hyperscaler names surged on the read that a Democratic Congress could slow AI-data-center buildout pace and improve capex discipline (AMZN +6-7%, MSFT +6-7% to a fresh record high) — see news.js. All 5 OPEN positions re-priced to Nov 4 close: ADBE $248.47 (avg Yahoo Finance $248.48 + stockanalysis.com $248.43, 0.02% diff), NOW $108.81 (fiscal.ai + techi.com, exact match, 2-source), CRM $227.11 (Yahoo Finance explicit close + MarketBeat "+2.3%" headline corroborating, 2-source), REGN $930.67 (Yahoo Finance + exa.ai + investing.com + MarketWatch + marketminute, 5-source exact match), ADSK $270.09 (fiscal.ai + financialcontent.com, exact match, 2-source) — **ADSK decoupled sharply, +7.04% day, no idiosyncratic catalyst found within search-attempt cap; treated as broad tech/software-sector rally participation (same pattern/precedent as 2026-10-07), not written to news.js**. **No trades this session.**
