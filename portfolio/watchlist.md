@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-11-06): **Scout Round 87 — Niche/Specialty REITs** (ครั้งแรก; SUI/ELS/UMH · OUT/LAMR · CXW/GEO · OHI/NHI/LTC/SBRA/CTRE + เช็คซ้ำ WELL/VTR, Yahoo/Nasdaq close 11-05). Filter A 3/14 (GEO/CXW/NHI) → B 3 → C 3 → D 0. **0 fast-track · 0 learning-queue · 14 reject**. CXW/GEO ไม่ใช่ REIT ตั้งแต่ 2021 และผ่าน A เพราะการลงวันเดียว 11-05; naive FV through-cycle 0.99–1.62× และ E 0/3. NHI 1.09× งบ Q3 ออก 11-09 → re-check. Prune: 0 de-listed.*
+*ล่าสุด (2026-11-07): **Scout Round 88 — Hotel/Lodging + Self-Storage REITs** (HST/PK/RHP/APLE/SHO/XHR/DRH · EXR/CUBE, Yahoo/Nasdaq close 11-06; LSI และ NSA ถูกซื้อกิจการแล้ว). Filter A 0/9 (−0.5% ถึง −8.2%). **0 fast-track · 0 learning-queue · 9 reject**. Prune: 0 de-listed, SLA fixed CRI → 11-12.*
+*ก่อนหน้า (2026-11-06): **Scout Round 87 — Niche/Specialty REITs** (ครั้งแรก; SUI/ELS/UMH · OUT/LAMR · CXW/GEO · OHI/NHI/LTC/SBRA/CTRE + เช็คซ้ำ WELL/VTR, Yahoo/Nasdaq close 11-05). Filter A 3/14 (GEO/CXW/NHI) → B 3 → C 3 → D 0. **0 fast-track · 0 learning-queue · 14 reject**. CXW/GEO ไม่ใช่ REIT ตั้งแต่ 2021 และผ่าน A เพราะการลงวันเดียว 11-05; naive FV through-cycle 0.99–1.62× และ E 0/3. NHI 1.09× งบ Q3 ออก 11-09 → re-check. Prune: 0 de-listed.*
 *ก่อนหน้า (2026-11-05): **Scout Round 86 — Residential/Apartment REITs + Mortgage REITs** (ครั้งแรก; AVB+EQR ควบรวมเป็น VMRK แล้วจึงเหลือ 10 ตัว ใช้ AFFO/P-FFO กับ equity REIT และ P/B + economic return กับ mREIT, Yahoo/Nasdaq close 11-04). Filter A 3/10 (STWD/AGNC/NLY) → B 1 (STWD) → C 0. **0 fast-track · 0 learning-queue · 10 reject**. Equity REIT ลงแค่ −7% ถึง −15%; NLY/AGNC ราคาเหนือ book และ economic return 5 ปีติดลบ; STWD P/B 0.74× แต่ DE ครอบคลุมปันผล 83% และงบ Q3 ออก 11-06 → re-check. Prune: 0 de-listed. Flag: `positions.md` ระบุ regime RISK-ON ขัดกับ Atlas 11-03 (TC).*
 *ก่อนหน้า (2026-11-04): **Scout Round 85 — Staffing & Employment Services** (dedicated round แรก; R78 เคยแตะเป็นส่วนหนึ่งของ sweep — ดูเหตุผลใน report. 12 screened ด้วย SEC EDGAR + Yahoo/Nasdaq close 11-03. Filter A 5/12 (RGP/EFOR/MAN/BBSI/UPWK) → B 3 → C 2 → D 1 → E 0. **0 fast-track · 0 learning-queue · 12 reject**. กลุ่มเด้งแรงแล้ว: 10/14 ตัวขึ้น ≥+80% จาก low, RHI +31% ตั้งแต่ R78. ใกล้สุด UPWK: D 0.55–1.12× แต่ GSV −10% + E 0/3. Prune: 0 de-listed, NBIX SLA → 11-07. พบ R78 ระบุ ASGN ผิด — จริงคือเปลี่ยนชื่อเป็น EFOR. Regime TC.)*
 *ก่อนหน้า (2026-11-01): **Scout Round 82 — Life Science Tools / Bioprocessing / Genomics / CROs** (never a dedicated round before; 26 attempted → 25 screened with SEC EDGAR companyfacts + Yahoo/Nasdaq Oct 30 close. Filter A 5/25 (QDEL/TXG/TWST/MYGN/ILMN) → C 1 (ILMN) → B/D 0 (ILMN P/naive FV 6.2× → Tier 1 Check 2a SKIP). **0 fast-track · 0 learning-queue · 25 reject**. Large caps TMO/DHR/A/MTD/IQV/CRL sit 0–7% off highs at 70th–100th-pct EV/EBITDA, so the 2023–25 de-rating is over. Prune: 0 de-listed.)*
@@ -384,6 +385,15 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
 
+**Prune Pass 2026-11-07 (Mode 1 Step 0 — Round 88):** ตรวจ live Pending ทั้ง 16 แถวตาม De-list Rules #1-3 พร้อมราคาสด 2 แหล่ง (Yahoo = Nasdaq historical ตรงกันทุกตัว, close 11-06). **De-listed 0 · SLA fixed 1 (CRI)** · live 16.
+- **Rule #1:** **CRI** เป็นตัวเดียวที่ target ผ่านไปแล้ว (fallback 11-06) แต่ scout เมื่อ 10-18 (20 วัน) จึงไม่เข้า stale >60 วัน → ตั้ง target ใหม่ **2026-11-12** (งบ Q3 ออกแล้ว 10-30: ยอดขาย $752M −0.7% · Adj. EPS $1.03; [8-K](https://www.sec.gov/Archives/edgar/data/0001060822/000106082226000126/cri-ex991q32026.htm), EPS จาก [FXEmpire](https://www.fxempire.com/stocks/cri/earnings)). IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD/NBIX target = **11-07 (วันนี้)** ยังไม่ผ่านกำหนด ตาม precedent NBIX 11-03 · CMRE 11-17 · MMS 11-20 · WGO 12-19.
+- **⚠️ Prune ถัดไปต้องตัดสินจริง:** ถ้ายังไม่รัน Tier 1 ภายในวันนี้ **IBKR/URI/EME (scout 08-29, 70 วัน) และ INDI/ANIP/BKSY/VMD (scout 08-30/31, 68-69 วัน) เข้า Rule #1 ทันทีเมื่อ target หมดอายุ** ต้อง archive ใน prune แรกหลัง 11-07.
+- **Rule #2:** ไม่มีตัวไหนราคา >2× ขอบบน entry zone (สูงสุด NBIX $164.63 = 1.22× ของ $135 · BYD $76.57 = 1.09× · WGO $31.34 = 1.08× · MMS $65.50 = 1.07×) และไม่มี formal FV/MOS ให้วัด MOS < −30%. IBKR/URI/EME/INDI/ANIP/BKSY/VMD ไม่พบ zone ใน row จึงวัดข้อนี้ไม่ได้.
+- **Rule #3:** `decisions.md` = 0 hits ทุก live ticker · `deployment_log.md` ไม่พบแถว SKIPPED/AVOID/DEPLOYED ของ live ticker (ที่ grep เจอคือบรรทัดสรุปรอบ WGO/CMRE และแถว MGM ที่มี VICI ปนอยู่) · OPEN ยังเป็น ADBE/NOW/CRM/REGN/ADSK.
+- **ธงรอบนี้ (ยังไม่ archive):** ไม่ผ่าน Filter A = **NBIX −11.5%** · **URI −12.2%** · **BYD −16.2%** · **ALLY −19.3%** · **VICI −19.6%**. เข้า A = **EME −36.1%** · **VMD −27.6%** · **IBKR −23.2%**. row ของ NBIX ระบุ "ถ้ายังไม่ถึง −20% เสนอ archive" → **เสนอ archive ในรอบถัดไป** แต่ยังไม่เข้า De-list Rule ข้อใดจึงไม่ย้ายวันนี้.
+- **ราคาแตะ entry zone (ต้องแจ้ง Charlie ตาม Scout → Analysis SLA; regime TC ยังห้าม open ใหม่):** CMRE $12.72 ($12.00–13.50) · WYNN $83.11 ($77–85) · CRI $32.01 ($28.00–32.50) · VICI $24.79 ($22–26, แต่ไม่ผ่าน A).
+- **ราคาเคลื่อนแรงวันเดียว 11-06 (ยังไม่ได้เช็คข่าว):** INDI $1.355 → $1.81 (+33.6%) · BKSY $19.12 → $21.33 (+11.6%).
+
 **Prune Pass 2026-11-06 (Mode 1 Step 0 — Round 87):** ตรวจ live Pending ทั้ง 16 แถวตาม De-list Rules #1-3 พร้อมราคาสด 2 แหล่ง (Yahoo = Nasdaq historical ตรงกันทุกตัว, close 11-05). **De-listed 0 · SLA fixed 0** · live 16.
 - **Rule #1:** ยังไม่มี target ผ่านกำหนด: **CRI 11-06 (วันนี้)** · IBKR/URI/EME/INDI/ANIP/BKSY/VMD/WYNN/VICI/ALLY/BYD/NBIX 11-07 · CMRE 11-17 · MMS 11-20 · WGO 12-19. คำเตือนเดิมยังอยู่: IBKR/URI/EME (scout 08-29, 69 วัน) ต้อง archive ใน prune แรกหลัง 11-07 ถ้ายังไม่รัน Tier 1.
 - **Rule #2:** ไม่มีตัวไหนราคา >2× ขอบบน entry zone (สูงสุด NBIX $159.76 = 1.18× ของ $135 · WGO $33.17 = 1.14× · MMS $69.22 = 1.13× · BYD $77.07 = 1.10×) และไม่มี formal FV/MOS ให้วัด MOS < −30%. IBKR/URI/EME/INDI/ANIP/BKSY/VMD ไม่พบ zone ใน row จึงวัดข้อนี้ไม่ได้.
@@ -481,7 +491,7 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 | VICI | VICI Properties Inc. | Real Estate / Gaming & Experiential Triple-Net REIT | 2026-09-20 | $23.72 (2026-09-18 close, WallStreetZen — ⚠️ single-source, flag re-verify ≥2 sources ก่อน full analysis) | AFFO yield ~10.5% (AFFO $0.62/qtr ×4 ÷ $23.72) — ไม่ใช่ FCF yield มาตรฐาน (REIT) | N/A | N/A — ROIC framework ไม่ fit REIT โดยตรง ต้องใช้ cap-rate/cost-of-capital spread แทน | **CONDITIONAL — REIT ตัวแรกที่ scout เจอ, ต้อง Charlie/Emma ปรับ framework ก่อนตัดสิน Filter C/D จริง.** Filter A: -29.9% จาก 52W high (2-source variance $33.00-34.03, ยัง PASS ≥20% ทุกกรณี). เหตุผล beaten-down: broad rate-sensitive REIT sector rotation + gaming-tenant sentiment concern (ไม่ใช่ company-specific — AFFO ยังโต +4.6% YoY, dividend yield 7.63% coverage ~74% payout, ดูปลอดภัย). Moat = triple-net lease ให้ casino operator (MGM/Caesars) บน Vegas Strip real estate หายาก + escalator clauses ระยะยาว ~30 ปี — wide-ish moat เชิง real estate แต่ต้องเช็ค top-tenant concentration % ตอน full analysis (risk คล้าย single-tenant dependency). Entry zone $22-26, Stop $18.98 (-20%). | **NEW — CAUTION (ต้อง REIT-adapted framework, single-source price ต้อง re-verify) — รอ Analysis เฉพาะถ้า CIO สนใจ REIT diversifier — Target date 2026-09-27** **SLA re-fix 2026-10-16 (Round 75 prune): Target 2026-10-23 — re-run Tier 1 Quick-Screen ภายใต้ Filter A-E ปัจจุบัน (scout เดิมใช้เกณฑ์ก่อน VALUE-FIRST/D-E) — ถ้าไม่ผ่าน A → archive รอบถัดไป** **SLA re-fix 2026-10-27 (prune, ad-hoc fresh-sector scout): Target 2026-11-07** — the 10-23 Tier 1 re-screen was not run. Scout date is 57–59 days old (WYNN/VICI 37); if still not re-screened by 11-07 → archive under Rule #1. |
 | ALLY | Ally Financial Inc. | Financials / Consumer Finance — Auto Lending + Digital Bank (Value bucket) | 2026-10-16 (Round 77) | $37.73 (Oct 15 close, stockanalysis; finviz $37.59, 0.4%) · 52W high $47.29 = **−20.2%** (borderline) | n/a (lender) — P/E 8.9 TTM / 6.65 fwd · P/TBV 0.85 | EPS +32% this year (finviz) | ROE 9.7% TTM (5Y avg ~10.5% vs CoE 10.1%) | **🟡 LEARNING-QUEUE (Filter E 1/3).** D 0.77× normalized / 0.90× TTM-only; Street PT $48.78 (+29%, single source). Moat ❌ (weakest ROE among the lenders screened), ROE spread ❌ +0.4pp, overhang ✅. **Entry zone $34–38 · Stop $29.50** | **LEARNING-QUEUE — Tier 1.5 lightweight only on CIO request; target 2026-10-23** (after the Q3 print Oct 20). Upgrade trigger: ROE trend ≥13% **SLA re-fix 2026-10-27: Target 2026-11-07** (10-23 target passed after the Q3 print; Tier 1.5 lightweight still only on CIO request). |
 | MMS | Maximus, Inc. | Industrials / Government Services — Medicaid enrollment, CMS contact centers, VA Medical Disability Exams (Value bucket) | 2026-10-17 (Round 78) | $61.47 (Oct 16 close, finviz + stockanalysis exact) · 52W $51.04–100.00 = **−38.5%** | 13.46% TTM ($433M) · normalized $400M = 12.4% · EV/EBITDA 7.07× vs 5Y 10.6–14.3× | FY26 rev guide $5.20–5.35B (unchanged); EPS guide cut to $7.90–8.20 | ROE 21.1% · ROIC 13.3% TTM (5Y avg 10.95% vs WACC ~8.3–9%) | VA MDE incentive pause 7/1–12/31/26 (temporary, quantified ~$0.35 EPS) → D 0.805× naive FV (CoE 10%; range 0.72–0.95× by FCF basis) · E 1/3 (moat ✅, ROIC spread +2–2.7pp ❌, federal/AI overhang ❌) · Street PT $92.50 (2 analysts) · **Entry $55–61 · Stop $48** | **LEARNING-QUEUE — Tier 1.5 lightweight on CIO request; target 2026-11-20** (after Nov 19 FY26 Q4 print). Upgrade: VA incentives resume 1/1/27, or price ≤$52, or FY26 FCF ≥$450M |
-| CRI | Carter's, Inc. | Consumer Discretionary / Children's Apparel — Carter's + OshKosh brands, US retail + wholesale (Value bucket) | 2026-10-18 (Round 79) | $31.45 (Oct 16 close, finviz + stockanalysis exact) · 52W $27.86–44.44 (finviz-implied + SA) = **−29.2%** | **25.4% TTM** ($293M — inflated by WC) · 5Y avg FY21–25 $212M = 18.4% · EV/EBITDA **4.91×** vs FY21–25 8.29–10.96× | FY26 guide: sales +LSD–MSD, adj EPS −low-double-digit to mid-teens | ROE 20.7% · ROIC 14.2% TTM (5Y avg 16.1%) | **🟡 LEARNING-QUEUE (Round 79 top pick)** — Filter D **0.71×** naive FV at CoE 13% (small-cap band) on 5Y-avg FCF $212M (0.74× on FY24–TTM avg; **0.87× at CoE 16%**). E **1/3** (E2 ✅ 5Y ROIC +6pp but falling trend · E1 ❓ moat evidence not verified this session · E3 ❌ tariff cost + EPS-down guide + birth-rate demand question). Beaten-down reason is ambiguous (tariff/margin = temporary vs birth-rate/wholesale = structural), written both ways → default learning-queue. **Entry zone $28.00–32.50 · Stop $26.00** (below 52W low $27.86). Street PT $40.57 (SA, 8 analysts) / $40.67 (Investing.com, May) | **Target: Tier 1.5 lightweight after the Q3 FY26 print (date not verified this session — expected late Oct / early Nov 2026); fallback 2026-11-06** |
+| CRI | Carter's, Inc. | Consumer Discretionary / Children's Apparel — Carter's + OshKosh brands, US retail + wholesale (Value bucket) | 2026-10-18 (Round 79) | $31.45 (Oct 16 close, finviz + stockanalysis exact) · 52W $27.86–44.44 (finviz-implied + SA) = **−29.2%** | **25.4% TTM** ($293M — inflated by WC) · 5Y avg FY21–25 $212M = 18.4% · EV/EBITDA **4.91×** vs FY21–25 8.29–10.96× | FY26 guide: sales +LSD–MSD, adj EPS −low-double-digit to mid-teens | ROE 20.7% · ROIC 14.2% TTM (5Y avg 16.1%) | **🟡 LEARNING-QUEUE (Round 79 top pick)** — Filter D **0.71×** naive FV at CoE 13% (small-cap band) on 5Y-avg FCF $212M (0.74× on FY24–TTM avg; **0.87× at CoE 16%**). E **1/3** (E2 ✅ 5Y ROIC +6pp but falling trend · E1 ❓ moat evidence not verified this session · E3 ❌ tariff cost + EPS-down guide + birth-rate demand question). Beaten-down reason is ambiguous (tariff/margin = temporary vs birth-rate/wholesale = structural), written both ways → default learning-queue. **Entry zone $28.00–32.50 · Stop $26.00** (below 52W low $27.86). Street PT $40.57 (SA, 8 analysts) / $40.67 (Investing.com, May) | **Target: Tier 1.5 lightweight after the Q3 FY26 print (date not verified this session — expected late Oct / early Nov 2026); fallback 2026-11-06** **SLA re-fix 2026-11-07 (Round 88 prune): Target 2026-11-12** — fallback ผ่านไปแล้วโดยไม่ได้รัน lightweight; งบ Q3 ออก 10-30 · ราคา $32.01 (close 11-06, Yahoo = Nasdaq) = −28.0% จาก high อยู่ใน entry zone |
 | NBIX | Neurocrine Biosciences, Inc. | Healthcare / Large-cap Biotech — Ingrezza (VMAT2, tardive dyskinesia), Crenessity (CAH), Vykat XR (Prader-Willi, via Soleno) (Growth bucket — rev +34.4% TTM) | 2026-10-18 (Round 79) | $135.77 (Oct 16 close, SA; finviz $135.71, 0.04%) · 52W $122.14–186.12 (SA) = **−27.1%** (finviz −27.08%) | 6.31% TTM ($870M) · EV/Sales **4.11×** vs FY21–25 4.72–7.37× (below every year) | +34.4% TTM revenue ($3.37B) | ROE 22.1% · ROIC 20.6% (5Y avg 20.75%) | **🟡 LEARNING-QUEUE** — B-V1 ✅ (self-history bottom-third; ⚠️ Soleno M&A may contaminate the series) · C ✅ · D-V1: only method 3 (Analyst-PT) computed → **0.66× (SA $206.81) to 0.77× (TipRanks $176.67)**; methods 1–2 not computed this round; D-Legacy no-growth cross-check 1.43× → "methods disagree" flag → learning-queue, not fast-track. E **2/3** (E1 ✅ VMAT2 franchise · E2 ✅ +11–12pp · E3 ❌ IRA Medicare price pressure 2027–29 unquantified + Vykat XR safety concerns). **Entry zone $122–135 · Stop $108** | **Target: Tier 1.5 lightweight 2026-11-03** (day after the Q3 print on Nov 2, per SA news) **SLA re-fix 2026-11-04 (Round 85 prune): Target 2026-11-07** — lightweight ไม่ได้รัน. ราคา $164.85 (close 11-03, Yahoo = Nasdaq) = −11.4% จาก high ไม่ผ่าน Filter A แล้ว และสูงกว่าขอบบน zone 22% → re-screen 11-07 ถ้ายังไม่ถึง −20% เสนอ archive |
 | BYD | Boyd Gaming Corporation | Consumer Discretionary / Regional Casinos — Midwest & South, Las Vegas Locals, Downtown LV, online (Value bucket) | 2026-10-19 (Round 80) | $70.04 (Oct 16 close; finviz + stockanalysis exact) · 52W $65.00–91.41 (SA) = **−23.4%** (finviz −23.38%) | TTM 0.69% ($35M — depressed by ~$591M capex + cash tax on the 2025 FanDuel-stake gain) · 5Y avg FY21–25 $601M = 11.8% · EV/EBITDA **6.84×** vs FY21–25 7.32–9.40× (below every year) | Q1'26 revenue flat YoY ($997M); Midwest & South rev +4% | ROE 93% (distorted by the FanDuel gain) · ROIC 12.5% TTM (5Y avg 14.45% vs WACC ~9%) | **🟡 LEARNING-QUEUE (Round 80 only survivor)** — D **0.87×** naive FV on the 5Y-avg FCF at CoE 10.3% ($80/share), but **1.06× on the FY23–25 avg** (capex step-up) → range straddles the band. E **2/3** (E2 ✅ +5.4pp · E3 ✅ no structural/regulatory overhang found · E1 ❓ license-barrier moat not evidenced this session). Street PT $93.94 (SA, 19) / $94.75 (Investing.com) — 4 PT cuts in Oct. **Entry $63–70 · Stop $56** | **Target: Tier 1.5 lightweight 2026-10-23** (day after the Q3 print Oct 22). Upgrade: Q3 shows LV-locals stabilization + FY26 capex guide → normalized FCF ≥$550M (D ≤0.80×), or price ≤$60 **SLA re-fix 2026-10-27: Target 2026-11-07** (10-23 target passed after the Q3 print; Tier 1.5 lightweight still only on CIO request). |
 | WGO | Winnebago Industries, Inc. | Consumer Discretionary / Leisure Products — RV (Grand Design, Winnebago, Newmar) + Marine (Chris-Craft, Barletta) (Value bucket) | 2026-10-24 (ad-hoc RV & Marine sector scout) | $28.65 (Oct 23 close; Yahoo + Nasdaq.com exact, mkt cap $815M) · 52W $21.95–50.16 = **−42.9%** | **18.6% normalized** (10y avg OCF−capex $152M, SEC 10-K FY17–26) · FY26 $144.6M = 17.8% | FY26 rev −3.4% ($2,703.9M); FY27 guide $2.65–2.80B | ROIC adj 3.2% FY26 (0.46× WACC 6.9%) · 5y avg 11.6% vs WACC 7.3% | **🟡 LEARNING-QUEUE** — Tier 1 pass (narrow: ROIC <0.5× WACC but FY26 ticked up vs FY25). A ✅ cyclical (rates + fuel + dealer destock) · B-Zero ✅ ND/EBITDA 2.4× · B ✅ · **C ⚠️ split** (5Y avg passes; CLAUDE.md trend clause fails — TTM op income down last 2 quarters) · D ✅ 0.40× @ CAPM WACC 7.5% / 0.70–0.83× @13% small-cap band / 0.81–1.00× @15% · E 1/3 (E3 ❌ Grand Design frame class action + NHTSA PE unresolved). **Entry $25.00–29.00 · Stop $22.90** — detail: Scout History 2026-10-24 | **LEARNING-QUEUE — Tier 1.5 lightweight on CIO request; target 2026-12-19** (after the Q1 FY27 print, ~mid/late Dec). Upgrade: 2 consecutive quarters of TTM ROIC improvement, or frame litigation/NHTSA PE resolved |
@@ -9187,3 +9197,146 @@ CLAUDE.md ไม่มีแถว mREIT โดยตรง จึงใช้�
 **Target analysis date:** ไม่มี (0 candidates) · NHI re-check หลัง 2026-11-09
 
 *Max — 2026-11-06 | Scout Round 87 (Niche/Specialty REITs + Corrections — 14 screened, 0 fast-track / 0 learning-queue / 14 reject)*
+
+### Scout Report — 2026-11-07 (Max Scout Mode — Round 88)
+
+**Sector mandate:** Hotel/Lodging REITs + Self-Storage REITs (CIO-directed) · ก่อนหน้า: R85 Staffing · R86 Residential/mREIT · R87 Niche REIT
+**Trigger:** CIO สั่ง "Scout Round 88" (2026-11-07) ทำครบ `.claude/commands/scout.md` **เฉพาะ scout/screen ไม่ได้ dispatch full pipeline และไม่ได้เรียก Atlas/Emma/Quinn/Bear**
+**Portfolio state:** 5 OPEN (ADBE / NOW / CRM / REGN / ADSK) ตาม `dashboard/portfolio.js` (re-mark `a8e1a33`, close 11-06) · ไม่มี REIT ในพอร์ต · cash 73.73% ตาม `portfolio/positions.md`
+**Regime:** **TRANSITIONAL-CAUTIOUS** ไม่เปลี่ยน · ไฟล์ล่าสุดคือ `agent_notes/atlas/2026-11-06_regime.md` (ใหม่กว่า 11-03 ที่คำสั่งและ `positions.md` อ้างถึง; **ไฟล์นี้ยังไม่ commit** และเป็นงานของรอบ MU จึงไม่ได้รวมใน commit นี้) · Force Deploy suspended + ห้าม open position ใหม่
+**Market:** S&P 500 close 11-06 7,376.86 (−6.0% จาก 52W high, Yahoo)
+
+### Step 0 — Prune
+🗄️ Prune: de-listed **0** | SLA fixed **1 (CRI)** | live **16 → 16** ดู Prune Pass 2026-11-07 (Round 88) เหนือตาราง Pending
+
+### Coverage-check + universe
+| Ticker | สถานะจริง | การจัดการ |
+|---|---|---|
+| **LSI** | ⚠️ **ไม่มีในตลาดแล้ว** EXR ปิดดีล 2023-07-20 ([EXR 8-K](https://www.sec.gov/Archives/edgar/data/1289490/000119312523190116/d395569dex991.htm), [Inside Self Storage](https://www.insideselfstorage.com/reits/self-storage-reits-extra-space-life-storage-complete-merger)) · Yahoo 404, Nasdaq ไม่มีข้อมูล | ข้าม |
+| **NSA** | ⚠️ **ไม่มีในตลาดแล้ว (คำสั่งไม่ได้ระบุ)** PSA ปิดดีล 2026-07-22, 0.14 หุ้น PSA ต่อ 1 หุ้น NSA ([Las Vegas Sun/PR](https://lasvegassun.com/news/2026/jul/22/public-storage-announces-closing-of-national-stora/), [TipRanks](https://www.tipranks.com/news/company-announcements/national-storage-affiliates-completes-merger-with-public-storage), [PSA 8-K Q3](https://www.sec.gov/Archives/edgar/data/0001393311/000162828026067283/psa-102626xex99_1.htm)) · Yahoo 404 · มูลค่าดีลแต่ละแหล่งไม่ตรงกัน ไม่ได้ใช้ตัวเลขนี้ | ข้าม |
+| **HST, PK** | ⚠️ **แก้ข้อมูลในคำสั่ง:** grep พบ 2 hits ที่ `watchlist.md` บรรทัด 7903 เป็น URL finviz batch 7 ของ R79 (close 10-16) ไม่พบแถวผลหรือคำตัดสิน จึงถือว่าเคยถูกดึงข้อมูลแต่ไม่มีบันทึกการประเมิน | สแกนเต็มรอบนี้ |
+| **PSA** | Round 43 (−14.2% ตอนนั้น, reject ที่ A) | cross-check เท่านั้น ไม่นับ candidate |
+| RHP, APLE, SHO, XHR, DRH, EXR, CUBE | `grep -w` ใน `watchlist.md`, `decisions.md`, `deployment_log.md`, `buy_list.md` = 0 hits · ไม่ทับ holdings · ไม่อยู่ใน exclusion list (PODD, ZTS, NKE, MMS, SLM, CRI, NBIX, BYD, WGO, OWL) | สแกนเต็มรอบนี้ |
+
+**รวม 9 ตัวที่สแกนได้จริง** (7 hotel + 2 storage) จาก 11 ตัวในคำสั่ง
+
+### Framework + method
+- **กรอบ REIT (ตามคำสั่งและ CLAUDE.md แถว REIT):** ไม่ใช้ FCF yield/GAAP ROIC · **B** = dividend yield เทียบ 5Y median ตัวเองหรือ peer · **C** = payout + ไม่มี secular decline · **D** = naive FV = FFO ÷ CoE · **E2** = FFO yield − CoE ≥ +3pp แทน ROIC spread
+- **ราคา + 52W high:** Yahoo chart + Nasdaq.com historical **close 11-06 ตรงกันทั้ง 9 ตัว** · high ตรงกับ Nasdaq 52W range ทุกตัว · StockAnalysis (ราคา after-hours ลบส่วนต่าง) ได้ close เดียวกันใน 4 ตัวที่อ่านค่าได้ ([HST](https://stockanalysis.com/stocks/hst/history), [SHO](https://stockanalysis.com/stocks/sho/history), [EXR](https://stockanalysis.com/stocks/exr/history), [CUBE](https://stockanalysis.com/stocks/cube/history)) · Scripts: `hist.py`, `daily.py`, `sa.py`
+- **⚠️ ไม่ตรงตัวอักษรกับ "WebSearch ≥2 sources":** WebSearch รายตัวทั้ง 9 ครั้ง **ไม่พบ close 11-06 สักตัว** (ได้ข้อมูลล่าสุดแค่ปลาย ต.ค. หรือไม่ระบุวันที่) จึงตัดสินด้วย API 2 แหล่งตามวิธี R82-87 แทนการเขียน `PRICE NOT VERIFIED` เพราะเป็นราคาจริงที่ดึงในรอบนี้ ไม่ใช่การประมาณ · จุดที่ยืนยันข้ามได้: APLE $18.65 วันที่ 11-03 ตรงกับ [8-K](https://www.sec.gov/Archives/edgar/data/0001418121/000119312526449868/aple-ex99_1.htm) · ผล WebSearch ของ PK $16.60 วันที่ 10-30 และ range 9.84–17.14 ตรงกับ Yahoo/Nasdaq
+- **ข้อมูลเก่าที่ตัดทิ้ง:** ผลค้นหา CUBE high $43.25 (10-29) และ EXR ~$141 ขัดกับราคาปัจจุบัน จึงตรวจรายวันแล้ว **CUBE $41.08 (10-29) → $45.89 (11-04) · EXR $149.90 → $161.04 ขึ้นจริงหลังงบ Q3** · ค้นแล้วไม่พบข่าวเทคโอเวอร์ CUBE (ยังไม่ตัดความเป็นไปได้ทั้งหมด)
+- **CoE:** Rf 4.859% (Yahoo ^TNX close 11-06, แหล่งเดียว) · ERP 4.41% ([Damodaran 2026-11-01](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm), ยืนยันรอบนี้) · β 5Y monthly vs ^GSPC, Blume (`fund.py`)
+- **Scripts:** `scripts/scout/2026-11-07_hotel_storage_reits/`
+
+### Screening table — Filter A→E (A เป็นด่านตัดสิน; B→E แสดงตามคำสั่งเป็นข้อมูลประกอบ)
+| Ticker | กลุ่ม | ราคา 11-06 | 52W high / low | **A: % จาก high** | เหนือ low | B-Zero: ND/EBITDA | B: yield (5Y med) | C: payout FFO | D: P ÷ FV (FFO) | E | ผล |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **PK** | Hotel | $15.74 | $17.14 / $9.84 | **−8.2% ❌** | +60% | 5.82× ⚠️ | 6.35% (9.32%) ✅ peer | 49% ⚠️ | 0.81× ⚠️ | 0/3 | ❌ A |
+| **HST** | Hotel | $24.62 | $26.19 / $16.62 | **−6.0% ❌** | +48% | 1.93× | 3.25% (5.16%) ❌ | 36% ✅ | 1.05× ❌ | 1/3 | ❌ A |
+| **DRH** | Hotel | $14.04 | $14.72 / $8.14 | **−4.6% ❌** | +72% | 3.0× | 3.13% (1.90%) ✅ ⚠️ | 35% ✅ | 1.05× ❌ | 1/3 | ❌ A |
+| **SHO** | Hotel | $12.52 | $13.08 / $8.69 | **−4.3% ❌** | +44% | 2.80× | 2.88% (3.14%) ❌ | 35% ✅ | 1.13× ❌ | 1/3 | ❌ A |
+| **RHP** | Hotel (group) | $132.05 | $137.46 / $89.60 | **−3.9% ❌** | +47% | 4.62× | 3.63% (3.98%) ✅ peer | 52% ✅ | 1.39× ❌ | 2/3 | ❌ A |
+| **XHR** | Hotel | $21.39 | $22.06 / $12.74 | **−3.0% ❌** | +68% | 4.41× | 2.62% (3.10%) ❌ | 27% ✅ | 0.98× ❌ | 1/3 | ❌ A |
+| **APLE** | Hotel (select) | $18.88 | $18.98 / $11.22 | **−0.5% ❌** | +68% | 2.97× | 5.08% (6.77%) ✅ peer | 53% ✅ | 0.94× ❌ | 1/3 | ❌ A |
+| **CUBE** | Storage | $45.02 | $46.41 / $35.09 | **−3.0% ❌** | +28% | 5.05× (gross) | 4.71% (4.74%) ✅ peer | 82% ✅ | 1.58× ❌ | 1/3 | ❌ A |
+| **EXR** | Storage | $159.19 | $163.18 / $125.71 | **−2.4% ❌** | +27% | 5.87× (gross) | 4.07% (4.39%) ❌ | 77% ✅ | 1.75× ❌ | 2/3 | ❌ A |
+| *PSA (cross-check)* | Storage | $337.46 | $345.89 / $256.54 | −2.4% | +32% | 3.46× (gross) | 3.56% (4.11%) | — | — | — | ไม่นับ |
+
+**ผ่าน A: 0/9** · ทุกตัวอยู่ภายใน 10% ของ 52W high ซึ่งปกติห้าม scout เว้นแต่ CIO สั่งตรง (รอบนี้ CIO สั่ง) · **Beaten-down reason: ไม่มีให้จัดประเภท** เพราะหุ้นกลุ่มนี้ไม่ได้ถูกทิ้ง
+
+### Filter A — ราคาที่จะเข้าเกณฑ์
+| Ticker | 0.80× high | ต้องลงอีก |
+|---|---|---|
+| PK | $13.71 | −12.9% |
+| HST | $20.95 | −14.9% |
+| DRH | $11.78 | −16.1% |
+| SHO | $10.46 | −16.4% |
+| RHP | $109.97 | −16.7% |
+| CUBE | $37.13 | −17.5% |
+| XHR | $17.65 | −17.5% |
+| EXR | $130.54 | −18.0% |
+| APLE | $15.18 | −19.6% |
+
+### ตัวเลขประกอบ B-Zero / B / C (Q3 2026 release ทุกตัว)
+| Ticker | FY26 FFO/หุ้น (guide) | P/FFO | Dividend ต่อปี | Equity | หนี้ − เงินสด | แหล่ง |
+|---|---|---|---|---|---|---|
+| HST | Adj. FFO $2.21 | 11.1× | $0.80 ปกติ | +$6,345M | $5,084M − $1,492M · EBITDAre $1,865M | [8-K](https://www.sec.gov/Archives/edgar/data/0001070750/000107075026000152/hst-ex991.htm) |
+| PK | $2.00–2.05 | 7.8× | $1.00 | +$2,966M | net debt ~$3,725M · Adj. EBITDA $635–645M | [8-K](https://www.sec.gov/Archives/edgar/data/0001617406/000161740626000047/earningsreleaseex991-live.htm) |
+| RHP | AFFO $9.16–9.43 | 14.2× | $4.80 ($1.20/Q) | +$1,415M | $4,659M − $348M · EBITDAre $920–947M | [PR](https://finviz.com/news/413592/ryman-hospitality-properties-inc-reports-third-quarter-2026-results) |
+| APLE | **ไม่พบ guide ต่อหุ้น:** 9M MFFO $1.36 ÷ 0.75 = **~$1.81 (ประมาณคร่าวๆ)** | 10.4× | $0.96 | +$3,151M | $1,490M − $43M · EBITDAre $482–493M | [8-K](https://www.sec.gov/Archives/edgar/data/0001418121/000119312526449868/aple-ex99_1.htm) |
+| SHO | $1.00–1.03 | 12.3× | $0.36 | +$1,787M | $955M − $237M · EBITDAre $254–259M (ยังมี preferred) | [8-K](https://www.sec.gov/Archives/edgar/data/0001295810/000129581026000005/sho-ex99_1.htm) |
+| XHR | $2.08–2.14 | 10.1× | $0.56 | +$1,150M | ~$1.4B − $161M · EBITDAre $278–284M | [PR](https://finviz.com/news/413990/xenia-hotels-resorts-reports-third-quarter-2026-results) |
+| DRH | $1.24–1.26 | 11.2× | $0.44 ($0.11/Q) อาจมี stub | +$1,548M | รายงานเอง 3.0× | [8-K](https://www.sec.gov/Archives/edgar/data/0001298946/000129894626000047/exhibit9913q2026.htm) |
+| EXR | Core $8.40–8.50 | 18.8× | $6.48 | +$13,762M | $13,406M − $115M | [8-K](https://www.sec.gov/Archives/edgar/data/0001289490/000128949026000061/q32026ex991earningsrelease.htm) |
+| CUBE | $2.58–2.60 | 17.4× | $2.12 | +$2,490M | ~$3,540M − $14M | [PR](https://finviz.com/news/412138/cubesmart-reports-third-quarter-2026-results) |
+
+- **B-Zero:** equity เป็นบวกทุกตัว · ND/EBITDA ของ EXR, CUBE, PSA เป็นหนี้รวมจาก StockAnalysis ([EXR](https://stockanalysis.com/stocks/exr/statistics/), [CUBE](https://stockanalysis.com/stocks/cube/statistics/), [PSA](https://stockanalysis.com/stocks/psa/statistics/)) ไม่ใช่ net · **PK 5.82× นับเป็น overhang ใน E3** (refinance $1.5B ปีนี้ ดอกเบี้ยเพิ่ม ~$13M) และ net debt ที่สรุปได้ ($3,725M) ไม่เท่ากับหนี้ลบเงินสด ($3,628M) ยังกระทบยอดไม่ได้ · HST 2.19× ถ้าใช้เงินสดหลังธุรกรรมต่อเนื่อง $991M
+- **B:** **P/AFFO เทียบ 5Y median: `DATA NOT AVAILABLE`** (ไม่พบซีรีส์ที่เชื่อถือได้ใน session นี้) จึงใช้เฉพาะ dividend yield · 5Y median คำนวณจากเงินปันผล Yahoo ย้อนหลัง 12 เดือน (n=50) **ซึ่งรวม special และช่วงงดจ่ายปี 2021–22 ค่า hotel จึงบิดเบือน** · ✅ peer = สูงกว่า median กลุ่ม (hotel 3.25%, storage 4.07%) · HST ถ้านับ special ย้อนหลังจะได้ 6.78%
+- **C:** ไม่พบ secular decline: RevPAR เป้าปี HST ~+6.75% · PK +5.5–6.0% · APLE +5.1–6.1% · SHO +9.5–10.5% · DRH +4.75–5.25% · Q3 RHP +7.9% · XHR +12.5% · Same-store NOI เป้าปี EXR +2.5–3.5% · CUBE 0–0.8%
+- **⚠️ Payout หลังหัก capex ทั้งหมด:** PK 152% · SHO 87% · APLE 67% · HST 58% · DRH 50% · XHR 41% (capex รวมโครงการ ROI ไม่ใช่แค่ maintenance จึงเป็นกรณีแย่สุด)
+
+### Filter D — naive FV (REIT proxy) · ราคา ÷ FV ในวงเล็บ
+| Ticker | β Blume | CoE | FFO ÷ CoE (**เพดาน**) | (FFO − capex รวม) ÷ CoE (**พื้น**) | Street PT median (แหล่งเดียว) |
+|---|---|---|---|---|---|
+| PK | 1.25 | 10.37% | $19.52 (**0.81×**) | $6.33 (2.49×) | $16 (+1.7%) |
+| APLE | 0.95 | 9.05% | $20.04 (0.94×) | $15.83 (1.19×) | $18 (−4.7%) |
+| XHR | 1.09 | 9.67% | $21.83 (0.98×) | $13.99 (1.53×) | $21 (−1.8%, อัปเดต 09-01) |
+| HST | 1.04 | 9.45% | $23.40 (1.05×) | $14.54 (1.69×) | $26.50 (+7.6%) |
+| DRH | 1.01 | 9.31% | $13.42 (1.05×) | $9.41 (1.49×) | $14 (−0.3%) |
+| SHO | 0.98 | 9.18% | $11.06 (1.13×) | $4.53 (2.77×) | $12 (−4.2%) |
+| RHP | 1.11 | 9.75% | $95.24 (1.39×) | n/m (capex $450–500M ยังไม่แยก maintenance) | $142 (+7.5%) |
+| CUBE | 0.96 | 9.09% | $28.48 (1.58×) | capex ไม่ได้ดึง | $43.50 (−3.4%) |
+| EXR | 1.01 | 9.31% | $90.73 (1.75×) | capex ไม่ได้ดึง | $156.50 (−1.7%) |
+
+- **ไม่มีตัวไหนถึงเกณฑ์ fast-track (≤0.80×) แม้บนฐานเพดานที่ยังไม่หัก capex** · Street PT จาก StockAnalysis `/forecast/` ราย ticker (เช่น [HST](https://stockanalysis.com/stocks/hst/forecast/), [PK](https://stockanalysis.com/stocks/pk/forecast/)) ไม่มีตัวไหนสูงกว่าราคา ≥20%
+- **PK คือจุดเดียวที่ต้องอธิบาย:** 0.81× ได้เฉพาะเมื่อไม่หัก capex เลย จะคง ≤0.90× ได้ capex ต้องไม่เกิน ~$43M/ปี เทียบกับเป้า capex รวม $270–280M · ยังไม่ได้แยก maintenance ออกจาก ROI จึงสรุปได้เพียงว่า PK **ไม่ได้ถูกจริงบนฐานที่มีอยู่** ไม่ใช่พิสูจน์ว่าแพง
+- **NAV: `DATA NOT AVAILABLE`** ไม่พบ NAV ปัจจุบันจากการค้น · APLE ใช้ MFFO ประมาณจาก 9 เดือน ซึ่งอาจสูงเกินจริงถ้าไตรมาส 4 อ่อนตามฤดูกาล (ยังไม่ได้ยืนยัน) · FV แบบ no-growth กดมูลค่า storage ที่เติบโตได้ ดังนั้นตัวเลข EXR/CUBE เป็นเกณฑ์คัดกรอง ไม่ใช่มูลค่าที่แท้จริง
+
+### Filter E
+| Ticker | E1 Moat | E2 FFO yield − CoE ≥ +3pp | E3 ไม่มี overhang ที่ยังไม่จบ | Score |
+|---|---|---|---|---|
+| PK | ❌ ไม่พบหลักฐาน | ❌ +2.49pp | ❌ leverage 5.82× + refinance · Hawaii พายุกระทบ RevPAR ~280bps | 0/3 |
+| HST | ❌ ไม่พบหลักฐาน | ❌ −0.47pp | ✅ | 1/3 |
+| APLE | ❌ ไม่พบหลักฐาน | ❌ +0.56pp | ✅ | 1/3 |
+| XHR | ❌ ไม่พบหลักฐาน | ❌ +0.20pp | ✅ | 1/3 |
+| DRH | ❌ ไม่พบหลักฐาน | ❌ −0.41pp | ✅ | 1/3 |
+| SHO | ❌ ไม่พบหลักฐาน | ❌ −1.07pp | ✅ | 1/3 |
+| RHP | ✅ ก้ำกึ่ง: จองล่วงหน้า Q3 สถิติ 653K room nights ที่ ADR ~$293 | ❌ −2.72pp | ✅ | 2/3 |
+| EXR | ✅ scale + tenant reinsurance กำไรสุทธิเป้า $298–300M · occupancy 94.0% เทียบ CUBE ~90% | ❌ −4.00pp | ✅ | 2/3 |
+| CUBE | ❌ ไม่พบหลักฐาน | ❌ −3.34pp | ✅ | 1/3 |
+
+**Hotel — ค่าแรง / business travel / Airbnb** (⚠️ อ้างจากผลสรุปการค้นหา ไม่ได้เปิดเอกสารเต็ม เช่นเดียวกับ storage ด้านล่าง):
+- **ค่าแรงและต้นทุน: แรงกดดันจริงแต่ไม่นับเป็น structural overhang:** STR คาด GOP +4% ปี 2026 และ +1% ปี 2027 ([Hospitality Net](https://www.hospitalitynet.org/opinion/4134085/how-the-improved-forecast-should-shape-your-2027-budget)) · HAMA ระบุค่าแรงและการหาแรงงานเป็นข้อกังวลหลัก ([Hotel-Online](https://www.hotel-online.com/news/hospitality-asset-managers-association-hama-releases-fall-2026-conference-industry-outlook-survey-results))
+- **Business travel: กำลังฟื้น ไม่ใช่ secular decline** ตามการปรับประมาณการของ [CBRE](https://www.cbre.co.uk/insights/books/us-real-estate-market-outlook-midyear-review-2026/hotels) และ RevPAR ปี 2027 คาด +2.1% ([CoStar](https://www.costar.com/products/str-benchmark/resources/data-insights-blog/us-hotel-forecast-assumptions-q3-2026))
+- **ฐานสูงจาก World Cup:** ปีหน้าเทียบยากขึ้น ([HVS](https://www.hvs.com/article/10541-hvs-us-market-pulse--august-2026), [Finviz](https://finviz.com/news/409516/host-hotels-faces-a-higher-bar-after-four-straight-raises-as-world-cup-lift-fades))
+- **Airbnb/short-term rental: ⚠️ ไม่พบข้อมูลใน session นี้** E3 ของ hotel จึงยังไม่ได้ทดสอบข้อนี้ ถ้าตัดสินเป็น ❌ คะแนน hotel จะลดลงอีก 1 แต่ผลรอบนี้ไม่เปลี่ยน
+
+**Storage — oversupply: กำลังคลี่คลาย ไม่ถาวร แต่ราคาเช่ายังไม่ฟื้น:** อุปทานใหม่คาด −19% ปี 2026 และ 45.3M sq ft ปี 2027 ([Yardi Matrix](https://www.yardimatrix.com/blog/?p=10329), [CRE Daily](https://www.credaily.com/?p=222637)) · ค่าเช่าตลาด −1.6% YoY ก.ค. 2026 ([CRE Daily](https://www.credaily.com/?p=221738)) · PSA same-store revenue −0.6% ([Inside Self Storage](https://www.insideselfstorage.com/facility-operators/self-storage-reits-release-financial-results-for-third-quarter-2026), บทความมีตัวเลขที่ขัดกันเอง +0.5%) · Phoenix/Orlando อาจกดดันถึงปลายปี 2027
+
+### Final routing — Round 88
+- 🟢 **Fast-track: 0**
+- 🟡 **Learning-queue: 0** — ไม่เพิ่ม row ใน Pending Analysis
+- ❌ **Reject: 9** ทั้งหมดที่ Filter A (−0.5% ถึง −8.2%): PK / HST / DRH / SHO / RHP / XHR / APLE / CUBE / EXR
+- ⛔ **สแกนไม่ได้: 2** LSI / NSA (ถูกซื้อกิจการแล้ว)
+- **Funnel:** 11 → มีในตลาด 9 → A 0
+- **`QUICK-SCREEN SKIP`:** ไม่มี เพราะไม่มีตัวผ่าน A (ตาม precedent R86-87) · **`buy_list.md`:** ไม่เพิ่ม · **"sector นี้ยังไม่มี value ที่ชัดเจน"**
+
+**Re-trigger (ไม่ใช่ entry zone เพราะไม่ใช่ candidate):** ใช้ราคาในตาราง "ราคาที่จะเข้าเกณฑ์" · **PK ใกล้สุด ($13.71, −12.9%)** ถ้าถึงต้องแยก maintenance capex และหา NAV ก่อน re-run D · **RHP / EXR** คะแนน E สูงสุด (2/3) ควรเช็คซ้ำถ้าลงถึงเกณฑ์
+
+### Data integrity — สิ่งที่พบรอบนี้
+1. **คำสั่งไม่ได้เตือนเรื่อง NSA แต่ PSA ปิดดีลแล้ว 2026-07-22** (LSI ตรงตามที่คำสั่งสงสัย)
+2. **คำสั่งระบุ HST/PK ไม่พบใน watchlist แต่มีใน URL ของ R79** (ไม่มีคำตัดสิน)
+3. **Regime ล่าสุดคือไฟล์ 11-06 ที่ยังไม่ commit** ไม่ใช่ 11-03 ผลยังเป็น TC
+4. **ผลค้นหาเก่าปนเปื้อน** (CUBE, EXR) ถ้าเชื่อ snippet โดยไม่ตรวจรายวันจะได้ % จาก high ผิด
+5. **ยังไม่ครบ:** P/AFFO 5Y median · NAV · maintenance capex แยก ROI · capex ของ EXR/CUBE · ND/EBITDA แบบ net ของ EXR/CUBE · net debt ของ PK · FFO ต่อหุ้นเป้าปีของ APLE · Airbnb · สาเหตุที่ hotel ลง 11-05 (HST −5.7%, PK −8.3%; S&P −4.36% วันเดียวกัน) · ไม่มีข้อใดเปลี่ยนผลรอบนี้ เพราะทุกตัวตก A ห่างจากเกณฑ์อย่างน้อย 12.9%
+6. **StockAnalysis PT ใช้แหล่งเดียว** และบางตัวอาจยังไม่สะท้อนงบ Q3 · XHR ระบุว่าอัปเดตล่าสุด 09-01
+
+### What this round tells the team
+1. **Hotel REIT เป็นตรงข้ามกับ value hunting ในตอนนี้:** ขึ้น +44% ถึง +72% จาก 52W low และเพิ่งยกเป้าปีตามงบ Q3 ราคาสะท้อนข่าวดีไปมากแล้ว (Street PT ของ APLE/SHO/XHR/DRH ไม่สูงกว่าราคา)
+2. **ราคา Storage ฟื้นนำค่าเช่า:** EXR/CUBE ขึ้น +7.4% / +11.7% จาก 10-29 ถึง 11-04 ทั้งที่ค่าเช่าตลาดยังลบ และ P/FFO 17–19× ตลาดจ่ายล่วงหน้าเรื่องอุปทานลดแล้ว
+3. **4 รอบ REIT (R43, R86, R87, R88) ยังไม่มี candidate จาก REIT:** ถ้าจะหา REIT ที่ลงจริง ควรไปที่ commercial mREIT ตามที่ R86 เสนอ แทนการไล่กลุ่ม equity REIT ต่อ
+4. **การควบรวมทำให้จักรวาลหดเร็ว:** R86 AVB+EQR → VMRK, รอบนี้ NSA/LSI ควรเช็คสถานะ ticker ก่อนสั่งทุกรอบ
+
+**Target analysis date:** ไม่มี (0 candidates)
+
+*Max — 2026-11-07 | Scout Round 88 (Hotel/Lodging REITs + Self-Storage REITs — 9 screened, 0 fast-track / 0 learning-queue / 9 reject; LSI + NSA acquired, skipped)*
