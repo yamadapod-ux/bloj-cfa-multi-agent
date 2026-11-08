@@ -1,5 +1,47 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-08 (Mode 3 — Weekend, No New Trading Day, Nov 6 2026 Close Carried Forward)
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, 5 days old, not overdue — next re-call due ~11-10). Nov 7 (Sat) / Nov 8 (Sun) are non-trading days — no new US market close exists. All 5 OPEN positions re-verified **UNCHANGED** at Nov 6 2026 close via fresh WebSearch: S&P 500 confirmed $7,376.86 (Yahoo Finance explicit historical-data row "Nov 6, 2026 ... Close 7,376.86"), ADBE confirmed $239.30-239.59 range (CNN "Closed at $239.30" + macrotrends $239.3000, consistent with the $239.59 carried), NOW confirmed $101.97 (fool.com explicit "Last close USD 101.97, 2026-11-06"), REGN confirmed $904.35 exactly (MarketBeat Nov-7 recap: "REGN traded up $1.45 ... reaching $904.35" on Friday), ADSK confirmed $261.72 (Yahoo Finance explicit "At close: November 6 at 4:00:01 PM EST, 261.72"). CRM not independently re-confirmed within the search-attempt cap this session — carried forward unchanged at $213.65 (consistent with the calendar; no newer print exists for any ticker since Nov 6 is the last close before the weekend). **No trades this session.**
+
+| Ticker | Price (Nov 6 close, unchanged) | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------------------|----------|-------|------------|----------|
+| ADBE | $239.59 | -3.01% | +35.07% | 29.51% | 9.29% |
+| NOW | $102.58 | +14.65% | +6.91% | 10.30% | 0.99% |
+| CRM | $213.65 | +18.04% | +38.21% | 47.55% | 6.21% |
+| REGN | $904.35 | +50.22% | +9.04% | 87.61% | 3.68% |
+| ADSK | $262.21 | +32.14% | -18.22% | 65.23% | 6.10% |
+
+S&P 500 unchanged at **$7,376.86** (no new trading day — re-confirmed via fresh WebSearch). Total Value $10,318.79 → **$10,319.58** (+0.01%, cash-accrual only). Cash $7,607.77 → **$7,608.56** (+$0.79, Cash Yield Rule, 1 day). Total Return 3.19% → **3.20%**. sp500Return unchanged **-0.30%**. Alpha 3.49% → **3.50%** (negligible, cash-accrual only — no new trading day for either side).
+
+**Stop Loss check:** No breaches. NOW remains narrowest stopDist 10.30% (unchanged), still above the 10% WATCH line.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (≥90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings; next print 12-09 | FV 58d, MOS +35.07% — no fire | No | Under 30% | Carried: Street avg $268.30 vs FV $369 = -27.3% — fires, carried | 1/5 carried |
+| NOW | No new earnings since Q3 (already re-verified) | FV 8d, MOS +6.91% — no fire | No | Under 30% | Carried: Street median $155 vs FV $110.20 = +40.7% — fires, carried | 1/5 carried, full pipeline by 2026-11-14 (6 days away) |
+| CRM | No new earnings | FV 58d, MOS +38.21% — no fire | No | Under 30% | Street median $285 vs FV $345.77 = -17.6% — no fire | 0/5 |
+| REGN | No new earnings since Q3 | FV 8d, MOS +9.04% — no fire | No | Under 30% | Street median $982 vs FV $994.20 = -1.2% — no fire | 0/5 |
+| ADSK | No new earnings; Q3 FY27 on Nov 24 | FV 57d (<90d), MOS -18.22% — no fire | No | Under 30% | Carried: Street median $302.50 vs FV $221.79 = +36.4% — fires, carried (consulted 10-31) | 1/5 carried, HOLD-WATCH gate Nov 24, hard deadline 2026-12-05 |
+
+**Result: 0 new formal triggers. 3 carried (ADBE #5, NOW #5, ADSK #5) — unchanged from last session.** No Bear Flip / Thesis Invalidation fired on any OPEN position. No sell or trim proposed, so Max Consultation Rule is not engaged.
+
+**Atlas news scan (weekend coverage):** All 5 OPEN tickers + Big 10 watchlist scanned since NEWS_LAST_UPDATED (2026-11-06 07:00) — **0 NEW HIGH-IMPACT items.** One item reviewed and assessed ROUTINE rather than HIGH-IMPACT: a Yahoo Finance article (Nov 6) reporting ServiceNow has launched another global layoff round (UK/US/India) with Q3 severance costs of $87M (9-month $167M, vs $24M/$53M prior year) — this is media analysis of severance figures already embedded in the Q3 10-Q filed 10-28, not a new disclosure or fresh catalyst, so it does not meet the earnings/8-K/management-change bar; MSFT's officer-departure 8-K (previously logged as routine) remains unconfirmed as CEO/CFO-level. No earnings (all Big 10 names already reported this cycle), M&A, or >15% analyst PT changes found this weekend. `dashboard/news.js` unchanged this session.
+
+**Atlas macro regime status:** not overdue (re-called 2026-11-03, 5 days old, next due ~11-10).
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+$7,607.77 × 3.8%/365 × 1 = **+$0.79** → **$7,608.56**. Rate basis: Fed funds 3.75-4.00%, held Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+
+วันนี้ (8 พ.ย., วันอาทิตย์) ตลาดสหรัฐฯ ยังไม่เปิดเทรดใหม่ — ราคาปิดล่าสุดยังเป็น Nov 6 (ศุกร์) เหมือนเดิม ยืนยันราคาไม่เปลี่ยนด้วย WebSearch สดสำหรับ 4 ใน 5 positions (ADBE, NOW, REGN, ADSK) + S&P 500 — มีแค่ CRM ที่ยืนราคาเดิมโดยไม่ได้ re-confirm แหล่งใหม่ภายใน attempt cap รอบนี้ (ไม่กระทบ เพราะไม่มีวันเทรดใหม่อยู่ดี) การเปลี่ยนแปลงเดียวคือ cash accrual +$0.79 → Total Value ขยับขึ้นเล็กน้อยเป็น **$10,319.58**, alpha ขยับขึ้นเล็กน้อยเป็น **+3.50%** ไม่มี stop breach (NOW ยังแคบสุด 10.30%) ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ข่าวที่พบมีเรื่อง ServiceNow เลิกคนรอบใหม่ (UK/US/India) พร้อมตัวเลข severance cost Q3 $87M แต่เป็นแค่สื่อวิเคราะห์ข้อมูลจาก 10-Q ที่เปิดเผยไปแล้วตั้งแต่ 28 ต.ค. ไม่ใช่ catalyst ใหม่ จึงไม่นับ HIGH-IMPACT ข่าว Big 10 + portfolio ไม่มีอะไรถึงเกณฑ์รอบนี้
+
+---
+
 ## 📊 Portfolio Review — 2026-11-07 (Mode 3 — Full Re-Mark, Nov 6 2026 Close) — Market Rebounds on Strong Jobs Report, Portfolio Lags as Software Unwind Continues; Alpha Narrows to +3.49%; NOW Price-Source Disagreement Flagged
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, 4 days old, not overdue — next re-call due ~11-10). First new US trading day since Nov 5. S&P 500 rebounded +0.31% to **$7,376.86** (MarketWatch + Kiplinger + Sharecast, 3-source exact match), +23.13 pts, as chip stocks bounced and a much-stronger-than-expected October jobs report (+165K vs +59K consensus, unemployment 4.1%) offset lingering AI-capex-rout nerves. Nasdaq +1.09% to 24,579.42 (still in correction territory), Dow -0.46% to 51,285.73, VIX eased from 28.18 to ~25.56 (Cboe). All 5 OPEN positions fell despite the broad rebound — continued software/AI-disruption unwind. **No trades this session.**
