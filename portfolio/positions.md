@@ -1,5 +1,47 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-09 (Mode 3 — Monday Pre-Open, No New Trading Day, Nov 6 2026 Close Carried Forward)
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, 6 days old, next re-call due ~11-10, 1 day away). This cron fires Monday 07:00 Bangkok = ~19:00 EST Sunday evening — the Monday Nov 9 US session has not opened yet, so Nov 6 2026 (Friday) remains the latest close for all 5 OPEN positions and S&P 500. S&P 500 re-confirmed unchanged at $7,376.86 via 3 independent recap/pre-market sources (marketindex.com.au, smh.com.au, giftniftytoday.com pre-market report), all converging exactly on the Friday print. All 5 OPEN positions carried forward unchanged — no newer print exists for ADBE, NOW, CRM, REGN, or ADSK. **No trades this session.**
+
+| Ticker | Price (Nov 6 close, unchanged) | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------------------|----------|-------|------------|----------|
+| ADBE | $239.59 | -3.01% | +35.07% | 29.51% | 9.29% |
+| NOW | $102.58 | +14.65% | +6.91% | 10.30% | 0.99% |
+| CRM | $213.65 | +18.04% | +38.21% | 47.55% | 6.21% |
+| REGN | $904.35 | +50.22% | +9.04% | 87.61% | 3.68% |
+| ADSK | $262.21 | +32.14% | -18.22% | 65.23% | 6.10% |
+
+S&P 500 unchanged at **$7,376.86**. Total Value $10,319.58 → **$10,320.37** (+0.01%, cash-accrual only). Cash $7,608.56 → **$7,609.35** (+$0.79, Cash Yield Rule, 1 day). Total Return 3.20% → **3.20%**. sp500Return unchanged **-0.30%**. Alpha 3.50% → **3.50%** (negligible, both sides flat — no new trading day for either side).
+
+**Stop Loss check:** No breaches. NOW remains narrowest stopDist 10.30% (unchanged), still above the 10% WATCH line.
+
+**🔍 Re-Analysis Trigger Check (5 criteria, mandatory every review):**
+
+| Ticker | #1 Earnings-driven | #2 Staleness+Price (≥90d & MOS neg) | #3 Missed-earnings backstop (≥2 cycles) | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|--------|---------------------|-----------------------------------------|-----------------------------------------------|-------------------------------------------------------|---------------------------------|--------|
+| ADBE | No new earnings; next print 12-09 | FV 59d, MOS +35.07% — no fire | No | Under 30% | Carried: Street avg $268.30 vs FV $369 = -27.3% — fires, carried | 1/5 carried |
+| NOW | No new earnings since Q3 (already re-verified) | FV 9d, MOS +6.91% — no fire | No | Under 30% | Carried: Street median $155 vs FV $110.20 = +40.7% — fires, carried | 1/5 carried, full pipeline by 2026-11-14 (5 days away) |
+| CRM | No new earnings | FV 59d, MOS +38.21% — no fire | No | Under 30% | Street median $285 vs FV $345.77 = -17.6% — no fire | 0/5 |
+| REGN | No new earnings since Q3 | FV 9d, MOS +9.04% — no fire | No | Under 30% | Street median $982 vs FV $994.20 = -1.2% — no fire | 0/5 |
+| ADSK | No new earnings; Q3 FY27 on Nov 24 | FV 58d (<90d), MOS -18.22% — no fire | No | Under 30% | Carried: Street median $302.50 vs FV $221.79 = +36.4% — fires, carried (consulted 10-31) | 1/5 carried, HOLD-WATCH gate Nov 24, hard deadline 2026-12-05 |
+
+**Result: 0 new formal triggers. 3 carried (ADBE #5, NOW #5, ADSK #5) — unchanged from last session.** No Bear Flip / Thesis Invalidation fired on any OPEN position. No sell or trim proposed, so Max Consultation Rule is not engaged.
+
+**Atlas news scan:** All 5 OPEN tickers + Big 10 watchlist scanned since NEWS_LAST_UPDATED (2026-11-06 07:00) — **0 NEW HIGH-IMPACT items.** Weekend/pre-market coverage reviewed: continued AI-capex-rout narrative over the weekend (NVDA -8.80% for the week per a weekly Mag7 recap, TSLA -10.40% for the week, Microsoft "reportedly reassessing reliance on some neocloud partners" per Benzinga Nov 7 — unconfirmed/narrative-level, no 8-K found) assessed as a **continuation of the already-logged Nov 4-6 macro AI-capex-rout theme**, not a new discrete earnings/M&A/CEO-change/8-K/>15%-PT event on any OPEN or Big 10 ticker. ServiceNow Q3 earnings-call-highlights follow-up coverage (Zacks Nov 4, ad-hoc-news.de Nov 2/4 re: AI ACV target raise to $1.7B) is media recap of the already-logged Oct 28 Q3 print, not new data. No earnings, M&A, management change, SEC 8-K, or >15% analyst PT change found for any of the 5 OPEN tickers or Big 10 watchlist this weekend. `dashboard/news.js` unchanged this session.
+
+**Atlas macro regime status:** not overdue yet (re-called 2026-11-03, 6 days old, next due ~11-10 — 1 day away, Atlas should prioritize a fresh re-call next session).
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+
+$7,608.56 × 3.8%/365 × 1 = **+$0.79** → **$7,609.35**. Rate basis: Fed funds 3.75-4.00%, held Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+
+วันนี้ (จันทร์ 9 พ.ย., 07:00 เวลาไทย) ตลาดสหรัฐฯ ยังไม่เปิดเทรดรอบใหม่ — เวลานี้ตรงกับคืนวันอาทิตย์ที่สหรัฐฯ (~19:00 EST) ราคาปิดล่าสุดยังเป็น Nov 6 (ศุกร์) เหมือนเดิมทั้ง 5 positions + S&P 500 ยืนยันด้วยแหล่งข้อมูล pre-market/recap 3 แหล่งที่ตรงกัน การเปลี่ยนแปลงเดียวคือ cash accrual +$0.79 → Total Value ขยับขึ้นเล็กน้อยเป็น **$10,320.37**, alpha คงที่ที่ **+3.50%** ไม่มี stop breach (NOW ยังแคบสุด 10.30%) ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ข่าวที่พบช่วงสุดสัปดาห์ยังเป็นเรื่อง AI-capex rout ต่อเนื่องจากสัปดาห์ก่อน (NVDA/TSLA ร่วงต่อ, ข่าว Microsoft ลด reliance บาง neocloud partner ที่ยังไม่ confirm เป็นทางการ) ประเมินว่าเป็น continuation ของธีมเดิมที่บันทึกไปแล้ว ไม่ใช่ catalyst ใหม่ Big 10 + portfolio ไม่มีอะไรถึงเกณฑ์ HIGH-IMPACT รอบนี้ — Atlas regime re-call ครบกำหนดอีก 1 วัน (10 พ.ย.) ควร re-call เร็วๆนี้
+
+---
+
 ## 📊 Portfolio Review — 2026-11-08 (Mode 3 — Weekend, No New Trading Day, Nov 6 2026 Close Carried Forward)
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, 5 days old, not overdue — next re-call due ~11-10). Nov 7 (Sat) / Nov 8 (Sun) are non-trading days — no new US market close exists. All 5 OPEN positions re-verified **UNCHANGED** at Nov 6 2026 close via fresh WebSearch: S&P 500 confirmed $7,376.86 (Yahoo Finance explicit historical-data row "Nov 6, 2026 ... Close 7,376.86"), ADBE confirmed $239.30-239.59 range (CNN "Closed at $239.30" + macrotrends $239.3000, consistent with the $239.59 carried), NOW confirmed $101.97 (fool.com explicit "Last close USD 101.97, 2026-11-06"), REGN confirmed $904.35 exactly (MarketBeat Nov-7 recap: "REGN traded up $1.45 ... reaching $904.35" on Friday), ADSK confirmed $261.72 (Yahoo Finance explicit "At close: November 6 at 4:00:01 PM EST, 261.72"). CRM not independently re-confirmed within the search-attempt cap this session — carried forward unchanged at $213.65 (consistent with the calendar; no newer print exists for any ticker since Nov 6 is the last close before the weekend). **No trades this session.**
