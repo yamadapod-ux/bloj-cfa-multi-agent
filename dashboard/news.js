@@ -3,9 +3,32 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-06 07:00";
+const NEWS_LAST_UPDATED = "2026-11-10 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-10 (Atlas scan 2026-11-07→11-10, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-09", category: "TECH",
+    headline: "🟢 ADBE Adobe announces multi-year AI strategic alliance with Disney, named Official AI Innovation Partner",
+    summary: "Announced 2026-11-09 at Adobe MAX (Miami Beach). Adobe becomes Disney's \"Official AI Innovation Partner\" under a multi-year deal giving Disney teams early access to Firefly, Firefly Foundry, Premiere and Photoshop plus dedicated Adobe engineering/research resources, covering Walt Disney Imagineering, Walt Disney Studios' StudioLAB and ESPN Edge. In exchange Adobe gets marketing activations and presence across five Disney units (Walt Disney World, Disneyland, Disney Cruise Line, ESPN Edge, StudioLAB). No financial terms, contract length, or exclusivity disclosed. นัยพอร์ต: ADBE เป็น OPEN position ใหญ่สุดในพอร์ต (4sh, weight ~9.2%) — positive reference-customer/moat-reinforcing catalyst for the Wide Moat Creative Software thesis (similar precedent to the 2026-10-16 NVIDIA partnership), but deal has no disclosed financial terms so no FV impact modeled. Same day: a Citi Sell rating (already logged 11-04) continues to weigh; stock -2.90% to $237.70 on the day, in line with the broader market pullback, not a reaction to the Disney news specifically. Does not change Bear Flip/Thesis Invalidation status.",
+    impact: "POSITIVE", tickers: ["ADBE"],
+    url: "https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance",
+  },
+  {
+    date: "2026-11-08", category: "GOVERNANCE",
+    headline: "🔴 NVDA Nvidia board opens investigation into CEO Jensen Huang over reported relationship with suspected Chinese intelligence target",
+    summary: "Nvidia's board announced 2026-11-08 (Sunday) it is opening an independent investigation, overseen by a committee of independent directors with outside counsel, after reports (NYT) that Huang had been intimate with a business executive whom U.S. intelligence determined was gathering information for Beijing. Huang sent an internal apology email acknowledging the affair and said he was unfaithful to his wife. The board said it has \"no reason to believe\" national security or Nvidia secrets were compromised but will examine all available information; it reiterated confidence in Huang and his leadership team. NVDA fell further Monday 11-09 amid a broader chip-sector pullback (Reuters/Swingfolio cite the stock near $178.67, -4.27%, though the move is mixed with a late-week AI-capex-rout narrative, not cleanly attributable to this story alone). นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง แต่เป็น governance/key-person risk event ระดับสูงสุดของ AI-infra complex ที่อาจกระทบ sentiment ของทั้ง sector (รวม ADSK/CRM/NOW ทางอ้อมถ้า AI-capex sentiment สั่นคลอนต่อ).",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://apnews.com/article/nvidia-jensen-huang-investigation-chinese-spy-68839e7ca6ba2b121529f7e475e501d6",
+  },
+  {
+    date: "2026-11-07", category: "EARNINGS",
+    headline: "🟡 BRK.B Berkshire Hathaway Q3 2026 net earnings fall to $22.1B (from $30.8B YoY); operating earnings also down",
+    summary: "Berkshire Hathaway reported Q3 2026 results 2026-11-07 (press release)/11-09 (per MarketBeat earnings-date record): net earnings attributable to shareholders $22.112B vs $30.796B in Q3 2025 (operating earnings $12.705B vs $13.485B YoY), driven mainly by smaller investment gains ($9.407B vs $17.311B YoY) rather than a core operating deterioration. No specific consensus EPS figure corroborated across sources within the search-attempt cap, so beat/miss magnitude is not confirmed — flagged for context only. นัยพอร์ต: BRK.B เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position — ไม่กระทบ portfolio โดยตรง.",
+    impact: "NEUTRAL", tickers: ["BRK.B"],
+    url: "https://berkshirehathaway.com/news/nov0726.pdf",
+  },
 
   // ── 2026-11-06 (Atlas scan 2026-11-06, Portfolio Review Mode 3 cron cycle) ──
   {

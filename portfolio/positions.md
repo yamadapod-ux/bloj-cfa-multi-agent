@@ -1,5 +1,48 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-10 (Mode 3 — Full Re-mark to Nov 9 2026 Close)
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 7 days old — due for refresh, not yet overdue by the ~2-3 week cadence). First new trading day since Nov 6 (Nov 7 Sat/Nov 8 Sun non-trading). S&P 500 rallied sharply +2.35% to **$7,549.94** (AP via financeunc.com + AP via Yahoo world-indices, exact match) as chip stocks bounced (AMD ~+12% on an analyst upgrade) even as NVDA fell ~4.3% on its board opening an investigation into CEO Jensen Huang over a reported relationship with a suspected Chinese intelligence target (Big 10 watchlist, no OPEN position — see news.js). All 5 OPEN positions re-priced, 2-source cross-checked. **No trades this session.**
+
+| Ticker | Price (Nov 9 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $237.51 | avg stockanalysis.com $237.70 + fiscal.ai $237.32 (0.16% diff) | -3.85% | +35.64% | 28.38% | 9.20% |
+| NOW | $103.11 | avg stockanalysis.com $102.75 + Yahoo Finance $103.47 (0.70% diff — over 0.5% threshold, both noted) | +15.25% | +6.43% | 10.87% | 1.00% |
+| CRM | $214.92 | avg stockanalysis.com $214.90 + fiscal.ai $214.94 (0.02% diff) | +18.74% | +37.84% | 48.43% | 6.24% |
+| REGN | $920.24 | avg keenable $919.96 + IBB-holdings-implied close $920.51 (0.06% diff) | +52.86% | +7.44% | 90.93% | 3.74% |
+| ADSK | $263.44 | avg stockanalysis.com $263.52 + nexqual $263.35 (0.06% diff) | +32.78% | -18.79% | 65.98% | 6.12% |
+
+**Totals:** Invested $2,716.67 · Cash $7,610.14 (73.70%) · Total Value **$10,326.81** (+0.06% vs prior review) · Total Return **+3.27%** · S&P 500 Return **+2.04%** (7,398.93 → 7,549.94) · **Alpha +1.23%** (narrowed sharply from +3.50% — the broad chip-led rally far outpaced the book's enterprise-software/healthcare tilt, single-session move per Pre-commitment Rule, not a trend).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,609.35 × 3.8%/365 × 1 day = +$0.79 → $7,610.14.
+
+### 🛑 Stop Loss Check
+No breaches. NOW remains narrowest at 10.87% (improved from 10.30%), still above the 10% WATCH threshold — closest position in the book to a WATCH flag. All others comfortable (28-91%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 60d, MOS +35.64% (positive) | N/A | small | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV 10d, MOS +6.43% (positive) | N/A | small | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 60d, MOS +37.84% (positive) | N/A | small | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV 10d (<90d), MOS +7.44% (positive) | N/A | small | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 59d, MOS -18.79% negative but age <<90d | N/A | +24.0% vs fvVerifiedDate price, under 30% line | Street avg $308.28 vs FV $221.79 = +39.0% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** All FVs 10-60 days old, well under the 90-day threshold; no OPEN position has new earnings.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **7 days old** — due for refresh per the ~2-3 week typical cadence, not yet overdue. VIX last checked ~25.64 on 11-06 (Swingfolio/Cboe), not yet re-verified for 11-09. Does not block this update.
+
+### 📰 Atlas News Scan (2026-11-07 → 2026-11-10, all 5 OPEN tickers + Big 10 watchlist)
+**2 NEW HIGH-IMPACT items** written to `dashboard/news.js` (+1 lower-materiality item logged for context):
+- **ADBE** — Multi-year AI strategic alliance with Disney announced 2026-11-09 at Adobe MAX; Adobe named Disney's "Official AI Innovation Partner" (Firefly/Firefly Foundry/Premiere/Photoshop access across Imagineering, StudioLAB, ESPN Edge). No financial terms disclosed — positive reference-customer/moat-reinforcing catalyst, no FV change.
+- **NVDA** (Big 10, no OPEN position) — Board opened an independent investigation into CEO Jensen Huang 2026-11-08 over reports he was the target of a foreign intelligence effort (reported relationship with a suspected Chinese spy). Major governance/key-person event for the AI-infra complex.
+- **BRK.B** (Big 10, no OPEN position, logged NEUTRAL) — Q3 2026 net earnings $22.1B vs $30.8B YoY, mainly on smaller investment gains; no confirmed consensus beat/miss figure.
+
+Assessed ROUTINE/already-logged (not written to news.js): Citi's ADBE downgrade to Sell (PT $250→$207, -17.2%) — already logged 2026-11-04/06; ServiceNow officer Form 144 ($131K share sale) — too small, routine insider-sale filing; AMD's ~+12% analyst-upgrade-driven rally — Big 10-adjacent but AMD itself is not a Big 10 ticker on this watchlist; broad AI-capex-rout/chip-rebound macro commentary — market-wide context already reflected in the price-sourcing note, not idiosyncratic to a single ticker.
+
+---
+
 ## 📊 Portfolio Review — 2026-11-09 (Mode 3 — Monday Pre-Open, No New Trading Day, Nov 6 2026 Close Carried Forward)
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, 6 days old, next re-call due ~11-10, 1 day away). This cron fires Monday 07:00 Bangkok = ~19:00 EST Sunday evening — the Monday Nov 9 US session has not opened yet, so Nov 6 2026 (Friday) remains the latest close for all 5 OPEN positions and S&P 500. S&P 500 re-confirmed unchanged at $7,376.86 via 3 independent recap/pre-market sources (marketindex.com.au, smh.com.au, giftniftytoday.com pre-market report), all converging exactly on the Friday print. All 5 OPEN positions carried forward unchanged — no newer print exists for ADBE, NOW, CRM, REGN, or ADSK. **No trades this session.**
