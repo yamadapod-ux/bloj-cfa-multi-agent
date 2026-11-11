@@ -1,0 +1,146 @@
+{
+ "MTN": {
+  "ymeta": [
+   156.51,
+   "2026-11-10 21:00",
+   163.99
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "LTH": {
+  "ymeta": [
+   47.42,
+   "2026-11-10 21:00",
+   48.61
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "HAS": {
+  "ymeta": [
+   121.82,
+   "2026-11-10 21:00",
+   124.0
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "JAKK": {
+  "ymeta": [
+   36.39,
+   "2026-11-10 21:00",
+   36.42
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "FNKO": {
+  "ymeta": [
+   7.24,
+   "2026-11-10 21:00",
+   7.475
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "OSW": {
+  "ymeta": [
+   32.22,
+   "2026-11-10 21:00",
+   33.05
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "ASO": {
+  "ymeta": [
+   70.39,
+   "2026-11-10 21:00",
+   71.29
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "PRKS": {
+  "ymeta": [
+   42.36,
+   "2026-11-10 21:00",
+   50.0
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "YETI": {
+  "ymeta": [
+   44.77,
+   "2026-11-10 21:00",
+   53.99
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "CALY": {
+  "ymeta": [
+   17.37,
+   "2026-11-10 21:00",
+   20.28
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "FUN": {
+  "ymeta": [
+   10.16,
+   "2026-11-10 21:00",
+   26.28
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "PLNT": {
+  "ymeta": [
+   61.34,
+   "2026-11-10 21:00",
+   114.26
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "XPOF": {
+  "ymeta": [
+   4.59,
+   "2026-11-10 21:00",
+   9.25
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "PTON": {
+  "ymeta": [
+   5.81,
+   "2026-11-10 21:00",
+   7.69
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "GOLF": {
+  "ymeta": [
+   85.03,
+   "2026-11-10 21:00",
+   119.65
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ },
+ "LUCK": {
+  "ymeta": [
+   3.4,
+   "2026-11-10 21:00",
+   9.59
+  ],
+  "nasdaq": "ERR HTTP Error 403: Forbidden",
+  "stooq": "ERR HTTP Error 404: Not Found"
+ }
+}
