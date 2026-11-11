@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-10 07:00";
+const NEWS_LAST_UPDATED = "2026-11-11 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-11 (Atlas scan 2026-11-10→11-11, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-10", category: "GOVERNANCE",
+    headline: "🔴🔴 NVDA Nvidia retains former federal prosecutor + Wachtell Lipton to formally investigate CEO Jensen Huang; three House committees summon Huang to closed-door hearing",
+    summary: "Escalation of the 2026-11-08 governance event: Nvidia's independent board members announced 2026-11-10 they have retained former acting U.S. Attorney (SDNY) Joon H. Kim and his firm Wachtell, Lipton, Rosen & Katz to conduct a formal, independent investigation into CEO Jensen Huang's admitted affair with a woman (Alice Huang, a Megaspeed executive) whom U.S. intelligence agencies believe was passing information to Beijing. Separately, three U.S. House committees summoned Huang to a closed-door session next week to answer questions about the allegations and Nvidia's chip sales to Chinese customers (including Megaspeed, reportedly under a separate Commerce Department probe). NVDA stock fell a further -5.54% to -6% intraday on 2026-11-10 (on top of Monday's -4.27%), erasing nearly $500B of market value in two days; shares have now fallen ~31% since the Oct 6 record high. President Trump publicly defended Huang (\"had absolutely no idea... I really believe him\") and said the FBI is also involved. Nvidia's board maintains it has \"no reason to believe\" national security or company secrets were compromised and continues to express confidence in Huang. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง แต่เป็นการยกระดับที่มีนัยสำคัญมาก (จ้างทนาย/อัยการสอบสวนทางการ + ถูกเรียกไปสภา) จากที่เคยเป็นแค่ \"board opens investigation\" เมื่อ 11-08 — risk ต่อ sentiment ของทั้ง AI-infra/semis complex (ADSK/CRM/NOW ทางอ้อมถ้า AI-capex sentiment สั่นคลอนต่อ) ยังไม่มี Bear Flip/Thesis Invalidation fired บน OPEN position ใดๆ จากเรื่องนี้.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html",
+  },
 
   // ── 2026-11-10 (Atlas scan 2026-11-07→11-10, Portfolio Review Mode 3 cron cycle) ──
   {

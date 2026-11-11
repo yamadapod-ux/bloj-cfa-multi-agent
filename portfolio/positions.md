@@ -1,5 +1,52 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-11 (Mode 3 — Full Re-mark to Nov 10 2026 Close) — Hot CPI Report, NVDA Investigation Escalates to Formal Counsel + House Hearing; NOW StopDist Drops Below 10% WATCH Line
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 8 days old — due for refresh, not yet overdue). First new US trading day since Nov 9. S&P 500 fell -0.38% to **$7,520.93** (-29.01 pts; AP via Yahoo Finance + Washington Post + stocksxray.com, exact match, 3-source) after a hotter-than-expected inflation report raised bets on further Fed tightening (one Fed official floated a double-sized hike next meeting); Treasury yields jumped even as oil eased. Nasdaq -0.74% to 25,065.87, Dow -0.30% to 52,231.89. Separately, Nvidia's board-level scandal escalated: the company retained former federal prosecutor Joon H. Kim and law firm Wachtell Lipton to formally investigate CEO Jensen Huang's reported relationship with a suspected Chinese intelligence operative, and three House committees summoned Huang to a closed-door session next week — NVDA fell a further -5.54% to -6% intraday (Big 10 watchlist, no OPEN position). All 5 OPEN positions re-priced to Nov 10 close, 2-source cross-checked. **No trades this session.**
+
+| Ticker | Price (Nov 10 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $236.69 | avg stockanalysis.com $236.67 + fiscal.ai $236.70 (0.01% diff) | -4.18% | +35.86% | 27.94% | 9.19% |
+| NOW | $99.60 | avg stockanalysis.com $99.59 + keenable $99.61 (0.02% diff) | +11.32% | +9.62% | 🟡 7.10% | 0.97% |
+| CRM | $211.85 | avg investing.com $210.21 + keenable $213.48 (1.55% diff — over 0.5% threshold, both noted) | +17.04% | +38.74% | 46.31% | 6.17% |
+| REGN | $916.06 | fiscal.ai $916.06 + insidearbitrage.com $916.06 (exact match) | +52.19% | +7.86% | 90.05% | 3.73% |
+| ADSK | $260.23 | avg stockanalysis.com $260.34 + wallstreetnumbers/nexqual $260.11 (0.09% diff) | +31.14% | -17.33% | 63.95% | 6.06% |
+
+**Totals:** Invested $2,691.21 · Cash $7,610.93 (73.88%) · Total Value **$10,302.14** (-0.24% vs prior review) · Total Return **+3.02%** · S&P 500 Return **+1.65%** (7,398.93 → 7,520.93) · **Alpha +1.37%** (widened slightly from +1.23% — the book's enterprise-software/healthcare tilt held up a touch better than the broad index on the hot-CPI pullback, single-session move per Pre-commitment Rule, not a trend).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,610.14 × 3.8%/365 × 1 day = +$0.79 → $7,610.93.
+
+### 🛑 Stop Loss Check
+No breaches. **NOW's stopDist fell below the 10% WATCH threshold for the first time this review streak — 7.10%** (from 10.87% prior session), on an -3.40% single-day price move to $99.60 vs stop $93.00. Thesis review per the Max Exit Rules table: price ≤ stop is NOT triggered (price still well above $93), so this is a WATCH flag only — no Charlie consultation required. All other positions comfortable (46-90%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 61d, MOS +35.86% (positive) | N/A | -6.16% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV ~10d, MOS +9.62% (positive) | N/A | -5.25% vs $105.12 (Oct 30) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 61d, MOS +38.74% (positive) | N/A | -14.48% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV ~10d (<90d), MOS +7.86% (positive) | N/A | -1.27% vs $927.89 (Oct 30) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 60d, MOS -17.33% negative but age <<90d | N/A | +22.52% vs $212.40 (Sep 11), narrowed from +24.0% as price pulled back | Street avg $308.28 vs FV $221.79 = +39.0% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** All FVs 10-61 days old, well under the 90-day threshold; no OPEN position has new earnings this session.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **8 days old** — due for refresh per the ~2-3 week typical cadence, not yet overdue. VIX last checked ~25.64 on 11-06, not yet re-verified since. Does not block this update.
+
+### 📰 Atlas News Scan (2026-11-10, all 5 OPEN tickers + Big 10 watchlist)
+**1 NEW HIGH-IMPACT item** written to `dashboard/news.js`:
+- **NVDA** (Big 10, no OPEN position) — Nvidia's board retained former federal prosecutor Joon H. Kim and law firm Wachtell, Lipton, Rosen & Katz to formally investigate CEO Jensen Huang's affair with a suspected Chinese intelligence operative; three House committees summoned Huang to a closed-door session next week. Stock fell a further -5.54% to -6% (CNBC/stockanalysis.com) on top of Monday's -4.27% — this is a material escalation of the 2026-11-08 governance event (formal outside-counsel investigation + Congressional summons), not a mere continuation, so it is logged as a new entry.
+
+Assessed ROUTINE/macro-context (not written to news.js): hot October CPI print lifting Fed-hike bets and pulling the broad market down -0.38% (macro-level, not a single-ticker catalyst meeting the HIGH-IMPACT bar); CRM Missionforce National Security "Awardable" government-contract press release (routine, not material); no earnings, M&A, management change, or >15% analyst PT change found for any of the 5 OPEN tickers or remaining Big 10 names this session.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+$7,610.14 × 3.8%/365 × 1 = **+$0.79** → **$7,610.93**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ตลาดสหรัฐฯ ร่วงเล็กน้อย S&P 500 -0.38% สู่ $7,520.93 จากตัวเลขเงินเฟ้อ (CPI) ที่ออกมาสูงกว่าคาด ทำให้ตลาดเพิ่ม bet ว่า Fed อาจต้องขึ้นดอกเบี้ยแรงขึ้น พอร์ตเราลงเล็กน้อยกว่าดัชนี **alpha ขยับขึ้นเล็กน้อยเป็น +1.37%** (จาก +1.23%) ไม่มี stop breach แต่มีเรื่องต้อง flag ชัดเจน: **NOW stopDist หลุดต่ำกว่าเกณฑ์ WATCH 10% เป็นครั้งแรกในรอบนี้ (7.10%)** จากราคาที่ร่วง -3.40% สู่ $99.60 — ยังไม่ breach stop ($93) จึงไม่ต้อง consult Charlie แต่ต้องจับตาใกล้ชิดรอบหน้า ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ข่าวเด่นวันนี้คือ **NVDA investigation ยกระดับขึ้นมาก**: บอร์ดจ้างทนาย Wachtell Lipton + อดีตอัยการนำการสอบสวนอย่างเป็นทางการ และ 3 คณะกรรมาธิการสภาผู้แทนฯ เรียก Jensen Huang ไปแถลงปิดประตูสัปดาห์หน้า หุ้นร่วงต่ออีก -5.54% ถึง -6% (Big 10 ไม่มี OPEN position แต่กระทบ sentiment ทั้ง AI-infra complex) Atlas regime re-call อายุครบ 8 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
+
 ## 📊 Portfolio Review — 2026-11-10 (Mode 3 — Full Re-mark to Nov 9 2026 Close)
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 7 days old — due for refresh, not yet overdue by the ~2-3 week cadence). First new trading day since Nov 6 (Nov 7 Sat/Nov 8 Sun non-trading). S&P 500 rallied sharply +2.35% to **$7,549.94** (AP via financeunc.com + AP via Yahoo world-indices, exact match) as chip stocks bounced (AMD ~+12% on an analyst upgrade) even as NVDA fell ~4.3% on its board opening an investigation into CEO Jensen Huang over a reported relationship with a suspected Chinese intelligence target (Big 10 watchlist, no OPEN position — see news.js). All 5 OPEN positions re-priced, 2-source cross-checked. **No trades this session.**
