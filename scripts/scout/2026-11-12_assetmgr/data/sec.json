@@ -1,0 +1,410 @@
+{
+ "LAZ": {
+  "name": "Lazard, Inc.",
+  "rev": {
+   "tag": "Revenues",
+   "FY2020": 2646.8,
+   "FY2021": 3273.8,
+   "FY2022": 2855.1,
+   "FY2023": 2593.2,
+   "FY2024": 3139.9,
+   "FY2025": 3186.5,
+   "TTM": 3375.4
+  },
+  "op": {
+   "tag": "OperatingIncomeLoss",
+   "FY2020": 502.1,
+   "FY2021": 723.8,
+   "FY2022": 516.8,
+   "FY2023": -80.0,
+   "FY2024": 386.5,
+   "FY2025": 327.6,
+   "TTM": 266.9
+  },
+  "pretax": {
+   "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "FY2023": -80.0,
+   "FY2024": 386.5,
+   "FY2025": 327.6
+  },
+  "ni": {
+   "tag": "NetIncomeLoss",
+   "FY2020": 402.5,
+   "FY2021": 528.1,
+   "FY2022": 357.5,
+   "FY2023": -75.5,
+   "FY2024": 279.9,
+   "FY2025": 236.8,
+   "TTM": 184.7
+  },
+  "ni_all": {
+   "tag": "ProfitLoss",
+   "FY2020": 402.7,
+   "FY2021": 542.5,
+   "FY2022": 392.5,
+   "FY2023": -57.3,
+   "FY2024": 286.7,
+   "FY2025": 251.0,
+   "TTM": 198.2
+  },
+  "ocf": {
+   "tag": "NetCashProvidedByUsedInOperatingActivities",
+   "FY2020": 575.9,
+   "FY2021": 866.1,
+   "FY2022": 834.0,
+   "FY2023": 164.7,
+   "FY2024": 742.8,
+   "FY2025": 519.3,
+   "TTM": 700.3
+  },
+  "capex": {
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "FY2020": 64.3,
+   "FY2021": 39.7,
+   "FY2022": 49.5,
+   "FY2023": 28.3,
+   "FY2024": 45.5,
+   "FY2025": 31.9,
+   "TTM": 15.3
+  },
+  "int": {
+   "tag": "InterestExpense",
+   "FY2020": 80.6,
+   "FY2021": 80.8,
+   "FY2022": 81.5,
+   "FY2023": 77.7,
+   "FY2024": 88.1
+  },
+  "buyback": {
+   "tag": "PaymentsForRepurchaseOfCommonStock",
+   "FY2020": 95.2,
+   "FY2021": 406.1,
+   "FY2022": 691.7,
+   "FY2023": 102.1,
+   "FY2024": 59.5,
+   "FY2025": 91.0,
+   "TTM": 135.0
+  },
+  "div": {
+   "tag": "PaymentsOfDividendsCommonStock",
+   "FY2020": 196.6,
+   "FY2021": 195.9,
+   "FY2022": 181.9,
+   "FY2023": 173.1,
+   "FY2024": 179.0,
+   "FY2025": 186.6,
+   "TTM": 192.3
+  },
+  "eq": {
+   "tag": "StockholdersEquity",
+   "end": "2026-09-30",
+   "val": 948.79
+  },
+  "eq_nci": {
+   "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "end": "2026-09-30",
+   "val": 940.49
+  },
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "end": "2026-09-30",
+   "val": 1263.96
+  },
+  "debt": {
+   "tag": "LongTermDebt",
+   "end": "2026-09-30",
+   "val": 1690.25
+  },
+  "assets": {
+   "tag": "Assets",
+   "end": "2026-09-30",
+   "val": 4547.91
+  }
+ },
+ "EVR": {
+  "name": "EVERCORE INC.",
+  "rev": {
+   "tag": "Revenues",
+   "FY2020": 2285.3,
+   "FY2021": 3307.1,
+   "FY2022": 2778.9,
+   "FY2023": 2442.7,
+   "FY2024": 2996.4,
+   "FY2025": 3880.1,
+   "TTM": 4872.9
+  },
+  "op": {
+   "tag": null
+  },
+  "pretax": {
+   "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "FY2020": 540.8,
+   "FY2021": 1116.6,
+   "FY2022": 704.0,
+   "FY2023": 365.8,
+   "FY2024": 533.1,
+   "FY2025": 793.8,
+   "TTM": 1036.5
+  },
+  "ni": {
+   "tag": "NetIncomeLoss",
+   "FY2020": 350.6,
+   "FY2021": 740.1,
+   "FY2022": 476.5,
+   "FY2023": 255.5,
+   "FY2024": 378.3,
+   "FY2025": 591.9,
+   "TTM": 761.2
+  },
+  "ni_all": {
+   "tag": "ProfitLoss",
+   "FY2020": 412.7,
+   "FY2021": 868.6,
+   "FY2022": 531.4,
+   "FY2023": 285.2,
+   "FY2024": 417.7,
+   "FY2025": 640.7,
+   "TTM": 829.0
+  },
+  "ocf": {
+   "tag": "NetCashProvidedByUsedInOperatingActivities",
+   "FY2020": 978.4,
+   "FY2021": 1384.9,
+   "FY2022": 531.4,
+   "FY2023": 458.0,
+   "FY2024": 988.2,
+   "FY2025": 1256.5,
+   "TTM": 1766.8
+  },
+  "capex": {
+   "tag": "PaymentsToAcquireProductiveAssets",
+   "FY2020": 53.3,
+   "FY2021": 28.0,
+   "FY2022": 23.2,
+   "FY2023": 20.0,
+   "FY2024": 30.1,
+   "FY2025": 74.0,
+   "TTM": 41.6
+  },
+  "int": {
+   "tag": "InterestExpense",
+   "FY2020": 21.4,
+   "FY2021": 17.6,
+   "FY2022": 16.9,
+   "FY2023": 16.7,
+   "FY2024": 16.8,
+   "FY2025": 24.3,
+   "TTM": 34.2
+  },
+  "buyback": {
+   "tag": null
+  },
+  "div": {
+   "tag": "PaymentsOfDividendsCommonStock",
+   "FY2020": 106.6,
+   "FY2021": 118.8,
+   "FY2022": 127.3,
+   "FY2023": 127.9,
+   "FY2024": 135.8,
+   "FY2025": 144.4,
+   "TTM": 151.5
+  },
+  "eq": {
+   "tag": "StockholdersEquity",
+   "end": "2026-09-30",
+   "val": 1942.81
+  },
+  "eq_nci": {
+   "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "end": "2026-09-30",
+   "val": 2281.16
+  },
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "end": "2026-09-30",
+   "val": 1226.34
+  },
+  "debt": {
+   "tag": "SeniorNotes",
+   "end": "2015-12-31",
+   "val": 120.0
+  },
+  "assets": {
+   "tag": "Assets",
+   "end": "2026-09-30",
+   "val": 5292.98
+  }
+ },
+ "PJT": {
+  "name": "PJT Partners Inc.",
+  "rev": {
+   "tag": "Revenues",
+   "FY2020": 1052.3,
+   "FY2021": 991.9,
+   "FY2022": 1025.5,
+   "FY2023": 1153.2,
+   "FY2024": 1493.2,
+   "FY2025": 1713.7,
+   "TTM": 1824.8
+  },
+  "op": {
+   "tag": null
+  },
+  "pretax": {
+   "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "FY2020": 248.0,
+   "FY2021": 219.4,
+   "FY2022": 201.5,
+   "FY2023": 177.6,
+   "FY2024": 270.6,
+   "FY2025": 342.9,
+   "TTM": 374.2
+  },
+  "ni": {
+   "tag": "NetIncomeLoss",
+   "FY2020": 117.5,
+   "FY2021": 106.2,
+   "FY2022": 90.5,
+   "FY2023": 81.8,
+   "FY2024": 134.4,
+   "FY2025": 180.1,
+   "TTM": 191.5
+  },
+  "ni_all": {
+   "tag": "ProfitLoss",
+   "FY2020": 212.4,
+   "FY2021": 190.0,
+   "FY2022": 164.8,
+   "FY2023": 145.7,
+   "FY2024": 238.5,
+   "FY2025": 309.7,
+   "TTM": 325.7
+  },
+  "ocf": {
+   "tag": "NetCashProvidedByUsedInOperatingActivities",
+   "FY2020": 469.4,
+   "FY2021": 124.2,
+   "FY2022": 242.7,
+   "FY2023": 441.5,
+   "FY2024": 531.0,
+   "FY2025": 526.3,
+   "TTM": 732.6
+  },
+  "capex": {
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+   "FY2020": 8.9,
+   "FY2021": 6.5,
+   "FY2022": 3.4,
+   "FY2023": 3.9,
+   "FY2024": 3.3,
+   "FY2025": 45.9,
+   "TTM": 44.7
+  },
+  "int": {
+   "tag": null
+  },
+  "buyback": {
+   "tag": "PaymentsForRepurchaseOfCommonStock",
+   "FY2020": 48.7,
+   "FY2021": 103.3,
+   "FY2022": 109.5,
+   "FY2023": 116.7,
+   "FY2024": 235.1,
+   "FY2025": 195.2,
+   "TTM": 139.5
+  },
+  "div": {
+   "tag": "PaymentsOfDividends",
+   "FY2020": 4.8,
+   "FY2021": 78.0,
+   "FY2022": 24.6,
+   "FY2023": 24.4,
+   "FY2024": 24.1,
+   "FY2025": 24.5,
+   "TTM": 25.4
+  },
+  "eq": {
+   "tag": "StockholdersEquity",
+   "end": "2026-09-30",
+   "val": 364.54
+  },
+  "eq_nci": {
+   "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "end": "2026-09-30",
+   "val": 1052.94
+  },
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "end": "2026-09-30",
+   "val": 257.37
+  },
+  "assets": {
+   "tag": "Assets",
+   "end": "2026-09-30",
+   "val": 1937.67
+  }
+ },
+ "HLI": {
+  "name": "Houlihan Lokey, Inc.",
+  "rev": {
+   "tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+  },
+  "op": {
+   "tag": "OperatingIncomeLoss"
+  },
+  "pretax": {
+   "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest"
+  },
+  "ni": {
+   "tag": "NetIncomeLoss"
+  },
+  "ni_all": {
+   "tag": "ProfitLoss"
+  },
+  "ocf": {
+   "tag": "NetCashProvidedByUsedInOperatingActivities"
+  },
+  "capex": {
+   "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+  },
+  "int": {
+   "tag": null
+  },
+  "buyback": {
+   "tag": "PaymentsForRepurchaseOfCommonStock"
+  },
+  "div": {
+   "tag": "PaymentsOfDividends"
+  },
+  "eq": {
+   "tag": "StockholdersEquity",
+   "end": "2026-09-30",
+   "val": 2307.0
+  },
+  "eq_nci": {
+   "tag": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "end": "2026-03-31",
+   "val": 2342.38
+  },
+  "cash": {
+   "tag": "CashAndCashEquivalentsAtCarryingValue",
+   "end": "2026-09-30",
+   "val": 837.0
+  },
+  "debt": {
+   "tag": "LongTermDebt",
+   "end": "2021-12-31",
+   "val": 133.55
+  },
+  "assets": {
+   "tag": "Assets",
+   "end": "2026-09-30",
+   "val": 3975.0
+  },
+  "shares": {
+   "tag": "CommonStockSharesOutstanding",
+   "end": "2015-03-31",
+   "val": 0.59
+  }
+ }
+}

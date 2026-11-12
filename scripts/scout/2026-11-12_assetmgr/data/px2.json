@@ -1,0 +1,77 @@
+{
+ "EVR": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 298.08,
+   "hi": 388.71,
+   "hid": "2026-01-16",
+   "hiclose": 383.12,
+   "hcd": "2026-01-15",
+   "name": "Evercore Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "298.08"
+  }
+ },
+ "RJF": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 167.13,
+   "hi": 182.73,
+   "hid": "2026-08-06",
+   "hiclose": 181.18,
+   "hcd": "2026-08-12",
+   "name": "Raymond James Financial, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "167.13"
+  }
+ },
+ "SF": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 73.02,
+   "hi": 89.83,
+   "hid": "2026-01-05",
+   "hiclose": 88.81,
+   "hcd": "2026-01-06",
+   "name": "Stifel Financial Corp."
+  },
+  "sa": {
+   "range52": null,
+   "price": "73.02"
+  }
+ },
+ "PJT": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 152.94,
+   "hi": 195.62,
+   "hid": "2026-01-22",
+   "hiclose": 191.42,
+   "hcd": "2026-01-22",
+   "name": "PJT Partners Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "152.94"
+  }
+ },
+ "HLI": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 146.17,
+   "hi": 195.06,
+   "hid": "2026-01-21",
+   "hiclose": 192.07,
+   "hcd": "2026-01-22",
+   "name": "Houlihan Lokey, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "146.17"
+  }
+ }
+}

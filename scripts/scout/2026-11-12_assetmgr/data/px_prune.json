@@ -1,0 +1,137 @@
+{
+ "WYNN": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 85.38,
+   "hi": 134.72,
+   "hid": "2025-12-01",
+   "hiclose": 133.09,
+   "hcd": "2025-12-02",
+   "name": "Wynn Resorts, Limited"
+  },
+  "sa": {
+   "range52": null,
+   "price": "85.38"
+  }
+ },
+ "VICI": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 24.94,
+   "hi": 30.83,
+   "hid": "2025-11-13",
+   "hiclose": 30.58,
+   "hcd": "2025-11-12",
+   "name": "VICI Properties Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "24.94"
+  }
+ },
+ "ALLY": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 38.27,
+   "hi": 47.29,
+   "hid": "2026-06-29",
+   "hiclose": 47.25,
+   "hcd": "2026-06-29",
+   "name": "Ally Financial Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "38.27"
+  }
+ },
+ "MMS": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 65.38,
+   "hi": 100.0,
+   "hid": "2026-01-23",
+   "hiclose": 98.93,
+   "hcd": "2026-01-22",
+   "name": "Maximus, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "65.38"
+  }
+ },
+ "CRI": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 34.6,
+   "hi": 44.44,
+   "hid": "2026-02-20",
+   "hiclose": 44.37,
+   "hcd": "2026-02-20",
+   "name": "Carter's, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "34.6"
+  }
+ },
+ "NBIX": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 174.41,
+   "hi": 186.12,
+   "hid": "2026-07-30",
+   "hiclose": 185.5,
+   "hcd": "2026-07-30",
+   "name": "Neurocrine Biosciences, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "174.41"
+  }
+ },
+ "BYD": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 77.5,
+   "hi": 91.41,
+   "hid": "2026-07-28",
+   "hiclose": 91.26,
+   "hcd": "2026-07-28",
+   "name": "Boyd Gaming Corporation"
+  },
+  "sa": {
+   "range52": null,
+   "price": "77.5"
+  }
+ },
+ "WGO": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 31.53,
+   "hi": 50.16,
+   "hid": "2026-02-04",
+   "hiclose": 49.85,
+   "hcd": "2026-02-04",
+   "name": "Winnebago Industries, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "31.53"
+  }
+ },
+ "CMRE": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 12.98,
+   "hi": 18.06,
+   "hid": "2026-04-09",
+   "hiclose": 17.91,
+   "hcd": "2026-03-02",
+   "name": "Costamare Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "12.98"
+  }
+ }
+}

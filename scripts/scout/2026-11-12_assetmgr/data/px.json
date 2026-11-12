@@ -1,0 +1,107 @@
+{
+ "TROW": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 110.69,
+   "hi": 122.0,
+   "hid": "2026-07-28",
+   "hiclose": 121.68,
+   "hcd": "2026-07-28",
+   "name": "T. Rowe Price Group, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "110.69"
+  }
+ },
+ "IVZ": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 28.63,
+   "hi": 33.66,
+   "hid": "2026-08-28",
+   "hiclose": 33.31,
+   "hcd": "2026-08-27",
+   "name": "Invesco Ltd."
+  },
+  "sa": {
+   "range52": null,
+   "price": "28.63"
+  }
+ },
+ "BEN": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 36.3,
+   "hi": 36.79,
+   "hid": "2026-11-10",
+   "hiclose": 36.3,
+   "hcd": "2026-11-11",
+   "name": "Franklin Templeton Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "36.3"
+  }
+ },
+ "STT": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 174.17,
+   "hi": 195.93,
+   "hid": "2026-08-27",
+   "hiclose": 194.26,
+   "hcd": "2026-09-04",
+   "name": "State Street Corporation"
+  },
+  "sa": {
+   "range52": null,
+   "price": "174.17"
+  }
+ },
+ "NTRS": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 178.71,
+   "hi": 195.78,
+   "hid": "2026-08-13",
+   "hiclose": 191.47,
+   "hcd": "2026-08-17",
+   "name": "Northern Trust Corporation"
+  },
+  "sa": {
+   "range52": null,
+   "price": "178.71"
+  }
+ },
+ "AMP": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 520.06,
+   "hi": 572.56,
+   "hid": "2026-08-14",
+   "hiclose": 570.68,
+   "hcd": "2026-08-13",
+   "name": "Ameriprise Financial, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "520.06"
+  }
+ },
+ "LAZ": {
+  "y": {
+   "last": "2026-11-11",
+   "close": 41.9,
+   "hi": 58.75,
+   "hid": "2026-02-10",
+   "hiclose": 57.0,
+   "hcd": "2026-02-09",
+   "name": "Lazard, Inc."
+  },
+  "sa": {
+   "range52": null,
+   "price": "41.9"
+  }
+ }
+}

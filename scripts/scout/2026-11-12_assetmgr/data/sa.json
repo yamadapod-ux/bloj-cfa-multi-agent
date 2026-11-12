@@ -1,0 +1,62 @@
+{
+ "LAZ": {
+  "Market Cap": "4.09B",
+  "Enterprise Value": "5.13B",
+  "Shares Outstanding": "97.66M",
+  "PB Ratio": "4.31",
+  "FCF Yield": "16.74%",
+  "EV / EBITDA": null,
+  "Return on Equity (ROE)": "19.75%",
+  "Return on Invested Capital (ROIC)": "7.11%",
+  "Stock-Based Compensation": null,
+  "Free Cash Flow": "684.97M",
+  "Total Debt": "2.30B",
+  "Cash &amp; Equivalents": null,
+  "Shareholders' Equity": null
+ },
+ "EVR": {
+  "Market Cap": "11.74B",
+  "Enterprise Value": "11.73B",
+  "Shares Outstanding": "39.38M",
+  "PB Ratio": "5.83",
+  "FCF Yield": "14.70%",
+  "EV / EBITDA": null,
+  "Return on Equity (ROE)": "37.97%",
+  "Return on Invested Capital (ROIC)": "25.27%",
+  "Stock-Based Compensation": null,
+  "Free Cash Flow": "1.73B",
+  "Total Debt": "1.22B",
+  "Cash &amp; Equivalents": null,
+  "Shareholders' Equity": null
+ },
+ "PJT": {
+  "Market Cap": "6.19B",
+  "Enterprise Value": "6.36B",
+  "Shares Outstanding": "40.46M",
+  "PB Ratio": "10.68",
+  "FCF Yield": "11.12%",
+  "EV / EBITDA": null,
+  "Return on Equity (ROE)": "32.85%",
+  "Return on Invested Capital (ROIC)": "22.57%",
+  "Stock-Based Compensation": null,
+  "Free Cash Flow": "687.98M",
+  "Total Debt": "429.32M",
+  "Cash &amp; Equivalents": null,
+  "Shareholders' Equity": null
+ },
+ "HLI": {
+  "Market Cap": "10.15B",
+  "Enterprise Value": "9.80B",
+  "Shares Outstanding": "69.42M",
+  "PB Ratio": "4.40",
+  "FCF Yield": "3.96%",
+  "EV / EBITDA": null,
+  "Return on Equity (ROE)": "17.29%",
+  "Return on Invested Capital (ROIC)": "14.82%",
+  "Stock-Based Compensation": null,
+  "Free Cash Flow": "401.82M",
+  "Total Debt": "494.00M",
+  "Cash &amp; Equivalents": null,
+  "Shareholders' Equity": null
+ }
+}
