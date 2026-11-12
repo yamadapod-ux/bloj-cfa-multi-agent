@@ -1,5 +1,53 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-12 (Mode 3 — Full Re-mark to Nov 11 2026 Close) — Nvidia/AI-Trade Rebound on CoreWeave Earnings; REGN +4.73% on CIDEBsiRNA Trial Data; NVDA Board Reportedly Preparing to Oust Jensen Huang; NOW StopDist Recovers Above 10% WATCH Line
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 9 days old — due for refresh, not yet overdue). First new US trading day since Nov 10. S&P 500 rose **+1.31%** to **$7,619.38** (+98.45 pts; AP via Boston Herald + WSJ, exact match, 2-source) as Nvidia and AI-trade names rebounded on strong CoreWeave (CRWV) earnings — Nasdaq +1.60% to 25,466.19, Dow +0.48% to 52,486.49. All 5 OPEN positions re-priced to Nov 11 close, 2-3 source cross-checked (all diffs ≤0.09%, no Single Source of Truth flags this session). Separately, WSJ reported after-hours that Nvidia's board is reportedly **preparing to oust CEO Jensen Huang** over two extramarital affairs (escalation from "investigation" to active removal consideration, Big 10, no OPEN position), and REGN jumped +4.73% on positive CIDEBsiRNA Phase 1/2 liver-disease trial data highlighted at AASLD. **No trades this session.**
+
+| Ticker | Price (Nov 11 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $237.59 | avg fiscal.ai $237.60 + chartexchange $237.57 (0.01% diff) | -3.82% | +35.61% | 28.43% | 9.18% |
+| NOW | $102.81 | avg keenable $102.76 + marketbeat $102.85 (0.09% diff) | +14.91% | +6.71% | 🟢 10.55% | 0.99% |
+| CRM | $218.01 | investing.com + macrotrends (exact match) | +20.43% | +36.95% | 50.56% | 6.32% |
+| REGN | $959.41 | fiscal.ai + financialcontent.com + barchart realtime (exact match, 3-source) | +59.37% | +3.50% | 99.05% | 3.89% |
+| ADSK | $259.99 | avg Yahoo Finance $260.01 + chartexchange $259.96 (0.02% diff) | +31.03% | -17.23% | 63.84% | 6.03% |
+
+**Totals:** Invested $2,734.13 · Cash $7,611.72 (73.57%) · Total Value **$10,345.85** (+0.42% vs prior review) · Total Return **+3.46%** · S&P 500 Return **+2.98%** (7,398.93 → 7,619.38) · **Alpha +0.48%** (narrowed sharply from +1.37% — the broad AI-trade rebound (CoreWeave earnings, Nvidia bounce) outpaced the book's enterprise-software/healthcare tilt, single-session move per Pre-commitment Rule, not a trend).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,610.93 × 3.8%/365 × 1 day = +$0.79 → $7,611.72.
+
+### 🛑 Stop Loss Check
+No breaches. **NOW's stopDist recovered back above the 10% WATCH threshold — 10.55%** (from 7.10% prior session), on a +3.22% single-day price move to $102.81 vs stop $93.00, part of the broad AI-trade rebound. WATCH flag from 2026-11-11 is resolved by price action. All other positions comfortable (28-99%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 62d, MOS +35.61% (positive) | N/A | -4.18% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV ~12d, MOS +6.71% (positive) | N/A | -2.20% vs $105.12 (Oct 30) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 62d, MOS +36.95% (positive) | N/A | -12.00% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV ~12d (<90d), MOS +3.50% (positive, narrowing) | N/A | +3.39% vs $927.89 (Oct 30) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 61d, MOS -17.23% negative but age <<90d | N/A | +22.38% vs $212.40 (Sep 11 close), under 30% line | Street avg $308.28 vs FV $221.79 = +39.0% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** All FVs 12-62 days old, well under the 90-day threshold; no OPEN position has new earnings this session. REGN's MOS continues to narrow (+7.86%→+3.50%) on strong price action from both post-earnings PT hikes (carried) and the new CIDEBsiRNA data — still positive, watch next review.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **9 days old** — due for refresh per the ~2-3 week typical cadence, not yet overdue. VIX last checked ~25.64 on 11-06, not yet re-verified since. Does not block this update.
+
+### 📰 Atlas News Scan (2026-11-11, all 5 OPEN tickers + Big 10 watchlist)
+**2 NEW HIGH-IMPACT items** written to `dashboard/news.js`:
+- **NVDA** (Big 10, no OPEN position) — WSJ reported after-hours (2026-11-11) that Nvidia's board is preparing to oust CEO Jensen Huang over two extramarital affairs, including the previously-reported suspected-Chinese-spy relationship. Major escalation from "investigation" (11-08) and "outside counsel + House summons" (11-10) to active removal consideration. NVDA had risen +2.87-3.91% in the regular session (CoreWeave-earnings-driven AI-trade relief) before reportedly falling as much as -8% after-hours on the report.
+- **REGN** (OPEN position) — CIDEBsiRNA (liver-targeted siRNA, developed with Alnylam) Phase 1/2 trial results highlighted at the AASLD Liver Meeting + published in NEJM: single dose normalized liver fat (58-80% reduction at week 36) in 62% of MASLD patients, sustained through 36 weeks, with Phase 2a/2b/3 now recruiting. Stock +4.73% to $959.41, clearing the >4% single-day-move-on-real-news HIGH-IMPACT bar. Early-phase pipeline optionality, not yet modeled into the DCF.
+
+Assessed ROUTINE/macro-context (not written to news.js): the broad AI-trade rebound itself (S&P +1.31%, Nvidia regular-session +2.87-3.91%, Nasdaq +1.60%) — market-wide, already captured in the price-sourcing note; CoreWeave's own earnings beat (not a portfolio/Big10 ticker); modest ADBE/CRM/NOW/ADSK price moves with no idiosyncratic catalyst found (ADBE +0.38%, CRM +2.91%, NOW +3.22%, ADSK -0.09%, all consistent with broad-market participation).
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+$7,610.93 × 3.8%/365 × 1 = **+$0.79** → **$7,611.72**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ตลาดสหรัฐฯ ฟื้นตัวแรง S&P 500 +1.31% สู่ $7,619.38 จากแรงหนุนของ Nvidia/AI-trade ที่ bounce back หลัง CoreWeave รายงานผลประกอบการดีเกินคาด พอร์ตเราขึ้นน้อยกว่าดัชนี **alpha แคบลงเป็น +0.48%** (จาก +1.37%) เพราะพอร์ตเน้น enterprise software/healthcare ไม่มี AI-hardware exposure โดยตรง ไม่มี stop breach และ **NOW stopDist ฟื้นกลับขึ้นเหนือเกณฑ์ WATCH 10% แล้ว (10.55%)** จาก +3.22% วันนี้ ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ข่าวเด่นวันนี้มี 2 รายการ: **NVDA** — WSJ รายงานว่าบอร์ด Nvidia เตรียมปลด Jensen Huang ออกจาก CEO จากเรื่องชู้สาว 2 ครั้ง (ยกระดับจาก "สอบสวน" เป็น "เตรียมปลด" จริงจัง) หุ้นร่วงต่ออีก -8% after-hours ทั้งที่ระหว่างวันบวก +2.87-3.91%; **REGN** (OPEN position) — ผลทดลอง CIDEBsiRNA (ยารักษาโรคไขมันพอกตับ) เฟส 1/2 ที่เปิดเผยในงาน AASLD ลดไขมันตับได้ถึง 80% หุ้นบวก +4.73% MOS แคบลงเหลือ +3.50% จาก FV เดิมที่ยังไม่รวม pipeline นี้ Atlas regime re-call อายุครบ 9 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
+
 ## 📊 Portfolio Review — 2026-11-11 (Mode 3 — Full Re-mark to Nov 10 2026 Close) — Hot CPI Report, NVDA Investigation Escalates to Formal Counsel + House Hearing; NOW StopDist Drops Below 10% WATCH Line
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 8 days old — due for refresh, not yet overdue). First new US trading day since Nov 9. S&P 500 fell -0.38% to **$7,520.93** (-29.01 pts; AP via Yahoo Finance + Washington Post + stocksxray.com, exact match, 3-source) after a hotter-than-expected inflation report raised bets on further Fed tightening (one Fed official floated a double-sized hike next meeting); Treasury yields jumped even as oil eased. Nasdaq -0.74% to 25,065.87, Dow -0.30% to 52,231.89. Separately, Nvidia's board-level scandal escalated: the company retained former federal prosecutor Joon H. Kim and law firm Wachtell Lipton to formally investigate CEO Jensen Huang's reported relationship with a suspected Chinese intelligence operative, and three House committees summoned Huang to a closed-door session next week — NVDA fell a further -5.54% to -6% intraday (Big 10 watchlist, no OPEN position). All 5 OPEN positions re-priced to Nov 10 close, 2-source cross-checked. **No trades this session.**

@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-11 07:00";
+const NEWS_LAST_UPDATED = "2026-11-12 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-12 (Atlas scan 2026-11-11→11-12, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-11", category: "GOVERNANCE",
+    headline: "🔴🔴🔴 NVDA WSJ: Nvidia board preparing to OUST CEO Jensen Huang over two extramarital affairs incl. suspected Chinese spy; shares -8% after-hours",
+    summary: "Major escalation reported after-hours 2026-11-11: The Wall Street Journal reported Nvidia's board is preparing to remove founder/CEO Jensen Huang after learning of two extramarital affairs, including the previously-reported relationship with a woman U.S. intelligence believes was gathering information for Beijing. This moves the story from 'board opens investigation' (11-08) and 'retains outside counsel + House summons' (11-10) to the board actively considering CEO removal — the most severe escalation yet. NVDA shares, which had risen +2.87-3.91% during Wednesday's regular session (173.73, on CoreWeave-earnings-driven AI-trade relief) reportedly fell as much as -8% in after-hours trading on the WSJ report. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง แต่เป็น key-person/governance risk ระดับสูงสุดต่อทั้ง AI-infra complex (ADSK/CRM/NOW ทางอ้อมถ้า sentiment สั่นคลอนต่อ) — จาก 'สอบสวน' เป็น 'เตรียมปลด' เป็น escalation ที่ชัดเจน ไม่ใช่แค่ follow-up ข่าวเดิม.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://www.globalbankingandfinance.com/nvidia-preparing-oust-ceo-jensen-huang-wsj-reports/",
+  },
+  {
+    date: "2026-11-11", category: "CLINICAL",
+    headline: "🟢🟢 REGN Regeneron's CIDEBsiRNA trial (highlighted at AASLD) normalizes liver fat up to 80% in MASLD patients; stock +4.73% to $959.41",
+    summary: "First-in-human Phase 1/2 results (announced 2026-11-08, highlighted 2026-11-11 at the AASLD Liver Meeting, published simultaneously in NEJM) showed a single dose of CIDEBsiRNA — Regeneron's first-in-class, liver-targeted siRNA developed with Alnylam, mimicking protective CIDEB gene mutations discovered by the Regeneron Genetics Center — produced dose-dependent liver fat reductions of 58-80% at week 36 (vs 2.9% for placebo), normalized liver fat in 62% of recipients, and improved ALT/AST liver-injury markers, with effects sustained through 36 weeks supporting potential twice-yearly dosing. Phase 2a/2b/Phase 3 trials are now recruiting. REGN shares jumped +4.73% to $959.41 (Nov 11 close, 3-source convergence: fiscal.ai + financialcontent.com + barchart realtime, all $959.41) on the data, a single-day move clearing the >4% HIGH-IMPACT threshold on real clinical-trial news. นัยพอร์ต: REGN เป็น OPEN position (0.42sh, weight ~3.9%) — ไม่ใช่ Dupixent/approved-product news แต่เป็น early-stage pipeline optionality (MASH/MASLD, a large unmet-need market) ที่ยังไม่อยู่ใน DCF ปัจจุบัน (fvVerifiedDate 2026-10-31, Blended FV $994.20) — MOS แคบลงเหลือ +3.50% จากราคาที่วิ่งขึ้น ไม่มี Bear Flip/Thesis Invalidation fired จากเรื่องนี้ ยังเป็น early-phase data ไม่ confirm monetization timeline.",
+    impact: "POSITIVE", tickers: ["REGN"],
+    url: "https://investor.regeneron.com/news-releases/news-release-details/cideb-sirna-normalizes-liver-fat-and-improves-liver-injury",
+  },
 
   // ── 2026-11-11 (Atlas scan 2026-11-10→11-11, Portfolio Review Mode 3 cron cycle) ──
   {
