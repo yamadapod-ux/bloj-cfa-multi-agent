@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-12 07:00";
+const NEWS_LAST_UPDATED = "2026-11-13 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-13 (Atlas scan 2026-11-12→11-13, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-12", category: "GOVERNANCE",
+    headline: "🔴🔴🔴 NVDA Jensen Huang RESIGNS as Nvidia President/CEO/Board member effective immediately; Colette Kress named interim CEO; stock closes -4.3%",
+    summary: "Confirmed via SEC 8-K filed 2026-11-12 (Item 5.02) and NVIDIA's official newsroom press release (2-source official, nvidianews.nvidia.com + globenewswire.com): Nvidia's Board of Directors accepted Jensen Huang's resignation as President, CEO, and Board member, effective immediately, on 2026-11-11. CFO Colette M. Kress was appointed Interim CEO (continuing as CFO) while the Board searches for a permanent successor (internal and external candidates); Harvey C. Jones (former Synopsys CEO, Nvidia director since 1993) was named the company's first-ever independent Board Chair. This is the realized outcome of the escalation chain reported 11-08 (board opens investigation) → 11-10 (outside counsel + House summons) → 11-11 (WSJ: board preparing to oust) — now an actual, confirmed management change, not speculation. NVDA opened down as much as -14% intraday on the news before closing -4.3% (CNBC), as analysts pointed to the company's continuing chip sales and industry lead cushioning the move; shares had already fallen ~27% from October's record high on AI-valuation worries even before this resignation. The broader market fell alongside NVDA (S&P 500 -0.35% to 7,592.40, Nasdaq -0.39%), with NVDA cited as the principal single-stock drag this session. A securities class-action investigation (Hagens Berman) was also announced same-day referencing the resignation. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — เป็น confirmed key-person/governance risk ที่ realized เต็มรูปแบบแล้ว (ไม่ใช่แค่ข่าวลือ/การสอบสวนอีกต่อไป) ไม่กระทบ OPEN positions โดยตรงแต่สะท้อน sentiment risk ของทั้ง AI-infra complex ที่ยังสูง.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+  },
 
   // ── 2026-11-12 (Atlas scan 2026-11-11→11-12, Portfolio Review Mode 3 cron cycle) ──
   {

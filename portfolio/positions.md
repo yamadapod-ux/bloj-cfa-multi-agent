@@ -1,5 +1,52 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-13 (Mode 3 — Full Re-mark to Nov 12 2026 Close) — Nvidia CEO Jensen Huang Resigns Effective Immediately, Colette Kress Named Interim CEO; NOW StopDist Dips Back Below 10% WATCH Line
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 10 days old — due for refresh, flagged not blocking). First new US trading day since Nov 11. S&P 500 fell **-0.35%** to **$7,592.40** (-26.98 pts; Yahoo Finance history + AP via gazettextra.com BC-Select Indices + Xinhua, exact match, 3-source) as Nvidia's Board of Directors accepted CEO Jensen Huang's resignation effective immediately (2026-11-11), naming CFO Colette M. Kress interim CEO and Harvey C. Jones first-ever Board Chair — confirmed via SEC 8-K filed 2026-11-12 + official NVIDIA newsroom press release (2-source official). NVDA opened down as much as -14% intraday then closed -4.3% (CNBC), the principal single-stock drag on the index this session; Nasdaq -0.39% to 25,366.09, Dow -0.36% to 52,297.09. All 5 OPEN positions re-priced, 2-source cross-checked (all diffs ≤0.09%, no Single Source of Truth flags this session). **No trades this session.**
+
+| Ticker | Price (Nov 12 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $238.54 | Yahoo Finance + chartexchange + investing.com $238.45 (0.04% diff) | -3.43% | +35.35% | 28.94% | 9.22% |
+| NOW | $100.66 | fiscal.ai + coindataflow (exact match) | +12.50% | +8.65% | 🟡 8.24% | 0.97% |
+| CRM | $217.57 | keenable + investing.com (exact match) | +20.20% | +37.08% | 50.26% | 6.31% |
+| REGN | $951.19 | investor.regeneron.com official IR site + keenable (exact match) | +58.02% | +4.33% | 97.34% | 3.86% |
+| ADSK | $259.48 | keenable + macrotrends explicit "latest closing stock price... as of November 12, 2026" (exact match) | +30.78% | -16.99% | 63.49% | 6.02% |
+
+**Totals:** Invested $2,729.78 · Cash $7,612.51 (73.59%) · Total Value **$10,342.29** (-0.03% vs prior review) · Total Return **+3.42%** · S&P 500 Return **+2.62%** (7,398.93 → 7,592.40) · **Alpha +0.81%** (widened from +0.48% — the book's non-AI-hardware tilt held up better than the NVDA-driven index decline, single-session move per Pre-commitment Rule, not a trend).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,611.72 × 3.8%/365 × 1 day = +$0.79 → $7,612.51.
+
+### 🛑 Stop Loss Check
+No breaches. **NOW's stopDist narrowed back below the 10% WATCH threshold — 8.24%** (from 10.55% prior session), on a -2.04% single-day price move to $100.66 vs stop $93.00. This is the second time in a week this metric has crossed the 10% line (dipped 11-10/11-11, recovered 11-12, dips again today) — volatility around the threshold, not a sustained breakdown. All other positions comfortable (28-97%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 63d, MOS +35.35% (positive) | N/A | -5.19% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV ~13d, MOS +8.65% (positive) | N/A | -4.25% vs $105.12 (Oct 30) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 63d, MOS +37.08% (positive) | N/A | -12.18% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV ~13d (<90d), MOS +4.33% (positive, still narrowing) | N/A | +2.51% vs $927.89 (Oct 30) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 62d, MOS -16.99% negative but age <<90d | N/A | +22.14% vs $212.40 (Sep 11 close), under 30% line | Street avg $308.28 vs FV $221.79 = +39.0% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** All FVs 13-63 days old, well under the 90-day threshold; no OPEN position has new earnings this session. REGN's MOS continues to narrow slowly (now +4.33%) — not a formal trigger, watch next review.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **10 days old** — due for refresh per the ~2-3 week typical cadence, not yet overdue. VIX last checked ~25.64 on 11-06, not yet re-verified since. Does not block this update.
+
+### 📰 Atlas News Scan (2026-11-12, all 5 OPEN tickers + Big 10 watchlist)
+**1 NEW HIGH-IMPACT item** written to `dashboard/news.js`:
+- **NVDA** (Big 10, no OPEN position) — Nvidia's Board of Directors accepted CEO Jensen Huang's resignation effective immediately (confirmed via SEC 8-K + official NVIDIA newsroom press release), naming CFO Colette Kress interim CEO and Harvey Jones first-ever Board Chair. This is the realized management-change outcome of the escalation chain reported 11-08→11-11 (investigation → outside counsel → "preparing to oust"). NVDA opened -14% intraday, closed -4.3%.
+
+Assessed ROUTINE/macro-context (not written to news.js): the broader market decline itself (S&P -0.35%, Nasdaq -0.39%) — directly attributable to the NVDA event already logged above, not a separate catalyst; modest ADBE/CRM/NOW/ADSK/REGN price moves with no idiosyncratic catalyst found beyond general participation in the NVDA-driven risk-off tone.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+$7,611.72 × 3.8%/365 × 1 = **+$0.79** → **$7,612.51**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ตลาดสหรัฐฯ ร่วงเล็กน้อย S&P 500 -0.35% สู่ $7,592.40 จากเหตุการณ์ใหญ่: บอร์ด Nvidia อนุมัติการลาออกของ Jensen Huang จากตำแหน่ง CEO ทันที แต่งตั้ง CFO Colette Kress เป็น interim CEO — ยืนยันผ่าน SEC 8-K + ข่าวทางการของ NVIDIA เอง (ยกระดับจาก "เตรียมปลด" เมื่อวานเป็น "ลาออกจริงแล้ว") NVDA ร่วงไปถึง -14% ระหว่างวันก่อนปิดที่ -4.3% เป็นตัวฉุดหลักของดัชนีวันนี้ พอร์ตเราทนทานกว่าดัชนีเพราะไม่มี AI-hardware exposure โดยตรง **alpha ขยับขึ้นเป็น +0.81%** (จาก +0.48%) ไม่มี stop breach แต่ **NOW stopDist กลับลงต่ำกว่าเกณฑ์ WATCH 10% อีกครั้ง (8.24%)** จาก -2.04% วันนี้ — เป็นรอบที่ 2 ในสัปดาห์นี้ที่แกว่งผ่านเส้นนี้ ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ข่าวเด่นวันนี้มี 1 รายการ: **NVDA** — Jensen Huang ลาออกจริงจากตำแหน่ง CEO/President/บอร์ด มีผลทันที ยืนยันด้วยเอกสารทางการ 2 แหล่ง Atlas regime re-call อายุครบ 10 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
+
 ## 📊 Portfolio Review — 2026-11-12 (Mode 3 — Full Re-mark to Nov 11 2026 Close) — Nvidia/AI-Trade Rebound on CoreWeave Earnings; REGN +4.73% on CIDEBsiRNA Trial Data; NVDA Board Reportedly Preparing to Oust Jensen Huang; NOW StopDist Recovers Above 10% WATCH Line
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 9 days old — due for refresh, not yet overdue). First new US trading day since Nov 10. S&P 500 rose **+1.31%** to **$7,619.38** (+98.45 pts; AP via Boston Herald + WSJ, exact match, 2-source) as Nvidia and AI-trade names rebounded on strong CoreWeave (CRWV) earnings — Nasdaq +1.60% to 25,466.19, Dow +0.48% to 52,486.49. All 5 OPEN positions re-priced to Nov 11 close, 2-3 source cross-checked (all diffs ≤0.09%, no Single Source of Truth flags this session). Separately, WSJ reported after-hours that Nvidia's board is reportedly **preparing to oust CEO Jensen Huang** over two extramarital affairs (escalation from "investigation" to active removal consideration, Big 10, no OPEN position), and REGN jumped +4.73% on positive CIDEBsiRNA Phase 1/2 liver-disease trial data highlighted at AASLD. **No trades this session.**
