@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-13 07:00";
+const NEWS_LAST_UPDATED = "2026-11-14 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-14 (Atlas scan 2026-11-13→11-14, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-13", category: "ANALYST",
+    headline: "🟢 ADSK Loop Capital upgrades Autodesk to Buy from Hold, PT $265→$310 (+16.98%, exceeds >15% threshold)",
+    summary: "Loop Capital upgraded Autodesk (ADSK, OPEN position) to Buy from Hold on 2026-11-13, raising its price target to $310 from $265 (+16.98%, clears the >15% HIGH-IMPACT analyst-PT-change threshold), citing improving fundamentals and an increasingly favorable setup heading into the Q3 FY27 earnings print due 2026-11-24. Consensus remains Moderate Buy (27 Buy, 5 Hold per MarketBeat) with an average target near $319.97-$320. Separately, Jefferies raised its ADSK PT to $325 from $300 (+8.3%, under threshold) same day ahead of earnings. Stock closed +1.90% to $264.42 (Nov 13, 2-source: fiscal.ai + Perplexity Finance exact match). นัยพอร์ต: ADSK เป็น OPEN position (2.4sh, weight ~6.1%) ที่ยังอยู่ใน pre-committed HOLD-WATCH time-box (gate: Q3 FY27 print Nov 24, hard deadline 2026-12-05) — Street PT ที่สูงขึ้นต่อเนื่อง (เฉลี่ยตอนนี้ ~$320) vs internal Blended FV $221.79 ยิ่งขยาย Re-Analysis Trigger #5 (Street PT divergence) ที่ fire อยู่แล้ว ไม่มี Bear Flip/Thesis Invalidation ใหม่จากข่าวนี้ ไม่มี action ก่อนถึง earnings gate.",
+    impact: "POSITIVE", tickers: ["ADSK"],
+    url: "https://www.marketbeat.com/instant-alerts/analyst-autodesk-nasdaq-adsk-upgraded-to-buy-at-loop-capital-2026-11-13/",
+  },
+  {
+    date: "2026-11-13", category: "ANALYST",
+    headline: "🔴 NVDA Bernstein slashes PT 50% to $200 from $400, moves to Market-Perform amid CEO-transition chaos",
+    summary: "Bernstein cut its NVDA price target to $200 from $400 (-50%, far exceeds the >15% HIGH-IMPACT threshold) and downgraded to Market-Perform on 2026-11-13, as the fallout from Jensen Huang's resignation (confirmed 11-12) continued — Reuters reported a second Nvidia employee relationship involving Huang, and interim CEO Colette Kress faces her first test at the Q3 earnings report now confirmed for Tuesday Nov 17 (2pm PT call); the release did not reaffirm prior guidance. NVDA fell a further -2.27% to ~$162 intraday Nov 13, part of a broader chip-sector giveback this session (AMD -8.75%, DELL -7.18% on an unrelated Shanghai-datacenter H800-chip report, PHLX Semiconductor Index -3.43%) that unwound most of the post-resignation relief bounce. Huang is now scheduled to testify in a closed-door Congressional hearing Dec 1. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — เป็นสัญญาณว่า sentiment risk ของทั้ง AI-infra/semis complex ยังสูงต่อเนื่องแม้ resignation จะ realized แล้ว ไม่กระทบ OPEN positions โดยตรง แต่ Nov 17 earnings เป็น catalyst ต่อไปที่ต้องติดตาม.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-fall-2-27-172108730.html",
+  },
 
   // ── 2026-11-13 (Atlas scan 2026-11-12→11-13, Portfolio Review Mode 3 cron cycle) ──
   {

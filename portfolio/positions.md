@@ -1,5 +1,53 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-14 (Mode 3 — Full Re-mark to Nov 13 2026 Close) — Chip Sector Gives Back Post-Huang-Resignation Bounce; Portfolio Gains While S&P Falls; ADSK Loop Capital Upgrade; NOW StopDist Dips Below 10% WATCH Line Again
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 11 days old — due for refresh, flagged not blocking). First new US trading day since Nov 12. S&P 500 fell **-0.40%** to **$7,561.67** (-30.73 pts; AP via Yahoo Finance + krmg.com + swingfolio.com, exact match, 3-source) as chipmakers unwound the prior day's post-Huang-resignation relief bounce — AMD -8.75%, DELL -7.18% (unrelated Shanghai-datacenter H800-chip report), PHLX Semiconductor Index -3.43% — even as the broader market finished a solid week (9 of 11 S&P sectors higher on the week, Nasdaq's best week since August, +2.3%). Nasdaq -0.91% to 25,136.27, Dow +0.10% to 52,347.55. All 5 OPEN positions re-priced, 2-source cross-checked (all exact-match or ≤0.1% diff, no Single Source of Truth flags this session). **No trades this session.**
+
+| Ticker | Price (Nov 13 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $243.08 | stockanalysis.com + Perplexity Finance (exact match) | -1.60% | +34.12% | 31.39% | 9.37% |
+| NOW | $102.25 | keenable explicit close + Perplexity Finance (exact match) | +14.28% | +7.21% | 🟡 9.95% | 0.99% |
+| CRM | $217.84 | stockanalysis.com + TradingView (exact match) | +20.35% | +36.99% | 50.44% | 6.30% |
+| REGN | $955.47 | fiscal.ai + Yahoo Finance implied +0.45% (exact match) | +58.72% | +3.90% | 98.23% | 3.87% |
+| ADSK | $264.42 | fiscal.ai + Perplexity Finance (exact match) | +33.26% | -19.22% | 66.58% | 6.12% |
+
+**Totals:** Invested $2,764.00 · Cash $7,613.30 (73.37%) · Total Value **$10,377.30** (+0.34% vs prior review) · Total Return **+3.77%** · S&P 500 Return **+2.20%** (7,398.93 → 7,561.67) · **Alpha +1.57%** (widened from +0.81% — the book gained on an ADSK upgrade + broad Friday rotation while the chip-led index pullback dragged the S&P down, single-session move per Pre-commitment Rule, not a trend).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,612.51 × 3.8%/365 × 1 day = +$0.79 → $7,613.30.
+
+### 🛑 Stop Loss Check
+No breaches. **NOW's stopDist dipped back below the 10% WATCH threshold — 9.95%** (from 8.24% prior session), on a +1.58% single-day price move to $102.25 vs stop $93.00 — the metric moves inversely here because the *prior* session's reading was itself below 10%; the small gain was not enough to clear the line. Third time in two weeks this metric has crossed the 10% line (volatility around the threshold, not a sustained breakdown). All other positions comfortable (31-98%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 64d, MOS +34.12% (positive) | N/A | -3.63% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV ~14d, MOS +7.21% (positive) | N/A | -2.73% vs $105.12 (Oct 30) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 64d, MOS +36.99% (positive) | N/A | -12.06% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV ~14d (<90d), MOS +3.90% (positive, continuing to narrow) | N/A | +2.97% vs $927.89 (Oct 30) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 63d, MOS -19.22% negative but age <<90d | N/A | +24.48% vs $212.40 (Sep 11 close), under 30% line | Street avg now ~$320 (post Loop Capital/Jefferies hikes) vs FV $221.79 = +44% | **1/5 — #5 fires, carried, widening** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** All FVs 14-64 days old, well under the 90-day threshold; no OPEN position has new earnings this session. REGN's MOS continues to narrow slowly (now +3.90%) — not a formal trigger, watch next review. ADSK's Trigger #5 gap widened materially (now ~44% vs ~39% prior session) on the Loop Capital upgrade.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **11 days old** — due for refresh per the ~2-3 week typical cadence, not yet overdue. VIX last checked ~25.64 on 11-06, not yet re-verified since. Does not block this update.
+
+### 📰 Atlas News Scan (2026-11-13, all 5 OPEN tickers + Big 10 watchlist)
+**2 NEW HIGH-IMPACT items** written to `dashboard/news.js`:
+- **ADSK** (OPEN position) — Loop Capital upgraded Autodesk to Buy from Hold, PT $265→$310 (+16.98%, clears the >15% threshold), citing improving fundamentals ahead of the Nov 24 Q3 FY27 print. Jefferies also raised its PT to $325 from $300 (+8.3%, under threshold) same day.
+- **NVDA** (Big 10, no OPEN position) — Bernstein cut its PT 50% to $200 from $400 and downgraded to Market-Perform amid continuing CEO-transition fallout (a second employee-relationship report from Reuters, Q3 earnings confirmed for Nov 17 without reaffirmed guidance).
+
+Assessed ROUTINE/macro-context (not written to news.js): the broader chip-sector giveback itself (AMD -8.75%, DELL -7.18% on an unrelated Shanghai-datacenter report, PHLX Semi Index -3.43%) — market-wide, already captured in the price-sourcing note; no earnings, M&A, management change, or other >15% PT changes found for the other 4 OPEN tickers or remaining Big 10 names this session.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+$7,612.51 × 3.8%/365 × 1 = **+$0.79** → **$7,613.30**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ภาพรวมตลาดสหรัฐฯ ร่วงเล็กน้อย S&P 500 -0.40% สู่ $7,561.67 เพราะหุ้นชิป (AMD -8.75%, DELL -7.18%) คืนกำไรจากการ rally หลังข่าว Jensen Huang ลาออกเมื่อวาน แม้ภาพรวมสัปดาห์นี้ 9 จาก 11 sector ของ S&P ยังปิดบวก (Nasdaq สัปดาห์ที่ดีที่สุดตั้งแต่ส.ค.) พอร์ตเราสวนทางขึ้นสวนดัชนีเพราะไม่มี AI-hardware exposure และ ADSK ได้แรงหนุนจาก Loop Capital upgrade **alpha ขยับขึ้นเป็น +1.57%** (จาก +0.81%) ไม่มี stop breach แต่ **NOW stopDist กลับลงต่ำกว่าเกณฑ์ WATCH 10% อีกครั้ง (9.95%)** เป็นครั้งที่ 3 ในรอบ 2 สัปดาห์ ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ช่อง gap ของ ADSK #5 กว้างขึ้นเป็น ~44% ข่าวเด่นวันนี้มี 2 รายการ: **ADSK** — Loop Capital ปรับคำแนะนำขึ้นเป็น Buy พร้อม PT $265→$310 (+16.98%) ก่อนงบ 24 พ.ย.; **NVDA** (Big 10, ไม่มี OPEN position) — Bernstein หั่น PT ลงครึ่งหนึ่งเป็น $200 จาก $400 ท่ามกลางความวุ่นวายเรื่อง CEO transition ที่ยังไม่จบ Atlas regime re-call อายุครบ 11 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
+
 ## 📊 Portfolio Review — 2026-11-13 (Mode 3 — Full Re-mark to Nov 12 2026 Close) — Nvidia CEO Jensen Huang Resigns Effective Immediately, Colette Kress Named Interim CEO; NOW StopDist Dips Back Below 10% WATCH Line
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 10 days old — due for refresh, flagged not blocking). First new US trading day since Nov 11. S&P 500 fell **-0.35%** to **$7,592.40** (-26.98 pts; Yahoo Finance history + AP via gazettextra.com BC-Select Indices + Xinhua, exact match, 3-source) as Nvidia's Board of Directors accepted CEO Jensen Huang's resignation effective immediately (2026-11-11), naming CFO Colette M. Kress interim CEO and Harvey C. Jones first-ever Board Chair — confirmed via SEC 8-K filed 2026-11-12 + official NVIDIA newsroom press release (2-source official). NVDA opened down as much as -14% intraday then closed -4.3% (CNBC), the principal single-stock drag on the index this session; Nasdaq -0.39% to 25,366.09, Dow -0.36% to 52,297.09. All 5 OPEN positions re-priced, 2-source cross-checked (all diffs ≤0.09%, no Single Source of Truth flags this session). **No trades this session.**
