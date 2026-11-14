@@ -1183,3 +1183,21 @@
 - **Data:** ราคา Yahoo + stockanalysis.com (close 2026-11-11) · SEC XBRL companyfacts · `scripts/scout/2026-11-12_assetmgr/`. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 93.
 
 *Max — 2026-11-12 | Scout Round 93 — 0 fast-track, 0 learning-queue, 3 QUICK-SCREEN SKIP; no trade.*
+
+## Scout Round 96 — Electronic Components / EMS / PCB / Optical — 2026-11-14
+
+| Ticker | Tag | เหตุผล |
+|---|---|---|
+| JBL | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $254.25 (11-13) −40.7% จาก $428.93 · A ✅ (AI-hardware de-rate) · B-Zero ✅ · B-V1 ✅ เฉพาะ sector-avg · C ✅ ROIC 24.5% · naive FV $74.20 (5Y FCF $890M ÷ 9% − ND) → **3.43×** (TTM 2.02×) |
+| SANM | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $158.31 −45.2% · B-V1 ✅ sector-avg · C ✅ 8.1%/12.7% · naive FV $33.79 → **4.69×** (TTM 1.62×) |
+| TTMI | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $74.08 −66.9% · B-V1 ✅ sector-avg · C ✅ · 5Y FCF avg $100M (TTM $15M) → naive FV ≈ $0.44 → **n/m** · AI/Infra lane FAIL ข้อ 1 (capex/rev 8.4%, capex 9M +13%) |
+| FN | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $327.98 −56.2% · B-V1 ✅ sector-avg · C ✅ 15.6% · naive FV $66.21 → **4.95×** (FCF TTM −$190M) |
+| BELFB | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $225.49 −32.7% · B-V1 ✅ peer-median 0.93× · C ✅ 10.8% · naive FV $65.83 → **3.43×** (TTM 2.50×) |
+| BHE | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $63.03 −37.2% · B-V1 ✅ sector-avg · C ✅ borderline 8.1% ex-cash · naive FV $8.34 → **7.56×** (TTM 1.74×) |
+| OSIS | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $192.92 −38.1% · B-Legacy ✅ FCF yield 8.7% TTM · C ✅ 9.7% · 5Y FCF avg $67M < ND $699M × 10% → naive FV ติดลบ (TTM 1.56×) |
+
+- **Action:** ไม่มี trade · TEL/CTS ตก A · FLEX/KN ตก B-V1 · PLXS/ROG ตก B-Legacy · VSH/LFUS/ROG ตก C — ไม่นับเป็น QUICK-SCREEN SKIP
+- **Regime:** TRANSITIONAL-CAUTIOUS (Atlas 11-06) — ห้าม open ใหม่อยู่แล้ว
+- **Data:** ราคา Yahoo + Nasdaq (close 2026-11-13) · SEC XBRL companyfacts · `scripts/scout/2026-11-14_r96/`. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 96.
+
+*Max — 2026-11-14 | Scout Round 96 — 0 fast-track, 0 learning-queue, 7 QUICK-SCREEN SKIP; no trade.*

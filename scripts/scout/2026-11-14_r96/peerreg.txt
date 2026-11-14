@@ -1,0 +1,14 @@
+EMS (JBL/FLEX/SANM/BHE/PLXS) a=1.096 b=-0.0067 R2=0.39 mean EV/Rev 0.92
+   JBL growth 20.6 EV/Rev 0.8 fit 0.96 ratio 0.83
+   FLEX growth 24.8 EV/Rev 0.96 fit 0.93 ratio 1.03
+   SANM growth 69.6 EV/Rev 0.73 fit 0.63 ratio 1.15
+   BHE growth 18.6 EV/Rev 0.72 fit 0.97 ratio 0.74
+   PLXS growth 1.8 EV/Rev 1.37 fit 1.08 ratio 1.26
+Components/PCB/optical (TTMI/FN/BELFB/KN/VSH/LFUS/ROG) a=3.146 b=-0.0165 R2=0.08 mean EV/Rev 2.67
+   TTMI growth 59.9 EV/Rev 2.29 fit 2.16 ratio 1.06
+   FN growth 50.7 EV/Rev 2.16 fit 2.31 ratio 0.93
+   BELFB growth 23.5 EV/Rev 3.22 fit 2.76 ratio 1.17
+   KN growth 20.3 EV/Rev 4.3 fit 2.81 ratio 1.53
+   VSH growth 23.8 EV/Rev 0.91 fit 2.75 ratio 0.33
+   LFUS growth 15.5 EV/Rev 3.46 fit 2.89 ratio 1.20
+   ROG growth 9.3 EV/Rev 2.34 fit 2.99 ratio 0.78

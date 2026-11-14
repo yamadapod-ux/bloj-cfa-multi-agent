@@ -1,0 +1,98 @@
+{
+ "JBL": {
+  "lowPriceTarget": 378.0,
+  "highPriceTarget": 475.0,
+  "priceTarget": 435.0,
+  "buy": 7,
+  "sell": 0,
+  "hold": 0
+ },
+ "FLEX": {
+  "lowPriceTarget": 128.0,
+  "highPriceTarget": 162.0,
+  "priceTarget": 143.83,
+  "buy": 6,
+  "sell": 0,
+  "hold": 0
+ },
+ "SANM": {
+  "lowPriceTarget": 210.0,
+  "highPriceTarget": 260.0,
+  "priceTarget": 233.33,
+  "buy": 0,
+  "sell": 0,
+  "hold": 1
+ },
+ "PLXS": {
+  "lowPriceTarget": 300.0,
+  "highPriceTarget": 330.0,
+  "priceTarget": 313.33,
+  "buy": 4,
+  "sell": 0,
+  "hold": 0
+ },
+ "TTMI": {
+  "lowPriceTarget": 165.0,
+  "highPriceTarget": 236.0,
+  "priceTarget": 190.8,
+  "buy": 4,
+  "sell": 0,
+  "hold": 0
+ },
+ "LFUS": {
+  "lowPriceTarget": 471.0,
+  "highPriceTarget": 520.0,
+  "priceTarget": 497.0,
+  "buy": 3,
+  "sell": 0,
+  "hold": 0
+ },
+ "ROG": {
+  "lowPriceTarget": 180.0,
+  "highPriceTarget": 185.0,
+  "priceTarget": 182.5,
+  "buy": 2,
+  "sell": 0,
+  "hold": 0
+ },
+ "VSH": {
+  "lowPriceTarget": 27.0,
+  "highPriceTarget": 45.0,
+  "priceTarget": 38.0,
+  "buy": 2,
+  "sell": 1,
+  "hold": 0
+ },
+ "KN": {
+  "lowPriceTarget": 35.0,
+  "highPriceTarget": 50.0,
+  "priceTarget": 42.5,
+  "buy": 1,
+  "sell": 0,
+  "hold": 1
+ },
+ "OSIS": {
+  "lowPriceTarget": 250.0,
+  "highPriceTarget": 279.0,
+  "priceTarget": 266.6,
+  "buy": 4,
+  "sell": 0,
+  "hold": 1
+ },
+ "FN": {
+  "lowPriceTarget": 385.0,
+  "highPriceTarget": 800.0,
+  "priceTarget": 593.0,
+  "buy": 6,
+  "sell": 0,
+  "hold": 2
+ },
+ "BELFB": {
+  "lowPriceTarget": 300.0,
+  "highPriceTarget": 360.0,
+  "priceTarget": 324.0,
+  "buy": 6,
+  "sell": 0,
+  "hold": 0
+ }
+}
