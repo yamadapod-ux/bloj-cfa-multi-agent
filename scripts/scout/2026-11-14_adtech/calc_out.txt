@@ -1,0 +1,35 @@
+
+TTD: mcap 7,373 netcash 1,650 EV 5,723 rev 2,986.7 9Mgrowth +4.4% SBC/rev 14.3%
+  OI 517.7 OCF 1115.3 capex 268.3 FCF 847.0 (11.5%) FCF-SBC 421.2 (5.7%) SBC 425.8
+  EBITDA 644.2 EV/EBITDA 8.9x  (adj restr 8.3x)
+  ROIC GAAP: incl-cash 15.1% ex-cash 38.8% | adj restr: 16.4% / 42.2%  hurdle 0.8xWACC=8.0%
+  naiveFV FCF@10%: $21.52 P/FV 0.73x
+  naiveFV FCF-SBC@10%: $12.47 P/FV 1.26x
+  naiveFV FCF@13%: $17.37 P/FV 0.90x
+  naiveFV FCF-SBC@13%: $10.40 P/FV 1.51x
+
+PINS: mcap 11,159 netcash 488 EV 10,671 rev 4,680.5 9Mgrowth +15.8% SBC/rev 23.0%
+  OI 196.0 OCF 1327.8 capex 65.7 FCF 1262.1 (11.3%) FCF-SBC 183.7 (1.6%) SBC 1078.4
+  EBITDA 230.7 EV/EBITDA 46.3x  (adj restr 36.0x)
+  ROIC GAAP: incl-cash 3.8% ex-cash 5.9% | adj restr: 5.1% / 7.9%  hurdle 0.8xWACC=8.0%
+  naiveFV FCF@10%: $22.50 P/FV 0.85x
+  naiveFV FCF-SBC@10%: $3.99 P/FV 4.80x
+  naiveFV FCF@13%: $17.50 P/FV 1.09x
+  naiveFV FCF-SBC@13%: $3.26 P/FV 5.87x
+
+SNAP: mcap 9,259 netcash -716 EV 9,974 rev 6,566.7 9Mgrowth +15.1% SBC/rev 15.6%
+  OI -118.8 OCF 983.1 capex 206.5 FCF 776.6 (8.4%) FCF-SBC -248.6 (-2.7%) SBC 1025.2
+  EBITDA 60.8 EV/EBITDA 164.1x  (adj restr 52.7x)
+  ROIC GAAP: incl-cash -1.6% ex-cash -3.2% | adj restr: 0.1% / 0.3%  hurdle 0.8xWACC=8.0%
+  naiveFV FCF@10%: $4.01 P/FV 1.31x
+  naiveFV FCF-SBC@10%: $-1.82 P/FV -2.89x
+  naiveFV FCF@13%: $2.99 P/FV 1.76x
+  naiveFV FCF-SBC@13%: $-1.49 P/FV -3.52x
+
+CRTO: mcap 887 netcash 326 EV 562 rev 1,810.2 9Mgrowth -9.6% SBC/rev 2.5%
+  OI 118.9 OCF 286.1 capex 154.3 FCF 131.8 (14.9%) FCF-SBC 86.9 (9.8%) SBC 44.9
+  ROIC GAAP: incl-cash 7.8% ex-cash 10.9% | adj restr: 8.4% / 11.8%  hurdle 0.8xWACC=10.4%
+  naiveFV FCF@13%: $27.21 P/FV 0.66x
+  naiveFV FCF-SBC@13%: $20.20 P/FV 0.89x
+  naiveFV FCF@16%: $23.35 P/FV 0.77x
+  naiveFV FCF-SBC@16%: $17.65 P/FV 1.02x
