@@ -1,6 +1,48 @@
 # Simulated Portfolio — บลจ. CFA
 
-## 📊 Portfolio Review — 2026-11-14 (Mode 3 — Full Re-mark to Nov 13 2026 Close) — Chip Sector Gives Back Post-Huang-Resignation Bounce; Portfolio Gains While S&P Falls; ADSK Loop Capital Upgrade; NOW StopDist Dips Below 10% WATCH Line Again
+## 📊 Portfolio Review — 2026-11-15 (Mode 3 — Weekend, No New Trading Day; Re-mark Unchanged at Nov 13 2026 Close)
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 12 days old — getting dated, not yet overdue by the ~2-3 week cadence). Weekend (Nov 14 Sat / Nov 15 Sun non-trading) — no new US trading session has closed since Friday Nov 13. All 5 OPEN positions re-verified UNCHANGED at the Nov 13 2026 close via fresh WebSearch (ADBE $243.08, NOW $102.25, CRM $217.84, REGN $955.47, ADSK $264.42 — all consistent across multiple independent sources, no newer print exists). S&P 500 re-confirmed unchanged at **$7,561.67** (-0.40% Friday close; AP via f.aa.com.tr + moneycontrol + anews.com.tr + arkansasonline, all exact match) — Friday's pullback was driven by continuing Nvidia/Jensen Huang-resignation fallout (chip complex gave back ~$650B over 2 sessions, AMD -8.75%) plus elevated 10Y yields (~5.1%) pricing in tighter Fed policy, even as the S&P still posted its best week since August (+2.51%). **No trades this session.**
+
+| Ticker | Price (Nov 13 close, unchanged) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $243.08 | fiscal.ai + investing.com + ycharts (exact match) | -1.60% | +34.12% | 31.39% | 9.37% |
+| NOW | $102.25 | Yahoo Finance + investor.servicenow.com IR site (exact match) | +14.28% | +7.21% | 🟡 9.95% | 0.99% |
+| CRM | $217.84 | Yahoo Finance + investor.salesforce.com IR site (exact match) | +20.35% | +36.99% | 50.44% | 6.30% |
+| REGN | $955.47 | Yahoo Finance history + fiscal.ai + trade-ideas.com (exact match) | +58.72% | +3.90% | 98.23% | 3.87% |
+| ADSK | $264.42 | investing.com + marketbeat.com (exact match) | +33.26% | -19.22% | 66.58% | 6.12% |
+
+**Totals:** Invested $2,764.00 · Cash $7,614.09 (73.38%) · Total Value **$10,378.09** (+0.01% vs prior review, cash-accrual only) · Total Return **+3.78%** · S&P 500 Return **+2.20%** (unchanged) · **Alpha +1.58%** (negligible widening from +1.57%, cash-accrual only — both sides flat this session).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,613.30 × 3.8%/365 × 1 day (weekend, 11-14→11-15) = +$0.79 → $7,614.09.
+
+### 🛑 Stop Loss Check
+No breaches. NOW's stopDist unchanged at **9.95%**, still below the 10% WATCH threshold from Friday's close (third time in 2 weeks this metric has crossed the line — volatility around the threshold, not a sustained breakdown). All other positions comfortable (31-98%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 65d, MOS +34.12% (positive) | N/A | -3.63% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV ~15d, MOS +7.21% (positive) | N/A | -2.73% vs $105.12 (Oct 30) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 65d, MOS +36.99% (positive) | N/A | -12.06% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV ~15d (<90d), MOS +3.90% (positive, continuing to narrow) | N/A | +2.97% vs $927.89 (Oct 30) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 64d, MOS -19.22% negative but age <<90d | N/A | +24.48% vs $212.40 (Sep 11 close), under 30% line | Street avg ~$320 vs FV $221.79 = +44% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session (identical to 11-14, no new trading day).** All FVs 15-65 days old, well under the 90-day threshold; no OPEN position has new earnings this session.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **12 days old** — getting dated per the ~2-3 week typical cadence, not yet overdue. VIX last checked ~19.35 on 11-13 (per Friday-close recap), down from ~25.64 on 11-06. Does not block this update.
+
+### 📰 Atlas News Scan (weekend, since NEWS_LAST_UPDATED 2026-11-14 07:00)
+**0 NEW HIGH-IMPACT items.** Weekend coverage reviewed: continuing analysis of Friday's chip-sector giveback and Nvidia/Huang-resignation fallout (AI-complex -$650B over 2 days, Nvidia's board reportedly approaching Arm CEO Rene Haas as a potential successor candidate per FT) — assessed ROUTINE follow-up/continuation of the already-logged 11-12/11-13 management-change event, not a new confirmed catalyst. ServiceNow's Autonomous CRM Engine product launch (announced Nov 12, pre-dates the last scan window) assessed ROUTINE — no quantified financial impact disclosed, Controlled Availability only. No earnings, M&A, management change, 8-K, or >15% analyst PT change found for any of the 5 OPEN tickers or the remaining Big 10 names this session. `dashboard/news.js` unchanged — no commit for it.
+
+### 💡 Cash Yield Rule — routine weekend accrual (1 day since last Portfolio Review)
+$7,613.30 × 3.8%/365 × 1 = **+$0.79** → **$7,614.09**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้เป็นวันหยุดสุดสัปดาห์ ไม่มี trading day ใหม่ — ราคาทั้ง 5 positions และ S&P 500 ยังคงเดิมจาก Nov 13 close ($7,561.67) ยืนยันซ้ำผ่าน WebSearch หลายแหล่ง ไม่มีการเปลี่ยนแปลงใดๆ นอกจาก cash accrual ตามปกติ (+$0.79 → $7,614.09) **alpha ขยับเล็กน้อยเป็น +1.58%** (จาก +1.57%, cash-accrual เท่านั้น) ไม่มี stop breach — NOW stopDist ยังอยู่ต่ำกว่าเกณฑ์ WATCH 10% ที่ 9.95% เหมือนเดิมจาก Friday ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ข่าว weekend ที่พบ (Nvidia board เล็ง Arm CEO Rene Haas เป็น successor candidate, ServiceNow เปิดตัว Autonomous CRM Engine) ไม่ถึงเกณฑ์ HIGH-IMPACT ทั้งคู่ — เป็น routine follow-up/product launch ไม่มีตัวเลขการเงินชัดเจน Atlas regime re-call อายุครบ 12 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 11 days old — due for refresh, flagged not blocking). First new US trading day since Nov 12. S&P 500 fell **-0.40%** to **$7,561.67** (-30.73 pts; AP via Yahoo Finance + krmg.com + swingfolio.com, exact match, 3-source) as chipmakers unwound the prior day's post-Huang-resignation relief bounce — AMD -8.75%, DELL -7.18% (unrelated Shanghai-datacenter H800-chip report), PHLX Semiconductor Index -3.43% — even as the broader market finished a solid week (9 of 11 S&P sectors higher on the week, Nasdaq's best week since August, +2.3%). Nasdaq -0.91% to 25,136.27, Dow +0.10% to 52,347.55. All 5 OPEN positions re-priced, 2-source cross-checked (all exact-match or ≤0.1% diff, no Single Source of Truth flags this session). **No trades this session.**
 
