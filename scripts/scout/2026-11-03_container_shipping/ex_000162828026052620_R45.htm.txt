@@ -1,0 +1,86 @@
+ 
+ XML
+ 52
+ R45.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Assets held for sale - Rollforward (Details) - USD ($) $ in Thousands 
+ 6 Months Ended 
+ 12 Months Ended 
+ Jun. 30, 2026 
+ Dec. 31, 2025 
+ Asset, Held-for-Sale, Not Part of Disposal Group [Roll Forward] 
+ Beginning balance 
+ $ 7,761 
+ $ 0 
+ Reclassification from Vessels 
+ 15,231 
+ 7,761 
+ Vessels disposal 
+ (22,992) 
+ 0 
+ Ending balance 
+ $ 0 
+ $ 7,761 
+ X 
+ - Definition Asset, Held-for-Sale, Not Part of Disposal Group 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_AssetHeldForSaleNotPartOfDisposalGroupRollForward 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Assets Held For Sale Reclassification From Property Plant And Equipment 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_AssetsHeldForSaleReclassificationFromPropertyPlantAndEquipment 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Vessel’s disposal 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_VesselsDisposal 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of assets held-for-sale that are not part of a disposal group. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 15 -Paragraph 4 -Subparagraph (b)(2) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482309/360-10-15-4 
+ + Details 
+ Name: 
+ us-gaap_AssetsHeldForSaleNotPartOfDisposalGroup 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 

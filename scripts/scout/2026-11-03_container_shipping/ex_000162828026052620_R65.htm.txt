@@ -1,0 +1,114 @@
+ 
+ XML
+ 72
+ R65.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Financial Instruments Not Accounted for at Fair Value (Details) - USD ($) $ in Thousands 
+ Jun. 30, 2026 
+ Dec. 31, 2025 
+ Senior Unsecured Bonds | 2024 Bonds 
+ Fair Value, Assets and Liabilities Measured on Recurring and Nonrecurring Basis [Line Items] 
+ Carrying Amount (Liability) 
+ $ (100,000) 
+ $ (100,000) 
+ Level 2 | Senior Unsecured Bonds | 2024 Bonds 
+ Fair Value, Assets and Liabilities Measured on Recurring and Nonrecurring Basis [Line Items] 
+ Carrying Amount (Liability) 
+ (140,000) 
+ (140,000) 
+ Fair Value (Liability) 
+ (140,175) 
+ (141,400) 
+ Level 2 | Line of Credit 
+ Fair Value, Assets and Liabilities Measured on Recurring and Nonrecurring Basis [Line Items] 
+ Carrying Amount (Liability) 
+ (786,954) 
+ (767,885) 
+ Fair Value (Liability) 
+ $ (786,954) 
+ $ (767,885) 
+ X 
+ - Definition Amount, before unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but is not limited to, notes payable, bonds payable, commercial loans, mortgage loans, convertible debt, subordinated debt and other types of debt. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(16)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 4 -Subparagraph (b)(1) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-4 
+ + Details 
+ Name: 
+ us-gaap_DebtInstrumentCarryingAmount 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 815 -SubTopic 45 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480865/815-45-50-1 Reference 2: http://www.xbrl.org/2003/role/exampleRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 100 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482078/820-10-55-100 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482106/820-10-50-2 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482106/820-10-50-2 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482106/820-10-50-3 
+ + Details 
+ Name: 
+ us-gaap_FairValueAssetsAndLiabilitiesMeasuredOnRecurringAndNonrecurringBasisLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition The fair value amount of long-term debt whether such amount is presented as a separate caption or as a parenthetical disclosure. Additionally, this element may be used in connection with the fair value disclosures required in the footnote disclosures to the financial statements. The element may be used in both the balance sheet and disclosure in the same submission. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482106/820-10-50-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 10 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482907/825-10-50-10 Reference 3: http://www.xbrl.org/2003/role/exampleRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 10 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482881/825-10-55-10 Reference 4: http://www.xbrl.org/2003/role/exampleRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 12 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482881/825-10-55-12 Reference 5: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 11 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482907/825-10-50-11 Reference 6: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 11 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482907/825-10-50-11 Reference 7: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (bbb)(2)(i) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482106/820-10-50-2 Reference 8: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (bbb)(2) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482106/820-10-50-2 Reference 9: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 820 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (bbb)(1) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482106/820-10-50-2 Reference 10: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 28 -Subparagraph (c)(1) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482907/825-10-50-28 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebtFairValue 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Details 
+ Name: 
+ us-gaap_LongtermDebtTypeAxis=nvgs_SeniorUnsecuredBondsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_DebtInstrumentAxis=nvgs_October2024BondsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_FairValueByFairValueHierarchyLevelAxis=us-gaap_FairValueInputsLevel2Member 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_LongtermDebtTypeAxis=us-gaap_LineOfCreditMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

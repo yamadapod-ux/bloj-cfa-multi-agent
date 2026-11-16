@@ -1,0 +1,234 @@
+ 
+ XML
+ 75
+ R68.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Commitments and Contingencies - Additional Information (Details) $ in Thousands, $ / vessel in Millions 
+ 1 Months Ended 
+ Apr. 01, 2025 
+ USD ($) 
+ Dec. 31, 2025 
+ USD ($) 
+ Jul. 31, 2025 
+ USD ($) 
+ Aug. 31, 2024 
+ contract 
+ $ / vessel 
+ Apr. 30, 2024 
+ USD ($) 
+ Jan. 31, 2022 
+ USD ($) 
+ Jan. 31, 2027 
+ Jun. 30, 2026 
+ $ / vessel 
+ Lessee, Lease, Description [Line Items] 
+ Average shipyard price per vessel to be delivered (in usd per vessel) | $ / vessel 
+ 102.9 
+ London 
+ Lessee, Lease, Description [Line Items] 
+ Operating lease term 
+ 10 years 
+ Break Option, period 
+ 12 months 
+ Operating lease, annual gross rent 
+ $ 1,000 
+ London | Forecast 
+ Lessee, Lease, Description [Line Items] 
+ Operating lease term 
+ 5 years 
+ Copenhagen 
+ Lessee, Lease, Description [Line Items] 
+ Operating lease term 
+ 6 months 
+ Operating lease, monthly gross rent 
+ $ 15 
+ Gdynia, Poland 
+ Lessee, Lease, Description [Line Items] 
+ Operating lease term 
+ 5 years 
+ Operating lease, annual gross rent 
+ $ 100 
+ Houston 
+ Lessee, Lease, Description [Line Items] 
+ Operating lease term 
+ 43 months 
+ Operating lease, annual gross rent 
+ $ 41 
+ Manila, Philippines 
+ Lessee, Lease, Description [Line Items] 
+ Operating lease, annual gross rent 
+ $ 100 
+ Ethylene Capable Liquefied Gas Carriers 
+ Lessee, Lease, Description [Line Items] 
+ Number of contracts entered into | contract 
+ 4 
+ Average shipyard price per vessel to be delivered (in usd per vessel) | $ / vessel 
+ 102.9 
+ X 
+ - Definition Average Shipyard Price Per Vessel To Be Delivered 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_AverageShipyardPricePerVesselToBeDelivered 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ srt-types:perUnitItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Definition Lessee, Operating Lease, Break Option, Notice Period 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_LesseeOperatingLeaseBreakOptionNoticePeriod 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:durationItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Number Of Contracts Entered 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_NumberOfContractsEntered 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:integerItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Operating Leases, Annual Contractual Gross Rent 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_OperatingLeasesAnnualContractualGrossRent 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Operating Leases, Monthly Contractual Gross Rent 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_OperatingLeasesMonthlyContractualGrossRent 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 7A -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-7A Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-3 
+ + Details 
+ Name: 
+ us-gaap_LesseeLeaseDescriptionLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Term of lessee's operating lease, in 'PnYnMnDTnHnMnS' format, for example, 'P1Y5M13D' represents reported fact of one year, five months, and thirteen days. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a)(3) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-3 
+ + Details 
+ Name: 
+ us-gaap_LesseeOperatingLeaseTermOfContract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:durationItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Details 
+ Name: 
+ srt_StatementGeographicalAxis=nvgs_LondonMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_StatementScenarioAxis=srt_ScenarioForecastMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_StatementGeographicalAxis=nvgs_CopenhagenMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_StatementGeographicalAxis=nvgs_GdyniaPolandMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_StatementGeographicalAxis=nvgs_HoustonMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_StatementGeographicalAxis=nvgs_ManilaPhilippinesMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentByTypeAxis=nvgs_EthyleneCapableLiquefiedGasCarriersMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

@@ -1,0 +1,61 @@
+ 
+ XML
+ 32
+ R25.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ General Information and Basis of Presentation (Policies) 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Accounting Policies [Abstract] 
+ Basis of Presentation 
+ Basis of Presentation These unaudited interim condensed consolidated financial statements have been prepared in accordance with accounting principles generally accepted in the United States of America (“U.S. GAAP”) for interim financial information and related Securities and Exchange Commission (“SEC”) rules for interim financial reporting. Accordingly, they do not include all of the information and footnotes required by U.S. GAAP for complete financial statements. In our opinion, all adjustments consisting of normal recurring items, necessary for a fair statement of financial position, operating results and cash flows have been included in the unaudited interim condensed consolidated financial statements and related notes. The unaudited interim condensed consolidated financial statements and related notes should be read in conjunction with the audited consolidated financial statements and related notes for the year ended December 31, 2025, included in our Annual Report on Form 20-F filed with the SEC on March 12, 2026 (the “2025 Annual Report”). The year-end condensed balance sheet data was derived from the audited financial statements but does not include all disclosures required by accounting principles generally accepted in the United States of America. The results for the six months ended June 30, 2026, are subject to seasonal and other fluctuations and are not necessarily indicative of results for the year ending December 31, 2026, or any other future periods. The accompanying unaudited condensed consolidated financial statements include the accounts of the Company, its subsidiaries and variable interest entities (“VIE”) for which the Company is a primary beneficiary (please read Note 14. Variable Interest Entities for additional information). All intercompany accounts and transactions have been eliminated on consolidation. References to joint venture include all operations under joint arrangements for accounting purposes. Management has evaluated the Company’s ability to continue as a going concern and considered the conditions and events that could give rise to substantial doubt about the Company’s ability to continue as a going concern within 12 months after the financial statements are issued. As part of the evaluation, and among other things, management has considered the following: • our current financial condition and liquidity sources, including current funds available and forecasted future cash flows; and • the severity and duration of any world events and armed conflicts, including the Russian-Ukrainian war, conflicts in the Israel-Gaza region and the broader conflict in the Middle East involving Iran and other nations, and associated repercussions to supply and demand for oil and gas and the global economy generally, as well as possible effects of trade disruptions and trade tariffs; Following the evaluation, Management has determined that it is appropriate to continue to adopt the going concern basis in preparing the financial statements. 
+ Recent Accounting Pronouncements 
+ Recent Accounting Pronouncements New accounting standards issued as of June 30, 2026, may affect future reporting by Navigator Holdings Ltd . The Company's 2025 Annual Report contains a list of such accounting pronouncements that may be relevant in the future and no new material accounting pronouncements were announced during the six months ended June 30, 2026, and through the date of this filing. The impact of these pronouncements on the Company's financial reporting was assessed and the Company concluded that no material impact for current and future reporting periods is expected. 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_AccountingPoliciesAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Disclosure of accounting policy for basis of accounting, or basis of presentation, used to prepare the financial statements (for example, US Generally Accepted Accounting Principles, Other Comprehensive Basis of Accounting, IFRS). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 4 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147483426/235-10-50-4 
+ + Details 
+ Name: 
+ us-gaap_BasisOfAccountingPolicyPolicyTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Disclosure of accounting policy pertaining to new accounting pronouncements that may impact the entity's financial reporting. Includes, but is not limited to, quantification of the expected or actual impact. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 250 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 5 -Subparagraph (SAB Topic 11.M.Q2) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480530/250-10-S99-5 
+ + Details 
+ Name: 
+ us-gaap_NewAccountingPronouncementsPolicyPolicyTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

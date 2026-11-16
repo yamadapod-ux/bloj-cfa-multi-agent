@@ -1,0 +1,86 @@
+ 
+ XML
+ 55
+ R48.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Vessels Under Construction - Movement (Details) - USD ($) $ in Thousands 
+ 6 Months Ended 
+ 12 Months Ended 
+ Jun. 30, 2026 
+ Dec. 31, 2025 
+ Movement In Vessels Under Construction [Roll Forward] 
+ As of January 1, 2025 and 2026 
+ $ 115,321 
+ $ 41,589 
+ Additions to vessels under construction 
+ 21,557 
+ 68,526 
+ Capitalized interest 
+ 3,190 
+ 5,206 
+ Vessel under construction at December 31, 2025 and June 30, 2026 
+ $ 140,068 
+ $ 115,321 
+ X 
+ - Definition Construction In Progress, Capitalized Interest 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_ConstructionInProgressCapitalizedInterest 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Construction In Progress, Net 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_ConstructionInProgressNet 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Construction In Progress, Payment 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_ConstructionInProgressPayment 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Movement In Vessels Under Construction 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_MovementInVesselsUnderConstructionRollForward 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

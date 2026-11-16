@@ -1,0 +1,61 @@
+ 
+ XML
+ 33
+ R26.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Operating Revenues (Tables) 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Revenue from Contract with Customer [Abstract] 
+ Schedule of Disaggregation of Revenue 
+ The following table discloses operating revenues by contract type for the three and six months ended June 30, 2026, and 2025: Three months ended June 30, 2025 Three months ended June 30, 2026 Six months ended June 30, 2025 Six months ended June 30, 2026 (in thousands) Time charters $ 91,510 $ 91,748 $ 178,693 $ 173,171 Voyage charters 25,695 64,332 78,414 112,746 Operating revenues from Unigas Pool 12,430 11,856 23,934 22,637 Total operating revenues $ 129,635 $ 167,936 $ 281,041 $ 308,554 
+ Schedules of Cash Flows for Committed Time Charter Revenues 
+ The estimated undiscounted cash flows for committed time charter revenues that are expected to be received on an annual basis for ongoing time charters, as of June 30, 2026, are as follows: (in thousands of U.S. dollars) Within 1 year $ 182,546 In the second year 62,218 In the third year 45,734 In the fourth year 15,987 Thereafter $ 18,862 $ 325,347 
+ X 
+ - Definition Tabular disclosure of disaggregation of revenue into categories depicting how nature, amount, timing, and uncertainty of revenue and cash flows are affected by economic factor. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 5 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479806/606-10-50-5 
+ + Details 
+ Name: 
+ us-gaap_DisaggregationOfRevenueTableTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_RevenueFromContractWithCustomerAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Tabular disclosure of the nature of a concentration, a benchmark to which it is compared, and the percentage that the risk is to the benchmark. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 275 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 18 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482861/275-10-50-18 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 275 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 20 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482861/275-10-50-20 
+ + Details 
+ Name: 
+ us-gaap_SchedulesOfConcentrationOfRiskByRiskFactorTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

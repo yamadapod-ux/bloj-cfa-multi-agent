@@ -1,0 +1,219 @@
+ 
+ XML
+ 56
+ R49.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Equity Method Investments - Additional Information (Details) $ in Thousands 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ USD ($) 
+ Jun. 30, 2025 
+ USD ($) 
+ Jun. 30, 2026 
+ GBP (£) 
+ Jun. 03, 2026 
+ Dec. 31, 2025 
+ USD ($) 
+ Dec. 31, 2024 
+ USD ($) 
+ Oct. 25, 2023 
+ Schedule of Equity Method Investments [Line Items] 
+ Share of results from equity method investment excluding amortized costs 
+ $ 9,700 
+ $ 3,900 
+ Equity method investments 
+ 247,737 
+ $ 247,935 
+ $ 253,729 
+ Enterprise Navigator Ethylene Terminal L.L.C. ("Export Terminal Joint Venture") 
+ Schedule of Equity Method Investments [Line Items] 
+ Equity contributions to joint venture 
+ 274,500 
+ Difference in the carrying amount and the underlying equity 
+ 4,900 
+ $ 4,900 
+ Costs amortized 
+ $ 100 
+ $ 100 
+ Ownership percentage 
+ 50.00% 
+ 50.00% 
+ 50.00% 
+ Azane Fuel Solutions AS ("Azane") 
+ Schedule of Equity Method Investments [Line Items] 
+ Ownership percentage 
+ 16.10% 
+ 16.10% 
+ 16.10% 
+ 9.50% 
+ 9.50% 
+ Unigas International B.V. ("Unigas") 
+ Schedule of Equity Method Investments [Line Items] 
+ Ownership percentage 
+ 33.30% 
+ 33.30% 
+ 33.30% 
+ Luna Pool Agency Limited 
+ Schedule of Equity Method Investments [Line Items] 
+ Ownership percentage 
+ 50.00% 
+ 50.00% 
+ 50.00% 
+ Equity method investments | £ 
+ £ 1 
+ Bluestreak CO2 Limited ("Bluestreak") 
+ Schedule of Equity Method Investments [Line Items] 
+ Ownership percentage 
+ 50.00% 
+ 50.00% 
+ 50.00% 
+ X 
+ - Definition Equity contributions to joint venture. 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_EquityContributionsToJointVenture 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Income (Loss) From Equity Method Investments, Excluding Amortized Costs 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_IncomeLossFromEquityMethodInvestmentsExcludingAmortizedCosts 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Difference between amount at which an investment accounted for under the equity method of accounting is carried (reported) on the balance sheet and amount of underlying equity in net assets the reporting Entity has in the investee. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a)(3) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481687/323-10-50-3 
+ + Details 
+ Name: 
+ us-gaap_EquityMethodInvestmentDifferenceBetweenCarryingAmountAndUnderlyingEquity 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of other-than-temporary decline in value that has been recognized against investment accounted for under equity method of accounting. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481664/323-10-45-1 
+ + Details 
+ Name: 
+ us-gaap_EquityMethodInvestmentOtherThanTemporaryImpairment 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition The percentage of ownership of common stock or equity participation in the investee accounted for under the equity method of accounting. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 28 -Subparagraph (f) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482907/825-10-50-28 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a)(1) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481687/323-10-50-3 
+ + Details 
+ Name: 
+ us-gaap_EquityMethodInvestmentOwnershipPercentage 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:percentItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Definition This item represents the carrying amount on the entity's balance sheet of its investment in common stock of an equity method investee. This is not an indicator of the fair value of the investment, rather it is the initial cost adjusted for the entity's share of earnings and losses of the investee, adjusted for any distributions (dividends) and other than temporary impairment (OTTI) losses recognized. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 280 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 32 -Subparagraph (ee) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482810/280-10-50-32 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 280 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 25 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482810/280-10-50-25 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 270 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (i) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482964/270-10-50-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481664/323-10-45-1 Reference 5: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a)(3) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481687/323-10-50-3 Reference 6: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(10)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 
+ + Details 
+ Name: 
+ us-gaap_EquityMethodInvestments 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 205 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 7 -Publisher FASB -URI https://asc.fasb.org/1943274/2147483499/205-20-50-7 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 205 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 5A -Publisher FASB -URI https://asc.fasb.org/1943274/2147483499/205-20-50-5A Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481687/323-10-50-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-1 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 825 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 28 -Subparagraph (f) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482907/825-10-50-28 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.4-08(g)(1)(ii)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-1 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a)(1) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481687/323-10-50-3 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a)(2) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481687/323-10-50-3 Reference 9: http://www.xbrl.org/2003/role/disclosureRef -Topic 323 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481687/323-10-50-3 
+ + Details 
+ Name: 
+ us-gaap_ScheduleOfEquityMethodInvestmentsLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Details 
+ Name: 
+ srt_ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis=nvgs_EnterpriseNavigatorEthyleneTerminalsLLCMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis=nvgs_AzaneFuelSolutionsASMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis=nvgs_UnigasInternationalBVMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis=nvgs_LunaPoolAgencyLimitedMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ScheduleOfEquityMethodInvestmentEquityMethodInvesteeNameAxis=nvgs_BluestreakCO2LimitedMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

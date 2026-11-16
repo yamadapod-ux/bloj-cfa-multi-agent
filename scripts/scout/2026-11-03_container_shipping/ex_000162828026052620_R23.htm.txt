@@ -1,0 +1,45 @@
+ 
+ XML
+ 30
+ R23.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Related Party Transactions 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Related Party Transactions [Abstract] 
+ Related Party Transactions 
+ 15. Related Party Transactions The following table summarizes our transactions with related parties for the three and six months ended June 30, 2026, and 2025: Three months ended June 30, 2025 Three months ended June 30, 2026 Six months ended June 30, 2025 Six months ended June 30, 2026 (in thousands) Net expenses Luna Pool Agency Limited $ (1) $ (1) $ (3) $ (6) Ultranav Business Support ApS (16) (12) (31) (25) $ (17) $ (13) $ (34) $ (31) The following table sets out the balances due from related parties as of December 31, 2025, and June 30, 2026: December 31, 2025 June 30, 2026 (in thousands) Luna Pool Agency Limited $ 1,532 $ 310 Unigas Pool 5,010 8,667 $ 6,542 $ 8,977 As of June 30, 2026, Ultranav International ApS held a 34.5% share in the Company and BW Group Limited held a 9.9% share in the Company and they are our principal shareholders. They may exert considerable influence on the Company's directors and significant corporate actions. 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_RelatedPartyTransactionsAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition The entire disclosure for related party transactions. Examples of related party transactions include transactions between (a) a parent company and its subsidiary; (b) subsidiaries of a common parent; (c) and entity and its principal owners; and (d) affiliates. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 220 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.6-07(2)(g)(3)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479134/946-220-S99-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(7)(e)(3)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 850 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147483326/850-10-50-1 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480990/946-20-50-2 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 5 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480990/946-20-50-5 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480990/946-20-50-6 Reference 9: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 235 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477968/946-235-50-2 Reference 10: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 235 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (e) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477968/946-235-50-2 Reference 11: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 220 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.6-07(2)(c)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479134/946-220-S99-1 Reference 12: http://www.xbrl.org/2003/role/disclosureRef -Topic 946 -SubTopic 220 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.6-07(2)(e)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479134/946-220-S99-1 Reference 13: http://www.xbrl.org/2003/role/disclosureRef -Topic 850 -Name Accounting Standards Codification -Publisher FASB -URI https://asc.fasb.org/850/tableOfContent Reference 14: http://www.xbrl.org/2003/role/disclosureRef -Topic 850 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147483326/850-10-50-6 Reference 15: http://www.xbrl.org/2003/role/disclosureRef -Topic 850 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147483326/850-10-50-1 Reference 16: http://www.xbrl.org/2003/role/disclosureRef -Topic 850 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147483326/850-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_RelatedPartyTransactionsDisclosureTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

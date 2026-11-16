@@ -1,0 +1,44 @@
+ 
+ XML
+ 18
+ R10.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Vessels, net 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Vessels, net. 
+ Vessels, net 
+ 4. Vessels, net: The amounts in the unaudited condensed consolidated balance sheets are analyzed as follows: ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​ Vessel ​ ​ ​ Accumulated ​ ​ ​ Net Book ​ ​ Cost ​ Depreciation ​ Value Balance December 31, 2025 ​ $ 1,175,834 ​ $ (442,686) ​ $ 733,148 Depreciation ​ — ​ ​ (15,900) ​ ​ (15,900) Balance June 30, 2026 ​ $ 1,175,834 ​ $ (458,586) ​ $ 717,248 ​ 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ dlng_DisclosureVesselsNetAbstract 
+ Namespace Prefix: 
+ dlng_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ dlng_VesselsNetTextBlock 
+ Namespace Prefix: 
+ dlng_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

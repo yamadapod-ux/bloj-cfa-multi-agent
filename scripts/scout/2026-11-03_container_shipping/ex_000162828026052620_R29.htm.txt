@@ -1,0 +1,45 @@
+ 
+ XML
+ 36
+ R29.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Vessels Under Construction (Tables) 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Property, Plant, and Equipment [Abstract] 
+ Schedule of Vessels Under Construction 
+ December 31, 2025 June 30, 2026 (in thousands) As of January 1, 2025 and 2026 $ 41,589 $ 115,321 Additions to vessels under construction 68,526 21,557 Capitalized interest 5,206 3,190 Vessel under construction at December 31, 2025 and June 30, 2026 $ 115,321 $ 140,068 
+ X 
+ - Definition Schedule Of Construction In Progress 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_ScheduleOfConstructionInProgressTableTextBlock 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

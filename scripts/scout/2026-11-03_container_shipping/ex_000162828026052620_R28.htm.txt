@@ -1,0 +1,45 @@
+ 
+ XML
+ 35
+ R28.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Assets held for sale (Tables) 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Discontinued Operations and Disposal Groups [Abstract] 
+ Schedule of Assets Held-for-Sale 
+ December 31, 2025 June 30, 2026 (in thousands) As of January 1, 2025 and 2026 — 7,761 Reclassification from Vessels 7,761 15,231 Vessels disposal — (22,992) Total assets held for sale December 31, 2025 and June 30, 2026 $ 7,761 $ — 
+ X 
+ - Definition Tabular disclosure of long-lived asset held for sale. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-3 
+ + Details 
+ Name: 
+ us-gaap_DisclosureOfLongLivedAssetsHeldForSaleTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_DiscontinuedOperationsAndDisposalGroupsAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

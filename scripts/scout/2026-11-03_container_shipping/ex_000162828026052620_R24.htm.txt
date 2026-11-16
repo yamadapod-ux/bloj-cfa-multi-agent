@@ -1,0 +1,45 @@
+ 
+ XML
+ 31
+ R24.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Subsequent Events 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Subsequent Events [Abstract] 
+ Subsequent Events 
+ 16. Subsequent Events Capital Return Policy On August 4, 2026, the Company's Board of Directors declared a cash dividend of $0.07 per share of the Company’s common stock for the quarter ended June 30, 2026, under the Company's Capital Return Policy , payable on September 1, 2026, to all shareholders of record as of the close of business U.S. Eastern time on August 19, 2026, (the "Dividend"). The aggregate amount of the Dividend is expected to be approximately $4.3 million , which the Company anticipates will be funded from cash on hand. Also as part of the Company's Capital Return Policy for the quarter ended June 30, 2026, the Company expects to repurchase approximately $14.2 million of common stock between August 6, 2026 , and September 30, 2026 , subject to operating needs, market conditions, legal requirements, stock price and other circumstances, such that the Dividend and share repurchases together equal 35% of net income attributable to stockholders of the Company for the quarter ended June 30, 2026. Financing On July 31, 2026, the Company and certain of its subsidiaries as part of the Amon Joint Venture entered into the July 2026 Post-Delivery Senior Secured Term Loan with ING Bank N.V., London Branch, Société Générale and Oversea-Chinese Banking Corporation Limited to finance from delivery, up to 70% of the shipyard cost of two newbuild 51,530 cubic-meter capacity ammonia-fueled, ice-class, liquefied ammonia carriers Navigator Amundsen and Navigator Archer (the "Two Ammonia Newbuild Vessels"). All pre-delivery payments under the shipbuilding contracts until delivery of the vessels will be paid by the Company and certain of its subsidiaries as part of the Amon Joint Venture from cash on hand. The July 2026 Post-Delivery Senior Secured Term Loan is amortizing with a balloon payment of $85.26 million, and bears interest at a rate of Term SOFR plus 135 basis points. The July 2026 Post-Delivery Senior Secured Term Loan is expected to be drawn on delivery of each vessel, and matures at the earlier of 72 months after delivery of each vessel or 12 March 2035 (Ship Tranche A) and 12 July 2035 (Ship Tranche B). As of June 30, 2026 , the facility was undrawn. On July 17, 2026, the Company drew $57.6 million from the June 2026 Pre-Delivery Secured Term Loan to recoup 80% of all pre-delivery instalments paid to the shipyard for the two vessels to date. Company Redomiciliation On April 19, 2026, in connection with the Company's previously disclosed intention to change its corporate domicile from the Marshall Islands to England and Wales (the "Company Redomiciliation") further details of which can be found in the Company's 2025 Annual Report, the Company's vessel, Navigator Taurus was transferred from its subsidiary Navigator Taurus L.L.C., a Marshall Islands subsidiary, to Navigator Taurus Ltd, a newly incorporated subsidiary in England and Wales. The Company expects to continue to redomicile further of its subsidiaries to newly formed entities in England and Wales and Denmark as part of the wider project to change the Company's corporate domicile. Unigas On July 13, 2026, further to the non-binding letter of intent entered into on April 14, 2026, the Company entered into definitive agreements with Bernhard Schulte (Singapore) Holdings Pte. Ltd. (“Bernhard Schulte”) and Sloman Neptun Schiffahrts-Aktiengesellschaft (“Sloman Neptun”) for the sale of eight gas carriers (the “Unigas Vessels”), together with the Company’s shareholding in Unigas International B.V. (“Unigas B.V.”), the entity that commercially manages the Unigas Vessels through the Unigas Pool, for aggregate consideration of approximately $183.0 million (the “Unigas Transaction”). The combined book value in respect of the Unigas Vessels and the Company's holding in Unigas B.V. in the Company's accounts at June 30, 2026, was approximately $114.0 million. At June 30, 2026, the outstanding balance under the Company's May 2025 Secured Term Loan and RCF in respect of the Unigas Vessels was $18.3 million and was prepaid on July 27, 2026, and as a result all the security granted by the Company over Happy Albatross was released. The Unigas Transaction, which is subject to customary closing conditions, as well as delivery of the Unigas Vessels pursuant to it, is expected to be completed by the fourth quarter of 2026. The Company currently expects to recognize a profit on sale of the Unigas Vessels and the Company's holding in Unigas B.V. of between $66.0 million and $69.0 million, pursuant to the exact time at which each individual vessel is delivered based on operational practicalities. 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_SubsequentEventsAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition The entire disclosure for significant events or transactions that occurred after the balance sheet date through the date the financial statements were issued or the date the financial statements were available to be issued. Examples include: the sale of a capital stock issue, purchase of a business, settlement of litigation, catastrophic loss, significant foreign exchange rate changes, loans to insiders or affiliates, and transactions not in the ordinary course of business. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 855 -Name Accounting Standards Codification -Publisher FASB -URI https://asc.fasb.org/855/tableOfContent Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 855 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147483399/855-10-50-2 
+ + Details 
+ Name: 
+ us-gaap_SubsequentEventsTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

@@ -1,0 +1,109 @@
+ 
+ XML
+ 51
+ R44.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Vessels - Additional Information (Details) $ in Millions 
+ Jun. 30, 2026 
+ USD ($) 
+ vessel 
+ Dec. 31, 2025 
+ USD ($) 
+ vessel 
+ Collateralized Loan Obligations 
+ Property, Plant, and Equipment [Line Items] 
+ Property, plant and equipment, net 
+ $ 1,387.0 
+ $ 1,430.0 
+ Time Charter Agreements 
+ Property, Plant, and Equipment [Line Items] 
+ Number of vessels contracted | vessel 
+ 30 
+ 29 
+ Cost of vessels 
+ $ 1,603.0 
+ $ 1,539.0 
+ Property, plant and equipment, net 
+ $ 946.0 
+ $ 974.0 
+ X 
+ - Definition Number of Vessels Contracted 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_NumberOfVesselsContracted 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:integerItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount, before accumulated depreciation, depletion, and amortization, of property, plant, and equipment. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 350 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482558/350-40-50-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 5 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480657/210-10-S50-5 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(8)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(13)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentGross 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 905 -SubTopic 360 -Name Accounting Standards Codification -Section 25 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478704/905-360-25-4 Reference 2: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 30 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482222/360-10-30-2 Reference 4: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 6: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 7: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 9: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 350 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482558/350-40-50-1 Reference 10: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 7A -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-7A 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount, after accumulated depreciation, depletion, and amortization, of property, plant, and equipment. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 360 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478443/942-360-45-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 360 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478451/942-360-50-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(8)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 7A -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-7A Reference 8: http://www.xbrl.org/2003/role/exampleRef -Topic 852 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 10 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481372/852-10-55-10 Reference 9: http://www.xbrl.org/2003/role/disclosureRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(8)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentNet 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Details 
+ Name: 
+ us-gaap_UnderlyingAssetClassAxis=us-gaap_CollateralizedLoanObligationsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_TypeOfArrangementAxis=nvgs_TimeCharterAgreementsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

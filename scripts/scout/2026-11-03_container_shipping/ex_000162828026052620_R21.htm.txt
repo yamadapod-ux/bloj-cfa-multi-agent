@@ -1,0 +1,45 @@
+ 
+ XML
+ 28
+ R21.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Cash, Cash Equivalents and Restricted Cash 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Cash and Cash Equivalents [Abstract] 
+ Cash, Cash Equivalents and Restricted Cash 
+ 13. Cash, Cash Equivalents and Restricted Cash The following table shows the breakdown of cash, cash equivalents and restricted cash as of June 30, 2026, and December 31, 2025: December 31, 2025 June 30, 2026 (in thousands) Cash and cash equivalents $ 154,674 $ 225,465 Cash and cash equivalents held by VIE 276 427 Restricted cash 49,921 47,942 Total cash, cash equivalents and restricted cash $ 204,871 $ 273,834 Amounts included in restricted cash represent cash in blocked deposit accounts that are required to be deposited in accordance with the terms of a number of the Company's secured term loans with banking institutions and funds held by our variable interest entity PT Navigator Khatulistiwa ("PTNK"). Restricted cash is deemed not available for daily operational use. In February 2025, as part of an investigation into allegations of corruption, Muhamad Kerry Adrianto and certain other business partners and executives of PT Pertamina (Persero), Indonesia's state-owned energy company (“Pertamina”), were arrested by Indonesian authorities. The allegations related to the mismanagement of crude oil and oil refinery products at Pertamina between 2018 and 2023. The legal proceedings linked with the investigation by local authorities related to nine individuals and concluded in February 2026, with all nine defendants being found guilty. Mr. Adrianto was given a custodial sentence of 15 years, a fine of around $60,000 and was ordered to pay compensation of approximately $173 million. On March 5, 2026, Mr. Adrianto lodged an appeal to his sentence with the High Court in Jakarta, Indonesia. On June 10, 2026, the High Court issued its appeal judgment, materially rejecting Mr. Adrianto's appeal, with his fine being reduced from around $60,000 to approximately $30,000 and the compensation order being increased from approximately $173 million to around $840 million. On June 22, 2026, Mr. Adrianto filed an appeal against the High Court's appeal decision to the Indonesian Supreme Court, and the Company continues to monitor developments. We are not aware of any link or connection between the Company or PTNK, our Indonesian joint venture, and the investigation or its findings other than through Mr. Adrianto, who served as a director of PTNK until September 2025, when he was replaced as a director of PTNK. Following the above, we continue to believe that the events surrounding Mr. Adrianto will not have a material impact on the Company or our operations. 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_CashAndCashEquivalentsAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition The entire disclosure for cash and cash equivalent footnotes, which may include the types of deposits and money market instruments, applicable carrying amounts, restricted amounts and compensating balance arrangements. Cash and equivalents include: (1) currency on hand (2) demand deposits with banks or financial institutions (3) other kinds of accounts that have the general characteristics of demand deposits (4) short-term, highly liquid investments that are both readily convertible to known amounts of cash and so near their maturity that they present insignificant risk of changes in value because of changes in interest rates. Generally, only investments maturing within three months from the date of acquisition qualify. 
+ + References Reference 1: http://www.xbrl.org/2003/role/recommendedDisclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 8 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482913/230-10-50-8 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 7 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482913/230-10-50-7 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(1)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(2)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 
+ + Details 
+ Name: 
+ us-gaap_CashAndCashEquivalentsDisclosureTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

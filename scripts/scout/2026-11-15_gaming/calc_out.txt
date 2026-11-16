@@ -1,0 +1,36 @@
+INSE mc 116.0 OI 40.7 DA 54.8 EBITDA 95.5 ND 288.9 ND/EBITDA 3.03 ND/adjEBITDA(110.5) 2.61
+ OCF 46.9 capex 17.3 FCF 29.6 yield 25.5 FCF-SBC 23.2 20.0
+ norm capex FY23-25 28.2 norm FCF-SBC 12.3 yield 10.6
+ ROIC tax 0.21 incl cash 10.3 ex cash 11.7
+ ROIC tax 0.25 incl cash 9.8 ex cash 11.1
+ TTM OI trend Q1/Q2/Q3 26 38.1 40.1 40.7 FY25 30.5
+  naive FV TTM raw @0.13 8.64 P/FV 0.51
+  naive FV norm @0.13 3.58 P/FV 1.23
+  naive FV TTM raw @0.15 7.48 P/FV 0.59
+  naive FV norm @0.15 3.1 P/FV 1.42
+  naive FV TTM raw @0.16 7.02 P/FV 0.63
+  naive FV norm @0.16 2.91 P/FV 1.51
+BRSL mc 1815 EV(incl NCI book) 6790 EV/adjEBITDA guide 1150 5.9 EV/(adjEBITDA-amort~385) 8.88 ND/adjEBITDA 3.30 (co.) ND/(EBITDA after amort) 5.02
+ FCF ex-license guide 300 yield 16.5 license/yr 250 norm 50 yield 2.7
+ ROIC tax 0.21 incl cash 6.5 ex cash 7.1
+ ROIC tax 0.25 incl cash 6.2 ex cash 6.8
+ adjEBIT Q3 130 vs 185 -0.297 9M 391 vs 500 -0.218
+  naive FV FCF 300 @0.1 16.22 P/FV 0.6
+  naive FV FCF 300 @0.12 13.51 P/FV 0.73
+  naive FV FCF 50 @0.1 2.68 P/FV 3.66
+  naive FV FCF 50 @0.12 2.23 P/FV 4.39
+ PT Nasdaq 14.50 -> 0.677 MarketBeat 15.10 -> 0.65
+SRAD econ shs dil 296.1 basic 281.0 mc $ 3793 EURm 3440 EV 3309 rev TTM 1455.8 EV/Rev 2.27 fwd 2.17 9M growth 0.18
+ FCF TTM 194.2 yield 5.6 SBC 56.3 SBC/rev 3.9 FCF-SBC yield 4.0
+ EBIT {'FY21': 51.0, 'FY22': 54.0, 'FY23': 68.1, 'FY24': 90.5, 'FY25': 194.8} ROIC [3.4, 5.5, 5.8, 7.3, 14.8] avg 7.4
+ ROIC FY25-NOPAT on Q3 IC incl cash 20.5 ex cash 27.5 asset-side intang+GW 1904 8.1
+  D-Legacy naive FV @0.1 $7.72 P/FV 1.66
+  D-Legacy naive FV @0.13 $6.05 P/FV 2.12
+ PT Nasdaq 17.19 -> 0.745 MarketBeat 19.19 -> 0.668
+GENI FY25 OI -151.3, Q3-26 OI +10.4 (first positive), 9M26 net loss -147.9
+WYNN mc 8723 OCF 1220.3 capex 704.9 FCF 515.4 yield 5.9 norm FCF 789.0 yield 9.0 SBC 83.8
+ EBITDA 1685.2 ND 10251.7 ND/EBITDA 6.08
+ ROIC incl 7.0 ex 8.1 vs 0.5xWACC 5.0%
+  naive FV TTM 515 @CoE10.3% 48.79 P/FV 1.74
+  naive FV norm maint capex 789 @CoE10.3% 74.69 P/FV 1.14
+  naive FV FY23-25 avg 835 @CoE10.3% 79.01 P/FV 1.08

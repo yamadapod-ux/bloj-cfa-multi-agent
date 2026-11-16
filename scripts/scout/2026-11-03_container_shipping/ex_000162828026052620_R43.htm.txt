@@ -1,0 +1,290 @@
+ 
+ XML
+ 50
+ R43.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Vessels - Rollforward (Details) - USD ($) $ in Thousands 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Dec. 31, 2025 
+ Cost 
+ Transfer to assets held for sale 
+ $ (36,141) 
+ Vessels, net 
+ Cost 
+ Beginning balance 
+ 2,491,805 
+ Additions 
+ 11,062 
+ Write-offs of fully depreciated assets 
+ (6,492) 
+ Transfer to assets held for sale 
+ (39,506) 
+ Ending balance 
+ 2,456,869 
+ Accumulated Depreciation 
+ Beginning balance 
+ 890,760 
+ Charge for the period 
+ 63,250 
+ Transfer to assets held for sale 
+ (24,275) 
+ Write-offs of fully depreciated assets 
+ (6,492) 
+ Ending balance 
+ 923,243 
+ Net Book Value 
+ Property, plant and equipment, net 
+ 1,533,626 
+ $ 1,601,045 
+ Vessels 
+ Cost 
+ Beginning balance 
+ 2,396,180 
+ Additions 
+ 0 
+ Write-offs of fully depreciated assets 
+ (444) 
+ Ending balance 
+ 2,359,595 
+ Accumulated Depreciation 
+ Beginning balance 
+ 838,992 
+ Charge for the period 
+ 51,821 
+ Transfer to assets held for sale 
+ (22,057) 
+ Write-offs of fully depreciated assets 
+ (444) 
+ Ending balance 
+ 868,312 
+ Net Book Value 
+ Property, plant and equipment, net 
+ 1,491,283 
+ 1,557,188 
+ Drydocking 
+ Cost 
+ Beginning balance 
+ 95,625 
+ Additions 
+ 11,062 
+ Write-offs of fully depreciated assets 
+ (6,048) 
+ Transfer to assets held for sale 
+ (3,365) 
+ Ending balance 
+ 97,274 
+ Accumulated Depreciation 
+ Beginning balance 
+ 51,768 
+ Charge for the period 
+ 11,429 
+ Transfer to assets held for sale 
+ (2,218) 
+ Write-offs of fully depreciated assets 
+ (6,048) 
+ Ending balance 
+ 54,931 
+ Net Book Value 
+ Property, plant and equipment, net 
+ $ 42,343 
+ $ 43,857 
+ X 
+ - Definition Amount of accumulated depreciation, depletion, and amortization of property, plant, and equipment. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section S45 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480204/360-10-S45-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 360 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478443/942-360-45-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 360 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478451/942-360-50-1 Reference 5: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 350 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482558/350-40-50-1 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(8)(b)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(14)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 
+ + Details 
+ Name: 
+ us-gaap_AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipmentAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of decrease in accumulated depreciation, depletion, and amortization from reclassification out of property, plant, and equipment. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_AccumulatedDepreciationDepletionAndAmortizationReclassificationsFromPropertyPlantAndEquipment1 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of decrease in accumulated depreciation, depletion, and amortization of property, plant, and equipment from disposition. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_AccumulatedDepreciationDepletionAndAmortizationSaleOfPropertyPlantAndEquipment1 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition The aggregate expense recognized in the current period that allocates the cost of tangible assets, intangible assets, or depleting assets to periods that benefit from use of the assets. 
+ + References Reference 1: http://fasb.org/us-gaap/role/ref/legacyRef -Name Accounting Standards Codification -Section 45 -Paragraph 28 -Subparagraph (b) -SubTopic 10 -Topic 230 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482740/230-10-45-28 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 350 -SubTopic 30 -Name Accounting Standards Codification -Section 50 -Paragraph 2 -Subparagraph (a)(2) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482665/350-30-50-2 Reference 4: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 5: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 350 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482558/350-40-50-1 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 280 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 32 -Subparagraph (ee) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482810/280-10-50-32 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 280 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 22 -Subparagraph (e) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482810/280-10-50-22 Reference 8: http://www.xbrl.org/2003/role/exampleRef -Topic 220 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 12 -Publisher FASB -URI https://asc.fasb.org/1943274/2147476148/220-40-50-12 Reference 9: http://www.xbrl.org/2003/role/exampleRef -Topic 280 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 48 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482785/280-10-55-48 Reference 10: http://www.xbrl.org/2003/role/exampleRef -Topic 280 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 49 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482785/280-10-55-49 Reference 11: http://www.xbrl.org/2003/role/disclosureRef -Topic 270 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (i) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482964/270-10-50-1 Reference 12: http://www.xbrl.org/2003/role/disclosureRef -Topic 220 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Subparagraph (e) -Publisher FASB -URI https://asc.fasb.org/1943274/2147476148/220-40-50-6 
+ + Details 
+ Name: 
+ us-gaap_DepreciationDepletionAndAmortization 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of increase in property, plant, and equipment from addition. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentAdditions 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of decrease in property, plant, and equipment from disposition. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentDisposals 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount, before accumulated depreciation, depletion, and amortization, of property, plant, and equipment. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 350 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482558/350-40-50-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 5 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480657/210-10-S50-5 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(8)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(13)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentGross 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentGrossAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount, after accumulated depreciation, depletion, and amortization, of property, plant, and equipment. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 360 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478443/942-360-45-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 360 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478451/942-360-50-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(8)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 7A -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-7A Reference 8: http://www.xbrl.org/2003/role/exampleRef -Topic 852 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 10 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481372/852-10-55-10 Reference 9: http://www.xbrl.org/2003/role/disclosureRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(8)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentNet 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentNetAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of increase (decrease) in property, plant, and equipment from reclassification, impairment, donation, and change classified as other. Includes, but is not limited to, land and land improvement; building; machinery and equipment; furniture and fixture; and work of art, historical treasure, or similar asset classified as collection. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentTransfersAndChanges 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ duration 
+ X 
+ - Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentByTypeAxis=nvgs_VesselsInOperationMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentByTypeAxis=nvgs_VesselsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentByTypeAxis=nvgs_DrydockingMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

@@ -1,0 +1,117 @@
+ 
+ XML
+ 68
+ R61.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Senior Unsecured Bonds - Summary of Senior Unsecured Bond and Total Deferred Financing Costs (Details) - Senior Unsecured Bonds - USD ($) $ in Thousands 
+ Jun. 30, 2026 
+ Dec. 31, 2025 
+ Debt Instrument [Line Items] 
+ Less deferred financing costs 
+ $ (1,578) 
+ $ (1,817) 
+ Total 
+ 138,422 
+ 138,183 
+ October 2024 Bond issuance 
+ Debt Instrument [Line Items] 
+ Gross debt 
+ 100,000 
+ 100,000 
+ Total 
+ 140,000 
+ March 2025 Bond Tap issuance 
+ Debt Instrument [Line Items] 
+ Gross debt 
+ $ 40,000 
+ $ 40,000 
+ X 
+ - Definition Amount, before unamortized (discount) premium and debt issuance costs, of long-term debt. Includes, but is not limited to, notes payable, bonds payable, commercial loans, mortgage loans, convertible debt, subordinated debt and other types of debt. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(16)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 4 -Subparagraph (b)(1) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-4 
+ + Details 
+ Name: 
+ us-gaap_DebtInstrumentCarryingAmount 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 505 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481112/505-10-50-3 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(16)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)(b)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)(a)(4)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)(a)(3)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 9: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)(a)(1)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 10: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 9 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480657/210-10-S50-9 Reference 11: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)(a)(5)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 12: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)(a)(2)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 13: http://www.xbrl.org/2003/role/disclosureRef -Topic 815 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 8A -Publisher FASB -URI https://asc.fasb.org/1943274/2147480434/815-10-50-8A Reference 14: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-1 Reference 15: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 16: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 17: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.4-08(f)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-1 Reference 18: http://www.xbrl.org/2003/role/exampleRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 55 -Paragraph 8 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482949/835-30-55-8 Reference 19: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1B -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1B Reference 20: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69B -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69B Reference 21: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69C -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69C Reference 22: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69E -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69E Reference 23: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69F -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69F Reference 24: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1B -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1B Reference 25: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1B -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1B Reference 26: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1B -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1B Reference 27: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1B -Subparagraph (e) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1B Reference 28: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1B -Subparagraph (f) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1B Reference 29: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1B -Subparagraph (h) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1B Reference 30: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1D -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1D Reference 31: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1D -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1D Reference 32: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1D -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1D Reference 33: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1E -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1E Reference 34: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1E -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1E Reference 35: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1E -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1E Reference 36: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1F -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1F Reference 37: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1F -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1F Reference 38: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1F -Subparagraph (b)(1) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1F Reference 39: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1F -Subparagraph (b)(2) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1F Reference 40: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1I -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1I Reference 41: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 45 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482925/835-30-45-2 Reference 42: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482900/835-30-50-1 
+ + Details 
+ Name: 
+ us-gaap_DebtInstrumentLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount, after accumulated amortization, of debt issuance costs. Includes, but is not limited to, legal, accounting, underwriting, printing, and registration costs. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 45 -Paragraph 1A -Publisher FASB -URI https://asc.fasb.org/1943274/2147482925/835-30-45-1A Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 45 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482925/835-30-45-2 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482900/835-30-50-1 Reference 4: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1D -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1D 
+ + Details 
+ Name: 
+ us-gaap_DeferredFinanceCostsNet 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt. Excludes lease obligation. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(16)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 5: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 9 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480657/210-10-S50-9 Reference 6: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 9: http://www.xbrl.org/2003/role/exampleRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 55 -Paragraph 8 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482949/835-30-55-8 Reference 10: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69B -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69B Reference 11: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69C -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69C Reference 12: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1D -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1D Reference 13: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(16)(a)(2)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 Reference 14: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 4 -Subparagraph (b)(3) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-4 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebt 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Details 
+ Name: 
+ us-gaap_LongtermDebtTypeAxis=nvgs_SeniorUnsecuredBondsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_DebtInstrumentAxis=nvgs_October2024BondsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_DebtInstrumentAxis=nvgs_March2025BondTapIssueAddendumMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

@@ -1,0 +1,116 @@
+ 
+ XML
+ 54
+ R47.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Vessels Under Construction - Additional Information (Details) $ / vessel in Millions 
+ Aug. 20, 2024 
+ vessel 
+ m³ 
+ Jun. 30, 2026 
+ $ / vessel 
+ Jul. 31, 2025 
+ $ / vessel 
+ Jul. 17, 2025 
+ $ / vessel 
+ Nov. 21, 2024 
+ vessel 
+ Property, Plant, and Equipment [Abstract] 
+ Number of vessels to build | vessel 
+ 2 
+ 2 
+ Vessels cargo capacity (in cbm) | m³ 
+ 48,500 
+ Property, Plant, and Equipment [Line Items] 
+ Average shipyard price per vessel to be delivered (in usd per vessel) 
+ 102.9 
+ Ammonia Newbuild Vessels 
+ Property, Plant, and Equipment [Line Items] 
+ Average shipyard price per vessel to be delivered (in usd per vessel) 
+ 87.0 
+ 87.0 
+ X 
+ - Definition Average Shipyard Price Per Vessel To Be Delivered 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_AverageShipyardPricePerVesselToBeDelivered 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ srt-types:perUnitItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Definition Number Of Vessels To Build 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_NumberOfVesselsToBuild 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:integerItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Definition Vessels Cargo Capacity. 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_VesselsCargoCapacity 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ dtr-types:volumeItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 905 -SubTopic 360 -Name Accounting Standards Codification -Section 25 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478704/905-360-25-4 Reference 2: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 30 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482222/360-10-30-2 Reference 4: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 6: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 7: http://www.xbrl.org/2003/role/exampleRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 05 -Paragraph 3 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482338/360-10-05-3 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Topic 360 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482099/360-10-50-1 Reference 9: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 350 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482558/350-40-50-1 Reference 10: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 7A -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-7A 
+ + Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Details 
+ Name: 
+ us-gaap_PropertyPlantAndEquipmentByTypeAxis=nvgs_AmmoniaNewbuildVesselsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

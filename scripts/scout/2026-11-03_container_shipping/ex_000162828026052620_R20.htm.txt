@@ -1,0 +1,45 @@
+ 
+ XML
+ 27
+ R20.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Commitments and Contingencies 
+ 6 Months Ended 
+ Jun. 30, 2026 
+ Commitments and Contingencies Disclosure [Abstract] 
+ Commitments and Contingencies 
+ 12. Commitments and Contingencies The schedule below summarizes our future contractual obligations as of June 30, 2026: 2026 2027 2028 2029 2030 Thereafter Total Secured term loan and revolving credit facilities $ 82,644 $ 115,886 $ 185,349 $ 124,646 $ 102,545 $ 175,884 $ 786,954 October 2024 Bonds — — — 140,000 — — 140,000 Vessels under construction (1) 93,210 249,300 113,100 — — — 455,610 Office operating leases (2) 630 1,251 1,248 1,134 1,109 1,188 6,560 Total contractual obligations $ 176,484 $ 366,437 $ 299,697 $ 265,780 $ 103,654 $ 177,072 $ 1,389,124 1. In August 2024, the Company has entered into four contracts to build the Four Ethylene Newbuild Vessels with Jiangnan Shipyard (Group) Co., Ltd. and China Shipbuilding Trading Co., Ltd., in China. The Four Ethylene Newbuild Vessels are under construction and are scheduled to be d elivered to the Company in December 2026, June 2027, September 2027 and December 2027 respectively, at an average shipyard price of $102.9 million per vessel. In July 2025, the Company announced that the Amon Joint Venture intends to acquire the Two Ammonia Newbuild Vessels. The Amon Joint Venture has entered into contracts with Nantong CIMC Sinopacific Offshore & Engineering Co., Ltd. to build the Two Ammonia Newbuild Vessels, with deliveries scheduled to take place in May 2028 and September 2028 respectively, at an average yard price of $87 million per vessel. 2. The Company occupies office space in London with a lease that commenced in January 2022 for a period of 10 years with a break option in February 2027 (the "Break Option"), which is the fifth anniversary of the lease commencement date. It was a requirement under the lease that the Break Option be declared 12 months in advance, and in January 2026 the Company agreed not to declare the Break Option in return for the removal of an upward-only rent review clause in the lease in relation to the second five-year period of the lease. The gross rent (excluding service charges and business rates) per year for our office lease is approximately $1.0 million. The Company occupies office space in Copenhagen with a lease that expired in December 2025. The Company will continue to occupy the office space on a 6-month rolling basis until a new lease is entered into. The monthly lease payments are dependent on foreign exchange rates and the gross rent per month payable in Danish Kroner is approximately $15,000. The lease term for our office in Gdynia, Poland which commenced in April 2024 is for a period of 5 years to March 30, 2029. The lease payments are dependent on foreign exchange rates and the gross rent per year payable in Euros is approximately $0.1 million. The Company entered into a new 43-month lease for office space in Houston that commenced on April 1, 2025. The annual gross rent under the lease payable in U.S. Dollars is approximately $41,000. The lease term for our office in Manila, Philippines commenced in July 2025 and expires in June 2028. The gross rent per year for our office lease is approximately $0.1 million. 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_CommitmentsAndContingenciesDisclosureAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition The entire disclosure for commitments and contingencies. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 440 -Name Accounting Standards Codification -Publisher FASB -URI https://asc.fasb.org/440/tableOfContent Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 450 -Name Accounting Standards Codification -Publisher FASB -URI https://asc.fasb.org/450/tableOfContent Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 405 -SubTopic 30 -Name Accounting Standards Codification -Publisher FASB -URI https://asc.fasb.org/405-30/tableOfContent Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 440 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 4 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482648/440-10-50-4 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 954 -SubTopic 440 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478522/954-440-50-1 Reference 6: http://www.xbrl.org/2003/role/disclosureRef -Topic 440 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 4 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147482648/440-10-50-4 
+ + Details 
+ Name: 
+ us-gaap_CommitmentsAndContingenciesDisclosureTextBlock 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ dtr-types:textBlockItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 

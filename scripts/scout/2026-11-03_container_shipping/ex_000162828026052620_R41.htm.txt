@@ -1,0 +1,242 @@
+ 
+ XML
+ 48
+ R41.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Operating Revenues - Additional Information (Details) $ in Thousands 
+ Jun. 30, 2026 
+ USD ($) 
+ vessel 
+ Dec. 31, 2025 
+ USD ($) 
+ vessel 
+ Dec. 31, 2024 
+ USD ($) 
+ Disaggregation of Revenue [Line Items] 
+ Number of operated vessels 
+ 54 
+ Number of operated vessels, excluding Unigas Pool 
+ 46 
+ 49 
+ Number of vessels within Unigas Pool 
+ 8 
+ Deferred income | $ 
+ $ 23,734 
+ $ 27,283 
+ Accounts receivable | $ 
+ $ 38,587 
+ $ 34,808 
+ Time Charters 
+ Disaggregation of Revenue [Line Items] 
+ Number of operated vessels 
+ 30 
+ 29 
+ Accrued income | $ 
+ $ 3,800 
+ $ 1,500 
+ Deferred income | $ 
+ $ 23,700 
+ $ 27,200 
+ Time Charters, Expiring Within One Year 
+ Disaggregation of Revenue [Line Items] 
+ Number of operated vessels 
+ 18 
+ 19 
+ Time Charters, Expiring Within Three Years 
+ Disaggregation of Revenue [Line Items] 
+ Number of operated vessels 
+ 8 
+ 7 
+ Time Charters, Expiring Within Six Years 
+ Disaggregation of Revenue [Line Items] 
+ Number of operated vessels 
+ 4 
+ Time Charters, Expiring Within Five Years 
+ Disaggregation of Revenue [Line Items] 
+ Number of operated vessels 
+ 3 
+ Voyage Charters 
+ Disaggregation of Revenue [Line Items] 
+ Accrued income | $ 
+ $ 8,100 
+ $ 3,200 
+ Accounts receivable | $ 
+ 27,400 
+ 14,100 
+ $ 19,500 
+ Costs incurred to fulfill a contract | $ 
+ $ 800 
+ $ 900 
+ X 
+ - Definition Number Of Vessels In Fleet 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_NumberOfVesselsInFleet 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:integerItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Definition Number Of Vessels In Fleet, Excluding Independently Managed 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_NumberOfVesselsInFleetExcludingIndependentlyManaged 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:integerItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount, after allowance for credit loss, of right to consideration from customer for product sold and service rendered in normal course of business, classified as current. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 310 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481990/310-10-45-2 
+ + Details 
+ Name: 
+ us-gaap_AccountsReceivableNetCurrent 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount, after accumulated amortization and accumulated impairment loss, of asset recognized from cost incurred to obtain or fulfill contract with customer. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 340 -SubTopic 40 -Name Accounting Standards Codification -Section 50 -Paragraph 3 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479483/340-40-50-3 
+ + Details 
+ Name: 
+ us-gaap_CapitalizedContractCostNet 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount, after allowance for credit loss, of right to consideration in exchange for good or service transferred to customer when right is conditioned on something other than passage of time, classified as current. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 11 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479806/606-10-50-11 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 3 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479837/606-10-45-3 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479837/606-10-45-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 8 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479806/606-10-50-8 
+ + Details 
+ Name: 
+ us-gaap_ContractWithCustomerAssetNetCurrent 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of obligation to transfer good or service to customer for which consideration has been received or is receivable, classified as current. 
+ + References Reference 1: http://www.xbrl.org/2003/role/exampleRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 8 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147483467/210-10-45-8 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 11 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479806/606-10-50-11 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479837/606-10-45-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 8 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479806/606-10-50-8 Reference 5: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 2 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479837/606-10-45-2 
+ + Details 
+ Name: 
+ us-gaap_ContractWithCustomerLiabilityCurrent 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 7 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479806/606-10-50-7 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 5 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479806/606-10-50-5 Reference 3: http://www.xbrl.org/2003/role/exampleRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 91 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479777/606-10-55-91 Reference 4: http://www.xbrl.org/2003/role/exampleRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 91 -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479777/606-10-55-91 Reference 5: http://www.xbrl.org/2003/role/exampleRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 91 -Subparagraph (c) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479777/606-10-55-91 Reference 6: http://www.xbrl.org/2003/role/exampleRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 91 -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479777/606-10-55-91 Reference 7: http://www.xbrl.org/2003/role/exampleRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 91 -Subparagraph (e) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479777/606-10-55-91 Reference 8: http://www.xbrl.org/2003/role/exampleRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 91 -Subparagraph (f) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479777/606-10-55-91 Reference 9: http://www.xbrl.org/2003/role/exampleRef -Topic 606 -SubTopic 10 -Name Accounting Standards Codification -Section 55 -Paragraph 91 -Subparagraph (g) -Publisher FASB -URI https://asc.fasb.org/1943274/2147479777/606-10-55-91 
+ + Details 
+ Name: 
+ us-gaap_DisaggregationOfRevenueLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition The number of units (items of property) under operating lease arrangements. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 842 -SubTopic 30 -Name Accounting Standards Codification -Section 50 -Paragraph 13 -Publisher FASB -URI https://asc.fasb.org/1943274/2147479773/842-30-50-13 
+ + Details 
+ Name: 
+ us-gaap_PropertySubjectToOrAvailableForOperatingLeaseNumberOfUnits 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:decimalItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ instant 
+ X 
+ - Details 
+ Name: 
+ srt_ProductOrServiceAxis=nvgs_TimeChartersMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ProductOrServiceAxis=nvgs_TimeChartersExpiringWithinOneYearMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ProductOrServiceAxis=nvgs_TimeChartersExpiringWithinThreeYearsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ProductOrServiceAxis=nvgs_TimeChartersExpiringWithinSixYearsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ProductOrServiceAxis=nvgs_TimeChartersExpiringWithinFiveYearsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ProductOrServiceAxis=nvgs_VoyageChartersMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

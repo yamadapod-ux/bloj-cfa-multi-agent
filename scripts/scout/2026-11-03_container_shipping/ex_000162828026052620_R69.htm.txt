@@ -1,0 +1,112 @@
+ 
+ XML
+ 76
+ R69.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Cash, Cash Equivalents and Restricted Cash - Breakdown (Details) - USD ($) $ in Thousands 
+ Jun. 30, 2026 
+ Dec. 31, 2025 
+ Jun. 30, 2025 
+ Cash and Cash Equivalents [Line Items] 
+ Cash and cash equivalents 
+ $ 225,892 
+ $ 154,950 
+ $ 238,140 
+ Restricted cash 
+ 47,942 
+ 49,921 
+ Total cash, cash equivalents and restricted cash 
+ 273,834 
+ 204,871 
+ $ 287,429 
+ Consolidated Entity, Excluding Consolidated VIE 
+ Cash and Cash Equivalents [Line Items] 
+ Cash and cash equivalents 
+ 225,465 
+ 154,674 
+ Variable Interest Entity, Primary Beneficiary 
+ Cash and Cash Equivalents [Line Items] 
+ Cash and cash equivalents 
+ $ 427 
+ $ 276 
+ X 
+ - Definition Amount of cash and cash equivalent. Cash includes, but is not limited to, currency on hand, demand deposit with financial institution, and account with general characteristic of demand deposit. Cash equivalent includes, but is not limited to, short-term, highly liquid investment that is both readily convertible to known amount of cash and so near maturity that it presents insignificant risk of change in value because of change in interest rate. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482740/230-10-45-4 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 8 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482913/230-10-50-8 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(1)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 4: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 860 -SubTopic 30 -Name Accounting Standards Codification -Section 50 -Paragraph 1A -Subparagraph (b)(1)(i) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481420/860-30-50-1A Reference 5: http://www.xbrl.org/2003/role/exampleRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 1 -Subparagraph (a) -Publisher FASB -URI https://asc.fasb.org/1943274/2147483467/210-10-45-1 
+ + Details 
+ Name: 
+ us-gaap_CashAndCashEquivalentsAtCarryingValue 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Line items represent financial concepts included in a table. These concepts are used to disclose reportable information associated with domain members defined in one or many axes to the table. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(1)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 
+ + Details 
+ Name: 
+ us-gaap_CashAndCashEquivalentsLineItems 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of cash and cash equivalent, and cash and cash equivalent restricted to withdrawal or usage; attributable to continuing operation. Cash includes, but is not limited to, currency on hand, demand deposit with financial institution, and account with general characteristic of demand deposit. Cash equivalent includes, but is not limited to, short-term, highly liquid investment that is both readily convertible to known amount of cash and so near maturity that it presents insignificant risk of change in value because of change in interest rate. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482740/230-10-45-4 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 8 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482913/230-10-50-8 Reference 3: http://fasb.org/us-gaap/role/ref/legacyRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 24 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482740/230-10-45-24 
+ + Details 
+ Name: 
+ us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of cash restricted as to withdrawal or usage. Cash includes, but is not limited to, currency on hand, demand deposits with banks or financial institutions, and other accounts with general characteristics of demand deposits. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(1)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 45 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482740/230-10-45-4 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 230 -SubTopic 10 -Name Accounting Standards Codification -Section 50 -Paragraph 8 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482913/230-10-50-8 Reference 4: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 5: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 6: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(1)(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 7: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section 50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478482/942-210-50-1 Reference 8: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(2)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 
+ + Details 
+ Name: 
+ us-gaap_RestrictedCash 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ debit 
+ Period Type: 
+ instant 
+ X 
+ - Details 
+ Name: 
+ srt_ConsolidatedEntitiesAxis=srt_ConsolidatedEntityExcludingVariableInterestEntitiesVIEMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ srt_ConsolidatedEntitiesAxis=us-gaap_VariableInterestEntityPrimaryBeneficiaryMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

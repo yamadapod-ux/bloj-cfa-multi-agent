@@ -1,0 +1,578 @@
+ 
+ XML
+ 74
+ R67.htm
+ IDEA: XBRL DOCUMENT
+ /* Do Not Remove This Comment */ 
+ function toggleNextSibling (e) {
+ if (e.nextSibling.style.display=='none') {
+ e.nextSibling.style.display='block';
+ } else { e.nextSibling.style.display='none'; }
+ } 
+ v3.26.1 
+ Commitments and Contingencies - Summary of Contractual Obligations (Details) - USD ($) $ in Thousands 
+ Jun. 30, 2026 
+ Dec. 31, 2025 
+ Office operating leases 
+ 2026 
+ $ 630 
+ 2027 
+ 1,251 
+ 2028 
+ 1,248 
+ 2029 
+ 1,134 
+ 2030 
+ 1,109 
+ Thereafter 
+ 1,188 
+ Total 
+ 6,560 
+ Total contractual obligations 
+ 2026 
+ 176,484 
+ 2027 
+ 366,437 
+ 2028 
+ 299,697 
+ 2029 
+ 265,780 
+ 2030 
+ 103,654 
+ Thereafter 
+ 177,072 
+ Total 
+ 1,389,124 
+ Vessels under Construction 
+ Vessels under construction 
+ 2026 
+ 93,210 
+ 2027 
+ 249,300 
+ 2028 
+ 113,100 
+ 2029 
+ 0 
+ 2030 
+ 0 
+ Thereafter 
+ 0 
+ Total 
+ 455,610 
+ Line of Credit 
+ Long-term debt 
+ 2026 
+ 82,644 
+ 2027 
+ 115,886 
+ 2028 
+ 185,349 
+ 2029 
+ 124,646 
+ 2030 
+ 102,545 
+ Thereafter 
+ 175,884 
+ Total 
+ 786,954 
+ Senior Unsecured Bonds 
+ Long-term debt 
+ Total 
+ 138,422 
+ $ 138,183 
+ Senior Unsecured Bonds | 2024 Bonds 
+ Long-term debt 
+ 2026 
+ 0 
+ 2027 
+ 0 
+ 2028 
+ 0 
+ 2029 
+ 140,000 
+ 2030 
+ 0 
+ Thereafter 
+ 0 
+ Total 
+ $ 140,000 
+ X 
+ - Definition Contractual Obligation, to be Paid, after Year Four 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_ContractualObligationToBePaidAfterYearFour 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Lessee, Operating Lease, Liability, to be Paid, after Year Four 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_LesseeOperatingLeaseLiabilityToBePaidAfterYearFour 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Long-Term Debt, Maturity, after Year Four 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_LongTermDebtMaturityAfterYearFour 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Other Commitment, to be Paid, after Year Four 
+ + References No definition available. 
+ + Details 
+ Name: 
+ nvgs_OtherCommitmentToBePaidAfterYearFour 
+ Namespace Prefix: 
+ nvgs_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of contractual obligation, including, but not limited to, long-term debt, lease obligation, purchase obligation, and other commitments. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_ContractualObligation 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of contractual obligation to be paid in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_ContractualObligationDueInFourthYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of contractual obligation to be paid in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_ContractualObligationDueInNextTwelveMonths 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of contractual obligation to be paid in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_ContractualObligationDueInSecondYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of contractual obligation to be paid in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_ContractualObligationDueInThirdYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_ContractualObligationFiscalYearMaturityAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of contractual obligation to be paid in remainder of current fiscal year. 
+ + References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_ContractualObligationFutureMinimumPaymentsDueRemainderOfFiscalYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of lessee's undiscounted obligation for lease payment for operating lease. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-6 
+ + Details 
+ Name: 
+ us-gaap_LesseeOperatingLeaseLiabilityPaymentsDue 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of lessee's undiscounted obligation for lease payment for operating lease to be paid in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-6 
+ + Details 
+ Name: 
+ us-gaap_LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of lessee's undiscounted obligation for lease payment for operating lease to be paid in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-6 
+ + Details 
+ Name: 
+ us-gaap_LesseeOperatingLeaseLiabilityPaymentsDueYearFour 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of lessee's undiscounted obligation for lease payment for operating lease to be paid in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-6 
+ + Details 
+ Name: 
+ us-gaap_LesseeOperatingLeaseLiabilityPaymentsDueYearThree 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of lessee's undiscounted obligation for lease payment for operating lease to be paid in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-6 
+ + Details 
+ Name: 
+ us-gaap_LesseeOperatingLeaseLiabilityPaymentsDueYearTwo 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of lessee's undiscounted obligation for lease payment for operating lease having initial or remaining lease term in excess of one year to be paid in remainder of current fiscal year. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 842 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 6 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478964/842-20-50-6 
+ + Details 
+ Name: 
+ us-gaap_LesseeOperatingLeaseLiabilityPaymentsRemainderOfFiscalYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount, after deduction of unamortized premium (discount) and debt issuance cost, of long-term debt. Excludes lease obligation. 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S45 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147477657/942-210-S45-1 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S50 -Paragraph 1 -Publisher FASB -URI https://asc.fasb.org/1943274/2147478478/942-210-S50-1 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.9-03(16)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478546/942-210-S99-1 Reference 5: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 9 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480657/210-10-S50-9 Reference 6: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 210 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.5-02(22)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480566/210-10-S99-1 Reference 7: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 8: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 9: http://www.xbrl.org/2003/role/exampleRef -Topic 835 -SubTopic 30 -Name Accounting Standards Codification -Section 55 -Paragraph 8 -Publisher FASB -URI https://asc.fasb.org/1943274/2147482949/835-30-55-8 Reference 10: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69B -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69B Reference 11: http://www.xbrl.org/2003/role/exampleRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 55 -Paragraph 69C -Publisher FASB -URI https://asc.fasb.org/1943274/2147481568/470-20-55-69C Reference 12: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1D -Subparagraph (b) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1D Reference 13: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 944 -SubTopic 210 -Name Accounting Standards Codification -Section S99 -Paragraph 1 -Subparagraph (SX 210.7-03(a)(16)(a)(2)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147478777/944-210-S99-1 Reference 14: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 4 -Subparagraph (b)(3) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-4 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebt 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebtByMaturityAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1E -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1E Reference 5: http://fasb.org/us-gaap/role/ref/legacyRef -Name Accounting Standards Codification -Section 50 -Paragraph 1 -SubTopic 10 -Topic 470 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481544/470-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1E -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1E Reference 5: http://fasb.org/us-gaap/role/ref/legacyRef -Name Accounting Standards Codification -Section 50 -Paragraph 1 -SubTopic 10 -Topic 470 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481544/470-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1E -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1E Reference 5: http://fasb.org/us-gaap/role/ref/legacyRef -Name Accounting Standards Codification -Section 50 -Paragraph 1 -SubTopic 10 -Topic 470 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481544/470-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2003/role/disclosureRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2003/role/disclosureRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 Reference 4: http://www.xbrl.org/2003/role/disclosureRef -Topic 470 -SubTopic 20 -Name Accounting Standards Codification -Section 50 -Paragraph 1E -Subparagraph (d) -Publisher FASB -URI https://asc.fasb.org/1943274/2147481139/470-20-50-1E Reference 5: http://fasb.org/us-gaap/role/ref/legacyRef -Name Accounting Standards Codification -Section 50 -Paragraph 1 -SubTopic 10 -Topic 470 -Publisher FASB -URI https://asc.fasb.org/1943274/2147481544/470-10-50-1 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of long-term debt payable, sinking fund requirement, and other securities issued that are redeemable by holder at fixed or determinable price and date, maturing in remainder of current fiscal year. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_LongTermDebtMaturitiesRepaymentsOfPrincipalRemainderOfFiscalYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_OperatingLeaseLiabilitiesPaymentsDueAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Minimum amount of other commitment not otherwise specified in the taxonomy. Excludes commitments explicitly modeled in the taxonomy, including but not limited to, long-term and short-term purchase commitments, recorded and unrecorded purchase obligations, supply commitments, registration payment arrangements, leases, debt, product warranties, guarantees, environmental remediation obligations, and pensions. 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_OtherCommitment 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of commitment classified as other to be paid in fourth fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_OtherCommitmentDueInFourthYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of commitment classified as other to be paid in next fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_OtherCommitmentDueInNextTwelveMonths 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of commitment classified as other to be paid in second fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_OtherCommitmentDueInSecondYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Definition Amount of commitment classified as other to be paid in third fiscal year following current fiscal year. Excludes interim and annual periods when interim periods are reported from current statement of financial position date (rolling approach). 
+ + References Reference 1: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 942 -SubTopic 235 -Name Accounting Standards Codification -Section S99 -Paragraph 2 -Subparagraph (SX 210.9-06) -Publisher FASB -URI https://asc.fasb.org/1943274/2147477314/942-235-S99-2 Reference 2: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S50 -Paragraph 4 -Publisher FASB -URI https://asc.fasb.org/1943274/2147480738/235-10-S50-4 Reference 3: http://www.xbrl.org/2009/role/commonPracticeRef -Topic 235 -SubTopic 10 -Name Accounting Standards Codification -Section S99 -Paragraph 3 -Subparagraph (SX 210.12-04(a)) -Publisher FASB -URI https://asc.fasb.org/1943274/2147480678/235-10-S99-3 
+ + Details 
+ Name: 
+ us-gaap_OtherCommitmentDueInThirdYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_OtherCommitmentFiscalYearMaturityAbstract 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:stringItemType 
+ Balance Type: 
+ na 
+ Period Type: 
+ duration 
+ X 
+ - Definition Amount of commitment classified as other to be paid in remainder of current fiscal year. 
+ + References No definition available. 
+ + Details 
+ Name: 
+ us-gaap_OtherCommitmentsFutureMinimumPaymentsRemainderOfFiscalYear 
+ Namespace Prefix: 
+ us-gaap_ 
+ Data Type: 
+ xbrli:monetaryItemType 
+ Balance Type: 
+ credit 
+ Period Type: 
+ instant 
+ X 
+ - Details 
+ Name: 
+ us-gaap_OtherCommitmentsAxis=us-gaap_ConstructionInProgressMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_LongtermDebtTypeAxis=us-gaap_LineOfCreditMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_LongtermDebtTypeAxis=nvgs_SeniorUnsecuredBondsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 
+ X 
+ - Details 
+ Name: 
+ us-gaap_DebtInstrumentAxis=nvgs_October2024BondsMember 
+ Namespace Prefix: 
+ Data Type: 
+ na 
+ Balance Type: 
+ Period Type: 

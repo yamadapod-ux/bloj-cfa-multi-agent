@@ -1,0 +1,22 @@
+BRSL {'y_close': 9.81, 'y_date': '2026-11-13', 'y_hi': 16.73, 'hi_date': '2025-11-14', 'y_lo': 9.1, 'lo_date': '2026-10-22', 'n_last': '$9.81', 'n_52w': '9.10 - 16.73', 'pct_from_hi': -41.4}
+INSE {'y_close': 4.4, 'y_date': '2026-11-13', 'y_hi': 9.95, 'hi_date': '2026-01-13', 'y_lo': 3.1, 'lo_date': '2026-10-20', 'n_last': '$4.40', 'n_52w': '3.10 - 9.95', 'pct_from_hi': -55.8}
+SRAD {'y_close': 12.81, 'y_date': '2026-11-13', 'y_hi': 24.17, 'hi_date': '2025-12-30', 'y_lo': 11.39, 'lo_date': '2026-10-01', 'n_last': '$12.81', 'n_52w': '11.39 - 24.17', 'pct_from_hi': -47.0}
+GENI {'y_close': 6.26, 'y_date': '2026-11-13', 'y_hi': 11.57, 'hi_date': '2025-12-03', 'y_lo': 3.83, 'lo_date': '2026-04-13', 'n_last': '$6.26', 'n_52w': '3.82 - 11.58', 'pct_from_hi': -45.9}
+ACEL {'y_close': 13.55, 'y_date': '2026-11-13', 'y_hi': 14.08, 'hi_date': '2026-11-12', 'y_lo': 9.55, 'lo_date': '2025-11-20', 'n_last': '$13.54', 'n_52w': '9.55 - 14.08', 'pct_from_hi': -3.8}
+BALY {'y_close': 11.12, 'y_date': '2026-11-13', 'y_hi': 19.45, 'hi_date': '2025-12-01', 'y_lo': 8.44, 'lo_date': '2026-08-19', 'n_last': '$11.12', 'n_52w': '8.44 - 19.45', 'pct_from_hi': -42.8}
+DKNG {'y_close': 18.89, 'y_date': '2026-11-13', 'y_hi': 36.98, 'hi_date': '2026-01-06', 'y_lo': 16.55, 'lo_date': '2026-11-06', 'n_last': '$18.89', 'n_52w': '16.55 - 36.98', 'pct_from_hi': -48.9}
+RSI {'y_close': 11.86, 'y_date': '2026-11-13', 'y_hi': 34.53, 'hi_date': '2026-07-20', 'y_lo': 11.27, 'lo_date': '2026-11-06', 'n_last': '$11.865', 'n_52w': '11.27 - 34.53', 'pct_from_hi': -65.7}
+WYNN {'y_close': 85.06, 'y_date': '2026-11-13', 'y_hi': 134.72, 'hi_date': '2025-12-01', 'y_lo': 70.79, 'lo_date': '2026-10-28', 'n_last': '$85.06', 'n_52w': '70.79 - 134.72', 'pct_from_hi': -36.9}
+VICI {'y_close': 25.01, 'y_date': '2026-11-13', 'y_hi': 30.6, 'hi_date': '2025-11-14', 'y_lo': 22.42, 'lo_date': '2026-10-05', 'n_last': '$25.01', 'n_52w': '22.42 - 30.83', 'pct_from_hi': -18.3}
+ALLY {'y_close': 38.31, 'y_date': '2026-11-13', 'y_hi': 47.29, 'hi_date': '2026-06-29', 'y_lo': 35.92, 'lo_date': '2026-03-12', 'n_last': '$38.315', 'n_52w': '35.92 - 47.29', 'pct_from_hi': -19.0}
+MMS {'y_close': 64.71, 'y_date': '2026-11-13', 'y_hi': 100.0, 'hi_date': '2026-01-23', 'y_lo': 51.04, 'lo_date': '2026-09-28', 'n_last': '$64.66', 'n_52w': '51.04 - 100.00', 'pct_from_hi': -35.3}
+CRI {'y_close': 34.29, 'y_date': '2026-11-13', 'y_hi': 44.44, 'hi_date': '2026-02-20', 'y_lo': 27.86, 'lo_date': '2025-11-19', 'n_last': '$34.29', 'n_52w': '27.86 - 44.44', 'pct_from_hi': -22.8}
+NBIX {'y_close': 167.4, 'y_date': '2026-11-13', 'y_hi': 186.12, 'hi_date': '2026-07-30', 'y_lo': 122.14, 'lo_date': '2026-02-12', 'n_last': '$167.40', 'n_52w': '122.14 - 186.12', 'pct_from_hi': -10.1}
+BYD {'y_close': 77.24, 'y_date': '2026-11-13', 'y_hi': 91.41, 'hi_date': '2026-07-28', 'y_lo': 65.0, 'lo_date': '2026-10-01', 'n_last': '$77.225', 'n_52w': '65.00 - 91.41', 'pct_from_hi': -15.5}
+WGO {'y_close': 30.96, 'y_date': '2026-11-13', 'y_hi': 50.16, 'hi_date': '2026-02-04', 'y_lo': 21.95, 'lo_date': '2026-10-20', 'n_last': '$30.965', 'n_52w': '21.95 - 50.16', 'pct_from_hi': -38.3}
+CMRE {'y_close': 13.39, 'y_date': '2026-11-13', 'y_hi': 18.06, 'hi_date': '2026-04-09', 'y_lo': 12.56, 'lo_date': '2026-11-10', 'n_last': '$13.40', 'n_52w': '12.56 - 18.06', 'pct_from_hi': -25.9}
+IGT {'y_err': 'HTTP Error 404: Not Found', 'n_err': "'NoneType' object is not subscriptable"}
+EVRI {'y_err': 'HTTP Error 404: Not Found', 'n_err': "'NoneType' object is not subscriptable"}
+AGS {'y_err': 'HTTP Error 404: Not Found', 'n_err': "'NoneType' object is not subscriptable"}
+GAN {'y_err': 'HTTP Error 404: Not Found', 'n_err': "'NoneType' object is not subscriptable"}
+LNW {'y_close': 86.22, 'y_date': '2026-10-29', 'y_hi': 0.0, 'hi_date': '2026-10-29', 'y_lo': 0.0, 'lo_date': '2026-10-29', 'n_err': "'NoneType' object is not subscriptable"}

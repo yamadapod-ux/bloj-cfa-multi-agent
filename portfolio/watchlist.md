@@ -1,12 +1,14 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-11-15): **Scout Round 97 — Gaming Equipment / Lottery & Betting Technology** — universe ที่ CIO ให้มาเปลี่ยนไปแล้ว: IGT → Brightstar Lottery (BRSL) · EVRI/AGS/GAN ถูก take-private · LNW ย้ายไป ASX → เพิ่ม SRAD/GENI/ACEL. close 11-13 (Yahoo = Nasdaq). 5 screened → A 4/5 (INSE −55.8% · SRAD −47.0% · GENI −45.9% · BRSL −41.4%; ACEL ตก) → B-Zero 3 (INSE ตก: equity ติดลบจากขาดทุนสะสม) → C 1 (BRSL/GENI ตก) → SRAD ตก E 0/3 (short report + class action). **0 fast-track · 0 learning-queue · 5 reject**. Prune: WYNN Tier 1 `QUICK-SCREEN SKIP` (1.08–1.74× naive FV) + VICI ตก A → archive 2 · live 9 → 7*
+*ล่าสุด (2026-11-16): **Scout Round 98 — Homebuilders & Residential Construction (pure-play)** — dedicated round แรกของ sector (DHI/LEN เคยโดนแค่ R44a 2026-09-29; R81 เป็น building products คนละ sub-industry). MDC ถูก Sekisui House ซื้อ+delist 2024-04-19 → แทนด้วย LGIH. close 11-13 (Yahoo = stockanalysis exact ทุกตัว). 8 screened (PHM/NVR/TOL/KBH/MTH/LGIH + DHI/LEN เสริม) → A 5/8 (LGIH −37.7% · LEN −37.5% · KBH −29.1% · NVR −28.6% · MTH −24.5%; PHM −12.1% · TOL −12.2% · DHI −14.8% ตก) → NVR/KBH ตก D (Tier 1 check 2b `QUICK-SCREEN SKIP`) · MTH/LGIH/LEN ตก C (ROIC ต่ำกว่า WACC มาก) · P/B 0.4–0.9× แต่ ROE 2–6% = value trap. **0 fast-track · 0 learning-queue · 8 reject**. Prune: 0 de-listed, SLA ยังไม่ถึงกำหนด (CMRE 11-17, ALLY/NBIX/BYD 11-18) · live 7*
+*ก่อนหน้า (2026-11-15): **Scout Round 97 — Gaming Equipment / Lottery & Betting Technology** — universe ที่ CIO ให้มาเปลี่ยนไปแล้ว: IGT → Brightstar Lottery (BRSL) · EVRI/AGS/GAN ถูก take-private · LNW ย้ายไป ASX → เพิ่ม SRAD/GENI/ACEL. close 11-13 (Yahoo = Nasdaq). 5 screened → A 4/5 (INSE −55.8% · SRAD −47.0% · GENI −45.9% · BRSL −41.4%; ACEL ตก) → B-Zero 3 (INSE ตก: equity ติดลบจากขาดทุนสะสม) → C 1 (BRSL/GENI ตก) → SRAD ตก E 0/3 (short report + class action). **0 fast-track · 0 learning-queue · 5 reject**. Prune: WYNN Tier 1 `QUICK-SCREEN SKIP` (1.08–1.74× naive FV) + VICI ตก A → archive 2 · live 9 → 7*
 *ก่อนหน้า (2026-11-14): **Scout Round 96 — Electronic Components / EMS / PCB / Optical** — CIO สั่ง Metals & Mining แต่ซ้ำ R79 (10-18) / R80 (10-19) ใน 30 วัน และตัวเลือกสำรองทั้ง 4 ก็ซ้ำ → เปลี่ยนเป็น sector ที่ไม่เคยสแกน. close 11-13 (Yahoo = Nasdaq). 15 screened → A 13/15 (TTMI −66.9% · VSH −61.7% · FN −56.2% · FLEX −55.1% ฯลฯ; TEL/CTS ตก) → B-Zero 13 → B 8 (FLEX/KN/PLXS/ROG ตก) → C 7 (VSH/LFUS ตก) → D-V1 ทุกตัว "เห็นต่างกันเอง" → Tier 1 check 2a 3.4×–7.6× naive FV. **0 fast-track · 0 learning-queue · 15 reject (7 QUICK-SCREEN SKIP: JBL/SANM/TTMI/FN/BELFB/BHE/OSIS)**. ไม่มีตัวเข้า AI/Infra lane (TTMI ผ่าน 2/3). Prune: ทำแล้วใน R95*
 *ก่อนหน้า (2026-11-14): **Scout Round 95 — Digital Advertising / Ad Tech** — dedicated round แรกของ sector (TTD/SNAP/PINS/CRTO/ZD/QNST/STGW/MGNI/PUBM/DV; IAS take-private แล้ว). close 11-13 (Yahoo = Nasdaq). Filter A 4/10 → C 1 (TTD) → D 0. **0 fast-track · 0 learning-queue · 10 reject**. Prune: 0 de-listed, SLA 5 → 11-18*
 *ก่อนหน้า (2026-11-13): **Scout Round 94 — Managed Care / Health Insurers (US)** — รอบที่ 2 ของ sector (R35b 2026-09-26 เคยสแกน UNH/CI/HUM/CVS/ELV/MOH, 48 วันก่อน); CLOV/ALHC/AGL ใหม่ · OSH ถูก CVS ซื้อแล้ว (ปิดดีล 2023-05-02) ข้าม · CNC/OSCR = hard exclusion (full pipeline แล้ว). close 11-12 (Yahoo = Nasdaq ทั้ง 9 ตัว). 9 screened → Filter A **1/9** (ALHC −70.1%; ใกล้สุด CVS −18.9% · AGL −17.1% [split-adjusted 1:25] · MOH −14.3% · CLOV −12.7% · UNH −12.2% · CI −6.8% · ELV −4.6% · HUM −2.8%) → ALHC: B-Zero ✅ net cash · B-Legacy ❌ (FCF yield 4.9%) / B-V1 ✅ · **C ❌** (ROIC 5.7% vs 0.8×WACC 10.4%; Q3'26 operating loss −$3.8M, adj. MBR +240bps YoY) → **0 fast-track · 0 learning-queue · 9 reject**. Prune: 0 de-listed · SLA fixed 1 (CRI → 11-20) · live 9.*
 *ก่อนหน้า (2026-11-12): **Scout Round 93 — Asset Managers / Trust Banks / Capital Markets non-bank** — sector ใหม่ในฐานะ dedicated round (R42 Financials เคยแตะ BLK [ตัดออก → แทนด้วย LAZ]; TROW/IVZ/BEN เคยอยู่แค่ใน single-source pre-screen ของ R77 ไม่เคยสแกนเต็ม). close 11-11 (Yahoo = stockanalysis exact ทั้ง 12 ตัว). 12 screened (TROW/IVZ/BEN/STT/NTRS/AMP/LAZ + supp. EVR/PJT/HLI/RJF/SF) → Filter A 4/12 (LAZ −28.7% · HLI −25.1% · EVR −23.3% · PJT −21.8%; asset managers/trust banks/AMP ใกล้ high ทั้งหมด, BEN −1.3%) → B-Zero ผ่านทั้ง 4 → B ตัด HLI (FCF−SBC 2.0%) → Tier 1 check 2a บน FCF − SBC (กฎ SBC >10% revenue): LAZ 1.69× · EVR 2.44× · PJT 2.99× naive FV → **0 fast-track · 0 learning-queue · 12 reject (3 QUICK-SCREEN SKIP: LAZ/EVR/PJT)**. Prune: 0 de-listed · SLA fixed 0 · live 9 (CRI target = วันนี้; NBIX −6.3% จาก high).*
 *ก่อนหน้า (2026-11-11): **Scout Round 92 — Leisure & Recreation (theme parks · ski · fitness · golf · bowling · toys · outdoor gear)** — sector ใหม่ (ไม่เคยมี sector sweep; เคยโดนแค่ MAT ใน R77 [ตัดออกรอบนี้] และ WGO/PII/BC/MBUU ใน RV-Marine ad-hoc 10-24 [คนละ sub-industry]). close 11-10 (Yahoo = stockanalysis exact). 16 screened → Filter A 6/16 (FUN −61.3% · LUCK −64.5% · XPOF −50.4% · PLNT −46.3% · GOLF −28.9% · PTON −24.4%) → B-Zero ตัด FUN/XPOF/PTON (equity ติดลบจากขาดทุนสะสม/impairment) → B/C ตัด LUCK (ROIC 5.9% vs ~11%) → Tier 1 check 2a: PLNT 24.9× · GOLF 2.55× naive FV → **0 fast-track · 0 learning-queue · 16 reject (2 QUICK-SCREEN SKIP: PLNT/GOLF)**. Prune: 0 de-listed · SLA fixed 0 · live 9.*
 *ก่อนหน้า (2026-11-09): **Scout Round 91 — Airlines (US passenger + RYAAY/CPA ADR)** — รอบที่ 2 ของ sector (R51 2026-09-30 เคยสแกน DAL/UAL/LUV/AAL แล้ว; ALK/JBLU/ALGT/SKYW/RYAAY/CPA ใหม่). close 11-06 (Yahoo = Nasdaq). Filter A 6/10 (AAL/ALK/JBLU/ALGT/SKYW/RYAAY; DAL −8.9% · UAL −18.8% · LUV −19.3% · CPA −11.0% ตก) → B-Zero ตัด AAL (equity −$4.2B จากขาดทุนสะสม) → B/C ตัด ALK/JBLU/ALGT (ROIC TTM −3.1% / −5.7% / 3.1%) → Tier 1 check 2a: SKYW 3.4× naive FV (5Y FCF) · RYAAY D 1.34× (FY23–25 FCF) → **0 fast-track · 0 learning-queue · 10 reject (2 QUICK-SCREEN SKIP: SKYW/RYAAY)**. SAVE ล้มละลาย/ถูก delist · SNCY ถูก ALGT ซื้อแล้ว (ปิดดีล 2026-05-13). Prune: 0 de-listed · SLA fixed 0 · live 9.*
+*ก่อนหน้า (2026-11-08): **Scout Round 90 — Memory/Storage peers of MU (CIO-directed)** — WDC/STX/SNDK, close 11-06 (Yahoo = Nasdaq). Filter A ผ่านทั้ง 3 (−59.7% ถึง −67.0%) · B-V1: WDC ❌ (0/2 valid) · STX ❌ (0/3) · SNDK ✅ (2/2 — แต่ EV/Sales ต่ำเพราะรายได้อยู่ที่ราคา peak) · Tier 1 check 2a: **ทั้ง 3 ราคา > 1.5× naive FV บน through-cycle FCF** (WDC 8.1–11.0× · STX 12.2× · SNDK 3.7–4.7×) → **0 fast-track · 0 learning-queue · 3 `QUICK-SCREEN SKIP`**. SNDK เป็นตัวเดียวที่ผลขึ้นกับคำถาม mid-cycle (บน TTM FCF = 0.88×) → re-screen หลัง MU re-analysis ตอบ mid-cycle NAND margin. WDC: ผลนี้แทน learning-queue Round 38.*
 *ก่อนหน้า (2026-11-08): **Scout Round 89 — Office REITs** (ครั้งแรก; BXP/VNO/SLG/KRC/HPP ตามคำสั่ง + DEI/CUZ/HIW/BDN/PDM/JBGS/ARE/ESRT/CDP/OPI, Yahoo/Nasdaq close 11-06; PGRE ถูก Rithm ซื้อแล้ว, EQC ไม่มีข้อมูล). Filter A 6/15 (OPI/HPP/JBGS/ESRT/ARE/DEI) → reason 5 → B+C 4 → D/E 0. **0 fast-track · 0 learning-queue · 15 reject (4 QUICK-SCREEN SKIP: HPP/ESRT/ARE/DEI)**. P/FFO ~7× ดูถูกแต่ FFO ไม่หัก TI/capex/capitalized interest; ใกล้สุด ARE (0.85× หลังหัก cap. interest, E 1/3) รอ Investor Day 12-02. Prune: **archive 7** (IBKR/URI/EME/INDI/ANIP/BKSY/VMD), SLA fixed 5 → 11-14.*
 *ก่อนหน้า (2026-11-07): **Scout Round 88 — Hotel/Lodging + Self-Storage REITs** (HST/PK/RHP/APLE/SHO/XHR/DRH · EXR/CUBE, Yahoo/Nasdaq close 11-06; LSI และ NSA ถูกซื้อกิจการแล้ว). Filter A 0/9 (−0.5% ถึง −8.2%). **0 fast-track · 0 learning-queue · 9 reject**. Prune: 0 de-listed, SLA fixed CRI → 11-12.*
 *ก่อนหน้า (2026-11-06): **Scout Round 87 — Niche/Specialty REITs** (ครั้งแรก; SUI/ELS/UMH · OUT/LAMR · CXW/GEO · OHI/NHI/LTC/SBRA/CTRE + เช็คซ้ำ WELL/VTR, Yahoo/Nasdaq close 11-05). Filter A 3/14 (GEO/CXW/NHI) → B 3 → C 3 → D 0. **0 fast-track · 0 learning-queue · 14 reject**. CXW/GEO ไม่ใช่ REIT ตั้งแต่ 2021 และผ่าน A เพราะการลงวันเดียว 11-05; naive FV through-cycle 0.99–1.62× และ E 0/3. NHI 1.09× งบ Q3 ออก 11-09 → re-check. Prune: 0 de-listed.*
@@ -392,6 +394,8 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 
 *(ว่าง — ไม่มี ticker ที่เข้าเงื่อนไข ณ ปัจจุบัน)*
 
+
+**Prune Pass 2026-11-16 (Mode 1 Step 0 — Round 98):** ตรวจ live Pending ทั้ง 7 แถว (ALLY/MMS/CRI/NBIX/BYD/WGO/CMRE) ตาม De-list Rules #1-3. ไม่มีวันซื้อขายใหม่ตั้งแต่ R97 (close 11-13 ล่าสุด) → ราคาและ % จาก high ที่ใช้ตัดสินใจรอบ 11-15 ยังใช้ได้. **De-listed 0 · SLA fixed 0** · live 7. Rule #1: ทุกแถวมี target date (CMRE 11-17 · ALLY/NBIX/BYD 11-18 · CRI/MMS 11-20 · WGO 12-19) · Rule #2: ไม่มีตัวไหนเกิน 2× ขอบบน zone (ไม่ archive จึงไม่ต้อง WebSearch ราคาซ้ำ) · Rule #3: portfolio.js/decisions.md ไม่มี hit ใหม่. Regime record ล่าสุด 2026-11-06 (อายุ 10 วัน < 14 — ไม่ stale แต่จะครบ 14 วัน 11-20; **ต้อง re-call ก่อน Tier 1 review ของ CMRE/ALLY/NBIX/BYD 11-17/18**).
 
 **Prune Pass 2026-11-15 (Mode 1 Step 0 — Round 97):** ตรวจ live Pending ทั้ง 9 แถวตาม De-list Rules #1-3 (ราคา close 11-13, Yahoo = Nasdaq — ไม่มีซื้อขายตั้งแต่ R95). **De-listed 2 · SLA fixed 0** · live 9 → **7**.
 - **WYNN → Archive:** รัน Tier 1 ที่ค้างตั้งแต่ R75 (SEC 10-Q 2026-09-30) — naive FV (levered FCF ÷ CoE 10.3%) = TTM 1.74× · FCF หลัง maintenance capex ปกติ 1.14× · เฉลี่ย FY23–25 1.08× → ติด check 2a/2b → `QUICK-SCREEN SKIP` (equity −$217.5M · ND/EBITDA 6.1×) — ⚠️ ยังไม่ได้บันทึกใน `deployment_log.md` (scope commit รอบนี้ = watchlist.md เท่านั้น)
@@ -9502,6 +9506,139 @@ CLAUDE.md ไม่มีแถว mREIT โดยตรง จึงใช้�
 
 *Max — 2026-11-08 | Scout Round 89 (Office REITs — 15 screened, 0 fast-track / 0 learning-queue / 15 reject [9 A · 1 A-reason · 1 B/C · 4 QUICK-SCREEN SKIP]; PGRE acquired, EQC no data)*
 
+### Scout Report — 2026-11-08 (Max — Round 90 — Memory/Storage peers of MU, CIO-directed)
+
+**Trigger:** CIO สั่ง targeted scout 3 ตัว **WDC / STX / SNDK** (2026-11-08) ทำครบ Scout Filter Rules · **ไม่ spawn agent · ไม่ deploy · ไม่ commit**
+**Regime:** **TRANSITIONAL-CAUTIOUS** (`agent_notes/atlas/2026-11-06_regime.md`, 2/1/1 ไม่มี majority) → ห้าม open position ใหม่ไม่ว่าผลจะเป็นอย่างไร
+**Context:** selloff 11-05 (SNDK −22%, WDC −17%, STX ~−16%; AI-pause rhetoric หลัง midterm + ราคา memory contract ขึ้นช้าลง) — `agent_notes/charlie/2026-11-06_MU_verified_inputs.md` · peer table ใน `agent_notes/atlas/2026-08-27_MU.md` § Peer Multiples
+**Code/data:** `scripts/scout/2026-11-06_memory/max_scout.py` (`px` / `hi` / `fund` / `calc` / `roic`) · SEC XBRL companyfacts `data/cf_{WDC,STX,SNDK}.json` (10-Q ล่าสุด: WDC 2026-10-23 · STX 2026-10-29 · SNDK 2026-10-30, งวด 2026-10-02) · หน่วย $M
+
+#### Step 1 — Hard exclusions
+| Ticker | holdings (`dashboard/portfolio.js`) | `decisions.md` | watchlist / buy_list / learning-queue | ผล |
+|---|---|---|---|---|
+| WDC | 0 | 0 | ⚠️ **มีอยู่แล้ว** — Round 37 (B-V1 reject) → Round 38 **LEARNING-QUEUE** (`buy_list.md` § Scout-Stage Learning-Queue Watch, `learning_queue_2026-09.md`; lightweight ไม่เคยรัน) · Round 12b หมายเหตุ "+971% 52w cyclical peak" | CIO สั่งตรง → สแกนได้ (override) · **ผลรอบนี้แทนสถานะ learning-queue Round 38** |
+| STX | 0 | 0 | 0 (ปรากฏเป็น peer ของ WDC เท่านั้น) | สแกน |
+| SNDK | 0 | 0 | 0 (ปรากฏเป็น peer ของ WDC เท่านั้น) | สแกน |
+
+#### Step 2 — Price verification (close ศุกร์ 2026-11-06 — วันนี้วันอาทิตย์)
+| Ticker | Close 11-06 — Yahoo chart | Nasdaq historical | StockAnalysis | 52W high — Yahoo (intraday) | Nasdaq summary | Δ |
+|---|---|---|---|---|---|---|
+| WDC | $263.78 | $263.78 | $263.78 | $799.87 (2026-06-18) | $799.87 | 0% |
+| STX | $460.99 | $460.99 | $460.99 | $1,145.00 (2026-06-18) | $1,145.00 | 0% |
+| SNDK | $835.06 | $835.06 | $835.06 | $2,354.39 (2026-06-22) | $2,354.39 | 0% |
+
+Sources: [Yahoo chart](https://query1.finance.yahoo.com/v8/finance/chart/WDC?range=1y&interval=1d) · [Nasdaq historical](https://api.nasdaq.com/api/quote/WDC/historical?assetclass=stocks) · [Nasdaq summary](https://api.nasdaq.com/api/quote/WDC/summary?assetclass=stocks) · [SA WDC](https://stockanalysis.com/stocks/wdc/statistics/) · [SA STX](https://stockanalysis.com/stocks/stx/statistics/) · [SA SNDK](https://stockanalysis.com/stocks/sndk/statistics/) (เปลี่ยน ticker ใน URL) · ไม่มีคู่ใดต่างเกิน 2% → ไม่ต้องหาแหล่งที่ 3 · WebSearch ทั่วไปให้แต่บทความเก่า (มิ.ย.) ไม่ใช้
+
+#### Step 3 — Filter A
+| Ticker | % จาก 52W high | 52W low | Beaten-down reason | จัดกลุ่ม |
+|---|---|---|---|---|
+| WDC | **−67.0%** | $132.43 (2025-11-21) — ยัง +99% จาก low | ราคา $347→$264 ใน 11-03→11-06 (AI-pause/midterm) + ก่อนหน้านั้นตลาด price ว่ารอบ memory/storage ถึงจุดสูงสุด (TrendForce: contract DRAM 4Q26 +10–15% QoQ ชะลอจาก ~80% ใน 2Q) ขณะที่งบยังดีที่สุดเท่าที่เคยมี (Q1 FY27 revenue $4,381M **+55% YoY**, op inc $2,046M) | ✅ cyclical/sentiment · **มุมตรงข้าม:** HDD ถูก QLC SSD แทนในระยะยาว (secular) — ยังไม่เห็นในตัวเลข (cloud 89% ของรายได้ Q4 FY26 [Barchart](https://www.barchart.com/story/news/1641110/wdc-q1-deep-dive-ai-storage-demand-and-new-product-roadmap-take-center-stage)) |
+| STX | **−59.7%** | $228.61 — +102% จาก low | เหตุเดียวกัน · Q1 FY27 revenue $4,233M **+61% YoY** | ✅ cyclical/sentiment (มุมตรงข้ามเดียวกับ WDC) |
+| SNDK | **−64.5%** | $183.00 — +356% จาก low | เหตุเดียวกัน + NAND spot หยุดขึ้นใน ต.ค. ([tech-insider](https://tech-insider.org/dram-record-high-nand-flat-21-months-october-2026/), แหล่งรอง) · Q1 FY27 revenue $11,031M **+378% YoY** | ✅ cyclical (NAND เป็น commodity cycle ชัดเจน — FY23–25 ขาดทุนทุกปี) |
+
+**ทั้ง 3 ผ่าน A** — แต่การลง 60–67% มาจาก high ที่เป็นฟองของ cycle (ราคายังสูงกว่า low 1 ปีก่อน 2–4.6 เท่า) → Filter B/D เป็นตัวตัดสินจริง
+
+#### Step 4 — B-Zero (งบดุล 2026-10-02)
+| Ticker | Equity | Debt + lease − cash (− non-op) | EBITDA TTM | Net debt/EBITDA | ผล |
+|---|---|---|---|---|---|
+| WDC | **+$9,348M** | 789 + 133 − 1,314 = **−$392M (net cash)** | op 5,707 + D&A ~391 | <0 | ✅ |
+| STX | **+$3,453M** (⚠️ ติดลบ FY23 −$1,199M / FY24 −$1,491M / FY25 −$453M จาก buyback FY21–22 ~$3.8B + ขาดทุน FY23 — กลับเป็นบวกจากกำไร ไม่ใช่ operating losses สะสม) | 2,383 + 333 − 1,258 = **$1,458M** | 5,464 + 280 = 5,744 | **0.25×** | ✅ (flag ประวัติ) |
+| SNDK | **+$18,134M** | 0 + 201 − 5,136 − 2,289 (เงินลงทุนในหุ้น) = **−$7,224M (net cash)** | — | <0 | ✅ |
+
+#### Step 5 — Bucket + Filter B
+**Bucket:** TTM revenue growth (SEC quarters, 4Q ล่าสุด vs 4Q ก่อนหน้า) WDC **+43.0%** · STX **+48.7%** · SNDK **+273.2%** → ทั้งหมด >15% → **Growth bucket → B-V1** · **ข้อสังเกต:** การเติบโตเกือบทั้งหมดมาจากราคาขาย (cycle) ไม่ใช่ reinvestment → รายงาน B-Legacy คู่ไว้เป็น cross-check
+**Business type (VS2, สำหรับ Atlas ภายหลัง):** EBIT peak→trough FY22→FY23: WDC $2,391M → −$1,285M · STX $1,955M → −$342M · SNDK FY23–25 ติดลบทุกปี → เข้าเกณฑ์ตัวเลข **Cyclical** (GICS = Tech Hardware/Storage ไม่อยู่ในตัวกรองแรก — Atlas ตัดสิน) → D ต้องใช้ mid-cycle
+
+**Peer list — บันทึกก่อนคำนวณ (B-V1 peer-selection guideline):**
+| Peer | เหตุผล | (ก) GICS ใกล้ | (ข) growth ±10pp | (ค) mcap 0.2–5× | ผ่าน |
+|---|---|---|---|---|---|
+| STX (สำหรับ WDC/SNDK) | HDD duopoly คู่ตรง | ✅ | WDC ✅ (+49 vs +43) · SNDK ❌ | ✅ | ✅ |
+| WDC (สำหรับ STX/SNDK) | HDD; บริษัทแม่เดิมของ SNDK | ✅ | STX ✅ · SNDK ❌ | ✅ | ✅ |
+| SNDK (สำหรับ WDC/STX) | NAND/SSD storage | ✅ (storage) | ❌ (+273%) | ✅ | ✅ 2/3 · ⚠️ spin-off ก.พ. 2025 (>1 ปี, ไม่อยู่ระหว่าง restructuring) |
+| NTAP | enterprise storage systems | ✅ | ❌ (+12.2% TTM) | ✅ (~0.3×) | ✅ 2/3 |
+| P (Everpure, เดิม PSTG) | all-flash storage systems | ✅ | ❌ WDC/STX (+27.2%) | ✅ (~0.3×) | ✅ 2/3 |
+| MU | ❌ ตัดออก — Semis, mcap 6–7× ของทุกตัว, growth +256% | ❌ | ❌ | ❌ | ❌ |
+| Kioxia | ❌ ตัดออก — ไม่ได้จดทะเบียนในสหรัฐ, growth DATA NOT AVAILABLE | — | — | — | ❌ |
+
+**EV/Revenue (StockAnalysis, close 11-06):** WDC 6.79× · STX 7.77× · SNDK 3.85× · NTAP 4.36× ([SA](https://stockanalysis.com/stocks/ntap/statistics/)) · P 7.38× ([SA](https://stockanalysis.com/stocks/pstg/statistics/)) · Sector: Damodaran Computers/Peripherals EV/Sales **6.63×** (ม.ค. 2026, [psdata](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/psdata.html)) · Growth NTAP/P: [SA NTAP revenue](https://stockanalysis.com/stocks/ntap/revenue/) · [SA P revenue](https://stockanalysis.com/stocks/p/revenue/)
+
+| Ticker | 1. Self-history | 2. Peer-median | 3. Sector-average | B-V1 | B-Legacy cross-check (FCF yield TTM) |
+|---|---|---|---|---|---|
+| WDC | **ห้ามใช้** — ประวัติก่อน ก.พ. 2025 รวม flash (spin-off) | peers STX/SNDK/NTAP/P median **5.87×** → 6.79 = **1.16×** ❌ | 6.79 ÷ 6.63 = **1.02×** ❌ | ❌ **0/2 valid** | 4.34% ❌ (<6%) |
+| STX | P/S (mcap/FY rev) 5Y n=61: p33 2.22 · med 2.75 · p70 3.82 · ปัจจุบัน **8.68 = percentile 80** ❌ | median **5.58×** → 7.77 = **1.39×** ❌ | 7.77 ÷ 6.63 = **1.17×** ❌ | ❌ **0/3** | 3.93% ❌ |
+| SNDK | **N/A** — ประวัติหลัง spin-off ~21 เดือน | median **7.08×** → 3.85 = **0.54×** ✅ | 0.58× ✅ (Semis 15.70× ก็ผ่าน) | ✅ **2/2** — ⚠️ ไม่มี peer ไหน growth ใกล้ (±10pp) · EV/Sales ต่ำเพราะรายได้ TTM อยู่ที่ราคา NAND peak | 14.6% ✅ บน TTM peak · บน normalized FCF $3,425M = **2.9%** ❌ |
+
+#### Step 6 — Filter C (ROIC ≥ 80% WACC + trend)
+WACC ≈ CoE (หนี้น้อย) = Rf 4.84% (^TNX 11-05) + Blume beta × ERP 4.41% (Damodaran 2026-11-01) · Blume = 0.67×raw + 0.33 · raw 5Y: WDC 2.34 / STX 2.20 ([SA](https://stockanalysis.com/stocks/wdc/statistics/)) · SNDK ใช้ 1.99 (`fund.py`, ประวัติสั้น — flag)
+| Ticker | WACC | ROIC TTM (SA) | 80% WACC | Trend | C |
+|---|---|---|---|---|---|
+| WDC | **13.22%** (β 1.90) | 64.2% | 10.6% | ขึ้น (FY24 −1.6% → FY26 50.8%) | ✅ |
+| STX | **12.78%** (β 1.80) | 105.2% | 10.2% | ขึ้น | ✅ |
+| SNDK | **13.62%** (β 1.99) | 151.5% | 10.9% | ขึ้น (FY25 −12% → FY26 99%) | ✅ |
+
+#### Step 7 — Filter D (Growth → D-V1; Cyclical → D-Legacy mid-cycle เป็น cross-check บังคับ) + Street PT
+**Naive FV = normalized FCF ÷ WACC + net cash(+non-op) ÷ shares** (WDC 374.32M · STX 229.56M · SNDK 142.29M) · FCF = OCF − capex (SEC 10-K)
+| Ticker | ฐาน normalized FCF | FCF | Naive FV | ราคา ÷ FV |
+|---|---|---|---|---|
+| WDC | เฉลี่ย FY17–26 (รวม flash ก่อน spin — ⚠️ ปน) | $1,137M | **$24** | **10.98×** |
+| WDC | **หลัก:** STX through-cycle FCF margin FY16–26 **12.75%** × WDC HDD-only revenue เฉลี่ย (FY25 9,520 / FY26 12,919 / TTM 14,482 = 12,307) | $1,569M | **$33** | **8.05×** |
+| STX | เฉลี่ย FY16–26 (11 ปี รวม FY26 peak) | $1,293M | **$38** | **12.21×** |
+| SNDK | เฉลี่ย FY23–26 | $2,492M | **$179** | **4.66×** |
+| SNDK | **หลัก:** margin FY23–26 24.7% × revenue เฉลี่ย FY23–TTM 13,865 | $3,425M | **$228** | **3.67×** |
+| อ้างอิงเท่านั้น (peak — ห้ามใช้ตัดสิน) | TTM FCF: WDC $4,290M → $88 (**3.01×**) · STX $4,160M → $135 (**3.40×**) · SNDK $17,370M → $947 (**0.88×**) · Q ล่าสุด ×4: WDC $112 (2.35×) · STX $195 (2.36×) · SNDK $1,353 (0.62×) | | | |
+| FCF ที่ต้องมี ราคาถึงจะ = 1.5× naive FV | WDC **$8,650M (60% ของรายได้ TTM)** · STX **$9,201M (67%)** · SNDK **$9,802M (34%)** — WDC/STX ไม่เคยทำ FCF margin เกิน ~24% ในรอบไหนเลย | | | |
+
+**Street PT (ทั้งหมดก่อน selloff 11-05):** WDC median **$622.50** (SA, 26 analysts, 10-27 [forecast](https://stockanalysis.com/stocks/wdc/forecast/)) / **$600** (Nasdaq 1-yr target) → +127% ถึง +136% · STX **$1,045** (SA 10-29 [forecast](https://stockanalysis.com/stocks/stx/forecast/)) / **$1,050** (Nasdaq) → +127% · SNDK **$2,050** (SA 11-03 [forecast](https://stockanalysis.com/stocks/sndk/forecast/)) / **$2,025** (Nasdaq) → +142% ถึง +145% · Street median > ราคาทุกตัว (ไม่ตกรอบที่ cross-check) แต่ naive FV ต่ำกว่าราคามาก → ใช้ naive FV ตัดสินตามกฎ D-Legacy ("Street อาจ extrapolate peak")
+
+**D-V1 (OR-logic, fast-track ≤0.75×):**
+| Ticker | 1. Self-regression | 2. Peer-regression (EV/Rev ~ TTM growth, n=4) | 3. Analyst-PT | D-V1 |
+|---|---|---|---|---|
+| WDC | **ห้ามใช้** (spin-off) | pred 6.28× ที่ g 43% → actual/pred **1.08×** ❌ | price/PT **0.42–0.44×** ✅ | ผ่าน 1 วิธี / อีกวิธีตกชัด → **"เห็นต่างกันเอง"** |
+| STX | 5 จุด FY22–26 (growth vs P/S เฉลี่ยในปี) → pred 7.28× ที่ g 49% → **1.19×** ❌ (จุด FY26 เป็น outlier 10.9×) | pred 5.94× → **1.31×** ❌ | **0.44×** ✅ | 1/3 · อีก 2 ตกชัด → **"เห็นต่างกันเอง"** |
+| SNDK | N/A (ประวัติสั้น) | pred 25.0× ที่ g 273% = **extrapolate เกินช่วง peer (12–49%) 5 เท่า → ใช้ไม่ได้** | **0.41×** ✅ | 1/1 valid · D-Legacy mid-cycle 3.67–4.66× ตกชัด → **"เห็นต่างกันเอง"** |
+
+**สรุป D:** D-Legacy mid-cycle **ตกทั้ง 3 (>0.90×)** · D-V1 ผ่านเฉพาะ Analyst-PT ซึ่งเป็น PT ก่อน selloff และ extrapolate peak → ไม่มีตัวไหนเข้า fast-track ได้
+
+#### Step 8 — Filter E (soft-score ≥2/3)
+5Y pooled after-tax ROIC (op inc × 0.85 ÷ (equity + debt − cash) ณ FY-end, SEC 10-K — `max_scout.py roic`)
+| Ticker | E1 Moat | E2 Through-cycle ROIC ≥ WACC +3pp | E3 Overhang | E |
+|---|---|---|---|---|
+| WDC | ⚠️ Narrow — HDD เหลือ 3 ราย (STX/WDC/Toshiba) แต่ product commodity, ส่วนแบ่งตลาดปัจจุบัน DATA NOT AVAILABLE → ไม่ผ่านเกณฑ์ "Narrow+ มีหลักฐาน" ❌ | FY22–26 pooled **~9.8%** vs 13.2% (FY23 −6.9%, FY24 −1.6%; ปนช่วงก่อน spin) ❌ | ไม่พบ overhang เฉพาะบริษัท · AI-pause เป็น rhetoric ยังไม่ใช่กฎหมาย ✅ (flag) | **1/3** |
+| STX | ✅ Narrow+ — HAMR/Mozaic เป็นเทคโนโลยีนำ (เชิงคุณภาพ, ไม่มีตัวเลข share ในรอบนี้ — judgment) | FY22–26 pooled **~36–47%** (FY22 invested capital ใน XBRL ขาด debt → ช่วง) vs 12.8% ✅ — แต่มาจาก FY25–26 (FY23 −8.2%) | ✅ (flag เดียวกัน) | **3/3** (E1 เป็น judgment) |
+| SNDK | ❌ NAND #5 ส่วนแบ่ง **11.4%** (2Q26, TrendForce ผ่าน [Evertiq](https://evertiq.com/news/2026-08-18-top-five-nand-flash-brands-post-77-revenue-surge-in-q2)) — ต่ำสุดในกลุ่มผู้ผลิตหลัก | FY23–26 pooled **~16.9%** vs 13.6% = +3.3pp แต่ **peak-anchored** (FY23–25 ติดลบทุกปี, กำไรทั้งหมดจาก FY26) ❌ | ✅ (flag) | **1/3** |
+
+#### Step 9 — AI/Infra Build-out lane (ต้องผ่านครบ 3/3; REIT/utility exclusion ไม่เกี่ยว)
+| Ticker | 1. Capex/Revenue ≥15% TTM หรือ (capex +30% YoY และ ≥8%) | 2. Build-out program $ + เวลา | 3. ≥40% revenue growth จาก AI/DC | Lane |
+|---|---|---|---|---|
+| WDC | FY26 418 ÷ 12,919 = **3.2%** · Q1 FY27 227 ÷ 4,381 = 5.2% → **FAIL** (SEC) | ไม่ได้ประเมิน (ข้อ 1 FAIL แล้ว) | cloud 89% ของรายได้ Q4 FY26 → น่าจะ PASS ([Barchart](https://www.barchart.com/story/news/1641110/wdc-q1-deep-dive-ai-storage-demand-and-new-product-roadmap-take-center-stage)) | **STANDARD** |
+| STX | FY26 569 ÷ 12,195 = **4.7%** (capex +115% YoY แต่ <8%) → **FAIL** (SEC) | ไม่ได้ประเมิน | ไม่ได้ประเมิน | **STANDARD** |
+| SNDK | FY26 177 ÷ 20,248 = **0.9%** → **FAIL** (SEC) | ไม่ได้ประเมิน | ไม่ได้ประเมิน | **STANDARD** |
+
+ไม่มีตัวไหนเข้า lane → ใช้ Filter A/C/D/E เดิม (ไม่มีการแทนที่) · *ข้อ 2–3 ไม่ได้รายงานครบ 3 สถานะ เพราะข้อ 1 ตัดสินแล้วด้วยตัวเลข SEC — บันทึกไว้เพื่อความโปร่งใส*
+
+#### Step 10 — Tier 1 Quick-Screen + Tier 1.5
+| Ticker | Check 1: ROIC < 0.5× WACC และแย่ลง 2 ปี | Check 2a: ราคา > 1.5× naive FV | Check 2b | Tier 1.5 (ถ้าผ่าน Tier 1) | **ผล** |
+|---|---|---|---|---|---|
+| WDC | ไม่ติด (64% ↑) | **ติด — 8.05× (หลัก) / 10.98×** · แม้ TTM peak ยัง 3.01× | — | (Reject: B-V1 0/2, D-Legacy ตก, E 1/3) | ❌ **`QUICK-SCREEN SKIP`** |
+| STX | ไม่ติด | **ติด — 12.21×** · TTM peak 3.40× | — | (Reject: B-V1 0/3, D-Legacy ตก) | ❌ **`QUICK-SCREEN SKIP`** |
+| SNDK | ไม่ติด | **ติด — 3.67× (หลัก) / 4.66×** · ⚠️ TTM peak **0.88×** จะไม่ติด | — | (ถ้าใช้ TTM: D 0.88× ก้ำกึ่ง + E 1/3 → learning-queue เท่านั้น) | ❌ **`QUICK-SCREEN SKIP`** |
+
+### Final routing — Round 90
+- 🟢 **Fast-track: 0** · 🟡 **Learning-queue: 0** · ❌ **`QUICK-SCREEN SKIP`: 3 (WDC / STX / SNDK)** — ผ่าน A + B-Zero + C ทั้งหมด แต่ราคาเกิน 1.5× naive FV บน through-cycle FCF
+- **ไม่มี entry zone / stop** (ไม่มีตัวไหนผ่าน) · ไม่เพิ่ม row ใน Pending Analysis / `buy_list.md`
+- **Re-trigger (ไม่ใช่ entry zone):** ราคาที่ check 2a จะผ่าน (≤1.5× naive FV หลัก) → WDC **≤ ~$50** · STX **≤ ~$57** · SNDK **≤ ~$342** · fast-track (≤0.80×) → WDC ~$26 · STX ~$30 · SNDK ~$182 — WDC/STX ห่างไกลมาก
+- **WDC Round 38 learning-queue:** ผลนี้ใช้เกณฑ์ปัจจุบัน (Tier 1 + D-Legacy mid-cycle + E) และให้ SKIP → **แนะนำ Charlie ปิด item WDC ใน `buy_list.md` / `learning_queue_2026-09.md`** (Max ไม่ได้แก้ไฟล์เหล่านั้นในรอบนี้ — นอก scope คำสั่ง)
+
+### What this round tells the team
+1. **SNDK เป็นตัวเดียวที่ผลขึ้นกับคำถามเดียว:** NAND mid-cycle FCF margin หลังรอบนี้เป็นเท่าไร — ถ้าทีมยอมรับว่า normalized FCF ≥ **~$9.8B (34% ของรายได้ TTM)** SNDK จะผ่าน check 2a · MU re-analysis ที่กำลังทำอยู่ต้องตอบคำถามเดียวกัน (mid-cycle questions ใน `agent_notes/atlas/2026-08-27_MU.md`) → **re-screen SNDK หลัง MU re-analysis ผ่าน Morgan** ใช้ตัวเลข mid-cycle เดียวกัน · แม้ผ่าน 2a, E 1/3 → สูงสุดคือ learning-queue
+2. **WDC/STX แพงแม้ใช้ FCF ปีที่ดีที่สุด** (3.0–3.4× บน TTM) — HDD ไม่เคยมี FCF margin เกิน ~24% · การลง 60–67% คือ multiple กลับจากฟองเดือน มิ.ย. ไม่ใช่ราคาถูก
+3. **B-V1 กับ D-Legacy ขัดกันอีกครั้งบนหุ้น cyclical:** EV/Sales ของ SNDK ต่ำเพราะรายได้อยู่ที่ราคา peak — ข้อมูลให้ Vera (2026-12-31) ว่า B-V1 ควรห้ามใช้กับหุ้นที่เข้าเกณฑ์ Cyclical หรือไม่ (growth >15% ที่มาจากราคาขาย ≠ Growth bucket)
+4. **Street PT ทั้ง 3 ตัวเก่ากว่า selloff** และสูงกว่าราคา 2.3–2.5 เท่า — สอดคล้องกับข้อสังเกต D-Legacy ว่า Street extrapolate peak
+
+**Target analysis date:** ไม่มี · SNDK re-screen ผูกกับ MU re-analysis (ไม่ใช่วันที่)
+
+*Max — 2026-11-08 | Scout Round 90 (Memory/Storage peers of MU, CIO-directed — WDC/STX/SNDK: 0 fast-track / 0 learning-queue / 3 QUICK-SCREEN SKIP; no trade, regime TC)*
+
 ## Scout Report § Round 91 (Airlines) — 2026-11-09
 
 **Sector mandate:** Airlines — US passenger carriers + 2 ADRs (RYAAY, CPA) ตามคำสั่ง CIO · ก่อนหน้า: R88 Hotel/Storage REIT · R89 Office REIT · R90 Memory/Storage (MU peers)
@@ -10361,3 +10498,90 @@ WACC band ตาม Filter D: mid-cap 10–13% (SRAD $3.8B, BRSL $1.8B) → hurd
 **Target analysis date:** ไม่มี (0 candidates)
 
 *Max — 2026-11-15 | Scout Round 97 (Gaming Equipment / Lottery & Betting Tech — 5 screened [BRSL/INSE/SRAD/GENI/ACEL]; IGT→BRSL renamed, EVRI/AGS/GAN taken private, LNW moved to ASX → not counted; BALY operator excluded; 0 fast-track / 0 learning-queue / 5 reject [1 A ACEL · 1 B-Zero INSE · 2 C BRSL/GENI · 1 E SRAD]; prune 2 de-listed [WYNN Tier 1 QUICK-SCREEN SKIP · VICI fails A], live 9 → 7)*
+
+
+## Scout Report — 2026-11-16 (Max Scout Mode — Round 98)
+
+### Homebuilders & Residential Construction (pure-play)
+
+**Trigger:** task-directed sector mandate. Coverage check: homebuilders ไม่เคยเป็น dedicated round — DHI/LEN/GM/F/SBUX ถูกแตะใน R44a (2026-09-29, Consumer Discretionary sweep; LEN ตก B, DHI ตก A) และ TOL ถูกแตะใน R15 (2026-07-29, −7.8% ตก A) · R81 (10-19) เป็น Building Products/HVAC (suppliers) คนละ sub-industry · ไม่ซ้ำ sector ใน R82–R97 (30 วันล่าสุด)
+
+**Portfolio state / regime:** Atlas record ล่าสุด 2026-11-06 = **TRANSITIONAL-CAUTIOUS** (2 RISK-ON / 1 TC / 1 RISK-OFF, VIX 28.18, ขึ้นดอกเบี้ย Dec ถูก price 77–78%) → Force Deploy suspended, ห้ามเปิด position ใหม่ · อายุ record 10 วัน (<14 ไม่ stale แต่ครบ 14 วัน 11-20) · ไม่มีการ re-call ในรอบนี้ · Scout เพื่อ buy list เท่านั้น. Housing อ่อนไหวต่อ Fed hike โดยตรง
+
+**Universe:** PHM · NVR · TOL · KBH · MTH · **MDC → ถูก Sekisui House ซื้อ + delist 2024-04-19** ([Paul Weiss](https://www.paulweiss.com/insights/client-news/mdc-completes-49-billion-sale-to-japan-s-sekisui-house), [TipRanks/Fly](https://www.tipranks.com/news/the-fly/m-d-c-holdings-to-be-delisted-from-the-nyse-due-to-acquisition-by-sekisui-house); Yahoo chart คืน 404) → แทนด้วย **LGIH** (TPH ไม่ได้ตรวจสอบในรอบนี้ เลยไม่ใส่) · เสริม **DHI / LEN** (ไม่ได้ถูกสั่ง แต่เป็น pure-play ใหญ่สุด 2 ตัว และ R44a เป็น ad-hoc ที่ >30 วันแล้ว — เพื่อให้ sector ครบ) · Hard exclusion (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL) + holdings ใน portfolio.js ไม่ชนกับตัวไหน
+
+### Step 3 — ราคา + Filter A (close 2026-11-13, ≥2 sources เท่ากันทุกตัว)
+
+| Ticker | ราคา | 52W high (วันที่) | % จาก high | Source 1 (Yahoo chart) | Source 2 (stockanalysis) | Filter A |
+|---|---|---|---|---|---|---|
+| LGIH | $41.29 | $66.25 (2026-06-26) | **−37.7%** | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/LGIH?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/lgih/) exact · mkt cap $0.96B | ✅ |
+| LEN (เสริม) | $83.61 | $133.76 (2025-12-03) | **−37.5%** | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/LEN?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/len/) exact · mkt cap $19.89B | ✅ |
+| KBH | $47.90 | $67.57 (2026-02-13) | **−29.1%** | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/KBH?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/kbh/) exact · mkt cap $2.91B | ✅ |
+| NVR | $5,853.92 | $8,200.00 (2026-02-12) | **−28.6%** | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/NVR?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/nvr/) exact · mkt cap $15.49B | ✅ |
+| MTH | $64.47 | $85.38 (2026-06-26) | **−24.5%** | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/MTH?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/mth/) exact · mkt cap $4.15B | ✅ |
+| DHI (เสริม) | $145.55 | $170.79 (2026-06-25) | −14.8% | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/DHI?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/dhi/) exact | ❌ |
+| TOL | $147.85 | $168.36 (2026-02-13) | −12.2% | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/TOL?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/tol/) exact | ❌ |
+| PHM | $127.01 | $144.50 (2026-02-17) | −12.1% | [Yahoo](https://query1.finance.yahoo.com/v8/finance/chart/PHM?range=1y&interval=1d) | [SA](https://stockanalysis.com/stocks/phm/) exact | ❌ |
+
+Yahoo = stockanalysis ตรงกันทุกตัว (ส่วนต่าง 0%) → ไม่ต้องรอบที่ 3. หมายเหตุ: ทั้งสองแหล่งอ่านผ่านตัวดึงเดียวกัน (WebFetch) ไม่ใช่การสุ่มอิสระเต็มรูปแบบ — เหมือนรอบก่อนๆ
+
+**Beaten-down reason (A survivors):** ทั้ง 5 = **cyclical / rate-driven** (affordability + incentives + Fed hike priced) — ไม่ใช่ permanent impairment แต่ **ยังไม่ใช่ trough**: รายได้/กำไร 9M'26 ยังลงต่อ และ Fed ยังเอนไปทางขึ้นดอกเบี้ย → จัดเป็น cyclical แบบ "ยังลงอยู่" ไม่ใช่ "พักฐาน"
+
+### Step 4 — ข้อมูลการเงิน (SEC XBRL companyfacts: [NVR](https://data.sec.gov/api/xbrl/companyfacts/CIK0000906163.json) · [KBH](https://data.sec.gov/api/xbrl/companyfacts/CIK0000795266.json) · [MTH](https://data.sec.gov/api/xbrl/companyfacts/CIK0000833079.json) · [LGIH](https://data.sec.gov/api/xbrl/companyfacts/CIK0001580670.json) · [LEN](https://data.sec.gov/api/xbrl/companyfacts/CIK0000920760.json); 10-K FY + 10-Q ล่าสุด Q3'26)
+
+FCF = OCF − purchases of PP&E (หน่วย $M). **ข้อควรระวัง homebuilder:** OCF ถูกกำหนดด้วยการลงทุนใน inventory/land → ปีที่ยอดขายหด OCF ดีดขึ้นจากการปล่อย inventory (FY23) · จึงใช้ **median** 5 ปีเป็นฐาน normalized แทน mean
+
+| Ticker | FCF FY21 / 22 / 23 / 24 / 25 | 9M'26 FCF | Median FY21–25 (% ของ cap) | NI FY25 → 9M'26 | Equity Q3'26 | Rev 9M'26 vs FY25 |
+|---|---|---|---|---|---|---|
+| NVR | 1,224 / 1,852 / 1,473 / 1,345 / 1,096 | 382 | **1,345** (8.7%) | 1,340 → 683 | 3,435 | 6,610 vs 10,324 |
+| KBH | −76 / 138 / 1,048 / 324 / 288 | **−262** | **288** (9.9%) | 429 → 126 | 3,802 | 3,487 vs 6,236 |
+| MTH | −178 / 378 / 318 / −257 / 92 | 246 | **92** (2.2%) | 453 → 214 | 5,044 | n/a (tag ไม่ครบ) |
+| LGIH | OCF 22 / −370 / −57 / −144 / −140 (capex ~1–2) | 95 | **ติดลบ** (≈ −58) | 73 → 54 | 2,160 (รวม NCI) | 1,293 vs 1,706 |
+| LEN | 2,468 / 3,209 / 5,080 / 2,231 / **28** | **−863** | **2,468** (12.4%) | 2,078 → 818 | 21,559 | 22,605 vs 34,187 |
+
+KBH/LEN ปีงบสิ้น พ.ย.; 9M ของ KBH/LEN = ถึง 2026-08-31 · "9M'26 vs FY25" ไม่ใช่ YoY (ไม่ได้ดึง 9M'25) — ใช้ดูทิศทางอย่างหยาบ ไม่ใช้ใน alpha · ตัวเลข annualized ด้านล่างคำนวณเอง (9M ÷ 0.75) ไม่ใช่ TTM จริง
+
+**B-Zero (balance sheet):** equity ทุกตัวเป็นบวก (NVR 3.4B · KBH 3.8B · MTH 5.0B · LGIH 2.2B · LEN 21.6B) → ไม่มี negative-equity flag. Net debt/EBITDA ไม่ได้ extract ครบ (homebuilder ใช้ debt-to-capital) — ไม่ใช่ gap ที่ตัดสินผลรอบนี้. LGIH มี notes $1.54B (≈0.71× equity) leverage สูงสุดในกลุ่ม
+
+**ลำดับ filter ต่อตัว (A ผ่านทั้ง 5):**
+
+| Ticker | B | C | D / Tier 1 | ตกที่ |
+|---|---|---|---|---|
+| **NVR** | ✅ FCF median $1,345M = 8.7% (FY25 7.1%; 5Y mean 9.0%) · 9M'26 FCF $382M | ✅ ROE FY25 34% (1,340÷3,865) ≫ WACC | **❌ D** — naive FV (FCF ÷ WACC): median @10% = $13.45B → mkt cap **1.15×** · mean @9% = $15.5B → **1.00×** · FY25 FCF @10% → 1.41× → ราคาอยู่ใน ±10% หรือแพงกว่าในทุกฐานที่ WACC ≥ 9% (0.89× เฉพาะที่ WACC 8% ซึ่งต่ำเกินไปเมื่อ Rf 10Y 4.84%) → **Tier 1 check 2b** | D → `QUICK-SCREEN SKIP` |
+| **KBH** | ✅ median $288M = 9.9% (mean $344M = 11.8% แต่ถูกดึงโดย FY23 $1,048M ซึ่งเป็น inventory release; ตัด FY23 mean = $168M) · แต่ **9M'26 FCF −$262M** | ❌ ROE annualized = 126÷0.75÷3,802 = **4.4%** (FY25 11.0%) · ROIC ต่ำกว่านี้อีก · ไม่มี trend ดีขึ้น 2Q ที่ยืนยันได้ | **❌ D** — median @10% = $2.88B → mkt cap **1.01×** (mean @10% = 0.85× เฉพาะเมื่อพึ่ง FY23 outlier; @11% = 0.93×) → **Tier 1 check 2b** | D (และ C) → `QUICK-SCREEN SKIP` |
+| **MTH** | ❌ median FCF $92M = **2.2%** (mean $71M = 1.7%) · 9M'26 FCF $246M มาจากการปล่อย inventory — ไม่ใช่ normalized | ❌ ROE annualized (214÷0.75÷5,044) = **5.7%** · ROIC ≈ 285 ÷ (5,044 + senior notes 1,809 + notes 677) ≈ **3.8%** vs WACC ~10% (0.8× = 8%) | ไม่ถึง Tier 1 | **C** (+B normalized) |
+| **LGIH** | ❌ OCF ติดลบ 4 ใน 5 ปี → median FCF ติดลบ · 9M'26 FCF +$95M เป็นการปล่อย inventory | ❌ ROE annualized (54÷0.75÷2,160) = **3.3%** · ROIC ≈ 72 ÷ (2,160 + 1,544) ≈ **1.9%** · operating income FY25 $80M vs FY21 $548M | ไม่ถึง Tier 1 | **B + C** |
+| **LEN** (เสริม) | ⚠️ ผ่านเฉพาะฐาน median 5Y ($2,468M = 12.4%) ซึ่งรวม FY22–23 working-capital release · **TTM ติดลบ** (FY25 FCF $28M · 9M'26 −$863M) | ❌ ROE annualized (818÷0.75÷21,559) = **5.1%** · ROIC ≈ 4% (R44a วัดได้ 4.34% จาก GuruFocus — ใกล้กัน) vs WACC ~10% | ไม่ถึง Tier 1 | **C** |
+
+WACC 10% = ค่า band mid/small-cap ตาม Filter D (10–13%) ใช้ค่าล่างของ band เพื่อไม่ให้เข้มเกินจริง — ไม่ได้ lock ผ่าน Atlas (scout stage)
+
+**Tier 1 Quick-Screen (NVR, KBH — เฉพาะตัวที่ผ่าน A + B):** Check 1 (ROIC < 0.5× WACC และแย่ลง 2 ปี+): NVR ไม่ติด · KBH ไม่ติด · Check 2a (> 1.5× naive FV): NVR 1.15–1.41× ไม่ติด · KBH 1.01× ไม่ติด · **Check 2b (±10%): NVR ฐาน mean/9% = 1.00× ติด · KBH ฐาน median/10% = 1.01× ติด** → `QUICK-SCREEN SKIP`. Check 3 (red-flag search) ไม่รัน — ไม่ใช่ gate และตกก่อนถึง lane
+
+**ไม่ได้รัน Filter E กับตัวไหน** — ทุกตัวตกก่อน (D หรือ C) · ไม่มี candidate เข้า lane
+
+### Final routing — Round 98
+| Ticker | ตกที่ | Tag |
+|---|---|---|
+| PHM | **A** (−12.1%) | reject |
+| TOL | **A** (−12.2%) | reject |
+| DHI | **A** (−14.8%) | reject |
+| NVR | **D / Tier 1 2b** (1.00–1.15× naive FV; ไม่มีที่ว่างให้ MOS 15%) | `QUICK-SCREEN SKIP` |
+| KBH | **D / Tier 1 2b** (1.01× @ median) + C (ROE annualized 4.4%) | `QUICK-SCREEN SKIP` |
+| MTH | **C** (ROIC ≈ 3.8%) + B normalized (FCF yield 2.2%) | reject |
+| LGIH | **B + C** (FCF ติดลบ, ROIC ≈ 1.9%) | reject |
+| LEN | **C** (ROIC ≈ 4%; TTM FCF ติดลบ) | reject |
+| MDC | ไม่นับ (ถูกซื้อ + delist 2024-04) | — |
+
+**0 fast-track · 0 learning-queue · 8 reject (3 A · 2 D/Tier 1 · 3 B/C).** ไม่เพิ่มแถวใน Pending Analysis · ไม่เพิ่ม `buy_list.md` · Regime = TC อยู่แล้ว (ห้ามเปิดใหม่)
+
+### Notes for CIO / Charlie
+1. **Homebuilder = "ถูกบนกระดาษ แต่เป็น value trap ตอนนี้"** — P/B ต่ำมาก (LGIH 0.44× · MTH 0.82× · KBH 0.77× · LEN 0.92× คำนวณจาก market cap ÷ equity Q3'26) แต่ ROE annualized เพียง 3–6% เพราะ margin หดจาก incentives. P/B ใช้เป็น Filter B ได้เฉพาะ financials ตาม rule จึงไม่ได้ใช้ที่นี่
+2. **FCF ของ homebuilder ตีความยาก** — ปีที่ยอดขายหด OCF ดีขึ้นจากการปล่อย inventory (KBH FY23 $1,048M · LEN FY23 $5.1B · LGIH 9M'26) แล้วกลับเป็นลบเมื่อซื้อ land ใหม่. **ข้อสังเกตให้ Charlie (ไม่ได้แก้ rule):** Filter D เดิม (mid-cycle FCF) ให้ผลต่างกัน ~2× ตามว่าใช้ mean หรือ median (KBH 0.85× vs 1.01×) — ถ้ามี round อื่นเจอ homebuilder/land developer ควรระบุฐาน normalization ให้ชัด
+3. **NVR คือตัวเดียวที่เป็นธุรกิจดีจริง** (ROE 34%, land-light) แต่ราคายังไม่ถูก · **Re-screen trigger (ไม่ใช่ entry ที่แนะนำ):** ราคา ≤ ~$4,070 (= 0.80× naive FV median@10% $13.45B; −30% จากปัจจุบัน) หรือ FCF median ปรับขึ้นเมื่อ earnings ฟื้น · ไม่กำหนด entry zone/stop เพราะไม่ผ่านด่าน
+4. **KBH re-screen trigger:** ราคา ≤ ~$38 (= 0.80× $2.88B) **และ** ROE annualized กลับ > 8% ติดกัน 2 ไตรมาส
+5. **Macro:** Fed hike ถูก price 77–78% สำหรับ Dec (Atlas 11-06) → ตัวแปรหลักของกลุ่มนี้ยังไม่หมุน · ถ้า regime พลิกเป็น RISK-ON + มีสัญญาณลดดอกเบี้ย ค่อยสแกน sector นี้ใหม่ · Atlas เขียน Sector View ได้ (ad-hoc trigger #3) ถ้า CIO ต้องการ
+6. **Housekeeping:** Atlas regime record ครบ 14 วัน 11-20 — ต้อง re-call ก่อน Tier 1 review ของ CMRE (11-17) / ALLY·NBIX·BYD (11-18) ตามที่ R97 flag · `QUICK-SCREEN SKIP` ของ WYNN จาก R97 backfill ลง deployment_log รอบนี้แล้ว
+
+**Target analysis date:** ไม่มี (0 candidates)
+
+*Max — 2026-11-16 | Scout Round 98 (Homebuilders & Residential Construction — 8 screened [PHM/NVR/TOL/KBH/MTH/LGIH + DHI/LEN เสริม]; MDC acquired by Sekisui House 2024 → LGIH substituted; 0 fast-track / 0 learning-queue / 8 reject [3 A PHM/TOL/DHI · 2 D NVR/KBH · 3 B/C MTH/LGIH/LEN]; QUICK-SCREEN SKIP NVR/KBH; prune 0 de-listed, live 7)*

@@ -1148,6 +1148,20 @@
 
 *Max — 2026-11-08 | Scout Round 89 — 0 fast-track, 0 learning-queue, 4 QUICK-SCREEN SKIP; no trade.*
 
+## Scout Round 90 — Memory/Storage peers of MU (CIO-directed) — 2026-11-08
+
+| Ticker | Tag | เหตุผล |
+|---|---|---|
+| WDC | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $263.78 (11-06) −67.0% จาก high $799.87 · A ✅ · B-Zero ✅ net cash · B-V1 ❌ 0/2 (self-history ห้ามใช้เพราะ spin-off; peer-median 1.16×, sector 1.02×) · C ✅ · naive FV $33 (STX through-cycle FCF margin 12.75% × HDD revenue $12.3B ÷ WACC 13.22%) → **8.05×** (TTM peak 3.01×) · E 1/3. แทนสถานะ learning-queue Round 38 |
+| STX | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $460.99 −59.7% จาก $1,145 · A ✅ · B-Zero ✅ (equity +$3.45B; ติดลบ FY23–25) · B-V1 ❌ 0/3 (self-history pct 80, peer 1.39×, sector 1.17×) · C ✅ · naive FV $38 (FCF เฉลี่ย FY16–26 $1,293M ÷ 12.78%) → **12.21×** (TTM 3.40×) · E 3/3 |
+| SNDK | `QUICK-SCREEN SKIP` (Tier 1 check 2a) | $835.06 −64.5% จาก $2,354.39 · A ✅ · B-Zero ✅ net cash $7.2B · B-V1 ✅ 2/2 (peer 0.54×, sector 0.58× — รายได้ peak) · C ✅ · naive FV $228 (margin FY23–26 × revenue เฉลี่ย ÷ 13.62%) → **3.67×** · ⚠️ บน TTM FCF = 0.88× · E 1/3 → re-screen หลัง MU re-analysis ตอบ NAND mid-cycle |
+
+- **Action:** ไม่มี trade · ไม่มีตัวเข้า AI/Infra lane (capex/revenue 0.9–4.7%)
+- **Regime:** TRANSITIONAL-CAUTIOUS (Atlas 11-06) — ห้าม open ใหม่อยู่แล้ว
+- **Data:** ราคา 3 แหล่ง (Yahoo + Nasdaq + StockAnalysis, close 2026-11-06) · SEC XBRL 10-K/10-Q · `scripts/scout/2026-11-06_memory/max_scout.py`. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 90.
+
+*Max — 2026-11-08 | Scout Round 90 — 0 fast-track, 0 learning-queue, 3 QUICK-SCREEN SKIP; no trade.*
+
 ## Scout Round 91 — Airlines — backfill (2026-11-09, บันทึก 2026-11-11)
 
 | Ticker | Tag | เหตุผล |
@@ -1201,3 +1215,17 @@
 - **Data:** ราคา Yahoo + Nasdaq (close 2026-11-13) · SEC XBRL companyfacts · `scripts/scout/2026-11-14_r96/`. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 96.
 
 *Max — 2026-11-14 | Scout Round 96 — 0 fast-track, 0 learning-queue, 7 QUICK-SCREEN SKIP; no trade.*
+
+
+## 2026-11-16 — Scout Round 98 (Homebuilders & Residential Construction) + R97 housekeeping
+
+| Ticker | Tag | Detail |
+|---|---|---|
+| NVR | `QUICK-SCREEN SKIP` (Tier 1 check 2b) | $5,853.92 −28.6% · A ✅ B ✅ (FCF median $1,345M = 8.7%) C ✅ (ROE 34%) · naive FV median@10% $13.45B → 1.15× · mean@9% 1.00× → ไม่มีที่ว่าง MOS |
+| KBH | `QUICK-SCREEN SKIP` (Tier 1 check 2b) | $47.90 −29.1% · FCF median $288M = 9.9% · naive FV @10% $2.88B → 1.01× (mean 0.85× พึ่ง FY23 outlier) · 9M'26 FCF −$262M · ROE annualized 4.4% |
+| WYNN | `QUICK-SCREEN SKIP` (Tier 1 check 2a/2b) — backfill จาก R97 prune (2026-11-15) | naive FV 1.08–1.74× (TTM 1.74× · normalized capex 1.14× · FY23–25 avg 1.08×) · equity −$217.5M · ND/EBITDA 6.1× (SEC 10-Q 2026-09-30) |
+
+- **Action:** ไม่มี trade · PHM/TOL/DHI ตก A · MTH/LGIH/LEN ตก C (+B) — ไม่นับเป็น QUICK-SCREEN SKIP
+- **Data:** ราคา Yahoo + stockanalysis (close 2026-11-13) · SEC XBRL companyfacts. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 98.
+
+*Max — 2026-11-16 | Scout Round 98 — 0 fast-track, 0 learning-queue, 2 QUICK-SCREEN SKIP (+1 backfill WYNN); no trade.*

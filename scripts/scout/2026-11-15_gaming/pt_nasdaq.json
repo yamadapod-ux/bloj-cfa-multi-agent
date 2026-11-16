@@ -1,0 +1,34 @@
+{
+ "SRAD": {
+  "lowPriceTarget": 12.0,
+  "highPriceTarget": 23.0,
+  "priceTarget": 17.19,
+  "buy": 9,
+  "sell": 0,
+  "hold": 5
+ },
+ "BRSL": {
+  "lowPriceTarget": 11.0,
+  "highPriceTarget": 18.0,
+  "priceTarget": 14.5,
+  "buy": 1,
+  "sell": 0,
+  "hold": 1
+ },
+ "INSE": {
+  "lowPriceTarget": 6.25,
+  "highPriceTarget": 12.0,
+  "priceTarget": 8.05,
+  "buy": 5,
+  "sell": 0,
+  "hold": 1
+ },
+ "GENI": {
+  "lowPriceTarget": 6.0,
+  "highPriceTarget": 13.0,
+  "priceTarget": 9.32,
+  "buy": 9,
+  "sell": 0,
+  "hold": 2
+ }
+}
