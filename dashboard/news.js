@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-14 07:00";
+const NEWS_LAST_UPDATED = "2026-11-16 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-16 (Atlas scan 2026-11-14→11-16, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-15", category: "GOVERNANCE",
+    headline: "🔴🔴🔴 Treasury Secretary Bessent calls for 'dramatic shakeup' at Nvidia, urges outside CEO; questions illicit chip-export sales amid DOJ Megaspeed probe",
+    summary: "Treasury Secretary Scott Bessent said on Fox News (2026-11-15) that Nvidia's board should look outside the company for its next CEO following Jensen Huang's resignation (confirmed 2026-11-12), calling for a 'dramatic shakeup.' Bessent questioned whether Nvidia pursued potentially illicit AI-chip export sales — pointing to a surge in reported Singapore revenue even as China sales fell — to boost earnings, and suggested other executives beyond Huang should face scrutiny ('If this were a bank... the OCC would be in there right now, and a lot of the executives would be removed'). He gave Nvidia's board a 10-day deadline to demonstrate export-control compliance. This escalation is directly tied to the circumstances of Huang's resignation: Huang stepped down after revelations of a relationship with Alice Huang, a former executive at Singapore-based Megaspeed whom U.S. intelligence officials suspect of working for Chinese intelligence; the Justice Department is separately investigating whether Megaspeed diverted restricted Nvidia AI chips to China in violation of U.S. export controls. Separately, two major Nvidia shareholders — Altimeter Capital's Brad Gerstner and Atreides Management's Gavin Baker (combined ~$2.13B NVDA stake) — publicly urged the board via an open letter to run a 'slow, measured, and deliberate' CEO search that keeps open 'the potential return of Jensen Huang,' rather than rushing a permanent replacement for interim CEO Colette Kress. The Financial Times reported Nvidia's board has floated Arm CEO Rene Haas as a possible successor, while President Trump has publicly floated former Apple CEO Tim Cook. Yorkville Ives separately cut its NVDA price target -25% to $225 from $300 (maintains Buy) on 2026-11-13, citing the resignation fallout. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — แต่การที่ cabinet-level official อย่าง Treasury Secretary เข้ามาตั้งคำถามเรื่อง export-control compliance + DOJ investigation ที่ยังดำเนินอยู่ ยกระดับ governance/regulatory risk ของทั้ง AI-infra/semis complex จาก 'key-person risk' ไปเป็น 'potential national-security-adjacent regulatory risk' ที่กว้างกว่าตัวบริษัทเดียว ควรติดตามต่อก่อน Nvidia Q3 earnings (confirmed Tue Nov 17).",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+  },
 
   // ── 2026-11-14 (Atlas scan 2026-11-13→11-14, Portfolio Review Mode 3 cron cycle) ──
   {

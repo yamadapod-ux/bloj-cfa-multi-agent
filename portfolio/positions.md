@@ -1,5 +1,49 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-16 (Mode 3 — Monday Pre-Open, No New Trading Day; Re-mark Unchanged at Nov 13 2026 Close)
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 13 days old — getting dated, not yet overdue by the ~2-3 week cadence). Monday 07:00 Bangkok = Sunday evening EDT — no new US trading session has closed yet since Friday Nov 13. All 5 OPEN positions re-verified UNCHANGED at the Nov 13 2026 close via fresh WebSearch (ADBE $243.08, NOW $102.25, CRM $217.84, REGN $955.47, ADSK $264.42 — all consistent across multiple independent sources, no newer print exists). S&P 500 re-confirmed unchanged at **$7,561.67** (Yahoo Finance ^GSPC history, explicit). Sunday coverage centered on NVDA (Treasury Secretary Bessent public pressure campaign + DOJ Megaspeed export-control probe) — Big 10, no OPEN position. **No trades this session.**
+
+| Ticker | Price (Nov 13 close, unchanged) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $243.08 | Yahoo Finance + investing.com (exact match) | -1.60% | +34.12% | 31.39% | 9.37% |
+| NOW | $102.25 | fool.com + investing.com (exact match) | +14.28% | +7.21% | 🟡 9.95% | 0.99% |
+| CRM | $217.84 | Yahoo Finance history (explicit) | +20.35% | +36.99% | 50.44% | 6.30% |
+| REGN | $955.47 | macroaxis.com + Regeneron IR (exact match) | +58.72% | +3.90% | 98.23% | 3.87% |
+| ADSK | $264.42 | exa.ai + chartexchange + Yahoo Finance (exact match, 3-source) | +33.26% | -19.22% | 66.58% | 6.12% |
+
+**Totals:** Invested $2,764.00 · Cash $7,614.88 (73.38%) · Total Value **$10,378.88** (+0.01% vs prior review, cash-accrual only) · Total Return **+3.79%** · S&P 500 Return **+2.20%** (unchanged) · **Alpha +1.59%** (negligible widening from +1.58%, cash-accrual only — both sides flat this session).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,614.09 × 3.8%/365 × 1 day (11-15→11-16) = +$0.79 → $7,614.88.
+
+### 🛑 Stop Loss Check
+No breaches. NOW's stopDist unchanged at **9.95%**, still below the 10% WATCH threshold. All other positions comfortable (31-98%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 66d, MOS +34.12% (positive) | N/A | -3.63% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV ~16d, MOS +7.21% (positive) | N/A | -2.73% vs $105.12 (Oct 30) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 66d, MOS +36.99% (positive) | N/A | -12.06% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV ~16d (<90d), MOS +3.90% (positive, narrowing) | N/A | +2.97% vs $927.89 (Oct 30) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 65d, MOS -19.22% negative but age <<90d | N/A | +24.48% vs $212.40 (Sep 11 close), under 30% line | Street avg ~$320 vs FV $221.79 = +44% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** All FVs 16-66 days old, well under the 90-day threshold; no OPEN position has new earnings this session.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **13 days old** — getting dated per the ~2-3 week typical cadence, not yet overdue. Does not block this update.
+
+### 📰 Atlas News Scan (since NEWS_LAST_UPDATED 2026-11-14 07:00)
+**1 NEW HIGH-IMPACT item.** NVDA — Treasury Secretary Scott Bessent publicly called for a "dramatic shakeup" at Nvidia and urged the board to hire an outside CEO (Fox News interview, Nov 15), questioning whether Nvidia pursued potentially illicit AI-chip export sales (via Megaspeed/Alice Huang, the figure central to Jensen Huang's resignation) to boost reported earnings; DOJ is separately investigating whether Megaspeed diverted restricted chips to China; Bessent gave the board a 10-day compliance deadline. Yorkville Ives cut its NVDA PT -25% to $225 from $300 (maintains Buy). Big 10 watchlist only, no OPEN position — written to news.js. All other coverage (Altimeter/Atreides letter urging a slow CEO search that keeps open "the potential return of Jensen Huang"; FT report on Arm CEO Rene Haas as a candidate; old enterprise-software sector-weakness recaps) assessed ROUTINE continuation, not new discrete catalysts for the 5 OPEN tickers.
+
+### 💡 Cash Yield Rule — routine Monday pre-open accrual (1 day since last Portfolio Review)
+$7,614.09 × 3.8%/365 × 1 = **+$0.79** → **$7,614.88**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ยังไม่มี trading day ใหม่ (Monday 07:00 Bangkok = Sunday เย็น EDT) — ราคาทั้ง 5 positions และ S&P 500 ยังคงเดิมจาก Nov 13 close ยืนยันซ้ำผ่าน WebSearch หลายแหล่ง ไม่มีการเปลี่ยนแปลงใดๆ นอกจาก cash accrual ตามปกติ (+$0.79 → $7,614.88) **alpha ขยับเล็กน้อยเป็น +1.59%** (จาก +1.58%, cash-accrual เท่านั้น) ไม่มี stop breach — NOW stopDist ยังอยู่ต่ำกว่าเกณฑ์ WATCH 10% ที่ 9.95% เหมือนเดิม ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ข่าวใหม่ที่พบ: Treasury Secretary Bessent เรียกร้องให้ Nvidia เปลี่ยน CEO จากภายนอก + DOJ สอบสวนกรณี Megaspeed ส่งออกชิปผิดกฎหมายไปจีน — เป็น Big 10 เท่านั้น ไม่มี OPEN position กระทบ แต่เป็นสัญญาณว่า governance/regulatory risk ของ Nvidia ยังลุกลามต่อเนื่อง ไม่ใช่เรื่องจบแล้ว Atlas regime re-call อายุครบ 13 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
+
 ## 📊 Portfolio Review — 2026-11-15 (Mode 3 — Weekend, No New Trading Day; Re-mark Unchanged at Nov 13 2026 Close)
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 12 days old — getting dated, not yet overdue by the ~2-3 week cadence). Weekend (Nov 14 Sat / Nov 15 Sun non-trading) — no new US trading session has closed since Friday Nov 13. All 5 OPEN positions re-verified UNCHANGED at the Nov 13 2026 close via fresh WebSearch (ADBE $243.08, NOW $102.25, CRM $217.84, REGN $955.47, ADSK $264.42 — all consistent across multiple independent sources, no newer print exists). S&P 500 re-confirmed unchanged at **$7,561.67** (-0.40% Friday close; AP via f.aa.com.tr + moneycontrol + anews.com.tr + arkansasonline, all exact match) — Friday's pullback was driven by continuing Nvidia/Jensen Huang-resignation fallout (chip complex gave back ~$650B over 2 sessions, AMD -8.75%) plus elevated 10Y yields (~5.1%) pricing in tighter Fed policy, even as the S&P still posted its best week since August (+2.51%). **No trades this session.**
