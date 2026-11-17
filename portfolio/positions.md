@@ -1,5 +1,49 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-17 (Mode 3 — Full Re-Mark, Nov 16 2026 Close) — Tech Selloff Deepens 3rd Session on NVDA Leadership/Export-Curb Fallout; Portfolio Decouples, Alpha Widens Sharply to +3.56%; NOW StopDist Narrows Further Below 10% WATCH Line
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 14 days old — getting dated, worth a fresh re-call soon, not yet overdue by the ~2-3 week cadence). First new US trading day since Nov 13 (first full trading week back after the weekend). S&P 500 fell **-1.92%** to **$7,416.59** (-145.08 pts; AP News + CNBC + Xinhua, exact match, 3-source), its third straight losing session, as another leg of the Nvidia leadership/CEO-transition fallout hit the AI trade: the Commerce Dept issued an interim rule (Nov 16) requiring export licenses for advanced AI chip shipments to data centers in 5 countries (Singapore, Malaysia, Thailand, Indonesia, Brazil) targeting third-country diversion via the Megaspeed channel under DOJ scrutiny, while 10+ analysts slashed NVDA price targets (several >50%) ahead of its Q3 earnings due after close Nov 17 — NVDA fell -4.12% to $156.14. Nasdaq -2.49% to 24,509.76, Dow -1.41% to 51,608.17. All 5 OPEN positions re-priced, 2-source cross-checked except CRM (single-primary-source, attempt cap reached, flagged per Single Source of Truth Rule). **ADBE and ADSK both rose despite the broad tech selloff** — the book has zero direct AI-hardware exposure. **No trades this session.**
+
+| Ticker | Price (Nov 16 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $246.00 | stockanalysis.com + keenable (exact match) | -0.42% | +33.33% | 32.97% | 9.48% |
+| NOW | $99.37 | fiscal.ai + keenable (exact match) | +11.05% | +9.83% | 🟠 6.85% | 0.96% |
+| CRM | $214.86 | Yahoo Finance history (single-primary-source, attempt cap reached) | +18.74% | +37.86% | 48.38% | 6.21% |
+| REGN | $952.40 | Yahoo Finance + twelvedata + eoddata + beurs.nl (4-source exact match) | +58.14% | +4.21% | 97.59% | 3.85% |
+| ADSK | $265.53 | stockanalysis.com + keenable (exact match) | +33.76% | -19.72% | 67.28% | 6.14% |
+
+**Totals:** Invested $2,764.63 · Cash $7,615.67 (73.37%) · Total Value **$10,380.30** (+0.01% vs prior review) · Total Return **+3.80%** · S&P 500 Return **+0.24%** (dropped sharply from +2.20% — index gave back most of inception-to-date gains in 3 sessions) · **Alpha +3.56%** (widened sharply from +1.59% — the book has zero direct AI-hardware exposure so it was insulated from the Nvidia-driven rout; ADBE and ADSK actually gained on the day).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,614.88 × 3.8%/365 × 1 day (11-16→11-17) = +$0.79 → $7,615.67.
+
+### 🛑 Stop Loss Check
+No breaches. **NOW's stopDist fell further below the 10% WATCH threshold — 6.85%** (from 9.95% prior session), on a -2.82% single-day price move to $99.37 vs stop $93.00 — the narrowest reading yet this streak, but still well above the stop (price would need to fall another ~6% more to breach). All other positions comfortable (32-98%).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 67d, MOS +33.33% (positive) | N/A | -2.47% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV ~17d, MOS +9.83% (positive) | N/A | -5.47% vs $105.12 (Oct 30) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 67d, MOS +37.86% (positive) | N/A | -13.27% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV ~17d (<90d), MOS +4.21% (positive, still narrow) | N/A | +2.64% vs $927.89 (Oct 30) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 66d, MOS -19.72% negative but age <<90d | N/A | +25.01% vs $212.40 (Sep 11 close), widened from +24.48% but still under the 30% line | Street avg ~$320 vs FV $221.79 = +44% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** All FVs 17-67 days old, well under the 90-day threshold; no OPEN position has new earnings this session. ADSK's Trigger #4 price-divergence metric widened slightly to +25.01% — still under the 30% line, worth watching.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **14 days old** — getting dated per the ~2-3 week typical cadence, not yet overdue. Does not block this update.
+
+### 📰 Atlas News Scan (since NEWS_LAST_UPDATED 2026-11-16 07:00, all 5 OPEN tickers + Big 10 watchlist)
+**1 NEW HIGH-IMPACT item.** NVDA — ahead of Q3 earnings due after close Nov 17, 10+ sell-side analysts slashed price targets well past the >15% threshold, several by half or more (Baird -60%, Evercore -60%, HSBC -53%, Bernstein -50%, Stifel -35%, JPMorgan -33%, Citi -21%, Mizuho -12%), with several downgrades (Baird, Evercore, HSBC, William Blair, Melius, KeyBanc, Oppenheimer) citing the unresolved Jensen Huang leadership succession and China/Megaspeed export-control investigation. Separately, Commerce Dept issued a new interim rule requiring export licenses for AI chip shipments to data centers in 5 countries (Singapore, Malaysia, Thailand, Indonesia, Brazil), targeting the Megaspeed (Singapore) diversion channel under DOJ scrutiny. NVDA fell -4.12% to $156.14, lowest close since July 2025. Big 10 watchlist only, no OPEN position — written to news.js. Other coverage (GOOGL's ~$10B Anthropic IPO share purchase, Meta's infrastructure-head departure announcement, Amazon Ring drone/robot product launches) assessed ROUTINE — not management-change/earnings/M&A-level events for those tickers.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+$7,614.88 × 3.8%/365 × 1 = **+$0.79** → **$7,615.67**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ตลาดสหรัฐฯ ร่วงต่อเนื่องเป็นวันที่ 3 S&P 500 -1.92% สู่ $7,416.59 จากความวุ่นวายรอบใหม่ของ Nvidia — นักวิเคราะห์กว่า 10 สำนักหั่น price target ลงแรง (หลายรายเกิน -50%) ก่อนงบ Nvidia วันนี้หลังตลาดปิด พร้อมกฎ export-control ใหม่ของ Commerce Dept ที่เจาะจงช่องทาง Megaspeed/Singapore พอร์ตเราสวนทางตลาดได้ดีมาก เพราะไม่มี AI-hardware exposure เลย — ADBE และ ADSK กลับขึ้นสวนตลาด (+1.20% และ +0.42%) ทั้งที่ Nasdaq ร่วง -2.49% **alpha เลยกระโดดขึ้นแรงเป็น +3.56%** (จาก +1.59%) ไม่มี stop breach แต่ **NOW stopDist แคบลงต่อเนื่องเป็น 6.85%** (จาก 9.95%) — แคบที่สุดในรอบนี้ แต่ยังห่างจาก stop ($93) พอสมควร ไม่มี Re-Analysis trigger ใหม่ — 3 รายการเดิมยังค้างเหมือนเดิม (ADBE/NOW/ADSK #5) ADSK's price-divergence metric ขยับขึ้นเล็กน้อยเป็น +25.01% ยังต่ำกว่าเกณฑ์ 30% ข่าวเด่นวันนี้มี 1 รายการ: **NVDA** (Big 10, ไม่มี OPEN position) — หั่น PT หลายสำนักพร้อมกฎ export-control ใหม่ ก่อนงบ Q3 คืนนี้ที่ตลาดมองเป็นจุดชี้วัดสำคัญของทั้ง AI trade Atlas regime re-call อายุครบ 14 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
+
 ## 📊 Portfolio Review — 2026-11-16 (Mode 3 — Monday Pre-Open, No New Trading Day; Re-mark Unchanged at Nov 13 2026 Close)
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 13 days old — getting dated, not yet overdue by the ~2-3 week cadence). Monday 07:00 Bangkok = Sunday evening EDT — no new US trading session has closed yet since Friday Nov 13. All 5 OPEN positions re-verified UNCHANGED at the Nov 13 2026 close via fresh WebSearch (ADBE $243.08, NOW $102.25, CRM $217.84, REGN $955.47, ADSK $264.42 — all consistent across multiple independent sources, no newer print exists). S&P 500 re-confirmed unchanged at **$7,561.67** (Yahoo Finance ^GSPC history, explicit). Sunday coverage centered on NVDA (Treasury Secretary Bessent public pressure campaign + DOJ Megaspeed export-control probe) — Big 10, no OPEN position. **No trades this session.**

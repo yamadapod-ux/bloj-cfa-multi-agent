@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-16 07:00";
+const NEWS_LAST_UPDATED = "2026-11-17 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-17 (Atlas scan 2026-11-16→11-17, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-16", category: "ANALYST",
+    headline: "🔴🔴🔴 NVDA hit with 10+ analyst price-target slashes (several >50%) plus downgrades, and a new Commerce Dept export-license rule, ahead of Nov 17 earnings",
+    summary: "Ahead of Nvidia's Q3 FY2027 earnings (due after close Tuesday Nov 17, call 5pm ET), a wave of sell-side analysts slashed price targets well beyond the >15% HIGH-IMPACT threshold, several cutting by half or more: Baird $500→$200 (-60%, downgrade to Neutral from Outperform), Evercore $465→$186 (-60%, downgrade to In Line from Outperform), HSBC $365→$170 (-53%, downgrade to Hold from Buy), Bernstein $400→$200 (-50%), Stifel $315→$205 (-35%), JPMorgan $320→$215 (-33%), Citi $285→$225 (-21%), Mizuho $250→$220 (-12%); William Blair, Melius Research, KeyBanc and Oppenheimer also downgraded shares (to Market Perform/Hold/Sector Weight/Perform respectively). Cited reasons: Jensen Huang's Nov 12 resignation as CEO leaving leadership succession unresolved (board confirmed it is not considering reinstating Huang), the China/Megaspeed export-control investigation, and execution-risk/'brain drain' concerns. Separately, the Commerce Department issued an interim final rule (Nov 16) requiring U.S. export licenses for advanced AI chip shipments to data centers in Singapore, Malaysia, Thailand, Indonesia and Brazil, citing diversion risk via third countries — directly targeting the Nvidia-Megaspeed (Singapore) channel under DOJ scrutiny. NVDA fell -4.12% to $156.14 (Investing.com), its lowest close since July 2025, as the broader AI trade sold off a third straight session (S&P 500 -1.92% to 7,416.59, Nasdaq -2.49%, implied vol at a 52-week high ~63%). WSJ separately reported Nvidia is in line to receive a U.S. government 'AI national champion' designation (alongside Amazon, Microsoft, OpenAI, Anthropic) that would offer priority export review — a potential offsetting positive. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — การตัด PT พร้อมกันหลายสำนัก (หลายรายเกิน -50%) ร่วมกับกฎ export-control ใหม่ที่เจาะจง Singapore/Megaspeed เป็นการยกระดับ regulatory + sentiment risk ของทั้ง AI-infra/semis complex ก่อนงบ Nov 17 ซึ่งตลาดมองเป็นจุดชี้วัดสำคัญของ AI trade ทั้งกลุ่ม.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://www.newsquawk.com/headlines/earnings-primer-nvidia-nvda-earnings-due-17th-november-at-2120gmt1620est-earnings-call-at-2200gmt1700est",
+  },
 
   // ── 2026-11-16 (Atlas scan 2026-11-14→11-16, Portfolio Review Mode 3 cron cycle) ──
   {
