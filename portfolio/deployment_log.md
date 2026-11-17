@@ -1229,3 +1229,14 @@
 - **Data:** ราคา Yahoo + stockanalysis (close 2026-11-13) · SEC XBRL companyfacts. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 98.
 
 *Max — 2026-11-16 | Scout Round 98 — 0 fast-track, 0 learning-queue, 2 QUICK-SCREEN SKIP (+1 backfill WYNN); no trade.*
+
+## 2026-11-17 — Scout Round 99 (Payments & Transaction Processing)
+
+| Ticker | Tag | Detail |
+|---|---|---|
+| (none) | — | ไม่มี fast-track / learning-queue / QUICK-SCREEN SKIP |
+
+- **Action:** ไม่มี trade · PYPL/FISV/GPN/JKHY/EEFT ตก A (−7% ถึง −15%) · FOUR ผ่าน A (−40.6%) + B-Zero + B แต่ตก C (ROIC GAAP ≈5.5% vs เกณฑ์ 8.0%; ND/EBITDA ≈4.5×) — ไม่นับเป็น QUICK-SCREEN SKIP · V/MA excluded (วิเคราะห์แล้ว)
+- **Data:** ราคา Yahoo chart + Nasdaq.com (close 2026-11-13, exact match) · SEC XBRL companyfacts FOUR (10-Q 2026-09-30). ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 99.
+
+*Max — 2026-11-17 | Scout Round 99 — 0 fast-track, 0 learning-queue, 0 QUICK-SCREEN SKIP; no trade.*

@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-11-16): **Scout Round 98 — Homebuilders & Residential Construction (pure-play)** — dedicated round แรกของ sector (DHI/LEN เคยโดนแค่ R44a 2026-09-29; R81 เป็น building products คนละ sub-industry). MDC ถูก Sekisui House ซื้อ+delist 2024-04-19 → แทนด้วย LGIH. close 11-13 (Yahoo = stockanalysis exact ทุกตัว). 8 screened (PHM/NVR/TOL/KBH/MTH/LGIH + DHI/LEN เสริม) → A 5/8 (LGIH −37.7% · LEN −37.5% · KBH −29.1% · NVR −28.6% · MTH −24.5%; PHM −12.1% · TOL −12.2% · DHI −14.8% ตก) → NVR/KBH ตก D (Tier 1 check 2b `QUICK-SCREEN SKIP`) · MTH/LGIH/LEN ตก C (ROIC ต่ำกว่า WACC มาก) · P/B 0.4–0.9× แต่ ROE 2–6% = value trap. **0 fast-track · 0 learning-queue · 8 reject**. Prune: 0 de-listed, SLA ยังไม่ถึงกำหนด (CMRE 11-17, ALLY/NBIX/BYD 11-18) · live 7*
+*ล่าสุด (2026-11-17): **Scout Round 99 — Payments & Transaction Processing** — dedicated round แรกของ sector (V/MA ถูก exclude ตาม Hard exclusion: วิเคราะห์เต็มแล้ว HOLD/WAIT ใน decisions.md · PYPL/FISV/GPN/EEFT/FOUR เคยโดนแค่ scout R11/R12/R28/R52/R82 ก่อน VALUE-FIRST ปัจจุบัน → re-screen ด้วยข้อมูลสด · JKHY ครั้งแรก). ราคา Yahoo = Nasdaq (close 11-13 exact match; Yahoo 11-16 ใช้ดู drift). **Filter A: 1/6 PASS (FOUR −40.6% ที่ 11-13 / −43.6% ที่ 11-16)** · 5 ตก A: EEFT −15.3% · GPN −10.7% · FISV −9.4% · JKHY −8.1% · PYPL −7.3 ถึง −8.3% (2 แหล่งอ่าน 52W high ต่างกัน 1.1%). **FOUR: A ✅ (guide cut + Middle East travel/FX + margin −1.9pp; จัดกลุ่ม cyclical/temporary ปนโครงสร้าง — เขียนทั้ง 2 มุม) · B-Zero ✅ (equity +$1.45B; ND/EBITDA ≈4.5x flag) · B ✅ (FCF yield 15.5% ก่อน SBC / 12.6% หลัง SBC — leverage-inflated: mkt cap ≈42% ของ EV) · C ❌ (ROIC GAAP TTM ≈5.5% < 80%×WACC 8%; Q3 annualized 7.1% ยังต่ำกว่า)** → reject ที่ C (Tier 1 2b ก็ติดที่ cost of equity ≥12%). **0 fast-track / 0 learning-queue / 8 reject** (V/MA นับเป็น excluded ไม่ใช่ reject) · prune 0 de-listed, live 7. ดู Scout Report § Round 99 ท้ายไฟล์.)*
+*ก่อนหน้า (2026-11-16): **Scout Round 98 — Homebuilders & Residential Construction (pure-play)** — dedicated round แรกของ sector (DHI/LEN เคยโดนแค่ R44a 2026-09-29; R81 เป็น building products คนละ sub-industry). MDC ถูก Sekisui House ซื้อ+delist 2024-04-19 → แทนด้วย LGIH. close 11-13 (Yahoo = stockanalysis exact ทุกตัว). 8 screened (PHM/NVR/TOL/KBH/MTH/LGIH + DHI/LEN เสริม) → A 5/8 (LGIH −37.7% · LEN −37.5% · KBH −29.1% · NVR −28.6% · MTH −24.5%; PHM −12.1% · TOL −12.2% · DHI −14.8% ตก) → NVR/KBH ตก D (Tier 1 check 2b `QUICK-SCREEN SKIP`) · MTH/LGIH/LEN ตก C (ROIC ต่ำกว่า WACC มาก) · P/B 0.4–0.9× แต่ ROE 2–6% = value trap. **0 fast-track · 0 learning-queue · 8 reject**. Prune: 0 de-listed, SLA ยังไม่ถึงกำหนด (CMRE 11-17, ALLY/NBIX/BYD 11-18) · live 7*
 *ก่อนหน้า (2026-11-15): **Scout Round 97 — Gaming Equipment / Lottery & Betting Technology** — universe ที่ CIO ให้มาเปลี่ยนไปแล้ว: IGT → Brightstar Lottery (BRSL) · EVRI/AGS/GAN ถูก take-private · LNW ย้ายไป ASX → เพิ่ม SRAD/GENI/ACEL. close 11-13 (Yahoo = Nasdaq). 5 screened → A 4/5 (INSE −55.8% · SRAD −47.0% · GENI −45.9% · BRSL −41.4%; ACEL ตก) → B-Zero 3 (INSE ตก: equity ติดลบจากขาดทุนสะสม) → C 1 (BRSL/GENI ตก) → SRAD ตก E 0/3 (short report + class action). **0 fast-track · 0 learning-queue · 5 reject**. Prune: WYNN Tier 1 `QUICK-SCREEN SKIP` (1.08–1.74× naive FV) + VICI ตก A → archive 2 · live 9 → 7*
 *ก่อนหน้า (2026-11-14): **Scout Round 96 — Electronic Components / EMS / PCB / Optical** — CIO สั่ง Metals & Mining แต่ซ้ำ R79 (10-18) / R80 (10-19) ใน 30 วัน และตัวเลือกสำรองทั้ง 4 ก็ซ้ำ → เปลี่ยนเป็น sector ที่ไม่เคยสแกน. close 11-13 (Yahoo = Nasdaq). 15 screened → A 13/15 (TTMI −66.9% · VSH −61.7% · FN −56.2% · FLEX −55.1% ฯลฯ; TEL/CTS ตก) → B-Zero 13 → B 8 (FLEX/KN/PLXS/ROG ตก) → C 7 (VSH/LFUS ตก) → D-V1 ทุกตัว "เห็นต่างกันเอง" → Tier 1 check 2a 3.4×–7.6× naive FV. **0 fast-track · 0 learning-queue · 15 reject (7 QUICK-SCREEN SKIP: JBL/SANM/TTMI/FN/BELFB/BHE/OSIS)**. ไม่มีตัวเข้า AI/Infra lane (TTMI ผ่าน 2/3). Prune: ทำแล้วใน R95*
 *ก่อนหน้า (2026-11-14): **Scout Round 95 — Digital Advertising / Ad Tech** — dedicated round แรกของ sector (TTD/SNAP/PINS/CRTO/ZD/QNST/STGW/MGNI/PUBM/DV; IAS take-private แล้ว). close 11-13 (Yahoo = Nasdaq). Filter A 4/10 → C 1 (TTD) → D 0. **0 fast-track · 0 learning-queue · 10 reject**. Prune: 0 de-listed, SLA 5 → 11-18*
@@ -397,6 +398,11 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 
 **Prune Pass 2026-11-16 (Mode 1 Step 0 — Round 98):** ตรวจ live Pending ทั้ง 7 แถว (ALLY/MMS/CRI/NBIX/BYD/WGO/CMRE) ตาม De-list Rules #1-3. ไม่มีวันซื้อขายใหม่ตั้งแต่ R97 (close 11-13 ล่าสุด) → ราคาและ % จาก high ที่ใช้ตัดสินใจรอบ 11-15 ยังใช้ได้. **De-listed 0 · SLA fixed 0** · live 7. Rule #1: ทุกแถวมี target date (CMRE 11-17 · ALLY/NBIX/BYD 11-18 · CRI/MMS 11-20 · WGO 12-19) · Rule #2: ไม่มีตัวไหนเกิน 2× ขอบบน zone (ไม่ archive จึงไม่ต้อง WebSearch ราคาซ้ำ) · Rule #3: portfolio.js/decisions.md ไม่มี hit ใหม่. Regime record ล่าสุด 2026-11-06 (อายุ 10 วัน < 14 — ไม่ stale แต่จะครบ 14 วัน 11-20; **ต้อง re-call ก่อน Tier 1 review ของ CMRE/ALLY/NBIX/BYD 11-17/18**).
 
+**Prune Pass 2026-11-17 (Mode 1 Step 0 — Round 99):** ตรวจ live Pending ทั้ง 7 แถว (ALLY/MMS/CRI/NBIX/BYD/WGO/CMRE) ตาม De-list Rules #1-3 · ราคา Yahoo chart close 11-16 + Nasdaq.com last-sale 11-13 (Yahoo 11-13 close = Nasdaq ตรงทุกตัว). **De-listed 0 · SLA fixed 0** · live 7 → 7.
+- **Rule #1:** ไม่มี target ผ่านกำหนด — **CMRE 11-17 (วันนี้ — Tier 1 ต้องรันภายใน prune ถัดไป)** · ALLY/NBIX/BYD 11-18 · CRI/MMS 11-20 · WGO 12-19. ไม่มีตัวไหนเกิน 60 วัน (scout เก่าสุด 10-16 = 32 วัน)
+- **Rule #2:** ไม่มีตัวไหนเกิน 2× ขอบบน entry zone (สูงสุด NBIX $165.31 = 1.22× ของ $135) · ไม่มี formal FV/MOS ให้วัด −30%. ราคา 11-16: ALLY $38.11 (−19.4%) · MMS $65.40 (−34.6%) · CRI $35.10 (−21.0%) · NBIX $165.31 (−11.2%) · BYD $77.42 (−15.3%) · WGO $31.28 (−37.6%) · CMRE $13.28 (−26.5%, อยู่ใน zone $12.00–13.50)
+- **Rule #3:** `decisions.md` = 0 hits ทุก live ticker · `dashboard/portfolio.js` = 0 hits (OPEN ยังเป็น ADBE/NOW/CRM/REGN/ADSK).
+- **ธง (ไม่ archive — ไม่เข้า rule #1-3):** ALLY −19.4% หลุดเกณฑ์ A (≥20%) ไปเล็กน้อยอีกครั้ง · NBIX/BYD ไม่ผ่าน A ต่อเนื่อง — ตัดสินที่ Tier 1 ของรอบ 11-18 · **Atlas regime record 11-06 ครบ 14 วันในวันที่ 11-20** ต้อง re-call ก่อน Tier 1 ของ CMRE/ALLY/NBIX/BYD (ย้ำจาก R98)
 **Prune Pass 2026-11-15 (Mode 1 Step 0 — Round 97):** ตรวจ live Pending ทั้ง 9 แถวตาม De-list Rules #1-3 (ราคา close 11-13, Yahoo = Nasdaq — ไม่มีซื้อขายตั้งแต่ R95). **De-listed 2 · SLA fixed 0** · live 9 → **7**.
 - **WYNN → Archive:** รัน Tier 1 ที่ค้างตั้งแต่ R75 (SEC 10-Q 2026-09-30) — naive FV (levered FCF ÷ CoE 10.3%) = TTM 1.74× · FCF หลัง maintenance capex ปกติ 1.14× · เฉลี่ย FY23–25 1.08× → ติด check 2a/2b → `QUICK-SCREEN SKIP` (equity −$217.5M · ND/EBITDA 6.1×) — ⚠️ ยังไม่ได้บันทึกใน `deployment_log.md` (scope commit รอบนี้ = watchlist.md เท่านั้น)
 - **VICI → Archive:** re-screen ภายใต้ Filter A–E ปัจจุบันตามที่ R75 กำหนด — −18.3% (Nasdaq high → −18.9%) ตก A ติดกัน 2 prune
@@ -10585,3 +10591,89 @@ WACC 10% = ค่า band mid/small-cap ตาม Filter D (10–13%) ใช้�
 **Target analysis date:** ไม่มี (0 candidates)
 
 *Max — 2026-11-16 | Scout Round 98 (Homebuilders & Residential Construction — 8 screened [PHM/NVR/TOL/KBH/MTH/LGIH + DHI/LEN เสริม]; MDC acquired by Sekisui House 2024 → LGIH substituted; 0 fast-track / 0 learning-queue / 8 reject [3 A PHM/TOL/DHI · 2 D NVR/KBH · 3 B/C MTH/LGIH/LEN]; QUICK-SCREEN SKIP NVR/KBH; prune 0 de-listed, live 7)*
+
+## Scout Report — 2026-11-17 (Max Scout Mode — Round 99)
+
+### Payments & Transaction Processing
+
+**Trigger:** task-directed sector mandate (V · MA · PYPL · FI · GPN · FOUR · JKHY · EEFT). Coverage check ก่อนสแกน: payments **ไม่เคยเป็น dedicated round ภายใต้ VALUE-FIRST A–E ปัจจุบัน** แต่ชื่อในรายการถูกแตะมาแล้วหลายรอบ — **V** (วิเคราะห์เต็ม 2026-05-07 v1 / 05-11 v2 HOLD/WAIT) และ **MA** (วิเคราะห์เต็ม 2026-06-07 HOLD/WAIT) อยู่ใน `decisions.md` → **ติด Hard exclusion ไม่ screen** (ใช้ราคาเป็นข้อมูลประกอบเท่านั้น) · **PYPL** R12/R28 (near-miss −28.9%)/R52 · **FISV (=FI)** ~R12/R52/R82 · **GPN** R12/R52 · **EEFT** R82 (2026-10-26, ตก C/D/E) · **FOUR** R11 (ตก ROIC gate ยุค pre-VALUE-FIRST) → ทั้งหมดไม่อยู่ใน watchlist live/Archive และไม่เคยมี formal analysis จึง **re-screen ด้วยข้อมูลสดตามคำสั่ง** · **JKHY** ไม่เคย screen. หมายเหตุ ticker: Fiserv ใช้ symbol **FISV** (Yahoo/Nasdaq คืน FISV; "FI" ไม่ใช่ symbol ที่ใช้อยู่ในข้อมูลสด).
+
+**Portfolio state / regime:** Atlas record ล่าสุด 2026-11-06 = **TRANSITIONAL-CAUTIOUS** (2 RISK-ON / 1 TC / 1 RISK-OFF; VIX 28.18, Dec hike odds 77–78%, HY 348 bps) → Force Deploy suspended, ห้ามเปิด position ใหม่ · record อายุ 11 วัน (ไม่ stale; ครบ 14 วัน 11-20) · ไม่ได้ re-call ใน session นี้. OPEN = ADBE/NOW/CRM/REGN/ADSK — ไม่มี payments ในพอร์ต. Rotation: R94 Managed Care → R95 Ad Tech → R96 Electronic Components → R97 Gaming Equipment → R98 Homebuilders → **R99 Payments**.
+
+### Step 3 — ราคา + Filter A (close 2026-11-13, 2 แหล่งตรงกัน)
+
+| Ticker | ราคา 11-13 (Yahoo / Nasdaq) | ราคา 11-16 (Yahoo) | 52W high (Yahoo / Nasdaq) | % จาก high (11-13 / 11-16) | Filter A |
+|---|---|---|---|---|---|
+| **FOUR** | $44.78 / $44.785 | $42.48 | $75.345 / $75.345 (exact) | **−40.6% / −43.6%** | ✅ |
+| EEFT | $71.11 / $71.11 | $69.58 | $83.97 / $83.97 | −15.3% / −17.1% | ❌ |
+| GPN | $91.90 / $91.88 | $89.82 | $102.91 / $102.905 | −10.7% / −12.7% | ❌ |
+| FISV | $63.78 / $63.78 | $63.32 | $70.41 / $70.41 | −9.4% / −10.1% | ❌ |
+| JKHY | $177.67 / $177.67 | $178.91 | $193.39 / $193.39 | −8.1% / −7.5% | ❌ |
+| PYPL | $59.28 / $59.28 | $58.83 | $63.93 / $64.65 (ต่าง 1.1%) | −7.3% ถึง −8.3% / −8.0% | ❌ |
+| V (excluded) | $425.76 / $426.08 | $426.46 | $442.23 / $442.23 | −3.7% / −3.6% | n/a — วิเคราะห์แล้ว |
+| MA (excluded) | $661.19 / $661.31 | $661.71 | $681.99 / $681.99 | −3.1% / −3.0% | n/a — วิเคราะห์แล้ว |
+
+Sources: Yahoo chart API (`https://query1.finance.yahoo.com/v8/finance/chart/{T}?range=1y&interval=1d`) · Nasdaq.com `api.nasdaq.com/api/quote/{T}/info` (last-sale 11-13) และ `/summary` (52W hi/lo). ราคา 11-13 ของ Nasdaq = Yahoo close 11-13 ตรงทุกตัว (ส่วนต่าง ≤0.05%) → ไม่ต้องรอบที่ 3. **PYPL:** Yahoo-high $63.93 vs Nasdaq-high $64.65 ต่างกัน 1.1% (<2%) ทั้งสองค่าให้ผลเดียวกัน (ตก A) — ไม่ได้เฉลี่ย. ข้อสังเกต: บางข่าว (Barchart 11-05) อ้าง FOUR 52W high $91.53 (ส.ค. 2025) ซึ่งหลุดหน้าต่าง 52 สัปดาห์แล้ว — ไม่ใช้.
+
+**Sector read (ตรงกับสมมติฐานของ brief):** payments ที่ screen ได้ ยกเว้น FOUR **ฟื้นขึ้นมาใกล้ high** เทียบรอบ R52/R82 (PYPL $52.7→$59.3, FISV $48.33→$63.8, EEFT $63.95→$71.1, GPN ~$83→$91.9) — Filter A ปิดประตูก่อนถึง B/C. มีเพียง FOUR ที่ยังลึก.
+
+### Beaten-down reason — FOUR (เขียนทั้ง 2 มุม)
+
+- **Cyclical / temporary:** Q3'26 (11-05) beat EPS ($1.49 vs $1.35) แต่ **ลด FY EPS guide $5.50–5.70 → $5.15–5.35** โดยฝ่ายบริหารโยง ~$25M กับ Middle East travel disruption + ~$20M FX translation ([Motley Fool 2026-11-05](https://www.fool.com/investing/2026/11/05/why-shift4-payments-stock-crashed-today/) · [Finviz/Benzinga](https://finviz.com/news/417341/shift4-beats-on-q3-eps-but-lower-guidance-and-falling-profits-keep-the-bar-low)). Q3 FCF $186M (+39% YoY).
+- **Structural / execution:** Adj. EBITDA margin −1.9pp เป็น 48% (other cost of sales +2.0pp, G&A +1.3pp) · growth ชะลอเมื่อ lap Global Blue (gross revenue Q3 +12.1% YoY vs 9M +24.9% — SEC) · EPS −4.5% YoY · financing cost กด FCF/EPS · หุ้น −34% YTD ([Earnings Whispers](https://www.earningswhispers.com/article/FOUR/r1782)).
+- **จัดกลุ่ม:** ไม่ชัด — ถ้าผ่านทุก filter จะ default **learning-queue** ตามกฎ (ไม่ fast-track). ไม่ได้ถึงขั้นนั้น.
+
+### Step 4 — FOUR: SEC EDGAR XBRL (CIK 0001794669; 10-Q 2026-09-30 accn 0001794669-26-000051 · 10-K FY25 accn 0001794669-26-000010)
+
+[companyfacts](https://data.sec.gov/api/xbrl/companyfacts/CIK0001794669.json). TTM = FY25 − 9M'25 + 9M'26 ($M):
+
+| รายการ | คำนวณ | TTM / ณ 09-30 |
+|---|---|---|
+| Revenue (gross) | 4,180 − 2,991 + 3,735 | **4,924** (9M YoY +24.9%; Q3 +12.1%) |
+| Operating income (GAAP) | 351 − 223 + 275 | **403** (Q1 50 → Q2 95 → Q3 130) |
+| D&A | 432 − 298 + 403 | 537 → **EBITDA (GAAP) ≈ 940** |
+| OCF | 634 − 410 + 418 | **642** |
+| Capex: PP&E + equipment-on-lease | (10 − 9 + 17) + (125 − 89 + 96) | 18 + 132 = **150** (capitalized software ไม่มี XBRL tag; Q3 company FCF implied capex ≈ 221 − 186 = 35 ≈ PP&E 5 + lease equip 28 + ~2 → เล็ก) |
+| **FCF (OCF − capex)** | 642 − 150 | **492** (บริษัท guide adj. FCF FY26 ≈ $470M) |
+| SBC | 82 − 57 + 66 | 91 → **FCF หลัง SBC 401** |
+| Total debt / cash | 10-Q | **5,483 / 1,242** (debt +$937M ใน Q3; buyback 9M'26 $511M) |
+| Equity | 10-Q | **1,453 (parent) / 1,575 (+NCI 122)** |
+| Shares (10-Q cover 10-31, class A) | dei | 74.94M → **mkt cap ≈ $3.18B** (Motley Fool "$3.2B" ยืนยันระดับ; class B/C ไม่ได้ extract — ไม่กระทบผล) |
+| EV | 3,183 + 5,483 − 1,242 + 122 | **≈ 7,546** → EV/EBITDA ≈ **8.0×** |
+
+**B-Zero:** equity **บวก** (+$1.45B) → ไม่มี negative-equity flag. **Net debt/EBITDA ≈ 4,241 ÷ 940 = 4.5×** (GAAP EBITDA; adj. EBITDA สูงกว่า → ต่ำลงเล็กน้อย) — อยู่ขอบ band 4–5× สำหรับ non-financials → **ต้องเข้า Filter E overhang (leverage)** ถ้าไปถึง. หนี้เพิ่ม ~$0.9B ใน Q3 พร้อมซื้อหุ้นคืน — ไม่ได้ตรวจ use of proceeds (ไม่ถึง E).
+
+**Bucket:** Value (Q3 growth 12.1% < 15% B-V1 trigger; 9M +24.9% พองจาก Global Blue acquisition ไม่ใช่ organic).
+
+**Filter B (B-Legacy):** FCF yield = 492 ÷ 3,183 = **15.5%** (หลัง SBC 12.6%) → ✅ ผ่าน (>6%). ⚠️ **leverage artifact:** market cap เป็นเพียง ~42% ของ EV; FCF หลังดอกเบี้ยแล้วจึงเป็น equity-FCF จริง แต่ yield สูงเพราะ equity slice เล็ก ไม่ใช่เพราะธุรกิจถูกแบบไม่มีหนี้ — EV/EBITDA 8.0× (5Y self-history ไม่ได้ดึง จึงไม่มีวิธีที่สองยืนยัน).
+
+**Filter C:** NOPAT = 403 × (1 − 21%) = **318** · Invested capital = 1,575 + 5,483 − 1,242 = **5,816** → **ROIC ≈ 5.5%**. WACC ใช้ band mid-cap ค่าล่าง 10% (ผ่อนให้) → เกณฑ์ 80% = **8.0%** → **❌ FAIL**. Q3 annualized (130 × 4 × 0.79 = 411 ÷ 5,816) = **7.1% ยังต่ำกว่า 8.0%**. Trend EBIT Q1→Q3 ดีขึ้น 3 ไตรมาสติด (50→95→130) แต่ **เงื่อนไข ≥80% WACC ข้อแรกไม่ผ่านก่อน**. **Sensitivity (ไม่ใช้ตัดสิน):** ถ้าบวกกลับ amortization ของ acquired intangibles (NTM $336M, SEC) → NOPAT ≈ 584 → ROIC ≈ 10% จะผ่าน — แต่ IC ยังรวม goodwill $2.74B + intangibles $2.87B จาก Global Blue จึงวัดไม่ตรงกัน และไม่ใช่ convention ของ scout ก่อนหน้า (GAAP NOPAT/IC เหมือน R11 ที่ได้ 5.68%) → **ไม่เปลี่ยนผล, flag ให้ CIO**.
+
+**Tier 1 (ข้อมูลประกอบ — ตกที่ C ก่อนแล้ว):** Check 1: ROIC 5.5% > 0.5×WACC (5.0%) → ไม่ติด. Check 2: naive FV (normalized FCF หลัง SBC $401M ÷ discount rate): @10% = $4.01B → 0.79× · @12% = $3.34B → **0.95×** · @13% = $3.08B → **1.03×** · equity FCF ควร discount ด้วย cost of equity ≥ WACC ของบริษัท levered (ใช้ ≥12%) → ภายใน ±10% → **ติด 2b**; ที่ 10% ผ่านบาง ๆ → ผลขึ้นกับ discount rate ไม่ใช่ gap ที่แข็งแรง. **Street PT cross-check:** MarketBeat 08-03 avg $68.43 (Hold, 23 firms) · Tickflow 07-31 avg $60.23 — **ทั้งคู่ก่อน guide cut 11-05 → stale ไม่ใช้เป็นเกณฑ์**; ไม่พบ consensus เดือน พ.ย.
+
+**ไม่ได้รัน Filter D เต็ม / E** — ตกที่ C.
+
+### Final routing — Round 99
+| Ticker | ตกที่ | Tag |
+|---|---|---|
+| V | Hard exclusion (decisions.md: HOLD/WAIT v2 2026-05-11; ราคา −3.7% จาก high) | excluded — ไม่นับ reject |
+| MA | Hard exclusion (decisions.md: HOLD/WAIT 2026-06-07; ราคา −3.1%) | excluded — ไม่นับ reject |
+| PYPL | **A** (−7.3 ถึง −8.3%) | reject |
+| FISV | **A** (−9.4%) | reject |
+| GPN | **A** (−10.7%) | reject |
+| JKHY | **A** (−8.1%) | reject |
+| EEFT | **A** (−15.3%; −17.1% ที่ 11-16) | reject |
+| FOUR | **C** (ROIC ≈5.5% vs เกณฑ์ 8.0%; ND/EBITDA ≈4.5×; Tier 1 2b ที่ discount ≥12%) | reject (ไม่ใช่ QUICK-SCREEN SKIP — ตกก่อนถึง Tier 1 ตามลำดับ) |
+
+**0 fast-track · 0 learning-queue · 6 reject (5 A · 1 C) · 2 excluded (V/MA).** ไม่เพิ่มแถว Pending Analysis · ไม่เพิ่ม `buy_list.md` (regime TC; ไม่มี candidate ผ่าน gate) · ไม่มี QUICK-SCREEN SKIP.
+
+### Notes for CIO / Charlie
+1. **Payments = "คุณภาพสูงแต่ราคาไม่ได้ลดลง"** — 7/8 ชื่ออยู่ใน 3–17% จาก 52W high; ตลาดจ่ายเต็มสำหรับ network duopoly (V/MA) และให้ราคาคืนกับ PYPL/FISV/GPN/EEFT หลัง R52/R82. Filter A กันไว้ถูกต้อง — **sector นี้ยังไม่มี value ที่ชัดเจนตอนนี้** (ดีกว่าฝืนใส่).
+2. **FOUR = ตัวเดียวที่ถูกลงจริง แต่ "ถูกบนกระดาษ" ด้วย leverage** — FCF yield 15.5% มาจาก equity slice เล็ก (หนี้ $5.5B, ND/EBITDA ≈4.5×) และ GAAP ROIC ≈5.5% < WACC ชัดเจน. **Re-screen trigger (ไม่ใช่ entry ที่แนะนำ):** Q4'26 print แสดง (a) GAAP EBIT run-rate ≥ ~$150M/ไตรมาส (ROIC annualized ≥ ~8%) และ (b) ND/EBITDA <4× หรือ debt paydown ชัด. ไม่ใส่ buy_list เพราะ C fail ไม่ใช่แค่ราคา.
+3. **Methodology flag (ไม่แก้ rule):** Filter C แบบ GAAP NOPAT/IC ทำให้ acquirer-heavy names (FOUR/Global Blue; FISV/GPN ใน R52/R82 ก็ตก ROIC/E คล้ายกัน) ถูกลงโทษจาก amortization ของ acquired intangibles + goodwill ในฐาน IC — ROIC ex-amortization ของ FOUR ≈10% แต่ไม่ใช่ convention ปัจจุบัน. Filter C ไม่ใช่ Return-side lock แต่ **ไม่ได้ propose การแก้** — ให้ Charlie ตัดสินถ้าเห็น pattern ซ้ำ.
+4. **Housekeeping:** CMRE target 11-17 (วันนี้) · ALLY/NBIX/BYD 11-18 — ต้องรัน Tier 1 หรือ re-fix SLA ใน prune ถัดไป · Atlas regime record ครบ 14 วัน 11-20 → re-call ก่อน Tier 1 ของกลุ่มนี้.
+5. **Data caveats:** class B/C share count ของ FOUR ไม่ได้ extract (ใช้ class A + Motley Fool cross-check ≈$3.2B) · capitalized software ไม่มี XBRL tag · Yahoo/Nasdaq ดึงผ่าน HTTP ตรง · WACC ไม่ได้ lock ผ่าน Atlas (scout stage, ตาม R98).
+
+**Target analysis date:** ไม่มี (0 candidates)
+
+*Max — 2026-11-17 | Scout Round 99 (Payments & Transaction Processing — 6 screened [PYPL/FISV/GPN/FOUR/JKHY/EEFT] + V/MA excluded as already analyzed; 0 fast-track / 0 learning-queue / 6 reject [5 A · 1 C FOUR]; no QUICK-SCREEN SKIP; prune 0 de-listed, live 7)*
