@@ -8,6 +8,8 @@
 **ระยะเวลารวม:** ~38 สัปดาห์ (~9 เดือน) แบ่งเป็น 9 Phase + Capstone
 **กรอบอ้างอิง:** CFA Body of Knowledge (ใช้ tag `[CFA Lx: หมวด]` แบบเดียวกับที่ Emma/Quinn ใช้ในรายงานจริง)
 
+> **🔄 อัปเดตล่าสุด 2026-11-18:** Scout Filter A–E, Tier 1/1.5 และมาตรฐาน VS2 ถูกแก้หลายรอบหลัง 24 ก.ย. — ดู Real Example ท้าย Phase 7 (ตารางปัจจุบัน + Changelog) ตัวเลข/ticker ในตัวอย่างอื่นยังเป็นภาพ ณ วันที่ระบุในแต่ละตัวอย่าง **กฎล่าสุดให้ยึด `CLAUDE.md` เสมอ**
+
 ---
 
 ## กลไกของคอส (สำคัญ — อ่านก่อนเริ่ม Week 1)
@@ -227,17 +229,19 @@ Journal นี้คือ deliverable ที่สำคัญที่สุ�
 > - EV/EBITDA ปัจจุบัน = 25.4x → EBITDA ≈ 180,000÷25.4 = **$7,087M**
 > - เทียบกับ 5-year history ของ CAT เอง (ไม่ใช่เทียบ peer): 25.4x นี้อยู่ **93.9th percentile** — แพงกว่าเกือบทุกช่วงเวลาในรอบ 5 ปีที่ผ่านมา
 > - **บทเรียน:** CAT ราคาลง -24.8% จาก 52W high จริง (ผ่าน Filter A) แต่ multiple ยังแพงกว่าที่มันเคยเทรดมาตลอด เพราะ high เดิมคือจุดพีคของ AI-capex bubble ไม่ใช่ fair value — "ลงจาก high" ≠ "ถูกแล้ว" เสมอไป ต้องเช็คว่าถูกเทียบกับ**ประวัติตัวเอง**ด้วย ไม่ใช่แค่เทียบกับจุดสูงสุดเดิม
-> - Filter B เต็มรูปแบบ: ต้องผ่าน ≥1 ใน 3 — (1) FCF Yield >6%, (2) EV/EBITDA อยู่ bottom-third (ล่างสุด 1 ใน 3) ของ 5Y history ตัวเอง, (3) P/B ต่ำกว่า 5Y median (เฉพาะ financials/insurers)
+> - Filter B เต็มรูปแบบ (Value bucket / B-Legacy): ต้องผ่าน ≥1 ใน 3 — (1) FCF Yield >6%, (2) EV/EBITDA อยู่ bottom-third (ล่างสุด 1 ใน 3) ของ 5Y history ตัวเอง, (3) P/B ต่ำกว่า 5Y median (เฉพาะ financials/insurers) · *(อัปเดต 27 ก.ย.: ต้องผ่าน B-Zero ก่อน — ถ้า equity ติดลบ FCF yield ที่สูงต้องถูก discount; หุ้น Growth ใช้ B-V1 แทน ดู Changelog ท้าย Phase 7)*
 
 ### Week 22 — Growth Valuation: EV/Revenue & Rule of 40
 - **Concept:** ทำไมหุ้น growth ห้ามใช้ P/E (ยังไม่มีกำไร) / EV/Revenue multiple percentile เทียบ 5-year range / Rule of 40 (growth% + margin% ≥ 40) คืออะไร
 - **หาข้อมูลจริงที่ไหน:** macrotrends.net (ดู EV/Revenue 5 ปีย้อนหลัง) 
 - **Exercise (30 นาที):** เช็คว่า EV/Revenue ปัจจุบันของหุ้น growth 1 ตัวอยู่ percentile ไหนของ 5 ปีย้อนหลัง (เกณฑ์ทีม: ต้อง ≤70th percentile ถึงผ่าน Growth MOS)
+- **อัปเดต 27–28 ก.ย.:** percentile ของตัวเองใช้ได้ดีแค่เมื่อ sector ไม่ได้ re-rate ถาวร (เช่น AI/semis) — Scout Filter B-V1/D-V1 จึงบังคับเทียบอีก 2 มุม (peer ที่เลือกล่วงหน้า ≥3 ตัว + sector average) และ Growth MOS แบบ reverse DCF เข้มขึ้น: implied growth ต้องไม่เกิน **1.2×** consensus (เดิม 1.5×)
 - `[CFA L2: Equity Valuation — Growth Company Valuation]`
 
 ### Week 23 — Margin of Safety & Blended FV
 - **Concept:** MOS = (FV − Price)/FV / ทำไมต้องมี MOS เสมอแม้ thesis จะดีแค่ไหน / Blended FV triangulation (Emma 40% + Quinn 30% + Bear 30%) ลด bias จากมุมมองเดียว
 - **หาข้อมูลจริงที่ไหน:** ใช้ตัวเลขที่คำนวณเองจาก Week 19–22 + อ่านตาราง Blended FV weight ใน CLAUDE.md
+- **อัปเดต 8 ต.ค. (VS2):** รายงานใหม่ทุกฉบับแสดง FV วันนี้ **คู่กับ FV ปีที่ 5** และผลตอบแทนคาดต่อปี (เป็นข้อมูลประกอบ ไม่ใช่ gate — gate ยังเป็น MOS บน FV วันนี้) และต้องมีตาราง Judgment-Call Sensitivity ว่าจุดดุลยพินิจแต่ละจุดขยับ FV กี่ % · weight 40/30/30 ไม่เปลี่ยน
 - **Exercise (1 ชม.):** รวม 3 การประเมินมูลค่า (DCF, reverse DCF, comps) ของหุ้น 1 ตัวเป็น Blended FV ของตัวเอง แล้ว weight เอง 40/30/30 (สมมติตัวเองเป็นทั้ง Emma/Quinn/Bear) เทียบกับ Blended FV จริงในรายงาน
 - `[CFA L3: Investment Thesis & Portfolio Construction]`
 
@@ -322,19 +326,35 @@ Journal นี้คือ deliverable ที่สำคัญที่สุ�
 - **Exercise (30 นาที):** เช็ค regime ปัจจุบันของกองทุน แล้วคำนวณว่า cash floor ตอนนี้ควรเป็นเท่าไหร่ เทียบกับ cash จริงในพอร์ต
 - `[CFA L3: Portfolio Management — Asset Allocation]`
 
-> #### 📎 Real Example — Scout Filter Funnel เต็มรูปแบบ (จาก Round 31–32, 2026-09-23)
-> ระบบคัด candidate ก่อนเข้า full pipeline ด้วย 5 filter เรียงกัน ต้องผ่าน**ทุกข้อ** ถึงจะ fast-track ได้:
+> #### 📎 Real Example — Scout Filter Funnel เต็มรูปแบบ (กฎปัจจุบัน ณ 2026-11-18 · ตัวอย่างที่ตกรอบมาจาก Round 31–32, 2026-09-23)
+> ระบบคัด candidate ก่อนเข้า full pipeline ด้วย 5 filter เรียงกัน (มี B-Zero คั่นก่อน B) — ต้องผ่านเกณฑ์ A+B+C+D ชัด และ E ≥2/3 ถึงจะ fast-track ได้:
 > | Filter | เช็คอะไร | เกณฑ์ | ตัวอย่างจริงที่ตกรอบ |
 > |---|---|---|---|
-> | **A** | ลงจาก high มากพอไหม | ≥20% จาก 52W high + reason ต้องเป็น cyclical/temporary ไม่ใช่ permanent impairment | DHI ลงแค่ -18.2% (พลาดไป 1.8 จุด) → reject |
-> | **B** | ถูกเทียบกับตัวเองในอดีตจริงไหม | FCF yield >6% หรือ EV/EBITDA bottom-third ของ 5Y history ตัวเอง | CAT/VRT/GNRC ลงจาก high จริงแต่ multiple ยังอยู่ 93-95th percentile → reject |
-> | **C** | ยังเป็นธุรกิจดีอยู่ไหม | ROIC ≥80% ของ WACC (หรือ trend ดีขึ้นต่อเนื่อง) | BLDR/KBH ROIC ต่ำกว่า WACC มากและไม่มี trend ดีขึ้น → reject |
-> | **D** | มี margin of safety จริงไหม | ราคา ≤0.80× naive FV (no-growth perpetuity) | **NVR — ROIC สูงสุดเท่าที่เคย scout มา (41.88%) แต่ราคาแพงกว่า naive FV 1.3-1.5 เท่า → reject แม้เป็นธุรกิจดีมาก** |
-> | **E** | conviction พอไหม | ผ่าน ≥2/3 (moat / ROIC-WACC spread / ไม่มี unresolved overhang) | ใช้ตัดสินตัวที่ก้ำกึ่งหลัง D |
+> | **A** | ลงจาก high มากพอไหม | ≥20% จาก 52W high (แก้ 13 ก.ย. จากเดิม ≥30%) ยืนยันราคา ≥2 sources + reason ต้องเป็น cyclical/temporary ไม่ใช่ permanent impairment · Lane AI/Infra ยกเว้นข้อนี้ | DHI ลงแค่ -18.2% (พลาดไป 1.8 จุด) → reject |
+> | **B** | ถูกเทียบกับตัวเองในอดีตจริงไหม | เช็ค **B-Zero** ก่อน (equity ติดลบ? Net Debt/EBITDA สูงผิดปกติ?) · Value: FCF yield >6% / EV/EBITDA bottom-third ของ 5Y / P/B ต่ำกว่า median · Growth (**B-V1**): EV/Revenue ผ่านอย่างน้อย 1 ใน 3 วิธี (self-history / peer-median / sector-average) | CAT/VRT/GNRC ลงจาก high จริงแต่ multiple ยังอยู่ 93-95th percentile → reject |
+> | **C** | ยังเป็นธุรกิจดีอยู่ไหม | ROIC ≥80% ของ WACC · ถ้า ROIC < WACC ต้องมี trend ดีขึ้นจริง ≥2 ไตรมาสติด (ตัวเลขจริง ไม่ใช่แค่ guidance) | BLDR/KBH ROIC ต่ำกว่า WACC มากและไม่มี trend ดีขึ้น → reject |
+> | **D** | มี margin of safety จริงไหม | Value (D-Legacy): ราคา ≤0.80× naive FV (no-growth perpetuity) · Growth (**D-V1**): ≤0.75× ในอย่างน้อย 1 ใน 3 วิธี (self-regression / peer-regression / analyst-PT gap ≥20%) | **NVR — ROIC สูงสุดเท่าที่เคย scout มา (41.88%) แต่ราคาแพงกว่า naive FV 1.3-1.5 เท่า → reject แม้เป็นธุรกิจดีมาก** |
+> | **E** | conviction พอไหม | soft-score ผ่าน ≥2/3 (moat กว้างพอ / through-cycle ROIC เหนือ WACC ≥+3pp / ไม่มี unresolved overhang) — ผ่าน 1/3 → learning-queue · 0/3 → reject | ใช้ตัดสินตัวที่ก้ำกึ่งหลัง D |
 >
 > **บทเรียนสำคัญที่สุดจากตัวอย่าง NVR:** "ธุรกิจดี" กับ "ราคาที่มี margin of safety" เป็นคนละเรื่องกัน — Filter C ผ่านง่ายกว่า Filter D มาก เพราะตลาดมักรู้อยู่แล้วว่าบริษัทไหนดี แล้วให้ราคาแพงตามไปด้วย (ROIC สูงไม่ได้แปลว่าราคาถูก) นี่คือเหตุผลที่กองทุนนี้เพิ่งเจ็บมาจากการ deploy 0 ตัวจาก 20 analyses ก่อนหน้า — เพราะ screen เดิมกรองแค่ Filter A-C ไม่มี D
 >
 > **Exercise เพิ่ม (30 นาที):** เลือกหุ้น 1 ตัวที่คุณคิดว่า "เป็นธุรกิจดี" (เช่น Apple, Nvidia) ลองเช็คว่าราคาตอนนี้ผ่าน Filter D ไหม (เทียบกับ naive no-growth FV ของตัวเอง) — ส่วนใหญ่จะไม่ผ่าน เพราะตลาดรู้แล้วว่าดี
+>
+> #### 🔄 Changelog กฎคัดหุ้น (ก.ย. → พ.ย. 2026) — ทำไมถึงมีการแก้
+> - **6 ก.ย.** เพิ่ม **Filter D + E** (ทดลอง) หลังพบว่า 25 analyses ใน 12 สัปดาห์ deploy 0 — screen เดิมคัดแต่ "ธุรกิจดีที่ตกลงมา" ไม่ได้เช็คว่ามี valuation gap จริงและทางไปถึง conviction จริงไหม
+> - **13 ก.ย.** Filter A ผ่อน 30% → 20% (ตลาด near-ATH ให้ 0–2 candidate/รอบ) · Filter C ผ่อนจาก ROIC > WACC เป๊ะ เป็น ≥80% WACC + trend ดีขึ้น
+> - **27–29 ก.ย.** แยก lane Growth: **B-V1 / D-V1** เพราะ no-growth FV ประเมินหุ้นโตเร็วต่ำเกินจริง → เปลี่ยนเป็นตรรกะ "ผ่านอย่างน้อย 1 ใน 3 วิธี" (หลัง Round 37 พบว่า self-history เดี่ยวๆ ผิดพลาดกับ sector ที่ re-rate ถาวร เช่น AI/semis) พร้อมกฎเลือก peer ล่วงหน้า (≥3 ตัว เลือกก่อนดูผลลัพธ์ กัน cherry-pick · เพิ่ม 29 ก.ย.)
+> - **27 ก.ย.** เพิ่ม **B-Zero** (เช็ค equity ติดลบ/หนี้สูง) หลัง BBWI เกือบผ่านทั้งที่ equity ติดลบ ~-$1.1B จาก dividend-recap — FCF yield ที่ดูสูงอาจเป็นแค่ leverage artifact
+> - **6 ต.ค.** เพิ่ม **Lane AI/Infra Build-out** (ทดลอง): บริษัทที่ capex หนัก (Capex/Revenue ≥15% ฯลฯ) ใช้เกณฑ์ ROIC on in-service capital และ runway แทน A/C/D เดิม แต่ MOS เข้มกว่า (≥25%) และ T1 ≤4% · ไม่รวม REIT/regulated utility · วันเดียวกันปรับ horizon กองทุน 3–5 ปี → **5+ ปี**, เพดาน TGR แบบมีเงื่อนไข 3.5–4%, และบังคับให้ Bear แยกปัจจัยลบเป็น "temporary/reinvestment-phase" vs "structural impairment"
+> - **7–8 ต.ค.** กฎ Multi-Segment/SOTP consistency (consolidated DCF ต้องมาจากผลรวม segment) + **Market-Implied Sanity Check** (เมื่อ |MOS| ≥35% ต้องแสดงว่าตัวแปรไหนต้องขยับเท่าไหร่ถึงปิด gap กับราคาตลาด) + **VS2 — มาตรฐานประเมินมูลค่าฉบับ 2:** WACC ชุดเดียวทั้งทีม (เทียบแหล่งภายนอก), นับ non-operating assets, DCF ต้องมี fade, แสดง FV ปีที่ 5 + ผลตอบแทนคาดต่อปี, ล็อกจุดดุลยพินิจล่วงหน้า (pre-registration) และตาราง Judgment-Call Sensitivity
+> - **13–14 ต.ค.** เพิ่มกรอบตรวจสอบ (ทดลอง): ล็อกจุดดุลยพินิจล่วงหน้า, Judgment-Call Sensitivity, และ **Blind Re-derivation** (รัน `claude -p` แยก process ที่ไม่เห็น CLAUDE.md/report เดิม คำนวณ FV เองก่อนจะ BUY จริง)
+> - **18/27 ต.ค.** Value bucket conviction gate ถูกแก้เป็น 6 แล้ว revert กลับ **7.0** (7.0 ถูกต้องมาตลอด) — เป็นตัวอย่างว่าทำไมต้องมี Morgan QA จับกฎที่ขัดกันเอง
+>
+> **Pipeline หลัง Filter (ปัจจุบัน):** ผ่าน A–E แล้วไม่ได้เข้า full pipeline ทันที — **Tier 1 Quick-Screen** (Charlie เช็คเลขคณิต: ROIC < 0.5× WACC และแย่ลง, ราคา >1.5× หรือ ±10% ของ naive FV → SKIP) → **Tier 1.5 Lane Assignment**: Fast-track (D ชัด + E 3/3 → full pipeline ~200–255K token) · Learning-queue (ก้ำกึ่ง → Emma FV + Bear-lite ~30–50K token, journal ไว้ ไม่นับเป็น recommendation) · Reject
+>
+> **หมายเหตุ:** ตัวอย่าง DHI/CAT/NVR ข้างบนเป็นผลภายใต้กฎ ณ 23 ก.ย. — บางตัว (เช่น DHI ที่ -18.2%) ยังตกรอบ A แม้เกณฑ์ผ่อนเป็น 20% แล้วก็ตาม เพราะอยู่ใกล้ขอบพอดี ส่วน Round ล่าสุดคือ Round 99 (Payments) ที่ 6 ตัวที่คัดมา reject หมด — กลไกนี้ตั้งใจให้ deploy rate ต่ำใน market ราคาแพง
+>
+> **Exercise เพิ่ม 2 (45 นาที):** เลือกหุ้น growth 1 ตัว (เช่น SaaS/semis) ลองเช็ค D-V1 ทั้ง 3 วิธีด้วยตัวเอง (peer 4–6 ตัวที่เลือกและเขียนเหตุผลก่อนดู multiple) แล้วดูว่าวิธีไหนผ่าน/ตก — ถ้าผลขัดกันเอง (1 ผ่านชัด 1 ตกชัด) ระบบส่ง learning-queue ไม่ fast-track
 
 **🏁 Milestone Phase 7:** อธิบายได้ว่าทำไมกองทุนเรากำหนด position size สูงสุด 8–10% และ cash floor แบบ regime-based — ไม่ใช่ตัวเลขสุ่ม
 
