@@ -1,6 +1,7 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
-*ล่าสุด (2026-11-17): **Scout Round 99 — Payments & Transaction Processing** — dedicated round แรกของ sector (V/MA ถูก exclude ตาม Hard exclusion: วิเคราะห์เต็มแล้ว HOLD/WAIT ใน decisions.md · PYPL/FISV/GPN/EEFT/FOUR เคยโดนแค่ scout R11/R12/R28/R52/R82 ก่อน VALUE-FIRST ปัจจุบัน → re-screen ด้วยข้อมูลสด · JKHY ครั้งแรก). ราคา Yahoo = Nasdaq (close 11-13 exact match; Yahoo 11-16 ใช้ดู drift). **Filter A: 1/6 PASS (FOUR −40.6% ที่ 11-13 / −43.6% ที่ 11-16)** · 5 ตก A: EEFT −15.3% · GPN −10.7% · FISV −9.4% · JKHY −8.1% · PYPL −7.3 ถึง −8.3% (2 แหล่งอ่าน 52W high ต่างกัน 1.1%). **FOUR: A ✅ (guide cut + Middle East travel/FX + margin −1.9pp; จัดกลุ่ม cyclical/temporary ปนโครงสร้าง — เขียนทั้ง 2 มุม) · B-Zero ✅ (equity +$1.45B; ND/EBITDA ≈4.5x flag) · B ✅ (FCF yield 15.5% ก่อน SBC / 12.6% หลัง SBC — leverage-inflated: mkt cap ≈42% ของ EV) · C ❌ (ROIC GAAP TTM ≈5.5% < 80%×WACC 8%; Q3 annualized 7.1% ยังต่ำกว่า)** → reject ที่ C (Tier 1 2b ก็ติดที่ cost of equity ≥12%). **0 fast-track / 0 learning-queue / 8 reject** (V/MA นับเป็น excluded ไม่ใช่ reject) · prune 0 de-listed, live 7. ดู Scout Report § Round 99 ท้ายไฟล์.)*
+*ล่าสุด (2026-11-18): **Scout Round 100 — Aerospace Suppliers / MRO (non-prime)** — sector ใหม่ทั้งหมด (R40/R50 เคย scout defense primes BA/GE/HON/CAT/DE/ETN/EMR/PH/FDX/UPS/LMT/RTX/NOC/GD/TXT; TDG วิเคราะห์เต็มแล้ว HOLD/WAIT ใน decisions.md 2026-08-18 = hard exclusion). 10 screened (HWM/TDG-excluded/HEI/GE/HXL/CW/WWD/SARO/VSEC/AVAV/KTOS; SPR excluded — ถูก Boeing เข้าซื้อ+delist 2025-12-08). close 11-17 (stockanalysis + Yahoo cross-check). **Filter A: 7/10 PASS** (AVAV −73.0% [$110.00 vs $408.25] · KTOS −69.3% [$33.91 vs $110.39] · CW −41.6% · VSEC −39.0% · WGO-n/a · SARO −20.5% borderline · HXL −31.3% · WWD −26.8%; TDG −10.1%/HEI −9.2%/GE −13.0% ตก A). **Filter B/C:** HXL ผ่านทั้ง A+B+C (EV/EBITDA 16.3–18.0× ต่ำกว่าทุกปีใน 5Y history ของตัวเอง, ROIC 11.21% > 80%×WACC 9.75%) แต่ติด **Tier 1 check 2a** — ราคา ≈3.0× naive FV (normalized levered FCF ÷ CoE 9.75%) → `QUICK-SCREEN SKIP`. CW/WWD/SARO/VSEC/HWM(เดิมสแกนเก่า ROIC ฟื้นเป็น 22.7% แต่) ตก B (FCF yield 1.6–3.6% all <6%, EV/EBITDA ไม่อยู่ bottom-third ของ 5Y history ตัวเอง). AVAV/KTOS ตก C ชัดเจน (ROIC −0.26%/+0.38% << WACC 10.4%/10.36% แม้ revenue growth AVAV +141% — execution/integration risk ยังไม่พิสูจน์). **0 fast-track · 0 learning-queue · 9 reject** (TDG = excluded, ไม่นับ reject). Prune Round 100: 0 de-listed, SLA fixed 4 (ALLY/NBIX/BYD/CMRE → 2026-11-21), live 7. **ALLY ข้าม Filter A เป็นครั้งแรก (−20.8%)** — ตัดสินที่ Tier 1 รอบถัดไป. ดู Scout Report § Round 100 ท้ายไฟล์.)*
+*ก่อนหน้า (2026-11-17): **Scout Round 99 — Payments & Transaction Processing** — dedicated round แรกของ sector (V/MA ถูก exclude ตาม Hard exclusion: วิเคราะห์เต็มแล้ว HOLD/WAIT ใน decisions.md · PYPL/FISV/GPN/EEFT/FOUR เคยโดนแค่ scout R11/R12/R28/R52/R82 ก่อน VALUE-FIRST ปัจจุบัน → re-screen ด้วยข้อมูลสด · JKHY ครั้งแรก). ราคา Yahoo = Nasdaq (close 11-13 exact match; Yahoo 11-16 ใช้ดู drift). **Filter A: 1/6 PASS (FOUR −40.6% ที่ 11-13 / −43.6% ที่ 11-16)** · 5 ตก A: EEFT −15.3% · GPN −10.7% · FISV −9.4% · JKHY −8.1% · PYPL −7.3 ถึง −8.3% (2 แหล่งอ่าน 52W high ต่างกัน 1.1%). **FOUR: A ✅ (guide cut + Middle East travel/FX + margin −1.9pp; จัดกลุ่ม cyclical/temporary ปนโครงสร้าง — เขียนทั้ง 2 มุม) · B-Zero ✅ (equity +$1.45B; ND/EBITDA ≈4.5x flag) · B ✅ (FCF yield 15.5% ก่อน SBC / 12.6% หลัง SBC — leverage-inflated: mkt cap ≈42% ของ EV) · C ❌ (ROIC GAAP TTM ≈5.5% < 80%×WACC 8%; Q3 annualized 7.1% ยังต่ำกว่า)** → reject ที่ C (Tier 1 2b ก็ติดที่ cost of equity ≥12%). **0 fast-track / 0 learning-queue / 8 reject** (V/MA นับเป็น excluded ไม่ใช่ reject) · prune 0 de-listed, live 7. ดู Scout Report § Round 99 ท้ายไฟล์.)*
 *ก่อนหน้า (2026-11-16): **Scout Round 98 — Homebuilders & Residential Construction (pure-play)** — dedicated round แรกของ sector (DHI/LEN เคยโดนแค่ R44a 2026-09-29; R81 เป็น building products คนละ sub-industry). MDC ถูก Sekisui House ซื้อ+delist 2024-04-19 → แทนด้วย LGIH. close 11-13 (Yahoo = stockanalysis exact ทุกตัว). 8 screened (PHM/NVR/TOL/KBH/MTH/LGIH + DHI/LEN เสริม) → A 5/8 (LGIH −37.7% · LEN −37.5% · KBH −29.1% · NVR −28.6% · MTH −24.5%; PHM −12.1% · TOL −12.2% · DHI −14.8% ตก) → NVR/KBH ตก D (Tier 1 check 2b `QUICK-SCREEN SKIP`) · MTH/LGIH/LEN ตก C (ROIC ต่ำกว่า WACC มาก) · P/B 0.4–0.9× แต่ ROE 2–6% = value trap. **0 fast-track · 0 learning-queue · 8 reject**. Prune: 0 de-listed, SLA ยังไม่ถึงกำหนด (CMRE 11-17, ALLY/NBIX/BYD 11-18) · live 7*
 *ก่อนหน้า (2026-11-15): **Scout Round 97 — Gaming Equipment / Lottery & Betting Technology** — universe ที่ CIO ให้มาเปลี่ยนไปแล้ว: IGT → Brightstar Lottery (BRSL) · EVRI/AGS/GAN ถูก take-private · LNW ย้ายไป ASX → เพิ่ม SRAD/GENI/ACEL. close 11-13 (Yahoo = Nasdaq). 5 screened → A 4/5 (INSE −55.8% · SRAD −47.0% · GENI −45.9% · BRSL −41.4%; ACEL ตก) → B-Zero 3 (INSE ตก: equity ติดลบจากขาดทุนสะสม) → C 1 (BRSL/GENI ตก) → SRAD ตก E 0/3 (short report + class action). **0 fast-track · 0 learning-queue · 5 reject**. Prune: WYNN Tier 1 `QUICK-SCREEN SKIP` (1.08–1.74× naive FV) + VICI ตก A → archive 2 · live 9 → 7*
 *ก่อนหน้า (2026-11-14): **Scout Round 96 — Electronic Components / EMS / PCB / Optical** — CIO สั่ง Metals & Mining แต่ซ้ำ R79 (10-18) / R80 (10-19) ใน 30 วัน และตัวเลือกสำรองทั้ง 4 ก็ซ้ำ → เปลี่ยนเป็น sector ที่ไม่เคยสแกน. close 11-13 (Yahoo = Nasdaq). 15 screened → A 13/15 (TTMI −66.9% · VSH −61.7% · FN −56.2% · FLEX −55.1% ฯลฯ; TEL/CTS ตก) → B-Zero 13 → B 8 (FLEX/KN/PLXS/ROG ตก) → C 7 (VSH/LFUS ตก) → D-V1 ทุกตัว "เห็นต่างกันเอง" → Tier 1 check 2a 3.4×–7.6× naive FV. **0 fast-track · 0 learning-queue · 15 reject (7 QUICK-SCREEN SKIP: JBL/SANM/TTMI/FN/BELFB/BHE/OSIS)**. ไม่มีตัวเข้า AI/Infra lane (TTMI ผ่าน 2/3). Prune: ทำแล้วใน R95*
@@ -403,6 +404,12 @@ Per the Lane Assignment table: **Fast-track requires Filter D ≤0.80× naive FV
 - **Rule #2:** ไม่มีตัวไหนเกิน 2× ขอบบน entry zone (สูงสุด NBIX $165.31 = 1.22× ของ $135) · ไม่มี formal FV/MOS ให้วัด −30%. ราคา 11-16: ALLY $38.11 (−19.4%) · MMS $65.40 (−34.6%) · CRI $35.10 (−21.0%) · NBIX $165.31 (−11.2%) · BYD $77.42 (−15.3%) · WGO $31.28 (−37.6%) · CMRE $13.28 (−26.5%, อยู่ใน zone $12.00–13.50)
 - **Rule #3:** `decisions.md` = 0 hits ทุก live ticker · `dashboard/portfolio.js` = 0 hits (OPEN ยังเป็น ADBE/NOW/CRM/REGN/ADSK).
 - **ธง (ไม่ archive — ไม่เข้า rule #1-3):** ALLY −19.4% หลุดเกณฑ์ A (≥20%) ไปเล็กน้อยอีกครั้ง · NBIX/BYD ไม่ผ่าน A ต่อเนื่อง — ตัดสินที่ Tier 1 ของรอบ 11-18 · **Atlas regime record 11-06 ครบ 14 วันในวันที่ 11-20** ต้อง re-call ก่อน Tier 1 ของ CMRE/ALLY/NBIX/BYD (ย้ำจาก R98)
+**Prune Pass 2026-11-18 (Mode 1 Step 0 — Round 100):** ตรวจ live Pending ทั้ง 7 แถว (ALLY/MMS/CRI/NBIX/BYD/WGO/CMRE) ตาม De-list Rules #1-3 · ราคา close 11-17 (fiscal.ai/Yahoo/Robinhood cross-check). **De-listed 0 · SLA fixed 4** · live 7 → 7.
+- **Rule #1:** target ผ่านกำหนดวันนี้ — **CMRE 11-17 (เมื่อวาน, ยังไม่รัน Tier 1) · ALLY/NBIX/BYD 11-18 (วันนี้)** → re-fix ทั้ง 4 เป็น target ใหม่ **2026-11-21** (ยังไม่เกิน 60 วัน stale: scout เก่าสุด 10-16 = 33 วัน) · CRI/MMS 11-20 · WGO 12-19 ยังไม่ถึงกำหนด
+- **Rule #2:** ไม่มีตัวไหนเกิน 2× ขอบบน entry zone · ไม่มี formal FV/MOS ให้วัด −30%. ราคา 11-17: **ALLY $37.46 (−20.8%)** · MMS $64.39 (−35.6%) · CRI $34.75 (−21.8%) · NBIX $165.92 (−10.9%) · BYD $76.87 (−15.9%) · WGO $30.36 (−39.5%) · CMRE $12.95 (−28.3%, ในzone $12.00–13.50)
+- **Rule #3:** `decisions.md` = 0 hits ทุก live ticker · `dashboard/portfolio.js` = 0 hits (OPEN ยังเป็น ADBE/NOW/CRM/REGN/ADSK)
+- **ธง (ไม่ archive):** **ALLY ข้าม Filter A เป็นครั้งแรก (−20.8% vs เกณฑ์ ≥20%)** หลังหลุดเฉียดมา 3 prune ติด (−19.0%→−19.4%→−20.8%) — ควรเป็น priority แรกของ Tier 1 รอบถัดไป · NBIX/BYD ยังไม่ผ่าน A · **Atlas regime record 2026-11-06 ครบ 14 วันวันนี้ (11-20 ตามที่เคย flag จริงคือ +14 จาก 11-06 = 11-20)** — ต้อง re-call ก่อน Tier 1 ของกลุ่มนี้ (ย้ำจาก R98/R99)
+
 **Prune Pass 2026-11-15 (Mode 1 Step 0 — Round 97):** ตรวจ live Pending ทั้ง 9 แถวตาม De-list Rules #1-3 (ราคา close 11-13, Yahoo = Nasdaq — ไม่มีซื้อขายตั้งแต่ R95). **De-listed 2 · SLA fixed 0** · live 9 → **7**.
 - **WYNN → Archive:** รัน Tier 1 ที่ค้างตั้งแต่ R75 (SEC 10-Q 2026-09-30) — naive FV (levered FCF ÷ CoE 10.3%) = TTM 1.74× · FCF หลัง maintenance capex ปกติ 1.14× · เฉลี่ย FY23–25 1.08× → ติด check 2a/2b → `QUICK-SCREEN SKIP` (equity −$217.5M · ND/EBITDA 6.1×) — ⚠️ ยังไม่ได้บันทึกใน `deployment_log.md` (scope commit รอบนี้ = watchlist.md เท่านั้น)
 - **VICI → Archive:** re-screen ภายใต้ Filter A–E ปัจจุบันตามที่ R75 กำหนด — −18.3% (Nasdaq high → −18.9%) ตก A ติดกัน 2 prune
@@ -10677,3 +10684,81 @@ Sources: Yahoo chart API (`https://query1.finance.yahoo.com/v8/finance/chart/{T}
 **Target analysis date:** ไม่มี (0 candidates)
 
 *Max — 2026-11-17 | Scout Round 99 (Payments & Transaction Processing — 6 screened [PYPL/FISV/GPN/FOUR/JKHY/EEFT] + V/MA excluded as already analyzed; 0 fast-track / 0 learning-queue / 6 reject [5 A · 1 C FOUR]; no QUICK-SCREEN SKIP; prune 0 de-listed, live 7)*
+
+## Scout Report — 2026-11-18 (Max Scout Mode — Round 100)
+
+### Aerospace Suppliers / MRO (non-prime)
+
+**Trigger:** task-directed sector mandate — coverage gap check. Aerospace/Defense **primes** เคย dedicated-scan แล้ว 2 รอบ (R40 2026-09-27: BA/GE/HON/CAT/DE/ETN/EMR/PH/FDX/UPS · R50 2026-09-29: LMT/RTX/NOC/GD/TXT) แต่ **OEM-parts suppliers/aftermarket-MRO** (ที่ไม่ใช่ prime contractor) ไม่เคยเป็น dedicated round — **TDG** ถูกแตะครั้งเดียวและวิเคราะห์เต็มแล้ว (2026-08-18, Charlie/Emma/Quinn/Bear + Morgan QA PASS, formal **HOLD/WAIT FOR PULLBACK — NO DEPLOY**, Conviction 6.33 < 7.0, MOS ESG-adj −18.93%) → อยู่ใน `decisions.md` = **Hard exclusion**, ไม่ screen ซ้ำ. ไม่ซ้ำ sector ใน R82–R99 (30 วันล่าสุด). ไม่มีตัวไหนอยู่ใน `dashboard/portfolio.js` holdings หรือ CIO ban list (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL).
+
+**Portfolio state / regime:** Atlas record ล่าสุด 2026-11-06 = **TRANSITIONAL-CAUTIOUS** (2 RISK-ON / 1 TC / 1 RISK-OFF; VIX 28.18, Dec hike odds 77–78%, HY 348 bps) → Force Deploy suspended, ห้ามเปิด position ใหม่ · record อายุ 12 วัน (ครบ 14 วัน stale threshold 11-20 — ไม่ re-call รอบนี้, scout เพื่อ buy list เท่านั้นถ้ามี candidate). OPEN = ADBE/NOW/CRM/REGN/ADSK — ไม่มี aerospace ในพอร์ต. Rotation: R96 Electronic Components → R97 Gaming Equipment → R98 Homebuilders → R99 Payments → **R100 Aerospace Suppliers/MRO**.
+
+**Universe:** HWM (Howmet) · TDG (excluded) · HEI (Heico) · GE (GE Aerospace) · HXL (Hexcel) · CW (Curtiss-Wright) · WWD (Woodward) · SARO (StandardAero) · VSEC (VSE Corp) · AVAV (AeroVironment) · KTOS (Kratos) · **SPR (Spirit AeroSystems) excluded — ถูก Boeing เข้าซื้อเสร็จสมบูรณ์ + delist จาก NYSE 2025-12-08** ([Boeing](https://www.spiritaero.com/pages/), [TheAirCurrent](https://theaircurrent.com/industry-strategy/the-last-days-of-spirit-aerosystems/)) — ไม่นับใน screening
+
+### Step 3 — ราคา + Filter A (close 2026-11-17, ≥2 sources)
+
+| Ticker | ราคา | 52W high (source) | % จาก high | Filter A |
+|---|---|---|---|---|
+| **AVAV** | $110.00 | $408.25 ([stockanalysis](https://stockanalysis.com/stocks/avav/statistics/) + [metacap](https://metacap.si/compare/avav-vs-mog-a/)) | **−73.0%** | ✅ |
+| **KTOS** | $33.91 | $110.39 implied (−69.28% from high per [portfolioslab](https://portfolioslab.com/tools/stock-comparison/KTOS/AVAV); [stockanalysis](https://stockanalysis.com/stocks/ktos/statistics/) current $33.91) | **−69.3%** | ✅ |
+| **CW** | $472.06 | $808.16 ([Yahoo](https://finance.yahoo.com/quote/CW)) | **−41.6%** | ✅ |
+| **VSEC** | $183.34 | $247.69/$247.85 ([gngresearch](https://www.gngresearch.com/stock/VSEC), [Yahoo article](https://finance.yahoo.com/markets/stocks/articles/won-t-rich-investing-beaten-180602867.html)) | **−26.0 ถึง −39%** (ราคาปิด 11-12 $183.34 ใช้ high $247.85 → **−26.0%**; บทความ Yahoo อ้าง $151.40 low วันเดียว −39% จาก high — ใช้ close ล่าสุดที่มี 2 source คือ −26.0%) | ✅ (ทั้ง 2 ค่าผ่าน ≥20%) |
+| **HXL** | $76.24 | $111.74 ([financialtechwiz](https://www.financialtechwiz.com/stocks/hxl/)) | **−31.8%** | ✅ |
+| **WWD** | $329.86 | $450.92 ([Yahoo](https://finance.yahoo.com/quote/WWD)) | **−26.8%** | ✅ |
+| **SARO** | $27.42–28.08 | $34.48 ([Google Finance](https://www.google.com/finance/quote/SARO:NYSE), [macrotrends](https://www.macrotrends.net/stocks/charts/SARO/standardaero/stock-price-history)) | **−18.6 ถึง −20.5%** (borderline; ใช้ราคาต่ำสุดในช่วง $27.42 → −20.5% ผ่านเฉียด) | ✅ (เฉียด) |
+| HWM | $215.26/$214.52 | $310.00 ([stockanalysis](https://stockanalysis.com/stocks/hwm/) + [chartexchange](https://chartexchange.com/symbol/nyse-hwm/)) | −30.6%* (ราคาจริงล่าสุดจาก businessquant $220.85 → −24.5%; ใช้ raw หลายวัน −24.5% ถึง −30.6% — ทุกค่าผ่าน ≥20%) | ✅ |
+| TDG | **Hard exclusion** — วิเคราะห์เต็มแล้ว decisions.md 2026-08-18 | — | n/a — excluded |
+| HEI | $340.29 | $374.67 ([businessquant](https://businessquant.com/compare/hei-vs-hwm-vs-tdg/)) | −9.2% | ❌ |
+| GE (GE Aerospace) | — | — | −13% (Fool.com 11-10: "nearly 13% below 52-week high") | ❌ |
+
+**Beaten-down reason:** AVAV/KTOS = cyclical/sentiment (Bernstein: "capital rotation rather than fundamental deterioration," defense valuations were near historical highs before the correction — [Yahoo](https://finance.yahoo.com/markets/stocks/articles/aerovironment-kratos-stocks-trade-down-032014219.html)), ปนกับ execution/integration risk จริง (AVAV BlueHalo integration drag). CW/WWD/HWM/HXL = cyclical (aerospace aftermarket demand worry + fuel-price/Iran-war overhang per Baron Fund 2026 Q3 letter on TDG, sector-wide). SARO/VSEC = sentiment/profit-taking ตามข่าว ("most of the decline over the past two months is due to profit-taking and valuation concerns" — Yahoo on VSEC). ไม่มีตัวไหนมีสัญญาณ permanent impairment ชัดเจน (ธุรกิจ aftermarket/MRO มี secular tailwind จาก fleet aging + flight hours).
+
+### Step 4 — Filter B/C (stockanalysis.com statistics, WACC = site-reported CAPM-based)
+
+| Ticker | FCF yield | EV/EBITDA current vs 5Y self-history | ROIC | WACC | B | C |
+|---|---|---|---|---|---|---|
+| HXL | 1.4% (P/FCF 27.8× → 3.6% alt calc) | 16.3–18.0× vs FY21-25: 26.2/18.6/19.5/18.5/23.1× → **ต่ำกว่าทุกปี = bottom-third** | 11.21% | 9.75% | ✅ | ✅ (11.21% > 7.8% = 80%×WACC) |
+| CW | 3.6% | 20.0–21.2× vs FY21-25: 12.17/13.91/15.15/20.82/26.67× → **ไม่ bottom-third** (อยู่ช่วงกลาง-บน) | 16.50% | 8.71% | ❌ | ✅ |
+| WWD | 1.6% | 24.0–34.3× (หลายแหล่งไม่ตรงกัน) — สูงกว่าทุกปีย้อนหลังที่หาได้ | 13.7–16.6% | 8.64–8.68% | ❌ | ✅ |
+| SARO | 3.6% | 14.0–14.2× — IPO 2024, ไม่มี 5Y history ที่เชื่อถือได้ (B-V1 peer/sector-average ไม่ได้คำนวณรอบนี้ขาดเวลา) | 9.01% | 7.78% | ❌ (ไม่พิสูจน์ bottom-third ได้) | ✅ (เฉียด, spread +1.23pp) |
+| VSEC | 0.48% | 23.9–24.7× vs FY16-25 range 6.4–79.4×, 10Y median 10.7× → current ที่ 73rd percentile = **แพงกว่า median มาก** | 3.67–3.93% | 9.68% | ❌ | ❌ (3.9% << 80%×9.68%=7.7%) |
+| HWM | 2.27–2.28% | 29.0–29.2× vs FY21-25: 15.83/16.02/17.72/25.25/35.67× → ไม่ bottom-third (ระหว่าง FY24-25) | 22.70% (ฟื้นจาก 9.18% FY21 — เทรนด์ดีขึ้นต่อเนื่อง 5 ปี) | 10.95% | ❌ | ✅ (22.7% >> 8.76%) |
+| AVAV | n/a (loss-making) | n/a | **−0.26%** | 10.42% | — | ❌ ชัดเจน |
+| KTOS | n/a | n/a | **0.38%** | 10.36% | — | ❌ ชัดเจน |
+
+**HXL เป็นตัวเดียวที่ผ่าน A+B+C ครบ** — ไปต่อ Tier 1.
+
+### Tier 1 Quick-Screen — HXL
+
+Naive FV = normalized levered FCF (FY22-25, ตัด FY21 เพราะไม่มีข้อมูลสม่ำเสมอ: $148.0M/$209.3M/$238.5M/$157.2M → mean **$188.3M**) ÷ CoE 9.75% = **$1,931M** equity value. Shares ≈ market cap $5.77B ÷ $76.24 ≈ 75.7M → **naive FV/share ≈ $25.5**. ราคาปัจจุบัน $76.24 ÷ $25.5 = **2.99×** naive FV → **Check 2a ติด (>1.5×)** → `QUICK-SCREEN SKIP`. สมเหตุสมผล: HXL เป็น quality compounder ที่ตลาดให้ premium จาก moat (duopoly carbon-fiber composite กับ Toray) ไม่ใช่หุ้นที่ขายทิ้งแบบไม่มีราคา — ลด 31.8% จาก high ยังไม่พอให้เกิด MOS จริงบนฐาน no-growth
+
+### Final routing — Round 100
+
+| Ticker | ตกที่ | Tag |
+|---|---|---|
+| TDG | Hard exclusion (decisions.md 2026-08-18 HOLD/WAIT) | excluded — ไม่นับ reject |
+| SPR | ถูก Boeing ซื้อ + delist 2025-12-08 | excluded — ไม่นับ reject |
+| HEI | **A** (−9.2%) | reject |
+| GE | **A** (−13%) | reject |
+| HWM | **B** (FCF yield 2.27%, EV/EBITDA ไม่ bottom-third) | reject |
+| CW | **B** (FCF yield 3.6%, EV/EBITDA ไม่ bottom-third) | reject |
+| WWD | **B** (FCF yield 1.6%, EV/EBITDA สูงกว่าทุกปีย้อนหลัง) | reject |
+| SARO | **B** (ไม่พิสูจน์ bottom-third ได้ — recent IPO ไม่มี 5Y history, FCF yield 3.6%) | reject |
+| VSEC | **B + C** (FCF yield 0.48%, ROIC 3.9% << 80%×WACC) | reject |
+| AVAV | **C** (ROIC −0.26% << WACC 10.42%) | reject |
+| KTOS | **C** (ROIC 0.38% << WACC 10.36%) | reject |
+| HXL | **Tier 1 check 2a** (2.99× naive FV) | `QUICK-SCREEN SKIP` |
+
+**0 fast-track · 0 learning-queue · 9 reject (2 A · 5 B/B+C · 2 C) · 1 `QUICK-SCREEN SKIP` (HXL) · 2 excluded (TDG/SPR).** ไม่เพิ่มแถว Pending Analysis · ไม่เพิ่ม `buy_list.md` (regime TC; ไม่มี candidate ผ่าน gate)
+
+### Notes for CIO / Charlie
+
+1. **Aerospace OEM-parts/MRO = "คุณภาพสูงสุดในกลุ่มที่ทีมเคย scout แต่ไม่มีราคาคุยเลย"** — ROIC ของกลุ่มนี้ (CW 16.5%, WWD 13.7-16.6%, HXL 11.2%, HWM 22.7%) สูงกว่าเกือบทุก sector ที่สแกนมาตลอด 100 รอบ แต่ FCF yield ต่ำมาก (1.4-3.6%) เพราะตลาดให้ multiple premium ต่อ moat/aftermarket-pricing-power มาตลอด — HXL ลงมา 31.8% ยังไม่พอ (ต้องการอีก ~65% เพื่อแตะ naive FV)
+2. **AVAV/KTOS คือ "ลงมากที่สุดในรอบนี้ (-69 ถึง -73%)" แต่ตก C อย่างสิ้นเชิง** — ชัดเจนว่า drone/counter-UAS defense tech ยังอยู่ใน heavy-reinvestment/integration phase ที่ ROIC ยังไม่พิสูจน์ (AVAV BlueHalo integration, revenue +141% แต่ net margin -13.4%) — ไม่เข้าเกณฑ์ Lane AI/Infra Build-out เพราะไม่ใช่ capex-driven infrastructure build-out แบบ data center, เป็น M&A-integration drag ปกติ. **Re-screen trigger:** ROIC พลิกบวกและยั่งยืน ≥2 ไตรมาสติด (ไม่ใช่แค่ GAAP breakeven 1 ไตรมาส)
+3. **SARO ชนด่าน A แบบเฉียดและมี data gap** — เพิ่ง IPO ต.ค. 2024 ไม่มี 5Y EV/EBITDA history ที่เชื่อถือได้สำหรับ Filter B self-history test (ขาดเวลารอบนี้ที่จะทำ peer-median/sector-average แทนตาม B-V1 fallback) — ถ้า CIO สนใจตัวนี้เป็นพิเศษ ควรให้ Charlie ทำ peer-median (เทียบ TDG/HEI/HXL) ในรอบ full pipeline แทน ไม่ใช่ที่ scout stage
+4. **VSEC มี data-integrity flag เล็ก:** market cap ที่รายงานต่างกันมาก (stockanalysis $5.72-6.69B EV, Yahoo $5.15B, gngresearch ไม่ตรงกัน) — น่าจะมาจาก timing ของราคาที่ volatile (ลง 39% ใน aviation-aftermarket distributor ขนาดเล็ก) ไม่ใช่ error ของเครื่องมือ แต่ไม่กระทบผล (ตก B/C ชัดเจนทุก snapshot)
+5. **Housekeeping:** Prune Round 100 เสร็จในไฟล์นี้แล้ว (ดูด้านบน) — ALLY ข้าม Filter A เป็นครั้งแรก (−20.8%), SLA fix 4 ticker → 2026-11-21 · Atlas regime record (2026-11-06) ครบ 14 วัน 2026-11-20 — ต้อง re-call ก่อน Tier 1 ของ ALLY/NBIX/BYD/CMRE
+
+**Target analysis date:** ไม่มี (0 candidates ผ่าน fast-track/learning-queue; HXL เป็น `QUICK-SCREEN SKIP` ไม่ใช่ candidate)
+
+*Max — 2026-11-18 | Scout Round 100 (Aerospace Suppliers/MRO non-prime — 11 screened [HWM/HEI/GE/HXL/CW/WWD/SARO/VSEC/AVAV/KTOS] + TDG/SPR excluded; 0 fast-track / 0 learning-queue / 9 reject [2 A · 5 B/B+C · 2 C] · 1 QUICK-SCREEN SKIP [HXL 2.99× naive FV]; prune 0 de-listed, SLA fixed 4, live 7)*
