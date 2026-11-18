@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-17 07:00";
+const NEWS_LAST_UPDATED = "2026-11-18 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-18 (Atlas scan 2026-11-17→11-18, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-17", category: "EARNINGS",
+    headline: "🟢🟢 NVDA beats on Q3 FY2027 earnings after close — revenue $115.8B (+103% YoY), Q4 guide above consensus, $150B buyback announced; board confirms no Jensen Huang reinstatement",
+    summary: "Nvidia reported Q3 FY2027 results after the close on 2026-11-17: revenue $115.8B (+103% YoY), beating Wall Street's top- and bottom-line expectations, with a Q4 outlook above consensus. The company announced a new $150 billion stock buyback authorization. On the earnings call — interim CEO Colette Kress's first as the public face of the company since Jensen Huang's resignation (confirmed 2026-11-12) — the board confirmed it will NOT reinstate Huang as CEO, closing off the 'potential return' scenario that shareholders Altimeter/Atreides had publicly lobbied for on 2026-11-15. Shares, which had fallen sharply in the regular session (part of a broad pre-earnings software/tech de-risking day, S&P -1.03% to 7,340.53, Dow -850pts) rose roughly +4.2% in after-hours trading on the beat. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — ผลประกอบการดีเกินคาด + buyback ใหญ่ + บอร์ดยืนยันทิศทาง CEO ชัดเจนเป็นสัญญาณบวกสำคัญต่อทั้ง AI-infra complex หลังความวุ่นวายเรื่อง governance ต่อเนื่องมาหลายสัปดาห์ แต่ไม่กระทบ OPEN position ใดโดยตรง.",
+    impact: "POSITIVE", tickers: ["NVDA"],
+    url: "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026",
+  },
+  {
+    date: "2026-11-17", category: "MARKET",
+    headline: "🔴🔴 Broad pre-NVDA-earnings software-sector rout: CRM -9.45%, NOW -6.55% (stop-loss breached), ADBE -4.25%, Intuit -7.17%",
+    summary: "Ahead of Nvidia's after-close Q3 earnings and Anthropic's IPO, investors broadly de-risked software and AI-adjacent names on 2026-11-17 — the S&P 500 fell -1.03% to 7,340.53 (its 4th straight losing session, lowest close since late July) and the Dow dropped ~850 points (-1.64%). Software took the sharpest hit within the tape: Salesforce (CRM, OPEN position) fell -9.41/-9.45% to $194.52 on a confluence of AI-monetization skepticism, sector-wide SaaS rotation, and balance-sheet concerns tied to recent M&A (incl. the $5.7B Braze deal); ServiceNow (NOW, OPEN position) fell -6.55/-6.83% to $92.87, closing BELOW its $93.00 stop loss for the first time in this position's history; Adobe (ADBE, OPEN position) fell -4.25% to $235.55; Intuit (not held) fell -7.17%. Each of CRM/NOW/ADBE clears the >4% single-day-move-on-real-news HIGH-IMPACT threshold. REGN was the lone OPEN-position gainer (+0.56%), decoupled from the software-specific selloff. นัยพอร์ต: NOW's stop-loss breach is flagged separately in dataIntegrityLog/positions.md as a REVIEW THESIS event (not AUTO-SELL) per Max Exit Rules — no trade action this Review Mode session; recommend immediate Max×Charlie consultation given the breach stacks on top of the already-overdue (4 days) full-pipeline escalation deadline for NOW.",
+    impact: "NEGATIVE", tickers: ["CRM", "NOW", "ADBE"],
+    url: "https://beststocks.com/stocks/crm/what-changed",
+  },
 
   // ── 2026-11-17 (Atlas scan 2026-11-16→11-17, Portfolio Review Mode 3 cron cycle) ──
   {

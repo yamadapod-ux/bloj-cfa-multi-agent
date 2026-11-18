@@ -1,5 +1,49 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-18 (Mode 3 — Full Re-Mark, Nov 17 2026 Close) — Pre-NVDA-Earnings Software Rout (CRM -9.45%, NOW -6.55%, ADBE -4.25%); 🔴 NOW STOP-LOSS BREACHED FOR THE FIRST TIME ($92.87 < $93.00 stop); NVDA Beats After-Hours, +$150B Buyback
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 15 days old — getting dated, worth a fresh re-call soon, not yet overdue by the ~2-3 week cadence). First new US trading day since Nov 16. S&P 500 fell **-1.03%** to **$7,340.53** (-76.06 pts; CNBC + Investopedia/Yahoo Finance + MarketWatch, exact match, 3-source), its 4th straight losing session and lowest close since late July, as the Dow dropped ~850 pts (-1.64%) and investors de-risked ahead of Nvidia's after-close Q3 earnings and Anthropic's IPO. Software names were hit hardest pre-earnings: Salesforce -9.41/-9.45%, ServiceNow -6.55/-6.83%, Intuit -7.17% (not held). All 5 OPEN positions re-priced, 2-source cross-checked where possible. **NVDA beat after close** (revenue $115.8B, +103% YoY; Q4 guide above consensus; $150B buyback announced; board confirmed it will NOT reinstate Jensen Huang) — stock rose ~+4.2% after-hours. Big 10 watchlist only, no OPEN position. **No trades this session** — Max Consultation Rule requires Charlie consult before any SELL/TRIM; this Review Mode session proposes no trade.
+
+| Ticker | Price (Nov 17 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $235.55 | financialcontent.com + fiscal.ai (exact match) | -4.65% | +36.17% | 27.32% | 9.19% |
+| NOW | $92.87 | fiscal.ai "close 92.9" + metatradingclub close-recap (-6.55% implies $92.83, 0.08% diff, averaged) | +3.80% | +15.73% | 🔴 **-0.14% (BREACH)** | 0.91% |
+| CRM | $194.52 | beststocks.com explicit close + CNBC quote (exact match) | +7.47% | +43.74% | 34.34% | 5.69% |
+| REGN | $957.76 | stockanalysis.com + keenable.ai (exact match, +0.56% day) | +59.10% | +3.67% | 98.70% | 3.92% |
+| ADSK | $255.22 | keenable.ai explicit post-close + Yahoo Finance quote-page note ("-3.88% today") | +28.61% | -15.07% | 60.79% | 5.97% |
+
+**Totals:** Invested $2,633.42 · Cash $7,616.46 (74.31%) · Total Value **$10,249.88** (-1.26% vs prior review) · Total Return **+2.50%** · S&P 500 Return **-0.79%** (dropped sharply from +0.24% — broad pre-NVDA-earnings de-risking) · **Alpha +3.29%** (narrowed slightly from +3.56% — the book's software tilt got hit hard pre-earnings too, but REGN's gain + cash cushion kept it ahead of the steeper index decline).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,615.67 × 3.8%/365 × 1 day (11-17→11-18) = +$0.79 → $7,616.46.
+
+### 🔴 Stop Loss Check — NOW BREACHED (first time this position's history)
+**NOW closed at $92.87, below its $93.00 stop loss — a genuine stop-loss breach, not just a narrowing WATCH reading.** Per Max Exit Rules table this is `🟠 REVIEW THESIS` (stop-loss hit, first time) — NOT `🔴 AUTO-SELL` (that requires re-analysis=AVOID or a confirmed thesis change on top of the stop hit). Thesis check: Bear Flip #5 (GAAP gross margin <74%) already fired 2026-11-01 (real business-data finding, not a compliance artifact); Thesis Invalidation remains 0/4 (Rev +22%, no McDermott exit, no MSFT ITSM bundle, no Armis impairment) — thesis is pressured but not formally invalidated. The pre-committed full-pipeline escalation deadline (2026-11-14) has now passed by 4 days without action. **This Review Mode session takes NO trade action** (Max Consultation Rule requires Charlie consult before any SELL/TRIM) — flagging for immediate Max×Charlie consultation next session, given this is now both a stop breach AND a materially overdue full-pipeline item on the same ticker. Residual position is tiny (1sh, 0.91% weight) so capital risk is minimal, but the process gap (stop breach + 4-days-overdue pipeline escalation, same ticker) should not be allowed to carry further without a logged consultation. All other positions comfortable (27-99% stopDist).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 68d, MOS +36.17% (positive) | N/A | -4.78% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV 18d, MOS +15.73% (positive — note: separate Stop Loss breach above, not a Re-Analysis trigger) | N/A | -11.66% vs ~$105.12 (Oct 30/31) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 68d, MOS +43.74% (positive) | N/A | -21.48% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV 18d (<90d), MOS +3.67% (positive, thin) | N/A | +3.22% vs $927.89 (Oct 30/31) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 67d, MOS -15.07% negative but age <<90d | N/A | +20.16% vs $212.40 (Sep 11 close), under 30% line | Street avg ~$320 vs FV $221.79 = +44% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** No new earnings-driven trigger (NVDA earnings is Big 10, not an OPEN position). NOW's situation is governed by the separate Stop Loss Check above, not this table.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **15 days old** — getting dated per the ~2-3 week typical cadence, not yet overdue. Does not block this update.
+
+### 📰 Atlas News Scan (since NEWS_LAST_UPDATED 2026-11-17 07:00, all 5 OPEN tickers + Big 10 watchlist)
+**2 NEW HIGH-IMPACT items.** (1) Broad pre-NVDA-earnings software-sector rout: CRM -9.45% $194.52, NOW -6.55% $92.87, ADBE -4.25% $235.55 — all OPEN positions, all clear the >4% single-day-move-on-real-news threshold (AI-monetization skepticism + sector-wide SaaS rotation ahead of Nvidia's earnings and Anthropic's IPO, per beststocks.com/Reuters/Yahoo coverage); Intuit (not held) -7.17% same theme. Written to news.js. (2) NVDA (Big 10, no OPEN position) reported Q3 FY2027 results after close: revenue $115.8B (+103% YoY), beat on top and bottom lines, Q4 guide above consensus, announced a $150B stock buyback; board confirmed it will NOT reinstate Jensen Huang as CEO. Stock rose ~+4.2% after-hours. Written to news.js. Other coverage (REGN +0.56% on no specific catalyst found, ADSK -3.88% under the 4% threshold) assessed ROUTINE.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+$7,615.67 × 3.8%/365 × 1 = **+$0.79** → **$7,616.46**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ตลาดสหรัฐฯ ร่วงต่อเนื่องเป็นวันที่ 4 ก่อนงบ Nvidia หลังตลาดปิด — S&P 500 -1.03% สู่ $7,340.53 (ต่ำสุดตั้งแต่ปลายก.ค.), Dow ร่วงเกือบ 850 จุด หุ้น software ถูกเทขายหนักสุดก่อนงบ: CRM -9.45%, NOW -6.55%, ADBE -4.25% (ADSK -3.88% ยังไม่ถึงเกณฑ์ HIGH-IMPACT) **เรื่องสำคัญที่สุดของวันนี้คือ NOW หลุด stop loss เป็นครั้งแรกในประวัติ position นี้ — ปิดที่ $92.87 ต่ำกว่า stop $93.00** ตาม Exit Rules table นี่คือ "REVIEW THESIS" (stop แรก) ไม่ใช่ AUTO-SELL ทันที — Bear Flip #5 (GAAP margin) fired ไปแล้วตั้งแต่ 1 พ.ย. แต่ Thesis Invalidation ยัง 0/4 ไม่ครบเงื่อนไข full exit และ full-pipeline escalation deadline (14 พ.ย.) ผ่านมาแล้ว 4 วันโดยยังไม่ actioned — รอบนี้ไม่ได้ trade ใดๆ (Max Consultation Rule ต้องปรึกษา Charlie ก่อน) แต่ flag ให้ปรึกษาด่วนรอบหน้า ตำแหน่งเล็กมาก (1sh, weight 0.91%) ความเสี่ยงทุนจำกัด แต่ process gap นี้ไม่ควรค้างต่อ Alpha แคบลงเล็กน้อยเป็น **+3.29%** (จาก +3.56%) เพราะพอร์ตก็โดนเทขายก่อนงบ Nvidia เหมือนกัน แต่ REGN ที่ขึ้น + เงินสดกันชน ยังทำให้นำดัชนีที่ร่วงแรงกว่า หลังตลาดปิด **NVDA รายงานงบดีเกินคาด** (รายได้ $115.8B +103% YoY, Q4 guide เกินคาด, ประกาศ buyback $150B, บอร์ดยืนยันจะไม่คืนตำแหน่ง CEO ให้ Jensen Huang) หุ้นขึ้น +4.2% after-hours — Big 10 เท่านั้น ไม่มี OPEN position Atlas regime re-call อายุครบ 15 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
+
 ## 📊 Portfolio Review — 2026-11-17 (Mode 3 — Full Re-Mark, Nov 16 2026 Close) — Tech Selloff Deepens 3rd Session on NVDA Leadership/Export-Curb Fallout; Portfolio Decouples, Alpha Widens Sharply to +3.56%; NOW StopDist Narrows Further Below 10% WATCH Line
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 14 days old — getting dated, worth a fresh re-call soon, not yet overdue by the ~2-3 week cadence). First new US trading day since Nov 13 (first full trading week back after the weekend). S&P 500 fell **-1.92%** to **$7,416.59** (-145.08 pts; AP News + CNBC + Xinhua, exact match, 3-source), its third straight losing session, as another leg of the Nvidia leadership/CEO-transition fallout hit the AI trade: the Commerce Dept issued an interim rule (Nov 16) requiring export licenses for advanced AI chip shipments to data centers in 5 countries (Singapore, Malaysia, Thailand, Indonesia, Brazil) targeting third-country diversion via the Megaspeed channel under DOJ scrutiny, while 10+ analysts slashed NVDA price targets (several >50%) ahead of its Q3 earnings due after close Nov 17 — NVDA fell -4.12% to $156.14. Nasdaq -2.49% to 24,509.76, Dow -1.41% to 51,608.17. All 5 OPEN positions re-priced, 2-source cross-checked except CRM (single-primary-source, attempt cap reached, flagged per Single Source of Truth Rule). **ADBE and ADSK both rose despite the broad tech selloff** — the book has zero direct AI-hardware exposure. **No trades this session.**
