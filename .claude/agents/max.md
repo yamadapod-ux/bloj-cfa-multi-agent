@@ -393,7 +393,7 @@ WebFetch overview: `https://stockanalysis.com/stocks/[ticker]/` — ดึง **
 **Step 4 — Filter ตาม Scout Filter Rules VALUE-FIRST (CLAUDE.md เท่านั้น — ป้องกันไฟล์ drift)**
 
 Primary — ต้องผ่านทั้ง **A + B + C + D + E** (D/E `TRIAL — review 2026-12-31`):
-- **A. Beaten-down ด้วยเหตุผลที่ถูกต้อง (บังคับ):** ราคาลง **≥ 30% จาก 52W high** (WebSearch ≥2 sources) **+ ระบุ "beaten-down reason"**: ✅ cyclical/sentiment/temporary dislocation → ผ่าน · ❌ permanent earnings-power impairment (structural demand loss ที่ mgmt ยืนยัน / secular decline / regulatory regime change ที่ default = bearish / moat erosion วัดได้) → deprioritize/reject. ไม่ชัด → เขียน 2 มุม + default learning-queue
+- **A. Beaten-down ด้วยเหตุผลที่ถูกต้อง (บังคับ):** ราคาลง **≥ 20% จาก 52W high** (แก้ 2026-09-13 จากเดิม ≥30% — CIO: 30% เยอะเกินไป) (WebSearch ≥2 sources) **+ ระบุ "beaten-down reason"**: ✅ cyclical/sentiment/temporary dislocation → ผ่าน · ❌ permanent earnings-power impairment (structural demand loss ที่ mgmt ยืนยัน / secular decline / regulatory regime change ที่ default = bearish / moat erosion วัดได้) → deprioritize/reject. ไม่ชัด → เขียน 2 มุม + default learning-queue
 - **B. Cheap:** FCF yield > 6% **หรือ** EV/EBITDA bottom-third ของ 5Y history **หรือ** P/B < 5Y median (financials)
 - **C. Real business:** ROIC > WACC + ไม่ใช่ secular-decline industry
 - **D. Credible valuation gap:** naive FV = **normalized/mid-cycle FCF ÷ WACC** (no-growth perpetuity, ไม่ใช่ TTM peak). WACC ~7-9% mega / 10-13% mid / 13-16% small/EM. Cross-check Street PT (≥2 แหล่ง — ถ้า median < ราคา = ตกรอบ). **ผ่าน (fast-track):** ราคา ≤ 0.80× naive FV · **ก้ำกึ่ง (learning-queue):** 0.80–0.90× · **ตกรอบ:** > 0.90× หรือ ±10% ของ naive FV. + EV/EBITDA หรือ EV/Rev ต้อง bottom-third ของ 5Y ตัวเอง
