@@ -10762,3 +10762,89 @@ Naive FV = normalized levered FCF (FY22-25, ตัด FY21 เพราะไม
 **Target analysis date:** ไม่มี (0 candidates ผ่าน fast-track/learning-queue; HXL เป็น `QUICK-SCREEN SKIP` ไม่ใช่ candidate)
 
 *Max — 2026-11-18 | Scout Round 100 (Aerospace Suppliers/MRO non-prime — 11 screened [HWM/HEI/GE/HXL/CW/WWD/SARO/VSEC/AVAV/KTOS] + TDG/SPR excluded; 0 fast-track / 0 learning-queue / 9 reject [2 A · 5 B/B+C · 2 C] · 1 QUICK-SCREEN SKIP [HXL 2.99× naive FV]; prune 0 de-listed, SLA fixed 4, live 7)*
+
+
+---
+
+## Scout Report § Round 101 (Diagnostics & Clinical/Contract-Research Labs + Dental/Medical Distribution) — 2026-11-19
+
+### Step 0 — Prune Pass (ก่อนสแกน)
+
+ตรวจ live Pending ทั้ง 7 แถว (ALLY/MMS/CRI/NBIX/BYD/WGO/CMRE) ตาม De-list Rules: **Rule #1** ทุกแถวมี target date (CRI/MMS 11-20 · ALLY/NBIX/BYD/CMRE 11-21 · WGO 12-19) และไม่มีแถวไหนเกิน 60 วันจาก scout date · **Rule #3** grep `dashboard/portfolio.js` + `portfolio/decisions.md` = 0 hit ทั้ง 7 ตัว (OPEN = ADBE/NOW/CRM/REGN/ADSK) · **Rule #2** ไม่ได้ re-price ในรอบนี้ — ไม่มีแถวใดถูกเสนอให้ archive จึงไม่ต้อง WebSearch ราคาซ้ำ; ตัวเลขใน live table ยังเป็นของรอบ scout เดิม ไม่ได้ยืนยันว่าราคาปัจจุบันยังอยู่ในเกณฑ์
+**ผล: de-listed 0 · SLA fixed 0 (target ที่ตั้งใน R100 ยังไม่เลย) · live 7.** ไม่มีการลบ/ย้าย row
+
+### Trigger / Regime
+
+Task-directed sector mandate: Diagnostics, Clinical/Contract-Research Labs + Dental/Medical Distribution — ticker เหล่านี้เคยอยู่แค่ในรายการ finviz batch (R77/78, ตาราง life-science-tools) ไม่เคยผ่าน full A–E verdict ต่อตัว. ไม่มีตัวใดอยู่ใน `dashboard/portfolio.js`, `decisions.md`, deployment_log หรือ ban list (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL)
+
+Atlas regime ล่าสุด = `agent_notes/atlas/2026-11-06_regime.md` → **TRANSITIONAL-CAUTIOUS** (2 RISK-ON / 1 TC / 1 RISK-OFF; VIX 28.18, HY 348 bps, Fed Dec hike odds 77–78%) · อายุ 13 วัน — ยังไม่ stale แต่ครบ 14 วันพรุ่งนี้ (11-20) → flag ให้ Atlas re-call ก่อน Tier 1 ของแถวที่ถึง target date · Force Deploy suspended, ห้ามเปิด position ใหม่ (scout เพื่อ buy list เท่านั้น) · S&P 500 close 11-18 = 7,323.63 (จาก Max Portfolio Review 11-19, Yahoo + metacap.si)
+
+Rotation: R97 Gaming Equipment → R98 Homebuilders → R99 Payments → R100 Aerospace Suppliers/MRO → **R101 Diagnostics/CRO/Med-Dental Distribution**
+
+### Universe (14 ticker ที่ได้รับมอบหมาย)
+
+- **EXAS — excluded:** ถูก Abbott ซื้อและ delist 2026-03-23 ([stockanalysis](https://stockanalysis.com/stocks/exas/statistics/): "delisted, acquired by ABT")
+- **PKI — excluded:** ไม่มี ticker นี้แล้ว (PerkinElmer → Revvity, RVTY เคยอยู่ใน finviz batch R77/78 และไม่ใช่ ticker ที่มอบหมาย — ไม่ screen เพิ่ม)
+- **Screened 12 ตัว:** LH · DGX · IQV · CRL · HSIC · NEOG · QGEN · NTRA · BIO · TECH · WAT · ICLR
+- ไม่มี ticker ใดเคย full-analysis (grep decisions.md/deployment_log/reports = 0)
+
+### Step 3 — Filter A (close 2026-11-18; ราคา finviz + stockanalysis ตรงกันทุกตัว)
+
+| Ticker | ราคา | 52W high (finviz) | % จาก high | Filter A |
+|---|---|---|---|---|
+| TECH | $72.75 | $72.88 | −0.2% | ❌ |
+| LH | $370.78 | $375.10 | −1.2% | ❌ |
+| DGX | $259.69 | $263.19 | −1.3% | ❌ |
+| WAT | $466.10 | $483.33 | −3.6% | ❌ |
+| BIO | $370.17 | $396.23 | −6.6% | ❌ |
+| HSIC | $85.69 | $92.18 | −7.0% | ❌ |
+| IQV | $257.84 | $284.50 | −9.4% | ❌ |
+| ICLR | $195.16 | $219.04 | −10.9% | ❌ |
+| CRL | $333.25 | $379.63 | −12.2% | ❌ |
+| QGEN | $49.56 | $57.81 | −14.3% | ❌ |
+| **NEOG** | $11.08 | $14.26 | **−22.3%** | ✅ |
+| **NTRA** | $289.50 | $437.41 (finviz + [stockanalysis](https://stockanalysis.com/stocks/ntra/) ตรงกัน) | **−33.8%** | ✅ |
+
+Sources: finviz quote pages รายตัว + stockanalysis.com/stocks/{ticker}/statistics. 52W high ของ NEOG มี snapshot ที่สองจากการค้นเว็บ (Nov 1: $5.37–$14.26). WebSearch ที่ค้น NTRA ได้ high ต่ำกว่า ($288–340) เป็นบทความไม่ระบุวันที่/เก่า จึงไม่นำมาใช้ (stockanalysis ยืนยัน $437.41)
+
+**ข้อสังเกต sector:** 10 จาก 12 ตัวอยู่ในระยะ ≤15% จาก 52W high (52-week change: CRL +105%, DGX +39%, NTRA +41%, WAT +23%, ICLR +25%) — กลุ่ม lab/CRO/tools re-rate เกือบหมดแล้ว ไม่ใช่ที่ที่ตลาดทิ้ง
+
+**Beaten-down reason (เฉพาะตัวที่ผ่าน A):** NEOG = sentiment + execution — FY25 goodwill impairment จากดีล 3M Food Safety (SEC 10-K: operating loss −$1,061M FY25), ยังขาดทุนระดับ operating (−$21.6M FY26) · NTRA = sentiment/valuation de-rate จาก high ที่พุ่งแรง ไม่ใช่ demand loss (revenue FY25 $2,306M vs $1,697M, +36%) — จัดเป็น cyclical/sentiment
+
+### Step 4 — Filter B / B-Zero / C (ตัวที่ผ่าน A) — SEC EDGAR companyfacts เป็นหลัก
+
+| Ticker | SEC data (data.sec.gov companyfacts) | stockanalysis cross-check | B-Zero | B | C |
+|---|---|---|---|---|---|
+| NEOG | FY26 (May-26) revenue $870.4M (FY24 $924.2M → ลดลงต่อเนื่อง) · operating income −$21.6M (FY25 −$1,061M) · net loss −$7.9M · OCF $83.2M · D&A $116.3M · equity $2,086M (10-Q Aug-26, ไม่ติดลบ) | EV/EBITDA 27.7× · FCF yield 2.06% · ND/EBITDA ~5.5× · ROIC −0.27% vs WACC 12.35% | ⚠️ ND/EBITDA ~5.5× (เกินแนวทาง 4–5×) | ❌ FCF yield 2.06% < 6% · EV/EBITDA สูง ไม่ใช่ bottom-third | ❌ ROIC ติดลบ << 0.8×WACC |
+| NTRA | FY25 revenue $2,306M (+36%) · operating income −$310M (FY24 −$222M; FY23 −$446M) · net loss −$208M · OCF +$215M · capex $106M · equity $1,712M (10-Q Sep-26: $1,870M) | EBITDA ติดลบ (−$176M) · FCF yield 0.12% · ROIC −8.72% vs WACC 12.52% · net cash $858M | ✅ ไม่ติดลบ, net cash | ❌ FCF yield 0.12%; B-V1 ไม่ได้คำนวณเพราะตก C ก่อน | ❌ ROIC −8.7% << 0.8×WACC (10.0%) และ operating loss FY25 แย่ลงเทียบ FY24 — ไม่มี trend ดีขึ้นต่อเนื่อง |
+
+หมายเหตุ: SEC XBRL ไม่มี tag capex ที่ใช้ได้สำหรับ NEOG (FCF yield อิง stockanalysis เป็น cross-check ไม่ใช่ตัวตัดสินเดี่ยว — ผลตกเพราะ ROIC ซึ่งยืนยันด้วย operating income ติดลบจาก SEC). ROIC/WACC ที่อ้างมาจาก stockanalysis แหล่งเดียว ใช้ประกอบกับ SEC operating income เท่านั้น ไม่ได้คำนวณ ROIC เอง
+
+### Tier 1 Quick-Screen
+
+ไม่มี candidate ผ่าน A+B+C → ไม่มีตัวที่ต้องทำ naive FV (check 2). NTRA/NEOG ตกที่ Filter C — ไม่มี `QUICK-SCREEN SKIP` ในรอบนี้
+
+ตัวเลขประกอบ (ไม่ใช่ gate): ICLR FCF yield 6.86% (ผ่าน B threshold) แต่ ROIC 1.59% << WACC 9.64% และ −10.9% จาก high · HSIC FCF yield 5.90%, ROIC 7.16% vs WACC 7.28%, ND/EBITDA ~3.4× · ทั้งสองตก A จึงไม่ประเมินต่อ
+
+### Final routing — Round 101
+
+| Ticker | ตกที่ | Tag |
+|---|---|---|
+| EXAS | ถูก Abbott ซื้อ + delist 2026-03-23 | excluded — ไม่นับ reject |
+| PKI | ไม่มี ticker (→ RVTY) | excluded — ไม่นับ reject |
+| TECH, LH, DGX, WAT, BIO, HSIC, IQV, ICLR, CRL, QGEN | **A** (−0.2% ถึง −14.3%) | reject |
+| NEOG | **B + C** (ROIC ติดลบ, FCF yield 2.1%, ND/EBITDA ~5.5×) | reject |
+| NTRA | **B + C** (ROIC −8.7% << WACC 12.5%, operating loss FY25 แย่ลง) | reject |
+
+**Funnel: 12 screened · 0 fast-track · 0 learning-queue · 12 reject (10 A · 2 B+C) · 0 QUICK-SCREEN SKIP · 2 excluded (EXAS/PKI).** ไม่เพิ่มแถว Pending Analysis · ไม่เพิ่ม `buy_list.md` (regime TC และไม่มี candidate ผ่าน gate)
+
+### Notes for CIO / Charlie
+
+1. **Diagnostics/CRO/tools ไม่มี value ให้ล่าในตลาดนี้** — กลุ่มใหญ่ (LH, DGX, WAT, TECH, BIO) อยู่ใกล้ 52W high ภายใน ~7% ตลาดจ่ายราคาเต็ม ส่วน 2 ตัวที่ลงจริง (NEOG, NTRA) ตกเรื่อง ROIC ติดลบ ไม่ใช่เรื่องราคา
+2. **Re-screen trigger (ไม่ใช่ commitment):** NTRA — operating income พลิกบวกต่อเนื่อง ≥2 ไตรมาส · NEOG — ROIC > 0 ยั่งยืน และ ND/EBITDA ต่ำกว่า ~4× · กลุ่มอื่น — รอ pullback ≥20% จาก high
+3. **ข้อจำกัดของรอบนี้:** ตัวที่ตก Filter A ถูกตัดที่ราคา + 52W high อย่างเดียว ไม่ได้ดึง SEC ROIC/FCF ต่อเพราะไม่จำเป็นต่อ routing; SEC EDGAR ใช้กับ NEOG/NTRA ซึ่งเป็นสองตัวที่ผ่าน A · ROIC/WACC/EV-EBITDA/FCF yield มาจาก stockanalysis แหล่งเดียว (cross-check กับ SEC) · 52W high ของ 10 ตัวที่ตก A มาจาก finviz แหล่งเดียว (ส่วนต่างจากเกณฑ์ ≥5.7pp ทุกตัว ไม่เสี่ยงเปลี่ยนผล)
+4. **Housekeeping:** Atlas regime re-call ต้องทำก่อน Tier 1 ของแถว live (CRI/MMS ถึง 11-20, ALLY/NBIX/BYD/CMRE ถึง 11-21)
+
+**Target analysis date:** ไม่มี (0 fast-track / 0 learning-queue)
+
+*Max — 2026-11-19 | Scout Round 101 (Diagnostics/CRO/Med-Dental Distribution — 12 screened [LH/DGX/IQV/CRL/HSIC/NEOG/QGEN/NTRA/BIO/TECH/WAT/ICLR] + EXAS/PKI excluded; 0 fast-track / 0 learning-queue / 12 reject [10 A · 2 B+C] · 0 QUICK-SCREEN SKIP; prune 0 de-listed, SLA fixed 0, live 7)*
