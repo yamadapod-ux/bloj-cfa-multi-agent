@@ -1,6 +1,48 @@
 # Simulated Portfolio — บลจ. CFA
 
-## 📊 Portfolio Review — 2026-11-18 (Mode 3 — Full Re-Mark, Nov 17 2026 Close) — Pre-NVDA-Earnings Software Rout (CRM -9.45%, NOW -6.55%, ADBE -4.25%); 🔴 NOW STOP-LOSS BREACHED FOR THE FIRST TIME ($92.87 < $93.00 stop); NVDA Beats After-Hours, +$150B Buyback
+## 📊 Portfolio Review — 2026-11-19 (Mode 3 — Full Re-Mark, Nov 18 2026 Close) — Fed Minutes Trigger Broad Macro Selloff; S&P Breaks 200-Day MA; 🔴🔴 NOW Stop-Loss Breach Deepens 2nd Consecutive Session
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 16 days old — getting dated, worth a fresh re-call soon, not yet overdue by the ~2-3 week cadence). First new US trading day since Nov 17. S&P 500 fell **-0.23%** to **$7,323.63** (-16.90 pts; Yahoo Finance + metacap.si, exact match, 2-source), breaking below its 200-day moving average, as October FOMC meeting minutes (released Nov 18, 2pm ET) signaled more rate hikes ahead — broad market-wide macro pressure, not an idiosyncratic single-name catalyst. All 5 OPEN positions fell, re-priced and 2+ source cross-checked: ADBE -3.97% (5-source exact match), NOW -2.49% (4-source exact match — stop breach deepens), CRM -2.12% (2-source exact match), REGN -1.28% (2-source exact match), ADSK -0.87% (2-source exact match). NVDA fell a further -2.86% despite Tuesday's Q3 beat (continuation of the already-logged earnings reaction, not a new catalyst) — Big 10, no OPEN position. **No trades this session.**
+
+| Ticker | Price (Nov 18 close) | Sources | Return % | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|----------|-------|------------|----------|
+| ADBE | $226.20 | Yahoo Finance + stockanalysis.com + chartexchange + eoddata + stockcharted (5-source exact match) | -8.43% | +38.70% | 22.27% | 8.88% |
+| NOW | $90.59 | keenable.ai + ph.investing.com + seekingalpha + morningstar (4-source exact match) | +1.25% | +17.79% | 🔴🔴 **-2.59% (BREACH, 2nd session)** | 0.89% |
+| CRM | $190.40 | stockanalysis.com explicit close + keenable.ai (exact match) | +5.19% | +44.93% | 31.49% | 5.61% |
+| REGN | $945.53 | keenable.ai + makkler.com (exact match) | +57.06% | +4.90% | 96.16% | 3.90% |
+| ADSK | $253.00 | fiscal.ai + stockanalysis.com implied close (exact match) | +27.50% | -14.07% | 59.41% | 5.96% |
+
+**Totals:** Invested $2,570.91 · Cash $7,617.25 (74.75%) · Total Value **$10,188.16** (-0.60% vs prior review) · Total Return **+1.88%** · S&P 500 Return **-1.02%** (first negative reading in several sessions — broke below the 200-day MA) · **Alpha +2.90%** (narrowed slightly from +3.29% — both sides fell, portfolio fell marginally less thanks to the cash cushion).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy): $7,616.46 × 3.8%/365 × 1 day (11-18→11-19) = +$0.79 → $7,617.25.
+
+### 🔴🔴 Stop Loss Check — NOW BREACH DEEPENS (2nd consecutive session)
+**NOW closed at $90.59, its 2nd consecutive close below the $93.00 stop loss** (stopDist now -2.59%, from -0.14% on 11-18). Per Max Exit Rules table this remains `🟠 REVIEW THESIS` (stop-loss hit) — not `🔴 AUTO-SELL` (that requires re-analysis=AVOID or a confirmed thesis change on top of the stop hit). Thesis check unchanged from yesterday: Bear Flip #5 (GAAP gross margin <74%) fired 2026-11-01; Thesis Invalidation remains 0/4. The pre-committed full-pipeline escalation deadline (2026-11-14) has now passed **5 days** without action, and the first stop-breach flag (logged 11-18) has now gone a full session without an actual Max×Charlie consultation taking place. **This Review Mode session again takes NO trade action** (Max Consultation Rule requires Charlie consult before any SELL/TRIM) — escalating urgency: this is now 2 consecutive breach sessions stacked on an overdue pipeline escalation on the same ticker, and the process gap should not be allowed to carry into a 3rd session without a logged consultation. Residual position remains tiny (1sh, 0.89% weight) so capital risk is minimal. All other positions comfortable (22-96% stopDist).
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 69d, MOS +38.70% (positive) | N/A | -10.30% vs $252.23 (Sep 11) | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV 19d, MOS +17.79% (positive — separate Stop Loss breach above, not a Re-Analysis trigger) | N/A | -13.82% vs ~$105.12 (Oct 30/31) | Street avg $155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 69d, MOS +44.93% (positive) | N/A | -23.12% vs $247.72 (Sep 11) | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV 19d (<90d), MOS +4.90% (positive, thin) | N/A | +1.90% vs $927.89 (Oct 30/31) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 |
+| ADSK | No new earnings; next earnings Nov 24 2026 | FV 68d, MOS -14.07% negative but age <<90d | N/A | +19.11% vs $212.40 (Sep 11 close), under 30% line | Street avg ~$320 vs FV $221.79 = +44% | **1/5 — #5 fires, carried** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session.** No new earnings-driven trigger. NOW's situation is governed by the separate Stop Loss Check above, not this table.
+
+### ⚠️ Process Note — Atlas Regime Re-call Aging
+Regime TRANSITIONAL-CAUTIOUS (Atlas 2026-11-03 re-call) is now **16 days old** — getting dated per the ~2-3 week typical cadence, not yet overdue. Does not block this update.
+
+### 📰 Atlas News Scan (since NEWS_LAST_UPDATED 2026-11-18 07:00, all 5 OPEN tickers + Big 10 watchlist)
+**0 NEW HIGH-IMPACT items.** October FOMC meeting minutes (released Nov 18) signaling more rate hikes ahead drove a broad market-wide pullback (S&P -0.23%, broke below the 200-day MA) — assessed macro-level, not an idiosyncratic single-ticker catalyst. NVDA fell a further -2.86% despite Tuesday's Q3 beat — assessed ROUTINE continuation of the already-logged 11-17 earnings reaction, not a new discrete catalyst (Big 10, no OPEN position). META, AMZN, MSFT, GOOGL all roughly flat (<1% moves) on routine analyst commentary (Zacks valuation piece, UBS Buy initiation on META) — no earnings/M&A/management-change/8-K/>15% PT change found. No coverage found for JPM/LLY/WMT/TSLA/BRK.B rising to the HIGH-IMPACT bar this session. `dashboard/news.js` unchanged — no commit for it.
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last Portfolio Review)
+$7,616.46 × 3.8%/365 × 1 = **+$0.79** → **$7,617.25**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-03 record.
+
+### Max's Take
+วันนี้ตลาดสหรัฐฯ ร่วงกว้างจากมติประชุม FOMC เดือนต.ค. (เผยแพร่ 18 พ.ย.) ที่ส่งสัญญาณว่า Fed อาจขึ้นดอกเบี้ยต่อ — S&P 500 -0.23% สู่ $7,323.63 หลุดเส้นค่าเฉลี่ย 200 วันเป็นครั้งแรก พอร์ตเราลงทุกตัว: ADBE -3.97%, NOW -2.49%, CRM -2.12%, REGN -1.28%, ADSK -0.87% — ไม่มีตัวไหนถึงเกณฑ์ HIGH-IMPACT (ไม่มี catalyst เฉพาะตัว เป็นแรงกดดันระดับ macro ทั้งตลาด) **เรื่องสำคัญที่สุดของวันนี้คือ NOW หลุด stop loss ต่อเนื่องเป็นวันที่ 2** ปิดที่ $90.59 ต่ำกว่า stop $93.00 (stopDist -2.59% จาก -0.14% เมื่อวาน) — ยังเป็น REVIEW THESIS ไม่ใช่ AUTO-SELL ตาม Exit Rules (Bear Flip #5 fired แล้ว แต่ Thesis Invalidation ยัง 0/4) แต่ full-pipeline escalation deadline (14 พ.ย.) ผ่านมาแล้ว 5 วันโดยยังไม่มีการปรึกษา Charlie เกิดขึ้นจริง — ต้อง escalate ความเร่งด่วนรอบหน้า ไม่ควรค้างต่อเป็นรอบที่ 3 โดยไม่ปรึกษา ตำแหน่งเล็กมาก (1sh, weight 0.89%) ความเสี่ยงทุนจำกัด Alpha แคบลงเล็กน้อยเป็น **+2.90%** (จาก +3.29%) เพราะทั้งสองฝั่งลงพร้อมกัน NVDA ร่วงต่ออีก -2.86% ทั้งที่งบดีเกินคาด — ประเมินเป็น continuation ของ reaction เดิมที่บันทึกไปแล้ว ไม่ใช่ catalyst ใหม่ ไม่มีข่าว HIGH-IMPACT อื่นทั้ง OPEN positions และ Big 10 รอบนี้ Atlas regime re-call อายุครบ 16 วันแล้ว ยังไม่ถึงเกณฑ์ overdue
+
+---
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now 15 days old — getting dated, worth a fresh re-call soon, not yet overdue by the ~2-3 week cadence). First new US trading day since Nov 16. S&P 500 fell **-1.03%** to **$7,340.53** (-76.06 pts; CNBC + Investopedia/Yahoo Finance + MarketWatch, exact match, 3-source), its 4th straight losing session and lowest close since late July, as the Dow dropped ~850 pts (-1.64%) and investors de-risked ahead of Nvidia's after-close Q3 earnings and Anthropic's IPO. Software names were hit hardest pre-earnings: Salesforce -9.41/-9.45%, ServiceNow -6.55/-6.83%, Intuit -7.17% (not held). All 5 OPEN positions re-priced, 2-source cross-checked where possible. **NVDA beat after close** (revenue $115.8B, +103% YoY; Q4 guide above consensus; $150B buyback announced; board confirmed it will NOT reinstate Jensen Huang) — stock rose ~+4.2% after-hours. Big 10 watchlist only, no OPEN position. **No trades this session** — Max Consultation Rule requires Charlie consult before any SELL/TRIM; this Review Mode session proposes no trade.
 
