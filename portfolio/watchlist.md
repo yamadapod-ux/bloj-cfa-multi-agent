@@ -10848,3 +10848,106 @@ Sources: finviz quote pages รายตัว + stockanalysis.com/stocks/{ticke
 **Target analysis date:** ไม่มี (0 fast-track / 0 learning-queue)
 
 *Max — 2026-11-19 | Scout Round 101 (Diagnostics/CRO/Med-Dental Distribution — 12 screened [LH/DGX/IQV/CRL/HSIC/NEOG/QGEN/NTRA/BIO/TECH/WAT/ICLR] + EXAS/PKI excluded; 0 fast-track / 0 learning-queue / 12 reject [10 A · 2 B+C] · 0 QUICK-SCREEN SKIP; prune 0 de-listed, SLA fixed 0, live 7)*
+
+
+---
+
+## Scout Report § Round 102 (Tanker Shipping — Crude / Product Tankers) — 2026-11-20
+
+### Step 0 — Prune Pass (ก่อนสแกน)
+
+ตรวจ live Pending 7 แถว (ALLY/MMS/CRI/NBIX/BYD/WGO/CMRE) ตาม De-list Rules: **Rule #1** ไม่มีแถวไหน scout date เกิน 60 วัน (เก่าสุด ALLY 10-16 = 35 วัน) · **Rule #3** grep `dashboard/portfolio.js` + `portfolio/decisions.md` = 0 hit ทั้ง 7 ตัว (OPEN = ADBE/NOW/CRM/REGN/ADSK) · **Rule #2** ไม่มีแถวถูกเสนอ archive จึงไม่ re-price — ตัวเลขใน live table ยังเป็นของรอบ scout เดิม
+**ผล: de-listed 0 · SLA fixed 0 (target ที่ R100 re-fix ไว้ = ALLY/NBIX/BYD/CMRE 11-21, CRI/MMS 11-20, WGO 12-19 ยังไม่เลยกำหนด; cell ในตารางยังแสดง target เดิมของ R95 เพราะ R100/R101 บันทึก re-fix ไว้ใน report ไม่ได้แก้ cell) · live 7**
+
+### Trigger / Regime
+
+Task-directed sector mandate: Tanker Shipping (Crude / Product) — sector ที่ R84 exclude ไว้ (Marine ex-Tankers). R80 (10-19) เคย pre-screen INSW/STNG/FRO/DHT/TNK แค่ที่ Filter A (−9% ถึง −15%, ตก A) ไม่เคยมี B–E verdict ต่อตัว · ไม่มี ticker ใดอยู่ใน `dashboard/portfolio.js`, `decisions.md` หรือ ban list (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL)
+
+Atlas regime ล่าสุด = `agent_notes/atlas/2026-11-06_regime.md` → **TRANSITIONAL-CAUTIOUS** — **อายุ 14 วัน = ถึงเกณฑ์ stale วันนี้ → flag ให้ Atlas re-call** (ไม่ได้ re-call ในรอบนี้ตามคำสั่ง) · Force Deploy suspended, ห้ามเปิด position ใหม่ (scout เพื่อ buy list เท่านั้น)
+
+Rotation: R98 Homebuilders → R99 Payments → R100 Aerospace Suppliers/MRO → R101 Diagnostics/CRO → **R102 Tanker Shipping**
+
+**Sector context (WebSearch 2026-11-20):** VLCC spot rate เพิ่งทำ record high เดือน ต.ค. 2026 แล้วร่วง >60% ภายในเดือนเดียว (Gulf→China 308 WS ณ 11-13 — [Reuters ผ่าน Hydrocarbon Processing](https://hydrocarbonprocessing.com/news/2026/11/supertanker-rates-plunge-more-than-60-from-record-highs/), [FreightWaves](https://www.freightwaves.com/news/supertanker-rates-nose-dive-the-dam-has-burst)) เพราะ geopolitical risk premium ลด · กำไร Q1–Q3 2026 จึงเป็น **peak earnings** (INSW 9M26 operating income $941M vs FY25 ทั้งปี $345M) → Filter ที่ใช้ TTM จะดูถูกเกินจริง ใช้ 5Y through-cycle (FY21–FY25) ตัดสิน Filter D ตามกฎ
+
+### Universe — verify listing (ก่อนสแกน)
+
+| Ticker | สถานะ | Source |
+|---|---|---|
+| FRO · STNG · INSW · TNK · DHT · NAT · TORO | เทรด NYSE/NASDAQ ปัจจุบัน (Yahoo chart API ราคา 2026-11-20) · มี CIK ใน SEC company_tickers | [SEC company_tickers.json](https://www.sec.gov/files/company_tickers.json) |
+| HAFN | NYSE (Hafnia Ltd, CIK 1815779) · SEC XBRL มีถึง FY2024 20-F เท่านั้น (ไม่มี FY2025 ใน companyfacts) | SEC companyfacts |
+| **EURN** | **ไม่ใช่ "ถูก Frontline ซื้อ"** — ดีลล้มเลิก ม.ค. 2023; Euronav ถูก CMB เข้าควบคุมแล้ว rename เป็น **CMB.TECH (CMBT, NYSE, CIK 1604481)** · เป็น conglomerate (tankers + dry bulk หลังรวม Golden Ocean + ammonia/hydrogen newbuild) ไม่ใช่ pure tanker → **excluded จาก round นี้** (ถ้า CIO ต้องการ ทำเป็น mandate แยกได้) | [Marine Log](https://www.marinelog.com/news/frontline-pulls-out-of-euronav-acquisition/) · Yahoo CMBT $16.29 (−23.1% จาก high $21.19) |
+| **OET** | **ticker ใน NYSE คือ ECO** (Okeanis Eco Tankers, NYSE ตั้งแต่ 2023-12-11, Oslo = secondary, CIK 1964954) → screen ในชื่อ ECO | [Inderes/Okeanis release](https://www.inderes.se/releases/okeanis-eco-tankers-corp-commencement-of-trading-on-nyse-completion-of-share-re-registration-process-end-of-trading-suspension-on-oslo-bors-and-exemption-from-norwegian-takeover-rules) |
+
+**Screened 9 ตัว:** FRO · STNG · INSW · TNK · DHT · NAT · TORO · HAFN · ECO · **Excluded 1:** EURN→CMBT (conglomerate)
+
+### Step 3 — Filter A (Yahoo chart API 1Y daily, session 2026-11-20)
+
+| Ticker | ราคา | 52W high (daily high) | % จาก high | (% จาก max close) | 52W high ยืนยันแหล่งที่ 2 | Filter A |
+|---|---|---|---|---|---|---|
+| TORO | $3.51 | $8.50 | **−58.7%** | −54.3% | Google Finance / StockAnalysis $8.50 (peak 2026-04-27) | ✅ |
+| NAT | $6.18 | $8.88 | **−30.4%** | −29.7% | ❌ ไม่พบแหล่งที่ 2 (single-source — margin 10pp จึงไม่เสี่ยงเปลี่ยนผล) | ✅ |
+| FRO | $44.75 | $59.75 | **−25.1%** | −24.4% | Coinglass / StockAnalysis $59.75 | ✅ |
+| INSW | $97.42 | $126.27 | **−22.9%** | −22.1% | Chartrow / Lightyear $126.27 | ✅ |
+| TNK | $86.31 | $110.65 | **−22.0%** | −20.4% | Wedbush / Fox Business / StockAnalysis $110.65 | ✅ |
+| DHT | $21.51 | $26.91 (2026-10-14) | **−20.1%** | **−19.1%** | StockAnalysis / Marketchameleon $26.91 | ⚠️ borderline: ผ่านที่ daily-high, ตกที่ close — นับผ่านด้วยวิธีเดียวกับตัวอื่น |
+| ECO | $83.02 | $102.56 | −19.1% | −18.3% | — | ❌ (เฉียด) |
+| HAFN | $8.98 | $11.115 | −19.2% | −18.8% | — | ❌ (เฉียด) |
+| STNG | $78.92 | $95.60 | −17.4% | −17.0% | — | ❌ |
+
+**ข้อจำกัดราคาปัจจุบัน:** ราคา 11-20 มาจาก Yahoo chart API แหล่งเดียว (stockanalysis/finviz บล็อก fetch อัตโนมัติ; WebSearch ไม่คืน quote วันนี้) — ตรวจความสมเหตุสมผลกับ snapshot ที่มีวันที่: TNK $89.43 (11-13), DHT $20.68 (11-06) สอดคล้องกับ $86.31/$21.51 · **ยังไม่ผ่านมาตรฐาน ≥2 sources ของราคาปัจจุบันเต็มรูป** — ไม่กระทบ routing เพราะไม่มีตัวใดผ่านถึง lane (ตกที่ B/C/D) แต่ถ้าจะ re-list ต้อง re-verify
+**Beaten-down reason (ตัวที่ผ่าน A):** sentiment/cyclical — spot rate ร่วง >60% จาก record หลัง geopolitical premium หาย + headline peace-talk (ไม่ใช่ structural demand loss) · TORO = small-cap ที่รายได้ไม่ใช่ tanker operator แท้ (ดูด้านล่าง)
+
+### Step 4 — B-Zero / B / C (SEC EDGAR XBRL companyfacts เป็นหลัก)
+
+ข้อมูล FY2021–FY2025 จาก SEC 10-K/20-F (accession ในวงเล็บ) · TTM 2026 ใช้ได้เฉพาะ INSW (10-Q) ส่วน FRO/STNG/DHT/TNK/NAT/HAFN รายงานไตรมาสเป็น 6-K ซึ่ง SEC `Archives` บล็อก fetch อัตโนมัติ (HTTP 403) และไม่มี XBRL → Q3'26 ใช้ตัวเลขจาก WebSearch (press release) เป็นบริบทเท่านั้น ไม่ใช้ตัดสิน gate · WACC = **sector band 9–10% (CLAUDE.md mid-cap band) ไม่ได้คำนวณ CAPM เอง**
+
+| Ticker | FY25 (SEC) | 5Y avg FY21–25 (SEC) | B-Zero | B | C |
+|---|---|---|---|---|---|
+| **INSW** (10-K 0001104659-26-020113; 10-Q Q3 0001104659-26-123078) | rev $843.3M · EBIT $345.4M · OCF $380.1M · D&A $163.6M · equity $2,020M | OCF $365.4M · D&A $127.8M · EBIT $349.3M (FY21 −$112M ถึง FY23 +$615M) · TTM EBIT ≈ **$1,079M** (FY25 345.4 − 9M25 207.2 + 9M26 941.2) | ✅ equity +$2,366M (Q3'26), ND/EBITDA ≈1.0× | TTM ✅ (OCF yield ≈16%, peak) · **normalized FCF yield 4.8% ❌** | ✅ 5Y ROIC 12.0% (≥0.8×WACC) · TTM ≈37% (peak) |
+| **TNK** (20-F 0001419945-26-000007) | rev $951.8M · EBIT $309.1M · OCF $305.9M · cash $830.6M · debt ≈0 | OCF $300.3M · D&A $95.2M · EBIT $261.1M | ✅ net cash, equity $2,044M | **normalized FCF yield 6.9% ✅ (ไม่รวมเงินสดส่วนเกิน)** · 9M26 adj NI $497.7M ([Baird Maritime](https://www.bairdmaritime.com/shipping/tankers/teekay-tankers-net-income-falls)) | ✅ 5Y ROIC 21.5% |
+| **FRO** (20-F 0001628280-26-021774) | rev $1,971M · EBIT $598.8M · OCF $682.5M · D&A $328.5M · debt $3,068M · cash $251M · equity $2,511M | OCF $549.1M · D&A $245.8M · EBIT $516.3M | ✅ equity +, ND/EBITDA ≈3.0× | normalized FCF yield **3.0% ❌** · H1'26 adj EBITDA $458M+$681M ([Quartr Q2'26](https://quartr.com/events/frontline-ltd-fro-q2-2026_3eXc34A8)) = peak | ⚠️ 5Y ROIC 9.7% ≈ WACC (1.0×) → ผ่าน 0.8× แบบคร่อม |
+| **DHT** (20-F 0001140361-26-010407) | rev $498.4M · EBIT $225.0M · OCF $276.6M · D&A $106.4M · debt $428.7M · cash $79M · equity $1,133M | OCF $203.0M · D&A $115.8M · EBIT $140.6M | ✅ ND/EBITDA ≈1.1× | normalized FCF yield **2.5% ❌** · Q3'26 PAT $270.9M, dividend $1.45 ([Baird Maritime](https://www.bairdmaritime.com/shipping/tankers/dht-holdings-third-quarter-profit)) = peak | ⚠️ 5Y ROIC 9.5% ≈ WACC → คร่อม |
+| **NAT** (20-F 0001140361-26-017809) | rev $291.7M · EBIT $46.3M · OCF $19.8M · NI $12.3M · LT debt $424M · cash $45.9M · equity $445.5M | OCF $53.4M · D&A $56.8M → **normalized FCF ≈ −$3M** · EBIT $29.8M | ✅ equity +, ND/EBITDA ≈3.6× | ❌ normalized FCF ≈ 0 | **❌ 5Y ROIC 3.6% (FY25 5.6%) << 0.8×WACC** |
+| **TORO** (20-F 0001140361-26-014706) | rev $21.1M · **operating loss −$4.6M** (FY24 −$5.6M) · equity $163.6M · cash $87.4M | n/a (operating income ≈0) | ✅ | ❌ | **❌ operating loss ต่อเนื่อง 2 ปี** |
+
+### Tier 1 Quick-Screen (ตัวที่ผ่าน A และ B/C ไม่ตกชัดเจน: INSW, TNK, FRO, DHT)
+
+Naive FV = (5Y avg OCF − 5Y avg D&A เป็น proxy replacement capex) ÷ cost of equity (OCF เป็น levered จึงใช้ CoE 9–12% ไม่ใช่ WACC) · market cap = ราคา 11-20 × shares (dei/10-Q: FRO 222.6M · INSW 51.16M · TNK 34.69M · DHT 160.8M)
+
+| Ticker | Market cap | Naive FV @CoE 12% / 9% | ราคา ÷ naive FV | Check 1 (ROIC) | Check 2 | Tier 1 |
+|---|---|---|---|---|---|---|
+| FRO | $9.96B | $2.53B / $3.37B | **3.94× / 2.96×** | ผ่าน | 2a ❌ >1.5× | **QUICK-SCREEN SKIP** |
+| INSW | $4.98B | $1.98B / $2.64B | **2.52× / 1.89×** | ผ่าน | 2a ❌ >1.5× | **QUICK-SCREEN SKIP** |
+| DHT | $3.46B | $0.73B / $0.97B | **4.76× / 3.57×** | ผ่าน | 2a ❌ >1.5× | **QUICK-SCREEN SKIP** |
+| TNK | $2.99B | $1.71B / $2.28B (+ cash FY25 $831M → $2.54B / $3.11B) | 1.75× / 1.31× ex-cash · **1.18× / 0.96× รวมเงินสด** | ผ่าน | 2a ❌ ที่ CoE 12% ex-cash; กรณีรวมเงินสด 0.96× อยู่ใน ±10% → 2b ❌ | **QUICK-SCREEN SKIP** (ทุกกรณี > 0.90× → ตก D) |
+
+**Cross-check:** P/B (ราคา ÷ equity) FRO 4.0× · DHT 3.1× · NAT 2.9× · INSW 2.1× · TNK 1.5× — book value เป็นราคาทุนตัดจำหน่าย ไม่ใช่ NAV ตลาดของเรือ (ไม่มี NAV จาก source ใน session นี้ จึงไม่ใช้เป็น gate) · Street PT ไม่ได้ดึงเพราะตกก่อนถึงขั้น D cross-check
+**ข้อจำกัดของ method:** หน้าต่าง FY21–25 มีทั้ง trough (FY21 ลบทุกตัว) และ upcycle (FY23–24) จึงถือเป็น through-cycle ที่สมเหตุสมผล แต่ proxy "D&A = replacement capex" ไม่รวม drydock/fleet renewal จริง — ถ้า replacement capex ต่ำกว่า D&A ผลจะดีขึ้น แต่ไม่พอปิดช่องว่าง 2–5× ของ FRO/INSW/DHT
+
+### Final routing — Round 102
+
+| Ticker | ตกที่ | Tag |
+|---|---|---|
+| EURN→CMBT | conglomerate (tanker + dry bulk + ammonia), ไม่ใช่ pure tanker | excluded — ไม่นับ reject |
+| STNG | **A** (−17.4%) | reject |
+| HAFN | **A** (−19.2%, เฉียด) | reject |
+| ECO (OET) | **A** (−19.1%, เฉียด) | reject |
+| TORO | **C** (operating loss FY24/FY25) + B | reject |
+| NAT | **B + C** (5Y ROIC 3.6%, normalized FCF ≈ 0) | reject |
+| FRO | **B + D** (normalized FCF yield 3.0%; ราคา 3.0–3.9× naive FV) | `QUICK-SCREEN SKIP` |
+| INSW | **B + D** (4.8%; 1.9–2.5×) | `QUICK-SCREEN SKIP` |
+| DHT | **B + D** (2.5%; 3.6–4.8×) | `QUICK-SCREEN SKIP` |
+| TNK | **D** (0.96–1.75× — ไม่มี margin ≥20% แม้นับเงินสดทั้งก้อน) | `QUICK-SCREEN SKIP` |
+
+**Funnel: 9 screened · 0 fast-track · 0 learning-queue · 9 reject (3 A · 2 C/B+C · 4 QUICK-SCREEN SKIP) · 1 excluded (EURN→CMBT).** ไม่เพิ่มแถว Pending Analysis · ไม่เพิ่ม `buy_list.md` (regime TC + ไม่มี candidate ผ่าน gate)
+
+### Notes for CIO / Charlie
+
+1. **Tanker ไม่มี value ให้ล่าตอนนี้ — ราคายังจ่าย peak earnings:** แม้ลง 20–25% จาก high หุ้นยังเทรดที่ ~1–4× มูลค่า through-cycle (TNK ใกล้ที่สุดเพราะถือเงินสดสุทธิก้อนใหญ่) ตลาดยัง price-in ว่า rate สูงกว่าปกติจะอยู่ต่อ ทั้งที่ VLCC spot ร่วงไปแล้ว >60% — ยังไม่ใช่ "ตลาดเกลียด/ทิ้ง" ตามนิยาม VALUE-FIRST
+2. **Re-screen trigger (ไม่ใช่ commitment):** (a) ราคาลงอีกมากจนเข้าใกล้ naive FV (FRO/INSW/DHT ต้องลง ~50–75%) · (b) TNK ราคา ≤ ~$60 (≈0.7× naive FV รวมเงินสด) · (c) Q4/Q1 print ยืนยันว่า normalized FCF สูงกว่า 5Y avg ถาวร (supply แน่น/orderbook ต่ำ) · HAFN/ECO/STNG re-screen ได้ทันทีที่ −20% แต่ naive FV น่าจะ SKIP เช่นกัน
+3. **ข้อจำกัดของรอบนี้:** (i) ราคาปัจจุบัน 11-20 แหล่งเดียว (Yahoo); 52W high ยืนยันแหล่งที่ 2 ให้ 5 จาก 6 ตัวที่ผ่าน A (NAT ไม่ได้) (ii) FRO/STNG/DHT/TNK/NAT/HAFN เป็น foreign private issuer — XBRL ถึง FY25 เท่านั้น, Q1–Q3 2026 ไม่ได้ดึงจาก SEC (6-K ถูกบล็อก) (iii) HAFN ไม่มี FY25 20-F ใน companyfacts; STNG/HAFN/ECO ตกที่ A จึงไม่ได้ดึง B–D (iv) WACC/CoE เป็น sector band ไม่ใช่ CAPM — ผลไม่ไวต่อ band เพราะช่องว่าง 2–5× (v) Atlas regime อายุ 14 วัน — ต้อง re-call ก่อน Tier 1 ของแถว live
+4. **Housekeeping:** Atlas regime re-call ก่อน target ของแถว live (CRI/MMS 11-20 วันนี้, ALLY/NBIX/BYD/CMRE 11-21)
+
+**Target analysis date:** ไม่มี (0 fast-track / 0 learning-queue)
+
+*Max — 2026-11-20 | Scout Round 102 (Tanker Shipping — 9 screened [FRO/STNG/INSW/TNK/DHT/NAT/TORO/HAFN/ECO] + EURN→CMBT excluded; 0 fast-track / 0 learning-queue / 9 reject [3 A · 2 C/B+C · 4 QUICK-SCREEN SKIP]; prune 0 de-listed, SLA fixed 0, live 7)*
