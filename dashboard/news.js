@@ -3,11 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-18 07:00";
+const NEWS_LAST_UPDATED = "2026-11-20 07:00";
 
 const NEWS = [
 
-  // ── 2026-11-18 (Atlas scan 2026-11-17→11-18, Portfolio Review Mode 3 cron cycle) ──
+  // ── 2026-11-20 (Atlas scan 2026-11-18→11-20, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-19", category: "EARNINGS",
+    headline: "🟢 WMT beats on Q3 FY2027 earnings before market open — EPS $0.65 vs $0.64 est, revenue $188.84B vs $187.17B est, raises FY guidance",
+    summary: "Walmart reported Q3 FY2027 results before market open on 2026-11-19: adjusted EPS of $0.65 beat the $0.64 consensus estimate, and revenue of $188.84B beat the $187.17B consensus (+5.2% YoY). Walmart-only US comp sales ex-gas rose +2.9% and Sam's Club US comp sales ex-gas rose +4.9% (beating the +4.63% estimate). High-margin segments outgrew the core business: global eCommerce +23% YoY, global advertising +25% YoY, membership fee revenue +17% YoY. The company raised full-year adjusted EPS guidance to $2.84-$2.89 (from $2.80-$2.87). This landed the same session as a broad market selloff (S&P -2.02%) driven by Anthropic's IPO debut failing to lift AI-trade sentiment — Walmart's own stock reaction was muted/mixed relative to the earnings beat given the macro backdrop. นัยพอร์ต: WMT เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — งบที่ดีเกินคาดทั้ง EPS/Revenue พร้อมปรับเพิ่ม guidance เป็นสัญญาณบวกต่อผู้บริโภคสหรัฐฯ และธุรกิจ high-margin (advertising/membership) ที่กำลังโตเร็วกว่าธุรกิจค้าปลีกหลัก ไม่กระทบ OPEN position ใดโดยตรง.",
+    impact: "POSITIVE", tickers: ["WMT"],
+    url: "https://stock.walmart.com/",
+  },
   {
     date: "2026-11-17", category: "EARNINGS",
     headline: "🟢🟢 NVDA beats on Q3 FY2027 earnings after close — revenue $115.8B (+103% YoY), Q4 guide above consensus, $150B buyback announced; board confirms no Jensen Huang reinstatement",
