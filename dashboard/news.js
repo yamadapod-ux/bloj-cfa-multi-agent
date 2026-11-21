@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-20 07:00";
+const NEWS_LAST_UPDATED = "2026-11-21 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-21 (Atlas scan 2026-11-20→11-21, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-20", category: "REGULATORY",
+    headline: "🔴 Reuters exclusive: SEC enforcement staff probing potential accounting issues at NVDA, adding to Jensen Huang scandal fallout — stock falls -14.01% as S&P 500 enters technical correction",
+    summary: "Reuters reported exclusively (two people briefed on the matter, speaking on condition of anonymity) that US SEC enforcement staff are scrutinizing potential accounting issues at NVIDIA — the first report to specify the accounting focus of the SEC probe (WSJ had reported an SEC investigation on Nov 17 without confirming its focus). This adds to Nvidia's mounting legal woes: ousted CEO Jensen Huang's extramarital relationships (including with Alice Huang, suspected by US authorities of being a Chinese intelligence asset, which China denies), the DOJ's ongoing investigation into whether Megaspeed (the Singapore-based company Alice Huang led, historically a large Nvidia customer) diverted restricted AI chips to China in violation of export controls, and a separate DOJ antitrust review of Nvidia's $12.9B Hugging Face acquisition. Reuters could not determine when the SEC opened its accounting inquiry or precisely what issues it covers; investigations do not imply wrongdoing and many close without enforcement action. NVDA fell -14.01% to $125.53 on the news, its 7th consecutive losing session, and was the single largest drag on a historically bad market day: the S&P 500 fell -3.70% to 6,910.39 (its 7th straight losing session, longest since Feb 2020), closing in technical correction (>10% below the Oct 6 record high). The Nasdaq fell -5.28% to 22,617.73, turning negative for the year; the Dow fell -1.93%; VIX spiked to ~38.86 (+36.74%). The damage was concentrated in mega-cap AI/tech — the equal-weight S&P (RSP) fell only -1.98% vs -3.64% for the cap-weighted SPY. นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — แต่เป็นสัญญาณว่าความเสี่ยงเชิง regulatory/governance ของทั้งกลุ่ม AI-complex ยังลุกลามต่อเนื่องและกำลังลากตลาดกว้างเข้าสู่ correction ไม่มีตำแหน่งในพอร์ตที่ขยับเกิน 4% จากข่าวนี้โดยตรง (ไม่มี AI-hardware exposure).",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://www.reuters.com/business/exclusive-us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say",
+  },
 
   // ── 2026-11-20 (Atlas scan 2026-11-18→11-20, Portfolio Review Mode 3 cron cycle) ──
   {
