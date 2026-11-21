@@ -1,5 +1,52 @@
 # Stock Watchlist — บลจ. CFA
 *Candidates scouted by Max — รอ Charlie วิเคราะห์*
+
+## 🔔 Trigger Re-Verify — ทุกลิสต์รอ-trigger (CIO-directed 2026-11-21, close 2026-11-20)
+
+*ตลาดร่วงหนัก (VIX 35.89 วันที่ 11-20) → re-price 34 ticker. **Re-price เท่านั้น ไม่ได้ run pipeline/ไม่ trade** · Regime = TC/RISK-OFF → ห้าม open ใหม่ ต่อให้แตะ trigger. Source: Yahoo chart API (ทุกตัว, close 11-20) + Nasdaq quote API.*
+- ⚠️ **Data caveat:** Nasdaq quote API คืน close 11-19 (ไม่ใช่ 11-20) ในการเรียกรอบแรก/รอบสองสำหรับ ~20 ตัว (ตรงกับ Yahoo 11-19 พอดี = stale feed) · **ตรงกัน 0.00% ที่ 11-20 ยืนยัน 2 source:** META, GOOGL, ORLY, FAST, MNST + (±0.1%) SHW, BYD, MMS, CRI, WGO, CMRE, NVT · ที่เหลือเป็น **Yahoo แหล่งเดียวสำหรับ 11-20** (Yahoo ประวัติ 11-16→11-19 ตรงกับ Gotrade/Nasdaq) — ต้อง re-verify อีกแหล่งก่อน execute จริง. Nasdaq ไม่ตอบ: MTZ, JBL. stooq ติด anti-bot.
+- **ORLY:** split 15:1 เกิดวันที่ 2025-06-10 (Yahoo split event) — ไม่มี split ใหม่ · trigger $59.63 / $78.39 (WACC−1pp) คำนวณจากราคา post-split ($88.12) อยู่แล้ว → **ไม่ต้องแก้**.
+- **Filter A (≥20% จาก 52W high):** ALLY −23.2% ✅ · CRI −20.0% (borderline) · MMS −37.2% ✅ · WGO −39.5% ✅ · CMRE −32.3% ✅ · NBIX −19.1% ❌ · BYD −18.3% ❌.
+
+| Ticker | กลุ่ม | ราคา 11-20 | Trigger / watch | % ถึง trigger (+ = แตะแล้ว) | ลงจาก 52W high | สถานะ |
+|---|---|---|---|---|---|---|
+| NVT | B | $101.84 | ≤$122 | **+19.8%** | −44.8% | 🔴 แตะแล้ว |
+| MTZ | B | $144.71 | ≤$167 | **+15.4%** | −67.2% | 🔴 แตะแล้ว (Yahoo แหล่งเดียว) |
+| CMRE | D | $12.22 | zone $12.00–13.50 | **+10.5%** | −32.3% | 🔴 อยู่ใน zone |
+| ALLY | D | $36.32 | zone $34–38 | **+4.6%** | −23.2% | 🔴 อยู่ใน zone, ผ่าน A |
+| HUBB | B | $403.66 | ≤$409 | **+1.3%** | −28.6% | 🔴 แตะแล้ว |
+| MYRG | B | $247.71 | ≤$250 | **+0.9%** | −50.8% | 🔴 แตะแล้ว |
+| MMS | D | $62.79 | zone $55–61 | −2.9% | −37.2% | 🟠 ≤5% เกิน zone |
+| WGO | D | $30.36 | zone $25–29 | −4.5% | −39.5% | 🟠 ≤5% เกิน zone |
+| BYD | D | $74.68 | zone $63–70 | −6.3% | −18.3% | 🟠 ใกล้ (ตก A) |
+| CRI | D | $35.53 | zone $28–32.5 | −8.5% | −20.0% | 🟠 ใกล้ |
+| NBIX | D | $150.57 | zone $122–135 | −10.3% | −19.1% | 🟡 (ตก A) |
+| META | A | $560.84 | $501 | −10.7% | −28.1% | 🟡 |
+| GOOGL | A | $265.29 | $230 | −13.3% | −35.1% | 🟡 |
+| CMI | B | $403.61 | ≤$334 | −17.2% | −45.3% | |
+| PWR | B | $559.03 | ≤$425 | −24.0% | −29.1% | |
+| PAYX | C | $112.63 | $78.84 (loose $100.39) | −30.0% (loose −10.9%) | −12.0% | |
+| RMD | C | $235.63 | $161.14 (loose $197.74) | −31.6% (−16.1%) | −15.1% | |
+| AMZN | A | $246.82 | $161–171 (stale) | −32.7% | −14.1% | ⚠️ trigger เก่า |
+| ORLY | C | $92.65 | $59.63 (loose $78.39) | −35.6% (−15.4%) | −9.6% | |
+| MSFT | A | $484.52 | ~$300 (unreliable) | −38.1% | −13.3% | ⚠️ trigger ไม่น่าเชื่อถือ |
+| MNST | C | $43.69 | $24.23 ($30.75) | −44.5% (−29.6%) | −12.9% | |
+| TT | C | $386.29 | $213.20 ($260.26) | −44.8% (−32.6%) | −23.6% | |
+| ITW | C | $273.57 | $138.20 ($175.30) | −49.5% (−35.9%) | −9.8% | |
+| JBL | E | $225.77 | $111 | −50.8% | −47.4% | |
+| ROL | C | $37.82 | $18.59 ($23.52) | −50.8% (−37.8%) | −42.8% | |
+| FAST | C | $50.61 | $23.87 ($29.98) | −52.8% (−40.8%) | −10.1% | |
+| GWW | C | $1,357.35 | $626.17 ($768.53) | −53.9% (−43.4%) | −10.8% | |
+| KNSL | C | $398.58 | $182.70 ($213.63) | −54.2% (−46.4%) | −5.5% | |
+| SHW | C | $339.74 | $141.60 ($181.59) | −58.3% (−46.6%) | −10.1% | |
+| RACE | C | $392.47 | $155.23 ($192.21) | −60.4% (−51.0%) | −10.2% | |
+| MSI | C | $520.21 | $202.82 ($265.31) | −61.0% (−49.0%) | −5.1% | |
+| CTAS | C | $220.01 | $79.52 ($98.78) | −63.9% (−55.1%) | −5.8% | |
+| WST | C | $390.30 | $116.12 ($138.05) | −70.2% (−64.6%) | −10.9% | |
+| IDXX | C | $676.21 | $185.74 ($215.63) | −72.5% (−68.1%) | −12.2% | |
+
+*Max — 2026-11-21 | Trigger re-verify (CIO-directed) | 34 re-priced · 6 แตะ/อยู่ใน zone · 0 trade*
+
 *ล่าสุด (2026-11-18): **Scout Round 100 — Aerospace Suppliers / MRO (non-prime)** — sector ใหม่ทั้งหมด (R40/R50 เคย scout defense primes BA/GE/HON/CAT/DE/ETN/EMR/PH/FDX/UPS/LMT/RTX/NOC/GD/TXT; TDG วิเคราะห์เต็มแล้ว HOLD/WAIT ใน decisions.md 2026-08-18 = hard exclusion). 10 screened (HWM/TDG-excluded/HEI/GE/HXL/CW/WWD/SARO/VSEC/AVAV/KTOS; SPR excluded — ถูก Boeing เข้าซื้อ+delist 2025-12-08). close 11-17 (stockanalysis + Yahoo cross-check). **Filter A: 7/10 PASS** (AVAV −73.0% [$110.00 vs $408.25] · KTOS −69.3% [$33.91 vs $110.39] · CW −41.6% · VSEC −39.0% · WGO-n/a · SARO −20.5% borderline · HXL −31.3% · WWD −26.8%; TDG −10.1%/HEI −9.2%/GE −13.0% ตก A). **Filter B/C:** HXL ผ่านทั้ง A+B+C (EV/EBITDA 16.3–18.0× ต่ำกว่าทุกปีใน 5Y history ของตัวเอง, ROIC 11.21% > 80%×WACC 9.75%) แต่ติด **Tier 1 check 2a** — ราคา ≈3.0× naive FV (normalized levered FCF ÷ CoE 9.75%) → `QUICK-SCREEN SKIP`. CW/WWD/SARO/VSEC/HWM(เดิมสแกนเก่า ROIC ฟื้นเป็น 22.7% แต่) ตก B (FCF yield 1.6–3.6% all <6%, EV/EBITDA ไม่อยู่ bottom-third ของ 5Y history ตัวเอง). AVAV/KTOS ตก C ชัดเจน (ROIC −0.26%/+0.38% << WACC 10.4%/10.36% แม้ revenue growth AVAV +141% — execution/integration risk ยังไม่พิสูจน์). **0 fast-track · 0 learning-queue · 9 reject** (TDG = excluded, ไม่นับ reject). Prune Round 100: 0 de-listed, SLA fixed 4 (ALLY/NBIX/BYD/CMRE → 2026-11-21), live 7. **ALLY ข้าม Filter A เป็นครั้งแรก (−20.8%)** — ตัดสินที่ Tier 1 รอบถัดไป. ดู Scout Report § Round 100 ท้ายไฟล์.)*
 *ก่อนหน้า (2026-11-17): **Scout Round 99 — Payments & Transaction Processing** — dedicated round แรกของ sector (V/MA ถูก exclude ตาม Hard exclusion: วิเคราะห์เต็มแล้ว HOLD/WAIT ใน decisions.md · PYPL/FISV/GPN/EEFT/FOUR เคยโดนแค่ scout R11/R12/R28/R52/R82 ก่อน VALUE-FIRST ปัจจุบัน → re-screen ด้วยข้อมูลสด · JKHY ครั้งแรก). ราคา Yahoo = Nasdaq (close 11-13 exact match; Yahoo 11-16 ใช้ดู drift). **Filter A: 1/6 PASS (FOUR −40.6% ที่ 11-13 / −43.6% ที่ 11-16)** · 5 ตก A: EEFT −15.3% · GPN −10.7% · FISV −9.4% · JKHY −8.1% · PYPL −7.3 ถึง −8.3% (2 แหล่งอ่าน 52W high ต่างกัน 1.1%). **FOUR: A ✅ (guide cut + Middle East travel/FX + margin −1.9pp; จัดกลุ่ม cyclical/temporary ปนโครงสร้าง — เขียนทั้ง 2 มุม) · B-Zero ✅ (equity +$1.45B; ND/EBITDA ≈4.5x flag) · B ✅ (FCF yield 15.5% ก่อน SBC / 12.6% หลัง SBC — leverage-inflated: mkt cap ≈42% ของ EV) · C ❌ (ROIC GAAP TTM ≈5.5% < 80%×WACC 8%; Q3 annualized 7.1% ยังต่ำกว่า)** → reject ที่ C (Tier 1 2b ก็ติดที่ cost of equity ≥12%). **0 fast-track / 0 learning-queue / 8 reject** (V/MA นับเป็น excluded ไม่ใช่ reject) · prune 0 de-listed, live 7. ดู Scout Report § Round 99 ท้ายไฟล์.)*
 *ก่อนหน้า (2026-11-16): **Scout Round 98 — Homebuilders & Residential Construction (pure-play)** — dedicated round แรกของ sector (DHI/LEN เคยโดนแค่ R44a 2026-09-29; R81 เป็น building products คนละ sub-industry). MDC ถูก Sekisui House ซื้อ+delist 2024-04-19 → แทนด้วย LGIH. close 11-13 (Yahoo = stockanalysis exact ทุกตัว). 8 screened (PHM/NVR/TOL/KBH/MTH/LGIH + DHI/LEN เสริม) → A 5/8 (LGIH −37.7% · LEN −37.5% · KBH −29.1% · NVR −28.6% · MTH −24.5%; PHM −12.1% · TOL −12.2% · DHI −14.8% ตก) → NVR/KBH ตก D (Tier 1 check 2b `QUICK-SCREEN SKIP`) · MTH/LGIH/LEN ตก C (ROIC ต่ำกว่า WACC มาก) · P/B 0.4–0.9× แต่ ROE 2–6% = value trap. **0 fast-track · 0 learning-queue · 8 reject**. Prune: 0 de-listed, SLA ยังไม่ถึงกำหนด (CMRE 11-17, ALLY/NBIX/BYD 11-18) · live 7*
