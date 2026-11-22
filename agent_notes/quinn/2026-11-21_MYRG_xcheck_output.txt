@@ -1,0 +1,16 @@
+mid-cycle EBITDA (4.5pct EBIT + 2.0pct D&A on TTM rev): 280
+own FY21-25 median 13.48 TTM-EBITDA price 274.4 | mid-cycle EBITDA price 224.5
+own avg ex-FY24 12.27 TTM-EBITDA price 248.8 | mid-cycle EBITDA price 203.3
+peer median 11.46 TTM-EBITDA price 230.9 | mid-cycle EBITDA price 188.4
+current 12.14 TTM-EBITDA price 245.5 | mid-cycle EBITDA price 200.6
+Bull TV(yr10)=5091 implied EV/EBITDA(yr10) 6.53  EV/NOPAT 12.6
+Base TV(yr10)=3215 implied EV/EBITDA(yr10) 5.74  EV/NOPAT 11.9
+Bear TV(yr10)=1496 implied EV/EBITDA(yr10) 4.62  EV/NOPAT 10.5
+Base: exit EV/EBITDA needed for price: 13.7x (TV 7674 / EBITDA10 560)
+Base DCF w/ exit 8x: FV 164.3
+Base DCF w/ exit 10x: FV 193.6
+Base DCF w/ exit 12x: FV 222.9
+--- P-W with exit-multiple terminal (variant, NOT primary) ---
+exit 8x: scen FVs [236.4, 164.3, 82.6]  PW 157.8  PW FV5 250.5 ER 0.2%
+exit 10x: scen FVs [277.2, 193.6, 99.6]  PW 186.3  PW FV5 295.9 ER 3.6%
+exit 12x: scen FVs [318.0, 222.9, 116.5]  PW 214.8  PW FV5 341.4 ER 6.6%

@@ -8,6 +8,20 @@
 - **ORLY:** split 15:1 เกิดวันที่ 2025-06-10 (Yahoo split event) — ไม่มี split ใหม่ · trigger $59.63 / $78.39 (WACC−1pp) คำนวณจากราคา post-split ($88.12) อยู่แล้ว → **ไม่ต้องแก้**.
 - **Filter A (≥20% จาก 52W high):** ALLY −23.2% ✅ · CRI −20.0% (borderline) · MMS −37.2% ✅ · WGO −39.5% ✅ · CMRE −32.3% ✅ · NBIX −19.1% ❌ · BYD −18.3% ❌.
 
+### 📑 Full Pipeline Result 2026-11-21 (CIO-directed — 6 ตัวที่แตะ trigger) · Regime TC → ห้าม deploy
+| Ticker | Bucket | Blended FV | FV vs ราคา | Conviction avg | Dual gate | Action | Re-trigger |
+|---|---|---|---|---|---|---|---|
+| ALLY | Value | $45.51 | MOS +20.2% | 6.00 | MOS ✅ / Conv ❌ | WATCH | Conv ≥7.0 หลัง Q4-26 (ม.ค. 2027) หรือ ≤ $34 |
+| CMRE | Value | $11.47 | −6.1% | 4.83 | ❌ / ❌ | AVOID/WATCH | ≤ $9.75 |
+| HUBB | Value | $328.37 | −18.7% | 5.67 | ❌ / ❌ | WAIT | ≤ $279 |
+| MYRG | Growth* | $125.99 | −49.1% | 5.67 | ❌ / ❌ | AVOID | ≤ $107 |
+| NVT | Growth | $96.03 | −5.7% | 5.50 | ❌ / ❌ | WAIT | ≤ $81.6 |
+| MTZ | Growth* | $59.19 (หัก earn-out; raw $61.45) | −59.1% | 5.00 | ❌ / ❌ | AVOID | ≤ $52 |
+
+**Morgan QA รอบ 2:** HUBB/MYRG/NVT = CONDITIONAL PASS · ALLY/MTZ = FAIL เชิงเอกสาร (แก้แล้ว รอตรวจรอบ 3) · CMRE = FAIL (จัดประเภท Cyclical ยัง PENDING อาจเปลี่ยน MOS sub-gate → ต้อง re-run Emma/Quinn) · ไม่มีข้อไหนเปลี่ยนผล dual gate เพราะ conviction ไม่ผ่านทุกตัว
+
+*ไม่มีตัวไหนเป็น "ready to deploy pending regime" · ทุกตัว lane STANDARD (ไม่เข้า AI/Infra) · รายงาน `reports/TICKER_2026-11-21.md` · *Growth bucket ตาม Atlas เชิงตัวเลข — ใช้ organic growth แล้ว MTZ/MYRG น่าจะเป็น Value (Morgan ตรวจ)*
+
 | Ticker | กลุ่ม | ราคา 11-20 | Trigger / watch | % ถึง trigger (+ = แตะแล้ว) | ลงจาก 52W high | สถานะ |
 |---|---|---|---|---|---|---|
 | NVT | B | $101.84 | ≤$122 | **+19.8%** | −44.8% | 🔴 แตะแล้ว |
