@@ -1240,3 +1240,15 @@
 - **Data:** ราคา Yahoo chart + Nasdaq.com (close 2026-11-13, exact match) · SEC XBRL companyfacts FOUR (10-Q 2026-09-30). ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 99.
 
 *Max — 2026-11-17 | Scout Round 99 — 0 fast-track, 0 learning-queue, 0 QUICK-SCREEN SKIP; no trade.*
+
+
+## 2026-11-23 — Scout Round 104 (Mortgage Insurance / Title Insurance)
+
+| Ticker | Tag | Detail |
+|---|---|---|
+| FNF | `QUICK-SCREEN SKIP` | ผ่าน A (−25.5%) + B-Zero + B (P/B 1.58× vs 5Y median 1.92×) + C เฉียด (ROE TTM 14.2% / through-cycle 10.8% vs CoE 10.5%) แต่ตก D: ราคา 1.06–1.52× naive FV ทุกวิธี → Check 2b/2a |
+
+- **Action:** ไม่มี trade · MTG/RDN/ESNT/FAF/ORI ตก A (−10% ถึง −19.1%; FAF ขาด 0.9pp) · Regime TC (Atlas 2026-11-22) ห้ามเปิดใหม่
+- **Data:** ราคา Yahoo chart = Nasdaq historical API (close 2026-11-20, 0.00% diff) · SEC XBRL companyfacts FNF (10-Q 2026-09-30). ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 104.
+
+*Max — 2026-11-23 | Scout Round 104 — 0 fast-track, 0 learning-queue, 1 QUICK-SCREEN SKIP (FNF); no trade.*

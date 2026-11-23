@@ -11089,3 +11089,97 @@ Naive FV = normalized FCF (median FY23–25 ≈$77.8M, ไม่ใช้ peak F
 **Target analysis date:** ไม่มี (0 fast-track / 0 learning-queue)
 
 *Max — 2026-11-21 | Scout Round 103 (Movie Theaters/Cinema Exhibition — 5 screened [AMC/CNK/IMAX/MCS/RDI]; 0 fast-track / 0 learning-queue / 5 reject [1 A · 1 data-quality RDI · 1 B-Zero AMC · 1 B+C MCS · 1 QUICK-SCREEN SKIP IMAX]; prune 0 de-listed, SLA fixed 6, live 7)*
+
+
+
+## Scout Report § Round 104 (Mortgage Insurance / Title Insurance) — 2026-11-23
+
+### Step 0 — Prune Pass (ก่อนสแกน)
+
+ตรวจ live Pending ทั้ง 7 แถว (ALLY/MMS/CRI/NBIX/BYD/WGO/CMRE) ตาม De-list Rules: **Rule #1** ไม่มีแถวไหนเกิน 60 วัน (เก่าสุด ALLY 10-16 = 38 วัน) · **Rule #3** grep `dashboard/portfolio.js` + `portfolio/decisions.md` + `buy_list.md` = 0 hit ทั้ง 7 ตัว (OPEN = ADBE/NOW/CRM/REGN/ADSK) · **Rule #2** ใช้ราคา 11-20 จาก Trigger Re-Verify (db1e455) — ไม่มีแถวไหนมี MOS < −30% หรือราคา > 2× ขอบบน entry zone (CMRE $12.22 / ALLY $36.32 อยู่ใน zone; WGO/MMS/BYD/CRI เกิน zone ≤ 8.5%)
+
+**⚠️ Flag ให้ Charlie (ไม่แก้ cell — ไม่ใช่งานของ prune):** ALLY และ CMRE ผ่าน Full Pipeline แล้วเมื่อ 11-21 (`reports/ALLY_2026-11-21.md`, `reports/CMRE_2026-11-21.md`; ผล ALLY = WATCH, CMRE = AVOID/WATCH) แต่ **ยังไม่เข้า Rule #3 (Superseded)** เพราะ Morgan QA ยังไม่ปิด (ALLY รอรอบ 3 · CMRE FAIL — ต้อง re-run Emma/Quinn หลังจัดประเภท Cyclical) และ `decisions.md` ยังไม่มี row ของทั้งสองตัว · แถว live ของทั้งสองยังเขียนว่า "Tier 1.5 lightweight target 11-28" ซึ่งล้าสมัยแล้ว → ควรปิดหลัง QA ผ่าน แล้ว de-list รอบหน้า · MMS/CRI/NBIX/BYD (target 11-28) + WGO (12-19) ไม่เปลี่ยน
+
+**ผล: de-listed 0 · live 7**
+
+### Trigger / Regime / Coverage
+
+- **Coverage check (30 วัน, R75–R103):** ไม่เคยมี dedicated round สำหรับ Mortgage/Title Insurance · R96 (11-14, 9 วันก่อน) เอ่ยถึง "Mortgage & Title Insurance" เป็น *ตัวเลือกที่พิจารณาแล้วไม่เลือก* (เช็คราคาแล้ว Filter A ผ่าน 3/10) — ไม่มีการรัน Filter B–E และไม่มี ticker ลง watchlist → ไม่ใช่การสแกนซ้ำ · R80 (P&C carriers, 10-19) ไม่รวม MI/Title · `grep -w` MTG/RDN/ESNT/FNF/FAF/ORI ใน `decisions.md` / `dashboard/portfolio.js` / `buy_list.md` = **0 hit** · ไม่มี ticker ใน ban list (PODD/ZTS/NKE/MMS/SLM/CRI/NBIX/BYD/WGO/OWL) หรือซ้ำ holdings
+- **Regime:** `agent_notes/atlas/2026-11-22_regime.md` → **TRANSITIONAL-CAUTIOUS** (2/4 RISK-OFF [VIX 35.89, Fed] vs 2/4 RISK-ON [curve, HY] — ไม่มี 3/4 majority, TC = tie default) · cash floor 25%, 0.75×, Force Deploy suspended, **ห้ามเปิด position ใหม่** → scout เพื่อ buy_list เท่านั้น · record อายุ 1 วัน (ปิด flag "stale" ที่ R103 ยกไว้)
+- **Trigger:** CIO สั่ง (2026-11-23) · scout/screen เท่านั้น — ไม่ spawn Atlas/Emma/Quinn/Bear/Morgan · ไม่ deploy
+- Rotation: R100 Aerospace → R101 Diagnostics/CRO → R102 Tanker → R103 Cinema → **R104 Mortgage/Title Insurance**
+
+### Universe
+
+**Screened 6 ตัว:** MTG (MGIC Investment — private mortgage insurance) · RDN (Radian Group — MI + title/real-estate services) · ESNT (Essent Group — MI + reinsurance) · FNF (Fidelity National Financial — title #1 + F&G annuities ~70% owned) · FAF (First American Financial — title) · ORI (Old Republic International — diversified P&C/specialty + title segment)
+
+### Step 3 — Filter A (close 2026-11-20 · ราคาตรงกัน Yahoo chart = Nasdaq historical API 0.00% ทั้ง 6 ตัว · 52W high cross-check จาก WebSearch)
+
+| Ticker | ราคา (close 11-20) | 52W high (intraday) | % จาก high | Source ราคา | Source 52W high (≥2) | Filter A |
+|---|---|---|---|---|---|---|
+| **FNF** | $43.51 | $58.41 (2026-02-12) · close-high $57.61 (02-06) | **−25.5%** (close-basis −24.5%) | [Yahoo chart](https://query1.finance.yahoo.com/v8/finance/chart/FNF) = [Nasdaq](https://api.nasdaq.com/api/quote/FNF/historical) | Yahoo chart · [Quiver Quant](https://www.quiverquant.com/stock/FNF/historical-prices/) adj-close สูงสุด $57.74 · ([Google Finance](https://www.google.com/finance/quote/FNF:NYSE) snapshot ก.ค. แสดง $61.40 — หน้าต่างเก่ากว่า ให้ −29%; ทุกแหล่งผ่านเกณฑ์) | ✅ |
+| FAF | $64.58 | $79.87 (2026-07-29) · close-high $79.16 | −19.1% (close-basis −18.4%) | Yahoo = Nasdaq | Yahoo chart · [SoFi](https://www.sofi.com/invest/stock/FAF/) $79.87 | ❌ (ขาด 0.9pp — ไม่ปัดขึ้น) |
+| ORI | $39.91 | $46.76 (2025-12-26) | −14.6% | Yahoo = Nasdaq | Yahoo · [Barchart](https://www.barchart.com/stocks/quotes/ORI/performance) / [Macrotrends](https://www.macrotrends.net/stocks/charts/ORI/old-republic/stock-price-history) $46.76 | ❌ |
+| MTG | $26.68 | $31.89 (2026-07-30) | −16.3% | Yahoo = Nasdaq | Yahoo · [Zacks via Nasdaq.com](https://www.nasdaq.com/articles/mtg-hits-52-week-high-time-buy-stock-solid-returns) $31.89 | ❌ |
+| ESNT | $64.42 | $71.84 (2026-11-05) | −10.3% | Yahoo = Nasdaq | Yahoo · [Motley Fool](https://www.fool.com/quote/nyse/esnt/) $71.84 | ❌ (ใกล้ high ล่าสุด) |
+| RDN | $36.85 | $41.05 (2026-07-14) | −10.2% | Yahoo = Nasdaq | Yahoo · [Google Finance](https://www.google.com/finance/quote/RDN:NYSE) $41.05 | ❌ |
+
+**Beaten-down reason (FNF):** ไม่พบแหล่งที่ระบุสาเหตุของ FNF เองโดยตรง · หลักฐานทางอ้อม = (i) sentiment ต่อ F&G (annuity/life ~70% ของ FNF) — [InsuranceNewsNet](https://insurancenewsnet.com/innarticle/fg-flounders-with-investors-despite-strong-annuity-sales): analyst ชี้ private-credit/alt-investment exposure ("ตลาดตีราคาเหมือนจะมี credit loss มหาศาล") + แรงขายจาก distribution F&G 12% ธ.ค. 2025 · (ii) วัฏจักรอสังหา/mortgage-rate ฝั่ง title. **จัดเป็น cyclical/sentiment (tentative)** — ยังไม่มีหลักฐานว่า earnings-power เสียถาวร (Q3-26 direct title operating revenue +11% YoY, F&G AUM $76.2B +7% — [FNF Q3-26 release](https://finviz.com/news/417869/fnf-reports-third-quarter-2026-financial-results)) แต่ credit-quality ของ F&G **ตรวจไม่ได้ในระดับ scout** (ต้องดู 10-Q investment schedule) — ตามกฎ "ไม่แน่ใจ → เขียน 2 มุม": มุม sentiment-trough vs มุม credit-loss ที่ยังไม่ปรากฏ
+
+### Step 4 — FNF: B-Zero / B / C / D (SEC EDGAR companyfacts CIK 1331875 — 10-K FY21–FY25 + 10-Q 2026-09-30)
+
+*บริษัทประกัน → ใช้ P/B, ROE vs cost of equity (CoE band 10–11%, ใช้ 10.5% — sector proxy ไม่ได้ lock ผ่าน Atlas ตาม VS2 §1.1) แทน FCF yield / ROIC / WACC เพราะ consolidated OCF ($5.8B FY25) รวมเงินฝาก annuity ของ F&G → FCF ไม่สะท้อนเศรษฐกิจของ shareholder*
+
+| รายการ | ตัวเลข (SEC XBRL) | ผล |
+|---|---|---|
+| Stockholders equity (attrib.) | FY23 $6,908M → FY24 $7,754M → FY25 $7,424M → **9/30/26 $7,371M** (BVPS $27.48 = ÷ 268.19M shs, 10-Q cover 10-31) | **B-Zero ✅** ไม่ติดลบ |
+| Debt | $4,452M (FY25 carrying) = ~37.5% ของ debt+equity · ND/EBITDA ไม่ใช้กับ insurer | ✅ ไม่ผิดปกติ — flag: ส่วนหนึ่งเป็นหนี้ของ F&G |
+| AOCI | −$1,678M (FY25) กด BV · BV ex-AOCI ≈ $9.05B | P/B 1.58× → ≈1.29× ex-AOCI |
+| Mkt cap | $43.51 × 268.19M = **$11.67B** | — |
+| **P/B vs 5Y history** | P/B ปลายปี: 2021 1.46× · 2022 1.61–1.76× · 2023 1.95× · 2024 1.92× · 2025 1.99× → median **1.92×** · ปัจจุบัน **1.58×** (−18% ต่ำกว่า median) | **B ✅** (P/B ต่ำกว่า 5Y median — เกณฑ์ financials) |
+| P/E (TTM) | NI attrib. TTM = FY25 $602M − 9M25 $719M + 9M26 $1,164M = **$1,047M** → **11.1×** | ไม่ถูกเป็นพิเศษ |
+| **ROE vs CoE** | TTM ≈ **14.2%** (avg equity $7.40B) · FY23–25 เฉลี่ย **10.8%** (NI $517M / $1,270M / $602M — ผันผวนสูง) | **C ⚠️ เฉียด:** TTM > CoE 10.5% แต่ through-cycle ≈ CoE |
+
+**Filter D (naive FV, Value bucket — แสดงทุกวิธีที่ทำได้ กัน cherry-pick; ทุกตัวเลขเป็น proxy ระดับ scout):**
+
+| วิธี | FV/หุ้น | ราคา ÷ FV |
+|---|---|---|
+| Normalized NI (median FY23/24/25/TTM = $825M) ÷ CoE 10.5% | $29.3 | **1.49×** |
+| TTM NI $1,047M ÷ CoE 10.5% (ใจกว้างที่สุด) | $37.2 | **1.17×** |
+| Residual-income justified P/B = (ROE−g)/(CoE−g), g=3% — ROE TTM 14.2% → 1.49× BV | $40.9 | **1.06×** |
+| Residual-income — ROE through-cycle 10.8% → 1.04× BV | $28.6 | **1.52×** |
+
+**ทุกวิธี > 0.90× (ช่วง 1.06–1.52×)** → **D ❌ ตกรอบ** (ไม่มีวิธีไหนเข้าใกล้ ≤0.80×) · Street PT cross-check **ทำไม่ได้ในรอบนี้** — พบเฉพาะ PT ปี 2025 (~$70, [TipRanks/Truist](https://tipranks.com/news/the-fly/fidelity-national-price-target-raised-to-70-from-64-at-truist)) ซึ่งเก่าและก่อนราคาลง ~25% — ไม่ใช้ตัดสิน · ผลตัดสินมาจาก naive FV เอง
+
+### Tier 1 Quick-Screen (FNF)
+
+Check 1 (ROIC<0.5×) ไม่ติด · **Check 2b ติด** (วิธี TTM-NI และ RI-TTM ราคาอยู่ 1.06–1.17× naive FV — ไม่มีที่ว่างให้ MOS ≥15% หลัง DCF เต็ม) และ **Check 2a เฉียด** (วิธี normalized 1.49–1.52× ≈ เพดาน 1.5×) → **`QUICK-SCREEN SKIP`**
+
+### Filter E (indicative เท่านั้น — D ตกแล้ว ไม่ได้ลงลึก)
+
+E1 moat: Narrow+ ตามหลักการ (title เป็นตลาดที่ผู้เล่นรายใหญ่ไม่กี่ราย; F&G มี scale ด้าน annuity) แต่ไม่ได้ตรวจ market-share ตัวเลข · E2 through-cycle ROE ≥ CoE+3pp: ❌ (10.8% ≈ CoE) · E3 overhang: ⚠️ F&G private-credit/alt exposure ยัง unresolved ตามหลักฐาน InsuranceNewsNet → **≤ 2/3 ที่ดีที่สุด**; ไม่เปลี่ยน routing
+
+### Final routing — Round 104
+
+| Ticker | ตกที่ | Tag |
+|---|---|---|
+| MTG | **A** (−16.3%) | reject |
+| RDN | **A** (−10.2%) | reject |
+| ESNT | **A** (−10.3%, ใกล้ high ล่าสุด 11-05) | reject |
+| FAF | **A** (−19.1% intraday / −18.4% close — ขาด 0.9pp) | reject (near-miss — re-check ถ้าราคา ≤ $63.9 [= −20.0% จาก $79.87]) |
+| ORI | **A** (−14.6%) | reject |
+| **FNF** | A ✅ B-Zero ✅ B ✅ (P/B) C ⚠️ → **D ❌** (ราคา 1.06–1.52× naive FV ทุกวิธี) | `QUICK-SCREEN SKIP` |
+
+**Funnel: 6 screened · 0 fast-track · 0 learning-queue · 5 reject at A · 1 QUICK-SCREEN SKIP (FNF, D/2b).** ไม่เพิ่มแถว Pending Analysis · ไม่เพิ่ม `buy_list.md` (regime TC + ไม่มี candidate ผ่าน gate)
+
+### Notes for CIO / Charlie
+
+1. **Sector นี้ไม่ได้ถูกตลาดเกลียด:** MI สามตัว (MTG/RDN/ESNT) ยังอยู่ใกล้ high (−10% ถึง −16%) · ตัวเดียวที่ลง >20% คือ FNF และเหตุหลักดูเหมือนมาจาก **F&G (annuity) ไม่ใช่ title** → "ซื้อ FNF" = ซื้อ F&G sentiment + title cycle ไม่ใช่ pure title play
+2. **FNF ใกล้สุดแต่ยังไม่ถูกพอ:** P/B ต่ำกว่า history จริง (1.58× vs median 1.92×) แต่ earnings ผันผวนมาก (NI FY23 $517M → FY24 $1,270M → FY25 $602M) ทำให้ normalized value ไม่รองรับราคา · **Re-screen trigger:** ราคา ≤ ~$29.7 (0.80× naive FV วิธี TTM-NI $37.2) **หรือ** ROE through-cycle ≥ 13.5% (ปิด E2) **หรือ** หลักฐานว่า F&G credit exposure benign
+3. **FAF near-miss:** −19.1% จาก high · ไม่มี annuity overhang — ถ้าตลาดลงต่อ (VIX 35.89) ราคา ≤ $63.9 จะผ่าน A ทันที → ควร re-check ใน Trigger Re-Verify ถัดไป (ยังไม่ได้รัน B–E เพราะตก A)
+4. **ข้อจำกัดของรอบนี้:** (i) CoE 10.5% เป็น sector-band proxy ไม่ได้ lock ผ่าน Atlas (VS2 §1.1) · (ii) beaten-down reason ของ FNF เป็นหลักฐานทางอ้อม · (iii) ไม่ได้ pull title-segment margin / F&G investment-quality schedule จาก 10-Q · (iv) Street PT ปัจจุบันของ FNF หาไม่ได้ · (v) Filter B–E ไม่ได้รันกับ FAF/MTG/RDN/ESNT/ORI เพราะตก A (ตามลำดับ filter) · (vi) ราคาสองแหล่ง (Yahoo/Nasdaq) เป็น feed เดียวกันได้ — 52W high ใช้ WebSearch เป็น cross-check ที่สอง
+5. **Housekeeping:** ALLY/CMRE มี full pipeline 11-21 แต่ QA ยังไม่ปิด + `decisions.md` ยังไม่มี row — Leo/Charlie ควรปิดก่อน prune รอบหน้า (ดู Step 0)
+
+**Target analysis date:** ไม่มี (0 fast-track / 0 learning-queue)
+
+*Max — 2026-11-23 | Scout Round 104 (Mortgage Insurance/Title Insurance — 6 screened [MTG/RDN/ESNT/FNF/FAF/ORI]; 0 fast-track / 0 learning-queue / 5 reject at A · 1 QUICK-SCREEN SKIP FNF [D/2b]; prune 0 de-listed, live 7)*
