@@ -96,6 +96,11 @@
    > *เหตุผล: ขนาด 1% เล็กมากพอที่จะไม่ขัดเจตนา capital-preservation ของ regime gate แต่ให้ข้อมูลจริงมาทดสอบกฎ tiered sizing ใหม่ได้เร็วขึ้น*
    > **Monitoring (บังคับ):** Starter position ที่เปิดระหว่าง TC/RISK-OFF ต้อง flag เป็น **`regime-exception position`** ใน `portfolio/positions.md` / `dashboard/portfolio.js` (field `regimeException: true`) / `portfolio/deployment_log.md` (tag `REGIME-EXCEPTION-STARTER`) เพื่อให้ Vera backtest แยกกลุ่มนี้ได้ | Cash floor ของ regime ยังมีผล (ห้ามเปิดถ้าทำให้ cash ต่ำกว่า floor) | การเพิ่ม Starter → Half/Full ยังถูก regime gate บล็อกจนกว่า regime = RISK-ON
    > *ที่มา: research 2026-11-24 (SSGA CQ framework, Ensemble Capital, Tema ETFs) + backtest SLM/DECK — สถาบันจริงใช้ conviction เป็นตัวกำหนดขนาด position (Kelly modifier + tier cap) ไม่ใช่ binary gate · DECK (conv 6.67, MOS+34%) +3.8% ใน 2 เดือนที่ระบบเดิมได้ 0% · SLM (conv 6.17, MOS+18.9%) -25.5% หลัง Q3 miss ที่ Bear ตั้ง trigger ไว้ล่วงหน้า → จึงเพิ่ม Binary Catalyst Guard*
+
+   **D1 — Crash Playbook Tier 3 Open Decision (✅ RESOLVED 2026-11-24 — CIO เลือก (ข)):** ช่วง TC/RISK-OFF เปิด **T1 (3%)** ได้เฉพาะหุ้น **priority top-3** ที่ Morgan PASS แล้วตาม Crash Response Playbook (`dashboard/crashPlaybook.js`) ขนาด 3% คงที่ทั้งช่วง TC และ RISK-OFF (ตัวคูณ regime ให้ 2% ซึ่งต่ำกว่าขั้นต่ำ 3% จึงปัดขึ้น) ต้องไม่ทำให้ cash ต่ำกว่า cash floor ของ regime ขณะนั้น ขั้นตอนอื่นของ BUY ไม่เปลี่ยน (Atlas regime record ใหม่ → VS2 pipeline → Morgan PASS → 1.7 blind re-derivation → Max execute) ยังต้องผ่าน MOS gate และ Binary Catalyst Guard เหมือนเดิม
+   > **แยกจาก Starter tier exception (Option B) โดยสิ้นเชิง** — ไม่รวม/ไม่ทับกัน: Starter (1%) ใช้กับตัวที่ conviction 5.0-5.9 (Value) ทั่วไป ส่วน T1 (3%) นี้ใช้เฉพาะตัวที่ priority top-3 ของ Crash Playbook + Morgan PASS เท่านั้น
+   > **Monitoring (บังคับ):** position ที่เปิดด้วยข้อยกเว้นนี้ต้อง flag ใน `portfolio/deployment_log.md` ด้วย tag **`REGIME-EXCEPTION-T1`** (คู่กับ `REGIME-EXCEPTION-STARTER` ที่ Option B ใช้) เพื่อให้ Vera backtest แยกกลุ่มได้
+   > Force Deploy rule (ข้อ 4 ด้านล่าง) ยังคง suspend เหมือนเดิมระหว่าง TC/RISK-OFF — D1 ไม่ override Force Deploy
 2. **Entry zone ไม่มา แต่ thesis ยังแข็ง** → เข้าได้ที่ราคาตลาด ≤ 5% เกิน zone
 3. **Price Audit Fail — ตัด Re-analysis Loop:** ถ้า thesis ไม่เปลี่ยน + conviction ผ่าน gate → Max เข้าได้ทันที ไม่ต้อง re-analyze | Position size = ½ ของปกติ | บันทึก "thesis-valid entry, no MOS" ใน trade-log
 4. **Cash เกิน 30% เกิน 2 สัปดาห์ และ Regime = RISK-ON เท่านั้น และมี candidate ผ่าน MOS gate + conviction ≥ Full tier (Value ≥7.0 / Growth ≥6.5) + Binary Catalyst Guard** → force deploy อย่างน้อย 1 position | ถ้าไม่มี candidate ผ่านเงื่อนไขนี้ → ถือ cash ต่อได้ ไม่บังคับซื้อของแพง | TRANSITIONAL-CAUTIOUS/RISK-OFF → suspend rule นี้ทั้งหมด
@@ -105,8 +110,8 @@
 | Regime | Cash Floor | Position Size Multiplier | Force Deploy |
 |--------|-----------|--------------------------|--------------|
 | **RISK-ON** | 10% | 1.0x | ✅ ใช้ปกติ |
-| **TRANSITIONAL-CAUTIOUS** | 25% | 0.75x | ❌ Suspend — ห้าม open new positions ระดับ Full/Half รักษา positions ที่มีอยู่ได้ (**ข้อยกเว้น: Starter tier 1% เปิดได้** — ดู Deployment Rules ข้อ 1) |
-| **RISK-OFF** | 35% | 0.5x | ❌ Suspend + ห้าม open ใหม่ระดับ Full/Half (**ข้อยกเว้น: Starter tier 1%**) |
+| **TRANSITIONAL-CAUTIOUS** | 25% | 0.75x | ❌ Suspend — ห้าม open new positions ระดับ Full/Half รักษา positions ที่มีอยู่ได้ (**ข้อยกเว้น 1: Starter tier 1% เปิดได้** — ดู Deployment Rules ข้อ 1 · **ข้อยกเว้น 2: T1 (3%) เปิดได้เฉพาะหุ้น priority top-3 ที่ Morgan PASS แล้วตาม Crash Response Playbook** — CIO decision D1 2026-11-24 ดู `dashboard/crashPlaybook.js`) |
+| **RISK-OFF** | 35% | 0.5x | ❌ Suspend + ห้าม open ใหม่ระดับ Full/Half (**ข้อยกเว้น 1: Starter tier 1%** · **ข้อยกเว้น 2: T1 (3%) priority top-3 Morgan-PASS** — CIO decision D1 2026-11-24) |
 
 Atlas ต้องประกาศ Regime ทุก session โดยใช้ **objective criteria** ดังนี้:
 

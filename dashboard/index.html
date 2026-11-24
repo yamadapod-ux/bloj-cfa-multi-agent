@@ -2702,7 +2702,8 @@ function buildCrashPlaybook() {
     <div class="thesis-card health-FIRING">
       <div class="thesis-card-header"><span class="thesis-ticker">Guardrails</span><span class="thesis-health-badge thesis-health-FIRING">ห้ามข้าม</span></div>
       ${list(cp.guardrails)}
-      <div class="thesis-catalyst-box"><b>Open Decision (CIO):</b> ${cp.openDecision}</div>
+      ${cp.openDecision ? `<div class="thesis-catalyst-box"><b>Open Decision (CIO):</b> ${cp.openDecision}</div>` : ''}
+      ${(cp.resolvedDecisions || []).map(d => `<div class="thesis-catalyst-box"><b>${d.id} — RESOLVED (${d.date}):</b> ${d.decision}</div>`).join('')}
       <div class="thesis-meta-row"><span>As of: ${cp.asOf}</span><span>Updated: ${CRASH_PLAYBOOK_LAST_UPDATED}</span><span>Regime: ${cp.regimeRecord}</span></div>
     </div>`;
 

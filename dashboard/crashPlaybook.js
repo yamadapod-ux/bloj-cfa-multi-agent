@@ -6,7 +6,7 @@
 //   และ § Pending Analysis (MMS/NBIX/BYD, Oct 16 close) — เป็น screen-level ไม่ใช่ team Blended FV
 // อัปเดต: Max re-score คอลัมน์ T (ระยะห่างจาก trigger) ทุกครั้งที่ tier ใด activate + ทุก Portfolio Review ระหว่าง drawdown
 
-const CRASH_PLAYBOOK_LAST_UPDATED = "2026-11-02";
+const CRASH_PLAYBOOK_LAST_UPDATED = "2026-11-24";
 
 const CRASH_PLAYBOOK = {
   asOf: "2026-11-02 (ราคาอ้างอิง Oct 30 close)",
@@ -36,12 +36,12 @@ const CRASH_PLAYBOOK = {
       name: "Correction",
       health: "WATCH",
       signal: "S&P 500 −15% ถึง −25% · หรือ VIX 25–30 · หรือ HY 400–600bps",
-      expectedRegime: "มีโอกาสสูงที่จะเป็น TC (VIX + HY + Fed ไม่ใช่ RISK-ON) → ห้าม open ใหม่ตาม Macro Regime Gate จนกว่า Atlas re-call RISK-ON",
-      deployBudget: "ถ้ายัง RISK-ON: สะสม ≤ 50% ของ cash ที่ deploy ได้ · ชื่อใหม่สะสมไม่เกิน 4 ตัว · ถ้า TC: 0 ชื่อใหม่",
+      expectedRegime: "มีโอกาสสูงที่จะเป็น TC (VIX + HY + Fed ไม่ใช่ RISK-ON) → Full/Half BUY ยังห้าม (Macro Regime Gate) แต่เปิด T1 (3%) ได้เฉพาะ priority top-3 ที่ Morgan PASS แล้ว (CIO decision D1 2026-11-24)",
+      deployBudget: "ถ้ายัง RISK-ON: สะสม ≤ 50% ของ cash ที่ deploy ได้ · ชื่อใหม่สะสมไม่เกิน 4 ตัว · ถ้า TC: T1 (3%) เฉพาะ priority top-3 Morgan-PASS เท่านั้น (ไม่ต่ำกว่า cash floor)",
       actions: [
         "RISK-ON: deploy T1 ตาม Priority Ranking (คะแนนสูงก่อน) — 1 ชื่อต่อ session, เว้นอย่างน้อย 2 session ระหว่างชื่อที่อยู่ factor เดียวกัน (AI-megacap)",
         "T2 (+3%) ได้เฉพาะชื่อจาก Tier 1 ที่ re-verify FV หลังราคาลงแล้ว MOS ยังผ่าน (FV ไม่ได้ลงตามราคา)",
-        "TC: เปลี่ยนเป็นโหมดเตรียม — รัน full pipeline ชื่อ priority 1–5 ให้ Morgan PASS ค้างไว้ พร้อม execute ทันทีที่ Atlas re-call RISK-ON",
+        "TC: เปลี่ยนเป็นโหมดเตรียม + execute ทันที — รัน full pipeline ชื่อ priority 1–5 ให้ Morgan PASS, เปิด T1 (3%) ได้ทันทีสำหรับ priority top-3 ที่ PASS แล้ว (CIO decision D1 2026-11-24) ที่เหลือ (priority 4-5) ค้างไว้พร้อม execute ทันทีที่ Atlas re-call RISK-ON",
         "Force Deploy (cash >30% >2 สัปดาห์ + RISK-ON + มี candidate ผ่าน gate) = บังคับ ≥1 position ตามเดิม — playbook ไม่ override",
       ],
     },
@@ -50,13 +50,13 @@ const CRASH_PLAYBOOK = {
       name: "Crash",
       health: "FIRING",
       signal: "S&P 500 ลง > −25% · หรือ VIX > 30 · หรือ HY > 600bps (ระดับ RISK-OFF ใน Macro Regime Gate)",
-      expectedRegime: "เกือบแน่นอนว่าเป็น TC หรือ RISK-OFF → Macro Regime Gate ห้าม open ใหม่ทั้งหมด (cash floor 25% / 35%, multiplier 0.75x / 0.5x)",
-      deployBudget: "ระหว่าง TC/RISK-OFF: ชื่อใหม่ 0 · add ได้เฉพาะ position เดิมที่ผ่าน gate (ดู guardrail ข้อ 4) ไม่ต่ำกว่า floor ของ regime · หลัง Atlas re-call RISK-ON: deploy ได้ถึง 100% ของ cash เหนือ floor 10% แบ่ง 3 จังหวะ",
+      expectedRegime: "เกือบแน่นอนว่าเป็น TC หรือ RISK-OFF → Full/Half BUY ยังห้าม (cash floor 25% / 35%, multiplier 0.75x / 0.5x) แต่เปิด T1 (3%) ได้เฉพาะ priority top-3 Morgan-PASS (CIO decision D1 2026-11-24)",
+      deployBudget: "ระหว่าง TC/RISK-OFF: T1 (3%) เฉพาะ priority top-3 ที่ Morgan PASS แล้ว (flag REGIME-EXCEPTION-T1) · add ได้เฉพาะ position เดิมที่ผ่าน gate (ดู guardrail ข้อ 4) ไม่ต่ำกว่า floor ของ regime · หลัง Atlas re-call RISK-ON: deploy ได้ถึง 100% ของ cash เหนือ floor 10% แบ่ง 3 จังหวะ",
       actions: [
-        "ระหว่าง crash: ไม่ใช่ 'ซื้อก้นเหว' — กฎปัจจุบันให้ซื้อตอนฟื้น. Pipeline ชื่อ priority 1–8 ให้ Morgan PASS ครบ + re-compute trigger ด้วย Rf/ERP ใหม่ (FV เปลี่ยนตาม WACC)",
-        "วันที่ Atlas re-call RISK-ON: จังหวะ 1 = 40% ของ budget (T1 ชื่อ top-3 ที่ MOS ยังผ่าน) · จังหวะ 2 = 30% หลัง ≥10 trading days · จังหวะ 3 = 30% หลัง FV re-verify รอบถัดไป",
+        "ระหว่าง crash: เปิด T1 (3%) ได้ทันทีสำหรับ priority top-3 ที่ Morgan PASS แล้ว (CIO decision D1 2026-11-24 — ไม่ต้องรอ RISK-ON อีกต่อไป) · Pipeline ชื่อ priority 1–8 ให้ Morgan PASS ครบ + re-compute trigger ด้วย Rf/ERP ใหม่ (FV เปลี่ยนตาม WACC)",
+        "วันที่ Atlas re-call RISK-ON: จังหวะ 1 = 40% ของ budget (T1 ชื่อ top-3 ที่ MOS ยังผ่าน — priority top-3 ที่เปิดด้วย D1 ไปแล้วนับรวมในสัดส่วนนี้) · จังหวะ 2 = 30% หลัง ≥10 trading days · จังหวะ 3 = 30% หลัง FV re-verify รอบถัดไป",
         "Drawdown halt −35% ของพอร์ต (Risk Rule 1) มาก่อนทุกอย่าง — ถ้าโดน หยุด trade ทั้งหมด",
-        "ทางเลือกให้ CIO ตัดสิน (ไม่ทำเอง): แก้แถว TC/RISK-OFF ให้เปิด T1 ได้จำกัด — เป็น Risk-side rule แก้ก่อน 8Q ได้ ดู Open Decision ด้านล่าง",
+        "D1 ตัดสินแล้ว (CIO 2026-11-24, เลือก (ข)) — ดู Deployment Rules ข้อ 1 ใน CLAUDE.md และ Resolved Decision ด้านล่าง",
       ],
     },
   ],
@@ -155,5 +155,15 @@ const CRASH_PLAYBOOK = {
     "Add position เดิมระหว่าง TC: CLAUDE.md เขียน 'รักษา positions ที่มีอยู่ได้' ไม่ได้ระบุ add ชัด → ครั้งแรกที่จะใช้ต้อง Max×Charlie consult + flag CIO · RISK-OFF: ไม่ add",
     "Stop loss −20% / drawdown halt −35% / thesis invalidation exit ทำงานตามปกติระหว่าง crash — ไม่เลื่อนเพราะ 'ราคาถูกลง'",
   ],
-  openDecision: "CIO ตัดสิน (Risk-side rule, แก้ก่อน 8Q ได้): ปัจจุบัน Tier 3 แปลว่า 'ซื้อตอนฟื้น' เพราะ TC/RISK-OFF ห้าม open ใหม่. ทางเลือก (ก) คงเดิม · (ข) เปิด T1 ได้เฉพาะ priority top-3 ที่ Morgan PASS แล้ว ขนาด T1 4% × multiplier ของ regime (TC = 3% · RISK-OFF = 2% ซึ่งต่ำกว่า minimum 3% → ต้องเลือกว่าใช้ 3% หรือไม่เข้าเลย) ไม่ต่ำกว่า cash floor. Max ไม่แก้เอง — เสนอเท่านั้น",
+  openDecision: null,
+  resolvedDecisions: [
+    {
+      id: "D1",
+      date: "2026-11-24",
+      question: "Tier 3 แปลว่า 'ซื้อตอนฟื้น' เพราะ TC/RISK-OFF ห้าม open ใหม่ — (ก) คงเดิม หรือ (ข) เปิด T1 ได้เฉพาะ priority top-3 ที่ Morgan PASS แล้ว",
+      decision: "(ข) — เปิด T1 (3%) ได้เฉพาะหุ้น priority top-3 ที่ Morgan PASS แล้ว ขนาด 3% คงที่ทั้งช่วง TC และ RISK-OFF (ตัวคูณ regime ให้ 2% ต่ำกว่าขั้นต่ำ จึงปัดขึ้นเป็น 3%) ไม่ต่ำกว่า cash floor ของ regime ขั้นตอนอื่นของ BUY ไม่เปลี่ยน (Atlas regime record ใหม่ → VS2 pipeline → Morgan PASS → 1.7 blind → Max execute รวม MOS gate + Binary Catalyst Guard)",
+      monitoringTag: "REGIME-EXCEPTION-T1",
+      note: "แยกจาก Starter tier exception (Option B, REGIME-EXCEPTION-STARTER) โดยสิ้นเชิง ไม่รวม/ไม่ทับกัน — ดู CLAUDE.md § Deployment Rules ข้อ 1",
+    },
+  ],
 };

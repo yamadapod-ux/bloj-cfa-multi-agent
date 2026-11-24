@@ -271,7 +271,7 @@ Read agent_notes/quinn/YYYY-MM-DD_TICKER.md
 | Value bucket | MOS ≥ 15% + Conviction tier (CLAUDE.md § Deployment Rules ข้อ 1): ≥7.0 Full / 6.0–6.9 Half / 5.0–5.9 Starter 1% / <5.0 AVOID | MEDIUM — ระบุว่าทำไม BUY ทั้งที่ MOS ต่ำ |
 | Growth bucket | **Conviction tier ≥4.5 (≥6.5 Full / 5.5–6.4 Half / 4.5–5.4 Starter 1%)** + Rev Growth > 20% **+ ต้องผ่าน Growth MOS อย่างน้อย 1 ใน 2 วิธี** (ดูด้านล่าง) | HIGH FAIL ถ้า BUY โดยไม่ผ่าน Growth MOS ทั้ง 2 วิธี — ไม่ใช่แค่ MEDIUM เพราะเป็น gate บังคับ ไม่ใช่ optional |
 
-**Tier + Guard check (เพิ่ม 2026-11-24):** (1) ขนาด position ใน report ต้องตรง tier (Starter = 1% คงที่, Half = 50% ของ full ขั้นต่ำ 3%) — ไม่ตรง = HIGH FAIL (`RULE_VIOLATION`) (2) **Binary Catalyst Guard:** BUY ทุก tier ที่ Bear ระบุ unresolved binary event = HIGH FAIL (3) **Regime:** TC/RISK-OFF → Full/Half BUY = HIGH FAIL; Starter ได้ แต่ต้อง flag `regime-exception position` (CIO อนุมัติ Option B 2026-11-24)
+**Tier + Guard check (เพิ่ม 2026-11-24):** (1) ขนาด position ใน report ต้องตรง tier (Starter = 1% คงที่, Half = 50% ของ full ขั้นต่ำ 3%) — ไม่ตรง = HIGH FAIL (`RULE_VIOLATION`) (2) **Binary Catalyst Guard:** BUY ทุก tier ที่ Bear ระบุ unresolved binary event = HIGH FAIL (3) **Regime:** TC/RISK-OFF → Full/Half BUY = HIGH FAIL เว้นแต่เป็น **T1 (3%) priority top-3 ตาม Crash Playbook ที่ Morgan PASS แล้ว** (CIO decision D1 2026-11-24) ซึ่งต้อง flag tag `REGIME-EXCEPTION-T1`; Starter ได้เสมอ แต่ต้อง flag `regime-exception position` (CIO อนุมัติ Option B 2026-11-24)
 
 **Growth MOS — 2 วิธี (ต้องผ่านอย่างน้อย 1 วิธีก่อน BUY ได้):**
 - **Reverse DCF:** implied growth rate ณ ราคาปัจจุบัน ต้องไม่เกิน **1.2×** analyst consensus growth
