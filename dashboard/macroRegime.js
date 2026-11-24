@@ -6,7 +6,7 @@
 // เหตุผล: entry เก่าคือ audit trail ว่า Atlas เคย call regime อะไรไว้ ณ วันไหน
 // Source ทุก entry: agent_notes/atlas/YYYY-MM-DD_regime.md (ตัวจริงในโค้ดฐาน)
 
-const MACRO_LAST_UPDATED = "2026-10-16";
+const MACRO_LAST_UPDATED = "2026-11-24";
 
 // เรียงตามลำดับเวลา (เก่า -> ใหม่) — dashboard จะ sort ใหม่ (ใหม่ -> เก่า) เอง
 const MACRO_REGIME_HISTORY = [

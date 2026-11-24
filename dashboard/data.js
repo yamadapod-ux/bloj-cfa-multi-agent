@@ -1,7 +1,7 @@
 // dashboard/data.js — Leo อัปเดตไฟล์นี้หลังทุก analysis
 // DO NOT edit manually — managed by Leo agent
 
-const LAST_UPDATED = "2026-10-16";
+const LAST_UPDATED = "2026-11-24";
 
 const REPORTS = [
 
