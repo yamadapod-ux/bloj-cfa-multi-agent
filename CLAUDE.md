@@ -43,7 +43,7 @@
 | Rule | Type | แก้ก่อน 8Q ได้ไหม |
 |------|------|-------------------|
 | MOS threshold (Value/Growth) | Return-side | ❌ |
-| Conviction gate | Return-side | ❌ |
+| Conviction gate (Tiered Position Sizing — แก้ 2026-11-24) | Return-side | ❌ (การแก้ 2026-11-24 เป็น CIO-approved one-time change ก่อน 8Q — ห้ามแก้ซ้ำ) |
 | Deployment rules | Return-side | ❌ |
 | Force Deploy | Return-side | ❌ |
 | Position size 8–10% | Return-side | ❌ |
@@ -72,13 +72,33 @@
 | **Growth** | ~60% | EV/Revenue + Revenue growth rate | AI, Tech, Thematic plays |
 
 ### Deployment Rules (บังคับ — Max รับผิดชอบ)
-1. **Conviction Gate แยกตาม Bucket:**
-   - **Growth bucket**: Conviction ≥ 6.5 + Revenue Growth >20% → deploy T1 ทันที
-   - **Value bucket**: Conviction ≥ 7.0 + MOS ≥ 15% → deploy T1 ทันที
+1. **Conviction → Tiered Position Sizing แยกตาม Bucket (แก้ 2026-11-24 — CIO อนุมัติ, แทน binary Conviction Gate เดิม ≥7.0/≥6.5):** conviction กำหนด **ขนาด position** ไม่ใช่ปิดประตูทั้งหมด | MOS gate ยังเป็น floor เดิม ไม่เปลี่ยน
+
+   **Value bucket** (MOS ≥ 15% บังคับเหมือนเดิม):
+   | Conviction | Position size |
+   |---|---|
+   | ≥ 7.0 | **Full** — ตาม sizing rule ปกติ (max ตาม IPS 8–10% / Crash Playbook) → deploy T1 ทันที |
+   | 6.0–6.9 | **Half** — 50% ของ full size ปกติ |
+   | 5.0–5.9 | **Starter** — 1% คงที่ (ต้อง re-confirm trigger ก่อนเพิ่มเป็น Half/Full) |
+   | < 5.0 | **0% — AVOID** |
+
+   **Growth bucket** (Revenue Growth >20% + MOS แบบ Growth ผ่าน 1 ใน 2 test เดิม — Reverse DCF ≤1.2× หรือ Multiple Percentile ≤70th — ไม่เปลี่ยน; pivot เลื่อนลง 0.5 จุด):
+   | Conviction | Position size |
+   |---|---|
+   | ≥ 6.5 | **Full** → deploy T1 ทันที |
+   | 5.5–6.4 | **Half** |
+   | 4.5–5.4 | **Starter** (1% คงที่) |
+   | < 4.5 | **0% — AVOID** |
+
+   **Unresolved Binary Catalyst Guard (บังคับ — สำคัญสุด):** ห้ามเปิด position ใดๆ (รวม Starter tier) ถ้า Bear ระบุ unresolved binary catalyst/earnings event ที่ยังไม่เกิดขึ้นในรายงาน — ต้องรอผลยืนยันก่อน ถ้าผลยืนยันแล้วว่าผ่าน pass criteria ที่ Bear ตั้งไว้ จึงเปิด position ตาม tier ได้
+
+   **Regime gate override เหนือ tier ทั้งหมด:** TRANSITIONAL-CAUTIOUS / RISK-OFF ยังบล็อก Full/Half tier (ห้าม open new positions) ตาม Macro Regime Gate ด้านล่าง
+   > ⚠️ **OPEN DECISION (รอ CIO ยืนยัน — ยังไม่ auto-apply):** ให้ **Starter tier (1%)** ได้รับการยกเว้นเปิดได้แม้ regime = TRANSITIONAL-CAUTIOUS หรือไม่? (เหตุผลสนับสนุน: ขนาดเล็กมาก ไม่ขัด capital preservation) — **จนกว่า CIO ยืนยัน: Starter ถูกบล็อกโดย regime gate เหมือน tier อื่น** และ Max/Morgan ห้ามถือว่ามีข้อยกเว้นนี้
+   > *ที่มา: research 2026-11-24 (SSGA CQ framework, Ensemble Capital, Tema ETFs) + backtest SLM/DECK — สถาบันจริงใช้ conviction เป็นตัวกำหนดขนาด position (Kelly modifier + tier cap) ไม่ใช่ binary gate · DECK (conv 6.67, MOS+34%) +3.8% ใน 2 เดือนที่ระบบเดิมได้ 0% · SLM (conv 6.17, MOS+18.9%) -25.5% หลัง Q3 miss ที่ Bear ตั้ง trigger ไว้ล่วงหน้า → จึงเพิ่ม Binary Catalyst Guard*
 2. **Entry zone ไม่มา แต่ thesis ยังแข็ง** → เข้าได้ที่ราคาตลาด ≤ 5% เกิน zone
 3. **Price Audit Fail — ตัด Re-analysis Loop:** ถ้า thesis ไม่เปลี่ยน + conviction ผ่าน gate → Max เข้าได้ทันที ไม่ต้อง re-analyze | Position size = ½ ของปกติ | บันทึก "thesis-valid entry, no MOS" ใน trade-log
-4. **Cash เกิน 30% เกิน 2 สัปดาห์ และ Regime = RISK-ON เท่านั้น และมี candidate ผ่าน conviction gate** → force deploy อย่างน้อย 1 position | ถ้าไม่มี candidate ผ่าน gate → ถือ cash ต่อได้ ไม่บังคับซื้อของแพง | TRANSITIONAL-CAUTIOUS/RISK-OFF → suspend rule นี้ทั้งหมด
-5. **Single position ≤ 8–10%** — ห้ามเกินแม้ conviction สูง | **Minimum 3%** สำหรับ conviction ≥ 6.5 — ห้าม deploy น้อยกว่านี้เพราะ weight ไม่มีนัยสำคัญต่อพอร์ต
+4. **Cash เกิน 30% เกิน 2 สัปดาห์ และ Regime = RISK-ON เท่านั้น และมี candidate ผ่าน MOS gate + conviction ≥ Full tier (Value ≥7.0 / Growth ≥6.5) + Binary Catalyst Guard** → force deploy อย่างน้อย 1 position | ถ้าไม่มี candidate ผ่านเงื่อนไขนี้ → ถือ cash ต่อได้ ไม่บังคับซื้อของแพง | TRANSITIONAL-CAUTIOUS/RISK-OFF → suspend rule นี้ทั้งหมด
+5. **Single position ≤ 8–10%** — ห้ามเกินแม้ conviction สูง | **Minimum 3%** สำหรับ **Full/Half tier** — ห้าม deploy น้อยกว่านี้เพราะ weight ไม่มีนัยสำคัญต่อพอร์ต | **ข้อยกเว้น: Starter tier = 1% คงที่** (ตั้งใจเล็กกว่า minimum 3%) | Half tier ที่ 50% ของ full แล้วต่ำกว่า 3% → ปัดขึ้นเป็น 3% (ไม่เกิน Half)
 
 ### Macro Regime Gate (บังคับ — Atlas กำหนด Max ใช้)
 | Regime | Cash Floor | Position Size Multiplier | Force Deploy |
@@ -794,8 +814,8 @@ Atlas จัดประเภทด้วย GICS ก่อน แล้วใ�
 ### MOS Threshold แยกตาม Bucket (บังคับ — ใช้แทนกฎ MOS 20% เดิม)
 | Bucket | เกณฑ์ BUY | เหตุผล |
 |--------|-----------|--------|
-| **Value bucket** (~40%) | MOS ≥ 15% + Conviction ≥ 7.0 | DCF-based, mature companies |
-| **Growth bucket** (~60%) | Conviction ≥ 6.5 + Revenue Growth >20% + **MOS แบบ Growth** (ดูด้านล่าง) | Multiple compression risk โหดกว่า earnings risk — ต้องมี MOS เสมอ แค่เปลี่ยนวิธีวัด |
+| **Value bucket** (~40%) | MOS ≥ 15% + Conviction ≥ 5.0 (ขนาดตาม Tiered Sizing: ≥7.0 Full / 6.0–6.9 Half / 5.0–5.9 Starter 1%) | DCF-based, mature companies |
+| **Growth bucket** (~60%) | Conviction ≥ 4.5 (ขนาดตาม Tiered Sizing: ≥6.5 Full / 5.5–6.4 Half / 4.5–5.4 Starter 1%) + Revenue Growth >20% + **MOS แบบ Growth** (ดูด้านล่าง) | Multiple compression risk โหดกว่า earnings risk — ต้องมี MOS เสมอ แค่เปลี่ยนวิธีวัด |
 
 **Growth MOS — วัด 2 วิธี (ต้องผ่านอย่างน้อย 1 วิธี):**
 - **Reverse DCF:** implied growth rate ณ ราคาปัจจุบัน ต้องไม่เกิน **1.2×** analyst consensus growth — ถ้าเกิน = ราคา price in perfect execution แล้ว *(เดิม 1.5× ลดเป็น 1.2× เพราะ 1.5× loose เกินไป)*
@@ -838,10 +858,10 @@ Atlas จัดประเภทด้วย GICS ก่อน แล้วใ�
 
 ### Rule Compliance (ต้อง PASS ทุกข้อ)
 - [ ] Recommendation aligns with MOS threshold (BUY → MOS ≥ 15% Value, Reverse DCF pass Growth)
-- [ ] Conviction gate match (BUY → Conv ≥ 6.5 Growth / ≥ 7.0 Value)
+- [ ] Conviction tier match (BUY → size ตรงกับ tier: Value ≥7.0 Full / 6.0–6.9 Half / 5.0–5.9 Starter 1% · Growth ≥6.5 Full / 5.5–6.4 Half / 4.5–5.4 Starter 1% · ต่ำกว่านั้น = AVOID) + Binary Catalyst Guard ผ่าน (Bear ไม่มี unresolved binary event) + Starter ไม่ถูกเปิดใน TC/RISK-OFF (Open Decision ยังไม่อนุมัติ)
 - [ ] Macro Regime check: current regime + position size multiplier applied correctly
 - [ ] Stop loss within IPS bounds (-20% per position rule)
-- [ ] Position size ≤ 10%, ≥ 3% (ถ้า deploy)
+- [ ] Position size ≤ 10%, ≥ 3% (ถ้า deploy Full/Half; Starter = 1% คงที่)
 - [ ] VS2 validation (`TRIAL`): ประเภทธุรกิจ + pre-registration (1.5) + judgment-call sensitivity (1.6) + blind re-derivation (1.7, เฉพาะ BUY) — รายละเอียดใน `.claude/agents/qa.md` Step 2.6
 
 ### Source Annotation (ต้อง PASS)
