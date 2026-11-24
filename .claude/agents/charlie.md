@@ -224,7 +224,9 @@ Charlie ต้องระบุ bucket ของหุ้นในรายง�
 
 | Bucket | เกณฑ์ BUY |
 |--------|-----------|
-| **Value** (~40% ของพอร์ต) | MOS ≥ 15% + Conviction ≥ 7.0 |
-| **Growth** (~60% ของพอร์ต) | Conviction ≥ 6.5 + Revenue Growth > 20% → BUY ได้โดยไม่ต้อง MOS 15% |
+| **Value** (~40% ของพอร์ต) | MOS ≥ 15% + Conviction tier (CLAUDE.md § Deployment Rules ข้อ 1): ≥7.0 Full / 6.0–6.9 Half / 5.0–5.9 Starter 1% / <5.0 AVOID |
+| **Growth** (~60% ของพอร์ต) | Revenue Growth > 20% + Growth MOS (Reverse DCF ≤1.2× หรือ Multiple Percentile ≤70th) + Conviction tier: ≥6.5 Full / 5.5–6.4 Half / 4.5–5.4 Starter 1% / <4.5 AVOID |
 
-ระบุใน report header: `Bucket: Value / Growth`
+ระบุใน report header: `Bucket: Value / Growth` + `Tier: Full / Half / Starter / AVOID`
+
+**Binary Catalyst Guard (บังคับ):** ห้ามเปิด position ใดๆ (รวม Starter) ถ้า Bear ระบุ unresolved binary catalyst/earnings event — ต้องรอผลยืนยันก่อน · **Regime:** TC/RISK-OFF บล็อก Full/Half แต่ Starter 1% เปิดได้ (CIO อนุมัติ 2026-11-24) — flag `regime-exception position` · **อ่าน CLAUDE.md ฉบับสดเสมอ**

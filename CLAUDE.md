@@ -92,8 +92,9 @@
 
    **Unresolved Binary Catalyst Guard (บังคับ — สำคัญสุด):** ห้ามเปิด position ใดๆ (รวม Starter tier) ถ้า Bear ระบุ unresolved binary catalyst/earnings event ที่ยังไม่เกิดขึ้นในรายงาน — ต้องรอผลยืนยันก่อน ถ้าผลยืนยันแล้วว่าผ่าน pass criteria ที่ Bear ตั้งไว้ จึงเปิด position ตาม tier ได้
 
-   **Regime gate override เหนือ tier ทั้งหมด:** TRANSITIONAL-CAUTIOUS / RISK-OFF ยังบล็อก Full/Half tier (ห้าม open new positions) ตาม Macro Regime Gate ด้านล่าง
-   > ⚠️ **OPEN DECISION (รอ CIO ยืนยัน — ยังไม่ auto-apply):** ให้ **Starter tier (1%)** ได้รับการยกเว้นเปิดได้แม้ regime = TRANSITIONAL-CAUTIOUS หรือไม่? (เหตุผลสนับสนุน: ขนาดเล็กมาก ไม่ขัด capital preservation) — **จนกว่า CIO ยืนยัน: Starter ถูกบล็อกโดย regime gate เหมือน tier อื่น** และ Max/Morgan ห้ามถือว่ามีข้อยกเว้นนี้
+   **Regime gate × tier (✅ RESOLVED 2026-11-24 — CIO เลือก Option B):** TRANSITIONAL-CAUTIOUS / RISK-OFF ยังบล็อก **Full/Half tier** (ห้าม open new positions) ตาม Macro Regime Gate ด้านล่าง — **แต่ Starter tier (1%) ได้รับการยกเว้น เปิดได้แม้ regime = TC หรือ RISK-OFF** (ต้องผ่าน MOS gate + Binary Catalyst Guard + conviction tier เหมือนเดิม)
+   > *เหตุผล: ขนาด 1% เล็กมากพอที่จะไม่ขัดเจตนา capital-preservation ของ regime gate แต่ให้ข้อมูลจริงมาทดสอบกฎ tiered sizing ใหม่ได้เร็วขึ้น*
+   > **Monitoring (บังคับ):** Starter position ที่เปิดระหว่าง TC/RISK-OFF ต้อง flag เป็น **`regime-exception position`** ใน `portfolio/positions.md` / `dashboard/portfolio.js` (field `regimeException: true`) / `portfolio/deployment_log.md` (tag `REGIME-EXCEPTION-STARTER`) เพื่อให้ Vera backtest แยกกลุ่มนี้ได้ | Cash floor ของ regime ยังมีผล (ห้ามเปิดถ้าทำให้ cash ต่ำกว่า floor) | การเพิ่ม Starter → Half/Full ยังถูก regime gate บล็อกจนกว่า regime = RISK-ON
    > *ที่มา: research 2026-11-24 (SSGA CQ framework, Ensemble Capital, Tema ETFs) + backtest SLM/DECK — สถาบันจริงใช้ conviction เป็นตัวกำหนดขนาด position (Kelly modifier + tier cap) ไม่ใช่ binary gate · DECK (conv 6.67, MOS+34%) +3.8% ใน 2 เดือนที่ระบบเดิมได้ 0% · SLM (conv 6.17, MOS+18.9%) -25.5% หลัง Q3 miss ที่ Bear ตั้ง trigger ไว้ล่วงหน้า → จึงเพิ่ม Binary Catalyst Guard*
 2. **Entry zone ไม่มา แต่ thesis ยังแข็ง** → เข้าได้ที่ราคาตลาด ≤ 5% เกิน zone
 3. **Price Audit Fail — ตัด Re-analysis Loop:** ถ้า thesis ไม่เปลี่ยน + conviction ผ่าน gate → Max เข้าได้ทันที ไม่ต้อง re-analyze | Position size = ½ ของปกติ | บันทึก "thesis-valid entry, no MOS" ใน trade-log
@@ -104,8 +105,8 @@
 | Regime | Cash Floor | Position Size Multiplier | Force Deploy |
 |--------|-----------|--------------------------|--------------|
 | **RISK-ON** | 10% | 1.0x | ✅ ใช้ปกติ |
-| **TRANSITIONAL-CAUTIOUS** | 25% | 0.75x | ❌ Suspend — ห้าม open new positions ทั้งหมด รักษา positions ที่มีอยู่ได้ |
-| **RISK-OFF** | 35% | 0.5x | ❌ Suspend + ห้าม open ใหม่ |
+| **TRANSITIONAL-CAUTIOUS** | 25% | 0.75x | ❌ Suspend — ห้าม open new positions ระดับ Full/Half รักษา positions ที่มีอยู่ได้ (**ข้อยกเว้น: Starter tier 1% เปิดได้** — ดู Deployment Rules ข้อ 1) |
+| **RISK-OFF** | 35% | 0.5x | ❌ Suspend + ห้าม open ใหม่ระดับ Full/Half (**ข้อยกเว้น: Starter tier 1%**) |
 
 Atlas ต้องประกาศ Regime ทุก session โดยใช้ **objective criteria** ดังนี้:
 
@@ -858,7 +859,7 @@ Atlas จัดประเภทด้วย GICS ก่อน แล้วใ�
 
 ### Rule Compliance (ต้อง PASS ทุกข้อ)
 - [ ] Recommendation aligns with MOS threshold (BUY → MOS ≥ 15% Value, Reverse DCF pass Growth)
-- [ ] Conviction tier match (BUY → size ตรงกับ tier: Value ≥7.0 Full / 6.0–6.9 Half / 5.0–5.9 Starter 1% · Growth ≥6.5 Full / 5.5–6.4 Half / 4.5–5.4 Starter 1% · ต่ำกว่านั้น = AVOID) + Binary Catalyst Guard ผ่าน (Bear ไม่มี unresolved binary event) + Starter ไม่ถูกเปิดใน TC/RISK-OFF (Open Decision ยังไม่อนุมัติ)
+- [ ] Conviction tier match (BUY → size ตรงกับ tier: Value ≥7.0 Full / 6.0–6.9 Half / 5.0–5.9 Starter 1% · Growth ≥6.5 Full / 5.5–6.4 Half / 4.5–5.4 Starter 1% · ต่ำกว่านั้น = AVOID) + Binary Catalyst Guard ผ่าน (Bear ไม่มี unresolved binary event) + Starter ใน TC/RISK-OFF ได้ (CIO อนุมัติ Option B 2026-11-24) แต่ต้อง flag `regime-exception position`; Full/Half ใน TC/RISK-OFF = FAIL
 - [ ] Macro Regime check: current regime + position size multiplier applied correctly
 - [ ] Stop loss within IPS bounds (-20% per position rule)
 - [ ] Position size ≤ 10%, ≥ 3% (ถ้า deploy Full/Half; Starter = 1% คงที่)

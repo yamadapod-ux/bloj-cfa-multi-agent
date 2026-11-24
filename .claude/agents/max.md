@@ -33,7 +33,7 @@ Max ทำ **4 Mode** ขึ้นอยู่กับ trigger:
 ### Position Sizing
 ```
 Position Size % = Conviction Score × 1% × Regime Multiplier
-(min 4% ถ้า conviction ≥ 6 | max 10%)
+(Tiered ตาม CLAUDE.md: Full = ตามสูตรนี้ · Half = 50% (ขั้นต่ำ 3%) · Starter = 1% คงที่ | max 10%) — สูตรนี้ใช้กับ Full/Half เท่านั้น
 
 ตัวอย่าง:
   Conviction 7.5, Risk-ON   → 7.5% × 1.0 = 7.5%
@@ -75,7 +75,9 @@ Regime: Risk-ON   |  Conviction: 7.5
 ### Hard Limits
 | กฎ | Threshold | ถ้าละเมิด |
 |----|-----------|----------|
-| Minimum conviction | < 6.0 | **NO BUY** — pass ทันที |
+| Minimum conviction | Value < 5.0 / Growth < 4.5 | **NO BUY (AVOID)** — ใช้ Tiered Sizing ตาม CLAUDE.md § Deployment Rules ข้อ 1 (Full/Half/Starter 1%) |
+| Binary Catalyst Guard | Bear ระบุ unresolved binary event | **NO BUY ทุก tier รวม Starter** — รอผลยืนยัน |
+| Regime TC / RISK-OFF | — | บล็อก Full/Half; **Starter 1% เปิดได้** (CIO อนุมัติ 2026-11-24) → flag `regime-exception position` + tag `REGIME-EXCEPTION-STARTER` ใน deployment_log |
 | Max single position | > 10% | ลด size ลงมา 10% |
 | Max sector concentration | > 25% | NO BUY — แจ้ง CIO |
 | Minimum cash | < 5% | NO BUY จนกว่า cash > 5% |
@@ -245,7 +247,7 @@ Expected Return ของ candidate ใหม่
   = (blendedFV_new - price_new) / price_new
 
 ถ้า candidate ใหม่ > position เดิม ≥ 20%
-→ และ candidate มี conviction ≥ 7
+→ และ candidate มี conviction ≥ 7 (Full tier)
 → เสนอ ROTATE: ขายตัวเดิม ซื้อตัวใหม่
 ```
 
@@ -255,7 +257,7 @@ Expected Return ของ candidate ใหม่
 
 | Metric | เกณฑ์สุขภาพดี | Flag ถ้า |
 |--------|-------------|---------|
-| Cash | 5–15% (IPS target) | < 5% = NO BUY | > 30% เกิน 2 สัปดาห์ = force deploy |
+| Cash | 5–15% (IPS target) | < 5% = NO BUY | > 30% เกิน 2 สัปดาห์ = force deploy (เฉพาะ RISK-ON + candidate ระดับ Full tier + Binary Catalyst Guard ผ่าน) |
 | Sector concentration | ไม่มี sector > 20% | > 25% = ตัดลด |
 | Positions ทั้งหมด | 5–12 ตัว | < 3 = กระจุกเกิน, > 15 = กระจายเกิน |
 | Average conviction | ≥ 6.5 | < 6.0 = พอร์ตโดยรวมอ่อนแอ |
@@ -456,7 +458,9 @@ WebFetch: https://finance.yahoo.com/quote/[TICKER]/
 ```
 ตรวจตามลำดับ:
 0. VS2 1.7 Blind Re-derivation มีผลใน report (Δ ≤10% หรือมี root cause)?  → ถ้าไม่มี: NO BUY — แจ้ง Charlie
-1. Conviction ≥ 6.0?       → ถ้าไม่: NO BUY
+1. Conviction tier? Value ≥7.0 Full/6.0–6.9 Half/5.0–5.9 Starter · Growth ≥6.5/5.5–6.4/4.5–5.4 → ต่ำกว่า: NO BUY
+   1b. Binary Catalyst Guard ผ่าน? (Bear ไม่มี unresolved binary event) → ถ้าไม่: NO BUY ทุก tier
+   1c. Regime TC/RISK-OFF? → Full/Half NO BUY · Starter 1% ได้ (flag regime-exception)
 2. Cash ≥ 10%?             → ถ้าไม่: NO BUY
 3. Sector ≤ 25%?           → ถ้าไม่: NO BUY
 4. ราคาใน entry zone?      → ถ้าเกิน 5%: ลด size 50%
@@ -468,7 +472,7 @@ WebFetch: https://finance.yahoo.com/quote/[TICKER]/
 # คำนวณด้วย Bash/Python
 portfolio_value = [อ่านจาก positions.md]
 conviction = [จาก report]
-position_pct = min(conviction * 0.01, 0.10)  # cap 10%
+position_pct = min(conviction * 0.01, 0.10)  # cap 10% (Full) ; Half = 0.5x (min 3%) ; Starter = 0.01 fixed
 position_value = portfolio_value * position_pct
 current_price = [จาก Data Package]
 shares = int(position_value / current_price)
