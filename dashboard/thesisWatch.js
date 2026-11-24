@@ -4,70 +4,9 @@
 // อ้างอิง Bear Flip Triggers / Thesis Invalidation จาก reports/ ต้นฉบับของแต่ละ ticker
 // currentPrice / MOS / Conviction / Return ดึงสดจาก PORTFOLIO.positions ตอน render — ไม่ duplicate ตัวเลขไว้ที่นี่ (Single Source of Truth)
 
-const THESIS_WATCH_LAST_UPDATED = "2026-08-09";
+const THESIS_WATCH_LAST_UPDATED = "2026-11-24"; // roster cleanup only (ลบตำแหน่งที่ exit แล้ว 3 ตัว) — เนื้อหา entry ที่เหลือยังอิง lastReviewDate ของแต่ละตัว (2026-08-09) ไม่ได้ review ใหม่
 
 const THESIS_WATCH = [
-  {
-    ticker: "ACN",
-    healthStatus: "FIRING",
-    reportFile: "reports/ACN_2026-06-05.md",
-    bearFlipTriggers: [
-      { trigger: "Revenue growth <5% YoY 2+ ไตรมาสติด", status: "FIRED", note: "FY26 guide หั่นเหลือ 3-4% (Q3 FY26, June18)" },
-      { trigger: "Bookings หลุดต่ำกว่า $18B/ไตรมาส", status: "FIRED", note: "Bookings -13% sequential" },
-      { trigger: "EBIT margin หลุดต่ำกว่า 14%", status: "NOT_FIRED", note: "Margin ขยายเป็น 17% แล้ว" },
-      { trigger: "Hyperscaler bundling แทนที่ ACN ในวงกว้าง", status: "NOT_FIRED", note: "ไม่มีข้อมูลยืนยัน" },
-      { trigger: "FCF guidance ถูกหั่นอย่างมีนัยสำคัญ", status: "NOT_FIRED", note: "FCF $3.6B ยังแข็งแกร่ง" },
-    ],
-    thesisInvalidation: [
-      { criteria: "บุ๊กกิ้งลดติดต่อกัน 3 ไตรมาส + revenue growth <4%", status: "PARTIAL", note: "มีแล้ว 1 ใน 3 ไตรมาสที่ต้องการ" },
-      { criteria: "เลิกจ้าง >10% ของพนักงานที่อ้างเหตุผล AI", status: "NOT_MET" },
-      { criteria: "ลูกค้ารายใหญ่ (>3% revenue) ยกเลิกสัญญาไปหา AI alternative", status: "NOT_MET" },
-    ],
-    verdict: "2 ใน 5 Bear Flip Triggers ยิงแล้ว (revenue + bookings) — เป็นเหตุผลที่ trim 50% ไปแล้วเมื่อ 2026-06-22. Thesis Invalidation ต้องการบุ๊กกิ้งลดติดกัน 3 ไตรมาส ตอนนี้มีแค่ 1 ไตรมาส — ตำแหน่งเสี่ยงสุดของพอร์ตตอนนี้",
-    nextCatalyst: "Q4 FY26 earnings (คาด ~ก.ย. 2026) — ตัวชี้ขาดว่าจะครบเงื่อนไข Thesis Invalidation (exit เต็มรูปแบบ) หรือบุ๊กกิ้งเริ่มทรงตัว",
-    lastReviewDate: "2026-08-09",
-  },
-  {
-    ticker: "GOOGL",
-    healthStatus: "WATCH",
-    reportFile: "reports/GOOGL_2026-05-21.md",
-    bearFlipTriggers: [
-      { trigger: "DOJ สั่ง structural separation (Chrome/Android/Search)", status: "NOT_FIRED", note: "ยังไม่มีคำสั่ง อยู่ระหว่าง remedies phase" },
-      { trigger: "Cloud growth <25% YoY 2 ไตรมาส", status: "NOT_FIRED", note: "Cloud เร่งขึ้นเป็น +82% YoY (Q2 2026)" },
-      { trigger: "CapEx ยืนยัน >$85B FY2026 โดยไม่มี plateau guidance", status: "WATCH", note: "⚠️ CapEx guide ปัจจุบัน $195-205B ทะลุ threshold เดิมไปไกลมาก — threshold เดิมตั้งไว้ต่ำเกินไปเทียบกับที่เกิดจริง แต่ Cloud growth offset ไว้จึงยังไม่ประกาศยิงอย่างเป็นทางการ" },
-      { trigger: "Search market share ยืนยันต่ำกว่า 87%", status: "NOT_FIRED", note: "ไม่มีข้อมูลยืนยัน" },
-      { trigger: "Apple distribution deal ถูกยกเลิก", status: "NOT_FIRED", note: "ตรงข้าม — WWDC ยืนยัน Siri 2.0 ใช้ Gemini เสริมความสัมพันธ์" },
-    ],
-    thesisInvalidation: [
-      { criteria: "Chrome/Android ถูกสั่ง divest", status: "NOT_MET" },
-      { criteria: "Search revenue ลดลง YoY 3 ไตรมาสติด", status: "NOT_MET", note: "Search ยังโตต่อเนื่อง" },
-      { criteria: "GCP operating margin หลุดต่ำกว่า 20%", status: "NOT_MET", note: "ไม่มีข้อมูลชัดเจน แต่ Cloud growth แข็งแกร่ง" },
-      { criteria: "CapEx >$100B/ปี ต่อเนื่อง (sustained)", status: "WATCH", note: "⚠️ $195-205B guide ทะลุ threshold นี้ไปแล้วเช่นกัน — ควร re-calibrate threshold เดิมที่ตั้งไว้ตั้งแต่พ.ค. ให้สอดคล้องกับ AI capex era ปัจจุบัน" },
-    ],
-    verdict: "CapEx guide ($195-205B) ทะลุทั้ง Bear Flip threshold (>$85B) และ Thesis Invalidation threshold (>$100B) ที่ตั้งไว้เดิมไปไกลมาก — ทีมยังไม่เคยประกาศยิงอย่างเป็นทางการเพราะ Cloud growth +82% ยัง offset ไว้ แต่ threshold เดิมน่าจะหลวมเกินไปเทียบกับสภาพตลาดปัจจุบัน (ทุก mega-cap AI capex วิ่งเกิน $100B แล้ว) ✅ Q2 beat (Cloud +82%, EPS $9.11 record) ยืนยัน core thesis แต่ 🔴 ความเสี่ยงใหม่ที่ไม่มีใน trigger list เดิม — AI talent exodus (Jeff Dean/Hassabis exit 5-6 ส.ค.) กัดกร่อน AI-model-leadership narrative แม้ยังไม่ถึงระดับ Invalidation",
-    nextCatalyst: "Bear/Quinn ควร re-calibrate CapEx threshold ให้ทันยุค AI capex ปัจจุบัน (threshold เดิมล้าสมัยไปแล้ว) + จับตา Q3 2026 earnings ว่า Cloud growth ยังคง offset capex concern ได้ต่อเนื่องหรือไม่",
-    lastReviewDate: "2026-08-09",
-  },
-  {
-    ticker: "RDDT",
-    healthStatus: "WATCH",
-    reportFile: "reports/RDDT_2026-05-30.md",
-    bearFlipTriggers: [
-      { trigger: "DAU growth <10% YoY 2 ไตรมาสติด", status: "WATCH", note: "US DAU +6% YoY เป็นไตรมาสแรกแล้ว (Q2 2026) — ต้องรอไตรมาสหน้ายืนยันว่าจะครบ 2 ไตรมาสติดหรือไม่ (Intl DAU +28% ยังแรงมาก offset)" },
-      { trigger: "ARPU growth <20% YoY", status: "NOT_FIRED", note: "Global ARPU +36% YoY ห่างไกลเกณฑ์มาก" },
-      { trigger: "Google AI Overview ลด traffic วัดได้ >15%", status: "WATCH", note: "Management เตือน 'search referrals choppy' — ยังเป็น qualitative ไม่ถูก quantify >15% ตามเกณฑ์" },
-      { trigger: "Meta Forum DAU ทะลุ 50M ภายใน 18 เดือน", status: "NOT_FIRED", note: "ไม่มีข้อมูลยืนยัน" },
-      { trigger: "Q3 2026 revenue พลาด guidance >5%", status: "NOT_FIRED", note: "รอผล Q3 — Q2 guide ที่ให้ไว้ ($860-870M) เหนือ consensus" },
-    ],
-    thesisInvalidation: [
-      { criteria: "Google ยกเลิกดีล AI licensing พร้อม DAU <10%", status: "NOT_MET", note: "ดีลยังเจรจาต่อเนื่อง ไม่ terminate" },
-      { criteria: "Revenue growth <20% + EBITDA margin <25% พร้อมกัน", status: "NOT_MET", note: "Revenue ยังโต +61% YoY" },
-      { criteria: "EU GDPR สั่งแบน AI data licensing", status: "NOT_MET" },
-    ],
-    verdict: "ไม่มี trigger ไหนยิงจริง แต่ DAU trigger ต้องการอีกแค่ 1 ไตรมาสยืนยัน (US DAU +6% เป็นไตรมาสแรกแล้ว) และ Google AI Overview traffic impact ยังเป็นคำเตือนเชิงคุณภาพที่ยังไม่ถูก quantify — ทั้งสองจุดจะชัดเจนขึ้นมากใน Q3 earnings",
-    nextCatalyst: "Q3 2026 earnings (คาด ~ต.ค./พ.ย.) — ตัวชี้ขาด DAU trigger (จะครบ 2 ไตรมาสติดหรือไม่) และ revenue vs guidance",
-    lastReviewDate: "2026-08-09",
-  },
   {
     ticker: "REGN",
     healthStatus: "WATCH",
