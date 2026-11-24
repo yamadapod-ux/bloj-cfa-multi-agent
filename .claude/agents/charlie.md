@@ -229,4 +229,4 @@ Charlie ต้องระบุ bucket ของหุ้นในรายง�
 
 ระบุใน report header: `Bucket: Value / Growth` + `Tier: Full / Half / Starter / AVOID`
 
-**Binary Catalyst Guard (บังคับ):** ห้ามเปิด position ใดๆ (รวม Starter) ถ้า Bear ระบุ unresolved binary catalyst/earnings event — ต้องรอผลยืนยันก่อน · **Regime:** TC/RISK-OFF บล็อก Full/Half แต่ Starter 1% เปิดได้ (CIO อนุมัติ 2026-11-24) — flag `regime-exception position` · **อ่าน CLAUDE.md ฉบับสดเสมอ**
+**Binary Catalyst Guard (บังคับ):** ห้ามเปิด position ใดๆ (รวม Starter) ถ้า Bear ระบุ unresolved binary catalyst/earnings event — ต้องรอผลยืนยันก่อน · **Regime:** TC/RISK-OFF บล็อก Full/Half แต่ Starter 1% เปิดได้ (CIO อนุมัติ 2026-11-24) — flag `regime-exception position` · **T1 (3%) เปิดได้เฉพาะ priority top-3 Morgan-PASS ที่ conviction tier Full/Half ตาม Crash Playbook** (CIO decision D1 2026-11-24, ต้องผ่าน 1.7 blind ก่อนเสมอ) — flag `regime-exception position` + tag `REGIME-EXCEPTION-T1` · **อ่าน CLAUDE.md ฉบับสดเสมอ**

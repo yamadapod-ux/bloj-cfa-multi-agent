@@ -77,7 +77,7 @@ Regime: Risk-ON   |  Conviction: 7.5
 |----|-----------|----------|
 | Minimum conviction | Value < 5.0 / Growth < 4.5 | **NO BUY (AVOID)** — ใช้ Tiered Sizing ตาม CLAUDE.md § Deployment Rules ข้อ 1 (Full/Half/Starter 1%) |
 | Binary Catalyst Guard | Bear ระบุ unresolved binary event | **NO BUY ทุก tier รวม Starter** — รอผลยืนยัน |
-| Regime TC / RISK-OFF | — | บล็อก Full/Half; **Starter 1% เปิดได้** (CIO อนุมัติ 2026-11-24) → flag `regime-exception position` + tag `REGIME-EXCEPTION-STARTER` ใน deployment_log · **T1 (3%) เปิดได้เฉพาะ priority top-3 Morgan-PASS ตาม Crash Playbook** (CIO decision D1 2026-11-24) → tag `REGIME-EXCEPTION-T1` |
+| Regime TC / RISK-OFF | — | บล็อก Full/Half; **Starter 1% เปิดได้** (CIO อนุมัติ 2026-11-24) → flag `regime-exception position` + tag `REGIME-EXCEPTION-STARTER` ใน deployment_log · **T1 (3%) เปิดได้เฉพาะ priority top-3 Morgan-PASS ที่ conviction tier Full/Half ตาม Crash Playbook** (CIO decision D1 2026-11-24, ต้องผ่าน 1.7 blind ก่อนเสมอ) → flag `regime-exception position` + tag `REGIME-EXCEPTION-T1` |
 | Max single position | > 10% | ลด size ลงมา 10% |
 | Max sector concentration | > 25% | NO BUY — แจ้ง CIO |
 | Minimum cash | < 5% | NO BUY จนกว่า cash > 5% |
@@ -460,7 +460,7 @@ WebFetch: https://finance.yahoo.com/quote/[TICKER]/
 0. VS2 1.7 Blind Re-derivation มีผลใน report (Δ ≤10% หรือมี root cause)?  → ถ้าไม่มี: NO BUY — แจ้ง Charlie
 1. Conviction tier? Value ≥7.0 Full/6.0–6.9 Half/5.0–5.9 Starter · Growth ≥6.5/5.5–6.4/4.5–5.4 → ต่ำกว่า: NO BUY
    1b. Binary Catalyst Guard ผ่าน? (Bear ไม่มี unresolved binary event) → ถ้าไม่: NO BUY ทุก tier
-   1c. Regime TC/RISK-OFF? → Full/Half NO BUY · Starter 1% ได้ (flag regime-exception) · T1 (3%) ได้เฉพาะ priority top-3 Morgan-PASS ตาม Crash Playbook (flag REGIME-EXCEPTION-T1, CIO decision D1 2026-11-24)
+   1c. Regime TC/RISK-OFF? → Full/Half NO BUY · Starter 1% ได้ (flag regime-exception) · T1 (3%) ได้เฉพาะ priority top-3 Morgan-PASS ที่ conviction tier Full/Half ตาม Crash Playbook (flag regime-exception + REGIME-EXCEPTION-T1, ต้องผ่าน 1.7 blind ก่อนเสมอ, CIO decision D1 2026-11-24)
 2. Cash ≥ 10%?             → ถ้าไม่: NO BUY
 3. Sector ≤ 25%?           → ถ้าไม่: NO BUY
 4. ราคาใน entry zone?      → ถ้าเกิน 5%: ลด size 50%
