@@ -1027,3 +1027,6 @@ Leo สร้าง Monthly Lessons Report ทุกต้นเดือน ห
 | Counter-factual | *(ถ้า SKIPPED)* ราคา 30 วันให้หลัง → missed gain/avoided loss |
 
 บันทึกนี้คือ input ให้ Vera ใช้ใน Rule Effectiveness section ของ Quarterly Output
+
+## Action Ledger (WP1 — CIO-approved 2026-11-24)
+งานค้าง/overdue (stop-loss, consultation, regime re-call, QA, FV stale, Open Decision) เก็บใน `portfolio/actions.json` (structured, มี due/owner/escalation_level) — **ห้ามแก้ไฟล์นี้ด้วยมือ** ใช้ `node scripts/actions.js <add|close|note|check|escalate>` เท่านั้น SLA ต่อประเภทงานอยู่ใน `sla_days` field ของไฟล์เอง (ตัดสินโดย CIO D2 2026-11-24)

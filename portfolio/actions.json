@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "sla_days": {
+    "stop_loss": 1,
+    "consultation": 2,
+    "regime_recall": 5,
+    "qa_reanalysis": 5,
+    "fv_stale": 10,
+    "open_decision": 7,
+    "other": 7
+  },
+  "next_seq": 1,
+  "items": []
+}
