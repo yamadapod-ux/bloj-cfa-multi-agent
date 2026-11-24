@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-21 07:00";
+const NEWS_LAST_UPDATED = "2026-11-24 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-24 (Atlas scan 2026-11-21→11-24, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-23", category: "GOVERNANCE",
+    headline: "🟢🟢🟢 NVDA board REINSTATES Jensen Huang as President/CEO/Board Director effective immediately, reversing the Nov 12 resignation — stock surges +31.5%, biggest single-day gain in company history since 2003, triggers S&P 500's best day since April 2025",
+    summary: "NVIDIA's Board of Directors voted unanimously to reinstate Jensen Huang as President, CEO and Board Director effective immediately (SEC 8-K, event date 2026-11-22, press release 2026-11-23) — reversing his Nov 12 resignation amid reports of an alleged affair with a suspected Chinese intelligence asset. The board said it reached its decision following 'a series of discussions and meetings with Mr. Huang' and 'received input from senior levels of the United States government', concluding the reinstatement 'poses no national security risk'; the independent-directors investigation into the underlying matter 'will proceed to conclusion', which Huang says he fully supports. President Trump publicly confirmed pressing the board to bring Huang back and said the market reaction likely influenced his thinking; Commerce Secretary Lutnick's office said he played no part in the board's decision. Sen. Elizabeth Warren and the California Attorney General's office both said the reinstatement does not end their respective scrutiny (Senate Democrats plan to investigate the administration's role; a House Foreign Affairs Committee hearing involving Huang remains scheduled). NVDA stock surged as much as +35% intraday before closing +31.5-31.66%, its 4th-best single day since the 1999 IPO and biggest since May 2003, adding over $1 trillion in market cap in a single session — a record for any public company (Bespoke Investments). The surge led the broadest single-day rally logged in this book's history: S&P 500 +4.73% to 7,237.17 (biggest 1-day gain since April 9, 2025), Nasdaq +6.51% to 24,089.56, Dow +1,447.98pts/+3.01% to 49,595.31 — all seven major indices/megacaps that had fallen into correction the prior week rebounded sharply in sympathy (DELL +20%, MU +15%, SNDK +10%, CRWV +22%, TSLA +11.46%, META +6.55%, GOOGL +6.34%, AMZN +3.47%, AAPL +1.90%, MSFT +1.65%). นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — แต่เป็นสาเหตุเดียวที่ทำให้ตลาดกว้างเด้งกลับรุนแรงที่สุดในประวัติศาสตร์การบันทึกของพอร์ตนี้ ทั้ง 5 OPEN position ขึ้นตามแรงบวกของตลาดกว้าง แต่ไม่มีตัวไหนขยับเกิน 4% จากปัจจัยเฉพาะตัวของตัวเอง (ไม่มี AI-hardware exposure โดยตรง).",
+    impact: "POSITIVE", tickers: ["NVDA"],
+    url: "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+  },
+  {
+    date: "2026-11-23", category: "ANALYST",
+    headline: "🔴 CRM Citigroup cuts price target to $198 from $263 (-24.7%, clears >15% HIGH-IMPACT threshold), maintains Neutral",
+    summary: "Citigroup reduced its price target on Salesforce (CRM, OPEN position) to $198.00 from $263.00 in a research note issued Monday 2026-11-23 (Benzinga), maintaining a Neutral rating. The new target implies ~7.45% upside from the stock's prevailing price at the time of the note. Salesforce last reported quarterly earnings Wednesday 2026-08-26: EPS $5.90 vs $3.27 consensus (note: this EPS figure as captured in the source appears to reflect a different accounting basis than the team's own $3.88-equivalent historical tracking and should be reconciled at next FV re-verify), revenue $11.35B vs $11.33B estimate (+10.8% YoY). CRM closed the day of the PT cut up +2.75% to $185.59 (part of the broad market-wide rally on NVDA's Jensen Huang reinstatement, not driven by this cut). นัยพอร์ต: CRM เป็น OPEN position (weight ~5.5%) — การหั่น PT ของ Citi ครั้งนี้ยังไม่ทำให้ Street median เปลี่ยนพอจะ trigger Re-Analysis Trigger #5 (Street median ~$287 vs Blended FV $345.77 = -17.0%, ยังไม่ถึง 25% threshold เมื่อรวม Citi เข้าไปเฉลี่ย) แต่เป็นสัญญาณ bearish เดี่ยวที่ขัดกับทิศทางราคาวันนั้น ควร flag ไว้สำหรับรอบ FV re-verify ถัดไป ไม่มี Bear Flip/Thesis Invalidation ใหม่จากข่าวนี้ ไม่มี action วันนี้.",
+    impact: "NEGATIVE", tickers: ["CRM"],
+    url: "https://marketbeat.com/instant-alerts/analyst-salesforce-nyse-crm-price-target-cut-to-19800-by-analysts-at-citigroup-2026-11-23",
+  },
 
   // ── 2026-11-21 (Atlas scan 2026-11-20→11-21, Portfolio Review Mode 3 cron cycle) ──
   {
