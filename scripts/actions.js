@@ -30,8 +30,13 @@ function parseArgs(argv) {
   return out;
 }
 
+// ใช้เวลาไทย (Asia/Bangkok) เสมอ ไม่ใช้ toISOString() ตรงๆ (เป็น UTC — เที่ยงคืนถึง 7 โมงเช้าไทยจะได้วันที่ของเมื่อวาน)
+function formatDateBangkok(date) {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Bangkok', year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
+}
+
 function todayStr() {
-  return new Date().toISOString().slice(0, 10);
+  return formatDateBangkok(new Date());
 }
 
 function daysBetween(a, b) {
@@ -80,7 +85,7 @@ function effectiveDue(item, slaDays) {
   const sla = slaDays[item.type] != null ? slaDays[item.type] : slaDays.other;
   const d = new Date(item.created + 'T00:00:00Z');
   d.setUTCDate(d.getUTCDate() + sla);
-  return d.toISOString().slice(0, 10);
+  return formatDateBangkok(d);
 }
 
 function cmdAdd(args, file) {
