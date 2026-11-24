@@ -381,6 +381,58 @@
       .md-prose h1 { font-size: 1.3rem; }
       .md-prose h2 { font-size: 1.1rem; }
     }
+
+    /* ═══ MOBILE RESPONSIVE OVERHAUL (2026-11-24) — max-width only; desktop unchanged ═══ */
+    html { -webkit-text-size-adjust: 100%; }
+    @media (max-width: 768px) {
+      /* NAV: two rows — brand row + horizontally scrollable tab row */
+      nav { height: auto; flex-wrap: wrap; padding: 0 .75rem; gap: 0; row-gap: 0; overflow: visible; }
+      .logo-mark { height: 46px; flex: 1 1 auto; min-width: 0; }
+      .logo { font-size: 1.05rem; }
+      .updated-tag { margin-left: 0; font-size: .62rem; line-height: 1.2; text-align: right; max-width: 38%; overflow-wrap: anywhere; order: 2; }
+      .nav-tabs { order: 3; flex: 0 0 100%; width: 100%; height: 44px; align-items: stretch; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -.75rem; padding: 0 .75rem; width: calc(100% + 1.5rem); flex-basis: calc(100% + 1.5rem); border-top: 1px solid #3A3226; }
+      .nav-group { flex-shrink: 0; }
+      .nav-divider { flex-shrink: 0; margin: 10px 4px; }
+      .nav-tab { font-size: .85rem; padding: .6rem .8rem; min-height: 44px; }
+      .nav-tab::before, .nav-tab::after { display: none; } /* paint-drip hover is desktop-only */
+      .marquee-strip { top: 91px; }
+      #detail-panel { top: 121px; height: calc(100vh - 121px); padding: 1rem; }
+
+      /* Text wrapping inside cards */
+      .card, .card-sm, .stat-card, .report-card, .news-card, .sector-card, .thesis-card, .todo-card,
+      .alert-banner, .macro-stale-banner, .thesis-catalyst-box, .todo-context, .todo-hook, .todo-next-step,
+      .sector-thesis, .thesis-verdict { overflow-wrap: anywhere; word-break: normal; }
+      .news-card { grid-template-columns: 1fr; gap: .5rem; padding: .85rem 1rem; }
+      .news-card > *, .thesis-trigger-row > *, .alert-items, .sector-meta-row > * { min-width: 0; }
+      .card, .sector-card, .thesis-card, .todo-card { padding: 1rem; }
+      .stat-card { padding: .85rem 1rem; }
+      .stat-value { font-size: 1.35rem; overflow-wrap: anywhere; }
+
+      /* Tables: keep scroll wrappers, make cycle table scrollable too */
+      .cycle-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .tbl { font-size: .8rem; }
+      .tbl th, .tbl td { padding: .55rem .6rem; }
+      .md-prose table { display: block; overflow-x: auto; }
+      .md-prose pre { max-width: 100%; }
+      .md-prose { overflow-wrap: anywhere; }
+      #full-report-modal { padding: .5rem; }
+
+      /* Readability: lift the tiniest fonts */
+      .section-title, .stat-label, .thesis-section-label, .todo-section-label { font-size: .75rem; }
+      .sector-history-item, .sector-source-link, .thesis-meta-row, .todo-meta-row, .sector-meta-row,
+      .thesis-trigger-row, .news-ticker-tag, .news-cat, .macro-indicator-value, .cycle-legend-desc { font-size: .78rem; }
+      .badge, .tag-pill { font-size: .72rem; }
+      #filter-btns { width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .page { padding: .75rem; }
+      .page-title { font-size: 1.3rem; }
+      .logo-est { display: none; }
+      .stat-grid { gap: .6rem; }
+      .cycle-legend { grid-template-columns: 1fr; }
+      .frm-content { padding: .85rem; border-radius: 8px; }
+      #reports-grid, #watchlist-grid { grid-template-columns: 1fr !important; }
+    }
   </style>
 </head>
 <body>
