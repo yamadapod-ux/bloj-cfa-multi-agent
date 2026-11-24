@@ -43,9 +43,9 @@ const THESIS_WATCH = [
       { criteria: "Microsoft bundle ITSM ฟรีใน M365 Enterprise", status: "NOT_MET" },
       { criteria: "CEO Bill McDermott ลาออก", status: "NOT_MET", note: "ยังไม่ลาออก แต่เตือนเรื่อง headcount cut เพิ่มอีก ~700 ตำแหน่งก่อนสิ้นปี" },
     ],
-    verdict: "ไม่มี Bear Flip ยิง (fundamentals แข็งแกร่ง) — ปัญหาหลักคือ valuation ไม่ใช่ fundamentals: ราคาทะลุ Blended FV $121.45 แล้ว (MOS -2.82%, STRONG SELL territory ครั้งแรกในพอร์ต) DECISION 2026-08-09: HOLD ไม่ trim เพราะ weight เล็ก (2.45%) + FV อาจ stale (ไม่ re-verify มา ~3 เดือน) Gross margin 74.77% ใกล้ threshold 74% ควรจับตาเพิ่ม",
-    nextCatalyst: "ส่ง Emma/Charlie re-verify Blended FV รอบวิเคราะห์ถัดไป (ค้างมา ~3 เดือนแล้ว) + จับตา gross margin trend",
-    lastReviewDate: "2026-08-09",
+    verdict: "ไม่มี Bear Flip ยิง (fundamentals แข็งแกร่ง) — ปัญหาหลักคือ valuation ไม่ใช่ fundamentals: ราคาทะลุ Blended FV $121.45 แล้ว (MOS -2.82%, STRONG SELL territory ครั้งแรกในพอร์ต) DECISION 2026-08-09: HOLD ไม่ trim เพราะ weight เล็ก (2.45%) + FV อาจ stale (ไม่ re-verify มา ~3 เดือน) Gross margin 74.77% ใกล้ threshold 74% ควรจับตาเพิ่ม. **DECISION 2026-11-25 (CIO-ordered stop-loss breach review, portfolio/decisions.md): HOLD ต่อ — stop-loss ($93.00) breach 5 เซสชัน (11-18→11-23) แต่ narrows ชัดจาก -5.80%→-1.42%, 0/4 Thesis Invalidation, 1/5 Bear Flip (gross margin), position de minimis (0.9-1.4% weight) — ไม่คุ้มรัน full pipeline. Mandatory re-trigger: ถ้า stopDist กลับไปต่ำกว่า -5% อีก หรือยัง breach อยู่ตอน quarterly review 2026-12-31 → ต้อง full pipeline + Charlie consult ทันที ไม่มีข้อยกเว้นซ้ำ.**",
+    nextCatalyst: "ส่ง Emma/Charlie re-verify Blended FV รอบวิเคราะห์ถัดไป (ค้างมา ~3 เดือนแล้ว) + จับตา gross margin trend + ติดตาม stopDist ตาม re-trigger condition 2026-12-31",
+    lastReviewDate: "2026-11-25",
   },
   {
     ticker: "CRM",

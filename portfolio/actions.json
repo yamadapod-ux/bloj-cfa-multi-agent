@@ -9,7 +9,7 @@
     "open_decision": 7,
     "other": 7
   },
-  "next_seq": 14,
+  "next_seq": 15,
   "items": [
     {
       "id": "ACT-0001",
@@ -281,6 +281,33 @@
           "action": "created",
           "by": "Hermes",
           "detail": "WP8 — วัดต้นทุนของการไม่ลงมือ"
+        }
+      ]
+    },
+    {
+      "id": "ACT-0014",
+      "type": "stop_loss",
+      "ticker": "NOW",
+      "title": "NOW stop-loss breach decision record (CIO สั่ง 2026-11-24)",
+      "owner": "Max",
+      "created": "2026-11-25",
+      "due": null,
+      "status": "done",
+      "escalation_level": 0,
+      "default_on_timeout": null,
+      "evidence": "dashboard/thesisWatch.js 2026-11-18..2026-11-24 entries: 5-session breach, stopDist -5.80%->-1.42%",
+      "history": [
+        {
+          "date": "2026-11-25",
+          "action": "created",
+          "by": "Hermes",
+          "detail": "NOW stop-loss breach decision record (CIO สั่ง 2026-11-24)"
+        },
+        {
+          "date": "2026-11-25",
+          "action": "done",
+          "by": "Hermes",
+          "detail": "CIO สั่งซ้ำ -- ตัวนี้คือเรื่องเดิมจาก WP2 ที่ผมหักล้างผิด (ใช้ข้อมูลเก่า) เปิดใหม่เป็น ACT-0015 แทน"
         }
       ]
     }
