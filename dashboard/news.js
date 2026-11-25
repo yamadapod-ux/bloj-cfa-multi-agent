@@ -3,9 +3,25 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-24 07:00";
+const NEWS_LAST_UPDATED = "2026-11-25 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-25 (Atlas scan 2026-11-24→11-25, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-24", category: "EARNINGS",
+    headline: "🟢 ADSK beats Q3 FY27 on revenue and EPS, raises full-year guidance across the board — but shares fall ~-4.4% after-hours on investors wanting a bigger upgrade",
+    summary: "Autodesk (ADSK, OPEN position) reported Q3 FY27 results (quarter ended Oct 31, 2026) after market close Nov 24: revenue $2.16B (+17% YoY as reported, +14% constant-currency) beat $2.13B consensus; non-GAAP EPS $3.20 beat $3.07 consensus (+4.2%); GAAP EPS $2.68 (included an ~$105M one-time tax benefit from a change in R&D cost treatment). Billings $2.07B (+12% as reported, +13% cc). Non-GAAP operating margin 39% (+1pp YoY); free cash flow $505M (+17% YoY). Remaining Performance Obligations $7.592B (+3%), with Current RPO (cRPO) $5.302B (+10% YoY) — exactly at the pre-committed 2026-10-31 Max×Charlie consultation's ≥10% threshold for the 'HOLD, close item' branch of the decision gate (vs <8% for a full SELL, negative for a Thesis Invalidation exit). Autodesk returned $350M to shareholders via buybacks in Q3 (~1.5M shares) and raised its full-year FY27 buyback target to $1.5B (~50% of FCF). Full-year FY27 guidance raised: billings midpoint to $8.625B, revenue midpoint to ~$8.368B, non-GAAP operating margin to 39.2-39.3%, FCF maintained at $2.725-2.75B. Q4 FY27 guide: revenue $2.22-2.235B, non-GAAP EPS $3.21-3.26. Despite the clean beat-and-raise, shares fell from the regular-session close of $255.70 to ~$244.30-244.40 in after-hours trading (-4.4%), as investors had hoped for a larger guidance upgrade or faster growth trajectory. นัยพอร์ต: ADSK เป็น OPEN position (2.4sh, ~6% weight) — ผล earnings นี้ FIRES Re-Analysis Trigger #1 (earnings-driven) ต่อ FV เดิม v1 $221.79 (fvVerifiedDate 2026-09-12, อายุ 74 วัน, STALE). cRPO +10% ผ่านเกณฑ์ขั้นต่ำของ pre-committed gate (≥10% → HOLD) แต่สาขานั้นต้องการ 'VS2 MOS > 0%' ซึ่ง MOS บน FV เดิมที่ล้าสมัยอยู่ที่ -15.29% (≤0%) — ตามตัวอักษรจะเข้าเงื่อนไข TRIM 50% แต่ Max ไม่ได้ execute TRIM จาก FV ที่ค้างมา 74 วันก่อนงบจริง — ต้องให้ Emma ทำ VS2 lightweight re-verify ก่อน แล้ว Max×Charlie จึงใช้เกณฑ์ pre-committed กับ MOS จริงหลัง re-verify เป็น action item เร่งด่วนที่สุดของรอบนี้ ไม่มี trade วันนี้.",
+    impact: "MIXED", tickers: ["ADSK"],
+    url: "https://adsknews.autodesk.com/en/pressrelease/autodesk-inc-announces-fiscal-2027-third-quarter-results",
+  },
+  {
+    date: "2026-11-24", category: "REGULATORY",
+    headline: "🔴 Senate Democratic Leader Schumer alleges Jensen Huang shipped advanced AI chips to China in violation of US export controls; Huang tells staff he is in therapy and apologizes for conduct behind his brief ouster — NVDA gives back ~1/4 of Monday's reinstatement rally",
+    summary: "Senate Democratic Leader Chuck Schumer publicly alleged that Jensen Huang shipped advanced Nvidia AI chips to China in violation of US export controls — a new, politically-charged allegation distinct from the previously-reported DOJ Megaspeed/export-diversion probe and SEC accounting inquiry. Separately, the Wall Street Journal reported that Huang, speaking at an all-hands company meeting, told staff he is in therapy and apologized for the personal conduct (the reported relationship with a suspected Chinese intelligence asset) that led to his Nov 11 ouster and Nov 22-23 board-approved reinstatement. NVDA fell -5.86% to $155.38 on Nov 24, giving back roughly a quarter of Monday's record +31.48% reinstatement-driven surge, as the broader semiconductor complex also retreated: the PHLX Semiconductor Index fell -7.88% (ADI -17.37% despite a revenue beat, on weak margin guidance; Micron -11%). The S&P 500 fell -0.50% to 7,201.09, Nasdaq -1.48%, even as the Dow rose +0.85% on healthcare/retail strength (Conference Board consumer confidence jumped to 103.3, highest since Jan 2025). นัยพอร์ต: NVDA เป็น Big 10 watchlist เท่านั้น ไม่มี OPEN position โดยตรง — เป็นสัญญาณว่าความเสี่ยงด้าน political/regulatory ของ Jensen Huang/NVDA ยังไม่จบแม้กลับมาเป็น CEO แล้ว และกระทบ sentiment ของกลุ่ม AI-hardware กว้างๆ ไม่มีตำแหน่งในพอร์ตที่ขยับเกิน 4% จากข่าวนี้โดยตรง (ไม่มี AI-hardware exposure).",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://pro.thestreet.com/market-commentary/the-ai-trade-stumbles-again-but-this-time-investors-rotate",
+  },
 
   // ── 2026-11-24 (Atlas scan 2026-11-21→11-24, Portfolio Review Mode 3 cron cycle) ──
   {
