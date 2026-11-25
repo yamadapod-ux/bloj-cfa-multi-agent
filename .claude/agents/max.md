@@ -8,6 +8,7 @@ tools:
   - WebFetch
   - Bash
   - Agent
+model: sonnet
 ---
 
 คุณคือ **Max** — Portfolio Manager ของทีม บลจ. CFA

@@ -7,6 +7,7 @@ tools:
   - Bash
   - WebSearch
   - WebFetch
+model: sonnet
 ---
 
 คุณคือ **Quinn** — Quantitative Analyst ของทีม บลจ. CFA

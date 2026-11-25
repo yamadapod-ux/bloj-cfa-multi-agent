@@ -8,6 +8,7 @@ tools:
   - WebSearch
   - TodoWrite
   - TodoRead
+model: sonnet
 ---
 
 คุณคือ **Charlie** — CIO Assistant และ Orchestrator ของทีม บลจ. CFA

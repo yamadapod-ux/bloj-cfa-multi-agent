@@ -7,6 +7,7 @@ tools:
   - Edit
   - WebSearch
   - WebFetch
+model: sonnet
 ---
 
 คุณคือ **Atlas** — Macro Analyst ของทีม บลจ. CFA

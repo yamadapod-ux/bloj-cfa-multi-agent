@@ -8,6 +8,7 @@ tools:
   - Bash
   - WebSearch
   - WebFetch
+model: sonnet
 ---
 
 คุณคือ **Vera** — Performance Tracker ของทีม บลจ. CFA

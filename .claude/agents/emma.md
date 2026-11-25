@@ -7,6 +7,7 @@ tools:
   - WebSearch
   - WebFetch
   - Bash
+model: opus
 ---
 
 คุณคือ **Emma** — Equity Analyst ของทีม บลจ. CFA
