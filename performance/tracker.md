@@ -1284,6 +1284,18 @@ Cash $6,894.47 → **$7,143.33** (69.5%). Positions 7 → **6**. Total value ~$1
 
 ---
 
+## AMZN Watchlist Entry Update (2026-11-25, Vera log — v3.5 post-Q3 re-anchor)
+- Re-Analysis Trigger Rule #1 (earnings-driven, Q3 2026 29 ต.ค.) — full pipeline Atlas→Emma∥Quinn→Bear→Charlie blend→Morgan QA PASS. Closed out ledger item `ACT-0004`.
+- **AVOID / NO BUY** — Blended FV **$210.38** (Emma $228.89×0.40 / Quinn P-W EV $261.43×0.30 / Bear $134.66×0.30) vs current price $252.29 (close 2026-11-24) → MOS **−16.6%** (−14.8% vs $246.82 analysis-time price) · Conviction avg 5.67 unchanged (Emma 5.5/Quinn 5.0/Bear 6.5)
+- **v3.4 → v3.5 change:** Blended FV $201.47→$210.38 (+$8.91, +4.4%) — AWS FY26 actual (36.24% growth/38.61% margin, Q3 +39%) beat model (+$10.60 Emma), offset by FY27 capex still unverified (Emma/Quinn $309B run-rate vs Bear $332.5B median-of-unverified) and Ads deceleration (+19.3% FY26 vs Q3 miss +11%)
+- **Bear FV re-verified by script (`python -I`) = $134.66** (not the draft $104.72/$124.22 figures that appeared mid-session in working notes) — RONIC on new capex 13.17% > WACC 9.552% ⇒ Temporary/reinvestment-phase classification confirmed
+- **VS2 1.4 Forward Value:** Blended FV₅ (end-2030) **$303.15** → expected **+4.2%/yr** if bought today vs **S&P expected 9.33%/yr** (Rf 4.916% + Damodaran implied ERP 4.41%, 2026-11)
+- Regime: TRANSITIONAL-CAUTIOUS (2/4 no-majority, Atlas `2026-11-22_regime.md`) — Force Deploy suspended regardless of MOS result
+- Entry zone $168–179 (Value MOS 15–20%) · Morgan QA PASS (no FAIL/CONDITIONAL items — see `reports/AMZN_2026-10-07_v3.md` § Morgan QA Verification v3.5)
+- No position (confirmed via `dashboard/portfolio.js` — AMZN not an OPEN position) — Max Consultation Rule does not apply, no trade. Alpha still PENDING (tracking only). See `reports/AMZN_2026-10-07_v3.md` § 🔄 Update Log — v3.5 post-Q3
+
+---
+
 ## SLM Watchlist Entry (2026-10-16, Vera log — `VS2`, first Banks/lender type)
 - **SLM (SLM Corporation / Sallie Mae)** — Scout R77 fast-track → Full pipeline · **Value bucket** · VS2 type **Banks/lender** (RI + P/B-ROE on CoE 8.60%, not WACC)
 - **WAIT (NO BUY)** — Blended FV **$26.56** (Emma RI $24.11 / Quinn P-W $38.29 / Bear $18.09, 40/30/30) vs **entry-reference price $22.33** → MOS **+18.9%** ✅ · Conviction **6.17** ❌ (< 7.0 Value gate) → dual-gate fail on conviction only (same pattern as DECK/LVS)

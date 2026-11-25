@@ -82,7 +82,7 @@
       "owner": "Charlie",
       "created": "2026-11-24",
       "due": null,
-      "status": "open",
+      "status": "done",
       "escalation_level": 0,
       "default_on_timeout": null,
       "evidence": "agent_notes/{bear,emma,quinn}/2026-11-22_AMZN_v3.5*.md เสร็จ, เคย dispatch ชน usage limit (proc_3d13714c4599 EXIT:1)",
@@ -92,6 +92,12 @@
           "action": "created",
           "by": "Hermes",
           "detail": "AMZN v3.5 re-analysis ค้างกลางทาง (Bear/Emma/Quinn เสร็จ Charlie blend+decision ยังไม่ทำ)"
+        },
+        {
+          "date": "2026-11-25",
+          "action": "done",
+          "by": "Hermes",
+          "detail": ""
         }
       ]
     },
