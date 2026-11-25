@@ -14,7 +14,7 @@ const PLAN_PROGRESS = [
   { id: "WP1",        label: "Action Ledger + CLI",                          status: "done",        note: "เสร็จ 2026-11-24" },
   { id: "WP2",        label: "ใส่งานค้างจริงลง ledger",                      status: "done",        note: "เสร็จ 2026-11-24" },
   { id: "งานด่วน",    label: "งานด่วนจากไฟล์แผน (CIO 2026-11-24)",           status: "done",        note: "เสร็จ 2026-11-25" },
-  { id: "WP-DB1",     label: "หน้าแรกแบบศูนย์สั่งการ (Dashboard Overview)",   status: "in_progress", note: "กำลังทำอยู่ตอนนี้" },
+  { id: "WP-DB1",     label: "หน้าแรกแบบศูนย์สั่งการ (Dashboard Overview)",   status: "done",        note: "เสร็จ 2026-11-26" },
   { id: "WP-E",       label: "E-series (scorecard ฯลฯ)",                     status: "pending" },
   { id: "WP3",        label: "ต่อ ledger เข้ากับ cron เดิม + ตั้ง cron Vera", status: "pending" },
   { id: "WP-T1",       label: "WP-T1",                                      status: "pending" },
