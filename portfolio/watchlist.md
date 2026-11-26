@@ -11316,3 +11316,112 @@ Beaten-down reason (Filter A): cyclical/sentiment — used-vehicle margin normal
 **ข้อควรระวัง:** D คำนวณจาก NI proxy ไม่ใช่ FCF + ไม่มี Street PT cross-check + debt AN/LAD ไม่ verified — Charlie ที่ Tier 1 ควรทำ Check 1–2 ใหม่ด้วย EV/EBITDA และ net debt จริงก่อนจัด lane
 
 *Max — 2026-11-25 | Scout Round 106 (Auto Dealers & Rental — 7 screened; 0 fast-track / 3 learning-queue [AN, GPI, LAD] / 4 reject; prune 0 de-listed, live 7→10)*
+
+## Scout Report § Round 107 (Rent-to-Own / Pawnbroking / Non-Prime Specialty Consumer Finance — UPBD[ex-RCII], PRG, FCFS, EZPW, WRLD, OPFI, ENVA) — 2026-11-26
+
+> **Resume note:** พบ data cache ของรอบเดียวกันที่ถูกตัดก่อนเขียนรายงาน (`scripts/scout/2026-11-26_nonprime/`, ไฟล์เวลา 09:32–09:35 วันนี้; ยังไม่มีรายงาน/commit) → ใช้ต่อ ไม่สร้าง entry ซ้อน
+
+### Step 0 — Prune Pass
+live 10 แถว: Rule #1 ไม่มีแถวเกิน 60 วัน (เก่าสุด ALLY 10-16 = 41 วัน) · Rule #2 re-price close 11-25 (Yahoo = Nasdaq API): ALLY $38.46 · MMS $61.17 · CRI $37.04 · NBIX $166.00 · BYD $77.91 · WGO $32.28 · CMRE $12.55 · AN $182.61 · GPI $260.34 · LAD $297.59 — ไม่มีตัวใด >2× ขอบบน entry zone · Rule #3 ALLY มี `reports/ALLY_2026-11-21.md` แต่ไม่พบ formal decision ใน `decisions.md` → ยังไม่ de-list
+**ผล: de-listed 0 · SLA fixed 0 · live 10 → 10** · ไม่แก้แถว MMS/CRI/NBIX/BYD/WGO (อยู่ใน exclusion list ของ task) · ⚠️ target ของ ALLY/MMS/CRI/NBIX/BYD/CMRE ครบ **11-28 (อีก 2 วัน)** · ALLY (−18.7%), CRI (−16.7%), NBIX (−10.8%), BYD (−14.8%) ไม่ผ่าน Filter A แล้ว ณ ราคานี้
+
+### Trigger / Regime / Coverage
+- Regime: `agent_notes/atlas/2026-11-22_regime.md` → **TRANSITIONAL-CAUTIOUS** (2/4 vs 2/4, no majority; record อายุ 4 วัน) → Full/Half ถูกบล็อก
+- Coverage: ไม่ซ้ำกับ holdings (`dashboard/portfolio.js`: ADBE/NOW/CRM/REGN/ADSK) และไม่พบใน `decisions.md` · **แก้ข้อสมมติฐานของ task:** `watchlist.md` มี OPFI อยู่แล้ว 2 จุดใน Round 26 (reject ด้วย growth screen เดิม, +1.9%) ไม่ใช่ 0 hits · อีก 6 ตัว 0 hits
+- **RCII = UPBD:** Rent-A-Center เปลี่ยนชื่อเป็น Upbound Group (SEC `formerNames` สิ้นสุด 2023-02-15) — ใช้ ticker UPBD
+- **CURO ตัดออก ไม่ investable:** NYSE เริ่ม delist มี.ค. 2024, แผน Chapter 11 มีผล 2024-07-19 และหุ้นสามัญถูกยกเลิกแลก CVR ([NYSE notice](https://markets.financialcontent.com/spoke/article/bizwire-2024-3-11-nyse-to-commence-delisting-proceedings-against-curo-group-holdings-corp-curo), [FINRA UPC 30-2026](https://www.finra.org/sites/default/files/2026-03/UPC-30-2026-CUROQ.pdf))
+- ไม่มีตัวใดอยู่ใน exclusion list ของ task
+
+### Filter A — ราคา close 2026-11-25 (2 sources)
+| Ticker | Yahoo chart | Nasdaq API | 52W high (intraday, Yahoo; Nasdaq ตรง) | % จาก high | Filter A / beaten-down reason |
+|---|---|---|---|---|---|
+| UPBD | $27.39 | $27.39 | $27.47 (11-25; Nasdaq แสดง 27.24 ยังไม่รวมวันล่าสุด) | **−0.3%** | ❌ ที่ high |
+| PRG | $41.62 | $41.62 | $47.73 (07-16) | **−12.8%** | ❌ |
+| FCFS | $176.65 | $176.65 | $238.93 (08-25) | **−26.1%** | ✅ sentiment/cyclical: −14.7% วัน 10-22 หลังงบ record; guide AFF Q4 GTV ลง mid-teens; สื่อโยงราคาทอง (ไม่ยืนยัน) |
+| EZPW | $24.34 | $24.34 | $37.13 (05-07) | **−34.4%** | ✅ cyclical: scrap margin Q4 19% vs 29% (ทองลงจาก Q3) |
+| WRLD | $131.84 | $131.84 | $227.68 (06-30) | **−42.1%** | ⚠️ ก้ำกึ่ง: cyber incident ส.ค. + 14 class actions, ลูกค้าใหม่หด, เปลี่ยน CEO (สาเหตุของราคาไม่ได้ยืนยันรายเหตุการณ์) |
+| OPFI | $6.00 | $5.995 | $11.69 (2025-12-22) | **−48.7%** | ⚠️ ก้ำกึ่งเอียงลบ: NCO/revenue 40.1% vs 35.1%, ถอนคำขอซื้อธนาคาร 11-03, DFPI อุทธรณ์ |
+| ENVA | $167.19 | $167.14 | $267.45 (08-14) | **−37.5%** | ✅ dislocation: −23.4% วัน 09-15 หลังถอนคำขอ Grasshopper; ธุรกิจยังโต (Q3 rev +26%, EPS +34%) |
+
+Sources: [Yahoo chart API](https://query1.finance.yahoo.com/v8/finance/chart/FCFS?range=1y&interval=1d) และ [Nasdaq API](https://api.nasdaq.com/api/quote/FCFS/info?assetclass=stocks) (endpoint เดียวกันทุก ticker)
+
+**UPBD / PRG — B-Zero และ overhang (บันทึกไว้ แม้ตก A):**
+- UPBD: equity +$750M · ND/EBITDA ≤2.5× (debt $911M − cash $125M; EBITDA TTM ~$317M) · **tangible equity ติดลบ ~−$42M** (goodwill $488M + intangibles $304M) · multistate AG 43 รัฐ (Acima, ตกลงหลักการแบบ non-binding) + คดี NY AG ที่ศาลไม่ยกฟ้อง (08-27-2026) ([10-Q](https://www.sec.gov/Archives/edgar/data/933036/000119312526438271/upbd-20260930.htm)) · re-screen ถ้า ≤ **$21.98**
+- PRG: equity +$808M · ND/EBITDA ~2.7× (debt $866M − cash $109M; EBITDA TTM ~$277M) · tangible equity ~$106M · NC AG civil investigative demand ต.ค. 2026; FTC settlement $175M ปี 2020 ([10-Q](https://www.sec.gov/Archives/edgar/data/1808834/000162828026067756/prg-20260930.htm)) · re-screen ถ้า ≤ **$38.18**
+
+### Financials — SEC EDGAR companyfacts + 10-Q/10-K/8-K
+| $M | FCFS | EZPW (FY ก.ย.) | WRLD (FY มี.ค.) | OPFI | ENVA |
+|---|---|---|---|---|---|
+| NI FY ล่าสุด 3 ปี | 219 / 259 / 330 | 83 / 110 / 166 | 77 / 89 / 35 | pretax 42 / 88 / 156 | 175 / 209 / 308 |
+| NI TTM (ถึง 09-30-26) | **406** | **173** (diluted, รวม convert) | **49.6** | **123** (pretax 164 × 0.75) | **382.5** |
+| Equity 09-30-26 | 2,273 | 1,192 | 349 | 443 | 1,569 |
+| Debt / cash | 2,447 / 203 | 530 / 295 | 592 / 8 | 352 / 103 | 5,377 / 106 |
+| Shares cover (diluted) | 42.89M (43.3) | 61.35M (83.7) | 4.44M (4.6) | 84.73M (85.6) | 24.46M (26.4) |
+| Mkt cap (cover shares) | $7.58B | $1.49B ($2.04B diluted) | $585M | $508M | $4.09B |
+| P/E TTM (diluted) | 18.8× | 11.7× | 12.2× | ~4.2× (pro-forma tax) | 11.5× |
+
+OPFI: ใช้ pretax × 0.75 เพราะโครงสร้าง Up-C เดิมทำให้ NI ย้อนหลังเทียบไม่ได้ (corporate simplification ปี 2026) · lender/pawn: CFO−capex **ใช้เป็น FCF ไม่ได้** (เงินปล่อยกู้อยู่ใน investing; WRLD จะได้ yield >40% ปลอม) → naive FV ใช้ **NI เป็น owner-earnings proxy ÷ CoE**
+
+### Tier 1 Quick-Screen — Check 1 (ROIC) / Check 2 (naive FV ต่อหุ้น = NI ÷ CoE ÷ diluted shares)
+Check 1: ไม่มีตัวใด ROIC < 0.5× WACC และแย่ลง 2 ปี
+
+| Ticker (CoE) | Normalized basis → ราคา÷FV | TTM basis → ราคา÷FV | Tier 1 |
+|---|---|---|---|
+| FCFS (9–10%) | 5Y avg NI $237M: FV $61–55 → **2.90–3.22×** | $104–94 → 1.69–1.88× (company adjusted NI $462M: 1.49–1.66×) | ❌ **SKIP 2a** |
+| EZPW (10–13%) | 5Y avg $97M (รวม convert add-back ~$7.5M): $11.6–8.9 → **2.10–2.73×** | $20.7–15.9 → 1.17–1.53× | ❌ **SKIP 2a** |
+| ENVA (10–13%) | 5Y avg $231M: 1.91–2.48× · mid-cycle margin 11.8% × rev TTM: 1.02–1.33× (ตัดปี 2021: 1.28–1.66×) | $145–111 → 1.15–1.50× | ❌ **SKIP 2b** (ทุกช่อง >0.95× แม้จัดเป็น Growth) |
+| WRLD (13–16%) | 5Y avg $55M: $92–75 → 1.43–1.76× | $83–67 → 1.59–1.96× | ⚠️ 2a ติดเฉพาะ CoE 16% → ไปต่อ D/E |
+| OPFI (13–16%) | 5Y avg $57M: $5.11–4.15 → 1.17–1.44× · 3Y avg 0.93–1.15× · mid-margin 0.95–1.17× | $11.05–8.98 → **0.54–0.67×** | ⚠️ basis หลักไม่ติด → ไปต่อ D/E |
+
+**Bucket:** revenue โต >15% ใน FCFS/EZPW/ENVA แต่ของ FCFS/EZPW มาจากทองและ M&A — ผล SKIP ไม่เปลี่ยนไม่ว่าจัด Value หรือ Growth (basis หลักของทั้งคู่ >1.5×)
+
+### Filter B-Zero / B / C / E
+ตัวที่ SKIP ที่ Tier 1 แสดงเป็นข้อมูลประกอบเท่านั้น
+
+| | FCFS | EZPW | WRLD | OPFI | ENVA |
+|---|---|---|---|---|---|
+| B-Zero: equity | ✅ บวก (tangible เหลือ ~$53M) | ✅ บวก | ⚠️ บวก $349M | ✅ บวก | ✅ บวก |
+| Net debt/EBITDA | 2.7× | 0.8× | **4.9×** ⚠️ | ~1.5× (pretax+D&A) | **5.8×** ⚠️ (funding debt) |
+| P/B ปัจจุบัน vs 5Y median | 3.33 vs 2.26 ❌ | 1.71 vs 1.18 ❌ | 1.68 vs 1.90 ✅ | 1.15 vs ~2.4 ✅ | 2.61 vs 1.26 ❌ |
+| FCF yield / EV อื่น | co. adj FCF $393M = 5.2% ❌ · EV/EBITDA 11.9× vs FY22–25 10.6–13.4 (bottom-third ≤11.5; ตัด FY21 ปีซื้อ AFF) ❌ | CFO−capex 6.9% (สูงเกินจริง) · EV/EBITDA ~7.6× vs 6.8–9.2 = ขอบ bottom-third | n/a | n/a | EV/Rev 2.56× vs FY21–25 1.94–2.65 ❌ (peer/sector ไม่ได้คำนวณ) |
+| **B** | ❌ | ⚠️ | ✅ | ✅ | ❌ (B-V1 ยังไม่ผ่านจากวิธีที่คำนวณ) |
+| C: ROIC (TTM / 5Y avg) | 11.6% / 8.4% ✅ | 13.5% / 9.6% ✅ | 9.3% (7.8→8.5→9.3) / 9.4% · ⚠️ 85% ของ WACC 11% แต่ 72% ของ 13% | 17.8% / ~12% ก่อน add-back interest ✅ | ROE 26.8% / 19.1% ✅ |
+| E1 moat | ✅ Narrow+ (3,352 ร้าน; preliminary) | ❓ ไม่ได้ verify | ❌ (NCO 17.6%) | ❌ bank-partner model | ❓ |
+| E2 spread ≥+3pp 5Y | ❌ | ❌ | ❌ | ❓ | ✅ +6pp |
+| E3 overhang | ✅ ไม่พบคดีมีนัยสำคัญใน 10-Q (Ramsdens รอ anti-trust) | ⚠️ หุ้น Class A ไม่มีสิทธิออกเสียง (Class B ถือโดยรายเดียว) | ❌ class actions ยังไม่ตั้งสำรอง + covenant | ❌ DFPI อุทธรณ์ + คำถามจากหลายรัฐ + ถอนคำขอธนาคาร | ⚠️ ถอนคำขอธนาคาร; ร่างกฎหมาย cap 36% |
+| **E** | 2/3 | ≤1/3 | **0/3** ❌ | **≤1/3** ❌ | 1/3 + 2 ข้อไม่ชัด |
+
+**WRLD covenant (ต้องจำ):** เพดาน debt ≤225% adjusted net worth, net worth ≥$325M (equity ตามงบ $348.8M — นิยามใน covenant อาจต่างจากงบ), fixed-charge coverage ถูกผ่อนเป็น 2.15× ณ 09-30 และกลับเป็น 2.25× ตั้งแต่ 12-31-2026 ([10-Q](https://www.sec.gov/Archives/edgar/data/108385/000010838526000043/wrld-20260930.htm))
+
+**Regulatory overhang ของ sector:** EZCORP 10-K ระบุว่า CFPB ยังไม่ใช้อำนาจออกกฎกับ pawn แต่เคยดำเนินคดีบริษัท pawn (เช่นเรื่อง Military Lending Act) ([10-K](https://www.sec.gov/Archives/edgar/data/876523/000087652326000076/ezpw-20260930.htm)) · มีร่างกฎหมาย cap APR 36% ทั้งสภาล่าง/วุฒิสภา สถานะเป็นข้อเสนอ ([Reed release](https://www.reed.senate.gov/news/releases/senators-introduce-legislation-to-cap-consumer-loans-at-36percent), [สรุป H.R. 10439](https://ginsburglawgroup.com/2026/09/veterans-and-consumers-fair-credit-act-36-percent-interest-cap/)) · อัยการ 17 รัฐคัดค้านดีลธนาคารของ OppFi ([CA AG](https://oag.ca.gov/node/627858))
+
+### Street PT cross-check (ไม่เปลี่ยนผล ยกเว้นประเด็น ENVA)
+| Ticker | Nasdaq analyst API | vs ราคา | แหล่งที่ 2 |
+|---|---|---|---|
+| FCFS | $242.50 (2) | +37% | ไม่ได้ใช้ |
+| EZPW | $41.33 (2) | +70% | ไม่ได้ใช้ |
+| OPFI | $12.00 (1) | +100% | ไม่ได้ใช้ |
+| ENVA | $239.00 (low 220 / high 275) | +43% | หลัง Q3: $220–225 (+32–35%) [Benzinga](https://www.benzinga.com/analyst-stock-ratings/price-target/26/10/62558043/these-analysts-increase-their-forecasts-on-enova-after-upbeat-q3-results) |
+| PRG / UPBD | $46.00 / $26.00 | +11% / −5% | ไม่ได้ใช้ |
+| WRLD | ไม่มีข้อมูล | — | — |
+
+⚠️ **กฎชนกัน (ENVA) — ส่งให้ Charlie/CIO:** D-V1 วิธี 3 (Street PT gap ≥20%) **ผ่าน** แต่ Tier 1 check 2b (no-growth naive FV) **SKIP** — รอบนี้ยึด Tier 1 ตามตัวอักษร (รันก่อน lane assignment) · D-V1 วิธี 1–2 ไม่ได้คำนวณ · CIO override เป็น learning-queue ได้
+
+### Final routing — Round 107
+| Ticker | ผล | ตกที่ | re-screen เมื่อ |
+|---|---|---|---|
+| UPBD | ❌ reject | **Filter A** (−0.3%) | ≤ $21.98 |
+| PRG | ❌ reject | **Filter A** (−12.8%) | ≤ $38.18 |
+| FCFS | ❌ `QUICK-SCREEN SKIP` | **Tier 1 2a** (+ B ไม่ผ่าน) | ราคาลงอีก ~40–52% (0.90× บน TTM: $84–107) หรือกำไรปกติเปลี่ยนมีนัยสำคัญ |
+| EZPW | ❌ `QUICK-SCREEN SKIP` | **Tier 1 2a** | ≤ $18.65 (0.90× TTM ที่ CoE 10%) |
+| ENVA | ❌ `QUICK-SCREEN SKIP` | **Tier 1 2b** | ≤ $138 (0.95× TTM ที่ CoE 10%) หรือ CIO override |
+| WRLD | ❌ `QUICK-SCREEN SKIP` | **D** (1.38–1.96×) + **E 0/3** | ≤ $83 และผ่านการทดสอบ covenant 12-31 + คดี cyber ชัดเจน |
+| OPFI | ❌ `QUICK-SCREEN SKIP` | **D** through-cycle (0.93–1.44×) + **E ≤1/3** | DFPI appeal จบ และ credit loss กลับทิศ (TTM basis ดูถูก 0.54× แต่เป็นกำไรช่วง peak) |
+
+**Funnel: 7 screened (+CURO ไม่ investable) · 0 fast-track · 0 learning-queue · 7 reject** (A 2 · Tier 1 SKIP 3 · D/E 2) · ไม่เพิ่ม Pending Analysis · ไม่เพิ่ม `buy_list.md` (regime TC + ไม่มี candidate) · ไม่มี target analysis date · check 3 (red-flag search สำหรับ Bear) ไม่ได้ทำเพราะไม่มีตัวส่งต่อ
+
+**ข้อจำกัด:** naive FV เป็น NI proxy ไม่ใช่ FCF · CoE เป็นค่าตาม band ไม่ได้คำนวณ beta · EV/EBITDA และ P/B ย้อนหลังคำนวณเองจากราคาสิ้นปีงบ (Yahoo) + SEC โดย EZPW ใช้ diluted shares ที่รวม convert (นับ convert ซ้ำกับหนี้ในอดีต) และ OPFI ปี 2023–25 ใช้ช่วงหุ้น 84–88M · ROIC ใช้ภาษีประมาณ 23–26%
+
+**Sources (SEC):** companyfacts `https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json` (FCFS 0000840489 · EZPW 0000876523 · WRLD 0000108385 · OPFI 0001818502 · ENVA 0001529864 · UPBD 0000933036 · PRG 0001808834) · [FCFS Q3 release](https://www.sec.gov/Archives/edgar/data/840489/000084048926000097/fcfs10222026exhibit991.htm) · [EZPW Q4 release](https://www.sec.gov/Archives/edgar/data/876523/000087652326000074/a2026-q4pressreleaseex991.htm) · [WRLD Q2 FY27 release](https://www.sec.gov/Archives/edgar/data/108385/000143774926033331/ex_1030266.htm) · [OPFI Q3 release](https://www.sec.gov/Archives/edgar/data/1818502/000181850226000084/opfi-20260930earningsrel.htm) · [OPFI 10-Q](https://www.sec.gov/Archives/edgar/data/1818502/000181850226000100/opfi-20260930.htm) · [ENVA Q3 release](https://www.sec.gov/Archives/edgar/data/1529864/000119312526428941/enva-ex99_1.htm) · [ENVA 10-Q](https://www.sec.gov/Archives/edgar/data/1529864/000119312526429122/enva-20260930.htm) · [ENVA 8-K 09-14](https://www.sec.gov/Archives/edgar/data/1529864/000119312526390599/enva-20260914.htm) · ข่าว FCFS/EZPW: [TIKR](https://www.tikr.com/blog/firstcash-sinks-13-ezcorp-down-10-despite-record-q3-beat-another-outstanding-quarter)
+
+*Max — 2026-11-26 | Scout Round 107 (Rent-to-Own / Pawn / Non-Prime Consumer Finance — 7 screened; 0 fast-track / 0 learning-queue / 7 reject; prune 0 de-listed, live 10)*

@@ -1252,3 +1252,19 @@
 - **Data:** ราคา Yahoo chart = Nasdaq historical API (close 2026-11-20, 0.00% diff) · SEC XBRL companyfacts FNF (10-Q 2026-09-30). ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 104.
 
 *Max — 2026-11-23 | Scout Round 104 — 0 fast-track, 0 learning-queue, 1 QUICK-SCREEN SKIP (FNF); no trade.*
+
+
+## 2026-11-26 — Scout Round 107 (Rent-to-Own / Pawn / Non-Prime Consumer Finance)
+
+| Ticker | Tag | Detail |
+|---|---|---|
+| FCFS | `QUICK-SCREEN SKIP` | Tier 1 2a: $176.65 = 2.90–3.22× naive FV (5Y avg NI ÷ CoE 9–10%); B ไม่ผ่าน |
+| EZPW | `QUICK-SCREEN SKIP` | Tier 1 2a: $24.34 = 2.10–2.73× naive FV (5Y avg NI ÷ CoE 10–13%) |
+| ENVA | `QUICK-SCREEN SKIP` | Tier 1 2b: $167.19 = 1.02–2.48× naive FV ทุก basis · ⚠️ ขัดกับ D-V1 วิธี Street PT (+32–43%) — รอ Charlie/CIO ถ้าจะ override |
+| WRLD | `QUICK-SCREEN SKIP` | D 1.38–1.96× + E 0/3 (คดี cyber, covenant) |
+| OPFI | `QUICK-SCREEN SKIP` | D through-cycle 0.93–1.44× (TTM 0.54–0.67×) + E ≤1/3 (DFPI appeal) |
+
+- **Action:** ไม่มี trade · UPBD (−0.3%) / PRG (−12.8%) ตก A — ไม่นับเป็น QUICK-SCREEN SKIP · CURO ไม่ investable · Regime TC (Atlas 2026-11-22) ห้ามเปิดใหม่
+- **Data:** ราคา Yahoo chart + Nasdaq API (close 2026-11-25, ต่างกัน ≤0.1%) · SEC XBRL companyfacts + 10-Q/10-K/8-K. ตารางเต็ม: `portfolio/watchlist.md` § Scout Report Round 107
+
+*Max — 2026-11-26 | Scout Round 107 — 0 fast-track, 0 learning-queue, 5 QUICK-SCREEN SKIP; no trade.*
