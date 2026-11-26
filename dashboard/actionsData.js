@@ -6,7 +6,7 @@
 // =================================================================
 
 const ACTIONS_DATA = {
-  "generatedAt": "2026-11-26T04:03:23.559Z",
+  "generatedAt": "2026-11-26T13:09:13.546Z",
   "items": [
     {
       "id": "ACT-0001",
@@ -203,6 +203,76 @@ const ACTIONS_DATA = {
       "escalation_level": 0,
       "default_on_timeout": null,
       "evidence": "dashboard/thesisWatch.js 2026-11-18..2026-11-24 entries: 5-session breach, stopDist -5.80%->-1.42%"
+    },
+    {
+      "id": "ACT-0015",
+      "type": "checkpoint",
+      "ticker": null,
+      "title": "Checkpoint A — หลัง WP-DB1 + WP-E E0-E3 ก่อน WP3",
+      "owner": "Opus",
+      "created": "2026-11-26",
+      "due": "2026-12-03",
+      "daysUntilDue": 7,
+      "status": "open",
+      "escalation_level": 0,
+      "default_on_timeout": "ห้ามเริ่ม WP3 จนกว่า Opus จะตรวจผ่าน",
+      "evidence": "opus_log.md 2026-11-26: ครั้งแรก ไม่ผ่าน (bc224b4..2b1f30b), อยู่ระหว่างทำ Fix จากข้อ 1-6 ใน คุยกับ hermes - แผนปรับปรุง.md"
+    },
+    {
+      "id": "ACT-0016",
+      "type": "checkpoint",
+      "ticker": null,
+      "title": "Checkpoint B — หลัง WP3 ก่อน WP-T1",
+      "owner": "Opus",
+      "created": "2026-11-26",
+      "due": "2026-12-03",
+      "daysUntilDue": 7,
+      "status": "open",
+      "escalation_level": 0,
+      "default_on_timeout": "ห้ามเริ่ม WP-T1 จนกว่า Opus จะตรวจผ่าน",
+      "evidence": "ยังไม่ถึงคิว รอ WP3 เสร็จก่อน (คุยกับ hermes - แผนปรับปรุง.md บรรทัด 38)"
+    },
+    {
+      "id": "ACT-0017",
+      "type": "checkpoint",
+      "ticker": null,
+      "title": "Checkpoint D — หลัง WP-DB2 ก่อน WP-E E4-E7",
+      "owner": "Opus",
+      "created": "2026-11-26",
+      "due": "2026-12-03",
+      "daysUntilDue": 7,
+      "status": "open",
+      "escalation_level": 0,
+      "default_on_timeout": "ห้ามเริ่ม WP-E E4-E7 จนกว่า Opus จะตรวจผ่าน (ดู screenshot)",
+      "evidence": "ยังไม่ถึงคิว รอ WP-T1/WP-T2/WP4/WP-DB2 เสร็จก่อน (บรรทัด 39)"
+    },
+    {
+      "id": "ACT-0018",
+      "type": "checkpoint",
+      "ticker": null,
+      "title": "Checkpoint E — หลัง WP7 และ WP-T3 ก่อน WP8",
+      "owner": "Opus",
+      "created": "2026-11-26",
+      "due": "2026-12-03",
+      "daysUntilDue": 7,
+      "status": "open",
+      "escalation_level": 0,
+      "default_on_timeout": "ห้ามเริ่ม WP8 จนกว่า Opus จะตรวจผ่าน",
+      "evidence": "ยังไม่ถึงคิว รอ WP5/WP6/WP7/WP-T3 เสร็จก่อน (บรรทัด 40)"
+    },
+    {
+      "id": "ACT-0019",
+      "type": "checkpoint",
+      "ticker": null,
+      "title": "Checkpoint C — ก่อน commit WP9",
+      "owner": "Opus",
+      "created": "2026-11-26",
+      "due": "2026-12-03",
+      "daysUntilDue": 7,
+      "status": "open",
+      "escalation_level": 0,
+      "default_on_timeout": "ห้าม commit WP9 จนกว่า Opus จะตรวจผ่าน",
+      "evidence": "ยังไม่ถึงคิว รอ WP8 เสร็จก่อน (บรรทัด 41)"
     }
   ]
 };

@@ -178,7 +178,7 @@
       .stat-value { font-size: 1.25rem; }
       .card { padding: .85rem; }
       .decision-row, .backlog-row { padding: .65rem .75rem; }
-      .mini-kpi-grid { grid-template-columns: 1fr 1fr; }
+      .mini-kpi-grid { grid-template-columns: 1fr; }
       .nav-tabs { gap: 0; }
       .nav-tab { padding: .5rem .45rem; font-size: .74rem; }
       table.tbl { font-size: .72rem; }
@@ -187,7 +187,7 @@
     /* WP-DB1: Overview command-center sections */
     .oc-section { margin-bottom: 1.25rem; }
     .decisions-badge { display: inline-block; background: #E2725A; color: #1E1A15; border-radius: 10px; min-width: 1.1rem; height: 1.1rem; line-height: 1.1rem; text-align: center; font-size: .65rem; font-weight: 800; padding: 0 .3rem; margin-left: .3rem; vertical-align: middle; }
-    .decision-row, .backlog-row { background: #332C24; border: 1px solid #4A4032; border-left: 3px solid #E0A040; border-radius: 8px; padding: .75rem 1rem; margin-bottom: .6rem; }
+    .decision-row, .backlog-row { background: #332C24; border: 1px solid #4A4032; border-left: 3px solid #E0A040; border-radius: 8px; padding: .75rem 1rem; margin-bottom: .6rem; min-width: 0; overflow-wrap: anywhere; }
     .decision-row.l2 { border-left-color: #E2725A; }
     .decision-title { font-weight: 700; color: #F0E6D2; font-size: .88rem; margin-bottom: .25rem; }
     .decision-why, .decision-due, .decision-default { font-size: .76rem; color: #B8A88A; margin-top: .15rem; }
@@ -1244,7 +1244,7 @@ function buildDetailHTML(r) {
           ['Target (Base)', r.targetBase != null ? '$' + r.targetBase.toFixed(2) : '—', 'delta-pos'],
           ['Stop Loss', r.stopLoss != null ? '$' + r.stopLoss.toFixed(2) : '—', 'delta-neg'],
           ['P-W EV', r.pwEV != null ? '$' + r.pwEV.toFixed(2) : '—', ''],
-          ['Price Gap vs FV', fmtPct(gap) + '%', gapClass],
+          ['Price Gap vs FV', fmtPct(gap), gapClass],
         ].map(([l,v,c]) => `<div><div style="font-size:.7rem;color:#B8A88A;">${l}</div><div style="font-weight:600;font-family:'JetBrains Mono','Prompt',sans-serif;" class="${c}">${v}</div></div>`).join('')}
       </div>
     </div>
@@ -1688,6 +1688,13 @@ function buildDecisionsRequired() {
     return;
   }
   const decisive = ACTIONS_DATA.items.filter(i => i.status === 'open' && (i.owner === 'CIO' || i.escalation_level === 2));
+  // Checkpoints run in sequence (A→B→D→E→C, see "คุยกับ hermes - แผนปรับปรุง.md"); only the
+  // earliest still-open one is actually awaiting Opus review right now — later ones are future
+  // milestones not yet reached, so don't show them as "must decide" yet (Checkpoint A fix #4).
+  const openCheckpoints = ACTIONS_DATA.items
+    .filter(i => i.type === 'checkpoint' && i.status === 'open')
+    .sort((a, b) => a.id.localeCompare(b.id));
+  if (openCheckpoints.length > 0) decisive.push(openCheckpoints[0]);
   if (badge) {
     if (decisive.length > 0) { badge.textContent = decisive.length; badge.style.display = 'inline-block'; }
     else badge.style.display = 'none';
@@ -1722,8 +1729,8 @@ function buildPortfolioStatusMini() {
   const s = PORTFOLIO.summary;
   const kpis = [];
   kpis.push({ label: 'มูลค่าพอร์ต', value: '$' + s.totalValue.toLocaleString(undefined, {minimumFractionDigits:2,maximumFractionDigits:2}) });
-  kpis.push({ label: 'Total Return', value: fmtPct(s.totalReturnPct) + '%' });
-  kpis.push({ label: 'Alpha vs S&P 500', value: fmtPct(s.alpha) + '%' });
+  kpis.push({ label: 'Total Return', value: fmtPct(s.totalReturnPct) });
+  kpis.push({ label: 'Alpha vs S&P 500', value: fmtPct(s.alpha) });
   // Cash vs cash floor ของ regime ปัจจุบัน — floor ดึงจากข้อความ summary.macroRegime (เลขเดียวกับที่ Max ใช้จริง)
   const regimeText = s.macroRegime || '';
   const floorMatch = regimeText.match(/cash floor\s*(\d+(?:\.\d+)?)%/i);
@@ -1746,7 +1753,10 @@ function buildPortfolioStatusMini() {
     if (withStop.length > 0) {
       const nearest = withStop[0];
       const breached = nearest.stopDistancePct < 0;
-      kpis.push({ label: 'ใกล้ stop-loss ที่สุด', value: `${nearest.ticker}: ${fmtPct(nearest.stopDistancePct)}%${breached ? ' 🔴 BREACH' : ''}` });
+      const stopLabel = breached
+        ? `ต่ำกว่า stop ${Math.abs(nearest.stopDistancePct).toFixed(2)}% 🔴 BREACH`
+        : `ห่าง stop ${nearest.stopDistancePct.toFixed(2)}%`;
+      kpis.push({ label: 'ใกล้ stop-loss ที่สุด', value: `${nearest.ticker}: ${stopLabel}` });
     }
   }
   el.innerHTML = kpis.map(k => `<div class="mini-kpi"><div class="mini-kpi-label">${k.label}</div><div class="mini-kpi-value">${k.value}</div></div>`).join('');
@@ -1894,7 +1904,7 @@ function buildTrack() {
   stats.innerHTML = [
     ['Total Decisions', REPORTS.length, '#E0824E'],
     ['BUY Recommendations', buyCount, '#6FCB78'],
-    ['Avg FV vs Price Gap', fmtPct(parseFloat(avgGap)) + '%', parseFloat(avgGap) >= 0 ? '#6FCB78' : '#E2725A'],
+    ['Avg FV vs Price Gap', fmtPct(parseFloat(avgGap)), parseFloat(avgGap) >= 0 ? '#6FCB78' : '#E2725A'],
     ['Avg Conviction', SUMMARY.avgConviction + '/10', convColor(parseFloat(SUMMARY.avgConviction))],
   ].map(([l,v,c]) => `
     <div class="card-sm" style="text-align:center;">

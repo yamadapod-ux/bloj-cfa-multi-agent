@@ -79,6 +79,8 @@ Regime: Risk-ON   |  Conviction: 7.5
 | Minimum conviction | Value < 5.0 / Growth < 4.5 | **NO BUY (AVOID)** — ใช้ Tiered Sizing ตาม CLAUDE.md § Deployment Rules ข้อ 1 (Full/Half/Starter 1%) |
 | Binary Catalyst Guard | Bear ระบุ unresolved binary event | **NO BUY ทุก tier รวม Starter** — รอผลยืนยัน |
 | Regime TC / RISK-OFF | — | บล็อก Full/Half; **Starter 1% เปิดได้** (CIO อนุมัติ 2026-11-24) → flag `regime-exception position` + tag `REGIME-EXCEPTION-STARTER` ใน deployment_log · **T1 (3%) เปิดได้เฉพาะ priority top-3 Morgan-PASS ที่ conviction tier Full/Half ตาม Crash Playbook** (CIO decision D1 2026-11-24, ต้องผ่าน 1.7 blind ก่อนเสมอ) → flag `regime-exception position` + tag `REGIME-EXCEPTION-T1` |
+
+**Ruleset tracking (WP-E E2, บังคับ):** ทุกแถวที่ Max เขียนลง `portfolio/deployment_log.md` ต้องมีช่อง `ruleset` = เลขเวอร์ชันกฎจากบรรทัดบนสุดของ CLAUDE.md ขณะตัดสิน (เช่น `RULESET 2026-11-24`) — ไม่ต้อง backfill แถวเก่า
 | Max single position | > 10% | ลด size ลงมา 10% |
 | Max sector concentration | > 25% | NO BUY — แจ้ง CIO |
 | Minimum cash | < 5% | NO BUY จนกว่า cash > 5% |

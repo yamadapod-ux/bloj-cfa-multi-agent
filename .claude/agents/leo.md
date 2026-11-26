@@ -79,9 +79,11 @@ model: haiku
 ### portfolio/decisions.md
 อ่านไฟล์นี้ก่อน แล้วเพิ่ม row ใหม่ท้ายตาราง:
 ```markdown
-| [DATE] | [TICKER] | [Company] | [Rating] | [Price] | [S&P500] | [Conviction] | [Blended FV] | [Key Thesis] | [Stop Loss] |
+| [DATE] | [TICKER] | [Company] | [Rating] | [Price] | [S&P500] | [Conviction] | [Blended FV] | [Key Thesis] | [Stop Loss] | [ruleset] | [decided_by] |
 ```
 - **[S&P500]**: ราคา S&P 500 ณ วันที่วิเคราะห์ — Vera ใช้คำนวณ alpha ในภายหลัง ต้องบันทึกทุกครั้ง
+- **[ruleset]**: เลขเวอร์ชันกฎจากบรรทัดบนสุดของ CLAUDE.md ขณะตัดสิน เช่น `RULESET 2026-11-24` (WP-E E2, ไม่ต้อง backfill แถวเก่า)
+- **[decided_by]**: model/agent ที่เป็นคนตัดสินจริง เช่น `Charlie (sonnet)` หรือ `Hermes` ถ้า CIO สั่งตรง (WP-E E1)
 - ถ้า ticker นี้เคยวิเคราะห์มาก่อน → เพิ่ม section "การเปลี่ยนแปลง" ว่า rating/thesis เปลี่ยนยังไง ทำไม
 
 ### dashboard/data.js

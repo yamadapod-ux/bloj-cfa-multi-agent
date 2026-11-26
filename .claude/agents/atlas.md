@@ -111,6 +111,8 @@ Recession    → Utilities, Consumer Staples, Healthcare
 
 Data sourcing: WebSearch/WebFetch เหมือนกฎเดิมทุกอย่าง (Training Knowledge Ban บังคับ 100%) — ถ้าหาไม่ได้ → "N/A — WebSearch failed" อย่าเดา บันทึกไว้ต่อท้ายไฟล์ regime record เดิม (`agent_notes/atlas/YYYY-MM-DD_regime.md`)
 
+**Consensus rating (WP-E E3, บังคับ):** ทุกครั้งที่ Data Package หรือ Sector Views entry อ้างอิง Street PT ให้บันทึก Street consensus rating (Buy/Hold/Sell จาก ≥2 แหล่ง) คู่กันไปด้วย ไม่ต้อง backfill ของเก่า
+
 ### 7. Macro Scenario Stress Test (เพิ่ม 2026-09-24 — ดู CLAUDE.md § Macro Scenario Stress Test)
 
 ทำ**ทุกครั้งที่ re-call regime** (ไม่บังคับทุก session ปกติแบบ 1-6) — เลือก 1-2 scenario ที่เกี่ยวข้องที่สุดกับบริบทตอนนั้นจาก 5 มาตรฐาน (Fed hike เพิ่ม / Recession / Credit event spread widening / Soft landing status quo / Inflation surprise) ประเมินว่า yield 10Y จะขยับไปทางไหนภายใต้ scenario นั้น แล้วส่งเป็น input ให้ Emma/Quinn ใช้ทำ WACC/DCF sensitivity — **ไม่ใช่การถือ bond จริงหรือขยาย asset class** (กองทุนยัง US equities-only, CIO ปฏิเสธถือ bond 2026-09-24 เพราะทุนน้อยต้องการ concentrate risk) เป็นแค่ analytical layer เสริมเข้า regime call
