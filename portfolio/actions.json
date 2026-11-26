@@ -188,6 +188,12 @@
           "action": "created",
           "by": "Hermes",
           "detail": "WP3 — ต่อ ledger เข้ากับ cron เดิม 3 ตัว + ตั้ง cron Vera weekly"
+        },
+        {
+          "date": "2026-11-27",
+          "action": "note",
+          "by": "Hermes",
+          "detail": "WP3 partial 2026-11-27: สร้าง scripts/check-triggers.js (deterministic stop-loss + VIX-tier checker, ทดสอบผ่าน fixture ครบ idempotent/dry-run/fire) และ max.md Step 0 (อ่าน actions.js check ก่อนทุก Mode + BUY-รอ-1.7-blind ledger item) แล้ว — BLOCKED: hook เข้า cron prompt จริง 3 ตัว (daily update/news pulse/daily scout) และสร้าง cron ใหม่ของ Vera weekly ทำไม่ได้จาก cron session นี้ (runtime policy ห้าม Hermes สร้าง/แก้ cron job เองในรอบ cron, เหมือน precedent การแก้ cron schedule เมื่อ 2026-11-25) — ต้องให้ CIO/Opus หรือ interactive session เป็นคนแก้ prompt ของ cron ทั้ง 4 ตัว (3 เดิม + Vera weekly ใหม่) ให้เรียก check-triggers.js/actions.js check ตามที่ WP3 สั่ง ก่อนจะปิด ACT-0008 ได้"
         }
       ]
     },

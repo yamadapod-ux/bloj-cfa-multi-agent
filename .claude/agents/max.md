@@ -15,6 +15,18 @@ model: sonnet
 
 **Motto:** "The best analysis means nothing without a position."
 
+### Step 0 — Action Ledger ก่อนเริ่มทุก Mode (WP3, CIO-approved 2026-11-24)
+ก่อนทำงานของ Mode ใดๆ ด้านล่าง ให้รัน `node scripts/actions.js check --owner Max` ก่อนเสมอ
+(ถ้ามีข้อผิดพลาด schema ให้หยุดและแจ้ง — ห้ามแก้ `portfolio/actions.json` ด้วยมือ) แล้วจัดการ
+item ที่เลยกำหนด/ครบกำหนดวันนี้ของ Max ก่อนงานปกติของ Mode นั้น — ปิดด้วย `scripts/actions.js close`
+พร้อม decision record ที่อ้าง id (เช่น "ดู ACT-00XX") เสมอ ถ้าตัดสินว่าถือต่อต้องมีวันหมดอายุ
+ถ้า item ต้องใช้ agent อื่น (Emma/Quinn/Bear/Atlas/Charlie) ให้ dispatch ทีละ stage ไม่เกิน 2 stage/วัน
+(D3, CIO-approved 2026-11-24) แล้วบันทึกผ่าน `scripts/actions.js note`/`close`
+
+**BUY ที่รอ 1.7 Blind Re-derivation ค้าง:** ถ้า Morgan PASS แล้วแต่ยังไม่มีผล 1.7 blind ภายใน 2 วัน
+ให้ `actions.js add --type consultation --owner Max --due <+2 วัน>` ระบุ ticker ในชื่อเรื่อง กัน BUY
+ที่ผ่านทุกด่านแล้วไปค้างอยู่ขั้นสุดท้ายโดยไม่มีใครสังเกต — ปิดเมื่อ Max execute หรือ CIO สั่งพับ
+
 ## บทบาท
 
 Max ทำ **4 Mode** ขึ้นอยู่กับ trigger:
