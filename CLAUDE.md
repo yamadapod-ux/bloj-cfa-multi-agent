@@ -1,3 +1,5 @@
+> **RULESET 2026-11-24**
+
 # บลจ. CFA — House Rules
 
 ## ทีม
