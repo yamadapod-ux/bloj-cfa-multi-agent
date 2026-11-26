@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-25 07:00";
+const NEWS_LAST_UPDATED = "2026-11-26 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-26 (Atlas scan 2026-11-25→11-26, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-25", category: "REGULATORY",
+    headline: "🔴 S&P Global Ratings places NVDA's credit rating on CreditWatch Negative, citing management and governance risk — stock falls -3.91% amid a broader Core-PCE-driven AI/chip selloff",
+    summary: "S&P Global Ratings placed Nvidia's (NVDA, Big 10 watchlist, no OPEN position) credit rating on CreditWatch Negative, citing rising management and governance risk — the agency said this signals 'a high likelihood of a rating downgrade' (per worldmoneyroadmap.com citing S&P Global data). This is the latest fallout from the Jensen Huang saga: his Nov 12 resignation, Nov 23 board reinstatement (with Trump publicly confirming he pressed the board), the Nov 25 Sen. Schumer export-control allegation, and now a formal rating-agency action flagging governance risk at the company level. The news landed the same session NVDA fell -3.91% to $149.30 (2nd straight loss after Monday's +31.5% reinstatement rally) amid a broader AI/chip selloff triggered by a hotter-than-expected Core PCE inflation print (+3.3% YoY vs 3.2% forecast), which pushed fed-funds-futures odds of a December rate hike to 98%. The S&P 500 fell as much as -3.2% intraday before recovering to close -0.25% at 7,182.78. นัยพอร์ต: NVDA ไม่มี OPEN position ในพอร์ต — ไม่มี trade action โดยตรง แต่เป็นสัญญาณว่าความเสี่ยงด้าน governance ของ NVDA ยังไม่จบ แม้ Huang จะกลับมาเป็น CEO แล้วก็ตาม.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://worldmoneyroadmap.com/en/reports/2026-11-25-evening",
+  },
 
   // ── 2026-11-25 (Atlas scan 2026-11-24→11-25, Portfolio Review Mode 3 cron cycle) ──
   {
