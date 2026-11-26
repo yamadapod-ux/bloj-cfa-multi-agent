@@ -6,7 +6,7 @@
 // เหตุผล: entry เก่าคือ audit trail ว่า Atlas เคย call regime อะไรไว้ ณ วันไหน
 // Source ทุก entry: agent_notes/atlas/YYYY-MM-DD_regime.md (ตัวจริงในโค้ดฐาน)
 
-const MACRO_LAST_UPDATED = "2026-11-24";
+const MACRO_LAST_UPDATED = "2026-11-26";
 
 // เรียงตามลำดับเวลา (เก่า -> ใหม่) — dashboard จะ sort ใหม่ (ใหม่ -> เก่า) เอง
 const MACRO_REGIME_HISTORY = [
@@ -482,5 +482,33 @@ const MACRO_REGIME_HISTORY = [
     override: null,
     note: "Re-call for Max Scout Round 75 (prior record 21 days old). Same pattern as 09-25: hawkish Fed lone dissent. Watch: HY OAS widening after AI-infra debt selloff.",
     source: "agent_notes/atlas/2026-10-16_regime.md",
+  },
+  {
+    date: "2026-11-22",
+    indicators: {
+      vix: { value: "35.89 (11/20 close)", classification: "RISK-OFF" },
+      yieldCurve: { value: "+29 bps (11/20)", classification: "RISK-ON" },
+      hySpread: { value: "352 bps (11/19, FRED)", classification: "RISK-ON" },
+      fedStance: { value: "Held 3.75-4.00% (10/28, 10-2 vote, 2 dissent for hike); Dec 9 hike priced ~77-86%", classification: "RISK-OFF" },
+    },
+    vote: "2/4 RISK-OFF vs 2/4 RISK-ON — no 3/4 majority",
+    regime: "TRANSITIONAL-CAUTIOUS",
+    override: "Tie default = TC. VIX 35.89 highest of cycle (AI-capex selloff, SPX -11.4% from 10/7 peak).",
+    note: "Triggered by AMZN v3.5 re-analysis. Prior record 2026-09-25 (RISK-ON) superseded — several interim re-calls (10-26, 10-27, 11-03, 11-06, 11-21) not yet backfilled into this history array, see agent_notes/atlas/ for full record; TC regime held across all of them per portfolio.js note.",
+    source: "agent_notes/atlas/2026-11-22_regime.md",
+  },
+  {
+    date: "2026-11-26",
+    indicators: {
+      vix: { value: "28.29 (11/25 close, Cboe)", classification: "TRANSITIONAL-CAUTIOUS" },
+      yieldCurve: { value: "+24 bps (10Y 4.87-4.94% / 2Y 4.63-4.70%, 11/24-25)", classification: "RISK-ON" },
+      hySpread: { value: "~367-408 bps (sources conflict narrowly, trending up from ~343 mid-Nov)", classification: "TRANSITIONAL-CAUTIOUS" },
+      fedStance: { value: "Fed funds futures price 99% prob of 25bp HIKE at Dec 8-9 FOMC (3.75-4.00% -> 4.00-4.25%)", classification: "RISK-OFF" },
+    },
+    vote: "2/4 TC (VIX, HY) vs 1/4 RISK-ON (curve) vs 1/4 RISK-OFF (Fed) — no 3/4 majority",
+    regime: "TRANSITIONAL-CAUTIOUS",
+    override: "Maintained from 2026-11-22/11-03: VIX still in TC band post-rebound (35.89->28.29, not back to <20), Fed clearly hawkish (99% hike priced, not cuts), HY trending wider. Market rebounded from the Nov 20 selloff but not enough to flip regime.",
+    note: "Re-call closing ACT-0003 (overdue). Confirms no regime change despite 23-24 Nov rally.",
+    source: "agent_notes/atlas/2026-11-26_regime.md",
   },
 ];

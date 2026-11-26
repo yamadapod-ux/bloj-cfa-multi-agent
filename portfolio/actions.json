@@ -61,7 +61,7 @@
       "owner": "Atlas",
       "created": "2026-11-24",
       "due": "2026-11-25",
-      "status": "open",
+      "status": "done",
       "escalation_level": 0,
       "default_on_timeout": null,
       "evidence": "agent_notes/atlas/2026-11-22_regime.md (record ก่อนข่าวนี้ 1 วัน, ยังเป็น TC)",
@@ -71,6 +71,12 @@
           "action": "created",
           "by": "Hermes",
           "detail": "Regime re-call หลัง Jensen Huang reinstated + rally +4.73%/+6.51% (23 พ.ย.)"
+        },
+        {
+          "date": "2026-11-26",
+          "action": "done",
+          "by": "Hermes",
+          "detail": ""
         }
       ]
     },

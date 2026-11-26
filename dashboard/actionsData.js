@@ -6,7 +6,7 @@
 // =================================================================
 
 const ACTIONS_DATA = {
-  "generatedAt": "2026-11-26T01:02:58.441Z",
+  "generatedAt": "2026-11-26T04:03:23.559Z",
   "items": [
     {
       "id": "ACT-0001",
@@ -45,7 +45,7 @@ const ACTIONS_DATA = {
       "created": "2026-11-24",
       "due": "2026-11-25",
       "daysUntilDue": -1,
-      "status": "open",
+      "status": "done",
       "escalation_level": 0,
       "default_on_timeout": null,
       "evidence": "agent_notes/atlas/2026-11-22_regime.md (record ก่อนข่าวนี้ 1 วัน, ยังเป็น TC)"
