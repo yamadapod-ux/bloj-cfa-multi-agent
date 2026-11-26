@@ -578,12 +578,6 @@
     <div class="section-title">ความคืบหน้าแผนปรับปรุง</div>
     <div id="plan-progress"></div>
   </div>
-
-  <!-- 5. AI ทำงานเองได้แค่ไหน -->
-  <div class="card oc-section">
-    <div class="section-title">AI ทำงานเองได้แค่ไหน</div>
-    <div id="ai-autonomy"></div>
-  </div>
 </div>
 
 <!-- ══════════════════════════════════════════ -->
@@ -939,6 +933,12 @@
   </div>
 
   <div id="methodology-content"></div>
+
+  <!-- ย้ายมาจากหน้าแรก 2026-11-27 (CIO ขอ) -->
+  <div class="card oc-section" style="margin-top:1.5rem;">
+    <div class="section-title">AI ทำงานเองได้แค่ไหน</div>
+    <div id="ai-autonomy"></div>
+  </div>
 </div>
 
 <script>
@@ -1825,7 +1825,6 @@ function buildOverview() {
   buildPortfolioStatusMini();
   buildTeamBacklog();
   buildPlanProgress();
-  buildAiAutonomy();
 }
 
 // ─── PAGE: REPORTS ───────────────────────────────────────
@@ -3451,6 +3450,7 @@ buildResearch();
 buildTodoList();
 buildGlossary();
 buildMethodology();
+buildAiAutonomy();
 </script>
 </body>
 </html>
