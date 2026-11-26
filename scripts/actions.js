@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VALID_TYPES = ['stop_loss', 'consultation', 'regime_recall', 'qa_reanalysis', 'fv_stale', 'open_decision', 'other'];
+const VALID_TYPES = ['stop_loss', 'consultation', 'regime_recall', 'qa_reanalysis', 'fv_stale', 'open_decision', 'intervention', 'other'];
 const VALID_STATUS = ['open', 'done', 'dropped'];
 
 function parseArgs(argv) {
