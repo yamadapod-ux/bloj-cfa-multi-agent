@@ -331,7 +331,7 @@
       "owner": "Opus",
       "created": "2026-11-26",
       "due": null,
-      "status": "open",
+      "status": "done",
       "escalation_level": 0,
       "default_on_timeout": "ห้ามเริ่ม WP3 จนกว่า Opus จะตรวจผ่าน",
       "evidence": "opus_log.md 2026-11-26: ครั้งแรก ไม่ผ่าน (bc224b4..2b1f30b), อยู่ระหว่างทำ Fix จากข้อ 1-6 ใน คุยกับ hermes - แผนปรับปรุง.md",
@@ -341,6 +341,12 @@
           "action": "created",
           "by": "Hermes",
           "detail": "Checkpoint A — หลัง WP-DB1 + WP-E E0-E3 ก่อน WP3"
+        },
+        {
+          "date": "2026-11-27",
+          "action": "done",
+          "by": "Hermes",
+          "detail": "Checkpoint A ผ่าน 2026-11-27 (Opus ตรวจซ้ำ) - เริ่ม WP3 ได้"
         }
       ]
     },

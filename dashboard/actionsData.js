@@ -6,7 +6,7 @@
 // =================================================================
 
 const ACTIONS_DATA = {
-  "generatedAt": "2026-11-26T19:02:28.163Z",
+  "generatedAt": "2026-11-26T19:04:59.869Z",
   "items": [
     {
       "id": "ACT-0001",
@@ -213,7 +213,7 @@ const ACTIONS_DATA = {
       "created": "2026-11-26",
       "due": "2026-12-03",
       "daysUntilDue": 6,
-      "status": "open",
+      "status": "done",
       "escalation_level": 0,
       "default_on_timeout": "ห้ามเริ่ม WP3 จนกว่า Opus จะตรวจผ่าน",
       "evidence": "opus_log.md 2026-11-26: ครั้งแรก ไม่ผ่าน (bc224b4..2b1f30b), อยู่ระหว่างทำ Fix จากข้อ 1-6 ใน คุยกับ hermes - แผนปรับปรุง.md"

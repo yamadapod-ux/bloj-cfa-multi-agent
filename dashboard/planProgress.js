@@ -45,8 +45,8 @@ const PLAN_PROGRESS = [
   {
     "id": "CheckpointA",
     "label": "Checkpoint A (หลัง WP-E E0–E3, ก่อน WP3)",
-    "status": "in_progress",
-    "note": "ACT-0015 (open)"
+    "status": "done",
+    "note": "ACT-0015 (done)"
   },
   {
     "id": "WP3",
