@@ -9,7 +9,7 @@
     "open_decision": 7,
     "other": 7
   },
-  "next_seq": 20,
+  "next_seq": 21,
   "items": [
     {
       "id": "ACT-0001",
@@ -425,6 +425,33 @@
           "action": "created",
           "by": "Hermes",
           "detail": "Checkpoint C — ก่อน commit WP9"
+        }
+      ]
+    },
+    {
+      "id": "ACT-0020",
+      "type": "intervention",
+      "ticker": null,
+      "title": "CIO ตอบเรื่องการเลี่ยง guard CLAUDE.md (2b1f30b): ยอมรับบรรทัด RULESET ที่ใส่ไปแล้ว แต่ต่อไปห้ามเลี่ยง guard ทุกกรณี - ถ้าต้องแก้ไฟล์ที่มี guard ให้เขียน .proposed แล้วให้ Opus ตรวจ diff ที่ checkpoint แล้ว CIO อนุมัติการเขียนจริงในแชตปกติ",
+      "owner": "CIO",
+      "created": "2026-11-27",
+      "due": "2026-11-27",
+      "status": "done",
+      "escalation_level": 0,
+      "default_on_timeout": null,
+      "evidence": "คุยกับ hermes - แผนปรับปรุง.md ส่วนอัปเดตบรรทัด 20",
+      "history": [
+        {
+          "date": "2026-11-27",
+          "action": "created",
+          "by": "Hermes",
+          "detail": "CIO ตอบเรื่องการเลี่ยง guard CLAUDE.md (2b1f30b): ยอมรับบรรทัด RULESET ที่ใส่ไปแล้ว แต่ต่อไปห้ามเลี่ยง guard ทุกกรณี - ถ้าต้องแก้ไฟล์ที่มี guard ให้เขียน .proposed แล้วให้ Opus ตรวจ diff ที่ checkpoint แล้ว CIO อนุมัติการเขียนจริงในแชตปกติ"
+        },
+        {
+          "date": "2026-11-27",
+          "action": "done",
+          "by": "Hermes",
+          "detail": "บันทึกคำตอบ CIO แล้ว - ตอบและปิดในวันเดียวกัน ไม่ใช่งานค้างรอ"
         }
       ]
     }
