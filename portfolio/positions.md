@@ -1,5 +1,58 @@
 # Simulated Portfolio — บลจ. CFA
 
+## 📊 Portfolio Review — 2026-11-27 (Mode 3 — Black Friday Half-Day Pre-Market, No New Trading Day; Re-Mark Unchanged at Nov 25 2026 Close) — NVDA Halts AI-Server Shipments to 4 Southeast Asian Countries (Export-Control Compliance Fallout); 🔴 NOW Stop-Loss Breach Continues 8th Session (Unchanged)
+
+> **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-26, `agent_notes/atlas/2026-11-26_regime.md`, now **1 day old** — fresh, not overdue). Thanksgiving (Nov 26) was a full US market holiday — no new trading session closed. Black Friday (Nov 27) is a shortened session, 9:30am–1pm ET, which had **not yet closed** as of this cron's run time (Bangkok pre-market). All 5 OPEN positions and S&P 500 re-verified via fresh WebSearch and found **UNCHANGED at the Nov 25 2026 close**: ADBE $232.38, NOW $92.17, CRM $196.58, REGN $981.87, ADSK $246.78, S&P 500 $7,182.78 (confirmed closed-for-Thanksgiving coverage across multiple sources, no newer official close exists). **No trades this session.**
+
+| Ticker | Price (Nov 25 close, unchanged) | Sources | MOS % | StopDist % | Weight % |
+|--------|----------------------|---------|-------|------------|----------|
+| ADBE | $232.38 | unchanged — Nov 25 close re-confirmed via fresh WebSearch (Thanksgiving holiday coverage, Black Friday half-day not yet closed) | +37.02% | 25.61% | 9.08% |
+| NOW | $92.17 | unchanged | +16.36% | 🔴 **-0.89% (BREACH, 8th session, unchanged)** | 0.90% |
+| CRM | $196.58 | unchanged | +43.15% | 35.76% | 5.76% |
+| REGN | $981.87 | unchanged | +1.24% ⚠️ razor-thin, continuing watch item | 103.71% | 4.03% |
+| ADSK | $246.78 | unchanged | -11.27% (stale v1 FV, VS2 re-verify still outstanding) | 55.48% | 5.79% |
+
+**Totals:** Invested $2,616.09 · Cash $7,623.58 (74.46%) · Total Value **$10,239.67** (+0.01% vs prior review, cash-accrual only) · Total Return **+2.40%** · S&P 500 Return **-2.92%** (unchanged) · **Alpha +5.32%** (negligible widening from +5.31%, cash-accrual only — both sides flat this session).
+
+Cash accrual (Cash Yield Rule, 3.8% Fed funds proxy, 1 day since last review 11-26→11-27): $7,622.79 × 3.8%/365 × 1 day = +$0.79 → $7,623.58.
+
+### 🔴 Stop Loss Check — NOW BREACH CONTINUES (8th consecutive session, unchanged)
+**NOW price unchanged at $92.17 (Nov 25 close carried forward — no new trading day), its 8th consecutive close below the $93.00 stop loss** (stopDist unchanged at -0.89%). Per Max Exit Rules table this remains `🟠 REVIEW THESIS` (stop-loss hit) — not `🔴 AUTO-SELL`. Thesis check unchanged: Bear Flip #5 (GAAP gross margin <74%) fired 2026-11-01; Thesis Invalidation remains 0/4. **The pre-committed full-pipeline escalation deadline (2026-11-14) has now passed 13 days without action, and the Max×Charlie consultation flagged as urgent across 7 prior breach sessions has still not actually taken place.** Residual position remains tiny (1sh, 0.90% weight) so capital risk is minimal. Price remains within ~1% of clearing the stop entirely.
+
+### 🟠 ADSK — VS2 Re-Verify Still Outstanding (Carried Action Item, No New Trade)
+No new trading day for ADSK — price unchanged at $246.78 (Nov 25 close). MOS on the stale v1 FV ($221.79, fvVerifiedDate 2026-09-12, 76 days old) remains -11.27%. **Emma's VS2 lightweight re-verify has not yet been run** — this remains the single most urgent outstanding action item in the book, now carried a third session.
+
+### 🟠 REGN — MOS Razor-Thin, Continuing Watch Item
+No change — REGN price unchanged at $981.87, MOS unchanged at +1.24%. Blended FV $994.20 unchanged (fvVerifiedDate 2026-10-31, 27 days old). Watch item carried.
+
+### 🔍 Re-Analysis Trigger Check (all 5 OPEN positions)
+| Ticker | #1 Earnings | #2 Staleness+Price (FV≥90d & MOS≤0) | #3 Missed-earnings backstop | #4 Price divergence ≥30-40% from fvVerifiedDate | #5 Street PT divergence ≥25% | Fires? |
+|---|---|---|---|---|---|---|
+| ADBE | No new earnings | FV 76d, MOS +37.02% (positive) | N/A | -5.8% vs $246.69 reference, well under 30% | Street median $260-268 vs FV $369 = -27 to -29% | **1/5 — #5 fires, carried** |
+| NOW | No new earnings | FV 27d (<90d), MOS +16.36% (positive — separate Stop Loss breach above, not a Re-Analysis trigger) | N/A | -12.3% vs $105.12 (Oct 30/31), under 30% | Street avg ~$155.82 vs FV $110.20 = +41.4% | **1/5 — #5 fires, carried** |
+| CRM | No new earnings | FV 76d, MOS +43.15% (positive) | N/A | -20.6% vs $247.72 (Sep 11), under 30% | Street median ~$287 vs FV $345.77 = -17.0% | 0/5 |
+| REGN | No new earnings | FV 27d (<90d), MOS +1.24% (razor-thin, positive) | N/A | +5.8% vs $927.89 (Oct 30/31) | Street median ~$982 vs FV $994.20 = -1.2% | 0/5 — but MOS watch item (see above) |
+| ADSK | Earnings already reported 11-24 (Trigger #1 fired that session); VS2 re-verify still outstanding | FV 76d, MOS -11.27% on stale v1 FV (age <90d, so #2 doesn't formally fire) | N/A | +16.2% vs $212.40 (Sep 11 close), under 30% | Street avg ~$320 vs FV $221.79 = +44% | **1/5 — #5 fires, carried; #1 action item still open** |
+
+**3/5 positions carry formal Trigger #5 (Street PT divergence ≥25%) — all previously flagged, no new fires this session (no new trading day).** ADSK's earnings-driven Trigger #1 action item (Emma VS2 re-verify) remains open — still unresolved.
+
+### ⚠️ Process Note — Atlas Regime Re-call Fresh
+Regime TRANSITIONAL-CAUTIOUS was re-called by Atlas 2026-11-26 (`agent_notes/atlas/2026-11-26_regime.md`) — now only 1 day old, not overdue. No action needed this session.
+
+### 📰 Atlas News Scan (since NEWS_LAST_UPDATED 2026-11-26 07:00, all 5 OPEN tickers + Big 10 watchlist)
+**1 NEW HIGH-IMPACT item.**
+1. **NVDA** (Big 10, no OPEN position): Nvidia halted AI-server shipments to 4 Southeast Asian countries (Malaysia, Singapore, Thailand, Indonesia) per Financial Times (Nov 26, 3 sources) — told manufacturing partners (Dell, Supermicro) not to ship orders to those countries while working through compliance with new US export-control rules requiring licenses for AI-chip shipments to the region. This is a real, material business/compliance action (not just commentary) — clears the major-regulatory-action HIGH-IMPACT bar. Written to news.js.
+
+Assessed ROUTINE/already-covered (not written to news.js): continued Fool.com commentary on NVDA's physical-AI growth thesis and Magnificent-7 underperformance (opinion/analysis pieces, not new events); ServiceNow's agentic-AI Continuous Control Monitoring product announcement (Nov 26, product launch, not earnings/M&A/management-change/8-K); ServiceNow cash-flow-mechanics article (Nov 26, media analysis of already-disclosed figures, not a new disclosure); TD Cowen's CRM PT cut to $275 from $300 (-8.3%, Nov 23, under the 15% threshold, already stale relative to last scan window); BTIG's CRM PT cut to $250 from $300 (Nov 18, under threshold, already covered).
+
+### 💡 Cash Yield Rule — routine accrual (1 day since last review)
+$7,622.79 × 3.8%/365 × 1 = **+$0.79** → **$7,623.58**. Rate basis: Fed funds 3.75-4.00%, held since Oct 28 per the Atlas 11-26 record.
+
+### Max's Take
+วันนี้ยังไม่มี trading day ใหม่สำหรับตลาดสหรัฐฯ — วันพฤหัส (26 พ.ย.) เป็นวันหยุด Thanksgiving เต็มวัน ส่วนวันศุกร์ (27 พ.ย., Black Friday) เป็น half-day session (9:30-13:00 ET) ที่ยังไม่ปิดตลาด ณ เวลาที่ cron รันรอบนี้ ราคาทั้ง 5 positions และ S&P 500 ยังคงเดิมจาก Nov 25 close ยืนยันซ้ำผ่าน WebSearch ไม่มีการเปลี่ยนแปลงใดๆ นอกจาก cash accrual ตามปกติ (+$0.79 → $7,623.58) **alpha ขยับเล็กน้อยเป็น +5.32%** (จาก +5.31%, cash-accrual เท่านั้น) **NOW ยังหลุด stop loss ต่อเนื่องเป็นวันที่ 8** (stopDist -0.89% ไม่เปลี่ยนแปลง) การปรึกษา Charlie ที่ค้างมา 7 รอบยังไม่เกิดขึ้น **ADSK ยัง pending การทำ VS2 re-verify จาก Emma** เป็น action item เร่งด่วนที่สุดที่ยังค้างอยู่ ข่าว HIGH-IMPACT วันนี้มี 1 รายการ: **NVDA** หยุดส่งออก AI server ไปยัง 4 ประเทศเอเชียตะวันออกเฉียงใต้ (มาเลเซีย สิงคโปร์ ไทย อินโดนีเซีย) ตามรายงาน Financial Times — เป็น compliance action จริง ไม่ใช่แค่ sentiment headline (Big 10 ไม่มี position) Atlas regime re-call สดใหม่ (26 พ.ย., 1 วัน) ไม่มี action item ด้าน regime ตอนนี้ ตลาดสหรัฐฯ จะปิดครึ่งวันศุกร์นี้ — รอบรีวิวถัดไปจะข้าม weekend ไปเป็นวันจันทร์ที่ 30 พ.ย.
+
+---
+
 ## 📊 Portfolio Review — 2026-11-26 (Mode 3 — Full Re-Mark, Nov 25 2026 Close) — Core PCE Hotter Than Expected Triggers AI/Chip Selloff (S&P Down 3.2% Intraday, Recovers to -0.25%); S&P Global Places NVDA Rating on CreditWatch Negative; 🔴 NOW Stop-Loss Breach Continues 7th Session (Narrows Further)
 
 > **Regime = 🟡 TRANSITIONAL-CAUTIOUS** (Atlas re-call 2026-11-03, `agent_notes/atlas/2026-11-03_regime.md`, now **23 days old** — materially overdue, flagged for 2+ weeks straight with no fresh re-call yet). First new US trading day since Nov 24 (Nov 26 Thanksgiving + partial Nov 27 session ahead — no review expected until the next full close). S&P 500 fell **-0.25%** to **7,182.78** (-18.31 pts; AP News/ABC News + Xinhua + swingfolio.com, 3-source exact match — had been down as much as 3.2% intraday before recovering) after Core PCE inflation rose 3.3% YoY (vs 3.2% forecast), pushing fed-funds-futures odds of a December rate hike to 98% and reigniting an AI/chip-led selloff — NVDA fell a further **-3.91%** to $149.30 (2nd straight loss after Monday's Huang-reinstatement rally), and **S&P Global Ratings placed NVDA's credit rating on CreditWatch Negative, citing management and governance risk** (new today, see Atlas News Scan below). Nasdaq -0.62%, Dow +0.33% (erased a ~1,100-pt intraday drop), Russell 2000 +0.71%, VIX 28.29 (+7.3%). **4 of 5 OPEN positions rose modestly, ADSK fell** continuing its post-earnings digestion (Nov 24 Q3 FY27 beat/raise, -4.4% AH Monday night, -3.49% today on top — no new idiosyncratic catalyst found today beyond the broad software/tech selloff plus lingering billings-growth/AI-monetization-timing concerns). **No trades this session.**

@@ -3,9 +3,18 @@
 // Category "AI" — เพิ่มมือได้ ไม่ต้องรอ script (Claude/Anthropic updates)
 // ห้ามแก้ category อื่น — ใช้ atlas-news-scan script เท่านั้น
 
-const NEWS_LAST_UPDATED = "2026-11-26 07:00";
+const NEWS_LAST_UPDATED = "2026-11-27 07:00";
 
 const NEWS = [
+
+  // ── 2026-11-27 (Atlas scan 2026-11-26→11-27, Portfolio Review Mode 3 cron cycle) ──
+  {
+    date: "2026-11-26", category: "REGULATORY",
+    headline: "🔴 Nvidia halts AI-server shipments to 4 Southeast Asian countries (Malaysia, Singapore, Thailand, Indonesia) amid new US export-control compliance scramble — FT reports",
+    summary: "The Financial Times reported (Nov 26, citing 3 people with knowledge of the matter) that Nvidia (NVDA, Big 10 watchlist, no OPEN position) told manufacturing partners — including Dell and Supermicro, which package Nvidia chips into servers — to stop shipping server orders to buyers in Malaysia, Singapore, Thailand, and Indonesia. The halt follows new US export-control rules (effective last week) that require export licenses for advanced AI chip shipments to data centers in those 5 countries, part of a Commerce Department push to shut down third-country diversion routes to China — the same rules that emerged from the Jensen Huang/Megaspeed export-control scandal (his Nov 12 resignation over an alleged affair with a suspected Chinese-intelligence-linked figure, Nov 23 board reinstatement). It is unclear whether the halt is temporary while Nvidia and its partners work through compliance requirements. Affected buyers reportedly include Singapore-based Aolani, which had planned to lease Nvidia hardware access to China's ByteDance (TikTok owner). This is a real, material business/compliance action — not just commentary or a rating-agency note — clearing the major-regulatory-action HIGH-IMPACT bar. นัยพอร์ต: NVDA ไม่มี OPEN position ในพอร์ต — ไม่มี trade action โดยตรง แต่สะท้อนว่าความเสี่ยง export-control ของ NVDA ลงลึกถึงระดับกระทบ supply chain/revenue จริงแล้ว ไม่ใช่แค่ sentiment/governance headline.",
+    impact: "NEGATIVE", tickers: ["NVDA"],
+    url: "https://thehindu.com/news/international/nvidia-stops-shipping-ai-servers-to-four-southeast-asian-nations/article71747898.ece/amp",
+  },
 
   // ── 2026-11-26 (Atlas scan 2026-11-25→11-26, Portfolio Review Mode 3 cron cycle) ──
   {
