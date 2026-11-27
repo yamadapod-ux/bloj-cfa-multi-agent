@@ -11425,3 +11425,61 @@ Check 1: ไม่มีตัวใด ROIC < 0.5× WACC และแย่ล�
 **Sources (SEC):** companyfacts `https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json` (FCFS 0000840489 · EZPW 0000876523 · WRLD 0000108385 · OPFI 0001818502 · ENVA 0001529864 · UPBD 0000933036 · PRG 0001808834) · [FCFS Q3 release](https://www.sec.gov/Archives/edgar/data/840489/000084048926000097/fcfs10222026exhibit991.htm) · [EZPW Q4 release](https://www.sec.gov/Archives/edgar/data/876523/000087652326000074/a2026-q4pressreleaseex991.htm) · [WRLD Q2 FY27 release](https://www.sec.gov/Archives/edgar/data/108385/000143774926033331/ex_1030266.htm) · [OPFI Q3 release](https://www.sec.gov/Archives/edgar/data/1818502/000181850226000084/opfi-20260930earningsrel.htm) · [OPFI 10-Q](https://www.sec.gov/Archives/edgar/data/1818502/000181850226000100/opfi-20260930.htm) · [ENVA Q3 release](https://www.sec.gov/Archives/edgar/data/1529864/000119312526428941/enva-ex99_1.htm) · [ENVA 10-Q](https://www.sec.gov/Archives/edgar/data/1529864/000119312526429122/enva-20260930.htm) · [ENVA 8-K 09-14](https://www.sec.gov/Archives/edgar/data/1529864/000119312526390599/enva-20260914.htm) · ข่าว FCFS/EZPW: [TIKR](https://www.tikr.com/blog/firstcash-sinks-13-ezcorp-down-10-despite-record-q3-beat-another-outstanding-quarter)
 
 *Max — 2026-11-26 | Scout Round 107 (Rent-to-Own / Pawn / Non-Prime Consumer Finance — 7 screened; 0 fast-track / 0 learning-queue / 7 reject; prune 0 de-listed, live 10)*
+
+## Scout Report § Round 108 (Auto Parts Retail / Aftermarket Distribution — AZO, ORLY, GPC, AAP, MNRO) — 2026-11-27
+
+### Step 0 — Prune
+ตรวจ live tables (`## Re-Analysis Queue`, `## Pending Analysis`) ตาม De-list Rules — ไม่มี ticker เข้าเงื่อนไข stale/thesis-dead/superseded รอบนี้ (CMRE ครบกำหนด re-check 28 พ.ย. — ยังไม่ถึงกำหนด ไม่แตะ) → **prune: 0 de-listed, live watchlist คงที่ 10**
+
+### Trigger & Sector Mandate
+Sector "Auto Parts Retail / Aftermarket" ไม่เคยเป็น dedicated scout round มาก่อน (ตรวจ `## Scout History` ทั้งหมด R1–R107 — ไม่ซ้ำ). เป็น carryover ที่ถูก flag ไว้ชัดเจนจาก **Quality Compounder Watchlist note** (ไฟล์เดียวกัน บรรทัดก่อนหน้า Scout History): "AZO — ไม่แพง (P/FV 0.76×) → **Propose sending AZO to the regular scout pipeline next round**". รอบนี้ขยายเป็นทั้ง sub-industry (GICS Auto Parts/Specialty Retail) เพื่อให้ครบ: AZO, ORLY, GPC, AAP, MNRO. LKQ ไม่รวม — อยู่ใน `portfolio/decisions.md` แล้ว (วิเคราะห์เต็มไปแล้ว, hard exclusion)
+
+### Macro / Regime
+Atlas ล่าสุด 2026-11-26 = **TRANSITIONAL-CAUTIOUS** (`agent_notes/atlas/2026-11-26_regime.md`, อายุ 1 วัน ไม่ stale) → Force Deploy suspended, ห้ามเปิด position ใหม่ระดับ Full/Half · scout รอบนี้เพื่อ buy list เท่านั้นถ้ามี candidate ผ่าน
+
+### Step 3 — ราคา + Filter A (ราคาปิด 2026-11-25, ≥2 sources)
+
+| Ticker | ราคา | 52W high (วันที่) | % จาก high | Source 1 | Source 2 | Filter A |
+|---|---|---|---|---|---|---|
+| AZO | $3,404.46 | $3,996.25 | −14.8% | [stockanalysis.com](https://stockanalysis.com/stocks/azo) | [Yahoo Finance](https://finance.yahoo.com/quote/AZO) | ❌ |
+| ORLY | $96.69 | $102.46 | −5.6% | [Google Finance](https://google.com/finance/quote/ORLY:NASDAQ) | [Morningstar](https://morningstar.com/stocks/xnas/orly/quote) | ❌ |
+| GPC | $123.88 | $151.57–151.60 | −18.3% to −18.4% | [CNBC](https://cnbc.com/quotes/GPC) | [Robinhood](https://robinhood.com/us/en/stocks/GPC) | ❌ (ใกล้ 20% แต่ไม่ถึง) |
+| **AAP** | **$46.25** | **$65.20** | **−29.1%** | [WallStreetZen](https://www.wallstreetzen.com/stocks/us/nyse/aap) | [Wallflake](https://wallflake.com/markets/us/AAP) | ✅ |
+| **MNRO** | **$7.98** | **$23.91** | **−66.6%** | [CNBC](https://www.cnbc.com/quotes/MNRO) | [Google Finance](https://www.google.com/finance/quote/MNRO:NASDAQ) | ✅ |
+
+**AZO/ORLY/GPC → reject ที่ Filter A** (ยังไม่ถูกตลาดทิ้งพอ — ตรงกับ pattern เดิมที่ wide-moat quality compounder แทบไม่ลง 20%+ เว้นช่วงวิกฤต)
+
+### AAP — Filter B/C (SEC XBRL companyconcept, CIK 0001158449)
+- **FCF (OCF − capex, $M):** FY2023 287.4−225.7=**+61.7** · FY2024 84.6−180.8=**−96.2** · FY2025 (FY ended 2026-01-03) −46−252=**−298.0** · 9M FY2026 (to 2026-10-10): OCF cumulative ไม่ครบใน concept เดียว แต่ capex 9M = $202M, บริษัทประกาศเองว่า FCF YTD "over $100M" ผ่าน Q3 ([Benzinga](https://benzinga.com/markets/earnings/26/11/62919418/advance-auto-parts-narrows-2026-outlook-stock-falls), [Nasdaq PR](https://nasdaq.com/press-release/advance-auto-parts-reports-third-quarter-2026-results-updates-full-year-2026-guidance)) · FY2026 guidance FCF ~$150M raised (Q3 call, [Yahoo](https://finance.yahoo.com/markets/stocks/articles/advance-auto-parts-aap-said-011429429.html))
+- **Filter B:** FCF yield FY2026E = $150M ÷ mkt cap $2.79B = **5.4%** — ต่ำกว่าเกณฑ์ 6% แม้ใช้ guidance ที่ดีที่สุดใน 4 ปี; FY2024/FY2025 เป็นลบ → **❌ ตก B** (median 3Y ≈ −$96M, ติดลบ)
+- **Filter C (ROIC):** Operating income FY2025 = **−$43M (ขาดทุน)**, Q1 FY26 +$69M, Q2 FY26 (quarter) +$101M, Q3 FY26 (quarter) +$47M — ไม่ใช่ trend ดีขึ้นต่อเนื่อง 2 ไตรมาสติด (Q3 ร่วงจาก Q2) · comp sales ยังลบ (−1.2% Q3'26, ปรับตัวดีขึ้นช่วงปลายไตรมาสแต่ยังไม่กลับบวกเต็มไตรมาส) → **❌ ตก C** (ROIC ไม่ผ่าน "ดีขึ้นต่อเนื่อง ≥2Q" ที่กฎผ่อนปรนกำหนด)
+- **Beaten-down reason:** ผสม — consumer/DIY demand softness (cyclical) **+** self-inflicted turnaround execution ที่ยังไม่ยืนยันทิศ (comp sales ลบต่อเนื่อง 2 ปี, operating loss ปีล่าสุด) → ไม่ใช่ permanent impairment ชัดเจน แต่ recovery ยังไม่ confirm → ตกที่ B/C ก่อนต้องตัดสิน A
+
+### MNRO — Filter B/C (SEC XBRL companyconcept, CIK 0000876427)
+- **FCF (OCF − capex, $M):** FY2024(end 2025-03-29) 131.9−26.4=**+105.5** · FY2025(end 2026-03-28) 70.4−31.7=**+38.8** (เทรนด์ลงต่อเนื่อง) · H1 FY2027 (6mo to 2026-09-26): OCF **+$4.2M** − capex **$13.3M** = **−$9.1M** (ติดลบ)
+- **Filter B:** FCF yield TTM ≈ ติดลบถึงใกล้ 0% บน market cap $250M → **❌ ตก B ชัดเจน**
+- **Filter C:** Operating income FY2024 $12.6M → FY2025 $20.0M → **Q1 FY2027 ขาดทุน −$6.1M**, Q2 FY2027 (quarter) +$12.75M (คืนตัวบางส่วนแต่ H1 สะสมยังแค่ $6.7M) — comp sales ลบต่อเนื่อง, gross margin หด, เพิ่งรีไฟแนนซ์หนี้ $375M (เทียบ market cap แค่ $250M) ด้วย private credit (Ares Capital) ดอกเบี้ยแพง, **ระงับเงินปันผล**, อยู่ระหว่าง **strategic alternatives review** (สัญญาณ distress/exploring sale) → **❌ ตก C** (ROIC ต่ำกว่า WACC ชัดเจนและมีสัญญาณ leverage risk เพิ่ม ไม่ใช่ trend ฟื้นตัว)
+- **Beaten-down reason:** เอียงไปทาง **structural/distress** มากกว่า cyclical ล้วนๆ — ไม่ใช่แค่ consumer softness แต่มี leverage stress (refinance ผ่าน private lender, suspend dividend, strategic review) ที่ default outcome ไม่ชัดว่าจะ resolve ทางบวก
+
+### Tier 1 Quick-Screen (AAP, MNRO — ตัวที่ผ่าน A)
+Check 1 (ROIC < 0.5× WACC และแย่ลง 2 ปี+): ทั้งคู่มี operating income ติดลบในบางไตรมาสล่าสุด/ปีล่าสุด แต่ไม่ได้ "แย่ลงต่อเนื่อง 2 ปี+" อย่างเนียน (มีไตรมาสฟื้นปนอยู่) — ไม่ชัดเจนพอจะ skip ที่ check นี้ตรงๆ แต่ตกที่ Filter B/C ของ Primary filter อยู่แล้วก่อนถึง Tier 1 → ไม่ต้องรัน Check 2/3 (ไม่มีตัวส่งต่อ lane)
+
+### Final routing — Round 108
+| Ticker | ผล | ตกที่ | re-screen เมื่อ |
+|---|---|---|---|
+| AZO | ❌ reject | **Filter A** (−14.8%) | ≤ $3,197 (−20% จาก high) |
+| ORLY | ❌ reject | **Filter A** (−5.6%) | ≤ $81.97 |
+| GPC | ❌ reject | **Filter A** (−18.3%, ใกล้เกณฑ์) | ≤ $121.26 |
+| AAP | ❌ reject | **Filter B** (FCF median 3Y ติดลบ) + **C** (operating loss FY25, recovery ไม่ confirm 2Q ติด) | comp sales กลับบวกเต็มไตรมาส 2 ไตรมาสติด + FCF FY26 actual (ไม่ใช่ guidance) ≥6% yield |
+| MNRO | ❌ reject | **Filter B** (FCF ติดลบ H1 FY27) + **C** (leverage stress, suspend dividend, strategic review) | ผลการ strategic alternatives review ออกมาชัดเจน (ขาย/ไม่ขาย) + FCF กลับบวกยั่งยืน |
+
+**Funnel: 5 screened · 0 fast-track · 0 learning-queue · 5 reject** (3 Filter A: AZO/ORLY/GPC · 2 Filter B+C: AAP/MNRO) · ไม่เพิ่ม Pending Analysis · ไม่เพิ่ม `buy_list.md` (regime TC + ไม่มี candidate ผ่าน) · ไม่มี target analysis date · check 3 (red-flag search) ไม่ได้ทำ — ไม่มีตัวส่งต่อ
+
+**หมายเหตุสำคัญสำหรับ Charlie/CIO:**
+1. GPC อยู่ใกล้เกณฑ์ Filter A มาก (−18.3% vs เกณฑ์ 20%) — ถ้าราคาร่วงต่ออีก ~2% ควร re-screen เร็ว (GPC มี ROIC/FCF ที่ดูเสถียรกว่า AAP/MNRO มาก จากข้อมูลเบื้องต้น แต่รอบนี้ไม่ได้ทำ B/C/D ให้เพราะตก A)
+2. AAP/MNRO เป็นภาพ "ถูกบนกระดาษ (ลงมากจาก high) แต่ fundamentals กำลังพังจริง ไม่ใช่แค่ sentiment" — คนละแบบจาก homebuilder (R98) ที่ "ถูกบนกระดาษแต่ยังไม่ถึง trough" — ตัวนี้คือ "ลงเพราะธุรกิจแย่ลงจริง" ชัดเจนกว่า
+3. MNRO censorious flag: อยู่ระหว่าง strategic alternatives review (อาจถูกขาย/privatize) — ถ้า CIO สนใจ event-driven/M&A-arb angle (ไม่ใช่ VALUE-FIRST scout ปกติ) ต้องเป็นคำขอแยกต่างหาก ไม่ใช่ fast-track จาก scout นี้
+
+**Sources (SEC XBRL companyconcept):** AAP CIK `0001158449` ([NetCashProvidedByUsedInOperatingActivities](https://data.sec.gov/api/xbrl/companyconcept/CIK0001158449/us-gaap/NetCashProvidedByUsedInOperatingActivities.json), [PaymentsToAcquirePropertyPlantAndEquipment](https://data.sec.gov/api/xbrl/companyconcept/CIK0001158449/us-gaap/PaymentsToAcquirePropertyPlantAndEquipment.json), [OperatingIncomeLoss](https://data.sec.gov/api/xbrl/companyconcept/CIK0001158449/us-gaap/OperatingIncomeLoss.json)) · MNRO CIK `0000876427` (same concepts, [companyconcept base](https://data.sec.gov/api/xbrl/companyconcept/CIK0000876427/us-gaap/)) · AAP Q3 FY26 press release ([Benzinga](https://benzinga.com/markets/earnings/26/11/62919418/advance-auto-parts-narrows-2026-outlook-stock-falls), [Nasdaq](https://nasdaq.com/press-release/advance-auto-parts-reports-third-quarter-2026-results-updates-full-year-2026-guidance)) · MNRO Q2 FY27 earnings call/release ([Fool transcript](https://fool.com/earnings/call-transcripts/2026/10/29/monro-mnro-q2-2027-earnings-call-transcript), [corporate.monro.com PR](https://corporate.monro.com/files/content_files/MNRO-2QFY27-Final-Earnings-Press-Release.pdf), [Investing.com](https://investing.com/news/transcripts/earnings-call-transcript-monro-posts-q2-2026-miss-as-shares-fall-129-93CH-4984188))
+
+*Max — 2026-11-27 | Scout Round 108 (Auto Parts Retail/Aftermarket — AZO/ORLY/GPC/AAP/MNRO, carryover flag จาก Quality Compounder note; 5 screened; 0 fast-track / 0 learning-queue / 5 reject [3 Filter A, 2 Filter B+C]; prune 0 de-listed, live 10)*
